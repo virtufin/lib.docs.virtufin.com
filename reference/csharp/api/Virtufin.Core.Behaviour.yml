@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.Core.Behaviour
   commentId: N:Virtufin.Core.Behaviour
-  id: Virtufin.Core.Behaviour
+  id: Behaviour
+  parent: Virtufin.Core
   children:
   - Virtufin.Core.Behaviour.IAlgebra`2
   - Virtufin.Core.Behaviour.IProcess`3

@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.Core.Events.Position
   commentId: N:Virtufin.Core.Events.Position
-  id: Virtufin.Core.Events.Position
+  id: Position
+  parent: Virtufin.Core.Events
   children:
   - Virtufin.Core.Events.Position.IPositionEvent
   langs:

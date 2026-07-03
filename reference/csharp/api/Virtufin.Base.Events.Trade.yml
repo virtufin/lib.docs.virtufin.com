@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.Base.Events.Trade
   commentId: N:Virtufin.Base.Events.Trade
-  id: Virtufin.Base.Events.Trade
+  id: Trade
+  parent: Virtufin.Base.Events
   children:
   - Virtufin.Base.Events.Trade.BuyOrSell
   - Virtufin.Base.Events.Trade.RichTradeAction
@@ -44,6 +45,13 @@ items:
   assemblies:
   - Virtufin.Base
 references:
+- uid: Virtufin.Base.Events.Trade.BuyOrSell
+  commentId: T:Virtufin.Base.Events.Trade.BuyOrSell
+  parent: Virtufin.Base.Events.Trade
+  href: Virtufin.Base.Events.Trade.BuyOrSell.html
+  name: BuyOrSell
+  nameWithType: BuyOrSell
+  fullName: Virtufin.Base.Events.Trade.BuyOrSell
 - uid: Virtufin.Base.Events.Trade.RichTradeAction
   commentId: T:Virtufin.Base.Events.Trade.RichTradeAction
   parent: Virtufin.Base.Events.Trade
@@ -73,28 +81,6 @@ references:
   - uid: Virtufin.Base.Events.Trade.RichTradeAction.BuyOrder
     name: BuyOrder
     href: Virtufin.Base.Events.Trade.RichTradeAction.BuyOrder.html
-- uid: Virtufin.Base.Events.Trade.RichTradeAction.SellOrder
-  commentId: T:Virtufin.Base.Events.Trade.RichTradeAction.SellOrder
-  href: Virtufin.Base.Events.Trade.RichTradeAction.html
-  name: RichTradeAction.SellOrder
-  nameWithType: RichTradeAction.SellOrder
-  fullName: Virtufin.Base.Events.Trade.RichTradeAction.SellOrder
-  spec.csharp:
-  - uid: Virtufin.Base.Events.Trade.RichTradeAction
-    name: RichTradeAction
-    href: Virtufin.Base.Events.Trade.RichTradeAction.html
-  - name: .
-  - uid: Virtufin.Base.Events.Trade.RichTradeAction.SellOrder
-    name: SellOrder
-    href: Virtufin.Base.Events.Trade.RichTradeAction.SellOrder.html
-  spec.vb:
-  - uid: Virtufin.Base.Events.Trade.RichTradeAction
-    name: RichTradeAction
-    href: Virtufin.Base.Events.Trade.RichTradeAction.html
-  - name: .
-  - uid: Virtufin.Base.Events.Trade.RichTradeAction.SellOrder
-    name: SellOrder
-    href: Virtufin.Base.Events.Trade.RichTradeAction.SellOrder.html
 - uid: Virtufin.Base.Events.Trade.RichTradeAction.CancelOrder
   commentId: T:Virtufin.Base.Events.Trade.RichTradeAction.CancelOrder
   href: Virtufin.Base.Events.Trade.RichTradeAction.html
@@ -117,28 +103,6 @@ references:
   - uid: Virtufin.Base.Events.Trade.RichTradeAction.CancelOrder
     name: CancelOrder
     href: Virtufin.Base.Events.Trade.RichTradeAction.CancelOrder.html
-- uid: Virtufin.Base.Events.Trade.RichTradeAction.Transfer
-  commentId: T:Virtufin.Base.Events.Trade.RichTradeAction.Transfer
-  href: Virtufin.Base.Events.Trade.RichTradeAction.html
-  name: RichTradeAction.Transfer
-  nameWithType: RichTradeAction.Transfer
-  fullName: Virtufin.Base.Events.Trade.RichTradeAction.Transfer
-  spec.csharp:
-  - uid: Virtufin.Base.Events.Trade.RichTradeAction
-    name: RichTradeAction
-    href: Virtufin.Base.Events.Trade.RichTradeAction.html
-  - name: .
-  - uid: Virtufin.Base.Events.Trade.RichTradeAction.Transfer
-    name: Transfer
-    href: Virtufin.Base.Events.Trade.RichTradeAction.Transfer.html
-  spec.vb:
-  - uid: Virtufin.Base.Events.Trade.RichTradeAction
-    name: RichTradeAction
-    href: Virtufin.Base.Events.Trade.RichTradeAction.html
-  - name: .
-  - uid: Virtufin.Base.Events.Trade.RichTradeAction.Transfer
-    name: Transfer
-    href: Virtufin.Base.Events.Trade.RichTradeAction.Transfer.html
 - uid: Virtufin.Base.Events.Trade.RichTradeAction.Interest
   commentId: T:Virtufin.Base.Events.Trade.RichTradeAction.Interest
   href: Virtufin.Base.Events.Trade.RichTradeAction.html
@@ -161,6 +125,50 @@ references:
   - uid: Virtufin.Base.Events.Trade.RichTradeAction.Interest
     name: Interest
     href: Virtufin.Base.Events.Trade.RichTradeAction.Interest.html
+- uid: Virtufin.Base.Events.Trade.RichTradeAction.SellOrder
+  commentId: T:Virtufin.Base.Events.Trade.RichTradeAction.SellOrder
+  href: Virtufin.Base.Events.Trade.RichTradeAction.html
+  name: RichTradeAction.SellOrder
+  nameWithType: RichTradeAction.SellOrder
+  fullName: Virtufin.Base.Events.Trade.RichTradeAction.SellOrder
+  spec.csharp:
+  - uid: Virtufin.Base.Events.Trade.RichTradeAction
+    name: RichTradeAction
+    href: Virtufin.Base.Events.Trade.RichTradeAction.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade.RichTradeAction.SellOrder
+    name: SellOrder
+    href: Virtufin.Base.Events.Trade.RichTradeAction.SellOrder.html
+  spec.vb:
+  - uid: Virtufin.Base.Events.Trade.RichTradeAction
+    name: RichTradeAction
+    href: Virtufin.Base.Events.Trade.RichTradeAction.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade.RichTradeAction.SellOrder
+    name: SellOrder
+    href: Virtufin.Base.Events.Trade.RichTradeAction.SellOrder.html
+- uid: Virtufin.Base.Events.Trade.RichTradeAction.Transfer
+  commentId: T:Virtufin.Base.Events.Trade.RichTradeAction.Transfer
+  href: Virtufin.Base.Events.Trade.RichTradeAction.html
+  name: RichTradeAction.Transfer
+  nameWithType: RichTradeAction.Transfer
+  fullName: Virtufin.Base.Events.Trade.RichTradeAction.Transfer
+  spec.csharp:
+  - uid: Virtufin.Base.Events.Trade.RichTradeAction
+    name: RichTradeAction
+    href: Virtufin.Base.Events.Trade.RichTradeAction.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade.RichTradeAction.Transfer
+    name: Transfer
+    href: Virtufin.Base.Events.Trade.RichTradeAction.Transfer.html
+  spec.vb:
+  - uid: Virtufin.Base.Events.Trade.RichTradeAction
+    name: RichTradeAction
+    href: Virtufin.Base.Events.Trade.RichTradeAction.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade.RichTradeAction.Transfer
+    name: Transfer
+    href: Virtufin.Base.Events.Trade.RichTradeAction.Transfer.html
 - uid: Virtufin.Base.Events.Trade.RichTradeAction.WithdrawInterest
   commentId: T:Virtufin.Base.Events.Trade.RichTradeAction.WithdrawInterest
   href: Virtufin.Base.Events.Trade.RichTradeAction.html
@@ -183,13 +191,6 @@ references:
   - uid: Virtufin.Base.Events.Trade.RichTradeAction.WithdrawInterest
     name: WithdrawInterest
     href: Virtufin.Base.Events.Trade.RichTradeAction.WithdrawInterest.html
-- uid: Virtufin.Base.Events.Trade.Venue
-  commentId: T:Virtufin.Base.Events.Trade.Venue
-  parent: Virtufin.Base.Events.Trade
-  href: Virtufin.Base.Events.Trade.Venue.html
-  name: Venue
-  nameWithType: Venue
-  fullName: Virtufin.Base.Events.Trade.Venue
 - uid: Virtufin.Base.Events.Trade.TradeAction
   commentId: T:Virtufin.Base.Events.Trade.TradeAction
   parent: Virtufin.Base.Events.Trade
@@ -220,29 +221,6 @@ references:
   - uid: Virtufin.Base.Events.Trade.TradeAction.BuyOrder
     name: BuyOrder
     href: Virtufin.Base.Events.Trade.TradeAction.BuyOrder.html
-- uid: Virtufin.Base.Events.Trade.TradeAction.SellOrder
-  commentId: T:Virtufin.Base.Events.Trade.TradeAction.SellOrder
-  parent: Virtufin.Base.Events.Trade
-  href: Virtufin.Base.Events.Trade.TradeAction.html
-  name: TradeAction.SellOrder
-  nameWithType: TradeAction.SellOrder
-  fullName: Virtufin.Base.Events.Trade.TradeAction.SellOrder
-  spec.csharp:
-  - uid: Virtufin.Base.Events.Trade.TradeAction
-    name: TradeAction
-    href: Virtufin.Base.Events.Trade.TradeAction.html
-  - name: .
-  - uid: Virtufin.Base.Events.Trade.TradeAction.SellOrder
-    name: SellOrder
-    href: Virtufin.Base.Events.Trade.TradeAction.SellOrder.html
-  spec.vb:
-  - uid: Virtufin.Base.Events.Trade.TradeAction
-    name: TradeAction
-    href: Virtufin.Base.Events.Trade.TradeAction.html
-  - name: .
-  - uid: Virtufin.Base.Events.Trade.TradeAction.SellOrder
-    name: SellOrder
-    href: Virtufin.Base.Events.Trade.TradeAction.SellOrder.html
 - uid: Virtufin.Base.Events.Trade.TradeAction.CancelOrder
   commentId: T:Virtufin.Base.Events.Trade.TradeAction.CancelOrder
   parent: Virtufin.Base.Events.Trade
@@ -266,29 +244,6 @@ references:
   - uid: Virtufin.Base.Events.Trade.TradeAction.CancelOrder
     name: CancelOrder
     href: Virtufin.Base.Events.Trade.TradeAction.CancelOrder.html
-- uid: Virtufin.Base.Events.Trade.TradeAction.TransferAction
-  commentId: T:Virtufin.Base.Events.Trade.TradeAction.TransferAction
-  parent: Virtufin.Base.Events.Trade
-  href: Virtufin.Base.Events.Trade.TradeAction.html
-  name: TradeAction.TransferAction
-  nameWithType: TradeAction.TransferAction
-  fullName: Virtufin.Base.Events.Trade.TradeAction.TransferAction
-  spec.csharp:
-  - uid: Virtufin.Base.Events.Trade.TradeAction
-    name: TradeAction
-    href: Virtufin.Base.Events.Trade.TradeAction.html
-  - name: .
-  - uid: Virtufin.Base.Events.Trade.TradeAction.TransferAction
-    name: TransferAction
-    href: Virtufin.Base.Events.Trade.TradeAction.TransferAction.html
-  spec.vb:
-  - uid: Virtufin.Base.Events.Trade.TradeAction
-    name: TradeAction
-    href: Virtufin.Base.Events.Trade.TradeAction.html
-  - name: .
-  - uid: Virtufin.Base.Events.Trade.TradeAction.TransferAction
-    name: TransferAction
-    href: Virtufin.Base.Events.Trade.TradeAction.TransferAction.html
 - uid: Virtufin.Base.Events.Trade.TradeAction.InterestAction
   commentId: T:Virtufin.Base.Events.Trade.TradeAction.InterestAction
   parent: Virtufin.Base.Events.Trade
@@ -312,6 +267,52 @@ references:
   - uid: Virtufin.Base.Events.Trade.TradeAction.InterestAction
     name: InterestAction
     href: Virtufin.Base.Events.Trade.TradeAction.InterestAction.html
+- uid: Virtufin.Base.Events.Trade.TradeAction.SellOrder
+  commentId: T:Virtufin.Base.Events.Trade.TradeAction.SellOrder
+  parent: Virtufin.Base.Events.Trade
+  href: Virtufin.Base.Events.Trade.TradeAction.html
+  name: TradeAction.SellOrder
+  nameWithType: TradeAction.SellOrder
+  fullName: Virtufin.Base.Events.Trade.TradeAction.SellOrder
+  spec.csharp:
+  - uid: Virtufin.Base.Events.Trade.TradeAction
+    name: TradeAction
+    href: Virtufin.Base.Events.Trade.TradeAction.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade.TradeAction.SellOrder
+    name: SellOrder
+    href: Virtufin.Base.Events.Trade.TradeAction.SellOrder.html
+  spec.vb:
+  - uid: Virtufin.Base.Events.Trade.TradeAction
+    name: TradeAction
+    href: Virtufin.Base.Events.Trade.TradeAction.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade.TradeAction.SellOrder
+    name: SellOrder
+    href: Virtufin.Base.Events.Trade.TradeAction.SellOrder.html
+- uid: Virtufin.Base.Events.Trade.TradeAction.TransferAction
+  commentId: T:Virtufin.Base.Events.Trade.TradeAction.TransferAction
+  parent: Virtufin.Base.Events.Trade
+  href: Virtufin.Base.Events.Trade.TradeAction.html
+  name: TradeAction.TransferAction
+  nameWithType: TradeAction.TransferAction
+  fullName: Virtufin.Base.Events.Trade.TradeAction.TransferAction
+  spec.csharp:
+  - uid: Virtufin.Base.Events.Trade.TradeAction
+    name: TradeAction
+    href: Virtufin.Base.Events.Trade.TradeAction.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade.TradeAction.TransferAction
+    name: TransferAction
+    href: Virtufin.Base.Events.Trade.TradeAction.TransferAction.html
+  spec.vb:
+  - uid: Virtufin.Base.Events.Trade.TradeAction
+    name: TradeAction
+    href: Virtufin.Base.Events.Trade.TradeAction.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade.TradeAction.TransferAction
+    name: TransferAction
+    href: Virtufin.Base.Events.Trade.TradeAction.TransferAction.html
 - uid: Virtufin.Base.Events.Trade.TradeAction.WithdrawInterestAction
   commentId: T:Virtufin.Base.Events.Trade.TradeAction.WithdrawInterestAction
   parent: Virtufin.Base.Events.Trade
@@ -335,13 +336,6 @@ references:
   - uid: Virtufin.Base.Events.Trade.TradeAction.WithdrawInterestAction
     name: WithdrawInterestAction
     href: Virtufin.Base.Events.Trade.TradeAction.WithdrawInterestAction.html
-- uid: Virtufin.Base.Events.Trade.BuyOrSell
-  commentId: T:Virtufin.Base.Events.Trade.BuyOrSell
-  parent: Virtufin.Base.Events.Trade
-  href: Virtufin.Base.Events.Trade.BuyOrSell.html
-  name: BuyOrSell
-  nameWithType: BuyOrSell
-  fullName: Virtufin.Base.Events.Trade.BuyOrSell
 - uid: Virtufin.Base.Events.Trade.TradeEvent
   commentId: T:Virtufin.Base.Events.Trade.TradeEvent
   parent: Virtufin.Base.Events.Trade
@@ -349,94 +343,6 @@ references:
   name: TradeEvent
   nameWithType: TradeEvent
   fullName: Virtufin.Base.Events.Trade.TradeEvent
-- uid: Virtufin.Base.Events.Trade.TradeEvent.OrderPlaced
-  commentId: T:Virtufin.Base.Events.Trade.TradeEvent.OrderPlaced
-  href: Virtufin.Base.Events.Trade.TradeEvent.html
-  name: TradeEvent.OrderPlaced
-  nameWithType: TradeEvent.OrderPlaced
-  fullName: Virtufin.Base.Events.Trade.TradeEvent.OrderPlaced
-  spec.csharp:
-  - uid: Virtufin.Base.Events.Trade.TradeEvent
-    name: TradeEvent
-    href: Virtufin.Base.Events.Trade.TradeEvent.html
-  - name: .
-  - uid: Virtufin.Base.Events.Trade.TradeEvent.OrderPlaced
-    name: OrderPlaced
-    href: Virtufin.Base.Events.Trade.TradeEvent.OrderPlaced.html
-  spec.vb:
-  - uid: Virtufin.Base.Events.Trade.TradeEvent
-    name: TradeEvent
-    href: Virtufin.Base.Events.Trade.TradeEvent.html
-  - name: .
-  - uid: Virtufin.Base.Events.Trade.TradeEvent.OrderPlaced
-    name: OrderPlaced
-    href: Virtufin.Base.Events.Trade.TradeEvent.OrderPlaced.html
-- uid: Virtufin.Base.Events.Trade.TradeEvent.OrderCancelled
-  commentId: T:Virtufin.Base.Events.Trade.TradeEvent.OrderCancelled
-  href: Virtufin.Base.Events.Trade.TradeEvent.html
-  name: TradeEvent.OrderCancelled
-  nameWithType: TradeEvent.OrderCancelled
-  fullName: Virtufin.Base.Events.Trade.TradeEvent.OrderCancelled
-  spec.csharp:
-  - uid: Virtufin.Base.Events.Trade.TradeEvent
-    name: TradeEvent
-    href: Virtufin.Base.Events.Trade.TradeEvent.html
-  - name: .
-  - uid: Virtufin.Base.Events.Trade.TradeEvent.OrderCancelled
-    name: OrderCancelled
-    href: Virtufin.Base.Events.Trade.TradeEvent.OrderCancelled.html
-  spec.vb:
-  - uid: Virtufin.Base.Events.Trade.TradeEvent
-    name: TradeEvent
-    href: Virtufin.Base.Events.Trade.TradeEvent.html
-  - name: .
-  - uid: Virtufin.Base.Events.Trade.TradeEvent.OrderCancelled
-    name: OrderCancelled
-    href: Virtufin.Base.Events.Trade.TradeEvent.OrderCancelled.html
-- uid: Virtufin.Base.Events.Trade.TradeEvent.OrderExpired
-  commentId: T:Virtufin.Base.Events.Trade.TradeEvent.OrderExpired
-  href: Virtufin.Base.Events.Trade.TradeEvent.html
-  name: TradeEvent.OrderExpired
-  nameWithType: TradeEvent.OrderExpired
-  fullName: Virtufin.Base.Events.Trade.TradeEvent.OrderExpired
-  spec.csharp:
-  - uid: Virtufin.Base.Events.Trade.TradeEvent
-    name: TradeEvent
-    href: Virtufin.Base.Events.Trade.TradeEvent.html
-  - name: .
-  - uid: Virtufin.Base.Events.Trade.TradeEvent.OrderExpired
-    name: OrderExpired
-    href: Virtufin.Base.Events.Trade.TradeEvent.OrderExpired.html
-  spec.vb:
-  - uid: Virtufin.Base.Events.Trade.TradeEvent
-    name: TradeEvent
-    href: Virtufin.Base.Events.Trade.TradeEvent.html
-  - name: .
-  - uid: Virtufin.Base.Events.Trade.TradeEvent.OrderExpired
-    name: OrderExpired
-    href: Virtufin.Base.Events.Trade.TradeEvent.OrderExpired.html
-- uid: Virtufin.Base.Events.Trade.TradeEvent.FillReceived
-  commentId: T:Virtufin.Base.Events.Trade.TradeEvent.FillReceived
-  href: Virtufin.Base.Events.Trade.TradeEvent.html
-  name: TradeEvent.FillReceived
-  nameWithType: TradeEvent.FillReceived
-  fullName: Virtufin.Base.Events.Trade.TradeEvent.FillReceived
-  spec.csharp:
-  - uid: Virtufin.Base.Events.Trade.TradeEvent
-    name: TradeEvent
-    href: Virtufin.Base.Events.Trade.TradeEvent.html
-  - name: .
-  - uid: Virtufin.Base.Events.Trade.TradeEvent.FillReceived
-    name: FillReceived
-    href: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.html
-  spec.vb:
-  - uid: Virtufin.Base.Events.Trade.TradeEvent
-    name: TradeEvent
-    href: Virtufin.Base.Events.Trade.TradeEvent.html
-  - name: .
-  - uid: Virtufin.Base.Events.Trade.TradeEvent.FillReceived
-    name: FillReceived
-    href: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.html
 - uid: Virtufin.Base.Events.Trade.TradeEvent.ExecutionCleared
   commentId: T:Virtufin.Base.Events.Trade.TradeEvent.ExecutionCleared
   href: Virtufin.Base.Events.Trade.TradeEvent.html
@@ -481,28 +387,182 @@ references:
   - uid: Virtufin.Base.Events.Trade.TradeEvent.ExecutionSettled
     name: ExecutionSettled
     href: Virtufin.Base.Events.Trade.TradeEvent.ExecutionSettled.html
-- uid: Virtufin.Base.Events.Trade.TradeEvent.TransferInitiated
-  commentId: T:Virtufin.Base.Events.Trade.TradeEvent.TransferInitiated
+- uid: Virtufin.Base.Events.Trade.TradeEvent.FillReceived
+  commentId: T:Virtufin.Base.Events.Trade.TradeEvent.FillReceived
   href: Virtufin.Base.Events.Trade.TradeEvent.html
-  name: TradeEvent.TransferInitiated
-  nameWithType: TradeEvent.TransferInitiated
-  fullName: Virtufin.Base.Events.Trade.TradeEvent.TransferInitiated
+  name: TradeEvent.FillReceived
+  nameWithType: TradeEvent.FillReceived
+  fullName: Virtufin.Base.Events.Trade.TradeEvent.FillReceived
   spec.csharp:
   - uid: Virtufin.Base.Events.Trade.TradeEvent
     name: TradeEvent
     href: Virtufin.Base.Events.Trade.TradeEvent.html
   - name: .
-  - uid: Virtufin.Base.Events.Trade.TradeEvent.TransferInitiated
-    name: TransferInitiated
-    href: Virtufin.Base.Events.Trade.TradeEvent.TransferInitiated.html
+  - uid: Virtufin.Base.Events.Trade.TradeEvent.FillReceived
+    name: FillReceived
+    href: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.html
   spec.vb:
   - uid: Virtufin.Base.Events.Trade.TradeEvent
     name: TradeEvent
     href: Virtufin.Base.Events.Trade.TradeEvent.html
   - name: .
-  - uid: Virtufin.Base.Events.Trade.TradeEvent.TransferInitiated
-    name: TransferInitiated
-    href: Virtufin.Base.Events.Trade.TradeEvent.TransferInitiated.html
+  - uid: Virtufin.Base.Events.Trade.TradeEvent.FillReceived
+    name: FillReceived
+    href: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.html
+- uid: Virtufin.Base.Events.Trade.TradeEvent.InterestExpired
+  commentId: T:Virtufin.Base.Events.Trade.TradeEvent.InterestExpired
+  href: Virtufin.Base.Events.Trade.TradeEvent.html
+  name: TradeEvent.InterestExpired
+  nameWithType: TradeEvent.InterestExpired
+  fullName: Virtufin.Base.Events.Trade.TradeEvent.InterestExpired
+  spec.csharp:
+  - uid: Virtufin.Base.Events.Trade.TradeEvent
+    name: TradeEvent
+    href: Virtufin.Base.Events.Trade.TradeEvent.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade.TradeEvent.InterestExpired
+    name: InterestExpired
+    href: Virtufin.Base.Events.Trade.TradeEvent.InterestExpired.html
+  spec.vb:
+  - uid: Virtufin.Base.Events.Trade.TradeEvent
+    name: TradeEvent
+    href: Virtufin.Base.Events.Trade.TradeEvent.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade.TradeEvent.InterestExpired
+    name: InterestExpired
+    href: Virtufin.Base.Events.Trade.TradeEvent.InterestExpired.html
+- uid: Virtufin.Base.Events.Trade.TradeEvent.InterestMatched
+  commentId: T:Virtufin.Base.Events.Trade.TradeEvent.InterestMatched
+  href: Virtufin.Base.Events.Trade.TradeEvent.html
+  name: TradeEvent.InterestMatched
+  nameWithType: TradeEvent.InterestMatched
+  fullName: Virtufin.Base.Events.Trade.TradeEvent.InterestMatched
+  spec.csharp:
+  - uid: Virtufin.Base.Events.Trade.TradeEvent
+    name: TradeEvent
+    href: Virtufin.Base.Events.Trade.TradeEvent.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade.TradeEvent.InterestMatched
+    name: InterestMatched
+    href: Virtufin.Base.Events.Trade.TradeEvent.InterestMatched.html
+  spec.vb:
+  - uid: Virtufin.Base.Events.Trade.TradeEvent
+    name: TradeEvent
+    href: Virtufin.Base.Events.Trade.TradeEvent.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade.TradeEvent.InterestMatched
+    name: InterestMatched
+    href: Virtufin.Base.Events.Trade.TradeEvent.InterestMatched.html
+- uid: Virtufin.Base.Events.Trade.TradeEvent.InterestRegistered
+  commentId: T:Virtufin.Base.Events.Trade.TradeEvent.InterestRegistered
+  href: Virtufin.Base.Events.Trade.TradeEvent.html
+  name: TradeEvent.InterestRegistered
+  nameWithType: TradeEvent.InterestRegistered
+  fullName: Virtufin.Base.Events.Trade.TradeEvent.InterestRegistered
+  spec.csharp:
+  - uid: Virtufin.Base.Events.Trade.TradeEvent
+    name: TradeEvent
+    href: Virtufin.Base.Events.Trade.TradeEvent.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade.TradeEvent.InterestRegistered
+    name: InterestRegistered
+    href: Virtufin.Base.Events.Trade.TradeEvent.InterestRegistered.html
+  spec.vb:
+  - uid: Virtufin.Base.Events.Trade.TradeEvent
+    name: TradeEvent
+    href: Virtufin.Base.Events.Trade.TradeEvent.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade.TradeEvent.InterestRegistered
+    name: InterestRegistered
+    href: Virtufin.Base.Events.Trade.TradeEvent.InterestRegistered.html
+- uid: Virtufin.Base.Events.Trade.TradeEvent.InterestRevoked
+  commentId: T:Virtufin.Base.Events.Trade.TradeEvent.InterestRevoked
+  href: Virtufin.Base.Events.Trade.TradeEvent.html
+  name: TradeEvent.InterestRevoked
+  nameWithType: TradeEvent.InterestRevoked
+  fullName: Virtufin.Base.Events.Trade.TradeEvent.InterestRevoked
+  spec.csharp:
+  - uid: Virtufin.Base.Events.Trade.TradeEvent
+    name: TradeEvent
+    href: Virtufin.Base.Events.Trade.TradeEvent.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade.TradeEvent.InterestRevoked
+    name: InterestRevoked
+    href: Virtufin.Base.Events.Trade.TradeEvent.InterestRevoked.html
+  spec.vb:
+  - uid: Virtufin.Base.Events.Trade.TradeEvent
+    name: TradeEvent
+    href: Virtufin.Base.Events.Trade.TradeEvent.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade.TradeEvent.InterestRevoked
+    name: InterestRevoked
+    href: Virtufin.Base.Events.Trade.TradeEvent.InterestRevoked.html
+- uid: Virtufin.Base.Events.Trade.TradeEvent.OrderCancelled
+  commentId: T:Virtufin.Base.Events.Trade.TradeEvent.OrderCancelled
+  href: Virtufin.Base.Events.Trade.TradeEvent.html
+  name: TradeEvent.OrderCancelled
+  nameWithType: TradeEvent.OrderCancelled
+  fullName: Virtufin.Base.Events.Trade.TradeEvent.OrderCancelled
+  spec.csharp:
+  - uid: Virtufin.Base.Events.Trade.TradeEvent
+    name: TradeEvent
+    href: Virtufin.Base.Events.Trade.TradeEvent.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade.TradeEvent.OrderCancelled
+    name: OrderCancelled
+    href: Virtufin.Base.Events.Trade.TradeEvent.OrderCancelled.html
+  spec.vb:
+  - uid: Virtufin.Base.Events.Trade.TradeEvent
+    name: TradeEvent
+    href: Virtufin.Base.Events.Trade.TradeEvent.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade.TradeEvent.OrderCancelled
+    name: OrderCancelled
+    href: Virtufin.Base.Events.Trade.TradeEvent.OrderCancelled.html
+- uid: Virtufin.Base.Events.Trade.TradeEvent.OrderExpired
+  commentId: T:Virtufin.Base.Events.Trade.TradeEvent.OrderExpired
+  href: Virtufin.Base.Events.Trade.TradeEvent.html
+  name: TradeEvent.OrderExpired
+  nameWithType: TradeEvent.OrderExpired
+  fullName: Virtufin.Base.Events.Trade.TradeEvent.OrderExpired
+  spec.csharp:
+  - uid: Virtufin.Base.Events.Trade.TradeEvent
+    name: TradeEvent
+    href: Virtufin.Base.Events.Trade.TradeEvent.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade.TradeEvent.OrderExpired
+    name: OrderExpired
+    href: Virtufin.Base.Events.Trade.TradeEvent.OrderExpired.html
+  spec.vb:
+  - uid: Virtufin.Base.Events.Trade.TradeEvent
+    name: TradeEvent
+    href: Virtufin.Base.Events.Trade.TradeEvent.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade.TradeEvent.OrderExpired
+    name: OrderExpired
+    href: Virtufin.Base.Events.Trade.TradeEvent.OrderExpired.html
+- uid: Virtufin.Base.Events.Trade.TradeEvent.OrderPlaced
+  commentId: T:Virtufin.Base.Events.Trade.TradeEvent.OrderPlaced
+  href: Virtufin.Base.Events.Trade.TradeEvent.html
+  name: TradeEvent.OrderPlaced
+  nameWithType: TradeEvent.OrderPlaced
+  fullName: Virtufin.Base.Events.Trade.TradeEvent.OrderPlaced
+  spec.csharp:
+  - uid: Virtufin.Base.Events.Trade.TradeEvent
+    name: TradeEvent
+    href: Virtufin.Base.Events.Trade.TradeEvent.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade.TradeEvent.OrderPlaced
+    name: OrderPlaced
+    href: Virtufin.Base.Events.Trade.TradeEvent.OrderPlaced.html
+  spec.vb:
+  - uid: Virtufin.Base.Events.Trade.TradeEvent
+    name: TradeEvent
+    href: Virtufin.Base.Events.Trade.TradeEvent.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade.TradeEvent.OrderPlaced
+    name: OrderPlaced
+    href: Virtufin.Base.Events.Trade.TradeEvent.OrderPlaced.html
 - uid: Virtufin.Base.Events.Trade.TradeEvent.TransferCompleted
   commentId: T:Virtufin.Base.Events.Trade.TradeEvent.TransferCompleted
   href: Virtufin.Base.Events.Trade.TradeEvent.html
@@ -547,94 +607,35 @@ references:
   - uid: Virtufin.Base.Events.Trade.TradeEvent.TransferFailed
     name: TransferFailed
     href: Virtufin.Base.Events.Trade.TradeEvent.TransferFailed.html
-- uid: Virtufin.Base.Events.Trade.TradeEvent.InterestRegistered
-  commentId: T:Virtufin.Base.Events.Trade.TradeEvent.InterestRegistered
+- uid: Virtufin.Base.Events.Trade.TradeEvent.TransferInitiated
+  commentId: T:Virtufin.Base.Events.Trade.TradeEvent.TransferInitiated
   href: Virtufin.Base.Events.Trade.TradeEvent.html
-  name: TradeEvent.InterestRegistered
-  nameWithType: TradeEvent.InterestRegistered
-  fullName: Virtufin.Base.Events.Trade.TradeEvent.InterestRegistered
+  name: TradeEvent.TransferInitiated
+  nameWithType: TradeEvent.TransferInitiated
+  fullName: Virtufin.Base.Events.Trade.TradeEvent.TransferInitiated
   spec.csharp:
   - uid: Virtufin.Base.Events.Trade.TradeEvent
     name: TradeEvent
     href: Virtufin.Base.Events.Trade.TradeEvent.html
   - name: .
-  - uid: Virtufin.Base.Events.Trade.TradeEvent.InterestRegistered
-    name: InterestRegistered
-    href: Virtufin.Base.Events.Trade.TradeEvent.InterestRegistered.html
+  - uid: Virtufin.Base.Events.Trade.TradeEvent.TransferInitiated
+    name: TransferInitiated
+    href: Virtufin.Base.Events.Trade.TradeEvent.TransferInitiated.html
   spec.vb:
   - uid: Virtufin.Base.Events.Trade.TradeEvent
     name: TradeEvent
     href: Virtufin.Base.Events.Trade.TradeEvent.html
   - name: .
-  - uid: Virtufin.Base.Events.Trade.TradeEvent.InterestRegistered
-    name: InterestRegistered
-    href: Virtufin.Base.Events.Trade.TradeEvent.InterestRegistered.html
-- uid: Virtufin.Base.Events.Trade.TradeEvent.InterestExpired
-  commentId: T:Virtufin.Base.Events.Trade.TradeEvent.InterestExpired
-  href: Virtufin.Base.Events.Trade.TradeEvent.html
-  name: TradeEvent.InterestExpired
-  nameWithType: TradeEvent.InterestExpired
-  fullName: Virtufin.Base.Events.Trade.TradeEvent.InterestExpired
-  spec.csharp:
-  - uid: Virtufin.Base.Events.Trade.TradeEvent
-    name: TradeEvent
-    href: Virtufin.Base.Events.Trade.TradeEvent.html
-  - name: .
-  - uid: Virtufin.Base.Events.Trade.TradeEvent.InterestExpired
-    name: InterestExpired
-    href: Virtufin.Base.Events.Trade.TradeEvent.InterestExpired.html
-  spec.vb:
-  - uid: Virtufin.Base.Events.Trade.TradeEvent
-    name: TradeEvent
-    href: Virtufin.Base.Events.Trade.TradeEvent.html
-  - name: .
-  - uid: Virtufin.Base.Events.Trade.TradeEvent.InterestExpired
-    name: InterestExpired
-    href: Virtufin.Base.Events.Trade.TradeEvent.InterestExpired.html
-- uid: Virtufin.Base.Events.Trade.TradeEvent.InterestRevoked
-  commentId: T:Virtufin.Base.Events.Trade.TradeEvent.InterestRevoked
-  href: Virtufin.Base.Events.Trade.TradeEvent.html
-  name: TradeEvent.InterestRevoked
-  nameWithType: TradeEvent.InterestRevoked
-  fullName: Virtufin.Base.Events.Trade.TradeEvent.InterestRevoked
-  spec.csharp:
-  - uid: Virtufin.Base.Events.Trade.TradeEvent
-    name: TradeEvent
-    href: Virtufin.Base.Events.Trade.TradeEvent.html
-  - name: .
-  - uid: Virtufin.Base.Events.Trade.TradeEvent.InterestRevoked
-    name: InterestRevoked
-    href: Virtufin.Base.Events.Trade.TradeEvent.InterestRevoked.html
-  spec.vb:
-  - uid: Virtufin.Base.Events.Trade.TradeEvent
-    name: TradeEvent
-    href: Virtufin.Base.Events.Trade.TradeEvent.html
-  - name: .
-  - uid: Virtufin.Base.Events.Trade.TradeEvent.InterestRevoked
-    name: InterestRevoked
-    href: Virtufin.Base.Events.Trade.TradeEvent.InterestRevoked.html
-- uid: Virtufin.Base.Events.Trade.TradeEvent.InterestMatched
-  commentId: T:Virtufin.Base.Events.Trade.TradeEvent.InterestMatched
-  href: Virtufin.Base.Events.Trade.TradeEvent.html
-  name: TradeEvent.InterestMatched
-  nameWithType: TradeEvent.InterestMatched
-  fullName: Virtufin.Base.Events.Trade.TradeEvent.InterestMatched
-  spec.csharp:
-  - uid: Virtufin.Base.Events.Trade.TradeEvent
-    name: TradeEvent
-    href: Virtufin.Base.Events.Trade.TradeEvent.html
-  - name: .
-  - uid: Virtufin.Base.Events.Trade.TradeEvent.InterestMatched
-    name: InterestMatched
-    href: Virtufin.Base.Events.Trade.TradeEvent.InterestMatched.html
-  spec.vb:
-  - uid: Virtufin.Base.Events.Trade.TradeEvent
-    name: TradeEvent
-    href: Virtufin.Base.Events.Trade.TradeEvent.html
-  - name: .
-  - uid: Virtufin.Base.Events.Trade.TradeEvent.InterestMatched
-    name: InterestMatched
-    href: Virtufin.Base.Events.Trade.TradeEvent.InterestMatched.html
+  - uid: Virtufin.Base.Events.Trade.TradeEvent.TransferInitiated
+    name: TransferInitiated
+    href: Virtufin.Base.Events.Trade.TradeEvent.TransferInitiated.html
+- uid: Virtufin.Base.Events.Trade.Venue
+  commentId: T:Virtufin.Base.Events.Trade.Venue
+  parent: Virtufin.Base.Events.Trade
+  href: Virtufin.Base.Events.Trade.Venue.html
+  name: Venue
+  nameWithType: Venue
+  fullName: Virtufin.Base.Events.Trade.Venue
 - uid: Virtufin.Base.Events.Trade
   commentId: N:Virtufin.Base.Events.Trade
   href: Virtufin.html

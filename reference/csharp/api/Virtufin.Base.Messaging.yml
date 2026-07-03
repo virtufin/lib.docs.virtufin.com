@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.Base.Messaging
   commentId: N:Virtufin.Base.Messaging
-  id: Virtufin.Base.Messaging
+  id: Messaging
+  parent: Virtufin.Base
   children:
   - Virtufin.Base.Messaging.Topics
   langs:

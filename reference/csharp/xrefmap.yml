@@ -52,6 +52,9 @@ references:
   isSpec: "True"
   fullName: Google.FlatBuffers.FlatBufferConstants.FLATBUFFERS_25_9_23
   nameWithType: FlatBufferConstants.FLATBUFFERS_25_9_23
+- uid: Virtufin
+  name: Virtufin
+  href: api/Virtufin.html
 - uid: Virtufin.Base
   name: Virtufin.Base
   href: api/Virtufin.Base.html

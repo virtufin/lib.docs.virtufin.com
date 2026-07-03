@@ -2,8 +2,10 @@
 items:
 - uid: Virtufin.Data
   commentId: N:Virtufin.Data
-  id: Virtufin.Data
+  id: Data
+  parent: Virtufin
   children:
+  - Virtufin.Data.FlatBuffers
   - Virtufin.Data.FlatBuffersVariant
   - Virtufin.Data.IVariant
   - Virtufin.Data.NatsObservable
@@ -25,12 +27,49 @@ items:
   assemblies:
   - Virtufin.Data
 references:
+- uid: Virtufin.Data.FlatBuffers
+  commentId: N:Virtufin.Data.FlatBuffers
+  href: Virtufin.html
+  name: Virtufin.Data.FlatBuffers
+  nameWithType: Virtufin.Data.FlatBuffers
+  fullName: Virtufin.Data.FlatBuffers
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Data
+    name: Data
+    href: Virtufin.Data.html
+  - name: .
+  - uid: Virtufin.Data.FlatBuffers
+    name: FlatBuffers
+    href: Virtufin.Data.FlatBuffers.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Data
+    name: Data
+    href: Virtufin.Data.html
+  - name: .
+  - uid: Virtufin.Data.FlatBuffers
+    name: FlatBuffers
+    href: Virtufin.Data.FlatBuffers.html
 - uid: Virtufin.Data.FlatBuffersVariant
   commentId: T:Virtufin.Data.FlatBuffersVariant
   href: Virtufin.Data.FlatBuffersVariant.html
   name: FlatBuffersVariant
   nameWithType: FlatBuffersVariant
   fullName: Virtufin.Data.FlatBuffersVariant
+- uid: Virtufin.Data.IVariant
+  commentId: T:Virtufin.Data.IVariant
+  parent: Virtufin.Data
+  href: Virtufin.Data.IVariant.html
+  name: IVariant
+  nameWithType: IVariant
+  fullName: Virtufin.Data.IVariant
 - uid: Virtufin.Data.NatsObservable
   commentId: T:Virtufin.Data.NatsObservable
   href: Virtufin.Data.NatsObservable.html
@@ -93,20 +132,6 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: Virtufin.Data.IVariant
-  commentId: T:Virtufin.Data.IVariant
-  parent: Virtufin.Data
-  href: Virtufin.Data.IVariant.html
-  name: IVariant
-  nameWithType: IVariant
-  fullName: Virtufin.Data.IVariant
-- uid: Virtufin.Data.Variant
-  commentId: T:Virtufin.Data.Variant
-  parent: Virtufin.Data
-  href: Virtufin.Data.Variant.html
-  name: Variant
-  nameWithType: Variant
-  fullName: Virtufin.Data.Variant
 - uid: Virtufin.Data.Selector
   commentId: T:Virtufin.Data.Selector
   parent: Virtufin.Data
@@ -121,6 +146,13 @@ references:
   name: SelectorPath
   nameWithType: SelectorPath
   fullName: Virtufin.Data.SelectorPath
+- uid: Virtufin.Data.Variant
+  commentId: T:Virtufin.Data.Variant
+  parent: Virtufin.Data
+  href: Virtufin.Data.Variant.html
+  name: Variant
+  nameWithType: Variant
+  fullName: Virtufin.Data.Variant
 - uid: Virtufin.Data.VariantListRepresentation
   commentId: T:Virtufin.Data.VariantListRepresentation
   parent: Virtufin.Data

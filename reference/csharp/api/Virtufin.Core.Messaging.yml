@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.Core.Messaging
   commentId: N:Virtufin.Core.Messaging
-  id: Virtufin.Core.Messaging
+  id: Messaging
+  parent: Virtufin.Core
   children:
   - Virtufin.Core.Messaging.EventDelivery
   - Virtufin.Core.Messaging.IEventPublisher
@@ -18,13 +19,12 @@ items:
   assemblies:
   - Virtufin.Core
 references:
-- uid: Virtufin.Core.Messaging.Topic
-  commentId: T:Virtufin.Core.Messaging.Topic
-  parent: Virtufin.Core.Messaging
-  href: Virtufin.Core.Messaging.Topic.html
-  name: Topic
-  nameWithType: Topic
-  fullName: Virtufin.Core.Messaging.Topic
+- uid: Virtufin.Core.Messaging.EventDelivery
+  commentId: T:Virtufin.Core.Messaging.EventDelivery
+  href: Virtufin.Core.Messaging.EventDelivery.html
+  name: EventDelivery
+  nameWithType: EventDelivery
+  fullName: Virtufin.Core.Messaging.EventDelivery
 - uid: Virtufin.Core.Messaging.IEventPublisher
   commentId: T:Virtufin.Core.Messaging.IEventPublisher
   parent: Virtufin.Core.Messaging
@@ -32,18 +32,19 @@ references:
   name: IEventPublisher
   nameWithType: IEventPublisher
   fullName: Virtufin.Core.Messaging.IEventPublisher
-- uid: Virtufin.Core.Messaging.EventDelivery
-  commentId: T:Virtufin.Core.Messaging.EventDelivery
-  href: Virtufin.Core.Messaging.EventDelivery.html
-  name: EventDelivery
-  nameWithType: EventDelivery
-  fullName: Virtufin.Core.Messaging.EventDelivery
 - uid: Virtufin.Core.Messaging.IEventSubscriber
   commentId: T:Virtufin.Core.Messaging.IEventSubscriber
   href: Virtufin.Core.Messaging.IEventSubscriber.html
   name: IEventSubscriber
   nameWithType: IEventSubscriber
   fullName: Virtufin.Core.Messaging.IEventSubscriber
+- uid: Virtufin.Core.Messaging.Topic
+  commentId: T:Virtufin.Core.Messaging.Topic
+  parent: Virtufin.Core.Messaging
+  href: Virtufin.Core.Messaging.Topic.html
+  name: Topic
+  nameWithType: Topic
+  fullName: Virtufin.Core.Messaging.Topic
 - uid: Virtufin.Core.Messaging
   commentId: N:Virtufin.Core.Messaging
   href: Virtufin.html

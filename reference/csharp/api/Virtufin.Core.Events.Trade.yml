@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.Core.Events.Trade
   commentId: N:Virtufin.Core.Events.Trade
-  id: Virtufin.Core.Events.Trade
+  id: Trade
+  parent: Virtufin.Core.Events
   children:
   - Virtufin.Core.Events.Trade.ITradeAction
   - Virtufin.Core.Events.Trade.ITradeEvent`1

@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.Data.FlatBuffers
   commentId: N:Virtufin.Data.FlatBuffers
-  id: Virtufin.Data.FlatBuffers
+  id: FlatBuffers
+  parent: Virtufin.Data
   children:
   - Virtufin.Data.FlatBuffers.ArrayBoolValue
   - Virtufin.Data.FlatBuffers.ArrayBoolValueVerify

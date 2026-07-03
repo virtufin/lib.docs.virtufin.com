@@ -2,10 +2,15 @@
 items:
 - uid: Virtufin.Base.Events
   commentId: N:Virtufin.Base.Events
-  id: Virtufin.Base.Events
+  id: Events
+  parent: Virtufin.Base
   children:
   - Virtufin.Base.Events.EventEnvelope
   - Virtufin.Base.Events.EventEnvelopeCloudEventExtensions
+  - Virtufin.Base.Events.Market
+  - Virtufin.Base.Events.Position
+  - Virtufin.Base.Events.Risk
+  - Virtufin.Base.Events.Trade
   langs:
   - csharp
   - vb
@@ -16,6 +21,158 @@ items:
   assemblies:
   - Virtufin.Base
 references:
+- uid: Virtufin.Base.Events.Market
+  commentId: N:Virtufin.Base.Events.Market
+  href: Virtufin.html
+  name: Virtufin.Base.Events.Market
+  nameWithType: Virtufin.Base.Events.Market
+  fullName: Virtufin.Base.Events.Market
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html
+  - name: .
+  - uid: Virtufin.Base.Events.Market
+    name: Market
+    href: Virtufin.Base.Events.Market.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html
+  - name: .
+  - uid: Virtufin.Base.Events.Market
+    name: Market
+    href: Virtufin.Base.Events.Market.html
+- uid: Virtufin.Base.Events.Position
+  commentId: N:Virtufin.Base.Events.Position
+  href: Virtufin.html
+  name: Virtufin.Base.Events.Position
+  nameWithType: Virtufin.Base.Events.Position
+  fullName: Virtufin.Base.Events.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html
+  - name: .
+  - uid: Virtufin.Base.Events.Position
+    name: Position
+    href: Virtufin.Base.Events.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html
+  - name: .
+  - uid: Virtufin.Base.Events.Position
+    name: Position
+    href: Virtufin.Base.Events.Position.html
+- uid: Virtufin.Base.Events.Risk
+  commentId: N:Virtufin.Base.Events.Risk
+  href: Virtufin.html
+  name: Virtufin.Base.Events.Risk
+  nameWithType: Virtufin.Base.Events.Risk
+  fullName: Virtufin.Base.Events.Risk
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html
+  - name: .
+  - uid: Virtufin.Base.Events.Risk
+    name: Risk
+    href: Virtufin.Base.Events.Risk.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html
+  - name: .
+  - uid: Virtufin.Base.Events.Risk
+    name: Risk
+    href: Virtufin.Base.Events.Risk.html
+- uid: Virtufin.Base.Events.Trade
+  commentId: N:Virtufin.Base.Events.Trade
+  href: Virtufin.html
+  name: Virtufin.Base.Events.Trade
+  nameWithType: Virtufin.Base.Events.Trade
+  fullName: Virtufin.Base.Events.Trade
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade
+    name: Trade
+    href: Virtufin.Base.Events.Trade.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade
+    name: Trade
+    href: Virtufin.Base.Events.Trade.html
 - uid: Virtufin.Base.Events.EventEnvelope
   commentId: T:Virtufin.Base.Events.EventEnvelope
   parent: Virtufin.Base.Events

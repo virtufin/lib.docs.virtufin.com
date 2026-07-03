@@ -2,12 +2,18 @@
 items:
 - uid: Virtufin.Core
   commentId: N:Virtufin.Core
-  id: Virtufin.Core
+  id: Core
+  parent: Virtufin
   children:
   - Virtufin.Core.Attribute`2
+  - Virtufin.Core.Behaviour
+  - Virtufin.Core.Clock
+  - Virtufin.Core.Contracts
   - Virtufin.Core.DictionaryValueProvider`1
   - Virtufin.Core.EntityAttributeValueTypeSpecifier`1
   - Virtufin.Core.EntityIdentifier`1
+  - Virtufin.Core.Events
+  - Virtufin.Core.Execution
   - Virtufin.Core.FunctionValueProvider`1
   - Virtufin.Core.IAttribute`1
   - Virtufin.Core.IDependencies
@@ -23,10 +29,16 @@ items:
   - Virtufin.Core.IValueDependencies
   - Virtufin.Core.IValueProvider
   - Virtufin.Core.IValueProviders
+  - Virtufin.Core.Identifiers
+  - Virtufin.Core.Messaging
   - Virtufin.Core.Metronome
   - Virtufin.Core.ObservableProvider`1
+  - Virtufin.Core.Position
+  - Virtufin.Core.Predicates
   - Virtufin.Core.Registry
+  - Virtufin.Core.Scenario
   - Virtufin.Core.TaskProvider`1
+  - Virtufin.Core.VirtufinTypes
   langs:
   - csharp
   - vb
@@ -37,6 +49,336 @@ items:
   assemblies:
   - Virtufin.Core
 references:
+- uid: Virtufin.Core.Behaviour
+  commentId: N:Virtufin.Core.Behaviour
+  href: Virtufin.html
+  name: Virtufin.Core.Behaviour
+  nameWithType: Virtufin.Core.Behaviour
+  fullName: Virtufin.Core.Behaviour
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Behaviour
+    name: Behaviour
+    href: Virtufin.Core.Behaviour.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Behaviour
+    name: Behaviour
+    href: Virtufin.Core.Behaviour.html
+- uid: Virtufin.Core.Clock
+  commentId: N:Virtufin.Core.Clock
+  href: Virtufin.html
+  name: Virtufin.Core.Clock
+  nameWithType: Virtufin.Core.Clock
+  fullName: Virtufin.Core.Clock
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Clock
+    name: Clock
+    href: Virtufin.Core.Clock.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Clock
+    name: Clock
+    href: Virtufin.Core.Clock.html
+- uid: Virtufin.Core.Contracts
+  commentId: N:Virtufin.Core.Contracts
+  href: Virtufin.html
+  name: Virtufin.Core.Contracts
+  nameWithType: Virtufin.Core.Contracts
+  fullName: Virtufin.Core.Contracts
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Contracts
+    name: Contracts
+    href: Virtufin.Core.Contracts.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Contracts
+    name: Contracts
+    href: Virtufin.Core.Contracts.html
+- uid: Virtufin.Core.Events
+  commentId: N:Virtufin.Core.Events
+  href: Virtufin.html
+  name: Virtufin.Core.Events
+  nameWithType: Virtufin.Core.Events
+  fullName: Virtufin.Core.Events
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+- uid: Virtufin.Core.Execution
+  commentId: N:Virtufin.Core.Execution
+  href: Virtufin.html
+  name: Virtufin.Core.Execution
+  nameWithType: Virtufin.Core.Execution
+  fullName: Virtufin.Core.Execution
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Execution
+    name: Execution
+    href: Virtufin.Core.Execution.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Execution
+    name: Execution
+    href: Virtufin.Core.Execution.html
+- uid: Virtufin.Core.Identifiers
+  commentId: N:Virtufin.Core.Identifiers
+  href: Virtufin.html
+  name: Virtufin.Core.Identifiers
+  nameWithType: Virtufin.Core.Identifiers
+  fullName: Virtufin.Core.Identifiers
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html
+- uid: Virtufin.Core.Messaging
+  commentId: N:Virtufin.Core.Messaging
+  href: Virtufin.html
+  name: Virtufin.Core.Messaging
+  nameWithType: Virtufin.Core.Messaging
+  fullName: Virtufin.Core.Messaging
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Messaging
+    name: Messaging
+    href: Virtufin.Core.Messaging.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Messaging
+    name: Messaging
+    href: Virtufin.Core.Messaging.html
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: Virtufin.Core.Predicates
+  commentId: N:Virtufin.Core.Predicates
+  href: Virtufin.html
+  name: Virtufin.Core.Predicates
+  nameWithType: Virtufin.Core.Predicates
+  fullName: Virtufin.Core.Predicates
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Predicates
+    name: Predicates
+    href: Virtufin.Core.Predicates.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Predicates
+    name: Predicates
+    href: Virtufin.Core.Predicates.html
+- uid: Virtufin.Core.Scenario
+  commentId: N:Virtufin.Core.Scenario
+  href: Virtufin.html
+  name: Virtufin.Core.Scenario
+  nameWithType: Virtufin.Core.Scenario
+  fullName: Virtufin.Core.Scenario
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Scenario
+    name: Scenario
+    href: Virtufin.Core.Scenario.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Scenario
+    name: Scenario
+    href: Virtufin.Core.Scenario.html
+- uid: Virtufin.Core.VirtufinTypes
+  commentId: N:Virtufin.Core.VirtufinTypes
+  href: Virtufin.html
+  name: Virtufin.Core.VirtufinTypes
+  nameWithType: Virtufin.Core.VirtufinTypes
+  fullName: Virtufin.Core.VirtufinTypes
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.VirtufinTypes
+    name: VirtufinTypes
+    href: Virtufin.Core.VirtufinTypes.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.VirtufinTypes
+    name: VirtufinTypes
+    href: Virtufin.Core.VirtufinTypes.html
 - uid: Virtufin.Core.Attribute`2
   commentId: T:Virtufin.Core.Attribute`2
   href: Virtufin.Core.Attribute-2.html
@@ -199,20 +541,6 @@ references:
   name: IDependencies
   nameWithType: IDependencies
   fullName: Virtufin.Core.IDependencies
-- uid: Virtufin.Core.IValueDependencies
-  commentId: T:Virtufin.Core.IValueDependencies
-  parent: Virtufin.Core
-  href: Virtufin.Core.IValueDependencies.html
-  name: IValueDependencies
-  nameWithType: IValueDependencies
-  fullName: Virtufin.Core.IValueDependencies
-- uid: Virtufin.Core.IObservableDependencies
-  commentId: T:Virtufin.Core.IObservableDependencies
-  parent: Virtufin.Core
-  href: Virtufin.Core.IObservableDependencies.html
-  name: IObservableDependencies
-  nameWithType: IObservableDependencies
-  fullName: Virtufin.Core.IObservableDependencies
 - uid: Virtufin.Core.IEntity
   commentId: T:Virtufin.Core.IEntity
   href: Virtufin.Core.IEntity.html
@@ -233,6 +561,13 @@ references:
   name: IEntityIdentifier
   nameWithType: IEntityIdentifier
   fullName: Virtufin.Core.IEntityIdentifier
+- uid: Virtufin.Core.IObservableDependencies
+  commentId: T:Virtufin.Core.IObservableDependencies
+  parent: Virtufin.Core
+  href: Virtufin.Core.IObservableDependencies.html
+  name: IObservableDependencies
+  nameWithType: IObservableDependencies
+  fullName: Virtufin.Core.IObservableDependencies
 - uid: Virtufin.Core.IObservableProvider
   commentId: T:Virtufin.Core.IObservableProvider
   parent: Virtufin.Core
@@ -240,19 +575,6 @@ references:
   name: IObservableProvider
   nameWithType: IObservableProvider
   fullName: Virtufin.Core.IObservableProvider
-- uid: Virtufin.Core.IProviders
-  commentId: T:Virtufin.Core.IProviders
-  href: Virtufin.Core.IProviders.html
-  name: IProviders
-  nameWithType: IProviders
-  fullName: Virtufin.Core.IProviders
-- uid: Virtufin.Core.IValueProviders
-  commentId: T:Virtufin.Core.IValueProviders
-  parent: Virtufin.Core
-  href: Virtufin.Core.IValueProviders.html
-  name: IValueProviders
-  nameWithType: IValueProviders
-  fullName: Virtufin.Core.IValueProviders
 - uid: Virtufin.Core.IObservableProviders
   commentId: T:Virtufin.Core.IObservableProviders
   parent: Virtufin.Core
@@ -260,6 +582,12 @@ references:
   name: IObservableProviders
   nameWithType: IObservableProviders
   fullName: Virtufin.Core.IObservableProviders
+- uid: Virtufin.Core.IProviders
+  commentId: T:Virtufin.Core.IProviders
+  href: Virtufin.Core.IProviders.html
+  name: IProviders
+  nameWithType: IProviders
+  fullName: Virtufin.Core.IProviders
 - uid: Virtufin.Core.IRegistry
   commentId: T:Virtufin.Core.IRegistry
   parent: Virtufin.Core
@@ -274,6 +602,13 @@ references:
   name: ITaskProvider
   nameWithType: ITaskProvider
   fullName: Virtufin.Core.ITaskProvider
+- uid: Virtufin.Core.IValueDependencies
+  commentId: T:Virtufin.Core.IValueDependencies
+  parent: Virtufin.Core
+  href: Virtufin.Core.IValueDependencies.html
+  name: IValueDependencies
+  nameWithType: IValueDependencies
+  fullName: Virtufin.Core.IValueDependencies
 - uid: Virtufin.Core.IValueProvider
   commentId: T:Virtufin.Core.IValueProvider
   parent: Virtufin.Core
@@ -281,6 +616,13 @@ references:
   name: IValueProvider
   nameWithType: IValueProvider
   fullName: Virtufin.Core.IValueProvider
+- uid: Virtufin.Core.IValueProviders
+  commentId: T:Virtufin.Core.IValueProviders
+  parent: Virtufin.Core
+  href: Virtufin.Core.IValueProviders.html
+  name: IValueProviders
+  nameWithType: IValueProviders
+  fullName: Virtufin.Core.IValueProviders
 - uid: Virtufin.Core.Metronome
   commentId: T:Virtufin.Core.Metronome
   href: Virtufin.Core.Metronome.html

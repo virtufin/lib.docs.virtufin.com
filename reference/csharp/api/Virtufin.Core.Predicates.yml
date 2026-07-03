@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.Core.Predicates
   commentId: N:Virtufin.Core.Predicates
-  id: Virtufin.Core.Predicates
+  id: Predicates
+  parent: Virtufin.Core
   children:
   - Virtufin.Core.Predicates.AllMessageSelectorPredicate
   - Virtufin.Core.Predicates.ContractSelectorPredicate

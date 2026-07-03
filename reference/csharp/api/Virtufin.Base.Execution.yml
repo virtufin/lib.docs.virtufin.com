@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.Base.Execution
   commentId: N:Virtufin.Base.Execution
-  id: Virtufin.Base.Execution
+  id: Execution
+  parent: Virtufin.Base
   children:
   - Virtufin.Base.Execution.DeterministicExecutorBase`3
   - Virtufin.Base.Execution.DeterministicState
@@ -20,19 +21,6 @@ items:
   assemblies:
   - Virtufin.Base
 references:
-- uid: Virtufin.Base.Execution.DeterministicState
-  commentId: T:Virtufin.Base.Execution.DeterministicState
-  parent: Virtufin.Base.Execution
-  href: Virtufin.Base.Execution.DeterministicState.html
-  name: DeterministicState
-  nameWithType: DeterministicState
-  fullName: Virtufin.Base.Execution.DeterministicState
-- uid: Virtufin.Base.Execution.StochasticState
-  commentId: T:Virtufin.Base.Execution.StochasticState
-  href: Virtufin.Base.Execution.StochasticState.html
-  name: StochasticState
-  nameWithType: StochasticState
-  fullName: Virtufin.Base.Execution.StochasticState
 - uid: Virtufin.Base.Execution.DeterministicExecutorBase`3
   commentId: T:Virtufin.Base.Execution.DeterministicExecutorBase`3
   href: Virtufin.Base.Execution.DeterministicExecutorBase-3.html
@@ -70,43 +58,13 @@ references:
   - name: " "
   - name: TEvent
   - name: )
-- uid: Virtufin.Base.Execution.SlippageExecutorBase`3
-  commentId: T:Virtufin.Base.Execution.SlippageExecutorBase`3
-  href: Virtufin.Base.Execution.SlippageExecutorBase-3.html
-  name: SlippageExecutorBase<TState, TAction, TEvent>
-  nameWithType: SlippageExecutorBase<TState, TAction, TEvent>
-  fullName: Virtufin.Base.Execution.SlippageExecutorBase<TState, TAction, TEvent>
-  nameWithType.vb: SlippageExecutorBase(Of TState, TAction, TEvent)
-  fullName.vb: Virtufin.Base.Execution.SlippageExecutorBase(Of TState, TAction, TEvent)
-  name.vb: SlippageExecutorBase(Of TState, TAction, TEvent)
-  spec.csharp:
-  - uid: Virtufin.Base.Execution.SlippageExecutorBase`3
-    name: SlippageExecutorBase
-    href: Virtufin.Base.Execution.SlippageExecutorBase-3.html
-  - name: <
-  - name: TState
-  - name: ','
-  - name: " "
-  - name: TAction
-  - name: ','
-  - name: " "
-  - name: TEvent
-  - name: '>'
-  spec.vb:
-  - uid: Virtufin.Base.Execution.SlippageExecutorBase`3
-    name: SlippageExecutorBase
-    href: Virtufin.Base.Execution.SlippageExecutorBase-3.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TState
-  - name: ','
-  - name: " "
-  - name: TAction
-  - name: ','
-  - name: " "
-  - name: TEvent
-  - name: )
+- uid: Virtufin.Base.Execution.DeterministicState
+  commentId: T:Virtufin.Base.Execution.DeterministicState
+  parent: Virtufin.Base.Execution
+  href: Virtufin.Base.Execution.DeterministicState.html
+  name: DeterministicState
+  nameWithType: DeterministicState
+  fullName: Virtufin.Base.Execution.DeterministicState
 - uid: Virtufin.Base.Execution.LiveExecutorBase`3
   commentId: T:Virtufin.Base.Execution.LiveExecutorBase`3
   href: Virtufin.Base.Execution.LiveExecutorBase-3.html
@@ -181,6 +139,49 @@ references:
   - name: " "
   - name: TEvent
   - name: )
+- uid: Virtufin.Base.Execution.SlippageExecutorBase`3
+  commentId: T:Virtufin.Base.Execution.SlippageExecutorBase`3
+  href: Virtufin.Base.Execution.SlippageExecutorBase-3.html
+  name: SlippageExecutorBase<TState, TAction, TEvent>
+  nameWithType: SlippageExecutorBase<TState, TAction, TEvent>
+  fullName: Virtufin.Base.Execution.SlippageExecutorBase<TState, TAction, TEvent>
+  nameWithType.vb: SlippageExecutorBase(Of TState, TAction, TEvent)
+  fullName.vb: Virtufin.Base.Execution.SlippageExecutorBase(Of TState, TAction, TEvent)
+  name.vb: SlippageExecutorBase(Of TState, TAction, TEvent)
+  spec.csharp:
+  - uid: Virtufin.Base.Execution.SlippageExecutorBase`3
+    name: SlippageExecutorBase
+    href: Virtufin.Base.Execution.SlippageExecutorBase-3.html
+  - name: <
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TAction
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.Execution.SlippageExecutorBase`3
+    name: SlippageExecutorBase
+    href: Virtufin.Base.Execution.SlippageExecutorBase-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TAction
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: )
+- uid: Virtufin.Base.Execution.StochasticState
+  commentId: T:Virtufin.Base.Execution.StochasticState
+  href: Virtufin.Base.Execution.StochasticState.html
+  name: StochasticState
+  nameWithType: StochasticState
+  fullName: Virtufin.Base.Execution.StochasticState
 - uid: Virtufin.Base.Execution
   commentId: N:Virtufin.Base.Execution
   href: Virtufin.html

@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.Core.Clock
   commentId: N:Virtufin.Core.Clock
-  id: Virtufin.Core.Clock
+  id: Clock
+  parent: Virtufin.Core
   children:
   - Virtufin.Core.Clock.IClock
   langs:

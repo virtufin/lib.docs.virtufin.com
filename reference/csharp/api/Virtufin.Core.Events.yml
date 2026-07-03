@@ -2,14 +2,19 @@
 items:
 - uid: Virtufin.Core.Events
   commentId: N:Virtufin.Core.Events
-  id: Virtufin.Core.Events
+  id: Events
+  parent: Virtufin.Core
   children:
   - Virtufin.Core.Events.ClockType
   - Virtufin.Core.Events.CloudEvent
   - Virtufin.Core.Events.IEvent
   - Virtufin.Core.Events.IEventEnvelope
   - Virtufin.Core.Events.Lane
+  - Virtufin.Core.Events.Market
+  - Virtufin.Core.Events.Position
+  - Virtufin.Core.Events.Risk
   - Virtufin.Core.Events.Symbol
+  - Virtufin.Core.Events.Trade
   langs:
   - csharp
   - vb
@@ -20,6 +25,165 @@ items:
   assemblies:
   - Virtufin.Core
 references:
+- uid: Virtufin.Core.Events.Market
+  commentId: N:Virtufin.Core.Events.Market
+  href: Virtufin.html
+  name: Virtufin.Core.Events.Market
+  nameWithType: Virtufin.Core.Events.Market
+  fullName: Virtufin.Core.Events.Market
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  - name: .
+  - uid: Virtufin.Core.Events.Market
+    name: Market
+    href: Virtufin.Core.Events.Market.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  - name: .
+  - uid: Virtufin.Core.Events.Market
+    name: Market
+    href: Virtufin.Core.Events.Market.html
+- uid: Virtufin.Core.Events.Position
+  commentId: N:Virtufin.Core.Events.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Events.Position
+  nameWithType: Virtufin.Core.Events.Position
+  fullName: Virtufin.Core.Events.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  - name: .
+  - uid: Virtufin.Core.Events.Position
+    name: Position
+    href: Virtufin.Core.Events.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  - name: .
+  - uid: Virtufin.Core.Events.Position
+    name: Position
+    href: Virtufin.Core.Events.Position.html
+- uid: Virtufin.Core.Events.Risk
+  commentId: N:Virtufin.Core.Events.Risk
+  href: Virtufin.html
+  name: Virtufin.Core.Events.Risk
+  nameWithType: Virtufin.Core.Events.Risk
+  fullName: Virtufin.Core.Events.Risk
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  - name: .
+  - uid: Virtufin.Core.Events.Risk
+    name: Risk
+    href: Virtufin.Core.Events.Risk.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  - name: .
+  - uid: Virtufin.Core.Events.Risk
+    name: Risk
+    href: Virtufin.Core.Events.Risk.html
+- uid: Virtufin.Core.Events.Trade
+  commentId: N:Virtufin.Core.Events.Trade
+  href: Virtufin.html
+  name: Virtufin.Core.Events.Trade
+  nameWithType: Virtufin.Core.Events.Trade
+  fullName: Virtufin.Core.Events.Trade
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  - name: .
+  - uid: Virtufin.Core.Events.Trade
+    name: Trade
+    href: Virtufin.Core.Events.Trade.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  - name: .
+  - uid: Virtufin.Core.Events.Trade
+    name: Trade
+    href: Virtufin.Core.Events.Trade.html
+- uid: Virtufin.Core.Events.ClockType
+  commentId: T:Virtufin.Core.Events.ClockType
+  parent: Virtufin.Core.Events
+  href: Virtufin.Core.Events.ClockType.html
+  name: ClockType
+  nameWithType: ClockType
+  fullName: Virtufin.Core.Events.ClockType
 - uid: Virtufin.Core.Events.CloudEvent
   commentId: T:Virtufin.Core.Events.CloudEvent
   parent: Virtufin.Core.Events
@@ -48,13 +212,6 @@ references:
   name: Lane
   nameWithType: Lane
   fullName: Virtufin.Core.Events.Lane
-- uid: Virtufin.Core.Events.ClockType
-  commentId: T:Virtufin.Core.Events.ClockType
-  parent: Virtufin.Core.Events
-  href: Virtufin.Core.Events.ClockType.html
-  name: ClockType
-  nameWithType: ClockType
-  fullName: Virtufin.Core.Events.ClockType
 - uid: Virtufin.Core.Events.Symbol
   commentId: T:Virtufin.Core.Events.Symbol
   parent: Virtufin.Core.Events

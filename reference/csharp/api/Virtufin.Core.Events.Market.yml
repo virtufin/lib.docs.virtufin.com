@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.Core.Events.Market
   commentId: N:Virtufin.Core.Events.Market
-  id: Virtufin.Core.Events.Market
+  id: Market
+  parent: Virtufin.Core.Events
   children:
   - Virtufin.Core.Events.Market.IMarketEvent
   langs:

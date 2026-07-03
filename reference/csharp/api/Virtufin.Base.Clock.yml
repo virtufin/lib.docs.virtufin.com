@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.Base.Clock
   commentId: N:Virtufin.Base.Clock
-  id: Virtufin.Base.Clock
+  id: Clock
+  parent: Virtufin.Base
   children:
   - Virtufin.Base.Clock.ReplayClock
   - Virtufin.Base.Clock.WallClock
@@ -16,6 +17,12 @@ items:
   assemblies:
   - Virtufin.Base
 references:
+- uid: Virtufin.Base.Clock.ReplayClock
+  commentId: T:Virtufin.Base.Clock.ReplayClock
+  href: Virtufin.Base.Clock.ReplayClock.html
+  name: ReplayClock
+  nameWithType: ReplayClock
+  fullName: Virtufin.Base.Clock.ReplayClock
 - uid: Virtufin.Base.Clock.WallClock
   commentId: T:Virtufin.Base.Clock.WallClock
   parent: Virtufin.Base.Clock
@@ -23,12 +30,6 @@ references:
   name: WallClock
   nameWithType: WallClock
   fullName: Virtufin.Base.Clock.WallClock
-- uid: Virtufin.Base.Clock.ReplayClock
-  commentId: T:Virtufin.Base.Clock.ReplayClock
-  href: Virtufin.Base.Clock.ReplayClock.html
-  name: ReplayClock
-  nameWithType: ReplayClock
-  fullName: Virtufin.Base.Clock.ReplayClock
 - uid: Virtufin.Base.Clock
   commentId: N:Virtufin.Base.Clock
   href: Virtufin.html

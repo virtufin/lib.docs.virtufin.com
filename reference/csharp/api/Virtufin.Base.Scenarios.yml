@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.Base.Scenarios
   commentId: N:Virtufin.Base.Scenarios
-  id: Virtufin.Base.Scenarios
+  id: Scenarios
+  parent: Virtufin.Base
   children:
   - Virtufin.Base.Scenarios.InMemoryScenarioRegistry
   - Virtufin.Base.Scenarios.ScenarioConfiguration
@@ -23,15 +24,15 @@ references:
   name: InMemoryScenarioRegistry
   nameWithType: InMemoryScenarioRegistry
   fullName: Virtufin.Base.Scenarios.InMemoryScenarioRegistry
-- uid: Virtufin.Base.Scenarios.StandardScenarios
-  commentId: T:Virtufin.Base.Scenarios.StandardScenarios
-  href: Virtufin.Base.Scenarios.StandardScenarios.html
-  name: StandardScenarios
-  nameWithType: StandardScenarios
-  fullName: Virtufin.Base.Scenarios.StandardScenarios
 - uid: Virtufin.Base.Scenarios.ScenarioConfiguration
   commentId: T:Virtufin.Base.Scenarios.ScenarioConfiguration
   href: Virtufin.Base.Scenarios.ScenarioConfiguration.html
   name: ScenarioConfiguration
   nameWithType: ScenarioConfiguration
   fullName: Virtufin.Base.Scenarios.ScenarioConfiguration
+- uid: Virtufin.Base.Scenarios.StandardScenarios
+  commentId: T:Virtufin.Base.Scenarios.StandardScenarios
+  href: Virtufin.Base.Scenarios.StandardScenarios.html
+  name: StandardScenarios
+  nameWithType: StandardScenarios
+  fullName: Virtufin.Base.Scenarios.StandardScenarios

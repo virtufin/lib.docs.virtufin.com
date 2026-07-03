@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.Core.Events.Risk
   commentId: N:Virtufin.Core.Events.Risk
-  id: Virtufin.Core.Events.Risk
+  id: Risk
+  parent: Virtufin.Core.Events
   children:
   - Virtufin.Core.Events.Risk.IRiskEvent
   langs:

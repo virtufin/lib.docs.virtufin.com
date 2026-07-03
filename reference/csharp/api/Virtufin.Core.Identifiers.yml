@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.Core.Identifiers
   commentId: N:Virtufin.Core.Identifiers
-  id: Virtufin.Core.Identifiers
+  id: Identifiers
+  parent: Virtufin.Core
   children:
   - Virtufin.Core.Identifiers.IAssetIdentifier
   - Virtufin.Core.Identifiers.IContractIdentifier

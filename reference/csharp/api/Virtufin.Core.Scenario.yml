@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.Core.Scenario
   commentId: N:Virtufin.Core.Scenario
-  id: Virtufin.Core.Scenario
+  id: Scenario
+  parent: Virtufin.Core
   children:
   - Virtufin.Core.Scenario.IScenarioConfiguration
   - Virtufin.Core.Scenario.IScenarioRegistry

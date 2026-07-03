@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.Core.VirtufinTypes
   commentId: N:Virtufin.Core.VirtufinTypes
-  id: Virtufin.Core.VirtufinTypes
+  id: VirtufinTypes
+  parent: Virtufin.Core
   children:
   - Virtufin.Core.VirtufinTypes.IVirtufinTypes
   langs:

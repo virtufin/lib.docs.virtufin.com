@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.Core.Execution
   commentId: N:Virtufin.Core.Execution
-  id: Virtufin.Core.Execution
+  id: Execution
+  parent: Virtufin.Core
   children:
   - Virtufin.Core.Execution.IExecutionState
   - Virtufin.Core.Execution.IExecutor`3

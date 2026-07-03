@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.Core.Contracts
   commentId: N:Virtufin.Core.Contracts
-  id: Virtufin.Core.Contracts
+  id: Contracts
+  parent: Virtufin.Core
   children:
   - Virtufin.Core.Contracts.IAsset
   - Virtufin.Core.Contracts.IContract

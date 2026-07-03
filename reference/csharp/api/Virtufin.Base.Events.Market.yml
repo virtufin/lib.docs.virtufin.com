@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.Base.Events.Market
   commentId: N:Virtufin.Base.Events.Market
-  id: Virtufin.Base.Events.Market
+  id: Market
+  parent: Virtufin.Base.Events
   children:
   - Virtufin.Base.Events.Market.MarketEvent
   - Virtufin.Base.Events.Market.MarketEvent.OrderBookReceived
@@ -29,28 +30,6 @@ references:
   name: MarketEvent
   nameWithType: MarketEvent
   fullName: Virtufin.Base.Events.Market.MarketEvent
-- uid: Virtufin.Base.Events.Market.MarketEvent.TickReceived
-  commentId: T:Virtufin.Base.Events.Market.MarketEvent.TickReceived
-  href: Virtufin.Base.Events.Market.MarketEvent.html
-  name: MarketEvent.TickReceived
-  nameWithType: MarketEvent.TickReceived
-  fullName: Virtufin.Base.Events.Market.MarketEvent.TickReceived
-  spec.csharp:
-  - uid: Virtufin.Base.Events.Market.MarketEvent
-    name: MarketEvent
-    href: Virtufin.Base.Events.Market.MarketEvent.html
-  - name: .
-  - uid: Virtufin.Base.Events.Market.MarketEvent.TickReceived
-    name: TickReceived
-    href: Virtufin.Base.Events.Market.MarketEvent.TickReceived.html
-  spec.vb:
-  - uid: Virtufin.Base.Events.Market.MarketEvent
-    name: MarketEvent
-    href: Virtufin.Base.Events.Market.MarketEvent.html
-  - name: .
-  - uid: Virtufin.Base.Events.Market.MarketEvent.TickReceived
-    name: TickReceived
-    href: Virtufin.Base.Events.Market.MarketEvent.TickReceived.html
 - uid: Virtufin.Base.Events.Market.MarketEvent.OrderBookReceived
   commentId: T:Virtufin.Base.Events.Market.MarketEvent.OrderBookReceived
   href: Virtufin.Base.Events.Market.MarketEvent.html
@@ -73,6 +52,28 @@ references:
   - uid: Virtufin.Base.Events.Market.MarketEvent.OrderBookReceived
     name: OrderBookReceived
     href: Virtufin.Base.Events.Market.MarketEvent.OrderBookReceived.html
+- uid: Virtufin.Base.Events.Market.MarketEvent.TickReceived
+  commentId: T:Virtufin.Base.Events.Market.MarketEvent.TickReceived
+  href: Virtufin.Base.Events.Market.MarketEvent.html
+  name: MarketEvent.TickReceived
+  nameWithType: MarketEvent.TickReceived
+  fullName: Virtufin.Base.Events.Market.MarketEvent.TickReceived
+  spec.csharp:
+  - uid: Virtufin.Base.Events.Market.MarketEvent
+    name: MarketEvent
+    href: Virtufin.Base.Events.Market.MarketEvent.html
+  - name: .
+  - uid: Virtufin.Base.Events.Market.MarketEvent.TickReceived
+    name: TickReceived
+    href: Virtufin.Base.Events.Market.MarketEvent.TickReceived.html
+  spec.vb:
+  - uid: Virtufin.Base.Events.Market.MarketEvent
+    name: MarketEvent
+    href: Virtufin.Base.Events.Market.MarketEvent.html
+  - name: .
+  - uid: Virtufin.Base.Events.Market.MarketEvent.TickReceived
+    name: TickReceived
+    href: Virtufin.Base.Events.Market.MarketEvent.TickReceived.html
 - uid: Virtufin.Base.Events.Market.RichMarketEvent
   commentId: T:Virtufin.Base.Events.Market.RichMarketEvent
   parent: Virtufin.Base.Events.Market
@@ -80,6 +81,28 @@ references:
   name: RichMarketEvent
   nameWithType: RichMarketEvent
   fullName: Virtufin.Base.Events.Market.RichMarketEvent
+- uid: Virtufin.Base.Events.Market.RichMarketEvent.Base
+  commentId: T:Virtufin.Base.Events.Market.RichMarketEvent.Base
+  href: Virtufin.Base.Events.Market.RichMarketEvent.html
+  name: RichMarketEvent.Base
+  nameWithType: RichMarketEvent.Base
+  fullName: Virtufin.Base.Events.Market.RichMarketEvent.Base
+  spec.csharp:
+  - uid: Virtufin.Base.Events.Market.RichMarketEvent
+    name: RichMarketEvent
+    href: Virtufin.Base.Events.Market.RichMarketEvent.html
+  - name: .
+  - uid: Virtufin.Base.Events.Market.RichMarketEvent.Base
+    name: Base
+    href: Virtufin.Base.Events.Market.RichMarketEvent.Base.html
+  spec.vb:
+  - uid: Virtufin.Base.Events.Market.RichMarketEvent
+    name: RichMarketEvent
+    href: Virtufin.Base.Events.Market.RichMarketEvent.html
+  - name: .
+  - uid: Virtufin.Base.Events.Market.RichMarketEvent.Base
+    name: Base
+    href: Virtufin.Base.Events.Market.RichMarketEvent.Base.html
 - uid: Virtufin.Base.Events.Market.RichMarketEvent.CandleClosed
   commentId: T:Virtufin.Base.Events.Market.RichMarketEvent.CandleClosed
   href: Virtufin.Base.Events.Market.RichMarketEvent.html
@@ -146,28 +169,6 @@ references:
   - uid: Virtufin.Base.Events.Market.RichMarketEvent.VolatilityEstimate
     name: VolatilityEstimate
     href: Virtufin.Base.Events.Market.RichMarketEvent.VolatilityEstimate.html
-- uid: Virtufin.Base.Events.Market.RichMarketEvent.Base
-  commentId: T:Virtufin.Base.Events.Market.RichMarketEvent.Base
-  href: Virtufin.Base.Events.Market.RichMarketEvent.html
-  name: RichMarketEvent.Base
-  nameWithType: RichMarketEvent.Base
-  fullName: Virtufin.Base.Events.Market.RichMarketEvent.Base
-  spec.csharp:
-  - uid: Virtufin.Base.Events.Market.RichMarketEvent
-    name: RichMarketEvent
-    href: Virtufin.Base.Events.Market.RichMarketEvent.html
-  - name: .
-  - uid: Virtufin.Base.Events.Market.RichMarketEvent.Base
-    name: Base
-    href: Virtufin.Base.Events.Market.RichMarketEvent.Base.html
-  spec.vb:
-  - uid: Virtufin.Base.Events.Market.RichMarketEvent
-    name: RichMarketEvent
-    href: Virtufin.Base.Events.Market.RichMarketEvent.html
-  - name: .
-  - uid: Virtufin.Base.Events.Market.RichMarketEvent.Base
-    name: Base
-    href: Virtufin.Base.Events.Market.RichMarketEvent.Base.html
 - uid: Virtufin.Base.Events.Market
   commentId: N:Virtufin.Base.Events.Market
   href: Virtufin.html

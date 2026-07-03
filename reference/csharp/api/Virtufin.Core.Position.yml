@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.Core.Position
   commentId: N:Virtufin.Core.Position
-  id: Virtufin.Core.Position
+  id: Position
+  parent: Virtufin.Core
   children:
   - Virtufin.Core.Position.BuyOrSell
   - Virtufin.Core.Position.DecimalAmount
