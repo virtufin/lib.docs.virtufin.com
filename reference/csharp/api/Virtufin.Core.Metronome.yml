@@ -1,0 +1,476 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Metronome
+  commentId: T:Virtufin.Core.Metronome
+  id: Metronome
+  parent: Virtufin.Core
+  children:
+  - Virtufin.Core.Metronome.#ctor
+  - Virtufin.Core.Metronome.#ctor(System.TimeSpan)
+  - Virtufin.Core.Metronome.CreateObservable
+  langs:
+  - csharp
+  - vb
+  name: Metronome
+  nameWithType: Metronome
+  fullName: Virtufin.Core.Metronome
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Core/Metronome.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Metronome
+    path: ../../../src/Virtufin.Core/Metronome.cs
+    startLine: 4
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core
+  syntax:
+    content: public class Metronome
+    content.vb: Public Class Metronome
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.Core.Metronome.#ctor(System.TimeSpan)
+  commentId: M:Virtufin.Core.Metronome.#ctor(System.TimeSpan)
+  id: '#ctor(System.TimeSpan)'
+  parent: Virtufin.Core.Metronome
+  langs:
+  - csharp
+  - vb
+  name: Metronome(TimeSpan)
+  nameWithType: Metronome.Metronome(TimeSpan)
+  fullName: Virtufin.Core.Metronome.Metronome(System.TimeSpan)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Core/Metronome.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Core/Metronome.cs
+    startLine: 7
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core
+  syntax:
+    content: public Metronome(TimeSpan interval)
+    parameters:
+    - id: interval
+      type: System.TimeSpan
+    content.vb: Public Sub New(interval As TimeSpan)
+  overload: Virtufin.Core.Metronome.#ctor*
+  nameWithType.vb: Metronome.New(TimeSpan)
+  fullName.vb: Virtufin.Core.Metronome.New(System.TimeSpan)
+  name.vb: New(TimeSpan)
+- uid: Virtufin.Core.Metronome.#ctor
+  commentId: M:Virtufin.Core.Metronome.#ctor
+  id: '#ctor'
+  parent: Virtufin.Core.Metronome
+  langs:
+  - csharp
+  - vb
+  name: Metronome()
+  nameWithType: Metronome.Metronome()
+  fullName: Virtufin.Core.Metronome.Metronome()
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Core/Metronome.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Core/Metronome.cs
+    startLine: 11
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core
+  syntax:
+    content: public Metronome()
+    content.vb: Public Sub New()
+  overload: Virtufin.Core.Metronome.#ctor*
+  nameWithType.vb: Metronome.New()
+  fullName.vb: Virtufin.Core.Metronome.New()
+  name.vb: New()
+- uid: Virtufin.Core.Metronome.CreateObservable
+  commentId: M:Virtufin.Core.Metronome.CreateObservable
+  id: CreateObservable
+  parent: Virtufin.Core.Metronome
+  langs:
+  - csharp
+  - vb
+  name: CreateObservable()
+  nameWithType: Metronome.CreateObservable()
+  fullName: Virtufin.Core.Metronome.CreateObservable()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Metronome.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: CreateObservable
+    path: ../../../src/Virtufin.Core/Metronome.cs
+    startLine: 15
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core
+  syntax:
+    content: public IObservable<int> CreateObservable()
+    return:
+      type: System.IObservable{System.Int32}
+    content.vb: Public Function CreateObservable() As IObservable(Of Integer)
+  overload: Virtufin.Core.Metronome.CreateObservable*
+references:
+- uid: Virtufin.Core
+  commentId: N:Virtufin.Core
+  href: Virtufin.html
+  name: Virtufin.Core
+  nameWithType: Virtufin.Core
+  fullName: Virtufin.Core
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Core.Metronome.#ctor*
+  commentId: Overload:Virtufin.Core.Metronome.#ctor
+  href: Virtufin.Core.Metronome.html#Virtufin_Core_Metronome__ctor_System_TimeSpan_
+  name: Metronome
+  nameWithType: Metronome.Metronome
+  fullName: Virtufin.Core.Metronome.Metronome
+  nameWithType.vb: Metronome.New
+  fullName.vb: Virtufin.Core.Metronome.New
+  name.vb: New
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Virtufin.Core.Metronome.CreateObservable*
+  commentId: Overload:Virtufin.Core.Metronome.CreateObservable
+  href: Virtufin.Core.Metronome.html#Virtufin_Core_Metronome_CreateObservable
+  name: CreateObservable
+  nameWithType: Metronome.CreateObservable
+  fullName: Virtufin.Core.Metronome.CreateObservable
+- uid: System.IObservable{System.Int32}
+  commentId: T:System.IObservable{System.Int32}
+  parent: System
+  definition: System.IObservable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  name: IObservable<int>
+  nameWithType: IObservable<int>
+  fullName: System.IObservable<int>
+  nameWithType.vb: IObservable(Of Integer)
+  fullName.vb: System.IObservable(Of Integer)
+  name.vb: IObservable(Of Integer)
+  spec.csharp:
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.IObservable`1
+  commentId: T:System.IObservable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  name: IObservable<T>
+  nameWithType: IObservable<T>
+  fullName: System.IObservable<T>
+  nameWithType.vb: IObservable(Of T)
+  fullName.vb: System.IObservable(Of T)
+  name.vb: IObservable(Of T)
+  spec.csharp:
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

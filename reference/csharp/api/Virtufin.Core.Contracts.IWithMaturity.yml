@@ -1,0 +1,475 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Contracts.IWithMaturity
+  commentId: T:Virtufin.Core.Contracts.IWithMaturity
+  id: IWithMaturity
+  parent: Virtufin.Core.Contracts
+  children:
+  - Virtufin.Core.Contracts.IWithMaturity.Maturity
+  langs:
+  - csharp
+  - vb
+  name: IWithMaturity
+  nameWithType: IWithMaturity
+  fullName: Virtufin.Core.Contracts.IWithMaturity
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Contracts/IWithMaturity.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IWithMaturity
+    path: ../../../src/Virtufin.Core/Contracts/IWithMaturity.cs
+    startLine: 6
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Contracts
+  summary: >-
+    A contract that has a definite maturity (the time-point at which it
+
+    settles). Used by <code>MaturitySelectorPredicate</code> to filter messages.
+  example: []
+  syntax:
+    content: 'public interface IWithMaturity : IContract, IEquatable<IContract>'
+    content.vb: Public Interface IWithMaturity Inherits IContract, IEquatable(Of IContract)
+  derivedClasses:
+  - Virtufin.Base.PositionTransferContract
+  inheritedMembers:
+  - Virtufin.Core.Contracts.IContract.Identifier
+  - Virtufin.Core.Contracts.IContract.IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)
+  - Virtufin.Core.Contracts.IContract.IsRelatedMessage(Virtufin.Core.Contracts.IMessage)
+  - Virtufin.Core.Contracts.IContract.RelatedTransactions(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.ITransaction})
+  - Virtufin.Core.Contracts.IContract.RelatedMessages(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage})
+  - Virtufin.Core.Contracts.IContract.VerifyMessages(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage},Virtufin.Core.Contracts.IScenarioHistory)
+  - System.IEquatable{Virtufin.Core.Contracts.IContract}.Equals(Virtufin.Core.Contracts.IContract)
+- uid: Virtufin.Core.Contracts.IWithMaturity.Maturity
+  commentId: P:Virtufin.Core.Contracts.IWithMaturity.Maturity
+  id: Maturity
+  parent: Virtufin.Core.Contracts.IWithMaturity
+  langs:
+  - csharp
+  - vb
+  name: Maturity
+  nameWithType: IWithMaturity.Maturity
+  fullName: Virtufin.Core.Contracts.IWithMaturity.Maturity
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Contracts/IWithMaturity.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Maturity
+    path: ../../../src/Virtufin.Core/Contracts/IWithMaturity.cs
+    startLine: 9
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Contracts
+  summary: The time at which the contract settles.
+  example: []
+  syntax:
+    content: ITimeStamp Maturity { get; }
+    parameters: []
+    return:
+      type: Virtufin.Core.Identifiers.ITimeStamp
+    content.vb: ReadOnly Property Maturity As ITimeStamp
+  overload: Virtufin.Core.Contracts.IWithMaturity.Maturity*
+references:
+- uid: Virtufin.Core.Contracts
+  commentId: N:Virtufin.Core.Contracts
+  href: Virtufin.html
+  name: Virtufin.Core.Contracts
+  nameWithType: Virtufin.Core.Contracts
+  fullName: Virtufin.Core.Contracts
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Contracts
+    name: Contracts
+    href: Virtufin.Core.Contracts.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Contracts
+    name: Contracts
+    href: Virtufin.Core.Contracts.html
+- uid: Virtufin.Core.Contracts.IContract.Identifier
+  commentId: P:Virtufin.Core.Contracts.IContract.Identifier
+  parent: Virtufin.Core.Contracts.IContract
+  href: Virtufin.Core.Contracts.IContract.html#Virtufin_Core_Contracts_IContract_Identifier
+  name: Identifier
+  nameWithType: IContract.Identifier
+  fullName: Virtufin.Core.Contracts.IContract.Identifier
+- uid: Virtufin.Core.Contracts.IContract.IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)
+  commentId: M:Virtufin.Core.Contracts.IContract.IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)
+  parent: Virtufin.Core.Contracts.IContract
+  href: Virtufin.Core.Contracts.IContract.html#Virtufin_Core_Contracts_IContract_IsRelatedTransaction_Virtufin_Core_Contracts_ITransaction_
+  name: IsRelatedTransaction(ITransaction)
+  nameWithType: IContract.IsRelatedTransaction(ITransaction)
+  fullName: Virtufin.Core.Contracts.IContract.IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)
+  spec.csharp:
+  - uid: Virtufin.Core.Contracts.IContract.IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)
+    name: IsRelatedTransaction
+    href: Virtufin.Core.Contracts.IContract.html#Virtufin_Core_Contracts_IContract_IsRelatedTransaction_Virtufin_Core_Contracts_ITransaction_
+  - name: (
+  - uid: Virtufin.Core.Contracts.ITransaction
+    name: ITransaction
+    href: Virtufin.Core.Contracts.ITransaction.html
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Contracts.IContract.IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)
+    name: IsRelatedTransaction
+    href: Virtufin.Core.Contracts.IContract.html#Virtufin_Core_Contracts_IContract_IsRelatedTransaction_Virtufin_Core_Contracts_ITransaction_
+  - name: (
+  - uid: Virtufin.Core.Contracts.ITransaction
+    name: ITransaction
+    href: Virtufin.Core.Contracts.ITransaction.html
+  - name: )
+- uid: Virtufin.Core.Contracts.IContract.IsRelatedMessage(Virtufin.Core.Contracts.IMessage)
+  commentId: M:Virtufin.Core.Contracts.IContract.IsRelatedMessage(Virtufin.Core.Contracts.IMessage)
+  parent: Virtufin.Core.Contracts.IContract
+  href: Virtufin.Core.Contracts.IContract.html#Virtufin_Core_Contracts_IContract_IsRelatedMessage_Virtufin_Core_Contracts_IMessage_
+  name: IsRelatedMessage(IMessage)
+  nameWithType: IContract.IsRelatedMessage(IMessage)
+  fullName: Virtufin.Core.Contracts.IContract.IsRelatedMessage(Virtufin.Core.Contracts.IMessage)
+  spec.csharp:
+  - uid: Virtufin.Core.Contracts.IContract.IsRelatedMessage(Virtufin.Core.Contracts.IMessage)
+    name: IsRelatedMessage
+    href: Virtufin.Core.Contracts.IContract.html#Virtufin_Core_Contracts_IContract_IsRelatedMessage_Virtufin_Core_Contracts_IMessage_
+  - name: (
+  - uid: Virtufin.Core.Contracts.IMessage
+    name: IMessage
+    href: Virtufin.Core.Contracts.IMessage.html
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Contracts.IContract.IsRelatedMessage(Virtufin.Core.Contracts.IMessage)
+    name: IsRelatedMessage
+    href: Virtufin.Core.Contracts.IContract.html#Virtufin_Core_Contracts_IContract_IsRelatedMessage_Virtufin_Core_Contracts_IMessage_
+  - name: (
+  - uid: Virtufin.Core.Contracts.IMessage
+    name: IMessage
+    href: Virtufin.Core.Contracts.IMessage.html
+  - name: )
+- uid: Virtufin.Core.Contracts.IContract.RelatedTransactions(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.ITransaction})
+  commentId: M:Virtufin.Core.Contracts.IContract.RelatedTransactions(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.ITransaction})
+  parent: Virtufin.Core.Contracts.IContract
+  isExternal: true
+  href: Virtufin.Core.Contracts.IContract.html#Virtufin_Core_Contracts_IContract_RelatedTransactions_System_Collections_Generic_IEnumerable_Virtufin_Core_Contracts_ITransaction__
+  name: RelatedTransactions(IEnumerable<ITransaction>)
+  nameWithType: IContract.RelatedTransactions(IEnumerable<ITransaction>)
+  fullName: Virtufin.Core.Contracts.IContract.RelatedTransactions(System.Collections.Generic.IEnumerable<Virtufin.Core.Contracts.ITransaction>)
+  nameWithType.vb: IContract.RelatedTransactions(IEnumerable(Of ITransaction))
+  fullName.vb: Virtufin.Core.Contracts.IContract.RelatedTransactions(System.Collections.Generic.IEnumerable(Of Virtufin.Core.Contracts.ITransaction))
+  name.vb: RelatedTransactions(IEnumerable(Of ITransaction))
+  spec.csharp:
+  - uid: Virtufin.Core.Contracts.IContract.RelatedTransactions(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.ITransaction})
+    name: RelatedTransactions
+    href: Virtufin.Core.Contracts.IContract.html#Virtufin_Core_Contracts_IContract_RelatedTransactions_System_Collections_Generic_IEnumerable_Virtufin_Core_Contracts_ITransaction__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Virtufin.Core.Contracts.ITransaction
+    name: ITransaction
+    href: Virtufin.Core.Contracts.ITransaction.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Contracts.IContract.RelatedTransactions(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.ITransaction})
+    name: RelatedTransactions
+    href: Virtufin.Core.Contracts.IContract.html#Virtufin_Core_Contracts_IContract_RelatedTransactions_System_Collections_Generic_IEnumerable_Virtufin_Core_Contracts_ITransaction__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Contracts.ITransaction
+    name: ITransaction
+    href: Virtufin.Core.Contracts.ITransaction.html
+  - name: )
+  - name: )
+- uid: Virtufin.Core.Contracts.IContract.RelatedMessages(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage})
+  commentId: M:Virtufin.Core.Contracts.IContract.RelatedMessages(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage})
+  parent: Virtufin.Core.Contracts.IContract
+  isExternal: true
+  href: Virtufin.Core.Contracts.IContract.html#Virtufin_Core_Contracts_IContract_RelatedMessages_System_Collections_Generic_IEnumerable_Virtufin_Core_Contracts_IMessage__
+  name: RelatedMessages(IEnumerable<IMessage>)
+  nameWithType: IContract.RelatedMessages(IEnumerable<IMessage>)
+  fullName: Virtufin.Core.Contracts.IContract.RelatedMessages(System.Collections.Generic.IEnumerable<Virtufin.Core.Contracts.IMessage>)
+  nameWithType.vb: IContract.RelatedMessages(IEnumerable(Of IMessage))
+  fullName.vb: Virtufin.Core.Contracts.IContract.RelatedMessages(System.Collections.Generic.IEnumerable(Of Virtufin.Core.Contracts.IMessage))
+  name.vb: RelatedMessages(IEnumerable(Of IMessage))
+  spec.csharp:
+  - uid: Virtufin.Core.Contracts.IContract.RelatedMessages(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage})
+    name: RelatedMessages
+    href: Virtufin.Core.Contracts.IContract.html#Virtufin_Core_Contracts_IContract_RelatedMessages_System_Collections_Generic_IEnumerable_Virtufin_Core_Contracts_IMessage__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Virtufin.Core.Contracts.IMessage
+    name: IMessage
+    href: Virtufin.Core.Contracts.IMessage.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Contracts.IContract.RelatedMessages(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage})
+    name: RelatedMessages
+    href: Virtufin.Core.Contracts.IContract.html#Virtufin_Core_Contracts_IContract_RelatedMessages_System_Collections_Generic_IEnumerable_Virtufin_Core_Contracts_IMessage__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Contracts.IMessage
+    name: IMessage
+    href: Virtufin.Core.Contracts.IMessage.html
+  - name: )
+  - name: )
+- uid: Virtufin.Core.Contracts.IContract.VerifyMessages(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage},Virtufin.Core.Contracts.IScenarioHistory)
+  commentId: M:Virtufin.Core.Contracts.IContract.VerifyMessages(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage},Virtufin.Core.Contracts.IScenarioHistory)
+  parent: Virtufin.Core.Contracts.IContract
+  isExternal: true
+  href: Virtufin.Core.Contracts.IContract.html#Virtufin_Core_Contracts_IContract_VerifyMessages_System_Collections_Generic_IEnumerable_Virtufin_Core_Contracts_IMessage__Virtufin_Core_Contracts_IScenarioHistory_
+  name: VerifyMessages(IEnumerable<IMessage>, IScenarioHistory)
+  nameWithType: IContract.VerifyMessages(IEnumerable<IMessage>, IScenarioHistory)
+  fullName: Virtufin.Core.Contracts.IContract.VerifyMessages(System.Collections.Generic.IEnumerable<Virtufin.Core.Contracts.IMessage>, Virtufin.Core.Contracts.IScenarioHistory)
+  nameWithType.vb: IContract.VerifyMessages(IEnumerable(Of IMessage), IScenarioHistory)
+  fullName.vb: Virtufin.Core.Contracts.IContract.VerifyMessages(System.Collections.Generic.IEnumerable(Of Virtufin.Core.Contracts.IMessage), Virtufin.Core.Contracts.IScenarioHistory)
+  name.vb: VerifyMessages(IEnumerable(Of IMessage), IScenarioHistory)
+  spec.csharp:
+  - uid: Virtufin.Core.Contracts.IContract.VerifyMessages(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage},Virtufin.Core.Contracts.IScenarioHistory)
+    name: VerifyMessages
+    href: Virtufin.Core.Contracts.IContract.html#Virtufin_Core_Contracts_IContract_VerifyMessages_System_Collections_Generic_IEnumerable_Virtufin_Core_Contracts_IMessage__Virtufin_Core_Contracts_IScenarioHistory_
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Virtufin.Core.Contracts.IMessage
+    name: IMessage
+    href: Virtufin.Core.Contracts.IMessage.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Contracts.IScenarioHistory
+    name: IScenarioHistory
+    href: Virtufin.Core.Contracts.IScenarioHistory.html
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Contracts.IContract.VerifyMessages(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage},Virtufin.Core.Contracts.IScenarioHistory)
+    name: VerifyMessages
+    href: Virtufin.Core.Contracts.IContract.html#Virtufin_Core_Contracts_IContract_VerifyMessages_System_Collections_Generic_IEnumerable_Virtufin_Core_Contracts_IMessage__Virtufin_Core_Contracts_IScenarioHistory_
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Contracts.IMessage
+    name: IMessage
+    href: Virtufin.Core.Contracts.IMessage.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Contracts.IScenarioHistory
+    name: IScenarioHistory
+    href: Virtufin.Core.Contracts.IScenarioHistory.html
+  - name: )
+- uid: System.IEquatable{Virtufin.Core.Contracts.IContract}.Equals(Virtufin.Core.Contracts.IContract)
+  commentId: M:System.IEquatable{Virtufin.Core.Contracts.IContract}.Equals(Virtufin.Core.Contracts.IContract)
+  parent: System.IEquatable{Virtufin.Core.Contracts.IContract}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(IContract)
+  nameWithType: IEquatable<IContract>.Equals(IContract)
+  fullName: System.IEquatable<Virtufin.Core.Contracts.IContract>.Equals(Virtufin.Core.Contracts.IContract)
+  nameWithType.vb: IEquatable(Of IContract).Equals(IContract)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Contracts.IContract).Equals(Virtufin.Core.Contracts.IContract)
+  spec.csharp:
+  - uid: System.IEquatable{Virtufin.Core.Contracts.IContract}.Equals(Virtufin.Core.Contracts.IContract)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Contracts.IContract
+    name: IContract
+    href: Virtufin.Core.Contracts.IContract.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Virtufin.Core.Contracts.IContract}.Equals(Virtufin.Core.Contracts.IContract)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Contracts.IContract
+    name: IContract
+    href: Virtufin.Core.Contracts.IContract.html
+  - name: )
+- uid: Virtufin.Core.Contracts.IContract
+  commentId: T:Virtufin.Core.Contracts.IContract
+  parent: Virtufin.Core.Contracts
+  href: Virtufin.Core.Contracts.IContract.html
+  name: IContract
+  nameWithType: IContract
+  fullName: Virtufin.Core.Contracts.IContract
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IEquatable{Virtufin.Core.Contracts.IContract}
+  commentId: T:System.IEquatable{Virtufin.Core.Contracts.IContract}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<IContract>
+  nameWithType: IEquatable<IContract>
+  fullName: System.IEquatable<Virtufin.Core.Contracts.IContract>
+  nameWithType.vb: IEquatable(Of IContract)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Contracts.IContract)
+  name.vb: IEquatable(Of IContract)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Contracts.IContract
+    name: IContract
+    href: Virtufin.Core.Contracts.IContract.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Contracts.IContract
+    name: IContract
+    href: Virtufin.Core.Contracts.IContract.html
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Core.Contracts.IWithMaturity.Maturity*
+  commentId: Overload:Virtufin.Core.Contracts.IWithMaturity.Maturity
+  href: Virtufin.Core.Contracts.IWithMaturity.html#Virtufin_Core_Contracts_IWithMaturity_Maturity
+  name: Maturity
+  nameWithType: IWithMaturity.Maturity
+  fullName: Virtufin.Core.Contracts.IWithMaturity.Maturity
+- uid: Virtufin.Core.Identifiers.ITimeStamp
+  commentId: T:Virtufin.Core.Identifiers.ITimeStamp
+  parent: Virtufin.Core.Identifiers
+  href: Virtufin.Core.Identifiers.ITimeStamp.html
+  name: ITimeStamp
+  nameWithType: ITimeStamp
+  fullName: Virtufin.Core.Identifiers.ITimeStamp
+- uid: Virtufin.Core.Identifiers
+  commentId: N:Virtufin.Core.Identifiers
+  href: Virtufin.html
+  name: Virtufin.Core.Identifiers
+  nameWithType: Virtufin.Core.Identifiers
+  fullName: Virtufin.Core.Identifiers
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html

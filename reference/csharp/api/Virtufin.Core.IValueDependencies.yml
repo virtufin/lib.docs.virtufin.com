@@ -1,0 +1,185 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.IValueDependencies
+  commentId: T:Virtufin.Core.IValueDependencies
+  id: IValueDependencies
+  parent: Virtufin.Core
+  children:
+  - Virtufin.Core.IValueDependencies.ValueDependencies
+  langs:
+  - csharp
+  - vb
+  name: IValueDependencies
+  nameWithType: IValueDependencies
+  fullName: Virtufin.Core.IValueDependencies
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/IDependencies.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IValueDependencies
+    path: ../../../src/Virtufin.Core/IDependencies.cs
+    startLine: 5
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core
+  syntax:
+    content: public interface IValueDependencies
+    content.vb: Public Interface IValueDependencies
+- uid: Virtufin.Core.IValueDependencies.ValueDependencies
+  commentId: P:Virtufin.Core.IValueDependencies.ValueDependencies
+  id: ValueDependencies
+  parent: Virtufin.Core.IValueDependencies
+  langs:
+  - csharp
+  - vb
+  name: ValueDependencies
+  nameWithType: IValueDependencies.ValueDependencies
+  fullName: Virtufin.Core.IValueDependencies.ValueDependencies
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/IDependencies.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ValueDependencies
+    path: ../../../src/Virtufin.Core/IDependencies.cs
+    startLine: 7
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core
+  syntax:
+    content: IEnumerable<IEntityAttributeValueTypeSpecifier> ValueDependencies { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{Virtufin.Core.IEntityAttributeValueTypeSpecifier}
+    content.vb: ReadOnly Property ValueDependencies As IEnumerable(Of IEntityAttributeValueTypeSpecifier)
+  overload: Virtufin.Core.IValueDependencies.ValueDependencies*
+references:
+- uid: Virtufin.Core
+  commentId: N:Virtufin.Core
+  href: Virtufin.html
+  name: Virtufin.Core
+  nameWithType: Virtufin.Core
+  fullName: Virtufin.Core
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+- uid: Virtufin.Core.IValueDependencies.ValueDependencies*
+  commentId: Overload:Virtufin.Core.IValueDependencies.ValueDependencies
+  href: Virtufin.Core.IValueDependencies.html#Virtufin_Core_IValueDependencies_ValueDependencies
+  name: ValueDependencies
+  nameWithType: IValueDependencies.ValueDependencies
+  fullName: Virtufin.Core.IValueDependencies.ValueDependencies
+- uid: System.Collections.Generic.IEnumerable{Virtufin.Core.IEntityAttributeValueTypeSpecifier}
+  commentId: T:System.Collections.Generic.IEnumerable{Virtufin.Core.IEntityAttributeValueTypeSpecifier}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IEntityAttributeValueTypeSpecifier>
+  nameWithType: IEnumerable<IEntityAttributeValueTypeSpecifier>
+  fullName: System.Collections.Generic.IEnumerable<Virtufin.Core.IEntityAttributeValueTypeSpecifier>
+  nameWithType.vb: IEnumerable(Of IEntityAttributeValueTypeSpecifier)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Virtufin.Core.IEntityAttributeValueTypeSpecifier)
+  name.vb: IEnumerable(Of IEntityAttributeValueTypeSpecifier)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Virtufin.Core.IEntityAttributeValueTypeSpecifier
+    name: IEntityAttributeValueTypeSpecifier
+    href: Virtufin.Core.IEntityAttributeValueTypeSpecifier.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.IEntityAttributeValueTypeSpecifier
+    name: IEntityAttributeValueTypeSpecifier
+    href: Virtufin.Core.IEntityAttributeValueTypeSpecifier.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

@@ -1,0 +1,1706 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Position.DecimalAmount
+  commentId: T:Virtufin.Core.Position.DecimalAmount
+  id: DecimalAmount
+  parent: Virtufin.Core.Position
+  children:
+  - Virtufin.Core.Position.DecimalAmount.#ctor(System.Int64,System.UInt64,System.Int32)
+  - Virtufin.Core.Position.DecimalAmount.CompareTo(Virtufin.Core.Position.DecimalAmount)
+  - Virtufin.Core.Position.DecimalAmount.DefaultPrecision
+  - Virtufin.Core.Position.DecimalAmount.Equals(Virtufin.Core.Position.DecimalAmount)
+  - Virtufin.Core.Position.DecimalAmount.Fraction
+  - Virtufin.Core.Position.DecimalAmount.From(System.Double,System.Int32)
+  - Virtufin.Core.Position.DecimalAmount.FromCardinal(System.Int64)
+  - Virtufin.Core.Position.DecimalAmount.GetHashCode
+  - Virtufin.Core.Position.DecimalAmount.GetValue
+  - Virtufin.Core.Position.DecimalAmount.N
+  - Virtufin.Core.Position.DecimalAmount.ToCardinal
+  - Virtufin.Core.Position.DecimalAmount.ToString
+  - Virtufin.Core.Position.DecimalAmount.Whole
+  - Virtufin.Core.Position.DecimalAmount.Zero
+  - Virtufin.Core.Position.DecimalAmount.op_Addition(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+  - Virtufin.Core.Position.DecimalAmount.op_Subtraction(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+  langs:
+  - csharp
+  - vb
+  name: DecimalAmount
+  nameWithType: DecimalAmount
+  fullName: Virtufin.Core.Position.DecimalAmount
+  type: Struct
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/DecimalAmount.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: DecimalAmount
+    path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  syntax:
+    content: 'public readonly record struct DecimalAmount : IEquatable<DecimalAmount>, IComparable<DecimalAmount>, IAmount<(long, ulong)>, IEquatable<IAmount<(long, ulong)>>, IComparable<IAmount<(long, ulong)>>, IAsCardinal<long>'
+    content.vb: Public Structure DecimalAmount Implements IEquatable(Of DecimalAmount), IComparable(Of DecimalAmount), IAmount(Of (Long, ULong)), IEquatable(Of IAmount(Of (Long, ULong))), IComparable(Of IAmount(Of (Long, ULong))), IAsCardinal(Of Long)
+  implements:
+  - System.IEquatable{Virtufin.Core.Position.DecimalAmount}
+  - System.IComparable{Virtufin.Core.Position.DecimalAmount}
+  - Virtufin.Core.Position.IAmount{System.ValueTuple{System.Int64,System.UInt64}}
+  - System.IEquatable{Virtufin.Core.Position.IAmount{System.ValueTuple{System.Int64,System.UInt64}}}
+  - System.IComparable{Virtufin.Core.Position.IAmount{System.ValueTuple{System.Int64,System.UInt64}}}
+  - Virtufin.Core.Position.IAsCardinal{System.Int64}
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Virtufin.Core.Position.DecimalAmount.#ctor(System.Int64,System.UInt64,System.Int32)
+  commentId: M:Virtufin.Core.Position.DecimalAmount.#ctor(System.Int64,System.UInt64,System.Int32)
+  id: '#ctor(System.Int64,System.UInt64,System.Int32)'
+  parent: Virtufin.Core.Position.DecimalAmount
+  langs:
+  - csharp
+  - vb
+  name: DecimalAmount(long, ulong, int)
+  nameWithType: DecimalAmount.DecimalAmount(long, ulong, int)
+  fullName: Virtufin.Core.Position.DecimalAmount.DecimalAmount(long, ulong, int)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/DecimalAmount.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  syntax:
+    content: public DecimalAmount(long Whole, ulong Fraction, int N)
+    parameters:
+    - id: Whole
+      type: System.Int64
+    - id: Fraction
+      type: System.UInt64
+    - id: N
+      type: System.Int32
+    content.vb: Public Sub New(Whole As Long, Fraction As ULong, N As Integer)
+  overload: Virtufin.Core.Position.DecimalAmount.#ctor*
+  nameWithType.vb: DecimalAmount.New(Long, ULong, Integer)
+  fullName.vb: Virtufin.Core.Position.DecimalAmount.New(Long, ULong, Integer)
+  name.vb: New(Long, ULong, Integer)
+- uid: Virtufin.Core.Position.DecimalAmount.Whole
+  commentId: P:Virtufin.Core.Position.DecimalAmount.Whole
+  id: Whole
+  parent: Virtufin.Core.Position.DecimalAmount
+  langs:
+  - csharp
+  - vb
+  name: Whole
+  nameWithType: DecimalAmount.Whole
+  fullName: Virtufin.Core.Position.DecimalAmount.Whole
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/DecimalAmount.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Whole
+    path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  syntax:
+    content: public long Whole { get; init; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Property Whole As Long
+  overload: Virtufin.Core.Position.DecimalAmount.Whole*
+- uid: Virtufin.Core.Position.DecimalAmount.Fraction
+  commentId: P:Virtufin.Core.Position.DecimalAmount.Fraction
+  id: Fraction
+  parent: Virtufin.Core.Position.DecimalAmount
+  langs:
+  - csharp
+  - vb
+  name: Fraction
+  nameWithType: DecimalAmount.Fraction
+  fullName: Virtufin.Core.Position.DecimalAmount.Fraction
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/DecimalAmount.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Fraction
+    path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  syntax:
+    content: public ulong Fraction { get; init; }
+    parameters: []
+    return:
+      type: System.UInt64
+    content.vb: Public Property Fraction As ULong
+  overload: Virtufin.Core.Position.DecimalAmount.Fraction*
+- uid: Virtufin.Core.Position.DecimalAmount.N
+  commentId: P:Virtufin.Core.Position.DecimalAmount.N
+  id: N
+  parent: Virtufin.Core.Position.DecimalAmount
+  langs:
+  - csharp
+  - vb
+  name: N
+  nameWithType: DecimalAmount.N
+  fullName: Virtufin.Core.Position.DecimalAmount.N
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/DecimalAmount.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: N
+    path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  syntax:
+    content: public int N { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property N As Integer
+  overload: Virtufin.Core.Position.DecimalAmount.N*
+- uid: Virtufin.Core.Position.DecimalAmount.Zero
+  commentId: P:Virtufin.Core.Position.DecimalAmount.Zero
+  id: Zero
+  parent: Virtufin.Core.Position.DecimalAmount
+  langs:
+  - csharp
+  - vb
+  name: Zero
+  nameWithType: DecimalAmount.Zero
+  fullName: Virtufin.Core.Position.DecimalAmount.Zero
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/DecimalAmount.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Zero
+    path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
+    startLine: 34
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: A zero amount at <xref href="Virtufin.Core.Position.DecimalAmount.DefaultPrecision" data-throw-if-not-resolved="false"></xref> precision.
+  example: []
+  syntax:
+    content: public static DecimalAmount Zero { get; }
+    parameters: []
+    return:
+      type: Virtufin.Core.Position.DecimalAmount
+    content.vb: Public Shared ReadOnly Property Zero As DecimalAmount
+  overload: Virtufin.Core.Position.DecimalAmount.Zero*
+- uid: Virtufin.Core.Position.DecimalAmount.DefaultPrecision
+  commentId: F:Virtufin.Core.Position.DecimalAmount.DefaultPrecision
+  id: DefaultPrecision
+  parent: Virtufin.Core.Position.DecimalAmount
+  langs:
+  - csharp
+  - vb
+  name: DefaultPrecision
+  nameWithType: DecimalAmount.DefaultPrecision
+  fullName: Virtufin.Core.Position.DecimalAmount.DefaultPrecision
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/DecimalAmount.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: DefaultPrecision
+    path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
+    startLine: 41
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    Default precision (fractional digits) for newly constructed amounts
+
+    when no precision is supplied. Matches conventional currency
+
+    representation.
+  example: []
+  syntax:
+    content: public const int DefaultPrecision = 2
+    return:
+      type: System.Int32
+    content.vb: Public Const DefaultPrecision As Integer = 2
+- uid: Virtufin.Core.Position.DecimalAmount.From(System.Double,System.Int32)
+  commentId: M:Virtufin.Core.Position.DecimalAmount.From(System.Double,System.Int32)
+  id: From(System.Double,System.Int32)
+  parent: Virtufin.Core.Position.DecimalAmount
+  langs:
+  - csharp
+  - vb
+  name: From(double, int)
+  nameWithType: DecimalAmount.From(double, int)
+  fullName: Virtufin.Core.Position.DecimalAmount.From(double, int)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/DecimalAmount.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: From
+    path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
+    startLine: 48
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Construct a <xref href="Virtufin.Core.Position.DecimalAmount" data-throw-if-not-resolved="false"></xref> from a <xref href="System.Double" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static DecimalAmount From(double value, int n)
+    parameters:
+    - id: value
+      type: System.Double
+      description: Source value.
+    - id: n
+      type: System.Int32
+      description: Precision (number of fractional digits).
+    return:
+      type: Virtufin.Core.Position.DecimalAmount
+    content.vb: Public Shared Function From(value As Double, n As Integer) As DecimalAmount
+  overload: Virtufin.Core.Position.DecimalAmount.From*
+  nameWithType.vb: DecimalAmount.From(Double, Integer)
+  fullName.vb: Virtufin.Core.Position.DecimalAmount.From(Double, Integer)
+  name.vb: From(Double, Integer)
+- uid: Virtufin.Core.Position.DecimalAmount.ToCardinal
+  commentId: M:Virtufin.Core.Position.DecimalAmount.ToCardinal
+  id: ToCardinal
+  parent: Virtufin.Core.Position.DecimalAmount
+  langs:
+  - csharp
+  - vb
+  name: ToCardinal()
+  nameWithType: DecimalAmount.ToCardinal()
+  fullName: Virtufin.Core.Position.DecimalAmount.ToCardinal()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/DecimalAmount.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ToCardinal
+    path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
+    startLine: 58
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Compute the cardinal (single-integer) representation.
+  example: []
+  syntax:
+    content: public long ToCardinal()
+    return:
+      type: System.Int64
+    content.vb: Public Function ToCardinal() As Long
+  overload: Virtufin.Core.Position.DecimalAmount.ToCardinal*
+  implements:
+  - Virtufin.Core.Position.IAsCardinal{System.Int64}.ToCardinal
+- uid: Virtufin.Core.Position.DecimalAmount.FromCardinal(System.Int64)
+  commentId: M:Virtufin.Core.Position.DecimalAmount.FromCardinal(System.Int64)
+  id: FromCardinal(System.Int64)
+  parent: Virtufin.Core.Position.DecimalAmount
+  langs:
+  - csharp
+  - vb
+  name: FromCardinal(long)
+  nameWithType: DecimalAmount.FromCardinal(long)
+  fullName: Virtufin.Core.Position.DecimalAmount.FromCardinal(long)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/DecimalAmount.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: FromCardinal
+    path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
+    startLine: 63
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Recover whole and fractional parts from a cardinal value.
+  example: []
+  syntax:
+    content: public (long Whole, ulong Fraction) FromCardinal(long cardinal)
+    parameters:
+    - id: cardinal
+      type: System.Int64
+      description: Cardinal value to decompose.
+    return:
+      type: System.ValueTuple{System.Int64,System.UInt64}
+    content.vb: Public Function FromCardinal(cardinal As Long) As (Whole As Long, Fraction As ULong)
+  overload: Virtufin.Core.Position.DecimalAmount.FromCardinal*
+  implements:
+  - Virtufin.Core.Position.IAsCardinal{System.Int64}.FromCardinal(System.Int64)
+  nameWithType.vb: DecimalAmount.FromCardinal(Long)
+  fullName.vb: Virtufin.Core.Position.DecimalAmount.FromCardinal(Long)
+  name.vb: FromCardinal(Long)
+- uid: Virtufin.Core.Position.DecimalAmount.GetValue
+  commentId: M:Virtufin.Core.Position.DecimalAmount.GetValue
+  id: GetValue
+  parent: Virtufin.Core.Position.DecimalAmount
+  langs:
+  - csharp
+  - vb
+  name: GetValue()
+  nameWithType: DecimalAmount.GetValue()
+  fullName: Virtufin.Core.Position.DecimalAmount.GetValue()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/DecimalAmount.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GetValue
+    path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
+    startLine: 72
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  example: []
+  syntax:
+    content: public (long Whole, ulong Fraction) GetValue()
+    return:
+      type: System.ValueTuple{System.Int64,System.UInt64}
+    content.vb: Public Function GetValue() As (Whole As Long, Fraction As ULong)
+  overload: Virtufin.Core.Position.DecimalAmount.GetValue*
+- uid: Virtufin.Core.Position.DecimalAmount.Equals(Virtufin.Core.Position.DecimalAmount)
+  commentId: M:Virtufin.Core.Position.DecimalAmount.Equals(Virtufin.Core.Position.DecimalAmount)
+  id: Equals(Virtufin.Core.Position.DecimalAmount)
+  parent: Virtufin.Core.Position.DecimalAmount
+  langs:
+  - csharp
+  - vb
+  name: Equals(DecimalAmount)
+  nameWithType: DecimalAmount.Equals(DecimalAmount)
+  fullName: Virtufin.Core.Position.DecimalAmount.Equals(Virtufin.Core.Position.DecimalAmount)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/DecimalAmount.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Equals
+    path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
+    startLine: 77
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(DecimalAmount other)
+    parameters:
+    - id: other
+      type: Virtufin.Core.Position.DecimalAmount
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As DecimalAmount) As Boolean
+  overload: Virtufin.Core.Position.DecimalAmount.Equals*
+  implements:
+  - System.IEquatable{Virtufin.Core.Position.DecimalAmount}.Equals(Virtufin.Core.Position.DecimalAmount)
+- uid: Virtufin.Core.Position.DecimalAmount.GetHashCode
+  commentId: M:Virtufin.Core.Position.DecimalAmount.GetHashCode
+  id: GetHashCode
+  parent: Virtufin.Core.Position.DecimalAmount
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: DecimalAmount.GetHashCode()
+  fullName: Virtufin.Core.Position.DecimalAmount.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/DecimalAmount.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GetHashCode
+    path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
+    startLine: 81
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Returns the hash code for this instance.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer that is the hash code for this instance.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Virtufin.Core.Position.DecimalAmount.GetHashCode*
+- uid: Virtufin.Core.Position.DecimalAmount.CompareTo(Virtufin.Core.Position.DecimalAmount)
+  commentId: M:Virtufin.Core.Position.DecimalAmount.CompareTo(Virtufin.Core.Position.DecimalAmount)
+  id: CompareTo(Virtufin.Core.Position.DecimalAmount)
+  parent: Virtufin.Core.Position.DecimalAmount
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(DecimalAmount)
+  nameWithType: DecimalAmount.CompareTo(DecimalAmount)
+  fullName: Virtufin.Core.Position.DecimalAmount.CompareTo(Virtufin.Core.Position.DecimalAmount)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/DecimalAmount.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: CompareTo
+    path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
+    startLine: 84
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
+  example: []
+  syntax:
+    content: public int CompareTo(DecimalAmount other)
+    parameters:
+    - id: other
+      type: Virtufin.Core.Position.DecimalAmount
+      description: An object to compare with this instance.
+    return:
+      type: System.Int32
+      description: >-
+        A value that indicates the relative order of the objects being compared. The return value has these meanings:
+
+         <table><thead><tr><th class="term"> Value</th><th class="description"> Meaning</th></tr></thead><tbody><tr><td class="term"> Less than zero</td><td class="description"> This instance precedes <code class="paramref">other</code> in the sort order.</td></tr><tr><td class="term"> Zero</td><td class="description"> This instance occurs in the same position in the sort order as <code class="paramref">other</code>.</td></tr><tr><td class="term"> Greater than zero</td><td class="description"> This instance follows <code class="paramref">other</code> in the sort order.</td></tr></tbody></table>
+    content.vb: Public Function CompareTo(other As DecimalAmount) As Integer
+  overload: Virtufin.Core.Position.DecimalAmount.CompareTo*
+  implements:
+  - System.IComparable{Virtufin.Core.Position.DecimalAmount}.CompareTo(Virtufin.Core.Position.DecimalAmount)
+- uid: Virtufin.Core.Position.DecimalAmount.op_Addition(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+  commentId: M:Virtufin.Core.Position.DecimalAmount.op_Addition(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+  id: op_Addition(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+  parent: Virtufin.Core.Position.DecimalAmount
+  langs:
+  - csharp
+  - vb
+  name: operator +(DecimalAmount, DecimalAmount)
+  nameWithType: DecimalAmount.operator +(DecimalAmount, DecimalAmount)
+  fullName: Virtufin.Core.Position.DecimalAmount.operator +(Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount)
+  type: Operator
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/DecimalAmount.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: op_Addition
+    path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
+    startLine: 93
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Add two amounts. Throws <xref href="System.OverflowException" data-throw-if-not-resolved="false"></xref> on overflow.
+  example: []
+  syntax:
+    content: public static DecimalAmount operator +(DecimalAmount left, DecimalAmount right)
+    parameters:
+    - id: left
+      type: Virtufin.Core.Position.DecimalAmount
+    - id: right
+      type: Virtufin.Core.Position.DecimalAmount
+    return:
+      type: Virtufin.Core.Position.DecimalAmount
+    content.vb: Public Shared Operator +(left As DecimalAmount, right As DecimalAmount) As DecimalAmount
+  overload: Virtufin.Core.Position.DecimalAmount.op_Addition*
+  nameWithType.vb: DecimalAmount.+(DecimalAmount, DecimalAmount)
+  fullName.vb: Virtufin.Core.Position.DecimalAmount.+(Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount)
+  name.vb: +(DecimalAmount, DecimalAmount)
+- uid: Virtufin.Core.Position.DecimalAmount.op_Subtraction(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+  commentId: M:Virtufin.Core.Position.DecimalAmount.op_Subtraction(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+  id: op_Subtraction(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+  parent: Virtufin.Core.Position.DecimalAmount
+  langs:
+  - csharp
+  - vb
+  name: operator -(DecimalAmount, DecimalAmount)
+  nameWithType: DecimalAmount.operator -(DecimalAmount, DecimalAmount)
+  fullName: Virtufin.Core.Position.DecimalAmount.operator -(Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount)
+  type: Operator
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/DecimalAmount.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: op_Subtraction
+    path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
+    startLine: 104
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Subtract two amounts. Throws <xref href="System.OverflowException" data-throw-if-not-resolved="false"></xref> on overflow.
+  example: []
+  syntax:
+    content: public static DecimalAmount operator -(DecimalAmount left, DecimalAmount right)
+    parameters:
+    - id: left
+      type: Virtufin.Core.Position.DecimalAmount
+    - id: right
+      type: Virtufin.Core.Position.DecimalAmount
+    return:
+      type: Virtufin.Core.Position.DecimalAmount
+    content.vb: Public Shared Operator -(left As DecimalAmount, right As DecimalAmount) As DecimalAmount
+  overload: Virtufin.Core.Position.DecimalAmount.op_Subtraction*
+  nameWithType.vb: DecimalAmount.-(DecimalAmount, DecimalAmount)
+  fullName.vb: Virtufin.Core.Position.DecimalAmount.-(Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount)
+  name.vb: -(DecimalAmount, DecimalAmount)
+- uid: Virtufin.Core.Position.DecimalAmount.ToString
+  commentId: M:Virtufin.Core.Position.DecimalAmount.ToString
+  id: ToString
+  parent: Virtufin.Core.Position.DecimalAmount
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: DecimalAmount.ToString()
+  fullName: Virtufin.Core.Position.DecimalAmount.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/DecimalAmount.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ToString
+    path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
+    startLine: 115
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Format the amount as a decimal string.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: Virtufin.Core.Position.DecimalAmount.ToString*
+references:
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: System.IEquatable{Virtufin.Core.Position.DecimalAmount}
+  commentId: T:System.IEquatable{Virtufin.Core.Position.DecimalAmount}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<DecimalAmount>
+  nameWithType: IEquatable<DecimalAmount>
+  fullName: System.IEquatable<Virtufin.Core.Position.DecimalAmount>
+  nameWithType.vb: IEquatable(Of DecimalAmount)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Position.DecimalAmount)
+  name.vb: IEquatable(Of DecimalAmount)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: )
+- uid: System.IComparable{Virtufin.Core.Position.DecimalAmount}
+  commentId: T:System.IComparable{Virtufin.Core.Position.DecimalAmount}
+  parent: System
+  definition: System.IComparable`1
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<DecimalAmount>
+  nameWithType: IComparable<DecimalAmount>
+  fullName: System.IComparable<Virtufin.Core.Position.DecimalAmount>
+  nameWithType.vb: IComparable(Of DecimalAmount)
+  fullName.vb: System.IComparable(Of Virtufin.Core.Position.DecimalAmount)
+  name.vb: IComparable(Of DecimalAmount)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: )
+- uid: Virtufin.Core.Position.IAmount{System.ValueTuple{System.Int64,System.UInt64}}
+  commentId: T:Virtufin.Core.Position.IAmount{System.ValueTuple{System.Int64,System.UInt64}}
+  parent: Virtufin.Core.Position
+  definition: Virtufin.Core.Position.IAmount`1
+  href: Virtufin.Core.Position.IAmount-1.html
+  name: IAmount<(long, ulong)>
+  nameWithType: IAmount<(long, ulong)>
+  fullName: Virtufin.Core.Position.IAmount<(long, ulong)>
+  nameWithType.vb: IAmount(Of (Long, ULong))
+  fullName.vb: Virtufin.Core.Position.IAmount(Of (Long, ULong))
+  name.vb: IAmount(Of (Long, ULong))
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IAmount`1
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount-1.html
+  - name: <
+  - name: (
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.IAmount`1
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+  - name: )
+- uid: System.IEquatable{Virtufin.Core.Position.IAmount{System.ValueTuple{System.Int64,System.UInt64}}}
+  commentId: T:System.IEquatable{Virtufin.Core.Position.IAmount{System.ValueTuple{System.Int64,System.UInt64}}}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<IAmount<(long, ulong)>>
+  nameWithType: IEquatable<IAmount<(long, ulong)>>
+  fullName: System.IEquatable<Virtufin.Core.Position.IAmount<(long, ulong)>>
+  nameWithType.vb: IEquatable(Of IAmount(Of (Long, ULong)))
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Position.IAmount(Of (Long, ULong)))
+  name.vb: IEquatable(Of IAmount(Of (Long, ULong)))
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Position.IAmount`1
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount-1.html
+  - name: <
+  - name: (
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Position.IAmount`1
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+  - name: )
+  - name: )
+- uid: System.IComparable{Virtufin.Core.Position.IAmount{System.ValueTuple{System.Int64,System.UInt64}}}
+  commentId: T:System.IComparable{Virtufin.Core.Position.IAmount{System.ValueTuple{System.Int64,System.UInt64}}}
+  parent: System
+  definition: System.IComparable`1
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<IAmount<(long, ulong)>>
+  nameWithType: IComparable<IAmount<(long, ulong)>>
+  fullName: System.IComparable<Virtufin.Core.Position.IAmount<(long, ulong)>>
+  nameWithType.vb: IComparable(Of IAmount(Of (Long, ULong)))
+  fullName.vb: System.IComparable(Of Virtufin.Core.Position.IAmount(Of (Long, ULong)))
+  name.vb: IComparable(Of IAmount(Of (Long, ULong)))
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - uid: Virtufin.Core.Position.IAmount`1
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount-1.html
+  - name: <
+  - name: (
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Position.IAmount`1
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+  - name: )
+  - name: )
+- uid: Virtufin.Core.Position.IAsCardinal{System.Int64}
+  commentId: T:Virtufin.Core.Position.IAsCardinal{System.Int64}
+  parent: Virtufin.Core.Position
+  definition: Virtufin.Core.Position.IAsCardinal`1
+  href: Virtufin.Core.Position.IAsCardinal-1.html
+  name: IAsCardinal<long>
+  nameWithType: IAsCardinal<long>
+  fullName: Virtufin.Core.Position.IAsCardinal<long>
+  nameWithType.vb: IAsCardinal(Of Long)
+  fullName.vb: Virtufin.Core.Position.IAsCardinal(Of Long)
+  name.vb: IAsCardinal(Of Long)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IAsCardinal`1
+    name: IAsCardinal
+    href: Virtufin.Core.Position.IAsCardinal-1.html
+  - name: <
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.IAsCardinal`1
+    name: IAsCardinal
+    href: Virtufin.Core.Position.IAsCardinal-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IComparable`1
+  commentId: T:System.IComparable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<T>
+  nameWithType: IComparable<T>
+  fullName: System.IComparable<T>
+  nameWithType.vb: IComparable(Of T)
+  fullName.vb: System.IComparable(Of T)
+  name.vb: IComparable(Of T)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Core.Position.IAmount`1
+  commentId: T:Virtufin.Core.Position.IAmount`1
+  href: Virtufin.Core.Position.IAmount-1.html
+  name: IAmount<TValue>
+  nameWithType: IAmount<TValue>
+  fullName: Virtufin.Core.Position.IAmount<TValue>
+  nameWithType.vb: IAmount(Of TValue)
+  fullName.vb: Virtufin.Core.Position.IAmount(Of TValue)
+  name.vb: IAmount(Of TValue)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IAmount`1
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount-1.html
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.IAmount`1
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Virtufin.Core.Position.IAsCardinal`1
+  commentId: T:Virtufin.Core.Position.IAsCardinal`1
+  href: Virtufin.Core.Position.IAsCardinal-1.html
+  name: IAsCardinal<TCardinal>
+  nameWithType: IAsCardinal<TCardinal>
+  fullName: Virtufin.Core.Position.IAsCardinal<TCardinal>
+  nameWithType.vb: IAsCardinal(Of TCardinal)
+  fullName.vb: Virtufin.Core.Position.IAsCardinal(Of TCardinal)
+  name.vb: IAsCardinal(Of TCardinal)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IAsCardinal`1
+    name: IAsCardinal
+    href: Virtufin.Core.Position.IAsCardinal-1.html
+  - name: <
+  - name: TCardinal
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.IAsCardinal`1
+    name: IAsCardinal
+    href: Virtufin.Core.Position.IAsCardinal-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCardinal
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.Core.Position.DecimalAmount.#ctor*
+  commentId: Overload:Virtufin.Core.Position.DecimalAmount.#ctor
+  href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount__ctor_System_Int64_System_UInt64_System_Int32_
+  name: DecimalAmount
+  nameWithType: DecimalAmount.DecimalAmount
+  fullName: Virtufin.Core.Position.DecimalAmount.DecimalAmount
+  nameWithType.vb: DecimalAmount.New
+  fullName.vb: Virtufin.Core.Position.DecimalAmount.New
+  name.vb: New
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Virtufin.Core.Position.DecimalAmount.Whole*
+  commentId: Overload:Virtufin.Core.Position.DecimalAmount.Whole
+  href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_Whole
+  name: Whole
+  nameWithType: DecimalAmount.Whole
+  fullName: Virtufin.Core.Position.DecimalAmount.Whole
+- uid: Virtufin.Core.Position.DecimalAmount.Fraction*
+  commentId: Overload:Virtufin.Core.Position.DecimalAmount.Fraction
+  href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_Fraction
+  name: Fraction
+  nameWithType: DecimalAmount.Fraction
+  fullName: Virtufin.Core.Position.DecimalAmount.Fraction
+- uid: Virtufin.Core.Position.DecimalAmount.N*
+  commentId: Overload:Virtufin.Core.Position.DecimalAmount.N
+  href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_N
+  name: N
+  nameWithType: DecimalAmount.N
+  fullName: Virtufin.Core.Position.DecimalAmount.N
+- uid: Virtufin.Core.Position.DecimalAmount.DefaultPrecision
+  commentId: F:Virtufin.Core.Position.DecimalAmount.DefaultPrecision
+  href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_DefaultPrecision
+  name: DefaultPrecision
+  nameWithType: DecimalAmount.DefaultPrecision
+  fullName: Virtufin.Core.Position.DecimalAmount.DefaultPrecision
+- uid: Virtufin.Core.Position.DecimalAmount.Zero*
+  commentId: Overload:Virtufin.Core.Position.DecimalAmount.Zero
+  href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_Zero
+  name: Zero
+  nameWithType: DecimalAmount.Zero
+  fullName: Virtufin.Core.Position.DecimalAmount.Zero
+- uid: Virtufin.Core.Position.DecimalAmount
+  commentId: T:Virtufin.Core.Position.DecimalAmount
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.DecimalAmount.html
+  name: DecimalAmount
+  nameWithType: DecimalAmount
+  fullName: Virtufin.Core.Position.DecimalAmount
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Virtufin.Core.Position.DecimalAmount.From*
+  commentId: Overload:Virtufin.Core.Position.DecimalAmount.From
+  href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_From_System_Double_System_Int32_
+  name: From
+  nameWithType: DecimalAmount.From
+  fullName: Virtufin.Core.Position.DecimalAmount.From
+- uid: Virtufin.Core.Position.DecimalAmount.ToCardinal*
+  commentId: Overload:Virtufin.Core.Position.DecimalAmount.ToCardinal
+  href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_ToCardinal
+  name: ToCardinal
+  nameWithType: DecimalAmount.ToCardinal
+  fullName: Virtufin.Core.Position.DecimalAmount.ToCardinal
+- uid: Virtufin.Core.Position.IAsCardinal{System.Int64}.ToCardinal
+  commentId: M:Virtufin.Core.Position.IAsCardinal{System.Int64}.ToCardinal
+  parent: Virtufin.Core.Position.IAsCardinal{System.Int64}
+  definition: Virtufin.Core.Position.IAsCardinal`1.ToCardinal
+  href: Virtufin.Core.Position.IAsCardinal-1.html#Virtufin_Core_Position_IAsCardinal_1_ToCardinal
+  name: ToCardinal()
+  nameWithType: IAsCardinal<long>.ToCardinal()
+  fullName: Virtufin.Core.Position.IAsCardinal<long>.ToCardinal()
+  nameWithType.vb: IAsCardinal(Of Long).ToCardinal()
+  fullName.vb: Virtufin.Core.Position.IAsCardinal(Of Long).ToCardinal()
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IAsCardinal{System.Int64}.ToCardinal
+    name: ToCardinal
+    href: Virtufin.Core.Position.IAsCardinal-1.html#Virtufin_Core_Position_IAsCardinal_1_ToCardinal
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.IAsCardinal{System.Int64}.ToCardinal
+    name: ToCardinal
+    href: Virtufin.Core.Position.IAsCardinal-1.html#Virtufin_Core_Position_IAsCardinal_1_ToCardinal
+  - name: (
+  - name: )
+- uid: Virtufin.Core.Position.IAsCardinal`1.ToCardinal
+  commentId: M:Virtufin.Core.Position.IAsCardinal`1.ToCardinal
+  href: Virtufin.Core.Position.IAsCardinal-1.html#Virtufin_Core_Position_IAsCardinal_1_ToCardinal
+  name: ToCardinal()
+  nameWithType: IAsCardinal<TCardinal>.ToCardinal()
+  fullName: Virtufin.Core.Position.IAsCardinal<TCardinal>.ToCardinal()
+  nameWithType.vb: IAsCardinal(Of TCardinal).ToCardinal()
+  fullName.vb: Virtufin.Core.Position.IAsCardinal(Of TCardinal).ToCardinal()
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IAsCardinal`1.ToCardinal
+    name: ToCardinal
+    href: Virtufin.Core.Position.IAsCardinal-1.html#Virtufin_Core_Position_IAsCardinal_1_ToCardinal
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.IAsCardinal`1.ToCardinal
+    name: ToCardinal
+    href: Virtufin.Core.Position.IAsCardinal-1.html#Virtufin_Core_Position_IAsCardinal_1_ToCardinal
+  - name: (
+  - name: )
+- uid: Virtufin.Core.Position.DecimalAmount.FromCardinal*
+  commentId: Overload:Virtufin.Core.Position.DecimalAmount.FromCardinal
+  href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_FromCardinal_System_Int64_
+  name: FromCardinal
+  nameWithType: DecimalAmount.FromCardinal
+  fullName: Virtufin.Core.Position.DecimalAmount.FromCardinal
+- uid: Virtufin.Core.Position.IAsCardinal{System.Int64}.FromCardinal(System.Int64)
+  commentId: M:Virtufin.Core.Position.IAsCardinal{System.Int64}.FromCardinal(System.Int64)
+  parent: Virtufin.Core.Position.IAsCardinal{System.Int64}
+  definition: Virtufin.Core.Position.IAsCardinal`1.FromCardinal(`0)
+  href: Virtufin.Core.Position.IAsCardinal-1.html#Virtufin_Core_Position_IAsCardinal_1_FromCardinal__0_
+  name: FromCardinal(long)
+  nameWithType: IAsCardinal<long>.FromCardinal(long)
+  fullName: Virtufin.Core.Position.IAsCardinal<long>.FromCardinal(long)
+  nameWithType.vb: IAsCardinal(Of Long).FromCardinal(Long)
+  fullName.vb: Virtufin.Core.Position.IAsCardinal(Of Long).FromCardinal(Long)
+  name.vb: FromCardinal(Long)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IAsCardinal{System.Int64}.FromCardinal(System.Int64)
+    name: FromCardinal
+    href: Virtufin.Core.Position.IAsCardinal-1.html#Virtufin_Core_Position_IAsCardinal_1_FromCardinal__0_
+  - name: (
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.IAsCardinal{System.Int64}.FromCardinal(System.Int64)
+    name: FromCardinal
+    href: Virtufin.Core.Position.IAsCardinal-1.html#Virtufin_Core_Position_IAsCardinal_1_FromCardinal__0_
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: System.ValueTuple{System.Int64,System.UInt64}
+  commentId: T:System.ValueTuple{System.Int64,System.UInt64}
+  parent: System
+  definition: System.ValueTuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: (long Whole, ulong Fraction)
+  nameWithType: (long Whole, ulong Fraction)
+  fullName: (long Whole, ulong Fraction)
+  nameWithType.vb: (Whole As Long, Fraction As ULong)
+  fullName.vb: (Whole As Long, Fraction As ULong)
+  name.vb: (Whole As Long, Fraction As ULong)
+  spec.csharp:
+  - name: (
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: " "
+  - uid: System.ValueTuple{System.Int64,System.UInt64}.Whole
+    name: Whole
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64,system.uint64-.whole
+  - name: ','
+  - name: " "
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: " "
+  - uid: System.ValueTuple{System.Int64,System.UInt64}.Fraction
+    name: Fraction
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64,system.uint64-.fraction
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.Int64,System.UInt64}.Whole
+    name: Whole
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64,system.uint64-.whole
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Int64,System.UInt64}.Fraction
+    name: Fraction
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64,system.uint64-.fraction
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+- uid: Virtufin.Core.Position.IAsCardinal`1.FromCardinal(`0)
+  commentId: M:Virtufin.Core.Position.IAsCardinal`1.FromCardinal(`0)
+  href: Virtufin.Core.Position.IAsCardinal-1.html#Virtufin_Core_Position_IAsCardinal_1_FromCardinal__0_
+  name: FromCardinal(TCardinal)
+  nameWithType: IAsCardinal<TCardinal>.FromCardinal(TCardinal)
+  fullName: Virtufin.Core.Position.IAsCardinal<TCardinal>.FromCardinal(TCardinal)
+  nameWithType.vb: IAsCardinal(Of TCardinal).FromCardinal(TCardinal)
+  fullName.vb: Virtufin.Core.Position.IAsCardinal(Of TCardinal).FromCardinal(TCardinal)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IAsCardinal`1.FromCardinal(`0)
+    name: FromCardinal
+    href: Virtufin.Core.Position.IAsCardinal-1.html#Virtufin_Core_Position_IAsCardinal_1_FromCardinal__0_
+  - name: (
+  - name: TCardinal
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.IAsCardinal`1.FromCardinal(`0)
+    name: FromCardinal
+    href: Virtufin.Core.Position.IAsCardinal-1.html#Virtufin_Core_Position_IAsCardinal_1_FromCardinal__0_
+  - name: (
+  - name: TCardinal
+  - name: )
+- uid: System.ValueTuple`2
+  commentId: T:System.ValueTuple`2
+  name: (T1, T2)
+  nameWithType: (T1, T2)
+  fullName: (T1, T2)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: Virtufin.Core.Position.DecimalAmount.GetValue*
+  commentId: Overload:Virtufin.Core.Position.DecimalAmount.GetValue
+  href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_GetValue
+  name: GetValue
+  nameWithType: DecimalAmount.GetValue
+  fullName: Virtufin.Core.Position.DecimalAmount.GetValue
+- uid: Virtufin.Core.Position.DecimalAmount.Equals*
+  commentId: Overload:Virtufin.Core.Position.DecimalAmount.Equals
+  href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_Equals_Virtufin_Core_Position_DecimalAmount_
+  name: Equals
+  nameWithType: DecimalAmount.Equals
+  fullName: Virtufin.Core.Position.DecimalAmount.Equals
+- uid: System.IEquatable{Virtufin.Core.Position.DecimalAmount}.Equals(Virtufin.Core.Position.DecimalAmount)
+  commentId: M:System.IEquatable{Virtufin.Core.Position.DecimalAmount}.Equals(Virtufin.Core.Position.DecimalAmount)
+  parent: System.IEquatable{Virtufin.Core.Position.DecimalAmount}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(DecimalAmount)
+  nameWithType: IEquatable<DecimalAmount>.Equals(DecimalAmount)
+  fullName: System.IEquatable<Virtufin.Core.Position.DecimalAmount>.Equals(Virtufin.Core.Position.DecimalAmount)
+  nameWithType.vb: IEquatable(Of DecimalAmount).Equals(DecimalAmount)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Position.DecimalAmount).Equals(Virtufin.Core.Position.DecimalAmount)
+  spec.csharp:
+  - uid: System.IEquatable{Virtufin.Core.Position.DecimalAmount}.Equals(Virtufin.Core.Position.DecimalAmount)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Virtufin.Core.Position.DecimalAmount}.Equals(Virtufin.Core.Position.DecimalAmount)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: Virtufin.Core.Position.DecimalAmount.GetHashCode*
+  commentId: Overload:Virtufin.Core.Position.DecimalAmount.GetHashCode
+  href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_GetHashCode
+  name: GetHashCode
+  nameWithType: DecimalAmount.GetHashCode
+  fullName: Virtufin.Core.Position.DecimalAmount.GetHashCode
+- uid: Virtufin.Core.Position.DecimalAmount.CompareTo*
+  commentId: Overload:Virtufin.Core.Position.DecimalAmount.CompareTo
+  href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_CompareTo_Virtufin_Core_Position_DecimalAmount_
+  name: CompareTo
+  nameWithType: DecimalAmount.CompareTo
+  fullName: Virtufin.Core.Position.DecimalAmount.CompareTo
+- uid: System.IComparable{Virtufin.Core.Position.DecimalAmount}.CompareTo(Virtufin.Core.Position.DecimalAmount)
+  commentId: M:System.IComparable{Virtufin.Core.Position.DecimalAmount}.CompareTo(Virtufin.Core.Position.DecimalAmount)
+  parent: System.IComparable{Virtufin.Core.Position.DecimalAmount}
+  definition: System.IComparable`1.CompareTo(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  name: CompareTo(DecimalAmount)
+  nameWithType: IComparable<DecimalAmount>.CompareTo(DecimalAmount)
+  fullName: System.IComparable<Virtufin.Core.Position.DecimalAmount>.CompareTo(Virtufin.Core.Position.DecimalAmount)
+  nameWithType.vb: IComparable(Of DecimalAmount).CompareTo(DecimalAmount)
+  fullName.vb: System.IComparable(Of Virtufin.Core.Position.DecimalAmount).CompareTo(Virtufin.Core.Position.DecimalAmount)
+  spec.csharp:
+  - uid: System.IComparable{Virtufin.Core.Position.DecimalAmount}.CompareTo(Virtufin.Core.Position.DecimalAmount)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: )
+  spec.vb:
+  - uid: System.IComparable{Virtufin.Core.Position.DecimalAmount}.CompareTo(Virtufin.Core.Position.DecimalAmount)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: )
+- uid: System.IComparable`1.CompareTo(`0)
+  commentId: M:System.IComparable`1.CompareTo(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  name: CompareTo(T)
+  nameWithType: IComparable<T>.CompareTo(T)
+  fullName: System.IComparable<T>.CompareTo(T)
+  nameWithType.vb: IComparable(Of T).CompareTo(T)
+  fullName.vb: System.IComparable(Of T).CompareTo(T)
+  spec.csharp:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: T
+  - name: )
+- uid: System.OverflowException
+  commentId: T:System.OverflowException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.overflowexception
+  name: OverflowException
+  nameWithType: OverflowException
+  fullName: System.OverflowException
+- uid: Virtufin.Core.Position.DecimalAmount.op_Addition*
+  commentId: Overload:Virtufin.Core.Position.DecimalAmount.op_Addition
+  href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_op_Addition_Virtufin_Core_Position_DecimalAmount_Virtufin_Core_Position_DecimalAmount_
+  name: operator +
+  nameWithType: DecimalAmount.operator +
+  fullName: Virtufin.Core.Position.DecimalAmount.operator +
+  nameWithType.vb: DecimalAmount.+
+  fullName.vb: Virtufin.Core.Position.DecimalAmount.+
+  name.vb: +
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount.op_Addition*
+    name: +
+    href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_op_Addition_Virtufin_Core_Position_DecimalAmount_Virtufin_Core_Position_DecimalAmount_
+- uid: Virtufin.Core.Position.DecimalAmount.op_Subtraction*
+  commentId: Overload:Virtufin.Core.Position.DecimalAmount.op_Subtraction
+  href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_op_Subtraction_Virtufin_Core_Position_DecimalAmount_Virtufin_Core_Position_DecimalAmount_
+  name: operator -
+  nameWithType: DecimalAmount.operator -
+  fullName: Virtufin.Core.Position.DecimalAmount.operator -
+  nameWithType.vb: DecimalAmount.-
+  fullName.vb: Virtufin.Core.Position.DecimalAmount.-
+  name.vb: '-'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount.op_Subtraction*
+    name: '-'
+    href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_op_Subtraction_Virtufin_Core_Position_DecimalAmount_Virtufin_Core_Position_DecimalAmount_
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: Virtufin.Core.Position.DecimalAmount.ToString*
+  commentId: Overload:Virtufin.Core.Position.DecimalAmount.ToString
+  href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_ToString
+  name: ToString
+  nameWithType: DecimalAmount.ToString
+  fullName: Virtufin.Core.Position.DecimalAmount.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

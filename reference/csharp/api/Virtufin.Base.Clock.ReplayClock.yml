@@ -1,0 +1,630 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.Clock.ReplayClock
+  commentId: T:Virtufin.Base.Clock.ReplayClock
+  id: ReplayClock
+  parent: Virtufin.Base.Clock
+  children:
+  - Virtufin.Base.Clock.ReplayClock.#ctor(System.DateTimeOffset,System.String)
+  - Virtufin.Base.Clock.ReplayClock.Advance(System.TimeSpan)
+  - Virtufin.Base.Clock.ReplayClock.IsWallClock
+  - Virtufin.Base.Clock.ReplayClock.Name
+  - Virtufin.Base.Clock.ReplayClock.Now
+  - Virtufin.Base.Clock.ReplayClock.Set(System.DateTimeOffset)
+  langs:
+  - csharp
+  - vb
+  name: ReplayClock
+  nameWithType: ReplayClock
+  fullName: Virtufin.Base.Clock.ReplayClock
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Base/Clock/Clocks.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ReplayClock
+    path: ../../../src/Virtufin.Base/Clock/Clocks.cs
+    startLine: 28
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Clock
+  summary: >-
+    Synthetic replay clock for <code>hyp</code> scenarios. Starts at a configurable
+
+    offset and can be advanced deterministically by a step. The clock name
+
+    encodes the selector (e.g. <code>synthetic:BTC_202101_202206</code>).
+  example: []
+  syntax:
+    content: 'public sealed class ReplayClock : IClock'
+    content.vb: Public NotInheritable Class ReplayClock Implements IClock
+  inheritance:
+  - System.Object
+  implements:
+  - Virtufin.Core.Clock.IClock
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.Base.Clock.ReplayClock.#ctor(System.DateTimeOffset,System.String)
+  commentId: M:Virtufin.Base.Clock.ReplayClock.#ctor(System.DateTimeOffset,System.String)
+  id: '#ctor(System.DateTimeOffset,System.String)'
+  parent: Virtufin.Base.Clock.ReplayClock
+  langs:
+  - csharp
+  - vb
+  name: ReplayClock(DateTimeOffset, string)
+  nameWithType: ReplayClock.ReplayClock(DateTimeOffset, string)
+  fullName: Virtufin.Base.Clock.ReplayClock.ReplayClock(System.DateTimeOffset, string)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Base/Clock/Clocks.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Base/Clock/Clocks.cs
+    startLine: 35
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Clock
+  summary: Construct a replay clock starting at <code class="paramref">startTime</code>.
+  example: []
+  syntax:
+    content: public ReplayClock(DateTimeOffset startTime, string name)
+    parameters:
+    - id: startTime
+      type: System.DateTimeOffset
+      description: Initial clock value.
+    - id: name
+      type: System.String
+      description: Selector-style name (e.g. <code>BTC_202101_202206</code>).
+    content.vb: Public Sub New(startTime As DateTimeOffset, name As String)
+  overload: Virtufin.Base.Clock.ReplayClock.#ctor*
+  nameWithType.vb: ReplayClock.New(DateTimeOffset, String)
+  fullName.vb: Virtufin.Base.Clock.ReplayClock.New(System.DateTimeOffset, String)
+  name.vb: New(DateTimeOffset, String)
+- uid: Virtufin.Base.Clock.ReplayClock.Now
+  commentId: P:Virtufin.Base.Clock.ReplayClock.Now
+  id: Now
+  parent: Virtufin.Base.Clock.ReplayClock
+  langs:
+  - csharp
+  - vb
+  name: Now
+  nameWithType: ReplayClock.Now
+  fullName: Virtufin.Base.Clock.ReplayClock.Now
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Clock/Clocks.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Now
+    path: ../../../src/Virtufin.Base/Clock/Clocks.cs
+    startLine: 42
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Clock
+  summary: Current value of this clock.
+  example: []
+  syntax:
+    content: public DateTimeOffset Now { get; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Public ReadOnly Property Now As DateTimeOffset
+  overload: Virtufin.Base.Clock.ReplayClock.Now*
+  implements:
+  - Virtufin.Core.Clock.IClock.Now
+- uid: Virtufin.Base.Clock.ReplayClock.IsWallClock
+  commentId: P:Virtufin.Base.Clock.ReplayClock.IsWallClock
+  id: IsWallClock
+  parent: Virtufin.Base.Clock.ReplayClock
+  langs:
+  - csharp
+  - vb
+  name: IsWallClock
+  nameWithType: ReplayClock.IsWallClock
+  fullName: Virtufin.Base.Clock.ReplayClock.IsWallClock
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Clock/Clocks.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsWallClock
+    path: ../../../src/Virtufin.Base/Clock/Clocks.cs
+    startLine: 45
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Clock
+  summary: True for <code>WallClock</code>; false for synthetic clocks.
+  example: []
+  syntax:
+    content: public bool IsWallClock { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsWallClock As Boolean
+  overload: Virtufin.Base.Clock.ReplayClock.IsWallClock*
+  implements:
+  - Virtufin.Core.Clock.IClock.IsWallClock
+- uid: Virtufin.Base.Clock.ReplayClock.Name
+  commentId: P:Virtufin.Base.Clock.ReplayClock.Name
+  id: Name
+  parent: Virtufin.Base.Clock.ReplayClock
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ReplayClock.Name
+  fullName: Virtufin.Base.Clock.ReplayClock.Name
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Clock/Clocks.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Name
+    path: ../../../src/Virtufin.Base/Clock/Clocks.cs
+    startLine: 48
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Clock
+  summary: Human-readable clock name (e.g. <code>wall</code>, <code>synthetic:BTC_2021</code>).
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: Virtufin.Base.Clock.ReplayClock.Name*
+  implements:
+  - Virtufin.Core.Clock.IClock.Name
+- uid: Virtufin.Base.Clock.ReplayClock.Advance(System.TimeSpan)
+  commentId: M:Virtufin.Base.Clock.ReplayClock.Advance(System.TimeSpan)
+  id: Advance(System.TimeSpan)
+  parent: Virtufin.Base.Clock.ReplayClock
+  langs:
+  - csharp
+  - vb
+  name: Advance(TimeSpan)
+  nameWithType: ReplayClock.Advance(TimeSpan)
+  fullName: Virtufin.Base.Clock.ReplayClock.Advance(System.TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/Clock/Clocks.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Advance
+    path: ../../../src/Virtufin.Base/Clock/Clocks.cs
+    startLine: 51
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Clock
+  summary: Advance the clock by <code class="paramref">step</code>.
+  example: []
+  syntax:
+    content: public void Advance(TimeSpan step)
+    parameters:
+    - id: step
+      type: System.TimeSpan
+    content.vb: Public Sub Advance([step] As TimeSpan)
+  overload: Virtufin.Base.Clock.ReplayClock.Advance*
+- uid: Virtufin.Base.Clock.ReplayClock.Set(System.DateTimeOffset)
+  commentId: M:Virtufin.Base.Clock.ReplayClock.Set(System.DateTimeOffset)
+  id: Set(System.DateTimeOffset)
+  parent: Virtufin.Base.Clock.ReplayClock
+  langs:
+  - csharp
+  - vb
+  name: Set(DateTimeOffset)
+  nameWithType: ReplayClock.Set(DateTimeOffset)
+  fullName: Virtufin.Base.Clock.ReplayClock.Set(System.DateTimeOffset)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/Clock/Clocks.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Set
+    path: ../../../src/Virtufin.Base/Clock/Clocks.cs
+    startLine: 54
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Clock
+  summary: Set the clock to an absolute time.
+  example: []
+  syntax:
+    content: public void Set(DateTimeOffset time)
+    parameters:
+    - id: time
+      type: System.DateTimeOffset
+    content.vb: Public Sub [Set](time As DateTimeOffset)
+  overload: Virtufin.Base.Clock.ReplayClock.Set*
+references:
+- uid: Virtufin.Base.Clock
+  commentId: N:Virtufin.Base.Clock
+  href: Virtufin.html
+  name: Virtufin.Base.Clock
+  nameWithType: Virtufin.Base.Clock
+  fullName: Virtufin.Base.Clock
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Clock
+    name: Clock
+    href: Virtufin.Base.Clock.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Clock
+    name: Clock
+    href: Virtufin.Base.Clock.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.Core.Clock.IClock
+  commentId: T:Virtufin.Core.Clock.IClock
+  parent: Virtufin.Core.Clock
+  href: Virtufin.Core.Clock.IClock.html
+  name: IClock
+  nameWithType: IClock
+  fullName: Virtufin.Core.Clock.IClock
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Core.Clock
+  commentId: N:Virtufin.Core.Clock
+  href: Virtufin.html
+  name: Virtufin.Core.Clock
+  nameWithType: Virtufin.Core.Clock
+  fullName: Virtufin.Core.Clock
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Clock
+    name: Clock
+    href: Virtufin.Core.Clock.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Clock
+    name: Clock
+    href: Virtufin.Core.Clock.html
+- uid: Virtufin.Base.Clock.ReplayClock.#ctor*
+  commentId: Overload:Virtufin.Base.Clock.ReplayClock.#ctor
+  href: Virtufin.Base.Clock.ReplayClock.html#Virtufin_Base_Clock_ReplayClock__ctor_System_DateTimeOffset_System_String_
+  name: ReplayClock
+  nameWithType: ReplayClock.ReplayClock
+  fullName: Virtufin.Base.Clock.ReplayClock.ReplayClock
+  nameWithType.vb: ReplayClock.New
+  fullName.vb: Virtufin.Base.Clock.ReplayClock.New
+  name.vb: New
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Virtufin.Base.Clock.ReplayClock.Now*
+  commentId: Overload:Virtufin.Base.Clock.ReplayClock.Now
+  href: Virtufin.Base.Clock.ReplayClock.html#Virtufin_Base_Clock_ReplayClock_Now
+  name: Now
+  nameWithType: ReplayClock.Now
+  fullName: Virtufin.Base.Clock.ReplayClock.Now
+- uid: Virtufin.Core.Clock.IClock.Now
+  commentId: P:Virtufin.Core.Clock.IClock.Now
+  parent: Virtufin.Core.Clock.IClock
+  href: Virtufin.Core.Clock.IClock.html#Virtufin_Core_Clock_IClock_Now
+  name: Now
+  nameWithType: IClock.Now
+  fullName: Virtufin.Core.Clock.IClock.Now
+- uid: Virtufin.Base.Clock.ReplayClock.IsWallClock*
+  commentId: Overload:Virtufin.Base.Clock.ReplayClock.IsWallClock
+  href: Virtufin.Base.Clock.ReplayClock.html#Virtufin_Base_Clock_ReplayClock_IsWallClock
+  name: IsWallClock
+  nameWithType: ReplayClock.IsWallClock
+  fullName: Virtufin.Base.Clock.ReplayClock.IsWallClock
+- uid: Virtufin.Core.Clock.IClock.IsWallClock
+  commentId: P:Virtufin.Core.Clock.IClock.IsWallClock
+  parent: Virtufin.Core.Clock.IClock
+  href: Virtufin.Core.Clock.IClock.html#Virtufin_Core_Clock_IClock_IsWallClock
+  name: IsWallClock
+  nameWithType: IClock.IsWallClock
+  fullName: Virtufin.Core.Clock.IClock.IsWallClock
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Virtufin.Base.Clock.ReplayClock.Name*
+  commentId: Overload:Virtufin.Base.Clock.ReplayClock.Name
+  href: Virtufin.Base.Clock.ReplayClock.html#Virtufin_Base_Clock_ReplayClock_Name
+  name: Name
+  nameWithType: ReplayClock.Name
+  fullName: Virtufin.Base.Clock.ReplayClock.Name
+- uid: Virtufin.Core.Clock.IClock.Name
+  commentId: P:Virtufin.Core.Clock.IClock.Name
+  parent: Virtufin.Core.Clock.IClock
+  href: Virtufin.Core.Clock.IClock.html#Virtufin_Core_Clock_IClock_Name
+  name: Name
+  nameWithType: IClock.Name
+  fullName: Virtufin.Core.Clock.IClock.Name
+- uid: Virtufin.Base.Clock.ReplayClock.Advance*
+  commentId: Overload:Virtufin.Base.Clock.ReplayClock.Advance
+  href: Virtufin.Base.Clock.ReplayClock.html#Virtufin_Base_Clock_ReplayClock_Advance_System_TimeSpan_
+  name: Advance
+  nameWithType: ReplayClock.Advance
+  fullName: Virtufin.Base.Clock.ReplayClock.Advance
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Virtufin.Base.Clock.ReplayClock.Set*
+  commentId: Overload:Virtufin.Base.Clock.ReplayClock.Set
+  href: Virtufin.Base.Clock.ReplayClock.html#Virtufin_Base_Clock_ReplayClock_Set_System_DateTimeOffset_
+  name: Set
+  nameWithType: ReplayClock.Set
+  fullName: Virtufin.Base.Clock.ReplayClock.Set

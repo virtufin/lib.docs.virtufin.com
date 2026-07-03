@@ -1,0 +1,755 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Data.FlatBuffers.NoneValue
+  commentId: T:Virtufin.Data.FlatBuffers.NoneValue
+  id: NoneValue
+  parent: Virtufin.Data.FlatBuffers
+  children:
+  - Virtufin.Data.FlatBuffers.NoneValue.ByteBuffer
+  - Virtufin.Data.FlatBuffers.NoneValue.EndNoneValue(Google.FlatBuffers.FlatBufferBuilder)
+  - Virtufin.Data.FlatBuffers.NoneValue.GetRootAsNoneValue(Google.FlatBuffers.ByteBuffer)
+  - Virtufin.Data.FlatBuffers.NoneValue.GetRootAsNoneValue(Google.FlatBuffers.ByteBuffer,Virtufin.Data.FlatBuffers.NoneValue)
+  - Virtufin.Data.FlatBuffers.NoneValue.StartNoneValue(Google.FlatBuffers.FlatBufferBuilder)
+  - Virtufin.Data.FlatBuffers.NoneValue.ValidateVersion
+  - Virtufin.Data.FlatBuffers.NoneValue.__assign(System.Int32,Google.FlatBuffers.ByteBuffer)
+  - Virtufin.Data.FlatBuffers.NoneValue.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  langs:
+  - csharp
+  - vb
+  name: NoneValue
+  nameWithType: NoneValue
+  fullName: Virtufin.Data.FlatBuffers.NoneValue
+  type: Struct
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/NoneValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: NoneValue
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/NoneValue.cs
+    startLine: 11
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: 'public struct NoneValue : IFlatbufferObject'
+    content.vb: Public Structure NoneValue Implements IFlatbufferObject
+  implements:
+  - Google.FlatBuffers.IFlatbufferObject
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Virtufin.Data.FlatBuffers.NoneValue.ByteBuffer
+  commentId: P:Virtufin.Data.FlatBuffers.NoneValue.ByteBuffer
+  id: ByteBuffer
+  parent: Virtufin.Data.FlatBuffers.NoneValue
+  langs:
+  - csharp
+  - vb
+  name: ByteBuffer
+  nameWithType: NoneValue.ByteBuffer
+  fullName: Virtufin.Data.FlatBuffers.NoneValue.ByteBuffer
+  type: Property
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/NoneValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ByteBuffer
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/NoneValue.cs
+    startLine: 14
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  example: []
+  syntax:
+    content: public ByteBuffer ByteBuffer { get; }
+    parameters: []
+    return:
+      type: Google.FlatBuffers.ByteBuffer
+    content.vb: Public ReadOnly Property ByteBuffer As ByteBuffer
+  overload: Virtufin.Data.FlatBuffers.NoneValue.ByteBuffer*
+  implements:
+  - Google.FlatBuffers.IFlatbufferObject.ByteBuffer
+- uid: Virtufin.Data.FlatBuffers.NoneValue.ValidateVersion
+  commentId: M:Virtufin.Data.FlatBuffers.NoneValue.ValidateVersion
+  id: ValidateVersion
+  parent: Virtufin.Data.FlatBuffers.NoneValue
+  langs:
+  - csharp
+  - vb
+  name: ValidateVersion()
+  nameWithType: NoneValue.ValidateVersion()
+  fullName: Virtufin.Data.FlatBuffers.NoneValue.ValidateVersion()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/NoneValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ValidateVersion
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/NoneValue.cs
+    startLine: 15
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static void ValidateVersion()
+    content.vb: Public Shared Sub ValidateVersion()
+  overload: Virtufin.Data.FlatBuffers.NoneValue.ValidateVersion*
+- uid: Virtufin.Data.FlatBuffers.NoneValue.GetRootAsNoneValue(Google.FlatBuffers.ByteBuffer)
+  commentId: M:Virtufin.Data.FlatBuffers.NoneValue.GetRootAsNoneValue(Google.FlatBuffers.ByteBuffer)
+  id: GetRootAsNoneValue(Google.FlatBuffers.ByteBuffer)
+  parent: Virtufin.Data.FlatBuffers.NoneValue
+  langs:
+  - csharp
+  - vb
+  name: GetRootAsNoneValue(ByteBuffer)
+  nameWithType: NoneValue.GetRootAsNoneValue(ByteBuffer)
+  fullName: Virtufin.Data.FlatBuffers.NoneValue.GetRootAsNoneValue(Google.FlatBuffers.ByteBuffer)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/NoneValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GetRootAsNoneValue
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/NoneValue.cs
+    startLine: 16
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static NoneValue GetRootAsNoneValue(ByteBuffer _bb)
+    parameters:
+    - id: _bb
+      type: Google.FlatBuffers.ByteBuffer
+    return:
+      type: Virtufin.Data.FlatBuffers.NoneValue
+    content.vb: Public Shared Function GetRootAsNoneValue(_bb As ByteBuffer) As NoneValue
+  overload: Virtufin.Data.FlatBuffers.NoneValue.GetRootAsNoneValue*
+- uid: Virtufin.Data.FlatBuffers.NoneValue.GetRootAsNoneValue(Google.FlatBuffers.ByteBuffer,Virtufin.Data.FlatBuffers.NoneValue)
+  commentId: M:Virtufin.Data.FlatBuffers.NoneValue.GetRootAsNoneValue(Google.FlatBuffers.ByteBuffer,Virtufin.Data.FlatBuffers.NoneValue)
+  id: GetRootAsNoneValue(Google.FlatBuffers.ByteBuffer,Virtufin.Data.FlatBuffers.NoneValue)
+  parent: Virtufin.Data.FlatBuffers.NoneValue
+  langs:
+  - csharp
+  - vb
+  name: GetRootAsNoneValue(ByteBuffer, NoneValue)
+  nameWithType: NoneValue.GetRootAsNoneValue(ByteBuffer, NoneValue)
+  fullName: Virtufin.Data.FlatBuffers.NoneValue.GetRootAsNoneValue(Google.FlatBuffers.ByteBuffer, Virtufin.Data.FlatBuffers.NoneValue)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/NoneValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GetRootAsNoneValue
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/NoneValue.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static NoneValue GetRootAsNoneValue(ByteBuffer _bb, NoneValue obj)
+    parameters:
+    - id: _bb
+      type: Google.FlatBuffers.ByteBuffer
+    - id: obj
+      type: Virtufin.Data.FlatBuffers.NoneValue
+    return:
+      type: Virtufin.Data.FlatBuffers.NoneValue
+    content.vb: Public Shared Function GetRootAsNoneValue(_bb As ByteBuffer, obj As NoneValue) As NoneValue
+  overload: Virtufin.Data.FlatBuffers.NoneValue.GetRootAsNoneValue*
+- uid: Virtufin.Data.FlatBuffers.NoneValue.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  commentId: M:Virtufin.Data.FlatBuffers.NoneValue.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  id: __init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  parent: Virtufin.Data.FlatBuffers.NoneValue
+  langs:
+  - csharp
+  - vb
+  name: __init(int, ByteBuffer)
+  nameWithType: NoneValue.__init(int, ByteBuffer)
+  fullName: Virtufin.Data.FlatBuffers.NoneValue.__init(int, Google.FlatBuffers.ByteBuffer)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/NoneValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: __init
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/NoneValue.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  example: []
+  syntax:
+    content: public void __init(int _i, ByteBuffer _bb)
+    parameters:
+    - id: _i
+      type: System.Int32
+    - id: _bb
+      type: Google.FlatBuffers.ByteBuffer
+    content.vb: Public Sub __init(_i As Integer, _bb As ByteBuffer)
+  overload: Virtufin.Data.FlatBuffers.NoneValue.__init*
+  implements:
+  - Google.FlatBuffers.IFlatbufferObject.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  nameWithType.vb: NoneValue.__init(Integer, ByteBuffer)
+  fullName.vb: Virtufin.Data.FlatBuffers.NoneValue.__init(Integer, Google.FlatBuffers.ByteBuffer)
+  name.vb: __init(Integer, ByteBuffer)
+- uid: Virtufin.Data.FlatBuffers.NoneValue.__assign(System.Int32,Google.FlatBuffers.ByteBuffer)
+  commentId: M:Virtufin.Data.FlatBuffers.NoneValue.__assign(System.Int32,Google.FlatBuffers.ByteBuffer)
+  id: __assign(System.Int32,Google.FlatBuffers.ByteBuffer)
+  parent: Virtufin.Data.FlatBuffers.NoneValue
+  langs:
+  - csharp
+  - vb
+  name: __assign(int, ByteBuffer)
+  nameWithType: NoneValue.__assign(int, ByteBuffer)
+  fullName: Virtufin.Data.FlatBuffers.NoneValue.__assign(int, Google.FlatBuffers.ByteBuffer)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/NoneValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: __assign
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/NoneValue.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public NoneValue __assign(int _i, ByteBuffer _bb)
+    parameters:
+    - id: _i
+      type: System.Int32
+    - id: _bb
+      type: Google.FlatBuffers.ByteBuffer
+    return:
+      type: Virtufin.Data.FlatBuffers.NoneValue
+    content.vb: Public Function __assign(_i As Integer, _bb As ByteBuffer) As NoneValue
+  overload: Virtufin.Data.FlatBuffers.NoneValue.__assign*
+  nameWithType.vb: NoneValue.__assign(Integer, ByteBuffer)
+  fullName.vb: Virtufin.Data.FlatBuffers.NoneValue.__assign(Integer, Google.FlatBuffers.ByteBuffer)
+  name.vb: __assign(Integer, ByteBuffer)
+- uid: Virtufin.Data.FlatBuffers.NoneValue.StartNoneValue(Google.FlatBuffers.FlatBufferBuilder)
+  commentId: M:Virtufin.Data.FlatBuffers.NoneValue.StartNoneValue(Google.FlatBuffers.FlatBufferBuilder)
+  id: StartNoneValue(Google.FlatBuffers.FlatBufferBuilder)
+  parent: Virtufin.Data.FlatBuffers.NoneValue
+  langs:
+  - csharp
+  - vb
+  name: StartNoneValue(FlatBufferBuilder)
+  nameWithType: NoneValue.StartNoneValue(FlatBufferBuilder)
+  fullName: Virtufin.Data.FlatBuffers.NoneValue.StartNoneValue(Google.FlatBuffers.FlatBufferBuilder)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/NoneValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: StartNoneValue
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/NoneValue.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static void StartNoneValue(FlatBufferBuilder builder)
+    parameters:
+    - id: builder
+      type: Google.FlatBuffers.FlatBufferBuilder
+    content.vb: Public Shared Sub StartNoneValue(builder As FlatBufferBuilder)
+  overload: Virtufin.Data.FlatBuffers.NoneValue.StartNoneValue*
+- uid: Virtufin.Data.FlatBuffers.NoneValue.EndNoneValue(Google.FlatBuffers.FlatBufferBuilder)
+  commentId: M:Virtufin.Data.FlatBuffers.NoneValue.EndNoneValue(Google.FlatBuffers.FlatBufferBuilder)
+  id: EndNoneValue(Google.FlatBuffers.FlatBufferBuilder)
+  parent: Virtufin.Data.FlatBuffers.NoneValue
+  langs:
+  - csharp
+  - vb
+  name: EndNoneValue(FlatBufferBuilder)
+  nameWithType: NoneValue.EndNoneValue(FlatBufferBuilder)
+  fullName: Virtufin.Data.FlatBuffers.NoneValue.EndNoneValue(Google.FlatBuffers.FlatBufferBuilder)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/NoneValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: EndNoneValue
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/NoneValue.cs
+    startLine: 23
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static Offset<NoneValue> EndNoneValue(FlatBufferBuilder builder)
+    parameters:
+    - id: builder
+      type: Google.FlatBuffers.FlatBufferBuilder
+    return:
+      type: Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.NoneValue}
+    content.vb: Public Shared Function EndNoneValue(builder As FlatBufferBuilder) As Offset(Of NoneValue)
+  overload: Virtufin.Data.FlatBuffers.NoneValue.EndNoneValue*
+references:
+- uid: Virtufin.Data.FlatBuffers
+  commentId: N:Virtufin.Data.FlatBuffers
+  href: Virtufin.html
+  name: Virtufin.Data.FlatBuffers
+  nameWithType: Virtufin.Data.FlatBuffers
+  fullName: Virtufin.Data.FlatBuffers
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Data
+    name: Data
+    href: Virtufin.Data.html
+  - name: .
+  - uid: Virtufin.Data.FlatBuffers
+    name: FlatBuffers
+    href: Virtufin.Data.FlatBuffers.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Data
+    name: Data
+    href: Virtufin.Data.html
+  - name: .
+  - uid: Virtufin.Data.FlatBuffers
+    name: FlatBuffers
+    href: Virtufin.Data.FlatBuffers.html
+- uid: Google.FlatBuffers.IFlatbufferObject
+  commentId: T:Google.FlatBuffers.IFlatbufferObject
+  parent: Google.FlatBuffers
+  isExternal: true
+  name: IFlatbufferObject
+  nameWithType: IFlatbufferObject
+  fullName: Google.FlatBuffers.IFlatbufferObject
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Google.FlatBuffers
+  commentId: N:Google.FlatBuffers
+  href: Google.html
+  name: Google.FlatBuffers
+  nameWithType: Google.FlatBuffers
+  fullName: Google.FlatBuffers
+  spec.csharp:
+  - uid: Google
+    name: Google
+    href: Google.html
+  - name: .
+  - uid: Google.FlatBuffers
+    name: FlatBuffers
+    href: Google.FlatBuffers.html
+  spec.vb:
+  - uid: Google
+    name: Google
+    href: Google.html
+  - name: .
+  - uid: Google.FlatBuffers
+    name: FlatBuffers
+    href: Google.FlatBuffers.html
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Data.FlatBuffers.NoneValue.ByteBuffer*
+  commentId: Overload:Virtufin.Data.FlatBuffers.NoneValue.ByteBuffer
+  href: Virtufin.Data.FlatBuffers.NoneValue.html#Virtufin_Data_FlatBuffers_NoneValue_ByteBuffer
+  name: ByteBuffer
+  nameWithType: NoneValue.ByteBuffer
+  fullName: Virtufin.Data.FlatBuffers.NoneValue.ByteBuffer
+- uid: Google.FlatBuffers.IFlatbufferObject.ByteBuffer
+  commentId: P:Google.FlatBuffers.IFlatbufferObject.ByteBuffer
+  parent: Google.FlatBuffers.IFlatbufferObject
+  isExternal: true
+  name: ByteBuffer
+  nameWithType: IFlatbufferObject.ByteBuffer
+  fullName: Google.FlatBuffers.IFlatbufferObject.ByteBuffer
+- uid: Google.FlatBuffers.ByteBuffer
+  commentId: T:Google.FlatBuffers.ByteBuffer
+  parent: Google.FlatBuffers
+  isExternal: true
+  name: ByteBuffer
+  nameWithType: ByteBuffer
+  fullName: Google.FlatBuffers.ByteBuffer
+- uid: Virtufin.Data.FlatBuffers.NoneValue.ValidateVersion*
+  commentId: Overload:Virtufin.Data.FlatBuffers.NoneValue.ValidateVersion
+  href: Virtufin.Data.FlatBuffers.NoneValue.html#Virtufin_Data_FlatBuffers_NoneValue_ValidateVersion
+  name: ValidateVersion
+  nameWithType: NoneValue.ValidateVersion
+  fullName: Virtufin.Data.FlatBuffers.NoneValue.ValidateVersion
+- uid: Virtufin.Data.FlatBuffers.NoneValue.GetRootAsNoneValue*
+  commentId: Overload:Virtufin.Data.FlatBuffers.NoneValue.GetRootAsNoneValue
+  href: Virtufin.Data.FlatBuffers.NoneValue.html#Virtufin_Data_FlatBuffers_NoneValue_GetRootAsNoneValue_Google_FlatBuffers_ByteBuffer_
+  name: GetRootAsNoneValue
+  nameWithType: NoneValue.GetRootAsNoneValue
+  fullName: Virtufin.Data.FlatBuffers.NoneValue.GetRootAsNoneValue
+- uid: Virtufin.Data.FlatBuffers.NoneValue
+  commentId: T:Virtufin.Data.FlatBuffers.NoneValue
+  parent: Virtufin.Data.FlatBuffers
+  href: Virtufin.Data.FlatBuffers.NoneValue.html
+  name: NoneValue
+  nameWithType: NoneValue
+  fullName: Virtufin.Data.FlatBuffers.NoneValue
+- uid: Virtufin.Data.FlatBuffers.NoneValue.__init*
+  commentId: Overload:Virtufin.Data.FlatBuffers.NoneValue.__init
+  href: Virtufin.Data.FlatBuffers.NoneValue.html#Virtufin_Data_FlatBuffers_NoneValue___init_System_Int32_Google_FlatBuffers_ByteBuffer_
+  name: __init
+  nameWithType: NoneValue.__init
+  fullName: Virtufin.Data.FlatBuffers.NoneValue.__init
+- uid: Google.FlatBuffers.IFlatbufferObject.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  commentId: M:Google.FlatBuffers.IFlatbufferObject.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  parent: Google.FlatBuffers.IFlatbufferObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: __init(int, ByteBuffer)
+  nameWithType: IFlatbufferObject.__init(int, ByteBuffer)
+  fullName: Google.FlatBuffers.IFlatbufferObject.__init(int, Google.FlatBuffers.ByteBuffer)
+  nameWithType.vb: IFlatbufferObject.__init(Integer, ByteBuffer)
+  fullName.vb: Google.FlatBuffers.IFlatbufferObject.__init(Integer, Google.FlatBuffers.ByteBuffer)
+  name.vb: __init(Integer, ByteBuffer)
+  spec.csharp:
+  - uid: Google.FlatBuffers.IFlatbufferObject.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+    name: __init
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Google.FlatBuffers.ByteBuffer
+    name: ByteBuffer
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Google.FlatBuffers.IFlatbufferObject.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+    name: __init
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Google.FlatBuffers.ByteBuffer
+    name: ByteBuffer
+    isExternal: true
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Virtufin.Data.FlatBuffers.NoneValue.__assign*
+  commentId: Overload:Virtufin.Data.FlatBuffers.NoneValue.__assign
+  href: Virtufin.Data.FlatBuffers.NoneValue.html#Virtufin_Data_FlatBuffers_NoneValue___assign_System_Int32_Google_FlatBuffers_ByteBuffer_
+  name: __assign
+  nameWithType: NoneValue.__assign
+  fullName: Virtufin.Data.FlatBuffers.NoneValue.__assign
+- uid: Virtufin.Data.FlatBuffers.NoneValue.StartNoneValue*
+  commentId: Overload:Virtufin.Data.FlatBuffers.NoneValue.StartNoneValue
+  href: Virtufin.Data.FlatBuffers.NoneValue.html#Virtufin_Data_FlatBuffers_NoneValue_StartNoneValue_Google_FlatBuffers_FlatBufferBuilder_
+  name: StartNoneValue
+  nameWithType: NoneValue.StartNoneValue
+  fullName: Virtufin.Data.FlatBuffers.NoneValue.StartNoneValue
+- uid: Google.FlatBuffers.FlatBufferBuilder
+  commentId: T:Google.FlatBuffers.FlatBufferBuilder
+  parent: Google.FlatBuffers
+  isExternal: true
+  name: FlatBufferBuilder
+  nameWithType: FlatBufferBuilder
+  fullName: Google.FlatBuffers.FlatBufferBuilder
+- uid: Virtufin.Data.FlatBuffers.NoneValue.EndNoneValue*
+  commentId: Overload:Virtufin.Data.FlatBuffers.NoneValue.EndNoneValue
+  href: Virtufin.Data.FlatBuffers.NoneValue.html#Virtufin_Data_FlatBuffers_NoneValue_EndNoneValue_Google_FlatBuffers_FlatBufferBuilder_
+  name: EndNoneValue
+  nameWithType: NoneValue.EndNoneValue
+  fullName: Virtufin.Data.FlatBuffers.NoneValue.EndNoneValue
+- uid: Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.NoneValue}
+  commentId: T:Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.NoneValue}
+  parent: Google.FlatBuffers
+  definition: Google.FlatBuffers.Offset`1
+  href: Virtufin.Data.FlatBuffers.NoneValue.html
+  name: Offset<NoneValue>
+  nameWithType: Offset<NoneValue>
+  fullName: Google.FlatBuffers.Offset<Virtufin.Data.FlatBuffers.NoneValue>
+  nameWithType.vb: Offset(Of NoneValue)
+  fullName.vb: Google.FlatBuffers.Offset(Of Virtufin.Data.FlatBuffers.NoneValue)
+  name.vb: Offset(Of NoneValue)
+  spec.csharp:
+  - uid: Google.FlatBuffers.Offset`1
+    name: Offset
+    isExternal: true
+  - name: <
+  - uid: Virtufin.Data.FlatBuffers.NoneValue
+    name: NoneValue
+    href: Virtufin.Data.FlatBuffers.NoneValue.html
+  - name: '>'
+  spec.vb:
+  - uid: Google.FlatBuffers.Offset`1
+    name: Offset
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Data.FlatBuffers.NoneValue
+    name: NoneValue
+    href: Virtufin.Data.FlatBuffers.NoneValue.html
+  - name: )
+- uid: Google.FlatBuffers.Offset`1
+  commentId: T:Google.FlatBuffers.Offset`1
+  isExternal: true
+  name: Offset<T>
+  nameWithType: Offset<T>
+  fullName: Google.FlatBuffers.Offset<T>
+  nameWithType.vb: Offset(Of T)
+  fullName.vb: Google.FlatBuffers.Offset(Of T)
+  name.vb: Offset(Of T)
+  spec.csharp:
+  - uid: Google.FlatBuffers.Offset`1
+    name: Offset
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Google.FlatBuffers.Offset`1
+    name: Offset
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

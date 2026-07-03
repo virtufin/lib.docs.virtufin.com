@@ -1,0 +1,1974 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Data.FlatBuffers.Variant
+  commentId: T:Virtufin.Data.FlatBuffers.Variant
+  id: Variant
+  parent: Virtufin.Data.FlatBuffers
+  children:
+  - Virtufin.Data.FlatBuffers.Variant.AddValue(Google.FlatBuffers.FlatBufferBuilder,System.Int32)
+  - Virtufin.Data.FlatBuffers.Variant.AddValueType(Google.FlatBuffers.FlatBufferBuilder,Virtufin.Data.FlatBuffers.Value)
+  - Virtufin.Data.FlatBuffers.Variant.ByteBuffer
+  - Virtufin.Data.FlatBuffers.Variant.CreateVariant(Google.FlatBuffers.FlatBufferBuilder,Virtufin.Data.FlatBuffers.Value,System.Int32)
+  - Virtufin.Data.FlatBuffers.Variant.EndVariant(Google.FlatBuffers.FlatBufferBuilder)
+  - Virtufin.Data.FlatBuffers.Variant.FinishSizePrefixedVariantBuffer(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant})
+  - Virtufin.Data.FlatBuffers.Variant.FinishVariantBuffer(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant})
+  - Virtufin.Data.FlatBuffers.Variant.GetRootAsVariant(Google.FlatBuffers.ByteBuffer)
+  - Virtufin.Data.FlatBuffers.Variant.GetRootAsVariant(Google.FlatBuffers.ByteBuffer,Virtufin.Data.FlatBuffers.Variant)
+  - Virtufin.Data.FlatBuffers.Variant.StartVariant(Google.FlatBuffers.FlatBufferBuilder)
+  - Virtufin.Data.FlatBuffers.Variant.ValidateVersion
+  - Virtufin.Data.FlatBuffers.Variant.ValueAsArrayBool
+  - Virtufin.Data.FlatBuffers.Variant.ValueAsArrayByte
+  - Virtufin.Data.FlatBuffers.Variant.ValueAsArrayDouble
+  - Virtufin.Data.FlatBuffers.Variant.ValueAsArrayFloat
+  - Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt16
+  - Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt32
+  - Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt64
+  - Virtufin.Data.FlatBuffers.Variant.ValueAsArrayString
+  - Virtufin.Data.FlatBuffers.Variant.ValueAsArrayVariant
+  - Virtufin.Data.FlatBuffers.Variant.ValueAsBool
+  - Virtufin.Data.FlatBuffers.Variant.ValueAsByte
+  - Virtufin.Data.FlatBuffers.Variant.ValueAsDictionary
+  - Virtufin.Data.FlatBuffers.Variant.ValueAsDictionaryEntry
+  - Virtufin.Data.FlatBuffers.Variant.ValueAsDouble
+  - Virtufin.Data.FlatBuffers.Variant.ValueAsFloat
+  - Virtufin.Data.FlatBuffers.Variant.ValueAsInt16
+  - Virtufin.Data.FlatBuffers.Variant.ValueAsInt32
+  - Virtufin.Data.FlatBuffers.Variant.ValueAsInt64
+  - Virtufin.Data.FlatBuffers.Variant.ValueAsNone
+  - Virtufin.Data.FlatBuffers.Variant.ValueAsString
+  - Virtufin.Data.FlatBuffers.Variant.ValueType
+  - Virtufin.Data.FlatBuffers.Variant.Value``1
+  - Virtufin.Data.FlatBuffers.Variant.VerifyVariant(Google.FlatBuffers.ByteBuffer)
+  - Virtufin.Data.FlatBuffers.Variant.__assign(System.Int32,Google.FlatBuffers.ByteBuffer)
+  - Virtufin.Data.FlatBuffers.Variant.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  langs:
+  - csharp
+  - vb
+  name: Variant
+  nameWithType: Variant
+  fullName: Virtufin.Data.FlatBuffers.Variant
+  type: Struct
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Variant
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 11
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: 'public struct Variant : IFlatbufferObject'
+    content.vb: Public Structure [Variant] Implements IFlatbufferObject
+  implements:
+  - Google.FlatBuffers.IFlatbufferObject
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Virtufin.Data.FlatBuffers.Variant.ByteBuffer
+  commentId: P:Virtufin.Data.FlatBuffers.Variant.ByteBuffer
+  id: ByteBuffer
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: ByteBuffer
+  nameWithType: Variant.ByteBuffer
+  fullName: Virtufin.Data.FlatBuffers.Variant.ByteBuffer
+  type: Property
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ByteBuffer
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 14
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  example: []
+  syntax:
+    content: public ByteBuffer ByteBuffer { get; }
+    parameters: []
+    return:
+      type: Google.FlatBuffers.ByteBuffer
+    content.vb: Public ReadOnly Property ByteBuffer As ByteBuffer
+  overload: Virtufin.Data.FlatBuffers.Variant.ByteBuffer*
+  implements:
+  - Google.FlatBuffers.IFlatbufferObject.ByteBuffer
+- uid: Virtufin.Data.FlatBuffers.Variant.ValidateVersion
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.ValidateVersion
+  id: ValidateVersion
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: ValidateVersion()
+  nameWithType: Variant.ValidateVersion()
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValidateVersion()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ValidateVersion
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 15
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static void ValidateVersion()
+    content.vb: Public Shared Sub ValidateVersion()
+  overload: Virtufin.Data.FlatBuffers.Variant.ValidateVersion*
+- uid: Virtufin.Data.FlatBuffers.Variant.GetRootAsVariant(Google.FlatBuffers.ByteBuffer)
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.GetRootAsVariant(Google.FlatBuffers.ByteBuffer)
+  id: GetRootAsVariant(Google.FlatBuffers.ByteBuffer)
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: GetRootAsVariant(ByteBuffer)
+  nameWithType: Variant.GetRootAsVariant(ByteBuffer)
+  fullName: Virtufin.Data.FlatBuffers.Variant.GetRootAsVariant(Google.FlatBuffers.ByteBuffer)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GetRootAsVariant
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 16
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static Variant GetRootAsVariant(ByteBuffer _bb)
+    parameters:
+    - id: _bb
+      type: Google.FlatBuffers.ByteBuffer
+    return:
+      type: Virtufin.Data.FlatBuffers.Variant
+    content.vb: Public Shared Function GetRootAsVariant(_bb As ByteBuffer) As [Variant]
+  overload: Virtufin.Data.FlatBuffers.Variant.GetRootAsVariant*
+- uid: Virtufin.Data.FlatBuffers.Variant.GetRootAsVariant(Google.FlatBuffers.ByteBuffer,Virtufin.Data.FlatBuffers.Variant)
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.GetRootAsVariant(Google.FlatBuffers.ByteBuffer,Virtufin.Data.FlatBuffers.Variant)
+  id: GetRootAsVariant(Google.FlatBuffers.ByteBuffer,Virtufin.Data.FlatBuffers.Variant)
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: GetRootAsVariant(ByteBuffer, Variant)
+  nameWithType: Variant.GetRootAsVariant(ByteBuffer, Variant)
+  fullName: Virtufin.Data.FlatBuffers.Variant.GetRootAsVariant(Google.FlatBuffers.ByteBuffer, Virtufin.Data.FlatBuffers.Variant)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GetRootAsVariant
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static Variant GetRootAsVariant(ByteBuffer _bb, Variant obj)
+    parameters:
+    - id: _bb
+      type: Google.FlatBuffers.ByteBuffer
+    - id: obj
+      type: Virtufin.Data.FlatBuffers.Variant
+    return:
+      type: Virtufin.Data.FlatBuffers.Variant
+    content.vb: Public Shared Function GetRootAsVariant(_bb As ByteBuffer, obj As [Variant]) As [Variant]
+  overload: Virtufin.Data.FlatBuffers.Variant.GetRootAsVariant*
+- uid: Virtufin.Data.FlatBuffers.Variant.VerifyVariant(Google.FlatBuffers.ByteBuffer)
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.VerifyVariant(Google.FlatBuffers.ByteBuffer)
+  id: VerifyVariant(Google.FlatBuffers.ByteBuffer)
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: VerifyVariant(ByteBuffer)
+  nameWithType: Variant.VerifyVariant(ByteBuffer)
+  fullName: Virtufin.Data.FlatBuffers.Variant.VerifyVariant(Google.FlatBuffers.ByteBuffer)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: VerifyVariant
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static bool VerifyVariant(ByteBuffer _bb)
+    parameters:
+    - id: _bb
+      type: Google.FlatBuffers.ByteBuffer
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function VerifyVariant(_bb As ByteBuffer) As Boolean
+  overload: Virtufin.Data.FlatBuffers.Variant.VerifyVariant*
+- uid: Virtufin.Data.FlatBuffers.Variant.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  id: __init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: __init(int, ByteBuffer)
+  nameWithType: Variant.__init(int, ByteBuffer)
+  fullName: Virtufin.Data.FlatBuffers.Variant.__init(int, Google.FlatBuffers.ByteBuffer)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: __init
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  example: []
+  syntax:
+    content: public void __init(int _i, ByteBuffer _bb)
+    parameters:
+    - id: _i
+      type: System.Int32
+    - id: _bb
+      type: Google.FlatBuffers.ByteBuffer
+    content.vb: Public Sub __init(_i As Integer, _bb As ByteBuffer)
+  overload: Virtufin.Data.FlatBuffers.Variant.__init*
+  implements:
+  - Google.FlatBuffers.IFlatbufferObject.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  nameWithType.vb: Variant.__init(Integer, ByteBuffer)
+  fullName.vb: Virtufin.Data.FlatBuffers.Variant.__init(Integer, Google.FlatBuffers.ByteBuffer)
+  name.vb: __init(Integer, ByteBuffer)
+- uid: Virtufin.Data.FlatBuffers.Variant.__assign(System.Int32,Google.FlatBuffers.ByteBuffer)
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.__assign(System.Int32,Google.FlatBuffers.ByteBuffer)
+  id: __assign(System.Int32,Google.FlatBuffers.ByteBuffer)
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: __assign(int, ByteBuffer)
+  nameWithType: Variant.__assign(int, ByteBuffer)
+  fullName: Virtufin.Data.FlatBuffers.Variant.__assign(int, Google.FlatBuffers.ByteBuffer)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: __assign
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public Variant __assign(int _i, ByteBuffer _bb)
+    parameters:
+    - id: _i
+      type: System.Int32
+    - id: _bb
+      type: Google.FlatBuffers.ByteBuffer
+    return:
+      type: Virtufin.Data.FlatBuffers.Variant
+    content.vb: Public Function __assign(_i As Integer, _bb As ByteBuffer) As [Variant]
+  overload: Virtufin.Data.FlatBuffers.Variant.__assign*
+  nameWithType.vb: Variant.__assign(Integer, ByteBuffer)
+  fullName.vb: Virtufin.Data.FlatBuffers.Variant.__assign(Integer, Google.FlatBuffers.ByteBuffer)
+  name.vb: __assign(Integer, ByteBuffer)
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueType
+  commentId: P:Virtufin.Data.FlatBuffers.Variant.ValueType
+  id: ValueType
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: ValueType
+  nameWithType: Variant.ValueType
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueType
+  type: Property
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ValueType
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public Value ValueType { get; }
+    parameters: []
+    return:
+      type: Virtufin.Data.FlatBuffers.Value
+    content.vb: Public ReadOnly Property ValueType As Value
+  overload: Virtufin.Data.FlatBuffers.Variant.ValueType*
+- uid: Virtufin.Data.FlatBuffers.Variant.Value``1
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.Value``1
+  id: Value``1
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: Value<TTable>()
+  nameWithType: Variant.Value<TTable>()
+  fullName: Virtufin.Data.FlatBuffers.Variant.Value<TTable>()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Value
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 23
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: 'public TTable? Value<TTable>() where TTable : struct, IFlatbufferObject'
+    typeParameters:
+    - id: TTable
+    return:
+      type: System.Nullable{{TTable}}
+    content.vb: Public Function Value(Of TTable As {Structure, IFlatbufferObject})() As TTable?
+  overload: Virtufin.Data.FlatBuffers.Variant.Value*
+  nameWithType.vb: Variant.Value(Of TTable)()
+  fullName.vb: Virtufin.Data.FlatBuffers.Variant.Value(Of TTable)()
+  name.vb: Value(Of TTable)()
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsNone
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.ValueAsNone
+  id: ValueAsNone
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: ValueAsNone()
+  nameWithType: Variant.ValueAsNone()
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsNone()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ValueAsNone
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 24
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public NoneValue ValueAsNone()
+    return:
+      type: Virtufin.Data.FlatBuffers.NoneValue
+    content.vb: Public Function ValueAsNone() As NoneValue
+  overload: Virtufin.Data.FlatBuffers.Variant.ValueAsNone*
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsBool
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.ValueAsBool
+  id: ValueAsBool
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: ValueAsBool()
+  nameWithType: Variant.ValueAsBool()
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsBool()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ValueAsBool
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 25
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public BoolValue ValueAsBool()
+    return:
+      type: Virtufin.Data.FlatBuffers.BoolValue
+    content.vb: Public Function ValueAsBool() As BoolValue
+  overload: Virtufin.Data.FlatBuffers.Variant.ValueAsBool*
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsByte
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.ValueAsByte
+  id: ValueAsByte
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: ValueAsByte()
+  nameWithType: Variant.ValueAsByte()
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsByte()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ValueAsByte
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public ByteValue ValueAsByte()
+    return:
+      type: Virtufin.Data.FlatBuffers.ByteValue
+    content.vb: Public Function ValueAsByte() As ByteValue
+  overload: Virtufin.Data.FlatBuffers.Variant.ValueAsByte*
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsInt16
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.ValueAsInt16
+  id: ValueAsInt16
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: ValueAsInt16()
+  nameWithType: Variant.ValueAsInt16()
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsInt16()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ValueAsInt16
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 27
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public Int16Value ValueAsInt16()
+    return:
+      type: Virtufin.Data.FlatBuffers.Int16Value
+    content.vb: Public Function ValueAsInt16() As Int16Value
+  overload: Virtufin.Data.FlatBuffers.Variant.ValueAsInt16*
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsInt32
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.ValueAsInt32
+  id: ValueAsInt32
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: ValueAsInt32()
+  nameWithType: Variant.ValueAsInt32()
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsInt32()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ValueAsInt32
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 28
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public Int32Value ValueAsInt32()
+    return:
+      type: Virtufin.Data.FlatBuffers.Int32Value
+    content.vb: Public Function ValueAsInt32() As Int32Value
+  overload: Virtufin.Data.FlatBuffers.Variant.ValueAsInt32*
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsInt64
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.ValueAsInt64
+  id: ValueAsInt64
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: ValueAsInt64()
+  nameWithType: Variant.ValueAsInt64()
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsInt64()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ValueAsInt64
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 29
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public Int64Value ValueAsInt64()
+    return:
+      type: Virtufin.Data.FlatBuffers.Int64Value
+    content.vb: Public Function ValueAsInt64() As Int64Value
+  overload: Virtufin.Data.FlatBuffers.Variant.ValueAsInt64*
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsFloat
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.ValueAsFloat
+  id: ValueAsFloat
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: ValueAsFloat()
+  nameWithType: Variant.ValueAsFloat()
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsFloat()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ValueAsFloat
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 30
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public FloatValue ValueAsFloat()
+    return:
+      type: Virtufin.Data.FlatBuffers.FloatValue
+    content.vb: Public Function ValueAsFloat() As FloatValue
+  overload: Virtufin.Data.FlatBuffers.Variant.ValueAsFloat*
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsDouble
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.ValueAsDouble
+  id: ValueAsDouble
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: ValueAsDouble()
+  nameWithType: Variant.ValueAsDouble()
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsDouble()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ValueAsDouble
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 31
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public DoubleValue ValueAsDouble()
+    return:
+      type: Virtufin.Data.FlatBuffers.DoubleValue
+    content.vb: Public Function ValueAsDouble() As DoubleValue
+  overload: Virtufin.Data.FlatBuffers.Variant.ValueAsDouble*
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsString
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.ValueAsString
+  id: ValueAsString
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: ValueAsString()
+  nameWithType: Variant.ValueAsString()
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsString()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ValueAsString
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 32
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public StringValue ValueAsString()
+    return:
+      type: Virtufin.Data.FlatBuffers.StringValue
+    content.vb: Public Function ValueAsString() As StringValue
+  overload: Virtufin.Data.FlatBuffers.Variant.ValueAsString*
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayBool
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.ValueAsArrayBool
+  id: ValueAsArrayBool
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: ValueAsArrayBool()
+  nameWithType: Variant.ValueAsArrayBool()
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayBool()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ValueAsArrayBool
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 33
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public ArrayBoolValue ValueAsArrayBool()
+    return:
+      type: Virtufin.Data.FlatBuffers.ArrayBoolValue
+    content.vb: Public Function ValueAsArrayBool() As ArrayBoolValue
+  overload: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayBool*
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayByte
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.ValueAsArrayByte
+  id: ValueAsArrayByte
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: ValueAsArrayByte()
+  nameWithType: Variant.ValueAsArrayByte()
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayByte()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ValueAsArrayByte
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 34
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public ArrayByteValue ValueAsArrayByte()
+    return:
+      type: Virtufin.Data.FlatBuffers.ArrayByteValue
+    content.vb: Public Function ValueAsArrayByte() As ArrayByteValue
+  overload: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayByte*
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt16
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt16
+  id: ValueAsArrayInt16
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: ValueAsArrayInt16()
+  nameWithType: Variant.ValueAsArrayInt16()
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt16()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ValueAsArrayInt16
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 35
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public ArrayInt16Value ValueAsArrayInt16()
+    return:
+      type: Virtufin.Data.FlatBuffers.ArrayInt16Value
+    content.vb: Public Function ValueAsArrayInt16() As ArrayInt16Value
+  overload: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt16*
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt32
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt32
+  id: ValueAsArrayInt32
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: ValueAsArrayInt32()
+  nameWithType: Variant.ValueAsArrayInt32()
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt32()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ValueAsArrayInt32
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 36
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public ArrayInt32Value ValueAsArrayInt32()
+    return:
+      type: Virtufin.Data.FlatBuffers.ArrayInt32Value
+    content.vb: Public Function ValueAsArrayInt32() As ArrayInt32Value
+  overload: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt32*
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt64
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt64
+  id: ValueAsArrayInt64
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: ValueAsArrayInt64()
+  nameWithType: Variant.ValueAsArrayInt64()
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt64()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ValueAsArrayInt64
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 37
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public ArrayInt64Value ValueAsArrayInt64()
+    return:
+      type: Virtufin.Data.FlatBuffers.ArrayInt64Value
+    content.vb: Public Function ValueAsArrayInt64() As ArrayInt64Value
+  overload: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt64*
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayFloat
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.ValueAsArrayFloat
+  id: ValueAsArrayFloat
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: ValueAsArrayFloat()
+  nameWithType: Variant.ValueAsArrayFloat()
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayFloat()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ValueAsArrayFloat
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 38
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public ArrayFloatValue ValueAsArrayFloat()
+    return:
+      type: Virtufin.Data.FlatBuffers.ArrayFloatValue
+    content.vb: Public Function ValueAsArrayFloat() As ArrayFloatValue
+  overload: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayFloat*
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayDouble
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.ValueAsArrayDouble
+  id: ValueAsArrayDouble
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: ValueAsArrayDouble()
+  nameWithType: Variant.ValueAsArrayDouble()
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayDouble()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ValueAsArrayDouble
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 39
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public ArrayDoubleValue ValueAsArrayDouble()
+    return:
+      type: Virtufin.Data.FlatBuffers.ArrayDoubleValue
+    content.vb: Public Function ValueAsArrayDouble() As ArrayDoubleValue
+  overload: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayDouble*
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayString
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.ValueAsArrayString
+  id: ValueAsArrayString
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: ValueAsArrayString()
+  nameWithType: Variant.ValueAsArrayString()
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayString()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ValueAsArrayString
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 40
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public ArrayStringValue ValueAsArrayString()
+    return:
+      type: Virtufin.Data.FlatBuffers.ArrayStringValue
+    content.vb: Public Function ValueAsArrayString() As ArrayStringValue
+  overload: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayString*
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayVariant
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.ValueAsArrayVariant
+  id: ValueAsArrayVariant
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: ValueAsArrayVariant()
+  nameWithType: Variant.ValueAsArrayVariant()
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayVariant()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ValueAsArrayVariant
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 41
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public ArrayVariantValue ValueAsArrayVariant()
+    return:
+      type: Virtufin.Data.FlatBuffers.ArrayVariantValue
+    content.vb: Public Function ValueAsArrayVariant() As ArrayVariantValue
+  overload: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayVariant*
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsDictionaryEntry
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.ValueAsDictionaryEntry
+  id: ValueAsDictionaryEntry
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: ValueAsDictionaryEntry()
+  nameWithType: Variant.ValueAsDictionaryEntry()
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsDictionaryEntry()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ValueAsDictionaryEntry
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 42
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public DictionaryEntry ValueAsDictionaryEntry()
+    return:
+      type: Virtufin.Data.FlatBuffers.DictionaryEntry
+    content.vb: Public Function ValueAsDictionaryEntry() As DictionaryEntry
+  overload: Virtufin.Data.FlatBuffers.Variant.ValueAsDictionaryEntry*
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsDictionary
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.ValueAsDictionary
+  id: ValueAsDictionary
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: ValueAsDictionary()
+  nameWithType: Variant.ValueAsDictionary()
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsDictionary()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ValueAsDictionary
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 43
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public DictionaryValue ValueAsDictionary()
+    return:
+      type: Virtufin.Data.FlatBuffers.DictionaryValue
+    content.vb: Public Function ValueAsDictionary() As DictionaryValue
+  overload: Virtufin.Data.FlatBuffers.Variant.ValueAsDictionary*
+- uid: Virtufin.Data.FlatBuffers.Variant.CreateVariant(Google.FlatBuffers.FlatBufferBuilder,Virtufin.Data.FlatBuffers.Value,System.Int32)
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.CreateVariant(Google.FlatBuffers.FlatBufferBuilder,Virtufin.Data.FlatBuffers.Value,System.Int32)
+  id: CreateVariant(Google.FlatBuffers.FlatBufferBuilder,Virtufin.Data.FlatBuffers.Value,System.Int32)
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: CreateVariant(FlatBufferBuilder, Value, int)
+  nameWithType: Variant.CreateVariant(FlatBufferBuilder, Value, int)
+  fullName: Virtufin.Data.FlatBuffers.Variant.CreateVariant(Google.FlatBuffers.FlatBufferBuilder, Virtufin.Data.FlatBuffers.Value, int)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: CreateVariant
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 45
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static Offset<Variant> CreateVariant(FlatBufferBuilder builder, Value value_type = Value.NONE, int valueOffset = 0)
+    parameters:
+    - id: builder
+      type: Google.FlatBuffers.FlatBufferBuilder
+    - id: value_type
+      type: Virtufin.Data.FlatBuffers.Value
+    - id: valueOffset
+      type: System.Int32
+    return:
+      type: Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant}
+    content.vb: Public Shared Function CreateVariant(builder As FlatBufferBuilder, value_type As Value = Value.NONE, valueOffset As Integer = 0) As Offset(Of [Variant])
+  overload: Virtufin.Data.FlatBuffers.Variant.CreateVariant*
+  nameWithType.vb: Variant.CreateVariant(FlatBufferBuilder, Value, Integer)
+  fullName.vb: Virtufin.Data.FlatBuffers.Variant.CreateVariant(Google.FlatBuffers.FlatBufferBuilder, Virtufin.Data.FlatBuffers.Value, Integer)
+  name.vb: CreateVariant(FlatBufferBuilder, Value, Integer)
+- uid: Virtufin.Data.FlatBuffers.Variant.StartVariant(Google.FlatBuffers.FlatBufferBuilder)
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.StartVariant(Google.FlatBuffers.FlatBufferBuilder)
+  id: StartVariant(Google.FlatBuffers.FlatBufferBuilder)
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: StartVariant(FlatBufferBuilder)
+  nameWithType: Variant.StartVariant(FlatBufferBuilder)
+  fullName: Virtufin.Data.FlatBuffers.Variant.StartVariant(Google.FlatBuffers.FlatBufferBuilder)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: StartVariant
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 54
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static void StartVariant(FlatBufferBuilder builder)
+    parameters:
+    - id: builder
+      type: Google.FlatBuffers.FlatBufferBuilder
+    content.vb: Public Shared Sub StartVariant(builder As FlatBufferBuilder)
+  overload: Virtufin.Data.FlatBuffers.Variant.StartVariant*
+- uid: Virtufin.Data.FlatBuffers.Variant.AddValueType(Google.FlatBuffers.FlatBufferBuilder,Virtufin.Data.FlatBuffers.Value)
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.AddValueType(Google.FlatBuffers.FlatBufferBuilder,Virtufin.Data.FlatBuffers.Value)
+  id: AddValueType(Google.FlatBuffers.FlatBufferBuilder,Virtufin.Data.FlatBuffers.Value)
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: AddValueType(FlatBufferBuilder, Value)
+  nameWithType: Variant.AddValueType(FlatBufferBuilder, Value)
+  fullName: Virtufin.Data.FlatBuffers.Variant.AddValueType(Google.FlatBuffers.FlatBufferBuilder, Virtufin.Data.FlatBuffers.Value)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: AddValueType
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 55
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static void AddValueType(FlatBufferBuilder builder, Value valueType)
+    parameters:
+    - id: builder
+      type: Google.FlatBuffers.FlatBufferBuilder
+    - id: valueType
+      type: Virtufin.Data.FlatBuffers.Value
+    content.vb: Public Shared Sub AddValueType(builder As FlatBufferBuilder, valueType As Value)
+  overload: Virtufin.Data.FlatBuffers.Variant.AddValueType*
+- uid: Virtufin.Data.FlatBuffers.Variant.AddValue(Google.FlatBuffers.FlatBufferBuilder,System.Int32)
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.AddValue(Google.FlatBuffers.FlatBufferBuilder,System.Int32)
+  id: AddValue(Google.FlatBuffers.FlatBufferBuilder,System.Int32)
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: AddValue(FlatBufferBuilder, int)
+  nameWithType: Variant.AddValue(FlatBufferBuilder, int)
+  fullName: Virtufin.Data.FlatBuffers.Variant.AddValue(Google.FlatBuffers.FlatBufferBuilder, int)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: AddValue
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 56
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static void AddValue(FlatBufferBuilder builder, int valueOffset)
+    parameters:
+    - id: builder
+      type: Google.FlatBuffers.FlatBufferBuilder
+    - id: valueOffset
+      type: System.Int32
+    content.vb: Public Shared Sub AddValue(builder As FlatBufferBuilder, valueOffset As Integer)
+  overload: Virtufin.Data.FlatBuffers.Variant.AddValue*
+  nameWithType.vb: Variant.AddValue(FlatBufferBuilder, Integer)
+  fullName.vb: Virtufin.Data.FlatBuffers.Variant.AddValue(Google.FlatBuffers.FlatBufferBuilder, Integer)
+  name.vb: AddValue(FlatBufferBuilder, Integer)
+- uid: Virtufin.Data.FlatBuffers.Variant.EndVariant(Google.FlatBuffers.FlatBufferBuilder)
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.EndVariant(Google.FlatBuffers.FlatBufferBuilder)
+  id: EndVariant(Google.FlatBuffers.FlatBufferBuilder)
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: EndVariant(FlatBufferBuilder)
+  nameWithType: Variant.EndVariant(FlatBufferBuilder)
+  fullName: Virtufin.Data.FlatBuffers.Variant.EndVariant(Google.FlatBuffers.FlatBufferBuilder)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: EndVariant
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 57
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static Offset<Variant> EndVariant(FlatBufferBuilder builder)
+    parameters:
+    - id: builder
+      type: Google.FlatBuffers.FlatBufferBuilder
+    return:
+      type: Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant}
+    content.vb: Public Shared Function EndVariant(builder As FlatBufferBuilder) As Offset(Of [Variant])
+  overload: Virtufin.Data.FlatBuffers.Variant.EndVariant*
+- uid: Virtufin.Data.FlatBuffers.Variant.FinishVariantBuffer(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant})
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.FinishVariantBuffer(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant})
+  id: FinishVariantBuffer(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant})
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: FinishVariantBuffer(FlatBufferBuilder, Offset<Variant>)
+  nameWithType: Variant.FinishVariantBuffer(FlatBufferBuilder, Offset<Variant>)
+  fullName: Virtufin.Data.FlatBuffers.Variant.FinishVariantBuffer(Google.FlatBuffers.FlatBufferBuilder, Google.FlatBuffers.Offset<Virtufin.Data.FlatBuffers.Variant>)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: FinishVariantBuffer
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 61
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static void FinishVariantBuffer(FlatBufferBuilder builder, Offset<Variant> offset)
+    parameters:
+    - id: builder
+      type: Google.FlatBuffers.FlatBufferBuilder
+    - id: offset
+      type: Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant}
+    content.vb: Public Shared Sub FinishVariantBuffer(builder As FlatBufferBuilder, offset As Offset(Of [Variant]))
+  overload: Virtufin.Data.FlatBuffers.Variant.FinishVariantBuffer*
+  nameWithType.vb: Variant.FinishVariantBuffer(FlatBufferBuilder, Offset(Of Variant))
+  fullName.vb: Virtufin.Data.FlatBuffers.Variant.FinishVariantBuffer(Google.FlatBuffers.FlatBufferBuilder, Google.FlatBuffers.Offset(Of Virtufin.Data.FlatBuffers.Variant))
+  name.vb: FinishVariantBuffer(FlatBufferBuilder, Offset(Of Variant))
+- uid: Virtufin.Data.FlatBuffers.Variant.FinishSizePrefixedVariantBuffer(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant})
+  commentId: M:Virtufin.Data.FlatBuffers.Variant.FinishSizePrefixedVariantBuffer(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant})
+  id: FinishSizePrefixedVariantBuffer(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant})
+  parent: Virtufin.Data.FlatBuffers.Variant
+  langs:
+  - csharp
+  - vb
+  name: FinishSizePrefixedVariantBuffer(FlatBufferBuilder, Offset<Variant>)
+  nameWithType: Variant.FinishSizePrefixedVariantBuffer(FlatBufferBuilder, Offset<Variant>)
+  fullName: Virtufin.Data.FlatBuffers.Variant.FinishSizePrefixedVariantBuffer(Google.FlatBuffers.FlatBufferBuilder, Google.FlatBuffers.Offset<Virtufin.Data.FlatBuffers.Variant>)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: FinishSizePrefixedVariantBuffer
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
+    startLine: 62
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static void FinishSizePrefixedVariantBuffer(FlatBufferBuilder builder, Offset<Variant> offset)
+    parameters:
+    - id: builder
+      type: Google.FlatBuffers.FlatBufferBuilder
+    - id: offset
+      type: Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant}
+    content.vb: Public Shared Sub FinishSizePrefixedVariantBuffer(builder As FlatBufferBuilder, offset As Offset(Of [Variant]))
+  overload: Virtufin.Data.FlatBuffers.Variant.FinishSizePrefixedVariantBuffer*
+  nameWithType.vb: Variant.FinishSizePrefixedVariantBuffer(FlatBufferBuilder, Offset(Of Variant))
+  fullName.vb: Virtufin.Data.FlatBuffers.Variant.FinishSizePrefixedVariantBuffer(Google.FlatBuffers.FlatBufferBuilder, Google.FlatBuffers.Offset(Of Virtufin.Data.FlatBuffers.Variant))
+  name.vb: FinishSizePrefixedVariantBuffer(FlatBufferBuilder, Offset(Of Variant))
+references:
+- uid: Virtufin.Data.FlatBuffers
+  commentId: N:Virtufin.Data.FlatBuffers
+  href: Virtufin.html
+  name: Virtufin.Data.FlatBuffers
+  nameWithType: Virtufin.Data.FlatBuffers
+  fullName: Virtufin.Data.FlatBuffers
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Data
+    name: Data
+    href: Virtufin.Data.html
+  - name: .
+  - uid: Virtufin.Data.FlatBuffers
+    name: FlatBuffers
+    href: Virtufin.Data.FlatBuffers.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Data
+    name: Data
+    href: Virtufin.Data.html
+  - name: .
+  - uid: Virtufin.Data.FlatBuffers
+    name: FlatBuffers
+    href: Virtufin.Data.FlatBuffers.html
+- uid: Google.FlatBuffers.IFlatbufferObject
+  commentId: T:Google.FlatBuffers.IFlatbufferObject
+  parent: Google.FlatBuffers
+  isExternal: true
+  name: IFlatbufferObject
+  nameWithType: IFlatbufferObject
+  fullName: Google.FlatBuffers.IFlatbufferObject
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Google.FlatBuffers
+  commentId: N:Google.FlatBuffers
+  href: Google.html
+  name: Google.FlatBuffers
+  nameWithType: Google.FlatBuffers
+  fullName: Google.FlatBuffers
+  spec.csharp:
+  - uid: Google
+    name: Google
+    href: Google.html
+  - name: .
+  - uid: Google.FlatBuffers
+    name: FlatBuffers
+    href: Google.FlatBuffers.html
+  spec.vb:
+  - uid: Google
+    name: Google
+    href: Google.html
+  - name: .
+  - uid: Google.FlatBuffers
+    name: FlatBuffers
+    href: Google.FlatBuffers.html
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Data.FlatBuffers.Variant.ByteBuffer*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.ByteBuffer
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_ByteBuffer
+  name: ByteBuffer
+  nameWithType: Variant.ByteBuffer
+  fullName: Virtufin.Data.FlatBuffers.Variant.ByteBuffer
+- uid: Google.FlatBuffers.IFlatbufferObject.ByteBuffer
+  commentId: P:Google.FlatBuffers.IFlatbufferObject.ByteBuffer
+  parent: Google.FlatBuffers.IFlatbufferObject
+  isExternal: true
+  name: ByteBuffer
+  nameWithType: IFlatbufferObject.ByteBuffer
+  fullName: Google.FlatBuffers.IFlatbufferObject.ByteBuffer
+- uid: Google.FlatBuffers.ByteBuffer
+  commentId: T:Google.FlatBuffers.ByteBuffer
+  parent: Google.FlatBuffers
+  isExternal: true
+  name: ByteBuffer
+  nameWithType: ByteBuffer
+  fullName: Google.FlatBuffers.ByteBuffer
+- uid: Virtufin.Data.FlatBuffers.Variant.ValidateVersion*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.ValidateVersion
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_ValidateVersion
+  name: ValidateVersion
+  nameWithType: Variant.ValidateVersion
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValidateVersion
+- uid: Virtufin.Data.FlatBuffers.Variant.GetRootAsVariant*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.GetRootAsVariant
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_GetRootAsVariant_Google_FlatBuffers_ByteBuffer_
+  name: GetRootAsVariant
+  nameWithType: Variant.GetRootAsVariant
+  fullName: Virtufin.Data.FlatBuffers.Variant.GetRootAsVariant
+- uid: Virtufin.Data.FlatBuffers.Variant
+  commentId: T:Virtufin.Data.FlatBuffers.Variant
+  parent: Virtufin.Data.FlatBuffers
+  href: Virtufin.Data.FlatBuffers.Variant.html
+  name: Variant
+  nameWithType: Variant
+  fullName: Virtufin.Data.FlatBuffers.Variant
+- uid: Virtufin.Data.FlatBuffers.Variant.VerifyVariant*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.VerifyVariant
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_VerifyVariant_Google_FlatBuffers_ByteBuffer_
+  name: VerifyVariant
+  nameWithType: Variant.VerifyVariant
+  fullName: Virtufin.Data.FlatBuffers.Variant.VerifyVariant
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Virtufin.Data.FlatBuffers.Variant.__init*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.__init
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant___init_System_Int32_Google_FlatBuffers_ByteBuffer_
+  name: __init
+  nameWithType: Variant.__init
+  fullName: Virtufin.Data.FlatBuffers.Variant.__init
+- uid: Google.FlatBuffers.IFlatbufferObject.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  commentId: M:Google.FlatBuffers.IFlatbufferObject.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  parent: Google.FlatBuffers.IFlatbufferObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: __init(int, ByteBuffer)
+  nameWithType: IFlatbufferObject.__init(int, ByteBuffer)
+  fullName: Google.FlatBuffers.IFlatbufferObject.__init(int, Google.FlatBuffers.ByteBuffer)
+  nameWithType.vb: IFlatbufferObject.__init(Integer, ByteBuffer)
+  fullName.vb: Google.FlatBuffers.IFlatbufferObject.__init(Integer, Google.FlatBuffers.ByteBuffer)
+  name.vb: __init(Integer, ByteBuffer)
+  spec.csharp:
+  - uid: Google.FlatBuffers.IFlatbufferObject.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+    name: __init
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Google.FlatBuffers.ByteBuffer
+    name: ByteBuffer
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Google.FlatBuffers.IFlatbufferObject.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+    name: __init
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Google.FlatBuffers.ByteBuffer
+    name: ByteBuffer
+    isExternal: true
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Virtufin.Data.FlatBuffers.Variant.__assign*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.__assign
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant___assign_System_Int32_Google_FlatBuffers_ByteBuffer_
+  name: __assign
+  nameWithType: Variant.__assign
+  fullName: Virtufin.Data.FlatBuffers.Variant.__assign
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueType*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.ValueType
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_ValueType
+  name: ValueType
+  nameWithType: Variant.ValueType
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueType
+- uid: Virtufin.Data.FlatBuffers.Value
+  commentId: T:Virtufin.Data.FlatBuffers.Value
+  parent: Virtufin.Data.FlatBuffers
+  href: Virtufin.Data.FlatBuffers.Value.html
+  name: Value
+  nameWithType: Value
+  fullName: Virtufin.Data.FlatBuffers.Value
+- uid: Virtufin.Data.FlatBuffers.Variant.Value*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.Value
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_Value__1
+  name: Value
+  nameWithType: Variant.Value
+  fullName: Virtufin.Data.FlatBuffers.Variant.Value
+- uid: System.Nullable{{TTable}}
+  commentId: T:System.Nullable{``0}
+  parent: System
+  definition: System.Nullable`1
+  name: TTable?
+  nameWithType: TTable?
+  fullName: TTable?
+  spec.csharp:
+  - name: TTable
+  - name: '?'
+  spec.vb:
+  - name: TTable
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsNone*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.ValueAsNone
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_ValueAsNone
+  name: ValueAsNone
+  nameWithType: Variant.ValueAsNone
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsNone
+- uid: Virtufin.Data.FlatBuffers.NoneValue
+  commentId: T:Virtufin.Data.FlatBuffers.NoneValue
+  parent: Virtufin.Data.FlatBuffers
+  href: Virtufin.Data.FlatBuffers.NoneValue.html
+  name: NoneValue
+  nameWithType: NoneValue
+  fullName: Virtufin.Data.FlatBuffers.NoneValue
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsBool*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.ValueAsBool
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_ValueAsBool
+  name: ValueAsBool
+  nameWithType: Variant.ValueAsBool
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsBool
+- uid: Virtufin.Data.FlatBuffers.BoolValue
+  commentId: T:Virtufin.Data.FlatBuffers.BoolValue
+  parent: Virtufin.Data.FlatBuffers
+  href: Virtufin.Data.FlatBuffers.BoolValue.html
+  name: BoolValue
+  nameWithType: BoolValue
+  fullName: Virtufin.Data.FlatBuffers.BoolValue
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsByte*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.ValueAsByte
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_ValueAsByte
+  name: ValueAsByte
+  nameWithType: Variant.ValueAsByte
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsByte
+- uid: Virtufin.Data.FlatBuffers.ByteValue
+  commentId: T:Virtufin.Data.FlatBuffers.ByteValue
+  parent: Virtufin.Data.FlatBuffers
+  href: Virtufin.Data.FlatBuffers.ByteValue.html
+  name: ByteValue
+  nameWithType: ByteValue
+  fullName: Virtufin.Data.FlatBuffers.ByteValue
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsInt16*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.ValueAsInt16
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_ValueAsInt16
+  name: ValueAsInt16
+  nameWithType: Variant.ValueAsInt16
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsInt16
+- uid: Virtufin.Data.FlatBuffers.Int16Value
+  commentId: T:Virtufin.Data.FlatBuffers.Int16Value
+  parent: Virtufin.Data.FlatBuffers
+  href: Virtufin.Data.FlatBuffers.Int16Value.html
+  name: Int16Value
+  nameWithType: Int16Value
+  fullName: Virtufin.Data.FlatBuffers.Int16Value
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsInt32*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.ValueAsInt32
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_ValueAsInt32
+  name: ValueAsInt32
+  nameWithType: Variant.ValueAsInt32
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsInt32
+- uid: Virtufin.Data.FlatBuffers.Int32Value
+  commentId: T:Virtufin.Data.FlatBuffers.Int32Value
+  parent: Virtufin.Data.FlatBuffers
+  href: Virtufin.Data.FlatBuffers.Int32Value.html
+  name: Int32Value
+  nameWithType: Int32Value
+  fullName: Virtufin.Data.FlatBuffers.Int32Value
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsInt64*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.ValueAsInt64
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_ValueAsInt64
+  name: ValueAsInt64
+  nameWithType: Variant.ValueAsInt64
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsInt64
+- uid: Virtufin.Data.FlatBuffers.Int64Value
+  commentId: T:Virtufin.Data.FlatBuffers.Int64Value
+  parent: Virtufin.Data.FlatBuffers
+  href: Virtufin.Data.FlatBuffers.Int64Value.html
+  name: Int64Value
+  nameWithType: Int64Value
+  fullName: Virtufin.Data.FlatBuffers.Int64Value
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsFloat*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.ValueAsFloat
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_ValueAsFloat
+  name: ValueAsFloat
+  nameWithType: Variant.ValueAsFloat
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsFloat
+- uid: Virtufin.Data.FlatBuffers.FloatValue
+  commentId: T:Virtufin.Data.FlatBuffers.FloatValue
+  parent: Virtufin.Data.FlatBuffers
+  href: Virtufin.Data.FlatBuffers.FloatValue.html
+  name: FloatValue
+  nameWithType: FloatValue
+  fullName: Virtufin.Data.FlatBuffers.FloatValue
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsDouble*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.ValueAsDouble
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_ValueAsDouble
+  name: ValueAsDouble
+  nameWithType: Variant.ValueAsDouble
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsDouble
+- uid: Virtufin.Data.FlatBuffers.DoubleValue
+  commentId: T:Virtufin.Data.FlatBuffers.DoubleValue
+  parent: Virtufin.Data.FlatBuffers
+  href: Virtufin.Data.FlatBuffers.DoubleValue.html
+  name: DoubleValue
+  nameWithType: DoubleValue
+  fullName: Virtufin.Data.FlatBuffers.DoubleValue
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsString*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.ValueAsString
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_ValueAsString
+  name: ValueAsString
+  nameWithType: Variant.ValueAsString
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsString
+- uid: Virtufin.Data.FlatBuffers.StringValue
+  commentId: T:Virtufin.Data.FlatBuffers.StringValue
+  parent: Virtufin.Data.FlatBuffers
+  href: Virtufin.Data.FlatBuffers.StringValue.html
+  name: StringValue
+  nameWithType: StringValue
+  fullName: Virtufin.Data.FlatBuffers.StringValue
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayBool*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.ValueAsArrayBool
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_ValueAsArrayBool
+  name: ValueAsArrayBool
+  nameWithType: Variant.ValueAsArrayBool
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayBool
+- uid: Virtufin.Data.FlatBuffers.ArrayBoolValue
+  commentId: T:Virtufin.Data.FlatBuffers.ArrayBoolValue
+  parent: Virtufin.Data.FlatBuffers
+  href: Virtufin.Data.FlatBuffers.ArrayBoolValue.html
+  name: ArrayBoolValue
+  nameWithType: ArrayBoolValue
+  fullName: Virtufin.Data.FlatBuffers.ArrayBoolValue
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayByte*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.ValueAsArrayByte
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_ValueAsArrayByte
+  name: ValueAsArrayByte
+  nameWithType: Variant.ValueAsArrayByte
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayByte
+- uid: Virtufin.Data.FlatBuffers.ArrayByteValue
+  commentId: T:Virtufin.Data.FlatBuffers.ArrayByteValue
+  parent: Virtufin.Data.FlatBuffers
+  href: Virtufin.Data.FlatBuffers.ArrayByteValue.html
+  name: ArrayByteValue
+  nameWithType: ArrayByteValue
+  fullName: Virtufin.Data.FlatBuffers.ArrayByteValue
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt16*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt16
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_ValueAsArrayInt16
+  name: ValueAsArrayInt16
+  nameWithType: Variant.ValueAsArrayInt16
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt16
+- uid: Virtufin.Data.FlatBuffers.ArrayInt16Value
+  commentId: T:Virtufin.Data.FlatBuffers.ArrayInt16Value
+  parent: Virtufin.Data.FlatBuffers
+  href: Virtufin.Data.FlatBuffers.ArrayInt16Value.html
+  name: ArrayInt16Value
+  nameWithType: ArrayInt16Value
+  fullName: Virtufin.Data.FlatBuffers.ArrayInt16Value
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt32*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt32
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_ValueAsArrayInt32
+  name: ValueAsArrayInt32
+  nameWithType: Variant.ValueAsArrayInt32
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt32
+- uid: Virtufin.Data.FlatBuffers.ArrayInt32Value
+  commentId: T:Virtufin.Data.FlatBuffers.ArrayInt32Value
+  parent: Virtufin.Data.FlatBuffers
+  href: Virtufin.Data.FlatBuffers.ArrayInt32Value.html
+  name: ArrayInt32Value
+  nameWithType: ArrayInt32Value
+  fullName: Virtufin.Data.FlatBuffers.ArrayInt32Value
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt64*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt64
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_ValueAsArrayInt64
+  name: ValueAsArrayInt64
+  nameWithType: Variant.ValueAsArrayInt64
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt64
+- uid: Virtufin.Data.FlatBuffers.ArrayInt64Value
+  commentId: T:Virtufin.Data.FlatBuffers.ArrayInt64Value
+  parent: Virtufin.Data.FlatBuffers
+  href: Virtufin.Data.FlatBuffers.ArrayInt64Value.html
+  name: ArrayInt64Value
+  nameWithType: ArrayInt64Value
+  fullName: Virtufin.Data.FlatBuffers.ArrayInt64Value
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayFloat*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.ValueAsArrayFloat
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_ValueAsArrayFloat
+  name: ValueAsArrayFloat
+  nameWithType: Variant.ValueAsArrayFloat
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayFloat
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue
+  commentId: T:Virtufin.Data.FlatBuffers.ArrayFloatValue
+  parent: Virtufin.Data.FlatBuffers
+  href: Virtufin.Data.FlatBuffers.ArrayFloatValue.html
+  name: ArrayFloatValue
+  nameWithType: ArrayFloatValue
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayDouble*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.ValueAsArrayDouble
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_ValueAsArrayDouble
+  name: ValueAsArrayDouble
+  nameWithType: Variant.ValueAsArrayDouble
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayDouble
+- uid: Virtufin.Data.FlatBuffers.ArrayDoubleValue
+  commentId: T:Virtufin.Data.FlatBuffers.ArrayDoubleValue
+  parent: Virtufin.Data.FlatBuffers
+  href: Virtufin.Data.FlatBuffers.ArrayDoubleValue.html
+  name: ArrayDoubleValue
+  nameWithType: ArrayDoubleValue
+  fullName: Virtufin.Data.FlatBuffers.ArrayDoubleValue
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayString*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.ValueAsArrayString
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_ValueAsArrayString
+  name: ValueAsArrayString
+  nameWithType: Variant.ValueAsArrayString
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayString
+- uid: Virtufin.Data.FlatBuffers.ArrayStringValue
+  commentId: T:Virtufin.Data.FlatBuffers.ArrayStringValue
+  parent: Virtufin.Data.FlatBuffers
+  href: Virtufin.Data.FlatBuffers.ArrayStringValue.html
+  name: ArrayStringValue
+  nameWithType: ArrayStringValue
+  fullName: Virtufin.Data.FlatBuffers.ArrayStringValue
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayVariant*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.ValueAsArrayVariant
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_ValueAsArrayVariant
+  name: ValueAsArrayVariant
+  nameWithType: Variant.ValueAsArrayVariant
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsArrayVariant
+- uid: Virtufin.Data.FlatBuffers.ArrayVariantValue
+  commentId: T:Virtufin.Data.FlatBuffers.ArrayVariantValue
+  parent: Virtufin.Data.FlatBuffers
+  href: Virtufin.Data.FlatBuffers.ArrayVariantValue.html
+  name: ArrayVariantValue
+  nameWithType: ArrayVariantValue
+  fullName: Virtufin.Data.FlatBuffers.ArrayVariantValue
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsDictionaryEntry*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.ValueAsDictionaryEntry
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_ValueAsDictionaryEntry
+  name: ValueAsDictionaryEntry
+  nameWithType: Variant.ValueAsDictionaryEntry
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsDictionaryEntry
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry
+  commentId: T:Virtufin.Data.FlatBuffers.DictionaryEntry
+  parent: Virtufin.Data.FlatBuffers
+  href: Virtufin.Data.FlatBuffers.DictionaryEntry.html
+  name: DictionaryEntry
+  nameWithType: DictionaryEntry
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry
+- uid: Virtufin.Data.FlatBuffers.Variant.ValueAsDictionary*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.ValueAsDictionary
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_ValueAsDictionary
+  name: ValueAsDictionary
+  nameWithType: Variant.ValueAsDictionary
+  fullName: Virtufin.Data.FlatBuffers.Variant.ValueAsDictionary
+- uid: Virtufin.Data.FlatBuffers.DictionaryValue
+  commentId: T:Virtufin.Data.FlatBuffers.DictionaryValue
+  parent: Virtufin.Data.FlatBuffers
+  href: Virtufin.Data.FlatBuffers.DictionaryValue.html
+  name: DictionaryValue
+  nameWithType: DictionaryValue
+  fullName: Virtufin.Data.FlatBuffers.DictionaryValue
+- uid: Virtufin.Data.FlatBuffers.Variant.CreateVariant*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.CreateVariant
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_CreateVariant_Google_FlatBuffers_FlatBufferBuilder_Virtufin_Data_FlatBuffers_Value_System_Int32_
+  name: CreateVariant
+  nameWithType: Variant.CreateVariant
+  fullName: Virtufin.Data.FlatBuffers.Variant.CreateVariant
+- uid: Google.FlatBuffers.FlatBufferBuilder
+  commentId: T:Google.FlatBuffers.FlatBufferBuilder
+  parent: Google.FlatBuffers
+  isExternal: true
+  name: FlatBufferBuilder
+  nameWithType: FlatBufferBuilder
+  fullName: Google.FlatBuffers.FlatBufferBuilder
+- uid: Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant}
+  commentId: T:Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant}
+  parent: Google.FlatBuffers
+  definition: Google.FlatBuffers.Offset`1
+  href: Virtufin.Data.FlatBuffers.Variant.html
+  name: Offset<Variant>
+  nameWithType: Offset<Variant>
+  fullName: Google.FlatBuffers.Offset<Virtufin.Data.FlatBuffers.Variant>
+  nameWithType.vb: Offset(Of Variant)
+  fullName.vb: Google.FlatBuffers.Offset(Of Virtufin.Data.FlatBuffers.Variant)
+  name.vb: Offset(Of Variant)
+  spec.csharp:
+  - uid: Google.FlatBuffers.Offset`1
+    name: Offset
+    isExternal: true
+  - name: <
+  - uid: Virtufin.Data.FlatBuffers.Variant
+    name: Variant
+    href: Virtufin.Data.FlatBuffers.Variant.html
+  - name: '>'
+  spec.vb:
+  - uid: Google.FlatBuffers.Offset`1
+    name: Offset
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Data.FlatBuffers.Variant
+    name: Variant
+    href: Virtufin.Data.FlatBuffers.Variant.html
+  - name: )
+- uid: Google.FlatBuffers.Offset`1
+  commentId: T:Google.FlatBuffers.Offset`1
+  isExternal: true
+  name: Offset<T>
+  nameWithType: Offset<T>
+  fullName: Google.FlatBuffers.Offset<T>
+  nameWithType.vb: Offset(Of T)
+  fullName.vb: Google.FlatBuffers.Offset(Of T)
+  name.vb: Offset(Of T)
+  spec.csharp:
+  - uid: Google.FlatBuffers.Offset`1
+    name: Offset
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Google.FlatBuffers.Offset`1
+    name: Offset
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Data.FlatBuffers.Variant.StartVariant*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.StartVariant
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_StartVariant_Google_FlatBuffers_FlatBufferBuilder_
+  name: StartVariant
+  nameWithType: Variant.StartVariant
+  fullName: Virtufin.Data.FlatBuffers.Variant.StartVariant
+- uid: Virtufin.Data.FlatBuffers.Variant.AddValueType*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.AddValueType
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_AddValueType_Google_FlatBuffers_FlatBufferBuilder_Virtufin_Data_FlatBuffers_Value_
+  name: AddValueType
+  nameWithType: Variant.AddValueType
+  fullName: Virtufin.Data.FlatBuffers.Variant.AddValueType
+- uid: Virtufin.Data.FlatBuffers.Variant.AddValue*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.AddValue
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_AddValue_Google_FlatBuffers_FlatBufferBuilder_System_Int32_
+  name: AddValue
+  nameWithType: Variant.AddValue
+  fullName: Virtufin.Data.FlatBuffers.Variant.AddValue
+- uid: Virtufin.Data.FlatBuffers.Variant.EndVariant*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.EndVariant
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_EndVariant_Google_FlatBuffers_FlatBufferBuilder_
+  name: EndVariant
+  nameWithType: Variant.EndVariant
+  fullName: Virtufin.Data.FlatBuffers.Variant.EndVariant
+- uid: Virtufin.Data.FlatBuffers.Variant.FinishVariantBuffer*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.FinishVariantBuffer
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_FinishVariantBuffer_Google_FlatBuffers_FlatBufferBuilder_Google_FlatBuffers_Offset_Virtufin_Data_FlatBuffers_Variant__
+  name: FinishVariantBuffer
+  nameWithType: Variant.FinishVariantBuffer
+  fullName: Virtufin.Data.FlatBuffers.Variant.FinishVariantBuffer
+- uid: Virtufin.Data.FlatBuffers.Variant.FinishSizePrefixedVariantBuffer*
+  commentId: Overload:Virtufin.Data.FlatBuffers.Variant.FinishSizePrefixedVariantBuffer
+  href: Virtufin.Data.FlatBuffers.Variant.html#Virtufin_Data_FlatBuffers_Variant_FinishSizePrefixedVariantBuffer_Google_FlatBuffers_FlatBufferBuilder_Google_FlatBuffers_Offset_Virtufin_Data_FlatBuffers_Variant__
+  name: FinishSizePrefixedVariantBuffer
+  nameWithType: Variant.FinishSizePrefixedVariantBuffer
+  fullName: Virtufin.Data.FlatBuffers.Variant.FinishSizePrefixedVariantBuffer

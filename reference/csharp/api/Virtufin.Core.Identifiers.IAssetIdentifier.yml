@@ -1,0 +1,196 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Identifiers.IAssetIdentifier
+  commentId: T:Virtufin.Core.Identifiers.IAssetIdentifier
+  id: IAssetIdentifier
+  parent: Virtufin.Core.Identifiers
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IAssetIdentifier
+  nameWithType: IAssetIdentifier
+  fullName: Virtufin.Core.Identifiers.IAssetIdentifier
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Identifiers/IAssetIdentifier.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IAssetIdentifier
+    path: ../../../src/Virtufin.Core/Identifiers/IAssetIdentifier.cs
+    startLine: 7
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Identifiers
+  summary: >-
+    Marker for any value that identifies an asset (currency, security, or
+
+    other tradeable instrument). Implementations must be equality-comparable so
+
+    positions and contracts can be matched by their underlying asset.
+  example: []
+  syntax:
+    content: 'public interface IAssetIdentifier : IEquatable<IAssetIdentifier>'
+    content.vb: Public Interface IAssetIdentifier Inherits IEquatable(Of IAssetIdentifier)
+  derivedClasses:
+  - Virtufin.Base.AssetIdentifier
+  - Virtufin.Base.AssetIdentifier.CurrencyAssetIdentifier
+  - Virtufin.Base.AssetIdentifier.SimpleAssetIdentifier
+  - Virtufin.Core.Events.Symbol
+  inheritedMembers:
+  - System.IEquatable{Virtufin.Core.Identifiers.IAssetIdentifier}.Equals(Virtufin.Core.Identifiers.IAssetIdentifier)
+references:
+- uid: Virtufin.Core.Identifiers
+  commentId: N:Virtufin.Core.Identifiers
+  href: Virtufin.html
+  name: Virtufin.Core.Identifiers
+  nameWithType: Virtufin.Core.Identifiers
+  fullName: Virtufin.Core.Identifiers
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html
+- uid: System.IEquatable{Virtufin.Core.Identifiers.IAssetIdentifier}.Equals(Virtufin.Core.Identifiers.IAssetIdentifier)
+  commentId: M:System.IEquatable{Virtufin.Core.Identifiers.IAssetIdentifier}.Equals(Virtufin.Core.Identifiers.IAssetIdentifier)
+  parent: System.IEquatable{Virtufin.Core.Identifiers.IAssetIdentifier}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(IAssetIdentifier)
+  nameWithType: IEquatable<IAssetIdentifier>.Equals(IAssetIdentifier)
+  fullName: System.IEquatable<Virtufin.Core.Identifiers.IAssetIdentifier>.Equals(Virtufin.Core.Identifiers.IAssetIdentifier)
+  nameWithType.vb: IEquatable(Of IAssetIdentifier).Equals(IAssetIdentifier)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Identifiers.IAssetIdentifier).Equals(Virtufin.Core.Identifiers.IAssetIdentifier)
+  spec.csharp:
+  - uid: System.IEquatable{Virtufin.Core.Identifiers.IAssetIdentifier}.Equals(Virtufin.Core.Identifiers.IAssetIdentifier)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Identifiers.IAssetIdentifier
+    name: IAssetIdentifier
+    href: Virtufin.Core.Identifiers.IAssetIdentifier.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Virtufin.Core.Identifiers.IAssetIdentifier}.Equals(Virtufin.Core.Identifiers.IAssetIdentifier)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Identifiers.IAssetIdentifier
+    name: IAssetIdentifier
+    href: Virtufin.Core.Identifiers.IAssetIdentifier.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IEquatable{Virtufin.Core.Identifiers.IAssetIdentifier}
+  commentId: T:System.IEquatable{Virtufin.Core.Identifiers.IAssetIdentifier}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<IAssetIdentifier>
+  nameWithType: IEquatable<IAssetIdentifier>
+  fullName: System.IEquatable<Virtufin.Core.Identifiers.IAssetIdentifier>
+  nameWithType.vb: IEquatable(Of IAssetIdentifier)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Identifiers.IAssetIdentifier)
+  name.vb: IEquatable(Of IAssetIdentifier)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Identifiers.IAssetIdentifier
+    name: IAssetIdentifier
+    href: Virtufin.Core.Identifiers.IAssetIdentifier.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Identifiers.IAssetIdentifier
+    name: IAssetIdentifier
+    href: Virtufin.Core.Identifiers.IAssetIdentifier.html
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

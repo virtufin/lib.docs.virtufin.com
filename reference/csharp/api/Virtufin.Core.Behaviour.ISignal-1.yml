@@ -1,0 +1,124 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Behaviour.ISignal`1
+  commentId: T:Virtufin.Core.Behaviour.ISignal`1
+  id: ISignal`1
+  parent: Virtufin.Core.Behaviour
+  children:
+  - Virtufin.Core.Behaviour.ISignal`1.Value
+  langs:
+  - csharp
+  - vb
+  name: ISignal<T>
+  nameWithType: ISignal<T>
+  fullName: Virtufin.Core.Behaviour.ISignal<T>
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Behaviour/ISignal.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ISignal
+    path: ../../../src/Virtufin.Core/Behaviour/ISignal.cs
+    startLine: 8
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Behaviour
+  summary: >-
+    A continuously derivable value computed from an event log. Signals are
+
+    never transported on Dapr topics; consumers reconstruct them on demand
+
+    by folding the log.
+  example: []
+  syntax:
+    content: public interface ISignal<T>
+    typeParameters:
+    - id: T
+      description: The signal's value type (e.g. <code>Portfolio</code>, <code>PositionState</code>, <code>Amount</code>).
+    content.vb: Public Interface ISignal(Of T)
+  nameWithType.vb: ISignal(Of T)
+  fullName.vb: Virtufin.Core.Behaviour.ISignal(Of T)
+  name.vb: ISignal(Of T)
+- uid: Virtufin.Core.Behaviour.ISignal`1.Value
+  commentId: P:Virtufin.Core.Behaviour.ISignal`1.Value
+  id: Value
+  parent: Virtufin.Core.Behaviour.ISignal`1
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: ISignal<T>.Value
+  fullName: Virtufin.Core.Behaviour.ISignal<T>.Value
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Behaviour/ISignal.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Value
+    path: ../../../src/Virtufin.Core/Behaviour/ISignal.cs
+    startLine: 11
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Behaviour
+  summary: The current signal value.
+  example: []
+  syntax:
+    content: T Value { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: ReadOnly Property Value As T
+  overload: Virtufin.Core.Behaviour.ISignal`1.Value*
+  nameWithType.vb: ISignal(Of T).Value
+  fullName.vb: Virtufin.Core.Behaviour.ISignal(Of T).Value
+references:
+- uid: Virtufin.Core.Behaviour
+  commentId: N:Virtufin.Core.Behaviour
+  href: Virtufin.html
+  name: Virtufin.Core.Behaviour
+  nameWithType: Virtufin.Core.Behaviour
+  fullName: Virtufin.Core.Behaviour
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Behaviour
+    name: Behaviour
+    href: Virtufin.Core.Behaviour.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Behaviour
+    name: Behaviour
+    href: Virtufin.Core.Behaviour.html
+- uid: Virtufin.Core.Behaviour.ISignal`1.Value*
+  commentId: Overload:Virtufin.Core.Behaviour.ISignal`1.Value
+  href: Virtufin.Core.Behaviour.ISignal-1.html#Virtufin_Core_Behaviour_ISignal_1_Value
+  name: Value
+  nameWithType: ISignal<T>.Value
+  fullName: Virtufin.Core.Behaviour.ISignal<T>.Value
+  nameWithType.vb: ISignal(Of T).Value
+  fullName.vb: Virtufin.Core.Behaviour.ISignal(Of T).Value
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

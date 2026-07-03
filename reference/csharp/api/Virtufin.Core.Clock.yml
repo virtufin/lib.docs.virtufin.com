@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Clock
+  commentId: N:Virtufin.Core.Clock
+  id: Virtufin.Core.Clock
+  children:
+  - Virtufin.Core.Clock.IClock
+  langs:
+  - csharp
+  - vb
+  name: Virtufin.Core.Clock
+  nameWithType: Virtufin.Core.Clock
+  fullName: Virtufin.Core.Clock
+  type: Namespace
+  assemblies:
+  - Virtufin.Core
+references:
+- uid: Virtufin.Core.Clock.IClock
+  commentId: T:Virtufin.Core.Clock.IClock
+  parent: Virtufin.Core.Clock
+  href: Virtufin.Core.Clock.IClock.html
+  name: IClock
+  nameWithType: IClock
+  fullName: Virtufin.Core.Clock.IClock
+- uid: Virtufin.Core.Clock
+  commentId: N:Virtufin.Core.Clock
+  href: Virtufin.html
+  name: Virtufin.Core.Clock
+  nameWithType: Virtufin.Core.Clock
+  fullName: Virtufin.Core.Clock
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Clock
+    name: Clock
+    href: Virtufin.Core.Clock.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Clock
+    name: Clock
+    href: Virtufin.Core.Clock.html

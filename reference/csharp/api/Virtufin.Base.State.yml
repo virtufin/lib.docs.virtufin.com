@@ -1,0 +1,720 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.State
+  commentId: T:Virtufin.Base.State
+  id: State
+  parent: Virtufin.Base
+  children:
+  - Virtufin.Base.State.Empty
+  - Virtufin.Base.State.Of(System.Collections.Generic.IEnumerable{Virtufin.Base.Transaction})
+  - Virtufin.Base.State.Of(System.Collections.Generic.IReadOnlyList{Virtufin.Base.Transaction})
+  - Virtufin.Base.State.Transactions
+  - Virtufin.Base.State.TransactionsList
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: State
+  fullName: Virtufin.Base.State
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Base/State.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: State
+    path: ../../../src/Virtufin.Base/State.cs
+    startLine: 8
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: >-
+    Concrete <xref href="Virtufin.Core.Contracts.IState" data-throw-if-not-resolved="false"></xref>: a set of transactions observed at a single
+
+    time-point.
+  example: []
+  syntax:
+    content: 'public sealed class State : IState'
+    content.vb: Public NotInheritable Class State Implements IState
+  inheritance:
+  - System.Object
+  implements:
+  - Virtufin.Core.Contracts.IState
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.Base.State.TransactionsList
+  commentId: P:Virtufin.Base.State.TransactionsList
+  id: TransactionsList
+  parent: Virtufin.Base.State
+  langs:
+  - csharp
+  - vb
+  name: TransactionsList
+  nameWithType: State.TransactionsList
+  fullName: Virtufin.Base.State.TransactionsList
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/State.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: TransactionsList
+    path: ../../../src/Virtufin.Base/State.cs
+    startLine: 11
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: The underlying transactions.
+  example: []
+  syntax:
+    content: public IReadOnlyList<Transaction> TransactionsList { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Virtufin.Base.Transaction}
+    content.vb: Public ReadOnly Property TransactionsList As IReadOnlyList(Of Transaction)
+  overload: Virtufin.Base.State.TransactionsList*
+- uid: Virtufin.Base.State.Transactions
+  commentId: P:Virtufin.Base.State.Transactions
+  id: Transactions
+  parent: Virtufin.Base.State
+  langs:
+  - csharp
+  - vb
+  name: Transactions
+  nameWithType: State.Transactions
+  fullName: Virtufin.Base.State.Transactions
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/State.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Transactions
+    path: ../../../src/Virtufin.Base/State.cs
+    startLine: 14
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: The transactions observed in this state.
+  example: []
+  syntax:
+    content: public IEnumerable<ITransaction> Transactions { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.ITransaction}
+    content.vb: Public ReadOnly Property Transactions As IEnumerable(Of ITransaction)
+  overload: Virtufin.Base.State.Transactions*
+  implements:
+  - Virtufin.Core.Contracts.IState.Transactions
+- uid: Virtufin.Base.State.Of(System.Collections.Generic.IReadOnlyList{Virtufin.Base.Transaction})
+  commentId: M:Virtufin.Base.State.Of(System.Collections.Generic.IReadOnlyList{Virtufin.Base.Transaction})
+  id: Of(System.Collections.Generic.IReadOnlyList{Virtufin.Base.Transaction})
+  parent: Virtufin.Base.State
+  langs:
+  - csharp
+  - vb
+  name: Of(IReadOnlyList<Transaction>)
+  nameWithType: State.Of(IReadOnlyList<Transaction>)
+  fullName: Virtufin.Base.State.Of(System.Collections.Generic.IReadOnlyList<Virtufin.Base.Transaction>)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/State.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Of
+    path: ../../../src/Virtufin.Base/State.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Construct a state from a list of transactions.
+  example: []
+  syntax:
+    content: public static State Of(IReadOnlyList<Transaction> transactions)
+    parameters:
+    - id: transactions
+      type: System.Collections.Generic.IReadOnlyList{Virtufin.Base.Transaction}
+      description: Transactions observed.
+    return:
+      type: Virtufin.Base.State
+    content.vb: Public Shared Function [Of](transactions As IReadOnlyList(Of Transaction)) As State
+  overload: Virtufin.Base.State.Of*
+  nameWithType.vb: State.Of(IReadOnlyList(Of Transaction))
+  fullName.vb: Virtufin.Base.State.Of(System.Collections.Generic.IReadOnlyList(Of Virtufin.Base.Transaction))
+  name.vb: Of(IReadOnlyList(Of Transaction))
+- uid: Virtufin.Base.State.Of(System.Collections.Generic.IEnumerable{Virtufin.Base.Transaction})
+  commentId: M:Virtufin.Base.State.Of(System.Collections.Generic.IEnumerable{Virtufin.Base.Transaction})
+  id: Of(System.Collections.Generic.IEnumerable{Virtufin.Base.Transaction})
+  parent: Virtufin.Base.State
+  langs:
+  - csharp
+  - vb
+  name: Of(IEnumerable<Transaction>)
+  nameWithType: State.Of(IEnumerable<Transaction>)
+  fullName: Virtufin.Base.State.Of(System.Collections.Generic.IEnumerable<Virtufin.Base.Transaction>)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/State.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Of
+    path: ../../../src/Virtufin.Base/State.cs
+    startLine: 23
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Construct a state from an arbitrary enumerable of transactions.
+  example: []
+  syntax:
+    content: public static State Of(IEnumerable<Transaction> transactions)
+    parameters:
+    - id: transactions
+      type: System.Collections.Generic.IEnumerable{Virtufin.Base.Transaction}
+    return:
+      type: Virtufin.Base.State
+    content.vb: Public Shared Function [Of](transactions As IEnumerable(Of Transaction)) As State
+  overload: Virtufin.Base.State.Of*
+  nameWithType.vb: State.Of(IEnumerable(Of Transaction))
+  fullName.vb: Virtufin.Base.State.Of(System.Collections.Generic.IEnumerable(Of Virtufin.Base.Transaction))
+  name.vb: Of(IEnumerable(Of Transaction))
+- uid: Virtufin.Base.State.Empty
+  commentId: P:Virtufin.Base.State.Empty
+  id: Empty
+  parent: Virtufin.Base.State
+  langs:
+  - csharp
+  - vb
+  name: Empty
+  nameWithType: State.Empty
+  fullName: Virtufin.Base.State.Empty
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/State.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Empty
+    path: ../../../src/Virtufin.Base/State.cs
+    startLine: 27
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: An empty state with no transactions.
+  example: []
+  syntax:
+    content: public static State Empty { get; }
+    parameters: []
+    return:
+      type: Virtufin.Base.State
+    content.vb: Public Shared ReadOnly Property Empty As State
+  overload: Virtufin.Base.State.Empty*
+references:
+- uid: Virtufin.Core.Contracts.IState
+  commentId: T:Virtufin.Core.Contracts.IState
+  parent: Virtufin.Core.Contracts
+  href: Virtufin.Core.Contracts.IState.html
+  name: IState
+  nameWithType: IState
+  fullName: Virtufin.Core.Contracts.IState
+- uid: Virtufin.Base
+  commentId: N:Virtufin.Base
+  href: Virtufin.html
+  name: Virtufin.Base
+  nameWithType: Virtufin.Base
+  fullName: Virtufin.Base
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Virtufin.Core.Contracts
+  commentId: N:Virtufin.Core.Contracts
+  href: Virtufin.html
+  name: Virtufin.Core.Contracts
+  nameWithType: Virtufin.Core.Contracts
+  fullName: Virtufin.Core.Contracts
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Contracts
+    name: Contracts
+    href: Virtufin.Core.Contracts.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Contracts
+    name: Contracts
+    href: Virtufin.Core.Contracts.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Base.State.TransactionsList*
+  commentId: Overload:Virtufin.Base.State.TransactionsList
+  href: Virtufin.Base.State.html#Virtufin_Base_State_TransactionsList
+  name: TransactionsList
+  nameWithType: State.TransactionsList
+  fullName: Virtufin.Base.State.TransactionsList
+- uid: System.Collections.Generic.IReadOnlyList{Virtufin.Base.Transaction}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Virtufin.Base.Transaction}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<Transaction>
+  nameWithType: IReadOnlyList<Transaction>
+  fullName: System.Collections.Generic.IReadOnlyList<Virtufin.Base.Transaction>
+  nameWithType.vb: IReadOnlyList(Of Transaction)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Virtufin.Base.Transaction)
+  name.vb: IReadOnlyList(Of Transaction)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Virtufin.Base.Transaction
+    name: Transaction
+    href: Virtufin.Base.Transaction.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Base.Transaction
+    name: Transaction
+    href: Virtufin.Base.Transaction.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Virtufin.Base.State.Transactions*
+  commentId: Overload:Virtufin.Base.State.Transactions
+  href: Virtufin.Base.State.html#Virtufin_Base_State_Transactions
+  name: Transactions
+  nameWithType: State.Transactions
+  fullName: Virtufin.Base.State.Transactions
+- uid: Virtufin.Core.Contracts.IState.Transactions
+  commentId: P:Virtufin.Core.Contracts.IState.Transactions
+  parent: Virtufin.Core.Contracts.IState
+  href: Virtufin.Core.Contracts.IState.html#Virtufin_Core_Contracts_IState_Transactions
+  name: Transactions
+  nameWithType: IState.Transactions
+  fullName: Virtufin.Core.Contracts.IState.Transactions
+- uid: System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.ITransaction}
+  commentId: T:System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.ITransaction}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ITransaction>
+  nameWithType: IEnumerable<ITransaction>
+  fullName: System.Collections.Generic.IEnumerable<Virtufin.Core.Contracts.ITransaction>
+  nameWithType.vb: IEnumerable(Of ITransaction)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Virtufin.Core.Contracts.ITransaction)
+  name.vb: IEnumerable(Of ITransaction)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Virtufin.Core.Contracts.ITransaction
+    name: ITransaction
+    href: Virtufin.Core.Contracts.ITransaction.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Contracts.ITransaction
+    name: ITransaction
+    href: Virtufin.Core.Contracts.ITransaction.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Base.State.Of*
+  commentId: Overload:Virtufin.Base.State.Of
+  href: Virtufin.Base.State.html#Virtufin_Base_State_Of_System_Collections_Generic_IReadOnlyList_Virtufin_Base_Transaction__
+  name: Of
+  nameWithType: State.Of
+  fullName: Virtufin.Base.State.Of
+- uid: Virtufin.Base.State
+  commentId: T:Virtufin.Base.State
+  parent: Virtufin.Base
+  href: Virtufin.Base.State.html
+  name: State
+  nameWithType: State
+  fullName: Virtufin.Base.State
+- uid: System.Collections.Generic.IEnumerable{Virtufin.Base.Transaction}
+  commentId: T:System.Collections.Generic.IEnumerable{Virtufin.Base.Transaction}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Transaction>
+  nameWithType: IEnumerable<Transaction>
+  fullName: System.Collections.Generic.IEnumerable<Virtufin.Base.Transaction>
+  nameWithType.vb: IEnumerable(Of Transaction)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Virtufin.Base.Transaction)
+  name.vb: IEnumerable(Of Transaction)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Virtufin.Base.Transaction
+    name: Transaction
+    href: Virtufin.Base.Transaction.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Base.Transaction
+    name: Transaction
+    href: Virtufin.Base.Transaction.html
+  - name: )
+- uid: Virtufin.Base.State.Empty*
+  commentId: Overload:Virtufin.Base.State.Empty
+  href: Virtufin.Base.State.html#Virtufin_Base_State_Empty
+  name: Empty
+  nameWithType: State.Empty
+  fullName: Virtufin.Base.State.Empty

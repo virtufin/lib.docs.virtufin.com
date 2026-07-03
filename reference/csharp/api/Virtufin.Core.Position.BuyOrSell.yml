@@ -1,0 +1,126 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Position.BuyOrSell
+  commentId: T:Virtufin.Core.Position.BuyOrSell
+  id: BuyOrSell
+  parent: Virtufin.Core.Position
+  children:
+  - Virtufin.Core.Position.BuyOrSell.Buy
+  - Virtufin.Core.Position.BuyOrSell.Sell
+  langs:
+  - csharp
+  - vb
+  name: BuyOrSell
+  nameWithType: BuyOrSell
+  fullName: Virtufin.Core.Position.BuyOrSell
+  type: Enum
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BuyOrSell.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: BuyOrSell
+    path: ../../../src/Virtufin.Core/Position/BuyOrSell.cs
+    startLine: 3
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Side of a trade.
+  example: []
+  syntax:
+    content: public enum BuyOrSell
+    content.vb: Public Enum BuyOrSell
+- uid: Virtufin.Core.Position.BuyOrSell.Buy
+  commentId: F:Virtufin.Core.Position.BuyOrSell.Buy
+  id: Buy
+  parent: Virtufin.Core.Position.BuyOrSell
+  langs:
+  - csharp
+  - vb
+  name: Buy
+  nameWithType: BuyOrSell.Buy
+  fullName: Virtufin.Core.Position.BuyOrSell.Buy
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BuyOrSell.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Buy
+    path: ../../../src/Virtufin.Core/Position/BuyOrSell.cs
+    startLine: 6
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Buy (long) side.
+  example: []
+  syntax:
+    content: Buy = 0
+    return:
+      type: Virtufin.Core.Position.BuyOrSell
+- uid: Virtufin.Core.Position.BuyOrSell.Sell
+  commentId: F:Virtufin.Core.Position.BuyOrSell.Sell
+  id: Sell
+  parent: Virtufin.Core.Position.BuyOrSell
+  langs:
+  - csharp
+  - vb
+  name: Sell
+  nameWithType: BuyOrSell.Sell
+  fullName: Virtufin.Core.Position.BuyOrSell.Sell
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BuyOrSell.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Sell
+    path: ../../../src/Virtufin.Core/Position/BuyOrSell.cs
+    startLine: 8
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Sell (short) side.
+  example: []
+  syntax:
+    content: Sell = 1
+    return:
+      type: Virtufin.Core.Position.BuyOrSell
+references:
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: Virtufin.Core.Position.BuyOrSell
+  commentId: T:Virtufin.Core.Position.BuyOrSell
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.BuyOrSell.html
+  name: BuyOrSell
+  nameWithType: BuyOrSell
+  fullName: Virtufin.Core.Position.BuyOrSell

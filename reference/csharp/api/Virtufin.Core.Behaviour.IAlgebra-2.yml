@@ -1,0 +1,199 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Behaviour.IAlgebra`2
+  commentId: T:Virtufin.Core.Behaviour.IAlgebra`2
+  id: IAlgebra`2
+  parent: Virtufin.Core.Behaviour
+  children:
+  - Virtufin.Core.Behaviour.IAlgebra`2.Apply(`1,`0)
+  - Virtufin.Core.Behaviour.IAlgebra`2.Initial
+  langs:
+  - csharp
+  - vb
+  name: IAlgebra<TEvent, TState>
+  nameWithType: IAlgebra<TEvent, TState>
+  fullName: Virtufin.Core.Behaviour.IAlgebra<TEvent, TState>
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Behaviour/IAlgebra.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IAlgebra
+    path: ../../../src/Virtufin.Core/Behaviour/IAlgebra.cs
+    startLine: 23
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Behaviour
+  summary: >-
+    An F-algebra over an event log. Given a current state and an event,
+
+    produce the next state. Combined with the initial state and an event log,
+
+    the algebra defines a derived signal via the fold (or scan for running
+
+    computation).
+  example:
+  - >-
+    <pre><code class="lang-csharp">public sealed record PositionState(Symbol Symbol, Amount Qty, Price AvgEntry, DateTimeOffset EventTime)
+
+    {
+        public PositionState Apply(IPositionEvent evt) =&gt; evt switch
+        {
+            PositionEvent.Opened o =&gt; new PositionState(o.Symbol, o.Qty, o.Price, o.EventTime),
+            PositionEvent.Updated u =&gt; new PositionState(...),
+            _ =&gt; this,
+        };
+    }</code></pre>
+  syntax:
+    content: 'public interface IAlgebra<TEvent, TState> where TEvent : notnull'
+    typeParameters:
+    - id: TEvent
+      description: The event type consumed.
+    - id: TState
+      description: The state type produced.
+    content.vb: Public Interface IAlgebra(Of TEvent, TState)
+  nameWithType.vb: IAlgebra(Of TEvent, TState)
+  fullName.vb: Virtufin.Core.Behaviour.IAlgebra(Of TEvent, TState)
+  name.vb: IAlgebra(Of TEvent, TState)
+- uid: Virtufin.Core.Behaviour.IAlgebra`2.Initial
+  commentId: P:Virtufin.Core.Behaviour.IAlgebra`2.Initial
+  id: Initial
+  parent: Virtufin.Core.Behaviour.IAlgebra`2
+  langs:
+  - csharp
+  - vb
+  name: Initial
+  nameWithType: IAlgebra<TEvent, TState>.Initial
+  fullName: Virtufin.Core.Behaviour.IAlgebra<TEvent, TState>.Initial
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Behaviour/IAlgebra.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Initial
+    path: ../../../src/Virtufin.Core/Behaviour/IAlgebra.cs
+    startLine: 27
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Behaviour
+  summary: The empty-state initial value.
+  example: []
+  syntax:
+    content: TState Initial { get; }
+    parameters: []
+    return:
+      type: '{TState}'
+    content.vb: ReadOnly Property Initial As TState
+  overload: Virtufin.Core.Behaviour.IAlgebra`2.Initial*
+  nameWithType.vb: IAlgebra(Of TEvent, TState).Initial
+  fullName.vb: Virtufin.Core.Behaviour.IAlgebra(Of TEvent, TState).Initial
+- uid: Virtufin.Core.Behaviour.IAlgebra`2.Apply(`1,`0)
+  commentId: M:Virtufin.Core.Behaviour.IAlgebra`2.Apply(`1,`0)
+  id: Apply(`1,`0)
+  parent: Virtufin.Core.Behaviour.IAlgebra`2
+  langs:
+  - csharp
+  - vb
+  name: Apply(TState, TEvent)
+  nameWithType: IAlgebra<TEvent, TState>.Apply(TState, TEvent)
+  fullName: Virtufin.Core.Behaviour.IAlgebra<TEvent, TState>.Apply(TState, TEvent)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Behaviour/IAlgebra.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Apply
+    path: ../../../src/Virtufin.Core/Behaviour/IAlgebra.cs
+    startLine: 33
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Behaviour
+  summary: Combine current state with an event to produce the next state.
+  example: []
+  syntax:
+    content: TState Apply(TState state, TEvent evt)
+    parameters:
+    - id: state
+      type: '{TState}'
+      description: Current state.
+    - id: evt
+      type: '{TEvent}'
+      description: Event to apply.
+    return:
+      type: '{TState}'
+      description: Next state.
+    content.vb: Function Apply(state As TState, evt As TEvent) As TState
+  overload: Virtufin.Core.Behaviour.IAlgebra`2.Apply*
+  nameWithType.vb: IAlgebra(Of TEvent, TState).Apply(TState, TEvent)
+  fullName.vb: Virtufin.Core.Behaviour.IAlgebra(Of TEvent, TState).Apply(TState, TEvent)
+references:
+- uid: Virtufin.Core.Behaviour
+  commentId: N:Virtufin.Core.Behaviour
+  href: Virtufin.html
+  name: Virtufin.Core.Behaviour
+  nameWithType: Virtufin.Core.Behaviour
+  fullName: Virtufin.Core.Behaviour
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Behaviour
+    name: Behaviour
+    href: Virtufin.Core.Behaviour.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Behaviour
+    name: Behaviour
+    href: Virtufin.Core.Behaviour.html
+- uid: Virtufin.Core.Behaviour.IAlgebra`2.Initial*
+  commentId: Overload:Virtufin.Core.Behaviour.IAlgebra`2.Initial
+  href: Virtufin.Core.Behaviour.IAlgebra-2.html#Virtufin_Core_Behaviour_IAlgebra_2_Initial
+  name: Initial
+  nameWithType: IAlgebra<TEvent, TState>.Initial
+  fullName: Virtufin.Core.Behaviour.IAlgebra<TEvent, TState>.Initial
+  nameWithType.vb: IAlgebra(Of TEvent, TState).Initial
+  fullName.vb: Virtufin.Core.Behaviour.IAlgebra(Of TEvent, TState).Initial
+- uid: '{TState}'
+  commentId: '!:TState'
+  definition: TState
+  name: TState
+  nameWithType: TState
+  fullName: TState
+- uid: TState
+  name: TState
+  nameWithType: TState
+  fullName: TState
+- uid: Virtufin.Core.Behaviour.IAlgebra`2.Apply*
+  commentId: Overload:Virtufin.Core.Behaviour.IAlgebra`2.Apply
+  href: Virtufin.Core.Behaviour.IAlgebra-2.html#Virtufin_Core_Behaviour_IAlgebra_2_Apply__1__0_
+  name: Apply
+  nameWithType: IAlgebra<TEvent, TState>.Apply
+  fullName: Virtufin.Core.Behaviour.IAlgebra<TEvent, TState>.Apply
+  nameWithType.vb: IAlgebra(Of TEvent, TState).Apply
+  fullName.vb: Virtufin.Core.Behaviour.IAlgebra(Of TEvent, TState).Apply
+- uid: '{TEvent}'
+  commentId: '!:TEvent'
+  definition: TEvent
+  name: TEvent
+  nameWithType: TEvent
+  fullName: TEvent
+- uid: TEvent
+  commentId: '!:TEvent'
+  name: TEvent
+  nameWithType: TEvent
+  fullName: TEvent

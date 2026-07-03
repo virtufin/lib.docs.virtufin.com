@@ -1,0 +1,725 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Attribute`2
+  commentId: T:Virtufin.Core.Attribute`2
+  id: Attribute`2
+  parent: Virtufin.Core
+  children:
+  - Virtufin.Core.Attribute`2.#ctor(`1)
+  - Virtufin.Core.Attribute`2.Equals(System.Object)
+  - Virtufin.Core.Attribute`2.Equals(Virtufin.Core.IAttribute{`0})
+  - Virtufin.Core.Attribute`2.GetHashCode
+  - Virtufin.Core.Attribute`2.ToString
+  langs:
+  - csharp
+  - vb
+  name: Attribute<V, I>
+  nameWithType: Attribute<V, I>
+  fullName: Virtufin.Core.Attribute<V, I>
+  type: Struct
+  source:
+    remote:
+      path: src/Virtufin.Core/Attribute.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Attribute
+    path: ../../../src/Virtufin.Core/Attribute.cs
+    startLine: 2
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core
+  syntax:
+    content: 'public struct Attribute<V, I> : IAttribute<V>, IEquatable<IAttribute<V>> where V : struct where I : IEquatable<I>'
+    typeParameters:
+    - id: V
+    - id: I
+    content.vb: Public Structure Attribute(Of V As Structure, I As IEquatable(Of I)) Implements IAttribute(Of V), IEquatable(Of IAttribute(Of V))
+  implements:
+  - Virtufin.Core.IAttribute{{V}}
+  - System.IEquatable{Virtufin.Core.IAttribute{{V}}}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType.vb: Attribute(Of V, I)
+  fullName.vb: Virtufin.Core.Attribute(Of V, I)
+  name.vb: Attribute(Of V, I)
+- uid: Virtufin.Core.Attribute`2.#ctor(`1)
+  commentId: M:Virtufin.Core.Attribute`2.#ctor(`1)
+  id: '#ctor(`1)'
+  parent: Virtufin.Core.Attribute`2
+  langs:
+  - csharp
+  - vb
+  name: Attribute(I)
+  nameWithType: Attribute<V, I>.Attribute(I)
+  fullName: Virtufin.Core.Attribute<V, I>.Attribute(I)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Core/Attribute.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Core/Attribute.cs
+    startLine: 5
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core
+  syntax:
+    content: public Attribute(I identifier)
+    parameters:
+    - id: identifier
+      type: '{I}'
+    content.vb: Public Sub New(identifier As I)
+  overload: Virtufin.Core.Attribute`2.#ctor*
+  nameWithType.vb: Attribute(Of V, I).New(I)
+  fullName.vb: Virtufin.Core.Attribute(Of V, I).New(I)
+  name.vb: New(I)
+- uid: Virtufin.Core.Attribute`2.Equals(Virtufin.Core.IAttribute{`0})
+  commentId: M:Virtufin.Core.Attribute`2.Equals(Virtufin.Core.IAttribute{`0})
+  id: Equals(Virtufin.Core.IAttribute{`0})
+  parent: Virtufin.Core.Attribute`2
+  langs:
+  - csharp
+  - vb
+  name: Equals(IAttribute<V>)
+  nameWithType: Attribute<V, I>.Equals(IAttribute<V>)
+  fullName: Virtufin.Core.Attribute<V, I>.Equals(Virtufin.Core.IAttribute<V>)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Attribute.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Equals
+    path: ../../../src/Virtufin.Core/Attribute.cs
+    startLine: 10
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(IAttribute<V> other)
+    parameters:
+    - id: other
+      type: Virtufin.Core.IAttribute{{V}}
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As IAttribute(Of V)) As Boolean
+  overload: Virtufin.Core.Attribute`2.Equals*
+  implements:
+  - System.IEquatable{Virtufin.Core.IAttribute{{V}}}.Equals(Virtufin.Core.IAttribute{{V}})
+  nameWithType.vb: Attribute(Of V, I).Equals(IAttribute(Of V))
+  fullName.vb: Virtufin.Core.Attribute(Of V, I).Equals(Virtufin.Core.IAttribute(Of V))
+  name.vb: Equals(IAttribute(Of V))
+- uid: Virtufin.Core.Attribute`2.Equals(System.Object)
+  commentId: M:Virtufin.Core.Attribute`2.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Virtufin.Core.Attribute`2
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: Attribute<V, I>.Equals(object)
+  fullName: Virtufin.Core.Attribute<V, I>.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Attribute.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Equals
+    path: ../../../src/Virtufin.Core/Attribute.cs
+    startLine: 16
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core
+  summary: Indicates whether this instance and a specified object are equal.
+  example: []
+  syntax:
+    content: public override bool Equals(object other)
+    parameters:
+    - id: other
+      type: System.Object
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(other As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Virtufin.Core.Attribute`2.Equals*
+  nameWithType.vb: Attribute(Of V, I).Equals(Object)
+  fullName.vb: Virtufin.Core.Attribute(Of V, I).Equals(Object)
+  name.vb: Equals(Object)
+- uid: Virtufin.Core.Attribute`2.GetHashCode
+  commentId: M:Virtufin.Core.Attribute`2.GetHashCode
+  id: GetHashCode
+  parent: Virtufin.Core.Attribute`2
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Attribute<V, I>.GetHashCode()
+  fullName: Virtufin.Core.Attribute<V, I>.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Attribute.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GetHashCode
+    path: ../../../src/Virtufin.Core/Attribute.cs
+    startLine: 24
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core
+  summary: Returns the hash code for this instance.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer that is the hash code for this instance.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Virtufin.Core.Attribute`2.GetHashCode*
+  nameWithType.vb: Attribute(Of V, I).GetHashCode()
+  fullName.vb: Virtufin.Core.Attribute(Of V, I).GetHashCode()
+- uid: Virtufin.Core.Attribute`2.ToString
+  commentId: M:Virtufin.Core.Attribute`2.ToString
+  id: ToString
+  parent: Virtufin.Core.Attribute`2
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Attribute<V, I>.ToString()
+  fullName: Virtufin.Core.Attribute<V, I>.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Attribute.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ToString
+    path: ../../../src/Virtufin.Core/Attribute.cs
+    startLine: 28
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core
+  summary: Returns the fully qualified type name of this instance.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The fully qualified type name.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: Virtufin.Core.Attribute`2.ToString*
+  nameWithType.vb: Attribute(Of V, I).ToString()
+  fullName.vb: Virtufin.Core.Attribute(Of V, I).ToString()
+references:
+- uid: Virtufin.Core
+  commentId: N:Virtufin.Core
+  href: Virtufin.html
+  name: Virtufin.Core
+  nameWithType: Virtufin.Core
+  fullName: Virtufin.Core
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+- uid: Virtufin.Core.IAttribute{{V}}
+  commentId: T:Virtufin.Core.IAttribute{`0}
+  parent: Virtufin.Core
+  definition: Virtufin.Core.IAttribute`1
+  href: Virtufin.Core.IAttribute-1.html
+  name: IAttribute<V>
+  nameWithType: IAttribute<V>
+  fullName: Virtufin.Core.IAttribute<V>
+  nameWithType.vb: IAttribute(Of V)
+  fullName.vb: Virtufin.Core.IAttribute(Of V)
+  name.vb: IAttribute(Of V)
+  spec.csharp:
+  - uid: Virtufin.Core.IAttribute`1
+    name: IAttribute
+    href: Virtufin.Core.IAttribute-1.html
+  - name: <
+  - name: V
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.IAttribute`1
+    name: IAttribute
+    href: Virtufin.Core.IAttribute-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: V
+  - name: )
+- uid: System.IEquatable{Virtufin.Core.IAttribute{{V}}}
+  commentId: T:System.IEquatable{Virtufin.Core.IAttribute{`0}}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<IAttribute<V>>
+  nameWithType: IEquatable<IAttribute<V>>
+  fullName: System.IEquatable<Virtufin.Core.IAttribute<V>>
+  nameWithType.vb: IEquatable(Of IAttribute(Of V))
+  fullName.vb: System.IEquatable(Of Virtufin.Core.IAttribute(Of V))
+  name.vb: IEquatable(Of IAttribute(Of V))
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.IAttribute`1
+    name: IAttribute
+    href: Virtufin.Core.IAttribute-1.html
+  - name: <
+  - name: V
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.IAttribute`1
+    name: IAttribute
+    href: Virtufin.Core.IAttribute-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: V
+  - name: )
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Virtufin.Core.IAttribute`1
+  commentId: T:Virtufin.Core.IAttribute`1
+  href: Virtufin.Core.IAttribute-1.html
+  name: IAttribute<V>
+  nameWithType: IAttribute<V>
+  fullName: Virtufin.Core.IAttribute<V>
+  nameWithType.vb: IAttribute(Of V)
+  fullName.vb: Virtufin.Core.IAttribute(Of V)
+  name.vb: IAttribute(Of V)
+  spec.csharp:
+  - uid: Virtufin.Core.IAttribute`1
+    name: IAttribute
+    href: Virtufin.Core.IAttribute-1.html
+  - name: <
+  - name: V
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.IAttribute`1
+    name: IAttribute
+    href: Virtufin.Core.IAttribute-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: V
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.Core.Attribute`2.#ctor*
+  commentId: Overload:Virtufin.Core.Attribute`2.#ctor
+  href: Virtufin.Core.Attribute-2.html#Virtufin_Core_Attribute_2__ctor__1_
+  name: Attribute
+  nameWithType: Attribute<V, I>.Attribute
+  fullName: Virtufin.Core.Attribute<V, I>.Attribute
+  nameWithType.vb: Attribute(Of V, I).New
+  fullName.vb: Virtufin.Core.Attribute(Of V, I).New
+  name.vb: New
+- uid: '{I}'
+  commentId: '!:I'
+  definition: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: Virtufin.Core.Attribute`2.Equals*
+  commentId: Overload:Virtufin.Core.Attribute`2.Equals
+  href: Virtufin.Core.Attribute-2.html#Virtufin_Core_Attribute_2_Equals_Virtufin_Core_IAttribute__0__
+  name: Equals
+  nameWithType: Attribute<V, I>.Equals
+  fullName: Virtufin.Core.Attribute<V, I>.Equals
+  nameWithType.vb: Attribute(Of V, I).Equals
+  fullName.vb: Virtufin.Core.Attribute(Of V, I).Equals
+- uid: System.IEquatable{Virtufin.Core.IAttribute{{V}}}.Equals(Virtufin.Core.IAttribute{{V}})
+  commentId: M:System.IEquatable{Virtufin.Core.IAttribute{`0}}.Equals(Virtufin.Core.IAttribute{`0})
+  parent: System.IEquatable{Virtufin.Core.IAttribute{{V}}}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(IAttribute<V>)
+  nameWithType: IEquatable<IAttribute<V>>.Equals(IAttribute<V>)
+  fullName: System.IEquatable<Virtufin.Core.IAttribute<V>>.Equals(Virtufin.Core.IAttribute<V>)
+  nameWithType.vb: IEquatable(Of IAttribute(Of V)).Equals(IAttribute(Of V))
+  fullName.vb: System.IEquatable(Of Virtufin.Core.IAttribute(Of V)).Equals(Virtufin.Core.IAttribute(Of V))
+  name.vb: Equals(IAttribute(Of V))
+  spec.csharp:
+  - uid: System.IEquatable{Virtufin.Core.IAttribute{`0}}.Equals(Virtufin.Core.IAttribute{`0})
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.IAttribute`1
+    name: IAttribute
+    href: Virtufin.Core.IAttribute-1.html
+  - name: <
+  - name: V
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Virtufin.Core.IAttribute{`0}}.Equals(Virtufin.Core.IAttribute{`0})
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.IAttribute`1
+    name: IAttribute
+    href: Virtufin.Core.IAttribute-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: V
+  - name: )
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: Virtufin.Core.Attribute`2.GetHashCode*
+  commentId: Overload:Virtufin.Core.Attribute`2.GetHashCode
+  href: Virtufin.Core.Attribute-2.html#Virtufin_Core_Attribute_2_GetHashCode
+  name: GetHashCode
+  nameWithType: Attribute<V, I>.GetHashCode
+  fullName: Virtufin.Core.Attribute<V, I>.GetHashCode
+  nameWithType.vb: Attribute(Of V, I).GetHashCode
+  fullName.vb: Virtufin.Core.Attribute(Of V, I).GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: Virtufin.Core.Attribute`2.ToString*
+  commentId: Overload:Virtufin.Core.Attribute`2.ToString
+  href: Virtufin.Core.Attribute-2.html#Virtufin_Core_Attribute_2_ToString
+  name: ToString
+  nameWithType: Attribute<V, I>.ToString
+  fullName: Virtufin.Core.Attribute<V, I>.ToString
+  nameWithType.vb: Attribute(Of V, I).ToString
+  fullName.vb: Virtufin.Core.Attribute(Of V, I).ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

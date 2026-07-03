@@ -1,0 +1,551 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.Execution.StochasticState
+  commentId: T:Virtufin.Base.Execution.StochasticState
+  id: StochasticState
+  parent: Virtufin.Base.Execution
+  children:
+  - Virtufin.Base.Execution.StochasticState.#ctor(System.Int32)
+  - Virtufin.Base.Execution.StochasticState.NextNormal(System.Double,System.Double)
+  - Virtufin.Base.Execution.StochasticState.NextRandom
+  - Virtufin.Base.Execution.StochasticState.NextUnit
+  - Virtufin.Base.Execution.StochasticState.Seed
+  langs:
+  - csharp
+  - vb
+  name: StochasticState
+  nameWithType: StochasticState
+  fullName: Virtufin.Base.Execution.StochasticState
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Base/Execution/Executors.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: StochasticState
+    path: ../../../src/Virtufin.Base/Execution/Executors.cs
+    startLine: 23
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Execution
+  summary: >-
+    State for stochastic executors — a seeded PRNG. Deterministic given the
+
+    seed, reproducible across runs. Mutable: the PRNG seed evolves as the
+
+    executor steps.
+  example: []
+  syntax:
+    content: 'public sealed class StochasticState : IExecutionState'
+    content.vb: Public NotInheritable Class StochasticState Implements IExecutionState
+  inheritance:
+  - System.Object
+  implements:
+  - Virtufin.Core.Execution.IExecutionState
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.Base.Execution.StochasticState.Seed
+  commentId: P:Virtufin.Base.Execution.StochasticState.Seed
+  id: Seed
+  parent: Virtufin.Base.Execution.StochasticState
+  langs:
+  - csharp
+  - vb
+  name: Seed
+  nameWithType: StochasticState.Seed
+  fullName: Virtufin.Base.Execution.StochasticState.Seed
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Execution/Executors.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Seed
+    path: ../../../src/Virtufin.Base/Execution/Executors.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Execution
+  summary: Current PRNG seed (mutable).
+  example: []
+  syntax:
+    content: public int Seed { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Seed As Integer
+  overload: Virtufin.Base.Execution.StochasticState.Seed*
+- uid: Virtufin.Base.Execution.StochasticState.#ctor(System.Int32)
+  commentId: M:Virtufin.Base.Execution.StochasticState.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: Virtufin.Base.Execution.StochasticState
+  langs:
+  - csharp
+  - vb
+  name: StochasticState(int)
+  nameWithType: StochasticState.StochasticState(int)
+  fullName: Virtufin.Base.Execution.StochasticState.StochasticState(int)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Base/Execution/Executors.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Base/Execution/Executors.cs
+    startLine: 30
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Execution
+  summary: Construct a stochastic state from a seed.
+  example: []
+  syntax:
+    content: public StochasticState(int seed)
+    parameters:
+    - id: seed
+      type: System.Int32
+      description: Initial PRNG seed.
+    content.vb: Public Sub New(seed As Integer)
+  overload: Virtufin.Base.Execution.StochasticState.#ctor*
+  nameWithType.vb: StochasticState.New(Integer)
+  fullName.vb: Virtufin.Base.Execution.StochasticState.New(Integer)
+  name.vb: New(Integer)
+- uid: Virtufin.Base.Execution.StochasticState.NextRandom
+  commentId: M:Virtufin.Base.Execution.StochasticState.NextRandom
+  id: NextRandom
+  parent: Virtufin.Base.Execution.StochasticState
+  langs:
+  - csharp
+  - vb
+  name: NextRandom()
+  nameWithType: StochasticState.NextRandom()
+  fullName: Virtufin.Base.Execution.StochasticState.NextRandom()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/Execution/Executors.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: NextRandom
+    path: ../../../src/Virtufin.Base/Execution/Executors.cs
+    startLine: 33
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Execution
+  summary: Simple linear-congruential PRNG step.
+  example: []
+  syntax:
+    content: public int NextRandom()
+    return:
+      type: System.Int32
+    content.vb: Public Function NextRandom() As Integer
+  overload: Virtufin.Base.Execution.StochasticState.NextRandom*
+- uid: Virtufin.Base.Execution.StochasticState.NextUnit
+  commentId: M:Virtufin.Base.Execution.StochasticState.NextUnit
+  id: NextUnit
+  parent: Virtufin.Base.Execution.StochasticState
+  langs:
+  - csharp
+  - vb
+  name: NextUnit()
+  nameWithType: StochasticState.NextUnit()
+  fullName: Virtufin.Base.Execution.StochasticState.NextUnit()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/Execution/Executors.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: NextUnit
+    path: ../../../src/Virtufin.Base/Execution/Executors.cs
+    startLine: 43
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Execution
+  summary: Generate a uniform random number in [0, 1).
+  example: []
+  syntax:
+    content: public double NextUnit()
+    return:
+      type: System.Double
+    content.vb: Public Function NextUnit() As Double
+  overload: Virtufin.Base.Execution.StochasticState.NextUnit*
+- uid: Virtufin.Base.Execution.StochasticState.NextNormal(System.Double,System.Double)
+  commentId: M:Virtufin.Base.Execution.StochasticState.NextNormal(System.Double,System.Double)
+  id: NextNormal(System.Double,System.Double)
+  parent: Virtufin.Base.Execution.StochasticState
+  langs:
+  - csharp
+  - vb
+  name: NextNormal(double, double)
+  nameWithType: StochasticState.NextNormal(double, double)
+  fullName: Virtufin.Base.Execution.StochasticState.NextNormal(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/Execution/Executors.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: NextNormal
+    path: ../../../src/Virtufin.Base/Execution/Executors.cs
+    startLine: 47
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Execution
+  summary: Generate a normally-distributed value via Box-Muller (approximate).
+  example: []
+  syntax:
+    content: public double NextNormal(double mean = 0, double stddev = 1)
+    parameters:
+    - id: mean
+      type: System.Double
+    - id: stddev
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Function NextNormal(mean As Double = 0, stddev As Double = 1) As Double
+  overload: Virtufin.Base.Execution.StochasticState.NextNormal*
+  nameWithType.vb: StochasticState.NextNormal(Double, Double)
+  fullName.vb: Virtufin.Base.Execution.StochasticState.NextNormal(Double, Double)
+  name.vb: NextNormal(Double, Double)
+references:
+- uid: Virtufin.Base.Execution
+  commentId: N:Virtufin.Base.Execution
+  href: Virtufin.html
+  name: Virtufin.Base.Execution
+  nameWithType: Virtufin.Base.Execution
+  fullName: Virtufin.Base.Execution
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Execution
+    name: Execution
+    href: Virtufin.Base.Execution.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Execution
+    name: Execution
+    href: Virtufin.Base.Execution.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.Core.Execution.IExecutionState
+  commentId: T:Virtufin.Core.Execution.IExecutionState
+  parent: Virtufin.Core.Execution
+  href: Virtufin.Core.Execution.IExecutionState.html
+  name: IExecutionState
+  nameWithType: IExecutionState
+  fullName: Virtufin.Core.Execution.IExecutionState
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Core.Execution
+  commentId: N:Virtufin.Core.Execution
+  href: Virtufin.html
+  name: Virtufin.Core.Execution
+  nameWithType: Virtufin.Core.Execution
+  fullName: Virtufin.Core.Execution
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Execution
+    name: Execution
+    href: Virtufin.Core.Execution.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Execution
+    name: Execution
+    href: Virtufin.Core.Execution.html
+- uid: Virtufin.Base.Execution.StochasticState.Seed*
+  commentId: Overload:Virtufin.Base.Execution.StochasticState.Seed
+  href: Virtufin.Base.Execution.StochasticState.html#Virtufin_Base_Execution_StochasticState_Seed
+  name: Seed
+  nameWithType: StochasticState.Seed
+  fullName: Virtufin.Base.Execution.StochasticState.Seed
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Virtufin.Base.Execution.StochasticState.#ctor*
+  commentId: Overload:Virtufin.Base.Execution.StochasticState.#ctor
+  href: Virtufin.Base.Execution.StochasticState.html#Virtufin_Base_Execution_StochasticState__ctor_System_Int32_
+  name: StochasticState
+  nameWithType: StochasticState.StochasticState
+  fullName: Virtufin.Base.Execution.StochasticState.StochasticState
+  nameWithType.vb: StochasticState.New
+  fullName.vb: Virtufin.Base.Execution.StochasticState.New
+  name.vb: New
+- uid: Virtufin.Base.Execution.StochasticState.NextRandom*
+  commentId: Overload:Virtufin.Base.Execution.StochasticState.NextRandom
+  href: Virtufin.Base.Execution.StochasticState.html#Virtufin_Base_Execution_StochasticState_NextRandom
+  name: NextRandom
+  nameWithType: StochasticState.NextRandom
+  fullName: Virtufin.Base.Execution.StochasticState.NextRandom
+- uid: Virtufin.Base.Execution.StochasticState.NextUnit*
+  commentId: Overload:Virtufin.Base.Execution.StochasticState.NextUnit
+  href: Virtufin.Base.Execution.StochasticState.html#Virtufin_Base_Execution_StochasticState_NextUnit
+  name: NextUnit
+  nameWithType: StochasticState.NextUnit
+  fullName: Virtufin.Base.Execution.StochasticState.NextUnit
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Virtufin.Base.Execution.StochasticState.NextNormal*
+  commentId: Overload:Virtufin.Base.Execution.StochasticState.NextNormal
+  href: Virtufin.Base.Execution.StochasticState.html#Virtufin_Base_Execution_StochasticState_NextNormal_System_Double_System_Double_
+  name: NextNormal
+  nameWithType: StochasticState.NextNormal
+  fullName: Virtufin.Base.Execution.StochasticState.NextNormal

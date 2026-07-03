@@ -1,0 +1,200 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.IAttribute`1
+  commentId: T:Virtufin.Core.IAttribute`1
+  id: IAttribute`1
+  parent: Virtufin.Core
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IAttribute<V>
+  nameWithType: IAttribute<V>
+  fullName: Virtufin.Core.IAttribute<V>
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/IAttribute.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IAttribute
+    path: ../../../src/Virtufin.Core/IAttribute.cs
+    startLine: 1
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core
+  syntax:
+    content: 'public interface IAttribute<V> : IEquatable<IAttribute<V>> where V : struct'
+    typeParameters:
+    - id: V
+    content.vb: Public Interface IAttribute(Of V As Structure) Inherits IEquatable(Of IAttribute(Of V))
+  derivedClasses:
+  - Virtufin.Core.Attribute`2
+  inheritedMembers:
+  - System.IEquatable{Virtufin.Core.IAttribute`1}.Equals(Virtufin.Core.IAttribute{{V}})
+  nameWithType.vb: IAttribute(Of V)
+  fullName.vb: Virtufin.Core.IAttribute(Of V)
+  name.vb: IAttribute(Of V)
+references:
+- uid: Virtufin.Core
+  commentId: N:Virtufin.Core
+  href: Virtufin.html
+  name: Virtufin.Core
+  nameWithType: Virtufin.Core
+  fullName: Virtufin.Core
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+- uid: System.IEquatable{Virtufin.Core.IAttribute`1}.Equals(Virtufin.Core.IAttribute{{V}})
+  commentId: M:System.IEquatable{Virtufin.Core.IAttribute`1}.Equals(Virtufin.Core.IAttribute{`0})
+  parent: System.IEquatable{Virtufin.Core.IAttribute`1}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(IAttribute<V>)
+  nameWithType: IEquatable<IAttribute<V>>.Equals(IAttribute<V>)
+  fullName: System.IEquatable<Virtufin.Core.IAttribute<V>>.Equals(Virtufin.Core.IAttribute<V>)
+  nameWithType.vb: IEquatable(Of IAttribute(Of V)).Equals(IAttribute(Of V))
+  fullName.vb: System.IEquatable(Of Virtufin.Core.IAttribute(Of V)).Equals(Virtufin.Core.IAttribute(Of V))
+  name.vb: Equals(IAttribute(Of V))
+  spec.csharp:
+  - uid: System.IEquatable{Virtufin.Core.IAttribute`1}.Equals(Virtufin.Core.IAttribute{`0})
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.IAttribute`1
+    name: IAttribute
+    href: Virtufin.Core.IAttribute-1.html
+  - name: <
+  - name: V
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Virtufin.Core.IAttribute`1}.Equals(Virtufin.Core.IAttribute{`0})
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.IAttribute`1
+    name: IAttribute
+    href: Virtufin.Core.IAttribute-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: V
+  - name: )
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IEquatable{Virtufin.Core.IAttribute`1}
+  commentId: T:System.IEquatable{Virtufin.Core.IAttribute`1}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<IAttribute<V>>
+  nameWithType: IEquatable<IAttribute<V>>
+  fullName: System.IEquatable<Virtufin.Core.IAttribute<V>>
+  nameWithType.vb: IEquatable(Of IAttribute(Of V))
+  fullName.vb: System.IEquatable(Of Virtufin.Core.IAttribute(Of V))
+  name.vb: IEquatable(Of IAttribute(Of V))
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.IAttribute`1
+    name: IAttribute
+    href: Virtufin.Core.IAttribute-1.html
+  - name: <
+  - name: V
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.IAttribute`1
+    name: IAttribute
+    href: Virtufin.Core.IAttribute-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: V
+  - name: )
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

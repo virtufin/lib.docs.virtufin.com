@@ -1,0 +1,158 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Data
+  commentId: N:Virtufin.Data
+  id: Virtufin.Data
+  children:
+  - Virtufin.Data.FlatBuffersVariant
+  - Virtufin.Data.IVariant
+  - Virtufin.Data.NatsObservable
+  - Virtufin.Data.NatsObserver`1
+  - Virtufin.Data.ObservableAdapters
+  - Virtufin.Data.ObservableLogger`1
+  - Virtufin.Data.Selector
+  - Virtufin.Data.SelectorPath
+  - Virtufin.Data.Variant
+  - Virtufin.Data.VariantListRepresentation
+  - Virtufin.Data.WebSocketObservable
+  langs:
+  - csharp
+  - vb
+  name: Virtufin.Data
+  nameWithType: Virtufin.Data
+  fullName: Virtufin.Data
+  type: Namespace
+  assemblies:
+  - Virtufin.Data
+references:
+- uid: Virtufin.Data.FlatBuffersVariant
+  commentId: T:Virtufin.Data.FlatBuffersVariant
+  href: Virtufin.Data.FlatBuffersVariant.html
+  name: FlatBuffersVariant
+  nameWithType: FlatBuffersVariant
+  fullName: Virtufin.Data.FlatBuffersVariant
+- uid: Virtufin.Data.NatsObservable
+  commentId: T:Virtufin.Data.NatsObservable
+  href: Virtufin.Data.NatsObservable.html
+  name: NatsObservable
+  nameWithType: NatsObservable
+  fullName: Virtufin.Data.NatsObservable
+- uid: Virtufin.Data.NatsObserver`1
+  commentId: T:Virtufin.Data.NatsObserver`1
+  href: Virtufin.Data.NatsObserver-1.html
+  name: NatsObserver<T>
+  nameWithType: NatsObserver<T>
+  fullName: Virtufin.Data.NatsObserver<T>
+  nameWithType.vb: NatsObserver(Of T)
+  fullName.vb: Virtufin.Data.NatsObserver(Of T)
+  name.vb: NatsObserver(Of T)
+  spec.csharp:
+  - uid: Virtufin.Data.NatsObserver`1
+    name: NatsObserver
+    href: Virtufin.Data.NatsObserver-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Data.NatsObserver`1
+    name: NatsObserver
+    href: Virtufin.Data.NatsObserver-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Data.ObservableAdapters
+  commentId: T:Virtufin.Data.ObservableAdapters
+  href: Virtufin.Data.ObservableAdapters.html
+  name: ObservableAdapters
+  nameWithType: ObservableAdapters
+  fullName: Virtufin.Data.ObservableAdapters
+- uid: Virtufin.Data.ObservableLogger`1
+  commentId: T:Virtufin.Data.ObservableLogger`1
+  href: Virtufin.Data.ObservableLogger-1.html
+  name: ObservableLogger<T>
+  nameWithType: ObservableLogger<T>
+  fullName: Virtufin.Data.ObservableLogger<T>
+  nameWithType.vb: ObservableLogger(Of T)
+  fullName.vb: Virtufin.Data.ObservableLogger(Of T)
+  name.vb: ObservableLogger(Of T)
+  spec.csharp:
+  - uid: Virtufin.Data.ObservableLogger`1
+    name: ObservableLogger
+    href: Virtufin.Data.ObservableLogger-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Data.ObservableLogger`1
+    name: ObservableLogger
+    href: Virtufin.Data.ObservableLogger-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Data.IVariant
+  commentId: T:Virtufin.Data.IVariant
+  parent: Virtufin.Data
+  href: Virtufin.Data.IVariant.html
+  name: IVariant
+  nameWithType: IVariant
+  fullName: Virtufin.Data.IVariant
+- uid: Virtufin.Data.Variant
+  commentId: T:Virtufin.Data.Variant
+  parent: Virtufin.Data
+  href: Virtufin.Data.Variant.html
+  name: Variant
+  nameWithType: Variant
+  fullName: Virtufin.Data.Variant
+- uid: Virtufin.Data.Selector
+  commentId: T:Virtufin.Data.Selector
+  parent: Virtufin.Data
+  href: Virtufin.Data.Selector.html
+  name: Selector
+  nameWithType: Selector
+  fullName: Virtufin.Data.Selector
+- uid: Virtufin.Data.SelectorPath
+  commentId: T:Virtufin.Data.SelectorPath
+  parent: Virtufin.Data
+  href: Virtufin.Data.SelectorPath.html
+  name: SelectorPath
+  nameWithType: SelectorPath
+  fullName: Virtufin.Data.SelectorPath
+- uid: Virtufin.Data.VariantListRepresentation
+  commentId: T:Virtufin.Data.VariantListRepresentation
+  parent: Virtufin.Data
+  href: Virtufin.Data.VariantListRepresentation.html
+  name: VariantListRepresentation
+  nameWithType: VariantListRepresentation
+  fullName: Virtufin.Data.VariantListRepresentation
+- uid: Virtufin.Data.WebSocketObservable
+  commentId: T:Virtufin.Data.WebSocketObservable
+  href: Virtufin.Data.WebSocketObservable.html
+  name: WebSocketObservable
+  nameWithType: WebSocketObservable
+  fullName: Virtufin.Data.WebSocketObservable
+- uid: Virtufin.Data
+  commentId: N:Virtufin.Data
+  href: Virtufin.html
+  name: Virtufin.Data
+  nameWithType: Virtufin.Data
+  fullName: Virtufin.Data
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Data
+    name: Data
+    href: Virtufin.Data.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Data
+    name: Data
+    href: Virtufin.Data.html

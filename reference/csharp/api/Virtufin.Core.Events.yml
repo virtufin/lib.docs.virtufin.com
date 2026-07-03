@@ -1,0 +1,94 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Events
+  commentId: N:Virtufin.Core.Events
+  id: Virtufin.Core.Events
+  children:
+  - Virtufin.Core.Events.ClockType
+  - Virtufin.Core.Events.CloudEvent
+  - Virtufin.Core.Events.IEvent
+  - Virtufin.Core.Events.IEventEnvelope
+  - Virtufin.Core.Events.Lane
+  - Virtufin.Core.Events.Symbol
+  langs:
+  - csharp
+  - vb
+  name: Virtufin.Core.Events
+  nameWithType: Virtufin.Core.Events
+  fullName: Virtufin.Core.Events
+  type: Namespace
+  assemblies:
+  - Virtufin.Core
+references:
+- uid: Virtufin.Core.Events.CloudEvent
+  commentId: T:Virtufin.Core.Events.CloudEvent
+  parent: Virtufin.Core.Events
+  href: Virtufin.Core.Events.CloudEvent.html
+  name: CloudEvent
+  nameWithType: CloudEvent
+  fullName: Virtufin.Core.Events.CloudEvent
+- uid: Virtufin.Core.Events.IEvent
+  commentId: T:Virtufin.Core.Events.IEvent
+  parent: Virtufin.Core.Events
+  href: Virtufin.Core.Events.IEvent.html
+  name: IEvent
+  nameWithType: IEvent
+  fullName: Virtufin.Core.Events.IEvent
+- uid: Virtufin.Core.Events.IEventEnvelope
+  commentId: T:Virtufin.Core.Events.IEventEnvelope
+  parent: Virtufin.Core.Events
+  href: Virtufin.Core.Events.IEventEnvelope.html
+  name: IEventEnvelope
+  nameWithType: IEventEnvelope
+  fullName: Virtufin.Core.Events.IEventEnvelope
+- uid: Virtufin.Core.Events.Lane
+  commentId: T:Virtufin.Core.Events.Lane
+  parent: Virtufin.Core.Events
+  href: Virtufin.Core.Events.Lane.html
+  name: Lane
+  nameWithType: Lane
+  fullName: Virtufin.Core.Events.Lane
+- uid: Virtufin.Core.Events.ClockType
+  commentId: T:Virtufin.Core.Events.ClockType
+  parent: Virtufin.Core.Events
+  href: Virtufin.Core.Events.ClockType.html
+  name: ClockType
+  nameWithType: ClockType
+  fullName: Virtufin.Core.Events.ClockType
+- uid: Virtufin.Core.Events.Symbol
+  commentId: T:Virtufin.Core.Events.Symbol
+  parent: Virtufin.Core.Events
+  href: Virtufin.Core.Events.Symbol.html
+  name: Symbol
+  nameWithType: Symbol
+  fullName: Virtufin.Core.Events.Symbol
+- uid: Virtufin.Core.Events
+  commentId: N:Virtufin.Core.Events
+  href: Virtufin.html
+  name: Virtufin.Core.Events
+  nameWithType: Virtufin.Core.Events
+  fullName: Virtufin.Core.Events
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html

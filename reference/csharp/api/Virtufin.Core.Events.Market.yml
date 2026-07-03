@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Events.Market
+  commentId: N:Virtufin.Core.Events.Market
+  id: Virtufin.Core.Events.Market
+  children:
+  - Virtufin.Core.Events.Market.IMarketEvent
+  langs:
+  - csharp
+  - vb
+  name: Virtufin.Core.Events.Market
+  nameWithType: Virtufin.Core.Events.Market
+  fullName: Virtufin.Core.Events.Market
+  type: Namespace
+  assemblies:
+  - Virtufin.Core
+references:
+- uid: Virtufin.Core.Events.Market.IMarketEvent
+  commentId: T:Virtufin.Core.Events.Market.IMarketEvent
+  parent: Virtufin.Core.Events.Market
+  href: Virtufin.Core.Events.Market.IMarketEvent.html
+  name: IMarketEvent
+  nameWithType: IMarketEvent
+  fullName: Virtufin.Core.Events.Market.IMarketEvent
+- uid: Virtufin.Core.Events.Market
+  commentId: N:Virtufin.Core.Events.Market
+  href: Virtufin.html
+  name: Virtufin.Core.Events.Market
+  nameWithType: Virtufin.Core.Events.Market
+  fullName: Virtufin.Core.Events.Market
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  - name: .
+  - uid: Virtufin.Core.Events.Market
+    name: Market
+    href: Virtufin.Core.Events.Market.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  - name: .
+  - uid: Virtufin.Core.Events.Market
+    name: Market
+    href: Virtufin.Core.Events.Market.html

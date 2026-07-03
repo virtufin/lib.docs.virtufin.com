@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Google.FlatBuffers
+  commentId: N:Google.FlatBuffers
+  id: Google.FlatBuffers
+  children:
+  - Google.FlatBuffers.FlatBufferConstants
+  langs:
+  - csharp
+  - vb
+  name: Google.FlatBuffers
+  nameWithType: Google.FlatBuffers
+  fullName: Google.FlatBuffers
+  type: Namespace
+  assemblies:
+  - Virtufin.Data
+references:
+- uid: Google.FlatBuffers.FlatBufferConstants
+  commentId: T:Google.FlatBuffers.FlatBufferConstants
+  href: Google.FlatBuffers.FlatBufferConstants.html
+  name: FlatBufferConstants
+  nameWithType: FlatBufferConstants
+  fullName: Google.FlatBuffers.FlatBufferConstants

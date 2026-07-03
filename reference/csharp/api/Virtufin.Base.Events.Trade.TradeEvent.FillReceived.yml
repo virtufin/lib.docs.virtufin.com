@@ -1,0 +1,967 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.Events.Trade.TradeEvent.FillReceived
+  commentId: T:Virtufin.Base.Events.Trade.TradeEvent.FillReceived
+  id: TradeEvent.FillReceived
+  parent: Virtufin.Base.Events.Trade
+  children:
+  - Virtufin.Base.Events.Trade.TradeEvent.FillReceived.#ctor(Virtufin.Base.Events.Trade.RichTradeAction,System.Guid,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,System.Nullable{Virtufin.Core.Position.DecimalAmount},System.DateTimeOffset)
+  - Virtufin.Base.Events.Trade.TradeEvent.FillReceived.Action
+  - Virtufin.Base.Events.Trade.TradeEvent.FillReceived.Fee
+  - Virtufin.Base.Events.Trade.TradeEvent.FillReceived.FillPrice
+  - Virtufin.Base.Events.Trade.TradeEvent.FillReceived.FilledAt
+  - Virtufin.Base.Events.Trade.TradeEvent.FillReceived.FilledQuantity
+  - Virtufin.Base.Events.Trade.TradeEvent.FillReceived.OrderId
+  langs:
+  - csharp
+  - vb
+  name: TradeEvent.FillReceived
+  nameWithType: TradeEvent.FillReceived
+  fullName: Virtufin.Base.Events.Trade.TradeEvent.FillReceived
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Trade/TradeEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: FillReceived
+    path: ../../../src/Virtufin.Base/Events/Trade/TradeEvent.cs
+    startLine: 70
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Trade
+  summary: Partial or full fill received from exchange.
+  example: []
+  syntax:
+    content: 'public sealed record TradeEvent.FillReceived : TradeEvent, ITradeEvent<RichTradeAction>, IEvent, IEquatable<IEvent>, IEquatable<TradeEvent>, IEquatable<TradeEvent.FillReceived>'
+    content.vb: Public NotInheritable Class TradeEvent.FillReceived Inherits TradeEvent Implements ITradeEvent(Of RichTradeAction), IEvent, IEquatable(Of IEvent), IEquatable(Of TradeEvent), IEquatable(Of TradeEvent.FillReceived)
+  inheritance:
+  - System.Object
+  - Virtufin.Base.Events.Trade.TradeEvent
+  implements:
+  - Virtufin.Core.Events.Trade.ITradeEvent{Virtufin.Base.Events.Trade.RichTradeAction}
+  - Virtufin.Core.Events.IEvent
+  - System.IEquatable{Virtufin.Core.Events.IEvent}
+  - System.IEquatable{Virtufin.Base.Events.Trade.TradeEvent}
+  - System.IEquatable{Virtufin.Base.Events.Trade.TradeEvent.FillReceived}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.Action
+  commentId: P:Virtufin.Base.Events.Trade.TradeEvent.FillReceived.Action
+  id: Action
+  parent: Virtufin.Base.Events.Trade.TradeEvent.FillReceived
+  langs:
+  - csharp
+  - vb
+  name: Action
+  nameWithType: TradeEvent.FillReceived.Action
+  fullName: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.Action
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Trade/TradeEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Action
+    path: ../../../src/Virtufin.Base/Events/Trade/TradeEvent.cs
+    startLine: 73
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Trade
+  summary: The action that produced this event (carried for correlation and audit).
+  example: []
+  syntax:
+    content: public override RichTradeAction Action { get; }
+    parameters: []
+    return:
+      type: Virtufin.Base.Events.Trade.RichTradeAction
+    content.vb: Public Overrides ReadOnly Property Action As RichTradeAction
+  overridden: Virtufin.Base.Events.Trade.TradeEvent.Action
+  overload: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.Action*
+- uid: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.OrderId
+  commentId: P:Virtufin.Base.Events.Trade.TradeEvent.FillReceived.OrderId
+  id: OrderId
+  parent: Virtufin.Base.Events.Trade.TradeEvent.FillReceived
+  langs:
+  - csharp
+  - vb
+  name: OrderId
+  nameWithType: TradeEvent.FillReceived.OrderId
+  fullName: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.OrderId
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Trade/TradeEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: OrderId
+    path: ../../../src/Virtufin.Base/Events/Trade/TradeEvent.cs
+    startLine: 75
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Trade
+  summary: Id of the filled order.
+  example: []
+  syntax:
+    content: public Guid OrderId { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public ReadOnly Property OrderId As Guid
+  overload: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.OrderId*
+- uid: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.FilledQuantity
+  commentId: P:Virtufin.Base.Events.Trade.TradeEvent.FillReceived.FilledQuantity
+  id: FilledQuantity
+  parent: Virtufin.Base.Events.Trade.TradeEvent.FillReceived
+  langs:
+  - csharp
+  - vb
+  name: FilledQuantity
+  nameWithType: TradeEvent.FillReceived.FilledQuantity
+  fullName: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.FilledQuantity
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Trade/TradeEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: FilledQuantity
+    path: ../../../src/Virtufin.Base/Events/Trade/TradeEvent.cs
+    startLine: 77
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Trade
+  summary: Quantity filled.
+  example: []
+  syntax:
+    content: public DecimalAmount FilledQuantity { get; }
+    parameters: []
+    return:
+      type: Virtufin.Core.Position.DecimalAmount
+    content.vb: Public ReadOnly Property FilledQuantity As DecimalAmount
+  overload: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.FilledQuantity*
+- uid: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.FillPrice
+  commentId: P:Virtufin.Base.Events.Trade.TradeEvent.FillReceived.FillPrice
+  id: FillPrice
+  parent: Virtufin.Base.Events.Trade.TradeEvent.FillReceived
+  langs:
+  - csharp
+  - vb
+  name: FillPrice
+  nameWithType: TradeEvent.FillReceived.FillPrice
+  fullName: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.FillPrice
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Trade/TradeEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: FillPrice
+    path: ../../../src/Virtufin.Base/Events/Trade/TradeEvent.cs
+    startLine: 79
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Trade
+  summary: Price of the fill.
+  example: []
+  syntax:
+    content: public DecimalAmount FillPrice { get; }
+    parameters: []
+    return:
+      type: Virtufin.Core.Position.DecimalAmount
+    content.vb: Public ReadOnly Property FillPrice As DecimalAmount
+  overload: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.FillPrice*
+- uid: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.Fee
+  commentId: P:Virtufin.Base.Events.Trade.TradeEvent.FillReceived.Fee
+  id: Fee
+  parent: Virtufin.Base.Events.Trade.TradeEvent.FillReceived
+  langs:
+  - csharp
+  - vb
+  name: Fee
+  nameWithType: TradeEvent.FillReceived.Fee
+  fullName: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.Fee
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Trade/TradeEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Fee
+    path: ../../../src/Virtufin.Base/Events/Trade/TradeEvent.cs
+    startLine: 81
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Trade
+  summary: Optional fee charged by the venue.
+  example: []
+  syntax:
+    content: public DecimalAmount? Fee { get; }
+    parameters: []
+    return:
+      type: System.Nullable{Virtufin.Core.Position.DecimalAmount}
+    content.vb: Public ReadOnly Property Fee As DecimalAmount?
+  overload: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.Fee*
+- uid: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.FilledAt
+  commentId: P:Virtufin.Base.Events.Trade.TradeEvent.FillReceived.FilledAt
+  id: FilledAt
+  parent: Virtufin.Base.Events.Trade.TradeEvent.FillReceived
+  langs:
+  - csharp
+  - vb
+  name: FilledAt
+  nameWithType: TradeEvent.FillReceived.FilledAt
+  fullName: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.FilledAt
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Trade/TradeEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: FilledAt
+    path: ../../../src/Virtufin.Base/Events/Trade/TradeEvent.cs
+    startLine: 83
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Trade
+  summary: Time of the fill.
+  example: []
+  syntax:
+    content: public DateTimeOffset FilledAt { get; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Public ReadOnly Property FilledAt As DateTimeOffset
+  overload: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.FilledAt*
+- uid: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.#ctor(Virtufin.Base.Events.Trade.RichTradeAction,System.Guid,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,System.Nullable{Virtufin.Core.Position.DecimalAmount},System.DateTimeOffset)
+  commentId: M:Virtufin.Base.Events.Trade.TradeEvent.FillReceived.#ctor(Virtufin.Base.Events.Trade.RichTradeAction,System.Guid,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,System.Nullable{Virtufin.Core.Position.DecimalAmount},System.DateTimeOffset)
+  id: '#ctor(Virtufin.Base.Events.Trade.RichTradeAction,System.Guid,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,System.Nullable{Virtufin.Core.Position.DecimalAmount},System.DateTimeOffset)'
+  parent: Virtufin.Base.Events.Trade.TradeEvent.FillReceived
+  langs:
+  - csharp
+  - vb
+  name: FillReceived(RichTradeAction, Guid, DecimalAmount, DecimalAmount, DecimalAmount?, DateTimeOffset)
+  nameWithType: TradeEvent.FillReceived.FillReceived(RichTradeAction, Guid, DecimalAmount, DecimalAmount, DecimalAmount?, DateTimeOffset)
+  fullName: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.FillReceived(Virtufin.Base.Events.Trade.RichTradeAction, System.Guid, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount?, System.DateTimeOffset)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Trade/TradeEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Base/Events/Trade/TradeEvent.cs
+    startLine: 86
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Trade
+  summary: Construct a FillReceived event.
+  example: []
+  syntax:
+    content: public FillReceived(RichTradeAction action, Guid orderId, DecimalAmount filledQuantity, DecimalAmount fillPrice, DecimalAmount? fee, DateTimeOffset filledAt)
+    parameters:
+    - id: action
+      type: Virtufin.Base.Events.Trade.RichTradeAction
+    - id: orderId
+      type: System.Guid
+    - id: filledQuantity
+      type: Virtufin.Core.Position.DecimalAmount
+    - id: fillPrice
+      type: Virtufin.Core.Position.DecimalAmount
+    - id: fee
+      type: System.Nullable{Virtufin.Core.Position.DecimalAmount}
+    - id: filledAt
+      type: System.DateTimeOffset
+    content.vb: Public Sub New(action As RichTradeAction, orderId As Guid, filledQuantity As DecimalAmount, fillPrice As DecimalAmount, fee As DecimalAmount?, filledAt As DateTimeOffset)
+  overload: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.#ctor*
+  nameWithType.vb: TradeEvent.FillReceived.New(RichTradeAction, Guid, DecimalAmount, DecimalAmount, DecimalAmount?, DateTimeOffset)
+  fullName.vb: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.New(Virtufin.Base.Events.Trade.RichTradeAction, System.Guid, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount?, System.DateTimeOffset)
+  name.vb: New(RichTradeAction, Guid, DecimalAmount, DecimalAmount, DecimalAmount?, DateTimeOffset)
+references:
+- uid: Virtufin.Base.Events.Trade
+  commentId: N:Virtufin.Base.Events.Trade
+  href: Virtufin.html
+  name: Virtufin.Base.Events.Trade
+  nameWithType: Virtufin.Base.Events.Trade
+  fullName: Virtufin.Base.Events.Trade
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade
+    name: Trade
+    href: Virtufin.Base.Events.Trade.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade
+    name: Trade
+    href: Virtufin.Base.Events.Trade.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.Base.Events.Trade.TradeEvent
+  commentId: T:Virtufin.Base.Events.Trade.TradeEvent
+  parent: Virtufin.Base.Events.Trade
+  href: Virtufin.Base.Events.Trade.TradeEvent.html
+  name: TradeEvent
+  nameWithType: TradeEvent
+  fullName: Virtufin.Base.Events.Trade.TradeEvent
+- uid: Virtufin.Core.Events.Trade.ITradeEvent{Virtufin.Base.Events.Trade.RichTradeAction}
+  commentId: T:Virtufin.Core.Events.Trade.ITradeEvent{Virtufin.Base.Events.Trade.RichTradeAction}
+  parent: Virtufin.Core.Events.Trade
+  definition: Virtufin.Core.Events.Trade.ITradeEvent`1
+  href: Virtufin.Core.Events.Trade.ITradeEvent-1.html
+  name: ITradeEvent<RichTradeAction>
+  nameWithType: ITradeEvent<RichTradeAction>
+  fullName: Virtufin.Core.Events.Trade.ITradeEvent<Virtufin.Base.Events.Trade.RichTradeAction>
+  nameWithType.vb: ITradeEvent(Of RichTradeAction)
+  fullName.vb: Virtufin.Core.Events.Trade.ITradeEvent(Of Virtufin.Base.Events.Trade.RichTradeAction)
+  name.vb: ITradeEvent(Of RichTradeAction)
+  spec.csharp:
+  - uid: Virtufin.Core.Events.Trade.ITradeEvent`1
+    name: ITradeEvent
+    href: Virtufin.Core.Events.Trade.ITradeEvent-1.html
+  - name: <
+  - uid: Virtufin.Base.Events.Trade.RichTradeAction
+    name: RichTradeAction
+    href: Virtufin.Base.Events.Trade.RichTradeAction.html
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Events.Trade.ITradeEvent`1
+    name: ITradeEvent
+    href: Virtufin.Core.Events.Trade.ITradeEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Base.Events.Trade.RichTradeAction
+    name: RichTradeAction
+    href: Virtufin.Base.Events.Trade.RichTradeAction.html
+  - name: )
+- uid: Virtufin.Core.Events.IEvent
+  commentId: T:Virtufin.Core.Events.IEvent
+  parent: Virtufin.Core.Events
+  href: Virtufin.Core.Events.IEvent.html
+  name: IEvent
+  nameWithType: IEvent
+  fullName: Virtufin.Core.Events.IEvent
+- uid: System.IEquatable{Virtufin.Core.Events.IEvent}
+  commentId: T:System.IEquatable{Virtufin.Core.Events.IEvent}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<IEvent>
+  nameWithType: IEquatable<IEvent>
+  fullName: System.IEquatable<Virtufin.Core.Events.IEvent>
+  nameWithType.vb: IEquatable(Of IEvent)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Events.IEvent)
+  name.vb: IEquatable(Of IEvent)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Events.IEvent
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Events.IEvent
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent.html
+  - name: )
+- uid: System.IEquatable{Virtufin.Base.Events.Trade.TradeEvent}
+  commentId: T:System.IEquatable{Virtufin.Base.Events.Trade.TradeEvent}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<TradeEvent>
+  nameWithType: IEquatable<TradeEvent>
+  fullName: System.IEquatable<Virtufin.Base.Events.Trade.TradeEvent>
+  nameWithType.vb: IEquatable(Of TradeEvent)
+  fullName.vb: System.IEquatable(Of Virtufin.Base.Events.Trade.TradeEvent)
+  name.vb: IEquatable(Of TradeEvent)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Base.Events.Trade.TradeEvent
+    name: TradeEvent
+    href: Virtufin.Base.Events.Trade.TradeEvent.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Base.Events.Trade.TradeEvent
+    name: TradeEvent
+    href: Virtufin.Base.Events.Trade.TradeEvent.html
+  - name: )
+- uid: System.IEquatable{Virtufin.Base.Events.Trade.TradeEvent.FillReceived}
+  commentId: T:System.IEquatable{Virtufin.Base.Events.Trade.TradeEvent.FillReceived}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<TradeEvent.FillReceived>
+  nameWithType: IEquatable<TradeEvent.FillReceived>
+  fullName: System.IEquatable<Virtufin.Base.Events.Trade.TradeEvent.FillReceived>
+  nameWithType.vb: IEquatable(Of TradeEvent.FillReceived)
+  fullName.vb: System.IEquatable(Of Virtufin.Base.Events.Trade.TradeEvent.FillReceived)
+  name.vb: IEquatable(Of TradeEvent.FillReceived)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Base.Events.Trade.TradeEvent
+    name: TradeEvent
+    href: Virtufin.Base.Events.Trade.TradeEvent.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade.TradeEvent.FillReceived
+    name: FillReceived
+    href: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Base.Events.Trade.TradeEvent
+    name: TradeEvent
+    href: Virtufin.Base.Events.Trade.TradeEvent.html
+  - name: .
+  - uid: Virtufin.Base.Events.Trade.TradeEvent.FillReceived
+    name: FillReceived
+    href: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Core.Events.Trade.ITradeEvent`1
+  commentId: T:Virtufin.Core.Events.Trade.ITradeEvent`1
+  href: Virtufin.Core.Events.Trade.ITradeEvent-1.html
+  name: ITradeEvent<A>
+  nameWithType: ITradeEvent<A>
+  fullName: Virtufin.Core.Events.Trade.ITradeEvent<A>
+  nameWithType.vb: ITradeEvent(Of A)
+  fullName.vb: Virtufin.Core.Events.Trade.ITradeEvent(Of A)
+  name.vb: ITradeEvent(Of A)
+  spec.csharp:
+  - uid: Virtufin.Core.Events.Trade.ITradeEvent`1
+    name: ITradeEvent
+    href: Virtufin.Core.Events.Trade.ITradeEvent-1.html
+  - name: <
+  - name: A
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Events.Trade.ITradeEvent`1
+    name: ITradeEvent
+    href: Virtufin.Core.Events.Trade.ITradeEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: )
+- uid: Virtufin.Core.Events.Trade
+  commentId: N:Virtufin.Core.Events.Trade
+  href: Virtufin.html
+  name: Virtufin.Core.Events.Trade
+  nameWithType: Virtufin.Core.Events.Trade
+  fullName: Virtufin.Core.Events.Trade
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  - name: .
+  - uid: Virtufin.Core.Events.Trade
+    name: Trade
+    href: Virtufin.Core.Events.Trade.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  - name: .
+  - uid: Virtufin.Core.Events.Trade
+    name: Trade
+    href: Virtufin.Core.Events.Trade.html
+- uid: Virtufin.Core.Events
+  commentId: N:Virtufin.Core.Events
+  href: Virtufin.html
+  name: Virtufin.Core.Events
+  nameWithType: Virtufin.Core.Events
+  fullName: Virtufin.Core.Events
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Base.Events.Trade.TradeEvent.Action
+  commentId: P:Virtufin.Base.Events.Trade.TradeEvent.Action
+  parent: Virtufin.Base.Events.Trade.TradeEvent
+  href: Virtufin.Base.Events.Trade.TradeEvent.html#Virtufin_Base_Events_Trade_TradeEvent_Action
+  name: Action
+  nameWithType: TradeEvent.Action
+  fullName: Virtufin.Base.Events.Trade.TradeEvent.Action
+- uid: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.Action*
+  commentId: Overload:Virtufin.Base.Events.Trade.TradeEvent.FillReceived.Action
+  href: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.html#Virtufin_Base_Events_Trade_TradeEvent_FillReceived_Action
+  name: Action
+  nameWithType: TradeEvent.FillReceived.Action
+  fullName: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.Action
+- uid: Virtufin.Base.Events.Trade.RichTradeAction
+  commentId: T:Virtufin.Base.Events.Trade.RichTradeAction
+  parent: Virtufin.Base.Events.Trade
+  href: Virtufin.Base.Events.Trade.RichTradeAction.html
+  name: RichTradeAction
+  nameWithType: RichTradeAction
+  fullName: Virtufin.Base.Events.Trade.RichTradeAction
+- uid: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.OrderId*
+  commentId: Overload:Virtufin.Base.Events.Trade.TradeEvent.FillReceived.OrderId
+  href: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.html#Virtufin_Base_Events_Trade_TradeEvent_FillReceived_OrderId
+  name: OrderId
+  nameWithType: TradeEvent.FillReceived.OrderId
+  fullName: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.OrderId
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.FilledQuantity*
+  commentId: Overload:Virtufin.Base.Events.Trade.TradeEvent.FillReceived.FilledQuantity
+  href: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.html#Virtufin_Base_Events_Trade_TradeEvent_FillReceived_FilledQuantity
+  name: FilledQuantity
+  nameWithType: TradeEvent.FillReceived.FilledQuantity
+  fullName: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.FilledQuantity
+- uid: Virtufin.Core.Position.DecimalAmount
+  commentId: T:Virtufin.Core.Position.DecimalAmount
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.DecimalAmount.html
+  name: DecimalAmount
+  nameWithType: DecimalAmount
+  fullName: Virtufin.Core.Position.DecimalAmount
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.FillPrice*
+  commentId: Overload:Virtufin.Base.Events.Trade.TradeEvent.FillReceived.FillPrice
+  href: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.html#Virtufin_Base_Events_Trade_TradeEvent_FillReceived_FillPrice
+  name: FillPrice
+  nameWithType: TradeEvent.FillReceived.FillPrice
+  fullName: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.FillPrice
+- uid: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.Fee*
+  commentId: Overload:Virtufin.Base.Events.Trade.TradeEvent.FillReceived.Fee
+  href: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.html#Virtufin_Base_Events_Trade_TradeEvent_FillReceived_Fee
+  name: Fee
+  nameWithType: TradeEvent.FillReceived.Fee
+  fullName: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.Fee
+- uid: System.Nullable{Virtufin.Core.Position.DecimalAmount}
+  commentId: T:System.Nullable{Virtufin.Core.Position.DecimalAmount}
+  parent: System
+  definition: System.Nullable`1
+  href: Virtufin.Core.Position.DecimalAmount.html
+  name: DecimalAmount?
+  nameWithType: DecimalAmount?
+  fullName: Virtufin.Core.Position.DecimalAmount?
+  spec.csharp:
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: '?'
+  spec.vb:
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.FilledAt*
+  commentId: Overload:Virtufin.Base.Events.Trade.TradeEvent.FillReceived.FilledAt
+  href: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.html#Virtufin_Base_Events_Trade_TradeEvent_FillReceived_FilledAt
+  name: FilledAt
+  nameWithType: TradeEvent.FillReceived.FilledAt
+  fullName: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.FilledAt
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.#ctor*
+  commentId: Overload:Virtufin.Base.Events.Trade.TradeEvent.FillReceived.#ctor
+  href: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.html#Virtufin_Base_Events_Trade_TradeEvent_FillReceived__ctor_Virtufin_Base_Events_Trade_RichTradeAction_System_Guid_Virtufin_Core_Position_DecimalAmount_Virtufin_Core_Position_DecimalAmount_System_Nullable_Virtufin_Core_Position_DecimalAmount__System_DateTimeOffset_
+  name: FillReceived
+  nameWithType: TradeEvent.FillReceived.FillReceived
+  fullName: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.FillReceived
+  nameWithType.vb: TradeEvent.FillReceived.New
+  fullName.vb: Virtufin.Base.Events.Trade.TradeEvent.FillReceived.New
+  name.vb: New

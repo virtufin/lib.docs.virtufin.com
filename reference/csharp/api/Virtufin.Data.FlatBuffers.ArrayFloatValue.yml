@@ -1,0 +1,1363 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue
+  commentId: T:Virtufin.Data.FlatBuffers.ArrayFloatValue
+  id: ArrayFloatValue
+  parent: Virtufin.Data.FlatBuffers
+  children:
+  - Virtufin.Data.FlatBuffers.ArrayFloatValue.AddValue(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.VectorOffset)
+  - Virtufin.Data.FlatBuffers.ArrayFloatValue.ByteBuffer
+  - Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateArrayFloatValue(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.VectorOffset)
+  - Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVector(Google.FlatBuffers.FlatBufferBuilder,System.Single[])
+  - Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVectorBlock(Google.FlatBuffers.FlatBufferBuilder,System.ArraySegment{System.Single})
+  - Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVectorBlock(Google.FlatBuffers.FlatBufferBuilder,System.IntPtr,System.Int32)
+  - Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVectorBlock(Google.FlatBuffers.FlatBufferBuilder,System.Single[])
+  - Virtufin.Data.FlatBuffers.ArrayFloatValue.EndArrayFloatValue(Google.FlatBuffers.FlatBufferBuilder)
+  - Virtufin.Data.FlatBuffers.ArrayFloatValue.GetRootAsArrayFloatValue(Google.FlatBuffers.ByteBuffer)
+  - Virtufin.Data.FlatBuffers.ArrayFloatValue.GetRootAsArrayFloatValue(Google.FlatBuffers.ByteBuffer,Virtufin.Data.FlatBuffers.ArrayFloatValue)
+  - Virtufin.Data.FlatBuffers.ArrayFloatValue.GetValueArray
+  - Virtufin.Data.FlatBuffers.ArrayFloatValue.GetValueBytes
+  - Virtufin.Data.FlatBuffers.ArrayFloatValue.StartArrayFloatValue(Google.FlatBuffers.FlatBufferBuilder)
+  - Virtufin.Data.FlatBuffers.ArrayFloatValue.StartValueVector(Google.FlatBuffers.FlatBufferBuilder,System.Int32)
+  - Virtufin.Data.FlatBuffers.ArrayFloatValue.ValidateVersion
+  - Virtufin.Data.FlatBuffers.ArrayFloatValue.Value(System.Int32)
+  - Virtufin.Data.FlatBuffers.ArrayFloatValue.ValueLength
+  - Virtufin.Data.FlatBuffers.ArrayFloatValue.__assign(System.Int32,Google.FlatBuffers.ByteBuffer)
+  - Virtufin.Data.FlatBuffers.ArrayFloatValue.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  langs:
+  - csharp
+  - vb
+  name: ArrayFloatValue
+  nameWithType: ArrayFloatValue
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue
+  type: Struct
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ArrayFloatValue
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+    startLine: 11
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: 'public struct ArrayFloatValue : IFlatbufferObject'
+    content.vb: Public Structure ArrayFloatValue Implements IFlatbufferObject
+  implements:
+  - Google.FlatBuffers.IFlatbufferObject
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.ByteBuffer
+  commentId: P:Virtufin.Data.FlatBuffers.ArrayFloatValue.ByteBuffer
+  id: ByteBuffer
+  parent: Virtufin.Data.FlatBuffers.ArrayFloatValue
+  langs:
+  - csharp
+  - vb
+  name: ByteBuffer
+  nameWithType: ArrayFloatValue.ByteBuffer
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.ByteBuffer
+  type: Property
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ByteBuffer
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+    startLine: 14
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  example: []
+  syntax:
+    content: public ByteBuffer ByteBuffer { get; }
+    parameters: []
+    return:
+      type: Google.FlatBuffers.ByteBuffer
+    content.vb: Public ReadOnly Property ByteBuffer As ByteBuffer
+  overload: Virtufin.Data.FlatBuffers.ArrayFloatValue.ByteBuffer*
+  implements:
+  - Google.FlatBuffers.IFlatbufferObject.ByteBuffer
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.ValidateVersion
+  commentId: M:Virtufin.Data.FlatBuffers.ArrayFloatValue.ValidateVersion
+  id: ValidateVersion
+  parent: Virtufin.Data.FlatBuffers.ArrayFloatValue
+  langs:
+  - csharp
+  - vb
+  name: ValidateVersion()
+  nameWithType: ArrayFloatValue.ValidateVersion()
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.ValidateVersion()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ValidateVersion
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+    startLine: 15
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static void ValidateVersion()
+    content.vb: Public Shared Sub ValidateVersion()
+  overload: Virtufin.Data.FlatBuffers.ArrayFloatValue.ValidateVersion*
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.GetRootAsArrayFloatValue(Google.FlatBuffers.ByteBuffer)
+  commentId: M:Virtufin.Data.FlatBuffers.ArrayFloatValue.GetRootAsArrayFloatValue(Google.FlatBuffers.ByteBuffer)
+  id: GetRootAsArrayFloatValue(Google.FlatBuffers.ByteBuffer)
+  parent: Virtufin.Data.FlatBuffers.ArrayFloatValue
+  langs:
+  - csharp
+  - vb
+  name: GetRootAsArrayFloatValue(ByteBuffer)
+  nameWithType: ArrayFloatValue.GetRootAsArrayFloatValue(ByteBuffer)
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.GetRootAsArrayFloatValue(Google.FlatBuffers.ByteBuffer)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GetRootAsArrayFloatValue
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+    startLine: 16
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static ArrayFloatValue GetRootAsArrayFloatValue(ByteBuffer _bb)
+    parameters:
+    - id: _bb
+      type: Google.FlatBuffers.ByteBuffer
+    return:
+      type: Virtufin.Data.FlatBuffers.ArrayFloatValue
+    content.vb: Public Shared Function GetRootAsArrayFloatValue(_bb As ByteBuffer) As ArrayFloatValue
+  overload: Virtufin.Data.FlatBuffers.ArrayFloatValue.GetRootAsArrayFloatValue*
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.GetRootAsArrayFloatValue(Google.FlatBuffers.ByteBuffer,Virtufin.Data.FlatBuffers.ArrayFloatValue)
+  commentId: M:Virtufin.Data.FlatBuffers.ArrayFloatValue.GetRootAsArrayFloatValue(Google.FlatBuffers.ByteBuffer,Virtufin.Data.FlatBuffers.ArrayFloatValue)
+  id: GetRootAsArrayFloatValue(Google.FlatBuffers.ByteBuffer,Virtufin.Data.FlatBuffers.ArrayFloatValue)
+  parent: Virtufin.Data.FlatBuffers.ArrayFloatValue
+  langs:
+  - csharp
+  - vb
+  name: GetRootAsArrayFloatValue(ByteBuffer, ArrayFloatValue)
+  nameWithType: ArrayFloatValue.GetRootAsArrayFloatValue(ByteBuffer, ArrayFloatValue)
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.GetRootAsArrayFloatValue(Google.FlatBuffers.ByteBuffer, Virtufin.Data.FlatBuffers.ArrayFloatValue)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GetRootAsArrayFloatValue
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static ArrayFloatValue GetRootAsArrayFloatValue(ByteBuffer _bb, ArrayFloatValue obj)
+    parameters:
+    - id: _bb
+      type: Google.FlatBuffers.ByteBuffer
+    - id: obj
+      type: Virtufin.Data.FlatBuffers.ArrayFloatValue
+    return:
+      type: Virtufin.Data.FlatBuffers.ArrayFloatValue
+    content.vb: Public Shared Function GetRootAsArrayFloatValue(_bb As ByteBuffer, obj As ArrayFloatValue) As ArrayFloatValue
+  overload: Virtufin.Data.FlatBuffers.ArrayFloatValue.GetRootAsArrayFloatValue*
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  commentId: M:Virtufin.Data.FlatBuffers.ArrayFloatValue.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  id: __init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  parent: Virtufin.Data.FlatBuffers.ArrayFloatValue
+  langs:
+  - csharp
+  - vb
+  name: __init(int, ByteBuffer)
+  nameWithType: ArrayFloatValue.__init(int, ByteBuffer)
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.__init(int, Google.FlatBuffers.ByteBuffer)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: __init
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  example: []
+  syntax:
+    content: public void __init(int _i, ByteBuffer _bb)
+    parameters:
+    - id: _i
+      type: System.Int32
+    - id: _bb
+      type: Google.FlatBuffers.ByteBuffer
+    content.vb: Public Sub __init(_i As Integer, _bb As ByteBuffer)
+  overload: Virtufin.Data.FlatBuffers.ArrayFloatValue.__init*
+  implements:
+  - Google.FlatBuffers.IFlatbufferObject.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  nameWithType.vb: ArrayFloatValue.__init(Integer, ByteBuffer)
+  fullName.vb: Virtufin.Data.FlatBuffers.ArrayFloatValue.__init(Integer, Google.FlatBuffers.ByteBuffer)
+  name.vb: __init(Integer, ByteBuffer)
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.__assign(System.Int32,Google.FlatBuffers.ByteBuffer)
+  commentId: M:Virtufin.Data.FlatBuffers.ArrayFloatValue.__assign(System.Int32,Google.FlatBuffers.ByteBuffer)
+  id: __assign(System.Int32,Google.FlatBuffers.ByteBuffer)
+  parent: Virtufin.Data.FlatBuffers.ArrayFloatValue
+  langs:
+  - csharp
+  - vb
+  name: __assign(int, ByteBuffer)
+  nameWithType: ArrayFloatValue.__assign(int, ByteBuffer)
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.__assign(int, Google.FlatBuffers.ByteBuffer)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: __assign
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public ArrayFloatValue __assign(int _i, ByteBuffer _bb)
+    parameters:
+    - id: _i
+      type: System.Int32
+    - id: _bb
+      type: Google.FlatBuffers.ByteBuffer
+    return:
+      type: Virtufin.Data.FlatBuffers.ArrayFloatValue
+    content.vb: Public Function __assign(_i As Integer, _bb As ByteBuffer) As ArrayFloatValue
+  overload: Virtufin.Data.FlatBuffers.ArrayFloatValue.__assign*
+  nameWithType.vb: ArrayFloatValue.__assign(Integer, ByteBuffer)
+  fullName.vb: Virtufin.Data.FlatBuffers.ArrayFloatValue.__assign(Integer, Google.FlatBuffers.ByteBuffer)
+  name.vb: __assign(Integer, ByteBuffer)
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.Value(System.Int32)
+  commentId: M:Virtufin.Data.FlatBuffers.ArrayFloatValue.Value(System.Int32)
+  id: Value(System.Int32)
+  parent: Virtufin.Data.FlatBuffers.ArrayFloatValue
+  langs:
+  - csharp
+  - vb
+  name: Value(int)
+  nameWithType: ArrayFloatValue.Value(int)
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.Value(int)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Value
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+    startLine: 21
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public float Value(int j)
+    parameters:
+    - id: j
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Function Value(j As Integer) As Single
+  overload: Virtufin.Data.FlatBuffers.ArrayFloatValue.Value*
+  nameWithType.vb: ArrayFloatValue.Value(Integer)
+  fullName.vb: Virtufin.Data.FlatBuffers.ArrayFloatValue.Value(Integer)
+  name.vb: Value(Integer)
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.ValueLength
+  commentId: P:Virtufin.Data.FlatBuffers.ArrayFloatValue.ValueLength
+  id: ValueLength
+  parent: Virtufin.Data.FlatBuffers.ArrayFloatValue
+  langs:
+  - csharp
+  - vb
+  name: ValueLength
+  nameWithType: ArrayFloatValue.ValueLength
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.ValueLength
+  type: Property
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ValueLength
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public int ValueLength { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property ValueLength As Integer
+  overload: Virtufin.Data.FlatBuffers.ArrayFloatValue.ValueLength*
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.GetValueBytes
+  commentId: M:Virtufin.Data.FlatBuffers.ArrayFloatValue.GetValueBytes
+  id: GetValueBytes
+  parent: Virtufin.Data.FlatBuffers.ArrayFloatValue
+  langs:
+  - csharp
+  - vb
+  name: GetValueBytes()
+  nameWithType: ArrayFloatValue.GetValueBytes()
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.GetValueBytes()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GetValueBytes
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public ArraySegment<byte>? GetValueBytes()
+    return:
+      type: System.Nullable{System.ArraySegment{System.Byte}}
+    content.vb: Public Function GetValueBytes() As ArraySegment(Of Byte)?
+  overload: Virtufin.Data.FlatBuffers.ArrayFloatValue.GetValueBytes*
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.GetValueArray
+  commentId: M:Virtufin.Data.FlatBuffers.ArrayFloatValue.GetValueArray
+  id: GetValueArray
+  parent: Virtufin.Data.FlatBuffers.ArrayFloatValue
+  langs:
+  - csharp
+  - vb
+  name: GetValueArray()
+  nameWithType: ArrayFloatValue.GetValueArray()
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.GetValueArray()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GetValueArray
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+    startLine: 28
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public float[] GetValueArray()
+    return:
+      type: System.Single[]
+    content.vb: Public Function GetValueArray() As Single()
+  overload: Virtufin.Data.FlatBuffers.ArrayFloatValue.GetValueArray*
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateArrayFloatValue(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.VectorOffset)
+  commentId: M:Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateArrayFloatValue(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.VectorOffset)
+  id: CreateArrayFloatValue(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.VectorOffset)
+  parent: Virtufin.Data.FlatBuffers.ArrayFloatValue
+  langs:
+  - csharp
+  - vb
+  name: CreateArrayFloatValue(FlatBufferBuilder, VectorOffset)
+  nameWithType: ArrayFloatValue.CreateArrayFloatValue(FlatBufferBuilder, VectorOffset)
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateArrayFloatValue(Google.FlatBuffers.FlatBufferBuilder, Google.FlatBuffers.VectorOffset)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: CreateArrayFloatValue
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+    startLine: 30
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static Offset<ArrayFloatValue> CreateArrayFloatValue(FlatBufferBuilder builder, VectorOffset valueOffset = default)
+    parameters:
+    - id: builder
+      type: Google.FlatBuffers.FlatBufferBuilder
+    - id: valueOffset
+      type: Google.FlatBuffers.VectorOffset
+    return:
+      type: Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.ArrayFloatValue}
+    content.vb: Public Shared Function CreateArrayFloatValue(builder As FlatBufferBuilder, valueOffset As VectorOffset = Nothing) As Offset(Of ArrayFloatValue)
+  overload: Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateArrayFloatValue*
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.StartArrayFloatValue(Google.FlatBuffers.FlatBufferBuilder)
+  commentId: M:Virtufin.Data.FlatBuffers.ArrayFloatValue.StartArrayFloatValue(Google.FlatBuffers.FlatBufferBuilder)
+  id: StartArrayFloatValue(Google.FlatBuffers.FlatBufferBuilder)
+  parent: Virtufin.Data.FlatBuffers.ArrayFloatValue
+  langs:
+  - csharp
+  - vb
+  name: StartArrayFloatValue(FlatBufferBuilder)
+  nameWithType: ArrayFloatValue.StartArrayFloatValue(FlatBufferBuilder)
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.StartArrayFloatValue(Google.FlatBuffers.FlatBufferBuilder)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: StartArrayFloatValue
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+    startLine: 37
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static void StartArrayFloatValue(FlatBufferBuilder builder)
+    parameters:
+    - id: builder
+      type: Google.FlatBuffers.FlatBufferBuilder
+    content.vb: Public Shared Sub StartArrayFloatValue(builder As FlatBufferBuilder)
+  overload: Virtufin.Data.FlatBuffers.ArrayFloatValue.StartArrayFloatValue*
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.AddValue(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.VectorOffset)
+  commentId: M:Virtufin.Data.FlatBuffers.ArrayFloatValue.AddValue(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.VectorOffset)
+  id: AddValue(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.VectorOffset)
+  parent: Virtufin.Data.FlatBuffers.ArrayFloatValue
+  langs:
+  - csharp
+  - vb
+  name: AddValue(FlatBufferBuilder, VectorOffset)
+  nameWithType: ArrayFloatValue.AddValue(FlatBufferBuilder, VectorOffset)
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.AddValue(Google.FlatBuffers.FlatBufferBuilder, Google.FlatBuffers.VectorOffset)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: AddValue
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+    startLine: 38
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static void AddValue(FlatBufferBuilder builder, VectorOffset valueOffset)
+    parameters:
+    - id: builder
+      type: Google.FlatBuffers.FlatBufferBuilder
+    - id: valueOffset
+      type: Google.FlatBuffers.VectorOffset
+    content.vb: Public Shared Sub AddValue(builder As FlatBufferBuilder, valueOffset As VectorOffset)
+  overload: Virtufin.Data.FlatBuffers.ArrayFloatValue.AddValue*
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVector(Google.FlatBuffers.FlatBufferBuilder,System.Single[])
+  commentId: M:Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVector(Google.FlatBuffers.FlatBufferBuilder,System.Single[])
+  id: CreateValueVector(Google.FlatBuffers.FlatBufferBuilder,System.Single[])
+  parent: Virtufin.Data.FlatBuffers.ArrayFloatValue
+  langs:
+  - csharp
+  - vb
+  name: CreateValueVector(FlatBufferBuilder, float[])
+  nameWithType: ArrayFloatValue.CreateValueVector(FlatBufferBuilder, float[])
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVector(Google.FlatBuffers.FlatBufferBuilder, float[])
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: CreateValueVector
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+    startLine: 39
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static VectorOffset CreateValueVector(FlatBufferBuilder builder, float[] data)
+    parameters:
+    - id: builder
+      type: Google.FlatBuffers.FlatBufferBuilder
+    - id: data
+      type: System.Single[]
+    return:
+      type: Google.FlatBuffers.VectorOffset
+    content.vb: Public Shared Function CreateValueVector(builder As FlatBufferBuilder, data As Single()) As VectorOffset
+  overload: Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVector*
+  nameWithType.vb: ArrayFloatValue.CreateValueVector(FlatBufferBuilder, Single())
+  fullName.vb: Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVector(Google.FlatBuffers.FlatBufferBuilder, Single())
+  name.vb: CreateValueVector(FlatBufferBuilder, Single())
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVectorBlock(Google.FlatBuffers.FlatBufferBuilder,System.Single[])
+  commentId: M:Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVectorBlock(Google.FlatBuffers.FlatBufferBuilder,System.Single[])
+  id: CreateValueVectorBlock(Google.FlatBuffers.FlatBufferBuilder,System.Single[])
+  parent: Virtufin.Data.FlatBuffers.ArrayFloatValue
+  langs:
+  - csharp
+  - vb
+  name: CreateValueVectorBlock(FlatBufferBuilder, float[])
+  nameWithType: ArrayFloatValue.CreateValueVectorBlock(FlatBufferBuilder, float[])
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVectorBlock(Google.FlatBuffers.FlatBufferBuilder, float[])
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: CreateValueVectorBlock
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+    startLine: 40
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static VectorOffset CreateValueVectorBlock(FlatBufferBuilder builder, float[] data)
+    parameters:
+    - id: builder
+      type: Google.FlatBuffers.FlatBufferBuilder
+    - id: data
+      type: System.Single[]
+    return:
+      type: Google.FlatBuffers.VectorOffset
+    content.vb: Public Shared Function CreateValueVectorBlock(builder As FlatBufferBuilder, data As Single()) As VectorOffset
+  overload: Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVectorBlock*
+  nameWithType.vb: ArrayFloatValue.CreateValueVectorBlock(FlatBufferBuilder, Single())
+  fullName.vb: Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVectorBlock(Google.FlatBuffers.FlatBufferBuilder, Single())
+  name.vb: CreateValueVectorBlock(FlatBufferBuilder, Single())
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVectorBlock(Google.FlatBuffers.FlatBufferBuilder,System.ArraySegment{System.Single})
+  commentId: M:Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVectorBlock(Google.FlatBuffers.FlatBufferBuilder,System.ArraySegment{System.Single})
+  id: CreateValueVectorBlock(Google.FlatBuffers.FlatBufferBuilder,System.ArraySegment{System.Single})
+  parent: Virtufin.Data.FlatBuffers.ArrayFloatValue
+  langs:
+  - csharp
+  - vb
+  name: CreateValueVectorBlock(FlatBufferBuilder, ArraySegment<float>)
+  nameWithType: ArrayFloatValue.CreateValueVectorBlock(FlatBufferBuilder, ArraySegment<float>)
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVectorBlock(Google.FlatBuffers.FlatBufferBuilder, System.ArraySegment<float>)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: CreateValueVectorBlock
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+    startLine: 41
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static VectorOffset CreateValueVectorBlock(FlatBufferBuilder builder, ArraySegment<float> data)
+    parameters:
+    - id: builder
+      type: Google.FlatBuffers.FlatBufferBuilder
+    - id: data
+      type: System.ArraySegment{System.Single}
+    return:
+      type: Google.FlatBuffers.VectorOffset
+    content.vb: Public Shared Function CreateValueVectorBlock(builder As FlatBufferBuilder, data As ArraySegment(Of Single)) As VectorOffset
+  overload: Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVectorBlock*
+  nameWithType.vb: ArrayFloatValue.CreateValueVectorBlock(FlatBufferBuilder, ArraySegment(Of Single))
+  fullName.vb: Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVectorBlock(Google.FlatBuffers.FlatBufferBuilder, System.ArraySegment(Of Single))
+  name.vb: CreateValueVectorBlock(FlatBufferBuilder, ArraySegment(Of Single))
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVectorBlock(Google.FlatBuffers.FlatBufferBuilder,System.IntPtr,System.Int32)
+  commentId: M:Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVectorBlock(Google.FlatBuffers.FlatBufferBuilder,System.IntPtr,System.Int32)
+  id: CreateValueVectorBlock(Google.FlatBuffers.FlatBufferBuilder,System.IntPtr,System.Int32)
+  parent: Virtufin.Data.FlatBuffers.ArrayFloatValue
+  langs:
+  - csharp
+  - vb
+  name: CreateValueVectorBlock(FlatBufferBuilder, nint, int)
+  nameWithType: ArrayFloatValue.CreateValueVectorBlock(FlatBufferBuilder, nint, int)
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVectorBlock(Google.FlatBuffers.FlatBufferBuilder, nint, int)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: CreateValueVectorBlock
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+    startLine: 42
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static VectorOffset CreateValueVectorBlock(FlatBufferBuilder builder, nint dataPtr, int sizeInBytes)
+    parameters:
+    - id: builder
+      type: Google.FlatBuffers.FlatBufferBuilder
+    - id: dataPtr
+      type: System.IntPtr
+    - id: sizeInBytes
+      type: System.Int32
+    return:
+      type: Google.FlatBuffers.VectorOffset
+    content.vb: Public Shared Function CreateValueVectorBlock(builder As FlatBufferBuilder, dataPtr As IntPtr, sizeInBytes As Integer) As VectorOffset
+  overload: Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVectorBlock*
+  nameWithType.vb: ArrayFloatValue.CreateValueVectorBlock(FlatBufferBuilder, IntPtr, Integer)
+  fullName.vb: Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVectorBlock(Google.FlatBuffers.FlatBufferBuilder, System.IntPtr, Integer)
+  name.vb: CreateValueVectorBlock(FlatBufferBuilder, IntPtr, Integer)
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.StartValueVector(Google.FlatBuffers.FlatBufferBuilder,System.Int32)
+  commentId: M:Virtufin.Data.FlatBuffers.ArrayFloatValue.StartValueVector(Google.FlatBuffers.FlatBufferBuilder,System.Int32)
+  id: StartValueVector(Google.FlatBuffers.FlatBufferBuilder,System.Int32)
+  parent: Virtufin.Data.FlatBuffers.ArrayFloatValue
+  langs:
+  - csharp
+  - vb
+  name: StartValueVector(FlatBufferBuilder, int)
+  nameWithType: ArrayFloatValue.StartValueVector(FlatBufferBuilder, int)
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.StartValueVector(Google.FlatBuffers.FlatBufferBuilder, int)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: StartValueVector
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+    startLine: 43
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static void StartValueVector(FlatBufferBuilder builder, int numElems)
+    parameters:
+    - id: builder
+      type: Google.FlatBuffers.FlatBufferBuilder
+    - id: numElems
+      type: System.Int32
+    content.vb: Public Shared Sub StartValueVector(builder As FlatBufferBuilder, numElems As Integer)
+  overload: Virtufin.Data.FlatBuffers.ArrayFloatValue.StartValueVector*
+  nameWithType.vb: ArrayFloatValue.StartValueVector(FlatBufferBuilder, Integer)
+  fullName.vb: Virtufin.Data.FlatBuffers.ArrayFloatValue.StartValueVector(Google.FlatBuffers.FlatBufferBuilder, Integer)
+  name.vb: StartValueVector(FlatBufferBuilder, Integer)
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.EndArrayFloatValue(Google.FlatBuffers.FlatBufferBuilder)
+  commentId: M:Virtufin.Data.FlatBuffers.ArrayFloatValue.EndArrayFloatValue(Google.FlatBuffers.FlatBufferBuilder)
+  id: EndArrayFloatValue(Google.FlatBuffers.FlatBufferBuilder)
+  parent: Virtufin.Data.FlatBuffers.ArrayFloatValue
+  langs:
+  - csharp
+  - vb
+  name: EndArrayFloatValue(FlatBufferBuilder)
+  nameWithType: ArrayFloatValue.EndArrayFloatValue(FlatBufferBuilder)
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.EndArrayFloatValue(Google.FlatBuffers.FlatBufferBuilder)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: EndArrayFloatValue
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
+    startLine: 44
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static Offset<ArrayFloatValue> EndArrayFloatValue(FlatBufferBuilder builder)
+    parameters:
+    - id: builder
+      type: Google.FlatBuffers.FlatBufferBuilder
+    return:
+      type: Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.ArrayFloatValue}
+    content.vb: Public Shared Function EndArrayFloatValue(builder As FlatBufferBuilder) As Offset(Of ArrayFloatValue)
+  overload: Virtufin.Data.FlatBuffers.ArrayFloatValue.EndArrayFloatValue*
+references:
+- uid: Virtufin.Data.FlatBuffers
+  commentId: N:Virtufin.Data.FlatBuffers
+  href: Virtufin.html
+  name: Virtufin.Data.FlatBuffers
+  nameWithType: Virtufin.Data.FlatBuffers
+  fullName: Virtufin.Data.FlatBuffers
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Data
+    name: Data
+    href: Virtufin.Data.html
+  - name: .
+  - uid: Virtufin.Data.FlatBuffers
+    name: FlatBuffers
+    href: Virtufin.Data.FlatBuffers.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Data
+    name: Data
+    href: Virtufin.Data.html
+  - name: .
+  - uid: Virtufin.Data.FlatBuffers
+    name: FlatBuffers
+    href: Virtufin.Data.FlatBuffers.html
+- uid: Google.FlatBuffers.IFlatbufferObject
+  commentId: T:Google.FlatBuffers.IFlatbufferObject
+  parent: Google.FlatBuffers
+  isExternal: true
+  name: IFlatbufferObject
+  nameWithType: IFlatbufferObject
+  fullName: Google.FlatBuffers.IFlatbufferObject
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Google.FlatBuffers
+  commentId: N:Google.FlatBuffers
+  href: Google.html
+  name: Google.FlatBuffers
+  nameWithType: Google.FlatBuffers
+  fullName: Google.FlatBuffers
+  spec.csharp:
+  - uid: Google
+    name: Google
+    href: Google.html
+  - name: .
+  - uid: Google.FlatBuffers
+    name: FlatBuffers
+    href: Google.FlatBuffers.html
+  spec.vb:
+  - uid: Google
+    name: Google
+    href: Google.html
+  - name: .
+  - uid: Google.FlatBuffers
+    name: FlatBuffers
+    href: Google.FlatBuffers.html
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.ByteBuffer*
+  commentId: Overload:Virtufin.Data.FlatBuffers.ArrayFloatValue.ByteBuffer
+  href: Virtufin.Data.FlatBuffers.ArrayFloatValue.html#Virtufin_Data_FlatBuffers_ArrayFloatValue_ByteBuffer
+  name: ByteBuffer
+  nameWithType: ArrayFloatValue.ByteBuffer
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.ByteBuffer
+- uid: Google.FlatBuffers.IFlatbufferObject.ByteBuffer
+  commentId: P:Google.FlatBuffers.IFlatbufferObject.ByteBuffer
+  parent: Google.FlatBuffers.IFlatbufferObject
+  isExternal: true
+  name: ByteBuffer
+  nameWithType: IFlatbufferObject.ByteBuffer
+  fullName: Google.FlatBuffers.IFlatbufferObject.ByteBuffer
+- uid: Google.FlatBuffers.ByteBuffer
+  commentId: T:Google.FlatBuffers.ByteBuffer
+  parent: Google.FlatBuffers
+  isExternal: true
+  name: ByteBuffer
+  nameWithType: ByteBuffer
+  fullName: Google.FlatBuffers.ByteBuffer
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.ValidateVersion*
+  commentId: Overload:Virtufin.Data.FlatBuffers.ArrayFloatValue.ValidateVersion
+  href: Virtufin.Data.FlatBuffers.ArrayFloatValue.html#Virtufin_Data_FlatBuffers_ArrayFloatValue_ValidateVersion
+  name: ValidateVersion
+  nameWithType: ArrayFloatValue.ValidateVersion
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.ValidateVersion
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.GetRootAsArrayFloatValue*
+  commentId: Overload:Virtufin.Data.FlatBuffers.ArrayFloatValue.GetRootAsArrayFloatValue
+  href: Virtufin.Data.FlatBuffers.ArrayFloatValue.html#Virtufin_Data_FlatBuffers_ArrayFloatValue_GetRootAsArrayFloatValue_Google_FlatBuffers_ByteBuffer_
+  name: GetRootAsArrayFloatValue
+  nameWithType: ArrayFloatValue.GetRootAsArrayFloatValue
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.GetRootAsArrayFloatValue
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue
+  commentId: T:Virtufin.Data.FlatBuffers.ArrayFloatValue
+  parent: Virtufin.Data.FlatBuffers
+  href: Virtufin.Data.FlatBuffers.ArrayFloatValue.html
+  name: ArrayFloatValue
+  nameWithType: ArrayFloatValue
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.__init*
+  commentId: Overload:Virtufin.Data.FlatBuffers.ArrayFloatValue.__init
+  href: Virtufin.Data.FlatBuffers.ArrayFloatValue.html#Virtufin_Data_FlatBuffers_ArrayFloatValue___init_System_Int32_Google_FlatBuffers_ByteBuffer_
+  name: __init
+  nameWithType: ArrayFloatValue.__init
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.__init
+- uid: Google.FlatBuffers.IFlatbufferObject.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  commentId: M:Google.FlatBuffers.IFlatbufferObject.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  parent: Google.FlatBuffers.IFlatbufferObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: __init(int, ByteBuffer)
+  nameWithType: IFlatbufferObject.__init(int, ByteBuffer)
+  fullName: Google.FlatBuffers.IFlatbufferObject.__init(int, Google.FlatBuffers.ByteBuffer)
+  nameWithType.vb: IFlatbufferObject.__init(Integer, ByteBuffer)
+  fullName.vb: Google.FlatBuffers.IFlatbufferObject.__init(Integer, Google.FlatBuffers.ByteBuffer)
+  name.vb: __init(Integer, ByteBuffer)
+  spec.csharp:
+  - uid: Google.FlatBuffers.IFlatbufferObject.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+    name: __init
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Google.FlatBuffers.ByteBuffer
+    name: ByteBuffer
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Google.FlatBuffers.IFlatbufferObject.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+    name: __init
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Google.FlatBuffers.ByteBuffer
+    name: ByteBuffer
+    isExternal: true
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.__assign*
+  commentId: Overload:Virtufin.Data.FlatBuffers.ArrayFloatValue.__assign
+  href: Virtufin.Data.FlatBuffers.ArrayFloatValue.html#Virtufin_Data_FlatBuffers_ArrayFloatValue___assign_System_Int32_Google_FlatBuffers_ByteBuffer_
+  name: __assign
+  nameWithType: ArrayFloatValue.__assign
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.__assign
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.Value*
+  commentId: Overload:Virtufin.Data.FlatBuffers.ArrayFloatValue.Value
+  href: Virtufin.Data.FlatBuffers.ArrayFloatValue.html#Virtufin_Data_FlatBuffers_ArrayFloatValue_Value_System_Int32_
+  name: Value
+  nameWithType: ArrayFloatValue.Value
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.Value
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.ValueLength*
+  commentId: Overload:Virtufin.Data.FlatBuffers.ArrayFloatValue.ValueLength
+  href: Virtufin.Data.FlatBuffers.ArrayFloatValue.html#Virtufin_Data_FlatBuffers_ArrayFloatValue_ValueLength
+  name: ValueLength
+  nameWithType: ArrayFloatValue.ValueLength
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.ValueLength
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.GetValueBytes*
+  commentId: Overload:Virtufin.Data.FlatBuffers.ArrayFloatValue.GetValueBytes
+  href: Virtufin.Data.FlatBuffers.ArrayFloatValue.html#Virtufin_Data_FlatBuffers_ArrayFloatValue_GetValueBytes
+  name: GetValueBytes
+  nameWithType: ArrayFloatValue.GetValueBytes
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.GetValueBytes
+- uid: System.Nullable{System.ArraySegment{System.Byte}}
+  commentId: T:System.Nullable{System.ArraySegment{System.Byte}}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  name: ArraySegment<byte>?
+  nameWithType: ArraySegment<byte>?
+  fullName: System.ArraySegment<byte>?
+  nameWithType.vb: ArraySegment(Of Byte)?
+  fullName.vb: System.ArraySegment(Of Byte)?
+  name.vb: ArraySegment(Of Byte)?
+  spec.csharp:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  - name: '?'
+  spec.vb:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.GetValueArray*
+  commentId: Overload:Virtufin.Data.FlatBuffers.ArrayFloatValue.GetValueArray
+  href: Virtufin.Data.FlatBuffers.ArrayFloatValue.html#Virtufin_Data_FlatBuffers_ArrayFloatValue_GetValueArray
+  name: GetValueArray
+  nameWithType: ArrayFloatValue.GetValueArray
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.GetValueArray
+- uid: System.Single[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float[]
+  nameWithType: float[]
+  fullName: float[]
+  nameWithType.vb: Single()
+  fullName.vb: Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateArrayFloatValue*
+  commentId: Overload:Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateArrayFloatValue
+  href: Virtufin.Data.FlatBuffers.ArrayFloatValue.html#Virtufin_Data_FlatBuffers_ArrayFloatValue_CreateArrayFloatValue_Google_FlatBuffers_FlatBufferBuilder_Google_FlatBuffers_VectorOffset_
+  name: CreateArrayFloatValue
+  nameWithType: ArrayFloatValue.CreateArrayFloatValue
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateArrayFloatValue
+- uid: Google.FlatBuffers.FlatBufferBuilder
+  commentId: T:Google.FlatBuffers.FlatBufferBuilder
+  parent: Google.FlatBuffers
+  isExternal: true
+  name: FlatBufferBuilder
+  nameWithType: FlatBufferBuilder
+  fullName: Google.FlatBuffers.FlatBufferBuilder
+- uid: Google.FlatBuffers.VectorOffset
+  commentId: T:Google.FlatBuffers.VectorOffset
+  parent: Google.FlatBuffers
+  isExternal: true
+  name: VectorOffset
+  nameWithType: VectorOffset
+  fullName: Google.FlatBuffers.VectorOffset
+- uid: Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.ArrayFloatValue}
+  commentId: T:Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.ArrayFloatValue}
+  parent: Google.FlatBuffers
+  definition: Google.FlatBuffers.Offset`1
+  href: Virtufin.Data.FlatBuffers.ArrayFloatValue.html
+  name: Offset<ArrayFloatValue>
+  nameWithType: Offset<ArrayFloatValue>
+  fullName: Google.FlatBuffers.Offset<Virtufin.Data.FlatBuffers.ArrayFloatValue>
+  nameWithType.vb: Offset(Of ArrayFloatValue)
+  fullName.vb: Google.FlatBuffers.Offset(Of Virtufin.Data.FlatBuffers.ArrayFloatValue)
+  name.vb: Offset(Of ArrayFloatValue)
+  spec.csharp:
+  - uid: Google.FlatBuffers.Offset`1
+    name: Offset
+    isExternal: true
+  - name: <
+  - uid: Virtufin.Data.FlatBuffers.ArrayFloatValue
+    name: ArrayFloatValue
+    href: Virtufin.Data.FlatBuffers.ArrayFloatValue.html
+  - name: '>'
+  spec.vb:
+  - uid: Google.FlatBuffers.Offset`1
+    name: Offset
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Data.FlatBuffers.ArrayFloatValue
+    name: ArrayFloatValue
+    href: Virtufin.Data.FlatBuffers.ArrayFloatValue.html
+  - name: )
+- uid: Google.FlatBuffers.Offset`1
+  commentId: T:Google.FlatBuffers.Offset`1
+  isExternal: true
+  name: Offset<T>
+  nameWithType: Offset<T>
+  fullName: Google.FlatBuffers.Offset<T>
+  nameWithType.vb: Offset(Of T)
+  fullName.vb: Google.FlatBuffers.Offset(Of T)
+  name.vb: Offset(Of T)
+  spec.csharp:
+  - uid: Google.FlatBuffers.Offset`1
+    name: Offset
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Google.FlatBuffers.Offset`1
+    name: Offset
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.StartArrayFloatValue*
+  commentId: Overload:Virtufin.Data.FlatBuffers.ArrayFloatValue.StartArrayFloatValue
+  href: Virtufin.Data.FlatBuffers.ArrayFloatValue.html#Virtufin_Data_FlatBuffers_ArrayFloatValue_StartArrayFloatValue_Google_FlatBuffers_FlatBufferBuilder_
+  name: StartArrayFloatValue
+  nameWithType: ArrayFloatValue.StartArrayFloatValue
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.StartArrayFloatValue
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.AddValue*
+  commentId: Overload:Virtufin.Data.FlatBuffers.ArrayFloatValue.AddValue
+  href: Virtufin.Data.FlatBuffers.ArrayFloatValue.html#Virtufin_Data_FlatBuffers_ArrayFloatValue_AddValue_Google_FlatBuffers_FlatBufferBuilder_Google_FlatBuffers_VectorOffset_
+  name: AddValue
+  nameWithType: ArrayFloatValue.AddValue
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.AddValue
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVector*
+  commentId: Overload:Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVector
+  href: Virtufin.Data.FlatBuffers.ArrayFloatValue.html#Virtufin_Data_FlatBuffers_ArrayFloatValue_CreateValueVector_Google_FlatBuffers_FlatBufferBuilder_System_Single___
+  name: CreateValueVector
+  nameWithType: ArrayFloatValue.CreateValueVector
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVector
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVectorBlock*
+  commentId: Overload:Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVectorBlock
+  href: Virtufin.Data.FlatBuffers.ArrayFloatValue.html#Virtufin_Data_FlatBuffers_ArrayFloatValue_CreateValueVectorBlock_Google_FlatBuffers_FlatBufferBuilder_System_Single___
+  name: CreateValueVectorBlock
+  nameWithType: ArrayFloatValue.CreateValueVectorBlock
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.CreateValueVectorBlock
+- uid: System.ArraySegment{System.Single}
+  commentId: T:System.ArraySegment{System.Single}
+  parent: System
+  definition: System.ArraySegment`1
+  href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  name: ArraySegment<float>
+  nameWithType: ArraySegment<float>
+  fullName: System.ArraySegment<float>
+  nameWithType.vb: ArraySegment(Of Single)
+  fullName.vb: System.ArraySegment(Of Single)
+  name.vb: ArraySegment(Of Single)
+  spec.csharp:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System.ArraySegment`1
+  commentId: T:System.ArraySegment`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  name: ArraySegment<T>
+  nameWithType: ArraySegment<T>
+  fullName: System.ArraySegment<T>
+  nameWithType.vb: ArraySegment(Of T)
+  fullName.vb: System.ArraySegment(Of T)
+  name.vb: ArraySegment(Of T)
+  spec.csharp:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.StartValueVector*
+  commentId: Overload:Virtufin.Data.FlatBuffers.ArrayFloatValue.StartValueVector
+  href: Virtufin.Data.FlatBuffers.ArrayFloatValue.html#Virtufin_Data_FlatBuffers_ArrayFloatValue_StartValueVector_Google_FlatBuffers_FlatBufferBuilder_System_Int32_
+  name: StartValueVector
+  nameWithType: ArrayFloatValue.StartValueVector
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.StartValueVector
+- uid: Virtufin.Data.FlatBuffers.ArrayFloatValue.EndArrayFloatValue*
+  commentId: Overload:Virtufin.Data.FlatBuffers.ArrayFloatValue.EndArrayFloatValue
+  href: Virtufin.Data.FlatBuffers.ArrayFloatValue.html#Virtufin_Data_FlatBuffers_ArrayFloatValue_EndArrayFloatValue_Google_FlatBuffers_FlatBufferBuilder_
+  name: EndArrayFloatValue
+  nameWithType: ArrayFloatValue.EndArrayFloatValue
+  fullName: Virtufin.Data.FlatBuffers.ArrayFloatValue.EndArrayFloatValue

@@ -1,0 +1,82 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.IProviders
+  commentId: T:Virtufin.Core.IProviders
+  id: IProviders
+  parent: Virtufin.Core
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IProviders
+  nameWithType: IProviders
+  fullName: Virtufin.Core.IProviders
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/IProviders.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IProviders
+    path: ../../../src/Virtufin.Core/IProviders.cs
+    startLine: 1
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core
+  syntax:
+    content: 'public interface IProviders : IValueProviders, IObservableProviders'
+    content.vb: Public Interface IProviders Inherits IValueProviders, IObservableProviders
+  inheritedMembers:
+  - Virtufin.Core.IValueProviders.ValueProviders
+  - Virtufin.Core.IObservableProviders.ObservableProviders
+references:
+- uid: Virtufin.Core
+  commentId: N:Virtufin.Core
+  href: Virtufin.html
+  name: Virtufin.Core
+  nameWithType: Virtufin.Core
+  fullName: Virtufin.Core
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+- uid: Virtufin.Core.IValueProviders.ValueProviders
+  commentId: P:Virtufin.Core.IValueProviders.ValueProviders
+  parent: Virtufin.Core.IValueProviders
+  href: Virtufin.Core.IValueProviders.html#Virtufin_Core_IValueProviders_ValueProviders
+  name: ValueProviders
+  nameWithType: IValueProviders.ValueProviders
+  fullName: Virtufin.Core.IValueProviders.ValueProviders
+- uid: Virtufin.Core.IObservableProviders.ObservableProviders
+  commentId: P:Virtufin.Core.IObservableProviders.ObservableProviders
+  parent: Virtufin.Core.IObservableProviders
+  href: Virtufin.Core.IObservableProviders.html#Virtufin_Core_IObservableProviders_ObservableProviders
+  name: ObservableProviders
+  nameWithType: IObservableProviders.ObservableProviders
+  fullName: Virtufin.Core.IObservableProviders.ObservableProviders
+- uid: Virtufin.Core.IValueProviders
+  commentId: T:Virtufin.Core.IValueProviders
+  parent: Virtufin.Core
+  href: Virtufin.Core.IValueProviders.html
+  name: IValueProviders
+  nameWithType: IValueProviders
+  fullName: Virtufin.Core.IValueProviders
+- uid: Virtufin.Core.IObservableProviders
+  commentId: T:Virtufin.Core.IObservableProviders
+  parent: Virtufin.Core
+  href: Virtufin.Core.IObservableProviders.html
+  name: IObservableProviders
+  nameWithType: IObservableProviders
+  fullName: Virtufin.Core.IObservableProviders

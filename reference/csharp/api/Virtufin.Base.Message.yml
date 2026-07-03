@@ -1,0 +1,675 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.Message
+  commentId: T:Virtufin.Base.Message
+  id: Message
+  parent: Virtufin.Base
+  children:
+  - Virtufin.Base.Message.#ctor(Virtufin.Base.Transaction,Virtufin.Base.Signatory)
+  - Virtufin.Base.Message.Equals(Virtufin.Core.Contracts.IMessage)
+  - Virtufin.Base.Message.Sender
+  - Virtufin.Base.Message.Transaction
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: Message
+  fullName: Virtufin.Base.Message
+  type: Struct
+  source:
+    remote:
+      path: src/Virtufin.Base/Message.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Message
+    path: ../../../src/Virtufin.Base/Message.cs
+    startLine: 11
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: >-
+    Concrete <xref href="Virtufin.Core.Contracts.IMessage" data-throw-if-not-resolved="false"></xref>: a <xref href="Virtufin.Base.Message.Transaction" data-throw-if-not-resolved="false"></xref> plus the
+
+    <xref href="Virtufin.Base.Signatory" data-throw-if-not-resolved="false"></xref> that signed it.
+  example: []
+  syntax:
+    content: 'public readonly record struct Message : IMessage, IEquatable<IMessage>, IEquatable<Message>'
+    content.vb: Public Structure Message Implements IMessage, IEquatable(Of IMessage), IEquatable(Of Message)
+  implements:
+  - Virtufin.Core.Contracts.IMessage
+  - System.IEquatable{Virtufin.Core.Contracts.IMessage}
+  - System.IEquatable{Virtufin.Base.Message}
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Virtufin.Base.Message.#ctor(Virtufin.Base.Transaction,Virtufin.Base.Signatory)
+  commentId: M:Virtufin.Base.Message.#ctor(Virtufin.Base.Transaction,Virtufin.Base.Signatory)
+  id: '#ctor(Virtufin.Base.Transaction,Virtufin.Base.Signatory)'
+  parent: Virtufin.Base.Message
+  langs:
+  - csharp
+  - vb
+  name: Message(Transaction, Signatory)
+  nameWithType: Message.Message(Transaction, Signatory)
+  fullName: Virtufin.Base.Message.Message(Virtufin.Base.Transaction, Virtufin.Base.Signatory)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Base/Message.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Base/Message.cs
+    startLine: 11
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: >-
+    Concrete <xref href="Virtufin.Core.Contracts.IMessage" data-throw-if-not-resolved="false"></xref>: a <xref href="Virtufin.Base.Message.Transaction" data-throw-if-not-resolved="false"></xref> plus the
+
+    <xref href="Virtufin.Base.Signatory" data-throw-if-not-resolved="false"></xref> that signed it.
+  example: []
+  syntax:
+    content: public Message(Transaction Transaction, Signatory Sender)
+    parameters:
+    - id: Transaction
+      type: Virtufin.Base.Transaction
+      description: The transaction being signed.
+    - id: Sender
+      type: Virtufin.Base.Signatory
+      description: The signing party.
+    content.vb: Public Sub New(Transaction As Transaction, Sender As Signatory)
+  overload: Virtufin.Base.Message.#ctor*
+  nameWithType.vb: Message.New(Transaction, Signatory)
+  fullName.vb: Virtufin.Base.Message.New(Virtufin.Base.Transaction, Virtufin.Base.Signatory)
+  name.vb: New(Transaction, Signatory)
+- uid: Virtufin.Base.Message.Transaction
+  commentId: P:Virtufin.Base.Message.Transaction
+  id: Transaction
+  parent: Virtufin.Base.Message
+  langs:
+  - csharp
+  - vb
+  name: Transaction
+  nameWithType: Message.Transaction
+  fullName: Virtufin.Base.Message.Transaction
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Message.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Transaction
+    path: ../../../src/Virtufin.Base/Message.cs
+    startLine: 11
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: The transaction being signed.
+  example: []
+  syntax:
+    content: public Transaction Transaction { get; init; }
+    parameters: []
+    return:
+      type: Virtufin.Base.Transaction
+    content.vb: Public Property Transaction As Transaction
+  overload: Virtufin.Base.Message.Transaction*
+- uid: Virtufin.Base.Message.Sender
+  commentId: P:Virtufin.Base.Message.Sender
+  id: Sender
+  parent: Virtufin.Base.Message
+  langs:
+  - csharp
+  - vb
+  name: Sender
+  nameWithType: Message.Sender
+  fullName: Virtufin.Base.Message.Sender
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Message.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Sender
+    path: ../../../src/Virtufin.Base/Message.cs
+    startLine: 11
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: The signing party.
+  example: []
+  syntax:
+    content: public Signatory Sender { get; init; }
+    parameters: []
+    return:
+      type: Virtufin.Base.Signatory
+    content.vb: Public Property Sender As Signatory
+  overload: Virtufin.Base.Message.Sender*
+- uid: Virtufin.Base.Message.Equals(Virtufin.Core.Contracts.IMessage)
+  commentId: M:Virtufin.Base.Message.Equals(Virtufin.Core.Contracts.IMessage)
+  id: Equals(Virtufin.Core.Contracts.IMessage)
+  parent: Virtufin.Base.Message
+  langs:
+  - csharp
+  - vb
+  name: Equals(IMessage?)
+  nameWithType: Message.Equals(IMessage?)
+  fullName: Virtufin.Base.Message.Equals(Virtufin.Core.Contracts.IMessage?)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/Message.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Equals
+    path: ../../../src/Virtufin.Base/Message.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(IMessage? other)
+    parameters:
+    - id: other
+      type: Virtufin.Core.Contracts.IMessage
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As IMessage) As Boolean
+  overload: Virtufin.Base.Message.Equals*
+  implements:
+  - System.IEquatable{Virtufin.Core.Contracts.IMessage}.Equals(Virtufin.Core.Contracts.IMessage)
+  nameWithType.vb: Message.Equals(IMessage)
+  fullName.vb: Virtufin.Base.Message.Equals(Virtufin.Core.Contracts.IMessage)
+  name.vb: Equals(IMessage)
+references:
+- uid: Virtufin.Core.Contracts.IMessage
+  commentId: T:Virtufin.Core.Contracts.IMessage
+  parent: Virtufin.Core.Contracts
+  href: Virtufin.Core.Contracts.IMessage.html
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Virtufin.Core.Contracts.IMessage
+- uid: Virtufin.Base.Message.Transaction
+  commentId: P:Virtufin.Base.Message.Transaction
+  href: Virtufin.Base.Message.html#Virtufin_Base_Message_Transaction
+  name: Transaction
+  nameWithType: Message.Transaction
+  fullName: Virtufin.Base.Message.Transaction
+- uid: Virtufin.Base.Signatory
+  commentId: T:Virtufin.Base.Signatory
+  parent: Virtufin.Base
+  href: Virtufin.Base.Signatory.html
+  name: Signatory
+  nameWithType: Signatory
+  fullName: Virtufin.Base.Signatory
+- uid: Virtufin.Base
+  commentId: N:Virtufin.Base
+  href: Virtufin.html
+  name: Virtufin.Base
+  nameWithType: Virtufin.Base
+  fullName: Virtufin.Base
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+- uid: System.IEquatable{Virtufin.Core.Contracts.IMessage}
+  commentId: T:System.IEquatable{Virtufin.Core.Contracts.IMessage}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<IMessage>
+  nameWithType: IEquatable<IMessage>
+  fullName: System.IEquatable<Virtufin.Core.Contracts.IMessage>
+  nameWithType.vb: IEquatable(Of IMessage)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Contracts.IMessage)
+  name.vb: IEquatable(Of IMessage)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Contracts.IMessage
+    name: IMessage
+    href: Virtufin.Core.Contracts.IMessage.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Contracts.IMessage
+    name: IMessage
+    href: Virtufin.Core.Contracts.IMessage.html
+  - name: )
+- uid: System.IEquatable{Virtufin.Base.Message}
+  commentId: T:System.IEquatable{Virtufin.Base.Message}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Message>
+  nameWithType: IEquatable<Message>
+  fullName: System.IEquatable<Virtufin.Base.Message>
+  nameWithType.vb: IEquatable(Of Message)
+  fullName.vb: System.IEquatable(Of Virtufin.Base.Message)
+  name.vb: IEquatable(Of Message)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Base.Message
+    name: Message
+    href: Virtufin.Base.Message.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Base.Message
+    name: Message
+    href: Virtufin.Base.Message.html
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Virtufin.Core.Contracts
+  commentId: N:Virtufin.Core.Contracts
+  href: Virtufin.html
+  name: Virtufin.Core.Contracts
+  nameWithType: Virtufin.Core.Contracts
+  fullName: Virtufin.Core.Contracts
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Contracts
+    name: Contracts
+    href: Virtufin.Core.Contracts.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Contracts
+    name: Contracts
+    href: Virtufin.Core.Contracts.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.Base.Message.#ctor*
+  commentId: Overload:Virtufin.Base.Message.#ctor
+  href: Virtufin.Base.Message.html#Virtufin_Base_Message__ctor_Virtufin_Base_Transaction_Virtufin_Base_Signatory_
+  name: Message
+  nameWithType: Message.Message
+  fullName: Virtufin.Base.Message.Message
+  nameWithType.vb: Message.New
+  fullName.vb: Virtufin.Base.Message.New
+  name.vb: New
+- uid: Virtufin.Base.Transaction
+  commentId: T:Virtufin.Base.Transaction
+  parent: Virtufin.Base
+  href: Virtufin.Base.Transaction.html
+  name: Transaction
+  nameWithType: Transaction
+  fullName: Virtufin.Base.Transaction
+- uid: Virtufin.Base.Message.Transaction*
+  commentId: Overload:Virtufin.Base.Message.Transaction
+  href: Virtufin.Base.Message.html#Virtufin_Base_Message_Transaction
+  name: Transaction
+  nameWithType: Message.Transaction
+  fullName: Virtufin.Base.Message.Transaction
+- uid: Virtufin.Base.Message.Sender*
+  commentId: Overload:Virtufin.Base.Message.Sender
+  href: Virtufin.Base.Message.html#Virtufin_Base_Message_Sender
+  name: Sender
+  nameWithType: Message.Sender
+  fullName: Virtufin.Base.Message.Sender
+- uid: Virtufin.Base.Message.Equals*
+  commentId: Overload:Virtufin.Base.Message.Equals
+  href: Virtufin.Base.Message.html#Virtufin_Base_Message_Equals_Virtufin_Core_Contracts_IMessage_
+  name: Equals
+  nameWithType: Message.Equals
+  fullName: Virtufin.Base.Message.Equals
+- uid: System.IEquatable{Virtufin.Core.Contracts.IMessage}.Equals(Virtufin.Core.Contracts.IMessage)
+  commentId: M:System.IEquatable{Virtufin.Core.Contracts.IMessage}.Equals(Virtufin.Core.Contracts.IMessage)
+  parent: System.IEquatable{Virtufin.Core.Contracts.IMessage}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(IMessage)
+  nameWithType: IEquatable<IMessage>.Equals(IMessage)
+  fullName: System.IEquatable<Virtufin.Core.Contracts.IMessage>.Equals(Virtufin.Core.Contracts.IMessage)
+  nameWithType.vb: IEquatable(Of IMessage).Equals(IMessage)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Contracts.IMessage).Equals(Virtufin.Core.Contracts.IMessage)
+  spec.csharp:
+  - uid: System.IEquatable{Virtufin.Core.Contracts.IMessage}.Equals(Virtufin.Core.Contracts.IMessage)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Contracts.IMessage
+    name: IMessage
+    href: Virtufin.Core.Contracts.IMessage.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Virtufin.Core.Contracts.IMessage}.Equals(Virtufin.Core.Contracts.IMessage)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Contracts.IMessage
+    name: IMessage
+    href: Virtufin.Core.Contracts.IMessage.html
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )

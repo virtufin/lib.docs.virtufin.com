@@ -1,0 +1,362 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Position.IQuantity`2
+  commentId: T:Virtufin.Core.Position.IQuantity`2
+  id: IQuantity`2
+  parent: Virtufin.Core.Position
+  children:
+  - Virtufin.Core.Position.IQuantity`2.Amount
+  - Virtufin.Core.Position.IQuantity`2.Unit
+  langs:
+  - csharp
+  - vb
+  name: IQuantity<TAmount, TUnit>
+  nameWithType: IQuantity<TAmount, TUnit>
+  fullName: Virtufin.Core.Position.IQuantity<TAmount, TUnit>
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IQuantity.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IQuantity
+    path: ../../../src/Virtufin.Core/Position/IQuantity.cs
+    startLine: 7
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: An <xref href="Virtufin.Core.Position.IAmount%601" data-throw-if-not-resolved="false"></xref> tagged with an <xref href="Virtufin.Core.Position.IUnit" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public interface IQuantity<TAmount, TUnit> : IEquatable<IQuantity<TAmount, TUnit>> where TAmount : IAmount<(long Whole, ulong Fraction)> where TUnit : IUnit'
+    typeParameters:
+    - id: TAmount
+      description: Concrete amount type (e.g. <code>DecimalAmount</code>).
+    - id: TUnit
+      description: Concrete unit type.
+    content.vb: Public Interface IQuantity(Of TAmount As IAmount(Of (Whole As Long, Fraction As ULong)), TUnit As IUnit) Inherits IEquatable(Of IQuantity(Of TAmount, TUnit))
+  derivedClasses:
+  - Virtufin.Core.Position.DecimalQuantity`1
+  inheritedMembers:
+  - System.IEquatable{Virtufin.Core.Position.IQuantity`2}.Equals(Virtufin.Core.Position.IQuantity{{TAmount},{TUnit}})
+  nameWithType.vb: IQuantity(Of TAmount, TUnit)
+  fullName.vb: Virtufin.Core.Position.IQuantity(Of TAmount, TUnit)
+  name.vb: IQuantity(Of TAmount, TUnit)
+- uid: Virtufin.Core.Position.IQuantity`2.Amount
+  commentId: P:Virtufin.Core.Position.IQuantity`2.Amount
+  id: Amount
+  parent: Virtufin.Core.Position.IQuantity`2
+  langs:
+  - csharp
+  - vb
+  name: Amount
+  nameWithType: IQuantity<TAmount, TUnit>.Amount
+  fullName: Virtufin.Core.Position.IQuantity<TAmount, TUnit>.Amount
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IQuantity.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Amount
+    path: ../../../src/Virtufin.Core/Position/IQuantity.cs
+    startLine: 12
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: The numeric part.
+  example: []
+  syntax:
+    content: TAmount Amount { get; }
+    parameters: []
+    return:
+      type: '{TAmount}'
+    content.vb: ReadOnly Property Amount As TAmount
+  overload: Virtufin.Core.Position.IQuantity`2.Amount*
+  nameWithType.vb: IQuantity(Of TAmount, TUnit).Amount
+  fullName.vb: Virtufin.Core.Position.IQuantity(Of TAmount, TUnit).Amount
+- uid: Virtufin.Core.Position.IQuantity`2.Unit
+  commentId: P:Virtufin.Core.Position.IQuantity`2.Unit
+  id: Unit
+  parent: Virtufin.Core.Position.IQuantity`2
+  langs:
+  - csharp
+  - vb
+  name: Unit
+  nameWithType: IQuantity<TAmount, TUnit>.Unit
+  fullName: Virtufin.Core.Position.IQuantity<TAmount, TUnit>.Unit
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IQuantity.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Unit
+    path: ../../../src/Virtufin.Core/Position/IQuantity.cs
+    startLine: 15
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: The unit part.
+  example: []
+  syntax:
+    content: TUnit Unit { get; }
+    parameters: []
+    return:
+      type: '{TUnit}'
+    content.vb: ReadOnly Property Unit As TUnit
+  overload: Virtufin.Core.Position.IQuantity`2.Unit*
+  nameWithType.vb: IQuantity(Of TAmount, TUnit).Unit
+  fullName.vb: Virtufin.Core.Position.IQuantity(Of TAmount, TUnit).Unit
+references:
+- uid: Virtufin.Core.Position.IAmount`1
+  commentId: T:Virtufin.Core.Position.IAmount`1
+  href: Virtufin.Core.Position.IAmount-1.html
+  name: IAmount<TValue>
+  nameWithType: IAmount<TValue>
+  fullName: Virtufin.Core.Position.IAmount<TValue>
+  nameWithType.vb: IAmount(Of TValue)
+  fullName.vb: Virtufin.Core.Position.IAmount(Of TValue)
+  name.vb: IAmount(Of TValue)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IAmount`1
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount-1.html
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.IAmount`1
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Virtufin.Core.Position.IUnit
+  commentId: T:Virtufin.Core.Position.IUnit
+  href: Virtufin.Core.Position.IUnit.html
+  name: IUnit
+  nameWithType: IUnit
+  fullName: Virtufin.Core.Position.IUnit
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: System.IEquatable{Virtufin.Core.Position.IQuantity`2}.Equals(Virtufin.Core.Position.IQuantity{{TAmount},{TUnit}})
+  commentId: M:System.IEquatable{Virtufin.Core.Position.IQuantity`2}.Equals(Virtufin.Core.Position.IQuantity{`0,`1})
+  parent: System.IEquatable{Virtufin.Core.Position.IQuantity`2}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(IQuantity<TAmount, TUnit>)
+  nameWithType: IEquatable<IQuantity<TAmount, TUnit>>.Equals(IQuantity<TAmount, TUnit>)
+  fullName: System.IEquatable<Virtufin.Core.Position.IQuantity<TAmount, TUnit>>.Equals(Virtufin.Core.Position.IQuantity<TAmount, TUnit>)
+  nameWithType.vb: IEquatable(Of IQuantity(Of TAmount, TUnit)).Equals(IQuantity(Of TAmount, TUnit))
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Position.IQuantity(Of TAmount, TUnit)).Equals(Virtufin.Core.Position.IQuantity(Of TAmount, TUnit))
+  name.vb: Equals(IQuantity(Of TAmount, TUnit))
+  spec.csharp:
+  - uid: System.IEquatable{Virtufin.Core.Position.IQuantity`2}.Equals(Virtufin.Core.Position.IQuantity{`0,`1})
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Position.IQuantity`2
+    name: IQuantity
+    href: Virtufin.Core.Position.IQuantity-2.html
+  - name: <
+  - name: TAmount
+  - name: ','
+  - name: " "
+  - name: TUnit
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Virtufin.Core.Position.IQuantity`2}.Equals(Virtufin.Core.Position.IQuantity{`0,`1})
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Position.IQuantity`2
+    name: IQuantity
+    href: Virtufin.Core.Position.IQuantity-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAmount
+  - name: ','
+  - name: " "
+  - name: TUnit
+  - name: )
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IEquatable{Virtufin.Core.Position.IQuantity`2}
+  commentId: T:System.IEquatable{Virtufin.Core.Position.IQuantity`2}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<IQuantity<TAmount, TUnit>>
+  nameWithType: IEquatable<IQuantity<TAmount, TUnit>>
+  fullName: System.IEquatable<Virtufin.Core.Position.IQuantity<TAmount, TUnit>>
+  nameWithType.vb: IEquatable(Of IQuantity(Of TAmount, TUnit))
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Position.IQuantity(Of TAmount, TUnit))
+  name.vb: IEquatable(Of IQuantity(Of TAmount, TUnit))
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Position.IQuantity`2
+    name: IQuantity
+    href: Virtufin.Core.Position.IQuantity-2.html
+  - name: <
+  - name: TAmount
+  - name: ','
+  - name: " "
+  - name: TUnit
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Position.IQuantity`2
+    name: IQuantity
+    href: Virtufin.Core.Position.IQuantity-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAmount
+  - name: ','
+  - name: " "
+  - name: TUnit
+  - name: )
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Core.Position.IQuantity`2.Amount*
+  commentId: Overload:Virtufin.Core.Position.IQuantity`2.Amount
+  href: Virtufin.Core.Position.IQuantity-2.html#Virtufin_Core_Position_IQuantity_2_Amount
+  name: Amount
+  nameWithType: IQuantity<TAmount, TUnit>.Amount
+  fullName: Virtufin.Core.Position.IQuantity<TAmount, TUnit>.Amount
+  nameWithType.vb: IQuantity(Of TAmount, TUnit).Amount
+  fullName.vb: Virtufin.Core.Position.IQuantity(Of TAmount, TUnit).Amount
+- uid: '{TAmount}'
+  commentId: '!:TAmount'
+  definition: TAmount
+  name: TAmount
+  nameWithType: TAmount
+  fullName: TAmount
+- uid: TAmount
+  commentId: '!:TAmount'
+  name: TAmount
+  nameWithType: TAmount
+  fullName: TAmount
+- uid: Virtufin.Core.Position.IQuantity`2.Unit*
+  commentId: Overload:Virtufin.Core.Position.IQuantity`2.Unit
+  href: Virtufin.Core.Position.IQuantity-2.html#Virtufin_Core_Position_IQuantity_2_Unit
+  name: Unit
+  nameWithType: IQuantity<TAmount, TUnit>.Unit
+  fullName: Virtufin.Core.Position.IQuantity<TAmount, TUnit>.Unit
+  nameWithType.vb: IQuantity(Of TAmount, TUnit).Unit
+  fullName.vb: Virtufin.Core.Position.IQuantity(Of TAmount, TUnit).Unit
+- uid: '{TUnit}'
+  commentId: '!:TUnit'
+  definition: TUnit
+  name: TUnit
+  nameWithType: TUnit
+  fullName: TUnit
+- uid: TUnit
+  commentId: '!:TUnit'
+  name: TUnit
+  nameWithType: TUnit
+  fullName: TUnit

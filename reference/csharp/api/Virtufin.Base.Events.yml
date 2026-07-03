@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.Events
+  commentId: N:Virtufin.Base.Events
+  id: Virtufin.Base.Events
+  children:
+  - Virtufin.Base.Events.EventEnvelope
+  - Virtufin.Base.Events.EventEnvelopeCloudEventExtensions
+  langs:
+  - csharp
+  - vb
+  name: Virtufin.Base.Events
+  nameWithType: Virtufin.Base.Events
+  fullName: Virtufin.Base.Events
+  type: Namespace
+  assemblies:
+  - Virtufin.Base
+references:
+- uid: Virtufin.Base.Events.EventEnvelope
+  commentId: T:Virtufin.Base.Events.EventEnvelope
+  parent: Virtufin.Base.Events
+  href: Virtufin.Base.Events.EventEnvelope.html
+  name: EventEnvelope
+  nameWithType: EventEnvelope
+  fullName: Virtufin.Base.Events.EventEnvelope
+- uid: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions
+  commentId: T:Virtufin.Base.Events.EventEnvelopeCloudEventExtensions
+  parent: Virtufin.Base.Events
+  href: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.html
+  name: EventEnvelopeCloudEventExtensions
+  nameWithType: EventEnvelopeCloudEventExtensions
+  fullName: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions
+- uid: Virtufin.Base.Events
+  commentId: N:Virtufin.Base.Events
+  href: Virtufin.html
+  name: Virtufin.Base.Events
+  nameWithType: Virtufin.Base.Events
+  fullName: Virtufin.Base.Events
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html

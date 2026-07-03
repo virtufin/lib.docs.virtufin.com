@@ -1,0 +1,4914 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.Currency.CurrencySymbol
+  commentId: T:Virtufin.Base.Currency.CurrencySymbol
+  id: Currency.CurrencySymbol
+  parent: Virtufin.Base
+  children:
+  - Virtufin.Base.Currency.CurrencySymbol.AED
+  - Virtufin.Base.Currency.CurrencySymbol.AFN
+  - Virtufin.Base.Currency.CurrencySymbol.ALL
+  - Virtufin.Base.Currency.CurrencySymbol.AMD
+  - Virtufin.Base.Currency.CurrencySymbol.ANG
+  - Virtufin.Base.Currency.CurrencySymbol.AOA
+  - Virtufin.Base.Currency.CurrencySymbol.ARS
+  - Virtufin.Base.Currency.CurrencySymbol.AUD
+  - Virtufin.Base.Currency.CurrencySymbol.AWG
+  - Virtufin.Base.Currency.CurrencySymbol.AZN
+  - Virtufin.Base.Currency.CurrencySymbol.BAM
+  - Virtufin.Base.Currency.CurrencySymbol.BBD
+  - Virtufin.Base.Currency.CurrencySymbol.BDT
+  - Virtufin.Base.Currency.CurrencySymbol.BHD
+  - Virtufin.Base.Currency.CurrencySymbol.BIF
+  - Virtufin.Base.Currency.CurrencySymbol.BMD
+  - Virtufin.Base.Currency.CurrencySymbol.BND
+  - Virtufin.Base.Currency.CurrencySymbol.BOB
+  - Virtufin.Base.Currency.CurrencySymbol.BOV
+  - Virtufin.Base.Currency.CurrencySymbol.BRL
+  - Virtufin.Base.Currency.CurrencySymbol.BSD
+  - Virtufin.Base.Currency.CurrencySymbol.BTN
+  - Virtufin.Base.Currency.CurrencySymbol.BWP
+  - Virtufin.Base.Currency.CurrencySymbol.BYN
+  - Virtufin.Base.Currency.CurrencySymbol.BZD
+  - Virtufin.Base.Currency.CurrencySymbol.CAD
+  - Virtufin.Base.Currency.CurrencySymbol.CDF
+  - Virtufin.Base.Currency.CurrencySymbol.CHE
+  - Virtufin.Base.Currency.CurrencySymbol.CHF
+  - Virtufin.Base.Currency.CurrencySymbol.CHW
+  - Virtufin.Base.Currency.CurrencySymbol.CLF
+  - Virtufin.Base.Currency.CurrencySymbol.CLP
+  - Virtufin.Base.Currency.CurrencySymbol.CNY
+  - Virtufin.Base.Currency.CurrencySymbol.COP
+  - Virtufin.Base.Currency.CurrencySymbol.COU
+  - Virtufin.Base.Currency.CurrencySymbol.CRC
+  - Virtufin.Base.Currency.CurrencySymbol.CUP
+  - Virtufin.Base.Currency.CurrencySymbol.CVE
+  - Virtufin.Base.Currency.CurrencySymbol.CZK
+  - Virtufin.Base.Currency.CurrencySymbol.DJF
+  - Virtufin.Base.Currency.CurrencySymbol.DKK
+  - Virtufin.Base.Currency.CurrencySymbol.DOP
+  - Virtufin.Base.Currency.CurrencySymbol.DZD
+  - Virtufin.Base.Currency.CurrencySymbol.EGP
+  - Virtufin.Base.Currency.CurrencySymbol.ERN
+  - Virtufin.Base.Currency.CurrencySymbol.ETB
+  - Virtufin.Base.Currency.CurrencySymbol.EUR
+  - Virtufin.Base.Currency.CurrencySymbol.FJD
+  - Virtufin.Base.Currency.CurrencySymbol.FKP
+  - Virtufin.Base.Currency.CurrencySymbol.GBP
+  - Virtufin.Base.Currency.CurrencySymbol.GEL
+  - Virtufin.Base.Currency.CurrencySymbol.GHS
+  - Virtufin.Base.Currency.CurrencySymbol.GIP
+  - Virtufin.Base.Currency.CurrencySymbol.GMD
+  - Virtufin.Base.Currency.CurrencySymbol.GNF
+  - Virtufin.Base.Currency.CurrencySymbol.GTQ
+  - Virtufin.Base.Currency.CurrencySymbol.GYD
+  - Virtufin.Base.Currency.CurrencySymbol.HKD
+  - Virtufin.Base.Currency.CurrencySymbol.HNL
+  - Virtufin.Base.Currency.CurrencySymbol.HTG
+  - Virtufin.Base.Currency.CurrencySymbol.HUF
+  - Virtufin.Base.Currency.CurrencySymbol.IDR
+  - Virtufin.Base.Currency.CurrencySymbol.ILS
+  - Virtufin.Base.Currency.CurrencySymbol.INR
+  - Virtufin.Base.Currency.CurrencySymbol.IQD
+  - Virtufin.Base.Currency.CurrencySymbol.IRR
+  - Virtufin.Base.Currency.CurrencySymbol.ISK
+  - Virtufin.Base.Currency.CurrencySymbol.JMD
+  - Virtufin.Base.Currency.CurrencySymbol.JOD
+  - Virtufin.Base.Currency.CurrencySymbol.JPY
+  - Virtufin.Base.Currency.CurrencySymbol.KES
+  - Virtufin.Base.Currency.CurrencySymbol.KGS
+  - Virtufin.Base.Currency.CurrencySymbol.KHR
+  - Virtufin.Base.Currency.CurrencySymbol.KMF
+  - Virtufin.Base.Currency.CurrencySymbol.KPW
+  - Virtufin.Base.Currency.CurrencySymbol.KRW
+  - Virtufin.Base.Currency.CurrencySymbol.KWD
+  - Virtufin.Base.Currency.CurrencySymbol.KYD
+  - Virtufin.Base.Currency.CurrencySymbol.KZT
+  - Virtufin.Base.Currency.CurrencySymbol.LAK
+  - Virtufin.Base.Currency.CurrencySymbol.LBP
+  - Virtufin.Base.Currency.CurrencySymbol.LKR
+  - Virtufin.Base.Currency.CurrencySymbol.LRD
+  - Virtufin.Base.Currency.CurrencySymbol.LSL
+  - Virtufin.Base.Currency.CurrencySymbol.LYD
+  - Virtufin.Base.Currency.CurrencySymbol.MAD
+  - Virtufin.Base.Currency.CurrencySymbol.MDL
+  - Virtufin.Base.Currency.CurrencySymbol.MGA
+  - Virtufin.Base.Currency.CurrencySymbol.MKD
+  - Virtufin.Base.Currency.CurrencySymbol.MMK
+  - Virtufin.Base.Currency.CurrencySymbol.MNT
+  - Virtufin.Base.Currency.CurrencySymbol.MOP
+  - Virtufin.Base.Currency.CurrencySymbol.MRU
+  - Virtufin.Base.Currency.CurrencySymbol.MUR
+  - Virtufin.Base.Currency.CurrencySymbol.MVR
+  - Virtufin.Base.Currency.CurrencySymbol.MWK
+  - Virtufin.Base.Currency.CurrencySymbol.MXN
+  - Virtufin.Base.Currency.CurrencySymbol.MXV
+  - Virtufin.Base.Currency.CurrencySymbol.MYR
+  - Virtufin.Base.Currency.CurrencySymbol.MZN
+  - Virtufin.Base.Currency.CurrencySymbol.NAD
+  - Virtufin.Base.Currency.CurrencySymbol.NGN
+  - Virtufin.Base.Currency.CurrencySymbol.NIO
+  - Virtufin.Base.Currency.CurrencySymbol.NOK
+  - Virtufin.Base.Currency.CurrencySymbol.NPR
+  - Virtufin.Base.Currency.CurrencySymbol.NZD
+  - Virtufin.Base.Currency.CurrencySymbol.OMR
+  - Virtufin.Base.Currency.CurrencySymbol.PAB
+  - Virtufin.Base.Currency.CurrencySymbol.PEN
+  - Virtufin.Base.Currency.CurrencySymbol.PGK
+  - Virtufin.Base.Currency.CurrencySymbol.PHP
+  - Virtufin.Base.Currency.CurrencySymbol.PKR
+  - Virtufin.Base.Currency.CurrencySymbol.PLN
+  - Virtufin.Base.Currency.CurrencySymbol.PYG
+  - Virtufin.Base.Currency.CurrencySymbol.QAR
+  - Virtufin.Base.Currency.CurrencySymbol.RON
+  - Virtufin.Base.Currency.CurrencySymbol.RSD
+  - Virtufin.Base.Currency.CurrencySymbol.RUB
+  - Virtufin.Base.Currency.CurrencySymbol.RWF
+  - Virtufin.Base.Currency.CurrencySymbol.SAR
+  - Virtufin.Base.Currency.CurrencySymbol.SBD
+  - Virtufin.Base.Currency.CurrencySymbol.SCR
+  - Virtufin.Base.Currency.CurrencySymbol.SDG
+  - Virtufin.Base.Currency.CurrencySymbol.SEK
+  - Virtufin.Base.Currency.CurrencySymbol.SGD
+  - Virtufin.Base.Currency.CurrencySymbol.SHP
+  - Virtufin.Base.Currency.CurrencySymbol.SLE
+  - Virtufin.Base.Currency.CurrencySymbol.SOS
+  - Virtufin.Base.Currency.CurrencySymbol.SRD
+  - Virtufin.Base.Currency.CurrencySymbol.SSP
+  - Virtufin.Base.Currency.CurrencySymbol.STN
+  - Virtufin.Base.Currency.CurrencySymbol.SVC
+  - Virtufin.Base.Currency.CurrencySymbol.SYP
+  - Virtufin.Base.Currency.CurrencySymbol.SZL
+  - Virtufin.Base.Currency.CurrencySymbol.THB
+  - Virtufin.Base.Currency.CurrencySymbol.TJS
+  - Virtufin.Base.Currency.CurrencySymbol.TMT
+  - Virtufin.Base.Currency.CurrencySymbol.TND
+  - Virtufin.Base.Currency.CurrencySymbol.TOP
+  - Virtufin.Base.Currency.CurrencySymbol.TRY
+  - Virtufin.Base.Currency.CurrencySymbol.TTD
+  - Virtufin.Base.Currency.CurrencySymbol.TWD
+  - Virtufin.Base.Currency.CurrencySymbol.TZS
+  - Virtufin.Base.Currency.CurrencySymbol.UAH
+  - Virtufin.Base.Currency.CurrencySymbol.UGX
+  - Virtufin.Base.Currency.CurrencySymbol.USD
+  - Virtufin.Base.Currency.CurrencySymbol.USN
+  - Virtufin.Base.Currency.CurrencySymbol.UYI
+  - Virtufin.Base.Currency.CurrencySymbol.UYU
+  - Virtufin.Base.Currency.CurrencySymbol.UYW
+  - Virtufin.Base.Currency.CurrencySymbol.UZS
+  - Virtufin.Base.Currency.CurrencySymbol.VED
+  - Virtufin.Base.Currency.CurrencySymbol.VES
+  - Virtufin.Base.Currency.CurrencySymbol.VND
+  - Virtufin.Base.Currency.CurrencySymbol.VUV
+  - Virtufin.Base.Currency.CurrencySymbol.WST
+  - Virtufin.Base.Currency.CurrencySymbol.XAF
+  - Virtufin.Base.Currency.CurrencySymbol.XAG
+  - Virtufin.Base.Currency.CurrencySymbol.XAU
+  - Virtufin.Base.Currency.CurrencySymbol.XBA
+  - Virtufin.Base.Currency.CurrencySymbol.XBB
+  - Virtufin.Base.Currency.CurrencySymbol.XBC
+  - Virtufin.Base.Currency.CurrencySymbol.XBD
+  - Virtufin.Base.Currency.CurrencySymbol.XCD
+  - Virtufin.Base.Currency.CurrencySymbol.XCG
+  - Virtufin.Base.Currency.CurrencySymbol.XDR
+  - Virtufin.Base.Currency.CurrencySymbol.XOF
+  - Virtufin.Base.Currency.CurrencySymbol.XPD
+  - Virtufin.Base.Currency.CurrencySymbol.XPF
+  - Virtufin.Base.Currency.CurrencySymbol.XPT
+  - Virtufin.Base.Currency.CurrencySymbol.XSU
+  - Virtufin.Base.Currency.CurrencySymbol.XTS
+  - Virtufin.Base.Currency.CurrencySymbol.XUA
+  - Virtufin.Base.Currency.CurrencySymbol.YER
+  - Virtufin.Base.Currency.CurrencySymbol.ZAR
+  - Virtufin.Base.Currency.CurrencySymbol.ZMW
+  - Virtufin.Base.Currency.CurrencySymbol.ZZZ
+  langs:
+  - csharp
+  - vb
+  name: Currency.CurrencySymbol
+  nameWithType: Currency.CurrencySymbol
+  fullName: Virtufin.Base.Currency.CurrencySymbol
+  type: Enum
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: CurrencySymbol
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 15
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: ISO 4217 alpha codes plus a ZZZ sentinel for testing.
+  example: []
+  syntax:
+    content: public enum Currency.CurrencySymbol
+    content.vb: Public Enum Currency.CurrencySymbol
+  extensionMethods:
+  - Virtufin.Base.Currency.CurrencySymbol.Virtufin.Base.Currency.Symbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.AED
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.AED
+  id: AED
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: AED
+  nameWithType: Currency.CurrencySymbol.AED
+  fullName: Virtufin.Base.Currency.CurrencySymbol.AED
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: AED
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: AED = 0
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.AFN
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.AFN
+  id: AFN
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: AFN
+  nameWithType: Currency.CurrencySymbol.AFN
+  fullName: Virtufin.Base.Currency.CurrencySymbol.AFN
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: AFN
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: AFN = 1
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.ALL
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.ALL
+  id: ALL
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: ALL
+  nameWithType: Currency.CurrencySymbol.ALL
+  fullName: Virtufin.Base.Currency.CurrencySymbol.ALL
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ALL
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: ALL = 2
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.AMD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.AMD
+  id: AMD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: AMD
+  nameWithType: Currency.CurrencySymbol.AMD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.AMD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: AMD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: AMD = 3
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.ANG
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.ANG
+  id: ANG
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: ANG
+  nameWithType: Currency.CurrencySymbol.ANG
+  fullName: Virtufin.Base.Currency.CurrencySymbol.ANG
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ANG
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: ANG = 4
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.AOA
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.AOA
+  id: AOA
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: AOA
+  nameWithType: Currency.CurrencySymbol.AOA
+  fullName: Virtufin.Base.Currency.CurrencySymbol.AOA
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: AOA
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: AOA = 5
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.ARS
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.ARS
+  id: ARS
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: ARS
+  nameWithType: Currency.CurrencySymbol.ARS
+  fullName: Virtufin.Base.Currency.CurrencySymbol.ARS
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ARS
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: ARS = 6
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.AUD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.AUD
+  id: AUD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: AUD
+  nameWithType: Currency.CurrencySymbol.AUD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.AUD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: AUD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: AUD = 7
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.AWG
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.AWG
+  id: AWG
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: AWG
+  nameWithType: Currency.CurrencySymbol.AWG
+  fullName: Virtufin.Base.Currency.CurrencySymbol.AWG
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: AWG
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: AWG = 8
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.AZN
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.AZN
+  id: AZN
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: AZN
+  nameWithType: Currency.CurrencySymbol.AZN
+  fullName: Virtufin.Base.Currency.CurrencySymbol.AZN
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: AZN
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: AZN = 9
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.BAM
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.BAM
+  id: BAM
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: BAM
+  nameWithType: Currency.CurrencySymbol.BAM
+  fullName: Virtufin.Base.Currency.CurrencySymbol.BAM
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: BAM
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: BAM = 10
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.BBD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.BBD
+  id: BBD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: BBD
+  nameWithType: Currency.CurrencySymbol.BBD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.BBD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: BBD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: BBD = 11
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.BDT
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.BDT
+  id: BDT
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: BDT
+  nameWithType: Currency.CurrencySymbol.BDT
+  fullName: Virtufin.Base.Currency.CurrencySymbol.BDT
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: BDT
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: BDT = 12
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.BHD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.BHD
+  id: BHD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: BHD
+  nameWithType: Currency.CurrencySymbol.BHD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.BHD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: BHD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: BHD = 13
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.BIF
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.BIF
+  id: BIF
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: BIF
+  nameWithType: Currency.CurrencySymbol.BIF
+  fullName: Virtufin.Base.Currency.CurrencySymbol.BIF
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: BIF
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: BIF = 14
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.BMD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.BMD
+  id: BMD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: BMD
+  nameWithType: Currency.CurrencySymbol.BMD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.BMD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: BMD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: BMD = 15
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.BND
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.BND
+  id: BND
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: BND
+  nameWithType: Currency.CurrencySymbol.BND
+  fullName: Virtufin.Base.Currency.CurrencySymbol.BND
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: BND
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: BND = 16
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.BOB
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.BOB
+  id: BOB
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: BOB
+  nameWithType: Currency.CurrencySymbol.BOB
+  fullName: Virtufin.Base.Currency.CurrencySymbol.BOB
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: BOB
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: BOB = 17
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.BOV
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.BOV
+  id: BOV
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: BOV
+  nameWithType: Currency.CurrencySymbol.BOV
+  fullName: Virtufin.Base.Currency.CurrencySymbol.BOV
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: BOV
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: BOV = 18
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.BRL
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.BRL
+  id: BRL
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: BRL
+  nameWithType: Currency.CurrencySymbol.BRL
+  fullName: Virtufin.Base.Currency.CurrencySymbol.BRL
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: BRL
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: BRL = 19
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.BSD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.BSD
+  id: BSD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: BSD
+  nameWithType: Currency.CurrencySymbol.BSD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.BSD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: BSD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: BSD = 20
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.BTN
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.BTN
+  id: BTN
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: BTN
+  nameWithType: Currency.CurrencySymbol.BTN
+  fullName: Virtufin.Base.Currency.CurrencySymbol.BTN
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: BTN
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: BTN = 21
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.BWP
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.BWP
+  id: BWP
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: BWP
+  nameWithType: Currency.CurrencySymbol.BWP
+  fullName: Virtufin.Base.Currency.CurrencySymbol.BWP
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: BWP
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: BWP = 22
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.BYN
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.BYN
+  id: BYN
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: BYN
+  nameWithType: Currency.CurrencySymbol.BYN
+  fullName: Virtufin.Base.Currency.CurrencySymbol.BYN
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: BYN
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: BYN = 23
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.BZD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.BZD
+  id: BZD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: BZD
+  nameWithType: Currency.CurrencySymbol.BZD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.BZD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: BZD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: BZD = 24
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.CAD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.CAD
+  id: CAD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: CAD
+  nameWithType: Currency.CurrencySymbol.CAD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.CAD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: CAD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: CAD = 25
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.CDF
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.CDF
+  id: CDF
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: CDF
+  nameWithType: Currency.CurrencySymbol.CDF
+  fullName: Virtufin.Base.Currency.CurrencySymbol.CDF
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: CDF
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: CDF = 26
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.CHE
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.CHE
+  id: CHE
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: CHE
+  nameWithType: Currency.CurrencySymbol.CHE
+  fullName: Virtufin.Base.Currency.CurrencySymbol.CHE
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: CHE
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: CHE = 27
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.CHF
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.CHF
+  id: CHF
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: CHF
+  nameWithType: Currency.CurrencySymbol.CHF
+  fullName: Virtufin.Base.Currency.CurrencySymbol.CHF
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: CHF
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: CHF = 28
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.CHW
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.CHW
+  id: CHW
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: CHW
+  nameWithType: Currency.CurrencySymbol.CHW
+  fullName: Virtufin.Base.Currency.CurrencySymbol.CHW
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: CHW
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: CHW = 29
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.CLF
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.CLF
+  id: CLF
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: CLF
+  nameWithType: Currency.CurrencySymbol.CLF
+  fullName: Virtufin.Base.Currency.CurrencySymbol.CLF
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: CLF
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: CLF = 30
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.CLP
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.CLP
+  id: CLP
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: CLP
+  nameWithType: Currency.CurrencySymbol.CLP
+  fullName: Virtufin.Base.Currency.CurrencySymbol.CLP
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: CLP
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: CLP = 31
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.CNY
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.CNY
+  id: CNY
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: CNY
+  nameWithType: Currency.CurrencySymbol.CNY
+  fullName: Virtufin.Base.Currency.CurrencySymbol.CNY
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: CNY
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: CNY = 32
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.COP
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.COP
+  id: COP
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: COP
+  nameWithType: Currency.CurrencySymbol.COP
+  fullName: Virtufin.Base.Currency.CurrencySymbol.COP
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: COP
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: COP = 33
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.COU
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.COU
+  id: COU
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: COU
+  nameWithType: Currency.CurrencySymbol.COU
+  fullName: Virtufin.Base.Currency.CurrencySymbol.COU
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: COU
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: COU = 34
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.CRC
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.CRC
+  id: CRC
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: CRC
+  nameWithType: Currency.CurrencySymbol.CRC
+  fullName: Virtufin.Base.Currency.CurrencySymbol.CRC
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: CRC
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: CRC = 35
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.CUP
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.CUP
+  id: CUP
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: CUP
+  nameWithType: Currency.CurrencySymbol.CUP
+  fullName: Virtufin.Base.Currency.CurrencySymbol.CUP
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: CUP
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: CUP = 36
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.CVE
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.CVE
+  id: CVE
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: CVE
+  nameWithType: Currency.CurrencySymbol.CVE
+  fullName: Virtufin.Base.Currency.CurrencySymbol.CVE
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: CVE
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: CVE = 37
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.CZK
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.CZK
+  id: CZK
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: CZK
+  nameWithType: Currency.CurrencySymbol.CZK
+  fullName: Virtufin.Base.Currency.CurrencySymbol.CZK
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: CZK
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: CZK = 38
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.DJF
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.DJF
+  id: DJF
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: DJF
+  nameWithType: Currency.CurrencySymbol.DJF
+  fullName: Virtufin.Base.Currency.CurrencySymbol.DJF
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: DJF
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: DJF = 39
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.DKK
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.DKK
+  id: DKK
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: DKK
+  nameWithType: Currency.CurrencySymbol.DKK
+  fullName: Virtufin.Base.Currency.CurrencySymbol.DKK
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: DKK
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 21
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: DKK = 40
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.DOP
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.DOP
+  id: DOP
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: DOP
+  nameWithType: Currency.CurrencySymbol.DOP
+  fullName: Virtufin.Base.Currency.CurrencySymbol.DOP
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: DOP
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 21
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: DOP = 41
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.DZD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.DZD
+  id: DZD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: DZD
+  nameWithType: Currency.CurrencySymbol.DZD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.DZD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: DZD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 21
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: DZD = 42
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.EGP
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.EGP
+  id: EGP
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: EGP
+  nameWithType: Currency.CurrencySymbol.EGP
+  fullName: Virtufin.Base.Currency.CurrencySymbol.EGP
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: EGP
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 21
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: EGP = 43
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.ERN
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.ERN
+  id: ERN
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: ERN
+  nameWithType: Currency.CurrencySymbol.ERN
+  fullName: Virtufin.Base.Currency.CurrencySymbol.ERN
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ERN
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 21
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: ERN = 44
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.ETB
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.ETB
+  id: ETB
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: ETB
+  nameWithType: Currency.CurrencySymbol.ETB
+  fullName: Virtufin.Base.Currency.CurrencySymbol.ETB
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ETB
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 21
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: ETB = 45
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.EUR
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.EUR
+  id: EUR
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: EUR
+  nameWithType: Currency.CurrencySymbol.EUR
+  fullName: Virtufin.Base.Currency.CurrencySymbol.EUR
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: EUR
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 21
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: EUR = 46
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.FJD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.FJD
+  id: FJD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: FJD
+  nameWithType: Currency.CurrencySymbol.FJD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.FJD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: FJD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 21
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: FJD = 47
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.FKP
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.FKP
+  id: FKP
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: FKP
+  nameWithType: Currency.CurrencySymbol.FKP
+  fullName: Virtufin.Base.Currency.CurrencySymbol.FKP
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: FKP
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 21
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: FKP = 48
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.GBP
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.GBP
+  id: GBP
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: GBP
+  nameWithType: Currency.CurrencySymbol.GBP
+  fullName: Virtufin.Base.Currency.CurrencySymbol.GBP
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GBP
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 21
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: GBP = 49
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.GEL
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.GEL
+  id: GEL
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: GEL
+  nameWithType: Currency.CurrencySymbol.GEL
+  fullName: Virtufin.Base.Currency.CurrencySymbol.GEL
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GEL
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: GEL = 50
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.GHS
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.GHS
+  id: GHS
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: GHS
+  nameWithType: Currency.CurrencySymbol.GHS
+  fullName: Virtufin.Base.Currency.CurrencySymbol.GHS
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GHS
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: GHS = 51
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.GIP
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.GIP
+  id: GIP
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: GIP
+  nameWithType: Currency.CurrencySymbol.GIP
+  fullName: Virtufin.Base.Currency.CurrencySymbol.GIP
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GIP
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: GIP = 52
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.GMD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.GMD
+  id: GMD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: GMD
+  nameWithType: Currency.CurrencySymbol.GMD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.GMD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GMD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: GMD = 53
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.GNF
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.GNF
+  id: GNF
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: GNF
+  nameWithType: Currency.CurrencySymbol.GNF
+  fullName: Virtufin.Base.Currency.CurrencySymbol.GNF
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GNF
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: GNF = 54
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.GTQ
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.GTQ
+  id: GTQ
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: GTQ
+  nameWithType: Currency.CurrencySymbol.GTQ
+  fullName: Virtufin.Base.Currency.CurrencySymbol.GTQ
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GTQ
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: GTQ = 55
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.GYD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.GYD
+  id: GYD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: GYD
+  nameWithType: Currency.CurrencySymbol.GYD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.GYD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GYD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: GYD = 56
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.HKD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.HKD
+  id: HKD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: HKD
+  nameWithType: Currency.CurrencySymbol.HKD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.HKD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: HKD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: HKD = 57
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.HNL
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.HNL
+  id: HNL
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: HNL
+  nameWithType: Currency.CurrencySymbol.HNL
+  fullName: Virtufin.Base.Currency.CurrencySymbol.HNL
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: HNL
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: HNL = 58
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.HTG
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.HTG
+  id: HTG
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: HTG
+  nameWithType: Currency.CurrencySymbol.HTG
+  fullName: Virtufin.Base.Currency.CurrencySymbol.HTG
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: HTG
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: HTG = 59
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.HUF
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.HUF
+  id: HUF
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: HUF
+  nameWithType: Currency.CurrencySymbol.HUF
+  fullName: Virtufin.Base.Currency.CurrencySymbol.HUF
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: HUF
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 23
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: HUF = 60
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.IDR
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.IDR
+  id: IDR
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: IDR
+  nameWithType: Currency.CurrencySymbol.IDR
+  fullName: Virtufin.Base.Currency.CurrencySymbol.IDR
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IDR
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 23
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: IDR = 61
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.ILS
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.ILS
+  id: ILS
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: ILS
+  nameWithType: Currency.CurrencySymbol.ILS
+  fullName: Virtufin.Base.Currency.CurrencySymbol.ILS
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ILS
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 23
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: ILS = 62
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.INR
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.INR
+  id: INR
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: INR
+  nameWithType: Currency.CurrencySymbol.INR
+  fullName: Virtufin.Base.Currency.CurrencySymbol.INR
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: INR
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 23
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: INR = 63
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.IQD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.IQD
+  id: IQD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: IQD
+  nameWithType: Currency.CurrencySymbol.IQD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.IQD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IQD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 23
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: IQD = 64
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.IRR
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.IRR
+  id: IRR
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: IRR
+  nameWithType: Currency.CurrencySymbol.IRR
+  fullName: Virtufin.Base.Currency.CurrencySymbol.IRR
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IRR
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 23
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: IRR = 65
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.ISK
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.ISK
+  id: ISK
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: ISK
+  nameWithType: Currency.CurrencySymbol.ISK
+  fullName: Virtufin.Base.Currency.CurrencySymbol.ISK
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ISK
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 23
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: ISK = 66
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.JMD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.JMD
+  id: JMD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: JMD
+  nameWithType: Currency.CurrencySymbol.JMD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.JMD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: JMD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 23
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: JMD = 67
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.JOD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.JOD
+  id: JOD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: JOD
+  nameWithType: Currency.CurrencySymbol.JOD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.JOD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: JOD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 23
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: JOD = 68
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.JPY
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.JPY
+  id: JPY
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: JPY
+  nameWithType: Currency.CurrencySymbol.JPY
+  fullName: Virtufin.Base.Currency.CurrencySymbol.JPY
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: JPY
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 23
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: JPY = 69
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.KES
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.KES
+  id: KES
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: KES
+  nameWithType: Currency.CurrencySymbol.KES
+  fullName: Virtufin.Base.Currency.CurrencySymbol.KES
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: KES
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 24
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: KES = 70
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.KGS
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.KGS
+  id: KGS
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: KGS
+  nameWithType: Currency.CurrencySymbol.KGS
+  fullName: Virtufin.Base.Currency.CurrencySymbol.KGS
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: KGS
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 24
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: KGS = 71
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.KHR
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.KHR
+  id: KHR
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: KHR
+  nameWithType: Currency.CurrencySymbol.KHR
+  fullName: Virtufin.Base.Currency.CurrencySymbol.KHR
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: KHR
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 24
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: KHR = 72
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.KMF
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.KMF
+  id: KMF
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: KMF
+  nameWithType: Currency.CurrencySymbol.KMF
+  fullName: Virtufin.Base.Currency.CurrencySymbol.KMF
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: KMF
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 24
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: KMF = 73
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.KPW
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.KPW
+  id: KPW
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: KPW
+  nameWithType: Currency.CurrencySymbol.KPW
+  fullName: Virtufin.Base.Currency.CurrencySymbol.KPW
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: KPW
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 24
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: KPW = 74
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.KRW
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.KRW
+  id: KRW
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: KRW
+  nameWithType: Currency.CurrencySymbol.KRW
+  fullName: Virtufin.Base.Currency.CurrencySymbol.KRW
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: KRW
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 24
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: KRW = 75
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.KWD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.KWD
+  id: KWD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: KWD
+  nameWithType: Currency.CurrencySymbol.KWD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.KWD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: KWD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 24
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: KWD = 76
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.KYD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.KYD
+  id: KYD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: KYD
+  nameWithType: Currency.CurrencySymbol.KYD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.KYD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: KYD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 24
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: KYD = 77
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.KZT
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.KZT
+  id: KZT
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: KZT
+  nameWithType: Currency.CurrencySymbol.KZT
+  fullName: Virtufin.Base.Currency.CurrencySymbol.KZT
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: KZT
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 24
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: KZT = 78
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.LAK
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.LAK
+  id: LAK
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: LAK
+  nameWithType: Currency.CurrencySymbol.LAK
+  fullName: Virtufin.Base.Currency.CurrencySymbol.LAK
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: LAK
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 24
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: LAK = 79
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.LBP
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.LBP
+  id: LBP
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: LBP
+  nameWithType: Currency.CurrencySymbol.LBP
+  fullName: Virtufin.Base.Currency.CurrencySymbol.LBP
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: LBP
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 25
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: LBP = 80
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.LKR
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.LKR
+  id: LKR
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: LKR
+  nameWithType: Currency.CurrencySymbol.LKR
+  fullName: Virtufin.Base.Currency.CurrencySymbol.LKR
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: LKR
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 25
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: LKR = 81
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.LRD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.LRD
+  id: LRD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: LRD
+  nameWithType: Currency.CurrencySymbol.LRD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.LRD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: LRD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 25
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: LRD = 82
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.LSL
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.LSL
+  id: LSL
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: LSL
+  nameWithType: Currency.CurrencySymbol.LSL
+  fullName: Virtufin.Base.Currency.CurrencySymbol.LSL
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: LSL
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 25
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: LSL = 83
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.LYD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.LYD
+  id: LYD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: LYD
+  nameWithType: Currency.CurrencySymbol.LYD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.LYD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: LYD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 25
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: LYD = 84
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.MAD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.MAD
+  id: MAD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: MAD
+  nameWithType: Currency.CurrencySymbol.MAD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.MAD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: MAD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 25
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: MAD = 85
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.MDL
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.MDL
+  id: MDL
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: MDL
+  nameWithType: Currency.CurrencySymbol.MDL
+  fullName: Virtufin.Base.Currency.CurrencySymbol.MDL
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: MDL
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 25
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: MDL = 86
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.MGA
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.MGA
+  id: MGA
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: MGA
+  nameWithType: Currency.CurrencySymbol.MGA
+  fullName: Virtufin.Base.Currency.CurrencySymbol.MGA
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: MGA
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 25
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: MGA = 87
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.MKD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.MKD
+  id: MKD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: MKD
+  nameWithType: Currency.CurrencySymbol.MKD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.MKD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: MKD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 25
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: MKD = 88
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.MMK
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.MMK
+  id: MMK
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: MMK
+  nameWithType: Currency.CurrencySymbol.MMK
+  fullName: Virtufin.Base.Currency.CurrencySymbol.MMK
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: MMK
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 25
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: MMK = 89
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.MNT
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.MNT
+  id: MNT
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: MNT
+  nameWithType: Currency.CurrencySymbol.MNT
+  fullName: Virtufin.Base.Currency.CurrencySymbol.MNT
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: MNT
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: MNT = 90
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.MOP
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.MOP
+  id: MOP
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: MOP
+  nameWithType: Currency.CurrencySymbol.MOP
+  fullName: Virtufin.Base.Currency.CurrencySymbol.MOP
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: MOP
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: MOP = 91
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.MRU
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.MRU
+  id: MRU
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: MRU
+  nameWithType: Currency.CurrencySymbol.MRU
+  fullName: Virtufin.Base.Currency.CurrencySymbol.MRU
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: MRU
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: MRU = 92
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.MUR
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.MUR
+  id: MUR
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: MUR
+  nameWithType: Currency.CurrencySymbol.MUR
+  fullName: Virtufin.Base.Currency.CurrencySymbol.MUR
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: MUR
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: MUR = 93
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.MVR
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.MVR
+  id: MVR
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: MVR
+  nameWithType: Currency.CurrencySymbol.MVR
+  fullName: Virtufin.Base.Currency.CurrencySymbol.MVR
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: MVR
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: MVR = 94
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.MWK
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.MWK
+  id: MWK
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: MWK
+  nameWithType: Currency.CurrencySymbol.MWK
+  fullName: Virtufin.Base.Currency.CurrencySymbol.MWK
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: MWK
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: MWK = 95
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.MXN
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.MXN
+  id: MXN
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: MXN
+  nameWithType: Currency.CurrencySymbol.MXN
+  fullName: Virtufin.Base.Currency.CurrencySymbol.MXN
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: MXN
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: MXN = 96
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.MXV
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.MXV
+  id: MXV
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: MXV
+  nameWithType: Currency.CurrencySymbol.MXV
+  fullName: Virtufin.Base.Currency.CurrencySymbol.MXV
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: MXV
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: MXV = 97
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.MYR
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.MYR
+  id: MYR
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: MYR
+  nameWithType: Currency.CurrencySymbol.MYR
+  fullName: Virtufin.Base.Currency.CurrencySymbol.MYR
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: MYR
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: MYR = 98
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.MZN
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.MZN
+  id: MZN
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: MZN
+  nameWithType: Currency.CurrencySymbol.MZN
+  fullName: Virtufin.Base.Currency.CurrencySymbol.MZN
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: MZN
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: MZN = 99
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.NAD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.NAD
+  id: NAD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: NAD
+  nameWithType: Currency.CurrencySymbol.NAD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.NAD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: NAD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 27
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: NAD = 100
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.NGN
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.NGN
+  id: NGN
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: NGN
+  nameWithType: Currency.CurrencySymbol.NGN
+  fullName: Virtufin.Base.Currency.CurrencySymbol.NGN
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: NGN
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 27
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: NGN = 101
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.NIO
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.NIO
+  id: NIO
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: NIO
+  nameWithType: Currency.CurrencySymbol.NIO
+  fullName: Virtufin.Base.Currency.CurrencySymbol.NIO
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: NIO
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 27
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: NIO = 102
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.NOK
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.NOK
+  id: NOK
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: NOK
+  nameWithType: Currency.CurrencySymbol.NOK
+  fullName: Virtufin.Base.Currency.CurrencySymbol.NOK
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: NOK
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 27
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: NOK = 103
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.NPR
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.NPR
+  id: NPR
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: NPR
+  nameWithType: Currency.CurrencySymbol.NPR
+  fullName: Virtufin.Base.Currency.CurrencySymbol.NPR
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: NPR
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 27
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: NPR = 104
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.NZD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.NZD
+  id: NZD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: NZD
+  nameWithType: Currency.CurrencySymbol.NZD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.NZD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: NZD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 27
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: NZD = 105
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.OMR
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.OMR
+  id: OMR
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: OMR
+  nameWithType: Currency.CurrencySymbol.OMR
+  fullName: Virtufin.Base.Currency.CurrencySymbol.OMR
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: OMR
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 27
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: OMR = 106
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.PAB
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.PAB
+  id: PAB
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: PAB
+  nameWithType: Currency.CurrencySymbol.PAB
+  fullName: Virtufin.Base.Currency.CurrencySymbol.PAB
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: PAB
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 27
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: PAB = 107
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.PEN
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.PEN
+  id: PEN
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: PEN
+  nameWithType: Currency.CurrencySymbol.PEN
+  fullName: Virtufin.Base.Currency.CurrencySymbol.PEN
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: PEN
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 27
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: PEN = 108
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.PGK
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.PGK
+  id: PGK
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: PGK
+  nameWithType: Currency.CurrencySymbol.PGK
+  fullName: Virtufin.Base.Currency.CurrencySymbol.PGK
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: PGK
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 27
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: PGK = 109
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.PHP
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.PHP
+  id: PHP
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: PHP
+  nameWithType: Currency.CurrencySymbol.PHP
+  fullName: Virtufin.Base.Currency.CurrencySymbol.PHP
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: PHP
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 28
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: PHP = 110
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.PKR
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.PKR
+  id: PKR
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: PKR
+  nameWithType: Currency.CurrencySymbol.PKR
+  fullName: Virtufin.Base.Currency.CurrencySymbol.PKR
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: PKR
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 28
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: PKR = 111
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.PLN
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.PLN
+  id: PLN
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: PLN
+  nameWithType: Currency.CurrencySymbol.PLN
+  fullName: Virtufin.Base.Currency.CurrencySymbol.PLN
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: PLN
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 28
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: PLN = 112
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.PYG
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.PYG
+  id: PYG
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: PYG
+  nameWithType: Currency.CurrencySymbol.PYG
+  fullName: Virtufin.Base.Currency.CurrencySymbol.PYG
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: PYG
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 28
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: PYG = 113
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.QAR
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.QAR
+  id: QAR
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: QAR
+  nameWithType: Currency.CurrencySymbol.QAR
+  fullName: Virtufin.Base.Currency.CurrencySymbol.QAR
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: QAR
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 28
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: QAR = 114
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.RON
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.RON
+  id: RON
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: RON
+  nameWithType: Currency.CurrencySymbol.RON
+  fullName: Virtufin.Base.Currency.CurrencySymbol.RON
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: RON
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 28
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: RON = 115
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.RSD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.RSD
+  id: RSD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: RSD
+  nameWithType: Currency.CurrencySymbol.RSD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.RSD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: RSD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 28
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: RSD = 116
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.RUB
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.RUB
+  id: RUB
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: RUB
+  nameWithType: Currency.CurrencySymbol.RUB
+  fullName: Virtufin.Base.Currency.CurrencySymbol.RUB
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: RUB
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 28
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: RUB = 117
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.RWF
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.RWF
+  id: RWF
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: RWF
+  nameWithType: Currency.CurrencySymbol.RWF
+  fullName: Virtufin.Base.Currency.CurrencySymbol.RWF
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: RWF
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 28
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: RWF = 118
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.SAR
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.SAR
+  id: SAR
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: SAR
+  nameWithType: Currency.CurrencySymbol.SAR
+  fullName: Virtufin.Base.Currency.CurrencySymbol.SAR
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: SAR
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 28
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: SAR = 119
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.SBD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.SBD
+  id: SBD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: SBD
+  nameWithType: Currency.CurrencySymbol.SBD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.SBD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: SBD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 29
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: SBD = 120
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.SCR
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.SCR
+  id: SCR
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: SCR
+  nameWithType: Currency.CurrencySymbol.SCR
+  fullName: Virtufin.Base.Currency.CurrencySymbol.SCR
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: SCR
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 29
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: SCR = 121
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.SDG
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.SDG
+  id: SDG
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: SDG
+  nameWithType: Currency.CurrencySymbol.SDG
+  fullName: Virtufin.Base.Currency.CurrencySymbol.SDG
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: SDG
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 29
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: SDG = 122
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.SEK
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.SEK
+  id: SEK
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: SEK
+  nameWithType: Currency.CurrencySymbol.SEK
+  fullName: Virtufin.Base.Currency.CurrencySymbol.SEK
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: SEK
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 29
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: SEK = 123
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.SGD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.SGD
+  id: SGD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: SGD
+  nameWithType: Currency.CurrencySymbol.SGD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.SGD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: SGD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 29
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: SGD = 124
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.SHP
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.SHP
+  id: SHP
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: SHP
+  nameWithType: Currency.CurrencySymbol.SHP
+  fullName: Virtufin.Base.Currency.CurrencySymbol.SHP
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: SHP
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 29
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: SHP = 125
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.SLE
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.SLE
+  id: SLE
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: SLE
+  nameWithType: Currency.CurrencySymbol.SLE
+  fullName: Virtufin.Base.Currency.CurrencySymbol.SLE
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: SLE
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 29
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: SLE = 126
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.SOS
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.SOS
+  id: SOS
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: SOS
+  nameWithType: Currency.CurrencySymbol.SOS
+  fullName: Virtufin.Base.Currency.CurrencySymbol.SOS
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: SOS
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 29
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: SOS = 127
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.SRD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.SRD
+  id: SRD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: SRD
+  nameWithType: Currency.CurrencySymbol.SRD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.SRD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: SRD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 29
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: SRD = 128
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.SSP
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.SSP
+  id: SSP
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: SSP
+  nameWithType: Currency.CurrencySymbol.SSP
+  fullName: Virtufin.Base.Currency.CurrencySymbol.SSP
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: SSP
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 29
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: SSP = 129
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.STN
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.STN
+  id: STN
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: STN
+  nameWithType: Currency.CurrencySymbol.STN
+  fullName: Virtufin.Base.Currency.CurrencySymbol.STN
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: STN
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 30
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: STN = 130
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.SVC
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.SVC
+  id: SVC
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: SVC
+  nameWithType: Currency.CurrencySymbol.SVC
+  fullName: Virtufin.Base.Currency.CurrencySymbol.SVC
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: SVC
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 30
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: SVC = 131
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.SYP
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.SYP
+  id: SYP
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: SYP
+  nameWithType: Currency.CurrencySymbol.SYP
+  fullName: Virtufin.Base.Currency.CurrencySymbol.SYP
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: SYP
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 30
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: SYP = 132
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.SZL
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.SZL
+  id: SZL
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: SZL
+  nameWithType: Currency.CurrencySymbol.SZL
+  fullName: Virtufin.Base.Currency.CurrencySymbol.SZL
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: SZL
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 30
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: SZL = 133
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.THB
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.THB
+  id: THB
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: THB
+  nameWithType: Currency.CurrencySymbol.THB
+  fullName: Virtufin.Base.Currency.CurrencySymbol.THB
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: THB
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 30
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: THB = 134
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.TJS
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.TJS
+  id: TJS
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: TJS
+  nameWithType: Currency.CurrencySymbol.TJS
+  fullName: Virtufin.Base.Currency.CurrencySymbol.TJS
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: TJS
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 30
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: TJS = 135
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.TMT
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.TMT
+  id: TMT
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: TMT
+  nameWithType: Currency.CurrencySymbol.TMT
+  fullName: Virtufin.Base.Currency.CurrencySymbol.TMT
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: TMT
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 30
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: TMT = 136
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.TND
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.TND
+  id: TND
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: TND
+  nameWithType: Currency.CurrencySymbol.TND
+  fullName: Virtufin.Base.Currency.CurrencySymbol.TND
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: TND
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 30
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: TND = 137
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.TOP
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.TOP
+  id: TOP
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: TOP
+  nameWithType: Currency.CurrencySymbol.TOP
+  fullName: Virtufin.Base.Currency.CurrencySymbol.TOP
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: TOP
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 30
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: TOP = 138
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.TRY
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.TRY
+  id: TRY
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: TRY
+  nameWithType: Currency.CurrencySymbol.TRY
+  fullName: Virtufin.Base.Currency.CurrencySymbol.TRY
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: TRY
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 30
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: TRY = 139
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.TTD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.TTD
+  id: TTD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: TTD
+  nameWithType: Currency.CurrencySymbol.TTD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.TTD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: TTD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 31
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: TTD = 140
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.TWD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.TWD
+  id: TWD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: TWD
+  nameWithType: Currency.CurrencySymbol.TWD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.TWD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: TWD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 31
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: TWD = 141
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.TZS
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.TZS
+  id: TZS
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: TZS
+  nameWithType: Currency.CurrencySymbol.TZS
+  fullName: Virtufin.Base.Currency.CurrencySymbol.TZS
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: TZS
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 31
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: TZS = 142
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.UAH
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.UAH
+  id: UAH
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: UAH
+  nameWithType: Currency.CurrencySymbol.UAH
+  fullName: Virtufin.Base.Currency.CurrencySymbol.UAH
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: UAH
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 31
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: UAH = 143
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.UGX
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.UGX
+  id: UGX
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: UGX
+  nameWithType: Currency.CurrencySymbol.UGX
+  fullName: Virtufin.Base.Currency.CurrencySymbol.UGX
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: UGX
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 31
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: UGX = 144
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.USD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.USD
+  id: USD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: USD
+  nameWithType: Currency.CurrencySymbol.USD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.USD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: USD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 31
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: USD = 145
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.USN
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.USN
+  id: USN
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: USN
+  nameWithType: Currency.CurrencySymbol.USN
+  fullName: Virtufin.Base.Currency.CurrencySymbol.USN
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: USN
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 31
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: USN = 146
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.UYI
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.UYI
+  id: UYI
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: UYI
+  nameWithType: Currency.CurrencySymbol.UYI
+  fullName: Virtufin.Base.Currency.CurrencySymbol.UYI
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: UYI
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 31
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: UYI = 147
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.UYU
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.UYU
+  id: UYU
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: UYU
+  nameWithType: Currency.CurrencySymbol.UYU
+  fullName: Virtufin.Base.Currency.CurrencySymbol.UYU
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: UYU
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 31
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: UYU = 148
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.UYW
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.UYW
+  id: UYW
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: UYW
+  nameWithType: Currency.CurrencySymbol.UYW
+  fullName: Virtufin.Base.Currency.CurrencySymbol.UYW
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: UYW
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 31
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: UYW = 149
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.UZS
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.UZS
+  id: UZS
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: UZS
+  nameWithType: Currency.CurrencySymbol.UZS
+  fullName: Virtufin.Base.Currency.CurrencySymbol.UZS
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: UZS
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 32
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: UZS = 150
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.VED
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.VED
+  id: VED
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: VED
+  nameWithType: Currency.CurrencySymbol.VED
+  fullName: Virtufin.Base.Currency.CurrencySymbol.VED
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: VED
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 32
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: VED = 151
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.VES
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.VES
+  id: VES
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: VES
+  nameWithType: Currency.CurrencySymbol.VES
+  fullName: Virtufin.Base.Currency.CurrencySymbol.VES
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: VES
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 32
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: VES = 152
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.VND
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.VND
+  id: VND
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: VND
+  nameWithType: Currency.CurrencySymbol.VND
+  fullName: Virtufin.Base.Currency.CurrencySymbol.VND
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: VND
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 32
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: VND = 153
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.VUV
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.VUV
+  id: VUV
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: VUV
+  nameWithType: Currency.CurrencySymbol.VUV
+  fullName: Virtufin.Base.Currency.CurrencySymbol.VUV
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: VUV
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 32
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: VUV = 154
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.WST
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.WST
+  id: WST
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: WST
+  nameWithType: Currency.CurrencySymbol.WST
+  fullName: Virtufin.Base.Currency.CurrencySymbol.WST
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: WST
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 32
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: WST = 155
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.XAF
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.XAF
+  id: XAF
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: XAF
+  nameWithType: Currency.CurrencySymbol.XAF
+  fullName: Virtufin.Base.Currency.CurrencySymbol.XAF
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: XAF
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 32
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: XAF = 156
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.XAG
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.XAG
+  id: XAG
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: XAG
+  nameWithType: Currency.CurrencySymbol.XAG
+  fullName: Virtufin.Base.Currency.CurrencySymbol.XAG
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: XAG
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 32
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: XAG = 157
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.XAU
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.XAU
+  id: XAU
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: XAU
+  nameWithType: Currency.CurrencySymbol.XAU
+  fullName: Virtufin.Base.Currency.CurrencySymbol.XAU
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: XAU
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 32
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: XAU = 158
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.XBA
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.XBA
+  id: XBA
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: XBA
+  nameWithType: Currency.CurrencySymbol.XBA
+  fullName: Virtufin.Base.Currency.CurrencySymbol.XBA
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: XBA
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 32
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: XBA = 159
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.XBB
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.XBB
+  id: XBB
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: XBB
+  nameWithType: Currency.CurrencySymbol.XBB
+  fullName: Virtufin.Base.Currency.CurrencySymbol.XBB
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: XBB
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 33
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: XBB = 160
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.XBC
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.XBC
+  id: XBC
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: XBC
+  nameWithType: Currency.CurrencySymbol.XBC
+  fullName: Virtufin.Base.Currency.CurrencySymbol.XBC
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: XBC
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 33
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: XBC = 161
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.XBD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.XBD
+  id: XBD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: XBD
+  nameWithType: Currency.CurrencySymbol.XBD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.XBD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: XBD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 33
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: XBD = 162
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.XCD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.XCD
+  id: XCD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: XCD
+  nameWithType: Currency.CurrencySymbol.XCD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.XCD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: XCD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 33
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: XCD = 163
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.XCG
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.XCG
+  id: XCG
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: XCG
+  nameWithType: Currency.CurrencySymbol.XCG
+  fullName: Virtufin.Base.Currency.CurrencySymbol.XCG
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: XCG
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 33
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: XCG = 164
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.XDR
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.XDR
+  id: XDR
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: XDR
+  nameWithType: Currency.CurrencySymbol.XDR
+  fullName: Virtufin.Base.Currency.CurrencySymbol.XDR
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: XDR
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 33
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: XDR = 165
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.XOF
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.XOF
+  id: XOF
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: XOF
+  nameWithType: Currency.CurrencySymbol.XOF
+  fullName: Virtufin.Base.Currency.CurrencySymbol.XOF
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: XOF
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 33
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: XOF = 166
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.XPD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.XPD
+  id: XPD
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: XPD
+  nameWithType: Currency.CurrencySymbol.XPD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.XPD
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: XPD
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 33
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: XPD = 167
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.XPF
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.XPF
+  id: XPF
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: XPF
+  nameWithType: Currency.CurrencySymbol.XPF
+  fullName: Virtufin.Base.Currency.CurrencySymbol.XPF
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: XPF
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 33
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: XPF = 168
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.XPT
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.XPT
+  id: XPT
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: XPT
+  nameWithType: Currency.CurrencySymbol.XPT
+  fullName: Virtufin.Base.Currency.CurrencySymbol.XPT
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: XPT
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 33
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: XPT = 169
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.XSU
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.XSU
+  id: XSU
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: XSU
+  nameWithType: Currency.CurrencySymbol.XSU
+  fullName: Virtufin.Base.Currency.CurrencySymbol.XSU
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: XSU
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 34
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: XSU = 170
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.XTS
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.XTS
+  id: XTS
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: XTS
+  nameWithType: Currency.CurrencySymbol.XTS
+  fullName: Virtufin.Base.Currency.CurrencySymbol.XTS
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: XTS
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 34
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: XTS = 171
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.XUA
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.XUA
+  id: XUA
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: XUA
+  nameWithType: Currency.CurrencySymbol.XUA
+  fullName: Virtufin.Base.Currency.CurrencySymbol.XUA
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: XUA
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 34
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: XUA = 172
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.YER
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.YER
+  id: YER
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: YER
+  nameWithType: Currency.CurrencySymbol.YER
+  fullName: Virtufin.Base.Currency.CurrencySymbol.YER
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: YER
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 34
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: YER = 173
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.ZAR
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.ZAR
+  id: ZAR
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: ZAR
+  nameWithType: Currency.CurrencySymbol.ZAR
+  fullName: Virtufin.Base.Currency.CurrencySymbol.ZAR
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ZAR
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 34
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: ZAR = 174
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.ZMW
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.ZMW
+  id: ZMW
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: ZMW
+  nameWithType: Currency.CurrencySymbol.ZMW
+  fullName: Virtufin.Base.Currency.CurrencySymbol.ZMW
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ZMW
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 34
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: ZMW = 175
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+- uid: Virtufin.Base.Currency.CurrencySymbol.ZZZ
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.ZZZ
+  id: ZZZ
+  parent: Virtufin.Base.Currency.CurrencySymbol
+  langs:
+  - csharp
+  - vb
+  name: ZZZ
+  nameWithType: Currency.CurrencySymbol.ZZZ
+  fullName: Virtufin.Base.Currency.CurrencySymbol.ZZZ
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Currency.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ZZZ
+    path: ../../../src/Virtufin.Base/Currency.cs
+    startLine: 35
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: ZZZ = 176
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+references:
+- uid: Virtufin.Base
+  commentId: N:Virtufin.Base
+  href: Virtufin.html
+  name: Virtufin.Base
+  nameWithType: Virtufin.Base
+  fullName: Virtufin.Base
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+- uid: Virtufin.Base.Currency.CurrencySymbol.Virtufin.Base.Currency.Symbol
+  commentId: M:Virtufin.Base.Currency.Symbol(Virtufin.Base.Currency.CurrencySymbol)
+  parent: Virtufin.Base.Currency
+  definition: Virtufin.Base.Currency.Symbol(Virtufin.Base.Currency.CurrencySymbol)
+  href: Virtufin.Base.Currency.html#Virtufin_Base_Currency_Symbol_Virtufin_Base_Currency_CurrencySymbol_
+  name: Symbol(CurrencySymbol)
+  nameWithType: Currency.Symbol(Currency.CurrencySymbol)
+  fullName: Virtufin.Base.Currency.Symbol(Virtufin.Base.Currency.CurrencySymbol)
+  spec.csharp:
+  - uid: Virtufin.Base.Currency.Symbol(Virtufin.Base.Currency.CurrencySymbol)
+    name: Symbol
+    href: Virtufin.Base.Currency.html#Virtufin_Base_Currency_Symbol_Virtufin_Base_Currency_CurrencySymbol_
+  - name: (
+  - uid: Virtufin.Base.Currency.CurrencySymbol
+    name: CurrencySymbol
+    href: Virtufin.Base.Currency.CurrencySymbol.html
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Base.Currency.Symbol(Virtufin.Base.Currency.CurrencySymbol)
+    name: Symbol
+    href: Virtufin.Base.Currency.html#Virtufin_Base_Currency_Symbol_Virtufin_Base_Currency_CurrencySymbol_
+  - name: (
+  - uid: Virtufin.Base.Currency.CurrencySymbol
+    name: CurrencySymbol
+    href: Virtufin.Base.Currency.CurrencySymbol.html
+  - name: )
+- uid: Virtufin.Base.Currency.Symbol(Virtufin.Base.Currency.CurrencySymbol)
+  commentId: M:Virtufin.Base.Currency.Symbol(Virtufin.Base.Currency.CurrencySymbol)
+  href: Virtufin.Base.Currency.html#Virtufin_Base_Currency_Symbol_Virtufin_Base_Currency_CurrencySymbol_
+  name: Symbol(CurrencySymbol)
+  nameWithType: Currency.Symbol(Currency.CurrencySymbol)
+  fullName: Virtufin.Base.Currency.Symbol(Virtufin.Base.Currency.CurrencySymbol)
+  spec.csharp:
+  - uid: Virtufin.Base.Currency.Symbol(Virtufin.Base.Currency.CurrencySymbol)
+    name: Symbol
+    href: Virtufin.Base.Currency.html#Virtufin_Base_Currency_Symbol_Virtufin_Base_Currency_CurrencySymbol_
+  - name: (
+  - uid: Virtufin.Base.Currency.CurrencySymbol
+    name: CurrencySymbol
+    href: Virtufin.Base.Currency.CurrencySymbol.html
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Base.Currency.Symbol(Virtufin.Base.Currency.CurrencySymbol)
+    name: Symbol
+    href: Virtufin.Base.Currency.html#Virtufin_Base_Currency_Symbol_Virtufin_Base_Currency_CurrencySymbol_
+  - name: (
+  - uid: Virtufin.Base.Currency.CurrencySymbol
+    name: CurrencySymbol
+    href: Virtufin.Base.Currency.CurrencySymbol.html
+  - name: )
+- uid: Virtufin.Base.Currency
+  commentId: T:Virtufin.Base.Currency
+  parent: Virtufin.Base
+  href: Virtufin.Base.Currency.html
+  name: Currency
+  nameWithType: Currency
+  fullName: Virtufin.Base.Currency
+- uid: Virtufin.Base.Currency.CurrencySymbol
+  commentId: T:Virtufin.Base.Currency.CurrencySymbol
+  parent: Virtufin.Base
+  href: Virtufin.Base.Currency.html
+  name: Currency.CurrencySymbol
+  nameWithType: Currency.CurrencySymbol
+  fullName: Virtufin.Base.Currency.CurrencySymbol
+  spec.csharp:
+  - uid: Virtufin.Base.Currency
+    name: Currency
+    href: Virtufin.Base.Currency.html
+  - name: .
+  - uid: Virtufin.Base.Currency.CurrencySymbol
+    name: CurrencySymbol
+    href: Virtufin.Base.Currency.CurrencySymbol.html
+  spec.vb:
+  - uid: Virtufin.Base.Currency
+    name: Currency
+    href: Virtufin.Base.Currency.html
+  - name: .
+  - uid: Virtufin.Base.Currency.CurrencySymbol
+    name: CurrencySymbol
+    href: Virtufin.Base.Currency.CurrencySymbol.html

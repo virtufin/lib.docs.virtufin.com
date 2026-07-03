@@ -1,0 +1,605 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.Events.Market.MarketEvent
+  commentId: T:Virtufin.Base.Events.Market.MarketEvent
+  id: MarketEvent
+  parent: Virtufin.Base.Events.Market
+  children:
+  - Virtufin.Base.Events.Market.MarketEvent.Symbol
+  langs:
+  - csharp
+  - vb
+  name: MarketEvent
+  nameWithType: MarketEvent
+  fullName: Virtufin.Base.Events.Market.MarketEvent
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Market/MarketEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: MarketEvent
+    path: ../../../src/Virtufin.Base/Events/Market/MarketEvent.cs
+    startLine: 12
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Market
+  summary: >-
+    Sealed ADT of raw market observations — what the feed emits. Two cases:
+
+    <xref href="Virtufin.Base.Events.Market.MarketEvent.TickReceived" data-throw-if-not-resolved="false"></xref> (best bid/ask update) and <xref href="Virtufin.Base.Events.Market.MarketEvent.OrderBookReceived" data-throw-if-not-resolved="false"></xref>
+
+    (depth snapshot/diff). Topics use the naming scheme
+
+    <code>act.market.{entity}.{event}</code> or <code>hyp.{selector}.market.{entity}.{event}</code>.
+  example: []
+  syntax:
+    content: 'public abstract record MarketEvent : IMarketEvent, IEvent, IEquatable<IEvent>, IEquatable<MarketEvent>'
+    content.vb: Public MustInherit Class MarketEvent Implements IMarketEvent, IEvent, IEquatable(Of IEvent), IEquatable(Of MarketEvent)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Virtufin.Base.Events.Market.MarketEvent.OrderBookReceived
+  - Virtufin.Base.Events.Market.MarketEvent.TickReceived
+  implements:
+  - Virtufin.Core.Events.Market.IMarketEvent
+  - Virtufin.Core.Events.IEvent
+  - System.IEquatable{Virtufin.Core.Events.IEvent}
+  - System.IEquatable{Virtufin.Base.Events.Market.MarketEvent}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.Base.Events.Market.MarketEvent.Symbol
+  commentId: P:Virtufin.Base.Events.Market.MarketEvent.Symbol
+  id: Symbol
+  parent: Virtufin.Base.Events.Market.MarketEvent
+  langs:
+  - csharp
+  - vb
+  name: Symbol
+  nameWithType: MarketEvent.Symbol
+  fullName: Virtufin.Base.Events.Market.MarketEvent.Symbol
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Market/MarketEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Symbol
+    path: ../../../src/Virtufin.Base/Events/Market/MarketEvent.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Market
+  summary: The instrument the observation refers to.
+  example: []
+  syntax:
+    content: public abstract Symbol Symbol { get; }
+    parameters: []
+    return:
+      type: Virtufin.Core.Events.Symbol
+    content.vb: Public MustOverride ReadOnly Property Symbol As Symbol
+  overload: Virtufin.Base.Events.Market.MarketEvent.Symbol*
+  implements:
+  - Virtufin.Core.Events.Market.IMarketEvent.Symbol
+references:
+- uid: Virtufin.Base.Events.Market.MarketEvent.TickReceived
+  commentId: T:Virtufin.Base.Events.Market.MarketEvent.TickReceived
+  href: Virtufin.Base.Events.Market.MarketEvent.html
+  name: MarketEvent.TickReceived
+  nameWithType: MarketEvent.TickReceived
+  fullName: Virtufin.Base.Events.Market.MarketEvent.TickReceived
+  spec.csharp:
+  - uid: Virtufin.Base.Events.Market.MarketEvent
+    name: MarketEvent
+    href: Virtufin.Base.Events.Market.MarketEvent.html
+  - name: .
+  - uid: Virtufin.Base.Events.Market.MarketEvent.TickReceived
+    name: TickReceived
+    href: Virtufin.Base.Events.Market.MarketEvent.TickReceived.html
+  spec.vb:
+  - uid: Virtufin.Base.Events.Market.MarketEvent
+    name: MarketEvent
+    href: Virtufin.Base.Events.Market.MarketEvent.html
+  - name: .
+  - uid: Virtufin.Base.Events.Market.MarketEvent.TickReceived
+    name: TickReceived
+    href: Virtufin.Base.Events.Market.MarketEvent.TickReceived.html
+- uid: Virtufin.Base.Events.Market.MarketEvent.OrderBookReceived
+  commentId: T:Virtufin.Base.Events.Market.MarketEvent.OrderBookReceived
+  href: Virtufin.Base.Events.Market.MarketEvent.html
+  name: MarketEvent.OrderBookReceived
+  nameWithType: MarketEvent.OrderBookReceived
+  fullName: Virtufin.Base.Events.Market.MarketEvent.OrderBookReceived
+  spec.csharp:
+  - uid: Virtufin.Base.Events.Market.MarketEvent
+    name: MarketEvent
+    href: Virtufin.Base.Events.Market.MarketEvent.html
+  - name: .
+  - uid: Virtufin.Base.Events.Market.MarketEvent.OrderBookReceived
+    name: OrderBookReceived
+    href: Virtufin.Base.Events.Market.MarketEvent.OrderBookReceived.html
+  spec.vb:
+  - uid: Virtufin.Base.Events.Market.MarketEvent
+    name: MarketEvent
+    href: Virtufin.Base.Events.Market.MarketEvent.html
+  - name: .
+  - uid: Virtufin.Base.Events.Market.MarketEvent.OrderBookReceived
+    name: OrderBookReceived
+    href: Virtufin.Base.Events.Market.MarketEvent.OrderBookReceived.html
+- uid: Virtufin.Base.Events.Market
+  commentId: N:Virtufin.Base.Events.Market
+  href: Virtufin.html
+  name: Virtufin.Base.Events.Market
+  nameWithType: Virtufin.Base.Events.Market
+  fullName: Virtufin.Base.Events.Market
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html
+  - name: .
+  - uid: Virtufin.Base.Events.Market
+    name: Market
+    href: Virtufin.Base.Events.Market.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html
+  - name: .
+  - uid: Virtufin.Base.Events.Market
+    name: Market
+    href: Virtufin.Base.Events.Market.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.Core.Events.Market.IMarketEvent
+  commentId: T:Virtufin.Core.Events.Market.IMarketEvent
+  parent: Virtufin.Core.Events.Market
+  href: Virtufin.Core.Events.Market.IMarketEvent.html
+  name: IMarketEvent
+  nameWithType: IMarketEvent
+  fullName: Virtufin.Core.Events.Market.IMarketEvent
+- uid: Virtufin.Core.Events.IEvent
+  commentId: T:Virtufin.Core.Events.IEvent
+  parent: Virtufin.Core.Events
+  href: Virtufin.Core.Events.IEvent.html
+  name: IEvent
+  nameWithType: IEvent
+  fullName: Virtufin.Core.Events.IEvent
+- uid: System.IEquatable{Virtufin.Core.Events.IEvent}
+  commentId: T:System.IEquatable{Virtufin.Core.Events.IEvent}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<IEvent>
+  nameWithType: IEquatable<IEvent>
+  fullName: System.IEquatable<Virtufin.Core.Events.IEvent>
+  nameWithType.vb: IEquatable(Of IEvent)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Events.IEvent)
+  name.vb: IEquatable(Of IEvent)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Events.IEvent
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Events.IEvent
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent.html
+  - name: )
+- uid: System.IEquatable{Virtufin.Base.Events.Market.MarketEvent}
+  commentId: T:System.IEquatable{Virtufin.Base.Events.Market.MarketEvent}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<MarketEvent>
+  nameWithType: IEquatable<MarketEvent>
+  fullName: System.IEquatable<Virtufin.Base.Events.Market.MarketEvent>
+  nameWithType.vb: IEquatable(Of MarketEvent)
+  fullName.vb: System.IEquatable(Of Virtufin.Base.Events.Market.MarketEvent)
+  name.vb: IEquatable(Of MarketEvent)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Base.Events.Market.MarketEvent
+    name: MarketEvent
+    href: Virtufin.Base.Events.Market.MarketEvent.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Base.Events.Market.MarketEvent
+    name: MarketEvent
+    href: Virtufin.Base.Events.Market.MarketEvent.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Core.Events.Market
+  commentId: N:Virtufin.Core.Events.Market
+  href: Virtufin.html
+  name: Virtufin.Core.Events.Market
+  nameWithType: Virtufin.Core.Events.Market
+  fullName: Virtufin.Core.Events.Market
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  - name: .
+  - uid: Virtufin.Core.Events.Market
+    name: Market
+    href: Virtufin.Core.Events.Market.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  - name: .
+  - uid: Virtufin.Core.Events.Market
+    name: Market
+    href: Virtufin.Core.Events.Market.html
+- uid: Virtufin.Core.Events
+  commentId: N:Virtufin.Core.Events
+  href: Virtufin.html
+  name: Virtufin.Core.Events
+  nameWithType: Virtufin.Core.Events
+  fullName: Virtufin.Core.Events
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Base.Events.Market.MarketEvent.Symbol*
+  commentId: Overload:Virtufin.Base.Events.Market.MarketEvent.Symbol
+  href: Virtufin.Base.Events.Market.MarketEvent.html#Virtufin_Base_Events_Market_MarketEvent_Symbol
+  name: Symbol
+  nameWithType: MarketEvent.Symbol
+  fullName: Virtufin.Base.Events.Market.MarketEvent.Symbol
+- uid: Virtufin.Core.Events.Market.IMarketEvent.Symbol
+  commentId: P:Virtufin.Core.Events.Market.IMarketEvent.Symbol
+  parent: Virtufin.Core.Events.Market.IMarketEvent
+  href: Virtufin.Core.Events.Market.IMarketEvent.html#Virtufin_Core_Events_Market_IMarketEvent_Symbol
+  name: Symbol
+  nameWithType: IMarketEvent.Symbol
+  fullName: Virtufin.Core.Events.Market.IMarketEvent.Symbol
+- uid: Virtufin.Core.Events.Symbol
+  commentId: T:Virtufin.Core.Events.Symbol
+  parent: Virtufin.Core.Events
+  href: Virtufin.Core.Events.Symbol.html
+  name: Symbol
+  nameWithType: Symbol
+  fullName: Virtufin.Core.Events.Symbol

@@ -1,0 +1,367 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core
+  commentId: N:Virtufin.Core
+  id: Virtufin.Core
+  children:
+  - Virtufin.Core.Attribute`2
+  - Virtufin.Core.DictionaryValueProvider`1
+  - Virtufin.Core.EntityAttributeValueTypeSpecifier`1
+  - Virtufin.Core.EntityIdentifier`1
+  - Virtufin.Core.FunctionValueProvider`1
+  - Virtufin.Core.IAttribute`1
+  - Virtufin.Core.IDependencies
+  - Virtufin.Core.IEntity
+  - Virtufin.Core.IEntityAttributeValueTypeSpecifier
+  - Virtufin.Core.IEntityIdentifier
+  - Virtufin.Core.IObservableDependencies
+  - Virtufin.Core.IObservableProvider
+  - Virtufin.Core.IObservableProviders
+  - Virtufin.Core.IProviders
+  - Virtufin.Core.IRegistry
+  - Virtufin.Core.ITaskProvider
+  - Virtufin.Core.IValueDependencies
+  - Virtufin.Core.IValueProvider
+  - Virtufin.Core.IValueProviders
+  - Virtufin.Core.Metronome
+  - Virtufin.Core.ObservableProvider`1
+  - Virtufin.Core.Registry
+  - Virtufin.Core.TaskProvider`1
+  langs:
+  - csharp
+  - vb
+  name: Virtufin.Core
+  nameWithType: Virtufin.Core
+  fullName: Virtufin.Core
+  type: Namespace
+  assemblies:
+  - Virtufin.Core
+references:
+- uid: Virtufin.Core.Attribute`2
+  commentId: T:Virtufin.Core.Attribute`2
+  href: Virtufin.Core.Attribute-2.html
+  name: Attribute<V, I>
+  nameWithType: Attribute<V, I>
+  fullName: Virtufin.Core.Attribute<V, I>
+  nameWithType.vb: Attribute(Of V, I)
+  fullName.vb: Virtufin.Core.Attribute(Of V, I)
+  name.vb: Attribute(Of V, I)
+  spec.csharp:
+  - uid: Virtufin.Core.Attribute`2
+    name: Attribute
+    href: Virtufin.Core.Attribute-2.html
+  - name: <
+  - name: V
+  - name: ','
+  - name: " "
+  - name: I
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Attribute`2
+    name: Attribute
+    href: Virtufin.Core.Attribute-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: V
+  - name: ','
+  - name: " "
+  - name: I
+  - name: )
+- uid: Virtufin.Core.DictionaryValueProvider`1
+  commentId: T:Virtufin.Core.DictionaryValueProvider`1
+  href: Virtufin.Core.DictionaryValueProvider-1.html
+  name: DictionaryValueProvider<V>
+  nameWithType: DictionaryValueProvider<V>
+  fullName: Virtufin.Core.DictionaryValueProvider<V>
+  nameWithType.vb: DictionaryValueProvider(Of V)
+  fullName.vb: Virtufin.Core.DictionaryValueProvider(Of V)
+  name.vb: DictionaryValueProvider(Of V)
+  spec.csharp:
+  - uid: Virtufin.Core.DictionaryValueProvider`1
+    name: DictionaryValueProvider
+    href: Virtufin.Core.DictionaryValueProvider-1.html
+  - name: <
+  - name: V
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.DictionaryValueProvider`1
+    name: DictionaryValueProvider
+    href: Virtufin.Core.DictionaryValueProvider-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: V
+  - name: )
+- uid: Virtufin.Core.EntityAttributeValueTypeSpecifier`1
+  commentId: T:Virtufin.Core.EntityAttributeValueTypeSpecifier`1
+  href: Virtufin.Core.EntityAttributeValueTypeSpecifier-1.html
+  name: EntityAttributeValueTypeSpecifier<V>
+  nameWithType: EntityAttributeValueTypeSpecifier<V>
+  fullName: Virtufin.Core.EntityAttributeValueTypeSpecifier<V>
+  nameWithType.vb: EntityAttributeValueTypeSpecifier(Of V)
+  fullName.vb: Virtufin.Core.EntityAttributeValueTypeSpecifier(Of V)
+  name.vb: EntityAttributeValueTypeSpecifier(Of V)
+  spec.csharp:
+  - uid: Virtufin.Core.EntityAttributeValueTypeSpecifier`1
+    name: EntityAttributeValueTypeSpecifier
+    href: Virtufin.Core.EntityAttributeValueTypeSpecifier-1.html
+  - name: <
+  - name: V
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.EntityAttributeValueTypeSpecifier`1
+    name: EntityAttributeValueTypeSpecifier
+    href: Virtufin.Core.EntityAttributeValueTypeSpecifier-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: V
+  - name: )
+- uid: Virtufin.Core.EntityIdentifier`1
+  commentId: T:Virtufin.Core.EntityIdentifier`1
+  href: Virtufin.Core.EntityIdentifier-1.html
+  name: EntityIdentifier<I>
+  nameWithType: EntityIdentifier<I>
+  fullName: Virtufin.Core.EntityIdentifier<I>
+  nameWithType.vb: EntityIdentifier(Of I)
+  fullName.vb: Virtufin.Core.EntityIdentifier(Of I)
+  name.vb: EntityIdentifier(Of I)
+  spec.csharp:
+  - uid: Virtufin.Core.EntityIdentifier`1
+    name: EntityIdentifier
+    href: Virtufin.Core.EntityIdentifier-1.html
+  - name: <
+  - name: I
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.EntityIdentifier`1
+    name: EntityIdentifier
+    href: Virtufin.Core.EntityIdentifier-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: I
+  - name: )
+- uid: Virtufin.Core.FunctionValueProvider`1
+  commentId: T:Virtufin.Core.FunctionValueProvider`1
+  href: Virtufin.Core.FunctionValueProvider-1.html
+  name: FunctionValueProvider<V>
+  nameWithType: FunctionValueProvider<V>
+  fullName: Virtufin.Core.FunctionValueProvider<V>
+  nameWithType.vb: FunctionValueProvider(Of V)
+  fullName.vb: Virtufin.Core.FunctionValueProvider(Of V)
+  name.vb: FunctionValueProvider(Of V)
+  spec.csharp:
+  - uid: Virtufin.Core.FunctionValueProvider`1
+    name: FunctionValueProvider
+    href: Virtufin.Core.FunctionValueProvider-1.html
+  - name: <
+  - name: V
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.FunctionValueProvider`1
+    name: FunctionValueProvider
+    href: Virtufin.Core.FunctionValueProvider-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: V
+  - name: )
+- uid: Virtufin.Core.IAttribute`1
+  commentId: T:Virtufin.Core.IAttribute`1
+  href: Virtufin.Core.IAttribute-1.html
+  name: IAttribute<V>
+  nameWithType: IAttribute<V>
+  fullName: Virtufin.Core.IAttribute<V>
+  nameWithType.vb: IAttribute(Of V)
+  fullName.vb: Virtufin.Core.IAttribute(Of V)
+  name.vb: IAttribute(Of V)
+  spec.csharp:
+  - uid: Virtufin.Core.IAttribute`1
+    name: IAttribute
+    href: Virtufin.Core.IAttribute-1.html
+  - name: <
+  - name: V
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.IAttribute`1
+    name: IAttribute
+    href: Virtufin.Core.IAttribute-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: V
+  - name: )
+- uid: Virtufin.Core.IDependencies
+  commentId: T:Virtufin.Core.IDependencies
+  href: Virtufin.Core.IDependencies.html
+  name: IDependencies
+  nameWithType: IDependencies
+  fullName: Virtufin.Core.IDependencies
+- uid: Virtufin.Core.IValueDependencies
+  commentId: T:Virtufin.Core.IValueDependencies
+  parent: Virtufin.Core
+  href: Virtufin.Core.IValueDependencies.html
+  name: IValueDependencies
+  nameWithType: IValueDependencies
+  fullName: Virtufin.Core.IValueDependencies
+- uid: Virtufin.Core.IObservableDependencies
+  commentId: T:Virtufin.Core.IObservableDependencies
+  parent: Virtufin.Core
+  href: Virtufin.Core.IObservableDependencies.html
+  name: IObservableDependencies
+  nameWithType: IObservableDependencies
+  fullName: Virtufin.Core.IObservableDependencies
+- uid: Virtufin.Core.IEntity
+  commentId: T:Virtufin.Core.IEntity
+  href: Virtufin.Core.IEntity.html
+  name: IEntity
+  nameWithType: IEntity
+  fullName: Virtufin.Core.IEntity
+- uid: Virtufin.Core.IEntityAttributeValueTypeSpecifier
+  commentId: T:Virtufin.Core.IEntityAttributeValueTypeSpecifier
+  parent: Virtufin.Core
+  href: Virtufin.Core.IEntityAttributeValueTypeSpecifier.html
+  name: IEntityAttributeValueTypeSpecifier
+  nameWithType: IEntityAttributeValueTypeSpecifier
+  fullName: Virtufin.Core.IEntityAttributeValueTypeSpecifier
+- uid: Virtufin.Core.IEntityIdentifier
+  commentId: T:Virtufin.Core.IEntityIdentifier
+  parent: Virtufin.Core
+  href: Virtufin.Core.IEntityIdentifier.html
+  name: IEntityIdentifier
+  nameWithType: IEntityIdentifier
+  fullName: Virtufin.Core.IEntityIdentifier
+- uid: Virtufin.Core.IObservableProvider
+  commentId: T:Virtufin.Core.IObservableProvider
+  parent: Virtufin.Core
+  href: Virtufin.Core.IObservableProvider.html
+  name: IObservableProvider
+  nameWithType: IObservableProvider
+  fullName: Virtufin.Core.IObservableProvider
+- uid: Virtufin.Core.IProviders
+  commentId: T:Virtufin.Core.IProviders
+  href: Virtufin.Core.IProviders.html
+  name: IProviders
+  nameWithType: IProviders
+  fullName: Virtufin.Core.IProviders
+- uid: Virtufin.Core.IValueProviders
+  commentId: T:Virtufin.Core.IValueProviders
+  parent: Virtufin.Core
+  href: Virtufin.Core.IValueProviders.html
+  name: IValueProviders
+  nameWithType: IValueProviders
+  fullName: Virtufin.Core.IValueProviders
+- uid: Virtufin.Core.IObservableProviders
+  commentId: T:Virtufin.Core.IObservableProviders
+  parent: Virtufin.Core
+  href: Virtufin.Core.IObservableProviders.html
+  name: IObservableProviders
+  nameWithType: IObservableProviders
+  fullName: Virtufin.Core.IObservableProviders
+- uid: Virtufin.Core.IRegistry
+  commentId: T:Virtufin.Core.IRegistry
+  parent: Virtufin.Core
+  href: Virtufin.Core.IRegistry.html
+  name: IRegistry
+  nameWithType: IRegistry
+  fullName: Virtufin.Core.IRegistry
+- uid: Virtufin.Core.ITaskProvider
+  commentId: T:Virtufin.Core.ITaskProvider
+  parent: Virtufin.Core
+  href: Virtufin.Core.ITaskProvider.html
+  name: ITaskProvider
+  nameWithType: ITaskProvider
+  fullName: Virtufin.Core.ITaskProvider
+- uid: Virtufin.Core.IValueProvider
+  commentId: T:Virtufin.Core.IValueProvider
+  parent: Virtufin.Core
+  href: Virtufin.Core.IValueProvider.html
+  name: IValueProvider
+  nameWithType: IValueProvider
+  fullName: Virtufin.Core.IValueProvider
+- uid: Virtufin.Core.Metronome
+  commentId: T:Virtufin.Core.Metronome
+  href: Virtufin.Core.Metronome.html
+  name: Metronome
+  nameWithType: Metronome
+  fullName: Virtufin.Core.Metronome
+- uid: Virtufin.Core.ObservableProvider`1
+  commentId: T:Virtufin.Core.ObservableProvider`1
+  href: Virtufin.Core.ObservableProvider-1.html
+  name: ObservableProvider<V>
+  nameWithType: ObservableProvider<V>
+  fullName: Virtufin.Core.ObservableProvider<V>
+  nameWithType.vb: ObservableProvider(Of V)
+  fullName.vb: Virtufin.Core.ObservableProvider(Of V)
+  name.vb: ObservableProvider(Of V)
+  spec.csharp:
+  - uid: Virtufin.Core.ObservableProvider`1
+    name: ObservableProvider
+    href: Virtufin.Core.ObservableProvider-1.html
+  - name: <
+  - name: V
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.ObservableProvider`1
+    name: ObservableProvider
+    href: Virtufin.Core.ObservableProvider-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: V
+  - name: )
+- uid: Virtufin.Core.Registry
+  commentId: T:Virtufin.Core.Registry
+  href: Virtufin.Core.Registry.html
+  name: Registry
+  nameWithType: Registry
+  fullName: Virtufin.Core.Registry
+- uid: Virtufin.Core.TaskProvider`1
+  commentId: T:Virtufin.Core.TaskProvider`1
+  href: Virtufin.Core.TaskProvider-1.html
+  name: TaskProvider<V>
+  nameWithType: TaskProvider<V>
+  fullName: Virtufin.Core.TaskProvider<V>
+  nameWithType.vb: TaskProvider(Of V)
+  fullName.vb: Virtufin.Core.TaskProvider(Of V)
+  name.vb: TaskProvider(Of V)
+  spec.csharp:
+  - uid: Virtufin.Core.TaskProvider`1
+    name: TaskProvider
+    href: Virtufin.Core.TaskProvider-1.html
+  - name: <
+  - name: V
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.TaskProvider`1
+    name: TaskProvider
+    href: Virtufin.Core.TaskProvider-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: V
+  - name: )
+- uid: Virtufin.Core
+  commentId: N:Virtufin.Core
+  href: Virtufin.html
+  name: Virtufin.Core
+  nameWithType: Virtufin.Core
+  fullName: Virtufin.Core
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html

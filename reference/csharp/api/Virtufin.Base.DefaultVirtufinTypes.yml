@@ -1,0 +1,844 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.DefaultVirtufinTypes
+  commentId: T:Virtufin.Base.DefaultVirtufinTypes
+  id: DefaultVirtufinTypes
+  parent: Virtufin.Base
+  children:
+  - Virtufin.Base.DefaultVirtufinTypes.AssetIdentifierType
+  - Virtufin.Base.DefaultVirtufinTypes.ContractIdentifierType
+  - Virtufin.Base.DefaultVirtufinTypes.ContractParametersType
+  - Virtufin.Base.DefaultVirtufinTypes.Instance
+  - Virtufin.Base.DefaultVirtufinTypes.MessageType
+  - Virtufin.Base.DefaultVirtufinTypes.ScenarioHistoryType
+  - Virtufin.Base.DefaultVirtufinTypes.ScenarioType
+  - Virtufin.Base.DefaultVirtufinTypes.SignatoryType
+  - Virtufin.Base.DefaultVirtufinTypes.StateType
+  - Virtufin.Base.DefaultVirtufinTypes.TimeStampType
+  - Virtufin.Base.DefaultVirtufinTypes.TransactionType
+  langs:
+  - csharp
+  - vb
+  name: DefaultVirtufinTypes
+  nameWithType: DefaultVirtufinTypes
+  fullName: Virtufin.Base.DefaultVirtufinTypes
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Base/DefaultVirtufinTypes.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: DefaultVirtufinTypes
+    path: ../../../src/Virtufin.Base/DefaultVirtufinTypes.cs
+    startLine: 10
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: >-
+    Default <xref href="Virtufin.Core.VirtufinTypes.IVirtufinTypes" data-throw-if-not-resolved="false"></xref> implementation: returns the
+
+    <xref href="System.Type" data-throw-if-not-resolved="false"></xref> of every concrete type in <code>Virtufin.Base</code>
+
+    that implements the corresponding <code>Virtufin.Core</code> identifier or
+
+    contract interface.
+  example: []
+  syntax:
+    content: 'public sealed class DefaultVirtufinTypes : IVirtufinTypes'
+    content.vb: Public NotInheritable Class DefaultVirtufinTypes Implements IVirtufinTypes
+  inheritance:
+  - System.Object
+  implements:
+  - Virtufin.Core.VirtufinTypes.IVirtufinTypes
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.Base.DefaultVirtufinTypes.Instance
+  commentId: P:Virtufin.Base.DefaultVirtufinTypes.Instance
+  id: Instance
+  parent: Virtufin.Base.DefaultVirtufinTypes
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: DefaultVirtufinTypes.Instance
+  fullName: Virtufin.Base.DefaultVirtufinTypes.Instance
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/DefaultVirtufinTypes.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Instance
+    path: ../../../src/Virtufin.Base/DefaultVirtufinTypes.cs
+    startLine: 13
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Singleton instance.
+  example: []
+  syntax:
+    content: public static DefaultVirtufinTypes Instance { get; }
+    parameters: []
+    return:
+      type: Virtufin.Base.DefaultVirtufinTypes
+    content.vb: Public Shared ReadOnly Property Instance As DefaultVirtufinTypes
+  overload: Virtufin.Base.DefaultVirtufinTypes.Instance*
+- uid: Virtufin.Base.DefaultVirtufinTypes.TimeStampType
+  commentId: P:Virtufin.Base.DefaultVirtufinTypes.TimeStampType
+  id: TimeStampType
+  parent: Virtufin.Base.DefaultVirtufinTypes
+  langs:
+  - csharp
+  - vb
+  name: TimeStampType
+  nameWithType: DefaultVirtufinTypes.TimeStampType
+  fullName: Virtufin.Base.DefaultVirtufinTypes.TimeStampType
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/DefaultVirtufinTypes.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: TimeStampType
+    path: ../../../src/Virtufin.Base/DefaultVirtufinTypes.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Type of <code>TimeStamp</code> (must implement <code>ITimeStamp</code>).
+  example: []
+  syntax:
+    content: public Type TimeStampType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public ReadOnly Property TimeStampType As Type
+  overload: Virtufin.Base.DefaultVirtufinTypes.TimeStampType*
+  implements:
+  - Virtufin.Core.VirtufinTypes.IVirtufinTypes.TimeStampType
+- uid: Virtufin.Base.DefaultVirtufinTypes.SignatoryType
+  commentId: P:Virtufin.Base.DefaultVirtufinTypes.SignatoryType
+  id: SignatoryType
+  parent: Virtufin.Base.DefaultVirtufinTypes
+  langs:
+  - csharp
+  - vb
+  name: SignatoryType
+  nameWithType: DefaultVirtufinTypes.SignatoryType
+  fullName: Virtufin.Base.DefaultVirtufinTypes.SignatoryType
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/DefaultVirtufinTypes.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: SignatoryType
+    path: ../../../src/Virtufin.Base/DefaultVirtufinTypes.cs
+    startLine: 21
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Type of <code>Signatory</code> (must implement <code>ISignatory</code>).
+  example: []
+  syntax:
+    content: public Type SignatoryType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public ReadOnly Property SignatoryType As Type
+  overload: Virtufin.Base.DefaultVirtufinTypes.SignatoryType*
+  implements:
+  - Virtufin.Core.VirtufinTypes.IVirtufinTypes.SignatoryType
+- uid: Virtufin.Base.DefaultVirtufinTypes.TransactionType
+  commentId: P:Virtufin.Base.DefaultVirtufinTypes.TransactionType
+  id: TransactionType
+  parent: Virtufin.Base.DefaultVirtufinTypes
+  langs:
+  - csharp
+  - vb
+  name: TransactionType
+  nameWithType: DefaultVirtufinTypes.TransactionType
+  fullName: Virtufin.Base.DefaultVirtufinTypes.TransactionType
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/DefaultVirtufinTypes.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: TransactionType
+    path: ../../../src/Virtufin.Base/DefaultVirtufinTypes.cs
+    startLine: 24
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Type of <code>Transaction</code> (must implement <code>ITransaction</code>).
+  example: []
+  syntax:
+    content: public Type TransactionType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public ReadOnly Property TransactionType As Type
+  overload: Virtufin.Base.DefaultVirtufinTypes.TransactionType*
+  implements:
+  - Virtufin.Core.VirtufinTypes.IVirtufinTypes.TransactionType
+- uid: Virtufin.Base.DefaultVirtufinTypes.MessageType
+  commentId: P:Virtufin.Base.DefaultVirtufinTypes.MessageType
+  id: MessageType
+  parent: Virtufin.Base.DefaultVirtufinTypes
+  langs:
+  - csharp
+  - vb
+  name: MessageType
+  nameWithType: DefaultVirtufinTypes.MessageType
+  fullName: Virtufin.Base.DefaultVirtufinTypes.MessageType
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/DefaultVirtufinTypes.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: MessageType
+    path: ../../../src/Virtufin.Base/DefaultVirtufinTypes.cs
+    startLine: 27
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Type of <code>Message</code> (must implement <code>IMessage</code>).
+  example: []
+  syntax:
+    content: public Type MessageType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public ReadOnly Property MessageType As Type
+  overload: Virtufin.Base.DefaultVirtufinTypes.MessageType*
+  implements:
+  - Virtufin.Core.VirtufinTypes.IVirtufinTypes.MessageType
+- uid: Virtufin.Base.DefaultVirtufinTypes.AssetIdentifierType
+  commentId: P:Virtufin.Base.DefaultVirtufinTypes.AssetIdentifierType
+  id: AssetIdentifierType
+  parent: Virtufin.Base.DefaultVirtufinTypes
+  langs:
+  - csharp
+  - vb
+  name: AssetIdentifierType
+  nameWithType: DefaultVirtufinTypes.AssetIdentifierType
+  fullName: Virtufin.Base.DefaultVirtufinTypes.AssetIdentifierType
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/DefaultVirtufinTypes.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: AssetIdentifierType
+    path: ../../../src/Virtufin.Base/DefaultVirtufinTypes.cs
+    startLine: 30
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Type of <code>AssetIdentifier</code> (must implement <code>IAssetIdentifier</code>).
+  example: []
+  syntax:
+    content: public Type AssetIdentifierType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public ReadOnly Property AssetIdentifierType As Type
+  overload: Virtufin.Base.DefaultVirtufinTypes.AssetIdentifierType*
+  implements:
+  - Virtufin.Core.VirtufinTypes.IVirtufinTypes.AssetIdentifierType
+- uid: Virtufin.Base.DefaultVirtufinTypes.ContractIdentifierType
+  commentId: P:Virtufin.Base.DefaultVirtufinTypes.ContractIdentifierType
+  id: ContractIdentifierType
+  parent: Virtufin.Base.DefaultVirtufinTypes
+  langs:
+  - csharp
+  - vb
+  name: ContractIdentifierType
+  nameWithType: DefaultVirtufinTypes.ContractIdentifierType
+  fullName: Virtufin.Base.DefaultVirtufinTypes.ContractIdentifierType
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/DefaultVirtufinTypes.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ContractIdentifierType
+    path: ../../../src/Virtufin.Base/DefaultVirtufinTypes.cs
+    startLine: 33
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Type of <code>ContractIdentifier</code> (must implement <code>IContractIdentifier</code>).
+  example: []
+  syntax:
+    content: public Type ContractIdentifierType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public ReadOnly Property ContractIdentifierType As Type
+  overload: Virtufin.Base.DefaultVirtufinTypes.ContractIdentifierType*
+  implements:
+  - Virtufin.Core.VirtufinTypes.IVirtufinTypes.ContractIdentifierType
+- uid: Virtufin.Base.DefaultVirtufinTypes.StateType
+  commentId: P:Virtufin.Base.DefaultVirtufinTypes.StateType
+  id: StateType
+  parent: Virtufin.Base.DefaultVirtufinTypes
+  langs:
+  - csharp
+  - vb
+  name: StateType
+  nameWithType: DefaultVirtufinTypes.StateType
+  fullName: Virtufin.Base.DefaultVirtufinTypes.StateType
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/DefaultVirtufinTypes.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: StateType
+    path: ../../../src/Virtufin.Base/DefaultVirtufinTypes.cs
+    startLine: 36
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Type of <code>State</code> (must implement <code>IState</code>).
+  example: []
+  syntax:
+    content: public Type StateType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public ReadOnly Property StateType As Type
+  overload: Virtufin.Base.DefaultVirtufinTypes.StateType*
+  implements:
+  - Virtufin.Core.VirtufinTypes.IVirtufinTypes.StateType
+- uid: Virtufin.Base.DefaultVirtufinTypes.ScenarioType
+  commentId: P:Virtufin.Base.DefaultVirtufinTypes.ScenarioType
+  id: ScenarioType
+  parent: Virtufin.Base.DefaultVirtufinTypes
+  langs:
+  - csharp
+  - vb
+  name: ScenarioType
+  nameWithType: DefaultVirtufinTypes.ScenarioType
+  fullName: Virtufin.Base.DefaultVirtufinTypes.ScenarioType
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/DefaultVirtufinTypes.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ScenarioType
+    path: ../../../src/Virtufin.Base/DefaultVirtufinTypes.cs
+    startLine: 39
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Type of <code>Scenario</code> (must implement <code>IScenario</code>).
+  example: []
+  syntax:
+    content: public Type ScenarioType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public ReadOnly Property ScenarioType As Type
+  overload: Virtufin.Base.DefaultVirtufinTypes.ScenarioType*
+  implements:
+  - Virtufin.Core.VirtufinTypes.IVirtufinTypes.ScenarioType
+- uid: Virtufin.Base.DefaultVirtufinTypes.ScenarioHistoryType
+  commentId: P:Virtufin.Base.DefaultVirtufinTypes.ScenarioHistoryType
+  id: ScenarioHistoryType
+  parent: Virtufin.Base.DefaultVirtufinTypes
+  langs:
+  - csharp
+  - vb
+  name: ScenarioHistoryType
+  nameWithType: DefaultVirtufinTypes.ScenarioHistoryType
+  fullName: Virtufin.Base.DefaultVirtufinTypes.ScenarioHistoryType
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/DefaultVirtufinTypes.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ScenarioHistoryType
+    path: ../../../src/Virtufin.Base/DefaultVirtufinTypes.cs
+    startLine: 42
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Type of <code>ScenarioHistory</code> (must implement <code>IScenarioHistory</code>).
+  example: []
+  syntax:
+    content: public Type ScenarioHistoryType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public ReadOnly Property ScenarioHistoryType As Type
+  overload: Virtufin.Base.DefaultVirtufinTypes.ScenarioHistoryType*
+  implements:
+  - Virtufin.Core.VirtufinTypes.IVirtufinTypes.ScenarioHistoryType
+- uid: Virtufin.Base.DefaultVirtufinTypes.ContractParametersType
+  commentId: P:Virtufin.Base.DefaultVirtufinTypes.ContractParametersType
+  id: ContractParametersType
+  parent: Virtufin.Base.DefaultVirtufinTypes
+  langs:
+  - csharp
+  - vb
+  name: ContractParametersType
+  nameWithType: DefaultVirtufinTypes.ContractParametersType
+  fullName: Virtufin.Base.DefaultVirtufinTypes.ContractParametersType
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/DefaultVirtufinTypes.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ContractParametersType
+    path: ../../../src/Virtufin.Base/DefaultVirtufinTypes.cs
+    startLine: 45
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Type of <code>ContractParameters</code> (must implement <code>IContractParameters</code>).
+  example: []
+  syntax:
+    content: public Type ContractParametersType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public ReadOnly Property ContractParametersType As Type
+  overload: Virtufin.Base.DefaultVirtufinTypes.ContractParametersType*
+  implements:
+  - Virtufin.Core.VirtufinTypes.IVirtufinTypes.ContractParametersType
+references:
+- uid: Virtufin.Core.VirtufinTypes.IVirtufinTypes
+  commentId: T:Virtufin.Core.VirtufinTypes.IVirtufinTypes
+  parent: Virtufin.Core.VirtufinTypes
+  href: Virtufin.Core.VirtufinTypes.IVirtufinTypes.html
+  name: IVirtufinTypes
+  nameWithType: IVirtufinTypes
+  fullName: Virtufin.Core.VirtufinTypes.IVirtufinTypes
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Virtufin.Base
+  commentId: N:Virtufin.Base
+  href: Virtufin.html
+  name: Virtufin.Base
+  nameWithType: Virtufin.Base
+  fullName: Virtufin.Base
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Virtufin.Core.VirtufinTypes
+  commentId: N:Virtufin.Core.VirtufinTypes
+  href: Virtufin.html
+  name: Virtufin.Core.VirtufinTypes
+  nameWithType: Virtufin.Core.VirtufinTypes
+  fullName: Virtufin.Core.VirtufinTypes
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.VirtufinTypes
+    name: VirtufinTypes
+    href: Virtufin.Core.VirtufinTypes.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.VirtufinTypes
+    name: VirtufinTypes
+    href: Virtufin.Core.VirtufinTypes.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Base.DefaultVirtufinTypes.Instance*
+  commentId: Overload:Virtufin.Base.DefaultVirtufinTypes.Instance
+  href: Virtufin.Base.DefaultVirtufinTypes.html#Virtufin_Base_DefaultVirtufinTypes_Instance
+  name: Instance
+  nameWithType: DefaultVirtufinTypes.Instance
+  fullName: Virtufin.Base.DefaultVirtufinTypes.Instance
+- uid: Virtufin.Base.DefaultVirtufinTypes
+  commentId: T:Virtufin.Base.DefaultVirtufinTypes
+  parent: Virtufin.Base
+  href: Virtufin.Base.DefaultVirtufinTypes.html
+  name: DefaultVirtufinTypes
+  nameWithType: DefaultVirtufinTypes
+  fullName: Virtufin.Base.DefaultVirtufinTypes
+- uid: Virtufin.Base.DefaultVirtufinTypes.TimeStampType*
+  commentId: Overload:Virtufin.Base.DefaultVirtufinTypes.TimeStampType
+  href: Virtufin.Base.DefaultVirtufinTypes.html#Virtufin_Base_DefaultVirtufinTypes_TimeStampType
+  name: TimeStampType
+  nameWithType: DefaultVirtufinTypes.TimeStampType
+  fullName: Virtufin.Base.DefaultVirtufinTypes.TimeStampType
+- uid: Virtufin.Core.VirtufinTypes.IVirtufinTypes.TimeStampType
+  commentId: P:Virtufin.Core.VirtufinTypes.IVirtufinTypes.TimeStampType
+  parent: Virtufin.Core.VirtufinTypes.IVirtufinTypes
+  href: Virtufin.Core.VirtufinTypes.IVirtufinTypes.html#Virtufin_Core_VirtufinTypes_IVirtufinTypes_TimeStampType
+  name: TimeStampType
+  nameWithType: IVirtufinTypes.TimeStampType
+  fullName: Virtufin.Core.VirtufinTypes.IVirtufinTypes.TimeStampType
+- uid: Virtufin.Base.DefaultVirtufinTypes.SignatoryType*
+  commentId: Overload:Virtufin.Base.DefaultVirtufinTypes.SignatoryType
+  href: Virtufin.Base.DefaultVirtufinTypes.html#Virtufin_Base_DefaultVirtufinTypes_SignatoryType
+  name: SignatoryType
+  nameWithType: DefaultVirtufinTypes.SignatoryType
+  fullName: Virtufin.Base.DefaultVirtufinTypes.SignatoryType
+- uid: Virtufin.Core.VirtufinTypes.IVirtufinTypes.SignatoryType
+  commentId: P:Virtufin.Core.VirtufinTypes.IVirtufinTypes.SignatoryType
+  parent: Virtufin.Core.VirtufinTypes.IVirtufinTypes
+  href: Virtufin.Core.VirtufinTypes.IVirtufinTypes.html#Virtufin_Core_VirtufinTypes_IVirtufinTypes_SignatoryType
+  name: SignatoryType
+  nameWithType: IVirtufinTypes.SignatoryType
+  fullName: Virtufin.Core.VirtufinTypes.IVirtufinTypes.SignatoryType
+- uid: Virtufin.Base.DefaultVirtufinTypes.TransactionType*
+  commentId: Overload:Virtufin.Base.DefaultVirtufinTypes.TransactionType
+  href: Virtufin.Base.DefaultVirtufinTypes.html#Virtufin_Base_DefaultVirtufinTypes_TransactionType
+  name: TransactionType
+  nameWithType: DefaultVirtufinTypes.TransactionType
+  fullName: Virtufin.Base.DefaultVirtufinTypes.TransactionType
+- uid: Virtufin.Core.VirtufinTypes.IVirtufinTypes.TransactionType
+  commentId: P:Virtufin.Core.VirtufinTypes.IVirtufinTypes.TransactionType
+  parent: Virtufin.Core.VirtufinTypes.IVirtufinTypes
+  href: Virtufin.Core.VirtufinTypes.IVirtufinTypes.html#Virtufin_Core_VirtufinTypes_IVirtufinTypes_TransactionType
+  name: TransactionType
+  nameWithType: IVirtufinTypes.TransactionType
+  fullName: Virtufin.Core.VirtufinTypes.IVirtufinTypes.TransactionType
+- uid: Virtufin.Base.DefaultVirtufinTypes.MessageType*
+  commentId: Overload:Virtufin.Base.DefaultVirtufinTypes.MessageType
+  href: Virtufin.Base.DefaultVirtufinTypes.html#Virtufin_Base_DefaultVirtufinTypes_MessageType
+  name: MessageType
+  nameWithType: DefaultVirtufinTypes.MessageType
+  fullName: Virtufin.Base.DefaultVirtufinTypes.MessageType
+- uid: Virtufin.Core.VirtufinTypes.IVirtufinTypes.MessageType
+  commentId: P:Virtufin.Core.VirtufinTypes.IVirtufinTypes.MessageType
+  parent: Virtufin.Core.VirtufinTypes.IVirtufinTypes
+  href: Virtufin.Core.VirtufinTypes.IVirtufinTypes.html#Virtufin_Core_VirtufinTypes_IVirtufinTypes_MessageType
+  name: MessageType
+  nameWithType: IVirtufinTypes.MessageType
+  fullName: Virtufin.Core.VirtufinTypes.IVirtufinTypes.MessageType
+- uid: Virtufin.Base.DefaultVirtufinTypes.AssetIdentifierType*
+  commentId: Overload:Virtufin.Base.DefaultVirtufinTypes.AssetIdentifierType
+  href: Virtufin.Base.DefaultVirtufinTypes.html#Virtufin_Base_DefaultVirtufinTypes_AssetIdentifierType
+  name: AssetIdentifierType
+  nameWithType: DefaultVirtufinTypes.AssetIdentifierType
+  fullName: Virtufin.Base.DefaultVirtufinTypes.AssetIdentifierType
+- uid: Virtufin.Core.VirtufinTypes.IVirtufinTypes.AssetIdentifierType
+  commentId: P:Virtufin.Core.VirtufinTypes.IVirtufinTypes.AssetIdentifierType
+  parent: Virtufin.Core.VirtufinTypes.IVirtufinTypes
+  href: Virtufin.Core.VirtufinTypes.IVirtufinTypes.html#Virtufin_Core_VirtufinTypes_IVirtufinTypes_AssetIdentifierType
+  name: AssetIdentifierType
+  nameWithType: IVirtufinTypes.AssetIdentifierType
+  fullName: Virtufin.Core.VirtufinTypes.IVirtufinTypes.AssetIdentifierType
+- uid: Virtufin.Base.DefaultVirtufinTypes.ContractIdentifierType*
+  commentId: Overload:Virtufin.Base.DefaultVirtufinTypes.ContractIdentifierType
+  href: Virtufin.Base.DefaultVirtufinTypes.html#Virtufin_Base_DefaultVirtufinTypes_ContractIdentifierType
+  name: ContractIdentifierType
+  nameWithType: DefaultVirtufinTypes.ContractIdentifierType
+  fullName: Virtufin.Base.DefaultVirtufinTypes.ContractIdentifierType
+- uid: Virtufin.Core.VirtufinTypes.IVirtufinTypes.ContractIdentifierType
+  commentId: P:Virtufin.Core.VirtufinTypes.IVirtufinTypes.ContractIdentifierType
+  parent: Virtufin.Core.VirtufinTypes.IVirtufinTypes
+  href: Virtufin.Core.VirtufinTypes.IVirtufinTypes.html#Virtufin_Core_VirtufinTypes_IVirtufinTypes_ContractIdentifierType
+  name: ContractIdentifierType
+  nameWithType: IVirtufinTypes.ContractIdentifierType
+  fullName: Virtufin.Core.VirtufinTypes.IVirtufinTypes.ContractIdentifierType
+- uid: Virtufin.Base.DefaultVirtufinTypes.StateType*
+  commentId: Overload:Virtufin.Base.DefaultVirtufinTypes.StateType
+  href: Virtufin.Base.DefaultVirtufinTypes.html#Virtufin_Base_DefaultVirtufinTypes_StateType
+  name: StateType
+  nameWithType: DefaultVirtufinTypes.StateType
+  fullName: Virtufin.Base.DefaultVirtufinTypes.StateType
+- uid: Virtufin.Core.VirtufinTypes.IVirtufinTypes.StateType
+  commentId: P:Virtufin.Core.VirtufinTypes.IVirtufinTypes.StateType
+  parent: Virtufin.Core.VirtufinTypes.IVirtufinTypes
+  href: Virtufin.Core.VirtufinTypes.IVirtufinTypes.html#Virtufin_Core_VirtufinTypes_IVirtufinTypes_StateType
+  name: StateType
+  nameWithType: IVirtufinTypes.StateType
+  fullName: Virtufin.Core.VirtufinTypes.IVirtufinTypes.StateType
+- uid: Virtufin.Base.DefaultVirtufinTypes.ScenarioType*
+  commentId: Overload:Virtufin.Base.DefaultVirtufinTypes.ScenarioType
+  href: Virtufin.Base.DefaultVirtufinTypes.html#Virtufin_Base_DefaultVirtufinTypes_ScenarioType
+  name: ScenarioType
+  nameWithType: DefaultVirtufinTypes.ScenarioType
+  fullName: Virtufin.Base.DefaultVirtufinTypes.ScenarioType
+- uid: Virtufin.Core.VirtufinTypes.IVirtufinTypes.ScenarioType
+  commentId: P:Virtufin.Core.VirtufinTypes.IVirtufinTypes.ScenarioType
+  parent: Virtufin.Core.VirtufinTypes.IVirtufinTypes
+  href: Virtufin.Core.VirtufinTypes.IVirtufinTypes.html#Virtufin_Core_VirtufinTypes_IVirtufinTypes_ScenarioType
+  name: ScenarioType
+  nameWithType: IVirtufinTypes.ScenarioType
+  fullName: Virtufin.Core.VirtufinTypes.IVirtufinTypes.ScenarioType
+- uid: Virtufin.Base.DefaultVirtufinTypes.ScenarioHistoryType*
+  commentId: Overload:Virtufin.Base.DefaultVirtufinTypes.ScenarioHistoryType
+  href: Virtufin.Base.DefaultVirtufinTypes.html#Virtufin_Base_DefaultVirtufinTypes_ScenarioHistoryType
+  name: ScenarioHistoryType
+  nameWithType: DefaultVirtufinTypes.ScenarioHistoryType
+  fullName: Virtufin.Base.DefaultVirtufinTypes.ScenarioHistoryType
+- uid: Virtufin.Core.VirtufinTypes.IVirtufinTypes.ScenarioHistoryType
+  commentId: P:Virtufin.Core.VirtufinTypes.IVirtufinTypes.ScenarioHistoryType
+  parent: Virtufin.Core.VirtufinTypes.IVirtufinTypes
+  href: Virtufin.Core.VirtufinTypes.IVirtufinTypes.html#Virtufin_Core_VirtufinTypes_IVirtufinTypes_ScenarioHistoryType
+  name: ScenarioHistoryType
+  nameWithType: IVirtufinTypes.ScenarioHistoryType
+  fullName: Virtufin.Core.VirtufinTypes.IVirtufinTypes.ScenarioHistoryType
+- uid: Virtufin.Base.DefaultVirtufinTypes.ContractParametersType*
+  commentId: Overload:Virtufin.Base.DefaultVirtufinTypes.ContractParametersType
+  href: Virtufin.Base.DefaultVirtufinTypes.html#Virtufin_Base_DefaultVirtufinTypes_ContractParametersType
+  name: ContractParametersType
+  nameWithType: DefaultVirtufinTypes.ContractParametersType
+  fullName: Virtufin.Base.DefaultVirtufinTypes.ContractParametersType
+- uid: Virtufin.Core.VirtufinTypes.IVirtufinTypes.ContractParametersType
+  commentId: P:Virtufin.Core.VirtufinTypes.IVirtufinTypes.ContractParametersType
+  parent: Virtufin.Core.VirtufinTypes.IVirtufinTypes
+  href: Virtufin.Core.VirtufinTypes.IVirtufinTypes.html#Virtufin_Core_VirtufinTypes_IVirtufinTypes_ContractParametersType
+  name: ContractParametersType
+  nameWithType: IVirtufinTypes.ContractParametersType
+  fullName: Virtufin.Core.VirtufinTypes.IVirtufinTypes.ContractParametersType

@@ -1,0 +1,126 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Events.Lane
+  commentId: T:Virtufin.Core.Events.Lane
+  id: Lane
+  parent: Virtufin.Core.Events
+  children:
+  - Virtufin.Core.Events.Lane.Act
+  - Virtufin.Core.Events.Lane.Hyp
+  langs:
+  - csharp
+  - vb
+  name: Lane
+  nameWithType: Lane
+  fullName: Virtufin.Core.Events.Lane
+  type: Enum
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/IEventEnvelope.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Lane
+    path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
+    startLine: 51
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: Market component lane.
+  example: []
+  syntax:
+    content: public enum Lane
+    content.vb: Public Enum Lane
+- uid: Virtufin.Core.Events.Lane.Act
+  commentId: F:Virtufin.Core.Events.Lane.Act
+  id: Act
+  parent: Virtufin.Core.Events.Lane
+  langs:
+  - csharp
+  - vb
+  name: Act
+  nameWithType: Lane.Act
+  fullName: Virtufin.Core.Events.Lane.Act
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/IEventEnvelope.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Act
+    path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
+    startLine: 54
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: Actual — live data source or real account.
+  example: []
+  syntax:
+    content: Act = 0
+    return:
+      type: Virtufin.Core.Events.Lane
+- uid: Virtufin.Core.Events.Lane.Hyp
+  commentId: F:Virtufin.Core.Events.Lane.Hyp
+  id: Hyp
+  parent: Virtufin.Core.Events.Lane
+  langs:
+  - csharp
+  - vb
+  name: Hyp
+  nameWithType: Lane.Hyp
+  fullName: Virtufin.Core.Events.Lane.Hyp
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/IEventEnvelope.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Hyp
+    path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
+    startLine: 56
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: Hypothetical — replay, synthetic data, or simulated account.
+  example: []
+  syntax:
+    content: Hyp = 1
+    return:
+      type: Virtufin.Core.Events.Lane
+references:
+- uid: Virtufin.Core.Events
+  commentId: N:Virtufin.Core.Events
+  href: Virtufin.html
+  name: Virtufin.Core.Events
+  nameWithType: Virtufin.Core.Events
+  fullName: Virtufin.Core.Events
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+- uid: Virtufin.Core.Events.Lane
+  commentId: T:Virtufin.Core.Events.Lane
+  parent: Virtufin.Core.Events
+  href: Virtufin.Core.Events.Lane.html
+  name: Lane
+  nameWithType: Lane
+  fullName: Virtufin.Core.Events.Lane

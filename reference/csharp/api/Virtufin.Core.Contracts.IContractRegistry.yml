@@ -1,0 +1,185 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Contracts.IContractRegistry
+  commentId: T:Virtufin.Core.Contracts.IContractRegistry
+  id: IContractRegistry
+  parent: Virtufin.Core.Contracts
+  children:
+  - Virtufin.Core.Contracts.IContractRegistry.Get(Virtufin.Core.Identifiers.IContractIdentifier)
+  langs:
+  - csharp
+  - vb
+  name: IContractRegistry
+  nameWithType: IContractRegistry
+  fullName: Virtufin.Core.Contracts.IContractRegistry
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Contracts/IContractRegistry.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IContractRegistry
+    path: ../../../src/Virtufin.Core/Contracts/IContractRegistry.cs
+    startLine: 10
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Contracts
+  summary: >-
+    Resolves <xref href="Virtufin.Core.Contracts.IContract" data-throw-if-not-resolved="false"></xref> instances by <xref href="Virtufin.Core.Identifiers.IContractIdentifier" data-throw-if-not-resolved="false"></xref>.
+
+    Distinct from <xref href="Virtufin.Core.IRegistry" data-throw-if-not-resolved="false"></xref> in <code>Virtufin.Core</code>, which is the
+
+    EAV value/attribute registry and unrelated to the financial contract
+
+    registry.
+  example: []
+  syntax:
+    content: public interface IContractRegistry
+    content.vb: Public Interface IContractRegistry
+- uid: Virtufin.Core.Contracts.IContractRegistry.Get(Virtufin.Core.Identifiers.IContractIdentifier)
+  commentId: M:Virtufin.Core.Contracts.IContractRegistry.Get(Virtufin.Core.Identifiers.IContractIdentifier)
+  id: Get(Virtufin.Core.Identifiers.IContractIdentifier)
+  parent: Virtufin.Core.Contracts.IContractRegistry
+  langs:
+  - csharp
+  - vb
+  name: Get(IContractIdentifier)
+  nameWithType: IContractRegistry.Get(IContractIdentifier)
+  fullName: Virtufin.Core.Contracts.IContractRegistry.Get(Virtufin.Core.Identifiers.IContractIdentifier)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Contracts/IContractRegistry.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Get
+    path: ../../../src/Virtufin.Core/Contracts/IContractRegistry.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Contracts
+  summary: >-
+    Look up a contract by identifier. Returns <code>null</code> if no contract
+
+    is registered for <code class="paramref">identifier</code>.
+  example: []
+  syntax:
+    content: IContract? Get(IContractIdentifier identifier)
+    parameters:
+    - id: identifier
+      type: Virtufin.Core.Identifiers.IContractIdentifier
+      description: Identifier to resolve.
+    return:
+      type: Virtufin.Core.Contracts.IContract
+    content.vb: Function [Get](identifier As IContractIdentifier) As IContract
+  overload: Virtufin.Core.Contracts.IContractRegistry.Get*
+references:
+- uid: Virtufin.Core.Contracts.IContract
+  commentId: T:Virtufin.Core.Contracts.IContract
+  parent: Virtufin.Core.Contracts
+  href: Virtufin.Core.Contracts.IContract.html
+  name: IContract
+  nameWithType: IContract
+  fullName: Virtufin.Core.Contracts.IContract
+- uid: Virtufin.Core.Identifiers.IContractIdentifier
+  commentId: T:Virtufin.Core.Identifiers.IContractIdentifier
+  parent: Virtufin.Core.Identifiers
+  href: Virtufin.Core.Identifiers.IContractIdentifier.html
+  name: IContractIdentifier
+  nameWithType: IContractIdentifier
+  fullName: Virtufin.Core.Identifiers.IContractIdentifier
+- uid: Virtufin.Core.IRegistry
+  commentId: T:Virtufin.Core.IRegistry
+  parent: Virtufin.Core
+  href: Virtufin.Core.IRegistry.html
+  name: IRegistry
+  nameWithType: IRegistry
+  fullName: Virtufin.Core.IRegistry
+- uid: Virtufin.Core.Contracts
+  commentId: N:Virtufin.Core.Contracts
+  href: Virtufin.html
+  name: Virtufin.Core.Contracts
+  nameWithType: Virtufin.Core.Contracts
+  fullName: Virtufin.Core.Contracts
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Contracts
+    name: Contracts
+    href: Virtufin.Core.Contracts.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Contracts
+    name: Contracts
+    href: Virtufin.Core.Contracts.html
+- uid: Virtufin.Core.Identifiers
+  commentId: N:Virtufin.Core.Identifiers
+  href: Virtufin.html
+  name: Virtufin.Core.Identifiers
+  nameWithType: Virtufin.Core.Identifiers
+  fullName: Virtufin.Core.Identifiers
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html
+- uid: Virtufin.Core
+  commentId: N:Virtufin.Core
+  href: Virtufin.html
+  name: Virtufin.Core
+  nameWithType: Virtufin.Core
+  fullName: Virtufin.Core
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+- uid: Virtufin.Core.Contracts.IContractRegistry.Get*
+  commentId: Overload:Virtufin.Core.Contracts.IContractRegistry.Get
+  href: Virtufin.Core.Contracts.IContractRegistry.html#Virtufin_Core_Contracts_IContractRegistry_Get_Virtufin_Core_Identifiers_IContractIdentifier_
+  name: Get
+  nameWithType: IContractRegistry.Get
+  fullName: Virtufin.Core.Contracts.IContractRegistry.Get

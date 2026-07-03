@@ -1,0 +1,402 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Position.IAmount`1
+  commentId: T:Virtufin.Core.Position.IAmount`1
+  id: IAmount`1
+  parent: Virtufin.Core.Position
+  children:
+  - Virtufin.Core.Position.IAmount`1.GetValue
+  langs:
+  - csharp
+  - vb
+  name: IAmount<TValue>
+  nameWithType: IAmount<TValue>
+  fullName: Virtufin.Core.Position.IAmount<TValue>
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IAmount.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IAmount
+    path: ../../../src/Virtufin.Core/Position/IAmount.cs
+    startLine: 8
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    A typed monetary or physical quantity. <code class="typeparamref">TValue</code> is the
+
+    underlying representation (e.g. a tuple of whole and fractional parts for
+
+    fixed-point <code>DecimalAmount</code>).
+  example: []
+  syntax:
+    content: 'public interface IAmount<TValue> : IEquatable<IAmount<TValue>>, IComparable<IAmount<TValue>> where TValue : notnull'
+    typeParameters:
+    - id: TValue
+      description: Underlying storage type.
+    content.vb: Public Interface IAmount(Of TValue) Inherits IEquatable(Of IAmount(Of TValue)), IComparable(Of IAmount(Of TValue))
+  derivedClasses:
+  - Virtufin.Core.Position.DecimalAmount
+  inheritedMembers:
+  - System.IEquatable{Virtufin.Core.Position.IAmount`1}.Equals(Virtufin.Core.Position.IAmount{{TValue}})
+  - System.IComparable{Virtufin.Core.Position.IAmount`1}.CompareTo(Virtufin.Core.Position.IAmount{{TValue}})
+  nameWithType.vb: IAmount(Of TValue)
+  fullName.vb: Virtufin.Core.Position.IAmount(Of TValue)
+  name.vb: IAmount(Of TValue)
+- uid: Virtufin.Core.Position.IAmount`1.GetValue
+  commentId: M:Virtufin.Core.Position.IAmount`1.GetValue
+  id: GetValue
+  parent: Virtufin.Core.Position.IAmount`1
+  langs:
+  - csharp
+  - vb
+  name: GetValue()
+  nameWithType: IAmount<TValue>.GetValue()
+  fullName: Virtufin.Core.Position.IAmount<TValue>.GetValue()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IAmount.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GetValue
+    path: ../../../src/Virtufin.Core/Position/IAmount.cs
+    startLine: 12
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Retrieve the underlying value.
+  example: []
+  syntax:
+    content: TValue GetValue()
+    return:
+      type: '{TValue}'
+    content.vb: Function GetValue() As TValue
+  overload: Virtufin.Core.Position.IAmount`1.GetValue*
+  nameWithType.vb: IAmount(Of TValue).GetValue()
+  fullName.vb: Virtufin.Core.Position.IAmount(Of TValue).GetValue()
+references:
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: System.IEquatable{Virtufin.Core.Position.IAmount`1}.Equals(Virtufin.Core.Position.IAmount{{TValue}})
+  commentId: M:System.IEquatable{Virtufin.Core.Position.IAmount`1}.Equals(Virtufin.Core.Position.IAmount{`0})
+  parent: System.IEquatable{Virtufin.Core.Position.IAmount`1}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(IAmount<TValue>)
+  nameWithType: IEquatable<IAmount<TValue>>.Equals(IAmount<TValue>)
+  fullName: System.IEquatable<Virtufin.Core.Position.IAmount<TValue>>.Equals(Virtufin.Core.Position.IAmount<TValue>)
+  nameWithType.vb: IEquatable(Of IAmount(Of TValue)).Equals(IAmount(Of TValue))
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Position.IAmount(Of TValue)).Equals(Virtufin.Core.Position.IAmount(Of TValue))
+  name.vb: Equals(IAmount(Of TValue))
+  spec.csharp:
+  - uid: System.IEquatable{Virtufin.Core.Position.IAmount`1}.Equals(Virtufin.Core.Position.IAmount{`0})
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Position.IAmount`1
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount-1.html
+  - name: <
+  - name: TValue
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Virtufin.Core.Position.IAmount`1}.Equals(Virtufin.Core.Position.IAmount{`0})
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Position.IAmount`1
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: )
+- uid: System.IComparable{Virtufin.Core.Position.IAmount`1}.CompareTo(Virtufin.Core.Position.IAmount{{TValue}})
+  commentId: M:System.IComparable{Virtufin.Core.Position.IAmount`1}.CompareTo(Virtufin.Core.Position.IAmount{`0})
+  parent: System.IComparable{Virtufin.Core.Position.IAmount`1}
+  definition: System.IComparable`1.CompareTo(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  name: CompareTo(IAmount<TValue>)
+  nameWithType: IComparable<IAmount<TValue>>.CompareTo(IAmount<TValue>)
+  fullName: System.IComparable<Virtufin.Core.Position.IAmount<TValue>>.CompareTo(Virtufin.Core.Position.IAmount<TValue>)
+  nameWithType.vb: IComparable(Of IAmount(Of TValue)).CompareTo(IAmount(Of TValue))
+  fullName.vb: System.IComparable(Of Virtufin.Core.Position.IAmount(Of TValue)).CompareTo(Virtufin.Core.Position.IAmount(Of TValue))
+  name.vb: CompareTo(IAmount(Of TValue))
+  spec.csharp:
+  - uid: System.IComparable{Virtufin.Core.Position.IAmount`1}.CompareTo(Virtufin.Core.Position.IAmount{`0})
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - uid: Virtufin.Core.Position.IAmount`1
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount-1.html
+  - name: <
+  - name: TValue
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.IComparable{Virtufin.Core.Position.IAmount`1}.CompareTo(Virtufin.Core.Position.IAmount{`0})
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - uid: Virtufin.Core.Position.IAmount`1
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IEquatable{Virtufin.Core.Position.IAmount`1}
+  commentId: T:System.IEquatable{Virtufin.Core.Position.IAmount`1}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<IAmount<TValue>>
+  nameWithType: IEquatable<IAmount<TValue>>
+  fullName: System.IEquatable<Virtufin.Core.Position.IAmount<TValue>>
+  nameWithType.vb: IEquatable(Of IAmount(Of TValue))
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Position.IAmount(Of TValue))
+  name.vb: IEquatable(Of IAmount(Of TValue))
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Position.IAmount`1
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount-1.html
+  - name: <
+  - name: TValue
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Position.IAmount`1
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: )
+- uid: System.IComparable`1.CompareTo(`0)
+  commentId: M:System.IComparable`1.CompareTo(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  name: CompareTo(T)
+  nameWithType: IComparable<T>.CompareTo(T)
+  fullName: System.IComparable<T>.CompareTo(T)
+  nameWithType.vb: IComparable(Of T).CompareTo(T)
+  fullName.vb: System.IComparable(Of T).CompareTo(T)
+  spec.csharp:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IComparable{Virtufin.Core.Position.IAmount`1}
+  commentId: T:System.IComparable{Virtufin.Core.Position.IAmount`1}
+  parent: System
+  definition: System.IComparable`1
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<IAmount<TValue>>
+  nameWithType: IComparable<IAmount<TValue>>
+  fullName: System.IComparable<Virtufin.Core.Position.IAmount<TValue>>
+  nameWithType.vb: IComparable(Of IAmount(Of TValue))
+  fullName.vb: System.IComparable(Of Virtufin.Core.Position.IAmount(Of TValue))
+  name.vb: IComparable(Of IAmount(Of TValue))
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - uid: Virtufin.Core.Position.IAmount`1
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount-1.html
+  - name: <
+  - name: TValue
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Position.IAmount`1
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IComparable`1
+  commentId: T:System.IComparable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<T>
+  nameWithType: IComparable<T>
+  fullName: System.IComparable<T>
+  nameWithType.vb: IComparable(Of T)
+  fullName.vb: System.IComparable(Of T)
+  name.vb: IComparable(Of T)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Core.Position.IAmount`1.GetValue*
+  commentId: Overload:Virtufin.Core.Position.IAmount`1.GetValue
+  href: Virtufin.Core.Position.IAmount-1.html#Virtufin_Core_Position_IAmount_1_GetValue
+  name: GetValue
+  nameWithType: IAmount<TValue>.GetValue
+  fullName: Virtufin.Core.Position.IAmount<TValue>.GetValue
+  nameWithType.vb: IAmount(Of TValue).GetValue
+  fullName.vb: Virtufin.Core.Position.IAmount(Of TValue).GetValue
+- uid: '{TValue}'
+  commentId: '!:TValue'
+  definition: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: TValue
+  commentId: '!:TValue'
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue

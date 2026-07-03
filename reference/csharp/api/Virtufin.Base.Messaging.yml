@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.Messaging
+  commentId: N:Virtufin.Base.Messaging
+  id: Virtufin.Base.Messaging
+  children:
+  - Virtufin.Base.Messaging.Topics
+  langs:
+  - csharp
+  - vb
+  name: Virtufin.Base.Messaging
+  nameWithType: Virtufin.Base.Messaging
+  fullName: Virtufin.Base.Messaging
+  type: Namespace
+  assemblies:
+  - Virtufin.Base
+references:
+- uid: Virtufin.Base.Messaging.Topics
+  commentId: T:Virtufin.Base.Messaging.Topics
+  parent: Virtufin.Base.Messaging
+  href: Virtufin.Base.Messaging.Topics.html
+  name: Topics
+  nameWithType: Topics
+  fullName: Virtufin.Base.Messaging.Topics
+- uid: Virtufin.Base.Messaging
+  commentId: N:Virtufin.Base.Messaging
+  href: Virtufin.html
+  name: Virtufin.Base.Messaging
+  nameWithType: Virtufin.Base.Messaging
+  fullName: Virtufin.Base.Messaging
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Messaging
+    name: Messaging
+    href: Virtufin.Base.Messaging.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Messaging
+    name: Messaging
+    href: Virtufin.Base.Messaging.html

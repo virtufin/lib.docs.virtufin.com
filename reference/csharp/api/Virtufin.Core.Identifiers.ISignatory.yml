@@ -1,0 +1,193 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Identifiers.ISignatory
+  commentId: T:Virtufin.Core.Identifiers.ISignatory
+  id: ISignatory
+  parent: Virtufin.Core.Identifiers
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ISignatory
+  nameWithType: ISignatory
+  fullName: Virtufin.Core.Identifiers.ISignatory
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Identifiers/ISignatory.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ISignatory
+    path: ../../../src/Virtufin.Core/Identifiers/ISignatory.cs
+    startLine: 7
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Identifiers
+  summary: >-
+    Marker for any value that identifies a party to a contract or transaction.
+
+    Implementations must be equality-comparable so contracts and message
+
+    selectors can match by sender.
+  example: []
+  syntax:
+    content: 'public interface ISignatory : IEquatable<ISignatory>'
+    content.vb: Public Interface ISignatory Inherits IEquatable(Of ISignatory)
+  derivedClasses:
+  - Virtufin.Base.Signatory
+  inheritedMembers:
+  - System.IEquatable{Virtufin.Core.Identifiers.ISignatory}.Equals(Virtufin.Core.Identifiers.ISignatory)
+references:
+- uid: Virtufin.Core.Identifiers
+  commentId: N:Virtufin.Core.Identifiers
+  href: Virtufin.html
+  name: Virtufin.Core.Identifiers
+  nameWithType: Virtufin.Core.Identifiers
+  fullName: Virtufin.Core.Identifiers
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html
+- uid: System.IEquatable{Virtufin.Core.Identifiers.ISignatory}.Equals(Virtufin.Core.Identifiers.ISignatory)
+  commentId: M:System.IEquatable{Virtufin.Core.Identifiers.ISignatory}.Equals(Virtufin.Core.Identifiers.ISignatory)
+  parent: System.IEquatable{Virtufin.Core.Identifiers.ISignatory}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(ISignatory)
+  nameWithType: IEquatable<ISignatory>.Equals(ISignatory)
+  fullName: System.IEquatable<Virtufin.Core.Identifiers.ISignatory>.Equals(Virtufin.Core.Identifiers.ISignatory)
+  nameWithType.vb: IEquatable(Of ISignatory).Equals(ISignatory)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Identifiers.ISignatory).Equals(Virtufin.Core.Identifiers.ISignatory)
+  spec.csharp:
+  - uid: System.IEquatable{Virtufin.Core.Identifiers.ISignatory}.Equals(Virtufin.Core.Identifiers.ISignatory)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Identifiers.ISignatory
+    name: ISignatory
+    href: Virtufin.Core.Identifiers.ISignatory.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Virtufin.Core.Identifiers.ISignatory}.Equals(Virtufin.Core.Identifiers.ISignatory)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Identifiers.ISignatory
+    name: ISignatory
+    href: Virtufin.Core.Identifiers.ISignatory.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IEquatable{Virtufin.Core.Identifiers.ISignatory}
+  commentId: T:System.IEquatable{Virtufin.Core.Identifiers.ISignatory}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ISignatory>
+  nameWithType: IEquatable<ISignatory>
+  fullName: System.IEquatable<Virtufin.Core.Identifiers.ISignatory>
+  nameWithType.vb: IEquatable(Of ISignatory)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Identifiers.ISignatory)
+  name.vb: IEquatable(Of ISignatory)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Identifiers.ISignatory
+    name: ISignatory
+    href: Virtufin.Core.Identifiers.ISignatory.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Identifiers.ISignatory
+    name: ISignatory
+    href: Virtufin.Core.Identifiers.ISignatory.html
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

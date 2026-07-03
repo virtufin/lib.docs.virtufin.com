@@ -1,0 +1,528 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions
+  commentId: T:Virtufin.Base.Events.EventEnvelopeCloudEventExtensions
+  id: EventEnvelopeCloudEventExtensions
+  parent: Virtufin.Base.Events
+  children:
+  - Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope,System.Object,System.String)
+  - Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToEnvelope(Virtufin.Core.Events.CloudEvent)
+  langs:
+  - csharp
+  - vb
+  name: EventEnvelopeCloudEventExtensions
+  nameWithType: EventEnvelopeCloudEventExtensions
+  fullName: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/EventEnvelopeCloudEventExtensions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: EventEnvelopeCloudEventExtensions
+    path: ../../../src/Virtufin.Base/Events/EventEnvelopeCloudEventExtensions.cs
+    startLine: 10
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events
+  summary: >-
+    Extension methods that convert between <xref href="Virtufin.Core.Events.IEventEnvelope" data-throw-if-not-resolved="false"></xref> and
+
+    <xref href="Virtufin.Core.Events.CloudEvent" data-throw-if-not-resolved="false"></xref>. Maps envelope fields to standard CloudEvent
+
+    attributes (id, source, type, subject, time) and Virtufin-specific
+
+    fields to extension attributes (eventtime, correlationid, lane selectors).
+  example: []
+  syntax:
+    content: public static class EventEnvelopeCloudEventExtensions
+    content.vb: Public Module EventEnvelopeCloudEventExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope,System.Object,System.String)
+  commentId: M:Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope,System.Object,System.String)
+  id: ToCloudEvent(Virtufin.Core.Events.IEventEnvelope,System.Object,System.String)
+  isExtensionMethod: true
+  parent: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCloudEvent(IEventEnvelope, object?, string)
+  nameWithType: EventEnvelopeCloudEventExtensions.ToCloudEvent(IEventEnvelope, object?, string)
+  fullName: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope, object?, string)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/EventEnvelopeCloudEventExtensions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ToCloudEvent
+    path: ../../../src/Virtufin.Base/Events/EventEnvelopeCloudEventExtensions.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events
+  summary: >-
+    Build a <xref href="Virtufin.Core.Events.CloudEvent" data-throw-if-not-resolved="false"></xref> from an <xref href="Virtufin.Core.Events.IEventEnvelope" data-throw-if-not-resolved="false"></xref>
+
+    and a payload object (typically the event itself, serialised).
+  example: []
+  syntax:
+    content: public static CloudEvent ToCloudEvent(this IEventEnvelope envelope, object? payload, string dataContentType = "application/json")
+    parameters:
+    - id: envelope
+      type: Virtufin.Core.Events.IEventEnvelope
+      description: Envelope to wrap.
+    - id: payload
+      type: System.Object
+      description: Event payload (or null for envelope-only).
+    - id: dataContentType
+      type: System.String
+      description: Content type for <code class="paramref">payload</code>; default <code>application/json</code>.
+    return:
+      type: Virtufin.Core.Events.CloudEvent
+    content.vb: Public Shared Function ToCloudEvent(envelope As IEventEnvelope, payload As Object, dataContentType As String = "application/json") As CloudEvent
+  overload: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent*
+  nameWithType.vb: EventEnvelopeCloudEventExtensions.ToCloudEvent(IEventEnvelope, Object, String)
+  fullName.vb: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope, Object, String)
+  name.vb: ToCloudEvent(IEventEnvelope, Object, String)
+- uid: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToEnvelope(Virtufin.Core.Events.CloudEvent)
+  commentId: M:Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToEnvelope(Virtufin.Core.Events.CloudEvent)
+  id: ToEnvelope(Virtufin.Core.Events.CloudEvent)
+  isExtensionMethod: true
+  parent: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToEnvelope(CloudEvent)
+  nameWithType: EventEnvelopeCloudEventExtensions.ToEnvelope(CloudEvent)
+  fullName: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToEnvelope(Virtufin.Core.Events.CloudEvent)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/EventEnvelopeCloudEventExtensions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ToEnvelope
+    path: ../../../src/Virtufin.Base/Events/EventEnvelopeCloudEventExtensions.cs
+    startLine: 63
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events
+  summary: >-
+    Extract an <xref href="Virtufin.Base.Events.EventEnvelope" data-throw-if-not-resolved="false"></xref> from a <xref href="Virtufin.Core.Events.CloudEvent" data-throw-if-not-resolved="false"></xref>'s
+
+    extension attributes. The reverse of <xref href="Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope%2cSystem.Object%2cSystem.String)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static EventEnvelope ToEnvelope(this CloudEvent ce)
+    parameters:
+    - id: ce
+      type: Virtufin.Core.Events.CloudEvent
+      description: CloudEvent to extract from.
+    return:
+      type: Virtufin.Base.Events.EventEnvelope
+    content.vb: Public Shared Function ToEnvelope(ce As CloudEvent) As EventEnvelope
+  overload: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToEnvelope*
+references:
+- uid: Virtufin.Core.Events.IEventEnvelope
+  commentId: T:Virtufin.Core.Events.IEventEnvelope
+  parent: Virtufin.Core.Events
+  href: Virtufin.Core.Events.IEventEnvelope.html
+  name: IEventEnvelope
+  nameWithType: IEventEnvelope
+  fullName: Virtufin.Core.Events.IEventEnvelope
+- uid: Virtufin.Core.Events.CloudEvent
+  commentId: T:Virtufin.Core.Events.CloudEvent
+  parent: Virtufin.Core.Events
+  href: Virtufin.Core.Events.CloudEvent.html
+  name: CloudEvent
+  nameWithType: CloudEvent
+  fullName: Virtufin.Core.Events.CloudEvent
+- uid: Virtufin.Base.Events
+  commentId: N:Virtufin.Base.Events
+  href: Virtufin.html
+  name: Virtufin.Base.Events
+  nameWithType: Virtufin.Base.Events
+  fullName: Virtufin.Base.Events
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Virtufin.Core.Events
+  commentId: N:Virtufin.Core.Events
+  href: Virtufin.html
+  name: Virtufin.Core.Events
+  nameWithType: Virtufin.Core.Events
+  fullName: Virtufin.Core.Events
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent*
+  commentId: Overload:Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent
+  href: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.html#Virtufin_Base_Events_EventEnvelopeCloudEventExtensions_ToCloudEvent_Virtufin_Core_Events_IEventEnvelope_System_Object_System_String_
+  name: ToCloudEvent
+  nameWithType: EventEnvelopeCloudEventExtensions.ToCloudEvent
+  fullName: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Virtufin.Base.Events.EventEnvelope
+  commentId: T:Virtufin.Base.Events.EventEnvelope
+  parent: Virtufin.Base.Events
+  href: Virtufin.Base.Events.EventEnvelope.html
+  name: EventEnvelope
+  nameWithType: EventEnvelope
+  fullName: Virtufin.Base.Events.EventEnvelope
+- uid: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope,System.Object,System.String)
+  commentId: M:Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope,System.Object,System.String)
+  isExternal: true
+  href: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.html#Virtufin_Base_Events_EventEnvelopeCloudEventExtensions_ToCloudEvent_Virtufin_Core_Events_IEventEnvelope_System_Object_System_String_
+  name: ToCloudEvent(IEventEnvelope, object, string)
+  nameWithType: EventEnvelopeCloudEventExtensions.ToCloudEvent(IEventEnvelope, object, string)
+  fullName: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope, object, string)
+  nameWithType.vb: EventEnvelopeCloudEventExtensions.ToCloudEvent(IEventEnvelope, Object, String)
+  fullName.vb: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope, Object, String)
+  name.vb: ToCloudEvent(IEventEnvelope, Object, String)
+  spec.csharp:
+  - uid: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope,System.Object,System.String)
+    name: ToCloudEvent
+    href: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.html#Virtufin_Base_Events_EventEnvelopeCloudEventExtensions_ToCloudEvent_Virtufin_Core_Events_IEventEnvelope_System_Object_System_String_
+  - name: (
+  - uid: Virtufin.Core.Events.IEventEnvelope
+    name: IEventEnvelope
+    href: Virtufin.Core.Events.IEventEnvelope.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope,System.Object,System.String)
+    name: ToCloudEvent
+    href: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.html#Virtufin_Base_Events_EventEnvelopeCloudEventExtensions_ToCloudEvent_Virtufin_Core_Events_IEventEnvelope_System_Object_System_String_
+  - name: (
+  - uid: Virtufin.Core.Events.IEventEnvelope
+    name: IEventEnvelope
+    href: Virtufin.Core.Events.IEventEnvelope.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToEnvelope*
+  commentId: Overload:Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToEnvelope
+  href: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.html#Virtufin_Base_Events_EventEnvelopeCloudEventExtensions_ToEnvelope_Virtufin_Core_Events_CloudEvent_
+  name: ToEnvelope
+  nameWithType: EventEnvelopeCloudEventExtensions.ToEnvelope
+  fullName: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToEnvelope

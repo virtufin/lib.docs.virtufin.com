@@ -1,0 +1,584 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.Cash
+  commentId: T:Virtufin.Base.Cash
+  id: Cash
+  parent: Virtufin.Base
+  children:
+  - Virtufin.Base.Cash.#ctor(Virtufin.Base.Currency.CurrencySymbol,Virtufin.Core.Position.DecimalAmount)
+  - Virtufin.Base.Cash.Amount
+  - Virtufin.Base.Cash.Currency
+  - Virtufin.Base.Cash.ToString
+  - Virtufin.Base.Cash.Zero
+  langs:
+  - csharp
+  - vb
+  name: Cash
+  nameWithType: Cash
+  fullName: Virtufin.Base.Cash
+  type: Struct
+  source:
+    remote:
+      path: src/Virtufin.Base/Cash.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Cash
+    path: ../../../src/Virtufin.Base/Cash.cs
+    startLine: 16
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: >-
+    Currency-tagged fixed-point quantity. <xref href="Virtufin.Base.Cash.Amount" data-throw-if-not-resolved="false"></xref> carries its own
+
+    precision (<xref href="Virtufin.Core.Position.DecimalAmount.N" data-throw-if-not-resolved="false"></xref>) so two <xref href="Virtufin.Base.Cash" data-throw-if-not-resolved="false"></xref> values
+
+    representing the same monetary amount at different precisions are not
+
+    equal.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var price = new Cash(Currency.CurrencySymbol.USD, new DecimalAmount(99, 95, 2));
+
+    Console.WriteLine(price); // "USD 99.95"</code></pre>
+  syntax:
+    content: public struct Cash
+    content.vb: Public Structure Cash
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Virtufin.Base.Cash.Currency
+  commentId: P:Virtufin.Base.Cash.Currency
+  id: Currency
+  parent: Virtufin.Base.Cash
+  langs:
+  - csharp
+  - vb
+  name: Currency
+  nameWithType: Cash.Currency
+  fullName: Virtufin.Base.Cash.Currency
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Cash.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Currency
+    path: ../../../src/Virtufin.Base/Cash.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: The currency of the cash amount.
+  example: []
+  syntax:
+    content: public Currency.CurrencySymbol Currency { readonly get; set; }
+    parameters: []
+    return:
+      type: Virtufin.Base.Currency.CurrencySymbol
+    content.vb: Public Property Currency As Currency.CurrencySymbol
+  overload: Virtufin.Base.Cash.Currency*
+- uid: Virtufin.Base.Cash.Amount
+  commentId: P:Virtufin.Base.Cash.Amount
+  id: Amount
+  parent: Virtufin.Base.Cash
+  langs:
+  - csharp
+  - vb
+  name: Amount
+  nameWithType: Cash.Amount
+  fullName: Virtufin.Base.Cash.Amount
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Cash.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Amount
+    path: ../../../src/Virtufin.Base/Cash.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: The numeric amount. Precision is per-instance via <xref href="Virtufin.Core.Position.DecimalAmount.N" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public DecimalAmount Amount { readonly get; set; }
+    parameters: []
+    return:
+      type: Virtufin.Core.Position.DecimalAmount
+    content.vb: Public Property Amount As DecimalAmount
+  overload: Virtufin.Base.Cash.Amount*
+- uid: Virtufin.Base.Cash.#ctor(Virtufin.Base.Currency.CurrencySymbol,Virtufin.Core.Position.DecimalAmount)
+  commentId: M:Virtufin.Base.Cash.#ctor(Virtufin.Base.Currency.CurrencySymbol,Virtufin.Core.Position.DecimalAmount)
+  id: '#ctor(Virtufin.Base.Currency.CurrencySymbol,Virtufin.Core.Position.DecimalAmount)'
+  parent: Virtufin.Base.Cash
+  langs:
+  - csharp
+  - vb
+  name: Cash(CurrencySymbol, DecimalAmount)
+  nameWithType: Cash.Cash(Currency.CurrencySymbol, DecimalAmount)
+  fullName: Virtufin.Base.Cash.Cash(Virtufin.Base.Currency.CurrencySymbol, Virtufin.Core.Position.DecimalAmount)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Base/Cash.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Base/Cash.cs
+    startLine: 27
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Construct a cash amount.
+  example: []
+  syntax:
+    content: public Cash(Currency.CurrencySymbol currency, DecimalAmount amount)
+    parameters:
+    - id: currency
+      type: Virtufin.Base.Currency.CurrencySymbol
+      description: Currency of the amount.
+    - id: amount
+      type: Virtufin.Core.Position.DecimalAmount
+      description: Numeric amount.
+    content.vb: Public Sub New(currency As Currency.CurrencySymbol, amount As DecimalAmount)
+  overload: Virtufin.Base.Cash.#ctor*
+  nameWithType.vb: Cash.New(Currency.CurrencySymbol, DecimalAmount)
+  fullName.vb: Virtufin.Base.Cash.New(Virtufin.Base.Currency.CurrencySymbol, Virtufin.Core.Position.DecimalAmount)
+  name.vb: New(CurrencySymbol, DecimalAmount)
+- uid: Virtufin.Base.Cash.Zero
+  commentId: P:Virtufin.Base.Cash.Zero
+  id: Zero
+  parent: Virtufin.Base.Cash
+  langs:
+  - csharp
+  - vb
+  name: Zero
+  nameWithType: Cash.Zero
+  fullName: Virtufin.Base.Cash.Zero
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Cash.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Zero
+    path: ../../../src/Virtufin.Base/Cash.cs
+    startLine: 34
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: A zero cash amount in <xref href="Virtufin.Base.Currency.CurrencySymbol.USD" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static Cash Zero { get; }
+    parameters: []
+    return:
+      type: Virtufin.Base.Cash
+    content.vb: Public Shared ReadOnly Property Zero As Cash
+  overload: Virtufin.Base.Cash.Zero*
+- uid: Virtufin.Base.Cash.ToString
+  commentId: M:Virtufin.Base.Cash.ToString
+  id: ToString
+  parent: Virtufin.Base.Cash
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Cash.ToString()
+  fullName: Virtufin.Base.Cash.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/Cash.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ToString
+    path: ../../../src/Virtufin.Base/Cash.cs
+    startLine: 37
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Returns the fully qualified type name of this instance.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The fully qualified type name.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: Virtufin.Base.Cash.ToString*
+references:
+- uid: Virtufin.Base.Cash.Amount
+  commentId: P:Virtufin.Base.Cash.Amount
+  href: Virtufin.Base.Cash.html#Virtufin_Base_Cash_Amount
+  name: Amount
+  nameWithType: Cash.Amount
+  fullName: Virtufin.Base.Cash.Amount
+- uid: Virtufin.Core.Position.DecimalAmount.N
+  commentId: P:Virtufin.Core.Position.DecimalAmount.N
+  href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_N
+  name: N
+  nameWithType: DecimalAmount.N
+  fullName: Virtufin.Core.Position.DecimalAmount.N
+- uid: Virtufin.Base.Cash
+  commentId: T:Virtufin.Base.Cash
+  parent: Virtufin.Base
+  href: Virtufin.Base.Cash.html
+  name: Cash
+  nameWithType: Cash
+  fullName: Virtufin.Base.Cash
+- uid: Virtufin.Base
+  commentId: N:Virtufin.Base
+  href: Virtufin.html
+  name: Virtufin.Base
+  nameWithType: Virtufin.Base
+  fullName: Virtufin.Base
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Base.Cash.Currency*
+  commentId: Overload:Virtufin.Base.Cash.Currency
+  href: Virtufin.Base.Cash.html#Virtufin_Base_Cash_Currency
+  name: Currency
+  nameWithType: Cash.Currency
+  fullName: Virtufin.Base.Cash.Currency
+- uid: Virtufin.Base.Currency.CurrencySymbol
+  commentId: T:Virtufin.Base.Currency.CurrencySymbol
+  parent: Virtufin.Base
+  href: Virtufin.Base.Currency.html
+  name: Currency.CurrencySymbol
+  nameWithType: Currency.CurrencySymbol
+  fullName: Virtufin.Base.Currency.CurrencySymbol
+  spec.csharp:
+  - uid: Virtufin.Base.Currency
+    name: Currency
+    href: Virtufin.Base.Currency.html
+  - name: .
+  - uid: Virtufin.Base.Currency.CurrencySymbol
+    name: CurrencySymbol
+    href: Virtufin.Base.Currency.CurrencySymbol.html
+  spec.vb:
+  - uid: Virtufin.Base.Currency
+    name: Currency
+    href: Virtufin.Base.Currency.html
+  - name: .
+  - uid: Virtufin.Base.Currency.CurrencySymbol
+    name: CurrencySymbol
+    href: Virtufin.Base.Currency.CurrencySymbol.html
+- uid: Virtufin.Base.Cash.Amount*
+  commentId: Overload:Virtufin.Base.Cash.Amount
+  href: Virtufin.Base.Cash.html#Virtufin_Base_Cash_Amount
+  name: Amount
+  nameWithType: Cash.Amount
+  fullName: Virtufin.Base.Cash.Amount
+- uid: Virtufin.Core.Position.DecimalAmount
+  commentId: T:Virtufin.Core.Position.DecimalAmount
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.DecimalAmount.html
+  name: DecimalAmount
+  nameWithType: DecimalAmount
+  fullName: Virtufin.Core.Position.DecimalAmount
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: Virtufin.Base.Cash.#ctor*
+  commentId: Overload:Virtufin.Base.Cash.#ctor
+  href: Virtufin.Base.Cash.html#Virtufin_Base_Cash__ctor_Virtufin_Base_Currency_CurrencySymbol_Virtufin_Core_Position_DecimalAmount_
+  name: Cash
+  nameWithType: Cash.Cash
+  fullName: Virtufin.Base.Cash.Cash
+  nameWithType.vb: Cash.New
+  fullName.vb: Virtufin.Base.Cash.New
+  name.vb: New
+- uid: Virtufin.Base.Currency.CurrencySymbol.USD
+  commentId: F:Virtufin.Base.Currency.CurrencySymbol.USD
+  href: Virtufin.Base.Currency.CurrencySymbol.html#Virtufin_Base_Currency_CurrencySymbol_USD
+  name: USD
+  nameWithType: Currency.CurrencySymbol.USD
+  fullName: Virtufin.Base.Currency.CurrencySymbol.USD
+- uid: Virtufin.Base.Cash.Zero*
+  commentId: Overload:Virtufin.Base.Cash.Zero
+  href: Virtufin.Base.Cash.html#Virtufin_Base_Cash_Zero
+  name: Zero
+  nameWithType: Cash.Zero
+  fullName: Virtufin.Base.Cash.Zero
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: Virtufin.Base.Cash.ToString*
+  commentId: Overload:Virtufin.Base.Cash.ToString
+  href: Virtufin.Base.Cash.html#Virtufin_Base_Cash_ToString
+  name: ToString
+  nameWithType: Cash.ToString
+  fullName: Virtufin.Base.Cash.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

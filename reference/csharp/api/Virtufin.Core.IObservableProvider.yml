@@ -1,0 +1,266 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.IObservableProvider
+  commentId: T:Virtufin.Core.IObservableProvider
+  id: IObservableProvider
+  parent: Virtufin.Core
+  children:
+  - Virtufin.Core.IObservableProvider.GetObservable``1(Virtufin.Core.IEntityIdentifier,Virtufin.Core.IAttribute{``0})
+  - Virtufin.Core.IObservableProvider.TypeSpecifier
+  langs:
+  - csharp
+  - vb
+  name: IObservableProvider
+  nameWithType: IObservableProvider
+  fullName: Virtufin.Core.IObservableProvider
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/IObservableProvider.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IObservableProvider
+    path: ../../../src/Virtufin.Core/IObservableProvider.cs
+    startLine: 2
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core
+  syntax:
+    content: public interface IObservableProvider
+    content.vb: Public Interface IObservableProvider
+  derivedClasses:
+  - Virtufin.Core.ObservableProvider`1
+- uid: Virtufin.Core.IObservableProvider.TypeSpecifier
+  commentId: M:Virtufin.Core.IObservableProvider.TypeSpecifier
+  id: TypeSpecifier
+  parent: Virtufin.Core.IObservableProvider
+  langs:
+  - csharp
+  - vb
+  name: TypeSpecifier()
+  nameWithType: IObservableProvider.TypeSpecifier()
+  fullName: Virtufin.Core.IObservableProvider.TypeSpecifier()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/IObservableProvider.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: TypeSpecifier
+    path: ../../../src/Virtufin.Core/IObservableProvider.cs
+    startLine: 8
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core
+  summary: ''
+  example: []
+  syntax:
+    content: IEntityAttributeValueTypeSpecifier TypeSpecifier()
+    return:
+      type: Virtufin.Core.IEntityAttributeValueTypeSpecifier
+      description: ''
+    content.vb: Function TypeSpecifier() As IEntityAttributeValueTypeSpecifier
+  overload: Virtufin.Core.IObservableProvider.TypeSpecifier*
+- uid: Virtufin.Core.IObservableProvider.GetObservable``1(Virtufin.Core.IEntityIdentifier,Virtufin.Core.IAttribute{``0})
+  commentId: M:Virtufin.Core.IObservableProvider.GetObservable``1(Virtufin.Core.IEntityIdentifier,Virtufin.Core.IAttribute{``0})
+  id: GetObservable``1(Virtufin.Core.IEntityIdentifier,Virtufin.Core.IAttribute{``0})
+  parent: Virtufin.Core.IObservableProvider
+  langs:
+  - csharp
+  - vb
+  name: GetObservable<V>(IEntityIdentifier, IAttribute<V>)
+  nameWithType: IObservableProvider.GetObservable<V>(IEntityIdentifier, IAttribute<V>)
+  fullName: Virtufin.Core.IObservableProvider.GetObservable<V>(Virtufin.Core.IEntityIdentifier, Virtufin.Core.IAttribute<V>)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/IObservableProvider.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GetObservable
+    path: ../../../src/Virtufin.Core/IObservableProvider.cs
+    startLine: 9
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core
+  syntax:
+    content: 'IObservable<V>? GetObservable<V>(IEntityIdentifier identifier, IAttribute<V> attribute) where V : struct'
+    parameters:
+    - id: identifier
+      type: Virtufin.Core.IEntityIdentifier
+    - id: attribute
+      type: Virtufin.Core.IAttribute{{V}}
+    typeParameters:
+    - id: V
+    return:
+      type: System.IObservable{{V}}
+    content.vb: Function GetObservable(Of V As Structure)(identifier As IEntityIdentifier, attribute As IAttribute(Of V)) As IObservable(Of V)
+  overload: Virtufin.Core.IObservableProvider.GetObservable*
+  nameWithType.vb: IObservableProvider.GetObservable(Of V)(IEntityIdentifier, IAttribute(Of V))
+  fullName.vb: Virtufin.Core.IObservableProvider.GetObservable(Of V)(Virtufin.Core.IEntityIdentifier, Virtufin.Core.IAttribute(Of V))
+  name.vb: GetObservable(Of V)(IEntityIdentifier, IAttribute(Of V))
+references:
+- uid: Virtufin.Core
+  commentId: N:Virtufin.Core
+  href: Virtufin.html
+  name: Virtufin.Core
+  nameWithType: Virtufin.Core
+  fullName: Virtufin.Core
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+- uid: Virtufin.Core.IObservableProvider.TypeSpecifier*
+  commentId: Overload:Virtufin.Core.IObservableProvider.TypeSpecifier
+  href: Virtufin.Core.IObservableProvider.html#Virtufin_Core_IObservableProvider_TypeSpecifier
+  name: TypeSpecifier
+  nameWithType: IObservableProvider.TypeSpecifier
+  fullName: Virtufin.Core.IObservableProvider.TypeSpecifier
+- uid: Virtufin.Core.IEntityAttributeValueTypeSpecifier
+  commentId: T:Virtufin.Core.IEntityAttributeValueTypeSpecifier
+  parent: Virtufin.Core
+  href: Virtufin.Core.IEntityAttributeValueTypeSpecifier.html
+  name: IEntityAttributeValueTypeSpecifier
+  nameWithType: IEntityAttributeValueTypeSpecifier
+  fullName: Virtufin.Core.IEntityAttributeValueTypeSpecifier
+- uid: Virtufin.Core.IObservableProvider.GetObservable*
+  commentId: Overload:Virtufin.Core.IObservableProvider.GetObservable
+  href: Virtufin.Core.IObservableProvider.html#Virtufin_Core_IObservableProvider_GetObservable__1_Virtufin_Core_IEntityIdentifier_Virtufin_Core_IAttribute___0__
+  name: GetObservable
+  nameWithType: IObservableProvider.GetObservable
+  fullName: Virtufin.Core.IObservableProvider.GetObservable
+- uid: Virtufin.Core.IEntityIdentifier
+  commentId: T:Virtufin.Core.IEntityIdentifier
+  parent: Virtufin.Core
+  href: Virtufin.Core.IEntityIdentifier.html
+  name: IEntityIdentifier
+  nameWithType: IEntityIdentifier
+  fullName: Virtufin.Core.IEntityIdentifier
+- uid: Virtufin.Core.IAttribute{{V}}
+  commentId: T:Virtufin.Core.IAttribute{`0}
+  parent: Virtufin.Core
+  definition: Virtufin.Core.IAttribute`1
+  href: Virtufin.Core.IAttribute-1.html
+  name: IAttribute<V>
+  nameWithType: IAttribute<V>
+  fullName: Virtufin.Core.IAttribute<V>
+  nameWithType.vb: IAttribute(Of V)
+  fullName.vb: Virtufin.Core.IAttribute(Of V)
+  name.vb: IAttribute(Of V)
+  spec.csharp:
+  - uid: Virtufin.Core.IAttribute`1
+    name: IAttribute
+    href: Virtufin.Core.IAttribute-1.html
+  - name: <
+  - name: V
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.IAttribute`1
+    name: IAttribute
+    href: Virtufin.Core.IAttribute-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: V
+  - name: )
+- uid: System.IObservable{{V}}
+  commentId: T:System.IObservable{``0}
+  parent: System
+  definition: System.IObservable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  name: IObservable<V>
+  nameWithType: IObservable<V>
+  fullName: System.IObservable<V>
+  nameWithType.vb: IObservable(Of V)
+  fullName.vb: System.IObservable(Of V)
+  name.vb: IObservable(Of V)
+  spec.csharp:
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: <
+  - name: V
+  - name: '>'
+  spec.vb:
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: V
+  - name: )
+- uid: Virtufin.Core.IAttribute`1
+  commentId: T:Virtufin.Core.IAttribute`1
+  href: Virtufin.Core.IAttribute-1.html
+  name: IAttribute<V>
+  nameWithType: IAttribute<V>
+  fullName: Virtufin.Core.IAttribute<V>
+  nameWithType.vb: IAttribute(Of V)
+  fullName.vb: Virtufin.Core.IAttribute(Of V)
+  name.vb: IAttribute(Of V)
+  spec.csharp:
+  - uid: Virtufin.Core.IAttribute`1
+    name: IAttribute
+    href: Virtufin.Core.IAttribute-1.html
+  - name: <
+  - name: V
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.IAttribute`1
+    name: IAttribute
+    href: Virtufin.Core.IAttribute-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: V
+  - name: )
+- uid: System.IObservable`1
+  commentId: T:System.IObservable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  name: IObservable<T>
+  nameWithType: IObservable<T>
+  fullName: System.IObservable<T>
+  nameWithType.vb: IObservable(Of T)
+  fullName.vb: System.IObservable(Of T)
+  name.vb: IObservable(Of T)
+  spec.csharp:
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

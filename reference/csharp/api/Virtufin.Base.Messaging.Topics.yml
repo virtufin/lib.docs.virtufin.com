@@ -1,0 +1,903 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.Messaging.Topics
+  commentId: T:Virtufin.Base.Messaging.Topics
+  id: Topics
+  parent: Virtufin.Base.Messaging
+  children:
+  - Virtufin.Base.Messaging.Topics.ActMarket(System.String,System.String)
+  - Virtufin.Base.Messaging.Topics.Build(System.String,System.String,System.String)
+  - Virtufin.Base.Messaging.Topics.HypMarket(System.String,System.String,System.String)
+  - Virtufin.Base.Messaging.Topics.Position(Virtufin.Core.Scenario.ScenarioId,System.String,System.String)
+  - Virtufin.Base.Messaging.Topics.PublishAsync(Virtufin.Core.Messaging.IEventPublisher,Virtufin.Core.Messaging.Topic,Virtufin.Core.Events.IEventEnvelope,System.Object)
+  - Virtufin.Base.Messaging.Topics.Risk(Virtufin.Core.Scenario.ScenarioId,System.String,System.String)
+  - Virtufin.Base.Messaging.Topics.Trade(Virtufin.Core.Scenario.ScenarioId,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: Topics
+  nameWithType: Topics
+  fullName: Virtufin.Base.Messaging.Topics
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Base/Messaging/Topics.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Topics
+    path: ../../../src/Virtufin.Base/Messaging/Topics.cs
+    startLine: 10
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Messaging
+  summary: >-
+    Static factory methods for Dapr-compatible topic strings following the
+
+    domain spec's naming scheme.
+  example: []
+  syntax:
+    content: public static class Topics
+    content.vb: Public Module Topics
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.Base.Messaging.Topics.ActMarket(System.String,System.String)
+  commentId: M:Virtufin.Base.Messaging.Topics.ActMarket(System.String,System.String)
+  id: ActMarket(System.String,System.String)
+  parent: Virtufin.Base.Messaging.Topics
+  langs:
+  - csharp
+  - vb
+  name: ActMarket(string, string)
+  nameWithType: Topics.ActMarket(string, string)
+  fullName: Virtufin.Base.Messaging.Topics.ActMarket(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/Messaging/Topics.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ActMarket
+    path: ../../../src/Virtufin.Base/Messaging/Topics.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Messaging
+  summary: 'Market topic for live data: <code>act.market.{entity}.{event}</code>.'
+  example: []
+  syntax:
+    content: public static Topic ActMarket(string entity, string eventName)
+    parameters:
+    - id: entity
+      type: System.String
+      description: Entity segment (e.g. <code>tick</code>, <code>orderbook</code>).
+    - id: eventName
+      type: System.String
+      description: Event segment (e.g. <code>received</code>).
+    return:
+      type: Virtufin.Core.Messaging.Topic
+    content.vb: Public Shared Function ActMarket(entity As String, eventName As String) As Topic
+  overload: Virtufin.Base.Messaging.Topics.ActMarket*
+  nameWithType.vb: Topics.ActMarket(String, String)
+  fullName.vb: Virtufin.Base.Messaging.Topics.ActMarket(String, String)
+  name.vb: ActMarket(String, String)
+- uid: Virtufin.Base.Messaging.Topics.HypMarket(System.String,System.String,System.String)
+  commentId: M:Virtufin.Base.Messaging.Topics.HypMarket(System.String,System.String,System.String)
+  id: HypMarket(System.String,System.String,System.String)
+  parent: Virtufin.Base.Messaging.Topics
+  langs:
+  - csharp
+  - vb
+  name: HypMarket(string, string, string)
+  nameWithType: Topics.HypMarket(string, string, string)
+  fullName: Virtufin.Base.Messaging.Topics.HypMarket(string, string, string)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/Messaging/Topics.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: HypMarket
+    path: ../../../src/Virtufin.Base/Messaging/Topics.cs
+    startLine: 28
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Messaging
+  summary: 'Market topic for hypothetical data: <code>hyp.{selector}.market.{entity}.{event}</code>.'
+  example: []
+  syntax:
+    content: public static Topic HypMarket(string selector, string entity, string eventName)
+    parameters:
+    - id: selector
+      type: System.String
+      description: Market selector (e.g. <code>BTC_202101_202206</code>).
+    - id: entity
+      type: System.String
+      description: Entity segment.
+    - id: eventName
+      type: System.String
+      description: Event segment.
+    return:
+      type: Virtufin.Core.Messaging.Topic
+    content.vb: Public Shared Function HypMarket(selector As String, entity As String, eventName As String) As Topic
+  overload: Virtufin.Base.Messaging.Topics.HypMarket*
+  nameWithType.vb: Topics.HypMarket(String, String, String)
+  fullName.vb: Virtufin.Base.Messaging.Topics.HypMarket(String, String, String)
+  name.vb: HypMarket(String, String, String)
+- uid: Virtufin.Base.Messaging.Topics.Trade(Virtufin.Core.Scenario.ScenarioId,System.String,System.String)
+  commentId: M:Virtufin.Base.Messaging.Topics.Trade(Virtufin.Core.Scenario.ScenarioId,System.String,System.String)
+  id: Trade(Virtufin.Core.Scenario.ScenarioId,System.String,System.String)
+  parent: Virtufin.Base.Messaging.Topics
+  langs:
+  - csharp
+  - vb
+  name: Trade(ScenarioId, string, string)
+  nameWithType: Topics.Trade(ScenarioId, string, string)
+  fullName: Virtufin.Base.Messaging.Topics.Trade(Virtufin.Core.Scenario.ScenarioId, string, string)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/Messaging/Topics.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Trade
+    path: ../../../src/Virtufin.Base/Messaging/Topics.cs
+    startLine: 37
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Messaging
+  summary: 'Trade topic: <code>sc.{scenarioId}.trade.{entity}.{event}</code>.'
+  example: []
+  syntax:
+    content: public static Topic Trade(ScenarioId scenarioId, string entity, string eventName)
+    parameters:
+    - id: scenarioId
+      type: Virtufin.Core.Scenario.ScenarioId
+      description: Scenario id.
+    - id: entity
+      type: System.String
+      description: Entity (e.g. <code>order</code>, <code>fill</code>, <code>execution</code>, <code>transfer</code>, <code>interest</code>).
+    - id: eventName
+      type: System.String
+      description: Event (e.g. <code>placed</code>, <code>cancelled</code>, <code>received</code>).
+    return:
+      type: Virtufin.Core.Messaging.Topic
+    content.vb: Public Shared Function Trade(scenarioId As ScenarioId, entity As String, eventName As String) As Topic
+  overload: Virtufin.Base.Messaging.Topics.Trade*
+  nameWithType.vb: Topics.Trade(ScenarioId, String, String)
+  fullName.vb: Virtufin.Base.Messaging.Topics.Trade(Virtufin.Core.Scenario.ScenarioId, String, String)
+  name.vb: Trade(ScenarioId, String, String)
+- uid: Virtufin.Base.Messaging.Topics.Position(Virtufin.Core.Scenario.ScenarioId,System.String,System.String)
+  commentId: M:Virtufin.Base.Messaging.Topics.Position(Virtufin.Core.Scenario.ScenarioId,System.String,System.String)
+  id: Position(Virtufin.Core.Scenario.ScenarioId,System.String,System.String)
+  parent: Virtufin.Base.Messaging.Topics
+  langs:
+  - csharp
+  - vb
+  name: Position(ScenarioId, string, string)
+  nameWithType: Topics.Position(ScenarioId, string, string)
+  fullName: Virtufin.Base.Messaging.Topics.Position(Virtufin.Core.Scenario.ScenarioId, string, string)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/Messaging/Topics.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Position
+    path: ../../../src/Virtufin.Base/Messaging/Topics.cs
+    startLine: 46
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Messaging
+  summary: 'Position topic: <code>sc.{scenarioId}.position.{entity}.{event}</code>.'
+  example: []
+  syntax:
+    content: public static Topic Position(ScenarioId scenarioId, string entity, string eventName)
+    parameters:
+    - id: scenarioId
+      type: Virtufin.Core.Scenario.ScenarioId
+      description: Scenario id.
+    - id: entity
+      type: System.String
+      description: Entity (always <code>position</code> per the domain spec).
+    - id: eventName
+      type: System.String
+      description: Event (e.g. <code>opened</code>, <code>updated</code>, <code>closed</code>, <code>flipped</code>).
+    return:
+      type: Virtufin.Core.Messaging.Topic
+    content.vb: Public Shared Function Position(scenarioId As ScenarioId, entity As String, eventName As String) As Topic
+  overload: Virtufin.Base.Messaging.Topics.Position*
+  nameWithType.vb: Topics.Position(ScenarioId, String, String)
+  fullName.vb: Virtufin.Base.Messaging.Topics.Position(Virtufin.Core.Scenario.ScenarioId, String, String)
+  name.vb: Position(ScenarioId, String, String)
+- uid: Virtufin.Base.Messaging.Topics.Risk(Virtufin.Core.Scenario.ScenarioId,System.String,System.String)
+  commentId: M:Virtufin.Base.Messaging.Topics.Risk(Virtufin.Core.Scenario.ScenarioId,System.String,System.String)
+  id: Risk(Virtufin.Core.Scenario.ScenarioId,System.String,System.String)
+  parent: Virtufin.Base.Messaging.Topics
+  langs:
+  - csharp
+  - vb
+  name: Risk(ScenarioId, string, string)
+  nameWithType: Topics.Risk(ScenarioId, string, string)
+  fullName: Virtufin.Base.Messaging.Topics.Risk(Virtufin.Core.Scenario.ScenarioId, string, string)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/Messaging/Topics.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Risk
+    path: ../../../src/Virtufin.Base/Messaging/Topics.cs
+    startLine: 55
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Messaging
+  summary: 'Risk topic: <code>sc.{scenarioId}.risk.{entity}.{event}</code>.'
+  example: []
+  syntax:
+    content: public static Topic Risk(ScenarioId scenarioId, string entity, string eventName)
+    parameters:
+    - id: scenarioId
+      type: Virtufin.Core.Scenario.ScenarioId
+      description: Scenario id.
+    - id: entity
+      type: System.String
+      description: Entity (e.g. <code>pnl</code>, <code>drawdown</code>, <code>limit</code>, <code>margin</code>, <code>exposure</code>).
+    - id: eventName
+      type: System.String
+      description: Event (e.g. <code>updated</code>, <code>realized</code>, <code>breached</code>, <code>called</code>).
+    return:
+      type: Virtufin.Core.Messaging.Topic
+    content.vb: Public Shared Function Risk(scenarioId As ScenarioId, entity As String, eventName As String) As Topic
+  overload: Virtufin.Base.Messaging.Topics.Risk*
+  nameWithType.vb: Topics.Risk(ScenarioId, String, String)
+  fullName.vb: Virtufin.Base.Messaging.Topics.Risk(Virtufin.Core.Scenario.ScenarioId, String, String)
+  name.vb: Risk(ScenarioId, String, String)
+- uid: Virtufin.Base.Messaging.Topics.Build(System.String,System.String,System.String)
+  commentId: M:Virtufin.Base.Messaging.Topics.Build(System.String,System.String,System.String)
+  id: Build(System.String,System.String,System.String)
+  parent: Virtufin.Base.Messaging.Topics
+  langs:
+  - csharp
+  - vb
+  name: Build(string, string, string)
+  nameWithType: Topics.Build(string, string, string)
+  fullName: Virtufin.Base.Messaging.Topics.Build(string, string, string)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/Messaging/Topics.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Build
+    path: ../../../src/Virtufin.Base/Messaging/Topics.cs
+    startLine: 65
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Messaging
+  summary: >-
+    Build a topic from a generic shape: <code>{domain}.{entity}.{event}</code>.
+
+    Used internally for tests and dynamic topic construction.
+  example: []
+  syntax:
+    content: public static Topic Build(string domain, string entity, string eventName)
+    parameters:
+    - id: domain
+      type: System.String
+      description: Domain prefix (e.g. <code>sc.S7F3A9B.trade</code>, <code>act.market</code>).
+    - id: entity
+      type: System.String
+      description: Entity segment.
+    - id: eventName
+      type: System.String
+      description: Event segment.
+    return:
+      type: Virtufin.Core.Messaging.Topic
+    content.vb: Public Shared Function Build(domain As String, entity As String, eventName As String) As Topic
+  overload: Virtufin.Base.Messaging.Topics.Build*
+  nameWithType.vb: Topics.Build(String, String, String)
+  fullName.vb: Virtufin.Base.Messaging.Topics.Build(String, String, String)
+  name.vb: Build(String, String, String)
+- uid: Virtufin.Base.Messaging.Topics.PublishAsync(Virtufin.Core.Messaging.IEventPublisher,Virtufin.Core.Messaging.Topic,Virtufin.Core.Events.IEventEnvelope,System.Object)
+  commentId: M:Virtufin.Base.Messaging.Topics.PublishAsync(Virtufin.Core.Messaging.IEventPublisher,Virtufin.Core.Messaging.Topic,Virtufin.Core.Events.IEventEnvelope,System.Object)
+  id: PublishAsync(Virtufin.Core.Messaging.IEventPublisher,Virtufin.Core.Messaging.Topic,Virtufin.Core.Events.IEventEnvelope,System.Object)
+  isExtensionMethod: true
+  parent: Virtufin.Base.Messaging.Topics
+  langs:
+  - csharp
+  - vb
+  name: PublishAsync(IEventPublisher, Topic, IEventEnvelope, object)
+  nameWithType: Topics.PublishAsync(IEventPublisher, Topic, IEventEnvelope, object)
+  fullName: Virtufin.Base.Messaging.Topics.PublishAsync(Virtufin.Core.Messaging.IEventPublisher, Virtufin.Core.Messaging.Topic, Virtufin.Core.Events.IEventEnvelope, object)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/Messaging/Topics.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: PublishAsync
+    path: ../../../src/Virtufin.Base/Messaging/Topics.cs
+    startLine: 77
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Messaging
+  summary: >-
+    Convenience: emit an envelope-payload pair to a topic. Wraps the
+
+    payload in a <xref href="Virtufin.Core.Events.CloudEvent" data-throw-if-not-resolved="false"></xref> using
+
+    <xref href="Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope%2cSystem.Object%2cSystem.String)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static Task PublishAsync(this IEventPublisher publisher, Topic topic, IEventEnvelope envelope, object payload)
+    parameters:
+    - id: publisher
+      type: Virtufin.Core.Messaging.IEventPublisher
+      description: Publisher to use.
+    - id: topic
+      type: Virtufin.Core.Messaging.Topic
+      description: Destination topic.
+    - id: envelope
+      type: Virtufin.Core.Events.IEventEnvelope
+      description: Envelope carrying routing metadata.
+    - id: payload
+      type: System.Object
+      description: Event payload.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Shared Function PublishAsync(publisher As IEventPublisher, topic As Topic, envelope As IEventEnvelope, payload As Object) As Task
+  overload: Virtufin.Base.Messaging.Topics.PublishAsync*
+  nameWithType.vb: Topics.PublishAsync(IEventPublisher, Topic, IEventEnvelope, Object)
+  fullName.vb: Virtufin.Base.Messaging.Topics.PublishAsync(Virtufin.Core.Messaging.IEventPublisher, Virtufin.Core.Messaging.Topic, Virtufin.Core.Events.IEventEnvelope, Object)
+  name.vb: PublishAsync(IEventPublisher, Topic, IEventEnvelope, Object)
+references:
+- uid: Virtufin.Base.Messaging
+  commentId: N:Virtufin.Base.Messaging
+  href: Virtufin.html
+  name: Virtufin.Base.Messaging
+  nameWithType: Virtufin.Base.Messaging
+  fullName: Virtufin.Base.Messaging
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Messaging
+    name: Messaging
+    href: Virtufin.Base.Messaging.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Messaging
+    name: Messaging
+    href: Virtufin.Base.Messaging.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Base.Messaging.Topics.ActMarket*
+  commentId: Overload:Virtufin.Base.Messaging.Topics.ActMarket
+  href: Virtufin.Base.Messaging.Topics.html#Virtufin_Base_Messaging_Topics_ActMarket_System_String_System_String_
+  name: ActMarket
+  nameWithType: Topics.ActMarket
+  fullName: Virtufin.Base.Messaging.Topics.ActMarket
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Virtufin.Core.Messaging.Topic
+  commentId: T:Virtufin.Core.Messaging.Topic
+  parent: Virtufin.Core.Messaging
+  href: Virtufin.Core.Messaging.Topic.html
+  name: Topic
+  nameWithType: Topic
+  fullName: Virtufin.Core.Messaging.Topic
+- uid: Virtufin.Core.Messaging
+  commentId: N:Virtufin.Core.Messaging
+  href: Virtufin.html
+  name: Virtufin.Core.Messaging
+  nameWithType: Virtufin.Core.Messaging
+  fullName: Virtufin.Core.Messaging
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Messaging
+    name: Messaging
+    href: Virtufin.Core.Messaging.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Messaging
+    name: Messaging
+    href: Virtufin.Core.Messaging.html
+- uid: Virtufin.Base.Messaging.Topics.HypMarket*
+  commentId: Overload:Virtufin.Base.Messaging.Topics.HypMarket
+  href: Virtufin.Base.Messaging.Topics.html#Virtufin_Base_Messaging_Topics_HypMarket_System_String_System_String_System_String_
+  name: HypMarket
+  nameWithType: Topics.HypMarket
+  fullName: Virtufin.Base.Messaging.Topics.HypMarket
+- uid: Virtufin.Base.Messaging.Topics.Trade*
+  commentId: Overload:Virtufin.Base.Messaging.Topics.Trade
+  href: Virtufin.Base.Messaging.Topics.html#Virtufin_Base_Messaging_Topics_Trade_Virtufin_Core_Scenario_ScenarioId_System_String_System_String_
+  name: Trade
+  nameWithType: Topics.Trade
+  fullName: Virtufin.Base.Messaging.Topics.Trade
+- uid: Virtufin.Core.Scenario.ScenarioId
+  commentId: T:Virtufin.Core.Scenario.ScenarioId
+  parent: Virtufin.Core.Scenario
+  href: Virtufin.Core.Scenario.ScenarioId.html
+  name: ScenarioId
+  nameWithType: ScenarioId
+  fullName: Virtufin.Core.Scenario.ScenarioId
+- uid: Virtufin.Core.Scenario
+  commentId: N:Virtufin.Core.Scenario
+  href: Virtufin.html
+  name: Virtufin.Core.Scenario
+  nameWithType: Virtufin.Core.Scenario
+  fullName: Virtufin.Core.Scenario
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Scenario
+    name: Scenario
+    href: Virtufin.Core.Scenario.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Scenario
+    name: Scenario
+    href: Virtufin.Core.Scenario.html
+- uid: Virtufin.Base.Messaging.Topics.Position*
+  commentId: Overload:Virtufin.Base.Messaging.Topics.Position
+  href: Virtufin.Base.Messaging.Topics.html#Virtufin_Base_Messaging_Topics_Position_Virtufin_Core_Scenario_ScenarioId_System_String_System_String_
+  name: Position
+  nameWithType: Topics.Position
+  fullName: Virtufin.Base.Messaging.Topics.Position
+- uid: Virtufin.Base.Messaging.Topics.Risk*
+  commentId: Overload:Virtufin.Base.Messaging.Topics.Risk
+  href: Virtufin.Base.Messaging.Topics.html#Virtufin_Base_Messaging_Topics_Risk_Virtufin_Core_Scenario_ScenarioId_System_String_System_String_
+  name: Risk
+  nameWithType: Topics.Risk
+  fullName: Virtufin.Base.Messaging.Topics.Risk
+- uid: Virtufin.Base.Messaging.Topics.Build*
+  commentId: Overload:Virtufin.Base.Messaging.Topics.Build
+  href: Virtufin.Base.Messaging.Topics.html#Virtufin_Base_Messaging_Topics_Build_System_String_System_String_System_String_
+  name: Build
+  nameWithType: Topics.Build
+  fullName: Virtufin.Base.Messaging.Topics.Build
+- uid: Virtufin.Core.Events.CloudEvent
+  commentId: T:Virtufin.Core.Events.CloudEvent
+  parent: Virtufin.Core.Events
+  href: Virtufin.Core.Events.CloudEvent.html
+  name: CloudEvent
+  nameWithType: CloudEvent
+  fullName: Virtufin.Core.Events.CloudEvent
+- uid: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope,System.Object,System.String)
+  commentId: M:Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope,System.Object,System.String)
+  isExternal: true
+  href: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.html#Virtufin_Base_Events_EventEnvelopeCloudEventExtensions_ToCloudEvent_Virtufin_Core_Events_IEventEnvelope_System_Object_System_String_
+  name: ToCloudEvent(IEventEnvelope, object, string)
+  nameWithType: EventEnvelopeCloudEventExtensions.ToCloudEvent(IEventEnvelope, object, string)
+  fullName: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope, object, string)
+  nameWithType.vb: EventEnvelopeCloudEventExtensions.ToCloudEvent(IEventEnvelope, Object, String)
+  fullName.vb: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope, Object, String)
+  name.vb: ToCloudEvent(IEventEnvelope, Object, String)
+  spec.csharp:
+  - uid: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope,System.Object,System.String)
+    name: ToCloudEvent
+    href: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.html#Virtufin_Base_Events_EventEnvelopeCloudEventExtensions_ToCloudEvent_Virtufin_Core_Events_IEventEnvelope_System_Object_System_String_
+  - name: (
+  - uid: Virtufin.Core.Events.IEventEnvelope
+    name: IEventEnvelope
+    href: Virtufin.Core.Events.IEventEnvelope.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope,System.Object,System.String)
+    name: ToCloudEvent
+    href: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.html#Virtufin_Base_Events_EventEnvelopeCloudEventExtensions_ToCloudEvent_Virtufin_Core_Events_IEventEnvelope_System_Object_System_String_
+  - name: (
+  - uid: Virtufin.Core.Events.IEventEnvelope
+    name: IEventEnvelope
+    href: Virtufin.Core.Events.IEventEnvelope.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Virtufin.Base.Messaging.Topics.PublishAsync*
+  commentId: Overload:Virtufin.Base.Messaging.Topics.PublishAsync
+  href: Virtufin.Base.Messaging.Topics.html#Virtufin_Base_Messaging_Topics_PublishAsync_Virtufin_Core_Messaging_IEventPublisher_Virtufin_Core_Messaging_Topic_Virtufin_Core_Events_IEventEnvelope_System_Object_
+  name: PublishAsync
+  nameWithType: Topics.PublishAsync
+  fullName: Virtufin.Base.Messaging.Topics.PublishAsync
+- uid: Virtufin.Core.Messaging.IEventPublisher
+  commentId: T:Virtufin.Core.Messaging.IEventPublisher
+  parent: Virtufin.Core.Messaging
+  href: Virtufin.Core.Messaging.IEventPublisher.html
+  name: IEventPublisher
+  nameWithType: IEventPublisher
+  fullName: Virtufin.Core.Messaging.IEventPublisher
+- uid: Virtufin.Core.Events.IEventEnvelope
+  commentId: T:Virtufin.Core.Events.IEventEnvelope
+  parent: Virtufin.Core.Events
+  href: Virtufin.Core.Events.IEventEnvelope.html
+  name: IEventEnvelope
+  nameWithType: IEventEnvelope
+  fullName: Virtufin.Core.Events.IEventEnvelope
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Virtufin.Core.Events
+  commentId: N:Virtufin.Core.Events
+  href: Virtufin.html
+  name: Virtufin.Core.Events
+  nameWithType: Virtufin.Core.Events
+  fullName: Virtufin.Core.Events
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

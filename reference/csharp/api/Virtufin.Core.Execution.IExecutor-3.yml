@@ -1,0 +1,277 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Execution.IExecutor`3
+  commentId: T:Virtufin.Core.Execution.IExecutor`3
+  id: IExecutor`3
+  parent: Virtufin.Core.Execution
+  children:
+  - Virtufin.Core.Execution.IExecutor`3.Execute(`0,`1)
+  - Virtufin.Core.Execution.IExecutor`3.Initial
+  langs:
+  - csharp
+  - vb
+  name: IExecutor<TState, TAction, TEvent>
+  nameWithType: IExecutor<TState, TAction, TEvent>
+  fullName: Virtufin.Core.Execution.IExecutor<TState, TAction, TEvent>
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Execution/IExecutor.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IExecutor
+    path: ../../../src/Virtufin.Core/Execution/IExecutor.cs
+    startLine: 29
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Execution
+  summary: >-
+    Signature of an execution engine: given the current
+
+    <code class="typeparamref">TState</code> and a <code class="typeparamref">TAction</code>,
+
+    produce the next state and an <code class="typeparamref">TEvent</code> describing
+
+    the outcome. The event type is constrained to be parameterised by the
+
+    action type so the executor statically cannot emit events for the wrong
+
+    action universe.
+  remarks: >-
+    This is the Kleisli morphism <code>A → IO E</code> from the domain spec, with
+
+    the executor state exposed explicitly. The deterministic executor is a
+
+    degenerate case where <code>IO = Identity</code>; live and stochastic
+
+    executors carry the IO effect.
+  example: []
+  syntax:
+    content: 'public interface IExecutor<TState, TAction, TEvent> where TState : IExecutionState where TAction : ITradeAction where TEvent : ITradeEvent<TAction>'
+    typeParameters:
+    - id: TState
+      description: Execution state type.
+    - id: TAction
+      description: Trade action type the executor consumes.
+    - id: TEvent
+      description: Trade event type parameterised by <code class="typeparamref">TAction</code>.
+    content.vb: Public Interface IExecutor(Of TState As IExecutionState, TAction As ITradeAction, TEvent As ITradeEvent(Of TAction))
+  derivedClasses:
+  - Virtufin.Base.Execution.DeterministicExecutorBase`3
+  - Virtufin.Base.Execution.LiveExecutorBase`3
+  - Virtufin.Base.Execution.ObserveOnlyExecutor`3
+  - Virtufin.Base.Execution.SlippageExecutorBase`3
+  nameWithType.vb: IExecutor(Of TState, TAction, TEvent)
+  fullName.vb: Virtufin.Core.Execution.IExecutor(Of TState, TAction, TEvent)
+  name.vb: IExecutor(Of TState, TAction, TEvent)
+- uid: Virtufin.Core.Execution.IExecutor`3.Initial
+  commentId: P:Virtufin.Core.Execution.IExecutor`3.Initial
+  id: Initial
+  parent: Virtufin.Core.Execution.IExecutor`3
+  langs:
+  - csharp
+  - vb
+  name: Initial
+  nameWithType: IExecutor<TState, TAction, TEvent>.Initial
+  fullName: Virtufin.Core.Execution.IExecutor<TState, TAction, TEvent>.Initial
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Execution/IExecutor.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Initial
+    path: ../../../src/Virtufin.Core/Execution/IExecutor.cs
+    startLine: 35
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Execution
+  summary: The initial state of the executor.
+  example: []
+  syntax:
+    content: TState Initial { get; }
+    parameters: []
+    return:
+      type: '{TState}'
+    content.vb: ReadOnly Property Initial As TState
+  overload: Virtufin.Core.Execution.IExecutor`3.Initial*
+  nameWithType.vb: IExecutor(Of TState, TAction, TEvent).Initial
+  fullName.vb: Virtufin.Core.Execution.IExecutor(Of TState, TAction, TEvent).Initial
+- uid: Virtufin.Core.Execution.IExecutor`3.Execute(`0,`1)
+  commentId: M:Virtufin.Core.Execution.IExecutor`3.Execute(`0,`1)
+  id: Execute(`0,`1)
+  parent: Virtufin.Core.Execution.IExecutor`3
+  langs:
+  - csharp
+  - vb
+  name: Execute(TState, TAction)
+  nameWithType: IExecutor<TState, TAction, TEvent>.Execute(TState, TAction)
+  fullName: Virtufin.Core.Execution.IExecutor<TState, TAction, TEvent>.Execute(TState, TAction)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Execution/IExecutor.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Execute
+    path: ../../../src/Virtufin.Core/Execution/IExecutor.cs
+    startLine: 41
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Execution
+  summary: Execute one <code class="typeparamref">TAction</code>, producing the next state and an outcome event.
+  example: []
+  syntax:
+    content: (TState NextState, TEvent Event) Execute(TState state, TAction action)
+    parameters:
+    - id: state
+      type: '{TState}'
+      description: Current executor state.
+    - id: action
+      type: '{TAction}'
+      description: The action to execute.
+    return:
+      type: System.ValueTuple{{TState},{TEvent}}
+      description: Tuple of (next state, outcome event).
+    content.vb: Function Execute(state As TState, action As TAction) As (NextState As TState, [Event] As TEvent)
+  overload: Virtufin.Core.Execution.IExecutor`3.Execute*
+  nameWithType.vb: IExecutor(Of TState, TAction, TEvent).Execute(TState, TAction)
+  fullName.vb: Virtufin.Core.Execution.IExecutor(Of TState, TAction, TEvent).Execute(TState, TAction)
+references:
+- uid: Virtufin.Core.Execution
+  commentId: N:Virtufin.Core.Execution
+  href: Virtufin.html
+  name: Virtufin.Core.Execution
+  nameWithType: Virtufin.Core.Execution
+  fullName: Virtufin.Core.Execution
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Execution
+    name: Execution
+    href: Virtufin.Core.Execution.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Execution
+    name: Execution
+    href: Virtufin.Core.Execution.html
+- uid: Virtufin.Core.Execution.IExecutor`3.Initial*
+  commentId: Overload:Virtufin.Core.Execution.IExecutor`3.Initial
+  href: Virtufin.Core.Execution.IExecutor-3.html#Virtufin_Core_Execution_IExecutor_3_Initial
+  name: Initial
+  nameWithType: IExecutor<TState, TAction, TEvent>.Initial
+  fullName: Virtufin.Core.Execution.IExecutor<TState, TAction, TEvent>.Initial
+  nameWithType.vb: IExecutor(Of TState, TAction, TEvent).Initial
+  fullName.vb: Virtufin.Core.Execution.IExecutor(Of TState, TAction, TEvent).Initial
+- uid: '{TState}'
+  commentId: '!:TState'
+  definition: TState
+  name: TState
+  nameWithType: TState
+  fullName: TState
+- uid: TState
+  name: TState
+  nameWithType: TState
+  fullName: TState
+- uid: Virtufin.Core.Execution.IExecutor`3.Execute*
+  commentId: Overload:Virtufin.Core.Execution.IExecutor`3.Execute
+  href: Virtufin.Core.Execution.IExecutor-3.html#Virtufin_Core_Execution_IExecutor_3_Execute__0__1_
+  name: Execute
+  nameWithType: IExecutor<TState, TAction, TEvent>.Execute
+  fullName: Virtufin.Core.Execution.IExecutor<TState, TAction, TEvent>.Execute
+  nameWithType.vb: IExecutor(Of TState, TAction, TEvent).Execute
+  fullName.vb: Virtufin.Core.Execution.IExecutor(Of TState, TAction, TEvent).Execute
+- uid: '{TAction}'
+  commentId: '!:TAction'
+  definition: TAction
+  name: TAction
+  nameWithType: TAction
+  fullName: TAction
+- uid: System.ValueTuple{{TState},{TEvent}}
+  commentId: T:System.ValueTuple{`0,`2}
+  parent: System
+  definition: System.ValueTuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.valuetuple--0,-2-.nextstate
+  name: (TState NextState, TEvent Event)
+  nameWithType: (TState NextState, TEvent Event)
+  fullName: (TState NextState, TEvent Event)
+  nameWithType.vb: (NextState As TState, Event As TEvent)
+  fullName.vb: (NextState As TState, Event As TEvent)
+  name.vb: (NextState As TState, Event As TEvent)
+  spec.csharp:
+  - name: (
+  - name: TState
+  - name: " "
+  - uid: System.ValueTuple{`0,`2}.NextState
+    name: NextState
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple--0,-2-.nextstate
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: " "
+  - uid: System.ValueTuple{`0,`2}.Event
+    name: Event
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple--0,-2-.event
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{`0,`2}.NextState
+    name: NextState
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple--0,-2-.nextstate
+  - name: " "
+  - name: As
+  - name: " "
+  - name: TState
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{`0,`2}.Event
+    name: Event
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple--0,-2-.event
+  - name: " "
+  - name: As
+  - name: " "
+  - name: TEvent
+  - name: )
+- uid: TAction
+  name: TAction
+  nameWithType: TAction
+  fullName: TAction
+- uid: System.ValueTuple`2
+  commentId: T:System.ValueTuple`2
+  name: (T1, T2)
+  nameWithType: (T1, T2)
+  fullName: (T1, T2)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

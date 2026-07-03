@@ -1,0 +1,249 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.IValueProvider
+  commentId: T:Virtufin.Core.IValueProvider
+  id: IValueProvider
+  parent: Virtufin.Core
+  children:
+  - Virtufin.Core.IValueProvider.GetValue``1(Virtufin.Core.IEntityIdentifier,Virtufin.Core.IAttribute{``0})
+  - Virtufin.Core.IValueProvider.TypeSpecifier
+  langs:
+  - csharp
+  - vb
+  name: IValueProvider
+  nameWithType: IValueProvider
+  fullName: Virtufin.Core.IValueProvider
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/IValueProvider.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IValueProvider
+    path: ../../../src/Virtufin.Core/IValueProvider.cs
+    startLine: 2
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core
+  syntax:
+    content: public interface IValueProvider
+    content.vb: Public Interface IValueProvider
+  derivedClasses:
+  - Virtufin.Core.DictionaryValueProvider`1
+  - Virtufin.Core.FunctionValueProvider`1
+- uid: Virtufin.Core.IValueProvider.TypeSpecifier
+  commentId: P:Virtufin.Core.IValueProvider.TypeSpecifier
+  id: TypeSpecifier
+  parent: Virtufin.Core.IValueProvider
+  langs:
+  - csharp
+  - vb
+  name: TypeSpecifier
+  nameWithType: IValueProvider.TypeSpecifier
+  fullName: Virtufin.Core.IValueProvider.TypeSpecifier
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/IValueProvider.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: TypeSpecifier
+    path: ../../../src/Virtufin.Core/IValueProvider.cs
+    startLine: 4
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core
+  syntax:
+    content: IEntityAttributeValueTypeSpecifier TypeSpecifier { get; }
+    parameters: []
+    return:
+      type: Virtufin.Core.IEntityAttributeValueTypeSpecifier
+    content.vb: ReadOnly Property TypeSpecifier As IEntityAttributeValueTypeSpecifier
+  overload: Virtufin.Core.IValueProvider.TypeSpecifier*
+- uid: Virtufin.Core.IValueProvider.GetValue``1(Virtufin.Core.IEntityIdentifier,Virtufin.Core.IAttribute{``0})
+  commentId: M:Virtufin.Core.IValueProvider.GetValue``1(Virtufin.Core.IEntityIdentifier,Virtufin.Core.IAttribute{``0})
+  id: GetValue``1(Virtufin.Core.IEntityIdentifier,Virtufin.Core.IAttribute{``0})
+  parent: Virtufin.Core.IValueProvider
+  langs:
+  - csharp
+  - vb
+  name: GetValue<V>(IEntityIdentifier, IAttribute<V>)
+  nameWithType: IValueProvider.GetValue<V>(IEntityIdentifier, IAttribute<V>)
+  fullName: Virtufin.Core.IValueProvider.GetValue<V>(Virtufin.Core.IEntityIdentifier, Virtufin.Core.IAttribute<V>)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/IValueProvider.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GetValue
+    path: ../../../src/Virtufin.Core/IValueProvider.cs
+    startLine: 5
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core
+  syntax:
+    content: 'V? GetValue<V>(IEntityIdentifier identifier, IAttribute<V> attribute) where V : struct'
+    parameters:
+    - id: identifier
+      type: Virtufin.Core.IEntityIdentifier
+    - id: attribute
+      type: Virtufin.Core.IAttribute{{V}}
+    typeParameters:
+    - id: V
+    return:
+      type: System.Nullable{{V}}
+    content.vb: Function GetValue(Of V As Structure)(identifier As IEntityIdentifier, attribute As IAttribute(Of V)) As V?
+  overload: Virtufin.Core.IValueProvider.GetValue*
+  nameWithType.vb: IValueProvider.GetValue(Of V)(IEntityIdentifier, IAttribute(Of V))
+  fullName.vb: Virtufin.Core.IValueProvider.GetValue(Of V)(Virtufin.Core.IEntityIdentifier, Virtufin.Core.IAttribute(Of V))
+  name.vb: GetValue(Of V)(IEntityIdentifier, IAttribute(Of V))
+references:
+- uid: Virtufin.Core
+  commentId: N:Virtufin.Core
+  href: Virtufin.html
+  name: Virtufin.Core
+  nameWithType: Virtufin.Core
+  fullName: Virtufin.Core
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+- uid: Virtufin.Core.IValueProvider.TypeSpecifier*
+  commentId: Overload:Virtufin.Core.IValueProvider.TypeSpecifier
+  href: Virtufin.Core.IValueProvider.html#Virtufin_Core_IValueProvider_TypeSpecifier
+  name: TypeSpecifier
+  nameWithType: IValueProvider.TypeSpecifier
+  fullName: Virtufin.Core.IValueProvider.TypeSpecifier
+- uid: Virtufin.Core.IEntityAttributeValueTypeSpecifier
+  commentId: T:Virtufin.Core.IEntityAttributeValueTypeSpecifier
+  parent: Virtufin.Core
+  href: Virtufin.Core.IEntityAttributeValueTypeSpecifier.html
+  name: IEntityAttributeValueTypeSpecifier
+  nameWithType: IEntityAttributeValueTypeSpecifier
+  fullName: Virtufin.Core.IEntityAttributeValueTypeSpecifier
+- uid: Virtufin.Core.IValueProvider.GetValue*
+  commentId: Overload:Virtufin.Core.IValueProvider.GetValue
+  href: Virtufin.Core.IValueProvider.html#Virtufin_Core_IValueProvider_GetValue__1_Virtufin_Core_IEntityIdentifier_Virtufin_Core_IAttribute___0__
+  name: GetValue
+  nameWithType: IValueProvider.GetValue
+  fullName: Virtufin.Core.IValueProvider.GetValue
+- uid: Virtufin.Core.IEntityIdentifier
+  commentId: T:Virtufin.Core.IEntityIdentifier
+  parent: Virtufin.Core
+  href: Virtufin.Core.IEntityIdentifier.html
+  name: IEntityIdentifier
+  nameWithType: IEntityIdentifier
+  fullName: Virtufin.Core.IEntityIdentifier
+- uid: Virtufin.Core.IAttribute{{V}}
+  commentId: T:Virtufin.Core.IAttribute{`0}
+  parent: Virtufin.Core
+  definition: Virtufin.Core.IAttribute`1
+  href: Virtufin.Core.IAttribute-1.html
+  name: IAttribute<V>
+  nameWithType: IAttribute<V>
+  fullName: Virtufin.Core.IAttribute<V>
+  nameWithType.vb: IAttribute(Of V)
+  fullName.vb: Virtufin.Core.IAttribute(Of V)
+  name.vb: IAttribute(Of V)
+  spec.csharp:
+  - uid: Virtufin.Core.IAttribute`1
+    name: IAttribute
+    href: Virtufin.Core.IAttribute-1.html
+  - name: <
+  - name: V
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.IAttribute`1
+    name: IAttribute
+    href: Virtufin.Core.IAttribute-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: V
+  - name: )
+- uid: System.Nullable{{V}}
+  commentId: T:System.Nullable{``0}
+  parent: System
+  definition: System.Nullable`1
+  name: V?
+  nameWithType: V?
+  fullName: V?
+  spec.csharp:
+  - name: V
+  - name: '?'
+  spec.vb:
+  - name: V
+  - name: '?'
+- uid: Virtufin.Core.IAttribute`1
+  commentId: T:Virtufin.Core.IAttribute`1
+  href: Virtufin.Core.IAttribute-1.html
+  name: IAttribute<V>
+  nameWithType: IAttribute<V>
+  fullName: Virtufin.Core.IAttribute<V>
+  nameWithType.vb: IAttribute(Of V)
+  fullName.vb: Virtufin.Core.IAttribute(Of V)
+  name.vb: IAttribute(Of V)
+  spec.csharp:
+  - uid: Virtufin.Core.IAttribute`1
+    name: IAttribute
+    href: Virtufin.Core.IAttribute-1.html
+  - name: <
+  - name: V
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.IAttribute`1
+    name: IAttribute
+    href: Virtufin.Core.IAttribute-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: V
+  - name: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

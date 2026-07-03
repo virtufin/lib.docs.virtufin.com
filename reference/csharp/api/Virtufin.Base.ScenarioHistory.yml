@@ -1,0 +1,1245 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.ScenarioHistory
+  commentId: T:Virtufin.Base.ScenarioHistory
+  id: ScenarioHistory
+  parent: Virtufin.Base
+  children:
+  - Virtufin.Base.ScenarioHistory.#ctor
+  - Virtufin.Base.ScenarioHistory.#ctor(System.Collections.Generic.IEnumerable{Virtufin.Base.Scenario})
+  - Virtufin.Base.ScenarioHistory.Append(Virtufin.Base.Scenario)
+  - Virtufin.Base.ScenarioHistory.Append(Virtufin.Core.Contracts.IScenario)
+  - Virtufin.Base.ScenarioHistory.Dispose
+  - Virtufin.Base.ScenarioHistory.GetEnumerator
+  - Virtufin.Base.ScenarioHistory.Iter
+  - Virtufin.Base.ScenarioHistory.LastScenario
+  - Virtufin.Base.ScenarioHistory.NewScenarios
+  - Virtufin.Base.ScenarioHistory.Scenario(Virtufin.Core.Identifiers.ITimeStamp)
+  langs:
+  - csharp
+  - vb
+  name: ScenarioHistory
+  nameWithType: ScenarioHistory
+  fullName: Virtufin.Base.ScenarioHistory
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Base/ScenarioHistory.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ScenarioHistory
+    path: ../../../src/Virtufin.Base/ScenarioHistory.cs
+    startLine: 21
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: >-
+    Concrete <xref href="Virtufin.Core.Contracts.IScenarioHistory" data-throw-if-not-resolved="false"></xref> backed by an in-memory list of
+
+    scenarios. New scenarios are emitted through a hot
+
+    <xref href="System.Reactive.Subjects.Subject%601" data-throw-if-not-resolved="false"></xref> with no replay buffer — late subscribers see only
+
+    future emissions.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var history = new ScenarioHistory();
+
+    history.Append(new Scenario(TimeStamp.New(2024,1,1), State.Empty));
+
+    using var sub = history.NewScenarios.Subscribe(s =&gt; Console.WriteLine(s.TimeStamp));
+
+    history.Append(new Scenario(TimeStamp.New(2024,1,2), State.Empty)); // printed</code></pre>
+  syntax:
+    content: 'public sealed class ScenarioHistory : IScenarioHistory, IEnumerable<IScenario>, IEnumerable, IDisposable'
+    content.vb: Public NotInheritable Class ScenarioHistory Implements IScenarioHistory, IEnumerable(Of IScenario), IEnumerable, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - Virtufin.Core.Contracts.IScenarioHistory
+  - System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IScenario}
+  - System.Collections.IEnumerable
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.Base.ScenarioHistory.#ctor
+  commentId: M:Virtufin.Base.ScenarioHistory.#ctor
+  id: '#ctor'
+  parent: Virtufin.Base.ScenarioHistory
+  langs:
+  - csharp
+  - vb
+  name: ScenarioHistory()
+  nameWithType: ScenarioHistory.ScenarioHistory()
+  fullName: Virtufin.Base.ScenarioHistory.ScenarioHistory()
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Base/ScenarioHistory.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Base/ScenarioHistory.cs
+    startLine: 27
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Construct an empty history.
+  example: []
+  syntax:
+    content: public ScenarioHistory()
+    content.vb: Public Sub New()
+  overload: Virtufin.Base.ScenarioHistory.#ctor*
+  nameWithType.vb: ScenarioHistory.New()
+  fullName.vb: Virtufin.Base.ScenarioHistory.New()
+  name.vb: New()
+- uid: Virtufin.Base.ScenarioHistory.#ctor(System.Collections.Generic.IEnumerable{Virtufin.Base.Scenario})
+  commentId: M:Virtufin.Base.ScenarioHistory.#ctor(System.Collections.Generic.IEnumerable{Virtufin.Base.Scenario})
+  id: '#ctor(System.Collections.Generic.IEnumerable{Virtufin.Base.Scenario})'
+  parent: Virtufin.Base.ScenarioHistory
+  langs:
+  - csharp
+  - vb
+  name: ScenarioHistory(IEnumerable<Scenario>)
+  nameWithType: ScenarioHistory.ScenarioHistory(IEnumerable<Scenario>)
+  fullName: Virtufin.Base.ScenarioHistory.ScenarioHistory(System.Collections.Generic.IEnumerable<Virtufin.Base.Scenario>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Base/ScenarioHistory.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Base/ScenarioHistory.cs
+    startLine: 31
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Construct a history pre-populated with <code class="paramref">scenarios</code>.
+  example: []
+  syntax:
+    content: public ScenarioHistory(IEnumerable<Scenario> scenarios)
+    parameters:
+    - id: scenarios
+      type: System.Collections.Generic.IEnumerable{Virtufin.Base.Scenario}
+      description: Initial scenarios.
+    content.vb: Public Sub New(scenarios As IEnumerable(Of Scenario))
+  overload: Virtufin.Base.ScenarioHistory.#ctor*
+  nameWithType.vb: ScenarioHistory.New(IEnumerable(Of Scenario))
+  fullName.vb: Virtufin.Base.ScenarioHistory.New(System.Collections.Generic.IEnumerable(Of Virtufin.Base.Scenario))
+  name.vb: New(IEnumerable(Of Scenario))
+- uid: Virtufin.Base.ScenarioHistory.LastScenario
+  commentId: P:Virtufin.Base.ScenarioHistory.LastScenario
+  id: LastScenario
+  parent: Virtufin.Base.ScenarioHistory
+  langs:
+  - csharp
+  - vb
+  name: LastScenario
+  nameWithType: ScenarioHistory.LastScenario
+  fullName: Virtufin.Base.ScenarioHistory.LastScenario
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/ScenarioHistory.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: LastScenario
+    path: ../../../src/Virtufin.Base/ScenarioHistory.cs
+    startLine: 37
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: The most recently appended scenario.
+  example: []
+  syntax:
+    content: public IScenario LastScenario { get; }
+    parameters: []
+    return:
+      type: Virtufin.Core.Contracts.IScenario
+    content.vb: Public ReadOnly Property LastScenario As IScenario
+  overload: Virtufin.Base.ScenarioHistory.LastScenario*
+  implements:
+  - Virtufin.Core.Contracts.IScenarioHistory.LastScenario
+- uid: Virtufin.Base.ScenarioHistory.Iter
+  commentId: P:Virtufin.Base.ScenarioHistory.Iter
+  id: Iter
+  parent: Virtufin.Base.ScenarioHistory
+  langs:
+  - csharp
+  - vb
+  name: Iter
+  nameWithType: ScenarioHistory.Iter
+  fullName: Virtufin.Base.ScenarioHistory.Iter
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/ScenarioHistory.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Iter
+    path: ../../../src/Virtufin.Base/ScenarioHistory.cs
+    startLine: 40
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Iterate scenarios in insertion order.
+  example: []
+  syntax:
+    content: public IEnumerable<IScenario> Iter { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IScenario}
+    content.vb: Public ReadOnly Property Iter As IEnumerable(Of IScenario)
+  overload: Virtufin.Base.ScenarioHistory.Iter*
+  implements:
+  - Virtufin.Core.Contracts.IScenarioHistory.Iter
+- uid: Virtufin.Base.ScenarioHistory.Scenario(Virtufin.Core.Identifiers.ITimeStamp)
+  commentId: M:Virtufin.Base.ScenarioHistory.Scenario(Virtufin.Core.Identifiers.ITimeStamp)
+  id: Scenario(Virtufin.Core.Identifiers.ITimeStamp)
+  parent: Virtufin.Base.ScenarioHistory
+  langs:
+  - csharp
+  - vb
+  name: Scenario(ITimeStamp)
+  nameWithType: ScenarioHistory.Scenario(ITimeStamp)
+  fullName: Virtufin.Base.ScenarioHistory.Scenario(Virtufin.Core.Identifiers.ITimeStamp)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/ScenarioHistory.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Scenario
+    path: ../../../src/Virtufin.Base/ScenarioHistory.cs
+    startLine: 43
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: >-
+    Look up the first scenario matching <code class="paramref">timeStamp</code>.
+
+    Returns <code>null</code> if no scenario matches.
+  example: []
+  syntax:
+    content: public IScenario? Scenario(ITimeStamp timeStamp)
+    parameters:
+    - id: timeStamp
+      type: Virtufin.Core.Identifiers.ITimeStamp
+      description: Time-point to search for.
+    return:
+      type: Virtufin.Core.Contracts.IScenario
+    content.vb: Public Function Scenario(timeStamp As ITimeStamp) As IScenario
+  overload: Virtufin.Base.ScenarioHistory.Scenario*
+  implements:
+  - Virtufin.Core.Contracts.IScenarioHistory.Scenario(Virtufin.Core.Identifiers.ITimeStamp)
+- uid: Virtufin.Base.ScenarioHistory.NewScenarios
+  commentId: P:Virtufin.Base.ScenarioHistory.NewScenarios
+  id: NewScenarios
+  parent: Virtufin.Base.ScenarioHistory
+  langs:
+  - csharp
+  - vb
+  name: NewScenarios
+  nameWithType: ScenarioHistory.NewScenarios
+  fullName: Virtufin.Base.ScenarioHistory.NewScenarios
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/ScenarioHistory.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: NewScenarios
+    path: ../../../src/Virtufin.Base/ScenarioHistory.cs
+    startLine: 47
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: >-
+    Hot observable of newly-appended scenarios. Late subscribers see no
+
+    history. Use the existing <code>Subject&lt;T&gt;</code> Unsubscribe pattern
+
+    for proper disposal (see <code>AGENTS.md</code>).
+  example: []
+  syntax:
+    content: public IObservable<IScenario> NewScenarios { get; }
+    parameters: []
+    return:
+      type: System.IObservable{Virtufin.Core.Contracts.IScenario}
+    content.vb: Public ReadOnly Property NewScenarios As IObservable(Of IScenario)
+  overload: Virtufin.Base.ScenarioHistory.NewScenarios*
+  implements:
+  - Virtufin.Core.Contracts.IScenarioHistory.NewScenarios
+- uid: Virtufin.Base.ScenarioHistory.GetEnumerator
+  commentId: M:Virtufin.Base.ScenarioHistory.GetEnumerator
+  id: GetEnumerator
+  parent: Virtufin.Base.ScenarioHistory
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: ScenarioHistory.GetEnumerator()
+  fullName: Virtufin.Base.ScenarioHistory.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/ScenarioHistory.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GetEnumerator
+    path: ../../../src/Virtufin.Base/ScenarioHistory.cs
+    startLine: 50
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Returns an enumerator that iterates through the collection.
+  example: []
+  syntax:
+    content: public IEnumerator<IScenario> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{Virtufin.Core.Contracts.IScenario}
+      description: An enumerator that can be used to iterate through the collection.
+    content.vb: Public Function GetEnumerator() As IEnumerator(Of IScenario)
+  overload: Virtufin.Base.ScenarioHistory.GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IScenario}.GetEnumerator
+- uid: Virtufin.Base.ScenarioHistory.Append(Virtufin.Core.Contracts.IScenario)
+  commentId: M:Virtufin.Base.ScenarioHistory.Append(Virtufin.Core.Contracts.IScenario)
+  id: Append(Virtufin.Core.Contracts.IScenario)
+  parent: Virtufin.Base.ScenarioHistory
+  langs:
+  - csharp
+  - vb
+  name: Append(IScenario)
+  nameWithType: ScenarioHistory.Append(IScenario)
+  fullName: Virtufin.Base.ScenarioHistory.Append(Virtufin.Core.Contracts.IScenario)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/ScenarioHistory.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Append
+    path: ../../../src/Virtufin.Base/ScenarioHistory.cs
+    startLine: 56
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Append a scenario to the history. Emits on <xref href="Virtufin.Base.ScenarioHistory.NewScenarios" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Append(IScenario scenario)
+    parameters:
+    - id: scenario
+      type: Virtufin.Core.Contracts.IScenario
+      description: Scenario to append.
+    content.vb: Public Sub Append(scenario As IScenario)
+  overload: Virtufin.Base.ScenarioHistory.Append*
+- uid: Virtufin.Base.ScenarioHistory.Append(Virtufin.Base.Scenario)
+  commentId: M:Virtufin.Base.ScenarioHistory.Append(Virtufin.Base.Scenario)
+  id: Append(Virtufin.Base.Scenario)
+  parent: Virtufin.Base.ScenarioHistory
+  langs:
+  - csharp
+  - vb
+  name: Append(Scenario)
+  nameWithType: ScenarioHistory.Append(Scenario)
+  fullName: Virtufin.Base.ScenarioHistory.Append(Virtufin.Base.Scenario)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/ScenarioHistory.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Append
+    path: ../../../src/Virtufin.Base/ScenarioHistory.cs
+    startLine: 63
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Append a concrete <xref href="Virtufin.Base.ScenarioHistory.Scenario(Virtufin.Core.Identifiers.ITimeStamp)" data-throw-if-not-resolved="false"></xref> to the history.
+  example: []
+  syntax:
+    content: public void Append(Scenario scenario)
+    parameters:
+    - id: scenario
+      type: Virtufin.Base.Scenario
+    content.vb: Public Sub Append(scenario As Scenario)
+  overload: Virtufin.Base.ScenarioHistory.Append*
+- uid: Virtufin.Base.ScenarioHistory.Dispose
+  commentId: M:Virtufin.Base.ScenarioHistory.Dispose
+  id: Dispose
+  parent: Virtufin.Base.ScenarioHistory
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: ScenarioHistory.Dispose()
+  fullName: Virtufin.Base.ScenarioHistory.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/ScenarioHistory.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Dispose
+    path: ../../../src/Virtufin.Base/ScenarioHistory.cs
+    startLine: 66
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Virtufin.Base.ScenarioHistory.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: Virtufin.Core.Contracts.IScenarioHistory
+  commentId: T:Virtufin.Core.Contracts.IScenarioHistory
+  parent: Virtufin.Core.Contracts
+  href: Virtufin.Core.Contracts.IScenarioHistory.html
+  name: IScenarioHistory
+  nameWithType: IScenarioHistory
+  fullName: Virtufin.Core.Contracts.IScenarioHistory
+- uid: System.Reactive.Subjects.Subject`1
+  commentId: T:System.Reactive.Subjects.Subject`1
+  isExternal: true
+  name: Subject<T>
+  nameWithType: Subject<T>
+  fullName: System.Reactive.Subjects.Subject<T>
+  nameWithType.vb: Subject(Of T)
+  fullName.vb: System.Reactive.Subjects.Subject(Of T)
+  name.vb: Subject(Of T)
+  spec.csharp:
+  - uid: System.Reactive.Subjects.Subject`1
+    name: Subject
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Reactive.Subjects.Subject`1
+    name: Subject
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Base
+  commentId: N:Virtufin.Base
+  href: Virtufin.html
+  name: Virtufin.Base
+  nameWithType: Virtufin.Base
+  fullName: Virtufin.Base
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IScenario}
+  commentId: T:System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IScenario}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IScenario>
+  nameWithType: IEnumerable<IScenario>
+  fullName: System.Collections.Generic.IEnumerable<Virtufin.Core.Contracts.IScenario>
+  nameWithType.vb: IEnumerable(Of IScenario)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Virtufin.Core.Contracts.IScenario)
+  name.vb: IEnumerable(Of IScenario)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Virtufin.Core.Contracts.IScenario
+    name: IScenario
+    href: Virtufin.Core.Contracts.IScenario.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Contracts.IScenario
+    name: IScenario
+    href: Virtufin.Core.Contracts.IScenario.html
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Virtufin.Core.Contracts
+  commentId: N:Virtufin.Core.Contracts
+  href: Virtufin.html
+  name: Virtufin.Core.Contracts
+  nameWithType: Virtufin.Core.Contracts
+  fullName: Virtufin.Core.Contracts
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Contracts
+    name: Contracts
+    href: Virtufin.Core.Contracts.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Contracts
+    name: Contracts
+    href: Virtufin.Core.Contracts.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: Virtufin.Base.ScenarioHistory.#ctor*
+  commentId: Overload:Virtufin.Base.ScenarioHistory.#ctor
+  href: Virtufin.Base.ScenarioHistory.html#Virtufin_Base_ScenarioHistory__ctor
+  name: ScenarioHistory
+  nameWithType: ScenarioHistory.ScenarioHistory
+  fullName: Virtufin.Base.ScenarioHistory.ScenarioHistory
+  nameWithType.vb: ScenarioHistory.New
+  fullName.vb: Virtufin.Base.ScenarioHistory.New
+  name.vb: New
+- uid: System.Collections.Generic.IEnumerable{Virtufin.Base.Scenario}
+  commentId: T:System.Collections.Generic.IEnumerable{Virtufin.Base.Scenario}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Scenario>
+  nameWithType: IEnumerable<Scenario>
+  fullName: System.Collections.Generic.IEnumerable<Virtufin.Base.Scenario>
+  nameWithType.vb: IEnumerable(Of Scenario)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Virtufin.Base.Scenario)
+  name.vb: IEnumerable(Of Scenario)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Virtufin.Base.Scenario
+    name: Scenario
+    href: Virtufin.Base.Scenario.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Base.Scenario
+    name: Scenario
+    href: Virtufin.Base.Scenario.html
+  - name: )
+- uid: Virtufin.Base.ScenarioHistory.LastScenario*
+  commentId: Overload:Virtufin.Base.ScenarioHistory.LastScenario
+  href: Virtufin.Base.ScenarioHistory.html#Virtufin_Base_ScenarioHistory_LastScenario
+  name: LastScenario
+  nameWithType: ScenarioHistory.LastScenario
+  fullName: Virtufin.Base.ScenarioHistory.LastScenario
+- uid: Virtufin.Core.Contracts.IScenarioHistory.LastScenario
+  commentId: P:Virtufin.Core.Contracts.IScenarioHistory.LastScenario
+  parent: Virtufin.Core.Contracts.IScenarioHistory
+  href: Virtufin.Core.Contracts.IScenarioHistory.html#Virtufin_Core_Contracts_IScenarioHistory_LastScenario
+  name: LastScenario
+  nameWithType: IScenarioHistory.LastScenario
+  fullName: Virtufin.Core.Contracts.IScenarioHistory.LastScenario
+- uid: Virtufin.Core.Contracts.IScenario
+  commentId: T:Virtufin.Core.Contracts.IScenario
+  parent: Virtufin.Core.Contracts
+  href: Virtufin.Core.Contracts.IScenario.html
+  name: IScenario
+  nameWithType: IScenario
+  fullName: Virtufin.Core.Contracts.IScenario
+- uid: Virtufin.Base.ScenarioHistory.Iter*
+  commentId: Overload:Virtufin.Base.ScenarioHistory.Iter
+  href: Virtufin.Base.ScenarioHistory.html#Virtufin_Base_ScenarioHistory_Iter
+  name: Iter
+  nameWithType: ScenarioHistory.Iter
+  fullName: Virtufin.Base.ScenarioHistory.Iter
+- uid: Virtufin.Core.Contracts.IScenarioHistory.Iter
+  commentId: P:Virtufin.Core.Contracts.IScenarioHistory.Iter
+  parent: Virtufin.Core.Contracts.IScenarioHistory
+  href: Virtufin.Core.Contracts.IScenarioHistory.html#Virtufin_Core_Contracts_IScenarioHistory_Iter
+  name: Iter
+  nameWithType: IScenarioHistory.Iter
+  fullName: Virtufin.Core.Contracts.IScenarioHistory.Iter
+- uid: Virtufin.Base.ScenarioHistory.Scenario*
+  commentId: Overload:Virtufin.Base.ScenarioHistory.Scenario
+  href: Virtufin.Base.ScenarioHistory.html#Virtufin_Base_ScenarioHistory_Scenario_Virtufin_Core_Identifiers_ITimeStamp_
+  name: Scenario
+  nameWithType: ScenarioHistory.Scenario
+  fullName: Virtufin.Base.ScenarioHistory.Scenario
+- uid: Virtufin.Core.Contracts.IScenarioHistory.Scenario(Virtufin.Core.Identifiers.ITimeStamp)
+  commentId: M:Virtufin.Core.Contracts.IScenarioHistory.Scenario(Virtufin.Core.Identifiers.ITimeStamp)
+  parent: Virtufin.Core.Contracts.IScenarioHistory
+  href: Virtufin.Core.Contracts.IScenarioHistory.html#Virtufin_Core_Contracts_IScenarioHistory_Scenario_Virtufin_Core_Identifiers_ITimeStamp_
+  name: Scenario(ITimeStamp)
+  nameWithType: IScenarioHistory.Scenario(ITimeStamp)
+  fullName: Virtufin.Core.Contracts.IScenarioHistory.Scenario(Virtufin.Core.Identifiers.ITimeStamp)
+  spec.csharp:
+  - uid: Virtufin.Core.Contracts.IScenarioHistory.Scenario(Virtufin.Core.Identifiers.ITimeStamp)
+    name: Scenario
+    href: Virtufin.Core.Contracts.IScenarioHistory.html#Virtufin_Core_Contracts_IScenarioHistory_Scenario_Virtufin_Core_Identifiers_ITimeStamp_
+  - name: (
+  - uid: Virtufin.Core.Identifiers.ITimeStamp
+    name: ITimeStamp
+    href: Virtufin.Core.Identifiers.ITimeStamp.html
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Contracts.IScenarioHistory.Scenario(Virtufin.Core.Identifiers.ITimeStamp)
+    name: Scenario
+    href: Virtufin.Core.Contracts.IScenarioHistory.html#Virtufin_Core_Contracts_IScenarioHistory_Scenario_Virtufin_Core_Identifiers_ITimeStamp_
+  - name: (
+  - uid: Virtufin.Core.Identifiers.ITimeStamp
+    name: ITimeStamp
+    href: Virtufin.Core.Identifiers.ITimeStamp.html
+  - name: )
+- uid: Virtufin.Core.Identifiers.ITimeStamp
+  commentId: T:Virtufin.Core.Identifiers.ITimeStamp
+  parent: Virtufin.Core.Identifiers
+  href: Virtufin.Core.Identifiers.ITimeStamp.html
+  name: ITimeStamp
+  nameWithType: ITimeStamp
+  fullName: Virtufin.Core.Identifiers.ITimeStamp
+- uid: Virtufin.Core.Identifiers
+  commentId: N:Virtufin.Core.Identifiers
+  href: Virtufin.html
+  name: Virtufin.Core.Identifiers
+  nameWithType: Virtufin.Core.Identifiers
+  fullName: Virtufin.Core.Identifiers
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html
+- uid: Virtufin.Base.ScenarioHistory.NewScenarios*
+  commentId: Overload:Virtufin.Base.ScenarioHistory.NewScenarios
+  href: Virtufin.Base.ScenarioHistory.html#Virtufin_Base_ScenarioHistory_NewScenarios
+  name: NewScenarios
+  nameWithType: ScenarioHistory.NewScenarios
+  fullName: Virtufin.Base.ScenarioHistory.NewScenarios
+- uid: Virtufin.Core.Contracts.IScenarioHistory.NewScenarios
+  commentId: P:Virtufin.Core.Contracts.IScenarioHistory.NewScenarios
+  parent: Virtufin.Core.Contracts.IScenarioHistory
+  href: Virtufin.Core.Contracts.IScenarioHistory.html#Virtufin_Core_Contracts_IScenarioHistory_NewScenarios
+  name: NewScenarios
+  nameWithType: IScenarioHistory.NewScenarios
+  fullName: Virtufin.Core.Contracts.IScenarioHistory.NewScenarios
+- uid: System.IObservable{Virtufin.Core.Contracts.IScenario}
+  commentId: T:System.IObservable{Virtufin.Core.Contracts.IScenario}
+  parent: System
+  definition: System.IObservable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  name: IObservable<IScenario>
+  nameWithType: IObservable<IScenario>
+  fullName: System.IObservable<Virtufin.Core.Contracts.IScenario>
+  nameWithType.vb: IObservable(Of IScenario)
+  fullName.vb: System.IObservable(Of Virtufin.Core.Contracts.IScenario)
+  name.vb: IObservable(Of IScenario)
+  spec.csharp:
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: <
+  - uid: Virtufin.Core.Contracts.IScenario
+    name: IScenario
+    href: Virtufin.Core.Contracts.IScenario.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Contracts.IScenario
+    name: IScenario
+    href: Virtufin.Core.Contracts.IScenario.html
+  - name: )
+- uid: System.IObservable`1
+  commentId: T:System.IObservable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  name: IObservable<T>
+  nameWithType: IObservable<T>
+  fullName: System.IObservable<T>
+  nameWithType.vb: IObservable(Of T)
+  fullName.vb: System.IObservable(Of T)
+  name.vb: IObservable(Of T)
+  spec.csharp:
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Base.ScenarioHistory.GetEnumerator*
+  commentId: Overload:Virtufin.Base.ScenarioHistory.GetEnumerator
+  href: Virtufin.Base.ScenarioHistory.html#Virtufin_Base_ScenarioHistory_GetEnumerator
+  name: GetEnumerator
+  nameWithType: ScenarioHistory.GetEnumerator
+  fullName: Virtufin.Base.ScenarioHistory.GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IScenario}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IScenario}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IScenario}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<IScenario>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<Virtufin.Core.Contracts.IScenario>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of IScenario).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Virtufin.Core.Contracts.IScenario).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IScenario}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IScenario}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator{Virtufin.Core.Contracts.IScenario}
+  commentId: T:System.Collections.Generic.IEnumerator{Virtufin.Core.Contracts.IScenario}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<IScenario>
+  nameWithType: IEnumerator<IScenario>
+  fullName: System.Collections.Generic.IEnumerator<Virtufin.Core.Contracts.IScenario>
+  nameWithType.vb: IEnumerator(Of IScenario)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of Virtufin.Core.Contracts.IScenario)
+  name.vb: IEnumerator(Of IScenario)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - uid: Virtufin.Core.Contracts.IScenario
+    name: IScenario
+    href: Virtufin.Core.Contracts.IScenario.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Contracts.IScenario
+    name: IScenario
+    href: Virtufin.Core.Contracts.IScenario.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Base.ScenarioHistory.NewScenarios
+  commentId: P:Virtufin.Base.ScenarioHistory.NewScenarios
+  href: Virtufin.Base.ScenarioHistory.html#Virtufin_Base_ScenarioHistory_NewScenarios
+  name: NewScenarios
+  nameWithType: ScenarioHistory.NewScenarios
+  fullName: Virtufin.Base.ScenarioHistory.NewScenarios
+- uid: Virtufin.Base.ScenarioHistory.Append*
+  commentId: Overload:Virtufin.Base.ScenarioHistory.Append
+  href: Virtufin.Base.ScenarioHistory.html#Virtufin_Base_ScenarioHistory_Append_Virtufin_Core_Contracts_IScenario_
+  name: Append
+  nameWithType: ScenarioHistory.Append
+  fullName: Virtufin.Base.ScenarioHistory.Append
+- uid: Virtufin.Base.ScenarioHistory.Scenario(Virtufin.Core.Identifiers.ITimeStamp)
+  commentId: M:Virtufin.Base.ScenarioHistory.Scenario(Virtufin.Core.Identifiers.ITimeStamp)
+  href: Virtufin.Base.ScenarioHistory.html#Virtufin_Base_ScenarioHistory_Scenario_Virtufin_Core_Identifiers_ITimeStamp_
+  name: Scenario(ITimeStamp)
+  nameWithType: ScenarioHistory.Scenario(ITimeStamp)
+  fullName: Virtufin.Base.ScenarioHistory.Scenario(Virtufin.Core.Identifiers.ITimeStamp)
+  spec.csharp:
+  - uid: Virtufin.Base.ScenarioHistory.Scenario(Virtufin.Core.Identifiers.ITimeStamp)
+    name: Scenario
+    href: Virtufin.Base.ScenarioHistory.html#Virtufin_Base_ScenarioHistory_Scenario_Virtufin_Core_Identifiers_ITimeStamp_
+  - name: (
+  - uid: Virtufin.Core.Identifiers.ITimeStamp
+    name: ITimeStamp
+    href: Virtufin.Core.Identifiers.ITimeStamp.html
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Base.ScenarioHistory.Scenario(Virtufin.Core.Identifiers.ITimeStamp)
+    name: Scenario
+    href: Virtufin.Base.ScenarioHistory.html#Virtufin_Base_ScenarioHistory_Scenario_Virtufin_Core_Identifiers_ITimeStamp_
+  - name: (
+  - uid: Virtufin.Core.Identifiers.ITimeStamp
+    name: ITimeStamp
+    href: Virtufin.Core.Identifiers.ITimeStamp.html
+  - name: )
+- uid: Virtufin.Base.Scenario
+  commentId: T:Virtufin.Base.Scenario
+  parent: Virtufin.Base
+  href: Virtufin.Base.Scenario.html
+  name: Scenario
+  nameWithType: Scenario
+  fullName: Virtufin.Base.Scenario
+- uid: Virtufin.Base.ScenarioHistory.Dispose*
+  commentId: Overload:Virtufin.Base.ScenarioHistory.Dispose
+  href: Virtufin.Base.ScenarioHistory.html#Virtufin_Base_ScenarioHistory_Dispose
+  name: Dispose
+  nameWithType: ScenarioHistory.Dispose
+  fullName: Virtufin.Base.ScenarioHistory.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

@@ -1,0 +1,509 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Messaging.EventDelivery
+  commentId: T:Virtufin.Core.Messaging.EventDelivery
+  id: EventDelivery
+  parent: Virtufin.Core.Messaging
+  children:
+  - Virtufin.Core.Messaging.EventDelivery.#ctor(Virtufin.Core.Events.IEventEnvelope,System.Object)
+  - Virtufin.Core.Messaging.EventDelivery.Envelope
+  - Virtufin.Core.Messaging.EventDelivery.Event
+  langs:
+  - csharp
+  - vb
+  name: EventDelivery
+  nameWithType: EventDelivery
+  fullName: Virtufin.Core.Messaging.EventDelivery
+  type: Struct
+  source:
+    remote:
+      path: src/Virtufin.Core/Messaging/ITopic.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: EventDelivery
+    path: ../../../src/Virtufin.Core/Messaging/ITopic.cs
+    startLine: 36
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Messaging
+  summary: An envelope/payload pair delivered from a topic subscription.
+  example: []
+  syntax:
+    content: 'public readonly record struct EventDelivery : IEquatable<EventDelivery>'
+    content.vb: Public Structure EventDelivery Implements IEquatable(Of EventDelivery)
+  implements:
+  - System.IEquatable{Virtufin.Core.Messaging.EventDelivery}
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Virtufin.Core.Messaging.EventDelivery.#ctor(Virtufin.Core.Events.IEventEnvelope,System.Object)
+  commentId: M:Virtufin.Core.Messaging.EventDelivery.#ctor(Virtufin.Core.Events.IEventEnvelope,System.Object)
+  id: '#ctor(Virtufin.Core.Events.IEventEnvelope,System.Object)'
+  parent: Virtufin.Core.Messaging.EventDelivery
+  langs:
+  - csharp
+  - vb
+  name: EventDelivery(IEventEnvelope, object)
+  nameWithType: EventDelivery.EventDelivery(IEventEnvelope, object)
+  fullName: Virtufin.Core.Messaging.EventDelivery.EventDelivery(Virtufin.Core.Events.IEventEnvelope, object)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Core/Messaging/ITopic.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Core/Messaging/ITopic.cs
+    startLine: 36
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Messaging
+  summary: An envelope/payload pair delivered from a topic subscription.
+  example: []
+  syntax:
+    content: public EventDelivery(IEventEnvelope Envelope, object Event)
+    parameters:
+    - id: Envelope
+      type: Virtufin.Core.Events.IEventEnvelope
+      description: Envelope carrying routing/timing metadata.
+    - id: Event
+      type: System.Object
+      description: Event payload (typed as <code>object</code>; cast at the call site).
+    content.vb: Public Sub New(Envelope As IEventEnvelope, [Event] As Object)
+  overload: Virtufin.Core.Messaging.EventDelivery.#ctor*
+  nameWithType.vb: EventDelivery.New(IEventEnvelope, Object)
+  fullName.vb: Virtufin.Core.Messaging.EventDelivery.New(Virtufin.Core.Events.IEventEnvelope, Object)
+  name.vb: New(IEventEnvelope, Object)
+- uid: Virtufin.Core.Messaging.EventDelivery.Envelope
+  commentId: P:Virtufin.Core.Messaging.EventDelivery.Envelope
+  id: Envelope
+  parent: Virtufin.Core.Messaging.EventDelivery
+  langs:
+  - csharp
+  - vb
+  name: Envelope
+  nameWithType: EventDelivery.Envelope
+  fullName: Virtufin.Core.Messaging.EventDelivery.Envelope
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Messaging/ITopic.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Envelope
+    path: ../../../src/Virtufin.Core/Messaging/ITopic.cs
+    startLine: 36
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Messaging
+  summary: Envelope carrying routing/timing metadata.
+  example: []
+  syntax:
+    content: public IEventEnvelope Envelope { get; init; }
+    parameters: []
+    return:
+      type: Virtufin.Core.Events.IEventEnvelope
+    content.vb: Public Property Envelope As IEventEnvelope
+  overload: Virtufin.Core.Messaging.EventDelivery.Envelope*
+- uid: Virtufin.Core.Messaging.EventDelivery.Event
+  commentId: P:Virtufin.Core.Messaging.EventDelivery.Event
+  id: Event
+  parent: Virtufin.Core.Messaging.EventDelivery
+  langs:
+  - csharp
+  - vb
+  name: Event
+  nameWithType: EventDelivery.Event
+  fullName: Virtufin.Core.Messaging.EventDelivery.Event
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Messaging/ITopic.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Event
+    path: ../../../src/Virtufin.Core/Messaging/ITopic.cs
+    startLine: 36
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Messaging
+  summary: Event payload (typed as <code>object</code>; cast at the call site).
+  example: []
+  syntax:
+    content: public object Event { get; init; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property [Event] As Object
+  overload: Virtufin.Core.Messaging.EventDelivery.Event*
+references:
+- uid: Virtufin.Core.Messaging
+  commentId: N:Virtufin.Core.Messaging
+  href: Virtufin.html
+  name: Virtufin.Core.Messaging
+  nameWithType: Virtufin.Core.Messaging
+  fullName: Virtufin.Core.Messaging
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Messaging
+    name: Messaging
+    href: Virtufin.Core.Messaging.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Messaging
+    name: Messaging
+    href: Virtufin.Core.Messaging.html
+- uid: System.IEquatable{Virtufin.Core.Messaging.EventDelivery}
+  commentId: T:System.IEquatable{Virtufin.Core.Messaging.EventDelivery}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<EventDelivery>
+  nameWithType: IEquatable<EventDelivery>
+  fullName: System.IEquatable<Virtufin.Core.Messaging.EventDelivery>
+  nameWithType.vb: IEquatable(Of EventDelivery)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Messaging.EventDelivery)
+  name.vb: IEquatable(Of EventDelivery)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Messaging.EventDelivery
+    name: EventDelivery
+    href: Virtufin.Core.Messaging.EventDelivery.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Messaging.EventDelivery
+    name: EventDelivery
+    href: Virtufin.Core.Messaging.EventDelivery.html
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.Core.Messaging.EventDelivery.#ctor*
+  commentId: Overload:Virtufin.Core.Messaging.EventDelivery.#ctor
+  href: Virtufin.Core.Messaging.EventDelivery.html#Virtufin_Core_Messaging_EventDelivery__ctor_Virtufin_Core_Events_IEventEnvelope_System_Object_
+  name: EventDelivery
+  nameWithType: EventDelivery.EventDelivery
+  fullName: Virtufin.Core.Messaging.EventDelivery.EventDelivery
+  nameWithType.vb: EventDelivery.New
+  fullName.vb: Virtufin.Core.Messaging.EventDelivery.New
+  name.vb: New
+- uid: Virtufin.Core.Events.IEventEnvelope
+  commentId: T:Virtufin.Core.Events.IEventEnvelope
+  parent: Virtufin.Core.Events
+  href: Virtufin.Core.Events.IEventEnvelope.html
+  name: IEventEnvelope
+  nameWithType: IEventEnvelope
+  fullName: Virtufin.Core.Events.IEventEnvelope
+- uid: Virtufin.Core.Events
+  commentId: N:Virtufin.Core.Events
+  href: Virtufin.html
+  name: Virtufin.Core.Events
+  nameWithType: Virtufin.Core.Events
+  fullName: Virtufin.Core.Events
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+- uid: Virtufin.Core.Messaging.EventDelivery.Envelope*
+  commentId: Overload:Virtufin.Core.Messaging.EventDelivery.Envelope
+  href: Virtufin.Core.Messaging.EventDelivery.html#Virtufin_Core_Messaging_EventDelivery_Envelope
+  name: Envelope
+  nameWithType: EventDelivery.Envelope
+  fullName: Virtufin.Core.Messaging.EventDelivery.Envelope
+- uid: Virtufin.Core.Messaging.EventDelivery.Event*
+  commentId: Overload:Virtufin.Core.Messaging.EventDelivery.Event
+  href: Virtufin.Core.Messaging.EventDelivery.html#Virtufin_Core_Messaging_EventDelivery_Event
+  name: Event
+  nameWithType: EventDelivery.Event
+  fullName: Virtufin.Core.Messaging.EventDelivery.Event

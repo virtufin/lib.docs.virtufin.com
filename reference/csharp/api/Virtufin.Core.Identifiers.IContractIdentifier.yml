@@ -1,0 +1,228 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Identifiers.IContractIdentifier
+  commentId: T:Virtufin.Core.Identifiers.IContractIdentifier
+  id: IContractIdentifier
+  parent: Virtufin.Core.Identifiers
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IContractIdentifier
+  nameWithType: IContractIdentifier
+  fullName: Virtufin.Core.Identifiers.IContractIdentifier
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Identifiers/IContractIdentifier.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IContractIdentifier
+    path: ../../../src/Virtufin.Core/Identifiers/IContractIdentifier.cs
+    startLine: 11
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Identifiers
+  summary: >-
+    Marker for any value that uniquely identifies a contract (e.g. a UUID, an
+
+    ISDA UTI, or an opaque string). Implementations must be equality-comparable
+
+    so transactions and contracts can be matched by identifier.
+  remarks: >-
+    Distinct from <xref href="Virtufin.Core.IEntityIdentifier" data-throw-if-not-resolved="false"></xref> which marks identifiers for
+
+    entities (the things contracts operate on).
+  example: []
+  syntax:
+    content: 'public interface IContractIdentifier : IEquatable<IContractIdentifier>'
+    content.vb: Public Interface IContractIdentifier Inherits IEquatable(Of IContractIdentifier)
+  derivedClasses:
+  - Virtufin.Base.ContractIdentifier
+  - Virtufin.Base.ContractIdentifier.SimpleContractIdentifier
+  - Virtufin.Base.ContractIdentifier.UTI
+  inheritedMembers:
+  - System.IEquatable{Virtufin.Core.Identifiers.IContractIdentifier}.Equals(Virtufin.Core.Identifiers.IContractIdentifier)
+references:
+- uid: Virtufin.Core.IEntityIdentifier
+  commentId: T:Virtufin.Core.IEntityIdentifier
+  parent: Virtufin.Core
+  href: Virtufin.Core.IEntityIdentifier.html
+  name: IEntityIdentifier
+  nameWithType: IEntityIdentifier
+  fullName: Virtufin.Core.IEntityIdentifier
+- uid: Virtufin.Core.Identifiers
+  commentId: N:Virtufin.Core.Identifiers
+  href: Virtufin.html
+  name: Virtufin.Core.Identifiers
+  nameWithType: Virtufin.Core.Identifiers
+  fullName: Virtufin.Core.Identifiers
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html
+- uid: System.IEquatable{Virtufin.Core.Identifiers.IContractIdentifier}.Equals(Virtufin.Core.Identifiers.IContractIdentifier)
+  commentId: M:System.IEquatable{Virtufin.Core.Identifiers.IContractIdentifier}.Equals(Virtufin.Core.Identifiers.IContractIdentifier)
+  parent: System.IEquatable{Virtufin.Core.Identifiers.IContractIdentifier}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(IContractIdentifier)
+  nameWithType: IEquatable<IContractIdentifier>.Equals(IContractIdentifier)
+  fullName: System.IEquatable<Virtufin.Core.Identifiers.IContractIdentifier>.Equals(Virtufin.Core.Identifiers.IContractIdentifier)
+  nameWithType.vb: IEquatable(Of IContractIdentifier).Equals(IContractIdentifier)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Identifiers.IContractIdentifier).Equals(Virtufin.Core.Identifiers.IContractIdentifier)
+  spec.csharp:
+  - uid: System.IEquatable{Virtufin.Core.Identifiers.IContractIdentifier}.Equals(Virtufin.Core.Identifiers.IContractIdentifier)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Identifiers.IContractIdentifier
+    name: IContractIdentifier
+    href: Virtufin.Core.Identifiers.IContractIdentifier.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Virtufin.Core.Identifiers.IContractIdentifier}.Equals(Virtufin.Core.Identifiers.IContractIdentifier)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Identifiers.IContractIdentifier
+    name: IContractIdentifier
+    href: Virtufin.Core.Identifiers.IContractIdentifier.html
+  - name: )
+- uid: Virtufin.Core
+  commentId: N:Virtufin.Core
+  href: Virtufin.html
+  name: Virtufin.Core
+  nameWithType: Virtufin.Core
+  fullName: Virtufin.Core
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IEquatable{Virtufin.Core.Identifiers.IContractIdentifier}
+  commentId: T:System.IEquatable{Virtufin.Core.Identifiers.IContractIdentifier}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<IContractIdentifier>
+  nameWithType: IEquatable<IContractIdentifier>
+  fullName: System.IEquatable<Virtufin.Core.Identifiers.IContractIdentifier>
+  nameWithType.vb: IEquatable(Of IContractIdentifier)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Identifiers.IContractIdentifier)
+  name.vb: IEquatable(Of IContractIdentifier)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Identifiers.IContractIdentifier
+    name: IContractIdentifier
+    href: Virtufin.Core.Identifiers.IContractIdentifier.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Identifiers.IContractIdentifier
+    name: IContractIdentifier
+    href: Virtufin.Core.Identifiers.IContractIdentifier.html
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

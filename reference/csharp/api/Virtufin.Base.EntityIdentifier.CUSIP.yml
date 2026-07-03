@@ -1,0 +1,622 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.EntityIdentifier.CUSIP
+  commentId: T:Virtufin.Base.EntityIdentifier.CUSIP
+  id: EntityIdentifier.CUSIP
+  parent: Virtufin.Base
+  children:
+  - Virtufin.Base.EntityIdentifier.CUSIP.#ctor(System.String)
+  langs:
+  - csharp
+  - vb
+  name: EntityIdentifier.CUSIP
+  nameWithType: EntityIdentifier.CUSIP
+  fullName: Virtufin.Base.EntityIdentifier.CUSIP
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Base/EntityIdentifier.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: CUSIP
+    path: ../../../src/Virtufin.Base/EntityIdentifier.cs
+    startLine: 16
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: 'public class EntityIdentifier.CUSIP : EntityIdentifier<string>, IEntityIdentifier, IEquatable<IEntityIdentifier>'
+    content.vb: Public Class EntityIdentifier.CUSIP Inherits EntityIdentifier(Of String) Implements IEntityIdentifier, IEquatable(Of IEntityIdentifier)
+  inheritance:
+  - System.Object
+  - Virtufin.Core.EntityIdentifier{System.String}
+  implements:
+  - Virtufin.Core.IEntityIdentifier
+  - System.IEquatable{Virtufin.Core.IEntityIdentifier}
+  inheritedMembers:
+  - Virtufin.Core.EntityIdentifier{System.String}.Equals(Virtufin.Core.IEntityIdentifier)
+  - Virtufin.Core.EntityIdentifier{System.String}.Equals(System.Object)
+  - Virtufin.Core.EntityIdentifier{System.String}.GetHashCode
+  - Virtufin.Core.EntityIdentifier{System.String}.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Virtufin.Base.EntityIdentifier.CUSIP.#ctor(System.String)
+  commentId: M:Virtufin.Base.EntityIdentifier.CUSIP.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Virtufin.Base.EntityIdentifier.CUSIP
+  langs:
+  - csharp
+  - vb
+  name: CUSIP(string)
+  nameWithType: EntityIdentifier.CUSIP.CUSIP(string)
+  fullName: Virtufin.Base.EntityIdentifier.CUSIP.CUSIP(string)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Base/EntityIdentifier.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Base/EntityIdentifier.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: public CUSIP(string id)
+    parameters:
+    - id: id
+      type: System.String
+    content.vb: Public Sub New(id As String)
+  overload: Virtufin.Base.EntityIdentifier.CUSIP.#ctor*
+  nameWithType.vb: EntityIdentifier.CUSIP.New(String)
+  fullName.vb: Virtufin.Base.EntityIdentifier.CUSIP.New(String)
+  name.vb: New(String)
+references:
+- uid: Virtufin.Base
+  commentId: N:Virtufin.Base
+  href: Virtufin.html
+  name: Virtufin.Base
+  nameWithType: Virtufin.Base
+  fullName: Virtufin.Base
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.Core.EntityIdentifier{System.String}
+  commentId: T:Virtufin.Core.EntityIdentifier{System.String}
+  parent: Virtufin.Core
+  definition: Virtufin.Core.EntityIdentifier`1
+  href: Virtufin.Core.EntityIdentifier-1.html
+  name: EntityIdentifier<string>
+  nameWithType: EntityIdentifier<string>
+  fullName: Virtufin.Core.EntityIdentifier<string>
+  nameWithType.vb: EntityIdentifier(Of String)
+  fullName.vb: Virtufin.Core.EntityIdentifier(Of String)
+  name.vb: EntityIdentifier(Of String)
+  spec.csharp:
+  - uid: Virtufin.Core.EntityIdentifier`1
+    name: EntityIdentifier
+    href: Virtufin.Core.EntityIdentifier-1.html
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.EntityIdentifier`1
+    name: EntityIdentifier
+    href: Virtufin.Core.EntityIdentifier-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Virtufin.Core.IEntityIdentifier
+  commentId: T:Virtufin.Core.IEntityIdentifier
+  parent: Virtufin.Core
+  href: Virtufin.Core.IEntityIdentifier.html
+  name: IEntityIdentifier
+  nameWithType: IEntityIdentifier
+  fullName: Virtufin.Core.IEntityIdentifier
+- uid: System.IEquatable{Virtufin.Core.IEntityIdentifier}
+  commentId: T:System.IEquatable{Virtufin.Core.IEntityIdentifier}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<IEntityIdentifier>
+  nameWithType: IEquatable<IEntityIdentifier>
+  fullName: System.IEquatable<Virtufin.Core.IEntityIdentifier>
+  nameWithType.vb: IEquatable(Of IEntityIdentifier)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.IEntityIdentifier)
+  name.vb: IEquatable(Of IEntityIdentifier)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.IEntityIdentifier
+    name: IEntityIdentifier
+    href: Virtufin.Core.IEntityIdentifier.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.IEntityIdentifier
+    name: IEntityIdentifier
+    href: Virtufin.Core.IEntityIdentifier.html
+  - name: )
+- uid: Virtufin.Core.EntityIdentifier{System.String}.Equals(Virtufin.Core.IEntityIdentifier)
+  commentId: M:Virtufin.Core.EntityIdentifier{System.String}.Equals(Virtufin.Core.IEntityIdentifier)
+  parent: Virtufin.Core.EntityIdentifier{System.String}
+  definition: Virtufin.Core.EntityIdentifier`1.Equals(Virtufin.Core.IEntityIdentifier)
+  href: Virtufin.Core.EntityIdentifier-1.html#Virtufin_Core_EntityIdentifier_1_Equals_Virtufin_Core_IEntityIdentifier_
+  name: Equals(IEntityIdentifier)
+  nameWithType: EntityIdentifier<string>.Equals(IEntityIdentifier)
+  fullName: Virtufin.Core.EntityIdentifier<string>.Equals(Virtufin.Core.IEntityIdentifier)
+  nameWithType.vb: EntityIdentifier(Of String).Equals(IEntityIdentifier)
+  fullName.vb: Virtufin.Core.EntityIdentifier(Of String).Equals(Virtufin.Core.IEntityIdentifier)
+  spec.csharp:
+  - uid: Virtufin.Core.EntityIdentifier{System.String}.Equals(Virtufin.Core.IEntityIdentifier)
+    name: Equals
+    href: Virtufin.Core.EntityIdentifier-1.html#Virtufin_Core_EntityIdentifier_1_Equals_Virtufin_Core_IEntityIdentifier_
+  - name: (
+  - uid: Virtufin.Core.IEntityIdentifier
+    name: IEntityIdentifier
+    href: Virtufin.Core.IEntityIdentifier.html
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.EntityIdentifier{System.String}.Equals(Virtufin.Core.IEntityIdentifier)
+    name: Equals
+    href: Virtufin.Core.EntityIdentifier-1.html#Virtufin_Core_EntityIdentifier_1_Equals_Virtufin_Core_IEntityIdentifier_
+  - name: (
+  - uid: Virtufin.Core.IEntityIdentifier
+    name: IEntityIdentifier
+    href: Virtufin.Core.IEntityIdentifier.html
+  - name: )
+- uid: Virtufin.Core.EntityIdentifier{System.String}.Equals(System.Object)
+  commentId: M:Virtufin.Core.EntityIdentifier{System.String}.Equals(System.Object)
+  parent: Virtufin.Core.EntityIdentifier{System.String}
+  definition: Virtufin.Core.EntityIdentifier`1.Equals(System.Object)
+  href: Virtufin.Core.EntityIdentifier-1.html#Virtufin_Core_EntityIdentifier_1_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: EntityIdentifier<string>.Equals(object)
+  fullName: Virtufin.Core.EntityIdentifier<string>.Equals(object)
+  nameWithType.vb: EntityIdentifier(Of String).Equals(Object)
+  fullName.vb: Virtufin.Core.EntityIdentifier(Of String).Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: Virtufin.Core.EntityIdentifier{System.String}.Equals(System.Object)
+    name: Equals
+    href: Virtufin.Core.EntityIdentifier-1.html#Virtufin_Core_EntityIdentifier_1_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.EntityIdentifier{System.String}.Equals(System.Object)
+    name: Equals
+    href: Virtufin.Core.EntityIdentifier-1.html#Virtufin_Core_EntityIdentifier_1_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Virtufin.Core.EntityIdentifier{System.String}.GetHashCode
+  commentId: M:Virtufin.Core.EntityIdentifier{System.String}.GetHashCode
+  parent: Virtufin.Core.EntityIdentifier{System.String}
+  definition: Virtufin.Core.EntityIdentifier`1.GetHashCode
+  href: Virtufin.Core.EntityIdentifier-1.html#Virtufin_Core_EntityIdentifier_1_GetHashCode
+  name: GetHashCode()
+  nameWithType: EntityIdentifier<string>.GetHashCode()
+  fullName: Virtufin.Core.EntityIdentifier<string>.GetHashCode()
+  nameWithType.vb: EntityIdentifier(Of String).GetHashCode()
+  fullName.vb: Virtufin.Core.EntityIdentifier(Of String).GetHashCode()
+  spec.csharp:
+  - uid: Virtufin.Core.EntityIdentifier{System.String}.GetHashCode
+    name: GetHashCode
+    href: Virtufin.Core.EntityIdentifier-1.html#Virtufin_Core_EntityIdentifier_1_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.EntityIdentifier{System.String}.GetHashCode
+    name: GetHashCode
+    href: Virtufin.Core.EntityIdentifier-1.html#Virtufin_Core_EntityIdentifier_1_GetHashCode
+  - name: (
+  - name: )
+- uid: Virtufin.Core.EntityIdentifier{System.String}.ToString
+  commentId: M:Virtufin.Core.EntityIdentifier{System.String}.ToString
+  parent: Virtufin.Core.EntityIdentifier{System.String}
+  definition: Virtufin.Core.EntityIdentifier`1.ToString
+  href: Virtufin.Core.EntityIdentifier-1.html#Virtufin_Core_EntityIdentifier_1_ToString
+  name: ToString()
+  nameWithType: EntityIdentifier<string>.ToString()
+  fullName: Virtufin.Core.EntityIdentifier<string>.ToString()
+  nameWithType.vb: EntityIdentifier(Of String).ToString()
+  fullName.vb: Virtufin.Core.EntityIdentifier(Of String).ToString()
+  spec.csharp:
+  - uid: Virtufin.Core.EntityIdentifier{System.String}.ToString
+    name: ToString
+    href: Virtufin.Core.EntityIdentifier-1.html#Virtufin_Core_EntityIdentifier_1_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.EntityIdentifier{System.String}.ToString
+    name: ToString
+    href: Virtufin.Core.EntityIdentifier-1.html#Virtufin_Core_EntityIdentifier_1_ToString
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Core.EntityIdentifier`1
+  commentId: T:Virtufin.Core.EntityIdentifier`1
+  href: Virtufin.Core.EntityIdentifier-1.html
+  name: EntityIdentifier<I>
+  nameWithType: EntityIdentifier<I>
+  fullName: Virtufin.Core.EntityIdentifier<I>
+  nameWithType.vb: EntityIdentifier(Of I)
+  fullName.vb: Virtufin.Core.EntityIdentifier(Of I)
+  name.vb: EntityIdentifier(Of I)
+  spec.csharp:
+  - uid: Virtufin.Core.EntityIdentifier`1
+    name: EntityIdentifier
+    href: Virtufin.Core.EntityIdentifier-1.html
+  - name: <
+  - name: I
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.EntityIdentifier`1
+    name: EntityIdentifier
+    href: Virtufin.Core.EntityIdentifier-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: I
+  - name: )
+- uid: Virtufin.Core
+  commentId: N:Virtufin.Core
+  href: Virtufin.html
+  name: Virtufin.Core
+  nameWithType: Virtufin.Core
+  fullName: Virtufin.Core
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Core.EntityIdentifier`1.Equals(Virtufin.Core.IEntityIdentifier)
+  commentId: M:Virtufin.Core.EntityIdentifier`1.Equals(Virtufin.Core.IEntityIdentifier)
+  href: Virtufin.Core.EntityIdentifier-1.html#Virtufin_Core_EntityIdentifier_1_Equals_Virtufin_Core_IEntityIdentifier_
+  name: Equals(IEntityIdentifier)
+  nameWithType: EntityIdentifier<I>.Equals(IEntityIdentifier)
+  fullName: Virtufin.Core.EntityIdentifier<I>.Equals(Virtufin.Core.IEntityIdentifier)
+  nameWithType.vb: EntityIdentifier(Of I).Equals(IEntityIdentifier)
+  fullName.vb: Virtufin.Core.EntityIdentifier(Of I).Equals(Virtufin.Core.IEntityIdentifier)
+  spec.csharp:
+  - uid: Virtufin.Core.EntityIdentifier`1.Equals(Virtufin.Core.IEntityIdentifier)
+    name: Equals
+    href: Virtufin.Core.EntityIdentifier-1.html#Virtufin_Core_EntityIdentifier_1_Equals_Virtufin_Core_IEntityIdentifier_
+  - name: (
+  - uid: Virtufin.Core.IEntityIdentifier
+    name: IEntityIdentifier
+    href: Virtufin.Core.IEntityIdentifier.html
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.EntityIdentifier`1.Equals(Virtufin.Core.IEntityIdentifier)
+    name: Equals
+    href: Virtufin.Core.EntityIdentifier-1.html#Virtufin_Core_EntityIdentifier_1_Equals_Virtufin_Core_IEntityIdentifier_
+  - name: (
+  - uid: Virtufin.Core.IEntityIdentifier
+    name: IEntityIdentifier
+    href: Virtufin.Core.IEntityIdentifier.html
+  - name: )
+- uid: Virtufin.Core.EntityIdentifier`1.Equals(System.Object)
+  commentId: M:Virtufin.Core.EntityIdentifier`1.Equals(System.Object)
+  isExternal: true
+  href: Virtufin.Core.EntityIdentifier-1.html#Virtufin_Core_EntityIdentifier_1_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: EntityIdentifier<I>.Equals(object)
+  fullName: Virtufin.Core.EntityIdentifier<I>.Equals(object)
+  nameWithType.vb: EntityIdentifier(Of I).Equals(Object)
+  fullName.vb: Virtufin.Core.EntityIdentifier(Of I).Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: Virtufin.Core.EntityIdentifier`1.Equals(System.Object)
+    name: Equals
+    href: Virtufin.Core.EntityIdentifier-1.html#Virtufin_Core_EntityIdentifier_1_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.EntityIdentifier`1.Equals(System.Object)
+    name: Equals
+    href: Virtufin.Core.EntityIdentifier-1.html#Virtufin_Core_EntityIdentifier_1_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Virtufin.Core.EntityIdentifier`1.GetHashCode
+  commentId: M:Virtufin.Core.EntityIdentifier`1.GetHashCode
+  href: Virtufin.Core.EntityIdentifier-1.html#Virtufin_Core_EntityIdentifier_1_GetHashCode
+  name: GetHashCode()
+  nameWithType: EntityIdentifier<I>.GetHashCode()
+  fullName: Virtufin.Core.EntityIdentifier<I>.GetHashCode()
+  nameWithType.vb: EntityIdentifier(Of I).GetHashCode()
+  fullName.vb: Virtufin.Core.EntityIdentifier(Of I).GetHashCode()
+  spec.csharp:
+  - uid: Virtufin.Core.EntityIdentifier`1.GetHashCode
+    name: GetHashCode
+    href: Virtufin.Core.EntityIdentifier-1.html#Virtufin_Core_EntityIdentifier_1_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.EntityIdentifier`1.GetHashCode
+    name: GetHashCode
+    href: Virtufin.Core.EntityIdentifier-1.html#Virtufin_Core_EntityIdentifier_1_GetHashCode
+  - name: (
+  - name: )
+- uid: Virtufin.Core.EntityIdentifier`1.ToString
+  commentId: M:Virtufin.Core.EntityIdentifier`1.ToString
+  href: Virtufin.Core.EntityIdentifier-1.html#Virtufin_Core_EntityIdentifier_1_ToString
+  name: ToString()
+  nameWithType: EntityIdentifier<I>.ToString()
+  fullName: Virtufin.Core.EntityIdentifier<I>.ToString()
+  nameWithType.vb: EntityIdentifier(Of I).ToString()
+  fullName.vb: Virtufin.Core.EntityIdentifier(Of I).ToString()
+  spec.csharp:
+  - uid: Virtufin.Core.EntityIdentifier`1.ToString
+    name: ToString
+    href: Virtufin.Core.EntityIdentifier-1.html#Virtufin_Core_EntityIdentifier_1_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.EntityIdentifier`1.ToString
+    name: ToString
+    href: Virtufin.Core.EntityIdentifier-1.html#Virtufin_Core_EntityIdentifier_1_ToString
+  - name: (
+  - name: )
+- uid: Virtufin.Base.EntityIdentifier.CUSIP.#ctor*
+  commentId: Overload:Virtufin.Base.EntityIdentifier.CUSIP.#ctor
+  href: Virtufin.Base.EntityIdentifier.CUSIP.html#Virtufin_Base_EntityIdentifier_CUSIP__ctor_System_String_
+  name: CUSIP
+  nameWithType: EntityIdentifier.CUSIP.CUSIP
+  fullName: Virtufin.Base.EntityIdentifier.CUSIP.CUSIP
+  nameWithType.vb: EntityIdentifier.CUSIP.New
+  fullName.vb: Virtufin.Base.EntityIdentifier.CUSIP.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

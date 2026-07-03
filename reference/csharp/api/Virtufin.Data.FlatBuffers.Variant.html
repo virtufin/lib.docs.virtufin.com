@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Struct Variant | Virtufin .NET - C# API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct Variant | Virtufin .NET - C# API Reference ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.png" alt="Virtufin.Dotnet">
+            Virtufin.Dotnet
+          </a>
+          <div class="git-info">
+            <a href="{git_repo_url}/commit/26e2200970b0ca5b52299f95f03012d384a2accb" target="_blank" rel="noopener" class="commit-badge" title="View commit 26e2200">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
+                <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">26e2200</text>
+              </svg>
+            </a>
+          </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Virtufin.Data.FlatBuffers.Variant">
+
+
+
+  <h1 id="Virtufin_Data_FlatBuffers_Variant" data-uid="Virtufin.Data.FlatBuffers.Variant" class="text-break">
+Struct Variant  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.Data.html">Data</a>.<a class="xref" href="Virtufin.Data.FlatBuffers.html">FlatBuffers</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Virtufin.Data.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct Variant : IFlatbufferObject</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IFlatbufferObject</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_ByteBuffer_" data-uid="Virtufin.Data.FlatBuffers.Variant.ByteBuffer*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_ByteBuffer" data-uid="Virtufin.Data.FlatBuffers.Variant.ByteBuffer">
+  ByteBuffer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ByteBuffer ByteBuffer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ByteBuffer</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_ValueType_" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueType*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_ValueType" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueType">
+  ValueType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Value ValueType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Data.FlatBuffers.Value.html">Value</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_AddValue_" data-uid="Virtufin.Data.FlatBuffers.Variant.AddValue*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_AddValue_Google_FlatBuffers_FlatBufferBuilder_System_Int32_" data-uid="Virtufin.Data.FlatBuffers.Variant.AddValue(Google.FlatBuffers.FlatBufferBuilder,System.Int32)">
+  AddValue(FlatBufferBuilder, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddValue(FlatBufferBuilder builder, int valueOffset)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>builder</code> <span class="xref">FlatBufferBuilder</span></dt>
+    <dd></dd>
+    <dt><code>valueOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_AddValueType_" data-uid="Virtufin.Data.FlatBuffers.Variant.AddValueType*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_AddValueType_Google_FlatBuffers_FlatBufferBuilder_Virtufin_Data_FlatBuffers_Value_" data-uid="Virtufin.Data.FlatBuffers.Variant.AddValueType(Google.FlatBuffers.FlatBufferBuilder,Virtufin.Data.FlatBuffers.Value)">
+  AddValueType(FlatBufferBuilder, Value)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddValueType(FlatBufferBuilder builder, Value valueType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>builder</code> <span class="xref">FlatBufferBuilder</span></dt>
+    <dd></dd>
+    <dt><code>valueType</code> <a class="xref" href="Virtufin.Data.FlatBuffers.Value.html">Value</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_CreateVariant_" data-uid="Virtufin.Data.FlatBuffers.Variant.CreateVariant*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_CreateVariant_Google_FlatBuffers_FlatBufferBuilder_Virtufin_Data_FlatBuffers_Value_System_Int32_" data-uid="Virtufin.Data.FlatBuffers.Variant.CreateVariant(Google.FlatBuffers.FlatBufferBuilder,Virtufin.Data.FlatBuffers.Value,System.Int32)">
+  CreateVariant(FlatBufferBuilder, Value, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Offset&lt;Variant&gt; CreateVariant(FlatBufferBuilder builder, Value value_type = Value.NONE, int valueOffset = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>builder</code> <span class="xref">FlatBufferBuilder</span></dt>
+    <dd></dd>
+    <dt><code>value_type</code> <a class="xref" href="Virtufin.Data.FlatBuffers.Value.html">Value</a></dt>
+    <dd></dd>
+    <dt><code>valueOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Offset</span>&lt;<a class="xref" href="Virtufin.Data.FlatBuffers.Variant.html">Variant</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_EndVariant_" data-uid="Virtufin.Data.FlatBuffers.Variant.EndVariant*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_EndVariant_Google_FlatBuffers_FlatBufferBuilder_" data-uid="Virtufin.Data.FlatBuffers.Variant.EndVariant(Google.FlatBuffers.FlatBufferBuilder)">
+  EndVariant(FlatBufferBuilder)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Offset&lt;Variant&gt; EndVariant(FlatBufferBuilder builder)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>builder</code> <span class="xref">FlatBufferBuilder</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Offset</span>&lt;<a class="xref" href="Virtufin.Data.FlatBuffers.Variant.html">Variant</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_FinishSizePrefixedVariantBuffer_" data-uid="Virtufin.Data.FlatBuffers.Variant.FinishSizePrefixedVariantBuffer*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_FinishSizePrefixedVariantBuffer_Google_FlatBuffers_FlatBufferBuilder_Google_FlatBuffers_Offset_Virtufin_Data_FlatBuffers_Variant__" data-uid="Virtufin.Data.FlatBuffers.Variant.FinishSizePrefixedVariantBuffer(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant})">
+  FinishSizePrefixedVariantBuffer(FlatBufferBuilder, Offset&lt;Variant&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FinishSizePrefixedVariantBuffer(FlatBufferBuilder builder, Offset&lt;Variant&gt; offset)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>builder</code> <span class="xref">FlatBufferBuilder</span></dt>
+    <dd></dd>
+    <dt><code>offset</code> <span class="xref">Offset</span>&lt;<a class="xref" href="Virtufin.Data.FlatBuffers.Variant.html">Variant</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_FinishVariantBuffer_" data-uid="Virtufin.Data.FlatBuffers.Variant.FinishVariantBuffer*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_FinishVariantBuffer_Google_FlatBuffers_FlatBufferBuilder_Google_FlatBuffers_Offset_Virtufin_Data_FlatBuffers_Variant__" data-uid="Virtufin.Data.FlatBuffers.Variant.FinishVariantBuffer(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant})">
+  FinishVariantBuffer(FlatBufferBuilder, Offset&lt;Variant&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FinishVariantBuffer(FlatBufferBuilder builder, Offset&lt;Variant&gt; offset)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>builder</code> <span class="xref">FlatBufferBuilder</span></dt>
+    <dd></dd>
+    <dt><code>offset</code> <span class="xref">Offset</span>&lt;<a class="xref" href="Virtufin.Data.FlatBuffers.Variant.html">Variant</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_GetRootAsVariant_" data-uid="Virtufin.Data.FlatBuffers.Variant.GetRootAsVariant*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_GetRootAsVariant_Google_FlatBuffers_ByteBuffer_" data-uid="Virtufin.Data.FlatBuffers.Variant.GetRootAsVariant(Google.FlatBuffers.ByteBuffer)">
+  GetRootAsVariant(ByteBuffer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Variant GetRootAsVariant(ByteBuffer _bb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_bb</code> <span class="xref">ByteBuffer</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Data.FlatBuffers.Variant.html">Variant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_GetRootAsVariant_" data-uid="Virtufin.Data.FlatBuffers.Variant.GetRootAsVariant*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_GetRootAsVariant_Google_FlatBuffers_ByteBuffer_Virtufin_Data_FlatBuffers_Variant_" data-uid="Virtufin.Data.FlatBuffers.Variant.GetRootAsVariant(Google.FlatBuffers.ByteBuffer,Virtufin.Data.FlatBuffers.Variant)">
+  GetRootAsVariant(ByteBuffer, Variant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Variant GetRootAsVariant(ByteBuffer _bb, Variant obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_bb</code> <span class="xref">ByteBuffer</span></dt>
+    <dd></dd>
+    <dt><code>obj</code> <a class="xref" href="Virtufin.Data.FlatBuffers.Variant.html">Variant</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Data.FlatBuffers.Variant.html">Variant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_StartVariant_" data-uid="Virtufin.Data.FlatBuffers.Variant.StartVariant*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_StartVariant_Google_FlatBuffers_FlatBufferBuilder_" data-uid="Virtufin.Data.FlatBuffers.Variant.StartVariant(Google.FlatBuffers.FlatBufferBuilder)">
+  StartVariant(FlatBufferBuilder)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StartVariant(FlatBufferBuilder builder)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>builder</code> <span class="xref">FlatBufferBuilder</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_ValidateVersion_" data-uid="Virtufin.Data.FlatBuffers.Variant.ValidateVersion*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_ValidateVersion" data-uid="Virtufin.Data.FlatBuffers.Variant.ValidateVersion">
+  ValidateVersion()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ValidateVersion()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_ValueAsArrayBool_" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsArrayBool*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_ValueAsArrayBool" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsArrayBool">
+  ValueAsArrayBool()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ArrayBoolValue ValueAsArrayBool()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Data.FlatBuffers.ArrayBoolValue.html">ArrayBoolValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_ValueAsArrayByte_" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsArrayByte*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_ValueAsArrayByte" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsArrayByte">
+  ValueAsArrayByte()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ArrayByteValue ValueAsArrayByte()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Data.FlatBuffers.ArrayByteValue.html">ArrayByteValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_ValueAsArrayDouble_" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsArrayDouble*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_ValueAsArrayDouble" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsArrayDouble">
+  ValueAsArrayDouble()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ArrayDoubleValue ValueAsArrayDouble()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Data.FlatBuffers.ArrayDoubleValue.html">ArrayDoubleValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_ValueAsArrayFloat_" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsArrayFloat*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_ValueAsArrayFloat" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsArrayFloat">
+  ValueAsArrayFloat()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ArrayFloatValue ValueAsArrayFloat()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Data.FlatBuffers.ArrayFloatValue.html">ArrayFloatValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_ValueAsArrayInt16_" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt16*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_ValueAsArrayInt16" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt16">
+  ValueAsArrayInt16()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ArrayInt16Value ValueAsArrayInt16()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Data.FlatBuffers.ArrayInt16Value.html">ArrayInt16Value</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_ValueAsArrayInt32_" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt32*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_ValueAsArrayInt32" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt32">
+  ValueAsArrayInt32()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ArrayInt32Value ValueAsArrayInt32()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Data.FlatBuffers.ArrayInt32Value.html">ArrayInt32Value</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_ValueAsArrayInt64_" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt64*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_ValueAsArrayInt64" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsArrayInt64">
+  ValueAsArrayInt64()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ArrayInt64Value ValueAsArrayInt64()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Data.FlatBuffers.ArrayInt64Value.html">ArrayInt64Value</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_ValueAsArrayString_" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsArrayString*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_ValueAsArrayString" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsArrayString">
+  ValueAsArrayString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ArrayStringValue ValueAsArrayString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Data.FlatBuffers.ArrayStringValue.html">ArrayStringValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_ValueAsArrayVariant_" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsArrayVariant*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_ValueAsArrayVariant" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsArrayVariant">
+  ValueAsArrayVariant()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ArrayVariantValue ValueAsArrayVariant()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Data.FlatBuffers.ArrayVariantValue.html">ArrayVariantValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_ValueAsBool_" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsBool*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_ValueAsBool" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsBool">
+  ValueAsBool()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BoolValue ValueAsBool()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Data.FlatBuffers.BoolValue.html">BoolValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_ValueAsByte_" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsByte*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_ValueAsByte" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsByte">
+  ValueAsByte()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ByteValue ValueAsByte()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Data.FlatBuffers.ByteValue.html">ByteValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_ValueAsDictionary_" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsDictionary*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_ValueAsDictionary" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsDictionary">
+  ValueAsDictionary()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DictionaryValue ValueAsDictionary()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Data.FlatBuffers.DictionaryValue.html">DictionaryValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_ValueAsDictionaryEntry_" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsDictionaryEntry*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_ValueAsDictionaryEntry" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsDictionaryEntry">
+  ValueAsDictionaryEntry()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DictionaryEntry ValueAsDictionaryEntry()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Data.FlatBuffers.DictionaryEntry.html">DictionaryEntry</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_ValueAsDouble_" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsDouble*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_ValueAsDouble" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsDouble">
+  ValueAsDouble()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoubleValue ValueAsDouble()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Data.FlatBuffers.DoubleValue.html">DoubleValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_ValueAsFloat_" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsFloat*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_ValueAsFloat" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsFloat">
+  ValueAsFloat()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FloatValue ValueAsFloat()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Data.FlatBuffers.FloatValue.html">FloatValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_ValueAsInt16_" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsInt16*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_ValueAsInt16" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsInt16">
+  ValueAsInt16()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Int16Value ValueAsInt16()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Data.FlatBuffers.Int16Value.html">Int16Value</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_ValueAsInt32_" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsInt32*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_ValueAsInt32" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsInt32">
+  ValueAsInt32()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Int32Value ValueAsInt32()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Data.FlatBuffers.Int32Value.html">Int32Value</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_ValueAsInt64_" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsInt64*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_ValueAsInt64" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsInt64">
+  ValueAsInt64()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Int64Value ValueAsInt64()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Data.FlatBuffers.Int64Value.html">Int64Value</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_ValueAsNone_" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsNone*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_ValueAsNone" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsNone">
+  ValueAsNone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NoneValue ValueAsNone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Data.FlatBuffers.NoneValue.html">NoneValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_ValueAsString_" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsString*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_ValueAsString" data-uid="Virtufin.Data.FlatBuffers.Variant.ValueAsString">
+  ValueAsString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringValue ValueAsString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Data.FlatBuffers.StringValue.html">StringValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_Value_" data-uid="Virtufin.Data.FlatBuffers.Variant.Value*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_Value__1" data-uid="Virtufin.Data.FlatBuffers.Variant.Value``1">
+  Value&lt;TTable&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TTable? Value&lt;TTable&gt;() where TTable : struct, IFlatbufferObject</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>TTable?</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TTable</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant_VerifyVariant_" data-uid="Virtufin.Data.FlatBuffers.Variant.VerifyVariant*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant_VerifyVariant_Google_FlatBuffers_ByteBuffer_" data-uid="Virtufin.Data.FlatBuffers.Variant.VerifyVariant(Google.FlatBuffers.ByteBuffer)">
+  VerifyVariant(ByteBuffer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool VerifyVariant(ByteBuffer _bb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_bb</code> <span class="xref">ByteBuffer</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant___assign_" data-uid="Virtufin.Data.FlatBuffers.Variant.__assign*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant___assign_System_Int32_Google_FlatBuffers_ByteBuffer_" data-uid="Virtufin.Data.FlatBuffers.Variant.__assign(System.Int32,Google.FlatBuffers.ByteBuffer)">
+  __assign(int, ByteBuffer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Variant __assign(int _i, ByteBuffer _bb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>_bb</code> <span class="xref">ByteBuffer</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Data.FlatBuffers.Variant.html">Variant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Data_FlatBuffers_Variant___init_" data-uid="Virtufin.Data.FlatBuffers.Variant.__init*"></a>
+
+  <h3 id="Virtufin_Data_FlatBuffers_Variant___init_System_Int32_Google_FlatBuffers_ByteBuffer_" data-uid="Virtufin.Data.FlatBuffers.Variant.__init(System.Int32,Google.FlatBuffers.ByteBuffer)">
+  __init(int, ByteBuffer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void __init(int _i, ByteBuffer _bb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>_bb</code> <span class="xref">ByteBuffer</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2026 Häner Consulting. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,817 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.ContractParameters
+  commentId: T:Virtufin.Base.ContractParameters
+  id: ContractParameters
+  parent: Virtufin.Base
+  children:
+  - Virtufin.Base.ContractParameters.#ctor(System.Byte[])
+  - Virtufin.Base.ContractParameters.Empty
+  - Virtufin.Base.ContractParameters.Equals(Virtufin.Base.ContractParameters)
+  - Virtufin.Base.ContractParameters.Equals(Virtufin.Core.Contracts.IContractParameters)
+  - Virtufin.Base.ContractParameters.GetHashCode
+  - Virtufin.Base.ContractParameters.Payload
+  langs:
+  - csharp
+  - vb
+  name: ContractParameters
+  nameWithType: ContractParameters
+  fullName: Virtufin.Base.ContractParameters
+  type: Struct
+  source:
+    remote:
+      path: src/Virtufin.Base/ContractParameters.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ContractParameters
+    path: ../../../src/Virtufin.Base/ContractParameters.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: >-
+    Concrete <xref href="Virtufin.Core.Contracts.IContractParameters" data-throw-if-not-resolved="false"></xref> backed by a raw byte payload.
+
+    Callers serialise their domain-specific parameters (e.g. via FlatBuffers,
+
+    MessagePack, JSON) into the byte array and reconstruct them at the
+
+    contract.
+  remarks: >-
+    This avoids a hard dependency on <code>Virtufin.Data.Variant</code> so that
+
+    <code>Virtufin.Base</code> remains usable even when higher-level serialisation
+
+    libraries are absent.
+  example: []
+  syntax:
+    content: 'public readonly record struct ContractParameters : IContractParameters, IEquatable<IContractParameters>, IEquatable<ContractParameters>'
+    content.vb: Public Structure ContractParameters Implements IContractParameters, IEquatable(Of IContractParameters), IEquatable(Of ContractParameters)
+  implements:
+  - Virtufin.Core.Contracts.IContractParameters
+  - System.IEquatable{Virtufin.Core.Contracts.IContractParameters}
+  - System.IEquatable{Virtufin.Base.ContractParameters}
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Virtufin.Base.ContractParameters.#ctor(System.Byte[])
+  commentId: M:Virtufin.Base.ContractParameters.#ctor(System.Byte[])
+  id: '#ctor(System.Byte[])'
+  parent: Virtufin.Base.ContractParameters
+  langs:
+  - csharp
+  - vb
+  name: ContractParameters(byte[])
+  nameWithType: ContractParameters.ContractParameters(byte[])
+  fullName: Virtufin.Base.ContractParameters.ContractParameters(byte[])
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Base/ContractParameters.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Base/ContractParameters.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: >-
+    Concrete <xref href="Virtufin.Core.Contracts.IContractParameters" data-throw-if-not-resolved="false"></xref> backed by a raw byte payload.
+
+    Callers serialise their domain-specific parameters (e.g. via FlatBuffers,
+
+    MessagePack, JSON) into the byte array and reconstruct them at the
+
+    contract.
+  remarks: >-
+    This avoids a hard dependency on <code>Virtufin.Data.Variant</code> so that
+
+    <code>Virtufin.Base</code> remains usable even when higher-level serialisation
+
+    libraries are absent.
+  example: []
+  syntax:
+    content: public ContractParameters(byte[] Payload)
+    parameters:
+    - id: Payload
+      type: System.Byte[]
+      description: The serialised parameter bytes.
+    content.vb: Public Sub New(Payload As Byte())
+  overload: Virtufin.Base.ContractParameters.#ctor*
+  nameWithType.vb: ContractParameters.New(Byte())
+  fullName.vb: Virtufin.Base.ContractParameters.New(Byte())
+  name.vb: New(Byte())
+- uid: Virtufin.Base.ContractParameters.Payload
+  commentId: P:Virtufin.Base.ContractParameters.Payload
+  id: Payload
+  parent: Virtufin.Base.ContractParameters
+  langs:
+  - csharp
+  - vb
+  name: Payload
+  nameWithType: ContractParameters.Payload
+  fullName: Virtufin.Base.ContractParameters.Payload
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/ContractParameters.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Payload
+    path: ../../../src/Virtufin.Base/ContractParameters.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: The serialised parameter bytes.
+  example: []
+  syntax:
+    content: public byte[] Payload { get; init; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public Property Payload As Byte()
+  overload: Virtufin.Base.ContractParameters.Payload*
+- uid: Virtufin.Base.ContractParameters.Empty
+  commentId: P:Virtufin.Base.ContractParameters.Empty
+  id: Empty
+  parent: Virtufin.Base.ContractParameters
+  langs:
+  - csharp
+  - vb
+  name: Empty
+  nameWithType: ContractParameters.Empty
+  fullName: Virtufin.Base.ContractParameters.Empty
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/ContractParameters.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Empty
+    path: ../../../src/Virtufin.Base/ContractParameters.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: An empty parameter set.
+  example: []
+  syntax:
+    content: public static ContractParameters Empty { get; }
+    parameters: []
+    return:
+      type: Virtufin.Base.ContractParameters
+    content.vb: Public Shared ReadOnly Property Empty As ContractParameters
+  overload: Virtufin.Base.ContractParameters.Empty*
+- uid: Virtufin.Base.ContractParameters.Equals(Virtufin.Core.Contracts.IContractParameters)
+  commentId: M:Virtufin.Base.ContractParameters.Equals(Virtufin.Core.Contracts.IContractParameters)
+  id: Equals(Virtufin.Core.Contracts.IContractParameters)
+  parent: Virtufin.Base.ContractParameters
+  langs:
+  - csharp
+  - vb
+  name: Equals(IContractParameters?)
+  nameWithType: ContractParameters.Equals(IContractParameters?)
+  fullName: Virtufin.Base.ContractParameters.Equals(Virtufin.Core.Contracts.IContractParameters?)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/ContractParameters.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Equals
+    path: ../../../src/Virtufin.Base/ContractParameters.cs
+    startLine: 23
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(IContractParameters? other)
+    parameters:
+    - id: other
+      type: Virtufin.Core.Contracts.IContractParameters
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As IContractParameters) As Boolean
+  overload: Virtufin.Base.ContractParameters.Equals*
+  implements:
+  - System.IEquatable{Virtufin.Core.Contracts.IContractParameters}.Equals(Virtufin.Core.Contracts.IContractParameters)
+  nameWithType.vb: ContractParameters.Equals(IContractParameters)
+  fullName.vb: Virtufin.Base.ContractParameters.Equals(Virtufin.Core.Contracts.IContractParameters)
+  name.vb: Equals(IContractParameters)
+- uid: Virtufin.Base.ContractParameters.Equals(Virtufin.Base.ContractParameters)
+  commentId: M:Virtufin.Base.ContractParameters.Equals(Virtufin.Base.ContractParameters)
+  id: Equals(Virtufin.Base.ContractParameters)
+  parent: Virtufin.Base.ContractParameters
+  langs:
+  - csharp
+  - vb
+  name: Equals(ContractParameters)
+  nameWithType: ContractParameters.Equals(ContractParameters)
+  fullName: Virtufin.Base.ContractParameters.Equals(Virtufin.Base.ContractParameters)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/ContractParameters.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Equals
+    path: ../../../src/Virtufin.Base/ContractParameters.cs
+    startLine: 27
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: 'Custom equality: two <xref href="Virtufin.Base.ContractParameters" data-throw-if-not-resolved="false"></xref> are equal when their payloads have the same contents.'
+  example: []
+  syntax:
+    content: public bool Equals(ContractParameters other)
+    parameters:
+    - id: other
+      type: Virtufin.Base.ContractParameters
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As ContractParameters) As Boolean
+  overload: Virtufin.Base.ContractParameters.Equals*
+  implements:
+  - System.IEquatable{Virtufin.Base.ContractParameters}.Equals(Virtufin.Base.ContractParameters)
+- uid: Virtufin.Base.ContractParameters.GetHashCode
+  commentId: M:Virtufin.Base.ContractParameters.GetHashCode
+  id: GetHashCode
+  parent: Virtufin.Base.ContractParameters
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: ContractParameters.GetHashCode()
+  fullName: Virtufin.Base.ContractParameters.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/ContractParameters.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GetHashCode
+    path: ../../../src/Virtufin.Base/ContractParameters.cs
+    startLine: 31
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Returns the hash code for this instance.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer that is the hash code for this instance.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Virtufin.Base.ContractParameters.GetHashCode*
+references:
+- uid: Virtufin.Core.Contracts.IContractParameters
+  commentId: T:Virtufin.Core.Contracts.IContractParameters
+  parent: Virtufin.Core.Contracts
+  href: Virtufin.Core.Contracts.IContractParameters.html
+  name: IContractParameters
+  nameWithType: IContractParameters
+  fullName: Virtufin.Core.Contracts.IContractParameters
+- uid: Virtufin.Base
+  commentId: N:Virtufin.Base
+  href: Virtufin.html
+  name: Virtufin.Base
+  nameWithType: Virtufin.Base
+  fullName: Virtufin.Base
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+- uid: System.IEquatable{Virtufin.Core.Contracts.IContractParameters}
+  commentId: T:System.IEquatable{Virtufin.Core.Contracts.IContractParameters}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<IContractParameters>
+  nameWithType: IEquatable<IContractParameters>
+  fullName: System.IEquatable<Virtufin.Core.Contracts.IContractParameters>
+  nameWithType.vb: IEquatable(Of IContractParameters)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Contracts.IContractParameters)
+  name.vb: IEquatable(Of IContractParameters)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Contracts.IContractParameters
+    name: IContractParameters
+    href: Virtufin.Core.Contracts.IContractParameters.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Contracts.IContractParameters
+    name: IContractParameters
+    href: Virtufin.Core.Contracts.IContractParameters.html
+  - name: )
+- uid: System.IEquatable{Virtufin.Base.ContractParameters}
+  commentId: T:System.IEquatable{Virtufin.Base.ContractParameters}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ContractParameters>
+  nameWithType: IEquatable<ContractParameters>
+  fullName: System.IEquatable<Virtufin.Base.ContractParameters>
+  nameWithType.vb: IEquatable(Of ContractParameters)
+  fullName.vb: System.IEquatable(Of Virtufin.Base.ContractParameters)
+  name.vb: IEquatable(Of ContractParameters)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Base.ContractParameters
+    name: ContractParameters
+    href: Virtufin.Base.ContractParameters.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Base.ContractParameters
+    name: ContractParameters
+    href: Virtufin.Base.ContractParameters.html
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Virtufin.Core.Contracts
+  commentId: N:Virtufin.Core.Contracts
+  href: Virtufin.html
+  name: Virtufin.Core.Contracts
+  nameWithType: Virtufin.Core.Contracts
+  fullName: Virtufin.Core.Contracts
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Contracts
+    name: Contracts
+    href: Virtufin.Core.Contracts.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Contracts
+    name: Contracts
+    href: Virtufin.Core.Contracts.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.Base.ContractParameters.#ctor*
+  commentId: Overload:Virtufin.Base.ContractParameters.#ctor
+  href: Virtufin.Base.ContractParameters.html#Virtufin_Base_ContractParameters__ctor_System_Byte___
+  name: ContractParameters
+  nameWithType: ContractParameters.ContractParameters
+  fullName: Virtufin.Base.ContractParameters.ContractParameters
+  nameWithType.vb: ContractParameters.New
+  fullName.vb: Virtufin.Base.ContractParameters.New
+  name.vb: New
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: Virtufin.Base.ContractParameters.Payload*
+  commentId: Overload:Virtufin.Base.ContractParameters.Payload
+  href: Virtufin.Base.ContractParameters.html#Virtufin_Base_ContractParameters_Payload
+  name: Payload
+  nameWithType: ContractParameters.Payload
+  fullName: Virtufin.Base.ContractParameters.Payload
+- uid: Virtufin.Base.ContractParameters.Empty*
+  commentId: Overload:Virtufin.Base.ContractParameters.Empty
+  href: Virtufin.Base.ContractParameters.html#Virtufin_Base_ContractParameters_Empty
+  name: Empty
+  nameWithType: ContractParameters.Empty
+  fullName: Virtufin.Base.ContractParameters.Empty
+- uid: Virtufin.Base.ContractParameters
+  commentId: T:Virtufin.Base.ContractParameters
+  parent: Virtufin.Base
+  href: Virtufin.Base.ContractParameters.html
+  name: ContractParameters
+  nameWithType: ContractParameters
+  fullName: Virtufin.Base.ContractParameters
+- uid: Virtufin.Base.ContractParameters.Equals*
+  commentId: Overload:Virtufin.Base.ContractParameters.Equals
+  href: Virtufin.Base.ContractParameters.html#Virtufin_Base_ContractParameters_Equals_Virtufin_Core_Contracts_IContractParameters_
+  name: Equals
+  nameWithType: ContractParameters.Equals
+  fullName: Virtufin.Base.ContractParameters.Equals
+- uid: System.IEquatable{Virtufin.Core.Contracts.IContractParameters}.Equals(Virtufin.Core.Contracts.IContractParameters)
+  commentId: M:System.IEquatable{Virtufin.Core.Contracts.IContractParameters}.Equals(Virtufin.Core.Contracts.IContractParameters)
+  parent: System.IEquatable{Virtufin.Core.Contracts.IContractParameters}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(IContractParameters)
+  nameWithType: IEquatable<IContractParameters>.Equals(IContractParameters)
+  fullName: System.IEquatable<Virtufin.Core.Contracts.IContractParameters>.Equals(Virtufin.Core.Contracts.IContractParameters)
+  nameWithType.vb: IEquatable(Of IContractParameters).Equals(IContractParameters)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Contracts.IContractParameters).Equals(Virtufin.Core.Contracts.IContractParameters)
+  spec.csharp:
+  - uid: System.IEquatable{Virtufin.Core.Contracts.IContractParameters}.Equals(Virtufin.Core.Contracts.IContractParameters)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Contracts.IContractParameters
+    name: IContractParameters
+    href: Virtufin.Core.Contracts.IContractParameters.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Virtufin.Core.Contracts.IContractParameters}.Equals(Virtufin.Core.Contracts.IContractParameters)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Contracts.IContractParameters
+    name: IContractParameters
+    href: Virtufin.Core.Contracts.IContractParameters.html
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IEquatable{Virtufin.Base.ContractParameters}.Equals(Virtufin.Base.ContractParameters)
+  commentId: M:System.IEquatable{Virtufin.Base.ContractParameters}.Equals(Virtufin.Base.ContractParameters)
+  parent: System.IEquatable{Virtufin.Base.ContractParameters}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(ContractParameters)
+  nameWithType: IEquatable<ContractParameters>.Equals(ContractParameters)
+  fullName: System.IEquatable<Virtufin.Base.ContractParameters>.Equals(Virtufin.Base.ContractParameters)
+  nameWithType.vb: IEquatable(Of ContractParameters).Equals(ContractParameters)
+  fullName.vb: System.IEquatable(Of Virtufin.Base.ContractParameters).Equals(Virtufin.Base.ContractParameters)
+  spec.csharp:
+  - uid: System.IEquatable{Virtufin.Base.ContractParameters}.Equals(Virtufin.Base.ContractParameters)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Base.ContractParameters
+    name: ContractParameters
+    href: Virtufin.Base.ContractParameters.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Virtufin.Base.ContractParameters}.Equals(Virtufin.Base.ContractParameters)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Base.ContractParameters
+    name: ContractParameters
+    href: Virtufin.Base.ContractParameters.html
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: Virtufin.Base.ContractParameters.GetHashCode*
+  commentId: Overload:Virtufin.Base.ContractParameters.GetHashCode
+  href: Virtufin.Base.ContractParameters.html#Virtufin_Base_ContractParameters_GetHashCode
+  name: GetHashCode
+  nameWithType: ContractParameters.GetHashCode
+  fullName: Virtufin.Base.ContractParameters.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

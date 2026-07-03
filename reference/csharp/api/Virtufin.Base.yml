@@ -1,0 +1,484 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base
+  commentId: N:Virtufin.Base
+  id: Virtufin.Base
+  children:
+  - Virtufin.Base.AssetIdentifier
+  - Virtufin.Base.AssetIdentifier.CurrencyAssetIdentifier
+  - Virtufin.Base.AssetIdentifier.SimpleAssetIdentifier
+  - Virtufin.Base.Attribute
+  - Virtufin.Base.Cash
+  - Virtufin.Base.ContractIdentifier
+  - Virtufin.Base.ContractIdentifier.SimpleContractIdentifier
+  - Virtufin.Base.ContractIdentifier.UTI
+  - Virtufin.Base.ContractParameters
+  - Virtufin.Base.Currency
+  - Virtufin.Base.Currency.CurrencySymbol
+  - Virtufin.Base.CurrencyIdentifier
+  - Virtufin.Base.DefaultVirtufinTypes
+  - Virtufin.Base.EntityIdentifier
+  - Virtufin.Base.EntityIdentifier.CUSIP
+  - Virtufin.Base.EntityIdentifier.ISIN
+  - Virtufin.Base.EntityIdentifier.UUID
+  - Virtufin.Base.Message
+  - Virtufin.Base.Position
+  - Virtufin.Base.PositionSize
+  - Virtufin.Base.PositionTransferContract
+  - Virtufin.Base.PositionTransferContractMessageGenerator
+  - Virtufin.Base.Scenario
+  - Virtufin.Base.ScenarioHistory
+  - Virtufin.Base.Signatory
+  - Virtufin.Base.State
+  - Virtufin.Base.Stock
+  - Virtufin.Base.TimeStamp
+  - Virtufin.Base.Transaction
+  - Virtufin.Base.Transaction.AtomicTransactions
+  - Virtufin.Base.Transaction.CancelContract
+  - Virtufin.Base.Transaction.CreateContract
+  - Virtufin.Base.Transaction.Transfer
+  - Virtufin.Base.UtiValidator
+  langs:
+  - csharp
+  - vb
+  name: Virtufin.Base
+  nameWithType: Virtufin.Base
+  fullName: Virtufin.Base
+  type: Namespace
+  assemblies:
+  - Virtufin.Base
+references:
+- uid: Virtufin.Base.AssetIdentifier
+  commentId: T:Virtufin.Base.AssetIdentifier
+  parent: Virtufin.Base
+  href: Virtufin.Base.AssetIdentifier.html
+  name: AssetIdentifier
+  nameWithType: AssetIdentifier
+  fullName: Virtufin.Base.AssetIdentifier
+- uid: Virtufin.Base.AssetIdentifier.SimpleAssetIdentifier
+  commentId: T:Virtufin.Base.AssetIdentifier.SimpleAssetIdentifier
+  href: Virtufin.Base.AssetIdentifier.html
+  name: AssetIdentifier.SimpleAssetIdentifier
+  nameWithType: AssetIdentifier.SimpleAssetIdentifier
+  fullName: Virtufin.Base.AssetIdentifier.SimpleAssetIdentifier
+  spec.csharp:
+  - uid: Virtufin.Base.AssetIdentifier
+    name: AssetIdentifier
+    href: Virtufin.Base.AssetIdentifier.html
+  - name: .
+  - uid: Virtufin.Base.AssetIdentifier.SimpleAssetIdentifier
+    name: SimpleAssetIdentifier
+    href: Virtufin.Base.AssetIdentifier.SimpleAssetIdentifier.html
+  spec.vb:
+  - uid: Virtufin.Base.AssetIdentifier
+    name: AssetIdentifier
+    href: Virtufin.Base.AssetIdentifier.html
+  - name: .
+  - uid: Virtufin.Base.AssetIdentifier.SimpleAssetIdentifier
+    name: SimpleAssetIdentifier
+    href: Virtufin.Base.AssetIdentifier.SimpleAssetIdentifier.html
+- uid: Virtufin.Base.AssetIdentifier.CurrencyAssetIdentifier
+  commentId: T:Virtufin.Base.AssetIdentifier.CurrencyAssetIdentifier
+  href: Virtufin.Base.AssetIdentifier.html
+  name: AssetIdentifier.CurrencyAssetIdentifier
+  nameWithType: AssetIdentifier.CurrencyAssetIdentifier
+  fullName: Virtufin.Base.AssetIdentifier.CurrencyAssetIdentifier
+  spec.csharp:
+  - uid: Virtufin.Base.AssetIdentifier
+    name: AssetIdentifier
+    href: Virtufin.Base.AssetIdentifier.html
+  - name: .
+  - uid: Virtufin.Base.AssetIdentifier.CurrencyAssetIdentifier
+    name: CurrencyAssetIdentifier
+    href: Virtufin.Base.AssetIdentifier.CurrencyAssetIdentifier.html
+  spec.vb:
+  - uid: Virtufin.Base.AssetIdentifier
+    name: AssetIdentifier
+    href: Virtufin.Base.AssetIdentifier.html
+  - name: .
+  - uid: Virtufin.Base.AssetIdentifier.CurrencyAssetIdentifier
+    name: CurrencyAssetIdentifier
+    href: Virtufin.Base.AssetIdentifier.CurrencyAssetIdentifier.html
+- uid: Virtufin.Base.Attribute
+  commentId: T:Virtufin.Base.Attribute
+  href: Virtufin.Base.Attribute.html
+  name: Attribute
+  nameWithType: Attribute
+  fullName: Virtufin.Base.Attribute
+- uid: Virtufin.Base.Cash
+  commentId: T:Virtufin.Base.Cash
+  parent: Virtufin.Base
+  href: Virtufin.Base.Cash.html
+  name: Cash
+  nameWithType: Cash
+  fullName: Virtufin.Base.Cash
+- uid: Virtufin.Base.ContractIdentifier
+  commentId: T:Virtufin.Base.ContractIdentifier
+  parent: Virtufin.Base
+  href: Virtufin.Base.ContractIdentifier.html
+  name: ContractIdentifier
+  nameWithType: ContractIdentifier
+  fullName: Virtufin.Base.ContractIdentifier
+- uid: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier
+  commentId: T:Virtufin.Base.ContractIdentifier.SimpleContractIdentifier
+  href: Virtufin.Base.ContractIdentifier.html
+  name: ContractIdentifier.SimpleContractIdentifier
+  nameWithType: ContractIdentifier.SimpleContractIdentifier
+  fullName: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier
+  spec.csharp:
+  - uid: Virtufin.Base.ContractIdentifier
+    name: ContractIdentifier
+    href: Virtufin.Base.ContractIdentifier.html
+  - name: .
+  - uid: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier
+    name: SimpleContractIdentifier
+    href: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.html
+  spec.vb:
+  - uid: Virtufin.Base.ContractIdentifier
+    name: ContractIdentifier
+    href: Virtufin.Base.ContractIdentifier.html
+  - name: .
+  - uid: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier
+    name: SimpleContractIdentifier
+    href: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.html
+- uid: Virtufin.Base.ContractIdentifier.UTI
+  commentId: T:Virtufin.Base.ContractIdentifier.UTI
+  href: Virtufin.Base.ContractIdentifier.html
+  name: ContractIdentifier.UTI
+  nameWithType: ContractIdentifier.UTI
+  fullName: Virtufin.Base.ContractIdentifier.UTI
+  spec.csharp:
+  - uid: Virtufin.Base.ContractIdentifier
+    name: ContractIdentifier
+    href: Virtufin.Base.ContractIdentifier.html
+  - name: .
+  - uid: Virtufin.Base.ContractIdentifier.UTI
+    name: UTI
+    href: Virtufin.Base.ContractIdentifier.UTI.html
+  spec.vb:
+  - uid: Virtufin.Base.ContractIdentifier
+    name: ContractIdentifier
+    href: Virtufin.Base.ContractIdentifier.html
+  - name: .
+  - uid: Virtufin.Base.ContractIdentifier.UTI
+    name: UTI
+    href: Virtufin.Base.ContractIdentifier.UTI.html
+- uid: Virtufin.Base.ContractParameters
+  commentId: T:Virtufin.Base.ContractParameters
+  parent: Virtufin.Base
+  href: Virtufin.Base.ContractParameters.html
+  name: ContractParameters
+  nameWithType: ContractParameters
+  fullName: Virtufin.Base.ContractParameters
+- uid: Virtufin.Base.Currency
+  commentId: T:Virtufin.Base.Currency
+  parent: Virtufin.Base
+  href: Virtufin.Base.Currency.html
+  name: Currency
+  nameWithType: Currency
+  fullName: Virtufin.Base.Currency
+- uid: Virtufin.Base.Currency.CurrencySymbol
+  commentId: T:Virtufin.Base.Currency.CurrencySymbol
+  parent: Virtufin.Base
+  href: Virtufin.Base.Currency.html
+  name: Currency.CurrencySymbol
+  nameWithType: Currency.CurrencySymbol
+  fullName: Virtufin.Base.Currency.CurrencySymbol
+  spec.csharp:
+  - uid: Virtufin.Base.Currency
+    name: Currency
+    href: Virtufin.Base.Currency.html
+  - name: .
+  - uid: Virtufin.Base.Currency.CurrencySymbol
+    name: CurrencySymbol
+    href: Virtufin.Base.Currency.CurrencySymbol.html
+  spec.vb:
+  - uid: Virtufin.Base.Currency
+    name: Currency
+    href: Virtufin.Base.Currency.html
+  - name: .
+  - uid: Virtufin.Base.Currency.CurrencySymbol
+    name: CurrencySymbol
+    href: Virtufin.Base.Currency.CurrencySymbol.html
+- uid: Virtufin.Base.CurrencyIdentifier
+  commentId: T:Virtufin.Base.CurrencyIdentifier
+  href: Virtufin.Base.CurrencyIdentifier.html
+  name: CurrencyIdentifier
+  nameWithType: CurrencyIdentifier
+  fullName: Virtufin.Base.CurrencyIdentifier
+- uid: Virtufin.Base.DefaultVirtufinTypes
+  commentId: T:Virtufin.Base.DefaultVirtufinTypes
+  parent: Virtufin.Base
+  href: Virtufin.Base.DefaultVirtufinTypes.html
+  name: DefaultVirtufinTypes
+  nameWithType: DefaultVirtufinTypes
+  fullName: Virtufin.Base.DefaultVirtufinTypes
+- uid: Virtufin.Base.EntityIdentifier
+  commentId: T:Virtufin.Base.EntityIdentifier
+  href: Virtufin.Base.EntityIdentifier.html
+  name: EntityIdentifier
+  nameWithType: EntityIdentifier
+  fullName: Virtufin.Base.EntityIdentifier
+- uid: Virtufin.Base.EntityIdentifier.ISIN
+  commentId: T:Virtufin.Base.EntityIdentifier.ISIN
+  href: Virtufin.Base.EntityIdentifier.html
+  name: EntityIdentifier.ISIN
+  nameWithType: EntityIdentifier.ISIN
+  fullName: Virtufin.Base.EntityIdentifier.ISIN
+  spec.csharp:
+  - uid: Virtufin.Base.EntityIdentifier
+    name: EntityIdentifier
+    href: Virtufin.Base.EntityIdentifier.html
+  - name: .
+  - uid: Virtufin.Base.EntityIdentifier.ISIN
+    name: ISIN
+    href: Virtufin.Base.EntityIdentifier.ISIN.html
+  spec.vb:
+  - uid: Virtufin.Base.EntityIdentifier
+    name: EntityIdentifier
+    href: Virtufin.Base.EntityIdentifier.html
+  - name: .
+  - uid: Virtufin.Base.EntityIdentifier.ISIN
+    name: ISIN
+    href: Virtufin.Base.EntityIdentifier.ISIN.html
+- uid: Virtufin.Base.EntityIdentifier.CUSIP
+  commentId: T:Virtufin.Base.EntityIdentifier.CUSIP
+  href: Virtufin.Base.EntityIdentifier.html
+  name: EntityIdentifier.CUSIP
+  nameWithType: EntityIdentifier.CUSIP
+  fullName: Virtufin.Base.EntityIdentifier.CUSIP
+  spec.csharp:
+  - uid: Virtufin.Base.EntityIdentifier
+    name: EntityIdentifier
+    href: Virtufin.Base.EntityIdentifier.html
+  - name: .
+  - uid: Virtufin.Base.EntityIdentifier.CUSIP
+    name: CUSIP
+    href: Virtufin.Base.EntityIdentifier.CUSIP.html
+  spec.vb:
+  - uid: Virtufin.Base.EntityIdentifier
+    name: EntityIdentifier
+    href: Virtufin.Base.EntityIdentifier.html
+  - name: .
+  - uid: Virtufin.Base.EntityIdentifier.CUSIP
+    name: CUSIP
+    href: Virtufin.Base.EntityIdentifier.CUSIP.html
+- uid: Virtufin.Base.EntityIdentifier.UUID
+  commentId: T:Virtufin.Base.EntityIdentifier.UUID
+  href: Virtufin.Base.EntityIdentifier.html
+  name: EntityIdentifier.UUID
+  nameWithType: EntityIdentifier.UUID
+  fullName: Virtufin.Base.EntityIdentifier.UUID
+  spec.csharp:
+  - uid: Virtufin.Base.EntityIdentifier
+    name: EntityIdentifier
+    href: Virtufin.Base.EntityIdentifier.html
+  - name: .
+  - uid: Virtufin.Base.EntityIdentifier.UUID
+    name: UUID
+    href: Virtufin.Base.EntityIdentifier.UUID.html
+  spec.vb:
+  - uid: Virtufin.Base.EntityIdentifier
+    name: EntityIdentifier
+    href: Virtufin.Base.EntityIdentifier.html
+  - name: .
+  - uid: Virtufin.Base.EntityIdentifier.UUID
+    name: UUID
+    href: Virtufin.Base.EntityIdentifier.UUID.html
+- uid: Virtufin.Base.Message
+  commentId: T:Virtufin.Base.Message
+  href: Virtufin.Base.Message.html
+  name: Message
+  nameWithType: Message
+  fullName: Virtufin.Base.Message
+- uid: Virtufin.Base.Position
+  commentId: T:Virtufin.Base.Position
+  parent: Virtufin.Base
+  href: Virtufin.Base.Position.html
+  name: Position
+  nameWithType: Position
+  fullName: Virtufin.Base.Position
+- uid: Virtufin.Base.PositionSize
+  commentId: T:Virtufin.Base.PositionSize
+  parent: Virtufin.Base
+  href: Virtufin.Base.PositionSize.html
+  name: PositionSize
+  nameWithType: PositionSize
+  fullName: Virtufin.Base.PositionSize
+- uid: Virtufin.Base.PositionTransferContract
+  commentId: T:Virtufin.Base.PositionTransferContract
+  parent: Virtufin.Base
+  href: Virtufin.Base.PositionTransferContract.html
+  name: PositionTransferContract
+  nameWithType: PositionTransferContract
+  fullName: Virtufin.Base.PositionTransferContract
+- uid: Virtufin.Base.PositionTransferContractMessageGenerator
+  commentId: T:Virtufin.Base.PositionTransferContractMessageGenerator
+  href: Virtufin.Base.PositionTransferContractMessageGenerator.html
+  name: PositionTransferContractMessageGenerator
+  nameWithType: PositionTransferContractMessageGenerator
+  fullName: Virtufin.Base.PositionTransferContractMessageGenerator
+- uid: Virtufin.Base.Scenario
+  commentId: T:Virtufin.Base.Scenario
+  parent: Virtufin.Base
+  href: Virtufin.Base.Scenario.html
+  name: Scenario
+  nameWithType: Scenario
+  fullName: Virtufin.Base.Scenario
+- uid: Virtufin.Base.ScenarioHistory
+  commentId: T:Virtufin.Base.ScenarioHistory
+  href: Virtufin.Base.ScenarioHistory.html
+  name: ScenarioHistory
+  nameWithType: ScenarioHistory
+  fullName: Virtufin.Base.ScenarioHistory
+- uid: Virtufin.Base.Signatory
+  commentId: T:Virtufin.Base.Signatory
+  parent: Virtufin.Base
+  href: Virtufin.Base.Signatory.html
+  name: Signatory
+  nameWithType: Signatory
+  fullName: Virtufin.Base.Signatory
+- uid: Virtufin.Base.State
+  commentId: T:Virtufin.Base.State
+  parent: Virtufin.Base
+  href: Virtufin.Base.State.html
+  name: State
+  nameWithType: State
+  fullName: Virtufin.Base.State
+- uid: Virtufin.Base.Stock
+  commentId: T:Virtufin.Base.Stock
+  parent: Virtufin.Base
+  href: Virtufin.Base.Stock.html
+  name: Stock
+  nameWithType: Stock
+  fullName: Virtufin.Base.Stock
+- uid: Virtufin.Base.TimeStamp
+  commentId: T:Virtufin.Base.TimeStamp
+  parent: Virtufin.Base
+  href: Virtufin.Base.TimeStamp.html
+  name: TimeStamp
+  nameWithType: TimeStamp
+  fullName: Virtufin.Base.TimeStamp
+- uid: Virtufin.Base.Transaction
+  commentId: T:Virtufin.Base.Transaction
+  parent: Virtufin.Base
+  href: Virtufin.Base.Transaction.html
+  name: Transaction
+  nameWithType: Transaction
+  fullName: Virtufin.Base.Transaction
+- uid: Virtufin.Base.Transaction.CreateContract
+  commentId: T:Virtufin.Base.Transaction.CreateContract
+  href: Virtufin.Base.Transaction.html
+  name: Transaction.CreateContract
+  nameWithType: Transaction.CreateContract
+  fullName: Virtufin.Base.Transaction.CreateContract
+  spec.csharp:
+  - uid: Virtufin.Base.Transaction
+    name: Transaction
+    href: Virtufin.Base.Transaction.html
+  - name: .
+  - uid: Virtufin.Base.Transaction.CreateContract
+    name: CreateContract
+    href: Virtufin.Base.Transaction.CreateContract.html
+  spec.vb:
+  - uid: Virtufin.Base.Transaction
+    name: Transaction
+    href: Virtufin.Base.Transaction.html
+  - name: .
+  - uid: Virtufin.Base.Transaction.CreateContract
+    name: CreateContract
+    href: Virtufin.Base.Transaction.CreateContract.html
+- uid: Virtufin.Base.Transaction.CancelContract
+  commentId: T:Virtufin.Base.Transaction.CancelContract
+  href: Virtufin.Base.Transaction.html
+  name: Transaction.CancelContract
+  nameWithType: Transaction.CancelContract
+  fullName: Virtufin.Base.Transaction.CancelContract
+  spec.csharp:
+  - uid: Virtufin.Base.Transaction
+    name: Transaction
+    href: Virtufin.Base.Transaction.html
+  - name: .
+  - uid: Virtufin.Base.Transaction.CancelContract
+    name: CancelContract
+    href: Virtufin.Base.Transaction.CancelContract.html
+  spec.vb:
+  - uid: Virtufin.Base.Transaction
+    name: Transaction
+    href: Virtufin.Base.Transaction.html
+  - name: .
+  - uid: Virtufin.Base.Transaction.CancelContract
+    name: CancelContract
+    href: Virtufin.Base.Transaction.CancelContract.html
+- uid: Virtufin.Base.Transaction.AtomicTransactions
+  commentId: T:Virtufin.Base.Transaction.AtomicTransactions
+  href: Virtufin.Base.Transaction.html
+  name: Transaction.AtomicTransactions
+  nameWithType: Transaction.AtomicTransactions
+  fullName: Virtufin.Base.Transaction.AtomicTransactions
+  spec.csharp:
+  - uid: Virtufin.Base.Transaction
+    name: Transaction
+    href: Virtufin.Base.Transaction.html
+  - name: .
+  - uid: Virtufin.Base.Transaction.AtomicTransactions
+    name: AtomicTransactions
+    href: Virtufin.Base.Transaction.AtomicTransactions.html
+  spec.vb:
+  - uid: Virtufin.Base.Transaction
+    name: Transaction
+    href: Virtufin.Base.Transaction.html
+  - name: .
+  - uid: Virtufin.Base.Transaction.AtomicTransactions
+    name: AtomicTransactions
+    href: Virtufin.Base.Transaction.AtomicTransactions.html
+- uid: Virtufin.Base.Transaction.Transfer
+  commentId: T:Virtufin.Base.Transaction.Transfer
+  href: Virtufin.Base.Transaction.html
+  name: Transaction.Transfer
+  nameWithType: Transaction.Transfer
+  fullName: Virtufin.Base.Transaction.Transfer
+  spec.csharp:
+  - uid: Virtufin.Base.Transaction
+    name: Transaction
+    href: Virtufin.Base.Transaction.html
+  - name: .
+  - uid: Virtufin.Base.Transaction.Transfer
+    name: Transfer
+    href: Virtufin.Base.Transaction.Transfer.html
+  spec.vb:
+  - uid: Virtufin.Base.Transaction
+    name: Transaction
+    href: Virtufin.Base.Transaction.html
+  - name: .
+  - uid: Virtufin.Base.Transaction.Transfer
+    name: Transfer
+    href: Virtufin.Base.Transaction.Transfer.html
+- uid: Virtufin.Base.UtiValidator
+  commentId: T:Virtufin.Base.UtiValidator
+  href: Virtufin.Base.UtiValidator.html
+  name: UtiValidator
+  nameWithType: UtiValidator
+  fullName: Virtufin.Base.UtiValidator
+- uid: Virtufin.Base
+  commentId: N:Virtufin.Base
+  href: Virtufin.html
+  name: Virtufin.Base
+  nameWithType: Virtufin.Base
+  fullName: Virtufin.Base
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
