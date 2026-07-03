@@ -31,7 +31,6 @@ items:
   - Virtufin.Core.IValueProviders
   - Virtufin.Core.Identifiers
   - Virtufin.Core.Messaging
-  - Virtufin.Core.Metronome
   - Virtufin.Core.ObservableProvider`1
   - Virtufin.Core.Position
   - Virtufin.Core.Predicates
@@ -623,12 +622,6 @@ references:
   name: IValueProviders
   nameWithType: IValueProviders
   fullName: Virtufin.Core.IValueProviders
-- uid: Virtufin.Core.Metronome
-  commentId: T:Virtufin.Core.Metronome
-  href: Virtufin.Core.Metronome.html
-  name: Metronome
-  nameWithType: Metronome
-  fullName: Virtufin.Core.Metronome
 - uid: Virtufin.Core.ObservableProvider`1
   commentId: T:Virtufin.Core.ObservableProvider`1
   href: Virtufin.Core.ObservableProvider-1.html

@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class Metronome | Virtufin .NET - C# API Reference </title>
+      <title>Class DateTimeWallClock | Virtufin .NET - C# API Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class Metronome | Virtufin .NET - C# API Reference ">
+      <meta name="title" content="Class DateTimeWallClock | Virtufin .NET - C# API Reference ">
       
-      
+      <meta name="description" content="The canonical IClock&amp;lt;DateTimeOffset&amp;gt; implementation. Emits a  every interval, where the n-th emission is DateTimeOffset.UtcNow + n * interval.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -49,10 +49,10 @@
             Virtufin.Dotnet
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/a446dbb3a7aa84a9b712d5307a884c717eb01a4d" target="_blank" rel="noopener" class="commit-badge" title="View commit a446dbb">
+            <a href="{git_repo_url}/commit/62b224b4aa08d39d6c3c24348e84ef2ccd7af001" target="_blank" rel="noopener" class="commit-badge" title="View commit 62b224b">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">a446dbb</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">62b224b</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,24 +88,27 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.Core.Metronome">
+        <article data-uid="Virtufin.Core.Clock.DateTimeWallClock">
 
 
 
-  <h1 id="Virtufin_Core_Metronome" data-uid="Virtufin.Core.Metronome" class="text-break">
-Class Metronome  
+  <h1 id="Virtufin_Core_Clock_DateTimeWallClock" data-uid="Virtufin.Core.Clock.DateTimeWallClock" class="text-break">
+Class DateTimeWallClock  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.Core.html">Core</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.Core.html">Core</a>.<a class="xref" href="Virtufin.Core.Clock.html">Clock</a></dd></dl>
   <dl><dt>Assembly</dt><dd>Virtufin.Core.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>The canonical <code>IClock&lt;DateTimeOffset&gt;</code> implementation. Emits a
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a> every <code class="paramref">interval</code>, where
+the n-th emission is <code>DateTimeOffset.UtcNow + n * interval</code>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Metronome</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class DateTimeWallClock : IClock&lt;DateTimeOffset&gt;, IObservable&lt;DateTimeOffset&gt;</code></pre>
   </div>
 
 
@@ -115,10 +118,17 @@ Class Metronome
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">Metronome</span></div>
+      <div><span class="xref">DateTimeWallClock</span></div>
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Virtufin.Core.Clock.IClock-1.html">IClock</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>&gt;</div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist inheritedMembers">
@@ -137,9 +147,6 @@ Class Metronome
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
@@ -150,56 +157,42 @@ Class Metronome
 
 
 
+  <h2 id="Virtufin_Core_Clock_DateTimeWallClock_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This is the &quot;regular&quot; wall clock — the projection from a regular
+<a class="xref" href="Virtufin.Core.Clock.Metronome-1.html">Metronome&lt;T&gt;</a>-like tick to wall time. The actual emission
+is driven by Observable.Interval(TimeSpan, TimeSpan) rather
+than by wrapping a <a class="xref" href="Virtufin.Core.Clock.Metronome-1.html">Metronome&lt;T&gt;</a>, because the wall-clock
+projection reads <code>DateTimeOffset.UtcNow</code> at the moment of emission
+(a Metronome would freeze the projected time at subscription time).</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
 </h2>
 
 
-  <a id="Virtufin_Core_Metronome__ctor_" data-uid="Virtufin.Core.Metronome.#ctor*"></a>
+  <a id="Virtufin_Core_Clock_DateTimeWallClock__ctor_" data-uid="Virtufin.Core.Clock.DateTimeWallClock.#ctor*"></a>
 
-  <h3 id="Virtufin_Core_Metronome__ctor" data-uid="Virtufin.Core.Metronome.#ctor">
-  Metronome()
+  <h3 id="Virtufin_Core_Clock_DateTimeWallClock__ctor_System_TimeSpan_" data-uid="Virtufin.Core.Clock.DateTimeWallClock.#ctor(System.TimeSpan)">
+  DateTimeWallClock(TimeSpan)
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Construct a wall clock that emits <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a> every
+<code class="paramref">interval</code>. The n-th emission (n ≥ 1) equals
+<code>DateTimeOffset.UtcNow + n * interval</code> evaluated at emission time.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Metronome()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Virtufin_Core_Metronome__ctor_" data-uid="Virtufin.Core.Metronome.#ctor*"></a>
-
-  <h3 id="Virtufin_Core_Metronome__ctor_System_TimeSpan_" data-uid="Virtufin.Core.Metronome.#ctor(System.TimeSpan)">
-  Metronome(TimeSpan)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Metronome(TimeSpan interval)</code></pre>
+    <pre><code class="lang-csharp hljs">public DateTimeWallClock(TimeSpan interval)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>interval</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
-    <dd></dd>
+    <dd><p>Time between emissions. Must be &gt; <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan.zero">Zero</a>.</p>
+</dd>
   </dl>
 
 
@@ -210,6 +203,12 @@ Class Metronome
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p><code class="paramref">interval</code> is &lt;= <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan.zero">Zero</a>.</p>
+</dd>
+  </dl>
 
 
 
@@ -217,25 +216,33 @@ Class Metronome
 </h2>
 
 
-  <a id="Virtufin_Core_Metronome_CreateObservable_" data-uid="Virtufin.Core.Metronome.CreateObservable*"></a>
+  <a id="Virtufin_Core_Clock_DateTimeWallClock_Subscribe_" data-uid="Virtufin.Core.Clock.DateTimeWallClock.Subscribe*"></a>
 
-  <h3 id="Virtufin_Core_Metronome_CreateObservable" data-uid="Virtufin.Core.Metronome.CreateObservable">
-  CreateObservable()
+  <h3 id="Virtufin_Core_Clock_DateTimeWallClock_Subscribe_System_IObserver_System_DateTimeOffset__" data-uid="Virtufin.Core.Clock.DateTimeWallClock.Subscribe(System.IObserver{System.DateTimeOffset})">
+  Subscribe(IObserver&lt;DateTimeOffset&gt;)
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Notifies the provider that an observer is to receive notifications.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IObservable&lt;int&gt; CreateObservable()</code></pre>
+    <pre><code class="lang-csharp hljs">public IDisposable Subscribe(IObserver&lt;DateTimeOffset&gt; observer)</code></pre>
   </div>
 
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>observer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobserver-1">IObserver</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>&gt;</dt>
+    <dd><p>The object that is to receive notifications.</p>
+</dd>
+  </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
-    <dd></dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd><p>A reference to an interface that allows observers to stop receiving notifications before the provider has finished sending them.</p>
+</dd>
   </dl>
 
 

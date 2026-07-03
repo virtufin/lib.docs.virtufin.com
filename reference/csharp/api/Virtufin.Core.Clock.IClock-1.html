@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Interface IClock | Virtufin .NET - C# API Reference </title>
+      <title>Interface IClock&lt;T&gt; | Virtufin .NET - C# API Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface IClock | Virtufin .NET - C# API Reference ">
+      <meta name="title" content="Interface IClock&lt;T&gt; | Virtufin .NET - C# API Reference ">
       
-      <meta name="description" content="A clock interpretation over which events are timestamped. Two implementations exist: WallClock (real time, used in act scenarios) and ReplayClock (synthetic time, used in hyp scenarios).">
+      <meta name="description" content="A clock is a stream of time values emitted as events. Each emission is a T (typically DateTimeOffset) representing a point in time. Subscribers receive emissions via ; callers should NOT poll the clock for a &amp;quot;current value&amp;quot;.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -49,10 +49,10 @@
             Virtufin.Dotnet
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/a446dbb3a7aa84a9b712d5307a884c717eb01a4d" target="_blank" rel="noopener" class="commit-badge" title="View commit a446dbb">
+            <a href="{git_repo_url}/commit/62b224b4aa08d39d6c3c24348e84ef2ccd7af001" target="_blank" rel="noopener" class="commit-badge" title="View commit 62b224b">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">a446dbb</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">62b224b</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,12 +88,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.Core.Clock.IClock">
+        <article data-uid="Virtufin.Core.Clock.IClock`1">
 
 
 
-  <h1 id="Virtufin_Core_Clock_IClock" data-uid="Virtufin.Core.Clock.IClock" class="text-break">
-Interface IClock  
+  <h1 id="Virtufin_Core_Clock_IClock_1" data-uid="Virtufin.Core.Clock.IClock`1" class="text-break">
+Interface IClock&lt;T&gt;  
   </h1>
 
   <div class="facts text-secondary">
@@ -101,126 +101,53 @@ Interface IClock
   <dl><dt>Assembly</dt><dd>Virtufin.Core.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>A clock interpretation over which events are timestamped. Two implementations
-exist: <code>WallClock</code> (real time, used in <code>act</code> scenarios) and
-<code>ReplayClock</code> (synthetic time, used in <code>hyp</code> scenarios).</p>
+  <div class="markdown summary"><p>A clock is a stream of time values emitted as events. Each emission is
+a <code class="typeparamref">T</code> (typically <code>DateTimeOffset</code>) representing
+a point in time. Subscribers receive emissions via
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobservable-1.subscribe">Subscribe(IObserver&lt;T&gt;)</a>; callers should NOT
+poll the clock for a &quot;current value&quot;.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IClock</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IClock&lt;T&gt; : IObservable&lt;T&gt; where T : struct, IComparable&lt;T&gt;</code></pre>
   </div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="properties">Properties
-</h2>
-
-
-  <a id="Virtufin_Core_Clock_IClock_IsWallClock_" data-uid="Virtufin.Core.Clock.IClock.IsWallClock*"></a>
-
-  <h3 id="Virtufin_Core_Clock_IClock_IsWallClock" data-uid="Virtufin.Core.Clock.IClock.IsWallClock">
-  IsWallClock
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>True for <code>WallClock</code>; false for synthetic clocks.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool IsWallClock { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dt><code>T</code></dt>
+    <dd><p>The time representation emitted by the clock. Must be a struct so the
+implementation can use value-type semantics, and must implement
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable&lt;T&gt;</a> so consumers can order the emissions.</p>
+</dd>
   </dl>
 
 
 
 
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobservable-1.subscribe">IObservable&lt;T&gt;.Subscribe(IObserver&lt;T&gt;)</a>
+    </div>
+  </dd></dl>
 
 
 
 
-  <a id="Virtufin_Core_Clock_IClock_Name_" data-uid="Virtufin.Core.Clock.IClock.Name*"></a>
-
-  <h3 id="Virtufin_Core_Clock_IClock_Name" data-uid="Virtufin.Core.Clock.IClock.Name">
-  Name
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Human-readable clock name (e.g. <code>wall</code>, <code>synthetic:BTC_2021</code>).</p>
+  <h2 id="Virtufin_Core_Clock_IClock_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>A clock is NOT a &quot;now&quot; provider — that abstraction is replaced by the
+observable stream. Concrete implementations include
+<a class="xref" href="Virtufin.Core.Clock.Metronome-1.html">Metronome&lt;T&gt;</a> (regular periodic emission) and
+Virtufin.Base.Clock.DateTimeWallClock (specialised for
+<code>DateTimeOffset</code>). For &quot;induced by actions&quot; scenarios (e.g.
+backtest replay), the test driver emits via a
+<span class="xref">System.Reactive.Subjects.Subject&lt;T&gt;</span> cast to
+<code>IClock&lt;T&gt;</code>.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string Name { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Virtufin_Core_Clock_IClock_Now_" data-uid="Virtufin.Core.Clock.IClock.Now*"></a>
-
-  <h3 id="Virtufin_Core_Clock_IClock_Now" data-uid="Virtufin.Core.Clock.IClock.Now">
-  Now
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Current value of this clock.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">DateTimeOffset Now { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
 
 
 

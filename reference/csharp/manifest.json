@@ -102,48 +102,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Clock.ReplayClock.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Virtufin.Base.Clock.ReplayClock.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Virtufin.Base.Clock.ReplayClock",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Clock.ReplayClock.yml\" sourcestartlinenumber=\"1\">Synthetic replay clock for <code>hyp</code> scenarios. Starts at a configurable\noffset and can be advanced deterministically by a step. The clock name\nencodes the selector (e.g. <code>synthetic:BTC_202101_202206</code>).</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Clock.WallClock.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Virtufin.Base.Clock.WallClock.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Virtufin.Base.Clock.WallClock",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Clock.WallClock.yml\" sourcestartlinenumber=\"1\">Real wall-clock implementation of <xref href=\"Virtufin.Core.Clock.IClock\" data-throw-if-not-resolved=\"false\"></xref>. Used in <code>act</code>\nscenarios where <xref href=\"Virtufin.Core.Clock.IClock.Now\" data-throw-if-not-resolved=\"false\"></xref> is the current UTC time.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Clock.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Virtufin.Base.Clock.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Virtufin.Base.Clock",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.yml",
       "output": {
         ".html": {
@@ -1796,17 +1754,45 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Core.Clock.IClock.yml",
+      "source_relative_path": "api/Virtufin.Core.Clock.DateTimeWallClock.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Core.Clock.IClock.html"
+          "relative_path": "api/Virtufin.Core.Clock.DateTimeWallClock.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Core.Clock.IClock",
-      "Summary": "<p sourcefile=\"api/Virtufin.Core.Clock.IClock.yml\" sourcestartlinenumber=\"1\">A clock interpretation over which events are timestamped. Two implementations\nexist: <code>WallClock</code> (real time, used in <code>act</code> scenarios) and\n<code>ReplayClock</code> (synthetic time, used in <code>hyp</code> scenarios).</p>\n"
+      "Title": "Virtufin.Core.Clock.DateTimeWallClock",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Clock.DateTimeWallClock.yml\" sourcestartlinenumber=\"1\">The canonical <code>IClock&lt;DateTimeOffset&gt;</code> implementation. Emits a\n<xref href=\"System.DateTimeOffset\" data-throw-if-not-resolved=\"false\"></xref> every <code class=\"paramref\">interval</code>, where\nthe n-th emission is <code>DateTimeOffset.UtcNow + n * interval</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Clock.IClock-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Clock.IClock-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Clock.IClock<T>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Clock.IClock-1.yml\" sourcestartlinenumber=\"1\">A clock is a stream of time values emitted as events. Each emission is\na <code class=\"typeparamref\">T</code> (typically <code>DateTimeOffset</code>) representing\na point in time. Subscribers receive emissions via\n<xref href=\"System.IObservable%601.Subscribe(System.IObserver%7b%600%7d)\" data-throw-if-not-resolved=\"false\"></xref>; callers should NOT\npoll the clock for a &quot;current value&quot;.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Clock.Metronome-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Clock.Metronome-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Clock.Metronome<T>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Clock.Metronome-1.yml\" sourcestartlinenumber=\"1\">The primitive regular-tick clock source. Emits a <code class=\"typeparamref\">T</code>\nvalue at a fixed <xref href=\"Virtufin.Core.Clock.Metronome%601.Interval\" data-throw-if-not-resolved=\"false\"></xref>. Each emission corresponds to a\ntick: <code>T</code> values can carry the wall-time (e.g. a\n<code>DateTimeOffset</code>) or a sequence number projected to any\n<code class=\"typeparamref\">T</code> the consumer needs.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2688,20 +2674,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Core.Messaging",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Core.Metronome.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Virtufin.Core.Metronome.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Virtufin.Core.Metronome",
       "Summary": null
     },
     {

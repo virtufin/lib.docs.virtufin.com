@@ -1,0 +1,738 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Clock.DateTimeWallClock
+  commentId: T:Virtufin.Core.Clock.DateTimeWallClock
+  id: DateTimeWallClock
+  parent: Virtufin.Core.Clock
+  children:
+  - Virtufin.Core.Clock.DateTimeWallClock.#ctor(System.TimeSpan)
+  - Virtufin.Core.Clock.DateTimeWallClock.Subscribe(System.IObserver{System.DateTimeOffset})
+  langs:
+  - csharp
+  - vb
+  name: DateTimeWallClock
+  nameWithType: DateTimeWallClock
+  fullName: Virtufin.Core.Clock.DateTimeWallClock
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Core/Clock/DateTimeWallClock.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: DateTimeWallClock
+    path: ../../../src/Virtufin.Core/Clock/DateTimeWallClock.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Clock
+  summary: >-
+    The canonical <code>IClock&lt;DateTimeOffset&gt;</code> implementation. Emits a
+
+    <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref> every <code class="paramref">interval</code>, where
+
+    the n-th emission is <code>DateTimeOffset.UtcNow + n * interval</code>.
+  remarks: >-
+    This is the "regular" wall clock — the projection from a regular
+
+    <xref href="Virtufin.Core.Clock.Metronome%601" data-throw-if-not-resolved="false"></xref>-like tick to wall time. The actual emission
+
+    is driven by Observable.Interval(TimeSpan, TimeSpan) rather
+
+    than by wrapping a <xref href="Virtufin.Core.Clock.Metronome%601" data-throw-if-not-resolved="false"></xref>, because the wall-clock
+
+    projection reads <code>DateTimeOffset.UtcNow</code> at the moment of emission
+
+    (a Metronome would freeze the projected time at subscription time).
+  example: []
+  syntax:
+    content: 'public sealed class DateTimeWallClock : IClock<DateTimeOffset>, IObservable<DateTimeOffset>'
+    content.vb: Public NotInheritable Class DateTimeWallClock Implements IClock(Of DateTimeOffset), IObservable(Of DateTimeOffset)
+  inheritance:
+  - System.Object
+  implements:
+  - Virtufin.Core.Clock.IClock{System.DateTimeOffset}
+  - System.IObservable{System.DateTimeOffset}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.Core.Clock.DateTimeWallClock.#ctor(System.TimeSpan)
+  commentId: M:Virtufin.Core.Clock.DateTimeWallClock.#ctor(System.TimeSpan)
+  id: '#ctor(System.TimeSpan)'
+  parent: Virtufin.Core.Clock.DateTimeWallClock
+  langs:
+  - csharp
+  - vb
+  name: DateTimeWallClock(TimeSpan)
+  nameWithType: DateTimeWallClock.DateTimeWallClock(TimeSpan)
+  fullName: Virtufin.Core.Clock.DateTimeWallClock.DateTimeWallClock(System.TimeSpan)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Core/Clock/DateTimeWallClock.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Core/Clock/DateTimeWallClock.cs
+    startLine: 31
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Clock
+  summary: >-
+    Construct a wall clock that emits <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref> every
+
+    <code class="paramref">interval</code>. The n-th emission (n ≥ 1) equals
+
+    <code>DateTimeOffset.UtcNow + n * interval</code> evaluated at emission time.
+  example: []
+  syntax:
+    content: public DateTimeWallClock(TimeSpan interval)
+    parameters:
+    - id: interval
+      type: System.TimeSpan
+      description: Time between emissions. Must be &gt; <xref href="System.TimeSpan.Zero" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub New(interval As TimeSpan)
+  overload: Virtufin.Core.Clock.DateTimeWallClock.#ctor*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">interval</code> is &lt;= <xref href="System.TimeSpan.Zero" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: DateTimeWallClock.New(TimeSpan)
+  fullName.vb: Virtufin.Core.Clock.DateTimeWallClock.New(System.TimeSpan)
+  name.vb: New(TimeSpan)
+- uid: Virtufin.Core.Clock.DateTimeWallClock.Subscribe(System.IObserver{System.DateTimeOffset})
+  commentId: M:Virtufin.Core.Clock.DateTimeWallClock.Subscribe(System.IObserver{System.DateTimeOffset})
+  id: Subscribe(System.IObserver{System.DateTimeOffset})
+  parent: Virtufin.Core.Clock.DateTimeWallClock
+  langs:
+  - csharp
+  - vb
+  name: Subscribe(IObserver<DateTimeOffset>)
+  nameWithType: DateTimeWallClock.Subscribe(IObserver<DateTimeOffset>)
+  fullName: Virtufin.Core.Clock.DateTimeWallClock.Subscribe(System.IObserver<System.DateTimeOffset>)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Clock/DateTimeWallClock.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Subscribe
+    path: ../../../src/Virtufin.Core/Clock/DateTimeWallClock.cs
+    startLine: 41
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Clock
+  summary: Notifies the provider that an observer is to receive notifications.
+  example: []
+  syntax:
+    content: public IDisposable Subscribe(IObserver<DateTimeOffset> observer)
+    parameters:
+    - id: observer
+      type: System.IObserver{System.DateTimeOffset}
+      description: The object that is to receive notifications.
+    return:
+      type: System.IDisposable
+      description: A reference to an interface that allows observers to stop receiving notifications before the provider has finished sending them.
+    content.vb: Public Function Subscribe(observer As IObserver(Of DateTimeOffset)) As IDisposable
+  overload: Virtufin.Core.Clock.DateTimeWallClock.Subscribe*
+  implements:
+  - System.IObservable{System.DateTimeOffset}.Subscribe(System.IObserver{System.DateTimeOffset})
+  nameWithType.vb: DateTimeWallClock.Subscribe(IObserver(Of DateTimeOffset))
+  fullName.vb: Virtufin.Core.Clock.DateTimeWallClock.Subscribe(System.IObserver(Of System.DateTimeOffset))
+  name.vb: Subscribe(IObserver(Of DateTimeOffset))
+references:
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Virtufin.Core.Clock.Metronome`1
+  commentId: T:Virtufin.Core.Clock.Metronome`1
+  href: Virtufin.Core.Clock.Metronome-1.html
+  name: Metronome<T>
+  nameWithType: Metronome<T>
+  fullName: Virtufin.Core.Clock.Metronome<T>
+  nameWithType.vb: Metronome(Of T)
+  fullName.vb: Virtufin.Core.Clock.Metronome(Of T)
+  name.vb: Metronome(Of T)
+  spec.csharp:
+  - uid: Virtufin.Core.Clock.Metronome`1
+    name: Metronome
+    href: Virtufin.Core.Clock.Metronome-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Clock.Metronome`1
+    name: Metronome
+    href: Virtufin.Core.Clock.Metronome-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Core.Clock
+  commentId: N:Virtufin.Core.Clock
+  href: Virtufin.html
+  name: Virtufin.Core.Clock
+  nameWithType: Virtufin.Core.Clock
+  fullName: Virtufin.Core.Clock
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Clock
+    name: Clock
+    href: Virtufin.Core.Clock.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Clock
+    name: Clock
+    href: Virtufin.Core.Clock.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.Core.Clock.IClock{System.DateTimeOffset}
+  commentId: T:Virtufin.Core.Clock.IClock{System.DateTimeOffset}
+  parent: Virtufin.Core.Clock
+  definition: Virtufin.Core.Clock.IClock`1
+  href: Virtufin.Core.Clock.IClock-1.html
+  name: IClock<DateTimeOffset>
+  nameWithType: IClock<DateTimeOffset>
+  fullName: Virtufin.Core.Clock.IClock<System.DateTimeOffset>
+  nameWithType.vb: IClock(Of DateTimeOffset)
+  fullName.vb: Virtufin.Core.Clock.IClock(Of System.DateTimeOffset)
+  name.vb: IClock(Of DateTimeOffset)
+  spec.csharp:
+  - uid: Virtufin.Core.Clock.IClock`1
+    name: IClock
+    href: Virtufin.Core.Clock.IClock-1.html
+  - name: <
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Clock.IClock`1
+    name: IClock
+    href: Virtufin.Core.Clock.IClock-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: )
+- uid: System.IObservable{System.DateTimeOffset}
+  commentId: T:System.IObservable{System.DateTimeOffset}
+  parent: System
+  definition: System.IObservable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  name: IObservable<DateTimeOffset>
+  nameWithType: IObservable<DateTimeOffset>
+  fullName: System.IObservable<System.DateTimeOffset>
+  nameWithType.vb: IObservable(Of DateTimeOffset)
+  fullName.vb: System.IObservable(Of System.DateTimeOffset)
+  name.vb: IObservable(Of DateTimeOffset)
+  spec.csharp:
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: <
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '>'
+  spec.vb:
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Core.Clock.IClock`1
+  commentId: T:Virtufin.Core.Clock.IClock`1
+  href: Virtufin.Core.Clock.IClock-1.html
+  name: IClock<T>
+  nameWithType: IClock<T>
+  fullName: Virtufin.Core.Clock.IClock<T>
+  nameWithType.vb: IClock(Of T)
+  fullName.vb: Virtufin.Core.Clock.IClock(Of T)
+  name.vb: IClock(Of T)
+  spec.csharp:
+  - uid: Virtufin.Core.Clock.IClock`1
+    name: IClock
+    href: Virtufin.Core.Clock.IClock-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Clock.IClock`1
+    name: IClock
+    href: Virtufin.Core.Clock.IClock-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.IObservable`1
+  commentId: T:System.IObservable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  name: IObservable<T>
+  nameWithType: IObservable<T>
+  fullName: System.IObservable<T>
+  nameWithType.vb: IObservable(Of T)
+  fullName.vb: System.IObservable(Of T)
+  name.vb: IObservable(Of T)
+  spec.csharp:
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.TimeSpan.Zero
+  commentId: F:System.TimeSpan.Zero
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan.zero
+  name: Zero
+  nameWithType: TimeSpan.Zero
+  fullName: System.TimeSpan.Zero
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: Virtufin.Core.Clock.DateTimeWallClock.#ctor*
+  commentId: Overload:Virtufin.Core.Clock.DateTimeWallClock.#ctor
+  href: Virtufin.Core.Clock.DateTimeWallClock.html#Virtufin_Core_Clock_DateTimeWallClock__ctor_System_TimeSpan_
+  name: DateTimeWallClock
+  nameWithType: DateTimeWallClock.DateTimeWallClock
+  fullName: Virtufin.Core.Clock.DateTimeWallClock.DateTimeWallClock
+  nameWithType.vb: DateTimeWallClock.New
+  fullName.vb: Virtufin.Core.Clock.DateTimeWallClock.New
+  name.vb: New
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Virtufin.Core.Clock.DateTimeWallClock.Subscribe*
+  commentId: Overload:Virtufin.Core.Clock.DateTimeWallClock.Subscribe
+  href: Virtufin.Core.Clock.DateTimeWallClock.html#Virtufin_Core_Clock_DateTimeWallClock_Subscribe_System_IObserver_System_DateTimeOffset__
+  name: Subscribe
+  nameWithType: DateTimeWallClock.Subscribe
+  fullName: Virtufin.Core.Clock.DateTimeWallClock.Subscribe
+- uid: System.IObservable{System.DateTimeOffset}.Subscribe(System.IObserver{System.DateTimeOffset})
+  commentId: M:System.IObservable{System.DateTimeOffset}.Subscribe(System.IObserver{System.DateTimeOffset})
+  parent: System.IObservable{System.DateTimeOffset}
+  definition: System.IObservable`1.Subscribe(System.IObserver{`0})
+  href: https://learn.microsoft.com/dotnet/api/system.iobservable-1.subscribe
+  name: Subscribe(IObserver<DateTimeOffset>)
+  nameWithType: IObservable<DateTimeOffset>.Subscribe(IObserver<DateTimeOffset>)
+  fullName: System.IObservable<System.DateTimeOffset>.Subscribe(System.IObserver<System.DateTimeOffset>)
+  nameWithType.vb: IObservable(Of DateTimeOffset).Subscribe(IObserver(Of DateTimeOffset))
+  fullName.vb: System.IObservable(Of System.DateTimeOffset).Subscribe(System.IObserver(Of System.DateTimeOffset))
+  name.vb: Subscribe(IObserver(Of DateTimeOffset))
+  spec.csharp:
+  - uid: System.IObservable{System.DateTimeOffset}.Subscribe(System.IObserver{System.DateTimeOffset})
+    name: Subscribe
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1.subscribe
+  - name: (
+  - uid: System.IObserver`1
+    name: IObserver
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobserver-1
+  - name: <
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.IObservable{System.DateTimeOffset}.Subscribe(System.IObserver{System.DateTimeOffset})
+    name: Subscribe
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1.subscribe
+  - name: (
+  - uid: System.IObserver`1
+    name: IObserver
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobserver-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: )
+  - name: )
+- uid: System.IObserver{System.DateTimeOffset}
+  commentId: T:System.IObserver{System.DateTimeOffset}
+  parent: System
+  definition: System.IObserver`1
+  href: https://learn.microsoft.com/dotnet/api/system.iobserver-1
+  name: IObserver<DateTimeOffset>
+  nameWithType: IObserver<DateTimeOffset>
+  fullName: System.IObserver<System.DateTimeOffset>
+  nameWithType.vb: IObserver(Of DateTimeOffset)
+  fullName.vb: System.IObserver(Of System.DateTimeOffset)
+  name.vb: IObserver(Of DateTimeOffset)
+  spec.csharp:
+  - uid: System.IObserver`1
+    name: IObserver
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobserver-1
+  - name: <
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '>'
+  spec.vb:
+  - uid: System.IObserver`1
+    name: IObserver
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobserver-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.IObservable`1.Subscribe(System.IObserver{`0})
+  commentId: M:System.IObservable`1.Subscribe(System.IObserver{`0})
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iobservable-1.subscribe
+  name: Subscribe(IObserver<T>)
+  nameWithType: IObservable<T>.Subscribe(IObserver<T>)
+  fullName: System.IObservable<T>.Subscribe(System.IObserver<T>)
+  nameWithType.vb: IObservable(Of T).Subscribe(IObserver(Of T))
+  fullName.vb: System.IObservable(Of T).Subscribe(System.IObserver(Of T))
+  name.vb: Subscribe(IObserver(Of T))
+  spec.csharp:
+  - uid: System.IObservable`1.Subscribe(System.IObserver{`0})
+    name: Subscribe
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1.subscribe
+  - name: (
+  - uid: System.IObserver`1
+    name: IObserver
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobserver-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.IObservable`1.Subscribe(System.IObserver{`0})
+    name: Subscribe
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1.subscribe
+  - name: (
+  - uid: System.IObserver`1
+    name: IObserver
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobserver-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.IObserver`1
+  commentId: T:System.IObserver`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iobserver-1
+  name: IObserver<T>
+  nameWithType: IObserver<T>
+  fullName: System.IObserver<T>
+  nameWithType.vb: IObserver(Of T)
+  fullName.vb: System.IObserver(Of T)
+  name.vb: IObserver(Of T)
+  spec.csharp:
+  - uid: System.IObserver`1
+    name: IObserver
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobserver-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IObserver`1
+    name: IObserver
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobserver-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

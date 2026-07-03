@@ -5,7 +5,9 @@ items:
   id: Clock
   parent: Virtufin.Core
   children:
-  - Virtufin.Core.Clock.IClock
+  - Virtufin.Core.Clock.DateTimeWallClock
+  - Virtufin.Core.Clock.IClock`1
+  - Virtufin.Core.Clock.Metronome`1
   langs:
   - csharp
   - vb
@@ -16,13 +18,63 @@ items:
   assemblies:
   - Virtufin.Core
 references:
-- uid: Virtufin.Core.Clock.IClock
-  commentId: T:Virtufin.Core.Clock.IClock
+- uid: Virtufin.Core.Clock.DateTimeWallClock
+  commentId: T:Virtufin.Core.Clock.DateTimeWallClock
   parent: Virtufin.Core.Clock
-  href: Virtufin.Core.Clock.IClock.html
-  name: IClock
-  nameWithType: IClock
-  fullName: Virtufin.Core.Clock.IClock
+  href: Virtufin.Core.Clock.DateTimeWallClock.html
+  name: DateTimeWallClock
+  nameWithType: DateTimeWallClock
+  fullName: Virtufin.Core.Clock.DateTimeWallClock
+- uid: Virtufin.Core.Clock.IClock`1
+  commentId: T:Virtufin.Core.Clock.IClock`1
+  href: Virtufin.Core.Clock.IClock-1.html
+  name: IClock<T>
+  nameWithType: IClock<T>
+  fullName: Virtufin.Core.Clock.IClock<T>
+  nameWithType.vb: IClock(Of T)
+  fullName.vb: Virtufin.Core.Clock.IClock(Of T)
+  name.vb: IClock(Of T)
+  spec.csharp:
+  - uid: Virtufin.Core.Clock.IClock`1
+    name: IClock
+    href: Virtufin.Core.Clock.IClock-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Clock.IClock`1
+    name: IClock
+    href: Virtufin.Core.Clock.IClock-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Core.Clock.Metronome`1
+  commentId: T:Virtufin.Core.Clock.Metronome`1
+  href: Virtufin.Core.Clock.Metronome-1.html
+  name: Metronome<T>
+  nameWithType: Metronome<T>
+  fullName: Virtufin.Core.Clock.Metronome<T>
+  nameWithType.vb: Metronome(Of T)
+  fullName.vb: Virtufin.Core.Clock.Metronome(Of T)
+  name.vb: Metronome(Of T)
+  spec.csharp:
+  - uid: Virtufin.Core.Clock.Metronome`1
+    name: Metronome
+    href: Virtufin.Core.Clock.Metronome-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Clock.Metronome`1
+    name: Metronome
+    href: Virtufin.Core.Clock.Metronome-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: Virtufin.Core.Clock
   commentId: N:Virtufin.Core.Clock
   href: Virtufin.html
