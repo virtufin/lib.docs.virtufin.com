@@ -21,16 +21,14 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: DateTimeWallClock
     path: ../../../src/Virtufin.Base/Clock/DateTimeWallClock.cs
-    startLine: 20
+    startLine: 19
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Clock
   summary: >-
-    The canonical <code>IClock&lt;DateTimeOffset&gt;</code> implementation. Emits a
+    The canonical <code>IClock&lt;DateTimeOffset&gt;</code> implementation. Emits
 
-    <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref> every <code class="paramref">interval</code>, where
-
-    the n-th emission is <code>DateTimeOffset.UtcNow + n * interval</code>.
+    <code>DateTimeOffset.UtcNow</code> at every <code class="paramref">interval</code>.
   remarks: >-
     This is the "regular" wall clock — the projection from a regular
 
@@ -77,16 +75,14 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: .ctor
     path: ../../../src/Virtufin.Base/Clock/DateTimeWallClock.cs
-    startLine: 32
+    startLine: 30
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Clock
   summary: >-
-    Construct a wall clock that emits <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref> every
+    Construct a wall clock that emits <xref href="System.DateTimeOffset.UtcNow" data-throw-if-not-resolved="false"></xref>
 
-    <code class="paramref">interval</code>. The n-th emission (n ≥ 1) equals
-
-    <code>DateTimeOffset.UtcNow + n * interval</code> evaluated at emission time.
+    every <code class="paramref">interval</code>.
   example: []
   syntax:
     content: public DateTimeWallClock(TimeSpan interval)
@@ -121,7 +117,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: Subscribe
     path: ../../../src/Virtufin.Base/Clock/DateTimeWallClock.cs
-    startLine: 42
+    startLine: 40
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Clock
@@ -144,14 +140,6 @@ items:
   fullName.vb: Virtufin.Base.Clock.DateTimeWallClock.Subscribe(System.IObserver(Of System.DateTimeOffset))
   name.vb: Subscribe(IObserver(Of DateTimeOffset))
 references:
-- uid: System.DateTimeOffset
-  commentId: T:System.DateTimeOffset
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
-  name: DateTimeOffset
-  nameWithType: DateTimeOffset
-  fullName: System.DateTimeOffset
 - uid: Virtufin.Base.Clock.Metronome`1
   commentId: T:Virtufin.Base.Clock.Metronome`1
   href: Virtufin.Base.Clock.Metronome-1.html
@@ -571,6 +559,13 @@ references:
   - name: " "
   - name: T
   - name: )
+- uid: System.DateTimeOffset.UtcNow
+  commentId: P:System.DateTimeOffset.UtcNow
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset.utcnow
+  name: UtcNow
+  nameWithType: DateTimeOffset.UtcNow
+  fullName: System.DateTimeOffset.UtcNow
 - uid: System.TimeSpan.Zero
   commentId: F:System.TimeSpan.Zero
   isExternal: true

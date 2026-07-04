@@ -112,7 +112,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Base.Clock.DateTimeWallClock",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Clock.DateTimeWallClock.yml\" sourcestartlinenumber=\"1\">The canonical <code>IClock&lt;DateTimeOffset&gt;</code> implementation. Emits a\n<xref href=\"System.DateTimeOffset\" data-throw-if-not-resolved=\"false\"></xref> every <code class=\"paramref\">interval</code>, where\nthe n-th emission is <code>DateTimeOffset.UtcNow + n * interval</code>.</p>\n"
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Clock.DateTimeWallClock.yml\" sourcestartlinenumber=\"1\">The canonical <code>IClock&lt;DateTimeOffset&gt;</code> implementation. Emits\n<code>DateTimeOffset.UtcNow</code> at every <code class=\"paramref\">interval</code>.</p>\n"
     },
     {
       "type": "ManagedReference",
