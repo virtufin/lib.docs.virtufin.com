@@ -1,36 +1,36 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Virtufin.Core.Clock.Metronome`1
-  commentId: T:Virtufin.Core.Clock.Metronome`1
+- uid: Virtufin.Base.Clock.Metronome`1
+  commentId: T:Virtufin.Base.Clock.Metronome`1
   id: Metronome`1
-  parent: Virtufin.Core.Clock
+  parent: Virtufin.Base.Clock
   children:
-  - Virtufin.Core.Clock.Metronome`1.#ctor(System.TimeSpan,System.Func{System.Int64,`0})
-  - Virtufin.Core.Clock.Metronome`1.Interval
-  - Virtufin.Core.Clock.Metronome`1.Subscribe(System.IObserver{`0})
-  - Virtufin.Core.Clock.Metronome`1.ToDateTimeWallClock
+  - Virtufin.Base.Clock.Metronome`1.#ctor(System.TimeSpan,System.Func{System.Int64,`0})
+  - Virtufin.Base.Clock.Metronome`1.Interval
+  - Virtufin.Base.Clock.Metronome`1.Subscribe(System.IObserver{`0})
+  - Virtufin.Base.Clock.Metronome`1.ToDateTimeWallClock
   langs:
   - csharp
   - vb
   name: Metronome<T>
   nameWithType: Metronome<T>
-  fullName: Virtufin.Core.Clock.Metronome<T>
+  fullName: Virtufin.Base.Clock.Metronome<T>
   type: Class
   source:
     remote:
-      path: src/Virtufin.Core/Metronome.cs
+      path: src/Virtufin.Base/Clock/Metronome.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: Metronome
-    path: ../../../src/Virtufin.Core/Metronome.cs
-    startLine: 21
+    path: ../../../src/Virtufin.Base/Clock/Metronome.cs
+    startLine: 22
   assemblies:
-  - Virtufin.Core
-  namespace: Virtufin.Core.Clock
+  - Virtufin.Base
+  namespace: Virtufin.Base.Clock
   summary: >-
     The primitive regular-tick clock source. Emits a <code class="typeparamref">T</code>
 
-    value at a fixed <xref href="Virtufin.Core.Clock.Metronome%601.Interval" data-throw-if-not-resolved="false"></xref>. Each emission corresponds to a
+    value at a fixed <xref href="Virtufin.Base.Clock.Metronome%601.Interval" data-throw-if-not-resolved="false"></xref>. Each emission corresponds to a
 
     tick: <code>T</code> values can carry the wall-time (e.g. a
 
@@ -67,30 +67,30 @@ items:
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
   nameWithType.vb: Metronome(Of T)
-  fullName.vb: Virtufin.Core.Clock.Metronome(Of T)
+  fullName.vb: Virtufin.Base.Clock.Metronome(Of T)
   name.vb: Metronome(Of T)
-- uid: Virtufin.Core.Clock.Metronome`1.Interval
-  commentId: P:Virtufin.Core.Clock.Metronome`1.Interval
+- uid: Virtufin.Base.Clock.Metronome`1.Interval
+  commentId: P:Virtufin.Base.Clock.Metronome`1.Interval
   id: Interval
-  parent: Virtufin.Core.Clock.Metronome`1
+  parent: Virtufin.Base.Clock.Metronome`1
   langs:
   - csharp
   - vb
   name: Interval
   nameWithType: Metronome<T>.Interval
-  fullName: Virtufin.Core.Clock.Metronome<T>.Interval
+  fullName: Virtufin.Base.Clock.Metronome<T>.Interval
   type: Property
   source:
     remote:
-      path: src/Virtufin.Core/Metronome.cs
+      path: src/Virtufin.Base/Clock/Metronome.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: Interval
-    path: ../../../src/Virtufin.Core/Metronome.cs
-    startLine: 29
+    path: ../../../src/Virtufin.Base/Clock/Metronome.cs
+    startLine: 30
   assemblies:
-  - Virtufin.Core
-  namespace: Virtufin.Core.Clock
+  - Virtufin.Base
+  namespace: Virtufin.Base.Clock
   summary: Time between emissions. Must be &gt; <xref href="System.TimeSpan.Zero" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
@@ -99,31 +99,31 @@ items:
     return:
       type: System.TimeSpan
     content.vb: Public ReadOnly Property Interval As TimeSpan
-  overload: Virtufin.Core.Clock.Metronome`1.Interval*
+  overload: Virtufin.Base.Clock.Metronome`1.Interval*
   nameWithType.vb: Metronome(Of T).Interval
-  fullName.vb: Virtufin.Core.Clock.Metronome(Of T).Interval
-- uid: Virtufin.Core.Clock.Metronome`1.#ctor(System.TimeSpan,System.Func{System.Int64,`0})
-  commentId: M:Virtufin.Core.Clock.Metronome`1.#ctor(System.TimeSpan,System.Func{System.Int64,`0})
+  fullName.vb: Virtufin.Base.Clock.Metronome(Of T).Interval
+- uid: Virtufin.Base.Clock.Metronome`1.#ctor(System.TimeSpan,System.Func{System.Int64,`0})
+  commentId: M:Virtufin.Base.Clock.Metronome`1.#ctor(System.TimeSpan,System.Func{System.Int64,`0})
   id: '#ctor(System.TimeSpan,System.Func{System.Int64,`0})'
-  parent: Virtufin.Core.Clock.Metronome`1
+  parent: Virtufin.Base.Clock.Metronome`1
   langs:
   - csharp
   - vb
   name: Metronome(TimeSpan, Func<long, T>)
   nameWithType: Metronome<T>.Metronome(TimeSpan, Func<long, T>)
-  fullName: Virtufin.Core.Clock.Metronome<T>.Metronome(System.TimeSpan, System.Func<long, T>)
+  fullName: Virtufin.Base.Clock.Metronome<T>.Metronome(System.TimeSpan, System.Func<long, T>)
   type: Constructor
   source:
     remote:
-      path: src/Virtufin.Core/Metronome.cs
+      path: src/Virtufin.Base/Clock/Metronome.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: .ctor
-    path: ../../../src/Virtufin.Core/Metronome.cs
-    startLine: 39
+    path: ../../../src/Virtufin.Base/Clock/Metronome.cs
+    startLine: 40
   assemblies:
-  - Virtufin.Core
-  namespace: Virtufin.Core.Clock
+  - Virtufin.Base
+  namespace: Virtufin.Base.Clock
   summary: >-
     Construct a metronome that emits <code class="typeparamref">T</code> at <code class="paramref">interval</code>.
 
@@ -141,73 +141,73 @@ items:
       type: System.Func{System.Int64,{T}}
       description: Maps the sequence number to a T value.
     content.vb: Public Sub New(interval As TimeSpan, projection As Func(Of Long, T))
-  overload: Virtufin.Core.Clock.Metronome`1.#ctor*
+  overload: Virtufin.Base.Clock.Metronome`1.#ctor*
   exceptions:
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
     description: <code class="paramref">interval</code> is &lt;= <xref href="System.TimeSpan.Zero" data-throw-if-not-resolved="false"></xref>.
   nameWithType.vb: Metronome(Of T).New(TimeSpan, Func(Of Long, T))
-  fullName.vb: Virtufin.Core.Clock.Metronome(Of T).New(System.TimeSpan, System.Func(Of Long, T))
+  fullName.vb: Virtufin.Base.Clock.Metronome(Of T).New(System.TimeSpan, System.Func(Of Long, T))
   name.vb: New(TimeSpan, Func(Of Long, T))
-- uid: Virtufin.Core.Clock.Metronome`1.ToDateTimeWallClock
-  commentId: M:Virtufin.Core.Clock.Metronome`1.ToDateTimeWallClock
+- uid: Virtufin.Base.Clock.Metronome`1.ToDateTimeWallClock
+  commentId: M:Virtufin.Base.Clock.Metronome`1.ToDateTimeWallClock
   id: ToDateTimeWallClock
-  parent: Virtufin.Core.Clock.Metronome`1
+  parent: Virtufin.Base.Clock.Metronome`1
   langs:
   - csharp
   - vb
   name: ToDateTimeWallClock()
   nameWithType: Metronome<T>.ToDateTimeWallClock()
-  fullName: Virtufin.Core.Clock.Metronome<T>.ToDateTimeWallClock()
+  fullName: Virtufin.Base.Clock.Metronome<T>.ToDateTimeWallClock()
   type: Method
   source:
     remote:
-      path: src/Virtufin.Core/Metronome.cs
+      path: src/Virtufin.Base/Clock/Metronome.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: ToDateTimeWallClock
-    path: ../../../src/Virtufin.Core/Metronome.cs
-    startLine: 56
+    path: ../../../src/Virtufin.Base/Clock/Metronome.cs
+    startLine: 57
   assemblies:
-  - Virtufin.Core
-  namespace: Virtufin.Core.Clock
+  - Virtufin.Base
+  namespace: Virtufin.Base.Clock
   summary: >-
-    Convert this metronome to a <xref href="Virtufin.Core.Clock.DateTimeWallClock" data-throw-if-not-resolved="false"></xref> using the same
+    Convert this metronome to a <xref href="Virtufin.Base.Clock.DateTimeWallClock" data-throw-if-not-resolved="false"></xref> using the same
 
-    <xref href="Virtufin.Core.Clock.Metronome%601.Interval" data-throw-if-not-resolved="false"></xref>. The wall clock computes its own emission times from
+    <xref href="Virtufin.Base.Clock.Metronome%601.Interval" data-throw-if-not-resolved="false"></xref>. The wall clock computes its own emission times from
 
     <code>DateTimeOffset.UtcNow</code> (not from the metronome's sequence).
   example: []
   syntax:
     content: public DateTimeWallClock ToDateTimeWallClock()
     return:
-      type: Virtufin.Core.Clock.DateTimeWallClock
+      type: Virtufin.Base.Clock.DateTimeWallClock
     content.vb: Public Function ToDateTimeWallClock() As DateTimeWallClock
-  overload: Virtufin.Core.Clock.Metronome`1.ToDateTimeWallClock*
+  overload: Virtufin.Base.Clock.Metronome`1.ToDateTimeWallClock*
   nameWithType.vb: Metronome(Of T).ToDateTimeWallClock()
-  fullName.vb: Virtufin.Core.Clock.Metronome(Of T).ToDateTimeWallClock()
-- uid: Virtufin.Core.Clock.Metronome`1.Subscribe(System.IObserver{`0})
-  commentId: M:Virtufin.Core.Clock.Metronome`1.Subscribe(System.IObserver{`0})
+  fullName.vb: Virtufin.Base.Clock.Metronome(Of T).ToDateTimeWallClock()
+- uid: Virtufin.Base.Clock.Metronome`1.Subscribe(System.IObserver{`0})
+  commentId: M:Virtufin.Base.Clock.Metronome`1.Subscribe(System.IObserver{`0})
   id: Subscribe(System.IObserver{`0})
-  parent: Virtufin.Core.Clock.Metronome`1
+  parent: Virtufin.Base.Clock.Metronome`1
   langs:
   - csharp
   - vb
   name: Subscribe(IObserver<T>)
   nameWithType: Metronome<T>.Subscribe(IObserver<T>)
-  fullName: Virtufin.Core.Clock.Metronome<T>.Subscribe(System.IObserver<T>)
+  fullName: Virtufin.Base.Clock.Metronome<T>.Subscribe(System.IObserver<T>)
   type: Method
   source:
     remote:
-      path: src/Virtufin.Core/Metronome.cs
+      path: src/Virtufin.Base/Clock/Metronome.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: Subscribe
-    path: ../../../src/Virtufin.Core/Metronome.cs
-    startLine: 58
+    path: ../../../src/Virtufin.Base/Clock/Metronome.cs
+    startLine: 59
   assemblies:
-  - Virtufin.Core
-  namespace: Virtufin.Core.Clock
+  - Virtufin.Base
+  namespace: Virtufin.Base.Clock
   summary: Notifies the provider that an observer is to receive notifications.
   example: []
   syntax:
@@ -220,21 +220,21 @@ items:
       type: System.IDisposable
       description: A reference to an interface that allows observers to stop receiving notifications before the provider has finished sending them.
     content.vb: Public Function Subscribe(observer As IObserver(Of T)) As IDisposable
-  overload: Virtufin.Core.Clock.Metronome`1.Subscribe*
+  overload: Virtufin.Base.Clock.Metronome`1.Subscribe*
   implements:
   - System.IObservable{{T}}.Subscribe(System.IObserver{{T}})
   nameWithType.vb: Metronome(Of T).Subscribe(IObserver(Of T))
-  fullName.vb: Virtufin.Core.Clock.Metronome(Of T).Subscribe(System.IObserver(Of T))
+  fullName.vb: Virtufin.Base.Clock.Metronome(Of T).Subscribe(System.IObserver(Of T))
   name.vb: Subscribe(IObserver(Of T))
 references:
-- uid: Virtufin.Core.Clock.Metronome`1.Interval
-  commentId: P:Virtufin.Core.Clock.Metronome`1.Interval
-  href: Virtufin.Core.Clock.Metronome-1.html#Virtufin_Core_Clock_Metronome_1_Interval
+- uid: Virtufin.Base.Clock.Metronome`1.Interval
+  commentId: P:Virtufin.Base.Clock.Metronome`1.Interval
+  href: Virtufin.Base.Clock.Metronome-1.html#Virtufin_Base_Clock_Metronome_1_Interval
   name: Interval
   nameWithType: Metronome<T>.Interval
-  fullName: Virtufin.Core.Clock.Metronome<T>.Interval
+  fullName: Virtufin.Base.Clock.Metronome<T>.Interval
   nameWithType.vb: Metronome(Of T).Interval
-  fullName.vb: Virtufin.Core.Clock.Metronome(Of T).Interval
+  fullName.vb: Virtufin.Base.Clock.Metronome(Of T).Interval
 - uid: Virtufin.Core.Clock.IClock`1
   commentId: T:Virtufin.Core.Clock.IClock`1
   href: Virtufin.Core.Clock.IClock-1.html
@@ -285,36 +285,36 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: Virtufin.Core.Clock
-  commentId: N:Virtufin.Core.Clock
+- uid: Virtufin.Base.Clock
+  commentId: N:Virtufin.Base.Clock
   href: Virtufin.html
-  name: Virtufin.Core.Clock
-  nameWithType: Virtufin.Core.Clock
-  fullName: Virtufin.Core.Clock
+  name: Virtufin.Base.Clock
+  nameWithType: Virtufin.Base.Clock
+  fullName: Virtufin.Base.Clock
   spec.csharp:
   - uid: Virtufin
     name: Virtufin
     href: Virtufin.html
   - name: .
-  - uid: Virtufin.Core
-    name: Core
-    href: Virtufin.Core.html
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
   - name: .
-  - uid: Virtufin.Core.Clock
+  - uid: Virtufin.Base.Clock
     name: Clock
-    href: Virtufin.Core.Clock.html
+    href: Virtufin.Base.Clock.html
   spec.vb:
   - uid: Virtufin
     name: Virtufin
     href: Virtufin.html
   - name: .
-  - uid: Virtufin.Core
-    name: Core
-    href: Virtufin.Core.html
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
   - name: .
-  - uid: Virtufin.Core.Clock
+  - uid: Virtufin.Base.Clock
     name: Clock
-    href: Virtufin.Core.Clock.html
+    href: Virtufin.Base.Clock.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -584,6 +584,36 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Virtufin.Core.Clock
+  commentId: N:Virtufin.Core.Clock
+  href: Virtufin.html
+  name: Virtufin.Core.Clock
+  nameWithType: Virtufin.Core.Clock
+  fullName: Virtufin.Core.Clock
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Clock
+    name: Clock
+    href: Virtufin.Core.Clock.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Clock
+    name: Clock
+    href: Virtufin.Core.Clock.html
 - uid: System.IObservable`1
   commentId: T:System.IObservable`1
   isExternal: true
@@ -619,14 +649,14 @@ references:
   name: Zero
   nameWithType: TimeSpan.Zero
   fullName: System.TimeSpan.Zero
-- uid: Virtufin.Core.Clock.Metronome`1.Interval*
-  commentId: Overload:Virtufin.Core.Clock.Metronome`1.Interval
-  href: Virtufin.Core.Clock.Metronome-1.html#Virtufin_Core_Clock_Metronome_1_Interval
+- uid: Virtufin.Base.Clock.Metronome`1.Interval*
+  commentId: Overload:Virtufin.Base.Clock.Metronome`1.Interval
+  href: Virtufin.Base.Clock.Metronome-1.html#Virtufin_Base_Clock_Metronome_1_Interval
   name: Interval
   nameWithType: Metronome<T>.Interval
-  fullName: Virtufin.Core.Clock.Metronome<T>.Interval
+  fullName: Virtufin.Base.Clock.Metronome<T>.Interval
   nameWithType.vb: Metronome(Of T).Interval
-  fullName.vb: Virtufin.Core.Clock.Metronome(Of T).Interval
+  fullName.vb: Virtufin.Base.Clock.Metronome(Of T).Interval
 - uid: System.TimeSpan
   commentId: T:System.TimeSpan
   parent: System
@@ -642,14 +672,14 @@ references:
   name: ArgumentOutOfRangeException
   nameWithType: ArgumentOutOfRangeException
   fullName: System.ArgumentOutOfRangeException
-- uid: Virtufin.Core.Clock.Metronome`1.#ctor*
-  commentId: Overload:Virtufin.Core.Clock.Metronome`1.#ctor
-  href: Virtufin.Core.Clock.Metronome-1.html#Virtufin_Core_Clock_Metronome_1__ctor_System_TimeSpan_System_Func_System_Int64__0__
+- uid: Virtufin.Base.Clock.Metronome`1.#ctor*
+  commentId: Overload:Virtufin.Base.Clock.Metronome`1.#ctor
+  href: Virtufin.Base.Clock.Metronome-1.html#Virtufin_Base_Clock_Metronome_1__ctor_System_TimeSpan_System_Func_System_Int64__0__
   name: Metronome
   nameWithType: Metronome<T>.Metronome
-  fullName: Virtufin.Core.Clock.Metronome<T>.Metronome
+  fullName: Virtufin.Base.Clock.Metronome<T>.Metronome
   nameWithType.vb: Metronome(Of T).New
-  fullName.vb: Virtufin.Core.Clock.Metronome(Of T).New
+  fullName.vb: Virtufin.Base.Clock.Metronome(Of T).New
   name.vb: New
 - uid: System.Func{System.Int64,{T}}
   commentId: T:System.Func{System.Int64,`0}
@@ -726,29 +756,29 @@ references:
   - name: " "
   - name: TResult
   - name: )
-- uid: Virtufin.Core.Clock.DateTimeWallClock
-  commentId: T:Virtufin.Core.Clock.DateTimeWallClock
-  parent: Virtufin.Core.Clock
-  href: Virtufin.Core.Clock.DateTimeWallClock.html
+- uid: Virtufin.Base.Clock.DateTimeWallClock
+  commentId: T:Virtufin.Base.Clock.DateTimeWallClock
+  parent: Virtufin.Base.Clock
+  href: Virtufin.Base.Clock.DateTimeWallClock.html
   name: DateTimeWallClock
   nameWithType: DateTimeWallClock
-  fullName: Virtufin.Core.Clock.DateTimeWallClock
-- uid: Virtufin.Core.Clock.Metronome`1.ToDateTimeWallClock*
-  commentId: Overload:Virtufin.Core.Clock.Metronome`1.ToDateTimeWallClock
-  href: Virtufin.Core.Clock.Metronome-1.html#Virtufin_Core_Clock_Metronome_1_ToDateTimeWallClock
+  fullName: Virtufin.Base.Clock.DateTimeWallClock
+- uid: Virtufin.Base.Clock.Metronome`1.ToDateTimeWallClock*
+  commentId: Overload:Virtufin.Base.Clock.Metronome`1.ToDateTimeWallClock
+  href: Virtufin.Base.Clock.Metronome-1.html#Virtufin_Base_Clock_Metronome_1_ToDateTimeWallClock
   name: ToDateTimeWallClock
   nameWithType: Metronome<T>.ToDateTimeWallClock
-  fullName: Virtufin.Core.Clock.Metronome<T>.ToDateTimeWallClock
+  fullName: Virtufin.Base.Clock.Metronome<T>.ToDateTimeWallClock
   nameWithType.vb: Metronome(Of T).ToDateTimeWallClock
-  fullName.vb: Virtufin.Core.Clock.Metronome(Of T).ToDateTimeWallClock
-- uid: Virtufin.Core.Clock.Metronome`1.Subscribe*
-  commentId: Overload:Virtufin.Core.Clock.Metronome`1.Subscribe
-  href: Virtufin.Core.Clock.Metronome-1.html#Virtufin_Core_Clock_Metronome_1_Subscribe_System_IObserver__0__
+  fullName.vb: Virtufin.Base.Clock.Metronome(Of T).ToDateTimeWallClock
+- uid: Virtufin.Base.Clock.Metronome`1.Subscribe*
+  commentId: Overload:Virtufin.Base.Clock.Metronome`1.Subscribe
+  href: Virtufin.Base.Clock.Metronome-1.html#Virtufin_Base_Clock_Metronome_1_Subscribe_System_IObserver__0__
   name: Subscribe
   nameWithType: Metronome<T>.Subscribe
-  fullName: Virtufin.Core.Clock.Metronome<T>.Subscribe
+  fullName: Virtufin.Base.Clock.Metronome<T>.Subscribe
   nameWithType.vb: Metronome(Of T).Subscribe
-  fullName.vb: Virtufin.Core.Clock.Metronome(Of T).Subscribe
+  fullName.vb: Virtufin.Base.Clock.Metronome(Of T).Subscribe
 - uid: System.IObservable{{T}}.Subscribe(System.IObserver{{T}})
   commentId: M:System.IObservable{`0}.Subscribe(System.IObserver{`0})
   parent: System.IObservable{{T}}

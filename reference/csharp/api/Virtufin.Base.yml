@@ -10,6 +10,7 @@ items:
   - Virtufin.Base.AssetIdentifier.SimpleAssetIdentifier
   - Virtufin.Base.Attribute
   - Virtufin.Base.Cash
+  - Virtufin.Base.Clock
   - Virtufin.Base.ContractIdentifier
   - Virtufin.Base.ContractIdentifier.SimpleContractIdentifier
   - Virtufin.Base.ContractIdentifier.UTI
@@ -53,6 +54,36 @@ items:
   assemblies:
   - Virtufin.Base
 references:
+- uid: Virtufin.Base.Clock
+  commentId: N:Virtufin.Base.Clock
+  href: Virtufin.html
+  name: Virtufin.Base.Clock
+  nameWithType: Virtufin.Base.Clock
+  fullName: Virtufin.Base.Clock
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Clock
+    name: Clock
+    href: Virtufin.Base.Clock.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Clock
+    name: Clock
+    href: Virtufin.Base.Clock.html
 - uid: Virtufin.Base.Events
   commentId: N:Virtufin.Base.Events
   href: Virtufin.html

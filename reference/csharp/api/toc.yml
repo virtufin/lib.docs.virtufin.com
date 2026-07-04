@@ -15,6 +15,16 @@ items:
     name: Base
     type: Namespace
     items:
+    - uid: Virtufin.Base.Clock
+      name: Clock
+      type: Namespace
+      items:
+      - uid: Virtufin.Base.Clock.DateTimeWallClock
+        name: DateTimeWallClock
+        type: Class
+      - uid: Virtufin.Base.Clock.Metronome`1
+        name: Metronome<T>
+        type: Class
     - uid: Virtufin.Base.Events
       name: Events
       type: Namespace
@@ -395,15 +405,9 @@ items:
       name: Clock
       type: Namespace
       items:
-      - uid: Virtufin.Core.Clock.DateTimeWallClock
-        name: DateTimeWallClock
-        type: Class
       - uid: Virtufin.Core.Clock.IClock`1
         name: IClock<T>
         type: Interface
-      - uid: Virtufin.Core.Clock.Metronome`1
-        name: Metronome<T>
-        type: Class
     - uid: Virtufin.Core.Contracts
       name: Contracts
       type: Namespace
