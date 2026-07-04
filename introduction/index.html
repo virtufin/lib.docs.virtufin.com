@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-dotnet</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-dotnet/commit/4e489f7c85118ff9e0bd401abf6252371fb09a4e"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-dotnet/commit/675b8275656b6d9fd6183b630cf240da226a08b0"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 4e489f7">
+       title="View commit 675b827">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">4e489f7</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">675b827</text>
       </svg>
     </a>
 </div>
@@ -368,14 +368,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-dotnet</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-dotnet/commit/4e489f7c85118ff9e0bd401abf6252371fb09a4e"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-dotnet/commit/675b8275656b6d9fd6183b630cf240da226a08b0"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 4e489f7">
+       title="View commit 675b827">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">4e489f7</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">675b827</text>
       </svg>
     </a>
 </div>
@@ -549,17 +549,6 @@
     <span class="md-ellipsis">
       
         What this library is not
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#who-uses-this-library" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Who uses this library
       
     </span>
   </a>
@@ -1014,17 +1003,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#who-uses-this-library" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Who uses this library
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#key-concepts" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1129,33 +1107,6 @@
 <li>Not a backtesting engine. The execution <em>algebra</em> is here (the <code>IExecutor&lt;TState, TAction, TEvent&gt;</code> template), but actual backtest runners are out of scope.</li>
 <li>Not an exchange connector. The <code>LiveExecutorBase</code> in this library is a base class; subclasses route to a real exchange.</li>
 </ul>
-<h2 id="who-uses-this-library">Who uses this library</h2>
-<table>
-<thead>
-<tr>
-<th>Consumer</th>
-<th>Use</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>virtufin-workmanager</code></td>
-<td>Worker engine — uses <code>Variant</code> for code payloads, <code>IExecutor</code> for the execution algebra</td>
-</tr>
-<tr>
-<td><code>virtufin-websocketmanager</code></td>
-<td>WebSocket proxy — uses <code>Variant</code> for message bodies, FlatBuffers for serialization</td>
-</tr>
-<tr>
-<td><code>virtufin-api</code></td>
-<td>gRPC gateway — uses <code>Variant</code> for state values, FlatBuffers for state payloads</td>
-</tr>
-<tr>
-<td>External workers</td>
-<td>Submit <code>Variant</code> values via gRPC; the lib defines the wire format</td>
-</tr>
-</tbody>
-</table>
 <h2 id="key-concepts">Key concepts</h2>
 <h3 id="the-eav-model">The EAV model</h3>
 <p>Every business entity (order, position, scenario) is an <code>IEntity&lt;V, I&gt;</code> with a typed identifier <code>I</code>. The entity has a name, attributes, and a value. Attributes are looked up by name; values are produced by pluggable <code>IValueProvider&lt;V, I&gt;</code> instances. See <a href="../core-eav/">Core EAV</a>.</p>
@@ -1204,7 +1155,7 @@
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-07-04T01:55:35Z</span>
+  <span style="display:table-cell;text-align:right">2026-07-04T02:49:16Z</span>
 </div>
 
     </div>
