@@ -1,57 +1,6 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: Google.FlatBuffers
-  name: Google.FlatBuffers
-  href: api/Google.FlatBuffers.html
-  commentId: N:Google.FlatBuffers
-  fullName: Google.FlatBuffers
-  nameWithType: Google.FlatBuffers
-- uid: Google.FlatBuffers.FlatBufferConstants
-  name: FlatBufferConstants
-  href: api/Google.FlatBuffers.FlatBufferConstants.html
-  commentId: T:Google.FlatBuffers.FlatBufferConstants
-  fullName: Google.FlatBuffers.FlatBufferConstants
-  nameWithType: FlatBufferConstants
-- uid: Google.FlatBuffers.FlatBufferConstants.FLATBUFFERS_25_12_19
-  name: FLATBUFFERS_25_12_19()
-  href: api/Google.FlatBuffers.FlatBufferConstants.html#Google_FlatBuffers_FlatBufferConstants_FLATBUFFERS_25_12_19
-  commentId: M:Google.FlatBuffers.FlatBufferConstants.FLATBUFFERS_25_12_19
-  fullName: Google.FlatBuffers.FlatBufferConstants.FLATBUFFERS_25_12_19()
-  nameWithType: FlatBufferConstants.FLATBUFFERS_25_12_19()
-- uid: Google.FlatBuffers.FlatBufferConstants.FLATBUFFERS_25_12_19*
-  name: FLATBUFFERS_25_12_19
-  href: api/Google.FlatBuffers.FlatBufferConstants.html#Google_FlatBuffers_FlatBufferConstants_FLATBUFFERS_25_12_19_
-  commentId: Overload:Google.FlatBuffers.FlatBufferConstants.FLATBUFFERS_25_12_19
-  isSpec: "True"
-  fullName: Google.FlatBuffers.FlatBufferConstants.FLATBUFFERS_25_12_19
-  nameWithType: FlatBufferConstants.FLATBUFFERS_25_12_19
-- uid: Google.FlatBuffers.FlatBufferConstants.FLATBUFFERS_25_2_10
-  name: FLATBUFFERS_25_2_10()
-  href: api/Google.FlatBuffers.FlatBufferConstants.html#Google_FlatBuffers_FlatBufferConstants_FLATBUFFERS_25_2_10
-  commentId: M:Google.FlatBuffers.FlatBufferConstants.FLATBUFFERS_25_2_10
-  fullName: Google.FlatBuffers.FlatBufferConstants.FLATBUFFERS_25_2_10()
-  nameWithType: FlatBufferConstants.FLATBUFFERS_25_2_10()
-- uid: Google.FlatBuffers.FlatBufferConstants.FLATBUFFERS_25_2_10*
-  name: FLATBUFFERS_25_2_10
-  href: api/Google.FlatBuffers.FlatBufferConstants.html#Google_FlatBuffers_FlatBufferConstants_FLATBUFFERS_25_2_10_
-  commentId: Overload:Google.FlatBuffers.FlatBufferConstants.FLATBUFFERS_25_2_10
-  isSpec: "True"
-  fullName: Google.FlatBuffers.FlatBufferConstants.FLATBUFFERS_25_2_10
-  nameWithType: FlatBufferConstants.FLATBUFFERS_25_2_10
-- uid: Google.FlatBuffers.FlatBufferConstants.FLATBUFFERS_25_9_23
-  name: FLATBUFFERS_25_9_23()
-  href: api/Google.FlatBuffers.FlatBufferConstants.html#Google_FlatBuffers_FlatBufferConstants_FLATBUFFERS_25_9_23
-  commentId: M:Google.FlatBuffers.FlatBufferConstants.FLATBUFFERS_25_9_23
-  fullName: Google.FlatBuffers.FlatBufferConstants.FLATBUFFERS_25_9_23()
-  nameWithType: FlatBufferConstants.FLATBUFFERS_25_9_23()
-- uid: Google.FlatBuffers.FlatBufferConstants.FLATBUFFERS_25_9_23*
-  name: FLATBUFFERS_25_9_23
-  href: api/Google.FlatBuffers.FlatBufferConstants.html#Google_FlatBuffers_FlatBufferConstants_FLATBUFFERS_25_9_23_
-  commentId: Overload:Google.FlatBuffers.FlatBufferConstants.FLATBUFFERS_25_9_23
-  isSpec: "True"
-  fullName: Google.FlatBuffers.FlatBufferConstants.FLATBUFFERS_25_9_23
-  nameWithType: FlatBufferConstants.FLATBUFFERS_25_9_23
 - uid: Virtufin
   name: Virtufin
   href: api/Virtufin.html

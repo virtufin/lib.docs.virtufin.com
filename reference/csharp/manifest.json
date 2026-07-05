@@ -4,34 +4,6 @@
   "files": [
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Google.FlatBuffers.FlatBufferConstants.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Google.FlatBuffers.FlatBufferConstants.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Google.FlatBuffers.FlatBufferConstants",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Google.FlatBuffers.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Google.FlatBuffers.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Google.FlatBuffers",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Base.AssetIdentifier.CurrencyAssetIdentifier.yml",
       "output": {
         ".html": {

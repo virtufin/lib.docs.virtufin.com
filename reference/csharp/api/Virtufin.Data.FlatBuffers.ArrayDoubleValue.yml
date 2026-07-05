@@ -903,26 +903,26 @@ references:
   - name: )
 - uid: Google.FlatBuffers
   commentId: N:Google.FlatBuffers
-  href: Google.html
+  isExternal: true
   name: Google.FlatBuffers
   nameWithType: Google.FlatBuffers
   fullName: Google.FlatBuffers
   spec.csharp:
   - uid: Google
     name: Google
-    href: Google.html
+    isExternal: true
   - name: .
   - uid: Google.FlatBuffers
     name: FlatBuffers
-    href: Google.FlatBuffers.html
+    isExternal: true
   spec.vb:
   - uid: Google
     name: Google
-    href: Google.html
+    isExternal: true
   - name: .
   - uid: Google.FlatBuffers
     name: FlatBuffers
-    href: Google.FlatBuffers.html
+    isExternal: true
 - uid: System.ValueType
   commentId: T:System.ValueType
   parent: System

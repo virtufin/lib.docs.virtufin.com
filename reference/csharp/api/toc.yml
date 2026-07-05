@@ -1,12 +1,5 @@
 ### YamlMime:TableOfContent
 items:
-- uid: Google.FlatBuffers
-  name: Google.FlatBuffers
-  type: Namespace
-  items:
-  - uid: Google.FlatBuffers.FlatBufferConstants
-    name: FlatBufferConstants
-    type: Class
 - uid: Virtufin
   name: Virtufin
   type: Namespace

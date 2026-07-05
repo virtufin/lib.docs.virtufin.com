@@ -1,9 +1,4 @@
 {
-  "Google.FlatBuffers": "Google.FlatBuffers.yml",
-  "Google.FlatBuffers.FlatBufferConstants": "Google.FlatBuffers.FlatBufferConstants.yml",
-  "Google.FlatBuffers.FlatBufferConstants.FLATBUFFERS_25_12_19": "Google.FlatBuffers.FlatBufferConstants.yml",
-  "Google.FlatBuffers.FlatBufferConstants.FLATBUFFERS_25_2_10": "Google.FlatBuffers.FlatBufferConstants.yml",
-  "Google.FlatBuffers.FlatBufferConstants.FLATBUFFERS_25_9_23": "Google.FlatBuffers.FlatBufferConstants.yml",
   "Virtufin": "Virtufin.yml",
   "Virtufin.Base": "Virtufin.Base.yml",
   "Virtufin.Base.AssetIdentifier": "Virtufin.Base.AssetIdentifier.yml",
