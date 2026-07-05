@@ -8,7 +8,6 @@ items:
   - Virtufin.Base.Clock.Metronome`1.#ctor(System.TimeSpan,System.Func{System.Int64,`0})
   - Virtufin.Base.Clock.Metronome`1.Interval
   - Virtufin.Base.Clock.Metronome`1.Subscribe(System.IObserver{`0})
-  - Virtufin.Base.Clock.Metronome`1.ToDateTimeWallClock
   langs:
   - csharp
   - vb
@@ -149,43 +148,6 @@ items:
   nameWithType.vb: Metronome(Of T).New(TimeSpan, Func(Of Long, T))
   fullName.vb: Virtufin.Base.Clock.Metronome(Of T).New(System.TimeSpan, System.Func(Of Long, T))
   name.vb: New(TimeSpan, Func(Of Long, T))
-- uid: Virtufin.Base.Clock.Metronome`1.ToDateTimeWallClock
-  commentId: M:Virtufin.Base.Clock.Metronome`1.ToDateTimeWallClock
-  id: ToDateTimeWallClock
-  parent: Virtufin.Base.Clock.Metronome`1
-  langs:
-  - csharp
-  - vb
-  name: ToDateTimeWallClock()
-  nameWithType: Metronome<T>.ToDateTimeWallClock()
-  fullName: Virtufin.Base.Clock.Metronome<T>.ToDateTimeWallClock()
-  type: Method
-  source:
-    remote:
-      path: src/Virtufin.Base/Clock/Metronome.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
-    id: ToDateTimeWallClock
-    path: ../../../src/Virtufin.Base/Clock/Metronome.cs
-    startLine: 57
-  assemblies:
-  - Virtufin.Base
-  namespace: Virtufin.Base.Clock
-  summary: >-
-    Convert this metronome to a <xref href="Virtufin.Base.Clock.DateTimeWallClock" data-throw-if-not-resolved="false"></xref> using the same
-
-    <xref href="Virtufin.Base.Clock.Metronome%601.Interval" data-throw-if-not-resolved="false"></xref>. The wall clock computes its own emission times from
-
-    <code>DateTimeOffset.UtcNow</code> (not from the metronome's sequence).
-  example: []
-  syntax:
-    content: public DateTimeWallClock ToDateTimeWallClock()
-    return:
-      type: Virtufin.Base.Clock.DateTimeWallClock
-    content.vb: Public Function ToDateTimeWallClock() As DateTimeWallClock
-  overload: Virtufin.Base.Clock.Metronome`1.ToDateTimeWallClock*
-  nameWithType.vb: Metronome(Of T).ToDateTimeWallClock()
-  fullName.vb: Virtufin.Base.Clock.Metronome(Of T).ToDateTimeWallClock()
 - uid: Virtufin.Base.Clock.Metronome`1.Subscribe(System.IObserver{`0})
   commentId: M:Virtufin.Base.Clock.Metronome`1.Subscribe(System.IObserver{`0})
   id: Subscribe(System.IObserver{`0})
@@ -204,7 +166,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: Subscribe
     path: ../../../src/Virtufin.Base/Clock/Metronome.cs
-    startLine: 59
+    startLine: 52
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Clock
@@ -756,21 +718,6 @@ references:
   - name: " "
   - name: TResult
   - name: )
-- uid: Virtufin.Base.Clock.DateTimeWallClock
-  commentId: T:Virtufin.Base.Clock.DateTimeWallClock
-  parent: Virtufin.Base.Clock
-  href: Virtufin.Base.Clock.DateTimeWallClock.html
-  name: DateTimeWallClock
-  nameWithType: DateTimeWallClock
-  fullName: Virtufin.Base.Clock.DateTimeWallClock
-- uid: Virtufin.Base.Clock.Metronome`1.ToDateTimeWallClock*
-  commentId: Overload:Virtufin.Base.Clock.Metronome`1.ToDateTimeWallClock
-  href: Virtufin.Base.Clock.Metronome-1.html#Virtufin_Base_Clock_Metronome_1_ToDateTimeWallClock
-  name: ToDateTimeWallClock
-  nameWithType: Metronome<T>.ToDateTimeWallClock
-  fullName: Virtufin.Base.Clock.Metronome<T>.ToDateTimeWallClock
-  nameWithType.vb: Metronome(Of T).ToDateTimeWallClock
-  fullName.vb: Virtufin.Base.Clock.Metronome(Of T).ToDateTimeWallClock
 - uid: Virtufin.Base.Clock.Metronome`1.Subscribe*
   commentId: Overload:Virtufin.Base.Clock.Metronome`1.Subscribe
   href: Virtufin.Base.Clock.Metronome-1.html#Virtufin_Base_Clock_Metronome_1_Subscribe_System_IObserver__0__

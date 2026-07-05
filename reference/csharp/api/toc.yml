@@ -19,8 +19,8 @@ items:
       name: Clock
       type: Namespace
       items:
-      - uid: Virtufin.Base.Clock.DateTimeWallClock
-        name: DateTimeWallClock
+      - uid: Virtufin.Base.Clock.Metronome
+        name: Metronome
         type: Class
       - uid: Virtufin.Base.Clock.Metronome`1
         name: Metronome<T>

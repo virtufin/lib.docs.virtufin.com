@@ -5,7 +5,7 @@ items:
   id: Clock
   parent: Virtufin.Base
   children:
-  - Virtufin.Base.Clock.DateTimeWallClock
+  - Virtufin.Base.Clock.Metronome
   - Virtufin.Base.Clock.Metronome`1
   langs:
   - csharp
@@ -17,13 +17,12 @@ items:
   assemblies:
   - Virtufin.Base
 references:
-- uid: Virtufin.Base.Clock.DateTimeWallClock
-  commentId: T:Virtufin.Base.Clock.DateTimeWallClock
-  parent: Virtufin.Base.Clock
-  href: Virtufin.Base.Clock.DateTimeWallClock.html
-  name: DateTimeWallClock
-  nameWithType: DateTimeWallClock
-  fullName: Virtufin.Base.Clock.DateTimeWallClock
+- uid: Virtufin.Base.Clock.Metronome
+  commentId: T:Virtufin.Base.Clock.Metronome
+  href: Virtufin.Base.Clock.Metronome.html
+  name: Metronome
+  nameWithType: Metronome
+  fullName: Virtufin.Base.Clock.Metronome
 - uid: Virtufin.Base.Clock.Metronome`1
   commentId: T:Virtufin.Base.Clock.Metronome`1
   href: Virtufin.Base.Clock.Metronome-1.html
@@ -49,33 +48,3 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: Virtufin.Base.Clock
-  commentId: N:Virtufin.Base.Clock
-  href: Virtufin.html
-  name: Virtufin.Base.Clock
-  nameWithType: Virtufin.Base.Clock
-  fullName: Virtufin.Base.Clock
-  spec.csharp:
-  - uid: Virtufin
-    name: Virtufin
-    href: Virtufin.html
-  - name: .
-  - uid: Virtufin.Base
-    name: Base
-    href: Virtufin.Base.html
-  - name: .
-  - uid: Virtufin.Base.Clock
-    name: Clock
-    href: Virtufin.Base.Clock.html
-  spec.vb:
-  - uid: Virtufin
-    name: Virtufin
-    href: Virtufin.html
-  - name: .
-  - uid: Virtufin.Base
-    name: Base
-    href: Virtufin.Base.html
-  - name: .
-  - uid: Virtufin.Base.Clock
-    name: Clock
-    href: Virtufin.Base.Clock.html

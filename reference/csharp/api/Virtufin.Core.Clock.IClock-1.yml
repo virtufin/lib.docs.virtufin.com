@@ -38,9 +38,9 @@ items:
 
     observable stream. Concrete implementations include
 
-    Metronome&lt;T&gt; (regular periodic emission) and
+    Metronome&lt;T&gt; (regular periodic emission) or the
 
-    DateTimeWallClock (specialised for
+    <code>Metronome.CreateDateTimeWallClock</code> factory (convenience for
 
     <code>DateTimeOffset</code>), both in <code>Virtufin.Base.Clock</code>. For
 
@@ -62,7 +62,6 @@ items:
         <xref href="System.IComparable%601" data-throw-if-not-resolved="false"></xref> so consumers can order the emissions.
     content.vb: Public Interface IClock(Of T As {Structure, IComparable(Of T)}) Inherits IObservable(Of T)
   derivedClasses:
-  - Virtufin.Base.Clock.DateTimeWallClock
   - Virtufin.Base.Clock.Metronome`1
   inheritedMembers:
   - System.IObservable{{T}}.Subscribe(System.IObserver{{T}})

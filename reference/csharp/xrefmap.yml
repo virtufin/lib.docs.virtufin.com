@@ -335,47 +335,25 @@ references:
   commentId: N:Virtufin.Base.Clock
   fullName: Virtufin.Base.Clock
   nameWithType: Virtufin.Base.Clock
-- uid: Virtufin.Base.Clock.DateTimeWallClock
-  name: DateTimeWallClock
-  href: api/Virtufin.Base.Clock.DateTimeWallClock.html
-  commentId: T:Virtufin.Base.Clock.DateTimeWallClock
-  fullName: Virtufin.Base.Clock.DateTimeWallClock
-  nameWithType: DateTimeWallClock
-- uid: Virtufin.Base.Clock.DateTimeWallClock.#ctor(System.TimeSpan)
-  name: DateTimeWallClock(TimeSpan)
-  href: api/Virtufin.Base.Clock.DateTimeWallClock.html#Virtufin_Base_Clock_DateTimeWallClock__ctor_System_TimeSpan_
-  commentId: M:Virtufin.Base.Clock.DateTimeWallClock.#ctor(System.TimeSpan)
-  name.vb: New(TimeSpan)
-  fullName: Virtufin.Base.Clock.DateTimeWallClock.DateTimeWallClock(System.TimeSpan)
-  fullName.vb: Virtufin.Base.Clock.DateTimeWallClock.New(System.TimeSpan)
-  nameWithType: DateTimeWallClock.DateTimeWallClock(TimeSpan)
-  nameWithType.vb: DateTimeWallClock.New(TimeSpan)
-- uid: Virtufin.Base.Clock.DateTimeWallClock.#ctor*
-  name: DateTimeWallClock
-  href: api/Virtufin.Base.Clock.DateTimeWallClock.html#Virtufin_Base_Clock_DateTimeWallClock__ctor_
-  commentId: Overload:Virtufin.Base.Clock.DateTimeWallClock.#ctor
+- uid: Virtufin.Base.Clock.Metronome
+  name: Metronome
+  href: api/Virtufin.Base.Clock.Metronome.html
+  commentId: T:Virtufin.Base.Clock.Metronome
+  fullName: Virtufin.Base.Clock.Metronome
+  nameWithType: Metronome
+- uid: Virtufin.Base.Clock.Metronome.CreateDateTimeWallClock(System.TimeSpan)
+  name: CreateDateTimeWallClock(TimeSpan)
+  href: api/Virtufin.Base.Clock.Metronome.html#Virtufin_Base_Clock_Metronome_CreateDateTimeWallClock_System_TimeSpan_
+  commentId: M:Virtufin.Base.Clock.Metronome.CreateDateTimeWallClock(System.TimeSpan)
+  fullName: Virtufin.Base.Clock.Metronome.CreateDateTimeWallClock(System.TimeSpan)
+  nameWithType: Metronome.CreateDateTimeWallClock(TimeSpan)
+- uid: Virtufin.Base.Clock.Metronome.CreateDateTimeWallClock*
+  name: CreateDateTimeWallClock
+  href: api/Virtufin.Base.Clock.Metronome.html#Virtufin_Base_Clock_Metronome_CreateDateTimeWallClock_
+  commentId: Overload:Virtufin.Base.Clock.Metronome.CreateDateTimeWallClock
   isSpec: "True"
-  name.vb: New
-  fullName: Virtufin.Base.Clock.DateTimeWallClock.DateTimeWallClock
-  fullName.vb: Virtufin.Base.Clock.DateTimeWallClock.New
-  nameWithType: DateTimeWallClock.DateTimeWallClock
-  nameWithType.vb: DateTimeWallClock.New
-- uid: Virtufin.Base.Clock.DateTimeWallClock.Subscribe(System.IObserver{System.DateTimeOffset})
-  name: Subscribe(IObserver<DateTimeOffset>)
-  href: api/Virtufin.Base.Clock.DateTimeWallClock.html#Virtufin_Base_Clock_DateTimeWallClock_Subscribe_System_IObserver_System_DateTimeOffset__
-  commentId: M:Virtufin.Base.Clock.DateTimeWallClock.Subscribe(System.IObserver{System.DateTimeOffset})
-  name.vb: Subscribe(IObserver(Of DateTimeOffset))
-  fullName: Virtufin.Base.Clock.DateTimeWallClock.Subscribe(System.IObserver<System.DateTimeOffset>)
-  fullName.vb: Virtufin.Base.Clock.DateTimeWallClock.Subscribe(System.IObserver(Of System.DateTimeOffset))
-  nameWithType: DateTimeWallClock.Subscribe(IObserver<DateTimeOffset>)
-  nameWithType.vb: DateTimeWallClock.Subscribe(IObserver(Of DateTimeOffset))
-- uid: Virtufin.Base.Clock.DateTimeWallClock.Subscribe*
-  name: Subscribe
-  href: api/Virtufin.Base.Clock.DateTimeWallClock.html#Virtufin_Base_Clock_DateTimeWallClock_Subscribe_
-  commentId: Overload:Virtufin.Base.Clock.DateTimeWallClock.Subscribe
-  isSpec: "True"
-  fullName: Virtufin.Base.Clock.DateTimeWallClock.Subscribe
-  nameWithType: DateTimeWallClock.Subscribe
+  fullName: Virtufin.Base.Clock.Metronome.CreateDateTimeWallClock
+  nameWithType: Metronome.CreateDateTimeWallClock
 - uid: Virtufin.Base.Clock.Metronome`1
   name: Metronome<T>
   href: api/Virtufin.Base.Clock.Metronome-1.html
@@ -439,23 +417,6 @@ references:
   fullName.vb: Virtufin.Base.Clock.Metronome(Of T).Subscribe
   nameWithType: Metronome<T>.Subscribe
   nameWithType.vb: Metronome(Of T).Subscribe
-- uid: Virtufin.Base.Clock.Metronome`1.ToDateTimeWallClock
-  name: ToDateTimeWallClock()
-  href: api/Virtufin.Base.Clock.Metronome-1.html#Virtufin_Base_Clock_Metronome_1_ToDateTimeWallClock
-  commentId: M:Virtufin.Base.Clock.Metronome`1.ToDateTimeWallClock
-  fullName: Virtufin.Base.Clock.Metronome<T>.ToDateTimeWallClock()
-  fullName.vb: Virtufin.Base.Clock.Metronome(Of T).ToDateTimeWallClock()
-  nameWithType: Metronome<T>.ToDateTimeWallClock()
-  nameWithType.vb: Metronome(Of T).ToDateTimeWallClock()
-- uid: Virtufin.Base.Clock.Metronome`1.ToDateTimeWallClock*
-  name: ToDateTimeWallClock
-  href: api/Virtufin.Base.Clock.Metronome-1.html#Virtufin_Base_Clock_Metronome_1_ToDateTimeWallClock_
-  commentId: Overload:Virtufin.Base.Clock.Metronome`1.ToDateTimeWallClock
-  isSpec: "True"
-  fullName: Virtufin.Base.Clock.Metronome<T>.ToDateTimeWallClock
-  fullName.vb: Virtufin.Base.Clock.Metronome(Of T).ToDateTimeWallClock
-  nameWithType: Metronome<T>.ToDateTimeWallClock
-  nameWithType.vb: Metronome(Of T).ToDateTimeWallClock
 - uid: Virtufin.Base.ContractIdentifier
   name: ContractIdentifier
   href: api/Virtufin.Base.ContractIdentifier.html
