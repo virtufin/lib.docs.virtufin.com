@@ -21,7 +21,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: DateTimeWallClock
     path: ../../../src/Virtufin.Base/Clock/DateTimeWallClock.cs
-    startLine: 19
+    startLine: 15
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Clock
@@ -30,17 +30,13 @@ items:
 
     <code>DateTimeOffset.UtcNow</code> at every <code class="paramref">interval</code>.
   remarks: >-
-    This is the "regular" wall clock — the projection from a regular
+    Delegates to a <xref href="Virtufin.Base.Clock.Metronome%601" data-throw-if-not-resolved="false"></xref> with the projection
 
-    <xref href="Virtufin.Base.Clock.Metronome%601" data-throw-if-not-resolved="false"></xref>-like tick to wall time. The actual emission
+    <code>_ =&gt; DateTimeOffset.UtcNow</code>. The projection is invoked at each
 
-    is driven by Observable.Interval(TimeSpan, TimeSpan) rather
+    emission, so the emitted value is the wall-clock time at the moment of
 
-    than by wrapping a <xref href="Virtufin.Base.Clock.Metronome%601" data-throw-if-not-resolved="false"></xref>, because the wall-clock
-
-    projection reads <code>DateTimeOffset.UtcNow</code> at the moment of emission
-
-    (a Metronome would freeze the projected time at subscription time).
+    emission (not at subscription time).
   example: []
   syntax:
     content: 'public sealed class DateTimeWallClock : IClock<DateTimeOffset>, IObservable<DateTimeOffset>'
@@ -75,7 +71,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: .ctor
     path: ../../../src/Virtufin.Base/Clock/DateTimeWallClock.cs
-    startLine: 30
+    startLine: 25
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Clock
@@ -117,7 +113,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: Subscribe
     path: ../../../src/Virtufin.Base/Clock/DateTimeWallClock.cs
-    startLine: 40
+    startLine: 32
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Clock
