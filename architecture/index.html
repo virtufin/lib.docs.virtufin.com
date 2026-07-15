@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-dotnet</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-dotnet/commit/7e16644a7692feffe73322faf402e0104daeea9f"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-dotnet/commit/ff759f7637b145fa833f8bab0e67b3dff75541d3"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 7e16644">
+       title="View commit ff759f7">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">7e16644</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">ff759f7</text>
       </svg>
     </a>
 </div>
@@ -368,14 +368,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-dotnet</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-dotnet/commit/7e16644a7692feffe73322faf402e0104daeea9f"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-dotnet/commit/ff759f7637b145fa833f8bab0e67b3dff75541d3"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 7e16644">
+       title="View commit ff759f7">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">7e16644</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">ff759f7</text>
       </svg>
     </a>
 </div>
@@ -666,6 +666,17 @@
     <span class="md-ellipsis">
       
         The trait/concrete split
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-split-this-way" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why split this way?
       
     </span>
   </a>
@@ -986,6 +997,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#why-split-this-way" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why split this way?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#the-variant-cross-cutting-type" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1128,7 +1150,11 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Why split this way?</strong> Two reasons:</p>
+<p><code>Currency.CurrencySymbol</code> is an exhaustive <code>enum</code> of ~170 ISO 4217 codes
+(active national currencies + precious metals + supranationals + a <code>ZZZ</code>
+sentinel for testing). Historical/withdrawn codes are intentionally
+omitted. See <code>src/Virtufin.Base/Currency.cs</code> for the full list.</p>
+<h2 id="why-split-this-way">Why split this way?</h2>
 <ol>
 <li><strong>Substitutability</strong>: a function declared as <code>IExecutor&lt;TState, ITradeAction, ITradeEvent&lt;ITradeAction&gt;&gt;</code> is callable with any <code>IExecutor&lt;TState, RichTradeAction, TradeEvent&gt;</code> (because <code>RichTradeAction : ITradeAction</code> and <code>TradeEvent : ITradeEvent&lt;RichTradeAction&gt;</code>, and <code>ITradeEvent&lt;out A&gt;</code> is covariant).</li>
 <li><strong>Testability</strong>: tests can supply a minimal <code>IQuantity</code> stub without depending on <code>DecimalAmount</code>-backed types.</li>
@@ -1247,7 +1273,7 @@
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-07-15T08:21:51Z</span>
+  <span style="display:table-cell;text-align:right">2026-07-15T08:25:19Z</span>
 </div>
 
     </div>
