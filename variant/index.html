@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-dotnet</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-dotnet/commit/3b35be9ef58b85eb9180623d7dac6a7e0cae4d01"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-dotnet/commit/8c5071168450fc2b35de20d512ac37e9f8588186"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 3b35be9">
+       title="View commit 8c50711">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">3b35be9</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">8c50711</text>
       </svg>
     </a>
 </div>
@@ -368,14 +368,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-dotnet</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-dotnet/commit/3b35be9ef58b85eb9180623d7dac6a7e0cae4d01"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-dotnet/commit/8c5071168450fc2b35de20d512ac37e9f8588186"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 3b35be9">
+       title="View commit 8c50711">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">3b35be9</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">8c50711</text>
       </svg>
     </a>
 </div>
@@ -1098,7 +1098,7 @@
     &lt;&lt;record&gt;&gt;
     +Value: T
   }</code></pre>
-<p><code>Variant</code> is an abstract record with 5 concrete subtypes (one per case). The 6th case, <code>None</code>, is a singleton (<code>Variant.None</code>).</p>
+<p><code>Variant</code> is an abstract record with 6 concrete subtypes: <code>None</code> (singleton), <code>Bool</code>, <code>Int32</code>, <code>String</code>, <code>Dictionary</code>, and <code>Array</code>.</p>
 <h2 id="construction">Construction</h2>
 <div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="nn">Virtufin.Data</span><span class="p">;</span>
 
@@ -1118,7 +1118,7 @@
 <span class="n">Variant</span><span class="w"> </span><span class="n">implicit1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">42</span><span class="p">;</span><span class="w">            </span><span class="c1">// -&gt; Variant.Int32(42)</span>
 <span class="n">Variant</span><span class="w"> </span><span class="n">implicit2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;hello&quot;</span><span class="p">;</span><span class="w">       </span><span class="c1">// -&gt; Variant.String(&quot;hello&quot;)</span>
 <span class="n">Variant</span><span class="w"> </span><span class="n">implicit3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">true</span><span class="p">;</span><span class="w">          </span><span class="c1">// -&gt; Variant.Bool(true)</span>
-<span class="n">Variant</span><span class="w"> </span><span class="n">implicit4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">100.5m</span><span class="p">;</span><span class="w">        </span><span class="c1">// -&gt; Variant.Decimal via implicit conversion</span>
+<span class="n">Variant</span><span class="w"> </span><span class="n">implicit4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">100.5m</span><span class="p">;</span><span class="w">        </span><span class="c1">// -&gt; wraps a DecimalAmount in a Variant for serialization</span>
 </code></pre></div>
 <h2 id="pattern-matching">Pattern matching</h2>
 <div class="highlight"><pre><span></span><code><span class="kt">string</span><span class="w"> </span><span class="nf">describe</span><span class="p">(</span><span class="n">Variant</span><span class="w"> </span><span class="n">v</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="k">switch</span>
@@ -1133,14 +1133,18 @@
 <span class="p">};</span>
 </code></pre></div>
 <h2 id="type-safety">Type safety</h2>
-<p><code>Variant</code> is <strong>sealed</strong>, so the C# compiler can verify exhaustiveness in switch expressions. The implicit conversions from C# primitives are lossy in one direction: a <code>long</code> or <code>double</code> will be coerced to <code>Int32</code> (with potential data loss). For arbitrary-precision decimals, use the explicit <code>Variant.Decimal(DecimalAmount)</code> constructor.</p>
+<p><code>Variant</code> is <strong>sealed</strong>, so the C# compiler can verify exhaustiveness in switch expressions. The implicit conversions from C# primitives are lossy in one direction: a <code>long</code> or <code>double</code> will be coerced to <code>Int32</code> (with potential data loss if the value exceeds <code>Int32.MaxValue</code>). For arbitrary-precision decimals, wrap a <code>DecimalAmount</code> via the <code>Variant</code> factory: <code>Variant.FromDecimalAmount(d)</code>. <code>DecimalAmount</code> is a sibling type to <code>Variant</code>, not a Variant case.</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// These are SAFE</span>
 <span class="n">Variant</span><span class="p">.</span><span class="n">Int32</span><span class="p">(</span><span class="mi">42</span><span class="p">);</span>
 <span class="n">Variant</span><span class="p">.</span><span class="n">String</span><span class="p">(</span><span class="s">&quot;hello&quot;</span><span class="p">);</span>
 
 <span class="c1">// These COERCE — be careful</span>
-<span class="kt">long</span><span class="w"> </span><span class="n">big</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="n">_000_000_000_000L</span><span class="p">;</span>
-<span class="n">Variant</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">big</span><span class="p">;</span><span class="w">  </span><span class="c1">// =&gt; Variant.Int32(1_000_000_000_000) — fits, but read as int32</span>
+<span class="kt">long</span><span class="w"> </span><span class="n">moderate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="n">_000_000L</span><span class="p">;</span>
+<span class="n">Variant</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">moderate</span><span class="p">;</span><span class="w">  </span><span class="c1">// =&gt; Variant.Int32(1_000_000) — fits safely in int32</span>
+
+<span class="kt">long</span><span class="w"> </span><span class="n">large</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="n">_000_000_000L</span><span class="p">;</span>
+<span class="c1">// v = large;  // DON&#39;T: 3_000_000_000 exceeds Int32.MaxValue (2,147,483,647)</span>
+<span class="w">               </span><span class="c1">// The implicit conversion silently narrows.</span>
 </code></pre></div>
 <h2 id="flatbuffers-serialization">FlatBuffers serialization</h2>
 <p>Every <code>Variant</code> can be serialized to FlatBuffers binary and deserialized back. The schema (<code>virtufin/data/variant.fbs</code>) is shared across C#, Python, and TypeScript SDKs — a value produced in C# is readable in Python without any code generation.</p>
@@ -1201,7 +1205,7 @@
 <li><code>Deserialize</code> parses a FlatBuffer — O(n) in payload size, no reflection.</li>
 <li>Dictionary and Array cases use immutable inner types (<code>IReadOnlyDictionary</code>, <code>IReadOnlyList</code>) so they're safe to share across threads.</li>
 </ul>
-<p>For very high-throughput paths, the <code>DecimalAmount</code> case (the 6th case, not in the diagram above) is a struct that stores <code>(long Whole, int Fraction, byte N)</code> — no allocations, copy-by-value.</p>
+<p><code>DecimalAmount</code> is a sibling type to <code>Variant</code>, not a Variant case. It is a <code>readonly struct</code> of 16 bytes that stores <code>(long Whole, int Fraction, byte N)</code> — no allocations, copy-by-value. Conversion between <code>Variant</code> and <code>DecimalAmount</code> is explicit: use <code>DecimalAmount.ToVariant()</code> and <code>Variant.ToDecimalAmount()</code>.</p>
 
 
 
@@ -1233,7 +1237,7 @@
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-07-05T11:20:23Z</span>
+  <span style="display:table-cell;text-align:right">2026-07-15T08:08:03Z</span>
 </div>
 
     </div>
