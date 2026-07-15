@@ -1,0 +1,701 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier
+  commentId: T:Virtufin.Base.ContractIdentifier.SimpleContractIdentifier
+  id: ContractIdentifier.SimpleContractIdentifier
+  parent: Virtufin.Base
+  children:
+  - Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.#ctor(System.String)
+  - Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.ToString
+  - Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.Value
+  langs:
+  - csharp
+  - vb
+  name: ContractIdentifier.SimpleContractIdentifier
+  nameWithType: ContractIdentifier.SimpleContractIdentifier
+  fullName: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Base/ContractIdentifier.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: SimpleContractIdentifier
+    path: ../../../src/Virtufin.Base/ContractIdentifier.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: An opaque string identifier for a contract.
+  example: []
+  syntax:
+    content: 'public sealed record ContractIdentifier.SimpleContractIdentifier : ContractIdentifier, IContractIdentifier, IEquatable<IContractIdentifier>, IEquatable<ContractIdentifier>, IEquatable<ContractIdentifier.SimpleContractIdentifier>'
+    content.vb: Public NotInheritable Class ContractIdentifier.SimpleContractIdentifier Inherits ContractIdentifier Implements IContractIdentifier, IEquatable(Of IContractIdentifier), IEquatable(Of ContractIdentifier), IEquatable(Of ContractIdentifier.SimpleContractIdentifier)
+  inheritance:
+  - System.Object
+  - Virtufin.Base.ContractIdentifier
+  implements:
+  - Virtufin.Core.Identifiers.IContractIdentifier
+  - System.IEquatable{Virtufin.Core.Identifiers.IContractIdentifier}
+  - System.IEquatable{Virtufin.Base.ContractIdentifier}
+  - System.IEquatable{Virtufin.Base.ContractIdentifier.SimpleContractIdentifier}
+  inheritedMembers:
+  - Virtufin.Base.ContractIdentifier.New(System.String)
+  - Virtufin.Base.ContractIdentifier.FromUti(System.String)
+  - Virtufin.Base.ContractIdentifier.NewWithUuid
+  - Virtufin.Base.ContractIdentifier.Equals(Virtufin.Core.Identifiers.IContractIdentifier)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.Value
+  commentId: P:Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.Value
+  id: Value
+  parent: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: ContractIdentifier.SimpleContractIdentifier.Value
+  fullName: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.Value
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/ContractIdentifier.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Value
+    path: ../../../src/Virtufin.Base/ContractIdentifier.cs
+    startLine: 21
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: The string payload of the identifier.
+  example: []
+  syntax:
+    content: public override string Value { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property Value As String
+  overridden: Virtufin.Base.ContractIdentifier.Value
+  overload: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.Value*
+- uid: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.#ctor(System.String)
+  commentId: M:Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier
+  langs:
+  - csharp
+  - vb
+  name: SimpleContractIdentifier(string)
+  nameWithType: ContractIdentifier.SimpleContractIdentifier.SimpleContractIdentifier(string)
+  fullName: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.SimpleContractIdentifier(string)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Base/ContractIdentifier.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Base/ContractIdentifier.cs
+    startLine: 24
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Construct an opaque string identifier.
+  example: []
+  syntax:
+    content: public SimpleContractIdentifier(string value)
+    parameters:
+    - id: value
+      type: System.String
+    content.vb: Public Sub New(value As String)
+  overload: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.#ctor*
+  nameWithType.vb: ContractIdentifier.SimpleContractIdentifier.New(String)
+  fullName.vb: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.New(String)
+  name.vb: New(String)
+- uid: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.ToString
+  commentId: M:Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.ToString
+  id: ToString
+  parent: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: ContractIdentifier.SimpleContractIdentifier.ToString()
+  fullName: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/ContractIdentifier.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ToString
+    path: ../../../src/Virtufin.Base/ContractIdentifier.cs
+    startLine: 27
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Returns a string that represents the current object.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string that represents the current object.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: Virtufin.Base.ContractIdentifier.ToString
+  overload: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.ToString*
+references:
+- uid: Virtufin.Base
+  commentId: N:Virtufin.Base
+  href: Virtufin.html
+  name: Virtufin.Base
+  nameWithType: Virtufin.Base
+  fullName: Virtufin.Base
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.Base.ContractIdentifier
+  commentId: T:Virtufin.Base.ContractIdentifier
+  parent: Virtufin.Base
+  href: Virtufin.Base.ContractIdentifier.html
+  name: ContractIdentifier
+  nameWithType: ContractIdentifier
+  fullName: Virtufin.Base.ContractIdentifier
+- uid: Virtufin.Core.Identifiers.IContractIdentifier
+  commentId: T:Virtufin.Core.Identifiers.IContractIdentifier
+  parent: Virtufin.Core.Identifiers
+  href: Virtufin.Core.Identifiers.IContractIdentifier.html
+  name: IContractIdentifier
+  nameWithType: IContractIdentifier
+  fullName: Virtufin.Core.Identifiers.IContractIdentifier
+- uid: System.IEquatable{Virtufin.Core.Identifiers.IContractIdentifier}
+  commentId: T:System.IEquatable{Virtufin.Core.Identifiers.IContractIdentifier}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<IContractIdentifier>
+  nameWithType: IEquatable<IContractIdentifier>
+  fullName: System.IEquatable<Virtufin.Core.Identifiers.IContractIdentifier>
+  nameWithType.vb: IEquatable(Of IContractIdentifier)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Identifiers.IContractIdentifier)
+  name.vb: IEquatable(Of IContractIdentifier)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Identifiers.IContractIdentifier
+    name: IContractIdentifier
+    href: Virtufin.Core.Identifiers.IContractIdentifier.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Identifiers.IContractIdentifier
+    name: IContractIdentifier
+    href: Virtufin.Core.Identifiers.IContractIdentifier.html
+  - name: )
+- uid: System.IEquatable{Virtufin.Base.ContractIdentifier}
+  commentId: T:System.IEquatable{Virtufin.Base.ContractIdentifier}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ContractIdentifier>
+  nameWithType: IEquatable<ContractIdentifier>
+  fullName: System.IEquatable<Virtufin.Base.ContractIdentifier>
+  nameWithType.vb: IEquatable(Of ContractIdentifier)
+  fullName.vb: System.IEquatable(Of Virtufin.Base.ContractIdentifier)
+  name.vb: IEquatable(Of ContractIdentifier)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Base.ContractIdentifier
+    name: ContractIdentifier
+    href: Virtufin.Base.ContractIdentifier.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Base.ContractIdentifier
+    name: ContractIdentifier
+    href: Virtufin.Base.ContractIdentifier.html
+  - name: )
+- uid: System.IEquatable{Virtufin.Base.ContractIdentifier.SimpleContractIdentifier}
+  commentId: T:System.IEquatable{Virtufin.Base.ContractIdentifier.SimpleContractIdentifier}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ContractIdentifier.SimpleContractIdentifier>
+  nameWithType: IEquatable<ContractIdentifier.SimpleContractIdentifier>
+  fullName: System.IEquatable<Virtufin.Base.ContractIdentifier.SimpleContractIdentifier>
+  nameWithType.vb: IEquatable(Of ContractIdentifier.SimpleContractIdentifier)
+  fullName.vb: System.IEquatable(Of Virtufin.Base.ContractIdentifier.SimpleContractIdentifier)
+  name.vb: IEquatable(Of ContractIdentifier.SimpleContractIdentifier)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Base.ContractIdentifier
+    name: ContractIdentifier
+    href: Virtufin.Base.ContractIdentifier.html
+  - name: .
+  - uid: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier
+    name: SimpleContractIdentifier
+    href: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Base.ContractIdentifier
+    name: ContractIdentifier
+    href: Virtufin.Base.ContractIdentifier.html
+  - name: .
+  - uid: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier
+    name: SimpleContractIdentifier
+    href: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.html
+  - name: )
+- uid: Virtufin.Base.ContractIdentifier.New(System.String)
+  commentId: M:Virtufin.Base.ContractIdentifier.New(System.String)
+  parent: Virtufin.Base.ContractIdentifier
+  isExternal: true
+  href: Virtufin.Base.ContractIdentifier.html#Virtufin_Base_ContractIdentifier_New_System_String_
+  name: New(string)
+  nameWithType: ContractIdentifier.New(string)
+  fullName: Virtufin.Base.ContractIdentifier.New(string)
+  nameWithType.vb: ContractIdentifier.New(String)
+  fullName.vb: Virtufin.Base.ContractIdentifier.New(String)
+  name.vb: New(String)
+  spec.csharp:
+  - uid: Virtufin.Base.ContractIdentifier.New(System.String)
+    name: New
+    href: Virtufin.Base.ContractIdentifier.html#Virtufin_Base_ContractIdentifier_New_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Base.ContractIdentifier.New(System.String)
+    name: New
+    href: Virtufin.Base.ContractIdentifier.html#Virtufin_Base_ContractIdentifier_New_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Virtufin.Base.ContractIdentifier.FromUti(System.String)
+  commentId: M:Virtufin.Base.ContractIdentifier.FromUti(System.String)
+  parent: Virtufin.Base.ContractIdentifier
+  isExternal: true
+  href: Virtufin.Base.ContractIdentifier.html#Virtufin_Base_ContractIdentifier_FromUti_System_String_
+  name: FromUti(string)
+  nameWithType: ContractIdentifier.FromUti(string)
+  fullName: Virtufin.Base.ContractIdentifier.FromUti(string)
+  nameWithType.vb: ContractIdentifier.FromUti(String)
+  fullName.vb: Virtufin.Base.ContractIdentifier.FromUti(String)
+  name.vb: FromUti(String)
+  spec.csharp:
+  - uid: Virtufin.Base.ContractIdentifier.FromUti(System.String)
+    name: FromUti
+    href: Virtufin.Base.ContractIdentifier.html#Virtufin_Base_ContractIdentifier_FromUti_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Base.ContractIdentifier.FromUti(System.String)
+    name: FromUti
+    href: Virtufin.Base.ContractIdentifier.html#Virtufin_Base_ContractIdentifier_FromUti_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Virtufin.Base.ContractIdentifier.NewWithUuid
+  commentId: M:Virtufin.Base.ContractIdentifier.NewWithUuid
+  parent: Virtufin.Base.ContractIdentifier
+  href: Virtufin.Base.ContractIdentifier.html#Virtufin_Base_ContractIdentifier_NewWithUuid
+  name: NewWithUuid()
+  nameWithType: ContractIdentifier.NewWithUuid()
+  fullName: Virtufin.Base.ContractIdentifier.NewWithUuid()
+  spec.csharp:
+  - uid: Virtufin.Base.ContractIdentifier.NewWithUuid
+    name: NewWithUuid
+    href: Virtufin.Base.ContractIdentifier.html#Virtufin_Base_ContractIdentifier_NewWithUuid
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Base.ContractIdentifier.NewWithUuid
+    name: NewWithUuid
+    href: Virtufin.Base.ContractIdentifier.html#Virtufin_Base_ContractIdentifier_NewWithUuid
+  - name: (
+  - name: )
+- uid: Virtufin.Base.ContractIdentifier.Equals(Virtufin.Core.Identifiers.IContractIdentifier)
+  commentId: M:Virtufin.Base.ContractIdentifier.Equals(Virtufin.Core.Identifiers.IContractIdentifier)
+  parent: Virtufin.Base.ContractIdentifier
+  href: Virtufin.Base.ContractIdentifier.html#Virtufin_Base_ContractIdentifier_Equals_Virtufin_Core_Identifiers_IContractIdentifier_
+  name: Equals(IContractIdentifier)
+  nameWithType: ContractIdentifier.Equals(IContractIdentifier)
+  fullName: Virtufin.Base.ContractIdentifier.Equals(Virtufin.Core.Identifiers.IContractIdentifier)
+  spec.csharp:
+  - uid: Virtufin.Base.ContractIdentifier.Equals(Virtufin.Core.Identifiers.IContractIdentifier)
+    name: Equals
+    href: Virtufin.Base.ContractIdentifier.html#Virtufin_Base_ContractIdentifier_Equals_Virtufin_Core_Identifiers_IContractIdentifier_
+  - name: (
+  - uid: Virtufin.Core.Identifiers.IContractIdentifier
+    name: IContractIdentifier
+    href: Virtufin.Core.Identifiers.IContractIdentifier.html
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Base.ContractIdentifier.Equals(Virtufin.Core.Identifiers.IContractIdentifier)
+    name: Equals
+    href: Virtufin.Base.ContractIdentifier.html#Virtufin_Base_ContractIdentifier_Equals_Virtufin_Core_Identifiers_IContractIdentifier_
+  - name: (
+  - uid: Virtufin.Core.Identifiers.IContractIdentifier
+    name: IContractIdentifier
+    href: Virtufin.Core.Identifiers.IContractIdentifier.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Core.Identifiers
+  commentId: N:Virtufin.Core.Identifiers
+  href: Virtufin.html
+  name: Virtufin.Core.Identifiers
+  nameWithType: Virtufin.Core.Identifiers
+  fullName: Virtufin.Core.Identifiers
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Base.ContractIdentifier.Value
+  commentId: P:Virtufin.Base.ContractIdentifier.Value
+  parent: Virtufin.Base.ContractIdentifier
+  href: Virtufin.Base.ContractIdentifier.html#Virtufin_Base_ContractIdentifier_Value
+  name: Value
+  nameWithType: ContractIdentifier.Value
+  fullName: Virtufin.Base.ContractIdentifier.Value
+- uid: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.Value*
+  commentId: Overload:Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.Value
+  href: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.html#Virtufin_Base_ContractIdentifier_SimpleContractIdentifier_Value
+  name: Value
+  nameWithType: ContractIdentifier.SimpleContractIdentifier.Value
+  fullName: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.Value
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.#ctor*
+  commentId: Overload:Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.#ctor
+  href: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.html#Virtufin_Base_ContractIdentifier_SimpleContractIdentifier__ctor_System_String_
+  name: SimpleContractIdentifier
+  nameWithType: ContractIdentifier.SimpleContractIdentifier.SimpleContractIdentifier
+  fullName: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.SimpleContractIdentifier
+  nameWithType.vb: ContractIdentifier.SimpleContractIdentifier.New
+  fullName.vb: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.New
+  name.vb: New
+- uid: Virtufin.Base.ContractIdentifier.ToString
+  commentId: M:Virtufin.Base.ContractIdentifier.ToString
+  parent: Virtufin.Base.ContractIdentifier
+  name: ToString()
+  nameWithType: ContractIdentifier.ToString()
+  fullName: Virtufin.Base.ContractIdentifier.ToString()
+  spec.csharp:
+  - uid: Virtufin.Base.ContractIdentifier.ToString
+    name: ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Base.ContractIdentifier.ToString
+    name: ToString
+  - name: (
+  - name: )
+- uid: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.ToString*
+  commentId: Overload:Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.ToString
+  href: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.html#Virtufin_Base_ContractIdentifier_SimpleContractIdentifier_ToString
+  name: ToString
+  nameWithType: ContractIdentifier.SimpleContractIdentifier.ToString
+  fullName: Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.ToString

@@ -1,0 +1,181 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.IEntityIdentifier
+  commentId: T:Virtufin.Core.IEntityIdentifier
+  id: IEntityIdentifier
+  parent: Virtufin.Core
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IEntityIdentifier
+  nameWithType: IEntityIdentifier
+  fullName: Virtufin.Core.IEntityIdentifier
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/IEntityIdentifier.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IEntityIdentifier
+    path: ../../../src/Virtufin.Core/IEntityIdentifier.cs
+    startLine: 1
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core
+  syntax:
+    content: 'public interface IEntityIdentifier : IEquatable<IEntityIdentifier>'
+    content.vb: Public Interface IEntityIdentifier Inherits IEquatable(Of IEntityIdentifier)
+  derivedClasses:
+  - Virtufin.Base.EntityIdentifier.CUSIP
+  - Virtufin.Base.EntityIdentifier.ISIN
+  - Virtufin.Base.EntityIdentifier.UUID
+  - Virtufin.Core.EntityIdentifier`1
+  inheritedMembers:
+  - System.IEquatable{Virtufin.Core.IEntityIdentifier}.Equals(Virtufin.Core.IEntityIdentifier)
+references:
+- uid: Virtufin.Core
+  commentId: N:Virtufin.Core
+  href: Virtufin.html
+  name: Virtufin.Core
+  nameWithType: Virtufin.Core
+  fullName: Virtufin.Core
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+- uid: System.IEquatable{Virtufin.Core.IEntityIdentifier}.Equals(Virtufin.Core.IEntityIdentifier)
+  commentId: M:System.IEquatable{Virtufin.Core.IEntityIdentifier}.Equals(Virtufin.Core.IEntityIdentifier)
+  parent: System.IEquatable{Virtufin.Core.IEntityIdentifier}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(IEntityIdentifier)
+  nameWithType: IEquatable<IEntityIdentifier>.Equals(IEntityIdentifier)
+  fullName: System.IEquatable<Virtufin.Core.IEntityIdentifier>.Equals(Virtufin.Core.IEntityIdentifier)
+  nameWithType.vb: IEquatable(Of IEntityIdentifier).Equals(IEntityIdentifier)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.IEntityIdentifier).Equals(Virtufin.Core.IEntityIdentifier)
+  spec.csharp:
+  - uid: System.IEquatable{Virtufin.Core.IEntityIdentifier}.Equals(Virtufin.Core.IEntityIdentifier)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.IEntityIdentifier
+    name: IEntityIdentifier
+    href: Virtufin.Core.IEntityIdentifier.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Virtufin.Core.IEntityIdentifier}.Equals(Virtufin.Core.IEntityIdentifier)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.IEntityIdentifier
+    name: IEntityIdentifier
+    href: Virtufin.Core.IEntityIdentifier.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IEquatable{Virtufin.Core.IEntityIdentifier}
+  commentId: T:System.IEquatable{Virtufin.Core.IEntityIdentifier}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<IEntityIdentifier>
+  nameWithType: IEquatable<IEntityIdentifier>
+  fullName: System.IEquatable<Virtufin.Core.IEntityIdentifier>
+  nameWithType.vb: IEquatable(Of IEntityIdentifier)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.IEntityIdentifier)
+  name.vb: IEquatable(Of IEntityIdentifier)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.IEntityIdentifier
+    name: IEntityIdentifier
+    href: Virtufin.Core.IEntityIdentifier.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.IEntityIdentifier
+    name: IEntityIdentifier
+    href: Virtufin.Core.IEntityIdentifier.html
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

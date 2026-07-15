@@ -1,0 +1,140 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Events.ClockType
+  commentId: T:Virtufin.Core.Events.ClockType
+  id: ClockType
+  parent: Virtufin.Core.Events
+  children:
+  - Virtufin.Core.Events.ClockType.Synthetic
+  - Virtufin.Core.Events.ClockType.Wall
+  langs:
+  - csharp
+  - vb
+  name: ClockType
+  nameWithType: ClockType
+  fullName: Virtufin.Core.Events.ClockType
+  type: Enum
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/IEventEnvelope.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ClockType
+    path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
+    startLine: 60
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: Clock interpretation for <xref href="Virtufin.Core.Events.IEventEnvelope.EventTime" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public enum ClockType
+    content.vb: Public Enum ClockType
+- uid: Virtufin.Core.Events.ClockType.Wall
+  commentId: F:Virtufin.Core.Events.ClockType.Wall
+  id: Wall
+  parent: Virtufin.Core.Events.ClockType
+  langs:
+  - csharp
+  - vb
+  name: Wall
+  nameWithType: ClockType.Wall
+  fullName: Virtufin.Core.Events.ClockType.Wall
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/IEventEnvelope.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Wall
+    path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
+    startLine: 63
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: Wall-clock time (used in <code>act</code> scenarios).
+  example: []
+  syntax:
+    content: Wall = 0
+    return:
+      type: Virtufin.Core.Events.ClockType
+- uid: Virtufin.Core.Events.ClockType.Synthetic
+  commentId: F:Virtufin.Core.Events.ClockType.Synthetic
+  id: Synthetic
+  parent: Virtufin.Core.Events.ClockType
+  langs:
+  - csharp
+  - vb
+  name: Synthetic
+  nameWithType: ClockType.Synthetic
+  fullName: Virtufin.Core.Events.ClockType.Synthetic
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/IEventEnvelope.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Synthetic
+    path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
+    startLine: 65
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: Synthetic replay time (used in <code>hyp</code> scenarios).
+  example: []
+  syntax:
+    content: Synthetic = 1
+    return:
+      type: Virtufin.Core.Events.ClockType
+references:
+- uid: Virtufin.Core.Events.IEventEnvelope.EventTime
+  commentId: P:Virtufin.Core.Events.IEventEnvelope.EventTime
+  parent: Virtufin.Core.Events.IEventEnvelope
+  href: Virtufin.Core.Events.IEventEnvelope.html#Virtufin_Core_Events_IEventEnvelope_EventTime
+  name: EventTime
+  nameWithType: IEventEnvelope.EventTime
+  fullName: Virtufin.Core.Events.IEventEnvelope.EventTime
+- uid: Virtufin.Core.Events
+  commentId: N:Virtufin.Core.Events
+  href: Virtufin.html
+  name: Virtufin.Core.Events
+  nameWithType: Virtufin.Core.Events
+  fullName: Virtufin.Core.Events
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+- uid: Virtufin.Core.Events.IEventEnvelope
+  commentId: T:Virtufin.Core.Events.IEventEnvelope
+  parent: Virtufin.Core.Events
+  href: Virtufin.Core.Events.IEventEnvelope.html
+  name: IEventEnvelope
+  nameWithType: IEventEnvelope
+  fullName: Virtufin.Core.Events.IEventEnvelope
+- uid: Virtufin.Core.Events.ClockType
+  commentId: T:Virtufin.Core.Events.ClockType
+  parent: Virtufin.Core.Events
+  href: Virtufin.Core.Events.ClockType.html
+  name: ClockType
+  nameWithType: ClockType
+  fullName: Virtufin.Core.Events.ClockType

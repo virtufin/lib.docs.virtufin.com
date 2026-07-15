@@ -1,0 +1,283 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Contracts.ITransaction
+  commentId: T:Virtufin.Core.Contracts.ITransaction
+  id: ITransaction
+  parent: Virtufin.Core.Contracts
+  children:
+  - Virtufin.Core.Contracts.ITransaction.RelatedContract
+  langs:
+  - csharp
+  - vb
+  name: ITransaction
+  nameWithType: ITransaction
+  fullName: Virtufin.Core.Contracts.ITransaction
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Contracts/ITransaction.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ITransaction
+    path: ../../../src/Virtufin.Core/Contracts/ITransaction.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Contracts
+  summary: >-
+    A unit of business activity: a creation, cancellation, transfer, or any
+
+    other operation that may be applied to a contract. Transactions carry an
+
+    optional pointer to the contract they affect; for composite transactions
+
+    (e.g. an atomic set of operations) the pointer is <code>null</code>.
+  example:
+  - >-
+    <pre><code class="lang-csharp">public sealed record CreateContract(ContractIdentifier Id, ContractParameters Parameters) : ITransaction
+
+    {
+        public IContractIdentifier? RelatedContract =&gt; Id;
+    }</code></pre>
+  syntax:
+    content: 'public interface ITransaction : IEquatable<ITransaction>'
+    content.vb: Public Interface ITransaction Inherits IEquatable(Of ITransaction)
+  derivedClasses:
+  - Virtufin.Base.Transaction
+  - Virtufin.Base.Transaction.AtomicTransactions
+  - Virtufin.Base.Transaction.CancelContract
+  - Virtufin.Base.Transaction.CreateContract
+  - Virtufin.Base.Transaction.Transfer
+  inheritedMembers:
+  - System.IEquatable{Virtufin.Core.Contracts.ITransaction}.Equals(Virtufin.Core.Contracts.ITransaction)
+- uid: Virtufin.Core.Contracts.ITransaction.RelatedContract
+  commentId: P:Virtufin.Core.Contracts.ITransaction.RelatedContract
+  id: RelatedContract
+  parent: Virtufin.Core.Contracts.ITransaction
+  langs:
+  - csharp
+  - vb
+  name: RelatedContract
+  nameWithType: ITransaction.RelatedContract
+  fullName: Virtufin.Core.Contracts.ITransaction.RelatedContract
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Contracts/ITransaction.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: RelatedContract
+    path: ../../../src/Virtufin.Core/Contracts/ITransaction.cs
+    startLine: 24
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Contracts
+  summary: >-
+    The contract this transaction targets, or <code>null</code> for transactions
+
+    that do not target a single contract (e.g. atomic groups).
+  example: []
+  syntax:
+    content: IContractIdentifier? RelatedContract { get; }
+    parameters: []
+    return:
+      type: Virtufin.Core.Identifiers.IContractIdentifier
+    content.vb: ReadOnly Property RelatedContract As IContractIdentifier
+  overload: Virtufin.Core.Contracts.ITransaction.RelatedContract*
+references:
+- uid: Virtufin.Core.Contracts
+  commentId: N:Virtufin.Core.Contracts
+  href: Virtufin.html
+  name: Virtufin.Core.Contracts
+  nameWithType: Virtufin.Core.Contracts
+  fullName: Virtufin.Core.Contracts
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Contracts
+    name: Contracts
+    href: Virtufin.Core.Contracts.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Contracts
+    name: Contracts
+    href: Virtufin.Core.Contracts.html
+- uid: System.IEquatable{Virtufin.Core.Contracts.ITransaction}.Equals(Virtufin.Core.Contracts.ITransaction)
+  commentId: M:System.IEquatable{Virtufin.Core.Contracts.ITransaction}.Equals(Virtufin.Core.Contracts.ITransaction)
+  parent: System.IEquatable{Virtufin.Core.Contracts.ITransaction}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(ITransaction)
+  nameWithType: IEquatable<ITransaction>.Equals(ITransaction)
+  fullName: System.IEquatable<Virtufin.Core.Contracts.ITransaction>.Equals(Virtufin.Core.Contracts.ITransaction)
+  nameWithType.vb: IEquatable(Of ITransaction).Equals(ITransaction)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Contracts.ITransaction).Equals(Virtufin.Core.Contracts.ITransaction)
+  spec.csharp:
+  - uid: System.IEquatable{Virtufin.Core.Contracts.ITransaction}.Equals(Virtufin.Core.Contracts.ITransaction)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Contracts.ITransaction
+    name: ITransaction
+    href: Virtufin.Core.Contracts.ITransaction.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Virtufin.Core.Contracts.ITransaction}.Equals(Virtufin.Core.Contracts.ITransaction)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Contracts.ITransaction
+    name: ITransaction
+    href: Virtufin.Core.Contracts.ITransaction.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IEquatable{Virtufin.Core.Contracts.ITransaction}
+  commentId: T:System.IEquatable{Virtufin.Core.Contracts.ITransaction}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ITransaction>
+  nameWithType: IEquatable<ITransaction>
+  fullName: System.IEquatable<Virtufin.Core.Contracts.ITransaction>
+  nameWithType.vb: IEquatable(Of ITransaction)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Contracts.ITransaction)
+  name.vb: IEquatable(Of ITransaction)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Contracts.ITransaction
+    name: ITransaction
+    href: Virtufin.Core.Contracts.ITransaction.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Contracts.ITransaction
+    name: ITransaction
+    href: Virtufin.Core.Contracts.ITransaction.html
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Core.Contracts.ITransaction.RelatedContract*
+  commentId: Overload:Virtufin.Core.Contracts.ITransaction.RelatedContract
+  href: Virtufin.Core.Contracts.ITransaction.html#Virtufin_Core_Contracts_ITransaction_RelatedContract
+  name: RelatedContract
+  nameWithType: ITransaction.RelatedContract
+  fullName: Virtufin.Core.Contracts.ITransaction.RelatedContract
+- uid: Virtufin.Core.Identifiers.IContractIdentifier
+  commentId: T:Virtufin.Core.Identifiers.IContractIdentifier
+  parent: Virtufin.Core.Identifiers
+  href: Virtufin.Core.Identifiers.IContractIdentifier.html
+  name: IContractIdentifier
+  nameWithType: IContractIdentifier
+  fullName: Virtufin.Core.Identifiers.IContractIdentifier
+- uid: Virtufin.Core.Identifiers
+  commentId: N:Virtufin.Core.Identifiers
+  href: Virtufin.html
+  name: Virtufin.Core.Identifiers
+  nameWithType: Virtufin.Core.Identifiers
+  fullName: Virtufin.Core.Identifiers
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html

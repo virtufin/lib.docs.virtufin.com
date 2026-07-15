@@ -1,0 +1,915 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Events.IEventEnvelope
+  commentId: T:Virtufin.Core.Events.IEventEnvelope
+  id: IEventEnvelope
+  parent: Virtufin.Core.Events
+  children:
+  - Virtufin.Core.Events.IEventEnvelope.ClockType
+  - Virtufin.Core.Events.IEventEnvelope.CorrelationId
+  - Virtufin.Core.Events.IEventEnvelope.EventTime
+  - Virtufin.Core.Events.IEventEnvelope.MarketLane
+  - Virtufin.Core.Events.IEventEnvelope.MarketSelector
+  - Virtufin.Core.Events.IEventEnvelope.PortfolioLane
+  - Virtufin.Core.Events.IEventEnvelope.RunId
+  - Virtufin.Core.Events.IEventEnvelope.ScenarioId
+  - Virtufin.Core.Events.IEventEnvelope.ScenarioName
+  - Virtufin.Core.Events.IEventEnvelope.StrategyLane
+  - Virtufin.Core.Events.IEventEnvelope.WallTime
+  langs:
+  - csharp
+  - vb
+  name: IEventEnvelope
+  nameWithType: IEventEnvelope
+  fullName: Virtufin.Core.Events.IEventEnvelope
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/IEventEnvelope.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IEventEnvelope
+    path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
+    startLine: 14
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: >-
+    The transport envelope carried alongside every event. Combines the routing
+
+    context (<xref href="Virtufin.Core.Events.IEventEnvelope.ScenarioId" data-throw-if-not-resolved="false"></xref>, <xref href="Virtufin.Core.Events.Lane" data-throw-if-not-resolved="false"></xref> triplet), the clock
+
+    interpretation (<xref href="Virtufin.Core.Events.IEventEnvelope.ClockType" data-throw-if-not-resolved="false"></xref>, <xref href="Virtufin.Core.Events.IEventEnvelope.EventTime" data-throw-if-not-resolved="false"></xref>),
+
+    audit/processing metadata (<xref href="Virtufin.Core.Events.IEventEnvelope.WallTime" data-throw-if-not-resolved="false"></xref>, <xref href="Virtufin.Core.Events.IEventEnvelope.CorrelationId" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="Virtufin.Core.Events.IEventEnvelope.RunId" data-throw-if-not-resolved="false"></xref>), and a human-readable <xref href="Virtufin.Core.Events.IEventEnvelope.ScenarioName" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    <xref href="Virtufin.Core.Events.IEventEnvelope.EventTime" data-throw-if-not-resolved="false"></xref> lives in the business domain clock (wall time for
+
+    <code>act</code> scenarios, synthetic time for <code>hyp</code>); <xref href="Virtufin.Core.Events.IEventEnvelope.WallTime" data-throw-if-not-resolved="false"></xref>
+
+    is always real wall-clock time used only for audit and latency tracking.
+  example: []
+  syntax:
+    content: 'public interface IEventEnvelope : IEquatable<IEventEnvelope>'
+    content.vb: Public Interface IEventEnvelope Inherits IEquatable(Of IEventEnvelope)
+  derivedClasses:
+  - Virtufin.Base.Events.EventEnvelope
+  inheritedMembers:
+  - System.IEquatable{Virtufin.Core.Events.IEventEnvelope}.Equals(Virtufin.Core.Events.IEventEnvelope)
+  extensionMethods:
+  - Virtufin.Core.Events.IEventEnvelope.Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(System.Object,System.String)
+- uid: Virtufin.Core.Events.IEventEnvelope.ScenarioId
+  commentId: P:Virtufin.Core.Events.IEventEnvelope.ScenarioId
+  id: ScenarioId
+  parent: Virtufin.Core.Events.IEventEnvelope
+  langs:
+  - csharp
+  - vb
+  name: ScenarioId
+  nameWithType: IEventEnvelope.ScenarioId
+  fullName: Virtufin.Core.Events.IEventEnvelope.ScenarioId
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/IEventEnvelope.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ScenarioId
+    path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: Opaque scenario id; absent on market events.
+  example: []
+  syntax:
+    content: string? ScenarioId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property ScenarioId As String
+  overload: Virtufin.Core.Events.IEventEnvelope.ScenarioId*
+- uid: Virtufin.Core.Events.IEventEnvelope.ScenarioName
+  commentId: P:Virtufin.Core.Events.IEventEnvelope.ScenarioName
+  id: ScenarioName
+  parent: Virtufin.Core.Events.IEventEnvelope
+  langs:
+  - csharp
+  - vb
+  name: ScenarioName
+  nameWithType: IEventEnvelope.ScenarioName
+  fullName: Virtufin.Core.Events.IEventEnvelope.ScenarioName
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/IEventEnvelope.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ScenarioName
+    path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: Human-readable scenario name (e.g. <code>BACKTEST_BTC_2021</code>); absent on market events.
+  example: []
+  syntax:
+    content: string? ScenarioName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property ScenarioName As String
+  overload: Virtufin.Core.Events.IEventEnvelope.ScenarioName*
+- uid: Virtufin.Core.Events.IEventEnvelope.MarketLane
+  commentId: P:Virtufin.Core.Events.IEventEnvelope.MarketLane
+  id: MarketLane
+  parent: Virtufin.Core.Events.IEventEnvelope
+  langs:
+  - csharp
+  - vb
+  name: MarketLane
+  nameWithType: IEventEnvelope.MarketLane
+  fullName: Virtufin.Core.Events.IEventEnvelope.MarketLane
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/IEventEnvelope.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: MarketLane
+    path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
+    startLine: 23
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: Market component lane (<code>act</code> or <code>hyp</code>).
+  example: []
+  syntax:
+    content: Lane MarketLane { get; }
+    parameters: []
+    return:
+      type: Virtufin.Core.Events.Lane
+    content.vb: ReadOnly Property MarketLane As Lane
+  overload: Virtufin.Core.Events.IEventEnvelope.MarketLane*
+- uid: Virtufin.Core.Events.IEventEnvelope.MarketSelector
+  commentId: P:Virtufin.Core.Events.IEventEnvelope.MarketSelector
+  id: MarketSelector
+  parent: Virtufin.Core.Events.IEventEnvelope
+  langs:
+  - csharp
+  - vb
+  name: MarketSelector
+  nameWithType: IEventEnvelope.MarketSelector
+  fullName: Virtufin.Core.Events.IEventEnvelope.MarketSelector
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/IEventEnvelope.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: MarketSelector
+    path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: Market selector; null when <xref href="Virtufin.Core.Events.IEventEnvelope.MarketLane" data-throw-if-not-resolved="false"></xref> is <code>act</code>.
+  example: []
+  syntax:
+    content: string? MarketSelector { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property MarketSelector As String
+  overload: Virtufin.Core.Events.IEventEnvelope.MarketSelector*
+- uid: Virtufin.Core.Events.IEventEnvelope.PortfolioLane
+  commentId: P:Virtufin.Core.Events.IEventEnvelope.PortfolioLane
+  id: PortfolioLane
+  parent: Virtufin.Core.Events.IEventEnvelope
+  langs:
+  - csharp
+  - vb
+  name: PortfolioLane
+  nameWithType: IEventEnvelope.PortfolioLane
+  fullName: Virtufin.Core.Events.IEventEnvelope.PortfolioLane
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/IEventEnvelope.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: PortfolioLane
+    path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
+    startLine: 29
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: Portfolio lane (<code>act</code> or <code>hyp</code>); absent on market events.
+  example: []
+  syntax:
+    content: Lane? PortfolioLane { get; }
+    parameters: []
+    return:
+      type: System.Nullable{Virtufin.Core.Events.Lane}
+    content.vb: ReadOnly Property PortfolioLane As Lane?
+  overload: Virtufin.Core.Events.IEventEnvelope.PortfolioLane*
+- uid: Virtufin.Core.Events.IEventEnvelope.StrategyLane
+  commentId: P:Virtufin.Core.Events.IEventEnvelope.StrategyLane
+  id: StrategyLane
+  parent: Virtufin.Core.Events.IEventEnvelope
+  langs:
+  - csharp
+  - vb
+  name: StrategyLane
+  nameWithType: IEventEnvelope.StrategyLane
+  fullName: Virtufin.Core.Events.IEventEnvelope.StrategyLane
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/IEventEnvelope.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: StrategyLane
+    path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
+    startLine: 32
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: Strategy lane (<code>act</code> or <code>hyp</code>); absent on market events.
+  example: []
+  syntax:
+    content: Lane? StrategyLane { get; }
+    parameters: []
+    return:
+      type: System.Nullable{Virtufin.Core.Events.Lane}
+    content.vb: ReadOnly Property StrategyLane As Lane?
+  overload: Virtufin.Core.Events.IEventEnvelope.StrategyLane*
+- uid: Virtufin.Core.Events.IEventEnvelope.ClockType
+  commentId: P:Virtufin.Core.Events.IEventEnvelope.ClockType
+  id: ClockType
+  parent: Virtufin.Core.Events.IEventEnvelope
+  langs:
+  - csharp
+  - vb
+  name: ClockType
+  nameWithType: IEventEnvelope.ClockType
+  fullName: Virtufin.Core.Events.IEventEnvelope.ClockType
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/IEventEnvelope.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ClockType
+    path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
+    startLine: 35
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: Clock interpretation for <xref href="Virtufin.Core.Events.IEventEnvelope.EventTime" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: ClockType ClockType { get; }
+    parameters: []
+    return:
+      type: Virtufin.Core.Events.ClockType
+    content.vb: ReadOnly Property ClockType As ClockType
+  overload: Virtufin.Core.Events.IEventEnvelope.ClockType*
+- uid: Virtufin.Core.Events.IEventEnvelope.EventTime
+  commentId: P:Virtufin.Core.Events.IEventEnvelope.EventTime
+  id: EventTime
+  parent: Virtufin.Core.Events.IEventEnvelope
+  langs:
+  - csharp
+  - vb
+  name: EventTime
+  nameWithType: IEventEnvelope.EventTime
+  fullName: Virtufin.Core.Events.IEventEnvelope.EventTime
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/IEventEnvelope.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: EventTime
+    path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
+    startLine: 38
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: Time at which the business-domain fact occurred.
+  example: []
+  syntax:
+    content: DateTimeOffset EventTime { get; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: ReadOnly Property EventTime As DateTimeOffset
+  overload: Virtufin.Core.Events.IEventEnvelope.EventTime*
+- uid: Virtufin.Core.Events.IEventEnvelope.WallTime
+  commentId: P:Virtufin.Core.Events.IEventEnvelope.WallTime
+  id: WallTime
+  parent: Virtufin.Core.Events.IEventEnvelope
+  langs:
+  - csharp
+  - vb
+  name: WallTime
+  nameWithType: IEventEnvelope.WallTime
+  fullName: Virtufin.Core.Events.IEventEnvelope.WallTime
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/IEventEnvelope.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: WallTime
+    path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
+    startLine: 41
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: Real wall-clock time the event was processed/observed.
+  example: []
+  syntax:
+    content: DateTimeOffset WallTime { get; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: ReadOnly Property WallTime As DateTimeOffset
+  overload: Virtufin.Core.Events.IEventEnvelope.WallTime*
+- uid: Virtufin.Core.Events.IEventEnvelope.CorrelationId
+  commentId: P:Virtufin.Core.Events.IEventEnvelope.CorrelationId
+  id: CorrelationId
+  parent: Virtufin.Core.Events.IEventEnvelope
+  langs:
+  - csharp
+  - vb
+  name: CorrelationId
+  nameWithType: IEventEnvelope.CorrelationId
+  fullName: Virtufin.Core.Events.IEventEnvelope.CorrelationId
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/IEventEnvelope.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: CorrelationId
+    path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
+    startLine: 44
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: UUID tying the event back to its originating action.
+  example: []
+  syntax:
+    content: Guid CorrelationId { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: ReadOnly Property CorrelationId As Guid
+  overload: Virtufin.Core.Events.IEventEnvelope.CorrelationId*
+- uid: Virtufin.Core.Events.IEventEnvelope.RunId
+  commentId: P:Virtufin.Core.Events.IEventEnvelope.RunId
+  id: RunId
+  parent: Virtufin.Core.Events.IEventEnvelope
+  langs:
+  - csharp
+  - vb
+  name: RunId
+  nameWithType: IEventEnvelope.RunId
+  fullName: Virtufin.Core.Events.IEventEnvelope.RunId
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/IEventEnvelope.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: RunId
+    path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
+    startLine: 47
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: UUID disambiguating concurrent runs of the same scenario.
+  example: []
+  syntax:
+    content: Guid RunId { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: ReadOnly Property RunId As Guid
+  overload: Virtufin.Core.Events.IEventEnvelope.RunId*
+references:
+- uid: Virtufin.Core.Events.IEventEnvelope.ScenarioId
+  commentId: P:Virtufin.Core.Events.IEventEnvelope.ScenarioId
+  parent: Virtufin.Core.Events.IEventEnvelope
+  href: Virtufin.Core.Events.IEventEnvelope.html#Virtufin_Core_Events_IEventEnvelope_ScenarioId
+  name: ScenarioId
+  nameWithType: IEventEnvelope.ScenarioId
+  fullName: Virtufin.Core.Events.IEventEnvelope.ScenarioId
+- uid: Virtufin.Core.Events.Lane
+  commentId: T:Virtufin.Core.Events.Lane
+  parent: Virtufin.Core.Events
+  href: Virtufin.Core.Events.Lane.html
+  name: Lane
+  nameWithType: Lane
+  fullName: Virtufin.Core.Events.Lane
+- uid: Virtufin.Core.Events.IEventEnvelope.ClockType
+  commentId: P:Virtufin.Core.Events.IEventEnvelope.ClockType
+  parent: Virtufin.Core.Events.IEventEnvelope
+  href: Virtufin.Core.Events.IEventEnvelope.html#Virtufin_Core_Events_IEventEnvelope_ClockType
+  name: ClockType
+  nameWithType: IEventEnvelope.ClockType
+  fullName: Virtufin.Core.Events.IEventEnvelope.ClockType
+- uid: Virtufin.Core.Events.IEventEnvelope.EventTime
+  commentId: P:Virtufin.Core.Events.IEventEnvelope.EventTime
+  parent: Virtufin.Core.Events.IEventEnvelope
+  href: Virtufin.Core.Events.IEventEnvelope.html#Virtufin_Core_Events_IEventEnvelope_EventTime
+  name: EventTime
+  nameWithType: IEventEnvelope.EventTime
+  fullName: Virtufin.Core.Events.IEventEnvelope.EventTime
+- uid: Virtufin.Core.Events.IEventEnvelope.WallTime
+  commentId: P:Virtufin.Core.Events.IEventEnvelope.WallTime
+  parent: Virtufin.Core.Events.IEventEnvelope
+  href: Virtufin.Core.Events.IEventEnvelope.html#Virtufin_Core_Events_IEventEnvelope_WallTime
+  name: WallTime
+  nameWithType: IEventEnvelope.WallTime
+  fullName: Virtufin.Core.Events.IEventEnvelope.WallTime
+- uid: Virtufin.Core.Events.IEventEnvelope.CorrelationId
+  commentId: P:Virtufin.Core.Events.IEventEnvelope.CorrelationId
+  parent: Virtufin.Core.Events.IEventEnvelope
+  href: Virtufin.Core.Events.IEventEnvelope.html#Virtufin_Core_Events_IEventEnvelope_CorrelationId
+  name: CorrelationId
+  nameWithType: IEventEnvelope.CorrelationId
+  fullName: Virtufin.Core.Events.IEventEnvelope.CorrelationId
+- uid: Virtufin.Core.Events.IEventEnvelope.RunId
+  commentId: P:Virtufin.Core.Events.IEventEnvelope.RunId
+  parent: Virtufin.Core.Events.IEventEnvelope
+  href: Virtufin.Core.Events.IEventEnvelope.html#Virtufin_Core_Events_IEventEnvelope_RunId
+  name: RunId
+  nameWithType: IEventEnvelope.RunId
+  fullName: Virtufin.Core.Events.IEventEnvelope.RunId
+- uid: Virtufin.Core.Events.IEventEnvelope.ScenarioName
+  commentId: P:Virtufin.Core.Events.IEventEnvelope.ScenarioName
+  parent: Virtufin.Core.Events.IEventEnvelope
+  href: Virtufin.Core.Events.IEventEnvelope.html#Virtufin_Core_Events_IEventEnvelope_ScenarioName
+  name: ScenarioName
+  nameWithType: IEventEnvelope.ScenarioName
+  fullName: Virtufin.Core.Events.IEventEnvelope.ScenarioName
+- uid: Virtufin.Core.Events
+  commentId: N:Virtufin.Core.Events
+  href: Virtufin.html
+  name: Virtufin.Core.Events
+  nameWithType: Virtufin.Core.Events
+  fullName: Virtufin.Core.Events
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+- uid: System.IEquatable{Virtufin.Core.Events.IEventEnvelope}.Equals(Virtufin.Core.Events.IEventEnvelope)
+  commentId: M:System.IEquatable{Virtufin.Core.Events.IEventEnvelope}.Equals(Virtufin.Core.Events.IEventEnvelope)
+  parent: System.IEquatable{Virtufin.Core.Events.IEventEnvelope}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(IEventEnvelope)
+  nameWithType: IEquatable<IEventEnvelope>.Equals(IEventEnvelope)
+  fullName: System.IEquatable<Virtufin.Core.Events.IEventEnvelope>.Equals(Virtufin.Core.Events.IEventEnvelope)
+  nameWithType.vb: IEquatable(Of IEventEnvelope).Equals(IEventEnvelope)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Events.IEventEnvelope).Equals(Virtufin.Core.Events.IEventEnvelope)
+  spec.csharp:
+  - uid: System.IEquatable{Virtufin.Core.Events.IEventEnvelope}.Equals(Virtufin.Core.Events.IEventEnvelope)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Events.IEventEnvelope
+    name: IEventEnvelope
+    href: Virtufin.Core.Events.IEventEnvelope.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Virtufin.Core.Events.IEventEnvelope}.Equals(Virtufin.Core.Events.IEventEnvelope)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Events.IEventEnvelope
+    name: IEventEnvelope
+    href: Virtufin.Core.Events.IEventEnvelope.html
+  - name: )
+- uid: Virtufin.Core.Events.IEventEnvelope.Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(System.Object,System.String)
+  commentId: M:Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope,System.Object,System.String)
+  parent: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions
+  definition: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope,System.Object,System.String)
+  href: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.html#Virtufin_Base_Events_EventEnvelopeCloudEventExtensions_ToCloudEvent_Virtufin_Core_Events_IEventEnvelope_System_Object_System_String_
+  name: ToCloudEvent(IEventEnvelope, object, string)
+  nameWithType: EventEnvelopeCloudEventExtensions.ToCloudEvent(IEventEnvelope, object, string)
+  fullName: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope, object, string)
+  nameWithType.vb: EventEnvelopeCloudEventExtensions.ToCloudEvent(IEventEnvelope, Object, String)
+  fullName.vb: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope, Object, String)
+  name.vb: ToCloudEvent(IEventEnvelope, Object, String)
+  spec.csharp:
+  - uid: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope,System.Object,System.String)
+    name: ToCloudEvent
+    href: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.html#Virtufin_Base_Events_EventEnvelopeCloudEventExtensions_ToCloudEvent_Virtufin_Core_Events_IEventEnvelope_System_Object_System_String_
+  - name: (
+  - uid: Virtufin.Core.Events.IEventEnvelope
+    name: IEventEnvelope
+    href: Virtufin.Core.Events.IEventEnvelope.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope,System.Object,System.String)
+    name: ToCloudEvent
+    href: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.html#Virtufin_Base_Events_EventEnvelopeCloudEventExtensions_ToCloudEvent_Virtufin_Core_Events_IEventEnvelope_System_Object_System_String_
+  - name: (
+  - uid: Virtufin.Core.Events.IEventEnvelope
+    name: IEventEnvelope
+    href: Virtufin.Core.Events.IEventEnvelope.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Virtufin.Core.Events.IEventEnvelope
+  commentId: T:Virtufin.Core.Events.IEventEnvelope
+  parent: Virtufin.Core.Events
+  href: Virtufin.Core.Events.IEventEnvelope.html
+  name: IEventEnvelope
+  nameWithType: IEventEnvelope
+  fullName: Virtufin.Core.Events.IEventEnvelope
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IEquatable{Virtufin.Core.Events.IEventEnvelope}
+  commentId: T:System.IEquatable{Virtufin.Core.Events.IEventEnvelope}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<IEventEnvelope>
+  nameWithType: IEquatable<IEventEnvelope>
+  fullName: System.IEquatable<Virtufin.Core.Events.IEventEnvelope>
+  nameWithType.vb: IEquatable(Of IEventEnvelope)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Events.IEventEnvelope)
+  name.vb: IEquatable(Of IEventEnvelope)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Events.IEventEnvelope
+    name: IEventEnvelope
+    href: Virtufin.Core.Events.IEventEnvelope.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Events.IEventEnvelope
+    name: IEventEnvelope
+    href: Virtufin.Core.Events.IEventEnvelope.html
+  - name: )
+- uid: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope,System.Object,System.String)
+  commentId: M:Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope,System.Object,System.String)
+  isExternal: true
+  href: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.html#Virtufin_Base_Events_EventEnvelopeCloudEventExtensions_ToCloudEvent_Virtufin_Core_Events_IEventEnvelope_System_Object_System_String_
+  name: ToCloudEvent(IEventEnvelope, object, string)
+  nameWithType: EventEnvelopeCloudEventExtensions.ToCloudEvent(IEventEnvelope, object, string)
+  fullName: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope, object, string)
+  nameWithType.vb: EventEnvelopeCloudEventExtensions.ToCloudEvent(IEventEnvelope, Object, String)
+  fullName.vb: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope, Object, String)
+  name.vb: ToCloudEvent(IEventEnvelope, Object, String)
+  spec.csharp:
+  - uid: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope,System.Object,System.String)
+    name: ToCloudEvent
+    href: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.html#Virtufin_Base_Events_EventEnvelopeCloudEventExtensions_ToCloudEvent_Virtufin_Core_Events_IEventEnvelope_System_Object_System_String_
+  - name: (
+  - uid: Virtufin.Core.Events.IEventEnvelope
+    name: IEventEnvelope
+    href: Virtufin.Core.Events.IEventEnvelope.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope,System.Object,System.String)
+    name: ToCloudEvent
+    href: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.html#Virtufin_Base_Events_EventEnvelopeCloudEventExtensions_ToCloudEvent_Virtufin_Core_Events_IEventEnvelope_System_Object_System_String_
+  - name: (
+  - uid: Virtufin.Core.Events.IEventEnvelope
+    name: IEventEnvelope
+    href: Virtufin.Core.Events.IEventEnvelope.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions
+  commentId: T:Virtufin.Base.Events.EventEnvelopeCloudEventExtensions
+  parent: Virtufin.Base.Events
+  href: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.html
+  name: EventEnvelopeCloudEventExtensions
+  nameWithType: EventEnvelopeCloudEventExtensions
+  fullName: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Base.Events
+  commentId: N:Virtufin.Base.Events
+  href: Virtufin.html
+  name: Virtufin.Base.Events
+  nameWithType: Virtufin.Base.Events
+  fullName: Virtufin.Base.Events
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html
+- uid: Virtufin.Core.Events.IEventEnvelope.ScenarioId*
+  commentId: Overload:Virtufin.Core.Events.IEventEnvelope.ScenarioId
+  href: Virtufin.Core.Events.IEventEnvelope.html#Virtufin_Core_Events_IEventEnvelope_ScenarioId
+  name: ScenarioId
+  nameWithType: IEventEnvelope.ScenarioId
+  fullName: Virtufin.Core.Events.IEventEnvelope.ScenarioId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Virtufin.Core.Events.IEventEnvelope.ScenarioName*
+  commentId: Overload:Virtufin.Core.Events.IEventEnvelope.ScenarioName
+  href: Virtufin.Core.Events.IEventEnvelope.html#Virtufin_Core_Events_IEventEnvelope_ScenarioName
+  name: ScenarioName
+  nameWithType: IEventEnvelope.ScenarioName
+  fullName: Virtufin.Core.Events.IEventEnvelope.ScenarioName
+- uid: Virtufin.Core.Events.IEventEnvelope.MarketLane*
+  commentId: Overload:Virtufin.Core.Events.IEventEnvelope.MarketLane
+  href: Virtufin.Core.Events.IEventEnvelope.html#Virtufin_Core_Events_IEventEnvelope_MarketLane
+  name: MarketLane
+  nameWithType: IEventEnvelope.MarketLane
+  fullName: Virtufin.Core.Events.IEventEnvelope.MarketLane
+- uid: Virtufin.Core.Events.IEventEnvelope.MarketLane
+  commentId: P:Virtufin.Core.Events.IEventEnvelope.MarketLane
+  parent: Virtufin.Core.Events.IEventEnvelope
+  href: Virtufin.Core.Events.IEventEnvelope.html#Virtufin_Core_Events_IEventEnvelope_MarketLane
+  name: MarketLane
+  nameWithType: IEventEnvelope.MarketLane
+  fullName: Virtufin.Core.Events.IEventEnvelope.MarketLane
+- uid: Virtufin.Core.Events.IEventEnvelope.MarketSelector*
+  commentId: Overload:Virtufin.Core.Events.IEventEnvelope.MarketSelector
+  href: Virtufin.Core.Events.IEventEnvelope.html#Virtufin_Core_Events_IEventEnvelope_MarketSelector
+  name: MarketSelector
+  nameWithType: IEventEnvelope.MarketSelector
+  fullName: Virtufin.Core.Events.IEventEnvelope.MarketSelector
+- uid: Virtufin.Core.Events.IEventEnvelope.PortfolioLane*
+  commentId: Overload:Virtufin.Core.Events.IEventEnvelope.PortfolioLane
+  href: Virtufin.Core.Events.IEventEnvelope.html#Virtufin_Core_Events_IEventEnvelope_PortfolioLane
+  name: PortfolioLane
+  nameWithType: IEventEnvelope.PortfolioLane
+  fullName: Virtufin.Core.Events.IEventEnvelope.PortfolioLane
+- uid: System.Nullable{Virtufin.Core.Events.Lane}
+  commentId: T:System.Nullable{Virtufin.Core.Events.Lane}
+  parent: System
+  definition: System.Nullable`1
+  href: Virtufin.Core.Events.Lane.html
+  name: Lane?
+  nameWithType: Lane?
+  fullName: Virtufin.Core.Events.Lane?
+  spec.csharp:
+  - uid: Virtufin.Core.Events.Lane
+    name: Lane
+    href: Virtufin.Core.Events.Lane.html
+  - name: '?'
+  spec.vb:
+  - uid: Virtufin.Core.Events.Lane
+    name: Lane
+    href: Virtufin.Core.Events.Lane.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Core.Events.IEventEnvelope.StrategyLane*
+  commentId: Overload:Virtufin.Core.Events.IEventEnvelope.StrategyLane
+  href: Virtufin.Core.Events.IEventEnvelope.html#Virtufin_Core_Events_IEventEnvelope_StrategyLane
+  name: StrategyLane
+  nameWithType: IEventEnvelope.StrategyLane
+  fullName: Virtufin.Core.Events.IEventEnvelope.StrategyLane
+- uid: Virtufin.Core.Events.IEventEnvelope.ClockType*
+  commentId: Overload:Virtufin.Core.Events.IEventEnvelope.ClockType
+  href: Virtufin.Core.Events.IEventEnvelope.html#Virtufin_Core_Events_IEventEnvelope_ClockType
+  name: ClockType
+  nameWithType: IEventEnvelope.ClockType
+  fullName: Virtufin.Core.Events.IEventEnvelope.ClockType
+- uid: Virtufin.Core.Events.ClockType
+  commentId: T:Virtufin.Core.Events.ClockType
+  parent: Virtufin.Core.Events
+  href: Virtufin.Core.Events.ClockType.html
+  name: ClockType
+  nameWithType: ClockType
+  fullName: Virtufin.Core.Events.ClockType
+- uid: Virtufin.Core.Events.IEventEnvelope.EventTime*
+  commentId: Overload:Virtufin.Core.Events.IEventEnvelope.EventTime
+  href: Virtufin.Core.Events.IEventEnvelope.html#Virtufin_Core_Events_IEventEnvelope_EventTime
+  name: EventTime
+  nameWithType: IEventEnvelope.EventTime
+  fullName: Virtufin.Core.Events.IEventEnvelope.EventTime
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Virtufin.Core.Events.IEventEnvelope.WallTime*
+  commentId: Overload:Virtufin.Core.Events.IEventEnvelope.WallTime
+  href: Virtufin.Core.Events.IEventEnvelope.html#Virtufin_Core_Events_IEventEnvelope_WallTime
+  name: WallTime
+  nameWithType: IEventEnvelope.WallTime
+  fullName: Virtufin.Core.Events.IEventEnvelope.WallTime
+- uid: Virtufin.Core.Events.IEventEnvelope.CorrelationId*
+  commentId: Overload:Virtufin.Core.Events.IEventEnvelope.CorrelationId
+  href: Virtufin.Core.Events.IEventEnvelope.html#Virtufin_Core_Events_IEventEnvelope_CorrelationId
+  name: CorrelationId
+  nameWithType: IEventEnvelope.CorrelationId
+  fullName: Virtufin.Core.Events.IEventEnvelope.CorrelationId
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Virtufin.Core.Events.IEventEnvelope.RunId*
+  commentId: Overload:Virtufin.Core.Events.IEventEnvelope.RunId
+  href: Virtufin.Core.Events.IEventEnvelope.html#Virtufin_Core_Events_IEventEnvelope_RunId
+  name: RunId
+  nameWithType: IEventEnvelope.RunId
+  fullName: Virtufin.Core.Events.IEventEnvelope.RunId

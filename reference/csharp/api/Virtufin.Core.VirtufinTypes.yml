@@ -1,0 +1,55 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.VirtufinTypes
+  commentId: N:Virtufin.Core.VirtufinTypes
+  id: VirtufinTypes
+  parent: Virtufin.Core
+  children:
+  - Virtufin.Core.VirtufinTypes.IVirtufinTypes
+  langs:
+  - csharp
+  - vb
+  name: Virtufin.Core.VirtufinTypes
+  nameWithType: Virtufin.Core.VirtufinTypes
+  fullName: Virtufin.Core.VirtufinTypes
+  type: Namespace
+  assemblies:
+  - Virtufin.Core
+references:
+- uid: Virtufin.Core.VirtufinTypes.IVirtufinTypes
+  commentId: T:Virtufin.Core.VirtufinTypes.IVirtufinTypes
+  parent: Virtufin.Core.VirtufinTypes
+  href: Virtufin.Core.VirtufinTypes.IVirtufinTypes.html
+  name: IVirtufinTypes
+  nameWithType: IVirtufinTypes
+  fullName: Virtufin.Core.VirtufinTypes.IVirtufinTypes
+- uid: Virtufin.Core.VirtufinTypes
+  commentId: N:Virtufin.Core.VirtufinTypes
+  href: Virtufin.html
+  name: Virtufin.Core.VirtufinTypes
+  nameWithType: Virtufin.Core.VirtufinTypes
+  fullName: Virtufin.Core.VirtufinTypes
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.VirtufinTypes
+    name: VirtufinTypes
+    href: Virtufin.Core.VirtufinTypes.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.VirtufinTypes
+    name: VirtufinTypes
+    href: Virtufin.Core.VirtufinTypes.html

@@ -1,0 +1,222 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  id: Position
+  parent: Virtufin.Core
+  children:
+  - Virtufin.Core.Position.BuyOrSell
+  - Virtufin.Core.Position.DecimalAmount
+  - Virtufin.Core.Position.DecimalQuantity`1
+  - Virtufin.Core.Position.IAmount`1
+  - Virtufin.Core.Position.IAsCardinal`1
+  - Virtufin.Core.Position.IOrderBook
+  - Virtufin.Core.Position.IQuantity`2
+  - Virtufin.Core.Position.IUnit
+  - Virtufin.Core.Position.LimitOrMarketOrder
+  - Virtufin.Core.Position.SimpleOrder`1
+  langs:
+  - csharp
+  - vb
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  type: Namespace
+  assemblies:
+  - Virtufin.Core
+references:
+- uid: Virtufin.Core.Position.BuyOrSell
+  commentId: T:Virtufin.Core.Position.BuyOrSell
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.BuyOrSell.html
+  name: BuyOrSell
+  nameWithType: BuyOrSell
+  fullName: Virtufin.Core.Position.BuyOrSell
+- uid: Virtufin.Core.Position.DecimalAmount
+  commentId: T:Virtufin.Core.Position.DecimalAmount
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.DecimalAmount.html
+  name: DecimalAmount
+  nameWithType: DecimalAmount
+  fullName: Virtufin.Core.Position.DecimalAmount
+- uid: Virtufin.Core.Position.DecimalQuantity`1
+  commentId: T:Virtufin.Core.Position.DecimalQuantity`1
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.DecimalQuantity-1.html
+  name: DecimalQuantity<U>
+  nameWithType: DecimalQuantity<U>
+  fullName: Virtufin.Core.Position.DecimalQuantity<U>
+  nameWithType.vb: DecimalQuantity(Of U)
+  fullName.vb: Virtufin.Core.Position.DecimalQuantity(Of U)
+  name.vb: DecimalQuantity(Of U)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.DecimalQuantity`1
+    name: DecimalQuantity
+    href: Virtufin.Core.Position.DecimalQuantity-1.html
+  - name: <
+  - name: U
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.DecimalQuantity`1
+    name: DecimalQuantity
+    href: Virtufin.Core.Position.DecimalQuantity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: U
+  - name: )
+- uid: Virtufin.Core.Position.IAmount`1
+  commentId: T:Virtufin.Core.Position.IAmount`1
+  href: Virtufin.Core.Position.IAmount-1.html
+  name: IAmount<TValue>
+  nameWithType: IAmount<TValue>
+  fullName: Virtufin.Core.Position.IAmount<TValue>
+  nameWithType.vb: IAmount(Of TValue)
+  fullName.vb: Virtufin.Core.Position.IAmount(Of TValue)
+  name.vb: IAmount(Of TValue)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IAmount`1
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount-1.html
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.IAmount`1
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Virtufin.Core.Position.IAsCardinal`1
+  commentId: T:Virtufin.Core.Position.IAsCardinal`1
+  href: Virtufin.Core.Position.IAsCardinal-1.html
+  name: IAsCardinal<TCardinal>
+  nameWithType: IAsCardinal<TCardinal>
+  fullName: Virtufin.Core.Position.IAsCardinal<TCardinal>
+  nameWithType.vb: IAsCardinal(Of TCardinal)
+  fullName.vb: Virtufin.Core.Position.IAsCardinal(Of TCardinal)
+  name.vb: IAsCardinal(Of TCardinal)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IAsCardinal`1
+    name: IAsCardinal
+    href: Virtufin.Core.Position.IAsCardinal-1.html
+  - name: <
+  - name: TCardinal
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.IAsCardinal`1
+    name: IAsCardinal
+    href: Virtufin.Core.Position.IAsCardinal-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCardinal
+  - name: )
+- uid: Virtufin.Core.Position.IOrderBook
+  commentId: T:Virtufin.Core.Position.IOrderBook
+  href: Virtufin.Core.Position.IOrderBook.html
+  name: IOrderBook
+  nameWithType: IOrderBook
+  fullName: Virtufin.Core.Position.IOrderBook
+- uid: Virtufin.Core.Position.IQuantity`2
+  commentId: T:Virtufin.Core.Position.IQuantity`2
+  href: Virtufin.Core.Position.IQuantity-2.html
+  name: IQuantity<TAmount, TUnit>
+  nameWithType: IQuantity<TAmount, TUnit>
+  fullName: Virtufin.Core.Position.IQuantity<TAmount, TUnit>
+  nameWithType.vb: IQuantity(Of TAmount, TUnit)
+  fullName.vb: Virtufin.Core.Position.IQuantity(Of TAmount, TUnit)
+  name.vb: IQuantity(Of TAmount, TUnit)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IQuantity`2
+    name: IQuantity
+    href: Virtufin.Core.Position.IQuantity-2.html
+  - name: <
+  - name: TAmount
+  - name: ','
+  - name: " "
+  - name: TUnit
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.IQuantity`2
+    name: IQuantity
+    href: Virtufin.Core.Position.IQuantity-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAmount
+  - name: ','
+  - name: " "
+  - name: TUnit
+  - name: )
+- uid: Virtufin.Core.Position.IUnit
+  commentId: T:Virtufin.Core.Position.IUnit
+  href: Virtufin.Core.Position.IUnit.html
+  name: IUnit
+  nameWithType: IUnit
+  fullName: Virtufin.Core.Position.IUnit
+- uid: Virtufin.Core.Position.LimitOrMarketOrder
+  commentId: T:Virtufin.Core.Position.LimitOrMarketOrder
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.LimitOrMarketOrder.html
+  name: LimitOrMarketOrder
+  nameWithType: LimitOrMarketOrder
+  fullName: Virtufin.Core.Position.LimitOrMarketOrder
+- uid: Virtufin.Core.Position.SimpleOrder`1
+  commentId: T:Virtufin.Core.Position.SimpleOrder`1
+  href: Virtufin.Core.Position.SimpleOrder-1.html
+  name: SimpleOrder<U>
+  nameWithType: SimpleOrder<U>
+  fullName: Virtufin.Core.Position.SimpleOrder<U>
+  nameWithType.vb: SimpleOrder(Of U)
+  fullName.vb: Virtufin.Core.Position.SimpleOrder(Of U)
+  name.vb: SimpleOrder(Of U)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.SimpleOrder`1
+    name: SimpleOrder
+    href: Virtufin.Core.Position.SimpleOrder-1.html
+  - name: <
+  - name: U
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.SimpleOrder`1
+    name: SimpleOrder
+    href: Virtufin.Core.Position.SimpleOrder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: U
+  - name: )
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html

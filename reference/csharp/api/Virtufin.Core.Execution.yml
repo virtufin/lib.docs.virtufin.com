@@ -1,0 +1,93 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Execution
+  commentId: N:Virtufin.Core.Execution
+  id: Execution
+  parent: Virtufin.Core
+  children:
+  - Virtufin.Core.Execution.IExecutionState
+  - Virtufin.Core.Execution.IExecutor`3
+  langs:
+  - csharp
+  - vb
+  name: Virtufin.Core.Execution
+  nameWithType: Virtufin.Core.Execution
+  fullName: Virtufin.Core.Execution
+  type: Namespace
+  assemblies:
+  - Virtufin.Core
+references:
+- uid: Virtufin.Core.Execution.IExecutionState
+  commentId: T:Virtufin.Core.Execution.IExecutionState
+  parent: Virtufin.Core.Execution
+  href: Virtufin.Core.Execution.IExecutionState.html
+  name: IExecutionState
+  nameWithType: IExecutionState
+  fullName: Virtufin.Core.Execution.IExecutionState
+- uid: Virtufin.Core.Execution.IExecutor`3
+  commentId: T:Virtufin.Core.Execution.IExecutor`3
+  href: Virtufin.Core.Execution.IExecutor-3.html
+  name: IExecutor<TState, TAction, TEvent>
+  nameWithType: IExecutor<TState, TAction, TEvent>
+  fullName: Virtufin.Core.Execution.IExecutor<TState, TAction, TEvent>
+  nameWithType.vb: IExecutor(Of TState, TAction, TEvent)
+  fullName.vb: Virtufin.Core.Execution.IExecutor(Of TState, TAction, TEvent)
+  name.vb: IExecutor(Of TState, TAction, TEvent)
+  spec.csharp:
+  - uid: Virtufin.Core.Execution.IExecutor`3
+    name: IExecutor
+    href: Virtufin.Core.Execution.IExecutor-3.html
+  - name: <
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TAction
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Execution.IExecutor`3
+    name: IExecutor
+    href: Virtufin.Core.Execution.IExecutor-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TAction
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: )
+- uid: Virtufin.Core.Execution
+  commentId: N:Virtufin.Core.Execution
+  href: Virtufin.html
+  name: Virtufin.Core.Execution
+  nameWithType: Virtufin.Core.Execution
+  fullName: Virtufin.Core.Execution
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Execution
+    name: Execution
+    href: Virtufin.Core.Execution.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Execution
+    name: Execution
+    href: Virtufin.Core.Execution.html

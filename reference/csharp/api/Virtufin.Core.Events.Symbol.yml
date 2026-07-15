@@ -1,0 +1,803 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Events.Symbol
+  commentId: T:Virtufin.Core.Events.Symbol
+  id: Symbol
+  parent: Virtufin.Core.Events
+  children:
+  - Virtufin.Core.Events.Symbol.#ctor(System.String)
+  - Virtufin.Core.Events.Symbol.Equals(Virtufin.Core.Events.Symbol)
+  - Virtufin.Core.Events.Symbol.Equals(Virtufin.Core.Identifiers.IAssetIdentifier)
+  - Virtufin.Core.Events.Symbol.GetHashCode
+  - Virtufin.Core.Events.Symbol.ToString
+  - Virtufin.Core.Events.Symbol.Value
+  langs:
+  - csharp
+  - vb
+  name: Symbol
+  nameWithType: Symbol
+  fullName: Virtufin.Core.Events.Symbol
+  type: Struct
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/Symbol.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Symbol
+    path: ../../../src/Virtufin.Core/Events/Symbol.cs
+    startLine: 11
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: >-
+    Identifier for a tradeable instrument on a venue. Implements
+
+    <xref href="Virtufin.Core.Identifiers.IAssetIdentifier" data-throw-if-not-resolved="false"></xref> so any existing
+
+    Virtufin.Base.AssetIdentifier (currency, stock, etc.) can
+
+    also be used as a trade symbol.
+  example: []
+  syntax:
+    content: 'public readonly record struct Symbol : IAssetIdentifier, IEquatable<IAssetIdentifier>, IEquatable<Symbol>'
+    content.vb: Public Structure Symbol Implements IAssetIdentifier, IEquatable(Of IAssetIdentifier), IEquatable(Of Symbol)
+  implements:
+  - Virtufin.Core.Identifiers.IAssetIdentifier
+  - System.IEquatable{Virtufin.Core.Identifiers.IAssetIdentifier}
+  - System.IEquatable{Virtufin.Core.Events.Symbol}
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Virtufin.Core.Events.Symbol.#ctor(System.String)
+  commentId: M:Virtufin.Core.Events.Symbol.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Virtufin.Core.Events.Symbol
+  langs:
+  - csharp
+  - vb
+  name: Symbol(string)
+  nameWithType: Symbol.Symbol(string)
+  fullName: Virtufin.Core.Events.Symbol.Symbol(string)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/Symbol.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Core/Events/Symbol.cs
+    startLine: 11
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: >-
+    Identifier for a tradeable instrument on a venue. Implements
+
+    <xref href="Virtufin.Core.Identifiers.IAssetIdentifier" data-throw-if-not-resolved="false"></xref> so any existing
+
+    Virtufin.Base.AssetIdentifier (currency, stock, etc.) can
+
+    also be used as a trade symbol.
+  example: []
+  syntax:
+    content: public Symbol(string Value)
+    parameters:
+    - id: Value
+      type: System.String
+      description: Raw identifier string (e.g. <code>BTCUSDT</code>, <code>AAPL</code>).
+    content.vb: Public Sub New(Value As String)
+  overload: Virtufin.Core.Events.Symbol.#ctor*
+  nameWithType.vb: Symbol.New(String)
+  fullName.vb: Virtufin.Core.Events.Symbol.New(String)
+  name.vb: New(String)
+- uid: Virtufin.Core.Events.Symbol.Value
+  commentId: P:Virtufin.Core.Events.Symbol.Value
+  id: Value
+  parent: Virtufin.Core.Events.Symbol
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: Symbol.Value
+  fullName: Virtufin.Core.Events.Symbol.Value
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/Symbol.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Value
+    path: ../../../src/Virtufin.Core/Events/Symbol.cs
+    startLine: 11
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: Raw identifier string (e.g. <code>BTCUSDT</code>, <code>AAPL</code>).
+  example: []
+  syntax:
+    content: public string Value { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Value As String
+  overload: Virtufin.Core.Events.Symbol.Value*
+- uid: Virtufin.Core.Events.Symbol.Equals(Virtufin.Core.Identifiers.IAssetIdentifier)
+  commentId: M:Virtufin.Core.Events.Symbol.Equals(Virtufin.Core.Identifiers.IAssetIdentifier)
+  id: Equals(Virtufin.Core.Identifiers.IAssetIdentifier)
+  parent: Virtufin.Core.Events.Symbol
+  langs:
+  - csharp
+  - vb
+  name: Equals(IAssetIdentifier?)
+  nameWithType: Symbol.Equals(IAssetIdentifier?)
+  fullName: Virtufin.Core.Events.Symbol.Equals(Virtufin.Core.Identifiers.IAssetIdentifier?)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/Symbol.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Equals
+    path: ../../../src/Virtufin.Core/Events/Symbol.cs
+    startLine: 14
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(IAssetIdentifier? other)
+    parameters:
+    - id: other
+      type: Virtufin.Core.Identifiers.IAssetIdentifier
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As IAssetIdentifier) As Boolean
+  overload: Virtufin.Core.Events.Symbol.Equals*
+  implements:
+  - System.IEquatable{Virtufin.Core.Identifiers.IAssetIdentifier}.Equals(Virtufin.Core.Identifiers.IAssetIdentifier)
+  nameWithType.vb: Symbol.Equals(IAssetIdentifier)
+  fullName.vb: Virtufin.Core.Events.Symbol.Equals(Virtufin.Core.Identifiers.IAssetIdentifier)
+  name.vb: Equals(IAssetIdentifier)
+- uid: Virtufin.Core.Events.Symbol.Equals(Virtufin.Core.Events.Symbol)
+  commentId: M:Virtufin.Core.Events.Symbol.Equals(Virtufin.Core.Events.Symbol)
+  id: Equals(Virtufin.Core.Events.Symbol)
+  parent: Virtufin.Core.Events.Symbol
+  langs:
+  - csharp
+  - vb
+  name: Equals(Symbol)
+  nameWithType: Symbol.Equals(Symbol)
+  fullName: Virtufin.Core.Events.Symbol.Equals(Virtufin.Core.Events.Symbol)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/Symbol.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Equals
+    path: ../../../src/Virtufin.Core/Events/Symbol.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(Symbol other)
+    parameters:
+    - id: other
+      type: Virtufin.Core.Events.Symbol
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As Symbol) As Boolean
+  overload: Virtufin.Core.Events.Symbol.Equals*
+  implements:
+  - System.IEquatable{Virtufin.Core.Events.Symbol}.Equals(Virtufin.Core.Events.Symbol)
+- uid: Virtufin.Core.Events.Symbol.GetHashCode
+  commentId: M:Virtufin.Core.Events.Symbol.GetHashCode
+  id: GetHashCode
+  parent: Virtufin.Core.Events.Symbol
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Symbol.GetHashCode()
+  fullName: Virtufin.Core.Events.Symbol.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/Symbol.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GetHashCode
+    path: ../../../src/Virtufin.Core/Events/Symbol.cs
+    startLine: 21
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: Returns the hash code for this instance.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer that is the hash code for this instance.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Virtufin.Core.Events.Symbol.GetHashCode*
+- uid: Virtufin.Core.Events.Symbol.ToString
+  commentId: M:Virtufin.Core.Events.Symbol.ToString
+  id: ToString
+  parent: Virtufin.Core.Events.Symbol
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Symbol.ToString()
+  fullName: Virtufin.Core.Events.Symbol.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/Symbol.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ToString
+    path: ../../../src/Virtufin.Core/Events/Symbol.cs
+    startLine: 24
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: Returns the fully qualified type name of this instance.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The fully qualified type name.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: Virtufin.Core.Events.Symbol.ToString*
+references:
+- uid: Virtufin.Core.Identifiers.IAssetIdentifier
+  commentId: T:Virtufin.Core.Identifiers.IAssetIdentifier
+  parent: Virtufin.Core.Identifiers
+  href: Virtufin.Core.Identifiers.IAssetIdentifier.html
+  name: IAssetIdentifier
+  nameWithType: IAssetIdentifier
+  fullName: Virtufin.Core.Identifiers.IAssetIdentifier
+- uid: Virtufin.Core.Events
+  commentId: N:Virtufin.Core.Events
+  href: Virtufin.html
+  name: Virtufin.Core.Events
+  nameWithType: Virtufin.Core.Events
+  fullName: Virtufin.Core.Events
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+- uid: System.IEquatable{Virtufin.Core.Identifiers.IAssetIdentifier}
+  commentId: T:System.IEquatable{Virtufin.Core.Identifiers.IAssetIdentifier}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<IAssetIdentifier>
+  nameWithType: IEquatable<IAssetIdentifier>
+  fullName: System.IEquatable<Virtufin.Core.Identifiers.IAssetIdentifier>
+  nameWithType.vb: IEquatable(Of IAssetIdentifier)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Identifiers.IAssetIdentifier)
+  name.vb: IEquatable(Of IAssetIdentifier)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Identifiers.IAssetIdentifier
+    name: IAssetIdentifier
+    href: Virtufin.Core.Identifiers.IAssetIdentifier.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Identifiers.IAssetIdentifier
+    name: IAssetIdentifier
+    href: Virtufin.Core.Identifiers.IAssetIdentifier.html
+  - name: )
+- uid: System.IEquatable{Virtufin.Core.Events.Symbol}
+  commentId: T:System.IEquatable{Virtufin.Core.Events.Symbol}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Symbol>
+  nameWithType: IEquatable<Symbol>
+  fullName: System.IEquatable<Virtufin.Core.Events.Symbol>
+  nameWithType.vb: IEquatable(Of Symbol)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Events.Symbol)
+  name.vb: IEquatable(Of Symbol)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Events.Symbol
+    name: Symbol
+    href: Virtufin.Core.Events.Symbol.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Events.Symbol
+    name: Symbol
+    href: Virtufin.Core.Events.Symbol.html
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Virtufin.Core.Identifiers
+  commentId: N:Virtufin.Core.Identifiers
+  href: Virtufin.html
+  name: Virtufin.Core.Identifiers
+  nameWithType: Virtufin.Core.Identifiers
+  fullName: Virtufin.Core.Identifiers
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.Core.Events.Symbol.#ctor*
+  commentId: Overload:Virtufin.Core.Events.Symbol.#ctor
+  href: Virtufin.Core.Events.Symbol.html#Virtufin_Core_Events_Symbol__ctor_System_String_
+  name: Symbol
+  nameWithType: Symbol.Symbol
+  fullName: Virtufin.Core.Events.Symbol.Symbol
+  nameWithType.vb: Symbol.New
+  fullName.vb: Virtufin.Core.Events.Symbol.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Virtufin.Core.Events.Symbol.Value*
+  commentId: Overload:Virtufin.Core.Events.Symbol.Value
+  href: Virtufin.Core.Events.Symbol.html#Virtufin_Core_Events_Symbol_Value
+  name: Value
+  nameWithType: Symbol.Value
+  fullName: Virtufin.Core.Events.Symbol.Value
+- uid: Virtufin.Core.Events.Symbol.Equals*
+  commentId: Overload:Virtufin.Core.Events.Symbol.Equals
+  href: Virtufin.Core.Events.Symbol.html#Virtufin_Core_Events_Symbol_Equals_Virtufin_Core_Identifiers_IAssetIdentifier_
+  name: Equals
+  nameWithType: Symbol.Equals
+  fullName: Virtufin.Core.Events.Symbol.Equals
+- uid: System.IEquatable{Virtufin.Core.Identifiers.IAssetIdentifier}.Equals(Virtufin.Core.Identifiers.IAssetIdentifier)
+  commentId: M:System.IEquatable{Virtufin.Core.Identifiers.IAssetIdentifier}.Equals(Virtufin.Core.Identifiers.IAssetIdentifier)
+  parent: System.IEquatable{Virtufin.Core.Identifiers.IAssetIdentifier}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(IAssetIdentifier)
+  nameWithType: IEquatable<IAssetIdentifier>.Equals(IAssetIdentifier)
+  fullName: System.IEquatable<Virtufin.Core.Identifiers.IAssetIdentifier>.Equals(Virtufin.Core.Identifiers.IAssetIdentifier)
+  nameWithType.vb: IEquatable(Of IAssetIdentifier).Equals(IAssetIdentifier)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Identifiers.IAssetIdentifier).Equals(Virtufin.Core.Identifiers.IAssetIdentifier)
+  spec.csharp:
+  - uid: System.IEquatable{Virtufin.Core.Identifiers.IAssetIdentifier}.Equals(Virtufin.Core.Identifiers.IAssetIdentifier)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Identifiers.IAssetIdentifier
+    name: IAssetIdentifier
+    href: Virtufin.Core.Identifiers.IAssetIdentifier.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Virtufin.Core.Identifiers.IAssetIdentifier}.Equals(Virtufin.Core.Identifiers.IAssetIdentifier)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Identifiers.IAssetIdentifier
+    name: IAssetIdentifier
+    href: Virtufin.Core.Identifiers.IAssetIdentifier.html
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IEquatable{Virtufin.Core.Events.Symbol}.Equals(Virtufin.Core.Events.Symbol)
+  commentId: M:System.IEquatable{Virtufin.Core.Events.Symbol}.Equals(Virtufin.Core.Events.Symbol)
+  parent: System.IEquatable{Virtufin.Core.Events.Symbol}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Symbol)
+  nameWithType: IEquatable<Symbol>.Equals(Symbol)
+  fullName: System.IEquatable<Virtufin.Core.Events.Symbol>.Equals(Virtufin.Core.Events.Symbol)
+  nameWithType.vb: IEquatable(Of Symbol).Equals(Symbol)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Events.Symbol).Equals(Virtufin.Core.Events.Symbol)
+  spec.csharp:
+  - uid: System.IEquatable{Virtufin.Core.Events.Symbol}.Equals(Virtufin.Core.Events.Symbol)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Events.Symbol
+    name: Symbol
+    href: Virtufin.Core.Events.Symbol.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Virtufin.Core.Events.Symbol}.Equals(Virtufin.Core.Events.Symbol)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Events.Symbol
+    name: Symbol
+    href: Virtufin.Core.Events.Symbol.html
+  - name: )
+- uid: Virtufin.Core.Events.Symbol
+  commentId: T:Virtufin.Core.Events.Symbol
+  parent: Virtufin.Core.Events
+  href: Virtufin.Core.Events.Symbol.html
+  name: Symbol
+  nameWithType: Symbol
+  fullName: Virtufin.Core.Events.Symbol
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: Virtufin.Core.Events.Symbol.GetHashCode*
+  commentId: Overload:Virtufin.Core.Events.Symbol.GetHashCode
+  href: Virtufin.Core.Events.Symbol.html#Virtufin_Core_Events_Symbol_GetHashCode
+  name: GetHashCode
+  nameWithType: Symbol.GetHashCode
+  fullName: Virtufin.Core.Events.Symbol.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: Virtufin.Core.Events.Symbol.ToString*
+  commentId: Overload:Virtufin.Core.Events.Symbol.ToString
+  href: Virtufin.Core.Events.Symbol.html#Virtufin_Core_Events_Symbol_ToString
+  name: ToString
+  nameWithType: Symbol.ToString
+  fullName: Virtufin.Core.Events.Symbol.ToString

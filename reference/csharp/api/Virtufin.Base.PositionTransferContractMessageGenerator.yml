@@ -1,0 +1,659 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.PositionTransferContractMessageGenerator
+  commentId: T:Virtufin.Base.PositionTransferContractMessageGenerator
+  id: PositionTransferContractMessageGenerator
+  parent: Virtufin.Base
+  children:
+  - Virtufin.Base.PositionTransferContractMessageGenerator.#ctor(Virtufin.Base.PositionTransferContract)
+  - Virtufin.Base.PositionTransferContractMessageGenerator.Contract
+  - Virtufin.Base.PositionTransferContractMessageGenerator.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp,Virtufin.Core.Contracts.IScenarioHistory)
+  langs:
+  - csharp
+  - vb
+  name: PositionTransferContractMessageGenerator
+  nameWithType: PositionTransferContractMessageGenerator
+  fullName: Virtufin.Base.PositionTransferContractMessageGenerator
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Base/PositionTransferContractMessageGenerator.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: PositionTransferContractMessageGenerator
+    path: ../../../src/Virtufin.Base/PositionTransferContractMessageGenerator.cs
+    startLine: 10
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: >-
+    Emits a single <xref href="Virtufin.Base.Transaction.Transfer" data-throw-if-not-resolved="false"></xref> wrapped in a
+
+    <xref href="Virtufin.Base.Message" data-throw-if-not-resolved="false"></xref> at the contract's maturity. Before or after the
+
+    maturity nothing is emitted.
+  example: []
+  syntax:
+    content: 'public sealed class PositionTransferContractMessageGenerator : IMessageGenerator'
+    content.vb: Public NotInheritable Class PositionTransferContractMessageGenerator Implements IMessageGenerator
+  inheritance:
+  - System.Object
+  implements:
+  - Virtufin.Core.Contracts.IMessageGenerator
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.Base.PositionTransferContractMessageGenerator.Contract
+  commentId: P:Virtufin.Base.PositionTransferContractMessageGenerator.Contract
+  id: Contract
+  parent: Virtufin.Base.PositionTransferContractMessageGenerator
+  langs:
+  - csharp
+  - vb
+  name: Contract
+  nameWithType: PositionTransferContractMessageGenerator.Contract
+  fullName: Virtufin.Base.PositionTransferContractMessageGenerator.Contract
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/PositionTransferContractMessageGenerator.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Contract
+    path: ../../../src/Virtufin.Base/PositionTransferContractMessageGenerator.cs
+    startLine: 13
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: The underlying contract.
+  example: []
+  syntax:
+    content: public PositionTransferContract Contract { get; }
+    parameters: []
+    return:
+      type: Virtufin.Base.PositionTransferContract
+    content.vb: Public ReadOnly Property Contract As PositionTransferContract
+  overload: Virtufin.Base.PositionTransferContractMessageGenerator.Contract*
+- uid: Virtufin.Base.PositionTransferContractMessageGenerator.#ctor(Virtufin.Base.PositionTransferContract)
+  commentId: M:Virtufin.Base.PositionTransferContractMessageGenerator.#ctor(Virtufin.Base.PositionTransferContract)
+  id: '#ctor(Virtufin.Base.PositionTransferContract)'
+  parent: Virtufin.Base.PositionTransferContractMessageGenerator
+  langs:
+  - csharp
+  - vb
+  name: PositionTransferContractMessageGenerator(PositionTransferContract)
+  nameWithType: PositionTransferContractMessageGenerator.PositionTransferContractMessageGenerator(PositionTransferContract)
+  fullName: Virtufin.Base.PositionTransferContractMessageGenerator.PositionTransferContractMessageGenerator(Virtufin.Base.PositionTransferContract)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Base/PositionTransferContractMessageGenerator.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Base/PositionTransferContractMessageGenerator.cs
+    startLine: 16
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Construct a generator for <code class="paramref">contract</code>.
+  example: []
+  syntax:
+    content: public PositionTransferContractMessageGenerator(PositionTransferContract contract)
+    parameters:
+    - id: contract
+      type: Virtufin.Base.PositionTransferContract
+    content.vb: Public Sub New(contract As PositionTransferContract)
+  overload: Virtufin.Base.PositionTransferContractMessageGenerator.#ctor*
+  nameWithType.vb: PositionTransferContractMessageGenerator.New(PositionTransferContract)
+  fullName.vb: Virtufin.Base.PositionTransferContractMessageGenerator.New(Virtufin.Base.PositionTransferContract)
+  name.vb: New(PositionTransferContract)
+- uid: Virtufin.Base.PositionTransferContractMessageGenerator.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp,Virtufin.Core.Contracts.IScenarioHistory)
+  commentId: M:Virtufin.Base.PositionTransferContractMessageGenerator.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp,Virtufin.Core.Contracts.IScenarioHistory)
+  id: GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp,Virtufin.Core.Contracts.IScenarioHistory)
+  parent: Virtufin.Base.PositionTransferContractMessageGenerator
+  langs:
+  - csharp
+  - vb
+  name: GenerateMessages(ITimeStamp, IScenarioHistory)
+  nameWithType: PositionTransferContractMessageGenerator.GenerateMessages(ITimeStamp, IScenarioHistory)
+  fullName: Virtufin.Base.PositionTransferContractMessageGenerator.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp, Virtufin.Core.Contracts.IScenarioHistory)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/PositionTransferContractMessageGenerator.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GenerateMessages
+    path: ../../../src/Virtufin.Base/PositionTransferContractMessageGenerator.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Compute the messages emitted at <code class="paramref">timePoint</code>.
+  example: []
+  syntax:
+    content: public IEnumerable<IMessage> GenerateMessages(ITimeStamp timePoint, IScenarioHistory scenarioHistory)
+    parameters:
+    - id: timePoint
+      type: Virtufin.Core.Identifiers.ITimeStamp
+      description: Time at which to evaluate the contract.
+    - id: scenarioHistory
+      type: Virtufin.Core.Contracts.IScenarioHistory
+      description: Prior history.
+    return:
+      type: System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage}
+    content.vb: Public Function GenerateMessages(timePoint As ITimeStamp, scenarioHistory As IScenarioHistory) As IEnumerable(Of IMessage)
+  overload: Virtufin.Base.PositionTransferContractMessageGenerator.GenerateMessages*
+  implements:
+  - Virtufin.Core.Contracts.IMessageGenerator.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp,Virtufin.Core.Contracts.IScenarioHistory)
+references:
+- uid: Virtufin.Base.Transaction.Transfer
+  commentId: T:Virtufin.Base.Transaction.Transfer
+  href: Virtufin.Base.Transaction.html
+  name: Transaction.Transfer
+  nameWithType: Transaction.Transfer
+  fullName: Virtufin.Base.Transaction.Transfer
+  spec.csharp:
+  - uid: Virtufin.Base.Transaction
+    name: Transaction
+    href: Virtufin.Base.Transaction.html
+  - name: .
+  - uid: Virtufin.Base.Transaction.Transfer
+    name: Transfer
+    href: Virtufin.Base.Transaction.Transfer.html
+  spec.vb:
+  - uid: Virtufin.Base.Transaction
+    name: Transaction
+    href: Virtufin.Base.Transaction.html
+  - name: .
+  - uid: Virtufin.Base.Transaction.Transfer
+    name: Transfer
+    href: Virtufin.Base.Transaction.Transfer.html
+- uid: Virtufin.Base.Message
+  commentId: T:Virtufin.Base.Message
+  href: Virtufin.Base.Message.html
+  name: Message
+  nameWithType: Message
+  fullName: Virtufin.Base.Message
+- uid: Virtufin.Base
+  commentId: N:Virtufin.Base
+  href: Virtufin.html
+  name: Virtufin.Base
+  nameWithType: Virtufin.Base
+  fullName: Virtufin.Base
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.Core.Contracts.IMessageGenerator
+  commentId: T:Virtufin.Core.Contracts.IMessageGenerator
+  parent: Virtufin.Core.Contracts
+  href: Virtufin.Core.Contracts.IMessageGenerator.html
+  name: IMessageGenerator
+  nameWithType: IMessageGenerator
+  fullName: Virtufin.Core.Contracts.IMessageGenerator
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Core.Contracts
+  commentId: N:Virtufin.Core.Contracts
+  href: Virtufin.html
+  name: Virtufin.Core.Contracts
+  nameWithType: Virtufin.Core.Contracts
+  fullName: Virtufin.Core.Contracts
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Contracts
+    name: Contracts
+    href: Virtufin.Core.Contracts.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Contracts
+    name: Contracts
+    href: Virtufin.Core.Contracts.html
+- uid: Virtufin.Base.PositionTransferContractMessageGenerator.Contract*
+  commentId: Overload:Virtufin.Base.PositionTransferContractMessageGenerator.Contract
+  href: Virtufin.Base.PositionTransferContractMessageGenerator.html#Virtufin_Base_PositionTransferContractMessageGenerator_Contract
+  name: Contract
+  nameWithType: PositionTransferContractMessageGenerator.Contract
+  fullName: Virtufin.Base.PositionTransferContractMessageGenerator.Contract
+- uid: Virtufin.Base.PositionTransferContract
+  commentId: T:Virtufin.Base.PositionTransferContract
+  parent: Virtufin.Base
+  href: Virtufin.Base.PositionTransferContract.html
+  name: PositionTransferContract
+  nameWithType: PositionTransferContract
+  fullName: Virtufin.Base.PositionTransferContract
+- uid: Virtufin.Base.PositionTransferContractMessageGenerator.#ctor*
+  commentId: Overload:Virtufin.Base.PositionTransferContractMessageGenerator.#ctor
+  href: Virtufin.Base.PositionTransferContractMessageGenerator.html#Virtufin_Base_PositionTransferContractMessageGenerator__ctor_Virtufin_Base_PositionTransferContract_
+  name: PositionTransferContractMessageGenerator
+  nameWithType: PositionTransferContractMessageGenerator.PositionTransferContractMessageGenerator
+  fullName: Virtufin.Base.PositionTransferContractMessageGenerator.PositionTransferContractMessageGenerator
+  nameWithType.vb: PositionTransferContractMessageGenerator.New
+  fullName.vb: Virtufin.Base.PositionTransferContractMessageGenerator.New
+  name.vb: New
+- uid: Virtufin.Base.PositionTransferContractMessageGenerator.GenerateMessages*
+  commentId: Overload:Virtufin.Base.PositionTransferContractMessageGenerator.GenerateMessages
+  href: Virtufin.Base.PositionTransferContractMessageGenerator.html#Virtufin_Base_PositionTransferContractMessageGenerator_GenerateMessages_Virtufin_Core_Identifiers_ITimeStamp_Virtufin_Core_Contracts_IScenarioHistory_
+  name: GenerateMessages
+  nameWithType: PositionTransferContractMessageGenerator.GenerateMessages
+  fullName: Virtufin.Base.PositionTransferContractMessageGenerator.GenerateMessages
+- uid: Virtufin.Core.Contracts.IMessageGenerator.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp,Virtufin.Core.Contracts.IScenarioHistory)
+  commentId: M:Virtufin.Core.Contracts.IMessageGenerator.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp,Virtufin.Core.Contracts.IScenarioHistory)
+  parent: Virtufin.Core.Contracts.IMessageGenerator
+  href: Virtufin.Core.Contracts.IMessageGenerator.html#Virtufin_Core_Contracts_IMessageGenerator_GenerateMessages_Virtufin_Core_Identifiers_ITimeStamp_Virtufin_Core_Contracts_IScenarioHistory_
+  name: GenerateMessages(ITimeStamp, IScenarioHistory)
+  nameWithType: IMessageGenerator.GenerateMessages(ITimeStamp, IScenarioHistory)
+  fullName: Virtufin.Core.Contracts.IMessageGenerator.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp, Virtufin.Core.Contracts.IScenarioHistory)
+  spec.csharp:
+  - uid: Virtufin.Core.Contracts.IMessageGenerator.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp,Virtufin.Core.Contracts.IScenarioHistory)
+    name: GenerateMessages
+    href: Virtufin.Core.Contracts.IMessageGenerator.html#Virtufin_Core_Contracts_IMessageGenerator_GenerateMessages_Virtufin_Core_Identifiers_ITimeStamp_Virtufin_Core_Contracts_IScenarioHistory_
+  - name: (
+  - uid: Virtufin.Core.Identifiers.ITimeStamp
+    name: ITimeStamp
+    href: Virtufin.Core.Identifiers.ITimeStamp.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Contracts.IScenarioHistory
+    name: IScenarioHistory
+    href: Virtufin.Core.Contracts.IScenarioHistory.html
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Contracts.IMessageGenerator.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp,Virtufin.Core.Contracts.IScenarioHistory)
+    name: GenerateMessages
+    href: Virtufin.Core.Contracts.IMessageGenerator.html#Virtufin_Core_Contracts_IMessageGenerator_GenerateMessages_Virtufin_Core_Identifiers_ITimeStamp_Virtufin_Core_Contracts_IScenarioHistory_
+  - name: (
+  - uid: Virtufin.Core.Identifiers.ITimeStamp
+    name: ITimeStamp
+    href: Virtufin.Core.Identifiers.ITimeStamp.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Contracts.IScenarioHistory
+    name: IScenarioHistory
+    href: Virtufin.Core.Contracts.IScenarioHistory.html
+  - name: )
+- uid: Virtufin.Core.Identifiers.ITimeStamp
+  commentId: T:Virtufin.Core.Identifiers.ITimeStamp
+  parent: Virtufin.Core.Identifiers
+  href: Virtufin.Core.Identifiers.ITimeStamp.html
+  name: ITimeStamp
+  nameWithType: ITimeStamp
+  fullName: Virtufin.Core.Identifiers.ITimeStamp
+- uid: Virtufin.Core.Contracts.IScenarioHistory
+  commentId: T:Virtufin.Core.Contracts.IScenarioHistory
+  parent: Virtufin.Core.Contracts
+  href: Virtufin.Core.Contracts.IScenarioHistory.html
+  name: IScenarioHistory
+  nameWithType: IScenarioHistory
+  fullName: Virtufin.Core.Contracts.IScenarioHistory
+- uid: System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage}
+  commentId: T:System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IMessage>
+  nameWithType: IEnumerable<IMessage>
+  fullName: System.Collections.Generic.IEnumerable<Virtufin.Core.Contracts.IMessage>
+  nameWithType.vb: IEnumerable(Of IMessage)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Virtufin.Core.Contracts.IMessage)
+  name.vb: IEnumerable(Of IMessage)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Virtufin.Core.Contracts.IMessage
+    name: IMessage
+    href: Virtufin.Core.Contracts.IMessage.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Contracts.IMessage
+    name: IMessage
+    href: Virtufin.Core.Contracts.IMessage.html
+  - name: )
+- uid: Virtufin.Core.Identifiers
+  commentId: N:Virtufin.Core.Identifiers
+  href: Virtufin.html
+  name: Virtufin.Core.Identifiers
+  nameWithType: Virtufin.Core.Identifiers
+  fullName: Virtufin.Core.Identifiers
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

@@ -1,0 +1,1176 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry
+  commentId: T:Virtufin.Data.FlatBuffers.DictionaryEntry
+  id: DictionaryEntry
+  parent: Virtufin.Data.FlatBuffers
+  children:
+  - Virtufin.Data.FlatBuffers.DictionaryEntry.AddKey(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.StringOffset)
+  - Virtufin.Data.FlatBuffers.DictionaryEntry.AddValue(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant})
+  - Virtufin.Data.FlatBuffers.DictionaryEntry.ByteBuffer
+  - Virtufin.Data.FlatBuffers.DictionaryEntry.CreateDictionaryEntry(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.StringOffset,Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant})
+  - Virtufin.Data.FlatBuffers.DictionaryEntry.EndDictionaryEntry(Google.FlatBuffers.FlatBufferBuilder)
+  - Virtufin.Data.FlatBuffers.DictionaryEntry.GetKeyArray
+  - Virtufin.Data.FlatBuffers.DictionaryEntry.GetKeyBytes
+  - Virtufin.Data.FlatBuffers.DictionaryEntry.GetRootAsDictionaryEntry(Google.FlatBuffers.ByteBuffer)
+  - Virtufin.Data.FlatBuffers.DictionaryEntry.GetRootAsDictionaryEntry(Google.FlatBuffers.ByteBuffer,Virtufin.Data.FlatBuffers.DictionaryEntry)
+  - Virtufin.Data.FlatBuffers.DictionaryEntry.Key
+  - Virtufin.Data.FlatBuffers.DictionaryEntry.StartDictionaryEntry(Google.FlatBuffers.FlatBufferBuilder)
+  - Virtufin.Data.FlatBuffers.DictionaryEntry.ValidateVersion
+  - Virtufin.Data.FlatBuffers.DictionaryEntry.Value
+  - Virtufin.Data.FlatBuffers.DictionaryEntry.__assign(System.Int32,Google.FlatBuffers.ByteBuffer)
+  - Virtufin.Data.FlatBuffers.DictionaryEntry.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  langs:
+  - csharp
+  - vb
+  name: DictionaryEntry
+  nameWithType: DictionaryEntry
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry
+  type: Struct
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: DictionaryEntry
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+    startLine: 11
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: 'public struct DictionaryEntry : IFlatbufferObject'
+    content.vb: Public Structure DictionaryEntry Implements IFlatbufferObject
+  implements:
+  - Google.FlatBuffers.IFlatbufferObject
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.ByteBuffer
+  commentId: P:Virtufin.Data.FlatBuffers.DictionaryEntry.ByteBuffer
+  id: ByteBuffer
+  parent: Virtufin.Data.FlatBuffers.DictionaryEntry
+  langs:
+  - csharp
+  - vb
+  name: ByteBuffer
+  nameWithType: DictionaryEntry.ByteBuffer
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.ByteBuffer
+  type: Property
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ByteBuffer
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+    startLine: 14
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  example: []
+  syntax:
+    content: public ByteBuffer ByteBuffer { get; }
+    parameters: []
+    return:
+      type: Google.FlatBuffers.ByteBuffer
+    content.vb: Public ReadOnly Property ByteBuffer As ByteBuffer
+  overload: Virtufin.Data.FlatBuffers.DictionaryEntry.ByteBuffer*
+  implements:
+  - Google.FlatBuffers.IFlatbufferObject.ByteBuffer
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.ValidateVersion
+  commentId: M:Virtufin.Data.FlatBuffers.DictionaryEntry.ValidateVersion
+  id: ValidateVersion
+  parent: Virtufin.Data.FlatBuffers.DictionaryEntry
+  langs:
+  - csharp
+  - vb
+  name: ValidateVersion()
+  nameWithType: DictionaryEntry.ValidateVersion()
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.ValidateVersion()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ValidateVersion
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+    startLine: 15
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static void ValidateVersion()
+    content.vb: Public Shared Sub ValidateVersion()
+  overload: Virtufin.Data.FlatBuffers.DictionaryEntry.ValidateVersion*
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.GetRootAsDictionaryEntry(Google.FlatBuffers.ByteBuffer)
+  commentId: M:Virtufin.Data.FlatBuffers.DictionaryEntry.GetRootAsDictionaryEntry(Google.FlatBuffers.ByteBuffer)
+  id: GetRootAsDictionaryEntry(Google.FlatBuffers.ByteBuffer)
+  parent: Virtufin.Data.FlatBuffers.DictionaryEntry
+  langs:
+  - csharp
+  - vb
+  name: GetRootAsDictionaryEntry(ByteBuffer)
+  nameWithType: DictionaryEntry.GetRootAsDictionaryEntry(ByteBuffer)
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.GetRootAsDictionaryEntry(Google.FlatBuffers.ByteBuffer)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GetRootAsDictionaryEntry
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+    startLine: 16
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static DictionaryEntry GetRootAsDictionaryEntry(ByteBuffer _bb)
+    parameters:
+    - id: _bb
+      type: Google.FlatBuffers.ByteBuffer
+    return:
+      type: Virtufin.Data.FlatBuffers.DictionaryEntry
+    content.vb: Public Shared Function GetRootAsDictionaryEntry(_bb As ByteBuffer) As DictionaryEntry
+  overload: Virtufin.Data.FlatBuffers.DictionaryEntry.GetRootAsDictionaryEntry*
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.GetRootAsDictionaryEntry(Google.FlatBuffers.ByteBuffer,Virtufin.Data.FlatBuffers.DictionaryEntry)
+  commentId: M:Virtufin.Data.FlatBuffers.DictionaryEntry.GetRootAsDictionaryEntry(Google.FlatBuffers.ByteBuffer,Virtufin.Data.FlatBuffers.DictionaryEntry)
+  id: GetRootAsDictionaryEntry(Google.FlatBuffers.ByteBuffer,Virtufin.Data.FlatBuffers.DictionaryEntry)
+  parent: Virtufin.Data.FlatBuffers.DictionaryEntry
+  langs:
+  - csharp
+  - vb
+  name: GetRootAsDictionaryEntry(ByteBuffer, DictionaryEntry)
+  nameWithType: DictionaryEntry.GetRootAsDictionaryEntry(ByteBuffer, DictionaryEntry)
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.GetRootAsDictionaryEntry(Google.FlatBuffers.ByteBuffer, Virtufin.Data.FlatBuffers.DictionaryEntry)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GetRootAsDictionaryEntry
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static DictionaryEntry GetRootAsDictionaryEntry(ByteBuffer _bb, DictionaryEntry obj)
+    parameters:
+    - id: _bb
+      type: Google.FlatBuffers.ByteBuffer
+    - id: obj
+      type: Virtufin.Data.FlatBuffers.DictionaryEntry
+    return:
+      type: Virtufin.Data.FlatBuffers.DictionaryEntry
+    content.vb: Public Shared Function GetRootAsDictionaryEntry(_bb As ByteBuffer, obj As DictionaryEntry) As DictionaryEntry
+  overload: Virtufin.Data.FlatBuffers.DictionaryEntry.GetRootAsDictionaryEntry*
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  commentId: M:Virtufin.Data.FlatBuffers.DictionaryEntry.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  id: __init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  parent: Virtufin.Data.FlatBuffers.DictionaryEntry
+  langs:
+  - csharp
+  - vb
+  name: __init(int, ByteBuffer)
+  nameWithType: DictionaryEntry.__init(int, ByteBuffer)
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.__init(int, Google.FlatBuffers.ByteBuffer)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: __init
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  example: []
+  syntax:
+    content: public void __init(int _i, ByteBuffer _bb)
+    parameters:
+    - id: _i
+      type: System.Int32
+    - id: _bb
+      type: Google.FlatBuffers.ByteBuffer
+    content.vb: Public Sub __init(_i As Integer, _bb As ByteBuffer)
+  overload: Virtufin.Data.FlatBuffers.DictionaryEntry.__init*
+  implements:
+  - Google.FlatBuffers.IFlatbufferObject.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  nameWithType.vb: DictionaryEntry.__init(Integer, ByteBuffer)
+  fullName.vb: Virtufin.Data.FlatBuffers.DictionaryEntry.__init(Integer, Google.FlatBuffers.ByteBuffer)
+  name.vb: __init(Integer, ByteBuffer)
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.__assign(System.Int32,Google.FlatBuffers.ByteBuffer)
+  commentId: M:Virtufin.Data.FlatBuffers.DictionaryEntry.__assign(System.Int32,Google.FlatBuffers.ByteBuffer)
+  id: __assign(System.Int32,Google.FlatBuffers.ByteBuffer)
+  parent: Virtufin.Data.FlatBuffers.DictionaryEntry
+  langs:
+  - csharp
+  - vb
+  name: __assign(int, ByteBuffer)
+  nameWithType: DictionaryEntry.__assign(int, ByteBuffer)
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.__assign(int, Google.FlatBuffers.ByteBuffer)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: __assign
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public DictionaryEntry __assign(int _i, ByteBuffer _bb)
+    parameters:
+    - id: _i
+      type: System.Int32
+    - id: _bb
+      type: Google.FlatBuffers.ByteBuffer
+    return:
+      type: Virtufin.Data.FlatBuffers.DictionaryEntry
+    content.vb: Public Function __assign(_i As Integer, _bb As ByteBuffer) As DictionaryEntry
+  overload: Virtufin.Data.FlatBuffers.DictionaryEntry.__assign*
+  nameWithType.vb: DictionaryEntry.__assign(Integer, ByteBuffer)
+  fullName.vb: Virtufin.Data.FlatBuffers.DictionaryEntry.__assign(Integer, Google.FlatBuffers.ByteBuffer)
+  name.vb: __assign(Integer, ByteBuffer)
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.Key
+  commentId: P:Virtufin.Data.FlatBuffers.DictionaryEntry.Key
+  id: Key
+  parent: Virtufin.Data.FlatBuffers.DictionaryEntry
+  langs:
+  - csharp
+  - vb
+  name: Key
+  nameWithType: DictionaryEntry.Key
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.Key
+  type: Property
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Key
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+    startLine: 21
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public string Key { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Key As String
+  overload: Virtufin.Data.FlatBuffers.DictionaryEntry.Key*
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.GetKeyBytes
+  commentId: M:Virtufin.Data.FlatBuffers.DictionaryEntry.GetKeyBytes
+  id: GetKeyBytes
+  parent: Virtufin.Data.FlatBuffers.DictionaryEntry
+  langs:
+  - csharp
+  - vb
+  name: GetKeyBytes()
+  nameWithType: DictionaryEntry.GetKeyBytes()
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.GetKeyBytes()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GetKeyBytes
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+    startLine: 25
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public ArraySegment<byte>? GetKeyBytes()
+    return:
+      type: System.Nullable{System.ArraySegment{System.Byte}}
+    content.vb: Public Function GetKeyBytes() As ArraySegment(Of Byte)?
+  overload: Virtufin.Data.FlatBuffers.DictionaryEntry.GetKeyBytes*
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.GetKeyArray
+  commentId: M:Virtufin.Data.FlatBuffers.DictionaryEntry.GetKeyArray
+  id: GetKeyArray
+  parent: Virtufin.Data.FlatBuffers.DictionaryEntry
+  langs:
+  - csharp
+  - vb
+  name: GetKeyArray()
+  nameWithType: DictionaryEntry.GetKeyArray()
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.GetKeyArray()
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GetKeyArray
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+    startLine: 27
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public byte[] GetKeyArray()
+    return:
+      type: System.Byte[]
+    content.vb: Public Function GetKeyArray() As Byte()
+  overload: Virtufin.Data.FlatBuffers.DictionaryEntry.GetKeyArray*
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.Value
+  commentId: P:Virtufin.Data.FlatBuffers.DictionaryEntry.Value
+  id: Value
+  parent: Virtufin.Data.FlatBuffers.DictionaryEntry
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: DictionaryEntry.Value
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.Value
+  type: Property
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Value
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+    startLine: 28
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public Variant? Value { get; }
+    parameters: []
+    return:
+      type: System.Nullable{Virtufin.Data.FlatBuffers.Variant}
+    content.vb: Public ReadOnly Property Value As [Variant]?
+  overload: Virtufin.Data.FlatBuffers.DictionaryEntry.Value*
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.CreateDictionaryEntry(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.StringOffset,Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant})
+  commentId: M:Virtufin.Data.FlatBuffers.DictionaryEntry.CreateDictionaryEntry(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.StringOffset,Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant})
+  id: CreateDictionaryEntry(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.StringOffset,Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant})
+  parent: Virtufin.Data.FlatBuffers.DictionaryEntry
+  langs:
+  - csharp
+  - vb
+  name: CreateDictionaryEntry(FlatBufferBuilder, StringOffset, Offset<Variant>)
+  nameWithType: DictionaryEntry.CreateDictionaryEntry(FlatBufferBuilder, StringOffset, Offset<Variant>)
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.CreateDictionaryEntry(Google.FlatBuffers.FlatBufferBuilder, Google.FlatBuffers.StringOffset, Google.FlatBuffers.Offset<Virtufin.Data.FlatBuffers.Variant>)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: CreateDictionaryEntry
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+    startLine: 30
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static Offset<DictionaryEntry> CreateDictionaryEntry(FlatBufferBuilder builder, StringOffset keyOffset = default, Offset<Variant> valueOffset = default)
+    parameters:
+    - id: builder
+      type: Google.FlatBuffers.FlatBufferBuilder
+    - id: keyOffset
+      type: Google.FlatBuffers.StringOffset
+    - id: valueOffset
+      type: Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant}
+    return:
+      type: Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.DictionaryEntry}
+    content.vb: Public Shared Function CreateDictionaryEntry(builder As FlatBufferBuilder, keyOffset As StringOffset = Nothing, valueOffset As Offset(Of [Variant]) = Nothing) As Offset(Of DictionaryEntry)
+  overload: Virtufin.Data.FlatBuffers.DictionaryEntry.CreateDictionaryEntry*
+  nameWithType.vb: DictionaryEntry.CreateDictionaryEntry(FlatBufferBuilder, StringOffset, Offset(Of Variant))
+  fullName.vb: Virtufin.Data.FlatBuffers.DictionaryEntry.CreateDictionaryEntry(Google.FlatBuffers.FlatBufferBuilder, Google.FlatBuffers.StringOffset, Google.FlatBuffers.Offset(Of Virtufin.Data.FlatBuffers.Variant))
+  name.vb: CreateDictionaryEntry(FlatBufferBuilder, StringOffset, Offset(Of Variant))
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.StartDictionaryEntry(Google.FlatBuffers.FlatBufferBuilder)
+  commentId: M:Virtufin.Data.FlatBuffers.DictionaryEntry.StartDictionaryEntry(Google.FlatBuffers.FlatBufferBuilder)
+  id: StartDictionaryEntry(Google.FlatBuffers.FlatBufferBuilder)
+  parent: Virtufin.Data.FlatBuffers.DictionaryEntry
+  langs:
+  - csharp
+  - vb
+  name: StartDictionaryEntry(FlatBufferBuilder)
+  nameWithType: DictionaryEntry.StartDictionaryEntry(FlatBufferBuilder)
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.StartDictionaryEntry(Google.FlatBuffers.FlatBufferBuilder)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: StartDictionaryEntry
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+    startLine: 39
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static void StartDictionaryEntry(FlatBufferBuilder builder)
+    parameters:
+    - id: builder
+      type: Google.FlatBuffers.FlatBufferBuilder
+    content.vb: Public Shared Sub StartDictionaryEntry(builder As FlatBufferBuilder)
+  overload: Virtufin.Data.FlatBuffers.DictionaryEntry.StartDictionaryEntry*
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.AddKey(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.StringOffset)
+  commentId: M:Virtufin.Data.FlatBuffers.DictionaryEntry.AddKey(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.StringOffset)
+  id: AddKey(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.StringOffset)
+  parent: Virtufin.Data.FlatBuffers.DictionaryEntry
+  langs:
+  - csharp
+  - vb
+  name: AddKey(FlatBufferBuilder, StringOffset)
+  nameWithType: DictionaryEntry.AddKey(FlatBufferBuilder, StringOffset)
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.AddKey(Google.FlatBuffers.FlatBufferBuilder, Google.FlatBuffers.StringOffset)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: AddKey
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+    startLine: 40
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static void AddKey(FlatBufferBuilder builder, StringOffset keyOffset)
+    parameters:
+    - id: builder
+      type: Google.FlatBuffers.FlatBufferBuilder
+    - id: keyOffset
+      type: Google.FlatBuffers.StringOffset
+    content.vb: Public Shared Sub AddKey(builder As FlatBufferBuilder, keyOffset As StringOffset)
+  overload: Virtufin.Data.FlatBuffers.DictionaryEntry.AddKey*
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.AddValue(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant})
+  commentId: M:Virtufin.Data.FlatBuffers.DictionaryEntry.AddValue(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant})
+  id: AddValue(Google.FlatBuffers.FlatBufferBuilder,Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant})
+  parent: Virtufin.Data.FlatBuffers.DictionaryEntry
+  langs:
+  - csharp
+  - vb
+  name: AddValue(FlatBufferBuilder, Offset<Variant>)
+  nameWithType: DictionaryEntry.AddValue(FlatBufferBuilder, Offset<Variant>)
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.AddValue(Google.FlatBuffers.FlatBufferBuilder, Google.FlatBuffers.Offset<Virtufin.Data.FlatBuffers.Variant>)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: AddValue
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+    startLine: 41
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static void AddValue(FlatBufferBuilder builder, Offset<Variant> valueOffset)
+    parameters:
+    - id: builder
+      type: Google.FlatBuffers.FlatBufferBuilder
+    - id: valueOffset
+      type: Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant}
+    content.vb: Public Shared Sub AddValue(builder As FlatBufferBuilder, valueOffset As Offset(Of [Variant]))
+  overload: Virtufin.Data.FlatBuffers.DictionaryEntry.AddValue*
+  nameWithType.vb: DictionaryEntry.AddValue(FlatBufferBuilder, Offset(Of Variant))
+  fullName.vb: Virtufin.Data.FlatBuffers.DictionaryEntry.AddValue(Google.FlatBuffers.FlatBufferBuilder, Google.FlatBuffers.Offset(Of Virtufin.Data.FlatBuffers.Variant))
+  name.vb: AddValue(FlatBufferBuilder, Offset(Of Variant))
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.EndDictionaryEntry(Google.FlatBuffers.FlatBufferBuilder)
+  commentId: M:Virtufin.Data.FlatBuffers.DictionaryEntry.EndDictionaryEntry(Google.FlatBuffers.FlatBufferBuilder)
+  id: EndDictionaryEntry(Google.FlatBuffers.FlatBufferBuilder)
+  parent: Virtufin.Data.FlatBuffers.DictionaryEntry
+  langs:
+  - csharp
+  - vb
+  name: EndDictionaryEntry(FlatBufferBuilder)
+  nameWithType: DictionaryEntry.EndDictionaryEntry(FlatBufferBuilder)
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.EndDictionaryEntry(Google.FlatBuffers.FlatBufferBuilder)
+  type: Method
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: EndDictionaryEntry
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryEntry.cs
+    startLine: 42
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: public static Offset<DictionaryEntry> EndDictionaryEntry(FlatBufferBuilder builder)
+    parameters:
+    - id: builder
+      type: Google.FlatBuffers.FlatBufferBuilder
+    return:
+      type: Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.DictionaryEntry}
+    content.vb: Public Shared Function EndDictionaryEntry(builder As FlatBufferBuilder) As Offset(Of DictionaryEntry)
+  overload: Virtufin.Data.FlatBuffers.DictionaryEntry.EndDictionaryEntry*
+references:
+- uid: Virtufin.Data.FlatBuffers
+  commentId: N:Virtufin.Data.FlatBuffers
+  href: Virtufin.html
+  name: Virtufin.Data.FlatBuffers
+  nameWithType: Virtufin.Data.FlatBuffers
+  fullName: Virtufin.Data.FlatBuffers
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Data
+    name: Data
+    href: Virtufin.Data.html
+  - name: .
+  - uid: Virtufin.Data.FlatBuffers
+    name: FlatBuffers
+    href: Virtufin.Data.FlatBuffers.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Data
+    name: Data
+    href: Virtufin.Data.html
+  - name: .
+  - uid: Virtufin.Data.FlatBuffers
+    name: FlatBuffers
+    href: Virtufin.Data.FlatBuffers.html
+- uid: Google.FlatBuffers.IFlatbufferObject
+  commentId: T:Google.FlatBuffers.IFlatbufferObject
+  parent: Google.FlatBuffers
+  isExternal: true
+  name: IFlatbufferObject
+  nameWithType: IFlatbufferObject
+  fullName: Google.FlatBuffers.IFlatbufferObject
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Google.FlatBuffers
+  commentId: N:Google.FlatBuffers
+  isExternal: true
+  name: Google.FlatBuffers
+  nameWithType: Google.FlatBuffers
+  fullName: Google.FlatBuffers
+  spec.csharp:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.FlatBuffers
+    name: FlatBuffers
+    isExternal: true
+  spec.vb:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.FlatBuffers
+    name: FlatBuffers
+    isExternal: true
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.ByteBuffer*
+  commentId: Overload:Virtufin.Data.FlatBuffers.DictionaryEntry.ByteBuffer
+  href: Virtufin.Data.FlatBuffers.DictionaryEntry.html#Virtufin_Data_FlatBuffers_DictionaryEntry_ByteBuffer
+  name: ByteBuffer
+  nameWithType: DictionaryEntry.ByteBuffer
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.ByteBuffer
+- uid: Google.FlatBuffers.IFlatbufferObject.ByteBuffer
+  commentId: P:Google.FlatBuffers.IFlatbufferObject.ByteBuffer
+  parent: Google.FlatBuffers.IFlatbufferObject
+  isExternal: true
+  name: ByteBuffer
+  nameWithType: IFlatbufferObject.ByteBuffer
+  fullName: Google.FlatBuffers.IFlatbufferObject.ByteBuffer
+- uid: Google.FlatBuffers.ByteBuffer
+  commentId: T:Google.FlatBuffers.ByteBuffer
+  parent: Google.FlatBuffers
+  isExternal: true
+  name: ByteBuffer
+  nameWithType: ByteBuffer
+  fullName: Google.FlatBuffers.ByteBuffer
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.ValidateVersion*
+  commentId: Overload:Virtufin.Data.FlatBuffers.DictionaryEntry.ValidateVersion
+  href: Virtufin.Data.FlatBuffers.DictionaryEntry.html#Virtufin_Data_FlatBuffers_DictionaryEntry_ValidateVersion
+  name: ValidateVersion
+  nameWithType: DictionaryEntry.ValidateVersion
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.ValidateVersion
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.GetRootAsDictionaryEntry*
+  commentId: Overload:Virtufin.Data.FlatBuffers.DictionaryEntry.GetRootAsDictionaryEntry
+  href: Virtufin.Data.FlatBuffers.DictionaryEntry.html#Virtufin_Data_FlatBuffers_DictionaryEntry_GetRootAsDictionaryEntry_Google_FlatBuffers_ByteBuffer_
+  name: GetRootAsDictionaryEntry
+  nameWithType: DictionaryEntry.GetRootAsDictionaryEntry
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.GetRootAsDictionaryEntry
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry
+  commentId: T:Virtufin.Data.FlatBuffers.DictionaryEntry
+  parent: Virtufin.Data.FlatBuffers
+  href: Virtufin.Data.FlatBuffers.DictionaryEntry.html
+  name: DictionaryEntry
+  nameWithType: DictionaryEntry
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.__init*
+  commentId: Overload:Virtufin.Data.FlatBuffers.DictionaryEntry.__init
+  href: Virtufin.Data.FlatBuffers.DictionaryEntry.html#Virtufin_Data_FlatBuffers_DictionaryEntry___init_System_Int32_Google_FlatBuffers_ByteBuffer_
+  name: __init
+  nameWithType: DictionaryEntry.__init
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.__init
+- uid: Google.FlatBuffers.IFlatbufferObject.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  commentId: M:Google.FlatBuffers.IFlatbufferObject.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+  parent: Google.FlatBuffers.IFlatbufferObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: __init(int, ByteBuffer)
+  nameWithType: IFlatbufferObject.__init(int, ByteBuffer)
+  fullName: Google.FlatBuffers.IFlatbufferObject.__init(int, Google.FlatBuffers.ByteBuffer)
+  nameWithType.vb: IFlatbufferObject.__init(Integer, ByteBuffer)
+  fullName.vb: Google.FlatBuffers.IFlatbufferObject.__init(Integer, Google.FlatBuffers.ByteBuffer)
+  name.vb: __init(Integer, ByteBuffer)
+  spec.csharp:
+  - uid: Google.FlatBuffers.IFlatbufferObject.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+    name: __init
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Google.FlatBuffers.ByteBuffer
+    name: ByteBuffer
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Google.FlatBuffers.IFlatbufferObject.__init(System.Int32,Google.FlatBuffers.ByteBuffer)
+    name: __init
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Google.FlatBuffers.ByteBuffer
+    name: ByteBuffer
+    isExternal: true
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.__assign*
+  commentId: Overload:Virtufin.Data.FlatBuffers.DictionaryEntry.__assign
+  href: Virtufin.Data.FlatBuffers.DictionaryEntry.html#Virtufin_Data_FlatBuffers_DictionaryEntry___assign_System_Int32_Google_FlatBuffers_ByteBuffer_
+  name: __assign
+  nameWithType: DictionaryEntry.__assign
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.__assign
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.Key*
+  commentId: Overload:Virtufin.Data.FlatBuffers.DictionaryEntry.Key
+  href: Virtufin.Data.FlatBuffers.DictionaryEntry.html#Virtufin_Data_FlatBuffers_DictionaryEntry_Key
+  name: Key
+  nameWithType: DictionaryEntry.Key
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.Key
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.GetKeyBytes*
+  commentId: Overload:Virtufin.Data.FlatBuffers.DictionaryEntry.GetKeyBytes
+  href: Virtufin.Data.FlatBuffers.DictionaryEntry.html#Virtufin_Data_FlatBuffers_DictionaryEntry_GetKeyBytes
+  name: GetKeyBytes
+  nameWithType: DictionaryEntry.GetKeyBytes
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.GetKeyBytes
+- uid: System.Nullable{System.ArraySegment{System.Byte}}
+  commentId: T:System.Nullable{System.ArraySegment{System.Byte}}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  name: ArraySegment<byte>?
+  nameWithType: ArraySegment<byte>?
+  fullName: System.ArraySegment<byte>?
+  nameWithType.vb: ArraySegment(Of Byte)?
+  fullName.vb: System.ArraySegment(Of Byte)?
+  name.vb: ArraySegment(Of Byte)?
+  spec.csharp:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  - name: '?'
+  spec.vb:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.GetKeyArray*
+  commentId: Overload:Virtufin.Data.FlatBuffers.DictionaryEntry.GetKeyArray
+  href: Virtufin.Data.FlatBuffers.DictionaryEntry.html#Virtufin_Data_FlatBuffers_DictionaryEntry_GetKeyArray
+  name: GetKeyArray
+  nameWithType: DictionaryEntry.GetKeyArray
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.GetKeyArray
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.Value*
+  commentId: Overload:Virtufin.Data.FlatBuffers.DictionaryEntry.Value
+  href: Virtufin.Data.FlatBuffers.DictionaryEntry.html#Virtufin_Data_FlatBuffers_DictionaryEntry_Value
+  name: Value
+  nameWithType: DictionaryEntry.Value
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.Value
+- uid: System.Nullable{Virtufin.Data.FlatBuffers.Variant}
+  commentId: T:System.Nullable{Virtufin.Data.FlatBuffers.Variant}
+  parent: System
+  definition: System.Nullable`1
+  href: Virtufin.Data.FlatBuffers.Variant.html
+  name: Variant?
+  nameWithType: Variant?
+  fullName: Virtufin.Data.FlatBuffers.Variant?
+  spec.csharp:
+  - uid: Virtufin.Data.FlatBuffers.Variant
+    name: Variant
+    href: Virtufin.Data.FlatBuffers.Variant.html
+  - name: '?'
+  spec.vb:
+  - uid: Virtufin.Data.FlatBuffers.Variant
+    name: Variant
+    href: Virtufin.Data.FlatBuffers.Variant.html
+  - name: '?'
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.CreateDictionaryEntry*
+  commentId: Overload:Virtufin.Data.FlatBuffers.DictionaryEntry.CreateDictionaryEntry
+  href: Virtufin.Data.FlatBuffers.DictionaryEntry.html#Virtufin_Data_FlatBuffers_DictionaryEntry_CreateDictionaryEntry_Google_FlatBuffers_FlatBufferBuilder_Google_FlatBuffers_StringOffset_Google_FlatBuffers_Offset_Virtufin_Data_FlatBuffers_Variant__
+  name: CreateDictionaryEntry
+  nameWithType: DictionaryEntry.CreateDictionaryEntry
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.CreateDictionaryEntry
+- uid: Google.FlatBuffers.FlatBufferBuilder
+  commentId: T:Google.FlatBuffers.FlatBufferBuilder
+  parent: Google.FlatBuffers
+  isExternal: true
+  name: FlatBufferBuilder
+  nameWithType: FlatBufferBuilder
+  fullName: Google.FlatBuffers.FlatBufferBuilder
+- uid: Google.FlatBuffers.StringOffset
+  commentId: T:Google.FlatBuffers.StringOffset
+  parent: Google.FlatBuffers
+  isExternal: true
+  name: StringOffset
+  nameWithType: StringOffset
+  fullName: Google.FlatBuffers.StringOffset
+- uid: Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant}
+  commentId: T:Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.Variant}
+  parent: Google.FlatBuffers
+  definition: Google.FlatBuffers.Offset`1
+  href: Virtufin.Data.FlatBuffers.Variant.html
+  name: Offset<Variant>
+  nameWithType: Offset<Variant>
+  fullName: Google.FlatBuffers.Offset<Virtufin.Data.FlatBuffers.Variant>
+  nameWithType.vb: Offset(Of Variant)
+  fullName.vb: Google.FlatBuffers.Offset(Of Virtufin.Data.FlatBuffers.Variant)
+  name.vb: Offset(Of Variant)
+  spec.csharp:
+  - uid: Google.FlatBuffers.Offset`1
+    name: Offset
+    isExternal: true
+  - name: <
+  - uid: Virtufin.Data.FlatBuffers.Variant
+    name: Variant
+    href: Virtufin.Data.FlatBuffers.Variant.html
+  - name: '>'
+  spec.vb:
+  - uid: Google.FlatBuffers.Offset`1
+    name: Offset
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Data.FlatBuffers.Variant
+    name: Variant
+    href: Virtufin.Data.FlatBuffers.Variant.html
+  - name: )
+- uid: Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.DictionaryEntry}
+  commentId: T:Google.FlatBuffers.Offset{Virtufin.Data.FlatBuffers.DictionaryEntry}
+  parent: Google.FlatBuffers
+  definition: Google.FlatBuffers.Offset`1
+  href: Virtufin.Data.FlatBuffers.DictionaryEntry.html
+  name: Offset<DictionaryEntry>
+  nameWithType: Offset<DictionaryEntry>
+  fullName: Google.FlatBuffers.Offset<Virtufin.Data.FlatBuffers.DictionaryEntry>
+  nameWithType.vb: Offset(Of DictionaryEntry)
+  fullName.vb: Google.FlatBuffers.Offset(Of Virtufin.Data.FlatBuffers.DictionaryEntry)
+  name.vb: Offset(Of DictionaryEntry)
+  spec.csharp:
+  - uid: Google.FlatBuffers.Offset`1
+    name: Offset
+    isExternal: true
+  - name: <
+  - uid: Virtufin.Data.FlatBuffers.DictionaryEntry
+    name: DictionaryEntry
+    href: Virtufin.Data.FlatBuffers.DictionaryEntry.html
+  - name: '>'
+  spec.vb:
+  - uid: Google.FlatBuffers.Offset`1
+    name: Offset
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Data.FlatBuffers.DictionaryEntry
+    name: DictionaryEntry
+    href: Virtufin.Data.FlatBuffers.DictionaryEntry.html
+  - name: )
+- uid: Google.FlatBuffers.Offset`1
+  commentId: T:Google.FlatBuffers.Offset`1
+  isExternal: true
+  name: Offset<T>
+  nameWithType: Offset<T>
+  fullName: Google.FlatBuffers.Offset<T>
+  nameWithType.vb: Offset(Of T)
+  fullName.vb: Google.FlatBuffers.Offset(Of T)
+  name.vb: Offset(Of T)
+  spec.csharp:
+  - uid: Google.FlatBuffers.Offset`1
+    name: Offset
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Google.FlatBuffers.Offset`1
+    name: Offset
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.StartDictionaryEntry*
+  commentId: Overload:Virtufin.Data.FlatBuffers.DictionaryEntry.StartDictionaryEntry
+  href: Virtufin.Data.FlatBuffers.DictionaryEntry.html#Virtufin_Data_FlatBuffers_DictionaryEntry_StartDictionaryEntry_Google_FlatBuffers_FlatBufferBuilder_
+  name: StartDictionaryEntry
+  nameWithType: DictionaryEntry.StartDictionaryEntry
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.StartDictionaryEntry
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.AddKey*
+  commentId: Overload:Virtufin.Data.FlatBuffers.DictionaryEntry.AddKey
+  href: Virtufin.Data.FlatBuffers.DictionaryEntry.html#Virtufin_Data_FlatBuffers_DictionaryEntry_AddKey_Google_FlatBuffers_FlatBufferBuilder_Google_FlatBuffers_StringOffset_
+  name: AddKey
+  nameWithType: DictionaryEntry.AddKey
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.AddKey
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.AddValue*
+  commentId: Overload:Virtufin.Data.FlatBuffers.DictionaryEntry.AddValue
+  href: Virtufin.Data.FlatBuffers.DictionaryEntry.html#Virtufin_Data_FlatBuffers_DictionaryEntry_AddValue_Google_FlatBuffers_FlatBufferBuilder_Google_FlatBuffers_Offset_Virtufin_Data_FlatBuffers_Variant__
+  name: AddValue
+  nameWithType: DictionaryEntry.AddValue
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.AddValue
+- uid: Virtufin.Data.FlatBuffers.DictionaryEntry.EndDictionaryEntry*
+  commentId: Overload:Virtufin.Data.FlatBuffers.DictionaryEntry.EndDictionaryEntry
+  href: Virtufin.Data.FlatBuffers.DictionaryEntry.html#Virtufin_Data_FlatBuffers_DictionaryEntry_EndDictionaryEntry_Google_FlatBuffers_FlatBufferBuilder_
+  name: EndDictionaryEntry
+  nameWithType: DictionaryEntry.EndDictionaryEntry
+  fullName: Virtufin.Data.FlatBuffers.DictionaryEntry.EndDictionaryEntry

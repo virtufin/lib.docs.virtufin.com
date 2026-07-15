@@ -1,0 +1,758 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.Signatory
+  commentId: T:Virtufin.Base.Signatory
+  id: Signatory
+  parent: Virtufin.Base
+  children:
+  - Virtufin.Base.Signatory.#ctor(System.Guid)
+  - Virtufin.Base.Signatory.Equals(Virtufin.Core.Identifiers.ISignatory)
+  - Virtufin.Base.Signatory.From(System.Guid)
+  - Virtufin.Base.Signatory.Id
+  - Virtufin.Base.Signatory.New
+  - Virtufin.Base.Signatory.ToString
+  langs:
+  - csharp
+  - vb
+  name: Signatory
+  nameWithType: Signatory
+  fullName: Virtufin.Base.Signatory
+  type: Struct
+  source:
+    remote:
+      path: src/Virtufin.Base/Signatory.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Signatory
+    path: ../../../src/Virtufin.Base/Signatory.cs
+    startLine: 14
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Identifier for a party to a contract or transaction. Backed by a Guid.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var alice = Signatory.New();
+
+    var bob = Signatory.New();
+
+    Assert.NotEqual(alice, bob);</code></pre>
+  syntax:
+    content: 'public readonly record struct Signatory : ISignatory, IEquatable<ISignatory>, IEquatable<Signatory>'
+    content.vb: Public Structure Signatory Implements ISignatory, IEquatable(Of ISignatory), IEquatable(Of Signatory)
+  implements:
+  - Virtufin.Core.Identifiers.ISignatory
+  - System.IEquatable{Virtufin.Core.Identifiers.ISignatory}
+  - System.IEquatable{Virtufin.Base.Signatory}
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Virtufin.Base.Signatory.#ctor(System.Guid)
+  commentId: M:Virtufin.Base.Signatory.#ctor(System.Guid)
+  id: '#ctor(System.Guid)'
+  parent: Virtufin.Base.Signatory
+  langs:
+  - csharp
+  - vb
+  name: Signatory(Guid)
+  nameWithType: Signatory.Signatory(Guid)
+  fullName: Virtufin.Base.Signatory.Signatory(System.Guid)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Base/Signatory.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Base/Signatory.cs
+    startLine: 14
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Identifier for a party to a contract or transaction. Backed by a Guid.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var alice = Signatory.New();
+
+    var bob = Signatory.New();
+
+    Assert.NotEqual(alice, bob);</code></pre>
+  syntax:
+    content: public Signatory(Guid Id)
+    parameters:
+    - id: Id
+      type: System.Guid
+    content.vb: Public Sub New(Id As Guid)
+  overload: Virtufin.Base.Signatory.#ctor*
+  nameWithType.vb: Signatory.New(Guid)
+  fullName.vb: Virtufin.Base.Signatory.New(System.Guid)
+  name.vb: New(Guid)
+- uid: Virtufin.Base.Signatory.Id
+  commentId: P:Virtufin.Base.Signatory.Id
+  id: Id
+  parent: Virtufin.Base.Signatory
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Signatory.Id
+  fullName: Virtufin.Base.Signatory.Id
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Signatory.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Id
+    path: ../../../src/Virtufin.Base/Signatory.cs
+    startLine: 14
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  syntax:
+    content: public Guid Id { get; init; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property Id As Guid
+  overload: Virtufin.Base.Signatory.Id*
+- uid: Virtufin.Base.Signatory.New
+  commentId: M:Virtufin.Base.Signatory.New
+  id: New
+  parent: Virtufin.Base.Signatory
+  langs:
+  - csharp
+  - vb
+  name: New()
+  nameWithType: Signatory.New()
+  fullName: Virtufin.Base.Signatory.New()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/Signatory.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: New
+    path: ../../../src/Virtufin.Base/Signatory.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Generate a fresh <xref href="Virtufin.Base.Signatory" data-throw-if-not-resolved="false"></xref> backed by a new Guid.
+  example: []
+  syntax:
+    content: public static Signatory New()
+    return:
+      type: Virtufin.Base.Signatory
+    content.vb: Public Shared Function [New]() As Signatory
+  overload: Virtufin.Base.Signatory.New*
+- uid: Virtufin.Base.Signatory.From(System.Guid)
+  commentId: M:Virtufin.Base.Signatory.From(System.Guid)
+  id: From(System.Guid)
+  parent: Virtufin.Base.Signatory
+  langs:
+  - csharp
+  - vb
+  name: From(Guid)
+  nameWithType: Signatory.From(Guid)
+  fullName: Virtufin.Base.Signatory.From(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/Signatory.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: From
+    path: ../../../src/Virtufin.Base/Signatory.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Wrap an existing <code class="paramref">id</code>.
+  example: []
+  syntax:
+    content: public static Signatory From(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: Virtufin.Base.Signatory
+    content.vb: Public Shared Function From(id As Guid) As Signatory
+  overload: Virtufin.Base.Signatory.From*
+- uid: Virtufin.Base.Signatory.Equals(Virtufin.Core.Identifiers.ISignatory)
+  commentId: M:Virtufin.Base.Signatory.Equals(Virtufin.Core.Identifiers.ISignatory)
+  id: Equals(Virtufin.Core.Identifiers.ISignatory)
+  parent: Virtufin.Base.Signatory
+  langs:
+  - csharp
+  - vb
+  name: Equals(ISignatory?)
+  nameWithType: Signatory.Equals(ISignatory?)
+  fullName: Virtufin.Base.Signatory.Equals(Virtufin.Core.Identifiers.ISignatory?)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/Signatory.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Equals
+    path: ../../../src/Virtufin.Base/Signatory.cs
+    startLine: 23
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(ISignatory? other)
+    parameters:
+    - id: other
+      type: Virtufin.Core.Identifiers.ISignatory
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As ISignatory) As Boolean
+  overload: Virtufin.Base.Signatory.Equals*
+  implements:
+  - System.IEquatable{Virtufin.Core.Identifiers.ISignatory}.Equals(Virtufin.Core.Identifiers.ISignatory)
+  nameWithType.vb: Signatory.Equals(ISignatory)
+  fullName.vb: Virtufin.Base.Signatory.Equals(Virtufin.Core.Identifiers.ISignatory)
+  name.vb: Equals(ISignatory)
+- uid: Virtufin.Base.Signatory.ToString
+  commentId: M:Virtufin.Base.Signatory.ToString
+  id: ToString
+  parent: Virtufin.Base.Signatory
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Signatory.ToString()
+  fullName: Virtufin.Base.Signatory.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/Signatory.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ToString
+    path: ../../../src/Virtufin.Base/Signatory.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Returns the fully qualified type name of this instance.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The fully qualified type name.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: Virtufin.Base.Signatory.ToString*
+references:
+- uid: Virtufin.Base
+  commentId: N:Virtufin.Base
+  href: Virtufin.html
+  name: Virtufin.Base
+  nameWithType: Virtufin.Base
+  fullName: Virtufin.Base
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+- uid: Virtufin.Core.Identifiers.ISignatory
+  commentId: T:Virtufin.Core.Identifiers.ISignatory
+  parent: Virtufin.Core.Identifiers
+  href: Virtufin.Core.Identifiers.ISignatory.html
+  name: ISignatory
+  nameWithType: ISignatory
+  fullName: Virtufin.Core.Identifiers.ISignatory
+- uid: System.IEquatable{Virtufin.Core.Identifiers.ISignatory}
+  commentId: T:System.IEquatable{Virtufin.Core.Identifiers.ISignatory}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ISignatory>
+  nameWithType: IEquatable<ISignatory>
+  fullName: System.IEquatable<Virtufin.Core.Identifiers.ISignatory>
+  nameWithType.vb: IEquatable(Of ISignatory)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Identifiers.ISignatory)
+  name.vb: IEquatable(Of ISignatory)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Identifiers.ISignatory
+    name: ISignatory
+    href: Virtufin.Core.Identifiers.ISignatory.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Identifiers.ISignatory
+    name: ISignatory
+    href: Virtufin.Core.Identifiers.ISignatory.html
+  - name: )
+- uid: System.IEquatable{Virtufin.Base.Signatory}
+  commentId: T:System.IEquatable{Virtufin.Base.Signatory}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Signatory>
+  nameWithType: IEquatable<Signatory>
+  fullName: System.IEquatable<Virtufin.Base.Signatory>
+  nameWithType.vb: IEquatable(Of Signatory)
+  fullName.vb: System.IEquatable(Of Virtufin.Base.Signatory)
+  name.vb: IEquatable(Of Signatory)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Base.Signatory
+    name: Signatory
+    href: Virtufin.Base.Signatory.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Base.Signatory
+    name: Signatory
+    href: Virtufin.Base.Signatory.html
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Virtufin.Core.Identifiers
+  commentId: N:Virtufin.Core.Identifiers
+  href: Virtufin.html
+  name: Virtufin.Core.Identifiers
+  nameWithType: Virtufin.Core.Identifiers
+  fullName: Virtufin.Core.Identifiers
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.Base.Signatory.#ctor*
+  commentId: Overload:Virtufin.Base.Signatory.#ctor
+  href: Virtufin.Base.Signatory.html#Virtufin_Base_Signatory__ctor_System_Guid_
+  name: Signatory
+  nameWithType: Signatory.Signatory
+  fullName: Virtufin.Base.Signatory.Signatory
+  nameWithType.vb: Signatory.New
+  fullName.vb: Virtufin.Base.Signatory.New
+  name.vb: New
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Virtufin.Base.Signatory.Id*
+  commentId: Overload:Virtufin.Base.Signatory.Id
+  href: Virtufin.Base.Signatory.html#Virtufin_Base_Signatory_Id
+  name: Id
+  nameWithType: Signatory.Id
+  fullName: Virtufin.Base.Signatory.Id
+- uid: Virtufin.Base.Signatory
+  commentId: T:Virtufin.Base.Signatory
+  parent: Virtufin.Base
+  href: Virtufin.Base.Signatory.html
+  name: Signatory
+  nameWithType: Signatory
+  fullName: Virtufin.Base.Signatory
+- uid: Virtufin.Base.Signatory.New*
+  commentId: Overload:Virtufin.Base.Signatory.New
+  href: Virtufin.Base.Signatory.html#Virtufin_Base_Signatory_New
+  name: New
+  nameWithType: Signatory.New
+  fullName: Virtufin.Base.Signatory.New
+- uid: Virtufin.Base.Signatory.From*
+  commentId: Overload:Virtufin.Base.Signatory.From
+  href: Virtufin.Base.Signatory.html#Virtufin_Base_Signatory_From_System_Guid_
+  name: From
+  nameWithType: Signatory.From
+  fullName: Virtufin.Base.Signatory.From
+- uid: Virtufin.Base.Signatory.Equals*
+  commentId: Overload:Virtufin.Base.Signatory.Equals
+  href: Virtufin.Base.Signatory.html#Virtufin_Base_Signatory_Equals_Virtufin_Core_Identifiers_ISignatory_
+  name: Equals
+  nameWithType: Signatory.Equals
+  fullName: Virtufin.Base.Signatory.Equals
+- uid: System.IEquatable{Virtufin.Core.Identifiers.ISignatory}.Equals(Virtufin.Core.Identifiers.ISignatory)
+  commentId: M:System.IEquatable{Virtufin.Core.Identifiers.ISignatory}.Equals(Virtufin.Core.Identifiers.ISignatory)
+  parent: System.IEquatable{Virtufin.Core.Identifiers.ISignatory}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(ISignatory)
+  nameWithType: IEquatable<ISignatory>.Equals(ISignatory)
+  fullName: System.IEquatable<Virtufin.Core.Identifiers.ISignatory>.Equals(Virtufin.Core.Identifiers.ISignatory)
+  nameWithType.vb: IEquatable(Of ISignatory).Equals(ISignatory)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Identifiers.ISignatory).Equals(Virtufin.Core.Identifiers.ISignatory)
+  spec.csharp:
+  - uid: System.IEquatable{Virtufin.Core.Identifiers.ISignatory}.Equals(Virtufin.Core.Identifiers.ISignatory)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Identifiers.ISignatory
+    name: ISignatory
+    href: Virtufin.Core.Identifiers.ISignatory.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Virtufin.Core.Identifiers.ISignatory}.Equals(Virtufin.Core.Identifiers.ISignatory)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Identifiers.ISignatory
+    name: ISignatory
+    href: Virtufin.Core.Identifiers.ISignatory.html
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: Virtufin.Base.Signatory.ToString*
+  commentId: Overload:Virtufin.Base.Signatory.ToString
+  href: Virtufin.Base.Signatory.html#Virtufin_Base_Signatory_ToString
+  name: ToString
+  nameWithType: Signatory.ToString
+  fullName: Virtufin.Base.Signatory.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

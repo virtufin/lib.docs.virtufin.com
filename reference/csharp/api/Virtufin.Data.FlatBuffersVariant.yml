@@ -1,0 +1,2771 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Data.FlatBuffersVariant
+  commentId: T:Virtufin.Data.FlatBuffersVariant
+  id: FlatBuffersVariant
+  parent: Virtufin.Data
+  children:
+  - Virtufin.Data.FlatBuffersVariant.#ctor(Virtufin.Data.FlatBuffers.Variant)
+  - Virtufin.Data.FlatBuffersVariant.ArrayBool
+  - Virtufin.Data.FlatBuffersVariant.ArrayByte
+  - Virtufin.Data.FlatBuffersVariant.ArrayDouble
+  - Virtufin.Data.FlatBuffersVariant.ArrayFloat
+  - Virtufin.Data.FlatBuffersVariant.ArrayInt16
+  - Virtufin.Data.FlatBuffersVariant.ArrayInt32
+  - Virtufin.Data.FlatBuffersVariant.ArrayInt64
+  - Virtufin.Data.FlatBuffersVariant.ArrayString
+  - Virtufin.Data.FlatBuffersVariant.ArrayVariant
+  - Virtufin.Data.FlatBuffersVariant.Bool
+  - Virtufin.Data.FlatBuffersVariant.Byte
+  - Virtufin.Data.FlatBuffersVariant.Dictionary
+  - Virtufin.Data.FlatBuffersVariant.Double
+  - Virtufin.Data.FlatBuffersVariant.Float
+  - Virtufin.Data.FlatBuffersVariant.Int16
+  - Virtufin.Data.FlatBuffersVariant.Int32
+  - Virtufin.Data.FlatBuffersVariant.Int64
+  - Virtufin.Data.FlatBuffersVariant.IsArray
+  - Virtufin.Data.FlatBuffersVariant.IsArrayBool
+  - Virtufin.Data.FlatBuffersVariant.IsArrayByte
+  - Virtufin.Data.FlatBuffersVariant.IsArrayDouble
+  - Virtufin.Data.FlatBuffersVariant.IsArrayFloat
+  - Virtufin.Data.FlatBuffersVariant.IsArrayInt16
+  - Virtufin.Data.FlatBuffersVariant.IsArrayInt32
+  - Virtufin.Data.FlatBuffersVariant.IsArrayInt64
+  - Virtufin.Data.FlatBuffersVariant.IsArrayOfPrimitives
+  - Virtufin.Data.FlatBuffersVariant.IsArrayString
+  - Virtufin.Data.FlatBuffersVariant.IsArrayVariant
+  - Virtufin.Data.FlatBuffersVariant.IsBool
+  - Virtufin.Data.FlatBuffersVariant.IsByte
+  - Virtufin.Data.FlatBuffersVariant.IsDictionary
+  - Virtufin.Data.FlatBuffersVariant.IsDouble
+  - Virtufin.Data.FlatBuffersVariant.IsFloat
+  - Virtufin.Data.FlatBuffersVariant.IsInt16
+  - Virtufin.Data.FlatBuffersVariant.IsInt32
+  - Virtufin.Data.FlatBuffersVariant.IsInt64
+  - Virtufin.Data.FlatBuffersVariant.IsNone
+  - Virtufin.Data.FlatBuffersVariant.IsPrimitive
+  - Virtufin.Data.FlatBuffersVariant.IsString
+  - Virtufin.Data.FlatBuffersVariant.None
+  - Virtufin.Data.FlatBuffersVariant.String
+  - Virtufin.Data.FlatBuffersVariant.ToString
+  - Virtufin.Data.FlatBuffersVariant.VariantType
+  langs:
+  - csharp
+  - vb
+  name: FlatBuffersVariant
+  nameWithType: FlatBuffersVariant
+  fullName: Virtufin.Data.FlatBuffersVariant
+  type: Struct
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: FlatBuffersVariant
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 4
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  syntax:
+    content: 'public struct FlatBuffersVariant : IVariant'
+    content.vb: Public Structure FlatBuffersVariant Implements IVariant
+  implements:
+  - Virtufin.Data.IVariant
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Virtufin.Data.FlatBuffersVariant.#ctor(Virtufin.Data.FlatBuffers.Variant)
+  commentId: M:Virtufin.Data.FlatBuffersVariant.#ctor(Virtufin.Data.FlatBuffers.Variant)
+  id: '#ctor(Virtufin.Data.FlatBuffers.Variant)'
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: FlatBuffersVariant(Variant)
+  nameWithType: FlatBuffersVariant.FlatBuffersVariant(Variant)
+  fullName: Virtufin.Data.FlatBuffersVariant.FlatBuffersVariant(Virtufin.Data.FlatBuffers.Variant)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 7
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  syntax:
+    content: public FlatBuffersVariant(Variant variant)
+    parameters:
+    - id: variant
+      type: Virtufin.Data.FlatBuffers.Variant
+    content.vb: Public Sub New([variant] As [Variant])
+  overload: Virtufin.Data.FlatBuffersVariant.#ctor*
+  nameWithType.vb: FlatBuffersVariant.New(Variant)
+  fullName.vb: Virtufin.Data.FlatBuffersVariant.New(Virtufin.Data.FlatBuffers.Variant)
+  name.vb: New(Variant)
+- uid: Virtufin.Data.FlatBuffersVariant.ToString
+  commentId: M:Virtufin.Data.FlatBuffersVariant.ToString
+  id: ToString
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: FlatBuffersVariant.ToString()
+  fullName: Virtufin.Data.FlatBuffersVariant.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ToString
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 11
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  summary: Returns the fully qualified type name of this instance.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The fully qualified type name.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: Virtufin.Data.FlatBuffersVariant.ToString*
+  implements:
+  - Virtufin.Data.IVariant.ToString
+- uid: Virtufin.Data.FlatBuffersVariant.IsNone
+  commentId: P:Virtufin.Data.FlatBuffersVariant.IsNone
+  id: IsNone
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: IsNone
+  nameWithType: FlatBuffersVariant.IsNone
+  fullName: Virtufin.Data.FlatBuffersVariant.IsNone
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsNone
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 12
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public bool IsNone { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsNone As Boolean
+  overload: Virtufin.Data.FlatBuffersVariant.IsNone*
+  implements:
+  - Virtufin.Data.IVariant.IsNone
+- uid: Virtufin.Data.FlatBuffersVariant.IsBool
+  commentId: P:Virtufin.Data.FlatBuffersVariant.IsBool
+  id: IsBool
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: IsBool
+  nameWithType: FlatBuffersVariant.IsBool
+  fullName: Virtufin.Data.FlatBuffersVariant.IsBool
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsBool
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 14
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public bool IsBool { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsBool As Boolean
+  overload: Virtufin.Data.FlatBuffersVariant.IsBool*
+  implements:
+  - Virtufin.Data.IVariant.IsBool
+- uid: Virtufin.Data.FlatBuffersVariant.IsByte
+  commentId: P:Virtufin.Data.FlatBuffersVariant.IsByte
+  id: IsByte
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: IsByte
+  nameWithType: FlatBuffersVariant.IsByte
+  fullName: Virtufin.Data.FlatBuffersVariant.IsByte
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsByte
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 16
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public bool IsByte { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsByte As Boolean
+  overload: Virtufin.Data.FlatBuffersVariant.IsByte*
+  implements:
+  - Virtufin.Data.IVariant.IsByte
+- uid: Virtufin.Data.FlatBuffersVariant.IsInt16
+  commentId: P:Virtufin.Data.FlatBuffersVariant.IsInt16
+  id: IsInt16
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: IsInt16
+  nameWithType: FlatBuffersVariant.IsInt16
+  fullName: Virtufin.Data.FlatBuffersVariant.IsInt16
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsInt16
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public bool IsInt16 { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsInt16 As Boolean
+  overload: Virtufin.Data.FlatBuffersVariant.IsInt16*
+  implements:
+  - Virtufin.Data.IVariant.IsInt16
+- uid: Virtufin.Data.FlatBuffersVariant.IsInt32
+  commentId: P:Virtufin.Data.FlatBuffersVariant.IsInt32
+  id: IsInt32
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: IsInt32
+  nameWithType: FlatBuffersVariant.IsInt32
+  fullName: Virtufin.Data.FlatBuffersVariant.IsInt32
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsInt32
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public bool IsInt32 { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsInt32 As Boolean
+  overload: Virtufin.Data.FlatBuffersVariant.IsInt32*
+  implements:
+  - Virtufin.Data.IVariant.IsInt32
+- uid: Virtufin.Data.FlatBuffersVariant.IsInt64
+  commentId: P:Virtufin.Data.FlatBuffersVariant.IsInt64
+  id: IsInt64
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: IsInt64
+  nameWithType: FlatBuffersVariant.IsInt64
+  fullName: Virtufin.Data.FlatBuffersVariant.IsInt64
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsInt64
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public bool IsInt64 { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsInt64 As Boolean
+  overload: Virtufin.Data.FlatBuffersVariant.IsInt64*
+  implements:
+  - Virtufin.Data.IVariant.IsInt64
+- uid: Virtufin.Data.FlatBuffersVariant.IsFloat
+  commentId: P:Virtufin.Data.FlatBuffersVariant.IsFloat
+  id: IsFloat
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: IsFloat
+  nameWithType: FlatBuffersVariant.IsFloat
+  fullName: Virtufin.Data.FlatBuffersVariant.IsFloat
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsFloat
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 24
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public bool IsFloat { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsFloat As Boolean
+  overload: Virtufin.Data.FlatBuffersVariant.IsFloat*
+  implements:
+  - Virtufin.Data.IVariant.IsFloat
+- uid: Virtufin.Data.FlatBuffersVariant.IsDouble
+  commentId: P:Virtufin.Data.FlatBuffersVariant.IsDouble
+  id: IsDouble
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: IsDouble
+  nameWithType: FlatBuffersVariant.IsDouble
+  fullName: Virtufin.Data.FlatBuffersVariant.IsDouble
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsDouble
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public bool IsDouble { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsDouble As Boolean
+  overload: Virtufin.Data.FlatBuffersVariant.IsDouble*
+  implements:
+  - Virtufin.Data.IVariant.IsDouble
+- uid: Virtufin.Data.FlatBuffersVariant.IsString
+  commentId: P:Virtufin.Data.FlatBuffersVariant.IsString
+  id: IsString
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: IsString
+  nameWithType: FlatBuffersVariant.IsString
+  fullName: Virtufin.Data.FlatBuffersVariant.IsString
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsString
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 28
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public bool IsString { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsString As Boolean
+  overload: Virtufin.Data.FlatBuffersVariant.IsString*
+  implements:
+  - Virtufin.Data.IVariant.IsString
+- uid: Virtufin.Data.FlatBuffersVariant.IsArrayBool
+  commentId: P:Virtufin.Data.FlatBuffersVariant.IsArrayBool
+  id: IsArrayBool
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: IsArrayBool
+  nameWithType: FlatBuffersVariant.IsArrayBool
+  fullName: Virtufin.Data.FlatBuffersVariant.IsArrayBool
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsArrayBool
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 30
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public bool IsArrayBool { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsArrayBool As Boolean
+  overload: Virtufin.Data.FlatBuffersVariant.IsArrayBool*
+  implements:
+  - Virtufin.Data.IVariant.IsArrayBool
+- uid: Virtufin.Data.FlatBuffersVariant.IsArrayByte
+  commentId: P:Virtufin.Data.FlatBuffersVariant.IsArrayByte
+  id: IsArrayByte
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: IsArrayByte
+  nameWithType: FlatBuffersVariant.IsArrayByte
+  fullName: Virtufin.Data.FlatBuffersVariant.IsArrayByte
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsArrayByte
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 32
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public bool IsArrayByte { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsArrayByte As Boolean
+  overload: Virtufin.Data.FlatBuffersVariant.IsArrayByte*
+  implements:
+  - Virtufin.Data.IVariant.IsArrayByte
+- uid: Virtufin.Data.FlatBuffersVariant.IsArrayInt16
+  commentId: P:Virtufin.Data.FlatBuffersVariant.IsArrayInt16
+  id: IsArrayInt16
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: IsArrayInt16
+  nameWithType: FlatBuffersVariant.IsArrayInt16
+  fullName: Virtufin.Data.FlatBuffersVariant.IsArrayInt16
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsArrayInt16
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 34
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public bool IsArrayInt16 { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsArrayInt16 As Boolean
+  overload: Virtufin.Data.FlatBuffersVariant.IsArrayInt16*
+  implements:
+  - Virtufin.Data.IVariant.IsArrayInt16
+- uid: Virtufin.Data.FlatBuffersVariant.IsArrayInt32
+  commentId: P:Virtufin.Data.FlatBuffersVariant.IsArrayInt32
+  id: IsArrayInt32
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: IsArrayInt32
+  nameWithType: FlatBuffersVariant.IsArrayInt32
+  fullName: Virtufin.Data.FlatBuffersVariant.IsArrayInt32
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsArrayInt32
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 36
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public bool IsArrayInt32 { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsArrayInt32 As Boolean
+  overload: Virtufin.Data.FlatBuffersVariant.IsArrayInt32*
+  implements:
+  - Virtufin.Data.IVariant.IsArrayInt32
+- uid: Virtufin.Data.FlatBuffersVariant.IsArrayInt64
+  commentId: P:Virtufin.Data.FlatBuffersVariant.IsArrayInt64
+  id: IsArrayInt64
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: IsArrayInt64
+  nameWithType: FlatBuffersVariant.IsArrayInt64
+  fullName: Virtufin.Data.FlatBuffersVariant.IsArrayInt64
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsArrayInt64
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 38
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public bool IsArrayInt64 { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsArrayInt64 As Boolean
+  overload: Virtufin.Data.FlatBuffersVariant.IsArrayInt64*
+  implements:
+  - Virtufin.Data.IVariant.IsArrayInt64
+- uid: Virtufin.Data.FlatBuffersVariant.IsArrayFloat
+  commentId: P:Virtufin.Data.FlatBuffersVariant.IsArrayFloat
+  id: IsArrayFloat
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: IsArrayFloat
+  nameWithType: FlatBuffersVariant.IsArrayFloat
+  fullName: Virtufin.Data.FlatBuffersVariant.IsArrayFloat
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsArrayFloat
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 40
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public bool IsArrayFloat { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsArrayFloat As Boolean
+  overload: Virtufin.Data.FlatBuffersVariant.IsArrayFloat*
+  implements:
+  - Virtufin.Data.IVariant.IsArrayFloat
+- uid: Virtufin.Data.FlatBuffersVariant.IsArrayDouble
+  commentId: P:Virtufin.Data.FlatBuffersVariant.IsArrayDouble
+  id: IsArrayDouble
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: IsArrayDouble
+  nameWithType: FlatBuffersVariant.IsArrayDouble
+  fullName: Virtufin.Data.FlatBuffersVariant.IsArrayDouble
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsArrayDouble
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 42
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public bool IsArrayDouble { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsArrayDouble As Boolean
+  overload: Virtufin.Data.FlatBuffersVariant.IsArrayDouble*
+  implements:
+  - Virtufin.Data.IVariant.IsArrayDouble
+- uid: Virtufin.Data.FlatBuffersVariant.IsArrayString
+  commentId: P:Virtufin.Data.FlatBuffersVariant.IsArrayString
+  id: IsArrayString
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: IsArrayString
+  nameWithType: FlatBuffersVariant.IsArrayString
+  fullName: Virtufin.Data.FlatBuffersVariant.IsArrayString
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsArrayString
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 44
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public bool IsArrayString { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsArrayString As Boolean
+  overload: Virtufin.Data.FlatBuffersVariant.IsArrayString*
+  implements:
+  - Virtufin.Data.IVariant.IsArrayString
+- uid: Virtufin.Data.FlatBuffersVariant.IsArrayVariant
+  commentId: P:Virtufin.Data.FlatBuffersVariant.IsArrayVariant
+  id: IsArrayVariant
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: IsArrayVariant
+  nameWithType: FlatBuffersVariant.IsArrayVariant
+  fullName: Virtufin.Data.FlatBuffersVariant.IsArrayVariant
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsArrayVariant
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 46
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public bool IsArrayVariant { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsArrayVariant As Boolean
+  overload: Virtufin.Data.FlatBuffersVariant.IsArrayVariant*
+  implements:
+  - Virtufin.Data.IVariant.IsArrayVariant
+- uid: Virtufin.Data.FlatBuffersVariant.IsArray
+  commentId: P:Virtufin.Data.FlatBuffersVariant.IsArray
+  id: IsArray
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: IsArray
+  nameWithType: FlatBuffersVariant.IsArray
+  fullName: Virtufin.Data.FlatBuffersVariant.IsArray
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsArray
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 48
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public bool IsArray { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsArray As Boolean
+  overload: Virtufin.Data.FlatBuffersVariant.IsArray*
+  implements:
+  - Virtufin.Data.IVariant.IsArray
+- uid: Virtufin.Data.FlatBuffersVariant.IsDictionary
+  commentId: P:Virtufin.Data.FlatBuffersVariant.IsDictionary
+  id: IsDictionary
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: IsDictionary
+  nameWithType: FlatBuffersVariant.IsDictionary
+  fullName: Virtufin.Data.FlatBuffersVariant.IsDictionary
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsDictionary
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 50
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public bool IsDictionary { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsDictionary As Boolean
+  overload: Virtufin.Data.FlatBuffersVariant.IsDictionary*
+  implements:
+  - Virtufin.Data.IVariant.IsDictionary
+- uid: Virtufin.Data.FlatBuffersVariant.IsPrimitive
+  commentId: P:Virtufin.Data.FlatBuffersVariant.IsPrimitive
+  id: IsPrimitive
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: IsPrimitive
+  nameWithType: FlatBuffersVariant.IsPrimitive
+  fullName: Virtufin.Data.FlatBuffersVariant.IsPrimitive
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsPrimitive
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 52
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public bool IsPrimitive { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsPrimitive As Boolean
+  overload: Virtufin.Data.FlatBuffersVariant.IsPrimitive*
+  implements:
+  - Virtufin.Data.IVariant.IsPrimitive
+- uid: Virtufin.Data.FlatBuffersVariant.IsArrayOfPrimitives
+  commentId: P:Virtufin.Data.FlatBuffersVariant.IsArrayOfPrimitives
+  id: IsArrayOfPrimitives
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: IsArrayOfPrimitives
+  nameWithType: FlatBuffersVariant.IsArrayOfPrimitives
+  fullName: Virtufin.Data.FlatBuffersVariant.IsArrayOfPrimitives
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsArrayOfPrimitives
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 55
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public bool IsArrayOfPrimitives { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsArrayOfPrimitives As Boolean
+  overload: Virtufin.Data.FlatBuffersVariant.IsArrayOfPrimitives*
+  implements:
+  - Virtufin.Data.IVariant.IsArrayOfPrimitives
+- uid: Virtufin.Data.FlatBuffersVariant.VariantType
+  commentId: P:Virtufin.Data.FlatBuffersVariant.VariantType
+  id: VariantType
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: VariantType
+  nameWithType: FlatBuffersVariant.VariantType
+  fullName: Virtufin.Data.FlatBuffersVariant.VariantType
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: VariantType
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 58
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public Type VariantType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public ReadOnly Property VariantType As Type
+  overload: Virtufin.Data.FlatBuffersVariant.VariantType*
+  implements:
+  - Virtufin.Data.IVariant.VariantType
+- uid: Virtufin.Data.FlatBuffersVariant.ArrayBool
+  commentId: P:Virtufin.Data.FlatBuffersVariant.ArrayBool
+  id: ArrayBool
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: ArrayBool
+  nameWithType: FlatBuffersVariant.ArrayBool
+  fullName: Virtufin.Data.FlatBuffersVariant.ArrayBool
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ArrayBool
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 60
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public bool[] ArrayBool { get; }
+    parameters: []
+    return:
+      type: System.Boolean[]
+    content.vb: Public ReadOnly Property ArrayBool As Boolean()
+  overload: Virtufin.Data.FlatBuffersVariant.ArrayBool*
+  implements:
+  - Virtufin.Data.IVariant.ArrayBool
+- uid: Virtufin.Data.FlatBuffersVariant.ArrayByte
+  commentId: P:Virtufin.Data.FlatBuffersVariant.ArrayByte
+  id: ArrayByte
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: ArrayByte
+  nameWithType: FlatBuffersVariant.ArrayByte
+  fullName: Virtufin.Data.FlatBuffersVariant.ArrayByte
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ArrayByte
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 68
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public byte[] ArrayByte { get; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public ReadOnly Property ArrayByte As Byte()
+  overload: Virtufin.Data.FlatBuffersVariant.ArrayByte*
+  implements:
+  - Virtufin.Data.IVariant.ArrayByte
+- uid: Virtufin.Data.FlatBuffersVariant.ArrayDouble
+  commentId: P:Virtufin.Data.FlatBuffersVariant.ArrayDouble
+  id: ArrayDouble
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: ArrayDouble
+  nameWithType: FlatBuffersVariant.ArrayDouble
+  fullName: Virtufin.Data.FlatBuffersVariant.ArrayDouble
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ArrayDouble
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 76
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public double[] ArrayDouble { get; }
+    parameters: []
+    return:
+      type: System.Double[]
+    content.vb: Public ReadOnly Property ArrayDouble As Double()
+  overload: Virtufin.Data.FlatBuffersVariant.ArrayDouble*
+  implements:
+  - Virtufin.Data.IVariant.ArrayDouble
+- uid: Virtufin.Data.FlatBuffersVariant.ArrayFloat
+  commentId: P:Virtufin.Data.FlatBuffersVariant.ArrayFloat
+  id: ArrayFloat
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: ArrayFloat
+  nameWithType: FlatBuffersVariant.ArrayFloat
+  fullName: Virtufin.Data.FlatBuffersVariant.ArrayFloat
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ArrayFloat
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 84
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public float[] ArrayFloat { get; }
+    parameters: []
+    return:
+      type: System.Single[]
+    content.vb: Public ReadOnly Property ArrayFloat As Single()
+  overload: Virtufin.Data.FlatBuffersVariant.ArrayFloat*
+  implements:
+  - Virtufin.Data.IVariant.ArrayFloat
+- uid: Virtufin.Data.FlatBuffersVariant.ArrayInt16
+  commentId: P:Virtufin.Data.FlatBuffersVariant.ArrayInt16
+  id: ArrayInt16
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: ArrayInt16
+  nameWithType: FlatBuffersVariant.ArrayInt16
+  fullName: Virtufin.Data.FlatBuffersVariant.ArrayInt16
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ArrayInt16
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 92
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public short[] ArrayInt16 { get; }
+    parameters: []
+    return:
+      type: System.Int16[]
+    content.vb: Public ReadOnly Property ArrayInt16 As Short()
+  overload: Virtufin.Data.FlatBuffersVariant.ArrayInt16*
+  implements:
+  - Virtufin.Data.IVariant.ArrayInt16
+- uid: Virtufin.Data.FlatBuffersVariant.ArrayInt32
+  commentId: P:Virtufin.Data.FlatBuffersVariant.ArrayInt32
+  id: ArrayInt32
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: ArrayInt32
+  nameWithType: FlatBuffersVariant.ArrayInt32
+  fullName: Virtufin.Data.FlatBuffersVariant.ArrayInt32
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ArrayInt32
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 100
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public int[] ArrayInt32 { get; }
+    parameters: []
+    return:
+      type: System.Int32[]
+    content.vb: Public ReadOnly Property ArrayInt32 As Integer()
+  overload: Virtufin.Data.FlatBuffersVariant.ArrayInt32*
+  implements:
+  - Virtufin.Data.IVariant.ArrayInt32
+- uid: Virtufin.Data.FlatBuffersVariant.ArrayInt64
+  commentId: P:Virtufin.Data.FlatBuffersVariant.ArrayInt64
+  id: ArrayInt64
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: ArrayInt64
+  nameWithType: FlatBuffersVariant.ArrayInt64
+  fullName: Virtufin.Data.FlatBuffersVariant.ArrayInt64
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ArrayInt64
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 108
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public long[] ArrayInt64 { get; }
+    parameters: []
+    return:
+      type: System.Int64[]
+    content.vb: Public ReadOnly Property ArrayInt64 As Long()
+  overload: Virtufin.Data.FlatBuffersVariant.ArrayInt64*
+  implements:
+  - Virtufin.Data.IVariant.ArrayInt64
+- uid: Virtufin.Data.FlatBuffersVariant.ArrayString
+  commentId: P:Virtufin.Data.FlatBuffersVariant.ArrayString
+  id: ArrayString
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: ArrayString
+  nameWithType: FlatBuffersVariant.ArrayString
+  fullName: Virtufin.Data.FlatBuffersVariant.ArrayString
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ArrayString
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 116
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public string[] ArrayString { get; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public ReadOnly Property ArrayString As String()
+  overload: Virtufin.Data.FlatBuffersVariant.ArrayString*
+  implements:
+  - Virtufin.Data.IVariant.ArrayString
+- uid: Virtufin.Data.FlatBuffersVariant.ArrayVariant
+  commentId: P:Virtufin.Data.FlatBuffersVariant.ArrayVariant
+  id: ArrayVariant
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: ArrayVariant
+  nameWithType: FlatBuffersVariant.ArrayVariant
+  fullName: Virtufin.Data.FlatBuffersVariant.ArrayVariant
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ArrayVariant
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 124
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public IVariant[] ArrayVariant { get; }
+    parameters: []
+    return:
+      type: Virtufin.Data.IVariant[]
+    content.vb: Public ReadOnly Property ArrayVariant As IVariant()
+  overload: Virtufin.Data.FlatBuffersVariant.ArrayVariant*
+  implements:
+  - Virtufin.Data.IVariant.ArrayVariant
+- uid: Virtufin.Data.FlatBuffersVariant.Bool
+  commentId: P:Virtufin.Data.FlatBuffersVariant.Bool
+  id: Bool
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: Bool
+  nameWithType: FlatBuffersVariant.Bool
+  fullName: Virtufin.Data.FlatBuffersVariant.Bool
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Bool
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 132
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public bool Bool { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property Bool As Boolean
+  overload: Virtufin.Data.FlatBuffersVariant.Bool*
+  implements:
+  - Virtufin.Data.IVariant.Bool
+- uid: Virtufin.Data.FlatBuffersVariant.Byte
+  commentId: P:Virtufin.Data.FlatBuffersVariant.Byte
+  id: Byte
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: Byte
+  nameWithType: FlatBuffersVariant.Byte
+  fullName: Virtufin.Data.FlatBuffersVariant.Byte
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Byte
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 140
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public byte Byte { get; }
+    parameters: []
+    return:
+      type: System.Byte
+    content.vb: Public ReadOnly Property [Byte] As Byte
+  overload: Virtufin.Data.FlatBuffersVariant.Byte*
+  implements:
+  - Virtufin.Data.IVariant.Byte
+- uid: Virtufin.Data.FlatBuffersVariant.Dictionary
+  commentId: P:Virtufin.Data.FlatBuffersVariant.Dictionary
+  id: Dictionary
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: Dictionary
+  nameWithType: FlatBuffersVariant.Dictionary
+  fullName: Virtufin.Data.FlatBuffersVariant.Dictionary
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Dictionary
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 148
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public IDictionary<string, IVariant> Dictionary { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,Virtufin.Data.IVariant}
+    content.vb: Public ReadOnly Property Dictionary As IDictionary(Of String, IVariant)
+  overload: Virtufin.Data.FlatBuffersVariant.Dictionary*
+  implements:
+  - Virtufin.Data.IVariant.Dictionary
+- uid: Virtufin.Data.FlatBuffersVariant.Double
+  commentId: P:Virtufin.Data.FlatBuffersVariant.Double
+  id: Double
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: Double
+  nameWithType: FlatBuffersVariant.Double
+  fullName: Virtufin.Data.FlatBuffersVariant.Double
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Double
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 156
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public double Double { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property [Double] As Double
+  overload: Virtufin.Data.FlatBuffersVariant.Double*
+  implements:
+  - Virtufin.Data.IVariant.Double
+- uid: Virtufin.Data.FlatBuffersVariant.Float
+  commentId: P:Virtufin.Data.FlatBuffersVariant.Float
+  id: Float
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: Float
+  nameWithType: FlatBuffersVariant.Float
+  fullName: Virtufin.Data.FlatBuffersVariant.Float
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Float
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 164
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public float Float { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Float As Single
+  overload: Virtufin.Data.FlatBuffersVariant.Float*
+  implements:
+  - Virtufin.Data.IVariant.Float
+- uid: Virtufin.Data.FlatBuffersVariant.Int16
+  commentId: P:Virtufin.Data.FlatBuffersVariant.Int16
+  id: Int16
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: Int16
+  nameWithType: FlatBuffersVariant.Int16
+  fullName: Virtufin.Data.FlatBuffersVariant.Int16
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Int16
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 172
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public short Int16 { get; }
+    parameters: []
+    return:
+      type: System.Int16
+    content.vb: Public ReadOnly Property Int16 As Short
+  overload: Virtufin.Data.FlatBuffersVariant.Int16*
+  implements:
+  - Virtufin.Data.IVariant.Int16
+- uid: Virtufin.Data.FlatBuffersVariant.Int32
+  commentId: P:Virtufin.Data.FlatBuffersVariant.Int32
+  id: Int32
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: Int32
+  nameWithType: FlatBuffersVariant.Int32
+  fullName: Virtufin.Data.FlatBuffersVariant.Int32
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Int32
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 180
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public int Int32 { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Int32 As Integer
+  overload: Virtufin.Data.FlatBuffersVariant.Int32*
+  implements:
+  - Virtufin.Data.IVariant.Int32
+- uid: Virtufin.Data.FlatBuffersVariant.Int64
+  commentId: P:Virtufin.Data.FlatBuffersVariant.Int64
+  id: Int64
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: Int64
+  nameWithType: FlatBuffersVariant.Int64
+  fullName: Virtufin.Data.FlatBuffersVariant.Int64
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Int64
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 188
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public long Int64 { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property Int64 As Long
+  overload: Virtufin.Data.FlatBuffersVariant.Int64*
+  implements:
+  - Virtufin.Data.IVariant.Int64
+- uid: Virtufin.Data.FlatBuffersVariant.None
+  commentId: P:Virtufin.Data.FlatBuffersVariant.None
+  id: None
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: FlatBuffersVariant.None
+  fullName: Virtufin.Data.FlatBuffersVariant.None
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: None
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 196
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public object? None { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public ReadOnly Property None As Object
+  overload: Virtufin.Data.FlatBuffersVariant.None*
+  implements:
+  - Virtufin.Data.IVariant.None
+- uid: Virtufin.Data.FlatBuffersVariant.String
+  commentId: P:Virtufin.Data.FlatBuffersVariant.String
+  id: String
+  parent: Virtufin.Data.FlatBuffersVariant
+  langs:
+  - csharp
+  - vb
+  name: String
+  nameWithType: FlatBuffersVariant.String
+  fullName: Virtufin.Data.FlatBuffersVariant.String
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/FlatBuffersVariant.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: String
+    path: ../../../src/Virtufin.Data/FlatBuffersVariant.cs
+    startLine: 204
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  example: []
+  syntax:
+    content: public string String { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property [String] As String
+  overload: Virtufin.Data.FlatBuffersVariant.String*
+  implements:
+  - Virtufin.Data.IVariant.String
+references:
+- uid: Virtufin.Data
+  commentId: N:Virtufin.Data
+  href: Virtufin.html
+  name: Virtufin.Data
+  nameWithType: Virtufin.Data
+  fullName: Virtufin.Data
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Data
+    name: Data
+    href: Virtufin.Data.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Data
+    name: Data
+    href: Virtufin.Data.html
+- uid: Virtufin.Data.IVariant
+  commentId: T:Virtufin.Data.IVariant
+  parent: Virtufin.Data
+  href: Virtufin.Data.IVariant.html
+  name: IVariant
+  nameWithType: IVariant
+  fullName: Virtufin.Data.IVariant
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Data.FlatBuffersVariant.#ctor*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.#ctor
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant__ctor_Virtufin_Data_FlatBuffers_Variant_
+  name: FlatBuffersVariant
+  nameWithType: FlatBuffersVariant.FlatBuffersVariant
+  fullName: Virtufin.Data.FlatBuffersVariant.FlatBuffersVariant
+  nameWithType.vb: FlatBuffersVariant.New
+  fullName.vb: Virtufin.Data.FlatBuffersVariant.New
+  name.vb: New
+- uid: Virtufin.Data.FlatBuffers.Variant
+  commentId: T:Virtufin.Data.FlatBuffers.Variant
+  parent: Virtufin.Data.FlatBuffers
+  href: Virtufin.Data.FlatBuffers.Variant.html
+  name: Variant
+  nameWithType: Variant
+  fullName: Virtufin.Data.FlatBuffers.Variant
+- uid: Virtufin.Data.FlatBuffers
+  commentId: N:Virtufin.Data.FlatBuffers
+  href: Virtufin.html
+  name: Virtufin.Data.FlatBuffers
+  nameWithType: Virtufin.Data.FlatBuffers
+  fullName: Virtufin.Data.FlatBuffers
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Data
+    name: Data
+    href: Virtufin.Data.html
+  - name: .
+  - uid: Virtufin.Data.FlatBuffers
+    name: FlatBuffers
+    href: Virtufin.Data.FlatBuffers.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Data
+    name: Data
+    href: Virtufin.Data.html
+  - name: .
+  - uid: Virtufin.Data.FlatBuffers
+    name: FlatBuffers
+    href: Virtufin.Data.FlatBuffers.html
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: Virtufin.Data.FlatBuffersVariant.ToString*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.ToString
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_ToString
+  name: ToString
+  nameWithType: FlatBuffersVariant.ToString
+  fullName: Virtufin.Data.FlatBuffersVariant.ToString
+- uid: Virtufin.Data.IVariant.ToString
+  commentId: M:Virtufin.Data.IVariant.ToString
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_ToString
+  name: ToString()
+  nameWithType: IVariant.ToString()
+  fullName: Virtufin.Data.IVariant.ToString()
+  spec.csharp:
+  - uid: Virtufin.Data.IVariant.ToString
+    name: ToString
+    href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Data.IVariant.ToString
+    name: ToString
+    href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_ToString
+  - name: (
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Virtufin.Data.FlatBuffersVariant.IsNone*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.IsNone
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_IsNone
+  name: IsNone
+  nameWithType: FlatBuffersVariant.IsNone
+  fullName: Virtufin.Data.FlatBuffersVariant.IsNone
+- uid: Virtufin.Data.IVariant.IsNone
+  commentId: P:Virtufin.Data.IVariant.IsNone
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_IsNone
+  name: IsNone
+  nameWithType: IVariant.IsNone
+  fullName: Virtufin.Data.IVariant.IsNone
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Virtufin.Data.FlatBuffersVariant.IsBool*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.IsBool
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_IsBool
+  name: IsBool
+  nameWithType: FlatBuffersVariant.IsBool
+  fullName: Virtufin.Data.FlatBuffersVariant.IsBool
+- uid: Virtufin.Data.IVariant.IsBool
+  commentId: P:Virtufin.Data.IVariant.IsBool
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_IsBool
+  name: IsBool
+  nameWithType: IVariant.IsBool
+  fullName: Virtufin.Data.IVariant.IsBool
+- uid: Virtufin.Data.FlatBuffersVariant.IsByte*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.IsByte
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_IsByte
+  name: IsByte
+  nameWithType: FlatBuffersVariant.IsByte
+  fullName: Virtufin.Data.FlatBuffersVariant.IsByte
+- uid: Virtufin.Data.IVariant.IsByte
+  commentId: P:Virtufin.Data.IVariant.IsByte
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_IsByte
+  name: IsByte
+  nameWithType: IVariant.IsByte
+  fullName: Virtufin.Data.IVariant.IsByte
+- uid: Virtufin.Data.FlatBuffersVariant.IsInt16*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.IsInt16
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_IsInt16
+  name: IsInt16
+  nameWithType: FlatBuffersVariant.IsInt16
+  fullName: Virtufin.Data.FlatBuffersVariant.IsInt16
+- uid: Virtufin.Data.IVariant.IsInt16
+  commentId: P:Virtufin.Data.IVariant.IsInt16
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_IsInt16
+  name: IsInt16
+  nameWithType: IVariant.IsInt16
+  fullName: Virtufin.Data.IVariant.IsInt16
+- uid: Virtufin.Data.FlatBuffersVariant.IsInt32*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.IsInt32
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_IsInt32
+  name: IsInt32
+  nameWithType: FlatBuffersVariant.IsInt32
+  fullName: Virtufin.Data.FlatBuffersVariant.IsInt32
+- uid: Virtufin.Data.IVariant.IsInt32
+  commentId: P:Virtufin.Data.IVariant.IsInt32
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_IsInt32
+  name: IsInt32
+  nameWithType: IVariant.IsInt32
+  fullName: Virtufin.Data.IVariant.IsInt32
+- uid: Virtufin.Data.FlatBuffersVariant.IsInt64*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.IsInt64
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_IsInt64
+  name: IsInt64
+  nameWithType: FlatBuffersVariant.IsInt64
+  fullName: Virtufin.Data.FlatBuffersVariant.IsInt64
+- uid: Virtufin.Data.IVariant.IsInt64
+  commentId: P:Virtufin.Data.IVariant.IsInt64
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_IsInt64
+  name: IsInt64
+  nameWithType: IVariant.IsInt64
+  fullName: Virtufin.Data.IVariant.IsInt64
+- uid: Virtufin.Data.FlatBuffersVariant.IsFloat*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.IsFloat
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_IsFloat
+  name: IsFloat
+  nameWithType: FlatBuffersVariant.IsFloat
+  fullName: Virtufin.Data.FlatBuffersVariant.IsFloat
+- uid: Virtufin.Data.IVariant.IsFloat
+  commentId: P:Virtufin.Data.IVariant.IsFloat
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_IsFloat
+  name: IsFloat
+  nameWithType: IVariant.IsFloat
+  fullName: Virtufin.Data.IVariant.IsFloat
+- uid: Virtufin.Data.FlatBuffersVariant.IsDouble*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.IsDouble
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_IsDouble
+  name: IsDouble
+  nameWithType: FlatBuffersVariant.IsDouble
+  fullName: Virtufin.Data.FlatBuffersVariant.IsDouble
+- uid: Virtufin.Data.IVariant.IsDouble
+  commentId: P:Virtufin.Data.IVariant.IsDouble
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_IsDouble
+  name: IsDouble
+  nameWithType: IVariant.IsDouble
+  fullName: Virtufin.Data.IVariant.IsDouble
+- uid: Virtufin.Data.FlatBuffersVariant.IsString*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.IsString
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_IsString
+  name: IsString
+  nameWithType: FlatBuffersVariant.IsString
+  fullName: Virtufin.Data.FlatBuffersVariant.IsString
+- uid: Virtufin.Data.IVariant.IsString
+  commentId: P:Virtufin.Data.IVariant.IsString
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_IsString
+  name: IsString
+  nameWithType: IVariant.IsString
+  fullName: Virtufin.Data.IVariant.IsString
+- uid: Virtufin.Data.FlatBuffersVariant.IsArrayBool*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.IsArrayBool
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_IsArrayBool
+  name: IsArrayBool
+  nameWithType: FlatBuffersVariant.IsArrayBool
+  fullName: Virtufin.Data.FlatBuffersVariant.IsArrayBool
+- uid: Virtufin.Data.IVariant.IsArrayBool
+  commentId: P:Virtufin.Data.IVariant.IsArrayBool
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_IsArrayBool
+  name: IsArrayBool
+  nameWithType: IVariant.IsArrayBool
+  fullName: Virtufin.Data.IVariant.IsArrayBool
+- uid: Virtufin.Data.FlatBuffersVariant.IsArrayByte*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.IsArrayByte
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_IsArrayByte
+  name: IsArrayByte
+  nameWithType: FlatBuffersVariant.IsArrayByte
+  fullName: Virtufin.Data.FlatBuffersVariant.IsArrayByte
+- uid: Virtufin.Data.IVariant.IsArrayByte
+  commentId: P:Virtufin.Data.IVariant.IsArrayByte
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_IsArrayByte
+  name: IsArrayByte
+  nameWithType: IVariant.IsArrayByte
+  fullName: Virtufin.Data.IVariant.IsArrayByte
+- uid: Virtufin.Data.FlatBuffersVariant.IsArrayInt16*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.IsArrayInt16
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_IsArrayInt16
+  name: IsArrayInt16
+  nameWithType: FlatBuffersVariant.IsArrayInt16
+  fullName: Virtufin.Data.FlatBuffersVariant.IsArrayInt16
+- uid: Virtufin.Data.IVariant.IsArrayInt16
+  commentId: P:Virtufin.Data.IVariant.IsArrayInt16
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_IsArrayInt16
+  name: IsArrayInt16
+  nameWithType: IVariant.IsArrayInt16
+  fullName: Virtufin.Data.IVariant.IsArrayInt16
+- uid: Virtufin.Data.FlatBuffersVariant.IsArrayInt32*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.IsArrayInt32
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_IsArrayInt32
+  name: IsArrayInt32
+  nameWithType: FlatBuffersVariant.IsArrayInt32
+  fullName: Virtufin.Data.FlatBuffersVariant.IsArrayInt32
+- uid: Virtufin.Data.IVariant.IsArrayInt32
+  commentId: P:Virtufin.Data.IVariant.IsArrayInt32
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_IsArrayInt32
+  name: IsArrayInt32
+  nameWithType: IVariant.IsArrayInt32
+  fullName: Virtufin.Data.IVariant.IsArrayInt32
+- uid: Virtufin.Data.FlatBuffersVariant.IsArrayInt64*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.IsArrayInt64
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_IsArrayInt64
+  name: IsArrayInt64
+  nameWithType: FlatBuffersVariant.IsArrayInt64
+  fullName: Virtufin.Data.FlatBuffersVariant.IsArrayInt64
+- uid: Virtufin.Data.IVariant.IsArrayInt64
+  commentId: P:Virtufin.Data.IVariant.IsArrayInt64
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_IsArrayInt64
+  name: IsArrayInt64
+  nameWithType: IVariant.IsArrayInt64
+  fullName: Virtufin.Data.IVariant.IsArrayInt64
+- uid: Virtufin.Data.FlatBuffersVariant.IsArrayFloat*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.IsArrayFloat
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_IsArrayFloat
+  name: IsArrayFloat
+  nameWithType: FlatBuffersVariant.IsArrayFloat
+  fullName: Virtufin.Data.FlatBuffersVariant.IsArrayFloat
+- uid: Virtufin.Data.IVariant.IsArrayFloat
+  commentId: P:Virtufin.Data.IVariant.IsArrayFloat
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_IsArrayFloat
+  name: IsArrayFloat
+  nameWithType: IVariant.IsArrayFloat
+  fullName: Virtufin.Data.IVariant.IsArrayFloat
+- uid: Virtufin.Data.FlatBuffersVariant.IsArrayDouble*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.IsArrayDouble
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_IsArrayDouble
+  name: IsArrayDouble
+  nameWithType: FlatBuffersVariant.IsArrayDouble
+  fullName: Virtufin.Data.FlatBuffersVariant.IsArrayDouble
+- uid: Virtufin.Data.IVariant.IsArrayDouble
+  commentId: P:Virtufin.Data.IVariant.IsArrayDouble
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_IsArrayDouble
+  name: IsArrayDouble
+  nameWithType: IVariant.IsArrayDouble
+  fullName: Virtufin.Data.IVariant.IsArrayDouble
+- uid: Virtufin.Data.FlatBuffersVariant.IsArrayString*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.IsArrayString
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_IsArrayString
+  name: IsArrayString
+  nameWithType: FlatBuffersVariant.IsArrayString
+  fullName: Virtufin.Data.FlatBuffersVariant.IsArrayString
+- uid: Virtufin.Data.IVariant.IsArrayString
+  commentId: P:Virtufin.Data.IVariant.IsArrayString
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_IsArrayString
+  name: IsArrayString
+  nameWithType: IVariant.IsArrayString
+  fullName: Virtufin.Data.IVariant.IsArrayString
+- uid: Virtufin.Data.FlatBuffersVariant.IsArrayVariant*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.IsArrayVariant
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_IsArrayVariant
+  name: IsArrayVariant
+  nameWithType: FlatBuffersVariant.IsArrayVariant
+  fullName: Virtufin.Data.FlatBuffersVariant.IsArrayVariant
+- uid: Virtufin.Data.IVariant.IsArrayVariant
+  commentId: P:Virtufin.Data.IVariant.IsArrayVariant
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_IsArrayVariant
+  name: IsArrayVariant
+  nameWithType: IVariant.IsArrayVariant
+  fullName: Virtufin.Data.IVariant.IsArrayVariant
+- uid: Virtufin.Data.FlatBuffersVariant.IsArray*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.IsArray
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_IsArray
+  name: IsArray
+  nameWithType: FlatBuffersVariant.IsArray
+  fullName: Virtufin.Data.FlatBuffersVariant.IsArray
+- uid: Virtufin.Data.IVariant.IsArray
+  commentId: P:Virtufin.Data.IVariant.IsArray
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_IsArray
+  name: IsArray
+  nameWithType: IVariant.IsArray
+  fullName: Virtufin.Data.IVariant.IsArray
+- uid: Virtufin.Data.FlatBuffersVariant.IsDictionary*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.IsDictionary
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_IsDictionary
+  name: IsDictionary
+  nameWithType: FlatBuffersVariant.IsDictionary
+  fullName: Virtufin.Data.FlatBuffersVariant.IsDictionary
+- uid: Virtufin.Data.IVariant.IsDictionary
+  commentId: P:Virtufin.Data.IVariant.IsDictionary
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_IsDictionary
+  name: IsDictionary
+  nameWithType: IVariant.IsDictionary
+  fullName: Virtufin.Data.IVariant.IsDictionary
+- uid: Virtufin.Data.FlatBuffersVariant.IsPrimitive*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.IsPrimitive
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_IsPrimitive
+  name: IsPrimitive
+  nameWithType: FlatBuffersVariant.IsPrimitive
+  fullName: Virtufin.Data.FlatBuffersVariant.IsPrimitive
+- uid: Virtufin.Data.IVariant.IsPrimitive
+  commentId: P:Virtufin.Data.IVariant.IsPrimitive
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_IsPrimitive
+  name: IsPrimitive
+  nameWithType: IVariant.IsPrimitive
+  fullName: Virtufin.Data.IVariant.IsPrimitive
+- uid: Virtufin.Data.FlatBuffersVariant.IsArrayOfPrimitives*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.IsArrayOfPrimitives
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_IsArrayOfPrimitives
+  name: IsArrayOfPrimitives
+  nameWithType: FlatBuffersVariant.IsArrayOfPrimitives
+  fullName: Virtufin.Data.FlatBuffersVariant.IsArrayOfPrimitives
+- uid: Virtufin.Data.IVariant.IsArrayOfPrimitives
+  commentId: P:Virtufin.Data.IVariant.IsArrayOfPrimitives
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_IsArrayOfPrimitives
+  name: IsArrayOfPrimitives
+  nameWithType: IVariant.IsArrayOfPrimitives
+  fullName: Virtufin.Data.IVariant.IsArrayOfPrimitives
+- uid: Virtufin.Data.FlatBuffersVariant.VariantType*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.VariantType
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_VariantType
+  name: VariantType
+  nameWithType: FlatBuffersVariant.VariantType
+  fullName: Virtufin.Data.FlatBuffersVariant.VariantType
+- uid: Virtufin.Data.IVariant.VariantType
+  commentId: P:Virtufin.Data.IVariant.VariantType
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_VariantType
+  name: VariantType
+  nameWithType: IVariant.VariantType
+  fullName: Virtufin.Data.IVariant.VariantType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Virtufin.Data.FlatBuffersVariant.ArrayBool*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.ArrayBool
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_ArrayBool
+  name: ArrayBool
+  nameWithType: FlatBuffersVariant.ArrayBool
+  fullName: Virtufin.Data.FlatBuffersVariant.ArrayBool
+- uid: Virtufin.Data.IVariant.ArrayBool
+  commentId: P:Virtufin.Data.IVariant.ArrayBool
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_ArrayBool
+  name: ArrayBool
+  nameWithType: IVariant.ArrayBool
+  fullName: Virtufin.Data.IVariant.ArrayBool
+- uid: System.Boolean[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool[]
+  nameWithType: bool[]
+  fullName: bool[]
+  nameWithType.vb: Boolean()
+  fullName.vb: Boolean()
+  name.vb: Boolean()
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: (
+  - name: )
+- uid: Virtufin.Data.FlatBuffersVariant.ArrayByte*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.ArrayByte
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_ArrayByte
+  name: ArrayByte
+  nameWithType: FlatBuffersVariant.ArrayByte
+  fullName: Virtufin.Data.FlatBuffersVariant.ArrayByte
+- uid: Virtufin.Data.IVariant.ArrayByte
+  commentId: P:Virtufin.Data.IVariant.ArrayByte
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_ArrayByte
+  name: ArrayByte
+  nameWithType: IVariant.ArrayByte
+  fullName: Virtufin.Data.IVariant.ArrayByte
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: Virtufin.Data.FlatBuffersVariant.ArrayDouble*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.ArrayDouble
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_ArrayDouble
+  name: ArrayDouble
+  nameWithType: FlatBuffersVariant.ArrayDouble
+  fullName: Virtufin.Data.FlatBuffersVariant.ArrayDouble
+- uid: Virtufin.Data.IVariant.ArrayDouble
+  commentId: P:Virtufin.Data.IVariant.ArrayDouble
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_ArrayDouble
+  name: ArrayDouble
+  nameWithType: IVariant.ArrayDouble
+  fullName: Virtufin.Data.IVariant.ArrayDouble
+- uid: System.Double[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double[]
+  nameWithType: double[]
+  fullName: double[]
+  nameWithType.vb: Double()
+  fullName.vb: Double()
+  name.vb: Double()
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: (
+  - name: )
+- uid: Virtufin.Data.FlatBuffersVariant.ArrayFloat*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.ArrayFloat
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_ArrayFloat
+  name: ArrayFloat
+  nameWithType: FlatBuffersVariant.ArrayFloat
+  fullName: Virtufin.Data.FlatBuffersVariant.ArrayFloat
+- uid: Virtufin.Data.IVariant.ArrayFloat
+  commentId: P:Virtufin.Data.IVariant.ArrayFloat
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_ArrayFloat
+  name: ArrayFloat
+  nameWithType: IVariant.ArrayFloat
+  fullName: Virtufin.Data.IVariant.ArrayFloat
+- uid: System.Single[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float[]
+  nameWithType: float[]
+  fullName: float[]
+  nameWithType.vb: Single()
+  fullName.vb: Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+- uid: Virtufin.Data.FlatBuffersVariant.ArrayInt16*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.ArrayInt16
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_ArrayInt16
+  name: ArrayInt16
+  nameWithType: FlatBuffersVariant.ArrayInt16
+  fullName: Virtufin.Data.FlatBuffersVariant.ArrayInt16
+- uid: Virtufin.Data.IVariant.ArrayInt16
+  commentId: P:Virtufin.Data.IVariant.ArrayInt16
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_ArrayInt16
+  name: ArrayInt16
+  nameWithType: IVariant.ArrayInt16
+  fullName: Virtufin.Data.IVariant.ArrayInt16
+- uid: System.Int16[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short[]
+  nameWithType: short[]
+  fullName: short[]
+  nameWithType.vb: Short()
+  fullName.vb: Short()
+  name.vb: Short()
+  spec.csharp:
+  - uid: System.Int16
+    name: short
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int16
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int16
+    name: Short
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int16
+  - name: (
+  - name: )
+- uid: Virtufin.Data.FlatBuffersVariant.ArrayInt32*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.ArrayInt32
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_ArrayInt32
+  name: ArrayInt32
+  nameWithType: FlatBuffersVariant.ArrayInt32
+  fullName: Virtufin.Data.FlatBuffersVariant.ArrayInt32
+- uid: Virtufin.Data.IVariant.ArrayInt32
+  commentId: P:Virtufin.Data.IVariant.ArrayInt32
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_ArrayInt32
+  name: ArrayInt32
+  nameWithType: IVariant.ArrayInt32
+  fullName: Virtufin.Data.IVariant.ArrayInt32
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: Virtufin.Data.FlatBuffersVariant.ArrayInt64*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.ArrayInt64
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_ArrayInt64
+  name: ArrayInt64
+  nameWithType: FlatBuffersVariant.ArrayInt64
+  fullName: Virtufin.Data.FlatBuffersVariant.ArrayInt64
+- uid: Virtufin.Data.IVariant.ArrayInt64
+  commentId: P:Virtufin.Data.IVariant.ArrayInt64
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_ArrayInt64
+  name: ArrayInt64
+  nameWithType: IVariant.ArrayInt64
+  fullName: Virtufin.Data.IVariant.ArrayInt64
+- uid: System.Int64[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long[]
+  nameWithType: long[]
+  fullName: long[]
+  nameWithType.vb: Long()
+  fullName.vb: Long()
+  name.vb: Long()
+  spec.csharp:
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: (
+  - name: )
+- uid: Virtufin.Data.FlatBuffersVariant.ArrayString*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.ArrayString
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_ArrayString
+  name: ArrayString
+  nameWithType: FlatBuffersVariant.ArrayString
+  fullName: Virtufin.Data.FlatBuffersVariant.ArrayString
+- uid: Virtufin.Data.IVariant.ArrayString
+  commentId: P:Virtufin.Data.IVariant.ArrayString
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_ArrayString
+  name: ArrayString
+  nameWithType: IVariant.ArrayString
+  fullName: Virtufin.Data.IVariant.ArrayString
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: Virtufin.Data.FlatBuffersVariant.ArrayVariant*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.ArrayVariant
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_ArrayVariant
+  name: ArrayVariant
+  nameWithType: FlatBuffersVariant.ArrayVariant
+  fullName: Virtufin.Data.FlatBuffersVariant.ArrayVariant
+- uid: Virtufin.Data.IVariant.ArrayVariant
+  commentId: P:Virtufin.Data.IVariant.ArrayVariant
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_ArrayVariant
+  name: ArrayVariant
+  nameWithType: IVariant.ArrayVariant
+  fullName: Virtufin.Data.IVariant.ArrayVariant
+- uid: Virtufin.Data.IVariant[]
+  isExternal: true
+  href: Virtufin.Data.IVariant.html
+  name: IVariant[]
+  nameWithType: IVariant[]
+  fullName: Virtufin.Data.IVariant[]
+  nameWithType.vb: IVariant()
+  fullName.vb: Virtufin.Data.IVariant()
+  name.vb: IVariant()
+  spec.csharp:
+  - uid: Virtufin.Data.IVariant
+    name: IVariant
+    href: Virtufin.Data.IVariant.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Virtufin.Data.IVariant
+    name: IVariant
+    href: Virtufin.Data.IVariant.html
+  - name: (
+  - name: )
+- uid: Virtufin.Data.FlatBuffersVariant.Bool*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.Bool
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_Bool
+  name: Bool
+  nameWithType: FlatBuffersVariant.Bool
+  fullName: Virtufin.Data.FlatBuffersVariant.Bool
+- uid: Virtufin.Data.IVariant.Bool
+  commentId: P:Virtufin.Data.IVariant.Bool
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_Bool
+  name: Bool
+  nameWithType: IVariant.Bool
+  fullName: Virtufin.Data.IVariant.Bool
+- uid: Virtufin.Data.FlatBuffersVariant.Byte*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.Byte
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_Byte
+  name: Byte
+  nameWithType: FlatBuffersVariant.Byte
+  fullName: Virtufin.Data.FlatBuffersVariant.Byte
+- uid: Virtufin.Data.IVariant.Byte
+  commentId: P:Virtufin.Data.IVariant.Byte
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_Byte
+  name: Byte
+  nameWithType: IVariant.Byte
+  fullName: Virtufin.Data.IVariant.Byte
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: Virtufin.Data.FlatBuffersVariant.Dictionary*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.Dictionary
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_Dictionary
+  name: Dictionary
+  nameWithType: FlatBuffersVariant.Dictionary
+  fullName: Virtufin.Data.FlatBuffersVariant.Dictionary
+- uid: Virtufin.Data.IVariant.Dictionary
+  commentId: P:Virtufin.Data.IVariant.Dictionary
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_Dictionary
+  name: Dictionary
+  nameWithType: IVariant.Dictionary
+  fullName: Virtufin.Data.IVariant.Dictionary
+- uid: System.Collections.Generic.IDictionary{System.String,Virtufin.Data.IVariant}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,Virtufin.Data.IVariant}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<string, IVariant>
+  nameWithType: IDictionary<string, IVariant>
+  fullName: System.Collections.Generic.IDictionary<string, Virtufin.Data.IVariant>
+  nameWithType.vb: IDictionary(Of String, IVariant)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, Virtufin.Data.IVariant)
+  name.vb: IDictionary(Of String, IVariant)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Data.IVariant
+    name: IVariant
+    href: Virtufin.Data.IVariant.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Data.IVariant
+    name: IVariant
+    href: Virtufin.Data.IVariant.html
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Virtufin.Data.FlatBuffersVariant.Double*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.Double
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_Double
+  name: Double
+  nameWithType: FlatBuffersVariant.Double
+  fullName: Virtufin.Data.FlatBuffersVariant.Double
+- uid: Virtufin.Data.IVariant.Double
+  commentId: P:Virtufin.Data.IVariant.Double
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_Double
+  name: Double
+  nameWithType: IVariant.Double
+  fullName: Virtufin.Data.IVariant.Double
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Virtufin.Data.FlatBuffersVariant.Float*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.Float
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_Float
+  name: Float
+  nameWithType: FlatBuffersVariant.Float
+  fullName: Virtufin.Data.FlatBuffersVariant.Float
+- uid: Virtufin.Data.IVariant.Float
+  commentId: P:Virtufin.Data.IVariant.Float
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_Float
+  name: Float
+  nameWithType: IVariant.Float
+  fullName: Virtufin.Data.IVariant.Float
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Virtufin.Data.FlatBuffersVariant.Int16*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.Int16
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_Int16
+  name: Int16
+  nameWithType: FlatBuffersVariant.Int16
+  fullName: Virtufin.Data.FlatBuffersVariant.Int16
+- uid: Virtufin.Data.IVariant.Int16
+  commentId: P:Virtufin.Data.IVariant.Int16
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_Int16
+  name: Int16
+  nameWithType: IVariant.Int16
+  fullName: Virtufin.Data.IVariant.Int16
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short
+  nameWithType: short
+  fullName: short
+  nameWithType.vb: Short
+  fullName.vb: Short
+  name.vb: Short
+- uid: Virtufin.Data.FlatBuffersVariant.Int32*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.Int32
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_Int32
+  name: Int32
+  nameWithType: FlatBuffersVariant.Int32
+  fullName: Virtufin.Data.FlatBuffersVariant.Int32
+- uid: Virtufin.Data.IVariant.Int32
+  commentId: P:Virtufin.Data.IVariant.Int32
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_Int32
+  name: Int32
+  nameWithType: IVariant.Int32
+  fullName: Virtufin.Data.IVariant.Int32
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Virtufin.Data.FlatBuffersVariant.Int64*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.Int64
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_Int64
+  name: Int64
+  nameWithType: FlatBuffersVariant.Int64
+  fullName: Virtufin.Data.FlatBuffersVariant.Int64
+- uid: Virtufin.Data.IVariant.Int64
+  commentId: P:Virtufin.Data.IVariant.Int64
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_Int64
+  name: Int64
+  nameWithType: IVariant.Int64
+  fullName: Virtufin.Data.IVariant.Int64
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: Virtufin.Data.FlatBuffersVariant.None*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.None
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_None
+  name: None
+  nameWithType: FlatBuffersVariant.None
+  fullName: Virtufin.Data.FlatBuffersVariant.None
+- uid: Virtufin.Data.IVariant.None
+  commentId: P:Virtufin.Data.IVariant.None
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_None
+  name: None
+  nameWithType: IVariant.None
+  fullName: Virtufin.Data.IVariant.None
+- uid: Virtufin.Data.FlatBuffersVariant.String*
+  commentId: Overload:Virtufin.Data.FlatBuffersVariant.String
+  href: Virtufin.Data.FlatBuffersVariant.html#Virtufin_Data_FlatBuffersVariant_String
+  name: String
+  nameWithType: FlatBuffersVariant.String
+  fullName: Virtufin.Data.FlatBuffersVariant.String
+- uid: Virtufin.Data.IVariant.String
+  commentId: P:Virtufin.Data.IVariant.String
+  parent: Virtufin.Data.IVariant
+  href: Virtufin.Data.IVariant.html#Virtufin_Data_IVariant_String
+  name: String
+  nameWithType: IVariant.String
+  fullName: Virtufin.Data.IVariant.String

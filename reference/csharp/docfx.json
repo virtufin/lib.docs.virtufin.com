@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schema/docfx.schema.json",
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "Virtufin.Core/Virtufin.Core.csproj",
+            "Virtufin.Base/Virtufin.Base.csproj",
+            "Virtufin.Data/Virtufin.Data.csproj",
+            "Virtufin.Util/Virtufin.Util.csproj"
+          ],
+          "src": "/workspace/virtufin/virtufin-dotnet/src"
+        }
+      ],
+      "dest": "api",
+      "namespaceLayout": "nested"
+    }
+  ],
+  "build": {
+    "dest": ".",
+    "template": ["default", "modern", "templates/custom"],
+    "content": [
+      { "files": ["api/**/*.yml"] },
+      { "files": ["index.md"] }
+    ],
+    "globalMetadata": {
+      "_appTitle": "Virtufin .NET - C# API Reference",
+      "_appName": "Virtufin.Dotnet",
+      "_appLogoPath": "logo.png",
+      "_appFaviconPath": "favicon.ico",
+      "_appFooter": "© 2026 Häner Consulting. All Rights Reserved.",
+      "_disableContribution": true,
+      "_disableAffix": true,
+      "gitCommitHash": "12200022f926f6d79f6f48cb56f9a539ded65216",
+      "gitCommitUrl": "{git_repo_url}/commit/12200022f926f6d79f6f48cb56f9a539ded65216",
+      "gitBranch": "master"
+    }
+  }
+}

@@ -1,0 +1,155 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Contracts
+  commentId: N:Virtufin.Core.Contracts
+  id: Contracts
+  parent: Virtufin.Core
+  children:
+  - Virtufin.Core.Contracts.IAsset
+  - Virtufin.Core.Contracts.IContract
+  - Virtufin.Core.Contracts.IContractBuilder
+  - Virtufin.Core.Contracts.IContractFactory
+  - Virtufin.Core.Contracts.IContractParameters
+  - Virtufin.Core.Contracts.IContractRegistry
+  - Virtufin.Core.Contracts.IMessage
+  - Virtufin.Core.Contracts.IMessageGenerator
+  - Virtufin.Core.Contracts.IScenario
+  - Virtufin.Core.Contracts.IScenarioHistory
+  - Virtufin.Core.Contracts.IState
+  - Virtufin.Core.Contracts.ITransaction
+  - Virtufin.Core.Contracts.ITransactionExecutor
+  - Virtufin.Core.Contracts.IWithMaturity
+  langs:
+  - csharp
+  - vb
+  name: Virtufin.Core.Contracts
+  nameWithType: Virtufin.Core.Contracts
+  fullName: Virtufin.Core.Contracts
+  type: Namespace
+  assemblies:
+  - Virtufin.Core
+references:
+- uid: Virtufin.Core.Contracts.IAsset
+  commentId: T:Virtufin.Core.Contracts.IAsset
+  parent: Virtufin.Core.Contracts
+  href: Virtufin.Core.Contracts.IAsset.html
+  name: IAsset
+  nameWithType: IAsset
+  fullName: Virtufin.Core.Contracts.IAsset
+- uid: Virtufin.Core.Contracts.IContract
+  commentId: T:Virtufin.Core.Contracts.IContract
+  parent: Virtufin.Core.Contracts
+  href: Virtufin.Core.Contracts.IContract.html
+  name: IContract
+  nameWithType: IContract
+  fullName: Virtufin.Core.Contracts.IContract
+- uid: Virtufin.Core.Contracts.IContractBuilder
+  commentId: T:Virtufin.Core.Contracts.IContractBuilder
+  href: Virtufin.Core.Contracts.IContractBuilder.html
+  name: IContractBuilder
+  nameWithType: IContractBuilder
+  fullName: Virtufin.Core.Contracts.IContractBuilder
+- uid: Virtufin.Core.Contracts.IContractFactory
+  commentId: T:Virtufin.Core.Contracts.IContractFactory
+  href: Virtufin.Core.Contracts.IContractFactory.html
+  name: IContractFactory
+  nameWithType: IContractFactory
+  fullName: Virtufin.Core.Contracts.IContractFactory
+- uid: Virtufin.Core.Contracts.IContractParameters
+  commentId: T:Virtufin.Core.Contracts.IContractParameters
+  parent: Virtufin.Core.Contracts
+  href: Virtufin.Core.Contracts.IContractParameters.html
+  name: IContractParameters
+  nameWithType: IContractParameters
+  fullName: Virtufin.Core.Contracts.IContractParameters
+- uid: Virtufin.Core.Contracts.IContractRegistry
+  commentId: T:Virtufin.Core.Contracts.IContractRegistry
+  href: Virtufin.Core.Contracts.IContractRegistry.html
+  name: IContractRegistry
+  nameWithType: IContractRegistry
+  fullName: Virtufin.Core.Contracts.IContractRegistry
+- uid: Virtufin.Core.Contracts.IMessage
+  commentId: T:Virtufin.Core.Contracts.IMessage
+  parent: Virtufin.Core.Contracts
+  href: Virtufin.Core.Contracts.IMessage.html
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Virtufin.Core.Contracts.IMessage
+- uid: Virtufin.Core.Contracts.IMessageGenerator
+  commentId: T:Virtufin.Core.Contracts.IMessageGenerator
+  parent: Virtufin.Core.Contracts
+  href: Virtufin.Core.Contracts.IMessageGenerator.html
+  name: IMessageGenerator
+  nameWithType: IMessageGenerator
+  fullName: Virtufin.Core.Contracts.IMessageGenerator
+- uid: Virtufin.Core.Contracts.IScenario
+  commentId: T:Virtufin.Core.Contracts.IScenario
+  parent: Virtufin.Core.Contracts
+  href: Virtufin.Core.Contracts.IScenario.html
+  name: IScenario
+  nameWithType: IScenario
+  fullName: Virtufin.Core.Contracts.IScenario
+- uid: Virtufin.Core.Contracts.IScenarioHistory
+  commentId: T:Virtufin.Core.Contracts.IScenarioHistory
+  parent: Virtufin.Core.Contracts
+  href: Virtufin.Core.Contracts.IScenarioHistory.html
+  name: IScenarioHistory
+  nameWithType: IScenarioHistory
+  fullName: Virtufin.Core.Contracts.IScenarioHistory
+- uid: Virtufin.Core.Contracts.IState
+  commentId: T:Virtufin.Core.Contracts.IState
+  parent: Virtufin.Core.Contracts
+  href: Virtufin.Core.Contracts.IState.html
+  name: IState
+  nameWithType: IState
+  fullName: Virtufin.Core.Contracts.IState
+- uid: Virtufin.Core.Contracts.ITransaction
+  commentId: T:Virtufin.Core.Contracts.ITransaction
+  parent: Virtufin.Core.Contracts
+  href: Virtufin.Core.Contracts.ITransaction.html
+  name: ITransaction
+  nameWithType: ITransaction
+  fullName: Virtufin.Core.Contracts.ITransaction
+- uid: Virtufin.Core.Contracts.ITransactionExecutor
+  commentId: T:Virtufin.Core.Contracts.ITransactionExecutor
+  href: Virtufin.Core.Contracts.ITransactionExecutor.html
+  name: ITransactionExecutor
+  nameWithType: ITransactionExecutor
+  fullName: Virtufin.Core.Contracts.ITransactionExecutor
+- uid: Virtufin.Core.Contracts.IWithMaturity
+  commentId: T:Virtufin.Core.Contracts.IWithMaturity
+  parent: Virtufin.Core.Contracts
+  href: Virtufin.Core.Contracts.IWithMaturity.html
+  name: IWithMaturity
+  nameWithType: IWithMaturity
+  fullName: Virtufin.Core.Contracts.IWithMaturity
+- uid: Virtufin.Core.Contracts
+  commentId: N:Virtufin.Core.Contracts
+  href: Virtufin.html
+  name: Virtufin.Core.Contracts
+  nameWithType: Virtufin.Core.Contracts
+  fullName: Virtufin.Core.Contracts
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Contracts
+    name: Contracts
+    href: Virtufin.Core.Contracts.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Contracts
+    name: Contracts
+    href: Virtufin.Core.Contracts.html

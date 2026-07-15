@@ -1,0 +1,3912 @@
+{
+  "source_base_path": "/workspace/virtufin/virtufin-dotnet/docs-site/reference/csharp",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.AssetIdentifier.CurrencyAssetIdentifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.AssetIdentifier.CurrencyAssetIdentifier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.AssetIdentifier.CurrencyAssetIdentifier",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.AssetIdentifier.CurrencyAssetIdentifier.yml\" sourcestartlinenumber=\"1\">Currency-backed asset identifier.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.AssetIdentifier.SimpleAssetIdentifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.AssetIdentifier.SimpleAssetIdentifier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.AssetIdentifier.SimpleAssetIdentifier",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.AssetIdentifier.SimpleAssetIdentifier.yml\" sourcestartlinenumber=\"1\">Opaque string asset identifier (e.g. ticker symbol).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.AssetIdentifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.AssetIdentifier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.AssetIdentifier",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.AssetIdentifier.yml\" sourcestartlinenumber=\"1\">Identifier for an asset. Two flavours:</p>\n<ul><li><xref href=\"Virtufin.Base.AssetIdentifier.SimpleAssetIdentifier\" data-throw-if-not-resolved=\"false\"></xref>: any opaque string (e.g. ticker).</li><li><xref href=\"Virtufin.Base.AssetIdentifier.CurrencyAssetIdentifier\" data-throw-if-not-resolved=\"false\"></xref>: an ISO-like currency code.</li></ul>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Attribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Attribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Attribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Cash.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Cash.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Cash",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Cash.yml\" sourcestartlinenumber=\"1\">Currency-tagged fixed-point quantity. <xref href=\"Virtufin.Base.Cash.Amount\" data-throw-if-not-resolved=\"false\"></xref> carries its own\nprecision (<xref href=\"Virtufin.Core.Position.DecimalAmount.N\" data-throw-if-not-resolved=\"false\"></xref>) so two <xref href=\"Virtufin.Base.Cash\" data-throw-if-not-resolved=\"false\"></xref> values\nrepresenting the same monetary amount at different precisions are not\nequal.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Clock.Metronome-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Clock.Metronome-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Clock.Metronome<T>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Clock.Metronome-1.yml\" sourcestartlinenumber=\"1\">The primitive regular-tick clock source. Emits a <code class=\"typeparamref\">T</code>\nvalue at a fixed <xref href=\"Virtufin.Base.Clock.Metronome%601.Interval\" data-throw-if-not-resolved=\"false\"></xref>. Each emission corresponds to a\ntick: <code>T</code> values can carry the wall-time (e.g. a\n<code>DateTimeOffset</code>) or a sequence number projected to any\n<code class=\"typeparamref\">T</code> the consumer needs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Clock.Metronome.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Clock.Metronome.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Clock.Metronome",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Clock.Metronome.yml\" sourcestartlinenumber=\"1\">Helper factory methods for metronome-based clocks. Callers can write\n<code>Metronome.CreateDateTimeWallClock(TimeSpan.FromSeconds(1))</code> without\nspecifying a type argument.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Clock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Clock.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Clock",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.ContractIdentifier.SimpleContractIdentifier",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.ContractIdentifier.SimpleContractIdentifier.yml\" sourcestartlinenumber=\"1\">An opaque string identifier for a contract.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.ContractIdentifier.UTI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.ContractIdentifier.UTI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.ContractIdentifier.UTI",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.ContractIdentifier.UTI.yml\" sourcestartlinenumber=\"1\">ISDA Universal Transaction Identifier.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.ContractIdentifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.ContractIdentifier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.ContractIdentifier",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.ContractIdentifier.yml\" sourcestartlinenumber=\"1\">Identifier for a contract. Two flavours are supported:</p>\n<ul><li><xref href=\"Virtufin.Base.ContractIdentifier.SimpleContractIdentifier\" data-throw-if-not-resolved=\"false\"></xref>: any opaque string.</li><li><xref href=\"Virtufin.Base.ContractIdentifier.UTI\" data-throw-if-not-resolved=\"false\"></xref>: ISDA Universal Transaction Identifier\n  (see <xref href=\"Virtufin.Base.UtiValidator\" data-throw-if-not-resolved=\"false\"></xref> for format rules).</li></ul>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.ContractParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.ContractParameters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.ContractParameters",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.ContractParameters.yml\" sourcestartlinenumber=\"1\">Concrete <xref href=\"Virtufin.Core.Contracts.IContractParameters\" data-throw-if-not-resolved=\"false\"></xref> backed by a raw byte payload.\nCallers serialise their domain-specific parameters (e.g. via FlatBuffers,\nMessagePack, JSON) into the byte array and reconstruct them at the\ncontract.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Currency.CurrencySymbol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Currency.CurrencySymbol.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Currency.CurrencySymbol",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Currency.CurrencySymbol.yml\" sourcestartlinenumber=\"1\">ISO 4217 alpha codes plus a ZZZ sentinel for testing.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Currency.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Currency.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Currency",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Currency.yml\" sourcestartlinenumber=\"1\">ISO 4217 currency codes. Includes all active national currencies and\n&quot;X-&quot; fund codes (precious metals, supranationals, testing). Historical /\nwithdrawn codes (ADP, DEM, FRF, etc.) are intentionally omitted.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.CurrencyIdentifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.CurrencyIdentifier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.CurrencyIdentifier",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.CurrencyIdentifier.yml\" sourcestartlinenumber=\"1\">Static factory for currency-backed <xref href=\"Virtufin.Base.AssetIdentifier\" data-throw-if-not-resolved=\"false\"></xref>s for all\nISO 4217 active currencies plus the <code>ZZZ</code> sentinel. Each currency\nhas a canonical identifier accessible as <code>CurrencyIdentifier.XXX</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.DefaultVirtufinTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.DefaultVirtufinTypes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.DefaultVirtufinTypes",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.DefaultVirtufinTypes.yml\" sourcestartlinenumber=\"1\">Default <xref href=\"Virtufin.Core.VirtufinTypes.IVirtufinTypes\" data-throw-if-not-resolved=\"false\"></xref> implementation: returns the\n<xref href=\"System.Type\" data-throw-if-not-resolved=\"false\"></xref> of every concrete type in <code>Virtufin.Base</code>\nthat implements the corresponding <code>Virtufin.Core</code> identifier or\ncontract interface.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.EntityIdentifier.CUSIP.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.EntityIdentifier.CUSIP.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.EntityIdentifier.CUSIP",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.EntityIdentifier.ISIN.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.EntityIdentifier.ISIN.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.EntityIdentifier.ISIN",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.EntityIdentifier.UUID.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.EntityIdentifier.UUID.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.EntityIdentifier.UUID",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.EntityIdentifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.EntityIdentifier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.EntityIdentifier",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.EventEnvelope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.EventEnvelope.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.EventEnvelope",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.EventEnvelope.yml\" sourcestartlinenumber=\"1\">Concrete IEventEnvelope implementation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.EventEnvelopeCloudEventExtensions",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods that convert between <xref href=\"Virtufin.Core.Events.IEventEnvelope\" data-throw-if-not-resolved=\"false\"></xref> and\n<xref href=\"Virtufin.Core.Events.CloudEvent\" data-throw-if-not-resolved=\"false\"></xref>. Maps envelope fields to standard CloudEvent\nattributes (id, source, type, subject, time) and Virtufin-specific\nfields to extension attributes (eventtime, correlationid, lane selectors).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Market.MarketEvent.OrderBookReceived.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Market.MarketEvent.OrderBookReceived.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Market.MarketEvent.OrderBookReceived",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Market.MarketEvent.OrderBookReceived.yml\" sourcestartlinenumber=\"1\">Depth snapshot or diff from the order book feed.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Market.MarketEvent.TickReceived.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Market.MarketEvent.TickReceived.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Market.MarketEvent.TickReceived",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Market.MarketEvent.TickReceived.yml\" sourcestartlinenumber=\"1\">Best bid/ask update from the feed.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Market.MarketEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Market.MarketEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Market.MarketEvent",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Market.MarketEvent.yml\" sourcestartlinenumber=\"1\">Sealed ADT of raw market observations — what the feed emits. Two cases:\n<xref href=\"Virtufin.Base.Events.Market.MarketEvent.TickReceived\" data-throw-if-not-resolved=\"false\"></xref> (best bid/ask update) and <xref href=\"Virtufin.Base.Events.Market.MarketEvent.OrderBookReceived\" data-throw-if-not-resolved=\"false\"></xref>\n(depth snapshot/diff). Topics use the naming scheme\n<code>act.market.{entity}.{event}</code> or <code>hyp.{selector}.market.{entity}.{event}</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent.Base.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent.Base.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Market.RichMarketEvent.Base",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Market.RichMarketEvent.Base.yml\" sourcestartlinenumber=\"1\">Pass-through for a raw <xref href=\"Virtufin.Base.Events.Market.MarketEvent\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent.CandleClosed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent.CandleClosed.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Market.RichMarketEvent.CandleClosed",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Market.RichMarketEvent.CandleClosed.yml\" sourcestartlinenumber=\"1\">OHLCV candle closed (derived from a tick window).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent.VWAPComputed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent.VWAPComputed.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Market.RichMarketEvent.VWAPComputed",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Market.RichMarketEvent.VWAPComputed.yml\" sourcestartlinenumber=\"1\">Volume-weighted average price (derived from tick stream).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent.VolatilityEstimate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent.VolatilityEstimate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Market.RichMarketEvent.VolatilityEstimate",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Market.RichMarketEvent.VolatilityEstimate.yml\" sourcestartlinenumber=\"1\">Realised volatility estimate (e.g. standard deviation of log returns).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Market.RichMarketEvent",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Market.RichMarketEvent.yml\" sourcestartlinenumber=\"1\">Enriched market events — derived signals (candles, VWAP, volatility) plus\npass-through for raw <xref href=\"Virtufin.Base.Events.Market.MarketEvent\" data-throw-if-not-resolved=\"false\"></xref>s. Both flow through the\nsame <code>act.market.<em sourcefile=\"api/Virtufin.Base.Events.Market.RichMarketEvent.yml\" sourcestartlinenumber=\"3\"></em></code> / <code>hyp.{selector}.market.</code> topics since\nthey share the <xref href=\"Virtufin.Core.Events.Market.IMarketEvent\" data-throw-if-not-resolved=\"false\"></xref> marker.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Market.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Market.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Market",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Position.Direction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Position.Direction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Position.Direction",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.Direction.yml\" sourcestartlinenumber=\"1\">Direction of a position.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Position.PositionEvent.Closed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Position.PositionEvent.Closed.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Position.PositionEvent.Closed",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.PositionEvent.Closed.yml\" sourcestartlinenumber=\"1\">Net quantity reached zero — position closed.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Position.PositionEvent.Flipped.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Position.PositionEvent.Flipped.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Position.PositionEvent.Flipped",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.PositionEvent.Flipped.yml\" sourcestartlinenumber=\"1\">Direction changed atomically (long ↔ short).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Position.PositionEvent.Opened.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Position.PositionEvent.Opened.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Position.PositionEvent.Opened",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.PositionEvent.Opened.yml\" sourcestartlinenumber=\"1\">First fill on a flat symbol — opens a position.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Position.PositionEvent.Updated.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Position.PositionEvent.Updated.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Position.PositionEvent.Updated",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.PositionEvent.Updated.yml\" sourcestartlinenumber=\"1\">Quantity or avg-entry changed by a fill or transfer.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Position.PositionEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Position.PositionEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Position.PositionEvent",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.PositionEvent.yml\" sourcestartlinenumber=\"1\">Sealed algebraic data type of position events. The unified stream driving\nall holdings changes — funding, deposits, withdrawals, AND fills (a fill\nproduces two <xref href=\"Virtufin.Base.Events.Position.PositionEvent.Updated\" data-throw-if-not-resolved=\"false\"></xref> events atomically, one per side of the\ntrade). Topics use the naming scheme\n<code>sc.{scenarioId}.position.{entity}.{event}</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Position.PositionSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Position.PositionSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Position.PositionSource",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.PositionSource.yml\" sourcestartlinenumber=\"1\">Originating source of a position event.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Position.RichPositionEvent.Base.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Position.RichPositionEvent.Base.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Position.RichPositionEvent.Base",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.RichPositionEvent.Base.yml\" sourcestartlinenumber=\"1\">Pass-through wrapper for a raw <xref href=\"Virtufin.Base.Events.Position.PositionEvent\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Position.RichPositionEvent.OpenedWithParty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Position.RichPositionEvent.OpenedWithParty.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Position.RichPositionEvent.OpenedWithParty",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.RichPositionEvent.OpenedWithParty.yml\" sourcestartlinenumber=\"1\">Position opened with from/to party info (e.g. transfer counterparty).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Position.RichPositionEvent.UpdatedAttributed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Position.RichPositionEvent.UpdatedAttributed.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Position.RichPositionEvent.UpdatedAttributed",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.RichPositionEvent.UpdatedAttributed.yml\" sourcestartlinenumber=\"1\">Position updated with attribution.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Position.RichPositionEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Position.RichPositionEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Position.RichPositionEvent",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.RichPositionEvent.yml\" sourcestartlinenumber=\"1\">Enriched position events — same <xref href=\"Virtufin.Core.Events.Position.IPositionEvent\" data-throw-if-not-resolved=\"false\"></xref> marker as\n<xref href=\"Virtufin.Base.Events.Position.PositionEvent\" data-throw-if-not-resolved=\"false\"></xref> but with attribution, party info, and a\npass-through case for the raw event. Use this when consumers need to know\nwho initiated the change (e.g. transfer counterparty info).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Position.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Position.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Position",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent.Base.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent.Base.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Risk.RichRiskEvent.Base",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RichRiskEvent.Base.yml\" sourcestartlinenumber=\"1\">Pass-through for a raw <xref href=\"Virtufin.Base.Events.Risk.RiskEvent\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent.DrawdownWithMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent.DrawdownWithMetadata.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Risk.RichRiskEvent.DrawdownWithMetadata",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RichRiskEvent.DrawdownWithMetadata.yml\" sourcestartlinenumber=\"1\">Drawdown with peak/trough/recovery timestamps.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent.LimitBreachedWithThreshold.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent.LimitBreachedWithThreshold.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Risk.RichRiskEvent.LimitBreachedWithThreshold",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RichRiskEvent.LimitBreachedWithThreshold.yml\" sourcestartlinenumber=\"1\">Limit breach with both threshold and observed values.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.yml\" sourcestartlinenumber=\"1\">P&amp;L attributed to a specific scenario run.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Risk.RichRiskEvent",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RichRiskEvent.yml\" sourcestartlinenumber=\"1\">Enriched risk events — same <xref href=\"Virtufin.Core.Events.Risk.IRiskEvent\" data-throw-if-not-resolved=\"false\"></xref> marker as\n<xref href=\"Virtufin.Base.Events.Risk.RiskEvent\" data-throw-if-not-resolved=\"false\"></xref> but with attribution metadata and a pass-through\ncase for the raw event.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.DrawdownUpdated.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.DrawdownUpdated.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Risk.RiskEvent.DrawdownUpdated",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RiskEvent.DrawdownUpdated.yml\" sourcestartlinenumber=\"1\">Peak-to-trough drawdown recalculated.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.ExposureBreached.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.ExposureBreached.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Risk.RiskEvent.ExposureBreached",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RiskEvent.ExposureBreached.yml\" sourcestartlinenumber=\"1\">Exposure limit exceeded on a position.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.LimitBreached.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.LimitBreached.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Risk.RiskEvent.LimitBreached",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RiskEvent.LimitBreached.yml\" sourcestartlinenumber=\"1\">Risk limit crossed.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.LimitRestored.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.LimitRestored.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Risk.RiskEvent.LimitRestored",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RiskEvent.LimitRestored.yml\" sourcestartlinenumber=\"1\">Risk limit restored.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.MarginCalled.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.MarginCalled.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Risk.RiskEvent.MarginCalled",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RiskEvent.MarginCalled.yml\" sourcestartlinenumber=\"1\">Forced liquidation triggered (act only).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.MarginWarned.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.MarginWarned.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Risk.RiskEvent.MarginWarned",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RiskEvent.MarginWarned.yml\" sourcestartlinenumber=\"1\">Margin ratio approaching threshold.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.PnLRealized.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.PnLRealized.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Risk.RiskEvent.PnLRealized",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RiskEvent.PnLRealized.yml\" sourcestartlinenumber=\"1\">Position closed, P&amp;L locked.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.PnLUpdated.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.PnLUpdated.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Risk.RiskEvent.PnLUpdated",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RiskEvent.PnLUpdated.yml\" sourcestartlinenumber=\"1\">Unrealized P&amp;L recalculated on a tick.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Risk.RiskEvent",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RiskEvent.yml\" sourcestartlinenumber=\"1\">Sealed ADT of risk events. Eight cases covering P&amp;L, drawdown, limit\nbreaches, exposure breaches, and margin events. Topics use the naming\nscheme <code>sc.{scenarioId}.risk.{entity}.{event}</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Risk.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Risk",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.BuyOrSell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.BuyOrSell.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.BuyOrSell",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.BuyOrSell.yml\" sourcestartlinenumber=\"1\">Side of a trade action.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.RichTradeAction.BuyOrder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.RichTradeAction.BuyOrder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.RichTradeAction.BuyOrder",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.RichTradeAction.BuyOrder.yml\" sourcestartlinenumber=\"1\">Enriched buy order.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.RichTradeAction.CancelOrder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.RichTradeAction.CancelOrder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.RichTradeAction.CancelOrder",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.RichTradeAction.CancelOrder.yml\" sourcestartlinenumber=\"1\">Enriched cancel order.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.RichTradeAction.Interest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.RichTradeAction.Interest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.RichTradeAction.Interest",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.RichTradeAction.Interest.yml\" sourcestartlinenumber=\"1\">Enriched CLOB interest registration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.RichTradeAction.SellOrder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.RichTradeAction.SellOrder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.RichTradeAction.SellOrder",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.RichTradeAction.SellOrder.yml\" sourcestartlinenumber=\"1\">Enriched sell order.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.RichTradeAction.Transfer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.RichTradeAction.Transfer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.RichTradeAction.Transfer",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.RichTradeAction.Transfer.yml\" sourcestartlinenumber=\"1\">Enriched peer-to-peer transfer.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.RichTradeAction.WithdrawInterest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.RichTradeAction.WithdrawInterest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.RichTradeAction.WithdrawInterest",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.RichTradeAction.WithdrawInterest.yml\" sourcestartlinenumber=\"1\">Enriched withdrawal of a previously registered interest.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.RichTradeAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.RichTradeAction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.RichTradeAction",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.RichTradeAction.yml\" sourcestartlinenumber=\"1\">Enriched trade action — wraps a raw <xref href=\"Virtufin.Base.Events.Trade.TradeAction\" data-throw-if-not-resolved=\"false\"></xref> with metadata\nthe strategy attaches before execution (strategy attribution, latency\nbudget, routing venue, etc.). Implements the same <xref href=\"Virtufin.Core.Events.Trade.ITradeAction\" data-throw-if-not-resolved=\"false\"></xref>\nmarker so it flows through the same <xref href=\"Virtufin.Core.Events.Trade.ITradeEvent%601\" data-throw-if-not-resolved=\"false\"></xref>\nparameterisation as raw actions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeAction.BuyOrder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeAction.BuyOrder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.TradeAction.BuyOrder",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeAction.BuyOrder.yml\" sourcestartlinenumber=\"1\">Buy order on a CLOB.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeAction.CancelOrder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeAction.CancelOrder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.TradeAction.CancelOrder",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeAction.CancelOrder.yml\" sourcestartlinenumber=\"1\">Cancel a previously placed order.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeAction.InterestAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeAction.InterestAction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.TradeAction.InterestAction",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeAction.InterestAction.yml\" sourcestartlinenumber=\"1\">Express interest in a CLOB before commitment.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeAction.SellOrder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeAction.SellOrder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.TradeAction.SellOrder",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeAction.SellOrder.yml\" sourcestartlinenumber=\"1\">Sell order on a CLOB.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeAction.TransferAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeAction.TransferAction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.TradeAction.TransferAction",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeAction.TransferAction.yml\" sourcestartlinenumber=\"1\">Peer-to-peer transfer between two parties (no exchange).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeAction.WithdrawInterestAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeAction.WithdrawInterestAction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.TradeAction.WithdrawInterestAction",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeAction.WithdrawInterestAction.yml\" sourcestartlinenumber=\"1\">Revoke a previously registered interest.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeAction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.TradeAction",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeAction.yml\" sourcestartlinenumber=\"1\">Sealed algebraic data type of trade actions — the strategy's intent\nbefore enrichment. Cases:</p>\n<ul><li><xref href=\"Virtufin.Base.Events.Trade.TradeAction.BuyOrder\" data-throw-if-not-resolved=\"false\"></xref>: limit/market buy on a CLOB.</li><li><xref href=\"Virtufin.Base.Events.Trade.TradeAction.SellOrder\" data-throw-if-not-resolved=\"false\"></xref>: limit/market sell on a CLOB.</li><li><xref href=\"Virtufin.Base.Events.Trade.TradeAction.CancelOrder\" data-throw-if-not-resolved=\"false\"></xref>: cancel a previously placed order.</li><li><xref href=\"Virtufin.Base.Events.Trade.TradeAction.TransferAction\" data-throw-if-not-resolved=\"false\"></xref>: peer-to-peer transfer between two parties\n  (no exchange).</li><li><xref href=\"Virtufin.Base.Events.Trade.TradeAction.InterestAction\" data-throw-if-not-resolved=\"false\"></xref>: express interest in a CLOB before commitment\n  — no risk, no book impact.</li><li><xref href=\"Virtufin.Base.Events.Trade.TradeAction.WithdrawInterestAction\" data-throw-if-not-resolved=\"false\"></xref>: revoke a previously registered interest.</li></ul>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.ExecutionCleared.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.ExecutionCleared.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent.ExecutionCleared",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.ExecutionCleared.yml\" sourcestartlinenumber=\"1\">Obligations confirmed (collapses into fill on Binance CEX).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.ExecutionSettled.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.ExecutionSettled.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent.ExecutionSettled",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.ExecutionSettled.yml\" sourcestartlinenumber=\"1\">Assets transferred, books closed.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.FillReceived.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.FillReceived.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent.FillReceived",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.FillReceived.yml\" sourcestartlinenumber=\"1\">Partial or full fill received from exchange.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.InterestExpired.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.InterestExpired.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent.InterestExpired",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.InterestExpired.yml\" sourcestartlinenumber=\"1\">Interest window expired without matching.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.InterestMatched.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.InterestMatched.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent.InterestMatched",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.InterestMatched.yml\" sourcestartlinenumber=\"1\">Interest matched against a fill (attribution event for analytics).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.InterestRegistered.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.InterestRegistered.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent.InterestRegistered",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.InterestRegistered.yml\" sourcestartlinenumber=\"1\">Interest registered with the venue (no book impact).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.InterestRevoked.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.InterestRevoked.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent.InterestRevoked",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.InterestRevoked.yml\" sourcestartlinenumber=\"1\">Interest explicitly revoked by the strategy.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.OrderCancelled.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.OrderCancelled.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent.OrderCancelled",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.OrderCancelled.yml\" sourcestartlinenumber=\"1\">Cancel confirmed by exchange.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.OrderExpired.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.OrderExpired.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent.OrderExpired",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.OrderExpired.yml\" sourcestartlinenumber=\"1\">GTC/GTD order lapsed.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.OrderPlaced.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.OrderPlaced.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent.OrderPlaced",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.OrderPlaced.yml\" sourcestartlinenumber=\"1\">Order submitted to exchange.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.TransferCompleted.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.TransferCompleted.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent.TransferCompleted",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.TransferCompleted.yml\" sourcestartlinenumber=\"1\">Peer-to-peer transfer completed.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.TransferFailed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.TransferFailed.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent.TransferFailed",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.TransferFailed.yml\" sourcestartlinenumber=\"1\">Peer-to-peer transfer rejected or failed.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.TransferInitiated.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.TransferInitiated.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent.TransferInitiated",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.TransferInitiated.yml\" sourcestartlinenumber=\"1\">Peer-to-peer transfer initiated.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.yml\" sourcestartlinenumber=\"1\">Sealed algebraic data type of trade events parameterised by\n<xref href=\"Virtufin.Base.Events.Trade.RichTradeAction\" data-throw-if-not-resolved=\"false\"></xref>. Each case carries the originating action for\ncorrelation. Topics use the naming scheme\n<code>sc.{scenarioId}.trade.{entity}.{event}</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.Venue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.Venue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade.Venue",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.Venue.yml\" sourcestartlinenumber=\"1\">Trading venue identifier.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.Trade.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events.Trade",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Events.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Events.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Events",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Execution.DeterministicExecutorBase-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Execution.DeterministicExecutorBase-3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Execution.DeterministicExecutorBase<TState, TAction, TEvent>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Execution.DeterministicExecutorBase-3.yml\" sourcestartlinenumber=\"1\">Pure deterministic executor base: no randomness, no IO, no hidden state.\nSubclasses define the case-by-case fill logic (what event to emit for\neach <code class=\"typeparamref\">TAction</code> variant) and the initial state.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Execution.DeterministicState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Execution.DeterministicState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Execution.DeterministicState",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Execution.DeterministicState.yml\" sourcestartlinenumber=\"1\">State for the DeterministicExecutor — empty, since\ndeterministic execution has no hidden state.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Execution.LiveExecutorBase-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Execution.LiveExecutorBase-3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Execution.LiveExecutorBase<TState, TAction, TEvent>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Execution.LiveExecutorBase-3.yml\" sourcestartlinenumber=\"1\">Live executor base for routing actions to a real exchange. Subclasses\ndefine the exchange-routing strategy in <xref href=\"Virtufin.Base.Execution.LiveExecutorBase%603.Process(%600%2c%601)\" data-throw-if-not-resolved=\"false\"></xref>. No\nassumptions about routing, fallback, or state evolution — all in the subclass.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Execution.ObserveOnlyExecutor-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Execution.ObserveOnlyExecutor-3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Execution.ObserveOnlyExecutor<TState, TAction, TEvent>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Execution.ObserveOnlyExecutor-3.yml\" sourcestartlinenumber=\"1\">Decorator executor that wraps any other <xref href=\"Virtufin.Core.Execution.IExecutor%603\" data-throw-if-not-resolved=\"false\"></xref>\nand records what <em sourcefile=\"api/Virtufin.Base.Execution.ObserveOnlyExecutor-3.yml\" sourcestartlinenumber=\"2\">would</em> have happened without sending orders to the\nexchange. Used in <code>SHADOW_*</code> scenarios.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Execution.SlippageExecutorBase-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Execution.SlippageExecutorBase-3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Execution.SlippageExecutorBase<TState, TAction, TEvent>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Execution.SlippageExecutorBase-3.yml\" sourcestartlinenumber=\"1\">Executor base that models bid-ask slippage. Subclasses define the slippage\ndistribution (no distribution assumed by the base) and how the slippage\nvalue is applied to the case-by-case fill logic.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Execution.StochasticState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Execution.StochasticState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Execution.StochasticState",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Execution.StochasticState.yml\" sourcestartlinenumber=\"1\">State for stochastic executors — a seeded PRNG. Deterministic given the\nseed, reproducible across runs. Mutable: the PRNG seed evolves as the\nexecutor steps.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Execution.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Execution.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Execution",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Message.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Message.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Message",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Message.yml\" sourcestartlinenumber=\"1\">Concrete <xref href=\"Virtufin.Core.Contracts.IMessage\" data-throw-if-not-resolved=\"false\"></xref>: a <xref href=\"Virtufin.Base.Message.Transaction\" data-throw-if-not-resolved=\"false\"></xref> plus the\n<xref href=\"Virtufin.Base.Signatory\" data-throw-if-not-resolved=\"false\"></xref> that signed it.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Messaging.Topics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Messaging.Topics.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Messaging.Topics",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Messaging.Topics.yml\" sourcestartlinenumber=\"1\">Static factory methods for Dapr-compatible topic strings following the\ndomain spec's naming scheme.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Messaging.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Messaging.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Messaging",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Position.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Position.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Position",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Position.yml\" sourcestartlinenumber=\"1\">A holding: a <xref href=\"Virtufin.Base.PositionSize\" data-throw-if-not-resolved=\"false\"></xref> in some <xref href=\"Virtufin.Base.Position.AssetIdentifier\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.PositionSize.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.PositionSize.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.PositionSize",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.PositionSize.yml\" sourcestartlinenumber=\"1\">A position size expressed as a rational <code>Quote × Multiplier / Divisor</code>\nso positions in different units (e.g. lots vs. shares) can be combined\nwithout losing precision.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.PositionTransferContract.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.PositionTransferContract.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.PositionTransferContract",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.PositionTransferContract.yml\" sourcestartlinenumber=\"1\">A contract that transfers a <xref href=\"Virtufin.Base.PositionTransferContract.Position\" data-throw-if-not-resolved=\"false\"></xref> from one\n<xref href=\"Virtufin.Base.Signatory\" data-throw-if-not-resolved=\"false\"></xref> to another at a fixed <xref href=\"Virtufin.Base.TimeStamp\" data-throw-if-not-resolved=\"false\"></xref>\n(its maturity).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.PositionTransferContractMessageGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.PositionTransferContractMessageGenerator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.PositionTransferContractMessageGenerator",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.PositionTransferContractMessageGenerator.yml\" sourcestartlinenumber=\"1\">Emits a single <xref href=\"Virtufin.Base.Transaction.Transfer\" data-throw-if-not-resolved=\"false\"></xref> wrapped in a\n<xref href=\"Virtufin.Base.Message\" data-throw-if-not-resolved=\"false\"></xref> at the contract's maturity. Before or after the\nmaturity nothing is emitted.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Scenario.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Scenario.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Scenario",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Scenario.yml\" sourcestartlinenumber=\"1\">Concrete <xref href=\"Virtufin.Core.Contracts.IScenario\" data-throw-if-not-resolved=\"false\"></xref>: a <xref href=\"Virtufin.Base.Scenario.TimeStamp\" data-throw-if-not-resolved=\"false\"></xref> paired with a\n<xref href=\"Virtufin.Base.Scenario.State\" data-throw-if-not-resolved=\"false\"></xref>. Financial-contract snapshot used by\n<code>Virtufin.Core</code>'s simulation model.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.ScenarioHistory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.ScenarioHistory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.ScenarioHistory",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.ScenarioHistory.yml\" sourcestartlinenumber=\"1\">Concrete <xref href=\"Virtufin.Core.Contracts.IScenarioHistory\" data-throw-if-not-resolved=\"false\"></xref> backed by an in-memory list of\nscenarios. New scenarios are emitted through a hot\n<xref href=\"System.Reactive.Subjects.Subject%601\" data-throw-if-not-resolved=\"false\"></xref> with no replay buffer — late subscribers see only\nfuture emissions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Scenarios.InMemoryScenarioRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Scenarios.InMemoryScenarioRegistry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Scenarios.InMemoryScenarioRegistry",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Scenarios.InMemoryScenarioRegistry.yml\" sourcestartlinenumber=\"1\">In-memory implementation of <xref href=\"Virtufin.Core.Scenario.IScenarioRegistry\" data-throw-if-not-resolved=\"false\"></xref>.\nSuitable for tests, CI, and single-process scenarios.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Scenarios.ScenarioConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Scenarios.ScenarioConfiguration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Scenarios.ScenarioConfiguration",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Scenarios.ScenarioConfiguration.yml\" sourcestartlinenumber=\"1\">Concrete <xref href=\"Virtufin.Core.Scenario.IScenarioConfiguration\" data-throw-if-not-resolved=\"false\"></xref> record.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Scenarios.StandardScenarios.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Scenarios.StandardScenarios.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Scenarios.StandardScenarios",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Scenarios.StandardScenarios.yml\" sourcestartlinenumber=\"1\">Standard scenario configurations (LIVE, PAPER_LIVE, BACKTEST, SHADOW)\nmatching the canonical combinations in the domain spec.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Scenarios.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Scenarios.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Scenarios",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Signatory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Signatory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Signatory",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Signatory.yml\" sourcestartlinenumber=\"1\">Identifier for a party to a contract or transaction. Backed by a Guid.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.State.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.State.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.State",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.State.yml\" sourcestartlinenumber=\"1\">Concrete <xref href=\"Virtufin.Core.Contracts.IState\" data-throw-if-not-resolved=\"false\"></xref>: a set of transactions observed at a single\ntime-point.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Stock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Stock.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Stock",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Stock.yml\" sourcestartlinenumber=\"1\">A tradeable equity instrument identified by an opaque string (typically an\nexchange ticker or an ISIN).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.TimeStamp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.TimeStamp.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.TimeStamp",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.TimeStamp.yml\" sourcestartlinenumber=\"1\">Calendar-date-backed <xref href=\"Virtufin.Core.Identifiers.ITimeStamp\" data-throw-if-not-resolved=\"false\"></xref>. Time-of-day is intentionally\ndiscarded; financial contracts settle on calendar dates.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Transaction.AtomicTransactions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Transaction.AtomicTransactions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Transaction.AtomicTransactions",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Transaction.AtomicTransactions.yml\" sourcestartlinenumber=\"1\">An atomic group of transactions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Transaction.CancelContract.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Transaction.CancelContract.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Transaction.CancelContract",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Transaction.CancelContract.yml\" sourcestartlinenumber=\"1\">Cancel an existing contract.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Transaction.CreateContract.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Transaction.CreateContract.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Transaction.CreateContract",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Transaction.CreateContract.yml\" sourcestartlinenumber=\"1\">Create a new contract.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Transaction.Transfer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Transaction.Transfer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Transaction.Transfer",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Transaction.Transfer.yml\" sourcestartlinenumber=\"1\">Transfer a position between two parties, authorised by a contract.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Transaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Transaction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Transaction",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Transaction.yml\" sourcestartlinenumber=\"1\">Concrete <xref href=\"Virtufin.Core.Contracts.ITransaction\" data-throw-if-not-resolved=\"false\"></xref> for the financial contract model. Three\ncases are supported:</p>\n<ul><li><xref href=\"Virtufin.Base.Transaction.CreateContract\" data-throw-if-not-resolved=\"false\"></xref>: create a new contract with the given parameters.</li><li><xref href=\"Virtufin.Base.Transaction.CancelContract\" data-throw-if-not-resolved=\"false\"></xref>: terminate the named contract.</li><li><xref href=\"Virtufin.Base.Transaction.AtomicTransactions\" data-throw-if-not-resolved=\"false\"></xref>: an atomic group of transactions; not tied to a single contract.</li></ul>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.UtiValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.UtiValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.UtiValidator",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.UtiValidator.yml\" sourcestartlinenumber=\"1\">Validates ISDA Universal Transaction Identifier (UTI) payloads.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Attribute-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Attribute-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Attribute<V, I>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Behaviour.IAlgebra-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Behaviour.IAlgebra-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Behaviour.IAlgebra<TEvent, TState>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Behaviour.IAlgebra-2.yml\" sourcestartlinenumber=\"1\">An F-algebra over an event log. Given a current state and an event,\nproduce the next state. Combined with the initial state and an event log,\nthe algebra defines a derived signal via the fold (or scan for running\ncomputation).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Behaviour.IProcess-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Behaviour.IProcess-3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Behaviour.IProcess<TState, TInput, TOutput>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Behaviour.IProcess-3.yml\" sourcestartlinenumber=\"1\">Coalgebra shape for a stateful process: given the current state and an\ninput observation, produce the next state and an output. Used to model\n<code>decide</code> (strategy) and <code>execute</code> (execution engine) where the\nprocess carries hidden state that must be exposed explicitly.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Behaviour.ISignal-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Behaviour.ISignal-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Behaviour.ISignal<T>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Behaviour.ISignal-1.yml\" sourcestartlinenumber=\"1\">A continuously derivable value computed from an event log. Signals are\nnever transported on Dapr topics; consumers reconstruct them on demand\nby folding the log.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Behaviour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Behaviour.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Behaviour",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Clock.IClock-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Clock.IClock-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Clock.IClock<T>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Clock.IClock-1.yml\" sourcestartlinenumber=\"1\">A clock is a stream of time values emitted as events. Each emission is\na <code class=\"typeparamref\">T</code> (typically <code>DateTimeOffset</code>) representing\na point in time. Subscribers receive emissions via\n<xref href=\"System.IObservable%601.Subscribe(System.IObserver%7b%600%7d)\" data-throw-if-not-resolved=\"false\"></xref>; callers should NOT\npoll the clock for a &quot;current value&quot;.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Clock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Clock.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Clock",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Contracts.IAsset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Contracts.IAsset.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Contracts.IAsset",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Contracts.IAsset.yml\" sourcestartlinenumber=\"1\">A tradeable asset. In the financial-model sense an asset has no\ncounterparty risk (it is issued, not bilaterally agreed). Used as the\nunderlying of <code>Position</code> and the building block of contracts.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Contracts.IContract.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Contracts.IContract.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Contracts.IContract",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Contracts.IContract.yml\" sourcestartlinenumber=\"1\">A financial contract: an agreement that, given a sequence of messages\narriving at particular time-points, produces a sequence of valid\ntransactions. Implementations decide which messages they accept via\n<xref href=\"Virtufin.Core.Contracts.IContract.VerifyMessages(System.Collections.Generic.IEnumerable%7bVirtufin.Core.Contracts.IMessage%7d%2cVirtufin.Core.Contracts.IScenarioHistory)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Contracts.IContractBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Contracts.IContractBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Contracts.IContractBuilder",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Contracts.IContractBuilder.yml\" sourcestartlinenumber=\"1\">Builds a concrete <xref href=\"Virtufin.Core.Contracts.IContract\" data-throw-if-not-resolved=\"false\"></xref> instance from\n<xref href=\"Virtufin.Core.Contracts.IContractParameters\" data-throw-if-not-resolved=\"false\"></xref>. The builder is consumed once; use an\n<xref href=\"Virtufin.Core.Contracts.IContractFactory\" data-throw-if-not-resolved=\"false\"></xref> for repeated construction.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Contracts.IContractFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Contracts.IContractFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Contracts.IContractFactory",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Contracts.IContractFactory.yml\" sourcestartlinenumber=\"1\">Builds a concrete <xref href=\"Virtufin.Core.Contracts.IContract\" data-throw-if-not-resolved=\"false\"></xref> instance from\n<xref href=\"Virtufin.Core.Contracts.IContractParameters\" data-throw-if-not-resolved=\"false\"></xref>. Distinct from\n<xref href=\"Virtufin.Core.Contracts.IContractBuilder\" data-throw-if-not-resolved=\"false\"></xref>: factories are stateless and reusable,\nbuilders are single-shot.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Contracts.IContractParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Contracts.IContractParameters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Contracts.IContractParameters",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Contracts.IContractParameters.yml\" sourcestartlinenumber=\"1\">Marker for any opaque, equality-comparable bundle of inputs required to\nbuild a contract. The concrete payload is implementation-specific; in the\ncanonical case it wraps a Virtufin.Data.Variant so the same\ndata can be serialised through FlatBuffers or MessagePack.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Contracts.IContractRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Contracts.IContractRegistry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Contracts.IContractRegistry",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Contracts.IContractRegistry.yml\" sourcestartlinenumber=\"1\">Resolves <xref href=\"Virtufin.Core.Contracts.IContract\" data-throw-if-not-resolved=\"false\"></xref> instances by <xref href=\"Virtufin.Core.Identifiers.IContractIdentifier\" data-throw-if-not-resolved=\"false\"></xref>.\nDistinct from <xref href=\"Virtufin.Core.IRegistry\" data-throw-if-not-resolved=\"false\"></xref> in <code>Virtufin.Core</code>, which is the\nEAV value/attribute registry and unrelated to the financial contract\nregistry.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Contracts.IMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Contracts.IMessage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Contracts.IMessage",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Contracts.IMessage.yml\" sourcestartlinenumber=\"1\">A signed wrapper around a <xref href=\"Virtufin.Core.Contracts.IMessage.Transaction\" data-throw-if-not-resolved=\"false\"></xref>: a transaction plus the\n<xref href=\"Virtufin.Core.Contracts.IMessage.Sender\" data-throw-if-not-resolved=\"false\"></xref> that authorised it. Contracts use messages to filter\nthe work they perform on a given time-point via\n<xref href=\"Virtufin.Core.Predicates.IMessageSelectorPredicate\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Contracts.IMessageGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Contracts.IMessageGenerator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Contracts.IMessageGenerator",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Contracts.IMessageGenerator.yml\" sourcestartlinenumber=\"1\">Generates the set of <xref href=\"Virtufin.Core.Contracts.IMessage\" data-throw-if-not-resolved=\"false\"></xref>s a contract would emit at a\ngiven <code class=\"paramref\">timePoint</code> given the prior\n<code class=\"paramref\">scenarioHistory</code>. Used to drive simulation forward.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Contracts.IScenario.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Contracts.IScenario.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Contracts.IScenario",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Contracts.IScenario.yml\" sourcestartlinenumber=\"1\">A snapshot of the system at a single time-point: the time itself plus the\n<xref href=\"Virtufin.Core.Contracts.IScenario.State\" data-throw-if-not-resolved=\"false\"></xref> of transactions observed.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Contracts.IScenarioHistory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Contracts.IScenarioHistory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Contracts.IScenarioHistory",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Contracts.IScenarioHistory.yml\" sourcestartlinenumber=\"1\">An append-only sequence of <xref href=\"Virtufin.Core.Contracts.IScenario\" data-throw-if-not-resolved=\"false\"></xref> snapshots. Provides\npull-based lookup (<xref href=\"Virtufin.Core.Contracts.IScenarioHistory.Scenario(Virtufin.Core.Identifiers.ITimeStamp)\" data-throw-if-not-resolved=\"false\"></xref>) and a push-based observable\n(<xref href=\"Virtufin.Core.Contracts.IScenarioHistory.NewScenarios\" data-throw-if-not-resolved=\"false\"></xref>) for late subscribers — the latter is a hot\n<code>Subject&lt;IScenario&gt;</code> with no replay buffer.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Contracts.IState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Contracts.IState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Contracts.IState",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Contracts.IState.yml\" sourcestartlinenumber=\"1\">The set of transactions that have been observed at a single time-point.\nA scenario's <xref href=\"Virtufin.Core.Contracts.IScenario.State\" data-throw-if-not-resolved=\"false\"></xref> carries one of these.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Contracts.ITransaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Contracts.ITransaction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Contracts.ITransaction",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Contracts.ITransaction.yml\" sourcestartlinenumber=\"1\">A unit of business activity: a creation, cancellation, transfer, or any\nother operation that may be applied to a contract. Transactions carry an\noptional pointer to the contract they affect; for composite transactions\n(e.g. an atomic set of operations) the pointer is <code>null</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Contracts.ITransactionExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Contracts.ITransactionExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Contracts.ITransactionExecutor",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Contracts.ITransactionExecutor.yml\" sourcestartlinenumber=\"1\">Applies a Transaction to the system, returning a new\n<xref href=\"Virtufin.Core.Contracts.IScenarioHistory\" data-throw-if-not-resolved=\"false\"></xref> reflecting the change.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Contracts.IWithMaturity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Contracts.IWithMaturity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Contracts.IWithMaturity",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Contracts.IWithMaturity.yml\" sourcestartlinenumber=\"1\">A contract that has a definite maturity (the time-point at which it\nsettles). Used by <code>MaturitySelectorPredicate</code> to filter messages.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Contracts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Contracts.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Contracts",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.DictionaryValueProvider-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.DictionaryValueProvider-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.DictionaryValueProvider<V>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.EntityAttributeValueTypeSpecifier-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.EntityAttributeValueTypeSpecifier-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.EntityAttributeValueTypeSpecifier<V>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.EntityAttributeValueTypeSpecifier-1.yml\" sourcestartlinenumber=\"1\">Helper class to implement <xref href=\"Virtufin.Core.IEntityAttributeValueTypeSpecifier\" data-throw-if-not-resolved=\"false\"></xref> where the type membership predicate is defines a set, where all elements have the same type of the value</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.EntityIdentifier-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.EntityIdentifier-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.EntityIdentifier<I>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Events.ClockType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Events.ClockType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Events.ClockType",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Events.ClockType.yml\" sourcestartlinenumber=\"1\">Clock interpretation for <xref href=\"Virtufin.Core.Events.IEventEnvelope.EventTime\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Events.CloudEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Events.CloudEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Events.CloudEvent",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Events.CloudEvent.yml\" sourcestartlinenumber=\"1\">Minimal CloudEvents v1.0 representation. Used as the wire format for\nDapr pub/sub topics. Conforms to <code>https://github.com/cloudevents/spec/blob/v1.0.2/spec.md</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Events.IEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Events.IEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Events.IEvent",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Events.IEvent.yml\" sourcestartlinenumber=\"1\">Marker for any value that participates in the Virtufin event flow. Events\nare immutable facts; they are appended to logs, transported on Dapr topics,\nand folded into state by algebræ. Implementations should be records so\nthey have value equality.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Events.IEventEnvelope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Events.IEventEnvelope.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Events.IEventEnvelope",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Events.IEventEnvelope.yml\" sourcestartlinenumber=\"1\">The transport envelope carried alongside every event. Combines the routing\ncontext (<xref href=\"Virtufin.Core.Events.IEventEnvelope.ScenarioId\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"Virtufin.Core.Events.Lane\" data-throw-if-not-resolved=\"false\"></xref> triplet), the clock\ninterpretation (<xref href=\"Virtufin.Core.Events.IEventEnvelope.ClockType\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"Virtufin.Core.Events.IEventEnvelope.EventTime\" data-throw-if-not-resolved=\"false\"></xref>),\naudit/processing metadata (<xref href=\"Virtufin.Core.Events.IEventEnvelope.WallTime\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"Virtufin.Core.Events.IEventEnvelope.CorrelationId\" data-throw-if-not-resolved=\"false\"></xref>,\n<xref href=\"Virtufin.Core.Events.IEventEnvelope.RunId\" data-throw-if-not-resolved=\"false\"></xref>), and a human-readable <xref href=\"Virtufin.Core.Events.IEventEnvelope.ScenarioName\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Events.Lane.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Events.Lane.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Events.Lane",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Events.Lane.yml\" sourcestartlinenumber=\"1\">Market component lane.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Events.Market.IMarketEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Events.Market.IMarketEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Events.Market.IMarketEvent",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Events.Market.IMarketEvent.yml\" sourcestartlinenumber=\"1\">Marker for any raw market observation — exogenous price or order-book\nstate from the data feed. Candles, VWAP, and other derived signals are\nNOT <xref href=\"Virtufin.Core.Events.Market.IMarketEvent\" data-throw-if-not-resolved=\"false\"></xref>s — see <code>RichMarketEvent</code> for those.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Events.Market.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Events.Market.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Events.Market",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Events.Position.IPositionEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Events.Position.IPositionEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Events.Position.IPositionEvent",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Events.Position.IPositionEvent.yml\" sourcestartlinenumber=\"1\">Marker for any event that changes a holding. Position events flow through\nthe unified <code>sc.{scenarioId}.position.*</code> topic family and include\nholdings lifecycle changes only (open/update/close/flip). Exposure breaches\nare reported separately under <code>Risk</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Events.Position.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Events.Position.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Events.Position",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Events.Risk.IRiskEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Events.Risk.IRiskEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Events.Risk.IRiskEvent",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Events.Risk.IRiskEvent.yml\" sourcestartlinenumber=\"1\">Marker for any risk-related event. Risk events are attributed to the\nscenario as a whole — they depend on all three components (market,\nportfolio, strategy) jointly. Topics use the naming scheme\n<code>sc.{scenarioId}.risk.{entity}.{event}</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Events.Risk.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Events.Risk.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Events.Risk",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Events.Symbol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Events.Symbol.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Events.Symbol",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Events.Symbol.yml\" sourcestartlinenumber=\"1\">Identifier for a tradeable instrument on a venue. Implements\n<xref href=\"Virtufin.Core.Identifiers.IAssetIdentifier\" data-throw-if-not-resolved=\"false\"></xref> so any existing\nVirtufin.Base.AssetIdentifier (currency, stock, etc.) can\nalso be used as a trade symbol.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Events.Trade.ITradeAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Events.Trade.ITradeAction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Events.Trade.ITradeAction",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Events.Trade.ITradeAction.yml\" sourcestartlinenumber=\"1\">Marker for any action that flows through the trading loop. A trade action\nis the strategy's intent: buy, sell, cancel, transfer between parties, or\nexpress interest in a CLOB before commitment. Implementations form a sealed\nADT (<code>TradeAction</code>) and an enriched variant (<code>RichTradeAction</code>).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Events.Trade.ITradeEvent-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Events.Trade.ITradeEvent-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Events.Trade.ITradeEvent<A>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Events.Trade.ITradeEvent-1.yml\" sourcestartlinenumber=\"1\">Trade event parameterised by the action type that produced it. Used by\n<code>IExecutor&lt;S, A, E&gt;</code> with the constraint <code>E : ITradeEvent&lt;A&gt;</code>\nto enforce that an executor producing events for <code class=\"typeparamref\">A</code>\ncan only emit events in the <code>TradeEvent&lt;A&gt;</code> hierarchy.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Events.Trade.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Events.Trade.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Events.Trade",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Events.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Events.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Events",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Execution.IExecutionState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Execution.IExecutionState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Execution.IExecutionState",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Execution.IExecutionState.yml\" sourcestartlinenumber=\"1\">Marker for any type that carries the hidden state of an execution\nengine (PRNG seed, API key material, account balance, etc.).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Execution.IExecutor-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Execution.IExecutor-3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Execution.IExecutor<TState, TAction, TEvent>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Execution.IExecutor-3.yml\" sourcestartlinenumber=\"1\">Signature of an execution engine: given the current\n<code class=\"typeparamref\">TState</code> and a <code class=\"typeparamref\">TAction</code>,\nproduce the next state and an <code class=\"typeparamref\">TEvent</code> describing\nthe outcome. The event type is constrained to be parameterised by the\naction type so the executor statically cannot emit events for the wrong\naction universe.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Execution.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Execution.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Execution",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.FunctionValueProvider-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.FunctionValueProvider-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.FunctionValueProvider<V>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.IAttribute-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.IAttribute-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.IAttribute<V>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.IDependencies.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.IDependencies.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.IDependencies",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.IEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.IEntity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.IEntity",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.IEntityAttributeValueTypeSpecifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.IEntityAttributeValueTypeSpecifier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.IEntityAttributeValueTypeSpecifier",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.IEntityAttributeValueTypeSpecifier.yml\" sourcestartlinenumber=\"1\">As C# doesn't support dependent types, we cannot define a class which is given by generic constraints to the values of the entities, attributes and values in terms of\nsome (value) depedent type at compile time. We have to check the test if a entity/attribute/value triplet belongs to a particular class to runtime via a  type membbrship predicate, <xref href=\"Virtufin.Core.IEntityAttributeValueTypeSpecifier.IsTypeMember%60%601(Virtufin.Core.IEntityIdentifier%2cVirtufin.Core.IAttribute%7b%60%600%7d%2c%60%600)\" data-throw-if-not-resolved=\"false\"></xref> instead</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.IEntityIdentifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.IEntityIdentifier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.IEntityIdentifier",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.IObservableDependencies.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.IObservableDependencies.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.IObservableDependencies",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.IObservableProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.IObservableProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.IObservableProvider",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.IObservableProviders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.IObservableProviders.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.IObservableProviders",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.IProviders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.IProviders.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.IProviders",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.IRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.IRegistry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.IRegistry",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.ITaskProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.ITaskProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.ITaskProvider",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.IValueDependencies.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.IValueDependencies.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.IValueDependencies",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.IValueProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.IValueProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.IValueProvider",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.IValueProviders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.IValueProviders.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.IValueProviders",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Identifiers.IAssetIdentifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Identifiers.IAssetIdentifier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Identifiers.IAssetIdentifier",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Identifiers.IAssetIdentifier.yml\" sourcestartlinenumber=\"1\">Marker for any value that identifies an asset (currency, security, or\nother tradeable instrument). Implementations must be equality-comparable so\npositions and contracts can be matched by their underlying asset.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Identifiers.IContractIdentifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Identifiers.IContractIdentifier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Identifiers.IContractIdentifier",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Identifiers.IContractIdentifier.yml\" sourcestartlinenumber=\"1\">Marker for any value that uniquely identifies a contract (e.g. a UUID, an\nISDA UTI, or an opaque string). Implementations must be equality-comparable\nso transactions and contracts can be matched by identifier.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Identifiers.ISignatory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Identifiers.ISignatory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Identifiers.ISignatory",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Identifiers.ISignatory.yml\" sourcestartlinenumber=\"1\">Marker for any value that identifies a party to a contract or transaction.\nImplementations must be equality-comparable so contracts and message\nselectors can match by sender.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Identifiers.ITimeStamp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Identifiers.ITimeStamp.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Identifiers.ITimeStamp",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Identifiers.ITimeStamp.yml\" sourcestartlinenumber=\"1\">Marker for any value that represents a point in time. Implementations must\nbe totally orderable and equality-comparable so they can drive time-based\nselection (<xref href=\"Virtufin.Core.Predicates.IMessageSelectorPredicate\" data-throw-if-not-resolved=\"false\"></xref>,\n<xref href=\"Virtufin.Core.Contracts.IScenarioHistory.Scenario(Virtufin.Core.Identifiers.ITimeStamp)\" data-throw-if-not-resolved=\"false\"></xref>, etc.).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Identifiers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Identifiers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Identifiers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Messaging.EventDelivery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Messaging.EventDelivery.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Messaging.EventDelivery",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Messaging.EventDelivery.yml\" sourcestartlinenumber=\"1\">An envelope/payload pair delivered from a topic subscription.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Messaging.IEventPublisher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Messaging.IEventPublisher.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Messaging.IEventPublisher",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Messaging.IEventPublisher.yml\" sourcestartlinenumber=\"1\">Publishes a single event to a Dapr-compatible topic. Implementations may\nwrap <code>DaprClient.PublishEventAsync</code>, an in-memory bus for tests, or\nany other transport.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Messaging.IEventSubscriber.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Messaging.IEventSubscriber.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Messaging.IEventSubscriber",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Messaging.IEventSubscriber.yml\" sourcestartlinenumber=\"1\">Subscribes to a topic and surfaces incoming events as an observable\nstream of envelope/payload pairs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Messaging.Topic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Messaging.Topic.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Messaging.Topic",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Messaging.Topic.yml\" sourcestartlinenumber=\"1\">Dapr-compatible topic identifier. Topics are strings that match the\ndocumented naming scheme; subscribers use <xref href=\"Virtufin.Core.Messaging.IEventSubscriber\" data-throw-if-not-resolved=\"false\"></xref>\nto consume events on a topic, publishers use\n<xref href=\"Virtufin.Core.Messaging.IEventPublisher\" data-throw-if-not-resolved=\"false\"></xref> to publish.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Messaging.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Messaging.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Messaging",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.ObservableProvider-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.ObservableProvider-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.ObservableProvider<V>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Position.BuyOrSell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Position.BuyOrSell.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Position.BuyOrSell",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.BuyOrSell.yml\" sourcestartlinenumber=\"1\">Side of a trade.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Position.DecimalAmount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Position.DecimalAmount.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Position.DecimalAmount",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Position.DecimalQuantity-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Position.DecimalQuantity-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Position.DecimalQuantity<U>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.DecimalQuantity-1.yml\" sourcestartlinenumber=\"1\">A <xref href=\"Virtufin.Core.Position.DecimalAmount\" data-throw-if-not-resolved=\"false\"></xref> paired with an <xref href=\"Virtufin.Core.Position.IUnit\" data-throw-if-not-resolved=\"false\"></xref>. Formats\nas <code>&quot;{Amount} {Unit}&quot;</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Position.IAmount-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Position.IAmount-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Position.IAmount<TValue>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.IAmount-1.yml\" sourcestartlinenumber=\"1\">A typed monetary or physical quantity. <code class=\"typeparamref\">TValue</code> is the\nunderlying representation (e.g. a tuple of whole and fractional parts for\nfixed-point <code>DecimalAmount</code>).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Position.IAsCardinal-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Position.IAsCardinal-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Position.IAsCardinal<TCardinal>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.IAsCardinal-1.yml\" sourcestartlinenumber=\"1\">Bridges between an <xref href=\"Virtufin.Core.Position.IAmount%601\" data-throw-if-not-resolved=\"false\"></xref> and a single canonical\ninteger representation. Used to implement arithmetic on amounts whose\nparts live in different fields (whole vs. fractional).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Position.IOrderBook.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Position.IOrderBook.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Position.IOrderBook",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.IOrderBook.yml\" sourcestartlinenumber=\"1\">An append-only collection of orders / transactions representing the live\nbook at a venue. The transaction type is the generic\n<xref href=\"Virtufin.Core.Contracts.ITransaction\" data-throw-if-not-resolved=\"false\"></xref> from <code>Virtufin.Core.Contracts</code> so orders of\nany concrete kind can be accommodated.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Position.IQuantity-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Position.IQuantity-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Position.IQuantity<TAmount, TUnit>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.IQuantity-2.yml\" sourcestartlinenumber=\"1\">An <xref href=\"Virtufin.Core.Position.IAmount%601\" data-throw-if-not-resolved=\"false\"></xref> tagged with an <xref href=\"Virtufin.Core.Position.IUnit\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Position.IUnit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Position.IUnit.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Position.IUnit",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.IUnit.yml\" sourcestartlinenumber=\"1\">Marker for any value that represents a unit of measure (currency, share,\nbarrel, etc.). Implementations must be equality-comparable and printable.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Position.LimitOrMarketOrder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Position.LimitOrMarketOrder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Position.LimitOrMarketOrder",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.LimitOrMarketOrder.yml\" sourcestartlinenumber=\"1\">Order type discriminator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Position.SimpleOrder-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Position.SimpleOrder-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Position.SimpleOrder<U>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.SimpleOrder-1.yml\" sourcestartlinenumber=\"1\">A simple order: buy or sell side, limit or market execution type, and a\nquantity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Position.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Position.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Position",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Predicates.AllMessageSelectorPredicate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Predicates.AllMessageSelectorPredicate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Predicates.AllMessageSelectorPredicate",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Predicates.AllMessageSelectorPredicate.yml\" sourcestartlinenumber=\"1\">AND-composition of <xref href=\"Virtufin.Core.Predicates.IMessageSelectorPredicate\" data-throw-if-not-resolved=\"false\"></xref>s: matches a\nmessage iff every contained predicate accepts it. With an empty predicate\nlist, the predicate accepts every message (vacuous truth).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Predicates.ContractSelectorPredicate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Predicates.ContractSelectorPredicate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Predicates.ContractSelectorPredicate",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Predicates.ContractSelectorPredicate.yml\" sourcestartlinenumber=\"1\">Default selector that matches a message iff its transaction targets\n<code class=\"paramref\">contract</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Predicates.IMessageSelectorPredicate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Predicates.IMessageSelectorPredicate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Predicates.IMessageSelectorPredicate",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Predicates.IMessageSelectorPredicate.yml\" sourcestartlinenumber=\"1\">A composable filter that decides whether a given <xref href=\"Virtufin.Core.Contracts.IMessage\" data-throw-if-not-resolved=\"false\"></xref>\nshould be considered for a given <xref href=\"Virtufin.Core.Contracts.IContract\" data-throw-if-not-resolved=\"false\"></xref> at a given time\nand scenario history.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Predicates.IVerificationMessageFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Predicates.IVerificationMessageFilter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Predicates.IVerificationMessageFilter",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Predicates.IVerificationMessageFilter.yml\" sourcestartlinenumber=\"1\">Verification-side message filter. Given the transactions attached to a\ncontract and the prior scenario history, return the subset deemed\napplicable for downstream execution.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Predicates.IVerificationMessageFilterCombinator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Predicates.IVerificationMessageFilterCombinator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Predicates.IVerificationMessageFilterCombinator",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Predicates.IVerificationMessageFilterCombinator.yml\" sourcestartlinenumber=\"1\">Combinator that produces a composite <xref href=\"Virtufin.Core.Predicates.IVerificationMessageFilter\" data-throw-if-not-resolved=\"false\"></xref>\nfrom a sequence of sub-filters. Implementations decide how the sub-filters\ncompose (typically AND, but UNION or sequenced composition are valid).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Predicates.MaturitySelectorPredicate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Predicates.MaturitySelectorPredicate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Predicates.MaturitySelectorPredicate",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Predicates.MaturitySelectorPredicate.yml\" sourcestartlinenumber=\"1\">Selector that matches a message iff <code class=\"paramref\">timePoint</code> equals\nthe contract's maturity. Requires the contract to implement\n<xref href=\"Virtufin.Core.Contracts.IWithMaturity\" data-throw-if-not-resolved=\"false\"></xref>; otherwise the predicate rejects every message.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Predicates.SenderSelectorPredicate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Predicates.SenderSelectorPredicate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Predicates.SenderSelectorPredicate",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Predicates.SenderSelectorPredicate.yml\" sourcestartlinenumber=\"1\">Selector that matches a message iff its <xref href=\"Virtufin.Core.Contracts.IMessage.Sender\" data-throw-if-not-resolved=\"false\"></xref>\nequals <xref href=\"Virtufin.Core.Predicates.SenderSelectorPredicate.Sender\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Predicates.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Predicates.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Predicates",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Registry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Registry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Registry",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Scenario.IScenarioConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Scenario.IScenarioConfiguration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Scenario.IScenarioConfiguration",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Scenario.IScenarioConfiguration.yml\" sourcestartlinenumber=\"1\">Marker for any configuration that ties together a market data source, an\ninitial portfolio state, a strategy, and an execution engine into a single\nnamed, registered scenario.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Scenario.IScenarioRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Scenario.IScenarioRegistry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Scenario.IScenarioRegistry",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Scenario.IScenarioRegistry.yml\" sourcestartlinenumber=\"1\">Marker for a scenario registry: maps <xref href=\"Virtufin.Core.Scenario.ScenarioId\" data-throw-if-not-resolved=\"false\"></xref> to\n<xref href=\"Virtufin.Core.Scenario.IScenarioConfiguration\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Scenario.ScenarioId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Scenario.ScenarioId.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Scenario.ScenarioId",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Scenario.ScenarioId.yml\" sourcestartlinenumber=\"1\">Opaque scenario identifier (e.g. <code>LIVE</code>, <code>S7F3A9B</code>). Resolves to\na full configuration via the scenario registry.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Scenario.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Scenario.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Scenario",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.TaskProvider-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.TaskProvider-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.TaskProvider<V>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.VirtufinTypes.IVirtufinTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.VirtufinTypes.IVirtufinTypes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.VirtufinTypes.IVirtufinTypes",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.VirtufinTypes.IVirtufinTypes.yml\" sourcestartlinenumber=\"1\">Resolves the runtime <xref href=\"System.Type\" data-throw-if-not-resolved=\"false\"></xref> of each canonical\nidentifier and payload in the financial contract model. Allows code in\n<code>Virtufin.Core</code> to refer to &quot;the type of Signatory used here&quot; without\ntaking a hard dependency on the concrete implementations in\n<code>Virtufin.Base</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.VirtufinTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.VirtufinTypes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.VirtufinTypes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.ArrayBoolValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.ArrayBoolValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.ArrayBoolValue",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.ArrayBoolValueVerify.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.ArrayBoolValueVerify.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.ArrayBoolValueVerify",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.ArrayByteValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.ArrayByteValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.ArrayByteValue",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.ArrayByteValueVerify.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.ArrayByteValueVerify.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.ArrayByteValueVerify",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.ArrayDoubleValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.ArrayDoubleValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.ArrayDoubleValue",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.ArrayDoubleValueVerify.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.ArrayDoubleValueVerify.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.ArrayDoubleValueVerify",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.ArrayFloatValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.ArrayFloatValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.ArrayFloatValue",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.ArrayFloatValueVerify.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.ArrayFloatValueVerify.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.ArrayFloatValueVerify",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.ArrayInt16Value.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.ArrayInt16Value.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.ArrayInt16Value",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.ArrayInt16ValueVerify.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.ArrayInt16ValueVerify.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.ArrayInt16ValueVerify",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.ArrayInt32Value.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.ArrayInt32Value.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.ArrayInt32Value",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.ArrayInt32ValueVerify.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.ArrayInt32ValueVerify.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.ArrayInt32ValueVerify",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.ArrayInt64Value.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.ArrayInt64Value.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.ArrayInt64Value",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.ArrayInt64ValueVerify.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.ArrayInt64ValueVerify.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.ArrayInt64ValueVerify",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.ArrayStringValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.ArrayStringValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.ArrayStringValue",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.ArrayStringValueVerify.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.ArrayStringValueVerify.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.ArrayStringValueVerify",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.ArrayVariantValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.ArrayVariantValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.ArrayVariantValue",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.ArrayVariantValueVerify.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.ArrayVariantValueVerify.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.ArrayVariantValueVerify",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.BoolValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.BoolValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.BoolValue",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.BoolValueVerify.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.BoolValueVerify.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.BoolValueVerify",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.ByteValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.ByteValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.ByteValue",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.ByteValueVerify.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.ByteValueVerify.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.ByteValueVerify",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.DictionaryEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.DictionaryEntry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.DictionaryEntry",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.DictionaryEntryVerify.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.DictionaryEntryVerify.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.DictionaryEntryVerify",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.DictionaryValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.DictionaryValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.DictionaryValue",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.DictionaryValueVerify.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.DictionaryValueVerify.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.DictionaryValueVerify",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.DoubleValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.DoubleValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.DoubleValue",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.DoubleValueVerify.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.DoubleValueVerify.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.DoubleValueVerify",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.FloatValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.FloatValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.FloatValue",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.FloatValueVerify.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.FloatValueVerify.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.FloatValueVerify",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.Int16Value.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.Int16Value.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.Int16Value",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.Int16ValueVerify.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.Int16ValueVerify.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.Int16ValueVerify",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.Int32Value.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.Int32Value.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.Int32Value",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.Int32ValueVerify.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.Int32ValueVerify.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.Int32ValueVerify",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.Int64Value.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.Int64Value.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.Int64Value",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.Int64ValueVerify.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.Int64ValueVerify.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.Int64ValueVerify",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.NoneValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.NoneValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.NoneValue",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.NoneValueVerify.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.NoneValueVerify.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.NoneValueVerify",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.StringValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.StringValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.StringValue",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.StringValueVerify.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.StringValueVerify.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.StringValueVerify",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.Value.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.Value.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.Value",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.ValueVerify.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.ValueVerify.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.ValueVerify",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.Variant.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.Variant.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.Variant",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.VariantVerify.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.VariantVerify.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers.VariantVerify",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.FlatBuffersVariant.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.FlatBuffersVariant.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.FlatBuffersVariant",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.IVariant.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.IVariant.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.IVariant",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.NatsObservable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.NatsObservable.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.NatsObservable",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.NatsObserver-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.NatsObserver-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.NatsObserver<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.ObservableAdapters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.ObservableAdapters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.ObservableAdapters",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.ObservableLogger-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.ObservableLogger-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.ObservableLogger<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.Selector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.Selector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.Selector",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.SelectorPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.SelectorPath.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.SelectorPath",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.Variant.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.Variant.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.Variant",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.VariantListRepresentation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.VariantListRepresentation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.VariantListRepresentation",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.WebSocketObservable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.WebSocketObservable.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data.WebSocketObservable",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Data.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Data",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": null,
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

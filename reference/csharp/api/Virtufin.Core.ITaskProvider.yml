@@ -1,0 +1,293 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.ITaskProvider
+  commentId: T:Virtufin.Core.ITaskProvider
+  id: ITaskProvider
+  parent: Virtufin.Core
+  children:
+  - Virtufin.Core.ITaskProvider.GetTask``1(Virtufin.Core.IEntityIdentifier,Virtufin.Core.IAttribute{``0})
+  - Virtufin.Core.ITaskProvider.TypeSpecifier
+  langs:
+  - csharp
+  - vb
+  name: ITaskProvider
+  nameWithType: ITaskProvider
+  fullName: Virtufin.Core.ITaskProvider
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/ITaskProvider.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ITaskProvider
+    path: ../../../src/Virtufin.Core/ITaskProvider.cs
+    startLine: 2
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core
+  syntax:
+    content: public interface ITaskProvider
+    content.vb: Public Interface ITaskProvider
+  derivedClasses:
+  - Virtufin.Core.TaskProvider`1
+- uid: Virtufin.Core.ITaskProvider.TypeSpecifier
+  commentId: M:Virtufin.Core.ITaskProvider.TypeSpecifier
+  id: TypeSpecifier
+  parent: Virtufin.Core.ITaskProvider
+  langs:
+  - csharp
+  - vb
+  name: TypeSpecifier()
+  nameWithType: ITaskProvider.TypeSpecifier()
+  fullName: Virtufin.Core.ITaskProvider.TypeSpecifier()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/ITaskProvider.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: TypeSpecifier
+    path: ../../../src/Virtufin.Core/ITaskProvider.cs
+    startLine: 4
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core
+  syntax:
+    content: IEntityAttributeValueTypeSpecifier TypeSpecifier()
+    return:
+      type: Virtufin.Core.IEntityAttributeValueTypeSpecifier
+    content.vb: Function TypeSpecifier() As IEntityAttributeValueTypeSpecifier
+  overload: Virtufin.Core.ITaskProvider.TypeSpecifier*
+- uid: Virtufin.Core.ITaskProvider.GetTask``1(Virtufin.Core.IEntityIdentifier,Virtufin.Core.IAttribute{``0})
+  commentId: M:Virtufin.Core.ITaskProvider.GetTask``1(Virtufin.Core.IEntityIdentifier,Virtufin.Core.IAttribute{``0})
+  id: GetTask``1(Virtufin.Core.IEntityIdentifier,Virtufin.Core.IAttribute{``0})
+  parent: Virtufin.Core.ITaskProvider
+  langs:
+  - csharp
+  - vb
+  name: GetTask<V>(IEntityIdentifier, IAttribute<V>)
+  nameWithType: ITaskProvider.GetTask<V>(IEntityIdentifier, IAttribute<V>)
+  fullName: Virtufin.Core.ITaskProvider.GetTask<V>(Virtufin.Core.IEntityIdentifier, Virtufin.Core.IAttribute<V>)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/ITaskProvider.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GetTask
+    path: ../../../src/Virtufin.Core/ITaskProvider.cs
+    startLine: 5
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core
+  syntax:
+    content: 'Task<V>? GetTask<V>(IEntityIdentifier identifier, IAttribute<V> attribute) where V : struct'
+    parameters:
+    - id: identifier
+      type: Virtufin.Core.IEntityIdentifier
+    - id: attribute
+      type: Virtufin.Core.IAttribute{{V}}
+    typeParameters:
+    - id: V
+    return:
+      type: System.Threading.Tasks.Task{{V}}
+    content.vb: Function GetTask(Of V As Structure)(identifier As IEntityIdentifier, attribute As IAttribute(Of V)) As Task(Of V)
+  overload: Virtufin.Core.ITaskProvider.GetTask*
+  nameWithType.vb: ITaskProvider.GetTask(Of V)(IEntityIdentifier, IAttribute(Of V))
+  fullName.vb: Virtufin.Core.ITaskProvider.GetTask(Of V)(Virtufin.Core.IEntityIdentifier, Virtufin.Core.IAttribute(Of V))
+  name.vb: GetTask(Of V)(IEntityIdentifier, IAttribute(Of V))
+references:
+- uid: Virtufin.Core
+  commentId: N:Virtufin.Core
+  href: Virtufin.html
+  name: Virtufin.Core
+  nameWithType: Virtufin.Core
+  fullName: Virtufin.Core
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+- uid: Virtufin.Core.ITaskProvider.TypeSpecifier*
+  commentId: Overload:Virtufin.Core.ITaskProvider.TypeSpecifier
+  href: Virtufin.Core.ITaskProvider.html#Virtufin_Core_ITaskProvider_TypeSpecifier
+  name: TypeSpecifier
+  nameWithType: ITaskProvider.TypeSpecifier
+  fullName: Virtufin.Core.ITaskProvider.TypeSpecifier
+- uid: Virtufin.Core.IEntityAttributeValueTypeSpecifier
+  commentId: T:Virtufin.Core.IEntityAttributeValueTypeSpecifier
+  parent: Virtufin.Core
+  href: Virtufin.Core.IEntityAttributeValueTypeSpecifier.html
+  name: IEntityAttributeValueTypeSpecifier
+  nameWithType: IEntityAttributeValueTypeSpecifier
+  fullName: Virtufin.Core.IEntityAttributeValueTypeSpecifier
+- uid: Virtufin.Core.ITaskProvider.GetTask*
+  commentId: Overload:Virtufin.Core.ITaskProvider.GetTask
+  href: Virtufin.Core.ITaskProvider.html#Virtufin_Core_ITaskProvider_GetTask__1_Virtufin_Core_IEntityIdentifier_Virtufin_Core_IAttribute___0__
+  name: GetTask
+  nameWithType: ITaskProvider.GetTask
+  fullName: Virtufin.Core.ITaskProvider.GetTask
+- uid: Virtufin.Core.IEntityIdentifier
+  commentId: T:Virtufin.Core.IEntityIdentifier
+  parent: Virtufin.Core
+  href: Virtufin.Core.IEntityIdentifier.html
+  name: IEntityIdentifier
+  nameWithType: IEntityIdentifier
+  fullName: Virtufin.Core.IEntityIdentifier
+- uid: Virtufin.Core.IAttribute{{V}}
+  commentId: T:Virtufin.Core.IAttribute{`0}
+  parent: Virtufin.Core
+  definition: Virtufin.Core.IAttribute`1
+  href: Virtufin.Core.IAttribute-1.html
+  name: IAttribute<V>
+  nameWithType: IAttribute<V>
+  fullName: Virtufin.Core.IAttribute<V>
+  nameWithType.vb: IAttribute(Of V)
+  fullName.vb: Virtufin.Core.IAttribute(Of V)
+  name.vb: IAttribute(Of V)
+  spec.csharp:
+  - uid: Virtufin.Core.IAttribute`1
+    name: IAttribute
+    href: Virtufin.Core.IAttribute-1.html
+  - name: <
+  - name: V
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.IAttribute`1
+    name: IAttribute
+    href: Virtufin.Core.IAttribute-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: V
+  - name: )
+- uid: System.Threading.Tasks.Task{{V}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<V>
+  nameWithType: Task<V>
+  fullName: System.Threading.Tasks.Task<V>
+  nameWithType.vb: Task(Of V)
+  fullName.vb: System.Threading.Tasks.Task(Of V)
+  name.vb: Task(Of V)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: V
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: V
+  - name: )
+- uid: Virtufin.Core.IAttribute`1
+  commentId: T:Virtufin.Core.IAttribute`1
+  href: Virtufin.Core.IAttribute-1.html
+  name: IAttribute<V>
+  nameWithType: IAttribute<V>
+  fullName: Virtufin.Core.IAttribute<V>
+  nameWithType.vb: IAttribute(Of V)
+  fullName.vb: Virtufin.Core.IAttribute(Of V)
+  name.vb: IAttribute(Of V)
+  spec.csharp:
+  - uid: Virtufin.Core.IAttribute`1
+    name: IAttribute
+    href: Virtufin.Core.IAttribute-1.html
+  - name: <
+  - name: V
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.IAttribute`1
+    name: IAttribute
+    href: Virtufin.Core.IAttribute-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: V
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

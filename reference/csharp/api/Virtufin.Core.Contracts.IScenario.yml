@@ -1,0 +1,198 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Contracts.IScenario
+  commentId: T:Virtufin.Core.Contracts.IScenario
+  id: IScenario
+  parent: Virtufin.Core.Contracts
+  children:
+  - Virtufin.Core.Contracts.IScenario.State
+  - Virtufin.Core.Contracts.IScenario.TimeStamp
+  langs:
+  - csharp
+  - vb
+  name: IScenario
+  nameWithType: IScenario
+  fullName: Virtufin.Core.Contracts.IScenario
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Contracts/IScenario.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IScenario
+    path: ../../../src/Virtufin.Core/Contracts/IScenario.cs
+    startLine: 8
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Contracts
+  summary: >-
+    A snapshot of the system at a single time-point: the time itself plus the
+
+    <xref href="Virtufin.Core.Contracts.IScenario.State" data-throw-if-not-resolved="false"></xref> of transactions observed.
+  example: []
+  syntax:
+    content: public interface IScenario
+    content.vb: Public Interface IScenario
+  derivedClasses:
+  - Virtufin.Base.Scenario
+- uid: Virtufin.Core.Contracts.IScenario.TimeStamp
+  commentId: P:Virtufin.Core.Contracts.IScenario.TimeStamp
+  id: TimeStamp
+  parent: Virtufin.Core.Contracts.IScenario
+  langs:
+  - csharp
+  - vb
+  name: TimeStamp
+  nameWithType: IScenario.TimeStamp
+  fullName: Virtufin.Core.Contracts.IScenario.TimeStamp
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Contracts/IScenario.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: TimeStamp
+    path: ../../../src/Virtufin.Core/Contracts/IScenario.cs
+    startLine: 11
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Contracts
+  summary: When this snapshot was taken.
+  example: []
+  syntax:
+    content: ITimeStamp TimeStamp { get; }
+    parameters: []
+    return:
+      type: Virtufin.Core.Identifiers.ITimeStamp
+    content.vb: ReadOnly Property TimeStamp As ITimeStamp
+  overload: Virtufin.Core.Contracts.IScenario.TimeStamp*
+- uid: Virtufin.Core.Contracts.IScenario.State
+  commentId: P:Virtufin.Core.Contracts.IScenario.State
+  id: State
+  parent: Virtufin.Core.Contracts.IScenario
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: IScenario.State
+  fullName: Virtufin.Core.Contracts.IScenario.State
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Contracts/IScenario.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: State
+    path: ../../../src/Virtufin.Core/Contracts/IScenario.cs
+    startLine: 14
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Contracts
+  summary: Transactions in effect at <xref href="Virtufin.Core.Contracts.IScenario.TimeStamp" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: IState State { get; }
+    parameters: []
+    return:
+      type: Virtufin.Core.Contracts.IState
+    content.vb: ReadOnly Property State As IState
+  overload: Virtufin.Core.Contracts.IScenario.State*
+references:
+- uid: Virtufin.Core.Contracts.IScenario.State
+  commentId: P:Virtufin.Core.Contracts.IScenario.State
+  href: Virtufin.Core.Contracts.IScenario.html#Virtufin_Core_Contracts_IScenario_State
+  name: State
+  nameWithType: IScenario.State
+  fullName: Virtufin.Core.Contracts.IScenario.State
+- uid: Virtufin.Core.Contracts
+  commentId: N:Virtufin.Core.Contracts
+  href: Virtufin.html
+  name: Virtufin.Core.Contracts
+  nameWithType: Virtufin.Core.Contracts
+  fullName: Virtufin.Core.Contracts
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Contracts
+    name: Contracts
+    href: Virtufin.Core.Contracts.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Contracts
+    name: Contracts
+    href: Virtufin.Core.Contracts.html
+- uid: Virtufin.Core.Contracts.IScenario.TimeStamp*
+  commentId: Overload:Virtufin.Core.Contracts.IScenario.TimeStamp
+  href: Virtufin.Core.Contracts.IScenario.html#Virtufin_Core_Contracts_IScenario_TimeStamp
+  name: TimeStamp
+  nameWithType: IScenario.TimeStamp
+  fullName: Virtufin.Core.Contracts.IScenario.TimeStamp
+- uid: Virtufin.Core.Identifiers.ITimeStamp
+  commentId: T:Virtufin.Core.Identifiers.ITimeStamp
+  parent: Virtufin.Core.Identifiers
+  href: Virtufin.Core.Identifiers.ITimeStamp.html
+  name: ITimeStamp
+  nameWithType: ITimeStamp
+  fullName: Virtufin.Core.Identifiers.ITimeStamp
+- uid: Virtufin.Core.Identifiers
+  commentId: N:Virtufin.Core.Identifiers
+  href: Virtufin.html
+  name: Virtufin.Core.Identifiers
+  nameWithType: Virtufin.Core.Identifiers
+  fullName: Virtufin.Core.Identifiers
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html
+- uid: Virtufin.Core.Contracts.IScenario.TimeStamp
+  commentId: P:Virtufin.Core.Contracts.IScenario.TimeStamp
+  href: Virtufin.Core.Contracts.IScenario.html#Virtufin_Core_Contracts_IScenario_TimeStamp
+  name: TimeStamp
+  nameWithType: IScenario.TimeStamp
+  fullName: Virtufin.Core.Contracts.IScenario.TimeStamp
+- uid: Virtufin.Core.Contracts.IScenario.State*
+  commentId: Overload:Virtufin.Core.Contracts.IScenario.State
+  href: Virtufin.Core.Contracts.IScenario.html#Virtufin_Core_Contracts_IScenario_State
+  name: State
+  nameWithType: IScenario.State
+  fullName: Virtufin.Core.Contracts.IScenario.State
+- uid: Virtufin.Core.Contracts.IState
+  commentId: T:Virtufin.Core.Contracts.IState
+  parent: Virtufin.Core.Contracts
+  href: Virtufin.Core.Contracts.IState.html
+  name: IState
+  nameWithType: IState
+  fullName: Virtufin.Core.Contracts.IState

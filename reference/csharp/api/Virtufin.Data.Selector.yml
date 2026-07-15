@@ -1,0 +1,854 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Data.Selector
+  commentId: T:Virtufin.Data.Selector
+  id: Selector
+  parent: Virtufin.Data
+  children:
+  - Virtufin.Data.Selector.Equals(Virtufin.Data.Selector)
+  - Virtufin.Data.Selector.GetIndexSelector
+  - Virtufin.Data.Selector.GetKeySelector
+  - Virtufin.Data.Selector.IsIndexSelector
+  - Virtufin.Data.Selector.IsKeySelector
+  - Virtufin.Data.Selector.Select(Virtufin.Data.IVariant)
+  - Virtufin.Data.Selector.ToString
+  - Virtufin.Data.Selector.op_Implicit(System.Int32)~Virtufin.Data.Selector
+  - Virtufin.Data.Selector.op_Implicit(System.String)~Virtufin.Data.Selector
+  - Virtufin.Data.Selector.op_Implicit(Virtufin.Data.Selector)~System.Int32
+  - Virtufin.Data.Selector.op_Implicit(Virtufin.Data.Selector)~System.String
+  langs:
+  - csharp
+  - vb
+  name: Selector
+  nameWithType: Selector
+  fullName: Virtufin.Data.Selector
+  type: Struct
+  source:
+    remote:
+      path: src/Virtufin.Data/VariantListRepresentation.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Selector
+    path: ../../../src/Virtufin.Data/VariantListRepresentation.cs
+    startLine: 10
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  syntax:
+    content: 'public readonly struct Selector : IEquatable<Selector>'
+    content.vb: Public Structure Selector Implements IEquatable(Of Selector)
+  implements:
+  - System.IEquatable{Virtufin.Data.Selector}
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Virtufin.Data.Selector.IsIndexSelector
+  commentId: P:Virtufin.Data.Selector.IsIndexSelector
+  id: IsIndexSelector
+  parent: Virtufin.Data.Selector
+  langs:
+  - csharp
+  - vb
+  name: IsIndexSelector
+  nameWithType: Selector.IsIndexSelector
+  fullName: Virtufin.Data.Selector.IsIndexSelector
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/VariantListRepresentation.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsIndexSelector
+    path: ../../../src/Virtufin.Data/VariantListRepresentation.cs
+    startLine: 24
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  syntax:
+    content: public bool IsIndexSelector { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsIndexSelector As Boolean
+  overload: Virtufin.Data.Selector.IsIndexSelector*
+- uid: Virtufin.Data.Selector.IsKeySelector
+  commentId: P:Virtufin.Data.Selector.IsKeySelector
+  id: IsKeySelector
+  parent: Virtufin.Data.Selector
+  langs:
+  - csharp
+  - vb
+  name: IsKeySelector
+  nameWithType: Selector.IsKeySelector
+  fullName: Virtufin.Data.Selector.IsKeySelector
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Data/VariantListRepresentation.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsKeySelector
+    path: ../../../src/Virtufin.Data/VariantListRepresentation.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  syntax:
+    content: public bool IsKeySelector { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsKeySelector As Boolean
+  overload: Virtufin.Data.Selector.IsKeySelector*
+- uid: Virtufin.Data.Selector.GetIndexSelector
+  commentId: M:Virtufin.Data.Selector.GetIndexSelector
+  id: GetIndexSelector
+  parent: Virtufin.Data.Selector
+  langs:
+  - csharp
+  - vb
+  name: GetIndexSelector()
+  nameWithType: Selector.GetIndexSelector()
+  fullName: Virtufin.Data.Selector.GetIndexSelector()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Data/VariantListRepresentation.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GetIndexSelector
+    path: ../../../src/Virtufin.Data/VariantListRepresentation.cs
+    startLine: 28
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  syntax:
+    content: public int GetIndexSelector()
+    return:
+      type: System.Int32
+    content.vb: Public Function GetIndexSelector() As Integer
+  overload: Virtufin.Data.Selector.GetIndexSelector*
+- uid: Virtufin.Data.Selector.GetKeySelector
+  commentId: M:Virtufin.Data.Selector.GetKeySelector
+  id: GetKeySelector
+  parent: Virtufin.Data.Selector
+  langs:
+  - csharp
+  - vb
+  name: GetKeySelector()
+  nameWithType: Selector.GetKeySelector()
+  fullName: Virtufin.Data.Selector.GetKeySelector()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Data/VariantListRepresentation.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: GetKeySelector
+    path: ../../../src/Virtufin.Data/VariantListRepresentation.cs
+    startLine: 29
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  syntax:
+    content: public string GetKeySelector()
+    return:
+      type: System.String
+    content.vb: Public Function GetKeySelector() As String
+  overload: Virtufin.Data.Selector.GetKeySelector*
+- uid: Virtufin.Data.Selector.Select(Virtufin.Data.IVariant)
+  commentId: M:Virtufin.Data.Selector.Select(Virtufin.Data.IVariant)
+  id: Select(Virtufin.Data.IVariant)
+  parent: Virtufin.Data.Selector
+  langs:
+  - csharp
+  - vb
+  name: Select(IVariant)
+  nameWithType: Selector.Select(IVariant)
+  fullName: Virtufin.Data.Selector.Select(Virtufin.Data.IVariant)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Data/VariantListRepresentation.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Select
+    path: ../../../src/Virtufin.Data/VariantListRepresentation.cs
+    startLine: 31
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  syntax:
+    content: public IVariant Select(IVariant v)
+    parameters:
+    - id: v
+      type: Virtufin.Data.IVariant
+    return:
+      type: Virtufin.Data.IVariant
+    content.vb: Public Function [Select](v As IVariant) As IVariant
+  overload: Virtufin.Data.Selector.Select*
+- uid: Virtufin.Data.Selector.ToString
+  commentId: M:Virtufin.Data.Selector.ToString
+  id: ToString
+  parent: Virtufin.Data.Selector
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Selector.ToString()
+  fullName: Virtufin.Data.Selector.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Data/VariantListRepresentation.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ToString
+    path: ../../../src/Virtufin.Data/VariantListRepresentation.cs
+    startLine: 60
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  summary: Returns the fully qualified type name of this instance.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The fully qualified type name.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: Virtufin.Data.Selector.ToString*
+- uid: Virtufin.Data.Selector.Equals(Virtufin.Data.Selector)
+  commentId: M:Virtufin.Data.Selector.Equals(Virtufin.Data.Selector)
+  id: Equals(Virtufin.Data.Selector)
+  parent: Virtufin.Data.Selector
+  langs:
+  - csharp
+  - vb
+  name: Equals(Selector)
+  nameWithType: Selector.Equals(Selector)
+  fullName: Virtufin.Data.Selector.Equals(Virtufin.Data.Selector)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Data/VariantListRepresentation.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Equals
+    path: ../../../src/Virtufin.Data/VariantListRepresentation.cs
+    startLine: 65
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(Selector other)
+    parameters:
+    - id: other
+      type: Virtufin.Data.Selector
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As Selector) As Boolean
+  overload: Virtufin.Data.Selector.Equals*
+  implements:
+  - System.IEquatable{Virtufin.Data.Selector}.Equals(Virtufin.Data.Selector)
+- uid: Virtufin.Data.Selector.op_Implicit(System.Int32)~Virtufin.Data.Selector
+  commentId: M:Virtufin.Data.Selector.op_Implicit(System.Int32)~Virtufin.Data.Selector
+  id: op_Implicit(System.Int32)~Virtufin.Data.Selector
+  parent: Virtufin.Data.Selector
+  langs:
+  - csharp
+  - vb
+  name: implicit operator Selector(int)
+  nameWithType: Selector.implicit operator Selector(int)
+  fullName: Virtufin.Data.Selector.implicit operator Virtufin.Data.Selector(int)
+  type: Operator
+  source:
+    remote:
+      path: src/Virtufin.Data/VariantListRepresentation.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: op_Implicit
+    path: ../../../src/Virtufin.Data/VariantListRepresentation.cs
+    startLine: 70
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  syntax:
+    content: public static implicit operator Selector(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: Virtufin.Data.Selector
+    content.vb: Public Shared Widening Operator CType(index As Integer) As Selector
+  overload: Virtufin.Data.Selector.op_Implicit*
+  nameWithType.vb: Selector.CType(Integer)
+  fullName.vb: Virtufin.Data.Selector.CType(Integer)
+  name.vb: CType(Integer)
+- uid: Virtufin.Data.Selector.op_Implicit(System.String)~Virtufin.Data.Selector
+  commentId: M:Virtufin.Data.Selector.op_Implicit(System.String)~Virtufin.Data.Selector
+  id: op_Implicit(System.String)~Virtufin.Data.Selector
+  parent: Virtufin.Data.Selector
+  langs:
+  - csharp
+  - vb
+  name: implicit operator Selector(string)
+  nameWithType: Selector.implicit operator Selector(string)
+  fullName: Virtufin.Data.Selector.implicit operator Virtufin.Data.Selector(string)
+  type: Operator
+  source:
+    remote:
+      path: src/Virtufin.Data/VariantListRepresentation.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: op_Implicit
+    path: ../../../src/Virtufin.Data/VariantListRepresentation.cs
+    startLine: 72
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  syntax:
+    content: public static implicit operator Selector(string key)
+    parameters:
+    - id: key
+      type: System.String
+    return:
+      type: Virtufin.Data.Selector
+    content.vb: Public Shared Widening Operator CType(key As String) As Selector
+  overload: Virtufin.Data.Selector.op_Implicit*
+  nameWithType.vb: Selector.CType(String)
+  fullName.vb: Virtufin.Data.Selector.CType(String)
+  name.vb: CType(String)
+- uid: Virtufin.Data.Selector.op_Implicit(Virtufin.Data.Selector)~System.Int32
+  commentId: M:Virtufin.Data.Selector.op_Implicit(Virtufin.Data.Selector)~System.Int32
+  id: op_Implicit(Virtufin.Data.Selector)~System.Int32
+  parent: Virtufin.Data.Selector
+  langs:
+  - csharp
+  - vb
+  name: implicit operator int(Selector)
+  nameWithType: Selector.implicit operator int(Selector)
+  fullName: Virtufin.Data.Selector.implicit operator int(Virtufin.Data.Selector)
+  type: Operator
+  source:
+    remote:
+      path: src/Virtufin.Data/VariantListRepresentation.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: op_Implicit
+    path: ../../../src/Virtufin.Data/VariantListRepresentation.cs
+    startLine: 74
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  syntax:
+    content: public static implicit operator int(Selector s)
+    parameters:
+    - id: s
+      type: Virtufin.Data.Selector
+    return:
+      type: System.Int32
+    content.vb: Public Shared Widening Operator CType(s As Selector) As Integer
+  overload: Virtufin.Data.Selector.op_Implicit*
+  nameWithType.vb: Selector.CType(Selector)
+  fullName.vb: Virtufin.Data.Selector.CType(Virtufin.Data.Selector)
+  name.vb: CType(Selector)
+- uid: Virtufin.Data.Selector.op_Implicit(Virtufin.Data.Selector)~System.String
+  commentId: M:Virtufin.Data.Selector.op_Implicit(Virtufin.Data.Selector)~System.String
+  id: op_Implicit(Virtufin.Data.Selector)~System.String
+  parent: Virtufin.Data.Selector
+  langs:
+  - csharp
+  - vb
+  name: implicit operator string(Selector)
+  nameWithType: Selector.implicit operator string(Selector)
+  fullName: Virtufin.Data.Selector.implicit operator string(Virtufin.Data.Selector)
+  type: Operator
+  source:
+    remote:
+      path: src/Virtufin.Data/VariantListRepresentation.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: op_Implicit
+    path: ../../../src/Virtufin.Data/VariantListRepresentation.cs
+    startLine: 77
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data
+  syntax:
+    content: public static implicit operator string(Selector s)
+    parameters:
+    - id: s
+      type: Virtufin.Data.Selector
+    return:
+      type: System.String
+    content.vb: Public Shared Widening Operator CType(s As Selector) As String
+  overload: Virtufin.Data.Selector.op_Implicit*
+  nameWithType.vb: Selector.CType(Selector)
+  fullName.vb: Virtufin.Data.Selector.CType(Virtufin.Data.Selector)
+  name.vb: CType(Selector)
+references:
+- uid: Virtufin.Data
+  commentId: N:Virtufin.Data
+  href: Virtufin.html
+  name: Virtufin.Data
+  nameWithType: Virtufin.Data
+  fullName: Virtufin.Data
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Data
+    name: Data
+    href: Virtufin.Data.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Data
+    name: Data
+    href: Virtufin.Data.html
+- uid: System.IEquatable{Virtufin.Data.Selector}
+  commentId: T:System.IEquatable{Virtufin.Data.Selector}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Selector>
+  nameWithType: IEquatable<Selector>
+  fullName: System.IEquatable<Virtufin.Data.Selector>
+  nameWithType.vb: IEquatable(Of Selector)
+  fullName.vb: System.IEquatable(Of Virtufin.Data.Selector)
+  name.vb: IEquatable(Of Selector)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Data.Selector
+    name: Selector
+    href: Virtufin.Data.Selector.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Data.Selector
+    name: Selector
+    href: Virtufin.Data.Selector.html
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.Data.Selector.IsIndexSelector*
+  commentId: Overload:Virtufin.Data.Selector.IsIndexSelector
+  href: Virtufin.Data.Selector.html#Virtufin_Data_Selector_IsIndexSelector
+  name: IsIndexSelector
+  nameWithType: Selector.IsIndexSelector
+  fullName: Virtufin.Data.Selector.IsIndexSelector
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Virtufin.Data.Selector.IsKeySelector*
+  commentId: Overload:Virtufin.Data.Selector.IsKeySelector
+  href: Virtufin.Data.Selector.html#Virtufin_Data_Selector_IsKeySelector
+  name: IsKeySelector
+  nameWithType: Selector.IsKeySelector
+  fullName: Virtufin.Data.Selector.IsKeySelector
+- uid: Virtufin.Data.Selector.GetIndexSelector*
+  commentId: Overload:Virtufin.Data.Selector.GetIndexSelector
+  href: Virtufin.Data.Selector.html#Virtufin_Data_Selector_GetIndexSelector
+  name: GetIndexSelector
+  nameWithType: Selector.GetIndexSelector
+  fullName: Virtufin.Data.Selector.GetIndexSelector
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Virtufin.Data.Selector.GetKeySelector*
+  commentId: Overload:Virtufin.Data.Selector.GetKeySelector
+  href: Virtufin.Data.Selector.html#Virtufin_Data_Selector_GetKeySelector
+  name: GetKeySelector
+  nameWithType: Selector.GetKeySelector
+  fullName: Virtufin.Data.Selector.GetKeySelector
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Virtufin.Data.Selector.Select*
+  commentId: Overload:Virtufin.Data.Selector.Select
+  href: Virtufin.Data.Selector.html#Virtufin_Data_Selector_Select_Virtufin_Data_IVariant_
+  name: Select
+  nameWithType: Selector.Select
+  fullName: Virtufin.Data.Selector.Select
+- uid: Virtufin.Data.IVariant
+  commentId: T:Virtufin.Data.IVariant
+  parent: Virtufin.Data
+  href: Virtufin.Data.IVariant.html
+  name: IVariant
+  nameWithType: IVariant
+  fullName: Virtufin.Data.IVariant
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: Virtufin.Data.Selector.ToString*
+  commentId: Overload:Virtufin.Data.Selector.ToString
+  href: Virtufin.Data.Selector.html#Virtufin_Data_Selector_ToString
+  name: ToString
+  nameWithType: Selector.ToString
+  fullName: Virtufin.Data.Selector.ToString
+- uid: Virtufin.Data.Selector.Equals*
+  commentId: Overload:Virtufin.Data.Selector.Equals
+  href: Virtufin.Data.Selector.html#Virtufin_Data_Selector_Equals_Virtufin_Data_Selector_
+  name: Equals
+  nameWithType: Selector.Equals
+  fullName: Virtufin.Data.Selector.Equals
+- uid: System.IEquatable{Virtufin.Data.Selector}.Equals(Virtufin.Data.Selector)
+  commentId: M:System.IEquatable{Virtufin.Data.Selector}.Equals(Virtufin.Data.Selector)
+  parent: System.IEquatable{Virtufin.Data.Selector}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Selector)
+  nameWithType: IEquatable<Selector>.Equals(Selector)
+  fullName: System.IEquatable<Virtufin.Data.Selector>.Equals(Virtufin.Data.Selector)
+  nameWithType.vb: IEquatable(Of Selector).Equals(Selector)
+  fullName.vb: System.IEquatable(Of Virtufin.Data.Selector).Equals(Virtufin.Data.Selector)
+  spec.csharp:
+  - uid: System.IEquatable{Virtufin.Data.Selector}.Equals(Virtufin.Data.Selector)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Data.Selector
+    name: Selector
+    href: Virtufin.Data.Selector.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Virtufin.Data.Selector}.Equals(Virtufin.Data.Selector)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Data.Selector
+    name: Selector
+    href: Virtufin.Data.Selector.html
+  - name: )
+- uid: Virtufin.Data.Selector
+  commentId: T:Virtufin.Data.Selector
+  parent: Virtufin.Data
+  href: Virtufin.Data.Selector.html
+  name: Selector
+  nameWithType: Selector
+  fullName: Virtufin.Data.Selector
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: Virtufin.Data.Selector.op_Implicit*
+  commentId: Overload:Virtufin.Data.Selector.op_Implicit
+  name: implicit operator
+  nameWithType: Selector.implicit operator
+  fullName: Virtufin.Data.Selector.implicit operator
+  nameWithType.vb: Selector.CType
+  fullName.vb: Virtufin.Data.Selector.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator

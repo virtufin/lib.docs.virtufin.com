@@ -1,0 +1,63 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Events.Position
+  commentId: N:Virtufin.Core.Events.Position
+  id: Position
+  parent: Virtufin.Core.Events
+  children:
+  - Virtufin.Core.Events.Position.IPositionEvent
+  langs:
+  - csharp
+  - vb
+  name: Virtufin.Core.Events.Position
+  nameWithType: Virtufin.Core.Events.Position
+  fullName: Virtufin.Core.Events.Position
+  type: Namespace
+  assemblies:
+  - Virtufin.Core
+references:
+- uid: Virtufin.Core.Events.Position.IPositionEvent
+  commentId: T:Virtufin.Core.Events.Position.IPositionEvent
+  parent: Virtufin.Core.Events.Position
+  href: Virtufin.Core.Events.Position.IPositionEvent.html
+  name: IPositionEvent
+  nameWithType: IPositionEvent
+  fullName: Virtufin.Core.Events.Position.IPositionEvent
+- uid: Virtufin.Core.Events.Position
+  commentId: N:Virtufin.Core.Events.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Events.Position
+  nameWithType: Virtufin.Core.Events.Position
+  fullName: Virtufin.Core.Events.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  - name: .
+  - uid: Virtufin.Core.Events.Position
+    name: Position
+    href: Virtufin.Core.Events.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  - name: .
+  - uid: Virtufin.Core.Events.Position
+    name: Position
+    href: Virtufin.Core.Events.Position.html

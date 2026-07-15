@@ -1,0 +1,778 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Position.SimpleOrder`1
+  commentId: T:Virtufin.Core.Position.SimpleOrder`1
+  id: SimpleOrder`1
+  parent: Virtufin.Core.Position
+  children:
+  - Virtufin.Core.Position.SimpleOrder`1.#ctor(Virtufin.Core.Position.BuyOrSell,Virtufin.Core.Position.LimitOrMarketOrder,Virtufin.Core.Position.DecimalQuantity{`0})
+  - Virtufin.Core.Position.SimpleOrder`1.BuySell
+  - Virtufin.Core.Position.SimpleOrder`1.IsBuy
+  - Virtufin.Core.Position.SimpleOrder`1.IsLimitOrder
+  - Virtufin.Core.Position.SimpleOrder`1.IsMarketOrder
+  - Virtufin.Core.Position.SimpleOrder`1.IsSell
+  - Virtufin.Core.Position.SimpleOrder`1.LimitOrMarket
+  - Virtufin.Core.Position.SimpleOrder`1.Quantity
+  langs:
+  - csharp
+  - vb
+  name: SimpleOrder<U>
+  nameWithType: SimpleOrder<U>
+  fullName: Virtufin.Core.Position.SimpleOrder<U>
+  type: Struct
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/SimpleOrder.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: SimpleOrder
+    path: ../../../src/Virtufin.Core/Position/SimpleOrder.cs
+    startLine: 7
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    A simple order: buy or sell side, limit or market execution type, and a
+
+    quantity.
+  example: []
+  syntax:
+    content: 'public readonly record struct SimpleOrder<U> : IEquatable<SimpleOrder<U>> where U : IUnit'
+    typeParameters:
+    - id: U
+      description: Unit of the traded instrument.
+    content.vb: Public Structure SimpleOrder(Of U As IUnit) Implements IEquatable(Of SimpleOrder(Of U))
+  implements:
+  - System.IEquatable{Virtufin.Core.Position.SimpleOrder`1}
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType.vb: SimpleOrder(Of U)
+  fullName.vb: Virtufin.Core.Position.SimpleOrder(Of U)
+  name.vb: SimpleOrder(Of U)
+- uid: Virtufin.Core.Position.SimpleOrder`1.#ctor(Virtufin.Core.Position.BuyOrSell,Virtufin.Core.Position.LimitOrMarketOrder,Virtufin.Core.Position.DecimalQuantity{`0})
+  commentId: M:Virtufin.Core.Position.SimpleOrder`1.#ctor(Virtufin.Core.Position.BuyOrSell,Virtufin.Core.Position.LimitOrMarketOrder,Virtufin.Core.Position.DecimalQuantity{`0})
+  id: '#ctor(Virtufin.Core.Position.BuyOrSell,Virtufin.Core.Position.LimitOrMarketOrder,Virtufin.Core.Position.DecimalQuantity{`0})'
+  parent: Virtufin.Core.Position.SimpleOrder`1
+  langs:
+  - csharp
+  - vb
+  name: SimpleOrder(BuyOrSell, LimitOrMarketOrder, DecimalQuantity<U>)
+  nameWithType: SimpleOrder<U>.SimpleOrder(BuyOrSell, LimitOrMarketOrder, DecimalQuantity<U>)
+  fullName: Virtufin.Core.Position.SimpleOrder<U>.SimpleOrder(Virtufin.Core.Position.BuyOrSell, Virtufin.Core.Position.LimitOrMarketOrder, Virtufin.Core.Position.DecimalQuantity<U>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/SimpleOrder.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Core/Position/SimpleOrder.cs
+    startLine: 7
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    A simple order: buy or sell side, limit or market execution type, and a
+
+    quantity.
+  example: []
+  syntax:
+    content: public SimpleOrder(BuyOrSell BuySell, LimitOrMarketOrder LimitOrMarket, DecimalQuantity<U> Quantity)
+    parameters:
+    - id: BuySell
+      type: Virtufin.Core.Position.BuyOrSell
+    - id: LimitOrMarket
+      type: Virtufin.Core.Position.LimitOrMarketOrder
+    - id: Quantity
+      type: Virtufin.Core.Position.DecimalQuantity{{U}}
+    content.vb: Public Sub New(BuySell As BuyOrSell, LimitOrMarket As LimitOrMarketOrder, Quantity As DecimalQuantity(Of U))
+  overload: Virtufin.Core.Position.SimpleOrder`1.#ctor*
+  nameWithType.vb: SimpleOrder(Of U).New(BuyOrSell, LimitOrMarketOrder, DecimalQuantity(Of U))
+  fullName.vb: Virtufin.Core.Position.SimpleOrder(Of U).New(Virtufin.Core.Position.BuyOrSell, Virtufin.Core.Position.LimitOrMarketOrder, Virtufin.Core.Position.DecimalQuantity(Of U))
+  name.vb: New(BuyOrSell, LimitOrMarketOrder, DecimalQuantity(Of U))
+- uid: Virtufin.Core.Position.SimpleOrder`1.BuySell
+  commentId: P:Virtufin.Core.Position.SimpleOrder`1.BuySell
+  id: BuySell
+  parent: Virtufin.Core.Position.SimpleOrder`1
+  langs:
+  - csharp
+  - vb
+  name: BuySell
+  nameWithType: SimpleOrder<U>.BuySell
+  fullName: Virtufin.Core.Position.SimpleOrder<U>.BuySell
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/SimpleOrder.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: BuySell
+    path: ../../../src/Virtufin.Core/Position/SimpleOrder.cs
+    startLine: 8
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  syntax:
+    content: public BuyOrSell BuySell { get; init; }
+    parameters: []
+    return:
+      type: Virtufin.Core.Position.BuyOrSell
+    content.vb: Public Property BuySell As BuyOrSell
+  overload: Virtufin.Core.Position.SimpleOrder`1.BuySell*
+  nameWithType.vb: SimpleOrder(Of U).BuySell
+  fullName.vb: Virtufin.Core.Position.SimpleOrder(Of U).BuySell
+- uid: Virtufin.Core.Position.SimpleOrder`1.LimitOrMarket
+  commentId: P:Virtufin.Core.Position.SimpleOrder`1.LimitOrMarket
+  id: LimitOrMarket
+  parent: Virtufin.Core.Position.SimpleOrder`1
+  langs:
+  - csharp
+  - vb
+  name: LimitOrMarket
+  nameWithType: SimpleOrder<U>.LimitOrMarket
+  fullName: Virtufin.Core.Position.SimpleOrder<U>.LimitOrMarket
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/SimpleOrder.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: LimitOrMarket
+    path: ../../../src/Virtufin.Core/Position/SimpleOrder.cs
+    startLine: 9
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  syntax:
+    content: public LimitOrMarketOrder LimitOrMarket { get; init; }
+    parameters: []
+    return:
+      type: Virtufin.Core.Position.LimitOrMarketOrder
+    content.vb: Public Property LimitOrMarket As LimitOrMarketOrder
+  overload: Virtufin.Core.Position.SimpleOrder`1.LimitOrMarket*
+  nameWithType.vb: SimpleOrder(Of U).LimitOrMarket
+  fullName.vb: Virtufin.Core.Position.SimpleOrder(Of U).LimitOrMarket
+- uid: Virtufin.Core.Position.SimpleOrder`1.Quantity
+  commentId: P:Virtufin.Core.Position.SimpleOrder`1.Quantity
+  id: Quantity
+  parent: Virtufin.Core.Position.SimpleOrder`1
+  langs:
+  - csharp
+  - vb
+  name: Quantity
+  nameWithType: SimpleOrder<U>.Quantity
+  fullName: Virtufin.Core.Position.SimpleOrder<U>.Quantity
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/SimpleOrder.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Quantity
+    path: ../../../src/Virtufin.Core/Position/SimpleOrder.cs
+    startLine: 10
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  syntax:
+    content: public DecimalQuantity<U> Quantity { get; init; }
+    parameters: []
+    return:
+      type: Virtufin.Core.Position.DecimalQuantity{{U}}
+    content.vb: Public Property Quantity As DecimalQuantity(Of U)
+  overload: Virtufin.Core.Position.SimpleOrder`1.Quantity*
+  nameWithType.vb: SimpleOrder(Of U).Quantity
+  fullName.vb: Virtufin.Core.Position.SimpleOrder(Of U).Quantity
+- uid: Virtufin.Core.Position.SimpleOrder`1.IsBuy
+  commentId: M:Virtufin.Core.Position.SimpleOrder`1.IsBuy
+  id: IsBuy
+  parent: Virtufin.Core.Position.SimpleOrder`1
+  langs:
+  - csharp
+  - vb
+  name: IsBuy()
+  nameWithType: SimpleOrder<U>.IsBuy()
+  fullName: Virtufin.Core.Position.SimpleOrder<U>.IsBuy()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/SimpleOrder.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsBuy
+    path: ../../../src/Virtufin.Core/Position/SimpleOrder.cs
+    startLine: 14
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Returns <code>true</code> if this is a buy-side order.
+  example: []
+  syntax:
+    content: public bool IsBuy()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsBuy() As Boolean
+  overload: Virtufin.Core.Position.SimpleOrder`1.IsBuy*
+  nameWithType.vb: SimpleOrder(Of U).IsBuy()
+  fullName.vb: Virtufin.Core.Position.SimpleOrder(Of U).IsBuy()
+- uid: Virtufin.Core.Position.SimpleOrder`1.IsSell
+  commentId: M:Virtufin.Core.Position.SimpleOrder`1.IsSell
+  id: IsSell
+  parent: Virtufin.Core.Position.SimpleOrder`1
+  langs:
+  - csharp
+  - vb
+  name: IsSell()
+  nameWithType: SimpleOrder<U>.IsSell()
+  fullName: Virtufin.Core.Position.SimpleOrder<U>.IsSell()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/SimpleOrder.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsSell
+    path: ../../../src/Virtufin.Core/Position/SimpleOrder.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Returns <code>true</code> if this is a sell-side order.
+  example: []
+  syntax:
+    content: public bool IsSell()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsSell() As Boolean
+  overload: Virtufin.Core.Position.SimpleOrder`1.IsSell*
+  nameWithType.vb: SimpleOrder(Of U).IsSell()
+  fullName.vb: Virtufin.Core.Position.SimpleOrder(Of U).IsSell()
+- uid: Virtufin.Core.Position.SimpleOrder`1.IsLimitOrder
+  commentId: M:Virtufin.Core.Position.SimpleOrder`1.IsLimitOrder
+  id: IsLimitOrder
+  parent: Virtufin.Core.Position.SimpleOrder`1
+  langs:
+  - csharp
+  - vb
+  name: IsLimitOrder()
+  nameWithType: SimpleOrder<U>.IsLimitOrder()
+  fullName: Virtufin.Core.Position.SimpleOrder<U>.IsLimitOrder()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/SimpleOrder.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsLimitOrder
+    path: ../../../src/Virtufin.Core/Position/SimpleOrder.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Returns <code>true</code> if this is a limit order.
+  example: []
+  syntax:
+    content: public bool IsLimitOrder()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsLimitOrder() As Boolean
+  overload: Virtufin.Core.Position.SimpleOrder`1.IsLimitOrder*
+  nameWithType.vb: SimpleOrder(Of U).IsLimitOrder()
+  fullName.vb: Virtufin.Core.Position.SimpleOrder(Of U).IsLimitOrder()
+- uid: Virtufin.Core.Position.SimpleOrder`1.IsMarketOrder
+  commentId: M:Virtufin.Core.Position.SimpleOrder`1.IsMarketOrder
+  id: IsMarketOrder
+  parent: Virtufin.Core.Position.SimpleOrder`1
+  langs:
+  - csharp
+  - vb
+  name: IsMarketOrder()
+  nameWithType: SimpleOrder<U>.IsMarketOrder()
+  fullName: Virtufin.Core.Position.SimpleOrder<U>.IsMarketOrder()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/SimpleOrder.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IsMarketOrder
+    path: ../../../src/Virtufin.Core/Position/SimpleOrder.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Returns <code>true</code> if this is a market order.
+  example: []
+  syntax:
+    content: public bool IsMarketOrder()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsMarketOrder() As Boolean
+  overload: Virtufin.Core.Position.SimpleOrder`1.IsMarketOrder*
+  nameWithType.vb: SimpleOrder(Of U).IsMarketOrder()
+  fullName.vb: Virtufin.Core.Position.SimpleOrder(Of U).IsMarketOrder()
+references:
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: System.IEquatable{Virtufin.Core.Position.SimpleOrder`1}
+  commentId: T:System.IEquatable{Virtufin.Core.Position.SimpleOrder`1}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<SimpleOrder<U>>
+  nameWithType: IEquatable<SimpleOrder<U>>
+  fullName: System.IEquatable<Virtufin.Core.Position.SimpleOrder<U>>
+  nameWithType.vb: IEquatable(Of SimpleOrder(Of U))
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Position.SimpleOrder(Of U))
+  name.vb: IEquatable(Of SimpleOrder(Of U))
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Position.SimpleOrder`1
+    name: SimpleOrder
+    href: Virtufin.Core.Position.SimpleOrder-1.html
+  - name: <
+  - name: U
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Position.SimpleOrder`1
+    name: SimpleOrder
+    href: Virtufin.Core.Position.SimpleOrder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: U
+  - name: )
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.Core.Position.SimpleOrder`1.#ctor*
+  commentId: Overload:Virtufin.Core.Position.SimpleOrder`1.#ctor
+  href: Virtufin.Core.Position.SimpleOrder-1.html#Virtufin_Core_Position_SimpleOrder_1__ctor_Virtufin_Core_Position_BuyOrSell_Virtufin_Core_Position_LimitOrMarketOrder_Virtufin_Core_Position_DecimalQuantity__0__
+  name: SimpleOrder
+  nameWithType: SimpleOrder<U>.SimpleOrder
+  fullName: Virtufin.Core.Position.SimpleOrder<U>.SimpleOrder
+  nameWithType.vb: SimpleOrder(Of U).New
+  fullName.vb: Virtufin.Core.Position.SimpleOrder(Of U).New
+  name.vb: New
+- uid: Virtufin.Core.Position.BuyOrSell
+  commentId: T:Virtufin.Core.Position.BuyOrSell
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.BuyOrSell.html
+  name: BuyOrSell
+  nameWithType: BuyOrSell
+  fullName: Virtufin.Core.Position.BuyOrSell
+- uid: Virtufin.Core.Position.LimitOrMarketOrder
+  commentId: T:Virtufin.Core.Position.LimitOrMarketOrder
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.LimitOrMarketOrder.html
+  name: LimitOrMarketOrder
+  nameWithType: LimitOrMarketOrder
+  fullName: Virtufin.Core.Position.LimitOrMarketOrder
+- uid: Virtufin.Core.Position.DecimalQuantity{{U}}
+  commentId: T:Virtufin.Core.Position.DecimalQuantity{`0}
+  parent: Virtufin.Core.Position
+  definition: Virtufin.Core.Position.DecimalQuantity`1
+  href: Virtufin.Core.Position.DecimalQuantity-1.html
+  name: DecimalQuantity<U>
+  nameWithType: DecimalQuantity<U>
+  fullName: Virtufin.Core.Position.DecimalQuantity<U>
+  nameWithType.vb: DecimalQuantity(Of U)
+  fullName.vb: Virtufin.Core.Position.DecimalQuantity(Of U)
+  name.vb: DecimalQuantity(Of U)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.DecimalQuantity`1
+    name: DecimalQuantity
+    href: Virtufin.Core.Position.DecimalQuantity-1.html
+  - name: <
+  - name: U
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.DecimalQuantity`1
+    name: DecimalQuantity
+    href: Virtufin.Core.Position.DecimalQuantity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: U
+  - name: )
+- uid: Virtufin.Core.Position.DecimalQuantity`1
+  commentId: T:Virtufin.Core.Position.DecimalQuantity`1
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.DecimalQuantity-1.html
+  name: DecimalQuantity<U>
+  nameWithType: DecimalQuantity<U>
+  fullName: Virtufin.Core.Position.DecimalQuantity<U>
+  nameWithType.vb: DecimalQuantity(Of U)
+  fullName.vb: Virtufin.Core.Position.DecimalQuantity(Of U)
+  name.vb: DecimalQuantity(Of U)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.DecimalQuantity`1
+    name: DecimalQuantity
+    href: Virtufin.Core.Position.DecimalQuantity-1.html
+  - name: <
+  - name: U
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.DecimalQuantity`1
+    name: DecimalQuantity
+    href: Virtufin.Core.Position.DecimalQuantity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: U
+  - name: )
+- uid: Virtufin.Core.Position.SimpleOrder`1.BuySell*
+  commentId: Overload:Virtufin.Core.Position.SimpleOrder`1.BuySell
+  href: Virtufin.Core.Position.SimpleOrder-1.html#Virtufin_Core_Position_SimpleOrder_1_BuySell
+  name: BuySell
+  nameWithType: SimpleOrder<U>.BuySell
+  fullName: Virtufin.Core.Position.SimpleOrder<U>.BuySell
+  nameWithType.vb: SimpleOrder(Of U).BuySell
+  fullName.vb: Virtufin.Core.Position.SimpleOrder(Of U).BuySell
+- uid: Virtufin.Core.Position.SimpleOrder`1.LimitOrMarket*
+  commentId: Overload:Virtufin.Core.Position.SimpleOrder`1.LimitOrMarket
+  href: Virtufin.Core.Position.SimpleOrder-1.html#Virtufin_Core_Position_SimpleOrder_1_LimitOrMarket
+  name: LimitOrMarket
+  nameWithType: SimpleOrder<U>.LimitOrMarket
+  fullName: Virtufin.Core.Position.SimpleOrder<U>.LimitOrMarket
+  nameWithType.vb: SimpleOrder(Of U).LimitOrMarket
+  fullName.vb: Virtufin.Core.Position.SimpleOrder(Of U).LimitOrMarket
+- uid: Virtufin.Core.Position.SimpleOrder`1.Quantity*
+  commentId: Overload:Virtufin.Core.Position.SimpleOrder`1.Quantity
+  href: Virtufin.Core.Position.SimpleOrder-1.html#Virtufin_Core_Position_SimpleOrder_1_Quantity
+  name: Quantity
+  nameWithType: SimpleOrder<U>.Quantity
+  fullName: Virtufin.Core.Position.SimpleOrder<U>.Quantity
+  nameWithType.vb: SimpleOrder(Of U).Quantity
+  fullName.vb: Virtufin.Core.Position.SimpleOrder(Of U).Quantity
+- uid: Virtufin.Core.Position.SimpleOrder`1.IsBuy*
+  commentId: Overload:Virtufin.Core.Position.SimpleOrder`1.IsBuy
+  href: Virtufin.Core.Position.SimpleOrder-1.html#Virtufin_Core_Position_SimpleOrder_1_IsBuy
+  name: IsBuy
+  nameWithType: SimpleOrder<U>.IsBuy
+  fullName: Virtufin.Core.Position.SimpleOrder<U>.IsBuy
+  nameWithType.vb: SimpleOrder(Of U).IsBuy
+  fullName.vb: Virtufin.Core.Position.SimpleOrder(Of U).IsBuy
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Virtufin.Core.Position.SimpleOrder`1.IsSell*
+  commentId: Overload:Virtufin.Core.Position.SimpleOrder`1.IsSell
+  href: Virtufin.Core.Position.SimpleOrder-1.html#Virtufin_Core_Position_SimpleOrder_1_IsSell
+  name: IsSell
+  nameWithType: SimpleOrder<U>.IsSell
+  fullName: Virtufin.Core.Position.SimpleOrder<U>.IsSell
+  nameWithType.vb: SimpleOrder(Of U).IsSell
+  fullName.vb: Virtufin.Core.Position.SimpleOrder(Of U).IsSell
+- uid: Virtufin.Core.Position.SimpleOrder`1.IsLimitOrder*
+  commentId: Overload:Virtufin.Core.Position.SimpleOrder`1.IsLimitOrder
+  href: Virtufin.Core.Position.SimpleOrder-1.html#Virtufin_Core_Position_SimpleOrder_1_IsLimitOrder
+  name: IsLimitOrder
+  nameWithType: SimpleOrder<U>.IsLimitOrder
+  fullName: Virtufin.Core.Position.SimpleOrder<U>.IsLimitOrder
+  nameWithType.vb: SimpleOrder(Of U).IsLimitOrder
+  fullName.vb: Virtufin.Core.Position.SimpleOrder(Of U).IsLimitOrder
+- uid: Virtufin.Core.Position.SimpleOrder`1.IsMarketOrder*
+  commentId: Overload:Virtufin.Core.Position.SimpleOrder`1.IsMarketOrder
+  href: Virtufin.Core.Position.SimpleOrder-1.html#Virtufin_Core_Position_SimpleOrder_1_IsMarketOrder
+  name: IsMarketOrder
+  nameWithType: SimpleOrder<U>.IsMarketOrder
+  fullName: Virtufin.Core.Position.SimpleOrder<U>.IsMarketOrder
+  nameWithType.vb: SimpleOrder(Of U).IsMarketOrder
+  fullName.vb: Virtufin.Core.Position.SimpleOrder(Of U).IsMarketOrder

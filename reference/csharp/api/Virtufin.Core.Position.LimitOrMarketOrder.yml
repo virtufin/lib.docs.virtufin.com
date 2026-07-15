@@ -1,0 +1,126 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Position.LimitOrMarketOrder
+  commentId: T:Virtufin.Core.Position.LimitOrMarketOrder
+  id: LimitOrMarketOrder
+  parent: Virtufin.Core.Position
+  children:
+  - Virtufin.Core.Position.LimitOrMarketOrder.LimitOrder
+  - Virtufin.Core.Position.LimitOrMarketOrder.MarketOrder
+  langs:
+  - csharp
+  - vb
+  name: LimitOrMarketOrder
+  nameWithType: LimitOrMarketOrder
+  fullName: Virtufin.Core.Position.LimitOrMarketOrder
+  type: Enum
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/LimitOrMarketOrder.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: LimitOrMarketOrder
+    path: ../../../src/Virtufin.Core/Position/LimitOrMarketOrder.cs
+    startLine: 3
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Order type discriminator.
+  example: []
+  syntax:
+    content: public enum LimitOrMarketOrder
+    content.vb: Public Enum LimitOrMarketOrder
+- uid: Virtufin.Core.Position.LimitOrMarketOrder.LimitOrder
+  commentId: F:Virtufin.Core.Position.LimitOrMarketOrder.LimitOrder
+  id: LimitOrder
+  parent: Virtufin.Core.Position.LimitOrMarketOrder
+  langs:
+  - csharp
+  - vb
+  name: LimitOrder
+  nameWithType: LimitOrMarketOrder.LimitOrder
+  fullName: Virtufin.Core.Position.LimitOrMarketOrder.LimitOrder
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/LimitOrMarketOrder.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: LimitOrder
+    path: ../../../src/Virtufin.Core/Position/LimitOrMarketOrder.cs
+    startLine: 6
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: 'Limit order: execute only at the specified price or better.'
+  example: []
+  syntax:
+    content: LimitOrder = 0
+    return:
+      type: Virtufin.Core.Position.LimitOrMarketOrder
+- uid: Virtufin.Core.Position.LimitOrMarketOrder.MarketOrder
+  commentId: F:Virtufin.Core.Position.LimitOrMarketOrder.MarketOrder
+  id: MarketOrder
+  parent: Virtufin.Core.Position.LimitOrMarketOrder
+  langs:
+  - csharp
+  - vb
+  name: MarketOrder
+  nameWithType: LimitOrMarketOrder.MarketOrder
+  fullName: Virtufin.Core.Position.LimitOrMarketOrder.MarketOrder
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/LimitOrMarketOrder.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: MarketOrder
+    path: ../../../src/Virtufin.Core/Position/LimitOrMarketOrder.cs
+    startLine: 8
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: 'Market order: execute at the prevailing price.'
+  example: []
+  syntax:
+    content: MarketOrder = 1
+    return:
+      type: Virtufin.Core.Position.LimitOrMarketOrder
+references:
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: Virtufin.Core.Position.LimitOrMarketOrder
+  commentId: T:Virtufin.Core.Position.LimitOrMarketOrder
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.LimitOrMarketOrder.html
+  name: LimitOrMarketOrder
+  nameWithType: LimitOrMarketOrder
+  fullName: Virtufin.Core.Position.LimitOrMarketOrder

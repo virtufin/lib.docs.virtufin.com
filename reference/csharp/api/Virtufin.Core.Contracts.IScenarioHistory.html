@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IScenarioHistory | Virtufin .NET - C# API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IScenarioHistory | Virtufin .NET - C# API Reference ">
+      
+      <meta name="description" content="An append-only sequence of  snapshots. Provides pull-based lookup () and a push-based observable () for late subscribers — the latter is a hot Subject&amp;lt;IScenario&amp;gt; with no replay buffer.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.png" alt="Virtufin.Dotnet">
+            Virtufin.Dotnet
+          </a>
+          <div class="git-info">
+            <a href="{git_repo_url}/commit/12200022f926f6d79f6f48cb56f9a539ded65216" target="_blank" rel="noopener" class="commit-badge" title="View commit 12200022f926f6d79f6f48cb56f9a539ded65216">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
+                <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">12200022f926f6d79f6f48cb56f9a539ded65216</text>
+              </svg>
+            </a>
+          </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Virtufin.Core.Contracts.IScenarioHistory">
+
+
+
+  <h1 id="Virtufin_Core_Contracts_IScenarioHistory" data-uid="Virtufin.Core.Contracts.IScenarioHistory" class="text-break">
+Interface IScenarioHistory  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.Core.html">Core</a>.<a class="xref" href="Virtufin.Core.Contracts.html">Contracts</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Virtufin.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>An append-only sequence of <a class="xref" href="Virtufin.Core.Contracts.IScenario.html">IScenario</a> snapshots. Provides
+pull-based lookup (<a class="xref" href="Virtufin.Core.Contracts.IScenarioHistory.html#Virtufin_Core_Contracts_IScenarioHistory_Scenario_Virtufin_Core_Identifiers_ITimeStamp_">Scenario(ITimeStamp)</a>) and a push-based observable
+(<a class="xref" href="Virtufin.Core.Contracts.IScenarioHistory.html#Virtufin_Core_Contracts_IScenarioHistory_NewScenarios">NewScenarios</a>) for late subscribers — the latter is a hot
+<code>Subject&lt;IScenario&gt;</code> with no replay buffer.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IScenarioHistory : IEnumerable&lt;IScenario&gt;, IEnumerable</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator">IEnumerable&lt;IScenario&gt;.GetEnumerator()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="Virtufin_Core_Contracts_IScenarioHistory_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>The hot, no-replay choice means consumers that subscribe after history has
+been appended will not receive past scenarios — they only see future
+emissions, matching the semantics of the existing
+<code>NatsObservable</code>/<code>ValKeyObservable</code> in <code>Virtufin.Data</code>.</p>
+</div>
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Virtufin_Core_Contracts_IScenarioHistory_Iter_" data-uid="Virtufin.Core.Contracts.IScenarioHistory.Iter*"></a>
+
+  <h3 id="Virtufin_Core_Contracts_IScenarioHistory_Iter" data-uid="Virtufin.Core.Contracts.IScenarioHistory.Iter">
+  Iter
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Iterate scenarios in insertion order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IScenario&gt; Iter { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Virtufin.Core.Contracts.IScenario.html">IScenario</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Core_Contracts_IScenarioHistory_LastScenario_" data-uid="Virtufin.Core.Contracts.IScenarioHistory.LastScenario*"></a>
+
+  <h3 id="Virtufin_Core_Contracts_IScenarioHistory_LastScenario" data-uid="Virtufin.Core.Contracts.IScenarioHistory.LastScenario">
+  LastScenario
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The most recently appended scenario.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IScenario LastScenario { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Core.Contracts.IScenario.html">IScenario</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Core_Contracts_IScenarioHistory_NewScenarios_" data-uid="Virtufin.Core.Contracts.IScenarioHistory.NewScenarios*"></a>
+
+  <h3 id="Virtufin_Core_Contracts_IScenarioHistory_NewScenarios" data-uid="Virtufin.Core.Contracts.IScenarioHistory.NewScenarios">
+  NewScenarios
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Hot observable of newly-appended scenarios. Late subscribers see no
+history. Use the existing <code>Subject&lt;T&gt;</code> Unsubscribe pattern
+for proper disposal (see <code>AGENTS.md</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IObservable&lt;IScenario&gt; NewScenarios { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="Virtufin.Core.Contracts.IScenario.html">IScenario</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Virtufin_Core_Contracts_IScenarioHistory_Scenario_" data-uid="Virtufin.Core.Contracts.IScenarioHistory.Scenario*"></a>
+
+  <h3 id="Virtufin_Core_Contracts_IScenarioHistory_Scenario_Virtufin_Core_Identifiers_ITimeStamp_" data-uid="Virtufin.Core.Contracts.IScenarioHistory.Scenario(Virtufin.Core.Identifiers.ITimeStamp)">
+  Scenario(ITimeStamp)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Look up the first scenario matching <code class="paramref">timeStamp</code>.
+Returns <code>null</code> if no scenario matches.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IScenario? Scenario(ITimeStamp timeStamp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timeStamp</code> <a class="xref" href="Virtufin.Core.Identifiers.ITimeStamp.html">ITimeStamp</a></dt>
+    <dd><p>Time-point to search for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Core.Contracts.IScenario.html">IScenario</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2026 Häner Consulting. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

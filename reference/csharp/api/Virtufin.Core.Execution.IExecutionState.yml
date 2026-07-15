@@ -1,0 +1,67 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Execution.IExecutionState
+  commentId: T:Virtufin.Core.Execution.IExecutionState
+  id: IExecutionState
+  parent: Virtufin.Core.Execution
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IExecutionState
+  nameWithType: IExecutionState
+  fullName: Virtufin.Core.Execution.IExecutionState
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Execution/IExecutor.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IExecutionState
+    path: ../../../src/Virtufin.Core/Execution/IExecutor.cs
+    startLine: 8
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Execution
+  summary: >-
+    Marker for any type that carries the hidden state of an execution
+
+    engine (PRNG seed, API key material, account balance, etc.).
+  example: []
+  syntax:
+    content: public interface IExecutionState
+    content.vb: Public Interface IExecutionState
+  derivedClasses:
+  - Virtufin.Base.Execution.DeterministicState
+  - Virtufin.Base.Execution.StochasticState
+references:
+- uid: Virtufin.Core.Execution
+  commentId: N:Virtufin.Core.Execution
+  href: Virtufin.html
+  name: Virtufin.Core.Execution
+  nameWithType: Virtufin.Core.Execution
+  fullName: Virtufin.Core.Execution
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Execution
+    name: Execution
+    href: Virtufin.Core.Execution.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Execution
+    name: Execution
+    href: Virtufin.Core.Execution.html

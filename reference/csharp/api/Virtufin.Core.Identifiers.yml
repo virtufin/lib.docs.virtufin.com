@@ -1,0 +1,79 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Identifiers
+  commentId: N:Virtufin.Core.Identifiers
+  id: Identifiers
+  parent: Virtufin.Core
+  children:
+  - Virtufin.Core.Identifiers.IAssetIdentifier
+  - Virtufin.Core.Identifiers.IContractIdentifier
+  - Virtufin.Core.Identifiers.ISignatory
+  - Virtufin.Core.Identifiers.ITimeStamp
+  langs:
+  - csharp
+  - vb
+  name: Virtufin.Core.Identifiers
+  nameWithType: Virtufin.Core.Identifiers
+  fullName: Virtufin.Core.Identifiers
+  type: Namespace
+  assemblies:
+  - Virtufin.Core
+references:
+- uid: Virtufin.Core.Identifiers.IAssetIdentifier
+  commentId: T:Virtufin.Core.Identifiers.IAssetIdentifier
+  parent: Virtufin.Core.Identifiers
+  href: Virtufin.Core.Identifiers.IAssetIdentifier.html
+  name: IAssetIdentifier
+  nameWithType: IAssetIdentifier
+  fullName: Virtufin.Core.Identifiers.IAssetIdentifier
+- uid: Virtufin.Core.Identifiers.IContractIdentifier
+  commentId: T:Virtufin.Core.Identifiers.IContractIdentifier
+  parent: Virtufin.Core.Identifiers
+  href: Virtufin.Core.Identifiers.IContractIdentifier.html
+  name: IContractIdentifier
+  nameWithType: IContractIdentifier
+  fullName: Virtufin.Core.Identifiers.IContractIdentifier
+- uid: Virtufin.Core.Identifiers.ISignatory
+  commentId: T:Virtufin.Core.Identifiers.ISignatory
+  parent: Virtufin.Core.Identifiers
+  href: Virtufin.Core.Identifiers.ISignatory.html
+  name: ISignatory
+  nameWithType: ISignatory
+  fullName: Virtufin.Core.Identifiers.ISignatory
+- uid: Virtufin.Core.Identifiers.ITimeStamp
+  commentId: T:Virtufin.Core.Identifiers.ITimeStamp
+  parent: Virtufin.Core.Identifiers
+  href: Virtufin.Core.Identifiers.ITimeStamp.html
+  name: ITimeStamp
+  nameWithType: ITimeStamp
+  fullName: Virtufin.Core.Identifiers.ITimeStamp
+- uid: Virtufin.Core.Identifiers
+  commentId: N:Virtufin.Core.Identifiers
+  href: Virtufin.html
+  name: Virtufin.Core.Identifiers
+  nameWithType: Virtufin.Core.Identifiers
+  fullName: Virtufin.Core.Identifiers
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Identifiers
+    name: Identifiers
+    href: Virtufin.Core.Identifiers.html

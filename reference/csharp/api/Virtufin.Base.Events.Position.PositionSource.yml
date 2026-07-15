@@ -1,0 +1,163 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.Events.Position.PositionSource
+  commentId: T:Virtufin.Base.Events.Position.PositionSource
+  id: PositionSource
+  parent: Virtufin.Base.Events.Position
+  children:
+  - Virtufin.Base.Events.Position.PositionSource.External
+  - Virtufin.Base.Events.Position.PositionSource.Fill
+  - Virtufin.Base.Events.Position.PositionSource.Transfer
+  langs:
+  - csharp
+  - vb
+  name: PositionSource
+  nameWithType: PositionSource
+  fullName: Virtufin.Base.Events.Position.PositionSource
+  type: Enum
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Position/PositionEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: PositionSource
+    path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
+    startLine: 113
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Position
+  summary: Originating source of a position event.
+  example: []
+  syntax:
+    content: public enum PositionSource
+    content.vb: Public Enum PositionSource
+- uid: Virtufin.Base.Events.Position.PositionSource.External
+  commentId: F:Virtufin.Base.Events.Position.PositionSource.External
+  id: External
+  parent: Virtufin.Base.Events.Position.PositionSource
+  langs:
+  - csharp
+  - vb
+  name: External
+  nameWithType: PositionSource.External
+  fullName: Virtufin.Base.Events.Position.PositionSource.External
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Position/PositionEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: External
+    path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
+    startLine: 116
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Position
+  summary: External funding or withdrawal.
+  example: []
+  syntax:
+    content: External = 0
+    return:
+      type: Virtufin.Base.Events.Position.PositionSource
+- uid: Virtufin.Base.Events.Position.PositionSource.Fill
+  commentId: F:Virtufin.Base.Events.Position.PositionSource.Fill
+  id: Fill
+  parent: Virtufin.Base.Events.Position.PositionSource
+  langs:
+  - csharp
+  - vb
+  name: Fill
+  nameWithType: PositionSource.Fill
+  fullName: Virtufin.Base.Events.Position.PositionSource.Fill
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Position/PositionEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Fill
+    path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
+    startLine: 118
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Position
+  summary: Fill received from exchange.
+  example: []
+  syntax:
+    content: Fill = 1
+    return:
+      type: Virtufin.Base.Events.Position.PositionSource
+- uid: Virtufin.Base.Events.Position.PositionSource.Transfer
+  commentId: F:Virtufin.Base.Events.Position.PositionSource.Transfer
+  id: Transfer
+  parent: Virtufin.Base.Events.Position.PositionSource
+  langs:
+  - csharp
+  - vb
+  name: Transfer
+  nameWithType: PositionSource.Transfer
+  fullName: Virtufin.Base.Events.Position.PositionSource.Transfer
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Position/PositionEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Transfer
+    path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
+    startLine: 120
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Position
+  summary: Peer-to-peer transfer.
+  example: []
+  syntax:
+    content: Transfer = 2
+    return:
+      type: Virtufin.Base.Events.Position.PositionSource
+references:
+- uid: Virtufin.Base.Events.Position
+  commentId: N:Virtufin.Base.Events.Position
+  href: Virtufin.html
+  name: Virtufin.Base.Events.Position
+  nameWithType: Virtufin.Base.Events.Position
+  fullName: Virtufin.Base.Events.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html
+  - name: .
+  - uid: Virtufin.Base.Events.Position
+    name: Position
+    href: Virtufin.Base.Events.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html
+  - name: .
+  - uid: Virtufin.Base.Events.Position
+    name: Position
+    href: Virtufin.Base.Events.Position.html
+- uid: Virtufin.Base.Events.Position.PositionSource
+  commentId: T:Virtufin.Base.Events.Position.PositionSource
+  parent: Virtufin.Base.Events.Position
+  href: Virtufin.Base.Events.Position.PositionSource.html
+  name: PositionSource
+  nameWithType: PositionSource
+  fullName: Virtufin.Base.Events.Position.PositionSource

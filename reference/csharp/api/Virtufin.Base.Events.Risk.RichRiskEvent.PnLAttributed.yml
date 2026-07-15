@@ -1,0 +1,710 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed
+  commentId: T:Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed
+  id: RichRiskEvent.PnLAttributed
+  parent: Virtufin.Base.Events.Risk
+  children:
+  - Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.#ctor(Virtufin.Base.Events.Risk.RiskEvent,System.String,System.Guid)
+  - Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.Event
+  - Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.RunId
+  - Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.ScenarioName
+  langs:
+  - csharp
+  - vb
+  name: RichRiskEvent.PnLAttributed
+  nameWithType: RichRiskEvent.PnLAttributed
+  fullName: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: PnLAttributed
+    path: ../../../src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
+    startLine: 16
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Risk
+  summary: P&amp;L attributed to a specific scenario run.
+  example: []
+  syntax:
+    content: 'public sealed record RichRiskEvent.PnLAttributed : RichRiskEvent, IRiskEvent, IEvent, IEquatable<IEvent>, IEquatable<RichRiskEvent>, IEquatable<RichRiskEvent.PnLAttributed>'
+    content.vb: Public NotInheritable Class RichRiskEvent.PnLAttributed Inherits RichRiskEvent Implements IRiskEvent, IEvent, IEquatable(Of IEvent), IEquatable(Of RichRiskEvent), IEquatable(Of RichRiskEvent.PnLAttributed)
+  inheritance:
+  - System.Object
+  - Virtufin.Base.Events.Risk.RichRiskEvent
+  implements:
+  - Virtufin.Core.Events.Risk.IRiskEvent
+  - Virtufin.Core.Events.IEvent
+  - System.IEquatable{Virtufin.Core.Events.IEvent}
+  - System.IEquatable{Virtufin.Base.Events.Risk.RichRiskEvent}
+  - System.IEquatable{Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.Event
+  commentId: P:Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.Event
+  id: Event
+  parent: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed
+  langs:
+  - csharp
+  - vb
+  name: Event
+  nameWithType: RichRiskEvent.PnLAttributed.Event
+  fullName: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.Event
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Event
+    path: ../../../src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Risk
+  summary: The underlying P&amp;L update or realisation event.
+  example: []
+  syntax:
+    content: public RiskEvent Event { get; }
+    parameters: []
+    return:
+      type: Virtufin.Base.Events.Risk.RiskEvent
+    content.vb: Public ReadOnly Property [Event] As RiskEvent
+  overload: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.Event*
+- uid: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.ScenarioName
+  commentId: P:Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.ScenarioName
+  id: ScenarioName
+  parent: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed
+  langs:
+  - csharp
+  - vb
+  name: ScenarioName
+  nameWithType: RichRiskEvent.PnLAttributed.ScenarioName
+  fullName: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.ScenarioName
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ScenarioName
+    path: ../../../src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
+    startLine: 21
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Risk
+  summary: Scenario name for the attribution.
+  example: []
+  syntax:
+    content: public string ScenarioName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ScenarioName As String
+  overload: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.ScenarioName*
+- uid: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.RunId
+  commentId: P:Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.RunId
+  id: RunId
+  parent: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed
+  langs:
+  - csharp
+  - vb
+  name: RunId
+  nameWithType: RichRiskEvent.PnLAttributed.RunId
+  fullName: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.RunId
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: RunId
+    path: ../../../src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
+    startLine: 23
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Risk
+  summary: Run id for the attribution.
+  example: []
+  syntax:
+    content: public Guid RunId { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public ReadOnly Property RunId As Guid
+  overload: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.RunId*
+- uid: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.#ctor(Virtufin.Base.Events.Risk.RiskEvent,System.String,System.Guid)
+  commentId: M:Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.#ctor(Virtufin.Base.Events.Risk.RiskEvent,System.String,System.Guid)
+  id: '#ctor(Virtufin.Base.Events.Risk.RiskEvent,System.String,System.Guid)'
+  parent: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed
+  langs:
+  - csharp
+  - vb
+  name: PnLAttributed(RiskEvent, string, Guid)
+  nameWithType: RichRiskEvent.PnLAttributed.PnLAttributed(RiskEvent, string, Guid)
+  fullName: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.PnLAttributed(Virtufin.Base.Events.Risk.RiskEvent, string, System.Guid)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Risk
+  summary: Construct a PnLAttributed.
+  example: []
+  syntax:
+    content: public PnLAttributed(RiskEvent evt, string scenarioName, Guid runId)
+    parameters:
+    - id: evt
+      type: Virtufin.Base.Events.Risk.RiskEvent
+    - id: scenarioName
+      type: System.String
+    - id: runId
+      type: System.Guid
+    content.vb: Public Sub New(evt As RiskEvent, scenarioName As String, runId As Guid)
+  overload: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.#ctor*
+  nameWithType.vb: RichRiskEvent.PnLAttributed.New(RiskEvent, String, Guid)
+  fullName.vb: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.New(Virtufin.Base.Events.Risk.RiskEvent, String, System.Guid)
+  name.vb: New(RiskEvent, String, Guid)
+references:
+- uid: Virtufin.Base.Events.Risk
+  commentId: N:Virtufin.Base.Events.Risk
+  href: Virtufin.html
+  name: Virtufin.Base.Events.Risk
+  nameWithType: Virtufin.Base.Events.Risk
+  fullName: Virtufin.Base.Events.Risk
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html
+  - name: .
+  - uid: Virtufin.Base.Events.Risk
+    name: Risk
+    href: Virtufin.Base.Events.Risk.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html
+  - name: .
+  - uid: Virtufin.Base.Events.Risk
+    name: Risk
+    href: Virtufin.Base.Events.Risk.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.Base.Events.Risk.RichRiskEvent
+  commentId: T:Virtufin.Base.Events.Risk.RichRiskEvent
+  parent: Virtufin.Base.Events.Risk
+  href: Virtufin.Base.Events.Risk.RichRiskEvent.html
+  name: RichRiskEvent
+  nameWithType: RichRiskEvent
+  fullName: Virtufin.Base.Events.Risk.RichRiskEvent
+- uid: Virtufin.Core.Events.Risk.IRiskEvent
+  commentId: T:Virtufin.Core.Events.Risk.IRiskEvent
+  parent: Virtufin.Core.Events.Risk
+  href: Virtufin.Core.Events.Risk.IRiskEvent.html
+  name: IRiskEvent
+  nameWithType: IRiskEvent
+  fullName: Virtufin.Core.Events.Risk.IRiskEvent
+- uid: Virtufin.Core.Events.IEvent
+  commentId: T:Virtufin.Core.Events.IEvent
+  parent: Virtufin.Core.Events
+  href: Virtufin.Core.Events.IEvent.html
+  name: IEvent
+  nameWithType: IEvent
+  fullName: Virtufin.Core.Events.IEvent
+- uid: System.IEquatable{Virtufin.Core.Events.IEvent}
+  commentId: T:System.IEquatable{Virtufin.Core.Events.IEvent}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<IEvent>
+  nameWithType: IEquatable<IEvent>
+  fullName: System.IEquatable<Virtufin.Core.Events.IEvent>
+  nameWithType.vb: IEquatable(Of IEvent)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Events.IEvent)
+  name.vb: IEquatable(Of IEvent)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Events.IEvent
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Events.IEvent
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent.html
+  - name: )
+- uid: System.IEquatable{Virtufin.Base.Events.Risk.RichRiskEvent}
+  commentId: T:System.IEquatable{Virtufin.Base.Events.Risk.RichRiskEvent}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<RichRiskEvent>
+  nameWithType: IEquatable<RichRiskEvent>
+  fullName: System.IEquatable<Virtufin.Base.Events.Risk.RichRiskEvent>
+  nameWithType.vb: IEquatable(Of RichRiskEvent)
+  fullName.vb: System.IEquatable(Of Virtufin.Base.Events.Risk.RichRiskEvent)
+  name.vb: IEquatable(Of RichRiskEvent)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Base.Events.Risk.RichRiskEvent
+    name: RichRiskEvent
+    href: Virtufin.Base.Events.Risk.RichRiskEvent.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Base.Events.Risk.RichRiskEvent
+    name: RichRiskEvent
+    href: Virtufin.Base.Events.Risk.RichRiskEvent.html
+  - name: )
+- uid: System.IEquatable{Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed}
+  commentId: T:System.IEquatable{Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<RichRiskEvent.PnLAttributed>
+  nameWithType: IEquatable<RichRiskEvent.PnLAttributed>
+  fullName: System.IEquatable<Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed>
+  nameWithType.vb: IEquatable(Of RichRiskEvent.PnLAttributed)
+  fullName.vb: System.IEquatable(Of Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed)
+  name.vb: IEquatable(Of RichRiskEvent.PnLAttributed)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Base.Events.Risk.RichRiskEvent
+    name: RichRiskEvent
+    href: Virtufin.Base.Events.Risk.RichRiskEvent.html
+  - name: .
+  - uid: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed
+    name: PnLAttributed
+    href: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Base.Events.Risk.RichRiskEvent
+    name: RichRiskEvent
+    href: Virtufin.Base.Events.Risk.RichRiskEvent.html
+  - name: .
+  - uid: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed
+    name: PnLAttributed
+    href: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Core.Events.Risk
+  commentId: N:Virtufin.Core.Events.Risk
+  href: Virtufin.html
+  name: Virtufin.Core.Events.Risk
+  nameWithType: Virtufin.Core.Events.Risk
+  fullName: Virtufin.Core.Events.Risk
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  - name: .
+  - uid: Virtufin.Core.Events.Risk
+    name: Risk
+    href: Virtufin.Core.Events.Risk.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  - name: .
+  - uid: Virtufin.Core.Events.Risk
+    name: Risk
+    href: Virtufin.Core.Events.Risk.html
+- uid: Virtufin.Core.Events
+  commentId: N:Virtufin.Core.Events
+  href: Virtufin.html
+  name: Virtufin.Core.Events
+  nameWithType: Virtufin.Core.Events
+  fullName: Virtufin.Core.Events
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.Event*
+  commentId: Overload:Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.Event
+  href: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.html#Virtufin_Base_Events_Risk_RichRiskEvent_PnLAttributed_Event
+  name: Event
+  nameWithType: RichRiskEvent.PnLAttributed.Event
+  fullName: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.Event
+- uid: Virtufin.Base.Events.Risk.RiskEvent
+  commentId: T:Virtufin.Base.Events.Risk.RiskEvent
+  parent: Virtufin.Base.Events.Risk
+  href: Virtufin.Base.Events.Risk.RiskEvent.html
+  name: RiskEvent
+  nameWithType: RiskEvent
+  fullName: Virtufin.Base.Events.Risk.RiskEvent
+- uid: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.ScenarioName*
+  commentId: Overload:Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.ScenarioName
+  href: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.html#Virtufin_Base_Events_Risk_RichRiskEvent_PnLAttributed_ScenarioName
+  name: ScenarioName
+  nameWithType: RichRiskEvent.PnLAttributed.ScenarioName
+  fullName: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.ScenarioName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.RunId*
+  commentId: Overload:Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.RunId
+  href: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.html#Virtufin_Base_Events_Risk_RichRiskEvent_PnLAttributed_RunId
+  name: RunId
+  nameWithType: RichRiskEvent.PnLAttributed.RunId
+  fullName: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.RunId
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.#ctor*
+  commentId: Overload:Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.#ctor
+  href: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.html#Virtufin_Base_Events_Risk_RichRiskEvent_PnLAttributed__ctor_Virtufin_Base_Events_Risk_RiskEvent_System_String_System_Guid_
+  name: PnLAttributed
+  nameWithType: RichRiskEvent.PnLAttributed.PnLAttributed
+  fullName: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.PnLAttributed
+  nameWithType.vb: RichRiskEvent.PnLAttributed.New
+  fullName.vb: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.New
+  name.vb: New

@@ -1,0 +1,633 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Data.FlatBuffers.Value
+  commentId: T:Virtufin.Data.FlatBuffers.Value
+  id: Value
+  parent: Virtufin.Data.FlatBuffers
+  children:
+  - Virtufin.Data.FlatBuffers.Value.ArrayBool
+  - Virtufin.Data.FlatBuffers.Value.ArrayByte
+  - Virtufin.Data.FlatBuffers.Value.ArrayDouble
+  - Virtufin.Data.FlatBuffers.Value.ArrayFloat
+  - Virtufin.Data.FlatBuffers.Value.ArrayInt16
+  - Virtufin.Data.FlatBuffers.Value.ArrayInt32
+  - Virtufin.Data.FlatBuffers.Value.ArrayInt64
+  - Virtufin.Data.FlatBuffers.Value.ArrayString
+  - Virtufin.Data.FlatBuffers.Value.ArrayVariant
+  - Virtufin.Data.FlatBuffers.Value.Bool
+  - Virtufin.Data.FlatBuffers.Value.Byte
+  - Virtufin.Data.FlatBuffers.Value.Dictionary
+  - Virtufin.Data.FlatBuffers.Value.DictionaryEntry
+  - Virtufin.Data.FlatBuffers.Value.Double
+  - Virtufin.Data.FlatBuffers.Value.Float
+  - Virtufin.Data.FlatBuffers.Value.Int16
+  - Virtufin.Data.FlatBuffers.Value.Int32
+  - Virtufin.Data.FlatBuffers.Value.Int64
+  - Virtufin.Data.FlatBuffers.Value.NONE
+  - Virtufin.Data.FlatBuffers.Value.None
+  - Virtufin.Data.FlatBuffers.Value.String
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: Value
+  fullName: Virtufin.Data.FlatBuffers.Value
+  type: Enum
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Value.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Value
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Value.cs
+    startLine: 7
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: 'public enum Value : byte'
+    content.vb: Public Enum Value As Byte
+- uid: Virtufin.Data.FlatBuffers.Value.NONE
+  commentId: F:Virtufin.Data.FlatBuffers.Value.NONE
+  id: NONE
+  parent: Virtufin.Data.FlatBuffers.Value
+  langs:
+  - csharp
+  - vb
+  name: NONE
+  nameWithType: Value.NONE
+  fullName: Virtufin.Data.FlatBuffers.Value.NONE
+  type: Field
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Value.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: NONE
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Value.cs
+    startLine: 9
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: NONE = 0
+    return:
+      type: Virtufin.Data.FlatBuffers.Value
+- uid: Virtufin.Data.FlatBuffers.Value.None
+  commentId: F:Virtufin.Data.FlatBuffers.Value.None
+  id: None
+  parent: Virtufin.Data.FlatBuffers.Value
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: Value.None
+  fullName: Virtufin.Data.FlatBuffers.Value.None
+  type: Field
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Value.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: None
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Value.cs
+    startLine: 10
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: None = 1
+    return:
+      type: Virtufin.Data.FlatBuffers.Value
+- uid: Virtufin.Data.FlatBuffers.Value.Bool
+  commentId: F:Virtufin.Data.FlatBuffers.Value.Bool
+  id: Bool
+  parent: Virtufin.Data.FlatBuffers.Value
+  langs:
+  - csharp
+  - vb
+  name: Bool
+  nameWithType: Value.Bool
+  fullName: Virtufin.Data.FlatBuffers.Value.Bool
+  type: Field
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Value.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Bool
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Value.cs
+    startLine: 11
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: Bool = 2
+    return:
+      type: Virtufin.Data.FlatBuffers.Value
+- uid: Virtufin.Data.FlatBuffers.Value.Byte
+  commentId: F:Virtufin.Data.FlatBuffers.Value.Byte
+  id: Byte
+  parent: Virtufin.Data.FlatBuffers.Value
+  langs:
+  - csharp
+  - vb
+  name: Byte
+  nameWithType: Value.Byte
+  fullName: Virtufin.Data.FlatBuffers.Value.Byte
+  type: Field
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Value.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Byte
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Value.cs
+    startLine: 12
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: Byte = 3
+    return:
+      type: Virtufin.Data.FlatBuffers.Value
+- uid: Virtufin.Data.FlatBuffers.Value.Int16
+  commentId: F:Virtufin.Data.FlatBuffers.Value.Int16
+  id: Int16
+  parent: Virtufin.Data.FlatBuffers.Value
+  langs:
+  - csharp
+  - vb
+  name: Int16
+  nameWithType: Value.Int16
+  fullName: Virtufin.Data.FlatBuffers.Value.Int16
+  type: Field
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Value.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Int16
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Value.cs
+    startLine: 13
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: Int16 = 4
+    return:
+      type: Virtufin.Data.FlatBuffers.Value
+- uid: Virtufin.Data.FlatBuffers.Value.Int32
+  commentId: F:Virtufin.Data.FlatBuffers.Value.Int32
+  id: Int32
+  parent: Virtufin.Data.FlatBuffers.Value
+  langs:
+  - csharp
+  - vb
+  name: Int32
+  nameWithType: Value.Int32
+  fullName: Virtufin.Data.FlatBuffers.Value.Int32
+  type: Field
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Value.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Int32
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Value.cs
+    startLine: 14
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: Int32 = 5
+    return:
+      type: Virtufin.Data.FlatBuffers.Value
+- uid: Virtufin.Data.FlatBuffers.Value.Int64
+  commentId: F:Virtufin.Data.FlatBuffers.Value.Int64
+  id: Int64
+  parent: Virtufin.Data.FlatBuffers.Value
+  langs:
+  - csharp
+  - vb
+  name: Int64
+  nameWithType: Value.Int64
+  fullName: Virtufin.Data.FlatBuffers.Value.Int64
+  type: Field
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Value.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Int64
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Value.cs
+    startLine: 15
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: Int64 = 6
+    return:
+      type: Virtufin.Data.FlatBuffers.Value
+- uid: Virtufin.Data.FlatBuffers.Value.Float
+  commentId: F:Virtufin.Data.FlatBuffers.Value.Float
+  id: Float
+  parent: Virtufin.Data.FlatBuffers.Value
+  langs:
+  - csharp
+  - vb
+  name: Float
+  nameWithType: Value.Float
+  fullName: Virtufin.Data.FlatBuffers.Value.Float
+  type: Field
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Value.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Float
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Value.cs
+    startLine: 16
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: Float = 7
+    return:
+      type: Virtufin.Data.FlatBuffers.Value
+- uid: Virtufin.Data.FlatBuffers.Value.Double
+  commentId: F:Virtufin.Data.FlatBuffers.Value.Double
+  id: Double
+  parent: Virtufin.Data.FlatBuffers.Value
+  langs:
+  - csharp
+  - vb
+  name: Double
+  nameWithType: Value.Double
+  fullName: Virtufin.Data.FlatBuffers.Value.Double
+  type: Field
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Value.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Double
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Value.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: Double = 8
+    return:
+      type: Virtufin.Data.FlatBuffers.Value
+- uid: Virtufin.Data.FlatBuffers.Value.String
+  commentId: F:Virtufin.Data.FlatBuffers.Value.String
+  id: String
+  parent: Virtufin.Data.FlatBuffers.Value
+  langs:
+  - csharp
+  - vb
+  name: String
+  nameWithType: Value.String
+  fullName: Virtufin.Data.FlatBuffers.Value.String
+  type: Field
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Value.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: String
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Value.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: String = 9
+    return:
+      type: Virtufin.Data.FlatBuffers.Value
+- uid: Virtufin.Data.FlatBuffers.Value.ArrayBool
+  commentId: F:Virtufin.Data.FlatBuffers.Value.ArrayBool
+  id: ArrayBool
+  parent: Virtufin.Data.FlatBuffers.Value
+  langs:
+  - csharp
+  - vb
+  name: ArrayBool
+  nameWithType: Value.ArrayBool
+  fullName: Virtufin.Data.FlatBuffers.Value.ArrayBool
+  type: Field
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Value.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ArrayBool
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Value.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: ArrayBool = 10
+    return:
+      type: Virtufin.Data.FlatBuffers.Value
+- uid: Virtufin.Data.FlatBuffers.Value.ArrayByte
+  commentId: F:Virtufin.Data.FlatBuffers.Value.ArrayByte
+  id: ArrayByte
+  parent: Virtufin.Data.FlatBuffers.Value
+  langs:
+  - csharp
+  - vb
+  name: ArrayByte
+  nameWithType: Value.ArrayByte
+  fullName: Virtufin.Data.FlatBuffers.Value.ArrayByte
+  type: Field
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Value.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ArrayByte
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Value.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: ArrayByte = 11
+    return:
+      type: Virtufin.Data.FlatBuffers.Value
+- uid: Virtufin.Data.FlatBuffers.Value.ArrayInt16
+  commentId: F:Virtufin.Data.FlatBuffers.Value.ArrayInt16
+  id: ArrayInt16
+  parent: Virtufin.Data.FlatBuffers.Value
+  langs:
+  - csharp
+  - vb
+  name: ArrayInt16
+  nameWithType: Value.ArrayInt16
+  fullName: Virtufin.Data.FlatBuffers.Value.ArrayInt16
+  type: Field
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Value.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ArrayInt16
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Value.cs
+    startLine: 21
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: ArrayInt16 = 12
+    return:
+      type: Virtufin.Data.FlatBuffers.Value
+- uid: Virtufin.Data.FlatBuffers.Value.ArrayInt32
+  commentId: F:Virtufin.Data.FlatBuffers.Value.ArrayInt32
+  id: ArrayInt32
+  parent: Virtufin.Data.FlatBuffers.Value
+  langs:
+  - csharp
+  - vb
+  name: ArrayInt32
+  nameWithType: Value.ArrayInt32
+  fullName: Virtufin.Data.FlatBuffers.Value.ArrayInt32
+  type: Field
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Value.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ArrayInt32
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Value.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: ArrayInt32 = 13
+    return:
+      type: Virtufin.Data.FlatBuffers.Value
+- uid: Virtufin.Data.FlatBuffers.Value.ArrayInt64
+  commentId: F:Virtufin.Data.FlatBuffers.Value.ArrayInt64
+  id: ArrayInt64
+  parent: Virtufin.Data.FlatBuffers.Value
+  langs:
+  - csharp
+  - vb
+  name: ArrayInt64
+  nameWithType: Value.ArrayInt64
+  fullName: Virtufin.Data.FlatBuffers.Value.ArrayInt64
+  type: Field
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Value.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ArrayInt64
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Value.cs
+    startLine: 23
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: ArrayInt64 = 14
+    return:
+      type: Virtufin.Data.FlatBuffers.Value
+- uid: Virtufin.Data.FlatBuffers.Value.ArrayFloat
+  commentId: F:Virtufin.Data.FlatBuffers.Value.ArrayFloat
+  id: ArrayFloat
+  parent: Virtufin.Data.FlatBuffers.Value
+  langs:
+  - csharp
+  - vb
+  name: ArrayFloat
+  nameWithType: Value.ArrayFloat
+  fullName: Virtufin.Data.FlatBuffers.Value.ArrayFloat
+  type: Field
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Value.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ArrayFloat
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Value.cs
+    startLine: 24
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: ArrayFloat = 15
+    return:
+      type: Virtufin.Data.FlatBuffers.Value
+- uid: Virtufin.Data.FlatBuffers.Value.ArrayDouble
+  commentId: F:Virtufin.Data.FlatBuffers.Value.ArrayDouble
+  id: ArrayDouble
+  parent: Virtufin.Data.FlatBuffers.Value
+  langs:
+  - csharp
+  - vb
+  name: ArrayDouble
+  nameWithType: Value.ArrayDouble
+  fullName: Virtufin.Data.FlatBuffers.Value.ArrayDouble
+  type: Field
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Value.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ArrayDouble
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Value.cs
+    startLine: 25
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: ArrayDouble = 16
+    return:
+      type: Virtufin.Data.FlatBuffers.Value
+- uid: Virtufin.Data.FlatBuffers.Value.ArrayString
+  commentId: F:Virtufin.Data.FlatBuffers.Value.ArrayString
+  id: ArrayString
+  parent: Virtufin.Data.FlatBuffers.Value
+  langs:
+  - csharp
+  - vb
+  name: ArrayString
+  nameWithType: Value.ArrayString
+  fullName: Virtufin.Data.FlatBuffers.Value.ArrayString
+  type: Field
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Value.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ArrayString
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Value.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: ArrayString = 17
+    return:
+      type: Virtufin.Data.FlatBuffers.Value
+- uid: Virtufin.Data.FlatBuffers.Value.ArrayVariant
+  commentId: F:Virtufin.Data.FlatBuffers.Value.ArrayVariant
+  id: ArrayVariant
+  parent: Virtufin.Data.FlatBuffers.Value
+  langs:
+  - csharp
+  - vb
+  name: ArrayVariant
+  nameWithType: Value.ArrayVariant
+  fullName: Virtufin.Data.FlatBuffers.Value.ArrayVariant
+  type: Field
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Value.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ArrayVariant
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Value.cs
+    startLine: 27
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: ArrayVariant = 18
+    return:
+      type: Virtufin.Data.FlatBuffers.Value
+- uid: Virtufin.Data.FlatBuffers.Value.DictionaryEntry
+  commentId: F:Virtufin.Data.FlatBuffers.Value.DictionaryEntry
+  id: DictionaryEntry
+  parent: Virtufin.Data.FlatBuffers.Value
+  langs:
+  - csharp
+  - vb
+  name: DictionaryEntry
+  nameWithType: Value.DictionaryEntry
+  fullName: Virtufin.Data.FlatBuffers.Value.DictionaryEntry
+  type: Field
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Value.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: DictionaryEntry
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Value.cs
+    startLine: 28
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: DictionaryEntry = 19
+    return:
+      type: Virtufin.Data.FlatBuffers.Value
+- uid: Virtufin.Data.FlatBuffers.Value.Dictionary
+  commentId: F:Virtufin.Data.FlatBuffers.Value.Dictionary
+  id: Dictionary
+  parent: Virtufin.Data.FlatBuffers.Value
+  langs:
+  - csharp
+  - vb
+  name: Dictionary
+  nameWithType: Value.Dictionary
+  fullName: Virtufin.Data.FlatBuffers.Value.Dictionary
+  type: Field
+  source:
+    remote:
+      path: artifacts/Virtufin/Data/FlatBuffers/Value.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Dictionary
+    path: ../../../artifacts/Virtufin/Data/FlatBuffers/Value.cs
+    startLine: 29
+  assemblies:
+  - Virtufin.Data
+  namespace: Virtufin.Data.FlatBuffers
+  syntax:
+    content: Dictionary = 20
+    return:
+      type: Virtufin.Data.FlatBuffers.Value
+references:
+- uid: Virtufin.Data.FlatBuffers
+  commentId: N:Virtufin.Data.FlatBuffers
+  href: Virtufin.html
+  name: Virtufin.Data.FlatBuffers
+  nameWithType: Virtufin.Data.FlatBuffers
+  fullName: Virtufin.Data.FlatBuffers
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Data
+    name: Data
+    href: Virtufin.Data.html
+  - name: .
+  - uid: Virtufin.Data.FlatBuffers
+    name: FlatBuffers
+    href: Virtufin.Data.FlatBuffers.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Data
+    name: Data
+    href: Virtufin.Data.html
+  - name: .
+  - uid: Virtufin.Data.FlatBuffers
+    name: FlatBuffers
+    href: Virtufin.Data.FlatBuffers.html
+- uid: Virtufin.Data.FlatBuffers.Value
+  commentId: T:Virtufin.Data.FlatBuffers.Value
+  parent: Virtufin.Data.FlatBuffers
+  href: Virtufin.Data.FlatBuffers.Value.html
+  name: Value
+  nameWithType: Value
+  fullName: Virtufin.Data.FlatBuffers.Value

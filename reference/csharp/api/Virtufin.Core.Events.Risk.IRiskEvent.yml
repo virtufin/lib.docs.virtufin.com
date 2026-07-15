@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Events.Risk.IRiskEvent
+  commentId: T:Virtufin.Core.Events.Risk.IRiskEvent
+  id: IRiskEvent
+  parent: Virtufin.Core.Events.Risk
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IRiskEvent
+  nameWithType: IRiskEvent
+  fullName: Virtufin.Core.Events.Risk.IRiskEvent
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/Risk/IRiskEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IRiskEvent
+    path: ../../../src/Virtufin.Core/Events/Risk/IRiskEvent.cs
+    startLine: 8
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events.Risk
+  summary: >-
+    Marker for any risk-related event. Risk events are attributed to the
+
+    scenario as a whole — they depend on all three components (market,
+
+    portfolio, strategy) jointly. Topics use the naming scheme
+
+    <code>sc.{scenarioId}.risk.{entity}.{event}</code>.
+  example: []
+  syntax:
+    content: 'public interface IRiskEvent : IEvent, IEquatable<IEvent>'
+    content.vb: Public Interface IRiskEvent Inherits IEvent, IEquatable(Of IEvent)
+  derivedClasses:
+  - Virtufin.Base.Events.Risk.RichRiskEvent
+  - Virtufin.Base.Events.Risk.RichRiskEvent.Base
+  - Virtufin.Base.Events.Risk.RichRiskEvent.DrawdownWithMetadata
+  - Virtufin.Base.Events.Risk.RichRiskEvent.LimitBreachedWithThreshold
+  - Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed
+  - Virtufin.Base.Events.Risk.RiskEvent
+  - Virtufin.Base.Events.Risk.RiskEvent.DrawdownUpdated
+  - Virtufin.Base.Events.Risk.RiskEvent.ExposureBreached
+  - Virtufin.Base.Events.Risk.RiskEvent.LimitBreached
+  - Virtufin.Base.Events.Risk.RiskEvent.LimitRestored
+  - Virtufin.Base.Events.Risk.RiskEvent.MarginCalled
+  - Virtufin.Base.Events.Risk.RiskEvent.MarginWarned
+  - Virtufin.Base.Events.Risk.RiskEvent.PnLRealized
+  - Virtufin.Base.Events.Risk.RiskEvent.PnLUpdated
+  inheritedMembers:
+  - System.IEquatable{Virtufin.Core.Events.IEvent}.Equals(Virtufin.Core.Events.IEvent)
+references:
+- uid: Virtufin.Core.Events.Risk
+  commentId: N:Virtufin.Core.Events.Risk
+  href: Virtufin.html
+  name: Virtufin.Core.Events.Risk
+  nameWithType: Virtufin.Core.Events.Risk
+  fullName: Virtufin.Core.Events.Risk
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  - name: .
+  - uid: Virtufin.Core.Events.Risk
+    name: Risk
+    href: Virtufin.Core.Events.Risk.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  - name: .
+  - uid: Virtufin.Core.Events.Risk
+    name: Risk
+    href: Virtufin.Core.Events.Risk.html
+- uid: System.IEquatable{Virtufin.Core.Events.IEvent}.Equals(Virtufin.Core.Events.IEvent)
+  commentId: M:System.IEquatable{Virtufin.Core.Events.IEvent}.Equals(Virtufin.Core.Events.IEvent)
+  parent: System.IEquatable{Virtufin.Core.Events.IEvent}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(IEvent)
+  nameWithType: IEquatable<IEvent>.Equals(IEvent)
+  fullName: System.IEquatable<Virtufin.Core.Events.IEvent>.Equals(Virtufin.Core.Events.IEvent)
+  nameWithType.vb: IEquatable(Of IEvent).Equals(IEvent)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Events.IEvent).Equals(Virtufin.Core.Events.IEvent)
+  spec.csharp:
+  - uid: System.IEquatable{Virtufin.Core.Events.IEvent}.Equals(Virtufin.Core.Events.IEvent)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Events.IEvent
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Virtufin.Core.Events.IEvent}.Equals(Virtufin.Core.Events.IEvent)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Events.IEvent
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IEquatable{Virtufin.Core.Events.IEvent}
+  commentId: T:System.IEquatable{Virtufin.Core.Events.IEvent}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<IEvent>
+  nameWithType: IEquatable<IEvent>
+  fullName: System.IEquatable<Virtufin.Core.Events.IEvent>
+  nameWithType.vb: IEquatable(Of IEvent)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Events.IEvent)
+  name.vb: IEquatable(Of IEvent)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Events.IEvent
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Events.IEvent
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent.html
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
