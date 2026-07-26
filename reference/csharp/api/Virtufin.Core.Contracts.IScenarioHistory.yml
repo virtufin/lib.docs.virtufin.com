@@ -42,7 +42,7 @@ items:
 
     emissions, matching the semantics of the existing
 
-    <code>NatsObservable</code>/<code>ValKeyObservable</code> in <code>Virtufin.Data</code>.
+    <code>NatsObservable</code> in <code>Virtufin.Data</code>.
   example: []
   syntax:
     content: 'public interface IScenarioHistory : IEnumerable<IScenario>, IEnumerable'
