@@ -16,4 +16,4 @@ Auto-generated API documentation for the Virtufin .NET lib.
 
 ## See also
 
-  - [Concept docs](../../v1/) — hand-written guides (architecture, EAV, Variant, etc.)
+  - [Concept docs](../../) — hand-written guides (architecture, EAV, Variant, etc.)
