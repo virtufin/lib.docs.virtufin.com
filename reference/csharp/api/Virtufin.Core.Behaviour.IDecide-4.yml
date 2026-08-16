@@ -1,0 +1,724 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Behaviour.IDecide`4
+  commentId: T:Virtufin.Core.Behaviour.IDecide`4
+  id: IDecide`4
+  parent: Virtufin.Core.Behaviour
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IDecide<TState, TMarket, TPortfolio, TAction>
+  nameWithType: IDecide<TState, TMarket, TPortfolio, TAction>
+  fullName: Virtufin.Core.Behaviour.IDecide<TState, TMarket, TPortfolio, TAction>
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Behaviour/IDecide.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IDecide
+    path: ../../../src/Virtufin.Core/Behaviour/IDecide.cs
+    startLine: 33
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Behaviour
+  summary: >-
+    The <code>decide</code> morphism of the trading loop: given the strategy's
+
+    hidden state, a market observation, and the folded portfolio state,
+
+    produce the next strategy state and zero or more trade actions. This
+
+    is the coalgebra
+
+    <code>StrategyState × MarketEvent × PortfolioState → StrategyState ×
+
+    TradeAction[]</code> of the domain spec (§6.4), exposed as an
+
+    <xref href="Virtufin.Core.Behaviour.IProcess%603" data-throw-if-not-resolved="false"></xref> so strategies compose
+
+    with the generic <code>scan</code>/<code>fold</code> drivers
+
+    (<xref href="Virtufin.Core.Behaviour.ProcessExtensions" data-throw-if-not-resolved="false"></xref>).
+  example: []
+  syntax:
+    content: 'public interface IDecide<TState, TMarket, TPortfolio, TAction> : IProcess<TState, (TMarket, TPortfolio), TAction[]> where TState : IStrategyState where TMarket : IMarketEvent where TPortfolio : IPortfolioState where TAction : ITradeAction'
+    typeParameters:
+    - id: TState
+      description: The strategy's internal state.
+    - id: TMarket
+      description: The market event type observed.
+    - id: TPortfolio
+      description: The portfolio state type observed.
+    - id: TAction
+      description: >-
+        The trade action type emitted; the step
+            output is an array of <code class="typeparamref">TAction</code> because a single
+            observation may yield zero or more intents.
+    content.vb: Public Interface IDecide(Of TState As IStrategyState, TMarket As IMarketEvent, TPortfolio As IPortfolioState, TAction As ITradeAction) Inherits IProcess(Of TState, (TMarket, TPortfolio), TAction())
+  inheritedMembers:
+  - Virtufin.Core.Behaviour.IProcess{{TState},System.ValueTuple{{TMarket},{TPortfolio}},{TAction}[]}.Initial
+  - Virtufin.Core.Behaviour.IProcess{{TState},System.ValueTuple{{TMarket},{TPortfolio}},{TAction}[]}.Step({TState},System.ValueTuple{{TMarket},{TPortfolio}})
+  extensionMethods:
+  - Virtufin.Core.Behaviour.IProcess{`0,System.ValueTuple{`1,`2},`3[]}.Virtufin.Core.Behaviour.ProcessExtensions.Run``3(System.IObservable{System.ValueTuple{{TMarket},{TPortfolio}}})
+  - Virtufin.Core.Behaviour.IProcess{`0,System.ValueTuple{`1,`2},`3[]}.Virtufin.Core.Behaviour.ProcessExtensions.Run``3(System.IObservable{System.ValueTuple{{TMarket},{TPortfolio}}},{TState})
+  nameWithType.vb: IDecide(Of TState, TMarket, TPortfolio, TAction)
+  fullName.vb: Virtufin.Core.Behaviour.IDecide(Of TState, TMarket, TPortfolio, TAction)
+  name.vb: IDecide(Of TState, TMarket, TPortfolio, TAction)
+references:
+- uid: Virtufin.Core.Behaviour.IProcess`3
+  commentId: T:Virtufin.Core.Behaviour.IProcess`3
+  href: Virtufin.Core.Behaviour.IProcess-3.html
+  name: IProcess<TState, TInput, TOutput>
+  nameWithType: IProcess<TState, TInput, TOutput>
+  fullName: Virtufin.Core.Behaviour.IProcess<TState, TInput, TOutput>
+  nameWithType.vb: IProcess(Of TState, TInput, TOutput)
+  fullName.vb: Virtufin.Core.Behaviour.IProcess(Of TState, TInput, TOutput)
+  name.vb: IProcess(Of TState, TInput, TOutput)
+  spec.csharp:
+  - uid: Virtufin.Core.Behaviour.IProcess`3
+    name: IProcess
+    href: Virtufin.Core.Behaviour.IProcess-3.html
+  - name: <
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TInput
+  - name: ','
+  - name: " "
+  - name: TOutput
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Behaviour.IProcess`3
+    name: IProcess
+    href: Virtufin.Core.Behaviour.IProcess-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TInput
+  - name: ','
+  - name: " "
+  - name: TOutput
+  - name: )
+- uid: Virtufin.Core.Behaviour.ProcessExtensions
+  commentId: T:Virtufin.Core.Behaviour.ProcessExtensions
+  parent: Virtufin.Core.Behaviour
+  href: Virtufin.Core.Behaviour.ProcessExtensions.html
+  name: ProcessExtensions
+  nameWithType: ProcessExtensions
+  fullName: Virtufin.Core.Behaviour.ProcessExtensions
+- uid: Virtufin.Core.Behaviour
+  commentId: N:Virtufin.Core.Behaviour
+  href: Virtufin.html
+  name: Virtufin.Core.Behaviour
+  nameWithType: Virtufin.Core.Behaviour
+  fullName: Virtufin.Core.Behaviour
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Behaviour
+    name: Behaviour
+    href: Virtufin.Core.Behaviour.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Behaviour
+    name: Behaviour
+    href: Virtufin.Core.Behaviour.html
+- uid: Virtufin.Core.Behaviour.IProcess{{TState},System.ValueTuple{{TMarket},{TPortfolio}},{TAction}[]}.Initial
+  commentId: P:Virtufin.Core.Behaviour.IProcess{`0,System.ValueTuple{`1,`2},`3[]}.Initial
+  parent: Virtufin.Core.Behaviour.IProcess{{TState},System.ValueTuple{{TMarket},{TPortfolio}},{TAction}[]}
+  definition: Virtufin.Core.Behaviour.IProcess`3.Initial
+  href: Virtufin.Core.Behaviour.IProcess-3.html#Virtufin_Core_Behaviour_IProcess_3_Initial
+  name: Initial
+  nameWithType: IProcess<TState, (TMarket, TPortfolio), TAction[]>.Initial
+  fullName: Virtufin.Core.Behaviour.IProcess<TState, (TMarket, TPortfolio), TAction[]>.Initial
+  nameWithType.vb: IProcess(Of TState, (TMarket, TPortfolio), TAction()).Initial
+  fullName.vb: Virtufin.Core.Behaviour.IProcess(Of TState, (TMarket, TPortfolio), TAction()).Initial
+- uid: Virtufin.Core.Behaviour.IProcess{{TState},System.ValueTuple{{TMarket},{TPortfolio}},{TAction}[]}.Step({TState},System.ValueTuple{{TMarket},{TPortfolio}})
+  commentId: M:Virtufin.Core.Behaviour.IProcess{`0,System.ValueTuple{`1,`2},`3[]}.Step(`0,System.ValueTuple{`1,`2})
+  parent: Virtufin.Core.Behaviour.IProcess{{TState},System.ValueTuple{{TMarket},{TPortfolio}},{TAction}[]}
+  definition: Virtufin.Core.Behaviour.IProcess`3.Step(`0,`1)
+  href: Virtufin.Core.Behaviour.IProcess-3.html#Virtufin_Core_Behaviour_IProcess_3_Step__0__1_
+  name: Step(TState, (TMarket, TPortfolio))
+  nameWithType: IProcess<TState, (TMarket, TPortfolio), TAction[]>.Step(TState, (TMarket, TPortfolio))
+  fullName: Virtufin.Core.Behaviour.IProcess<TState, (TMarket, TPortfolio), TAction[]>.Step(TState, (TMarket, TPortfolio))
+  nameWithType.vb: IProcess(Of TState, (TMarket, TPortfolio), TAction()).Step(TState, (TMarket, TPortfolio))
+  fullName.vb: Virtufin.Core.Behaviour.IProcess(Of TState, (TMarket, TPortfolio), TAction()).Step(TState, (TMarket, TPortfolio))
+  spec.csharp:
+  - uid: Virtufin.Core.Behaviour.IProcess{`0,System.ValueTuple{`1,`2},`3[]}.Step(`0,System.ValueTuple{`1,`2})
+    name: Step
+    href: Virtufin.Core.Behaviour.IProcess-3.html#Virtufin_Core_Behaviour_IProcess_3_Step__0__1_
+  - name: (
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: (
+  - name: TMarket
+  - name: ','
+  - name: " "
+  - name: TPortfolio
+  - name: )
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Behaviour.IProcess{`0,System.ValueTuple{`1,`2},`3[]}.Step(`0,System.ValueTuple{`1,`2})
+    name: Step
+    href: Virtufin.Core.Behaviour.IProcess-3.html#Virtufin_Core_Behaviour_IProcess_3_Step__0__1_
+  - name: (
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: (
+  - name: TMarket
+  - name: ','
+  - name: " "
+  - name: TPortfolio
+  - name: )
+  - name: )
+- uid: Virtufin.Core.Behaviour.IProcess{`0,System.ValueTuple{`1,`2},`3[]}.Virtufin.Core.Behaviour.ProcessExtensions.Run``3(System.IObservable{System.ValueTuple{{TMarket},{TPortfolio}}})
+  commentId: M:Virtufin.Core.Behaviour.ProcessExtensions.Run``3(Virtufin.Core.Behaviour.IProcess{``0,``1,``2},System.IObservable{``1})
+  parent: Virtufin.Core.Behaviour.ProcessExtensions
+  definition: Virtufin.Core.Behaviour.ProcessExtensions.Run``3(Virtufin.Core.Behaviour.IProcess{``0,``1,``2},System.IObservable{``1})
+  href: Virtufin.Core.Behaviour.ProcessExtensions.html#Virtufin_Core_Behaviour_ProcessExtensions_Run__3_Virtufin_Core_Behaviour_IProcess___0___1___2__System_IObservable___1__
+  name: Run<TState, (TMarket, TPortfolio), TAction[]>(IProcess<TState, (TMarket, TPortfolio), TAction[]>, IObservable<(TMarket, TPortfolio)>)
+  nameWithType: ProcessExtensions.Run<TState, (TMarket, TPortfolio), TAction[]>(IProcess<TState, (TMarket, TPortfolio), TAction[]>, IObservable<(TMarket, TPortfolio)>)
+  fullName: Virtufin.Core.Behaviour.ProcessExtensions.Run<TState, (TMarket, TPortfolio), TAction[]>(Virtufin.Core.Behaviour.IProcess<TState, (TMarket, TPortfolio), TAction[]>, System.IObservable<(TMarket, TPortfolio)>)
+  nameWithType.vb: ProcessExtensions.Run(Of TState, (TMarket, TPortfolio), TAction())(IProcess(Of TState, (TMarket, TPortfolio), TAction()), IObservable(Of (TMarket, TPortfolio)))
+  fullName.vb: Virtufin.Core.Behaviour.ProcessExtensions.Run(Of TState, (TMarket, TPortfolio), TAction())(Virtufin.Core.Behaviour.IProcess(Of TState, (TMarket, TPortfolio), TAction()), System.IObservable(Of (TMarket, TPortfolio)))
+  name.vb: Run(Of TState, (TMarket, TPortfolio), TAction())(IProcess(Of TState, (TMarket, TPortfolio), TAction()), IObservable(Of (TMarket, TPortfolio)))
+  spec.csharp:
+  - uid: Virtufin.Core.Behaviour.ProcessExtensions.Run``3(Virtufin.Core.Behaviour.IProcess{`0,System.ValueTuple{`1,`2},`3[]},System.IObservable{System.ValueTuple{`1,`2}})
+    name: Run
+    href: Virtufin.Core.Behaviour.ProcessExtensions.html#Virtufin_Core_Behaviour_ProcessExtensions_Run__3_Virtufin_Core_Behaviour_IProcess___0___1___2__System_IObservable___1__
+  - name: <
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: (
+  - name: TMarket
+  - name: ','
+  - name: " "
+  - name: TPortfolio
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TAction
+  - name: '['
+  - name: ']'
+  - name: '>'
+  - name: (
+  - uid: Virtufin.Core.Behaviour.IProcess`3
+    name: IProcess
+    href: Virtufin.Core.Behaviour.IProcess-3.html
+  - name: <
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: (
+  - name: TMarket
+  - name: ','
+  - name: " "
+  - name: TPortfolio
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TAction
+  - name: '['
+  - name: ']'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: <
+  - name: (
+  - name: TMarket
+  - name: ','
+  - name: " "
+  - name: TPortfolio
+  - name: )
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Behaviour.ProcessExtensions.Run``3(Virtufin.Core.Behaviour.IProcess{`0,System.ValueTuple{`1,`2},`3[]},System.IObservable{System.ValueTuple{`1,`2}})
+    name: Run
+    href: Virtufin.Core.Behaviour.ProcessExtensions.html#Virtufin_Core_Behaviour_ProcessExtensions_Run__3_Virtufin_Core_Behaviour_IProcess___0___1___2__System_IObservable___1__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: (
+  - name: TMarket
+  - name: ','
+  - name: " "
+  - name: TPortfolio
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TAction
+  - name: (
+  - name: )
+  - name: )
+  - name: (
+  - uid: Virtufin.Core.Behaviour.IProcess`3
+    name: IProcess
+    href: Virtufin.Core.Behaviour.IProcess-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: (
+  - name: TMarket
+  - name: ','
+  - name: " "
+  - name: TPortfolio
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TAction
+  - name: (
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - name: TMarket
+  - name: ','
+  - name: " "
+  - name: TPortfolio
+  - name: )
+  - name: )
+  - name: )
+- uid: Virtufin.Core.Behaviour.IProcess{`0,System.ValueTuple{`1,`2},`3[]}.Virtufin.Core.Behaviour.ProcessExtensions.Run``3(System.IObservable{System.ValueTuple{{TMarket},{TPortfolio}}},{TState})
+  commentId: M:Virtufin.Core.Behaviour.ProcessExtensions.Run``3(Virtufin.Core.Behaviour.IProcess{``0,``1,``2},System.IObservable{``1},``0)
+  parent: Virtufin.Core.Behaviour.ProcessExtensions
+  definition: Virtufin.Core.Behaviour.ProcessExtensions.Run``3(Virtufin.Core.Behaviour.IProcess{``0,``1,``2},System.IObservable{``1},``0)
+  href: Virtufin.Core.Behaviour.ProcessExtensions.html#Virtufin_Core_Behaviour_ProcessExtensions_Run__3_Virtufin_Core_Behaviour_IProcess___0___1___2__System_IObservable___1____0_
+  name: Run<TState, (TMarket, TPortfolio), TAction[]>(IProcess<TState, (TMarket, TPortfolio), TAction[]>, IObservable<(TMarket, TPortfolio)>, TState)
+  nameWithType: ProcessExtensions.Run<TState, (TMarket, TPortfolio), TAction[]>(IProcess<TState, (TMarket, TPortfolio), TAction[]>, IObservable<(TMarket, TPortfolio)>, TState)
+  fullName: Virtufin.Core.Behaviour.ProcessExtensions.Run<TState, (TMarket, TPortfolio), TAction[]>(Virtufin.Core.Behaviour.IProcess<TState, (TMarket, TPortfolio), TAction[]>, System.IObservable<(TMarket, TPortfolio)>, TState)
+  nameWithType.vb: ProcessExtensions.Run(Of TState, (TMarket, TPortfolio), TAction())(IProcess(Of TState, (TMarket, TPortfolio), TAction()), IObservable(Of (TMarket, TPortfolio)), TState)
+  fullName.vb: Virtufin.Core.Behaviour.ProcessExtensions.Run(Of TState, (TMarket, TPortfolio), TAction())(Virtufin.Core.Behaviour.IProcess(Of TState, (TMarket, TPortfolio), TAction()), System.IObservable(Of (TMarket, TPortfolio)), TState)
+  name.vb: Run(Of TState, (TMarket, TPortfolio), TAction())(IProcess(Of TState, (TMarket, TPortfolio), TAction()), IObservable(Of (TMarket, TPortfolio)), TState)
+  spec.csharp:
+  - uid: Virtufin.Core.Behaviour.ProcessExtensions.Run``3(Virtufin.Core.Behaviour.IProcess{`0,System.ValueTuple{`1,`2},`3[]},System.IObservable{System.ValueTuple{`1,`2}},`0)
+    name: Run
+    href: Virtufin.Core.Behaviour.ProcessExtensions.html#Virtufin_Core_Behaviour_ProcessExtensions_Run__3_Virtufin_Core_Behaviour_IProcess___0___1___2__System_IObservable___1____0_
+  - name: <
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: (
+  - name: TMarket
+  - name: ','
+  - name: " "
+  - name: TPortfolio
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TAction
+  - name: '['
+  - name: ']'
+  - name: '>'
+  - name: (
+  - uid: Virtufin.Core.Behaviour.IProcess`3
+    name: IProcess
+    href: Virtufin.Core.Behaviour.IProcess-3.html
+  - name: <
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: (
+  - name: TMarket
+  - name: ','
+  - name: " "
+  - name: TPortfolio
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TAction
+  - name: '['
+  - name: ']'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: <
+  - name: (
+  - name: TMarket
+  - name: ','
+  - name: " "
+  - name: TPortfolio
+  - name: )
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: TState
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Behaviour.ProcessExtensions.Run``3(Virtufin.Core.Behaviour.IProcess{`0,System.ValueTuple{`1,`2},`3[]},System.IObservable{System.ValueTuple{`1,`2}},`0)
+    name: Run
+    href: Virtufin.Core.Behaviour.ProcessExtensions.html#Virtufin_Core_Behaviour_ProcessExtensions_Run__3_Virtufin_Core_Behaviour_IProcess___0___1___2__System_IObservable___1____0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: (
+  - name: TMarket
+  - name: ','
+  - name: " "
+  - name: TPortfolio
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TAction
+  - name: (
+  - name: )
+  - name: )
+  - name: (
+  - uid: Virtufin.Core.Behaviour.IProcess`3
+    name: IProcess
+    href: Virtufin.Core.Behaviour.IProcess-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: (
+  - name: TMarket
+  - name: ','
+  - name: " "
+  - name: TPortfolio
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TAction
+  - name: (
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - name: TMarket
+  - name: ','
+  - name: " "
+  - name: TPortfolio
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TState
+  - name: )
+- uid: Virtufin.Core.Behaviour.IProcess`3.Initial
+  commentId: P:Virtufin.Core.Behaviour.IProcess`3.Initial
+  href: Virtufin.Core.Behaviour.IProcess-3.html#Virtufin_Core_Behaviour_IProcess_3_Initial
+  name: Initial
+  nameWithType: IProcess<TState, TInput, TOutput>.Initial
+  fullName: Virtufin.Core.Behaviour.IProcess<TState, TInput, TOutput>.Initial
+  nameWithType.vb: IProcess(Of TState, TInput, TOutput).Initial
+  fullName.vb: Virtufin.Core.Behaviour.IProcess(Of TState, TInput, TOutput).Initial
+- uid: Virtufin.Core.Behaviour.IProcess{{TState},System.ValueTuple{{TMarket},{TPortfolio}},{TAction}[]}
+  commentId: T:Virtufin.Core.Behaviour.IProcess{`0,System.ValueTuple{`1,`2},`3[]}
+  parent: Virtufin.Core.Behaviour
+  definition: Virtufin.Core.Behaviour.IProcess`3
+  href: Virtufin.Core.Behaviour.IProcess-3.html
+  name: IProcess<TState, (TMarket, TPortfolio), TAction[]>
+  nameWithType: IProcess<TState, (TMarket, TPortfolio), TAction[]>
+  fullName: Virtufin.Core.Behaviour.IProcess<TState, (TMarket, TPortfolio), TAction[]>
+  nameWithType.vb: IProcess(Of TState, (TMarket, TPortfolio), TAction())
+  fullName.vb: Virtufin.Core.Behaviour.IProcess(Of TState, (TMarket, TPortfolio), TAction())
+  name.vb: IProcess(Of TState, (TMarket, TPortfolio), TAction())
+  spec.csharp:
+  - uid: Virtufin.Core.Behaviour.IProcess`3
+    name: IProcess
+    href: Virtufin.Core.Behaviour.IProcess-3.html
+  - name: <
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: (
+  - name: TMarket
+  - name: ','
+  - name: " "
+  - name: TPortfolio
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TAction
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Behaviour.IProcess`3
+    name: IProcess
+    href: Virtufin.Core.Behaviour.IProcess-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: (
+  - name: TMarket
+  - name: ','
+  - name: " "
+  - name: TPortfolio
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TAction
+  - name: (
+  - name: )
+  - name: )
+- uid: Virtufin.Core.Behaviour.IProcess`3.Step(`0,`1)
+  commentId: M:Virtufin.Core.Behaviour.IProcess`3.Step(`0,`1)
+  href: Virtufin.Core.Behaviour.IProcess-3.html#Virtufin_Core_Behaviour_IProcess_3_Step__0__1_
+  name: Step(TState, TInput)
+  nameWithType: IProcess<TState, TInput, TOutput>.Step(TState, TInput)
+  fullName: Virtufin.Core.Behaviour.IProcess<TState, TInput, TOutput>.Step(TState, TInput)
+  nameWithType.vb: IProcess(Of TState, TInput, TOutput).Step(TState, TInput)
+  fullName.vb: Virtufin.Core.Behaviour.IProcess(Of TState, TInput, TOutput).Step(TState, TInput)
+  spec.csharp:
+  - uid: Virtufin.Core.Behaviour.IProcess`3.Step(`0,`1)
+    name: Step
+    href: Virtufin.Core.Behaviour.IProcess-3.html#Virtufin_Core_Behaviour_IProcess_3_Step__0__1_
+  - name: (
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TInput
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Behaviour.IProcess`3.Step(`0,`1)
+    name: Step
+    href: Virtufin.Core.Behaviour.IProcess-3.html#Virtufin_Core_Behaviour_IProcess_3_Step__0__1_
+  - name: (
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TInput
+  - name: )
+- uid: Virtufin.Core.Behaviour.ProcessExtensions.Run``3(Virtufin.Core.Behaviour.IProcess{``0,``1,``2},System.IObservable{``1})
+  commentId: M:Virtufin.Core.Behaviour.ProcessExtensions.Run``3(Virtufin.Core.Behaviour.IProcess{``0,``1,``2},System.IObservable{``1})
+  isExternal: true
+  href: Virtufin.Core.Behaviour.ProcessExtensions.html#Virtufin_Core_Behaviour_ProcessExtensions_Run__3_Virtufin_Core_Behaviour_IProcess___0___1___2__System_IObservable___1__
+  name: Run<TState, TInput, TOutput>(IProcess<TState, TInput, TOutput>, IObservable<TInput>)
+  nameWithType: ProcessExtensions.Run<TState, TInput, TOutput>(IProcess<TState, TInput, TOutput>, IObservable<TInput>)
+  fullName: Virtufin.Core.Behaviour.ProcessExtensions.Run<TState, TInput, TOutput>(Virtufin.Core.Behaviour.IProcess<TState, TInput, TOutput>, System.IObservable<TInput>)
+  nameWithType.vb: ProcessExtensions.Run(Of TState, TInput, TOutput)(IProcess(Of TState, TInput, TOutput), IObservable(Of TInput))
+  fullName.vb: Virtufin.Core.Behaviour.ProcessExtensions.Run(Of TState, TInput, TOutput)(Virtufin.Core.Behaviour.IProcess(Of TState, TInput, TOutput), System.IObservable(Of TInput))
+  name.vb: Run(Of TState, TInput, TOutput)(IProcess(Of TState, TInput, TOutput), IObservable(Of TInput))
+  spec.csharp:
+  - uid: Virtufin.Core.Behaviour.ProcessExtensions.Run``3(Virtufin.Core.Behaviour.IProcess{``0,``1,``2},System.IObservable{``1})
+    name: Run
+    href: Virtufin.Core.Behaviour.ProcessExtensions.html#Virtufin_Core_Behaviour_ProcessExtensions_Run__3_Virtufin_Core_Behaviour_IProcess___0___1___2__System_IObservable___1__
+  - name: <
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TInput
+  - name: ','
+  - name: " "
+  - name: TOutput
+  - name: '>'
+  - name: (
+  - uid: Virtufin.Core.Behaviour.IProcess`3
+    name: IProcess
+    href: Virtufin.Core.Behaviour.IProcess-3.html
+  - name: <
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TInput
+  - name: ','
+  - name: " "
+  - name: TOutput
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: <
+  - name: TInput
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Behaviour.ProcessExtensions.Run``3(Virtufin.Core.Behaviour.IProcess{``0,``1,``2},System.IObservable{``1})
+    name: Run
+    href: Virtufin.Core.Behaviour.ProcessExtensions.html#Virtufin_Core_Behaviour_ProcessExtensions_Run__3_Virtufin_Core_Behaviour_IProcess___0___1___2__System_IObservable___1__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TInput
+  - name: ','
+  - name: " "
+  - name: TOutput
+  - name: )
+  - name: (
+  - uid: Virtufin.Core.Behaviour.IProcess`3
+    name: IProcess
+    href: Virtufin.Core.Behaviour.IProcess-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TInput
+  - name: ','
+  - name: " "
+  - name: TOutput
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInput
+  - name: )
+  - name: )
+- uid: Virtufin.Core.Behaviour.ProcessExtensions.Run``3(Virtufin.Core.Behaviour.IProcess{``0,``1,``2},System.IObservable{``1},``0)
+  commentId: M:Virtufin.Core.Behaviour.ProcessExtensions.Run``3(Virtufin.Core.Behaviour.IProcess{``0,``1,``2},System.IObservable{``1},``0)
+  isExternal: true
+  href: Virtufin.Core.Behaviour.ProcessExtensions.html#Virtufin_Core_Behaviour_ProcessExtensions_Run__3_Virtufin_Core_Behaviour_IProcess___0___1___2__System_IObservable___1____0_
+  name: Run<TState, TInput, TOutput>(IProcess<TState, TInput, TOutput>, IObservable<TInput>, TState)
+  nameWithType: ProcessExtensions.Run<TState, TInput, TOutput>(IProcess<TState, TInput, TOutput>, IObservable<TInput>, TState)
+  fullName: Virtufin.Core.Behaviour.ProcessExtensions.Run<TState, TInput, TOutput>(Virtufin.Core.Behaviour.IProcess<TState, TInput, TOutput>, System.IObservable<TInput>, TState)
+  nameWithType.vb: ProcessExtensions.Run(Of TState, TInput, TOutput)(IProcess(Of TState, TInput, TOutput), IObservable(Of TInput), TState)
+  fullName.vb: Virtufin.Core.Behaviour.ProcessExtensions.Run(Of TState, TInput, TOutput)(Virtufin.Core.Behaviour.IProcess(Of TState, TInput, TOutput), System.IObservable(Of TInput), TState)
+  name.vb: Run(Of TState, TInput, TOutput)(IProcess(Of TState, TInput, TOutput), IObservable(Of TInput), TState)
+  spec.csharp:
+  - uid: Virtufin.Core.Behaviour.ProcessExtensions.Run``3(Virtufin.Core.Behaviour.IProcess{``0,``1,``2},System.IObservable{``1},``0)
+    name: Run
+    href: Virtufin.Core.Behaviour.ProcessExtensions.html#Virtufin_Core_Behaviour_ProcessExtensions_Run__3_Virtufin_Core_Behaviour_IProcess___0___1___2__System_IObservable___1____0_
+  - name: <
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TInput
+  - name: ','
+  - name: " "
+  - name: TOutput
+  - name: '>'
+  - name: (
+  - uid: Virtufin.Core.Behaviour.IProcess`3
+    name: IProcess
+    href: Virtufin.Core.Behaviour.IProcess-3.html
+  - name: <
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TInput
+  - name: ','
+  - name: " "
+  - name: TOutput
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: <
+  - name: TInput
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: TState
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Behaviour.ProcessExtensions.Run``3(Virtufin.Core.Behaviour.IProcess{``0,``1,``2},System.IObservable{``1},``0)
+    name: Run
+    href: Virtufin.Core.Behaviour.ProcessExtensions.html#Virtufin_Core_Behaviour_ProcessExtensions_Run__3_Virtufin_Core_Behaviour_IProcess___0___1___2__System_IObservable___1____0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TInput
+  - name: ','
+  - name: " "
+  - name: TOutput
+  - name: )
+  - name: (
+  - uid: Virtufin.Core.Behaviour.IProcess`3
+    name: IProcess
+    href: Virtufin.Core.Behaviour.IProcess-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TInput
+  - name: ','
+  - name: " "
+  - name: TOutput
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInput
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TState
+  - name: )

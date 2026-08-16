@@ -6,8 +6,12 @@ items:
   parent: Virtufin.Core
   children:
   - Virtufin.Core.Behaviour.IAlgebra`2
+  - Virtufin.Core.Behaviour.IDecide`4
+  - Virtufin.Core.Behaviour.IPortfolioState
   - Virtufin.Core.Behaviour.IProcess`3
   - Virtufin.Core.Behaviour.ISignal`1
+  - Virtufin.Core.Behaviour.IStrategyState
+  - Virtufin.Core.Behaviour.ProcessExtensions
   langs:
   - csharp
   - vb
@@ -49,6 +53,55 @@ references:
   - name: " "
   - name: TState
   - name: )
+- uid: Virtufin.Core.Behaviour.IDecide`4
+  commentId: T:Virtufin.Core.Behaviour.IDecide`4
+  href: Virtufin.Core.Behaviour.IDecide-4.html
+  name: IDecide<TState, TMarket, TPortfolio, TAction>
+  nameWithType: IDecide<TState, TMarket, TPortfolio, TAction>
+  fullName: Virtufin.Core.Behaviour.IDecide<TState, TMarket, TPortfolio, TAction>
+  nameWithType.vb: IDecide(Of TState, TMarket, TPortfolio, TAction)
+  fullName.vb: Virtufin.Core.Behaviour.IDecide(Of TState, TMarket, TPortfolio, TAction)
+  name.vb: IDecide(Of TState, TMarket, TPortfolio, TAction)
+  spec.csharp:
+  - uid: Virtufin.Core.Behaviour.IDecide`4
+    name: IDecide
+    href: Virtufin.Core.Behaviour.IDecide-4.html
+  - name: <
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TMarket
+  - name: ','
+  - name: " "
+  - name: TPortfolio
+  - name: ','
+  - name: " "
+  - name: TAction
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Behaviour.IDecide`4
+    name: IDecide
+    href: Virtufin.Core.Behaviour.IDecide-4.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TMarket
+  - name: ','
+  - name: " "
+  - name: TPortfolio
+  - name: ','
+  - name: " "
+  - name: TAction
+  - name: )
+- uid: Virtufin.Core.Behaviour.IPortfolioState
+  commentId: T:Virtufin.Core.Behaviour.IPortfolioState
+  href: Virtufin.Core.Behaviour.IPortfolioState.html
+  name: IPortfolioState
+  nameWithType: IPortfolioState
+  fullName: Virtufin.Core.Behaviour.IPortfolioState
 - uid: Virtufin.Core.Behaviour.IProcess`3
   commentId: T:Virtufin.Core.Behaviour.IProcess`3
   href: Virtufin.Core.Behaviour.IProcess-3.html
@@ -111,3 +164,46 @@ references:
   - name: " "
   - name: T
   - name: )
+- uid: Virtufin.Core.Behaviour.IStrategyState
+  commentId: T:Virtufin.Core.Behaviour.IStrategyState
+  href: Virtufin.Core.Behaviour.IStrategyState.html
+  name: IStrategyState
+  nameWithType: IStrategyState
+  fullName: Virtufin.Core.Behaviour.IStrategyState
+- uid: Virtufin.Core.Behaviour.ProcessExtensions
+  commentId: T:Virtufin.Core.Behaviour.ProcessExtensions
+  parent: Virtufin.Core.Behaviour
+  href: Virtufin.Core.Behaviour.ProcessExtensions.html
+  name: ProcessExtensions
+  nameWithType: ProcessExtensions
+  fullName: Virtufin.Core.Behaviour.ProcessExtensions
+- uid: Virtufin.Core.Behaviour
+  commentId: N:Virtufin.Core.Behaviour
+  href: Virtufin.html
+  name: Virtufin.Core.Behaviour
+  nameWithType: Virtufin.Core.Behaviour
+  fullName: Virtufin.Core.Behaviour
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Behaviour
+    name: Behaviour
+    href: Virtufin.Core.Behaviour.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Behaviour
+    name: Behaviour
+    href: Virtufin.Core.Behaviour.html

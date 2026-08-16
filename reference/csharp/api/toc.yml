@@ -388,12 +388,24 @@ items:
       - uid: Virtufin.Core.Behaviour.IAlgebra`2
         name: IAlgebra<TEvent, TState>
         type: Interface
+      - uid: Virtufin.Core.Behaviour.IDecide`4
+        name: IDecide<TState, TMarket, TPortfolio, TAction>
+        type: Interface
+      - uid: Virtufin.Core.Behaviour.IPortfolioState
+        name: IPortfolioState
+        type: Interface
       - uid: Virtufin.Core.Behaviour.IProcess`3
         name: IProcess<TState, TInput, TOutput>
         type: Interface
       - uid: Virtufin.Core.Behaviour.ISignal`1
         name: ISignal<T>
         type: Interface
+      - uid: Virtufin.Core.Behaviour.IStrategyState
+        name: IStrategyState
+        type: Interface
+      - uid: Virtufin.Core.Behaviour.ProcessExtensions
+        name: ProcessExtensions
+        type: Class
     - uid: Virtufin.Core.Clock
       name: Clock
       type: Namespace

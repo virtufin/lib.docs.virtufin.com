@@ -20,16 +20,20 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: IMarketEvent
     path: ../../../src/Virtufin.Core/Events/Market/IMarketEvent.cs
-    startLine: 7
+    startLine: 9
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Events.Market
   summary: >-
-    Marker for any raw market observation — exogenous price or order-book
+    Marker for any market observation — exogenous price or order-book state
 
-    state from the data feed. Candles, VWAP, and other derived signals are
+    from the data feed, or a derived signal. Behaviour-level market events
 
-    NOT <xref href="Virtufin.Core.Events.Market.IMarketEvent" data-throw-if-not-resolved="false"></xref>s — see <code>RichMarketEvent</code> for those.
+    are only <code>TickReceived</code> and <code>OrderBookReceived</code>; candles,
+
+    VWAP, and other derived signals are carried by <code>RichMarketEvent</code>,
+
+    which also implements this interface.
   example: []
   syntax:
     content: 'public interface IMarketEvent : IEvent, IEquatable<IEvent>'
@@ -63,7 +67,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: Symbol
     path: ../../../src/Virtufin.Core/Events/Market/IMarketEvent.cs
-    startLine: 10
+    startLine: 12
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Events.Market
@@ -77,13 +81,6 @@ items:
     content.vb: ReadOnly Property Symbol As Symbol
   overload: Virtufin.Core.Events.Market.IMarketEvent.Symbol*
 references:
-- uid: Virtufin.Core.Events.Market.IMarketEvent
-  commentId: T:Virtufin.Core.Events.Market.IMarketEvent
-  parent: Virtufin.Core.Events.Market
-  href: Virtufin.Core.Events.Market.IMarketEvent.html
-  name: IMarketEvent
-  nameWithType: IMarketEvent
-  fullName: Virtufin.Core.Events.Market.IMarketEvent
 - uid: Virtufin.Core.Events.Market
   commentId: N:Virtufin.Core.Events.Market
   href: Virtufin.html

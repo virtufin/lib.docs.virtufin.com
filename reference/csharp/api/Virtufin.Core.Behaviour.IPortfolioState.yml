@@ -1,0 +1,101 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Behaviour.IPortfolioState
+  commentId: T:Virtufin.Core.Behaviour.IPortfolioState
+  id: IPortfolioState
+  parent: Virtufin.Core.Behaviour
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IPortfolioState
+  nameWithType: IPortfolioState
+  fullName: Virtufin.Core.Behaviour.IPortfolioState
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Behaviour/IPortfolioState.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IPortfolioState
+    path: ../../../src/Virtufin.Core/Behaviour/IPortfolioState.cs
+    startLine: 9
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Behaviour
+  summary: >-
+    Marker for any type that represents the folded portfolio state — the
+
+    derived holdings (positions, cash, average entry prices) a strategy
+
+    observes at each step of the trading loop. Counterpart of the raw
+
+    <code>IPositionEvent</code> stream: the state is produced by folding the
+
+    events with an <xref href="Virtufin.Core.Behaviour.IAlgebra%602" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public interface IPortfolioState
+    content.vb: Public Interface IPortfolioState
+references:
+- uid: Virtufin.Core.Behaviour.IAlgebra`2
+  commentId: T:Virtufin.Core.Behaviour.IAlgebra`2
+  href: Virtufin.Core.Behaviour.IAlgebra-2.html
+  name: IAlgebra<TEvent, TState>
+  nameWithType: IAlgebra<TEvent, TState>
+  fullName: Virtufin.Core.Behaviour.IAlgebra<TEvent, TState>
+  nameWithType.vb: IAlgebra(Of TEvent, TState)
+  fullName.vb: Virtufin.Core.Behaviour.IAlgebra(Of TEvent, TState)
+  name.vb: IAlgebra(Of TEvent, TState)
+  spec.csharp:
+  - uid: Virtufin.Core.Behaviour.IAlgebra`2
+    name: IAlgebra
+    href: Virtufin.Core.Behaviour.IAlgebra-2.html
+  - name: <
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TState
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Behaviour.IAlgebra`2
+    name: IAlgebra
+    href: Virtufin.Core.Behaviour.IAlgebra-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TState
+  - name: )
+- uid: Virtufin.Core.Behaviour
+  commentId: N:Virtufin.Core.Behaviour
+  href: Virtufin.html
+  name: Virtufin.Core.Behaviour
+  nameWithType: Virtufin.Core.Behaviour
+  fullName: Virtufin.Core.Behaviour
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Behaviour
+    name: Behaviour
+    href: Virtufin.Core.Behaviour.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Behaviour
+    name: Behaviour
+    href: Virtufin.Core.Behaviour.html

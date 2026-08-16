@@ -1,0 +1,150 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Behaviour.IStrategyState
+  commentId: T:Virtufin.Core.Behaviour.IStrategyState
+  id: IStrategyState
+  parent: Virtufin.Core.Behaviour
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IStrategyState
+  nameWithType: IStrategyState
+  fullName: Virtufin.Core.Behaviour.IStrategyState
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Behaviour/IDecide.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IStrategyState
+    path: ../../../src/Virtufin.Core/Behaviour/IDecide.cs
+    startLine: 12
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Behaviour
+  summary: >-
+    Marker for any type that carries the hidden state of a strategy:
+
+    indicator values, model weights, momentum windows, cooldown timers.
+
+    Counterpart of <xref href="Virtufin.Core.Execution.IExecutionState" data-throw-if-not-resolved="false"></xref> on the executor
+
+    side — it exists so <xref href="Virtufin.Core.Behaviour.IDecide%604" data-throw-if-not-resolved="false"></xref>
+
+    can constrain its state parameter.
+  example: []
+  syntax:
+    content: public interface IStrategyState
+    content.vb: Public Interface IStrategyState
+references:
+- uid: Virtufin.Core.Execution.IExecutionState
+  commentId: T:Virtufin.Core.Execution.IExecutionState
+  parent: Virtufin.Core.Execution
+  href: Virtufin.Core.Execution.IExecutionState.html
+  name: IExecutionState
+  nameWithType: IExecutionState
+  fullName: Virtufin.Core.Execution.IExecutionState
+- uid: Virtufin.Core.Behaviour.IDecide`4
+  commentId: T:Virtufin.Core.Behaviour.IDecide`4
+  href: Virtufin.Core.Behaviour.IDecide-4.html
+  name: IDecide<TState, TMarket, TPortfolio, TAction>
+  nameWithType: IDecide<TState, TMarket, TPortfolio, TAction>
+  fullName: Virtufin.Core.Behaviour.IDecide<TState, TMarket, TPortfolio, TAction>
+  nameWithType.vb: IDecide(Of TState, TMarket, TPortfolio, TAction)
+  fullName.vb: Virtufin.Core.Behaviour.IDecide(Of TState, TMarket, TPortfolio, TAction)
+  name.vb: IDecide(Of TState, TMarket, TPortfolio, TAction)
+  spec.csharp:
+  - uid: Virtufin.Core.Behaviour.IDecide`4
+    name: IDecide
+    href: Virtufin.Core.Behaviour.IDecide-4.html
+  - name: <
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TMarket
+  - name: ','
+  - name: " "
+  - name: TPortfolio
+  - name: ','
+  - name: " "
+  - name: TAction
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Behaviour.IDecide`4
+    name: IDecide
+    href: Virtufin.Core.Behaviour.IDecide-4.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TMarket
+  - name: ','
+  - name: " "
+  - name: TPortfolio
+  - name: ','
+  - name: " "
+  - name: TAction
+  - name: )
+- uid: Virtufin.Core.Behaviour
+  commentId: N:Virtufin.Core.Behaviour
+  href: Virtufin.html
+  name: Virtufin.Core.Behaviour
+  nameWithType: Virtufin.Core.Behaviour
+  fullName: Virtufin.Core.Behaviour
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Behaviour
+    name: Behaviour
+    href: Virtufin.Core.Behaviour.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Behaviour
+    name: Behaviour
+    href: Virtufin.Core.Behaviour.html
+- uid: Virtufin.Core.Execution
+  commentId: N:Virtufin.Core.Execution
+  href: Virtufin.html
+  name: Virtufin.Core.Execution
+  nameWithType: Virtufin.Core.Execution
+  fullName: Virtufin.Core.Execution
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Execution
+    name: Execution
+    href: Virtufin.Core.Execution.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Execution
+    name: Execution
+    href: Virtufin.Core.Execution.html

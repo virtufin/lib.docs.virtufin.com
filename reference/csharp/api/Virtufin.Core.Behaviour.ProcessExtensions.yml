@@ -1,0 +1,648 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Behaviour.ProcessExtensions
+  commentId: T:Virtufin.Core.Behaviour.ProcessExtensions
+  id: ProcessExtensions
+  parent: Virtufin.Core.Behaviour
+  children:
+  - Virtufin.Core.Behaviour.ProcessExtensions.Run``3(Virtufin.Core.Behaviour.IProcess{``0,``1,``2},System.IObservable{``1})
+  - Virtufin.Core.Behaviour.ProcessExtensions.Run``3(Virtufin.Core.Behaviour.IProcess{``0,``1,``2},System.IObservable{``1},``0)
+  langs:
+  - csharp
+  - vb
+  name: ProcessExtensions
+  nameWithType: ProcessExtensions
+  fullName: Virtufin.Core.Behaviour.ProcessExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Core/Behaviour/ProcessExtensions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ProcessExtensions
+    path: ../../../src/Virtufin.Core/Behaviour/ProcessExtensions.cs
+    startLine: 10
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Behaviour
+  summary: >-
+    Drivers that fold an <xref href="Virtufin.Core.Behaviour.IProcess%603" data-throw-if-not-resolved="false"></xref>
+
+    coalgebra over a stream of inputs. The coalgebra itself stays pure and
+
+    pull-based; these extensions add the reactive layer on demand — the
+
+    <code>scan</code> combinator of the domain spec (§10.4).
+  example: []
+  syntax:
+    content: public static class ProcessExtensions
+    content.vb: Public Module ProcessExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.Core.Behaviour.ProcessExtensions.Run``3(Virtufin.Core.Behaviour.IProcess{``0,``1,``2},System.IObservable{``1})
+  commentId: M:Virtufin.Core.Behaviour.ProcessExtensions.Run``3(Virtufin.Core.Behaviour.IProcess{``0,``1,``2},System.IObservable{``1})
+  id: Run``3(Virtufin.Core.Behaviour.IProcess{``0,``1,``2},System.IObservable{``1})
+  isExtensionMethod: true
+  parent: Virtufin.Core.Behaviour.ProcessExtensions
+  langs:
+  - csharp
+  - vb
+  name: Run<TState, TInput, TOutput>(IProcess<TState, TInput, TOutput>, IObservable<TInput>)
+  nameWithType: ProcessExtensions.Run<TState, TInput, TOutput>(IProcess<TState, TInput, TOutput>, IObservable<TInput>)
+  fullName: Virtufin.Core.Behaviour.ProcessExtensions.Run<TState, TInput, TOutput>(Virtufin.Core.Behaviour.IProcess<TState, TInput, TOutput>, System.IObservable<TInput>)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Behaviour/ProcessExtensions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Run
+    path: ../../../src/Virtufin.Core/Behaviour/ProcessExtensions.cs
+    startLine: 23
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Behaviour
+  summary: >-
+    Run the process over a stream of inputs, starting from
+
+    <xref href="Virtufin.Core.Behaviour.IProcess%603.Initial" data-throw-if-not-resolved="false"></xref>. Emits the
+
+    pair of evolved state and output for every input, in order.
+  example: []
+  syntax:
+    content: public static IObservable<(TState State, TOutput Output)> Run<TState, TInput, TOutput>(this IProcess<TState, TInput, TOutput> process, IObservable<TInput> inputs)
+    parameters:
+    - id: process
+      type: Virtufin.Core.Behaviour.IProcess{{TState},{TInput},{TOutput}}
+      description: The coalgebra to drive.
+    - id: inputs
+      type: System.IObservable{{TInput}}
+      description: Cold stream of input observations.
+    typeParameters:
+    - id: TState
+      description: The process's internal state.
+    - id: TInput
+      description: The input observation.
+    - id: TOutput
+      description: The output emitted at each step.
+    return:
+      type: System.IObservable{System.ValueTuple{{TState},{TOutput}}}
+      description: Stream of (state, output) pairs, one per input.
+    content.vb: Public Shared Function Run(Of TState, TInput, TOutput)(process As IProcess(Of TState, TInput, TOutput), inputs As IObservable(Of TInput)) As IObservable(Of (State As TState, Output As TOutput))
+  overload: Virtufin.Core.Behaviour.ProcessExtensions.Run*
+  nameWithType.vb: ProcessExtensions.Run(Of TState, TInput, TOutput)(IProcess(Of TState, TInput, TOutput), IObservable(Of TInput))
+  fullName.vb: Virtufin.Core.Behaviour.ProcessExtensions.Run(Of TState, TInput, TOutput)(Virtufin.Core.Behaviour.IProcess(Of TState, TInput, TOutput), System.IObservable(Of TInput))
+  name.vb: Run(Of TState, TInput, TOutput)(IProcess(Of TState, TInput, TOutput), IObservable(Of TInput))
+- uid: Virtufin.Core.Behaviour.ProcessExtensions.Run``3(Virtufin.Core.Behaviour.IProcess{``0,``1,``2},System.IObservable{``1},``0)
+  commentId: M:Virtufin.Core.Behaviour.ProcessExtensions.Run``3(Virtufin.Core.Behaviour.IProcess{``0,``1,``2},System.IObservable{``1},``0)
+  id: Run``3(Virtufin.Core.Behaviour.IProcess{``0,``1,``2},System.IObservable{``1},``0)
+  isExtensionMethod: true
+  parent: Virtufin.Core.Behaviour.ProcessExtensions
+  langs:
+  - csharp
+  - vb
+  name: Run<TState, TInput, TOutput>(IProcess<TState, TInput, TOutput>, IObservable<TInput>, TState)
+  nameWithType: ProcessExtensions.Run<TState, TInput, TOutput>(IProcess<TState, TInput, TOutput>, IObservable<TInput>, TState)
+  fullName: Virtufin.Core.Behaviour.ProcessExtensions.Run<TState, TInput, TOutput>(Virtufin.Core.Behaviour.IProcess<TState, TInput, TOutput>, System.IObservable<TInput>, TState)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Behaviour/ProcessExtensions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Run
+    path: ../../../src/Virtufin.Core/Behaviour/ProcessExtensions.cs
+    startLine: 42
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Behaviour
+  summary: >-
+    Run the process over a stream of inputs, starting from an explicit
+
+    initial state (e.g. a checkpoint from a previous run). Emits the
+
+    pair of evolved state and output for every input, in order. The
+
+    state is fresh per subscription — resubscribing restarts from
+
+    <code class="paramref">initialState</code>.
+  example: []
+  syntax:
+    content: public static IObservable<(TState State, TOutput Output)> Run<TState, TInput, TOutput>(this IProcess<TState, TInput, TOutput> process, IObservable<TInput> inputs, TState initialState)
+    parameters:
+    - id: process
+      type: Virtufin.Core.Behaviour.IProcess{{TState},{TInput},{TOutput}}
+      description: The coalgebra to drive.
+    - id: inputs
+      type: System.IObservable{{TInput}}
+      description: Cold stream of input observations.
+    - id: initialState
+      type: '{TState}'
+      description: State to start folding from.
+    typeParameters:
+    - id: TState
+      description: The process's internal state.
+    - id: TInput
+      description: The input observation.
+    - id: TOutput
+      description: The output emitted at each step.
+    return:
+      type: System.IObservable{System.ValueTuple{{TState},{TOutput}}}
+      description: Stream of (state, output) pairs, one per input.
+    content.vb: Public Shared Function Run(Of TState, TInput, TOutput)(process As IProcess(Of TState, TInput, TOutput), inputs As IObservable(Of TInput), initialState As TState) As IObservable(Of (State As TState, Output As TOutput))
+  overload: Virtufin.Core.Behaviour.ProcessExtensions.Run*
+  nameWithType.vb: ProcessExtensions.Run(Of TState, TInput, TOutput)(IProcess(Of TState, TInput, TOutput), IObservable(Of TInput), TState)
+  fullName.vb: Virtufin.Core.Behaviour.ProcessExtensions.Run(Of TState, TInput, TOutput)(Virtufin.Core.Behaviour.IProcess(Of TState, TInput, TOutput), System.IObservable(Of TInput), TState)
+  name.vb: Run(Of TState, TInput, TOutput)(IProcess(Of TState, TInput, TOutput), IObservable(Of TInput), TState)
+references:
+- uid: Virtufin.Core.Behaviour.IProcess`3
+  commentId: T:Virtufin.Core.Behaviour.IProcess`3
+  href: Virtufin.Core.Behaviour.IProcess-3.html
+  name: IProcess<TState, TInput, TOutput>
+  nameWithType: IProcess<TState, TInput, TOutput>
+  fullName: Virtufin.Core.Behaviour.IProcess<TState, TInput, TOutput>
+  nameWithType.vb: IProcess(Of TState, TInput, TOutput)
+  fullName.vb: Virtufin.Core.Behaviour.IProcess(Of TState, TInput, TOutput)
+  name.vb: IProcess(Of TState, TInput, TOutput)
+  spec.csharp:
+  - uid: Virtufin.Core.Behaviour.IProcess`3
+    name: IProcess
+    href: Virtufin.Core.Behaviour.IProcess-3.html
+  - name: <
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TInput
+  - name: ','
+  - name: " "
+  - name: TOutput
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Behaviour.IProcess`3
+    name: IProcess
+    href: Virtufin.Core.Behaviour.IProcess-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TInput
+  - name: ','
+  - name: " "
+  - name: TOutput
+  - name: )
+- uid: Virtufin.Core.Behaviour
+  commentId: N:Virtufin.Core.Behaviour
+  href: Virtufin.html
+  name: Virtufin.Core.Behaviour
+  nameWithType: Virtufin.Core.Behaviour
+  fullName: Virtufin.Core.Behaviour
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Behaviour
+    name: Behaviour
+    href: Virtufin.Core.Behaviour.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Behaviour
+    name: Behaviour
+    href: Virtufin.Core.Behaviour.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Core.Behaviour.IProcess`3.Initial
+  commentId: P:Virtufin.Core.Behaviour.IProcess`3.Initial
+  href: Virtufin.Core.Behaviour.IProcess-3.html#Virtufin_Core_Behaviour_IProcess_3_Initial
+  name: Initial
+  nameWithType: IProcess<TState, TInput, TOutput>.Initial
+  fullName: Virtufin.Core.Behaviour.IProcess<TState, TInput, TOutput>.Initial
+  nameWithType.vb: IProcess(Of TState, TInput, TOutput).Initial
+  fullName.vb: Virtufin.Core.Behaviour.IProcess(Of TState, TInput, TOutput).Initial
+- uid: Virtufin.Core.Behaviour.ProcessExtensions.Run*
+  commentId: Overload:Virtufin.Core.Behaviour.ProcessExtensions.Run
+  href: Virtufin.Core.Behaviour.ProcessExtensions.html#Virtufin_Core_Behaviour_ProcessExtensions_Run__3_Virtufin_Core_Behaviour_IProcess___0___1___2__System_IObservable___1__
+  name: Run
+  nameWithType: ProcessExtensions.Run
+  fullName: Virtufin.Core.Behaviour.ProcessExtensions.Run
+- uid: Virtufin.Core.Behaviour.IProcess{{TState},{TInput},{TOutput}}
+  commentId: T:Virtufin.Core.Behaviour.IProcess{``0,``1,``2}
+  parent: Virtufin.Core.Behaviour
+  definition: Virtufin.Core.Behaviour.IProcess`3
+  href: Virtufin.Core.Behaviour.IProcess-3.html
+  name: IProcess<TState, TInput, TOutput>
+  nameWithType: IProcess<TState, TInput, TOutput>
+  fullName: Virtufin.Core.Behaviour.IProcess<TState, TInput, TOutput>
+  nameWithType.vb: IProcess(Of TState, TInput, TOutput)
+  fullName.vb: Virtufin.Core.Behaviour.IProcess(Of TState, TInput, TOutput)
+  name.vb: IProcess(Of TState, TInput, TOutput)
+  spec.csharp:
+  - uid: Virtufin.Core.Behaviour.IProcess`3
+    name: IProcess
+    href: Virtufin.Core.Behaviour.IProcess-3.html
+  - name: <
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TInput
+  - name: ','
+  - name: " "
+  - name: TOutput
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Behaviour.IProcess`3
+    name: IProcess
+    href: Virtufin.Core.Behaviour.IProcess-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TInput
+  - name: ','
+  - name: " "
+  - name: TOutput
+  - name: )
+- uid: System.IObservable{{TInput}}
+  commentId: T:System.IObservable{``1}
+  parent: System
+  definition: System.IObservable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  name: IObservable<TInput>
+  nameWithType: IObservable<TInput>
+  fullName: System.IObservable<TInput>
+  nameWithType.vb: IObservable(Of TInput)
+  fullName.vb: System.IObservable(Of TInput)
+  name.vb: IObservable(Of TInput)
+  spec.csharp:
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: <
+  - name: TInput
+  - name: '>'
+  spec.vb:
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInput
+  - name: )
+- uid: System.IObservable{System.ValueTuple{{TState},{TOutput}}}
+  commentId: T:System.IObservable{System.ValueTuple{``0,``2}}
+  parent: System
+  definition: System.IObservable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  name: IObservable<(TState State, TOutput Output)>
+  nameWithType: IObservable<(TState State, TOutput Output)>
+  fullName: System.IObservable<(TState State, TOutput Output)>
+  nameWithType.vb: IObservable(Of (State As TState, Output As TOutput))
+  fullName.vb: System.IObservable(Of (State As TState, Output As TOutput))
+  name.vb: IObservable(Of (State As TState, Output As TOutput))
+  spec.csharp:
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: <
+  - name: (
+  - name: TState
+  - name: " "
+  - uid: System.ValueTuple{``0,``2}.State
+    name: State
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--2-.state
+  - name: ','
+  - name: " "
+  - name: TOutput
+  - name: " "
+  - uid: System.ValueTuple{``0,``2}.Output
+    name: Output
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--2-.output
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{``0,``2}.State
+    name: State
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--2-.state
+  - name: " "
+  - name: As
+  - name: " "
+  - name: TState
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{``0,``2}.Output
+    name: Output
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--2-.output
+  - name: " "
+  - name: As
+  - name: " "
+  - name: TOutput
+  - name: )
+  - name: )
+- uid: System.IObservable`1
+  commentId: T:System.IObservable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  name: IObservable<T>
+  nameWithType: IObservable<T>
+  fullName: System.IObservable<T>
+  nameWithType.vb: IObservable(Of T)
+  fullName.vb: System.IObservable(Of T)
+  name.vb: IObservable(Of T)
+  spec.csharp:
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IObservable`1
+    name: IObservable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iobservable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: '{TState}'
+  commentId: '!:TState'
+  definition: TState
+  name: TState
+  nameWithType: TState
+  fullName: TState
+- uid: TState
+  name: TState
+  nameWithType: TState
+  fullName: TState

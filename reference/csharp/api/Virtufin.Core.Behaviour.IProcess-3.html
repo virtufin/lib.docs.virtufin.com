@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IProcess&lt;TState, TInput, TOutput&gt; | Virtufin .NET - C# API Reference ">
       
-      <meta name="description" content="Coalgebra shape for a stateful process: given the current state and an input observation, produce the next state and an output. Used to model decide (strategy) and execute (execution engine) where the process carries hidden state that must be exposed explicitly.">
+      <meta name="description" content="Coalgebra shape for a stateful process: given the current state and an input observation, produce the next state and an output. The domain instantiations are  (decide) and IExecutor (execute), where the process carries hidden state that must be exposed explicitly. Drive a process over an observable stream of inputs with .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -49,10 +49,10 @@
             Virtufin.Dotnet
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/974d699b0bddacf80b011695e1aa849cb23f3720" target="_blank" rel="noopener" class="commit-badge" title="View commit 974d699b0bddacf80b011695e1aa849cb23f3720">
+            <a href="{git_repo_url}/commit/547b5e7df15ab14b69a46bf2332066d75b2ff777" target="_blank" rel="noopener" class="commit-badge" title="View commit 547b5e7df15ab14b69a46bf2332066d75b2ff777">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">974d699b0bddacf80b011695e1aa849cb23f3720</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">547b5e7df15ab14b69a46bf2332066d75b2ff777</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -102,9 +102,12 @@ Interface IProcess&lt;TState, TInput, TOutput&gt;
   </div>
 
   <div class="markdown summary"><p>Coalgebra shape for a stateful process: given the current state and an
-input observation, produce the next state and an output. Used to model
-<code>decide</code> (strategy) and <code>execute</code> (execution engine) where the
-process carries hidden state that must be exposed explicitly.</p>
+input observation, produce the next state and an output. The domain
+instantiations are <a class="xref" href="Virtufin.Core.Behaviour.IDecide-4.html">IDecide&lt;TState, TMarket, TPortfolio, TAction&gt;</a>
+(<code>decide</code>) and <code>IExecutor</code> (<code>execute</code>), where the process
+carries hidden state that must be exposed explicitly. Drive a process
+over an observable stream of inputs with
+<a class="xref" href="Virtufin.Core.Behaviour.ProcessExtensions.html#Virtufin_Core_Behaviour_ProcessExtensions_Run__3_Virtufin_Core_Behaviour_IProcess___0___1___2__System_IObservable___1__">Run&lt;TState, TInput, TOutput&gt;(IProcess&lt;TState, TInput, TOutput&gt;, IObservable&lt;TInput&gt;)</a>.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -131,6 +134,16 @@ process carries hidden state that must be exposed explicitly.</p>
 
 
 
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Virtufin.Core.Behaviour.ProcessExtensions.html#Virtufin_Core_Behaviour_ProcessExtensions_Run__3_Virtufin_Core_Behaviour_IProcess___0___1___2__System_IObservable___1__">ProcessExtensions.Run&lt;TState, TInput, TOutput&gt;(IProcess&lt;TState, TInput, TOutput&gt;, IObservable&lt;TInput&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Virtufin.Core.Behaviour.ProcessExtensions.html#Virtufin_Core_Behaviour_ProcessExtensions_Run__3_Virtufin_Core_Behaviour_IProcess___0___1___2__System_IObservable___1____0_">ProcessExtensions.Run&lt;TState, TInput, TOutput&gt;(IProcess&lt;TState, TInput, TOutput&gt;, IObservable&lt;TInput&gt;, TState)</a>
+  </div>
+  </dd></dl>
 
 
 

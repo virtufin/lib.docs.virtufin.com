@@ -1726,6 +1726,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Behaviour.IDecide-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Behaviour.IDecide-4.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Behaviour.IDecide<TState, TMarket, TPortfolio, TAction>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Behaviour.IDecide-4.yml\" sourcestartlinenumber=\"1\">The <code>decide</code> morphism of the trading loop: given the strategy's\nhidden state, a market observation, and the folded portfolio state,\nproduce the next strategy state and zero or more trade actions. This\nis the coalgebra\n<code>StrategyState × MarketEvent × PortfolioState → StrategyState ×\nTradeAction[]</code> of the domain spec (§6.4), exposed as an\n<xref href=\"Virtufin.Core.Behaviour.IProcess%603\" data-throw-if-not-resolved=\"false\"></xref> so strategies compose\nwith the generic <code>scan</code>/<code>fold</code> drivers\n(<xref href=\"Virtufin.Core.Behaviour.ProcessExtensions\" data-throw-if-not-resolved=\"false\"></xref>).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Behaviour.IPortfolioState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Behaviour.IPortfolioState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Behaviour.IPortfolioState",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Behaviour.IPortfolioState.yml\" sourcestartlinenumber=\"1\">Marker for any type that represents the folded portfolio state — the\nderived holdings (positions, cash, average entry prices) a strategy\nobserves at each step of the trading loop. Counterpart of the raw\n<code>IPositionEvent</code> stream: the state is produced by folding the\nevents with an <xref href=\"Virtufin.Core.Behaviour.IAlgebra%602\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Core.Behaviour.IProcess-3.yml",
       "output": {
         ".html": {
@@ -1736,7 +1764,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Core.Behaviour.IProcess<TState, TInput, TOutput>",
-      "Summary": "<p sourcefile=\"api/Virtufin.Core.Behaviour.IProcess-3.yml\" sourcestartlinenumber=\"1\">Coalgebra shape for a stateful process: given the current state and an\ninput observation, produce the next state and an output. Used to model\n<code>decide</code> (strategy) and <code>execute</code> (execution engine) where the\nprocess carries hidden state that must be exposed explicitly.</p>\n"
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Behaviour.IProcess-3.yml\" sourcestartlinenumber=\"1\">Coalgebra shape for a stateful process: given the current state and an\ninput observation, produce the next state and an output. The domain\ninstantiations are <xref href=\"Virtufin.Core.Behaviour.IDecide%604\" data-throw-if-not-resolved=\"false\"></xref>\n(<code>decide</code>) and <code>IExecutor</code> (<code>execute</code>), where the process\ncarries hidden state that must be exposed explicitly. Drive a process\nover an observable stream of inputs with\n<xref href=\"Virtufin.Core.Behaviour.ProcessExtensions.Run%60%603(Virtufin.Core.Behaviour.IProcess%7b%60%600%2c%60%601%2c%60%602%7d%2cSystem.IObservable%7b%60%601%7d)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1751,6 +1779,34 @@
       "IsMRef": true,
       "Title": "Virtufin.Core.Behaviour.ISignal<T>",
       "Summary": "<p sourcefile=\"api/Virtufin.Core.Behaviour.ISignal-1.yml\" sourcestartlinenumber=\"1\">A continuously derivable value computed from an event log. Signals are\nnever transported on Dapr topics; consumers reconstruct them on demand\nby folding the log.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Behaviour.IStrategyState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Behaviour.IStrategyState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Behaviour.IStrategyState",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Behaviour.IStrategyState.yml\" sourcestartlinenumber=\"1\">Marker for any type that carries the hidden state of a strategy:\nindicator values, model weights, momentum windows, cooldown timers.\nCounterpart of <xref href=\"Virtufin.Core.Execution.IExecutionState\" data-throw-if-not-resolved=\"false\"></xref> on the executor\nside — it exists so <xref href=\"Virtufin.Core.Behaviour.IDecide%604\" data-throw-if-not-resolved=\"false\"></xref>\ncan constrain its state parameter.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Behaviour.ProcessExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Behaviour.ProcessExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Behaviour.ProcessExtensions",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Behaviour.ProcessExtensions.yml\" sourcestartlinenumber=\"1\">Drivers that fold an <xref href=\"Virtufin.Core.Behaviour.IProcess%603\" data-throw-if-not-resolved=\"false\"></xref>\ncoalgebra over a stream of inputs. The coalgebra itself stays pure and\npull-based; these extensions add the reactive layer on demand — the\n<code>scan</code> combinator of the domain spec (§10.4).</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2128,7 +2184,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Core.Events.Market.IMarketEvent",
-      "Summary": "<p sourcefile=\"api/Virtufin.Core.Events.Market.IMarketEvent.yml\" sourcestartlinenumber=\"1\">Marker for any raw market observation — exogenous price or order-book\nstate from the data feed. Candles, VWAP, and other derived signals are\nNOT <xref href=\"Virtufin.Core.Events.Market.IMarketEvent\" data-throw-if-not-resolved=\"false\"></xref>s — see <code>RichMarketEvent</code> for those.</p>\n"
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Events.Market.IMarketEvent.yml\" sourcestartlinenumber=\"1\">Marker for any market observation — exogenous price or order-book state\nfrom the data feed, or a derived signal. Behaviour-level market events\nare only <code>TickReceived</code> and <code>OrderBookReceived</code>; candles,\nVWAP, and other derived signals are carried by <code>RichMarketEvent</code>,\nwhich also implements this interface.</p>\n"
     },
     {
       "type": "ManagedReference",

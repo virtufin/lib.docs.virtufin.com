@@ -9228,6 +9228,21 @@ references:
   fullName.vb: Virtufin.Core.Behaviour.IAlgebra(Of TEvent, TState).Initial
   nameWithType: IAlgebra<TEvent, TState>.Initial
   nameWithType.vb: IAlgebra(Of TEvent, TState).Initial
+- uid: Virtufin.Core.Behaviour.IDecide`4
+  name: IDecide<TState, TMarket, TPortfolio, TAction>
+  href: api/Virtufin.Core.Behaviour.IDecide-4.html
+  commentId: T:Virtufin.Core.Behaviour.IDecide`4
+  name.vb: IDecide(Of TState, TMarket, TPortfolio, TAction)
+  fullName: Virtufin.Core.Behaviour.IDecide<TState, TMarket, TPortfolio, TAction>
+  fullName.vb: Virtufin.Core.Behaviour.IDecide(Of TState, TMarket, TPortfolio, TAction)
+  nameWithType: IDecide<TState, TMarket, TPortfolio, TAction>
+  nameWithType.vb: IDecide(Of TState, TMarket, TPortfolio, TAction)
+- uid: Virtufin.Core.Behaviour.IPortfolioState
+  name: IPortfolioState
+  href: api/Virtufin.Core.Behaviour.IPortfolioState.html
+  commentId: T:Virtufin.Core.Behaviour.IPortfolioState
+  fullName: Virtufin.Core.Behaviour.IPortfolioState
+  nameWithType: IPortfolioState
 - uid: Virtufin.Core.Behaviour.IProcess`3
   name: IProcess<TState, TInput, TOutput>
   href: api/Virtufin.Core.Behaviour.IProcess-3.html
@@ -9297,6 +9312,43 @@ references:
   fullName.vb: Virtufin.Core.Behaviour.ISignal(Of T).Value
   nameWithType: ISignal<T>.Value
   nameWithType.vb: ISignal(Of T).Value
+- uid: Virtufin.Core.Behaviour.IStrategyState
+  name: IStrategyState
+  href: api/Virtufin.Core.Behaviour.IStrategyState.html
+  commentId: T:Virtufin.Core.Behaviour.IStrategyState
+  fullName: Virtufin.Core.Behaviour.IStrategyState
+  nameWithType: IStrategyState
+- uid: Virtufin.Core.Behaviour.ProcessExtensions
+  name: ProcessExtensions
+  href: api/Virtufin.Core.Behaviour.ProcessExtensions.html
+  commentId: T:Virtufin.Core.Behaviour.ProcessExtensions
+  fullName: Virtufin.Core.Behaviour.ProcessExtensions
+  nameWithType: ProcessExtensions
+- uid: Virtufin.Core.Behaviour.ProcessExtensions.Run*
+  name: Run
+  href: api/Virtufin.Core.Behaviour.ProcessExtensions.html#Virtufin_Core_Behaviour_ProcessExtensions_Run_
+  commentId: Overload:Virtufin.Core.Behaviour.ProcessExtensions.Run
+  isSpec: "True"
+  fullName: Virtufin.Core.Behaviour.ProcessExtensions.Run
+  nameWithType: ProcessExtensions.Run
+- uid: Virtufin.Core.Behaviour.ProcessExtensions.Run``3(Virtufin.Core.Behaviour.IProcess{``0,``1,``2},System.IObservable{``1})
+  name: Run<TState, TInput, TOutput>(IProcess<TState, TInput, TOutput>, IObservable<TInput>)
+  href: api/Virtufin.Core.Behaviour.ProcessExtensions.html#Virtufin_Core_Behaviour_ProcessExtensions_Run__3_Virtufin_Core_Behaviour_IProcess___0___1___2__System_IObservable___1__
+  commentId: M:Virtufin.Core.Behaviour.ProcessExtensions.Run``3(Virtufin.Core.Behaviour.IProcess{``0,``1,``2},System.IObservable{``1})
+  name.vb: Run(Of TState, TInput, TOutput)(IProcess(Of TState, TInput, TOutput), IObservable(Of TInput))
+  fullName: Virtufin.Core.Behaviour.ProcessExtensions.Run<TState, TInput, TOutput>(Virtufin.Core.Behaviour.IProcess<TState, TInput, TOutput>, System.IObservable<TInput>)
+  fullName.vb: Virtufin.Core.Behaviour.ProcessExtensions.Run(Of TState, TInput, TOutput)(Virtufin.Core.Behaviour.IProcess(Of TState, TInput, TOutput), System.IObservable(Of TInput))
+  nameWithType: ProcessExtensions.Run<TState, TInput, TOutput>(IProcess<TState, TInput, TOutput>, IObservable<TInput>)
+  nameWithType.vb: ProcessExtensions.Run(Of TState, TInput, TOutput)(IProcess(Of TState, TInput, TOutput), IObservable(Of TInput))
+- uid: Virtufin.Core.Behaviour.ProcessExtensions.Run``3(Virtufin.Core.Behaviour.IProcess{``0,``1,``2},System.IObservable{``1},``0)
+  name: Run<TState, TInput, TOutput>(IProcess<TState, TInput, TOutput>, IObservable<TInput>, TState)
+  href: api/Virtufin.Core.Behaviour.ProcessExtensions.html#Virtufin_Core_Behaviour_ProcessExtensions_Run__3_Virtufin_Core_Behaviour_IProcess___0___1___2__System_IObservable___1____0_
+  commentId: M:Virtufin.Core.Behaviour.ProcessExtensions.Run``3(Virtufin.Core.Behaviour.IProcess{``0,``1,``2},System.IObservable{``1},``0)
+  name.vb: Run(Of TState, TInput, TOutput)(IProcess(Of TState, TInput, TOutput), IObservable(Of TInput), TState)
+  fullName: Virtufin.Core.Behaviour.ProcessExtensions.Run<TState, TInput, TOutput>(Virtufin.Core.Behaviour.IProcess<TState, TInput, TOutput>, System.IObservable<TInput>, TState)
+  fullName.vb: Virtufin.Core.Behaviour.ProcessExtensions.Run(Of TState, TInput, TOutput)(Virtufin.Core.Behaviour.IProcess(Of TState, TInput, TOutput), System.IObservable(Of TInput), TState)
+  nameWithType: ProcessExtensions.Run<TState, TInput, TOutput>(IProcess<TState, TInput, TOutput>, IObservable<TInput>, TState)
+  nameWithType.vb: ProcessExtensions.Run(Of TState, TInput, TOutput)(IProcess(Of TState, TInput, TOutput), IObservable(Of TInput), TState)
 - uid: Virtufin.Core.Clock
   name: Virtufin.Core.Clock
   href: api/Virtufin.Core.Clock.html
