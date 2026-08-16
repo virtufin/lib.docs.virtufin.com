@@ -11461,6 +11461,15 @@ references:
   isSpec: "True"
   fullName: Virtufin.Core.Position.DecimalAmount.Fraction
   nameWithType: DecimalAmount.Fraction
+- uid: Virtufin.Core.Position.DecimalAmount.From(System.Decimal,System.Int32)
+  name: From(decimal, int)
+  href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_From_System_Decimal_System_Int32_
+  commentId: M:Virtufin.Core.Position.DecimalAmount.From(System.Decimal,System.Int32)
+  name.vb: From(Decimal, Integer)
+  fullName: Virtufin.Core.Position.DecimalAmount.From(decimal, int)
+  fullName.vb: Virtufin.Core.Position.DecimalAmount.From(Decimal, Integer)
+  nameWithType: DecimalAmount.From(decimal, int)
+  nameWithType.vb: DecimalAmount.From(Decimal, Integer)
 - uid: Virtufin.Core.Position.DecimalAmount.From(System.Double,System.Int32)
   name: From(double, int)
   href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_From_System_Double_System_Int32_
@@ -11486,6 +11495,15 @@ references:
   fullName.vb: Virtufin.Core.Position.DecimalAmount.FromCardinal(Long)
   nameWithType: DecimalAmount.FromCardinal(long)
   nameWithType.vb: DecimalAmount.FromCardinal(Long)
+- uid: Virtufin.Core.Position.DecimalAmount.FromCardinal(System.Int64,System.Int32)
+  name: FromCardinal(long, int)
+  href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_FromCardinal_System_Int64_System_Int32_
+  commentId: M:Virtufin.Core.Position.DecimalAmount.FromCardinal(System.Int64,System.Int32)
+  name.vb: FromCardinal(Long, Integer)
+  fullName: Virtufin.Core.Position.DecimalAmount.FromCardinal(long, int)
+  fullName.vb: Virtufin.Core.Position.DecimalAmount.FromCardinal(Long, Integer)
+  nameWithType: DecimalAmount.FromCardinal(long, int)
+  nameWithType.vb: DecimalAmount.FromCardinal(Long, Integer)
 - uid: Virtufin.Core.Position.DecimalAmount.FromCardinal*
   name: FromCardinal
   href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_FromCardinal_
@@ -11538,6 +11556,15 @@ references:
   commentId: M:Virtufin.Core.Position.DecimalAmount.ToCardinal
   fullName: Virtufin.Core.Position.DecimalAmount.ToCardinal()
   nameWithType: DecimalAmount.ToCardinal()
+- uid: Virtufin.Core.Position.DecimalAmount.ToCardinal(System.Int32)
+  name: ToCardinal(int)
+  href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_ToCardinal_System_Int32_
+  commentId: M:Virtufin.Core.Position.DecimalAmount.ToCardinal(System.Int32)
+  name.vb: ToCardinal(Integer)
+  fullName: Virtufin.Core.Position.DecimalAmount.ToCardinal(int)
+  fullName.vb: Virtufin.Core.Position.DecimalAmount.ToCardinal(Integer)
+  nameWithType: DecimalAmount.ToCardinal(int)
+  nameWithType.vb: DecimalAmount.ToCardinal(Integer)
 - uid: Virtufin.Core.Position.DecimalAmount.ToCardinal*
   name: ToCardinal
   href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_ToCardinal_
@@ -11545,6 +11572,19 @@ references:
   isSpec: "True"
   fullName: Virtufin.Core.Position.DecimalAmount.ToCardinal
   nameWithType: DecimalAmount.ToCardinal
+- uid: Virtufin.Core.Position.DecimalAmount.ToDecimal
+  name: ToDecimal()
+  href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_ToDecimal
+  commentId: M:Virtufin.Core.Position.DecimalAmount.ToDecimal
+  fullName: Virtufin.Core.Position.DecimalAmount.ToDecimal()
+  nameWithType: DecimalAmount.ToDecimal()
+- uid: Virtufin.Core.Position.DecimalAmount.ToDecimal*
+  name: ToDecimal
+  href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_ToDecimal_
+  commentId: Overload:Virtufin.Core.Position.DecimalAmount.ToDecimal
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.DecimalAmount.ToDecimal
+  nameWithType: DecimalAmount.ToDecimal
 - uid: Virtufin.Core.Position.DecimalAmount.ToString
   name: ToString()
   href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_ToString

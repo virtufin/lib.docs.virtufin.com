@@ -10,12 +10,16 @@ items:
   - Virtufin.Core.Position.DecimalAmount.DefaultPrecision
   - Virtufin.Core.Position.DecimalAmount.Equals(Virtufin.Core.Position.DecimalAmount)
   - Virtufin.Core.Position.DecimalAmount.Fraction
+  - Virtufin.Core.Position.DecimalAmount.From(System.Decimal,System.Int32)
   - Virtufin.Core.Position.DecimalAmount.From(System.Double,System.Int32)
   - Virtufin.Core.Position.DecimalAmount.FromCardinal(System.Int64)
+  - Virtufin.Core.Position.DecimalAmount.FromCardinal(System.Int64,System.Int32)
   - Virtufin.Core.Position.DecimalAmount.GetHashCode
   - Virtufin.Core.Position.DecimalAmount.GetValue
   - Virtufin.Core.Position.DecimalAmount.N
   - Virtufin.Core.Position.DecimalAmount.ToCardinal
+  - Virtufin.Core.Position.DecimalAmount.ToCardinal(System.Int32)
+  - Virtufin.Core.Position.DecimalAmount.ToDecimal
   - Virtufin.Core.Position.DecimalAmount.ToString
   - Virtufin.Core.Position.DecimalAmount.Whole
   - Virtufin.Core.Position.DecimalAmount.Zero
@@ -242,6 +246,49 @@ items:
     return:
       type: System.Int32
     content.vb: Public Const DefaultPrecision As Integer = 2
+- uid: Virtufin.Core.Position.DecimalAmount.From(System.Decimal,System.Int32)
+  commentId: M:Virtufin.Core.Position.DecimalAmount.From(System.Decimal,System.Int32)
+  id: From(System.Decimal,System.Int32)
+  parent: Virtufin.Core.Position.DecimalAmount
+  langs:
+  - csharp
+  - vb
+  name: From(decimal, int)
+  nameWithType: DecimalAmount.From(decimal, int)
+  fullName: Virtufin.Core.Position.DecimalAmount.From(decimal, int)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/DecimalAmount.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: From
+    path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
+    startLine: 49
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    Construct a <xref href="Virtufin.Core.Position.DecimalAmount" data-throw-if-not-resolved="false"></xref> from a <xref href="System.Decimal" data-throw-if-not-resolved="false"></xref>.
+
+    This is the exact constructor — no <xref href="System.Double" data-throw-if-not-resolved="false"></xref> round-trip.
+  example: []
+  syntax:
+    content: public static DecimalAmount From(decimal value, int n)
+    parameters:
+    - id: value
+      type: System.Decimal
+      description: Source value.
+    - id: n
+      type: System.Int32
+      description: Precision (number of fractional digits).
+    return:
+      type: Virtufin.Core.Position.DecimalAmount
+    content.vb: Public Shared Function From(value As Decimal, n As Integer) As DecimalAmount
+  overload: Virtufin.Core.Position.DecimalAmount.From*
+  nameWithType.vb: DecimalAmount.From(Decimal, Integer)
+  fullName.vb: Virtufin.Core.Position.DecimalAmount.From(Decimal, Integer)
+  name.vb: From(Decimal, Integer)
 - uid: Virtufin.Core.Position.DecimalAmount.From(System.Double,System.Int32)
   commentId: M:Virtufin.Core.Position.DecimalAmount.From(System.Double,System.Int32)
   id: From(System.Double,System.Int32)
@@ -260,11 +307,16 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: From
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 48
+    startLine: 64
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
-  summary: Construct a <xref href="Virtufin.Core.Position.DecimalAmount" data-throw-if-not-resolved="false"></xref> from a <xref href="System.Double" data-throw-if-not-resolved="false"></xref>.
+  summary: >-
+    Construct a <xref href="Virtufin.Core.Position.DecimalAmount" data-throw-if-not-resolved="false"></xref> from a <xref href="System.Double" data-throw-if-not-resolved="false"></xref>.
+
+    Prefer <xref href="Virtufin.Core.Position.DecimalAmount.From(System.Decimal%2cSystem.Int32)" data-throw-if-not-resolved="false"></xref> for exact values; this overload
+
+    exists for call sites that already hold a <xref href="System.Double" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public static DecimalAmount From(double value, int n)
@@ -300,11 +352,11 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: ToCardinal
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 58
+    startLine: 68
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
-  summary: Compute the cardinal (single-integer) representation.
+  summary: Compute the cardinal (single-integer) representation at this amount's precision.
   example: []
   syntax:
     content: public long ToCardinal()
@@ -314,6 +366,78 @@ items:
   overload: Virtufin.Core.Position.DecimalAmount.ToCardinal*
   implements:
   - Virtufin.Core.Position.IAsCardinal{System.Int64}.ToCardinal
+- uid: Virtufin.Core.Position.DecimalAmount.ToCardinal(System.Int32)
+  commentId: M:Virtufin.Core.Position.DecimalAmount.ToCardinal(System.Int32)
+  id: ToCardinal(System.Int32)
+  parent: Virtufin.Core.Position.DecimalAmount
+  langs:
+  - csharp
+  - vb
+  name: ToCardinal(int)
+  nameWithType: DecimalAmount.ToCardinal(int)
+  fullName: Virtufin.Core.Position.DecimalAmount.ToCardinal(int)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/DecimalAmount.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ToCardinal
+    path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
+    startLine: 77
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    Compute the cardinal (single-integer) representation at an explicit
+
+    precision. Rescales when <code class="paramref">n</code> differs from
+
+    <xref href="Virtufin.Core.Position.DecimalAmount.N" data-throw-if-not-resolved="false"></xref>, rounding half away from zero.
+  example: []
+  syntax:
+    content: public long ToCardinal(int n)
+    parameters:
+    - id: n
+      type: System.Int32
+      description: Target precision (fractional digits).
+    return:
+      type: System.Int64
+    content.vb: Public Function ToCardinal(n As Integer) As Long
+  overload: Virtufin.Core.Position.DecimalAmount.ToCardinal*
+  nameWithType.vb: DecimalAmount.ToCardinal(Integer)
+  fullName.vb: Virtufin.Core.Position.DecimalAmount.ToCardinal(Integer)
+  name.vb: ToCardinal(Integer)
+- uid: Virtufin.Core.Position.DecimalAmount.ToDecimal
+  commentId: M:Virtufin.Core.Position.DecimalAmount.ToDecimal
+  id: ToDecimal
+  parent: Virtufin.Core.Position.DecimalAmount
+  langs:
+  - csharp
+  - vb
+  name: ToDecimal()
+  nameWithType: DecimalAmount.ToDecimal()
+  fullName: Virtufin.Core.Position.DecimalAmount.ToDecimal()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/DecimalAmount.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ToDecimal
+    path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
+    startLine: 88
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Convert to <xref href="System.Decimal" data-throw-if-not-resolved="false"></xref> exactly.
+  example: []
+  syntax:
+    content: public decimal ToDecimal()
+    return:
+      type: System.Decimal
+    content.vb: Public Function ToDecimal() As Decimal
+  overload: Virtufin.Core.Position.DecimalAmount.ToDecimal*
 - uid: Virtufin.Core.Position.DecimalAmount.FromCardinal(System.Int64)
   commentId: M:Virtufin.Core.Position.DecimalAmount.FromCardinal(System.Int64)
   id: FromCardinal(System.Int64)
@@ -332,11 +456,11 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: FromCardinal
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 63
+    startLine: 93
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
-  summary: Recover whole and fractional parts from a cardinal value.
+  summary: Recover whole and fractional parts from a cardinal value at this amount's precision.
   example: []
   syntax:
     content: public (long Whole, ulong Fraction) FromCardinal(long cardinal)
@@ -353,6 +477,46 @@ items:
   nameWithType.vb: DecimalAmount.FromCardinal(Long)
   fullName.vb: Virtufin.Core.Position.DecimalAmount.FromCardinal(Long)
   name.vb: FromCardinal(Long)
+- uid: Virtufin.Core.Position.DecimalAmount.FromCardinal(System.Int64,System.Int32)
+  commentId: M:Virtufin.Core.Position.DecimalAmount.FromCardinal(System.Int64,System.Int32)
+  id: FromCardinal(System.Int64,System.Int32)
+  parent: Virtufin.Core.Position.DecimalAmount
+  langs:
+  - csharp
+  - vb
+  name: FromCardinal(long, int)
+  nameWithType: DecimalAmount.FromCardinal(long, int)
+  fullName: Virtufin.Core.Position.DecimalAmount.FromCardinal(long, int)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/DecimalAmount.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: FromCardinal
+    path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
+    startLine: 99
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Recover whole and fractional parts from a cardinal value at an explicit precision.
+  example: []
+  syntax:
+    content: public static (long Whole, ulong Fraction) FromCardinal(long cardinal, int n)
+    parameters:
+    - id: cardinal
+      type: System.Int64
+      description: Cardinal value to decompose.
+    - id: n
+      type: System.Int32
+      description: Precision the cardinal is expressed at.
+    return:
+      type: System.ValueTuple{System.Int64,System.UInt64}
+    content.vb: Public Shared Function FromCardinal(cardinal As Long, n As Integer) As (Whole As Long, Fraction As ULong)
+  overload: Virtufin.Core.Position.DecimalAmount.FromCardinal*
+  nameWithType.vb: DecimalAmount.FromCardinal(Long, Integer)
+  fullName.vb: Virtufin.Core.Position.DecimalAmount.FromCardinal(Long, Integer)
+  name.vb: FromCardinal(Long, Integer)
 - uid: Virtufin.Core.Position.DecimalAmount.GetValue
   commentId: M:Virtufin.Core.Position.DecimalAmount.GetValue
   id: GetValue
@@ -371,7 +535,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: GetValue
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 72
+    startLine: 122
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -400,7 +564,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: Equals
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 77
+    startLine: 127
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -437,7 +601,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: GetHashCode
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 81
+    startLine: 131
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -469,7 +633,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: CompareTo
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 84
+    startLine: 134
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -509,7 +673,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: op_Addition
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 93
+    startLine: 143
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -547,7 +711,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: op_Subtraction
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 104
+    startLine: 154
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -585,7 +749,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: ToString
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 115
+    startLine: 165
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -1261,6 +1425,17 @@ references:
   name: DecimalAmount
   nameWithType: DecimalAmount
   fullName: Virtufin.Core.Position.DecimalAmount
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal
+  nameWithType: decimal
+  fullName: decimal
+  nameWithType.vb: Decimal
+  fullName.vb: Decimal
+  name.vb: Decimal
 - uid: System.Double
   commentId: T:System.Double
   parent: System
@@ -1274,10 +1449,52 @@ references:
   name.vb: Double
 - uid: Virtufin.Core.Position.DecimalAmount.From*
   commentId: Overload:Virtufin.Core.Position.DecimalAmount.From
-  href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_From_System_Double_System_Int32_
+  href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_From_System_Decimal_System_Int32_
   name: From
   nameWithType: DecimalAmount.From
   fullName: Virtufin.Core.Position.DecimalAmount.From
+- uid: Virtufin.Core.Position.DecimalAmount.From(System.Decimal,System.Int32)
+  commentId: M:Virtufin.Core.Position.DecimalAmount.From(System.Decimal,System.Int32)
+  isExternal: true
+  href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_From_System_Decimal_System_Int32_
+  name: From(decimal, int)
+  nameWithType: DecimalAmount.From(decimal, int)
+  fullName: Virtufin.Core.Position.DecimalAmount.From(decimal, int)
+  nameWithType.vb: DecimalAmount.From(Decimal, Integer)
+  fullName.vb: Virtufin.Core.Position.DecimalAmount.From(Decimal, Integer)
+  name.vb: From(Decimal, Integer)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.DecimalAmount.From(System.Decimal,System.Int32)
+    name: From
+    href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_From_System_Decimal_System_Int32_
+  - name: (
+  - uid: System.Decimal
+    name: decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.DecimalAmount.From(System.Decimal,System.Int32)
+    name: From
+    href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_From_System_Decimal_System_Int32_
+  - name: (
+  - uid: System.Decimal
+    name: Decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
 - uid: Virtufin.Core.Position.DecimalAmount.ToCardinal*
   commentId: Overload:Virtufin.Core.Position.DecimalAmount.ToCardinal
   href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_ToCardinal
@@ -1326,6 +1543,18 @@ references:
     href: Virtufin.Core.Position.IAsCardinal-1.html#Virtufin_Core_Position_IAsCardinal_1_ToCardinal
   - name: (
   - name: )
+- uid: Virtufin.Core.Position.DecimalAmount.N
+  commentId: P:Virtufin.Core.Position.DecimalAmount.N
+  href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_N
+  name: N
+  nameWithType: DecimalAmount.N
+  fullName: Virtufin.Core.Position.DecimalAmount.N
+- uid: Virtufin.Core.Position.DecimalAmount.ToDecimal*
+  commentId: Overload:Virtufin.Core.Position.DecimalAmount.ToDecimal
+  href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_ToDecimal
+  name: ToDecimal
+  nameWithType: DecimalAmount.ToDecimal
+  fullName: Virtufin.Core.Position.DecimalAmount.ToDecimal
 - uid: Virtufin.Core.Position.DecimalAmount.FromCardinal*
   commentId: Overload:Virtufin.Core.Position.DecimalAmount.FromCardinal
   href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_FromCardinal_System_Int64_
