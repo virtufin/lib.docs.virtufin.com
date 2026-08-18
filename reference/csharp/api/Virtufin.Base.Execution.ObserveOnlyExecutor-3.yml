@@ -6,7 +6,7 @@ items:
   parent: Virtufin.Base.Execution
   children:
   - Virtufin.Base.Execution.ObserveOnlyExecutor`3.#ctor(Virtufin.Core.Execution.IExecutor{`0,`1,`2})
-  - Virtufin.Base.Execution.ObserveOnlyExecutor`3.Execute(`0,`1)
+  - Virtufin.Base.Execution.ObserveOnlyExecutor`3.ExecuteAsync(`0,`1)
   - Virtufin.Base.Execution.ObserveOnlyExecutor`3.Initial
   - Virtufin.Base.Execution.ObserveOnlyExecutor`3.Observed
   langs:
@@ -23,7 +23,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: ObserveOnlyExecutor
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
-    startLine: 212
+    startLine: 219
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Execution
@@ -73,7 +73,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: .ctor
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
-    startLine: 222
+    startLine: 229
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Execution
@@ -107,7 +107,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: Initial
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
-    startLine: 225
+    startLine: 232
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Execution
@@ -124,32 +124,32 @@ items:
   - Virtufin.Core.Execution.IExecutor{{TState},{TAction},{TEvent}}.Initial
   nameWithType.vb: ObserveOnlyExecutor(Of TState, TAction, TEvent).Initial
   fullName.vb: Virtufin.Base.Execution.ObserveOnlyExecutor(Of TState, TAction, TEvent).Initial
-- uid: Virtufin.Base.Execution.ObserveOnlyExecutor`3.Execute(`0,`1)
-  commentId: M:Virtufin.Base.Execution.ObserveOnlyExecutor`3.Execute(`0,`1)
-  id: Execute(`0,`1)
+- uid: Virtufin.Base.Execution.ObserveOnlyExecutor`3.ExecuteAsync(`0,`1)
+  commentId: M:Virtufin.Base.Execution.ObserveOnlyExecutor`3.ExecuteAsync(`0,`1)
+  id: ExecuteAsync(`0,`1)
   parent: Virtufin.Base.Execution.ObserveOnlyExecutor`3
   langs:
   - csharp
   - vb
-  name: Execute(TState, TAction)
-  nameWithType: ObserveOnlyExecutor<TState, TAction, TEvent>.Execute(TState, TAction)
-  fullName: Virtufin.Base.Execution.ObserveOnlyExecutor<TState, TAction, TEvent>.Execute(TState, TAction)
+  name: ExecuteAsync(TState, TAction)
+  nameWithType: ObserveOnlyExecutor<TState, TAction, TEvent>.ExecuteAsync(TState, TAction)
+  fullName: Virtufin.Base.Execution.ObserveOnlyExecutor<TState, TAction, TEvent>.ExecuteAsync(TState, TAction)
   type: Method
   source:
     remote:
       path: src/Virtufin.Base/Execution/Executors.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
-    id: Execute
+    id: ExecuteAsync
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
-    startLine: 228
+    startLine: 235
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Execution
   summary: Execute one <code class="typeparamref">TAction</code>, producing the next state and an outcome event.
   example: []
   syntax:
-    content: public (TState NextState, TEvent Event) Execute(TState state, TAction action)
+    content: public Task<(TState NextState, TEvent Event)> ExecuteAsync(TState state, TAction action)
     parameters:
     - id: state
       type: '{TState}'
@@ -158,14 +158,14 @@ items:
       type: '{TAction}'
       description: The action to execute.
     return:
-      type: System.ValueTuple{{TState},{TEvent}}
+      type: System.Threading.Tasks.Task{System.ValueTuple{{TState},{TEvent}}}
       description: Tuple of (next state, outcome event).
-    content.vb: Public Function Execute(state As TState, action As TAction) As (NextState As TState, [Event] As TEvent)
-  overload: Virtufin.Base.Execution.ObserveOnlyExecutor`3.Execute*
+    content.vb: Public Function ExecuteAsync(state As TState, action As TAction) As Task(Of (NextState As TState, [Event] As TEvent))
+  overload: Virtufin.Base.Execution.ObserveOnlyExecutor`3.ExecuteAsync*
   implements:
-  - Virtufin.Core.Execution.IExecutor{{TState},{TAction},{TEvent}}.Execute({TState},{TAction})
-  nameWithType.vb: ObserveOnlyExecutor(Of TState, TAction, TEvent).Execute(TState, TAction)
-  fullName.vb: Virtufin.Base.Execution.ObserveOnlyExecutor(Of TState, TAction, TEvent).Execute(TState, TAction)
+  - Virtufin.Core.Execution.IExecutor{{TState},{TAction},{TEvent}}.ExecuteAsync({TState},{TAction})
+  nameWithType.vb: ObserveOnlyExecutor(Of TState, TAction, TEvent).ExecuteAsync(TState, TAction)
+  fullName.vb: Virtufin.Base.Execution.ObserveOnlyExecutor(Of TState, TAction, TEvent).ExecuteAsync(TState, TAction)
 - uid: Virtufin.Base.Execution.ObserveOnlyExecutor`3.Observed
   commentId: P:Virtufin.Base.Execution.ObserveOnlyExecutor`3.Observed
   id: Observed
@@ -184,7 +184,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: Observed
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
-    startLine: 236
+    startLine: 243
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Execution
@@ -594,28 +594,28 @@ references:
   name: TState
   nameWithType: TState
   fullName: TState
-- uid: Virtufin.Base.Execution.ObserveOnlyExecutor`3.Execute*
-  commentId: Overload:Virtufin.Base.Execution.ObserveOnlyExecutor`3.Execute
-  href: Virtufin.Base.Execution.ObserveOnlyExecutor-3.html#Virtufin_Base_Execution_ObserveOnlyExecutor_3_Execute__0__1_
-  name: Execute
-  nameWithType: ObserveOnlyExecutor<TState, TAction, TEvent>.Execute
-  fullName: Virtufin.Base.Execution.ObserveOnlyExecutor<TState, TAction, TEvent>.Execute
-  nameWithType.vb: ObserveOnlyExecutor(Of TState, TAction, TEvent).Execute
-  fullName.vb: Virtufin.Base.Execution.ObserveOnlyExecutor(Of TState, TAction, TEvent).Execute
-- uid: Virtufin.Core.Execution.IExecutor{{TState},{TAction},{TEvent}}.Execute({TState},{TAction})
-  commentId: M:Virtufin.Core.Execution.IExecutor{`0,`1,`2}.Execute(`0,`1)
+- uid: Virtufin.Base.Execution.ObserveOnlyExecutor`3.ExecuteAsync*
+  commentId: Overload:Virtufin.Base.Execution.ObserveOnlyExecutor`3.ExecuteAsync
+  href: Virtufin.Base.Execution.ObserveOnlyExecutor-3.html#Virtufin_Base_Execution_ObserveOnlyExecutor_3_ExecuteAsync__0__1_
+  name: ExecuteAsync
+  nameWithType: ObserveOnlyExecutor<TState, TAction, TEvent>.ExecuteAsync
+  fullName: Virtufin.Base.Execution.ObserveOnlyExecutor<TState, TAction, TEvent>.ExecuteAsync
+  nameWithType.vb: ObserveOnlyExecutor(Of TState, TAction, TEvent).ExecuteAsync
+  fullName.vb: Virtufin.Base.Execution.ObserveOnlyExecutor(Of TState, TAction, TEvent).ExecuteAsync
+- uid: Virtufin.Core.Execution.IExecutor{{TState},{TAction},{TEvent}}.ExecuteAsync({TState},{TAction})
+  commentId: M:Virtufin.Core.Execution.IExecutor{`0,`1,`2}.ExecuteAsync(`0,`1)
   parent: Virtufin.Core.Execution.IExecutor{{TState},{TAction},{TEvent}}
-  definition: Virtufin.Core.Execution.IExecutor`3.Execute(`0,`1)
-  href: Virtufin.Core.Execution.IExecutor-3.html#Virtufin_Core_Execution_IExecutor_3_Execute__0__1_
-  name: Execute(TState, TAction)
-  nameWithType: IExecutor<TState, TAction, TEvent>.Execute(TState, TAction)
-  fullName: Virtufin.Core.Execution.IExecutor<TState, TAction, TEvent>.Execute(TState, TAction)
-  nameWithType.vb: IExecutor(Of TState, TAction, TEvent).Execute(TState, TAction)
-  fullName.vb: Virtufin.Core.Execution.IExecutor(Of TState, TAction, TEvent).Execute(TState, TAction)
+  definition: Virtufin.Core.Execution.IExecutor`3.ExecuteAsync(`0,`1)
+  href: Virtufin.Core.Execution.IExecutor-3.html#Virtufin_Core_Execution_IExecutor_3_ExecuteAsync__0__1_
+  name: ExecuteAsync(TState, TAction)
+  nameWithType: IExecutor<TState, TAction, TEvent>.ExecuteAsync(TState, TAction)
+  fullName: Virtufin.Core.Execution.IExecutor<TState, TAction, TEvent>.ExecuteAsync(TState, TAction)
+  nameWithType.vb: IExecutor(Of TState, TAction, TEvent).ExecuteAsync(TState, TAction)
+  fullName.vb: Virtufin.Core.Execution.IExecutor(Of TState, TAction, TEvent).ExecuteAsync(TState, TAction)
   spec.csharp:
-  - uid: Virtufin.Core.Execution.IExecutor{`0,`1,`2}.Execute(`0,`1)
-    name: Execute
-    href: Virtufin.Core.Execution.IExecutor-3.html#Virtufin_Core_Execution_IExecutor_3_Execute__0__1_
+  - uid: Virtufin.Core.Execution.IExecutor{`0,`1,`2}.ExecuteAsync(`0,`1)
+    name: ExecuteAsync
+    href: Virtufin.Core.Execution.IExecutor-3.html#Virtufin_Core_Execution_IExecutor_3_ExecuteAsync__0__1_
   - name: (
   - name: TState
   - name: ','
@@ -623,9 +623,9 @@ references:
   - name: TAction
   - name: )
   spec.vb:
-  - uid: Virtufin.Core.Execution.IExecutor{`0,`1,`2}.Execute(`0,`1)
-    name: Execute
-    href: Virtufin.Core.Execution.IExecutor-3.html#Virtufin_Core_Execution_IExecutor_3_Execute__0__1_
+  - uid: Virtufin.Core.Execution.IExecutor{`0,`1,`2}.ExecuteAsync(`0,`1)
+    name: ExecuteAsync
+    href: Virtufin.Core.Execution.IExecutor-3.html#Virtufin_Core_Execution_IExecutor_3_ExecuteAsync__0__1_
   - name: (
   - name: TState
   - name: ','
@@ -638,18 +638,23 @@ references:
   name: TAction
   nameWithType: TAction
   fullName: TAction
-- uid: System.ValueTuple{{TState},{TEvent}}
-  commentId: T:System.ValueTuple{`0,`2}
-  parent: System
-  definition: System.ValueTuple`2
-  href: https://learn.microsoft.com/dotnet/api/system.valuetuple--0,-2-.nextstate
-  name: (TState NextState, TEvent Event)
-  nameWithType: (TState NextState, TEvent Event)
-  fullName: (TState NextState, TEvent Event)
-  nameWithType.vb: (NextState As TState, Event As TEvent)
-  fullName.vb: (NextState As TState, Event As TEvent)
-  name.vb: (NextState As TState, Event As TEvent)
+- uid: System.Threading.Tasks.Task{System.ValueTuple{{TState},{TEvent}}}
+  commentId: T:System.Threading.Tasks.Task{System.ValueTuple{`0,`2}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<(TState NextState, TEvent Event)>
+  nameWithType: Task<(TState NextState, TEvent Event)>
+  fullName: System.Threading.Tasks.Task<(TState NextState, TEvent Event)>
+  nameWithType.vb: Task(Of (NextState As TState, Event As TEvent))
+  fullName.vb: System.Threading.Tasks.Task(Of (NextState As TState, Event As TEvent))
+  name.vb: Task(Of (NextState As TState, Event As TEvent))
   spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
   - name: (
   - name: TState
   - name: " "
@@ -664,7 +669,15 @@ references:
     name: Event
     href: https://learn.microsoft.com/dotnet/api/system.valuetuple--0,-2-.event
   - name: )
+  - name: '>'
   spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
   - name: (
   - uid: System.ValueTuple{`0,`2}.NextState
     name: NextState
@@ -683,18 +696,19 @@ references:
   - name: " "
   - name: TEvent
   - name: )
-- uid: Virtufin.Core.Execution.IExecutor`3.Execute(`0,`1)
-  commentId: M:Virtufin.Core.Execution.IExecutor`3.Execute(`0,`1)
-  href: Virtufin.Core.Execution.IExecutor-3.html#Virtufin_Core_Execution_IExecutor_3_Execute__0__1_
-  name: Execute(TState, TAction)
-  nameWithType: IExecutor<TState, TAction, TEvent>.Execute(TState, TAction)
-  fullName: Virtufin.Core.Execution.IExecutor<TState, TAction, TEvent>.Execute(TState, TAction)
-  nameWithType.vb: IExecutor(Of TState, TAction, TEvent).Execute(TState, TAction)
-  fullName.vb: Virtufin.Core.Execution.IExecutor(Of TState, TAction, TEvent).Execute(TState, TAction)
+  - name: )
+- uid: Virtufin.Core.Execution.IExecutor`3.ExecuteAsync(`0,`1)
+  commentId: M:Virtufin.Core.Execution.IExecutor`3.ExecuteAsync(`0,`1)
+  href: Virtufin.Core.Execution.IExecutor-3.html#Virtufin_Core_Execution_IExecutor_3_ExecuteAsync__0__1_
+  name: ExecuteAsync(TState, TAction)
+  nameWithType: IExecutor<TState, TAction, TEvent>.ExecuteAsync(TState, TAction)
+  fullName: Virtufin.Core.Execution.IExecutor<TState, TAction, TEvent>.ExecuteAsync(TState, TAction)
+  nameWithType.vb: IExecutor(Of TState, TAction, TEvent).ExecuteAsync(TState, TAction)
+  fullName.vb: Virtufin.Core.Execution.IExecutor(Of TState, TAction, TEvent).ExecuteAsync(TState, TAction)
   spec.csharp:
-  - uid: Virtufin.Core.Execution.IExecutor`3.Execute(`0,`1)
-    name: Execute
-    href: Virtufin.Core.Execution.IExecutor-3.html#Virtufin_Core_Execution_IExecutor_3_Execute__0__1_
+  - uid: Virtufin.Core.Execution.IExecutor`3.ExecuteAsync(`0,`1)
+    name: ExecuteAsync
+    href: Virtufin.Core.Execution.IExecutor-3.html#Virtufin_Core_Execution_IExecutor_3_ExecuteAsync__0__1_
   - name: (
   - name: TState
   - name: ','
@@ -702,9 +716,9 @@ references:
   - name: TAction
   - name: )
   spec.vb:
-  - uid: Virtufin.Core.Execution.IExecutor`3.Execute(`0,`1)
-    name: Execute
-    href: Virtufin.Core.Execution.IExecutor-3.html#Virtufin_Core_Execution_IExecutor_3_Execute__0__1_
+  - uid: Virtufin.Core.Execution.IExecutor`3.ExecuteAsync(`0,`1)
+    name: ExecuteAsync
+    href: Virtufin.Core.Execution.IExecutor-3.html#Virtufin_Core_Execution_IExecutor_3_ExecuteAsync__0__1_
   - name: (
   - name: TState
   - name: ','
@@ -715,25 +729,71 @@ references:
   name: TAction
   nameWithType: TAction
   fullName: TAction
-- uid: System.ValueTuple`2
-  commentId: T:System.ValueTuple`2
-  name: (T1, T2)
-  nameWithType: (T1, T2)
-  fullName: (T1, T2)
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
   spec.csharp:
-  - name: (
-  - name: T1
-  - name: ','
-  - name: " "
-  - name: T2
-  - name: )
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
   spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: (
-  - name: T1
-  - name: ','
+  - name: Of
   - name: " "
-  - name: T2
+  - name: TResult
   - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
 - uid: Virtufin.Base.Execution.ObserveOnlyExecutor`3.Observed*
   commentId: Overload:Virtufin.Base.Execution.ObserveOnlyExecutor`3.Observed
   href: Virtufin.Base.Execution.ObserveOnlyExecutor-3.html#Virtufin_Base_Execution_ObserveOnlyExecutor_3_Observed

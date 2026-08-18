@@ -5,7 +5,7 @@ items:
   id: IExecutor`3
   parent: Virtufin.Core.Execution
   children:
-  - Virtufin.Core.Execution.IExecutor`3.Execute(`0,`1)
+  - Virtufin.Core.Execution.IExecutor`3.ExecuteAsync(`0,`1)
   - Virtufin.Core.Execution.IExecutor`3.Initial
   langs:
   - csharp
@@ -21,7 +21,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: IExecutor
     path: ../../../src/Virtufin.Core/Execution/IExecutor.cs
-    startLine: 29
+    startLine: 32
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Execution
@@ -40,11 +40,17 @@ items:
   remarks: >-
     This is the Kleisli morphism <code>A → IO E</code> from the domain spec, with
 
-    the executor state exposed explicitly. The deterministic executor is a
+    the executor state exposed explicitly and <code>Task</code> as the concrete
 
-    degenerate case where <code>IO = Identity</code>; live and stochastic
+    <code>IO</code>. A deterministic/backtest executor is the degenerate case
 
-    executors carry the IO effect.
+    that never actually suspends (its own hook stays synchronous internally
+
+    and wraps the result in a completed <code>Task</code>); a live executor
+
+    genuinely awaits the venue's response inside its own hook. Both satisfy
+
+    the same signature -- callers never need to know which they're driving.
   example: []
   syntax:
     content: 'public interface IExecutor<TState, TAction, TEvent> where TState : IExecutionState where TAction : ITradeAction where TEvent : ITradeEvent<TAction>'
@@ -82,7 +88,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: Initial
     path: ../../../src/Virtufin.Core/Execution/IExecutor.cs
-    startLine: 35
+    startLine: 38
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Execution
@@ -97,32 +103,32 @@ items:
   overload: Virtufin.Core.Execution.IExecutor`3.Initial*
   nameWithType.vb: IExecutor(Of TState, TAction, TEvent).Initial
   fullName.vb: Virtufin.Core.Execution.IExecutor(Of TState, TAction, TEvent).Initial
-- uid: Virtufin.Core.Execution.IExecutor`3.Execute(`0,`1)
-  commentId: M:Virtufin.Core.Execution.IExecutor`3.Execute(`0,`1)
-  id: Execute(`0,`1)
+- uid: Virtufin.Core.Execution.IExecutor`3.ExecuteAsync(`0,`1)
+  commentId: M:Virtufin.Core.Execution.IExecutor`3.ExecuteAsync(`0,`1)
+  id: ExecuteAsync(`0,`1)
   parent: Virtufin.Core.Execution.IExecutor`3
   langs:
   - csharp
   - vb
-  name: Execute(TState, TAction)
-  nameWithType: IExecutor<TState, TAction, TEvent>.Execute(TState, TAction)
-  fullName: Virtufin.Core.Execution.IExecutor<TState, TAction, TEvent>.Execute(TState, TAction)
+  name: ExecuteAsync(TState, TAction)
+  nameWithType: IExecutor<TState, TAction, TEvent>.ExecuteAsync(TState, TAction)
+  fullName: Virtufin.Core.Execution.IExecutor<TState, TAction, TEvent>.ExecuteAsync(TState, TAction)
   type: Method
   source:
     remote:
       path: src/Virtufin.Core/Execution/IExecutor.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
-    id: Execute
+    id: ExecuteAsync
     path: ../../../src/Virtufin.Core/Execution/IExecutor.cs
-    startLine: 41
+    startLine: 44
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Execution
   summary: Execute one <code class="typeparamref">TAction</code>, producing the next state and an outcome event.
   example: []
   syntax:
-    content: (TState NextState, TEvent Event) Execute(TState state, TAction action)
+    content: Task<(TState NextState, TEvent Event)> ExecuteAsync(TState state, TAction action)
     parameters:
     - id: state
       type: '{TState}'
@@ -131,12 +137,12 @@ items:
       type: '{TAction}'
       description: The action to execute.
     return:
-      type: System.ValueTuple{{TState},{TEvent}}
+      type: System.Threading.Tasks.Task{System.ValueTuple{{TState},{TEvent}}}
       description: Tuple of (next state, outcome event).
-    content.vb: Function Execute(state As TState, action As TAction) As (NextState As TState, [Event] As TEvent)
-  overload: Virtufin.Core.Execution.IExecutor`3.Execute*
-  nameWithType.vb: IExecutor(Of TState, TAction, TEvent).Execute(TState, TAction)
-  fullName.vb: Virtufin.Core.Execution.IExecutor(Of TState, TAction, TEvent).Execute(TState, TAction)
+    content.vb: Function ExecuteAsync(state As TState, action As TAction) As Task(Of (NextState As TState, [Event] As TEvent))
+  overload: Virtufin.Core.Execution.IExecutor`3.ExecuteAsync*
+  nameWithType.vb: IExecutor(Of TState, TAction, TEvent).ExecuteAsync(TState, TAction)
+  fullName.vb: Virtufin.Core.Execution.IExecutor(Of TState, TAction, TEvent).ExecuteAsync(TState, TAction)
 references:
 - uid: Virtufin.Core.Execution
   commentId: N:Virtufin.Core.Execution
@@ -186,32 +192,37 @@ references:
   name: TState
   nameWithType: TState
   fullName: TState
-- uid: Virtufin.Core.Execution.IExecutor`3.Execute*
-  commentId: Overload:Virtufin.Core.Execution.IExecutor`3.Execute
-  href: Virtufin.Core.Execution.IExecutor-3.html#Virtufin_Core_Execution_IExecutor_3_Execute__0__1_
-  name: Execute
-  nameWithType: IExecutor<TState, TAction, TEvent>.Execute
-  fullName: Virtufin.Core.Execution.IExecutor<TState, TAction, TEvent>.Execute
-  nameWithType.vb: IExecutor(Of TState, TAction, TEvent).Execute
-  fullName.vb: Virtufin.Core.Execution.IExecutor(Of TState, TAction, TEvent).Execute
+- uid: Virtufin.Core.Execution.IExecutor`3.ExecuteAsync*
+  commentId: Overload:Virtufin.Core.Execution.IExecutor`3.ExecuteAsync
+  href: Virtufin.Core.Execution.IExecutor-3.html#Virtufin_Core_Execution_IExecutor_3_ExecuteAsync__0__1_
+  name: ExecuteAsync
+  nameWithType: IExecutor<TState, TAction, TEvent>.ExecuteAsync
+  fullName: Virtufin.Core.Execution.IExecutor<TState, TAction, TEvent>.ExecuteAsync
+  nameWithType.vb: IExecutor(Of TState, TAction, TEvent).ExecuteAsync
+  fullName.vb: Virtufin.Core.Execution.IExecutor(Of TState, TAction, TEvent).ExecuteAsync
 - uid: '{TAction}'
   commentId: '!:TAction'
   definition: TAction
   name: TAction
   nameWithType: TAction
   fullName: TAction
-- uid: System.ValueTuple{{TState},{TEvent}}
-  commentId: T:System.ValueTuple{`0,`2}
-  parent: System
-  definition: System.ValueTuple`2
-  href: https://learn.microsoft.com/dotnet/api/system.valuetuple--0,-2-.nextstate
-  name: (TState NextState, TEvent Event)
-  nameWithType: (TState NextState, TEvent Event)
-  fullName: (TState NextState, TEvent Event)
-  nameWithType.vb: (NextState As TState, Event As TEvent)
-  fullName.vb: (NextState As TState, Event As TEvent)
-  name.vb: (NextState As TState, Event As TEvent)
+- uid: System.Threading.Tasks.Task{System.ValueTuple{{TState},{TEvent}}}
+  commentId: T:System.Threading.Tasks.Task{System.ValueTuple{`0,`2}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<(TState NextState, TEvent Event)>
+  nameWithType: Task<(TState NextState, TEvent Event)>
+  fullName: System.Threading.Tasks.Task<(TState NextState, TEvent Event)>
+  nameWithType.vb: Task(Of (NextState As TState, Event As TEvent))
+  fullName.vb: System.Threading.Tasks.Task(Of (NextState As TState, Event As TEvent))
+  name.vb: Task(Of (NextState As TState, Event As TEvent))
   spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
   - name: (
   - name: TState
   - name: " "
@@ -226,7 +237,15 @@ references:
     name: Event
     href: https://learn.microsoft.com/dotnet/api/system.valuetuple--0,-2-.event
   - name: )
+  - name: '>'
   spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
   - name: (
   - uid: System.ValueTuple{`0,`2}.NextState
     name: NextState
@@ -244,34 +263,74 @@ references:
   - name: As
   - name: " "
   - name: TEvent
+  - name: )
   - name: )
 - uid: TAction
   name: TAction
   nameWithType: TAction
   fullName: TAction
-- uid: System.ValueTuple`2
-  commentId: T:System.ValueTuple`2
-  name: (T1, T2)
-  nameWithType: (T1, T2)
-  fullName: (T1, T2)
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
   spec.csharp:
-  - name: (
-  - name: T1
-  - name: ','
-  - name: " "
-  - name: T2
-  - name: )
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
   spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: (
-  - name: T1
-  - name: ','
+  - name: Of
   - name: " "
-  - name: T2
+  - name: TResult
   - name: )
-- uid: System
-  commentId: N:System
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system
-  name: System
-  nameWithType: System
-  fullName: System
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

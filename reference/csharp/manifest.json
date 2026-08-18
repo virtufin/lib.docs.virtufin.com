@@ -1302,7 +1302,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Base.Execution.LiveExecutorBase<TState, TAction, TEvent>",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Execution.LiveExecutorBase-3.yml\" sourcestartlinenumber=\"1\">Live executor base for routing actions to a real exchange. Subclasses\ndefine the exchange-routing strategy in <xref href=\"Virtufin.Base.Execution.LiveExecutorBase%603.Process(%600%2c%601)\" data-throw-if-not-resolved=\"false\"></xref>. No\nassumptions about routing, fallback, or state evolution — all in the subclass.</p>\n"
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Execution.LiveExecutorBase-3.yml\" sourcestartlinenumber=\"1\">Live executor base for routing actions to a real exchange. Subclasses\ndefine the exchange-routing strategy in <xref href=\"Virtufin.Base.Execution.LiveExecutorBase%603.ProcessAsync(%600%2c%601)\" data-throw-if-not-resolved=\"false\"></xref>. No\nassumptions about routing, fallback, or state evolution — all in the subclass.</p>\n"
     },
     {
       "type": "ManagedReference",
