@@ -29,15 +29,13 @@ items:
   summary: Enriched withdrawal of a previously registered interest.
   example: []
   syntax:
-    content: 'public sealed record RichTradeAction.WithdrawInterest : RichTradeAction, ITradeAction, IEvent, IEquatable<IEvent>, IEquatable<RichTradeAction>, IEquatable<RichTradeAction.WithdrawInterest>'
-    content.vb: Public NotInheritable Class RichTradeAction.WithdrawInterest Inherits RichTradeAction Implements ITradeAction, IEvent, IEquatable(Of IEvent), IEquatable(Of RichTradeAction), IEquatable(Of RichTradeAction.WithdrawInterest)
+    content: 'public sealed record RichTradeAction.WithdrawInterest : RichTradeAction, ITradeAction, IEquatable<RichTradeAction>, IEquatable<RichTradeAction.WithdrawInterest>'
+    content.vb: Public NotInheritable Class RichTradeAction.WithdrawInterest Inherits RichTradeAction Implements ITradeAction, IEquatable(Of RichTradeAction), IEquatable(Of RichTradeAction.WithdrawInterest)
   inheritance:
   - System.Object
   - Virtufin.Base.Events.Trade.RichTradeAction
   implements:
   - Virtufin.Core.Events.Trade.ITradeAction
-  - Virtufin.Core.Events.IEvent
-  - System.IEquatable{Virtufin.Core.Events.IEvent}
   - System.IEquatable{Virtufin.Base.Events.Trade.RichTradeAction}
   - System.IEquatable{Virtufin.Base.Events.Trade.RichTradeAction.WithdrawInterest}
   inheritedMembers:
@@ -234,46 +232,6 @@ references:
   name: ITradeAction
   nameWithType: ITradeAction
   fullName: Virtufin.Core.Events.Trade.ITradeAction
-- uid: Virtufin.Core.Events.IEvent
-  commentId: T:Virtufin.Core.Events.IEvent
-  parent: Virtufin.Core.Events
-  href: Virtufin.Core.Events.IEvent.html
-  name: IEvent
-  nameWithType: IEvent
-  fullName: Virtufin.Core.Events.IEvent
-- uid: System.IEquatable{Virtufin.Core.Events.IEvent}
-  commentId: T:System.IEquatable{Virtufin.Core.Events.IEvent}
-  parent: System
-  definition: System.IEquatable`1
-  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  name: IEquatable<IEvent>
-  nameWithType: IEquatable<IEvent>
-  fullName: System.IEquatable<Virtufin.Core.Events.IEvent>
-  nameWithType.vb: IEquatable(Of IEvent)
-  fullName.vb: System.IEquatable(Of Virtufin.Core.Events.IEvent)
-  name.vb: IEquatable(Of IEvent)
-  spec.csharp:
-  - uid: System.IEquatable`1
-    name: IEquatable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  - name: <
-  - uid: Virtufin.Core.Events.IEvent
-    name: IEvent
-    href: Virtufin.Core.Events.IEvent.html
-  - name: '>'
-  spec.vb:
-  - uid: System.IEquatable`1
-    name: IEquatable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Virtufin.Core.Events.IEvent
-    name: IEvent
-    href: Virtufin.Core.Events.IEvent.html
-  - name: )
 - uid: System.IEquatable{Virtufin.Base.Events.Trade.RichTradeAction}
   commentId: T:System.IEquatable{Virtufin.Base.Events.Trade.RichTradeAction}
   parent: System
@@ -588,36 +546,6 @@ references:
   - uid: Virtufin.Core.Events.Trade
     name: Trade
     href: Virtufin.Core.Events.Trade.html
-- uid: Virtufin.Core.Events
-  commentId: N:Virtufin.Core.Events
-  href: Virtufin.html
-  name: Virtufin.Core.Events
-  nameWithType: Virtufin.Core.Events
-  fullName: Virtufin.Core.Events
-  spec.csharp:
-  - uid: Virtufin
-    name: Virtufin
-    href: Virtufin.html
-  - name: .
-  - uid: Virtufin.Core
-    name: Core
-    href: Virtufin.Core.html
-  - name: .
-  - uid: Virtufin.Core.Events
-    name: Events
-    href: Virtufin.Core.Events.html
-  spec.vb:
-  - uid: Virtufin
-    name: Virtufin
-    href: Virtufin.html
-  - name: .
-  - uid: Virtufin.Core
-    name: Core
-    href: Virtufin.Core.html
-  - name: .
-  - uid: Virtufin.Core.Events
-    name: Events
-    href: Virtufin.Core.Events.html
 - uid: System.IEquatable`1
   commentId: T:System.IEquatable`1
   isExternal: true

@@ -53,7 +53,7 @@ items:
     the same signature -- callers never need to know which they're driving.
   example: []
   syntax:
-    content: 'public interface IExecutor<TState, TAction, TEvent> where TState : IExecutionState where TAction : ITradeAction where TEvent : ITradeEvent<TAction>'
+    content: 'public interface IExecutor<TState, TAction, TEvent> where TState : IExecutionState where TAction : ITradeAction where TEvent : ITradeEvent<TAction, DateTimeOffset>'
     typeParameters:
     - id: TState
       description: Execution state type.
@@ -61,7 +61,7 @@ items:
       description: Trade action type the executor consumes.
     - id: TEvent
       description: Trade event type parameterised by <code class="typeparamref">TAction</code>.
-    content.vb: Public Interface IExecutor(Of TState As IExecutionState, TAction As ITradeAction, TEvent As ITradeEvent(Of TAction))
+    content.vb: Public Interface IExecutor(Of TState As IExecutionState, TAction As ITradeAction, TEvent As ITradeEvent(Of TAction, DateTimeOffset))
   derivedClasses:
   - Virtufin.Base.Execution.DeterministicExecutorBase`3
   - Virtufin.Base.Execution.LiveExecutorBase`3

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class RichMarketEvent&lt;T&gt;.CandleClosed | Virtufin .NET - C# API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RichMarketEvent&lt;T&gt;.CandleClosed | Virtufin .NET - C# API Reference ">
+      
+      <meta name="description" content="OHLCV candle closed (derived from a tick window).">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.png" alt="Virtufin.Dotnet">
+            Virtufin.Dotnet
+          </a>
+          <div class="git-info">
+            <a href="{git_repo_url}/commit/45512af6ddd2dea83a6e07586941067d3a75f7e4" target="_blank" rel="noopener" class="commit-badge" title="View commit 45512af6ddd2dea83a6e07586941067d3a75f7e4">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
+                <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">45512af6ddd2dea83a6e07586941067d3a75f7e4</text>
+              </svg>
+            </a>
+          </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Virtufin.Base.Events.Market.RichMarketEvent`1.CandleClosed">
+
+
+
+  <h1 id="Virtufin_Base_Events_Market_RichMarketEvent_1_CandleClosed" data-uid="Virtufin.Base.Events.Market.RichMarketEvent`1.CandleClosed" class="text-break">
+Class RichMarketEvent&lt;T&gt;.CandleClosed  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.Base.html">Base</a>.<a class="xref" href="Virtufin.Base.Events.html">Events</a>.<a class="xref" href="Virtufin.Base.Events.Market.html">Market</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Virtufin.Base.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>OHLCV candle closed (derived from a tick window).</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed record RichMarketEvent&lt;T&gt;.CandleClosed : RichMarketEvent&lt;T&gt;, IMarketEvent&lt;T&gt;, IEvent&lt;T&gt;, IEquatable&lt;IEvent&lt;T&gt;&gt;, IEquatable&lt;RichMarketEvent&lt;T&gt;&gt;, IEquatable&lt;RichMarketEvent&lt;T&gt;.CandleClosed&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Virtufin.Base.Events.Market.RichMarketEvent-1.html">RichMarketEvent</a>&lt;T&gt;</div>
+      <div><span class="xref">RichMarketEvent&lt;T&gt;.CandleClosed</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Virtufin.Core.Events.Market.IMarketEvent-1.html">IMarketEvent</a>&lt;T&gt;</div>
+      <div><a class="xref" href="Virtufin.Core.Events.IEvent-1.html">IEvent</a>&lt;T&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Virtufin.Core.Events.IEvent-1.html">IEvent</a>&lt;T&gt;&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Virtufin.Base.Events.Market.RichMarketEvent-1.html">RichMarketEvent</a>&lt;T&gt;&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Virtufin.Base.Events.Market.RichMarketEvent-1.html">RichMarketEvent</a>&lt;T&gt;.<a class="xref" href="Virtufin.Base.Events.Market.RichMarketEvent-1.CandleClosed.html">CandleClosed</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Virtufin_Base_Events_Market_RichMarketEvent_1_CandleClosed__ctor_" data-uid="Virtufin.Base.Events.Market.RichMarketEvent`1.CandleClosed.#ctor*"></a>
+
+  <h3 id="Virtufin_Base_Events_Market_RichMarketEvent_1_CandleClosed__ctor_Virtufin_Core_Events_Symbol_Virtufin_Core_Position_DecimalAmount_Virtufin_Core_Position_DecimalAmount_Virtufin_Core_Position_DecimalAmount_Virtufin_Core_Position_DecimalAmount_Virtufin_Core_Position_DecimalAmount__0__0_" data-uid="Virtufin.Base.Events.Market.RichMarketEvent`1.CandleClosed.#ctor(Virtufin.Core.Events.Symbol,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,`0,`0)">
+  CandleClosed(Symbol, DecimalAmount, DecimalAmount, DecimalAmount, DecimalAmount, DecimalAmount, T, T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Construct a CandleClosed event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CandleClosed(Symbol symbol, DecimalAmount open, DecimalAmount high, DecimalAmount low, DecimalAmount close, DecimalAmount volume, T windowStart, T windowEnd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>symbol</code> <a class="xref" href="Virtufin.Core.Events.Symbol.html">Symbol</a></dt>
+    <dd></dd>
+    <dt><code>open</code> <a class="xref" href="Virtufin.Core.Position.DecimalAmount.html">DecimalAmount</a></dt>
+    <dd></dd>
+    <dt><code>high</code> <a class="xref" href="Virtufin.Core.Position.DecimalAmount.html">DecimalAmount</a></dt>
+    <dd></dd>
+    <dt><code>low</code> <a class="xref" href="Virtufin.Core.Position.DecimalAmount.html">DecimalAmount</a></dt>
+    <dd></dd>
+    <dt><code>close</code> <a class="xref" href="Virtufin.Core.Position.DecimalAmount.html">DecimalAmount</a></dt>
+    <dd></dd>
+    <dt><code>volume</code> <a class="xref" href="Virtufin.Core.Position.DecimalAmount.html">DecimalAmount</a></dt>
+    <dd></dd>
+    <dt><code>windowStart</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>windowEnd</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Virtufin_Base_Events_Market_RichMarketEvent_1_CandleClosed_Close_" data-uid="Virtufin.Base.Events.Market.RichMarketEvent`1.CandleClosed.Close*"></a>
+
+  <h3 id="Virtufin_Base_Events_Market_RichMarketEvent_1_CandleClosed_Close" data-uid="Virtufin.Base.Events.Market.RichMarketEvent`1.CandleClosed.Close">
+  Close
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Close price.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DecimalAmount Close { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Core.Position.DecimalAmount.html">DecimalAmount</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Base_Events_Market_RichMarketEvent_1_CandleClosed_High_" data-uid="Virtufin.Base.Events.Market.RichMarketEvent`1.CandleClosed.High*"></a>
+
+  <h3 id="Virtufin_Base_Events_Market_RichMarketEvent_1_CandleClosed_High" data-uid="Virtufin.Base.Events.Market.RichMarketEvent`1.CandleClosed.High">
+  High
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>High price.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DecimalAmount High { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Core.Position.DecimalAmount.html">DecimalAmount</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Base_Events_Market_RichMarketEvent_1_CandleClosed_Low_" data-uid="Virtufin.Base.Events.Market.RichMarketEvent`1.CandleClosed.Low*"></a>
+
+  <h3 id="Virtufin_Base_Events_Market_RichMarketEvent_1_CandleClosed_Low" data-uid="Virtufin.Base.Events.Market.RichMarketEvent`1.CandleClosed.Low">
+  Low
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Low price.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DecimalAmount Low { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Core.Position.DecimalAmount.html">DecimalAmount</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Base_Events_Market_RichMarketEvent_1_CandleClosed_Open_" data-uid="Virtufin.Base.Events.Market.RichMarketEvent`1.CandleClosed.Open*"></a>
+
+  <h3 id="Virtufin_Base_Events_Market_RichMarketEvent_1_CandleClosed_Open" data-uid="Virtufin.Base.Events.Market.RichMarketEvent`1.CandleClosed.Open">
+  Open
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Open price.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DecimalAmount Open { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Core.Position.DecimalAmount.html">DecimalAmount</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Base_Events_Market_RichMarketEvent_1_CandleClosed_Symbol_" data-uid="Virtufin.Base.Events.Market.RichMarketEvent`1.CandleClosed.Symbol*"></a>
+
+  <h3 id="Virtufin_Base_Events_Market_RichMarketEvent_1_CandleClosed_Symbol" data-uid="Virtufin.Base.Events.Market.RichMarketEvent`1.CandleClosed.Symbol">
+  Symbol
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The instrument the observation refers to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Symbol Symbol { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Core.Events.Symbol.html">Symbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Base_Events_Market_RichMarketEvent_1_CandleClosed_Time_" data-uid="Virtufin.Base.Events.Market.RichMarketEvent`1.CandleClosed.Time*"></a>
+
+  <h3 id="Virtufin_Base_Events_Market_RichMarketEvent_1_CandleClosed_Time" data-uid="Virtufin.Base.Events.Market.RichMarketEvent`1.CandleClosed.Time">
+  Time
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The time at which this event's fact occurred.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override T Time { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Virtufin_Base_Events_Market_RichMarketEvent_1_CandleClosed_Time_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The candle's own time is when it closed, i.e. <a class="xref" href="Virtufin.Base.Events.Market.RichMarketEvent-1.CandleClosed.html#Virtufin_Base_Events_Market_RichMarketEvent_1_CandleClosed_WindowEnd">WindowEnd</a>.</p>
+</div>
+
+
+
+
+  <a id="Virtufin_Base_Events_Market_RichMarketEvent_1_CandleClosed_Volume_" data-uid="Virtufin.Base.Events.Market.RichMarketEvent`1.CandleClosed.Volume*"></a>
+
+  <h3 id="Virtufin_Base_Events_Market_RichMarketEvent_1_CandleClosed_Volume" data-uid="Virtufin.Base.Events.Market.RichMarketEvent`1.CandleClosed.Volume">
+  Volume
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Volume traded during the candle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DecimalAmount Volume { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Core.Position.DecimalAmount.html">DecimalAmount</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Base_Events_Market_RichMarketEvent_1_CandleClosed_WindowEnd_" data-uid="Virtufin.Base.Events.Market.RichMarketEvent`1.CandleClosed.WindowEnd*"></a>
+
+  <h3 id="Virtufin_Base_Events_Market_RichMarketEvent_1_CandleClosed_WindowEnd" data-uid="Virtufin.Base.Events.Market.RichMarketEvent`1.CandleClosed.WindowEnd">
+  WindowEnd
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>End of the candle window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T WindowEnd { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Base_Events_Market_RichMarketEvent_1_CandleClosed_WindowStart_" data-uid="Virtufin.Base.Events.Market.RichMarketEvent`1.CandleClosed.WindowStart*"></a>
+
+  <h3 id="Virtufin_Base_Events_Market_RichMarketEvent_1_CandleClosed_WindowStart" data-uid="Virtufin.Base.Events.Market.RichMarketEvent`1.CandleClosed.WindowStart">
+  WindowStart
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Start of the candle window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T WindowStart { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2026 Häner Consulting. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

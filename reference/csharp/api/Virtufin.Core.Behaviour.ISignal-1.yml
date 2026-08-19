@@ -37,6 +37,8 @@ items:
     - id: T
       description: The signal's value type (e.g. <code>Portfolio</code>, <code>PositionState</code>, <code>Amount</code>).
     content.vb: Public Interface ISignal(Of T)
+  derivedClasses:
+  - Virtufin.Base.Behaviour.SimpleMovingAverage`2
   nameWithType.vb: ISignal(Of T)
   fullName.vb: Virtufin.Core.Behaviour.ISignal(Of T)
   name.vb: ISignal(Of T)

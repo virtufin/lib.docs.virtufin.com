@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class SimpleMovingAverage&lt;TTime, TValue&gt; | Virtufin .NET - C# API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SimpleMovingAverage&lt;TTime, TValue&gt; | Virtufin .NET - C# API Reference ">
+      
+      <meta name="description" content="Time-windowed simple moving average. &amp;quot;Simple&amp;quot; describes the averaging method (uniformly-weighted mean), not the implementation — count-based windowing is the special case where samples happen to arrive at a regular cadence, so this is windowed by time in general.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.png" alt="Virtufin.Dotnet">
+            Virtufin.Dotnet
+          </a>
+          <div class="git-info">
+            <a href="{git_repo_url}/commit/45512af6ddd2dea83a6e07586941067d3a75f7e4" target="_blank" rel="noopener" class="commit-badge" title="View commit 45512af6ddd2dea83a6e07586941067d3a75f7e4">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
+                <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">45512af6ddd2dea83a6e07586941067d3a75f7e4</text>
+              </svg>
+            </a>
+          </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Virtufin.Base.Behaviour.SimpleMovingAverage`2">
+
+
+
+  <h1 id="Virtufin_Base_Behaviour_SimpleMovingAverage_2" data-uid="Virtufin.Base.Behaviour.SimpleMovingAverage`2" class="text-break">
+Class SimpleMovingAverage&lt;TTime, TValue&gt;  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.Base.html">Base</a>.<a class="xref" href="Virtufin.Base.Behaviour.html">Behaviour</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Virtufin.Base.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Time-windowed simple moving average. &quot;Simple&quot; describes the averaging
+method (uniformly-weighted mean), not the implementation — count-based
+windowing is the special case where samples happen to arrive at a regular
+cadence, so this is windowed by time in general.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class SimpleMovingAverage&lt;TTime, TValue&gt; : IIndicator&lt;SimpleMovingAverage&lt;TTime, TValue&gt;, TimestampedSample&lt;TTime, TValue&gt;, TValue&gt;, ISignal&lt;TValue&gt; where TTime : IComparable&lt;TTime&gt; where TValue : IAdditionOperators&lt;TValue, TValue, TValue&gt;, ISubtractionOperators&lt;TValue, TValue, TValue&gt;, IDivisionOperators&lt;TValue, TValue, TValue&gt;</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TTime</code></dt>
+    <dd><p>The sample time type.</p>
+</dd>
+    <dt><code>TValue</code></dt>
+    <dd><p>The sample/average value type.</p>
+</dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SimpleMovingAverage&lt;TTime, TValue&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Virtufin.Core.Behaviour.IIndicator-3.html">IIndicator</a>&lt;<a class="xref" href="Virtufin.Base.Behaviour.SimpleMovingAverage-2.html">SimpleMovingAverage</a>&lt;TTime, TValue&gt;, <a class="xref" href="Virtufin.Core.Events.TimestampedSample-2.html">TimestampedSample</a>&lt;TTime, TValue&gt;, TValue&gt;</div>
+      <div><a class="xref" href="Virtufin.Core.Behaviour.ISignal-1.html">ISignal</a>&lt;TValue&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="Virtufin_Base_Behaviour_SimpleMovingAverage_2_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Immutable: <a class="xref" href="Virtufin.Base.Behaviour.SimpleMovingAverage-2.html#Virtufin_Base_Behaviour_SimpleMovingAverage_2_Add_Virtufin_Core_Events_TimestampedSample__0__1__">Add(TimestampedSample&lt;TTime, TValue&gt;)</a> returns a new instance, safe to carry inside
+an <code>IStrategyState</code> record without mutation. Backed by an
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablequeue-1">ImmutableQueue&lt;T&gt;</a> of in-window samples (append at back,
+evict from front, peek front — O(1) amortized per operation), with a
+running sum maintained incrementally rather than resummed on every
+<a class="xref" href="Virtufin.Base.Behaviour.SimpleMovingAverage-2.html#Virtufin_Base_Behaviour_SimpleMovingAverage_2_Value">Value</a> read.</p>
+</div>
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Virtufin_Base_Behaviour_SimpleMovingAverage_2_Count_" data-uid="Virtufin.Base.Behaviour.SimpleMovingAverage`2.Count*"></a>
+
+  <h3 id="Virtufin_Base_Behaviour_SimpleMovingAverage_2_Count" data-uid="Virtufin.Base.Behaviour.SimpleMovingAverage`2.Count">
+  Count
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Number of samples currently inside the window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Base_Behaviour_SimpleMovingAverage_2_Value_" data-uid="Virtufin.Base.Behaviour.SimpleMovingAverage`2.Value*"></a>
+
+  <h3 id="Virtufin_Base_Behaviour_SimpleMovingAverage_2_Value" data-uid="Virtufin.Base.Behaviour.SimpleMovingAverage`2.Value">
+  Value
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The current signal value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TValue Value { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TValue</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>No samples have been added yet.</p>
+</dd>
+  </dl>
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Virtufin_Base_Behaviour_SimpleMovingAverage_2_Add_" data-uid="Virtufin.Base.Behaviour.SimpleMovingAverage`2.Add*"></a>
+
+  <h3 id="Virtufin_Base_Behaviour_SimpleMovingAverage_2_Add_Virtufin_Core_Events_TimestampedSample__0__1__" data-uid="Virtufin.Base.Behaviour.SimpleMovingAverage`2.Add(Virtufin.Core.Events.TimestampedSample{`0,`1})">
+  Add(TimestampedSample&lt;TTime, TValue&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fold one more sample in, returning the updated indicator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleMovingAverage&lt;TTime, TValue&gt; Add(TimestampedSample&lt;TTime, TValue&gt; sample)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sample</code> <a class="xref" href="Virtufin.Core.Events.TimestampedSample-2.html">TimestampedSample</a>&lt;TTime, TValue&gt;</dt>
+    <dd><p>The new observation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Base.Behaviour.SimpleMovingAverage-2.html">SimpleMovingAverage</a>&lt;TTime, TValue&gt;</dt>
+    <dd><p>A new indicator instance reflecting <code class="paramref">sample</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Base_Behaviour_SimpleMovingAverage_2_Empty_" data-uid="Virtufin.Base.Behaviour.SimpleMovingAverage`2.Empty*"></a>
+
+  <h3 id="Virtufin_Base_Behaviour_SimpleMovingAverage_2_Empty_System_Func_System_Int32__1__System_Func__0__0_System_Boolean__" data-uid="Virtufin.Base.Behaviour.SimpleMovingAverage`2.Empty(System.Func{System.Int32,`1},System.Func{`0,`0,System.Boolean})">
+  Empty(Func&lt;int, TValue&gt;, Func&lt;TTime, TTime, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Construct an empty average with no samples yet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SimpleMovingAverage&lt;TTime, TValue&gt; Empty(Func&lt;int, TValue&gt; fromCount, Func&lt;TTime, TTime, bool&gt; isExpired)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fromCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, TValue&gt;</dt>
+    <dd><p>Converts a sample count into a <code class="typeparamref">TValue</code>
+divisor — reusable across every <a class="xref" href="Virtufin.Base.Behaviour.SimpleMovingAverage-2.html#Virtufin_Base_Behaviour_SimpleMovingAverage_2_Add_Virtufin_Core_Events_TimestampedSample__0__1__">Add(TimestampedSample&lt;TTime, TValue&gt;)</a> call, since the in-window count
+varies under time-based windowing (e.g. for <code>decimal</code>: <code>count =&gt; (decimal)count</code>).</p>
+</dd>
+    <dt><code>isExpired</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;TTime, TTime, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>Called as <code>isExpired(oldestSampleTime, newestTime)</code> during
+eviction to decide whether the oldest in-window sample has fallen out of the window
+(e.g. for <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>: <code>(old, latest) =&gt; (latest - old) &gt; windowDuration</code>).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Base.Behaviour.SimpleMovingAverage-2.html">SimpleMovingAverage</a>&lt;TTime, TValue&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2026 Häner Consulting. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

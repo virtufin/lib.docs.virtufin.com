@@ -1,0 +1,1185 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.Behaviour.SimpleMovingAverage`2
+  commentId: T:Virtufin.Base.Behaviour.SimpleMovingAverage`2
+  id: SimpleMovingAverage`2
+  parent: Virtufin.Base.Behaviour
+  children:
+  - Virtufin.Base.Behaviour.SimpleMovingAverage`2.Add(Virtufin.Core.Events.TimestampedSample{`0,`1})
+  - Virtufin.Base.Behaviour.SimpleMovingAverage`2.Count
+  - Virtufin.Base.Behaviour.SimpleMovingAverage`2.Empty(System.Func{System.Int32,`1},System.Func{`0,`0,System.Boolean})
+  - Virtufin.Base.Behaviour.SimpleMovingAverage`2.Value
+  langs:
+  - csharp
+  - vb
+  name: SimpleMovingAverage<TTime, TValue>
+  nameWithType: SimpleMovingAverage<TTime, TValue>
+  fullName: Virtufin.Base.Behaviour.SimpleMovingAverage<TTime, TValue>
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Base/Behaviour/SimpleMovingAverage.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: SimpleMovingAverage
+    path: ../../../src/Virtufin.Base/Behaviour/SimpleMovingAverage.cs
+    startLine: 23
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Behaviour
+  summary: >-
+    Time-windowed simple moving average. "Simple" describes the averaging
+
+    method (uniformly-weighted mean), not the implementation — count-based
+
+    windowing is the special case where samples happen to arrive at a regular
+
+    cadence, so this is windowed by time in general.
+  remarks: >-
+    Immutable: <xref href="Virtufin.Base.Behaviour.SimpleMovingAverage%602.Add(Virtufin.Core.Events.TimestampedSample%7b%600%2c%601%7d)" data-throw-if-not-resolved="false"></xref> returns a new instance, safe to carry inside
+
+    an <code>IStrategyState</code> record without mutation. Backed by an
+
+    <xref href="System.Collections.Immutable.ImmutableQueue%601" data-throw-if-not-resolved="false"></xref> of in-window samples (append at back,
+
+    evict from front, peek front — O(1) amortized per operation), with a
+
+    running sum maintained incrementally rather than resummed on every
+
+    <xref href="Virtufin.Base.Behaviour.SimpleMovingAverage%602.Value" data-throw-if-not-resolved="false"></xref> read.
+  example: []
+  syntax:
+    content: 'public sealed class SimpleMovingAverage<TTime, TValue> : IIndicator<SimpleMovingAverage<TTime, TValue>, TimestampedSample<TTime, TValue>, TValue>, ISignal<TValue> where TTime : IComparable<TTime> where TValue : IAdditionOperators<TValue, TValue, TValue>, ISubtractionOperators<TValue, TValue, TValue>, IDivisionOperators<TValue, TValue, TValue>'
+    typeParameters:
+    - id: TTime
+      description: The sample time type.
+    - id: TValue
+      description: The sample/average value type.
+    content.vb: Public NotInheritable Class SimpleMovingAverage(Of TTime As IComparable(Of TTime), TValue As {IAdditionOperators(Of TValue, TValue, TValue), ISubtractionOperators(Of TValue, TValue, TValue), IDivisionOperators(Of TValue, TValue, TValue)}) Implements IIndicator(Of SimpleMovingAverage(Of TTime, TValue), TimestampedSample(Of TTime, TValue), TValue), ISignal(Of TValue)
+  inheritance:
+  - System.Object
+  implements:
+  - Virtufin.Core.Behaviour.IIndicator{Virtufin.Base.Behaviour.SimpleMovingAverage`2,Virtufin.Core.Events.TimestampedSample{{TTime},{TValue}},{TValue}}
+  - Virtufin.Core.Behaviour.ISignal{{TValue}}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: SimpleMovingAverage(Of TTime, TValue)
+  fullName.vb: Virtufin.Base.Behaviour.SimpleMovingAverage(Of TTime, TValue)
+  name.vb: SimpleMovingAverage(Of TTime, TValue)
+- uid: Virtufin.Base.Behaviour.SimpleMovingAverage`2.Empty(System.Func{System.Int32,`1},System.Func{`0,`0,System.Boolean})
+  commentId: M:Virtufin.Base.Behaviour.SimpleMovingAverage`2.Empty(System.Func{System.Int32,`1},System.Func{`0,`0,System.Boolean})
+  id: Empty(System.Func{System.Int32,`1},System.Func{`0,`0,System.Boolean})
+  parent: Virtufin.Base.Behaviour.SimpleMovingAverage`2
+  langs:
+  - csharp
+  - vb
+  name: Empty(Func<int, TValue>, Func<TTime, TTime, bool>)
+  nameWithType: SimpleMovingAverage<TTime, TValue>.Empty(Func<int, TValue>, Func<TTime, TTime, bool>)
+  fullName: Virtufin.Base.Behaviour.SimpleMovingAverage<TTime, TValue>.Empty(System.Func<int, TValue>, System.Func<TTime, TTime, bool>)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/Behaviour/SimpleMovingAverage.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Empty
+    path: ../../../src/Virtufin.Base/Behaviour/SimpleMovingAverage.cs
+    startLine: 59
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Behaviour
+  summary: Construct an empty average with no samples yet.
+  example: []
+  syntax:
+    content: public static SimpleMovingAverage<TTime, TValue> Empty(Func<int, TValue> fromCount, Func<TTime, TTime, bool> isExpired)
+    parameters:
+    - id: fromCount
+      type: System.Func{System.Int32,{TValue}}
+      description: >-
+        Converts a sample count into a <code class="typeparamref">TValue</code>
+            divisor — reusable across every <xref href="Virtufin.Base.Behaviour.SimpleMovingAverage%602.Add(Virtufin.Core.Events.TimestampedSample%7b%600%2c%601%7d)" data-throw-if-not-resolved="false"></xref> call, since the in-window count
+            varies under time-based windowing (e.g. for <code>decimal</code>: <code>count =&gt; (decimal)count</code>).
+    - id: isExpired
+      type: System.Func{{TTime},{TTime},System.Boolean}
+      description: >-
+        Called as <code>isExpired(oldestSampleTime, newestTime)</code> during
+            eviction to decide whether the oldest in-window sample has fallen out of the window
+            (e.g. for <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref>: <code>(old, latest) =&gt; (latest - old) &gt; windowDuration</code>).
+    return:
+      type: Virtufin.Base.Behaviour.SimpleMovingAverage`2
+    content.vb: Public Shared Function Empty(fromCount As Func(Of Integer, TValue), isExpired As Func(Of TTime, TTime, Boolean)) As SimpleMovingAverage(Of TTime, TValue)
+  overload: Virtufin.Base.Behaviour.SimpleMovingAverage`2.Empty*
+  nameWithType.vb: SimpleMovingAverage(Of TTime, TValue).Empty(Func(Of Integer, TValue), Func(Of TTime, TTime, Boolean))
+  fullName.vb: Virtufin.Base.Behaviour.SimpleMovingAverage(Of TTime, TValue).Empty(System.Func(Of Integer, TValue), System.Func(Of TTime, TTime, Boolean))
+  name.vb: Empty(Func(Of Integer, TValue), Func(Of TTime, TTime, Boolean))
+- uid: Virtufin.Base.Behaviour.SimpleMovingAverage`2.Count
+  commentId: P:Virtufin.Base.Behaviour.SimpleMovingAverage`2.Count
+  id: Count
+  parent: Virtufin.Base.Behaviour.SimpleMovingAverage`2
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: SimpleMovingAverage<TTime, TValue>.Count
+  fullName: Virtufin.Base.Behaviour.SimpleMovingAverage<TTime, TValue>.Count
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Behaviour/SimpleMovingAverage.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Count
+    path: ../../../src/Virtufin.Base/Behaviour/SimpleMovingAverage.cs
+    startLine: 65
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Behaviour
+  summary: Number of samples currently inside the window.
+  example: []
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: Virtufin.Base.Behaviour.SimpleMovingAverage`2.Count*
+  nameWithType.vb: SimpleMovingAverage(Of TTime, TValue).Count
+  fullName.vb: Virtufin.Base.Behaviour.SimpleMovingAverage(Of TTime, TValue).Count
+- uid: Virtufin.Base.Behaviour.SimpleMovingAverage`2.Value
+  commentId: P:Virtufin.Base.Behaviour.SimpleMovingAverage`2.Value
+  id: Value
+  parent: Virtufin.Base.Behaviour.SimpleMovingAverage`2
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: SimpleMovingAverage<TTime, TValue>.Value
+  fullName: Virtufin.Base.Behaviour.SimpleMovingAverage<TTime, TValue>.Value
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Behaviour/SimpleMovingAverage.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Value
+    path: ../../../src/Virtufin.Base/Behaviour/SimpleMovingAverage.cs
+    startLine: 69
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Behaviour
+  summary: The current signal value.
+  example: []
+  syntax:
+    content: public TValue Value { get; }
+    parameters: []
+    return:
+      type: '{TValue}'
+    content.vb: Public ReadOnly Property Value As TValue
+  overload: Virtufin.Base.Behaviour.SimpleMovingAverage`2.Value*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: No samples have been added yet.
+  implements:
+  - Virtufin.Core.Behaviour.ISignal{{TValue}}.Value
+  nameWithType.vb: SimpleMovingAverage(Of TTime, TValue).Value
+  fullName.vb: Virtufin.Base.Behaviour.SimpleMovingAverage(Of TTime, TValue).Value
+- uid: Virtufin.Base.Behaviour.SimpleMovingAverage`2.Add(Virtufin.Core.Events.TimestampedSample{`0,`1})
+  commentId: M:Virtufin.Base.Behaviour.SimpleMovingAverage`2.Add(Virtufin.Core.Events.TimestampedSample{`0,`1})
+  id: Add(Virtufin.Core.Events.TimestampedSample{`0,`1})
+  parent: Virtufin.Base.Behaviour.SimpleMovingAverage`2
+  langs:
+  - csharp
+  - vb
+  name: Add(TimestampedSample<TTime, TValue>)
+  nameWithType: SimpleMovingAverage<TTime, TValue>.Add(TimestampedSample<TTime, TValue>)
+  fullName: Virtufin.Base.Behaviour.SimpleMovingAverage<TTime, TValue>.Add(Virtufin.Core.Events.TimestampedSample<TTime, TValue>)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/Behaviour/SimpleMovingAverage.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Add
+    path: ../../../src/Virtufin.Base/Behaviour/SimpleMovingAverage.cs
+    startLine: 75
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Behaviour
+  summary: Fold one more sample in, returning the updated indicator.
+  example: []
+  syntax:
+    content: public SimpleMovingAverage<TTime, TValue> Add(TimestampedSample<TTime, TValue> sample)
+    parameters:
+    - id: sample
+      type: Virtufin.Core.Events.TimestampedSample{{TTime},{TValue}}
+      description: The new observation.
+    return:
+      type: Virtufin.Base.Behaviour.SimpleMovingAverage`2
+      description: A new indicator instance reflecting <code class="paramref">sample</code>.
+    content.vb: Public Function Add(sample As TimestampedSample(Of TTime, TValue)) As SimpleMovingAverage(Of TTime, TValue)
+  overload: Virtufin.Base.Behaviour.SimpleMovingAverage`2.Add*
+  implements:
+  - Virtufin.Core.Behaviour.IIndicator{Virtufin.Base.Behaviour.SimpleMovingAverage`2,Virtufin.Core.Events.TimestampedSample{{TTime},{TValue}},{TValue}}.Add(Virtufin.Core.Events.TimestampedSample{{TTime},{TValue}})
+  nameWithType.vb: SimpleMovingAverage(Of TTime, TValue).Add(TimestampedSample(Of TTime, TValue))
+  fullName.vb: Virtufin.Base.Behaviour.SimpleMovingAverage(Of TTime, TValue).Add(Virtufin.Core.Events.TimestampedSample(Of TTime, TValue))
+  name.vb: Add(TimestampedSample(Of TTime, TValue))
+references:
+- uid: Virtufin.Base.Behaviour.SimpleMovingAverage`2.Add(Virtufin.Core.Events.TimestampedSample{`0,`1})
+  commentId: M:Virtufin.Base.Behaviour.SimpleMovingAverage`2.Add(Virtufin.Core.Events.TimestampedSample{`0,`1})
+  href: Virtufin.Base.Behaviour.SimpleMovingAverage-2.html#Virtufin_Base_Behaviour_SimpleMovingAverage_2_Add_Virtufin_Core_Events_TimestampedSample__0__1__
+  name: Add(TimestampedSample<TTime, TValue>)
+  nameWithType: SimpleMovingAverage<TTime, TValue>.Add(TimestampedSample<TTime, TValue>)
+  fullName: Virtufin.Base.Behaviour.SimpleMovingAverage<TTime, TValue>.Add(Virtufin.Core.Events.TimestampedSample<TTime, TValue>)
+  nameWithType.vb: SimpleMovingAverage(Of TTime, TValue).Add(TimestampedSample(Of TTime, TValue))
+  fullName.vb: Virtufin.Base.Behaviour.SimpleMovingAverage(Of TTime, TValue).Add(Virtufin.Core.Events.TimestampedSample(Of TTime, TValue))
+  name.vb: Add(TimestampedSample(Of TTime, TValue))
+  spec.csharp:
+  - uid: Virtufin.Base.Behaviour.SimpleMovingAverage`2.Add(Virtufin.Core.Events.TimestampedSample{`0,`1})
+    name: Add
+    href: Virtufin.Base.Behaviour.SimpleMovingAverage-2.html#Virtufin_Base_Behaviour_SimpleMovingAverage_2_Add_Virtufin_Core_Events_TimestampedSample__0__1__
+  - name: (
+  - uid: Virtufin.Core.Events.TimestampedSample`2
+    name: TimestampedSample
+    href: Virtufin.Core.Events.TimestampedSample-2.html
+  - name: <
+  - name: TTime
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Base.Behaviour.SimpleMovingAverage`2.Add(Virtufin.Core.Events.TimestampedSample{`0,`1})
+    name: Add
+    href: Virtufin.Base.Behaviour.SimpleMovingAverage-2.html#Virtufin_Base_Behaviour_SimpleMovingAverage_2_Add_Virtufin_Core_Events_TimestampedSample__0__1__
+  - name: (
+  - uid: Virtufin.Core.Events.TimestampedSample`2
+    name: TimestampedSample
+    href: Virtufin.Core.Events.TimestampedSample-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTime
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: )
+- uid: System.Collections.Immutable.ImmutableQueue`1
+  commentId: T:System.Collections.Immutable.ImmutableQueue`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablequeue-1
+  name: ImmutableQueue<T>
+  nameWithType: ImmutableQueue<T>
+  fullName: System.Collections.Immutable.ImmutableQueue<T>
+  nameWithType.vb: ImmutableQueue(Of T)
+  fullName.vb: System.Collections.Immutable.ImmutableQueue(Of T)
+  name.vb: ImmutableQueue(Of T)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableQueue`1
+    name: ImmutableQueue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablequeue-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableQueue`1
+    name: ImmutableQueue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablequeue-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Base.Behaviour.SimpleMovingAverage`2.Value
+  commentId: P:Virtufin.Base.Behaviour.SimpleMovingAverage`2.Value
+  href: Virtufin.Base.Behaviour.SimpleMovingAverage-2.html#Virtufin_Base_Behaviour_SimpleMovingAverage_2_Value
+  name: Value
+  nameWithType: SimpleMovingAverage<TTime, TValue>.Value
+  fullName: Virtufin.Base.Behaviour.SimpleMovingAverage<TTime, TValue>.Value
+  nameWithType.vb: SimpleMovingAverage(Of TTime, TValue).Value
+  fullName.vb: Virtufin.Base.Behaviour.SimpleMovingAverage(Of TTime, TValue).Value
+- uid: Virtufin.Base.Behaviour
+  commentId: N:Virtufin.Base.Behaviour
+  href: Virtufin.html
+  name: Virtufin.Base.Behaviour
+  nameWithType: Virtufin.Base.Behaviour
+  fullName: Virtufin.Base.Behaviour
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Behaviour
+    name: Behaviour
+    href: Virtufin.Base.Behaviour.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Behaviour
+    name: Behaviour
+    href: Virtufin.Base.Behaviour.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.Core.Behaviour.IIndicator{Virtufin.Base.Behaviour.SimpleMovingAverage`2,Virtufin.Core.Events.TimestampedSample{{TTime},{TValue}},{TValue}}
+  commentId: T:Virtufin.Core.Behaviour.IIndicator{Virtufin.Base.Behaviour.SimpleMovingAverage`2,Virtufin.Core.Events.TimestampedSample{`0,`1},`1}
+  parent: Virtufin.Core.Behaviour
+  definition: Virtufin.Core.Behaviour.IIndicator`3
+  href: Virtufin.Core.Behaviour.IIndicator-3.html
+  name: IIndicator<SimpleMovingAverage<TTime, TValue>, TimestampedSample<TTime, TValue>, TValue>
+  nameWithType: IIndicator<SimpleMovingAverage<TTime, TValue>, TimestampedSample<TTime, TValue>, TValue>
+  fullName: Virtufin.Core.Behaviour.IIndicator<Virtufin.Base.Behaviour.SimpleMovingAverage<TTime, TValue>, Virtufin.Core.Events.TimestampedSample<TTime, TValue>, TValue>
+  nameWithType.vb: IIndicator(Of SimpleMovingAverage(Of TTime, TValue), TimestampedSample(Of TTime, TValue), TValue)
+  fullName.vb: Virtufin.Core.Behaviour.IIndicator(Of Virtufin.Base.Behaviour.SimpleMovingAverage(Of TTime, TValue), Virtufin.Core.Events.TimestampedSample(Of TTime, TValue), TValue)
+  name.vb: IIndicator(Of SimpleMovingAverage(Of TTime, TValue), TimestampedSample(Of TTime, TValue), TValue)
+  spec.csharp:
+  - uid: Virtufin.Core.Behaviour.IIndicator`3
+    name: IIndicator
+    href: Virtufin.Core.Behaviour.IIndicator-3.html
+  - name: <
+  - uid: Virtufin.Base.Behaviour.SimpleMovingAverage`2
+    name: SimpleMovingAverage
+    href: Virtufin.Base.Behaviour.SimpleMovingAverage-2.html
+  - name: <
+  - name: TTime
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Events.TimestampedSample`2
+    name: TimestampedSample
+    href: Virtufin.Core.Events.TimestampedSample-2.html
+  - name: <
+  - name: TTime
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Behaviour.IIndicator`3
+    name: IIndicator
+    href: Virtufin.Core.Behaviour.IIndicator-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Base.Behaviour.SimpleMovingAverage`2
+    name: SimpleMovingAverage
+    href: Virtufin.Base.Behaviour.SimpleMovingAverage-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTime
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Events.TimestampedSample`2
+    name: TimestampedSample
+    href: Virtufin.Core.Events.TimestampedSample-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTime
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Virtufin.Core.Behaviour.ISignal{{TValue}}
+  commentId: T:Virtufin.Core.Behaviour.ISignal{`2}
+  parent: Virtufin.Core.Behaviour
+  definition: Virtufin.Core.Behaviour.ISignal`1
+  href: Virtufin.Core.Behaviour.ISignal-1.html
+  name: ISignal<TValue>
+  nameWithType: ISignal<TValue>
+  fullName: Virtufin.Core.Behaviour.ISignal<TValue>
+  nameWithType.vb: ISignal(Of TValue)
+  fullName.vb: Virtufin.Core.Behaviour.ISignal(Of TValue)
+  name.vb: ISignal(Of TValue)
+  spec.csharp:
+  - uid: Virtufin.Core.Behaviour.ISignal`1
+    name: ISignal
+    href: Virtufin.Core.Behaviour.ISignal-1.html
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Behaviour.ISignal`1
+    name: ISignal
+    href: Virtufin.Core.Behaviour.ISignal-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Core.Behaviour.IIndicator`3
+  commentId: T:Virtufin.Core.Behaviour.IIndicator`3
+  href: Virtufin.Core.Behaviour.IIndicator-3.html
+  name: IIndicator<TSelf, TSample, TValue>
+  nameWithType: IIndicator<TSelf, TSample, TValue>
+  fullName: Virtufin.Core.Behaviour.IIndicator<TSelf, TSample, TValue>
+  nameWithType.vb: IIndicator(Of TSelf, TSample, TValue)
+  fullName.vb: Virtufin.Core.Behaviour.IIndicator(Of TSelf, TSample, TValue)
+  name.vb: IIndicator(Of TSelf, TSample, TValue)
+  spec.csharp:
+  - uid: Virtufin.Core.Behaviour.IIndicator`3
+    name: IIndicator
+    href: Virtufin.Core.Behaviour.IIndicator-3.html
+  - name: <
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TSample
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Behaviour.IIndicator`3
+    name: IIndicator
+    href: Virtufin.Core.Behaviour.IIndicator-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TSample
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Virtufin.Core.Behaviour
+  commentId: N:Virtufin.Core.Behaviour
+  href: Virtufin.html
+  name: Virtufin.Core.Behaviour
+  nameWithType: Virtufin.Core.Behaviour
+  fullName: Virtufin.Core.Behaviour
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Behaviour
+    name: Behaviour
+    href: Virtufin.Core.Behaviour.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Behaviour
+    name: Behaviour
+    href: Virtufin.Core.Behaviour.html
+- uid: Virtufin.Core.Behaviour.ISignal`1
+  commentId: T:Virtufin.Core.Behaviour.ISignal`1
+  href: Virtufin.Core.Behaviour.ISignal-1.html
+  name: ISignal<T>
+  nameWithType: ISignal<T>
+  fullName: Virtufin.Core.Behaviour.ISignal<T>
+  nameWithType.vb: ISignal(Of T)
+  fullName.vb: Virtufin.Core.Behaviour.ISignal(Of T)
+  name.vb: ISignal(Of T)
+  spec.csharp:
+  - uid: Virtufin.Core.Behaviour.ISignal`1
+    name: ISignal
+    href: Virtufin.Core.Behaviour.ISignal-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Behaviour.ISignal`1
+    name: ISignal
+    href: Virtufin.Core.Behaviour.ISignal-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Virtufin.Base.Behaviour.SimpleMovingAverage`2.Empty*
+  commentId: Overload:Virtufin.Base.Behaviour.SimpleMovingAverage`2.Empty
+  href: Virtufin.Base.Behaviour.SimpleMovingAverage-2.html#Virtufin_Base_Behaviour_SimpleMovingAverage_2_Empty_System_Func_System_Int32__1__System_Func__0__0_System_Boolean__
+  name: Empty
+  nameWithType: SimpleMovingAverage<TTime, TValue>.Empty
+  fullName: Virtufin.Base.Behaviour.SimpleMovingAverage<TTime, TValue>.Empty
+  nameWithType.vb: SimpleMovingAverage(Of TTime, TValue).Empty
+  fullName.vb: Virtufin.Base.Behaviour.SimpleMovingAverage(Of TTime, TValue).Empty
+- uid: System.Func{System.Int32,{TValue}}
+  commentId: T:System.Func{System.Int32,`1}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<int, TValue>
+  nameWithType: Func<int, TValue>
+  fullName: System.Func<int, TValue>
+  nameWithType.vb: Func(Of Integer, TValue)
+  fullName.vb: System.Func(Of Integer, TValue)
+  name.vb: Func(Of Integer, TValue)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Func{{TTime},{TTime},System.Boolean}
+  commentId: T:System.Func{`0,`0,System.Boolean}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<TTime, TTime, bool>
+  nameWithType: Func<TTime, TTime, bool>
+  fullName: System.Func<TTime, TTime, bool>
+  nameWithType.vb: Func(Of TTime, TTime, Boolean)
+  fullName.vb: System.Func(Of TTime, TTime, Boolean)
+  name.vb: Func(Of TTime, TTime, Boolean)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: TTime
+  - name: ','
+  - name: " "
+  - name: TTime
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTime
+  - name: ','
+  - name: " "
+  - name: TTime
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Virtufin.Base.Behaviour.SimpleMovingAverage`2
+  commentId: T:Virtufin.Base.Behaviour.SimpleMovingAverage`2
+  parent: Virtufin.Base.Behaviour
+  href: Virtufin.Base.Behaviour.SimpleMovingAverage-2.html
+  name: SimpleMovingAverage<TTime, TValue>
+  nameWithType: SimpleMovingAverage<TTime, TValue>
+  fullName: Virtufin.Base.Behaviour.SimpleMovingAverage<TTime, TValue>
+  nameWithType.vb: SimpleMovingAverage(Of TTime, TValue)
+  fullName.vb: Virtufin.Base.Behaviour.SimpleMovingAverage(Of TTime, TValue)
+  name.vb: SimpleMovingAverage(Of TTime, TValue)
+  spec.csharp:
+  - uid: Virtufin.Base.Behaviour.SimpleMovingAverage`2
+    name: SimpleMovingAverage
+    href: Virtufin.Base.Behaviour.SimpleMovingAverage-2.html
+  - name: <
+  - name: TTime
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.Behaviour.SimpleMovingAverage`2
+    name: SimpleMovingAverage
+    href: Virtufin.Base.Behaviour.SimpleMovingAverage-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTime
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func`3
+  commentId: T:System.Func`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<T1, T2, TResult>
+  nameWithType: Func<T1, T2, TResult>
+  fullName: System.Func<T1, T2, TResult>
+  nameWithType.vb: Func(Of T1, T2, TResult)
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  name.vb: Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Virtufin.Base.Behaviour.SimpleMovingAverage`2.Count*
+  commentId: Overload:Virtufin.Base.Behaviour.SimpleMovingAverage`2.Count
+  href: Virtufin.Base.Behaviour.SimpleMovingAverage-2.html#Virtufin_Base_Behaviour_SimpleMovingAverage_2_Count
+  name: Count
+  nameWithType: SimpleMovingAverage<TTime, TValue>.Count
+  fullName: Virtufin.Base.Behaviour.SimpleMovingAverage<TTime, TValue>.Count
+  nameWithType.vb: SimpleMovingAverage(Of TTime, TValue).Count
+  fullName.vb: Virtufin.Base.Behaviour.SimpleMovingAverage(Of TTime, TValue).Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: Virtufin.Base.Behaviour.SimpleMovingAverage`2.Value*
+  commentId: Overload:Virtufin.Base.Behaviour.SimpleMovingAverage`2.Value
+  href: Virtufin.Base.Behaviour.SimpleMovingAverage-2.html#Virtufin_Base_Behaviour_SimpleMovingAverage_2_Value
+  name: Value
+  nameWithType: SimpleMovingAverage<TTime, TValue>.Value
+  fullName: Virtufin.Base.Behaviour.SimpleMovingAverage<TTime, TValue>.Value
+  nameWithType.vb: SimpleMovingAverage(Of TTime, TValue).Value
+  fullName.vb: Virtufin.Base.Behaviour.SimpleMovingAverage(Of TTime, TValue).Value
+- uid: Virtufin.Core.Behaviour.ISignal{{TValue}}.Value
+  commentId: P:Virtufin.Core.Behaviour.ISignal{`2}.Value
+  parent: Virtufin.Core.Behaviour.ISignal{{TValue}}
+  definition: Virtufin.Core.Behaviour.ISignal`1.Value
+  href: Virtufin.Core.Behaviour.ISignal-1.html#Virtufin_Core_Behaviour_ISignal_1_Value
+  name: Value
+  nameWithType: ISignal<TValue>.Value
+  fullName: Virtufin.Core.Behaviour.ISignal<TValue>.Value
+  nameWithType.vb: ISignal(Of TValue).Value
+  fullName.vb: Virtufin.Core.Behaviour.ISignal(Of TValue).Value
+- uid: '{TValue}'
+  commentId: '!:TValue'
+  definition: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: Virtufin.Core.Behaviour.ISignal`1.Value
+  commentId: P:Virtufin.Core.Behaviour.ISignal`1.Value
+  href: Virtufin.Core.Behaviour.ISignal-1.html#Virtufin_Core_Behaviour_ISignal_1_Value
+  name: Value
+  nameWithType: ISignal<T>.Value
+  fullName: Virtufin.Core.Behaviour.ISignal<T>.Value
+  nameWithType.vb: ISignal(Of T).Value
+  fullName.vb: Virtufin.Core.Behaviour.ISignal(Of T).Value
+- uid: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: Virtufin.Base.Behaviour.SimpleMovingAverage`2.Add*
+  commentId: Overload:Virtufin.Base.Behaviour.SimpleMovingAverage`2.Add
+  href: Virtufin.Base.Behaviour.SimpleMovingAverage-2.html#Virtufin_Base_Behaviour_SimpleMovingAverage_2_Add_Virtufin_Core_Events_TimestampedSample__0__1__
+  name: Add
+  nameWithType: SimpleMovingAverage<TTime, TValue>.Add
+  fullName: Virtufin.Base.Behaviour.SimpleMovingAverage<TTime, TValue>.Add
+  nameWithType.vb: SimpleMovingAverage(Of TTime, TValue).Add
+  fullName.vb: Virtufin.Base.Behaviour.SimpleMovingAverage(Of TTime, TValue).Add
+- uid: Virtufin.Core.Behaviour.IIndicator{Virtufin.Base.Behaviour.SimpleMovingAverage`2,Virtufin.Core.Events.TimestampedSample{{TTime},{TValue}},{TValue}}.Add(Virtufin.Core.Events.TimestampedSample{{TTime},{TValue}})
+  commentId: M:Virtufin.Core.Behaviour.IIndicator{Virtufin.Base.Behaviour.SimpleMovingAverage`2,Virtufin.Core.Events.TimestampedSample{`0,`1},`1}.Add(Virtufin.Core.Events.TimestampedSample{`0,`1})
+  parent: Virtufin.Core.Behaviour.IIndicator{Virtufin.Base.Behaviour.SimpleMovingAverage`2,Virtufin.Core.Events.TimestampedSample{{TTime},{TValue}},{TValue}}
+  definition: Virtufin.Core.Behaviour.IIndicator`3.Add(`1)
+  href: Virtufin.Core.Behaviour.IIndicator-3.html#Virtufin_Core_Behaviour_IIndicator_3_Add__1_
+  name: Add(TimestampedSample<TTime, TValue>)
+  nameWithType: IIndicator<SimpleMovingAverage<TTime, TValue>, TimestampedSample<TTime, TValue>, TValue>.Add(TimestampedSample<TTime, TValue>)
+  fullName: Virtufin.Core.Behaviour.IIndicator<Virtufin.Base.Behaviour.SimpleMovingAverage<TTime, TValue>, Virtufin.Core.Events.TimestampedSample<TTime, TValue>, TValue>.Add(Virtufin.Core.Events.TimestampedSample<TTime, TValue>)
+  nameWithType.vb: IIndicator(Of SimpleMovingAverage(Of TTime, TValue), TimestampedSample(Of TTime, TValue), TValue).Add(TimestampedSample(Of TTime, TValue))
+  fullName.vb: Virtufin.Core.Behaviour.IIndicator(Of Virtufin.Base.Behaviour.SimpleMovingAverage(Of TTime, TValue), Virtufin.Core.Events.TimestampedSample(Of TTime, TValue), TValue).Add(Virtufin.Core.Events.TimestampedSample(Of TTime, TValue))
+  name.vb: Add(TimestampedSample(Of TTime, TValue))
+  spec.csharp:
+  - uid: Virtufin.Core.Behaviour.IIndicator{Virtufin.Base.Behaviour.SimpleMovingAverage`2,Virtufin.Core.Events.TimestampedSample{`0,`1},`1}.Add(Virtufin.Core.Events.TimestampedSample{`0,`1})
+    name: Add
+    href: Virtufin.Core.Behaviour.IIndicator-3.html#Virtufin_Core_Behaviour_IIndicator_3_Add__1_
+  - name: (
+  - uid: Virtufin.Core.Events.TimestampedSample`2
+    name: TimestampedSample
+    href: Virtufin.Core.Events.TimestampedSample-2.html
+  - name: <
+  - name: TTime
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Behaviour.IIndicator{Virtufin.Base.Behaviour.SimpleMovingAverage`2,Virtufin.Core.Events.TimestampedSample{`0,`1},`1}.Add(Virtufin.Core.Events.TimestampedSample{`0,`1})
+    name: Add
+    href: Virtufin.Core.Behaviour.IIndicator-3.html#Virtufin_Core_Behaviour_IIndicator_3_Add__1_
+  - name: (
+  - uid: Virtufin.Core.Events.TimestampedSample`2
+    name: TimestampedSample
+    href: Virtufin.Core.Events.TimestampedSample-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTime
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: )
+- uid: Virtufin.Core.Events.TimestampedSample{{TTime},{TValue}}
+  commentId: T:Virtufin.Core.Events.TimestampedSample{`0,`1}
+  parent: Virtufin.Core.Events
+  definition: Virtufin.Core.Events.TimestampedSample`2
+  href: Virtufin.Core.Events.TimestampedSample-2.html
+  name: TimestampedSample<TTime, TValue>
+  nameWithType: TimestampedSample<TTime, TValue>
+  fullName: Virtufin.Core.Events.TimestampedSample<TTime, TValue>
+  nameWithType.vb: TimestampedSample(Of TTime, TValue)
+  fullName.vb: Virtufin.Core.Events.TimestampedSample(Of TTime, TValue)
+  name.vb: TimestampedSample(Of TTime, TValue)
+  spec.csharp:
+  - uid: Virtufin.Core.Events.TimestampedSample`2
+    name: TimestampedSample
+    href: Virtufin.Core.Events.TimestampedSample-2.html
+  - name: <
+  - name: TTime
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Events.TimestampedSample`2
+    name: TimestampedSample
+    href: Virtufin.Core.Events.TimestampedSample-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTime
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Virtufin.Core.Behaviour.IIndicator`3.Add(`1)
+  commentId: M:Virtufin.Core.Behaviour.IIndicator`3.Add(`1)
+  href: Virtufin.Core.Behaviour.IIndicator-3.html#Virtufin_Core_Behaviour_IIndicator_3_Add__1_
+  name: Add(TSample)
+  nameWithType: IIndicator<TSelf, TSample, TValue>.Add(TSample)
+  fullName: Virtufin.Core.Behaviour.IIndicator<TSelf, TSample, TValue>.Add(TSample)
+  nameWithType.vb: IIndicator(Of TSelf, TSample, TValue).Add(TSample)
+  fullName.vb: Virtufin.Core.Behaviour.IIndicator(Of TSelf, TSample, TValue).Add(TSample)
+  spec.csharp:
+  - uid: Virtufin.Core.Behaviour.IIndicator`3.Add(`1)
+    name: Add
+    href: Virtufin.Core.Behaviour.IIndicator-3.html#Virtufin_Core_Behaviour_IIndicator_3_Add__1_
+  - name: (
+  - name: TSample
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Behaviour.IIndicator`3.Add(`1)
+    name: Add
+    href: Virtufin.Core.Behaviour.IIndicator-3.html#Virtufin_Core_Behaviour_IIndicator_3_Add__1_
+  - name: (
+  - name: TSample
+  - name: )
+- uid: Virtufin.Core.Events.TimestampedSample`2
+  commentId: T:Virtufin.Core.Events.TimestampedSample`2
+  href: Virtufin.Core.Events.TimestampedSample-2.html
+  name: TimestampedSample<TTime, TValue>
+  nameWithType: TimestampedSample<TTime, TValue>
+  fullName: Virtufin.Core.Events.TimestampedSample<TTime, TValue>
+  nameWithType.vb: TimestampedSample(Of TTime, TValue)
+  fullName.vb: Virtufin.Core.Events.TimestampedSample(Of TTime, TValue)
+  name.vb: TimestampedSample(Of TTime, TValue)
+  spec.csharp:
+  - uid: Virtufin.Core.Events.TimestampedSample`2
+    name: TimestampedSample
+    href: Virtufin.Core.Events.TimestampedSample-2.html
+  - name: <
+  - name: TTime
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Events.TimestampedSample`2
+    name: TimestampedSample
+    href: Virtufin.Core.Events.TimestampedSample-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTime
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Virtufin.Core.Events
+  commentId: N:Virtufin.Core.Events
+  href: Virtufin.html
+  name: Virtufin.Core.Events
+  nameWithType: Virtufin.Core.Events
+  fullName: Virtufin.Core.Events
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html

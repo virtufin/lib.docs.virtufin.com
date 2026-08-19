@@ -8,6 +8,13 @@ items:
     name: Base
     type: Namespace
     items:
+    - uid: Virtufin.Base.Behaviour
+      name: Behaviour
+      type: Namespace
+      items:
+      - uid: Virtufin.Base.Behaviour.SimpleMovingAverage`2
+        name: SimpleMovingAverage<TTime, TValue>
+        type: Class
     - uid: Virtufin.Base.Clock
       name: Clock
       type: Namespace
@@ -26,29 +33,29 @@ items:
         name: Market
         type: Namespace
         items:
-        - uid: Virtufin.Base.Events.Market.MarketEvent
-          name: MarketEvent
+        - uid: Virtufin.Base.Events.Market.MarketEvent`1
+          name: MarketEvent<T>
           type: Class
-        - uid: Virtufin.Base.Events.Market.MarketEvent.OrderBookReceived
-          name: MarketEvent.OrderBookReceived
+        - uid: Virtufin.Base.Events.Market.MarketEvent`1.OrderBookReceived
+          name: MarketEvent<T>.OrderBookReceived
           type: Class
-        - uid: Virtufin.Base.Events.Market.MarketEvent.TickReceived
-          name: MarketEvent.TickReceived
+        - uid: Virtufin.Base.Events.Market.MarketEvent`1.TickReceived
+          name: MarketEvent<T>.TickReceived
           type: Class
-        - uid: Virtufin.Base.Events.Market.RichMarketEvent
-          name: RichMarketEvent
+        - uid: Virtufin.Base.Events.Market.RichMarketEvent`1
+          name: RichMarketEvent<T>
           type: Class
-        - uid: Virtufin.Base.Events.Market.RichMarketEvent.Base
-          name: RichMarketEvent.Base
+        - uid: Virtufin.Base.Events.Market.RichMarketEvent`1.Base
+          name: RichMarketEvent<T>.Base
           type: Class
-        - uid: Virtufin.Base.Events.Market.RichMarketEvent.CandleClosed
-          name: RichMarketEvent.CandleClosed
+        - uid: Virtufin.Base.Events.Market.RichMarketEvent`1.CandleClosed
+          name: RichMarketEvent<T>.CandleClosed
           type: Class
-        - uid: Virtufin.Base.Events.Market.RichMarketEvent.VWAPComputed
-          name: RichMarketEvent.VWAPComputed
+        - uid: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed
+          name: RichMarketEvent<T>.VWAPComputed
           type: Class
-        - uid: Virtufin.Base.Events.Market.RichMarketEvent.VolatilityEstimate
-          name: RichMarketEvent.VolatilityEstimate
+        - uid: Virtufin.Base.Events.Market.RichMarketEvent`1.VolatilityEstimate
+          name: RichMarketEvent<T>.VolatilityEstimate
           type: Class
       - uid: Virtufin.Base.Events.Position
         name: Position
@@ -57,81 +64,81 @@ items:
         - uid: Virtufin.Base.Events.Position.Direction
           name: Direction
           type: Enum
-        - uid: Virtufin.Base.Events.Position.PositionEvent
-          name: PositionEvent
+        - uid: Virtufin.Base.Events.Position.PositionEvent`1
+          name: PositionEvent<T>
           type: Class
-        - uid: Virtufin.Base.Events.Position.PositionEvent.Closed
-          name: PositionEvent.Closed
+        - uid: Virtufin.Base.Events.Position.PositionEvent`1.Closed
+          name: PositionEvent<T>.Closed
           type: Class
-        - uid: Virtufin.Base.Events.Position.PositionEvent.Flipped
-          name: PositionEvent.Flipped
+        - uid: Virtufin.Base.Events.Position.PositionEvent`1.Flipped
+          name: PositionEvent<T>.Flipped
           type: Class
-        - uid: Virtufin.Base.Events.Position.PositionEvent.Opened
-          name: PositionEvent.Opened
+        - uid: Virtufin.Base.Events.Position.PositionEvent`1.Opened
+          name: PositionEvent<T>.Opened
           type: Class
-        - uid: Virtufin.Base.Events.Position.PositionEvent.Updated
-          name: PositionEvent.Updated
+        - uid: Virtufin.Base.Events.Position.PositionEvent`1.Updated
+          name: PositionEvent<T>.Updated
           type: Class
         - uid: Virtufin.Base.Events.Position.PositionSource
           name: PositionSource
           type: Enum
-        - uid: Virtufin.Base.Events.Position.RichPositionEvent
-          name: RichPositionEvent
+        - uid: Virtufin.Base.Events.Position.RichPositionEvent`1
+          name: RichPositionEvent<T>
           type: Class
-        - uid: Virtufin.Base.Events.Position.RichPositionEvent.Base
-          name: RichPositionEvent.Base
+        - uid: Virtufin.Base.Events.Position.RichPositionEvent`1.Base
+          name: RichPositionEvent<T>.Base
           type: Class
-        - uid: Virtufin.Base.Events.Position.RichPositionEvent.OpenedWithParty
-          name: RichPositionEvent.OpenedWithParty
+        - uid: Virtufin.Base.Events.Position.RichPositionEvent`1.OpenedWithParty
+          name: RichPositionEvent<T>.OpenedWithParty
           type: Class
-        - uid: Virtufin.Base.Events.Position.RichPositionEvent.UpdatedAttributed
-          name: RichPositionEvent.UpdatedAttributed
+        - uid: Virtufin.Base.Events.Position.RichPositionEvent`1.UpdatedAttributed
+          name: RichPositionEvent<T>.UpdatedAttributed
           type: Class
       - uid: Virtufin.Base.Events.Risk
         name: Risk
         type: Namespace
         items:
-        - uid: Virtufin.Base.Events.Risk.RichRiskEvent
-          name: RichRiskEvent
+        - uid: Virtufin.Base.Events.Risk.RichRiskEvent`1
+          name: RichRiskEvent<T>
           type: Class
-        - uid: Virtufin.Base.Events.Risk.RichRiskEvent.Base
-          name: RichRiskEvent.Base
+        - uid: Virtufin.Base.Events.Risk.RichRiskEvent`1.Base
+          name: RichRiskEvent<T>.Base
           type: Class
-        - uid: Virtufin.Base.Events.Risk.RichRiskEvent.DrawdownWithMetadata
-          name: RichRiskEvent.DrawdownWithMetadata
+        - uid: Virtufin.Base.Events.Risk.RichRiskEvent`1.DrawdownWithMetadata
+          name: RichRiskEvent<T>.DrawdownWithMetadata
           type: Class
-        - uid: Virtufin.Base.Events.Risk.RichRiskEvent.LimitBreachedWithThreshold
-          name: RichRiskEvent.LimitBreachedWithThreshold
+        - uid: Virtufin.Base.Events.Risk.RichRiskEvent`1.LimitBreachedWithThreshold
+          name: RichRiskEvent<T>.LimitBreachedWithThreshold
           type: Class
-        - uid: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed
-          name: RichRiskEvent.PnLAttributed
+        - uid: Virtufin.Base.Events.Risk.RichRiskEvent`1.PnLAttributed
+          name: RichRiskEvent<T>.PnLAttributed
           type: Class
-        - uid: Virtufin.Base.Events.Risk.RiskEvent
-          name: RiskEvent
+        - uid: Virtufin.Base.Events.Risk.RiskEvent`1
+          name: RiskEvent<T>
           type: Class
-        - uid: Virtufin.Base.Events.Risk.RiskEvent.DrawdownUpdated
-          name: RiskEvent.DrawdownUpdated
+        - uid: Virtufin.Base.Events.Risk.RiskEvent`1.DrawdownUpdated
+          name: RiskEvent<T>.DrawdownUpdated
           type: Class
-        - uid: Virtufin.Base.Events.Risk.RiskEvent.ExposureBreached
-          name: RiskEvent.ExposureBreached
+        - uid: Virtufin.Base.Events.Risk.RiskEvent`1.ExposureBreached
+          name: RiskEvent<T>.ExposureBreached
           type: Class
-        - uid: Virtufin.Base.Events.Risk.RiskEvent.LimitBreached
-          name: RiskEvent.LimitBreached
+        - uid: Virtufin.Base.Events.Risk.RiskEvent`1.LimitBreached
+          name: RiskEvent<T>.LimitBreached
           type: Class
-        - uid: Virtufin.Base.Events.Risk.RiskEvent.LimitRestored
-          name: RiskEvent.LimitRestored
+        - uid: Virtufin.Base.Events.Risk.RiskEvent`1.LimitRestored
+          name: RiskEvent<T>.LimitRestored
           type: Class
-        - uid: Virtufin.Base.Events.Risk.RiskEvent.MarginCalled
-          name: RiskEvent.MarginCalled
+        - uid: Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled
+          name: RiskEvent<T>.MarginCalled
           type: Class
-        - uid: Virtufin.Base.Events.Risk.RiskEvent.MarginWarned
-          name: RiskEvent.MarginWarned
+        - uid: Virtufin.Base.Events.Risk.RiskEvent`1.MarginWarned
+          name: RiskEvent<T>.MarginWarned
           type: Class
-        - uid: Virtufin.Base.Events.Risk.RiskEvent.PnLRealized
-          name: RiskEvent.PnLRealized
+        - uid: Virtufin.Base.Events.Risk.RiskEvent`1.PnLRealized
+          name: RiskEvent<T>.PnLRealized
           type: Class
-        - uid: Virtufin.Base.Events.Risk.RiskEvent.PnLUpdated
-          name: RiskEvent.PnLUpdated
+        - uid: Virtufin.Base.Events.Risk.RiskEvent`1.PnLUpdated
+          name: RiskEvent<T>.PnLUpdated
           type: Class
       - uid: Virtufin.Base.Events.Trade
         name: Trade
@@ -182,47 +189,47 @@ items:
         - uid: Virtufin.Base.Events.Trade.TradeAction.WithdrawInterestAction
           name: TradeAction.WithdrawInterestAction
           type: Class
-        - uid: Virtufin.Base.Events.Trade.TradeEvent
-          name: TradeEvent
+        - uid: Virtufin.Base.Events.Trade.TradeEvent`1
+          name: TradeEvent<T>
           type: Class
-        - uid: Virtufin.Base.Events.Trade.TradeEvent.ExecutionCleared
-          name: TradeEvent.ExecutionCleared
+        - uid: Virtufin.Base.Events.Trade.TradeEvent`1.ExecutionCleared
+          name: TradeEvent<T>.ExecutionCleared
           type: Class
-        - uid: Virtufin.Base.Events.Trade.TradeEvent.ExecutionSettled
-          name: TradeEvent.ExecutionSettled
+        - uid: Virtufin.Base.Events.Trade.TradeEvent`1.ExecutionSettled
+          name: TradeEvent<T>.ExecutionSettled
           type: Class
-        - uid: Virtufin.Base.Events.Trade.TradeEvent.FillReceived
-          name: TradeEvent.FillReceived
+        - uid: Virtufin.Base.Events.Trade.TradeEvent`1.FillReceived
+          name: TradeEvent<T>.FillReceived
           type: Class
-        - uid: Virtufin.Base.Events.Trade.TradeEvent.InterestExpired
-          name: TradeEvent.InterestExpired
+        - uid: Virtufin.Base.Events.Trade.TradeEvent`1.InterestExpired
+          name: TradeEvent<T>.InterestExpired
           type: Class
-        - uid: Virtufin.Base.Events.Trade.TradeEvent.InterestMatched
-          name: TradeEvent.InterestMatched
+        - uid: Virtufin.Base.Events.Trade.TradeEvent`1.InterestMatched
+          name: TradeEvent<T>.InterestMatched
           type: Class
-        - uid: Virtufin.Base.Events.Trade.TradeEvent.InterestRegistered
-          name: TradeEvent.InterestRegistered
+        - uid: Virtufin.Base.Events.Trade.TradeEvent`1.InterestRegistered
+          name: TradeEvent<T>.InterestRegistered
           type: Class
-        - uid: Virtufin.Base.Events.Trade.TradeEvent.InterestRevoked
-          name: TradeEvent.InterestRevoked
+        - uid: Virtufin.Base.Events.Trade.TradeEvent`1.InterestRevoked
+          name: TradeEvent<T>.InterestRevoked
           type: Class
-        - uid: Virtufin.Base.Events.Trade.TradeEvent.OrderCancelled
-          name: TradeEvent.OrderCancelled
+        - uid: Virtufin.Base.Events.Trade.TradeEvent`1.OrderCancelled
+          name: TradeEvent<T>.OrderCancelled
           type: Class
-        - uid: Virtufin.Base.Events.Trade.TradeEvent.OrderExpired
-          name: TradeEvent.OrderExpired
+        - uid: Virtufin.Base.Events.Trade.TradeEvent`1.OrderExpired
+          name: TradeEvent<T>.OrderExpired
           type: Class
-        - uid: Virtufin.Base.Events.Trade.TradeEvent.OrderPlaced
-          name: TradeEvent.OrderPlaced
+        - uid: Virtufin.Base.Events.Trade.TradeEvent`1.OrderPlaced
+          name: TradeEvent<T>.OrderPlaced
           type: Class
-        - uid: Virtufin.Base.Events.Trade.TradeEvent.TransferCompleted
-          name: TradeEvent.TransferCompleted
+        - uid: Virtufin.Base.Events.Trade.TradeEvent`1.TransferCompleted
+          name: TradeEvent<T>.TransferCompleted
           type: Class
-        - uid: Virtufin.Base.Events.Trade.TradeEvent.TransferFailed
-          name: TradeEvent.TransferFailed
+        - uid: Virtufin.Base.Events.Trade.TradeEvent`1.TransferFailed
+          name: TradeEvent<T>.TransferFailed
           type: Class
-        - uid: Virtufin.Base.Events.Trade.TradeEvent.TransferInitiated
-          name: TradeEvent.TransferInitiated
+        - uid: Virtufin.Base.Events.Trade.TradeEvent`1.TransferInitiated
+          name: TradeEvent<T>.TransferInitiated
           type: Class
         - uid: Virtufin.Base.Events.Trade.Venue
           name: Venue
@@ -391,6 +398,9 @@ items:
       - uid: Virtufin.Core.Behaviour.IDecide`4
         name: IDecide<TState, TMarket, TPortfolio, TAction>
         type: Interface
+      - uid: Virtufin.Core.Behaviour.IIndicator`3
+        name: IIndicator<TSelf, TSample, TValue>
+        type: Interface
       - uid: Virtufin.Core.Behaviour.IPortfolioState
         name: IPortfolioState
         type: Interface
@@ -467,22 +477,22 @@ items:
         name: Market
         type: Namespace
         items:
-        - uid: Virtufin.Core.Events.Market.IMarketEvent
-          name: IMarketEvent
+        - uid: Virtufin.Core.Events.Market.IMarketEvent`1
+          name: IMarketEvent<T>
           type: Interface
       - uid: Virtufin.Core.Events.Position
         name: Position
         type: Namespace
         items:
-        - uid: Virtufin.Core.Events.Position.IPositionEvent
-          name: IPositionEvent
+        - uid: Virtufin.Core.Events.Position.IPositionEvent`1
+          name: IPositionEvent<T>
           type: Interface
       - uid: Virtufin.Core.Events.Risk
         name: Risk
         type: Namespace
         items:
-        - uid: Virtufin.Core.Events.Risk.IRiskEvent
-          name: IRiskEvent
+        - uid: Virtufin.Core.Events.Risk.IRiskEvent`1
+          name: IRiskEvent<T>
           type: Interface
       - uid: Virtufin.Core.Events.Trade
         name: Trade
@@ -491,8 +501,8 @@ items:
         - uid: Virtufin.Core.Events.Trade.ITradeAction
           name: ITradeAction
           type: Interface
-        - uid: Virtufin.Core.Events.Trade.ITradeEvent`1
-          name: ITradeEvent<A>
+        - uid: Virtufin.Core.Events.Trade.ITradeEvent`2
+          name: ITradeEvent<A, T>
           type: Interface
       - uid: Virtufin.Core.Events.ClockType
         name: ClockType
@@ -500,11 +510,11 @@ items:
       - uid: Virtufin.Core.Events.CloudEvent
         name: CloudEvent
         type: Class
-      - uid: Virtufin.Core.Events.IEvent
-        name: IEvent
-        type: Interface
       - uid: Virtufin.Core.Events.IEventEnvelope
         name: IEventEnvelope
+        type: Interface
+      - uid: Virtufin.Core.Events.IEvent`1
+        name: IEvent<T>
         type: Interface
       - uid: Virtufin.Core.Events.Lane
         name: Lane
@@ -512,6 +522,9 @@ items:
       - uid: Virtufin.Core.Events.Symbol
         name: Symbol
         type: Struct
+      - uid: Virtufin.Core.Events.TimestampedSample`2
+        name: TimestampedSample<TTime, TValue>
+        type: Class
     - uid: Virtufin.Core.Execution
       name: Execution
       type: Namespace

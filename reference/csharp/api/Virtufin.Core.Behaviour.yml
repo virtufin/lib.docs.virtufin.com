@@ -7,6 +7,7 @@ items:
   children:
   - Virtufin.Core.Behaviour.IAlgebra`2
   - Virtufin.Core.Behaviour.IDecide`4
+  - Virtufin.Core.Behaviour.IIndicator`3
   - Virtufin.Core.Behaviour.IPortfolioState
   - Virtufin.Core.Behaviour.IProcess`3
   - Virtufin.Core.Behaviour.ISignal`1
@@ -95,6 +96,43 @@ references:
   - name: ','
   - name: " "
   - name: TAction
+  - name: )
+- uid: Virtufin.Core.Behaviour.IIndicator`3
+  commentId: T:Virtufin.Core.Behaviour.IIndicator`3
+  href: Virtufin.Core.Behaviour.IIndicator-3.html
+  name: IIndicator<TSelf, TSample, TValue>
+  nameWithType: IIndicator<TSelf, TSample, TValue>
+  fullName: Virtufin.Core.Behaviour.IIndicator<TSelf, TSample, TValue>
+  nameWithType.vb: IIndicator(Of TSelf, TSample, TValue)
+  fullName.vb: Virtufin.Core.Behaviour.IIndicator(Of TSelf, TSample, TValue)
+  name.vb: IIndicator(Of TSelf, TSample, TValue)
+  spec.csharp:
+  - uid: Virtufin.Core.Behaviour.IIndicator`3
+    name: IIndicator
+    href: Virtufin.Core.Behaviour.IIndicator-3.html
+  - name: <
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TSample
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Behaviour.IIndicator`3
+    name: IIndicator
+    href: Virtufin.Core.Behaviour.IIndicator-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TSample
+  - name: ','
+  - name: " "
+  - name: TValue
   - name: )
 - uid: Virtufin.Core.Behaviour.IPortfolioState
   commentId: T:Virtufin.Core.Behaviour.IPortfolioState

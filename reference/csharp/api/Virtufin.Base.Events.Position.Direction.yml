@@ -21,7 +21,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: Direction
     path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
-    startLine: 124
+    startLine: 143
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Events.Position
@@ -48,7 +48,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: Long
     path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
-    startLine: 127
+    startLine: 146
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Events.Position
@@ -76,7 +76,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: Short
     path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
-    startLine: 129
+    startLine: 148
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Events.Position

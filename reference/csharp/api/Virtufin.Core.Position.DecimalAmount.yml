@@ -24,6 +24,8 @@ items:
   - Virtufin.Core.Position.DecimalAmount.Whole
   - Virtufin.Core.Position.DecimalAmount.Zero
   - Virtufin.Core.Position.DecimalAmount.op_Addition(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+  - Virtufin.Core.Position.DecimalAmount.op_Division(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+  - Virtufin.Core.Position.DecimalAmount.op_Multiply(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
   - Virtufin.Core.Position.DecimalAmount.op_Subtraction(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
   langs:
   - csharp
@@ -39,13 +41,13 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: DecimalAmount
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 26
+    startLine: 27
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
   syntax:
-    content: 'public readonly record struct DecimalAmount : IEquatable<DecimalAmount>, IComparable<DecimalAmount>, IAmount<(long, ulong)>, IEquatable<IAmount<(long, ulong)>>, IComparable<IAmount<(long, ulong)>>, IAsCardinal<long>'
-    content.vb: Public Structure DecimalAmount Implements IEquatable(Of DecimalAmount), IComparable(Of DecimalAmount), IAmount(Of (Long, ULong)), IEquatable(Of IAmount(Of (Long, ULong))), IComparable(Of IAmount(Of (Long, ULong))), IAsCardinal(Of Long)
+    content: 'public readonly record struct DecimalAmount : IEquatable<DecimalAmount>, IComparable<DecimalAmount>, IAmount<(long, ulong)>, IEquatable<IAmount<(long, ulong)>>, IComparable<IAmount<(long, ulong)>>, IAsCardinal<long>, IAdditionOperators<DecimalAmount, DecimalAmount, DecimalAmount>, ISubtractionOperators<DecimalAmount, DecimalAmount, DecimalAmount>, IMultiplyOperators<DecimalAmount, DecimalAmount, DecimalAmount>, IDivisionOperators<DecimalAmount, DecimalAmount, DecimalAmount>'
+    content.vb: Public Structure DecimalAmount Implements IEquatable(Of DecimalAmount), IComparable(Of DecimalAmount), IAmount(Of (Long, ULong)), IEquatable(Of IAmount(Of (Long, ULong))), IComparable(Of IAmount(Of (Long, ULong))), IAsCardinal(Of Long), IAdditionOperators(Of DecimalAmount, DecimalAmount, DecimalAmount), ISubtractionOperators(Of DecimalAmount, DecimalAmount, DecimalAmount), IMultiplyOperators(Of DecimalAmount, DecimalAmount, DecimalAmount), IDivisionOperators(Of DecimalAmount, DecimalAmount, DecimalAmount)
   implements:
   - System.IEquatable{Virtufin.Core.Position.DecimalAmount}
   - System.IComparable{Virtufin.Core.Position.DecimalAmount}
@@ -53,6 +55,10 @@ items:
   - System.IEquatable{Virtufin.Core.Position.IAmount{System.ValueTuple{System.Int64,System.UInt64}}}
   - System.IComparable{Virtufin.Core.Position.IAmount{System.ValueTuple{System.Int64,System.UInt64}}}
   - Virtufin.Core.Position.IAsCardinal{System.Int64}
+  - System.Numerics.IAdditionOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}
+  - System.Numerics.ISubtractionOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}
+  - System.Numerics.IMultiplyOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}
+  - System.Numerics.IDivisionOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}
   inheritedMembers:
   - System.ValueType.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -76,7 +82,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: .ctor
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 26
+    startLine: 27
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -112,7 +118,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: Whole
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 26
+    startLine: 27
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -141,7 +147,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: Fraction
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 26
+    startLine: 27
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -170,7 +176,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: N
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 26
+    startLine: 27
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -199,7 +205,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: Zero
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 34
+    startLine: 39
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -230,7 +236,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: DefaultPrecision
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 41
+    startLine: 46
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -264,7 +270,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: From
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 49
+    startLine: 54
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -307,7 +313,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: From
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 64
+    startLine: 69
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -352,7 +358,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: ToCardinal
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 68
+    startLine: 73
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -384,7 +390,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: ToCardinal
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 77
+    startLine: 82
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -426,7 +432,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: ToDecimal
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 88
+    startLine: 93
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -456,7 +462,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: FromCardinal
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 93
+    startLine: 98
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -495,7 +501,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: FromCardinal
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 99
+    startLine: 104
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -535,7 +541,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: GetValue
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 122
+    startLine: 127
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -564,7 +570,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: Equals
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 127
+    startLine: 132
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -601,7 +607,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: GetHashCode
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 131
+    startLine: 136
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -633,7 +639,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: CompareTo
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 134
+    startLine: 139
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -673,7 +679,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: op_Addition
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 143
+    startLine: 148
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -690,6 +696,8 @@ items:
       type: Virtufin.Core.Position.DecimalAmount
     content.vb: Public Shared Operator +(left As DecimalAmount, right As DecimalAmount) As DecimalAmount
   overload: Virtufin.Core.Position.DecimalAmount.op_Addition*
+  implements:
+  - System.Numerics.IAdditionOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}.op_Addition(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
   nameWithType.vb: DecimalAmount.+(DecimalAmount, DecimalAmount)
   fullName.vb: Virtufin.Core.Position.DecimalAmount.+(Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount)
   name.vb: +(DecimalAmount, DecimalAmount)
@@ -711,7 +719,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: op_Subtraction
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 154
+    startLine: 159
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -728,9 +736,91 @@ items:
       type: Virtufin.Core.Position.DecimalAmount
     content.vb: Public Shared Operator -(left As DecimalAmount, right As DecimalAmount) As DecimalAmount
   overload: Virtufin.Core.Position.DecimalAmount.op_Subtraction*
+  implements:
+  - System.Numerics.ISubtractionOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}.op_Subtraction(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
   nameWithType.vb: DecimalAmount.-(DecimalAmount, DecimalAmount)
   fullName.vb: Virtufin.Core.Position.DecimalAmount.-(Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount)
   name.vb: -(DecimalAmount, DecimalAmount)
+- uid: Virtufin.Core.Position.DecimalAmount.op_Multiply(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+  commentId: M:Virtufin.Core.Position.DecimalAmount.op_Multiply(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+  id: op_Multiply(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+  parent: Virtufin.Core.Position.DecimalAmount
+  langs:
+  - csharp
+  - vb
+  name: operator *(DecimalAmount, DecimalAmount)
+  nameWithType: DecimalAmount.operator *(DecimalAmount, DecimalAmount)
+  fullName: Virtufin.Core.Position.DecimalAmount.operator *(Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount)
+  type: Operator
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/DecimalAmount.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: op_Multiply
+    path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
+    startLine: 170
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Multiply two amounts of equal precision. Throws <xref href="System.OverflowException" data-throw-if-not-resolved="false"></xref> on overflow.
+  example: []
+  syntax:
+    content: public static DecimalAmount operator *(DecimalAmount left, DecimalAmount right)
+    parameters:
+    - id: left
+      type: Virtufin.Core.Position.DecimalAmount
+    - id: right
+      type: Virtufin.Core.Position.DecimalAmount
+    return:
+      type: Virtufin.Core.Position.DecimalAmount
+    content.vb: Public Shared Operator *(left As DecimalAmount, right As DecimalAmount) As DecimalAmount
+  overload: Virtufin.Core.Position.DecimalAmount.op_Multiply*
+  implements:
+  - System.Numerics.IMultiplyOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}.op_Multiply(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+  nameWithType.vb: DecimalAmount.*(DecimalAmount, DecimalAmount)
+  fullName.vb: Virtufin.Core.Position.DecimalAmount.*(Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount)
+  name.vb: '*(DecimalAmount, DecimalAmount)'
+- uid: Virtufin.Core.Position.DecimalAmount.op_Division(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+  commentId: M:Virtufin.Core.Position.DecimalAmount.op_Division(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+  id: op_Division(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+  parent: Virtufin.Core.Position.DecimalAmount
+  langs:
+  - csharp
+  - vb
+  name: operator /(DecimalAmount, DecimalAmount)
+  nameWithType: DecimalAmount.operator /(DecimalAmount, DecimalAmount)
+  fullName: Virtufin.Core.Position.DecimalAmount.operator /(Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount)
+  type: Operator
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/DecimalAmount.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: op_Division
+    path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
+    startLine: 179
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Divide two amounts of equal precision. Throws <xref href="System.DivideByZeroException" data-throw-if-not-resolved="false"></xref> when the divisor is zero.
+  example: []
+  syntax:
+    content: public static DecimalAmount operator /(DecimalAmount left, DecimalAmount right)
+    parameters:
+    - id: left
+      type: Virtufin.Core.Position.DecimalAmount
+    - id: right
+      type: Virtufin.Core.Position.DecimalAmount
+    return:
+      type: Virtufin.Core.Position.DecimalAmount
+    content.vb: Public Shared Operator /(left As DecimalAmount, right As DecimalAmount) As DecimalAmount
+  overload: Virtufin.Core.Position.DecimalAmount.op_Division*
+  implements:
+  - System.Numerics.IDivisionOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}.op_Division(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+  nameWithType.vb: DecimalAmount./(DecimalAmount, DecimalAmount)
+  fullName.vb: Virtufin.Core.Position.DecimalAmount./(Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount)
+  name.vb: /(DecimalAmount, DecimalAmount)
 - uid: Virtufin.Core.Position.DecimalAmount.ToString
   commentId: M:Virtufin.Core.Position.DecimalAmount.ToString
   id: ToString
@@ -749,7 +839,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: ToString
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 165
+    startLine: 190
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -1067,6 +1157,218 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int64
   - name: )
+- uid: System.Numerics.IAdditionOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}
+  commentId: T:System.Numerics.IAdditionOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}
+  parent: System.Numerics
+  definition: System.Numerics.IAdditionOperators`3
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3
+  name: IAdditionOperators<DecimalAmount, DecimalAmount, DecimalAmount>
+  nameWithType: IAdditionOperators<DecimalAmount, DecimalAmount, DecimalAmount>
+  fullName: System.Numerics.IAdditionOperators<Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount>
+  nameWithType.vb: IAdditionOperators(Of DecimalAmount, DecimalAmount, DecimalAmount)
+  fullName.vb: System.Numerics.IAdditionOperators(Of Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount)
+  name.vb: IAdditionOperators(Of DecimalAmount, DecimalAmount, DecimalAmount)
+  spec.csharp:
+  - uid: System.Numerics.IAdditionOperators`3
+    name: IAdditionOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3
+  - name: <
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Numerics.IAdditionOperators`3
+    name: IAdditionOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: )
+- uid: System.Numerics.ISubtractionOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}
+  commentId: T:System.Numerics.ISubtractionOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}
+  parent: System.Numerics
+  definition: System.Numerics.ISubtractionOperators`3
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3
+  name: ISubtractionOperators<DecimalAmount, DecimalAmount, DecimalAmount>
+  nameWithType: ISubtractionOperators<DecimalAmount, DecimalAmount, DecimalAmount>
+  fullName: System.Numerics.ISubtractionOperators<Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount>
+  nameWithType.vb: ISubtractionOperators(Of DecimalAmount, DecimalAmount, DecimalAmount)
+  fullName.vb: System.Numerics.ISubtractionOperators(Of Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount)
+  name.vb: ISubtractionOperators(Of DecimalAmount, DecimalAmount, DecimalAmount)
+  spec.csharp:
+  - uid: System.Numerics.ISubtractionOperators`3
+    name: ISubtractionOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3
+  - name: <
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Numerics.ISubtractionOperators`3
+    name: ISubtractionOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: )
+- uid: System.Numerics.IMultiplyOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}
+  commentId: T:System.Numerics.IMultiplyOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}
+  parent: System.Numerics
+  definition: System.Numerics.IMultiplyOperators`3
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3
+  name: IMultiplyOperators<DecimalAmount, DecimalAmount, DecimalAmount>
+  nameWithType: IMultiplyOperators<DecimalAmount, DecimalAmount, DecimalAmount>
+  fullName: System.Numerics.IMultiplyOperators<Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount>
+  nameWithType.vb: IMultiplyOperators(Of DecimalAmount, DecimalAmount, DecimalAmount)
+  fullName.vb: System.Numerics.IMultiplyOperators(Of Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount)
+  name.vb: IMultiplyOperators(Of DecimalAmount, DecimalAmount, DecimalAmount)
+  spec.csharp:
+  - uid: System.Numerics.IMultiplyOperators`3
+    name: IMultiplyOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3
+  - name: <
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Numerics.IMultiplyOperators`3
+    name: IMultiplyOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: )
+- uid: System.Numerics.IDivisionOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}
+  commentId: T:System.Numerics.IDivisionOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}
+  parent: System.Numerics
+  definition: System.Numerics.IDivisionOperators`3
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.idivisionoperators-3
+  name: IDivisionOperators<DecimalAmount, DecimalAmount, DecimalAmount>
+  nameWithType: IDivisionOperators<DecimalAmount, DecimalAmount, DecimalAmount>
+  fullName: System.Numerics.IDivisionOperators<Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount>
+  nameWithType.vb: IDivisionOperators(Of DecimalAmount, DecimalAmount, DecimalAmount)
+  fullName.vb: System.Numerics.IDivisionOperators(Of Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount)
+  name.vb: IDivisionOperators(Of DecimalAmount, DecimalAmount, DecimalAmount)
+  spec.csharp:
+  - uid: System.Numerics.IDivisionOperators`3
+    name: IDivisionOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.idivisionoperators-3
+  - name: <
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Numerics.IDivisionOperators`3
+    name: IDivisionOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.idivisionoperators-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: )
 - uid: System.ValueType.Equals(System.Object)
   commentId: M:System.ValueType.Equals(System.Object)
   parent: System.ValueType
@@ -1326,6 +1628,193 @@ references:
   - name: Of
   - name: " "
   - name: TCardinal
+  - name: )
+- uid: System.Numerics.IAdditionOperators`3
+  commentId: T:System.Numerics.IAdditionOperators`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3
+  name: IAdditionOperators<TSelf, TOther, TResult>
+  nameWithType: IAdditionOperators<TSelf, TOther, TResult>
+  fullName: System.Numerics.IAdditionOperators<TSelf, TOther, TResult>
+  nameWithType.vb: IAdditionOperators(Of TSelf, TOther, TResult)
+  fullName.vb: System.Numerics.IAdditionOperators(Of TSelf, TOther, TResult)
+  name.vb: IAdditionOperators(Of TSelf, TOther, TResult)
+  spec.csharp:
+  - uid: System.Numerics.IAdditionOperators`3
+    name: IAdditionOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3
+  - name: <
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Numerics.IAdditionOperators`3
+    name: IAdditionOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Numerics
+  commentId: N:System.Numerics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Numerics
+  nameWithType: System.Numerics
+  fullName: System.Numerics
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Numerics
+    name: Numerics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Numerics
+    name: Numerics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics
+- uid: System.Numerics.ISubtractionOperators`3
+  commentId: T:System.Numerics.ISubtractionOperators`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3
+  name: ISubtractionOperators<TSelf, TOther, TResult>
+  nameWithType: ISubtractionOperators<TSelf, TOther, TResult>
+  fullName: System.Numerics.ISubtractionOperators<TSelf, TOther, TResult>
+  nameWithType.vb: ISubtractionOperators(Of TSelf, TOther, TResult)
+  fullName.vb: System.Numerics.ISubtractionOperators(Of TSelf, TOther, TResult)
+  name.vb: ISubtractionOperators(Of TSelf, TOther, TResult)
+  spec.csharp:
+  - uid: System.Numerics.ISubtractionOperators`3
+    name: ISubtractionOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3
+  - name: <
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Numerics.ISubtractionOperators`3
+    name: ISubtractionOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Numerics.IMultiplyOperators`3
+  commentId: T:System.Numerics.IMultiplyOperators`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3
+  name: IMultiplyOperators<TSelf, TOther, TResult>
+  nameWithType: IMultiplyOperators<TSelf, TOther, TResult>
+  fullName: System.Numerics.IMultiplyOperators<TSelf, TOther, TResult>
+  nameWithType.vb: IMultiplyOperators(Of TSelf, TOther, TResult)
+  fullName.vb: System.Numerics.IMultiplyOperators(Of TSelf, TOther, TResult)
+  name.vb: IMultiplyOperators(Of TSelf, TOther, TResult)
+  spec.csharp:
+  - uid: System.Numerics.IMultiplyOperators`3
+    name: IMultiplyOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3
+  - name: <
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Numerics.IMultiplyOperators`3
+    name: IMultiplyOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Numerics.IDivisionOperators`3
+  commentId: T:System.Numerics.IDivisionOperators`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.idivisionoperators-3
+  name: IDivisionOperators<TSelf, TOther, TResult>
+  nameWithType: IDivisionOperators<TSelf, TOther, TResult>
+  fullName: System.Numerics.IDivisionOperators<TSelf, TOther, TResult>
+  nameWithType.vb: IDivisionOperators(Of TSelf, TOther, TResult)
+  fullName.vb: System.Numerics.IDivisionOperators(Of TSelf, TOther, TResult)
+  name.vb: IDivisionOperators(Of TSelf, TOther, TResult)
+  spec.csharp:
+  - uid: System.Numerics.IDivisionOperators`3
+    name: IDivisionOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.idivisionoperators-3
+  - name: <
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Numerics.IDivisionOperators`3
+    name: IDivisionOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.idivisionoperators-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: ','
+  - name: " "
+  - name: TResult
   - name: )
 - uid: System.ValueType
   commentId: T:System.ValueType
@@ -1879,6 +2368,77 @@ references:
   - uid: Virtufin.Core.Position.DecimalAmount.op_Addition*
     name: +
     href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_op_Addition_Virtufin_Core_Position_DecimalAmount_Virtufin_Core_Position_DecimalAmount_
+- uid: System.Numerics.IAdditionOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}.op_Addition(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+  commentId: M:System.Numerics.IAdditionOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}.op_Addition(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+  parent: System.Numerics.IAdditionOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}
+  definition: System.Numerics.IAdditionOperators`3.op_Addition(`0,`1)
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3.op_addition
+  name: operator +(DecimalAmount, DecimalAmount)
+  nameWithType: IAdditionOperators<DecimalAmount, DecimalAmount, DecimalAmount>.operator +(DecimalAmount, DecimalAmount)
+  fullName: System.Numerics.IAdditionOperators<Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount>.operator +(Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount)
+  nameWithType.vb: IAdditionOperators(Of DecimalAmount, DecimalAmount, DecimalAmount).+(DecimalAmount, DecimalAmount)
+  fullName.vb: System.Numerics.IAdditionOperators(Of Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount).+(Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount)
+  name.vb: +(DecimalAmount, DecimalAmount)
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Numerics.IAdditionOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}.op_Addition(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+    name: +
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3.op_addition
+  - name: (
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: )
+  spec.vb:
+  - name: +
+  - name: (
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: )
+- uid: System.Numerics.IAdditionOperators`3.op_Addition(`0,`1)
+  commentId: M:System.Numerics.IAdditionOperators`3.op_Addition(`0,`1)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3.op_addition
+  name: operator +(TSelf, TOther)
+  nameWithType: IAdditionOperators<TSelf, TOther, TResult>.operator +(TSelf, TOther)
+  fullName: System.Numerics.IAdditionOperators<TSelf, TOther, TResult>.operator +(TSelf, TOther)
+  nameWithType.vb: IAdditionOperators(Of TSelf, TOther, TResult).+(TSelf, TOther)
+  fullName.vb: System.Numerics.IAdditionOperators(Of TSelf, TOther, TResult).+(TSelf, TOther)
+  name.vb: +(TSelf, TOther)
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Numerics.IAdditionOperators`3.op_Addition(`0,`1)
+    name: +
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3.op_addition
+  - name: (
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: )
+  spec.vb:
+  - name: +
+  - name: (
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: )
 - uid: Virtufin.Core.Position.DecimalAmount.op_Subtraction*
   commentId: Overload:Virtufin.Core.Position.DecimalAmount.op_Subtraction
   href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_op_Subtraction_Virtufin_Core_Position_DecimalAmount_Virtufin_Core_Position_DecimalAmount_
@@ -1894,6 +2454,256 @@ references:
   - uid: Virtufin.Core.Position.DecimalAmount.op_Subtraction*
     name: '-'
     href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_op_Subtraction_Virtufin_Core_Position_DecimalAmount_Virtufin_Core_Position_DecimalAmount_
+- uid: System.Numerics.ISubtractionOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}.op_Subtraction(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+  commentId: M:System.Numerics.ISubtractionOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}.op_Subtraction(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+  parent: System.Numerics.ISubtractionOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}
+  definition: System.Numerics.ISubtractionOperators`3.op_Subtraction(`0,`1)
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3.op_subtraction
+  name: operator -(DecimalAmount, DecimalAmount)
+  nameWithType: ISubtractionOperators<DecimalAmount, DecimalAmount, DecimalAmount>.operator -(DecimalAmount, DecimalAmount)
+  fullName: System.Numerics.ISubtractionOperators<Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount>.operator -(Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount)
+  nameWithType.vb: ISubtractionOperators(Of DecimalAmount, DecimalAmount, DecimalAmount).-(DecimalAmount, DecimalAmount)
+  fullName.vb: System.Numerics.ISubtractionOperators(Of Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount).-(Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount)
+  name.vb: -(DecimalAmount, DecimalAmount)
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Numerics.ISubtractionOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}.op_Subtraction(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+    name: '-'
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3.op_subtraction
+  - name: (
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: )
+  spec.vb:
+  - name: '-'
+  - name: (
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: )
+- uid: System.Numerics.ISubtractionOperators`3.op_Subtraction(`0,`1)
+  commentId: M:System.Numerics.ISubtractionOperators`3.op_Subtraction(`0,`1)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3.op_subtraction
+  name: operator -(TSelf, TOther)
+  nameWithType: ISubtractionOperators<TSelf, TOther, TResult>.operator -(TSelf, TOther)
+  fullName: System.Numerics.ISubtractionOperators<TSelf, TOther, TResult>.operator -(TSelf, TOther)
+  nameWithType.vb: ISubtractionOperators(Of TSelf, TOther, TResult).-(TSelf, TOther)
+  fullName.vb: System.Numerics.ISubtractionOperators(Of TSelf, TOther, TResult).-(TSelf, TOther)
+  name.vb: -(TSelf, TOther)
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Numerics.ISubtractionOperators`3.op_Subtraction(`0,`1)
+    name: '-'
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3.op_subtraction
+  - name: (
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: )
+  spec.vb:
+  - name: '-'
+  - name: (
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: )
+- uid: Virtufin.Core.Position.DecimalAmount.op_Multiply*
+  commentId: Overload:Virtufin.Core.Position.DecimalAmount.op_Multiply
+  href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_op_Multiply_Virtufin_Core_Position_DecimalAmount_Virtufin_Core_Position_DecimalAmount_
+  name: operator *
+  nameWithType: DecimalAmount.operator *
+  fullName: Virtufin.Core.Position.DecimalAmount.operator *
+  nameWithType.vb: DecimalAmount.*
+  fullName.vb: Virtufin.Core.Position.DecimalAmount.*
+  name.vb: '*'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount.op_Multiply*
+    name: '*'
+    href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_op_Multiply_Virtufin_Core_Position_DecimalAmount_Virtufin_Core_Position_DecimalAmount_
+- uid: System.Numerics.IMultiplyOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}.op_Multiply(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+  commentId: M:System.Numerics.IMultiplyOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}.op_Multiply(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+  parent: System.Numerics.IMultiplyOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}
+  definition: System.Numerics.IMultiplyOperators`3.op_Multiply(`0,`1)
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3.op_multiply
+  name: operator *(DecimalAmount, DecimalAmount)
+  nameWithType: IMultiplyOperators<DecimalAmount, DecimalAmount, DecimalAmount>.operator *(DecimalAmount, DecimalAmount)
+  fullName: System.Numerics.IMultiplyOperators<Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount>.operator *(Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount)
+  nameWithType.vb: IMultiplyOperators(Of DecimalAmount, DecimalAmount, DecimalAmount).*(DecimalAmount, DecimalAmount)
+  fullName.vb: System.Numerics.IMultiplyOperators(Of Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount).*(Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount)
+  name.vb: '*(DecimalAmount, DecimalAmount)'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Numerics.IMultiplyOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}.op_Multiply(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+    name: '*'
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3.op_multiply
+  - name: (
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: )
+  spec.vb:
+  - name: '*'
+  - name: (
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: )
+- uid: System.Numerics.IMultiplyOperators`3.op_Multiply(`0,`1)
+  commentId: M:System.Numerics.IMultiplyOperators`3.op_Multiply(`0,`1)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3.op_multiply
+  name: operator *(TSelf, TOther)
+  nameWithType: IMultiplyOperators<TSelf, TOther, TResult>.operator *(TSelf, TOther)
+  fullName: System.Numerics.IMultiplyOperators<TSelf, TOther, TResult>.operator *(TSelf, TOther)
+  nameWithType.vb: IMultiplyOperators(Of TSelf, TOther, TResult).*(TSelf, TOther)
+  fullName.vb: System.Numerics.IMultiplyOperators(Of TSelf, TOther, TResult).*(TSelf, TOther)
+  name.vb: '*(TSelf, TOther)'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Numerics.IMultiplyOperators`3.op_Multiply(`0,`1)
+    name: '*'
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3.op_multiply
+  - name: (
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: )
+  spec.vb:
+  - name: '*'
+  - name: (
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: )
+- uid: System.DivideByZeroException
+  commentId: T:System.DivideByZeroException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.dividebyzeroexception
+  name: DivideByZeroException
+  nameWithType: DivideByZeroException
+  fullName: System.DivideByZeroException
+- uid: Virtufin.Core.Position.DecimalAmount.op_Division*
+  commentId: Overload:Virtufin.Core.Position.DecimalAmount.op_Division
+  href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_op_Division_Virtufin_Core_Position_DecimalAmount_Virtufin_Core_Position_DecimalAmount_
+  name: operator /
+  nameWithType: DecimalAmount.operator /
+  fullName: Virtufin.Core.Position.DecimalAmount.operator /
+  nameWithType.vb: DecimalAmount./
+  fullName.vb: Virtufin.Core.Position.DecimalAmount./
+  name.vb: /
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount.op_Division*
+    name: /
+    href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_op_Division_Virtufin_Core_Position_DecimalAmount_Virtufin_Core_Position_DecimalAmount_
+- uid: System.Numerics.IDivisionOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}.op_Division(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+  commentId: M:System.Numerics.IDivisionOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}.op_Division(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+  parent: System.Numerics.IDivisionOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}
+  definition: System.Numerics.IDivisionOperators`3.op_Division(`0,`1)
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.idivisionoperators-3.op_division
+  name: operator /(DecimalAmount, DecimalAmount)
+  nameWithType: IDivisionOperators<DecimalAmount, DecimalAmount, DecimalAmount>.operator /(DecimalAmount, DecimalAmount)
+  fullName: System.Numerics.IDivisionOperators<Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount>.operator /(Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount)
+  nameWithType.vb: IDivisionOperators(Of DecimalAmount, DecimalAmount, DecimalAmount)./(DecimalAmount, DecimalAmount)
+  fullName.vb: System.Numerics.IDivisionOperators(Of Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount)./(Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount)
+  name.vb: /(DecimalAmount, DecimalAmount)
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Numerics.IDivisionOperators{Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount}.op_Division(Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount)
+    name: /
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.idivisionoperators-3.op_division
+  - name: (
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: )
+  spec.vb:
+  - name: /
+  - name: (
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: )
+- uid: System.Numerics.IDivisionOperators`3.op_Division(`0,`1)
+  commentId: M:System.Numerics.IDivisionOperators`3.op_Division(`0,`1)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.idivisionoperators-3.op_division
+  name: operator /(TSelf, TOther)
+  nameWithType: IDivisionOperators<TSelf, TOther, TResult>.operator /(TSelf, TOther)
+  fullName: System.Numerics.IDivisionOperators<TSelf, TOther, TResult>.operator /(TSelf, TOther)
+  nameWithType.vb: IDivisionOperators(Of TSelf, TOther, TResult)./(TSelf, TOther)
+  fullName.vb: System.Numerics.IDivisionOperators(Of TSelf, TOther, TResult)./(TSelf, TOther)
+  name.vb: /(TSelf, TOther)
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Numerics.IDivisionOperators`3.op_Division(`0,`1)
+    name: /
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.idivisionoperators-3.op_division
+  - name: (
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: )
+  spec.vb:
+  - name: /
+  - name: (
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: )
 - uid: System.ValueType.ToString
   commentId: M:System.ValueType.ToString
   parent: System.ValueType

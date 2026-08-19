@@ -7,13 +7,14 @@ items:
   children:
   - Virtufin.Core.Events.ClockType
   - Virtufin.Core.Events.CloudEvent
-  - Virtufin.Core.Events.IEvent
   - Virtufin.Core.Events.IEventEnvelope
+  - Virtufin.Core.Events.IEvent`1
   - Virtufin.Core.Events.Lane
   - Virtufin.Core.Events.Market
   - Virtufin.Core.Events.Position
   - Virtufin.Core.Events.Risk
   - Virtufin.Core.Events.Symbol
+  - Virtufin.Core.Events.TimestampedSample`2
   - Virtufin.Core.Events.Trade
   langs:
   - csharp
@@ -191,13 +192,6 @@ references:
   name: CloudEvent
   nameWithType: CloudEvent
   fullName: Virtufin.Core.Events.CloudEvent
-- uid: Virtufin.Core.Events.IEvent
-  commentId: T:Virtufin.Core.Events.IEvent
-  parent: Virtufin.Core.Events
-  href: Virtufin.Core.Events.IEvent.html
-  name: IEvent
-  nameWithType: IEvent
-  fullName: Virtufin.Core.Events.IEvent
 - uid: Virtufin.Core.Events.IEventEnvelope
   commentId: T:Virtufin.Core.Events.IEventEnvelope
   parent: Virtufin.Core.Events
@@ -205,6 +199,31 @@ references:
   name: IEventEnvelope
   nameWithType: IEventEnvelope
   fullName: Virtufin.Core.Events.IEventEnvelope
+- uid: Virtufin.Core.Events.IEvent`1
+  commentId: T:Virtufin.Core.Events.IEvent`1
+  href: Virtufin.Core.Events.IEvent-1.html
+  name: IEvent<T>
+  nameWithType: IEvent<T>
+  fullName: Virtufin.Core.Events.IEvent<T>
+  nameWithType.vb: IEvent(Of T)
+  fullName.vb: Virtufin.Core.Events.IEvent(Of T)
+  name.vb: IEvent(Of T)
+  spec.csharp:
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: Virtufin.Core.Events.Lane
   commentId: T:Virtufin.Core.Events.Lane
   parent: Virtufin.Core.Events
@@ -219,6 +238,37 @@ references:
   name: Symbol
   nameWithType: Symbol
   fullName: Virtufin.Core.Events.Symbol
+- uid: Virtufin.Core.Events.TimestampedSample`2
+  commentId: T:Virtufin.Core.Events.TimestampedSample`2
+  href: Virtufin.Core.Events.TimestampedSample-2.html
+  name: TimestampedSample<TTime, TValue>
+  nameWithType: TimestampedSample<TTime, TValue>
+  fullName: Virtufin.Core.Events.TimestampedSample<TTime, TValue>
+  nameWithType.vb: TimestampedSample(Of TTime, TValue)
+  fullName.vb: Virtufin.Core.Events.TimestampedSample(Of TTime, TValue)
+  name.vb: TimestampedSample(Of TTime, TValue)
+  spec.csharp:
+  - uid: Virtufin.Core.Events.TimestampedSample`2
+    name: TimestampedSample
+    href: Virtufin.Core.Events.TimestampedSample-2.html
+  - name: <
+  - name: TTime
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Events.TimestampedSample`2
+    name: TimestampedSample
+    href: Virtufin.Core.Events.TimestampedSample-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTime
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
 - uid: Virtufin.Core.Events
   commentId: N:Virtufin.Core.Events
   href: Virtufin.html

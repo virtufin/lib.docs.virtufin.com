@@ -1,0 +1,279 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Behaviour.IIndicator`3
+  commentId: T:Virtufin.Core.Behaviour.IIndicator`3
+  id: IIndicator`3
+  parent: Virtufin.Core.Behaviour
+  children:
+  - Virtufin.Core.Behaviour.IIndicator`3.Add(`1)
+  langs:
+  - csharp
+  - vb
+  name: IIndicator<TSelf, TSample, TValue>
+  nameWithType: IIndicator<TSelf, TSample, TValue>
+  fullName: Virtufin.Core.Behaviour.IIndicator<TSelf, TSample, TValue>
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Behaviour/IIndicator.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IIndicator
+    path: ../../../src/Virtufin.Core/Behaviour/IIndicator.cs
+    startLine: 14
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Behaviour
+  summary: >-
+    An immutable, self-folding indicator: consumes samples one at a time and
+
+    exposes its current value via <xref href="Virtufin.Core.Behaviour.ISignal%601" data-throw-if-not-resolved="false"></xref>. Composes with
+
+    <xref href="Virtufin.Core.Behaviour.ISignal%601" data-throw-if-not-resolved="false"></xref> rather than <xref href="Virtufin.Core.Behaviour.IAlgebra%602" data-throw-if-not-resolved="false"></xref> or
+
+    IProcess&lt;S,E&gt; because the indicator's own state doesn't need
+
+    to be threaded as an explicit external parameter — <code>this</code> already is
+
+    the state.
+  example: []
+  syntax:
+    content: 'public interface IIndicator<TSelf, TSample, TValue> : ISignal<TValue> where TSelf : IIndicator<TSelf, TSample, TValue>'
+    typeParameters:
+    - id: TSelf
+      description: >-
+        The concrete indicator type, so <xref href="Virtufin.Core.Behaviour.IIndicator%603.Add(%601)" data-throw-if-not-resolved="false"></xref> returns
+            the same concrete type rather than the interface.
+    - id: TSample
+      description: The sample type consumed on each observation.
+    - id: TValue
+      description: The indicator's current value type.
+    content.vb: Public Interface IIndicator(Of TSelf As IIndicator(Of TSelf, TSample, TValue), TSample, TValue) Inherits ISignal(Of TValue)
+  derivedClasses:
+  - Virtufin.Base.Behaviour.SimpleMovingAverage`2
+  inheritedMembers:
+  - Virtufin.Core.Behaviour.ISignal{{TValue}}.Value
+  nameWithType.vb: IIndicator(Of TSelf, TSample, TValue)
+  fullName.vb: Virtufin.Core.Behaviour.IIndicator(Of TSelf, TSample, TValue)
+  name.vb: IIndicator(Of TSelf, TSample, TValue)
+- uid: Virtufin.Core.Behaviour.IIndicator`3.Add(`1)
+  commentId: M:Virtufin.Core.Behaviour.IIndicator`3.Add(`1)
+  id: Add(`1)
+  parent: Virtufin.Core.Behaviour.IIndicator`3
+  langs:
+  - csharp
+  - vb
+  name: Add(TSample)
+  nameWithType: IIndicator<TSelf, TSample, TValue>.Add(TSample)
+  fullName: Virtufin.Core.Behaviour.IIndicator<TSelf, TSample, TValue>.Add(TSample)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Behaviour/IIndicator.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Add
+    path: ../../../src/Virtufin.Core/Behaviour/IIndicator.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Behaviour
+  summary: Fold one more sample in, returning the updated indicator.
+  example: []
+  syntax:
+    content: TSelf Add(TSample sample)
+    parameters:
+    - id: sample
+      type: '{TSample}'
+      description: The new observation.
+    return:
+      type: '{TSelf}'
+      description: A new indicator instance reflecting <code class="paramref">sample</code>.
+    content.vb: Function Add(sample As TSample) As TSelf
+  overload: Virtufin.Core.Behaviour.IIndicator`3.Add*
+  nameWithType.vb: IIndicator(Of TSelf, TSample, TValue).Add(TSample)
+  fullName.vb: Virtufin.Core.Behaviour.IIndicator(Of TSelf, TSample, TValue).Add(TSample)
+references:
+- uid: Virtufin.Core.Behaviour.ISignal`1
+  commentId: T:Virtufin.Core.Behaviour.ISignal`1
+  href: Virtufin.Core.Behaviour.ISignal-1.html
+  name: ISignal<T>
+  nameWithType: ISignal<T>
+  fullName: Virtufin.Core.Behaviour.ISignal<T>
+  nameWithType.vb: ISignal(Of T)
+  fullName.vb: Virtufin.Core.Behaviour.ISignal(Of T)
+  name.vb: ISignal(Of T)
+  spec.csharp:
+  - uid: Virtufin.Core.Behaviour.ISignal`1
+    name: ISignal
+    href: Virtufin.Core.Behaviour.ISignal-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Behaviour.ISignal`1
+    name: ISignal
+    href: Virtufin.Core.Behaviour.ISignal-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Core.Behaviour.IAlgebra`2
+  commentId: T:Virtufin.Core.Behaviour.IAlgebra`2
+  href: Virtufin.Core.Behaviour.IAlgebra-2.html
+  name: IAlgebra<TEvent, TState>
+  nameWithType: IAlgebra<TEvent, TState>
+  fullName: Virtufin.Core.Behaviour.IAlgebra<TEvent, TState>
+  nameWithType.vb: IAlgebra(Of TEvent, TState)
+  fullName.vb: Virtufin.Core.Behaviour.IAlgebra(Of TEvent, TState)
+  name.vb: IAlgebra(Of TEvent, TState)
+  spec.csharp:
+  - uid: Virtufin.Core.Behaviour.IAlgebra`2
+    name: IAlgebra
+    href: Virtufin.Core.Behaviour.IAlgebra-2.html
+  - name: <
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TState
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Behaviour.IAlgebra`2
+    name: IAlgebra
+    href: Virtufin.Core.Behaviour.IAlgebra-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TState
+  - name: )
+- uid: Virtufin.Core.Behaviour.IIndicator`3.Add(`1)
+  commentId: M:Virtufin.Core.Behaviour.IIndicator`3.Add(`1)
+  href: Virtufin.Core.Behaviour.IIndicator-3.html#Virtufin_Core_Behaviour_IIndicator_3_Add__1_
+  name: Add(TSample)
+  nameWithType: IIndicator<TSelf, TSample, TValue>.Add(TSample)
+  fullName: Virtufin.Core.Behaviour.IIndicator<TSelf, TSample, TValue>.Add(TSample)
+  nameWithType.vb: IIndicator(Of TSelf, TSample, TValue).Add(TSample)
+  fullName.vb: Virtufin.Core.Behaviour.IIndicator(Of TSelf, TSample, TValue).Add(TSample)
+  spec.csharp:
+  - uid: Virtufin.Core.Behaviour.IIndicator`3.Add(`1)
+    name: Add
+    href: Virtufin.Core.Behaviour.IIndicator-3.html#Virtufin_Core_Behaviour_IIndicator_3_Add__1_
+  - name: (
+  - name: TSample
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Behaviour.IIndicator`3.Add(`1)
+    name: Add
+    href: Virtufin.Core.Behaviour.IIndicator-3.html#Virtufin_Core_Behaviour_IIndicator_3_Add__1_
+  - name: (
+  - name: TSample
+  - name: )
+- uid: Virtufin.Core.Behaviour
+  commentId: N:Virtufin.Core.Behaviour
+  href: Virtufin.html
+  name: Virtufin.Core.Behaviour
+  nameWithType: Virtufin.Core.Behaviour
+  fullName: Virtufin.Core.Behaviour
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Behaviour
+    name: Behaviour
+    href: Virtufin.Core.Behaviour.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Behaviour
+    name: Behaviour
+    href: Virtufin.Core.Behaviour.html
+- uid: Virtufin.Core.Behaviour.ISignal{{TValue}}.Value
+  commentId: P:Virtufin.Core.Behaviour.ISignal{`2}.Value
+  parent: Virtufin.Core.Behaviour.ISignal{{TValue}}
+  definition: Virtufin.Core.Behaviour.ISignal`1.Value
+  href: Virtufin.Core.Behaviour.ISignal-1.html#Virtufin_Core_Behaviour_ISignal_1_Value
+  name: Value
+  nameWithType: ISignal<TValue>.Value
+  fullName: Virtufin.Core.Behaviour.ISignal<TValue>.Value
+  nameWithType.vb: ISignal(Of TValue).Value
+  fullName.vb: Virtufin.Core.Behaviour.ISignal(Of TValue).Value
+- uid: Virtufin.Core.Behaviour.ISignal`1.Value
+  commentId: P:Virtufin.Core.Behaviour.ISignal`1.Value
+  href: Virtufin.Core.Behaviour.ISignal-1.html#Virtufin_Core_Behaviour_ISignal_1_Value
+  name: Value
+  nameWithType: ISignal<T>.Value
+  fullName: Virtufin.Core.Behaviour.ISignal<T>.Value
+  nameWithType.vb: ISignal(Of T).Value
+  fullName.vb: Virtufin.Core.Behaviour.ISignal(Of T).Value
+- uid: Virtufin.Core.Behaviour.ISignal{{TValue}}
+  commentId: T:Virtufin.Core.Behaviour.ISignal{`2}
+  parent: Virtufin.Core.Behaviour
+  definition: Virtufin.Core.Behaviour.ISignal`1
+  href: Virtufin.Core.Behaviour.ISignal-1.html
+  name: ISignal<TValue>
+  nameWithType: ISignal<TValue>
+  fullName: Virtufin.Core.Behaviour.ISignal<TValue>
+  nameWithType.vb: ISignal(Of TValue)
+  fullName.vb: Virtufin.Core.Behaviour.ISignal(Of TValue)
+  name.vb: ISignal(Of TValue)
+  spec.csharp:
+  - uid: Virtufin.Core.Behaviour.ISignal`1
+    name: ISignal
+    href: Virtufin.Core.Behaviour.ISignal-1.html
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Behaviour.ISignal`1
+    name: ISignal
+    href: Virtufin.Core.Behaviour.ISignal-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Virtufin.Core.Behaviour.IIndicator`3.Add*
+  commentId: Overload:Virtufin.Core.Behaviour.IIndicator`3.Add
+  href: Virtufin.Core.Behaviour.IIndicator-3.html#Virtufin_Core_Behaviour_IIndicator_3_Add__1_
+  name: Add
+  nameWithType: IIndicator<TSelf, TSample, TValue>.Add
+  fullName: Virtufin.Core.Behaviour.IIndicator<TSelf, TSample, TValue>.Add
+  nameWithType.vb: IIndicator(Of TSelf, TSample, TValue).Add
+  fullName.vb: Virtufin.Core.Behaviour.IIndicator(Of TSelf, TSample, TValue).Add
+- uid: '{TSample}'
+  commentId: '!:TSample'
+  definition: TSample
+  name: TSample
+  nameWithType: TSample
+  fullName: TSample
+- uid: '{TSelf}'
+  commentId: '!:TSelf'
+  definition: TSelf
+  name: TSelf
+  nameWithType: TSelf
+  fullName: TSelf
+- uid: TSample
+  commentId: '!:TSample'
+  name: TSample
+  nameWithType: TSample
+  fullName: TSample
+- uid: TSelf
+  commentId: '!:TSelf'
+  name: TSelf
+  nameWithType: TSelf
+  fullName: TSelf

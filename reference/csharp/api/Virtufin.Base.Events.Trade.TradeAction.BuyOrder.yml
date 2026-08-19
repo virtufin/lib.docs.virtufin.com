@@ -24,22 +24,20 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: BuyOrder
     path: ../../../src/Virtufin.Base/Events/Trade/TradeAction.cs
-    startLine: 32
+    startLine: 29
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Events.Trade
   summary: Buy order on a CLOB.
   example: []
   syntax:
-    content: 'public sealed record TradeAction.BuyOrder : TradeAction, ITradeAction, IEvent, IEquatable<IEvent>, IEquatable<TradeAction>, IEquatable<TradeAction.BuyOrder>'
-    content.vb: Public NotInheritable Class TradeAction.BuyOrder Inherits TradeAction Implements ITradeAction, IEvent, IEquatable(Of IEvent), IEquatable(Of TradeAction), IEquatable(Of TradeAction.BuyOrder)
+    content: 'public sealed record TradeAction.BuyOrder : TradeAction, ITradeAction, IEquatable<TradeAction>, IEquatable<TradeAction.BuyOrder>'
+    content.vb: Public NotInheritable Class TradeAction.BuyOrder Inherits TradeAction Implements ITradeAction, IEquatable(Of TradeAction), IEquatable(Of TradeAction.BuyOrder)
   inheritance:
   - System.Object
   - Virtufin.Base.Events.Trade.TradeAction
   implements:
   - Virtufin.Core.Events.Trade.ITradeAction
-  - Virtufin.Core.Events.IEvent
-  - System.IEquatable{Virtufin.Core.Events.IEvent}
   - System.IEquatable{Virtufin.Base.Events.Trade.TradeAction}
   - System.IEquatable{Virtufin.Base.Events.Trade.TradeAction.BuyOrder}
   inheritedMembers:
@@ -67,7 +65,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: .ctor
     path: ../../../src/Virtufin.Base/Events/Trade/TradeAction.cs
-    startLine: 32
+    startLine: 29
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Events.Trade
@@ -111,7 +109,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: Symbol
     path: ../../../src/Virtufin.Base/Events/Trade/TradeAction.cs
-    startLine: 33
+    startLine: 30
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Events.Trade
@@ -142,7 +140,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: Quantity
     path: ../../../src/Virtufin.Base/Events/Trade/TradeAction.cs
-    startLine: 34
+    startLine: 31
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Events.Trade
@@ -173,7 +171,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: LimitPrice
     path: ../../../src/Virtufin.Base/Events/Trade/TradeAction.cs
-    startLine: 35
+    startLine: 32
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Events.Trade
@@ -204,7 +202,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: OrderId
     path: ../../../src/Virtufin.Base/Events/Trade/TradeAction.cs
-    startLine: 36
+    startLine: 33
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Events.Trade
@@ -281,46 +279,6 @@ references:
   name: ITradeAction
   nameWithType: ITradeAction
   fullName: Virtufin.Core.Events.Trade.ITradeAction
-- uid: Virtufin.Core.Events.IEvent
-  commentId: T:Virtufin.Core.Events.IEvent
-  parent: Virtufin.Core.Events
-  href: Virtufin.Core.Events.IEvent.html
-  name: IEvent
-  nameWithType: IEvent
-  fullName: Virtufin.Core.Events.IEvent
-- uid: System.IEquatable{Virtufin.Core.Events.IEvent}
-  commentId: T:System.IEquatable{Virtufin.Core.Events.IEvent}
-  parent: System
-  definition: System.IEquatable`1
-  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  name: IEquatable<IEvent>
-  nameWithType: IEquatable<IEvent>
-  fullName: System.IEquatable<Virtufin.Core.Events.IEvent>
-  nameWithType.vb: IEquatable(Of IEvent)
-  fullName.vb: System.IEquatable(Of Virtufin.Core.Events.IEvent)
-  name.vb: IEquatable(Of IEvent)
-  spec.csharp:
-  - uid: System.IEquatable`1
-    name: IEquatable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  - name: <
-  - uid: Virtufin.Core.Events.IEvent
-    name: IEvent
-    href: Virtufin.Core.Events.IEvent.html
-  - name: '>'
-  spec.vb:
-  - uid: System.IEquatable`1
-    name: IEquatable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Virtufin.Core.Events.IEvent
-    name: IEvent
-    href: Virtufin.Core.Events.IEvent.html
-  - name: )
 - uid: System.IEquatable{Virtufin.Base.Events.Trade.TradeAction}
   commentId: T:System.IEquatable{Virtufin.Base.Events.Trade.TradeAction}
   parent: System
@@ -635,36 +593,6 @@ references:
   - uid: Virtufin.Core.Events.Trade
     name: Trade
     href: Virtufin.Core.Events.Trade.html
-- uid: Virtufin.Core.Events
-  commentId: N:Virtufin.Core.Events
-  href: Virtufin.html
-  name: Virtufin.Core.Events
-  nameWithType: Virtufin.Core.Events
-  fullName: Virtufin.Core.Events
-  spec.csharp:
-  - uid: Virtufin
-    name: Virtufin
-    href: Virtufin.html
-  - name: .
-  - uid: Virtufin.Core
-    name: Core
-    href: Virtufin.Core.html
-  - name: .
-  - uid: Virtufin.Core.Events
-    name: Events
-    href: Virtufin.Core.Events.html
-  spec.vb:
-  - uid: Virtufin
-    name: Virtufin
-    href: Virtufin.html
-  - name: .
-  - uid: Virtufin.Core
-    name: Core
-    href: Virtufin.Core.html
-  - name: .
-  - uid: Virtufin.Core.Events
-    name: Events
-    href: Virtufin.Core.Events.html
 - uid: System.IEquatable`1
   commentId: T:System.IEquatable`1
   isExternal: true
@@ -754,6 +682,36 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.guid
   - name: '?'
+- uid: Virtufin.Core.Events
+  commentId: N:Virtufin.Core.Events
+  href: Virtufin.html
+  name: Virtufin.Core.Events
+  nameWithType: Virtufin.Core.Events
+  fullName: Virtufin.Core.Events
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
 - uid: Virtufin.Core.Position
   commentId: N:Virtufin.Core.Position
   href: Virtufin.html

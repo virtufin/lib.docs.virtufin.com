@@ -49,10 +49,10 @@
             Virtufin.Dotnet
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/4deb7ef3b222d4ec5ae63494b15e6b56d2e5d1a1" target="_blank" rel="noopener" class="commit-badge" title="View commit 4deb7ef3b222d4ec5ae63494b15e6b56d2e5d1a1">
+            <a href="{git_repo_url}/commit/45512af6ddd2dea83a6e07586941067d3a75f7e4" target="_blank" rel="noopener" class="commit-badge" title="View commit 45512af6ddd2dea83a6e07586941067d3a75f7e4">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">4deb7ef3b222d4ec5ae63494b15e6b56d2e5d1a1</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">45512af6ddd2dea83a6e07586941067d3a75f7e4</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -99,48 +99,48 @@
 Classes
 </h3>
     <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.Base.Events.Market.MarketEvent.html">MarketEvent</a></dt>
+      <dt><a class="xref" href="Virtufin.Base.Events.Market.MarketEvent-1.html">MarketEvent&lt;T&gt;</a></dt>
       <dd><p>Sealed ADT of raw market observations — what the feed emits. Two cases:
-<a class="xref" href="Virtufin.Base.Events.Market.MarketEvent.TickReceived.html">MarketEvent.TickReceived</a> (best bid/ask update) and <a class="xref" href="Virtufin.Base.Events.Market.MarketEvent.OrderBookReceived.html">MarketEvent.OrderBookReceived</a>
+<a class="xref" href="Virtufin.Base.Events.Market.MarketEvent-1.TickReceived.html">MarketEvent&lt;T&gt;.TickReceived</a> (best bid/ask update) and <a class="xref" href="Virtufin.Base.Events.Market.MarketEvent-1.OrderBookReceived.html">MarketEvent&lt;T&gt;.OrderBookReceived</a>
 (depth snapshot/diff). Topics use the naming scheme
 <code>act.market.{entity}.{event}</code> or <code>hyp.{selector}.market.{entity}.{event}</code>.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.Base.Events.Market.MarketEvent.OrderBookReceived.html">MarketEvent.OrderBookReceived</a></dt>
+      <dt><a class="xref" href="Virtufin.Base.Events.Market.MarketEvent-1.OrderBookReceived.html">MarketEvent&lt;T&gt;.OrderBookReceived</a></dt>
       <dd><p>Depth snapshot or diff from the order book feed.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.Base.Events.Market.MarketEvent.TickReceived.html">MarketEvent.TickReceived</a></dt>
+      <dt><a class="xref" href="Virtufin.Base.Events.Market.MarketEvent-1.TickReceived.html">MarketEvent&lt;T&gt;.TickReceived</a></dt>
       <dd><p>Best bid/ask update from the feed.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.Base.Events.Market.RichMarketEvent.html">RichMarketEvent</a></dt>
+      <dt><a class="xref" href="Virtufin.Base.Events.Market.RichMarketEvent-1.html">RichMarketEvent&lt;T&gt;</a></dt>
       <dd><p>Enriched market events — derived signals (candles, VWAP, volatility) plus
-pass-through for raw <a class="xref" href="Virtufin.Base.Events.Market.MarketEvent.html">MarketEvent</a>s. Both flow through the
+pass-through for raw <a class="xref" href="Virtufin.Base.Events.Market.MarketEvent-1.html">MarketEvent&lt;T&gt;</a>s. Both flow through the
 same <code>act.market.<em></em></code> / <code>hyp.{selector}.market.</code> topics since
-they share the <a class="xref" href="Virtufin.Core.Events.Market.IMarketEvent.html">IMarketEvent</a> marker.</p>
+they share the <a class="xref" href="Virtufin.Core.Events.Market.IMarketEvent-1.html">IMarketEvent&lt;T&gt;</a> marker.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.Base.Events.Market.RichMarketEvent.Base.html">RichMarketEvent.Base</a></dt>
-      <dd><p>Pass-through for a raw <a class="xref" href="Virtufin.Base.Events.Market.MarketEvent.html">MarketEvent</a>.</p>
+      <dt><a class="xref" href="Virtufin.Base.Events.Market.RichMarketEvent-1.Base.html">RichMarketEvent&lt;T&gt;.Base</a></dt>
+      <dd><p>Pass-through for a raw <a class="xref" href="Virtufin.Base.Events.Market.MarketEvent-1.html">MarketEvent&lt;T&gt;</a>.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.Base.Events.Market.RichMarketEvent.CandleClosed.html">RichMarketEvent.CandleClosed</a></dt>
+      <dt><a class="xref" href="Virtufin.Base.Events.Market.RichMarketEvent-1.CandleClosed.html">RichMarketEvent&lt;T&gt;.CandleClosed</a></dt>
       <dd><p>OHLCV candle closed (derived from a tick window).</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.Base.Events.Market.RichMarketEvent.VWAPComputed.html">RichMarketEvent.VWAPComputed</a></dt>
+      <dt><a class="xref" href="Virtufin.Base.Events.Market.RichMarketEvent-1.VWAPComputed.html">RichMarketEvent&lt;T&gt;.VWAPComputed</a></dt>
       <dd><p>Volume-weighted average price (derived from tick stream).</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.Base.Events.Market.RichMarketEvent.VolatilityEstimate.html">RichMarketEvent.VolatilityEstimate</a></dt>
+      <dt><a class="xref" href="Virtufin.Base.Events.Market.RichMarketEvent-1.VolatilityEstimate.html">RichMarketEvent&lt;T&gt;.VolatilityEstimate</a></dt>
       <dd><p>Realised volatility estimate (e.g. standard deviation of log returns).</p>
 </dd>
     </dl>

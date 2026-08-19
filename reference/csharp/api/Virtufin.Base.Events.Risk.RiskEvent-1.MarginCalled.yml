@@ -1,0 +1,889 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled
+  commentId: T:Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled
+  id: RiskEvent`1.MarginCalled
+  parent: Virtufin.Base.Events.Risk
+  children:
+  - Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled.#ctor(Virtufin.Core.Position.DecimalAmount,`0)
+  - Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled.CalledAt
+  - Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled.MarginRatio
+  - Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled.Time
+  langs:
+  - csharp
+  - vb
+  name: RiskEvent<T>.MarginCalled
+  nameWithType: RiskEvent<T>.MarginCalled
+  fullName: Virtufin.Base.Events.Risk.RiskEvent<T>.MarginCalled
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Risk/RiskEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: MarginCalled
+    path: ../../../src/Virtufin.Base/Events/Risk/RiskEvent.cs
+    startLine: 83
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Risk
+  summary: Forced liquidation triggered (act only).
+  example: []
+  syntax:
+    content: 'public sealed record RiskEvent<T>.MarginCalled : RiskEvent<T>, IRiskEvent<T>, IEvent<T>, IEquatable<IEvent<T>>, IEquatable<RiskEvent<T>>, IEquatable<RiskEvent<T>.MarginCalled>'
+    content.vb: Public NotInheritable Class RiskEvent(Of T).MarginCalled Inherits RiskEvent(Of T) Implements IRiskEvent(Of T), IEvent(Of T), IEquatable(Of IEvent(Of T)), IEquatable(Of RiskEvent(Of T)), IEquatable(Of RiskEvent(Of T).MarginCalled)
+  inheritance:
+  - System.Object
+  - Virtufin.Base.Events.Risk.RiskEvent`1
+  implements:
+  - Virtufin.Core.Events.Risk.IRiskEvent{{T}}
+  - Virtufin.Core.Events.IEvent{{T}}
+  - System.IEquatable{Virtufin.Core.Events.IEvent{{T}}}
+  - System.IEquatable{Virtufin.Base.Events.Risk.RiskEvent`1}
+  - System.IEquatable{Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: RiskEvent(Of T).MarginCalled
+  fullName.vb: Virtufin.Base.Events.Risk.RiskEvent(Of T).MarginCalled
+  name.vb: RiskEvent(Of T).MarginCalled
+- uid: Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled.#ctor(Virtufin.Core.Position.DecimalAmount,`0)
+  commentId: M:Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled.#ctor(Virtufin.Core.Position.DecimalAmount,`0)
+  id: '#ctor(Virtufin.Core.Position.DecimalAmount,`0)'
+  parent: Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled
+  langs:
+  - csharp
+  - vb
+  name: MarginCalled(DecimalAmount, T)
+  nameWithType: RiskEvent<T>.MarginCalled.MarginCalled(DecimalAmount, T)
+  fullName: Virtufin.Base.Events.Risk.RiskEvent<T>.MarginCalled.MarginCalled(Virtufin.Core.Position.DecimalAmount, T)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Risk/RiskEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Base/Events/Risk/RiskEvent.cs
+    startLine: 83
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Risk
+  summary: Forced liquidation triggered (act only).
+  example: []
+  syntax:
+    content: public MarginCalled(DecimalAmount MarginRatio, T CalledAt)
+    parameters:
+    - id: MarginRatio
+      type: Virtufin.Core.Position.DecimalAmount
+      description: Margin ratio at liquidation.
+    - id: CalledAt
+      type: '{T}'
+      description: Time of margin call.
+    content.vb: Public Sub New(MarginRatio As DecimalAmount, CalledAt As T)
+  overload: Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled.#ctor*
+  nameWithType.vb: RiskEvent(Of T).MarginCalled.New(DecimalAmount, T)
+  fullName.vb: Virtufin.Base.Events.Risk.RiskEvent(Of T).MarginCalled.New(Virtufin.Core.Position.DecimalAmount, T)
+  name.vb: New(DecimalAmount, T)
+- uid: Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled.MarginRatio
+  commentId: P:Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled.MarginRatio
+  id: MarginRatio
+  parent: Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled
+  langs:
+  - csharp
+  - vb
+  name: MarginRatio
+  nameWithType: RiskEvent<T>.MarginCalled.MarginRatio
+  fullName: Virtufin.Base.Events.Risk.RiskEvent<T>.MarginCalled.MarginRatio
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Risk/RiskEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: MarginRatio
+    path: ../../../src/Virtufin.Base/Events/Risk/RiskEvent.cs
+    startLine: 83
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Risk
+  summary: Margin ratio at liquidation.
+  example: []
+  syntax:
+    content: public DecimalAmount MarginRatio { get; init; }
+    parameters: []
+    return:
+      type: Virtufin.Core.Position.DecimalAmount
+    content.vb: Public Property MarginRatio As DecimalAmount
+  overload: Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled.MarginRatio*
+  nameWithType.vb: RiskEvent(Of T).MarginCalled.MarginRatio
+  fullName.vb: Virtufin.Base.Events.Risk.RiskEvent(Of T).MarginCalled.MarginRatio
+- uid: Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled.CalledAt
+  commentId: P:Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled.CalledAt
+  id: CalledAt
+  parent: Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled
+  langs:
+  - csharp
+  - vb
+  name: CalledAt
+  nameWithType: RiskEvent<T>.MarginCalled.CalledAt
+  fullName: Virtufin.Base.Events.Risk.RiskEvent<T>.MarginCalled.CalledAt
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Risk/RiskEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: CalledAt
+    path: ../../../src/Virtufin.Base/Events/Risk/RiskEvent.cs
+    startLine: 83
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Risk
+  summary: Time of margin call.
+  example: []
+  syntax:
+    content: public T CalledAt { get; init; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public Property CalledAt As T
+  overload: Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled.CalledAt*
+  nameWithType.vb: RiskEvent(Of T).MarginCalled.CalledAt
+  fullName.vb: Virtufin.Base.Events.Risk.RiskEvent(Of T).MarginCalled.CalledAt
+- uid: Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled.Time
+  commentId: P:Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled.Time
+  id: Time
+  parent: Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled
+  langs:
+  - csharp
+  - vb
+  name: Time
+  nameWithType: RiskEvent<T>.MarginCalled.Time
+  fullName: Virtufin.Base.Events.Risk.RiskEvent<T>.MarginCalled.Time
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Risk/RiskEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Time
+    path: ../../../src/Virtufin.Base/Events/Risk/RiskEvent.cs
+    startLine: 86
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Risk
+  summary: The time at which this event's fact occurred.
+  example: []
+  syntax:
+    content: public override T Time { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public Overrides ReadOnly Property Time As T
+  overridden: Virtufin.Base.Events.Risk.RiskEvent`1.Time
+  overload: Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled.Time*
+  nameWithType.vb: RiskEvent(Of T).MarginCalled.Time
+  fullName.vb: Virtufin.Base.Events.Risk.RiskEvent(Of T).MarginCalled.Time
+references:
+- uid: Virtufin.Base.Events.Risk
+  commentId: N:Virtufin.Base.Events.Risk
+  href: Virtufin.html
+  name: Virtufin.Base.Events.Risk
+  nameWithType: Virtufin.Base.Events.Risk
+  fullName: Virtufin.Base.Events.Risk
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html
+  - name: .
+  - uid: Virtufin.Base.Events.Risk
+    name: Risk
+    href: Virtufin.Base.Events.Risk.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html
+  - name: .
+  - uid: Virtufin.Base.Events.Risk
+    name: Risk
+    href: Virtufin.Base.Events.Risk.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.Base.Events.Risk.RiskEvent`1
+  commentId: T:Virtufin.Base.Events.Risk.RiskEvent`1
+  parent: Virtufin.Base.Events.Risk
+  href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  name: RiskEvent<T>
+  nameWithType: RiskEvent<T>
+  fullName: Virtufin.Base.Events.Risk.RiskEvent<T>
+  nameWithType.vb: RiskEvent(Of T)
+  fullName.vb: Virtufin.Base.Events.Risk.RiskEvent(Of T)
+  name.vb: RiskEvent(Of T)
+  spec.csharp:
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1
+    name: RiskEvent
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1
+    name: RiskEvent
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Core.Events.Risk.IRiskEvent{{T}}
+  commentId: T:Virtufin.Core.Events.Risk.IRiskEvent{`0}
+  parent: Virtufin.Core.Events.Risk
+  definition: Virtufin.Core.Events.Risk.IRiskEvent`1
+  href: Virtufin.Core.Events.Risk.IRiskEvent-1.html
+  name: IRiskEvent<T>
+  nameWithType: IRiskEvent<T>
+  fullName: Virtufin.Core.Events.Risk.IRiskEvent<T>
+  nameWithType.vb: IRiskEvent(Of T)
+  fullName.vb: Virtufin.Core.Events.Risk.IRiskEvent(Of T)
+  name.vb: IRiskEvent(Of T)
+  spec.csharp:
+  - uid: Virtufin.Core.Events.Risk.IRiskEvent`1
+    name: IRiskEvent
+    href: Virtufin.Core.Events.Risk.IRiskEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Events.Risk.IRiskEvent`1
+    name: IRiskEvent
+    href: Virtufin.Core.Events.Risk.IRiskEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Core.Events.IEvent{{T}}
+  commentId: T:Virtufin.Core.Events.IEvent{`0}
+  parent: Virtufin.Core.Events
+  definition: Virtufin.Core.Events.IEvent`1
+  href: Virtufin.Core.Events.IEvent-1.html
+  name: IEvent<T>
+  nameWithType: IEvent<T>
+  fullName: Virtufin.Core.Events.IEvent<T>
+  nameWithType.vb: IEvent(Of T)
+  fullName.vb: Virtufin.Core.Events.IEvent(Of T)
+  name.vb: IEvent(Of T)
+  spec.csharp:
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.IEquatable{Virtufin.Core.Events.IEvent{{T}}}
+  commentId: T:System.IEquatable{Virtufin.Core.Events.IEvent{`0}}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<IEvent<T>>
+  nameWithType: IEquatable<IEvent<T>>
+  fullName: System.IEquatable<Virtufin.Core.Events.IEvent<T>>
+  nameWithType.vb: IEquatable(Of IEvent(Of T))
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Events.IEvent(Of T))
+  name.vb: IEquatable(Of IEvent(Of T))
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.IEquatable{Virtufin.Base.Events.Risk.RiskEvent`1}
+  commentId: T:System.IEquatable{Virtufin.Base.Events.Risk.RiskEvent`1}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<RiskEvent<T>>
+  nameWithType: IEquatable<RiskEvent<T>>
+  fullName: System.IEquatable<Virtufin.Base.Events.Risk.RiskEvent<T>>
+  nameWithType.vb: IEquatable(Of RiskEvent(Of T))
+  fullName.vb: System.IEquatable(Of Virtufin.Base.Events.Risk.RiskEvent(Of T))
+  name.vb: IEquatable(Of RiskEvent(Of T))
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1
+    name: RiskEvent
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1
+    name: RiskEvent
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.IEquatable{Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled}
+  commentId: T:System.IEquatable{Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<RiskEvent<T>.MarginCalled>
+  nameWithType: IEquatable<RiskEvent<T>.MarginCalled>
+  fullName: System.IEquatable<Virtufin.Base.Events.Risk.RiskEvent<T>.MarginCalled>
+  nameWithType.vb: IEquatable(Of RiskEvent(Of T).MarginCalled)
+  fullName.vb: System.IEquatable(Of Virtufin.Base.Events.Risk.RiskEvent(Of T).MarginCalled)
+  name.vb: IEquatable(Of RiskEvent(Of T).MarginCalled)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1
+    name: RiskEvent
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: .
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled
+    name: MarginCalled
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.MarginCalled.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1
+    name: RiskEvent
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: .
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled
+    name: MarginCalled
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.MarginCalled.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Core.Events.Risk.IRiskEvent`1
+  commentId: T:Virtufin.Core.Events.Risk.IRiskEvent`1
+  href: Virtufin.Core.Events.Risk.IRiskEvent-1.html
+  name: IRiskEvent<T>
+  nameWithType: IRiskEvent<T>
+  fullName: Virtufin.Core.Events.Risk.IRiskEvent<T>
+  nameWithType.vb: IRiskEvent(Of T)
+  fullName.vb: Virtufin.Core.Events.Risk.IRiskEvent(Of T)
+  name.vb: IRiskEvent(Of T)
+  spec.csharp:
+  - uid: Virtufin.Core.Events.Risk.IRiskEvent`1
+    name: IRiskEvent
+    href: Virtufin.Core.Events.Risk.IRiskEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Events.Risk.IRiskEvent`1
+    name: IRiskEvent
+    href: Virtufin.Core.Events.Risk.IRiskEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Core.Events.Risk
+  commentId: N:Virtufin.Core.Events.Risk
+  href: Virtufin.html
+  name: Virtufin.Core.Events.Risk
+  nameWithType: Virtufin.Core.Events.Risk
+  fullName: Virtufin.Core.Events.Risk
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  - name: .
+  - uid: Virtufin.Core.Events.Risk
+    name: Risk
+    href: Virtufin.Core.Events.Risk.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  - name: .
+  - uid: Virtufin.Core.Events.Risk
+    name: Risk
+    href: Virtufin.Core.Events.Risk.html
+- uid: Virtufin.Core.Events.IEvent`1
+  commentId: T:Virtufin.Core.Events.IEvent`1
+  href: Virtufin.Core.Events.IEvent-1.html
+  name: IEvent<T>
+  nameWithType: IEvent<T>
+  fullName: Virtufin.Core.Events.IEvent<T>
+  nameWithType.vb: IEvent(Of T)
+  fullName.vb: Virtufin.Core.Events.IEvent(Of T)
+  name.vb: IEvent(Of T)
+  spec.csharp:
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Core.Events
+  commentId: N:Virtufin.Core.Events
+  href: Virtufin.html
+  name: Virtufin.Core.Events
+  nameWithType: Virtufin.Core.Events
+  fullName: Virtufin.Core.Events
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled.#ctor*
+  commentId: Overload:Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled.#ctor
+  href: Virtufin.Base.Events.Risk.RiskEvent-1.MarginCalled.html#Virtufin_Base_Events_Risk_RiskEvent_1_MarginCalled__ctor_Virtufin_Core_Position_DecimalAmount__0_
+  name: MarginCalled
+  nameWithType: RiskEvent<T>.MarginCalled.MarginCalled
+  fullName: Virtufin.Base.Events.Risk.RiskEvent<T>.MarginCalled.MarginCalled
+  nameWithType.vb: RiskEvent(Of T).MarginCalled.New
+  fullName.vb: Virtufin.Base.Events.Risk.RiskEvent(Of T).MarginCalled.New
+  name.vb: New
+- uid: Virtufin.Core.Position.DecimalAmount
+  commentId: T:Virtufin.Core.Position.DecimalAmount
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.DecimalAmount.html
+  name: DecimalAmount
+  nameWithType: DecimalAmount
+  fullName: Virtufin.Core.Position.DecimalAmount
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled.MarginRatio*
+  commentId: Overload:Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled.MarginRatio
+  href: Virtufin.Base.Events.Risk.RiskEvent-1.MarginCalled.html#Virtufin_Base_Events_Risk_RiskEvent_1_MarginCalled_MarginRatio
+  name: MarginRatio
+  nameWithType: RiskEvent<T>.MarginCalled.MarginRatio
+  fullName: Virtufin.Base.Events.Risk.RiskEvent<T>.MarginCalled.MarginRatio
+  nameWithType.vb: RiskEvent(Of T).MarginCalled.MarginRatio
+  fullName.vb: Virtufin.Base.Events.Risk.RiskEvent(Of T).MarginCalled.MarginRatio
+- uid: Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled.CalledAt*
+  commentId: Overload:Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled.CalledAt
+  href: Virtufin.Base.Events.Risk.RiskEvent-1.MarginCalled.html#Virtufin_Base_Events_Risk_RiskEvent_1_MarginCalled_CalledAt
+  name: CalledAt
+  nameWithType: RiskEvent<T>.MarginCalled.CalledAt
+  fullName: Virtufin.Base.Events.Risk.RiskEvent<T>.MarginCalled.CalledAt
+  nameWithType.vb: RiskEvent(Of T).MarginCalled.CalledAt
+  fullName.vb: Virtufin.Base.Events.Risk.RiskEvent(Of T).MarginCalled.CalledAt
+- uid: Virtufin.Base.Events.Risk.RiskEvent`1.Time
+  commentId: P:Virtufin.Base.Events.Risk.RiskEvent`1.Time
+  parent: Virtufin.Base.Events.Risk.RiskEvent`1
+  href: Virtufin.Base.Events.Risk.RiskEvent-1.html#Virtufin_Base_Events_Risk_RiskEvent_1_Time
+  name: Time
+  nameWithType: RiskEvent<T>.Time
+  fullName: Virtufin.Base.Events.Risk.RiskEvent<T>.Time
+  nameWithType.vb: RiskEvent(Of T).Time
+  fullName.vb: Virtufin.Base.Events.Risk.RiskEvent(Of T).Time
+- uid: Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled.Time*
+  commentId: Overload:Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled.Time
+  href: Virtufin.Base.Events.Risk.RiskEvent-1.MarginCalled.html#Virtufin_Base_Events_Risk_RiskEvent_1_MarginCalled_Time
+  name: Time
+  nameWithType: RiskEvent<T>.MarginCalled.Time
+  fullName: Virtufin.Base.Events.Risk.RiskEvent<T>.MarginCalled.Time
+  nameWithType.vb: RiskEvent(Of T).MarginCalled.Time
+  fullName.vb: Virtufin.Base.Events.Risk.RiskEvent(Of T).MarginCalled.Time

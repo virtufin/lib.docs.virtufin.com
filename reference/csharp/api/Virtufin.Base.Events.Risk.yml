@@ -5,20 +5,20 @@ items:
   id: Risk
   parent: Virtufin.Base.Events
   children:
-  - Virtufin.Base.Events.Risk.RichRiskEvent
-  - Virtufin.Base.Events.Risk.RichRiskEvent.Base
-  - Virtufin.Base.Events.Risk.RichRiskEvent.DrawdownWithMetadata
-  - Virtufin.Base.Events.Risk.RichRiskEvent.LimitBreachedWithThreshold
-  - Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed
-  - Virtufin.Base.Events.Risk.RiskEvent
-  - Virtufin.Base.Events.Risk.RiskEvent.DrawdownUpdated
-  - Virtufin.Base.Events.Risk.RiskEvent.ExposureBreached
-  - Virtufin.Base.Events.Risk.RiskEvent.LimitBreached
-  - Virtufin.Base.Events.Risk.RiskEvent.LimitRestored
-  - Virtufin.Base.Events.Risk.RiskEvent.MarginCalled
-  - Virtufin.Base.Events.Risk.RiskEvent.MarginWarned
-  - Virtufin.Base.Events.Risk.RiskEvent.PnLRealized
-  - Virtufin.Base.Events.Risk.RiskEvent.PnLUpdated
+  - Virtufin.Base.Events.Risk.RichRiskEvent`1
+  - Virtufin.Base.Events.Risk.RichRiskEvent`1.Base
+  - Virtufin.Base.Events.Risk.RichRiskEvent`1.DrawdownWithMetadata
+  - Virtufin.Base.Events.Risk.RichRiskEvent`1.LimitBreachedWithThreshold
+  - Virtufin.Base.Events.Risk.RichRiskEvent`1.PnLAttributed
+  - Virtufin.Base.Events.Risk.RiskEvent`1
+  - Virtufin.Base.Events.Risk.RiskEvent`1.DrawdownUpdated
+  - Virtufin.Base.Events.Risk.RiskEvent`1.ExposureBreached
+  - Virtufin.Base.Events.Risk.RiskEvent`1.LimitBreached
+  - Virtufin.Base.Events.Risk.RiskEvent`1.LimitRestored
+  - Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled
+  - Virtufin.Base.Events.Risk.RiskEvent`1.MarginWarned
+  - Virtufin.Base.Events.Risk.RiskEvent`1.PnLRealized
+  - Virtufin.Base.Events.Risk.RiskEvent`1.PnLUpdated
   langs:
   - csharp
   - vb
@@ -29,286 +29,454 @@ items:
   assemblies:
   - Virtufin.Base
 references:
-- uid: Virtufin.Base.Events.Risk.RichRiskEvent
-  commentId: T:Virtufin.Base.Events.Risk.RichRiskEvent
+- uid: Virtufin.Base.Events.Risk.RichRiskEvent`1
+  commentId: T:Virtufin.Base.Events.Risk.RichRiskEvent`1
   parent: Virtufin.Base.Events.Risk
-  href: Virtufin.Base.Events.Risk.RichRiskEvent.html
-  name: RichRiskEvent
-  nameWithType: RichRiskEvent
-  fullName: Virtufin.Base.Events.Risk.RichRiskEvent
-- uid: Virtufin.Base.Events.Risk.RichRiskEvent.Base
-  commentId: T:Virtufin.Base.Events.Risk.RichRiskEvent.Base
-  href: Virtufin.Base.Events.Risk.RichRiskEvent.html
-  name: RichRiskEvent.Base
-  nameWithType: RichRiskEvent.Base
-  fullName: Virtufin.Base.Events.Risk.RichRiskEvent.Base
+  href: Virtufin.Base.Events.Risk.RichRiskEvent-1.html
+  name: RichRiskEvent<T>
+  nameWithType: RichRiskEvent<T>
+  fullName: Virtufin.Base.Events.Risk.RichRiskEvent<T>
+  nameWithType.vb: RichRiskEvent(Of T)
+  fullName.vb: Virtufin.Base.Events.Risk.RichRiskEvent(Of T)
+  name.vb: RichRiskEvent(Of T)
   spec.csharp:
-  - uid: Virtufin.Base.Events.Risk.RichRiskEvent
+  - uid: Virtufin.Base.Events.Risk.RichRiskEvent`1
     name: RichRiskEvent
-    href: Virtufin.Base.Events.Risk.RichRiskEvent.html
+    href: Virtufin.Base.Events.Risk.RichRiskEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.Events.Risk.RichRiskEvent`1
+    name: RichRiskEvent
+    href: Virtufin.Base.Events.Risk.RichRiskEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Base.Events.Risk.RichRiskEvent`1.Base
+  commentId: T:Virtufin.Base.Events.Risk.RichRiskEvent`1.Base
+  href: Virtufin.Base.Events.Risk.RichRiskEvent-1.html
+  name: RichRiskEvent<T>.Base
+  nameWithType: RichRiskEvent<T>.Base
+  fullName: Virtufin.Base.Events.Risk.RichRiskEvent<T>.Base
+  nameWithType.vb: RichRiskEvent(Of T).Base
+  fullName.vb: Virtufin.Base.Events.Risk.RichRiskEvent(Of T).Base
+  name.vb: RichRiskEvent(Of T).Base
+  spec.csharp:
+  - uid: Virtufin.Base.Events.Risk.RichRiskEvent`1
+    name: RichRiskEvent
+    href: Virtufin.Base.Events.Risk.RichRiskEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
   - name: .
-  - uid: Virtufin.Base.Events.Risk.RichRiskEvent.Base
+  - uid: Virtufin.Base.Events.Risk.RichRiskEvent`1.Base
     name: Base
-    href: Virtufin.Base.Events.Risk.RichRiskEvent.Base.html
+    href: Virtufin.Base.Events.Risk.RichRiskEvent-1.Base.html
   spec.vb:
-  - uid: Virtufin.Base.Events.Risk.RichRiskEvent
+  - uid: Virtufin.Base.Events.Risk.RichRiskEvent`1
     name: RichRiskEvent
-    href: Virtufin.Base.Events.Risk.RichRiskEvent.html
+    href: Virtufin.Base.Events.Risk.RichRiskEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
   - name: .
-  - uid: Virtufin.Base.Events.Risk.RichRiskEvent.Base
+  - uid: Virtufin.Base.Events.Risk.RichRiskEvent`1.Base
     name: Base
-    href: Virtufin.Base.Events.Risk.RichRiskEvent.Base.html
-- uid: Virtufin.Base.Events.Risk.RichRiskEvent.DrawdownWithMetadata
-  commentId: T:Virtufin.Base.Events.Risk.RichRiskEvent.DrawdownWithMetadata
-  href: Virtufin.Base.Events.Risk.RichRiskEvent.html
-  name: RichRiskEvent.DrawdownWithMetadata
-  nameWithType: RichRiskEvent.DrawdownWithMetadata
-  fullName: Virtufin.Base.Events.Risk.RichRiskEvent.DrawdownWithMetadata
+    href: Virtufin.Base.Events.Risk.RichRiskEvent-1.Base.html
+- uid: Virtufin.Base.Events.Risk.RichRiskEvent`1.DrawdownWithMetadata
+  commentId: T:Virtufin.Base.Events.Risk.RichRiskEvent`1.DrawdownWithMetadata
+  href: Virtufin.Base.Events.Risk.RichRiskEvent-1.html
+  name: RichRiskEvent<T>.DrawdownWithMetadata
+  nameWithType: RichRiskEvent<T>.DrawdownWithMetadata
+  fullName: Virtufin.Base.Events.Risk.RichRiskEvent<T>.DrawdownWithMetadata
+  nameWithType.vb: RichRiskEvent(Of T).DrawdownWithMetadata
+  fullName.vb: Virtufin.Base.Events.Risk.RichRiskEvent(Of T).DrawdownWithMetadata
+  name.vb: RichRiskEvent(Of T).DrawdownWithMetadata
   spec.csharp:
-  - uid: Virtufin.Base.Events.Risk.RichRiskEvent
+  - uid: Virtufin.Base.Events.Risk.RichRiskEvent`1
     name: RichRiskEvent
-    href: Virtufin.Base.Events.Risk.RichRiskEvent.html
+    href: Virtufin.Base.Events.Risk.RichRiskEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
   - name: .
-  - uid: Virtufin.Base.Events.Risk.RichRiskEvent.DrawdownWithMetadata
+  - uid: Virtufin.Base.Events.Risk.RichRiskEvent`1.DrawdownWithMetadata
     name: DrawdownWithMetadata
-    href: Virtufin.Base.Events.Risk.RichRiskEvent.DrawdownWithMetadata.html
+    href: Virtufin.Base.Events.Risk.RichRiskEvent-1.DrawdownWithMetadata.html
   spec.vb:
-  - uid: Virtufin.Base.Events.Risk.RichRiskEvent
+  - uid: Virtufin.Base.Events.Risk.RichRiskEvent`1
     name: RichRiskEvent
-    href: Virtufin.Base.Events.Risk.RichRiskEvent.html
+    href: Virtufin.Base.Events.Risk.RichRiskEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
   - name: .
-  - uid: Virtufin.Base.Events.Risk.RichRiskEvent.DrawdownWithMetadata
+  - uid: Virtufin.Base.Events.Risk.RichRiskEvent`1.DrawdownWithMetadata
     name: DrawdownWithMetadata
-    href: Virtufin.Base.Events.Risk.RichRiskEvent.DrawdownWithMetadata.html
-- uid: Virtufin.Base.Events.Risk.RichRiskEvent.LimitBreachedWithThreshold
-  commentId: T:Virtufin.Base.Events.Risk.RichRiskEvent.LimitBreachedWithThreshold
-  href: Virtufin.Base.Events.Risk.RichRiskEvent.html
-  name: RichRiskEvent.LimitBreachedWithThreshold
-  nameWithType: RichRiskEvent.LimitBreachedWithThreshold
-  fullName: Virtufin.Base.Events.Risk.RichRiskEvent.LimitBreachedWithThreshold
+    href: Virtufin.Base.Events.Risk.RichRiskEvent-1.DrawdownWithMetadata.html
+- uid: Virtufin.Base.Events.Risk.RichRiskEvent`1.LimitBreachedWithThreshold
+  commentId: T:Virtufin.Base.Events.Risk.RichRiskEvent`1.LimitBreachedWithThreshold
+  href: Virtufin.Base.Events.Risk.RichRiskEvent-1.html
+  name: RichRiskEvent<T>.LimitBreachedWithThreshold
+  nameWithType: RichRiskEvent<T>.LimitBreachedWithThreshold
+  fullName: Virtufin.Base.Events.Risk.RichRiskEvent<T>.LimitBreachedWithThreshold
+  nameWithType.vb: RichRiskEvent(Of T).LimitBreachedWithThreshold
+  fullName.vb: Virtufin.Base.Events.Risk.RichRiskEvent(Of T).LimitBreachedWithThreshold
+  name.vb: RichRiskEvent(Of T).LimitBreachedWithThreshold
   spec.csharp:
-  - uid: Virtufin.Base.Events.Risk.RichRiskEvent
+  - uid: Virtufin.Base.Events.Risk.RichRiskEvent`1
     name: RichRiskEvent
-    href: Virtufin.Base.Events.Risk.RichRiskEvent.html
+    href: Virtufin.Base.Events.Risk.RichRiskEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
   - name: .
-  - uid: Virtufin.Base.Events.Risk.RichRiskEvent.LimitBreachedWithThreshold
+  - uid: Virtufin.Base.Events.Risk.RichRiskEvent`1.LimitBreachedWithThreshold
     name: LimitBreachedWithThreshold
-    href: Virtufin.Base.Events.Risk.RichRiskEvent.LimitBreachedWithThreshold.html
+    href: Virtufin.Base.Events.Risk.RichRiskEvent-1.LimitBreachedWithThreshold.html
   spec.vb:
-  - uid: Virtufin.Base.Events.Risk.RichRiskEvent
+  - uid: Virtufin.Base.Events.Risk.RichRiskEvent`1
     name: RichRiskEvent
-    href: Virtufin.Base.Events.Risk.RichRiskEvent.html
+    href: Virtufin.Base.Events.Risk.RichRiskEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
   - name: .
-  - uid: Virtufin.Base.Events.Risk.RichRiskEvent.LimitBreachedWithThreshold
+  - uid: Virtufin.Base.Events.Risk.RichRiskEvent`1.LimitBreachedWithThreshold
     name: LimitBreachedWithThreshold
-    href: Virtufin.Base.Events.Risk.RichRiskEvent.LimitBreachedWithThreshold.html
-- uid: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed
-  commentId: T:Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed
-  href: Virtufin.Base.Events.Risk.RichRiskEvent.html
-  name: RichRiskEvent.PnLAttributed
-  nameWithType: RichRiskEvent.PnLAttributed
-  fullName: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed
+    href: Virtufin.Base.Events.Risk.RichRiskEvent-1.LimitBreachedWithThreshold.html
+- uid: Virtufin.Base.Events.Risk.RichRiskEvent`1.PnLAttributed
+  commentId: T:Virtufin.Base.Events.Risk.RichRiskEvent`1.PnLAttributed
+  href: Virtufin.Base.Events.Risk.RichRiskEvent-1.html
+  name: RichRiskEvent<T>.PnLAttributed
+  nameWithType: RichRiskEvent<T>.PnLAttributed
+  fullName: Virtufin.Base.Events.Risk.RichRiskEvent<T>.PnLAttributed
+  nameWithType.vb: RichRiskEvent(Of T).PnLAttributed
+  fullName.vb: Virtufin.Base.Events.Risk.RichRiskEvent(Of T).PnLAttributed
+  name.vb: RichRiskEvent(Of T).PnLAttributed
   spec.csharp:
-  - uid: Virtufin.Base.Events.Risk.RichRiskEvent
+  - uid: Virtufin.Base.Events.Risk.RichRiskEvent`1
     name: RichRiskEvent
-    href: Virtufin.Base.Events.Risk.RichRiskEvent.html
+    href: Virtufin.Base.Events.Risk.RichRiskEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
   - name: .
-  - uid: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed
+  - uid: Virtufin.Base.Events.Risk.RichRiskEvent`1.PnLAttributed
     name: PnLAttributed
-    href: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.html
+    href: Virtufin.Base.Events.Risk.RichRiskEvent-1.PnLAttributed.html
   spec.vb:
-  - uid: Virtufin.Base.Events.Risk.RichRiskEvent
+  - uid: Virtufin.Base.Events.Risk.RichRiskEvent`1
     name: RichRiskEvent
-    href: Virtufin.Base.Events.Risk.RichRiskEvent.html
+    href: Virtufin.Base.Events.Risk.RichRiskEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
   - name: .
-  - uid: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed
+  - uid: Virtufin.Base.Events.Risk.RichRiskEvent`1.PnLAttributed
     name: PnLAttributed
-    href: Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.html
-- uid: Virtufin.Base.Events.Risk.RiskEvent
-  commentId: T:Virtufin.Base.Events.Risk.RiskEvent
+    href: Virtufin.Base.Events.Risk.RichRiskEvent-1.PnLAttributed.html
+- uid: Virtufin.Base.Events.Risk.RiskEvent`1
+  commentId: T:Virtufin.Base.Events.Risk.RiskEvent`1
   parent: Virtufin.Base.Events.Risk
-  href: Virtufin.Base.Events.Risk.RiskEvent.html
-  name: RiskEvent
-  nameWithType: RiskEvent
-  fullName: Virtufin.Base.Events.Risk.RiskEvent
-- uid: Virtufin.Base.Events.Risk.RiskEvent.DrawdownUpdated
-  commentId: T:Virtufin.Base.Events.Risk.RiskEvent.DrawdownUpdated
-  parent: Virtufin.Base.Events.Risk
-  href: Virtufin.Base.Events.Risk.RiskEvent.html
-  name: RiskEvent.DrawdownUpdated
-  nameWithType: RiskEvent.DrawdownUpdated
-  fullName: Virtufin.Base.Events.Risk.RiskEvent.DrawdownUpdated
+  href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  name: RiskEvent<T>
+  nameWithType: RiskEvent<T>
+  fullName: Virtufin.Base.Events.Risk.RiskEvent<T>
+  nameWithType.vb: RiskEvent(Of T)
+  fullName.vb: Virtufin.Base.Events.Risk.RiskEvent(Of T)
+  name.vb: RiskEvent(Of T)
   spec.csharp:
-  - uid: Virtufin.Base.Events.Risk.RiskEvent
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1
     name: RiskEvent
-    href: Virtufin.Base.Events.Risk.RiskEvent.html
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1
+    name: RiskEvent
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Base.Events.Risk.RiskEvent`1.DrawdownUpdated
+  commentId: T:Virtufin.Base.Events.Risk.RiskEvent`1.DrawdownUpdated
+  href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  name: RiskEvent<T>.DrawdownUpdated
+  nameWithType: RiskEvent<T>.DrawdownUpdated
+  fullName: Virtufin.Base.Events.Risk.RiskEvent<T>.DrawdownUpdated
+  nameWithType.vb: RiskEvent(Of T).DrawdownUpdated
+  fullName.vb: Virtufin.Base.Events.Risk.RiskEvent(Of T).DrawdownUpdated
+  name.vb: RiskEvent(Of T).DrawdownUpdated
+  spec.csharp:
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1
+    name: RiskEvent
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
   - name: .
-  - uid: Virtufin.Base.Events.Risk.RiskEvent.DrawdownUpdated
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1.DrawdownUpdated
     name: DrawdownUpdated
-    href: Virtufin.Base.Events.Risk.RiskEvent.DrawdownUpdated.html
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.DrawdownUpdated.html
   spec.vb:
-  - uid: Virtufin.Base.Events.Risk.RiskEvent
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1
     name: RiskEvent
-    href: Virtufin.Base.Events.Risk.RiskEvent.html
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
   - name: .
-  - uid: Virtufin.Base.Events.Risk.RiskEvent.DrawdownUpdated
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1.DrawdownUpdated
     name: DrawdownUpdated
-    href: Virtufin.Base.Events.Risk.RiskEvent.DrawdownUpdated.html
-- uid: Virtufin.Base.Events.Risk.RiskEvent.ExposureBreached
-  commentId: T:Virtufin.Base.Events.Risk.RiskEvent.ExposureBreached
-  href: Virtufin.Base.Events.Risk.RiskEvent.html
-  name: RiskEvent.ExposureBreached
-  nameWithType: RiskEvent.ExposureBreached
-  fullName: Virtufin.Base.Events.Risk.RiskEvent.ExposureBreached
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.DrawdownUpdated.html
+- uid: Virtufin.Base.Events.Risk.RiskEvent`1.ExposureBreached
+  commentId: T:Virtufin.Base.Events.Risk.RiskEvent`1.ExposureBreached
+  href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  name: RiskEvent<T>.ExposureBreached
+  nameWithType: RiskEvent<T>.ExposureBreached
+  fullName: Virtufin.Base.Events.Risk.RiskEvent<T>.ExposureBreached
+  nameWithType.vb: RiskEvent(Of T).ExposureBreached
+  fullName.vb: Virtufin.Base.Events.Risk.RiskEvent(Of T).ExposureBreached
+  name.vb: RiskEvent(Of T).ExposureBreached
   spec.csharp:
-  - uid: Virtufin.Base.Events.Risk.RiskEvent
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1
     name: RiskEvent
-    href: Virtufin.Base.Events.Risk.RiskEvent.html
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
   - name: .
-  - uid: Virtufin.Base.Events.Risk.RiskEvent.ExposureBreached
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1.ExposureBreached
     name: ExposureBreached
-    href: Virtufin.Base.Events.Risk.RiskEvent.ExposureBreached.html
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.ExposureBreached.html
   spec.vb:
-  - uid: Virtufin.Base.Events.Risk.RiskEvent
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1
     name: RiskEvent
-    href: Virtufin.Base.Events.Risk.RiskEvent.html
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
   - name: .
-  - uid: Virtufin.Base.Events.Risk.RiskEvent.ExposureBreached
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1.ExposureBreached
     name: ExposureBreached
-    href: Virtufin.Base.Events.Risk.RiskEvent.ExposureBreached.html
-- uid: Virtufin.Base.Events.Risk.RiskEvent.LimitBreached
-  commentId: T:Virtufin.Base.Events.Risk.RiskEvent.LimitBreached
-  parent: Virtufin.Base.Events.Risk
-  href: Virtufin.Base.Events.Risk.RiskEvent.html
-  name: RiskEvent.LimitBreached
-  nameWithType: RiskEvent.LimitBreached
-  fullName: Virtufin.Base.Events.Risk.RiskEvent.LimitBreached
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.ExposureBreached.html
+- uid: Virtufin.Base.Events.Risk.RiskEvent`1.LimitBreached
+  commentId: T:Virtufin.Base.Events.Risk.RiskEvent`1.LimitBreached
+  href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  name: RiskEvent<T>.LimitBreached
+  nameWithType: RiskEvent<T>.LimitBreached
+  fullName: Virtufin.Base.Events.Risk.RiskEvent<T>.LimitBreached
+  nameWithType.vb: RiskEvent(Of T).LimitBreached
+  fullName.vb: Virtufin.Base.Events.Risk.RiskEvent(Of T).LimitBreached
+  name.vb: RiskEvent(Of T).LimitBreached
   spec.csharp:
-  - uid: Virtufin.Base.Events.Risk.RiskEvent
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1
     name: RiskEvent
-    href: Virtufin.Base.Events.Risk.RiskEvent.html
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
   - name: .
-  - uid: Virtufin.Base.Events.Risk.RiskEvent.LimitBreached
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1.LimitBreached
     name: LimitBreached
-    href: Virtufin.Base.Events.Risk.RiskEvent.LimitBreached.html
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.LimitBreached.html
   spec.vb:
-  - uid: Virtufin.Base.Events.Risk.RiskEvent
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1
     name: RiskEvent
-    href: Virtufin.Base.Events.Risk.RiskEvent.html
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
   - name: .
-  - uid: Virtufin.Base.Events.Risk.RiskEvent.LimitBreached
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1.LimitBreached
     name: LimitBreached
-    href: Virtufin.Base.Events.Risk.RiskEvent.LimitBreached.html
-- uid: Virtufin.Base.Events.Risk.RiskEvent.LimitRestored
-  commentId: T:Virtufin.Base.Events.Risk.RiskEvent.LimitRestored
-  href: Virtufin.Base.Events.Risk.RiskEvent.html
-  name: RiskEvent.LimitRestored
-  nameWithType: RiskEvent.LimitRestored
-  fullName: Virtufin.Base.Events.Risk.RiskEvent.LimitRestored
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.LimitBreached.html
+- uid: Virtufin.Base.Events.Risk.RiskEvent`1.LimitRestored
+  commentId: T:Virtufin.Base.Events.Risk.RiskEvent`1.LimitRestored
+  href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  name: RiskEvent<T>.LimitRestored
+  nameWithType: RiskEvent<T>.LimitRestored
+  fullName: Virtufin.Base.Events.Risk.RiskEvent<T>.LimitRestored
+  nameWithType.vb: RiskEvent(Of T).LimitRestored
+  fullName.vb: Virtufin.Base.Events.Risk.RiskEvent(Of T).LimitRestored
+  name.vb: RiskEvent(Of T).LimitRestored
   spec.csharp:
-  - uid: Virtufin.Base.Events.Risk.RiskEvent
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1
     name: RiskEvent
-    href: Virtufin.Base.Events.Risk.RiskEvent.html
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
   - name: .
-  - uid: Virtufin.Base.Events.Risk.RiskEvent.LimitRestored
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1.LimitRestored
     name: LimitRestored
-    href: Virtufin.Base.Events.Risk.RiskEvent.LimitRestored.html
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.LimitRestored.html
   spec.vb:
-  - uid: Virtufin.Base.Events.Risk.RiskEvent
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1
     name: RiskEvent
-    href: Virtufin.Base.Events.Risk.RiskEvent.html
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
   - name: .
-  - uid: Virtufin.Base.Events.Risk.RiskEvent.LimitRestored
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1.LimitRestored
     name: LimitRestored
-    href: Virtufin.Base.Events.Risk.RiskEvent.LimitRestored.html
-- uid: Virtufin.Base.Events.Risk.RiskEvent.MarginCalled
-  commentId: T:Virtufin.Base.Events.Risk.RiskEvent.MarginCalled
-  href: Virtufin.Base.Events.Risk.RiskEvent.html
-  name: RiskEvent.MarginCalled
-  nameWithType: RiskEvent.MarginCalled
-  fullName: Virtufin.Base.Events.Risk.RiskEvent.MarginCalled
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.LimitRestored.html
+- uid: Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled
+  commentId: T:Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled
+  href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  name: RiskEvent<T>.MarginCalled
+  nameWithType: RiskEvent<T>.MarginCalled
+  fullName: Virtufin.Base.Events.Risk.RiskEvent<T>.MarginCalled
+  nameWithType.vb: RiskEvent(Of T).MarginCalled
+  fullName.vb: Virtufin.Base.Events.Risk.RiskEvent(Of T).MarginCalled
+  name.vb: RiskEvent(Of T).MarginCalled
   spec.csharp:
-  - uid: Virtufin.Base.Events.Risk.RiskEvent
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1
     name: RiskEvent
-    href: Virtufin.Base.Events.Risk.RiskEvent.html
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
   - name: .
-  - uid: Virtufin.Base.Events.Risk.RiskEvent.MarginCalled
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled
     name: MarginCalled
-    href: Virtufin.Base.Events.Risk.RiskEvent.MarginCalled.html
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.MarginCalled.html
   spec.vb:
-  - uid: Virtufin.Base.Events.Risk.RiskEvent
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1
     name: RiskEvent
-    href: Virtufin.Base.Events.Risk.RiskEvent.html
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
   - name: .
-  - uid: Virtufin.Base.Events.Risk.RiskEvent.MarginCalled
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled
     name: MarginCalled
-    href: Virtufin.Base.Events.Risk.RiskEvent.MarginCalled.html
-- uid: Virtufin.Base.Events.Risk.RiskEvent.MarginWarned
-  commentId: T:Virtufin.Base.Events.Risk.RiskEvent.MarginWarned
-  href: Virtufin.Base.Events.Risk.RiskEvent.html
-  name: RiskEvent.MarginWarned
-  nameWithType: RiskEvent.MarginWarned
-  fullName: Virtufin.Base.Events.Risk.RiskEvent.MarginWarned
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.MarginCalled.html
+- uid: Virtufin.Base.Events.Risk.RiskEvent`1.MarginWarned
+  commentId: T:Virtufin.Base.Events.Risk.RiskEvent`1.MarginWarned
+  href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  name: RiskEvent<T>.MarginWarned
+  nameWithType: RiskEvent<T>.MarginWarned
+  fullName: Virtufin.Base.Events.Risk.RiskEvent<T>.MarginWarned
+  nameWithType.vb: RiskEvent(Of T).MarginWarned
+  fullName.vb: Virtufin.Base.Events.Risk.RiskEvent(Of T).MarginWarned
+  name.vb: RiskEvent(Of T).MarginWarned
   spec.csharp:
-  - uid: Virtufin.Base.Events.Risk.RiskEvent
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1
     name: RiskEvent
-    href: Virtufin.Base.Events.Risk.RiskEvent.html
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
   - name: .
-  - uid: Virtufin.Base.Events.Risk.RiskEvent.MarginWarned
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1.MarginWarned
     name: MarginWarned
-    href: Virtufin.Base.Events.Risk.RiskEvent.MarginWarned.html
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.MarginWarned.html
   spec.vb:
-  - uid: Virtufin.Base.Events.Risk.RiskEvent
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1
     name: RiskEvent
-    href: Virtufin.Base.Events.Risk.RiskEvent.html
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
   - name: .
-  - uid: Virtufin.Base.Events.Risk.RiskEvent.MarginWarned
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1.MarginWarned
     name: MarginWarned
-    href: Virtufin.Base.Events.Risk.RiskEvent.MarginWarned.html
-- uid: Virtufin.Base.Events.Risk.RiskEvent.PnLRealized
-  commentId: T:Virtufin.Base.Events.Risk.RiskEvent.PnLRealized
-  href: Virtufin.Base.Events.Risk.RiskEvent.html
-  name: RiskEvent.PnLRealized
-  nameWithType: RiskEvent.PnLRealized
-  fullName: Virtufin.Base.Events.Risk.RiskEvent.PnLRealized
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.MarginWarned.html
+- uid: Virtufin.Base.Events.Risk.RiskEvent`1.PnLRealized
+  commentId: T:Virtufin.Base.Events.Risk.RiskEvent`1.PnLRealized
+  href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  name: RiskEvent<T>.PnLRealized
+  nameWithType: RiskEvent<T>.PnLRealized
+  fullName: Virtufin.Base.Events.Risk.RiskEvent<T>.PnLRealized
+  nameWithType.vb: RiskEvent(Of T).PnLRealized
+  fullName.vb: Virtufin.Base.Events.Risk.RiskEvent(Of T).PnLRealized
+  name.vb: RiskEvent(Of T).PnLRealized
   spec.csharp:
-  - uid: Virtufin.Base.Events.Risk.RiskEvent
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1
     name: RiskEvent
-    href: Virtufin.Base.Events.Risk.RiskEvent.html
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
   - name: .
-  - uid: Virtufin.Base.Events.Risk.RiskEvent.PnLRealized
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1.PnLRealized
     name: PnLRealized
-    href: Virtufin.Base.Events.Risk.RiskEvent.PnLRealized.html
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.PnLRealized.html
   spec.vb:
-  - uid: Virtufin.Base.Events.Risk.RiskEvent
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1
     name: RiskEvent
-    href: Virtufin.Base.Events.Risk.RiskEvent.html
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
   - name: .
-  - uid: Virtufin.Base.Events.Risk.RiskEvent.PnLRealized
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1.PnLRealized
     name: PnLRealized
-    href: Virtufin.Base.Events.Risk.RiskEvent.PnLRealized.html
-- uid: Virtufin.Base.Events.Risk.RiskEvent.PnLUpdated
-  commentId: T:Virtufin.Base.Events.Risk.RiskEvent.PnLUpdated
-  href: Virtufin.Base.Events.Risk.RiskEvent.html
-  name: RiskEvent.PnLUpdated
-  nameWithType: RiskEvent.PnLUpdated
-  fullName: Virtufin.Base.Events.Risk.RiskEvent.PnLUpdated
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.PnLRealized.html
+- uid: Virtufin.Base.Events.Risk.RiskEvent`1.PnLUpdated
+  commentId: T:Virtufin.Base.Events.Risk.RiskEvent`1.PnLUpdated
+  href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  name: RiskEvent<T>.PnLUpdated
+  nameWithType: RiskEvent<T>.PnLUpdated
+  fullName: Virtufin.Base.Events.Risk.RiskEvent<T>.PnLUpdated
+  nameWithType.vb: RiskEvent(Of T).PnLUpdated
+  fullName.vb: Virtufin.Base.Events.Risk.RiskEvent(Of T).PnLUpdated
+  name.vb: RiskEvent(Of T).PnLUpdated
   spec.csharp:
-  - uid: Virtufin.Base.Events.Risk.RiskEvent
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1
     name: RiskEvent
-    href: Virtufin.Base.Events.Risk.RiskEvent.html
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
   - name: .
-  - uid: Virtufin.Base.Events.Risk.RiskEvent.PnLUpdated
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1.PnLUpdated
     name: PnLUpdated
-    href: Virtufin.Base.Events.Risk.RiskEvent.PnLUpdated.html
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.PnLUpdated.html
   spec.vb:
-  - uid: Virtufin.Base.Events.Risk.RiskEvent
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1
     name: RiskEvent
-    href: Virtufin.Base.Events.Risk.RiskEvent.html
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
   - name: .
-  - uid: Virtufin.Base.Events.Risk.RiskEvent.PnLUpdated
+  - uid: Virtufin.Base.Events.Risk.RiskEvent`1.PnLUpdated
     name: PnLUpdated
-    href: Virtufin.Base.Events.Risk.RiskEvent.PnLUpdated.html
+    href: Virtufin.Base.Events.Risk.RiskEvent-1.PnLUpdated.html
 - uid: Virtufin.Base.Events.Risk
   commentId: N:Virtufin.Base.Events.Risk
   href: Virtufin.html

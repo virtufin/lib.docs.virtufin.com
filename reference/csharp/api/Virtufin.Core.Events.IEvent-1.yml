@@ -1,0 +1,326 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Events.IEvent`1
+  commentId: T:Virtufin.Core.Events.IEvent`1
+  id: IEvent`1
+  parent: Virtufin.Core.Events
+  children:
+  - Virtufin.Core.Events.IEvent`1.Time
+  langs:
+  - csharp
+  - vb
+  name: IEvent<T>
+  nameWithType: IEvent<T>
+  fullName: Virtufin.Core.Events.IEvent<T>
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/IEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: IEvent
+    path: ../../../src/Virtufin.Core/Events/IEvent.cs
+    startLine: 11
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: >-
+    Marker for any value that participates in the Virtufin event flow. Events
+
+    are immutable facts; they are appended to logs, transported on Dapr topics,
+
+    and folded into state by algebræ. Implementations should be records so
+
+    they have value equality.
+  example: []
+  syntax:
+    content: 'public interface IEvent<T> : IEquatable<IEvent<T>> where T : IComparable<T>'
+    typeParameters:
+    - id: T
+      description: >-
+        The event's own time type (e.g. <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref> for
+            real-time domain events, or an open type parameter for indicator samples whose time
+            axis is caller-defined).
+    content.vb: Public Interface IEvent(Of T As IComparable(Of T)) Inherits IEquatable(Of IEvent(Of T))
+  derivedClasses:
+  - Virtufin.Base.Events.Market.MarketEvent`1
+  - Virtufin.Base.Events.Market.MarketEvent`1.OrderBookReceived
+  - Virtufin.Base.Events.Market.MarketEvent`1.TickReceived
+  - Virtufin.Base.Events.Market.RichMarketEvent`1
+  - Virtufin.Base.Events.Market.RichMarketEvent`1.Base
+  - Virtufin.Base.Events.Market.RichMarketEvent`1.CandleClosed
+  - Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed
+  - Virtufin.Base.Events.Market.RichMarketEvent`1.VolatilityEstimate
+  - Virtufin.Base.Events.Position.PositionEvent`1
+  - Virtufin.Base.Events.Position.PositionEvent`1.Closed
+  - Virtufin.Base.Events.Position.PositionEvent`1.Flipped
+  - Virtufin.Base.Events.Position.PositionEvent`1.Opened
+  - Virtufin.Base.Events.Position.PositionEvent`1.Updated
+  - Virtufin.Base.Events.Position.RichPositionEvent`1
+  - Virtufin.Base.Events.Position.RichPositionEvent`1.Base
+  - Virtufin.Base.Events.Position.RichPositionEvent`1.OpenedWithParty
+  - Virtufin.Base.Events.Position.RichPositionEvent`1.UpdatedAttributed
+  - Virtufin.Base.Events.Risk.RichRiskEvent`1
+  - Virtufin.Base.Events.Risk.RichRiskEvent`1.Base
+  - Virtufin.Base.Events.Risk.RichRiskEvent`1.DrawdownWithMetadata
+  - Virtufin.Base.Events.Risk.RichRiskEvent`1.LimitBreachedWithThreshold
+  - Virtufin.Base.Events.Risk.RichRiskEvent`1.PnLAttributed
+  - Virtufin.Base.Events.Risk.RiskEvent`1
+  - Virtufin.Base.Events.Risk.RiskEvent`1.DrawdownUpdated
+  - Virtufin.Base.Events.Risk.RiskEvent`1.ExposureBreached
+  - Virtufin.Base.Events.Risk.RiskEvent`1.LimitBreached
+  - Virtufin.Base.Events.Risk.RiskEvent`1.LimitRestored
+  - Virtufin.Base.Events.Risk.RiskEvent`1.MarginCalled
+  - Virtufin.Base.Events.Risk.RiskEvent`1.MarginWarned
+  - Virtufin.Base.Events.Risk.RiskEvent`1.PnLRealized
+  - Virtufin.Base.Events.Risk.RiskEvent`1.PnLUpdated
+  - Virtufin.Base.Events.Trade.TradeEvent`1
+  - Virtufin.Base.Events.Trade.TradeEvent`1.ExecutionCleared
+  - Virtufin.Base.Events.Trade.TradeEvent`1.ExecutionSettled
+  - Virtufin.Base.Events.Trade.TradeEvent`1.FillReceived
+  - Virtufin.Base.Events.Trade.TradeEvent`1.InterestExpired
+  - Virtufin.Base.Events.Trade.TradeEvent`1.InterestMatched
+  - Virtufin.Base.Events.Trade.TradeEvent`1.InterestRegistered
+  - Virtufin.Base.Events.Trade.TradeEvent`1.InterestRevoked
+  - Virtufin.Base.Events.Trade.TradeEvent`1.OrderCancelled
+  - Virtufin.Base.Events.Trade.TradeEvent`1.OrderExpired
+  - Virtufin.Base.Events.Trade.TradeEvent`1.OrderPlaced
+  - Virtufin.Base.Events.Trade.TradeEvent`1.TransferCompleted
+  - Virtufin.Base.Events.Trade.TradeEvent`1.TransferFailed
+  - Virtufin.Base.Events.Trade.TradeEvent`1.TransferInitiated
+  - Virtufin.Core.Events.TimestampedSample`2
+  inheritedMembers:
+  - System.IEquatable{Virtufin.Core.Events.IEvent`1}.Equals(Virtufin.Core.Events.IEvent{{T}})
+  nameWithType.vb: IEvent(Of T)
+  fullName.vb: Virtufin.Core.Events.IEvent(Of T)
+  name.vb: IEvent(Of T)
+- uid: Virtufin.Core.Events.IEvent`1.Time
+  commentId: P:Virtufin.Core.Events.IEvent`1.Time
+  id: Time
+  parent: Virtufin.Core.Events.IEvent`1
+  langs:
+  - csharp
+  - vb
+  name: Time
+  nameWithType: IEvent<T>.Time
+  fullName: Virtufin.Core.Events.IEvent<T>.Time
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/IEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Time
+    path: ../../../src/Virtufin.Core/Events/IEvent.cs
+    startLine: 15
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: The time at which this event's fact occurred.
+  example: []
+  syntax:
+    content: T Time { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: ReadOnly Property Time As T
+  overload: Virtufin.Core.Events.IEvent`1.Time*
+  nameWithType.vb: IEvent(Of T).Time
+  fullName.vb: Virtufin.Core.Events.IEvent(Of T).Time
+references:
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Virtufin.Core.Events
+  commentId: N:Virtufin.Core.Events
+  href: Virtufin.html
+  name: Virtufin.Core.Events
+  nameWithType: Virtufin.Core.Events
+  fullName: Virtufin.Core.Events
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+- uid: System.IEquatable{Virtufin.Core.Events.IEvent`1}.Equals(Virtufin.Core.Events.IEvent{{T}})
+  commentId: M:System.IEquatable{Virtufin.Core.Events.IEvent`1}.Equals(Virtufin.Core.Events.IEvent{`0})
+  parent: System.IEquatable{Virtufin.Core.Events.IEvent`1}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(IEvent<T>)
+  nameWithType: IEquatable<IEvent<T>>.Equals(IEvent<T>)
+  fullName: System.IEquatable<Virtufin.Core.Events.IEvent<T>>.Equals(Virtufin.Core.Events.IEvent<T>)
+  nameWithType.vb: IEquatable(Of IEvent(Of T)).Equals(IEvent(Of T))
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Events.IEvent(Of T)).Equals(Virtufin.Core.Events.IEvent(Of T))
+  name.vb: Equals(IEvent(Of T))
+  spec.csharp:
+  - uid: System.IEquatable{Virtufin.Core.Events.IEvent`1}.Equals(Virtufin.Core.Events.IEvent{`0})
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Virtufin.Core.Events.IEvent`1}.Equals(Virtufin.Core.Events.IEvent{`0})
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IEquatable{Virtufin.Core.Events.IEvent`1}
+  commentId: T:System.IEquatable{Virtufin.Core.Events.IEvent`1}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<IEvent<T>>
+  nameWithType: IEquatable<IEvent<T>>
+  fullName: System.IEquatable<Virtufin.Core.Events.IEvent<T>>
+  nameWithType.vb: IEquatable(Of IEvent(Of T))
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Events.IEvent(Of T))
+  name.vb: IEquatable(Of IEvent(Of T))
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Core.Events.IEvent`1.Time*
+  commentId: Overload:Virtufin.Core.Events.IEvent`1.Time
+  href: Virtufin.Core.Events.IEvent-1.html#Virtufin_Core_Events_IEvent_1_Time
+  name: Time
+  nameWithType: IEvent<T>.Time
+  fullName: Virtufin.Core.Events.IEvent<T>.Time
+  nameWithType.vb: IEvent(Of T).Time
+  fullName.vb: Virtufin.Core.Events.IEvent(Of T).Time
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

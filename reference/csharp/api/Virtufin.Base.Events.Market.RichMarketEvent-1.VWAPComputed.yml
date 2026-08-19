@@ -1,0 +1,992 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed
+  commentId: T:Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed
+  id: RichMarketEvent`1.VWAPComputed
+  parent: Virtufin.Base.Events.Market
+  children:
+  - Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.#ctor(Virtufin.Core.Events.Symbol,Virtufin.Core.Position.DecimalAmount,`0,`0)
+  - Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.Symbol
+  - Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.Time
+  - Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.Value
+  - Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.WindowEnd
+  - Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.WindowStart
+  langs:
+  - csharp
+  - vb
+  name: RichMarketEvent<T>.VWAPComputed
+  nameWithType: RichMarketEvent<T>.VWAPComputed
+  fullName: Virtufin.Base.Events.Market.RichMarketEvent<T>.VWAPComputed
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Market/RichMarketEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: VWAPComputed
+    path: ../../../src/Virtufin.Base/Events/Market/RichMarketEvent.cs
+    startLine: 53
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Market
+  summary: Volume-weighted average price (derived from tick stream).
+  example: []
+  syntax:
+    content: 'public sealed record RichMarketEvent<T>.VWAPComputed : RichMarketEvent<T>, IMarketEvent<T>, IEvent<T>, IEquatable<IEvent<T>>, IEquatable<RichMarketEvent<T>>, IEquatable<RichMarketEvent<T>.VWAPComputed>'
+    content.vb: Public NotInheritable Class RichMarketEvent(Of T).VWAPComputed Inherits RichMarketEvent(Of T) Implements IMarketEvent(Of T), IEvent(Of T), IEquatable(Of IEvent(Of T)), IEquatable(Of RichMarketEvent(Of T)), IEquatable(Of RichMarketEvent(Of T).VWAPComputed)
+  inheritance:
+  - System.Object
+  - Virtufin.Base.Events.Market.RichMarketEvent`1
+  implements:
+  - Virtufin.Core.Events.Market.IMarketEvent{{T}}
+  - Virtufin.Core.Events.IEvent{{T}}
+  - System.IEquatable{Virtufin.Core.Events.IEvent{{T}}}
+  - System.IEquatable{Virtufin.Base.Events.Market.RichMarketEvent`1}
+  - System.IEquatable{Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: RichMarketEvent(Of T).VWAPComputed
+  fullName.vb: Virtufin.Base.Events.Market.RichMarketEvent(Of T).VWAPComputed
+  name.vb: RichMarketEvent(Of T).VWAPComputed
+- uid: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.Symbol
+  commentId: P:Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.Symbol
+  id: Symbol
+  parent: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed
+  langs:
+  - csharp
+  - vb
+  name: Symbol
+  nameWithType: RichMarketEvent<T>.VWAPComputed.Symbol
+  fullName: Virtufin.Base.Events.Market.RichMarketEvent<T>.VWAPComputed.Symbol
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Market/RichMarketEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Symbol
+    path: ../../../src/Virtufin.Base/Events/Market/RichMarketEvent.cs
+    startLine: 56
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Market
+  summary: The instrument the observation refers to.
+  example: []
+  syntax:
+    content: public override Symbol Symbol { get; }
+    parameters: []
+    return:
+      type: Virtufin.Core.Events.Symbol
+    content.vb: Public Overrides ReadOnly Property Symbol As Symbol
+  overridden: Virtufin.Base.Events.Market.RichMarketEvent`1.Symbol
+  overload: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.Symbol*
+  nameWithType.vb: RichMarketEvent(Of T).VWAPComputed.Symbol
+  fullName.vb: Virtufin.Base.Events.Market.RichMarketEvent(Of T).VWAPComputed.Symbol
+- uid: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.Value
+  commentId: P:Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.Value
+  id: Value
+  parent: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: RichMarketEvent<T>.VWAPComputed.Value
+  fullName: Virtufin.Base.Events.Market.RichMarketEvent<T>.VWAPComputed.Value
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Market/RichMarketEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Value
+    path: ../../../src/Virtufin.Base/Events/Market/RichMarketEvent.cs
+    startLine: 58
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Market
+  summary: Computed VWAP.
+  example: []
+  syntax:
+    content: public DecimalAmount Value { get; }
+    parameters: []
+    return:
+      type: Virtufin.Core.Position.DecimalAmount
+    content.vb: Public ReadOnly Property Value As DecimalAmount
+  overload: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.Value*
+  nameWithType.vb: RichMarketEvent(Of T).VWAPComputed.Value
+  fullName.vb: Virtufin.Base.Events.Market.RichMarketEvent(Of T).VWAPComputed.Value
+- uid: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.WindowStart
+  commentId: P:Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.WindowStart
+  id: WindowStart
+  parent: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed
+  langs:
+  - csharp
+  - vb
+  name: WindowStart
+  nameWithType: RichMarketEvent<T>.VWAPComputed.WindowStart
+  fullName: Virtufin.Base.Events.Market.RichMarketEvent<T>.VWAPComputed.WindowStart
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Market/RichMarketEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: WindowStart
+    path: ../../../src/Virtufin.Base/Events/Market/RichMarketEvent.cs
+    startLine: 60
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Market
+  summary: Start of VWAP window.
+  example: []
+  syntax:
+    content: public T WindowStart { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public ReadOnly Property WindowStart As T
+  overload: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.WindowStart*
+  nameWithType.vb: RichMarketEvent(Of T).VWAPComputed.WindowStart
+  fullName.vb: Virtufin.Base.Events.Market.RichMarketEvent(Of T).VWAPComputed.WindowStart
+- uid: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.WindowEnd
+  commentId: P:Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.WindowEnd
+  id: WindowEnd
+  parent: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed
+  langs:
+  - csharp
+  - vb
+  name: WindowEnd
+  nameWithType: RichMarketEvent<T>.VWAPComputed.WindowEnd
+  fullName: Virtufin.Base.Events.Market.RichMarketEvent<T>.VWAPComputed.WindowEnd
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Market/RichMarketEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: WindowEnd
+    path: ../../../src/Virtufin.Base/Events/Market/RichMarketEvent.cs
+    startLine: 62
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Market
+  summary: End of VWAP window.
+  example: []
+  syntax:
+    content: public T WindowEnd { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public ReadOnly Property WindowEnd As T
+  overload: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.WindowEnd*
+  nameWithType.vb: RichMarketEvent(Of T).VWAPComputed.WindowEnd
+  fullName.vb: Virtufin.Base.Events.Market.RichMarketEvent(Of T).VWAPComputed.WindowEnd
+- uid: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.Time
+  commentId: P:Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.Time
+  id: Time
+  parent: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed
+  langs:
+  - csharp
+  - vb
+  name: Time
+  nameWithType: RichMarketEvent<T>.VWAPComputed.Time
+  fullName: Virtufin.Base.Events.Market.RichMarketEvent<T>.VWAPComputed.Time
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Market/RichMarketEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Time
+    path: ../../../src/Virtufin.Base/Events/Market/RichMarketEvent.cs
+    startLine: 64
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Market
+  summary: The time at which this event's fact occurred.
+  example: []
+  syntax:
+    content: public override T Time { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public Overrides ReadOnly Property Time As T
+  overridden: Virtufin.Base.Events.Market.RichMarketEvent`1.Time
+  overload: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.Time*
+  nameWithType.vb: RichMarketEvent(Of T).VWAPComputed.Time
+  fullName.vb: Virtufin.Base.Events.Market.RichMarketEvent(Of T).VWAPComputed.Time
+- uid: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.#ctor(Virtufin.Core.Events.Symbol,Virtufin.Core.Position.DecimalAmount,`0,`0)
+  commentId: M:Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.#ctor(Virtufin.Core.Events.Symbol,Virtufin.Core.Position.DecimalAmount,`0,`0)
+  id: '#ctor(Virtufin.Core.Events.Symbol,Virtufin.Core.Position.DecimalAmount,`0,`0)'
+  parent: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed
+  langs:
+  - csharp
+  - vb
+  name: VWAPComputed(Symbol, DecimalAmount, T, T)
+  nameWithType: RichMarketEvent<T>.VWAPComputed.VWAPComputed(Symbol, DecimalAmount, T, T)
+  fullName: Virtufin.Base.Events.Market.RichMarketEvent<T>.VWAPComputed.VWAPComputed(Virtufin.Core.Events.Symbol, Virtufin.Core.Position.DecimalAmount, T, T)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Market/RichMarketEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Base/Events/Market/RichMarketEvent.cs
+    startLine: 67
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Market
+  summary: Construct a VWAPComputed event.
+  example: []
+  syntax:
+    content: public VWAPComputed(Symbol symbol, DecimalAmount value, T windowStart, T windowEnd)
+    parameters:
+    - id: symbol
+      type: Virtufin.Core.Events.Symbol
+    - id: value
+      type: Virtufin.Core.Position.DecimalAmount
+    - id: windowStart
+      type: '{T}'
+    - id: windowEnd
+      type: '{T}'
+    content.vb: Public Sub New(symbol As Symbol, value As DecimalAmount, windowStart As T, windowEnd As T)
+  overload: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.#ctor*
+  nameWithType.vb: RichMarketEvent(Of T).VWAPComputed.New(Symbol, DecimalAmount, T, T)
+  fullName.vb: Virtufin.Base.Events.Market.RichMarketEvent(Of T).VWAPComputed.New(Virtufin.Core.Events.Symbol, Virtufin.Core.Position.DecimalAmount, T, T)
+  name.vb: New(Symbol, DecimalAmount, T, T)
+references:
+- uid: Virtufin.Base.Events.Market
+  commentId: N:Virtufin.Base.Events.Market
+  href: Virtufin.html
+  name: Virtufin.Base.Events.Market
+  nameWithType: Virtufin.Base.Events.Market
+  fullName: Virtufin.Base.Events.Market
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html
+  - name: .
+  - uid: Virtufin.Base.Events.Market
+    name: Market
+    href: Virtufin.Base.Events.Market.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html
+  - name: .
+  - uid: Virtufin.Base.Events.Market
+    name: Market
+    href: Virtufin.Base.Events.Market.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.Base.Events.Market.RichMarketEvent`1
+  commentId: T:Virtufin.Base.Events.Market.RichMarketEvent`1
+  parent: Virtufin.Base.Events.Market
+  href: Virtufin.Base.Events.Market.RichMarketEvent-1.html
+  name: RichMarketEvent<T>
+  nameWithType: RichMarketEvent<T>
+  fullName: Virtufin.Base.Events.Market.RichMarketEvent<T>
+  nameWithType.vb: RichMarketEvent(Of T)
+  fullName.vb: Virtufin.Base.Events.Market.RichMarketEvent(Of T)
+  name.vb: RichMarketEvent(Of T)
+  spec.csharp:
+  - uid: Virtufin.Base.Events.Market.RichMarketEvent`1
+    name: RichMarketEvent
+    href: Virtufin.Base.Events.Market.RichMarketEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.Events.Market.RichMarketEvent`1
+    name: RichMarketEvent
+    href: Virtufin.Base.Events.Market.RichMarketEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Core.Events.Market.IMarketEvent{{T}}
+  commentId: T:Virtufin.Core.Events.Market.IMarketEvent{`0}
+  parent: Virtufin.Core.Events.Market
+  definition: Virtufin.Core.Events.Market.IMarketEvent`1
+  href: Virtufin.Core.Events.Market.IMarketEvent-1.html
+  name: IMarketEvent<T>
+  nameWithType: IMarketEvent<T>
+  fullName: Virtufin.Core.Events.Market.IMarketEvent<T>
+  nameWithType.vb: IMarketEvent(Of T)
+  fullName.vb: Virtufin.Core.Events.Market.IMarketEvent(Of T)
+  name.vb: IMarketEvent(Of T)
+  spec.csharp:
+  - uid: Virtufin.Core.Events.Market.IMarketEvent`1
+    name: IMarketEvent
+    href: Virtufin.Core.Events.Market.IMarketEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Events.Market.IMarketEvent`1
+    name: IMarketEvent
+    href: Virtufin.Core.Events.Market.IMarketEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Core.Events.IEvent{{T}}
+  commentId: T:Virtufin.Core.Events.IEvent{`0}
+  parent: Virtufin.Core.Events
+  definition: Virtufin.Core.Events.IEvent`1
+  href: Virtufin.Core.Events.IEvent-1.html
+  name: IEvent<T>
+  nameWithType: IEvent<T>
+  fullName: Virtufin.Core.Events.IEvent<T>
+  nameWithType.vb: IEvent(Of T)
+  fullName.vb: Virtufin.Core.Events.IEvent(Of T)
+  name.vb: IEvent(Of T)
+  spec.csharp:
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.IEquatable{Virtufin.Core.Events.IEvent{{T}}}
+  commentId: T:System.IEquatable{Virtufin.Core.Events.IEvent{`0}}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<IEvent<T>>
+  nameWithType: IEquatable<IEvent<T>>
+  fullName: System.IEquatable<Virtufin.Core.Events.IEvent<T>>
+  nameWithType.vb: IEquatable(Of IEvent(Of T))
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Events.IEvent(Of T))
+  name.vb: IEquatable(Of IEvent(Of T))
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.IEquatable{Virtufin.Base.Events.Market.RichMarketEvent`1}
+  commentId: T:System.IEquatable{Virtufin.Base.Events.Market.RichMarketEvent`1}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<RichMarketEvent<T>>
+  nameWithType: IEquatable<RichMarketEvent<T>>
+  fullName: System.IEquatable<Virtufin.Base.Events.Market.RichMarketEvent<T>>
+  nameWithType.vb: IEquatable(Of RichMarketEvent(Of T))
+  fullName.vb: System.IEquatable(Of Virtufin.Base.Events.Market.RichMarketEvent(Of T))
+  name.vb: IEquatable(Of RichMarketEvent(Of T))
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Base.Events.Market.RichMarketEvent`1
+    name: RichMarketEvent
+    href: Virtufin.Base.Events.Market.RichMarketEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Base.Events.Market.RichMarketEvent`1
+    name: RichMarketEvent
+    href: Virtufin.Base.Events.Market.RichMarketEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.IEquatable{Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed}
+  commentId: T:System.IEquatable{Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<RichMarketEvent<T>.VWAPComputed>
+  nameWithType: IEquatable<RichMarketEvent<T>.VWAPComputed>
+  fullName: System.IEquatable<Virtufin.Base.Events.Market.RichMarketEvent<T>.VWAPComputed>
+  nameWithType.vb: IEquatable(Of RichMarketEvent(Of T).VWAPComputed)
+  fullName.vb: System.IEquatable(Of Virtufin.Base.Events.Market.RichMarketEvent(Of T).VWAPComputed)
+  name.vb: IEquatable(Of RichMarketEvent(Of T).VWAPComputed)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Base.Events.Market.RichMarketEvent`1
+    name: RichMarketEvent
+    href: Virtufin.Base.Events.Market.RichMarketEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: .
+  - uid: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed
+    name: VWAPComputed
+    href: Virtufin.Base.Events.Market.RichMarketEvent-1.VWAPComputed.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Base.Events.Market.RichMarketEvent`1
+    name: RichMarketEvent
+    href: Virtufin.Base.Events.Market.RichMarketEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: .
+  - uid: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed
+    name: VWAPComputed
+    href: Virtufin.Base.Events.Market.RichMarketEvent-1.VWAPComputed.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Core.Events.Market.IMarketEvent`1
+  commentId: T:Virtufin.Core.Events.Market.IMarketEvent`1
+  href: Virtufin.Core.Events.Market.IMarketEvent-1.html
+  name: IMarketEvent<T>
+  nameWithType: IMarketEvent<T>
+  fullName: Virtufin.Core.Events.Market.IMarketEvent<T>
+  nameWithType.vb: IMarketEvent(Of T)
+  fullName.vb: Virtufin.Core.Events.Market.IMarketEvent(Of T)
+  name.vb: IMarketEvent(Of T)
+  spec.csharp:
+  - uid: Virtufin.Core.Events.Market.IMarketEvent`1
+    name: IMarketEvent
+    href: Virtufin.Core.Events.Market.IMarketEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Events.Market.IMarketEvent`1
+    name: IMarketEvent
+    href: Virtufin.Core.Events.Market.IMarketEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Core.Events.Market
+  commentId: N:Virtufin.Core.Events.Market
+  href: Virtufin.html
+  name: Virtufin.Core.Events.Market
+  nameWithType: Virtufin.Core.Events.Market
+  fullName: Virtufin.Core.Events.Market
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  - name: .
+  - uid: Virtufin.Core.Events.Market
+    name: Market
+    href: Virtufin.Core.Events.Market.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  - name: .
+  - uid: Virtufin.Core.Events.Market
+    name: Market
+    href: Virtufin.Core.Events.Market.html
+- uid: Virtufin.Core.Events.IEvent`1
+  commentId: T:Virtufin.Core.Events.IEvent`1
+  href: Virtufin.Core.Events.IEvent-1.html
+  name: IEvent<T>
+  nameWithType: IEvent<T>
+  fullName: Virtufin.Core.Events.IEvent<T>
+  nameWithType.vb: IEvent(Of T)
+  fullName.vb: Virtufin.Core.Events.IEvent(Of T)
+  name.vb: IEvent(Of T)
+  spec.csharp:
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Core.Events
+  commentId: N:Virtufin.Core.Events
+  href: Virtufin.html
+  name: Virtufin.Core.Events
+  nameWithType: Virtufin.Core.Events
+  fullName: Virtufin.Core.Events
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Base.Events.Market.RichMarketEvent`1.Symbol
+  commentId: P:Virtufin.Base.Events.Market.RichMarketEvent`1.Symbol
+  parent: Virtufin.Base.Events.Market.RichMarketEvent`1
+  href: Virtufin.Base.Events.Market.RichMarketEvent-1.html#Virtufin_Base_Events_Market_RichMarketEvent_1_Symbol
+  name: Symbol
+  nameWithType: RichMarketEvent<T>.Symbol
+  fullName: Virtufin.Base.Events.Market.RichMarketEvent<T>.Symbol
+  nameWithType.vb: RichMarketEvent(Of T).Symbol
+  fullName.vb: Virtufin.Base.Events.Market.RichMarketEvent(Of T).Symbol
+- uid: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.Symbol*
+  commentId: Overload:Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.Symbol
+  href: Virtufin.Base.Events.Market.RichMarketEvent-1.VWAPComputed.html#Virtufin_Base_Events_Market_RichMarketEvent_1_VWAPComputed_Symbol
+  name: Symbol
+  nameWithType: RichMarketEvent<T>.VWAPComputed.Symbol
+  fullName: Virtufin.Base.Events.Market.RichMarketEvent<T>.VWAPComputed.Symbol
+  nameWithType.vb: RichMarketEvent(Of T).VWAPComputed.Symbol
+  fullName.vb: Virtufin.Base.Events.Market.RichMarketEvent(Of T).VWAPComputed.Symbol
+- uid: Virtufin.Core.Events.Symbol
+  commentId: T:Virtufin.Core.Events.Symbol
+  parent: Virtufin.Core.Events
+  href: Virtufin.Core.Events.Symbol.html
+  name: Symbol
+  nameWithType: Symbol
+  fullName: Virtufin.Core.Events.Symbol
+- uid: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.Value*
+  commentId: Overload:Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.Value
+  href: Virtufin.Base.Events.Market.RichMarketEvent-1.VWAPComputed.html#Virtufin_Base_Events_Market_RichMarketEvent_1_VWAPComputed_Value
+  name: Value
+  nameWithType: RichMarketEvent<T>.VWAPComputed.Value
+  fullName: Virtufin.Base.Events.Market.RichMarketEvent<T>.VWAPComputed.Value
+  nameWithType.vb: RichMarketEvent(Of T).VWAPComputed.Value
+  fullName.vb: Virtufin.Base.Events.Market.RichMarketEvent(Of T).VWAPComputed.Value
+- uid: Virtufin.Core.Position.DecimalAmount
+  commentId: T:Virtufin.Core.Position.DecimalAmount
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.DecimalAmount.html
+  name: DecimalAmount
+  nameWithType: DecimalAmount
+  fullName: Virtufin.Core.Position.DecimalAmount
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.WindowStart*
+  commentId: Overload:Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.WindowStart
+  href: Virtufin.Base.Events.Market.RichMarketEvent-1.VWAPComputed.html#Virtufin_Base_Events_Market_RichMarketEvent_1_VWAPComputed_WindowStart
+  name: WindowStart
+  nameWithType: RichMarketEvent<T>.VWAPComputed.WindowStart
+  fullName: Virtufin.Base.Events.Market.RichMarketEvent<T>.VWAPComputed.WindowStart
+  nameWithType.vb: RichMarketEvent(Of T).VWAPComputed.WindowStart
+  fullName.vb: Virtufin.Base.Events.Market.RichMarketEvent(Of T).VWAPComputed.WindowStart
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.WindowEnd*
+  commentId: Overload:Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.WindowEnd
+  href: Virtufin.Base.Events.Market.RichMarketEvent-1.VWAPComputed.html#Virtufin_Base_Events_Market_RichMarketEvent_1_VWAPComputed_WindowEnd
+  name: WindowEnd
+  nameWithType: RichMarketEvent<T>.VWAPComputed.WindowEnd
+  fullName: Virtufin.Base.Events.Market.RichMarketEvent<T>.VWAPComputed.WindowEnd
+  nameWithType.vb: RichMarketEvent(Of T).VWAPComputed.WindowEnd
+  fullName.vb: Virtufin.Base.Events.Market.RichMarketEvent(Of T).VWAPComputed.WindowEnd
+- uid: Virtufin.Base.Events.Market.RichMarketEvent`1.Time
+  commentId: P:Virtufin.Base.Events.Market.RichMarketEvent`1.Time
+  parent: Virtufin.Base.Events.Market.RichMarketEvent`1
+  href: Virtufin.Base.Events.Market.RichMarketEvent-1.html#Virtufin_Base_Events_Market_RichMarketEvent_1_Time
+  name: Time
+  nameWithType: RichMarketEvent<T>.Time
+  fullName: Virtufin.Base.Events.Market.RichMarketEvent<T>.Time
+  nameWithType.vb: RichMarketEvent(Of T).Time
+  fullName.vb: Virtufin.Base.Events.Market.RichMarketEvent(Of T).Time
+- uid: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.Time*
+  commentId: Overload:Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.Time
+  href: Virtufin.Base.Events.Market.RichMarketEvent-1.VWAPComputed.html#Virtufin_Base_Events_Market_RichMarketEvent_1_VWAPComputed_Time
+  name: Time
+  nameWithType: RichMarketEvent<T>.VWAPComputed.Time
+  fullName: Virtufin.Base.Events.Market.RichMarketEvent<T>.VWAPComputed.Time
+  nameWithType.vb: RichMarketEvent(Of T).VWAPComputed.Time
+  fullName.vb: Virtufin.Base.Events.Market.RichMarketEvent(Of T).VWAPComputed.Time
+- uid: Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.#ctor*
+  commentId: Overload:Virtufin.Base.Events.Market.RichMarketEvent`1.VWAPComputed.#ctor
+  href: Virtufin.Base.Events.Market.RichMarketEvent-1.VWAPComputed.html#Virtufin_Base_Events_Market_RichMarketEvent_1_VWAPComputed__ctor_Virtufin_Core_Events_Symbol_Virtufin_Core_Position_DecimalAmount__0__0_
+  name: VWAPComputed
+  nameWithType: RichMarketEvent<T>.VWAPComputed.VWAPComputed
+  fullName: Virtufin.Base.Events.Market.RichMarketEvent<T>.VWAPComputed.VWAPComputed
+  nameWithType.vb: RichMarketEvent(Of T).VWAPComputed.New
+  fullName.vb: Virtufin.Base.Events.Market.RichMarketEvent(Of T).VWAPComputed.New
+  name.vb: New

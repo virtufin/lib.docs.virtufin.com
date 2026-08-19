@@ -1,0 +1,80 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.Behaviour
+  commentId: N:Virtufin.Base.Behaviour
+  id: Behaviour
+  parent: Virtufin.Base
+  children:
+  - Virtufin.Base.Behaviour.SimpleMovingAverage`2
+  langs:
+  - csharp
+  - vb
+  name: Virtufin.Base.Behaviour
+  nameWithType: Virtufin.Base.Behaviour
+  fullName: Virtufin.Base.Behaviour
+  type: Namespace
+  assemblies:
+  - Virtufin.Base
+references:
+- uid: Virtufin.Base.Behaviour.SimpleMovingAverage`2
+  commentId: T:Virtufin.Base.Behaviour.SimpleMovingAverage`2
+  parent: Virtufin.Base.Behaviour
+  href: Virtufin.Base.Behaviour.SimpleMovingAverage-2.html
+  name: SimpleMovingAverage<TTime, TValue>
+  nameWithType: SimpleMovingAverage<TTime, TValue>
+  fullName: Virtufin.Base.Behaviour.SimpleMovingAverage<TTime, TValue>
+  nameWithType.vb: SimpleMovingAverage(Of TTime, TValue)
+  fullName.vb: Virtufin.Base.Behaviour.SimpleMovingAverage(Of TTime, TValue)
+  name.vb: SimpleMovingAverage(Of TTime, TValue)
+  spec.csharp:
+  - uid: Virtufin.Base.Behaviour.SimpleMovingAverage`2
+    name: SimpleMovingAverage
+    href: Virtufin.Base.Behaviour.SimpleMovingAverage-2.html
+  - name: <
+  - name: TTime
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.Behaviour.SimpleMovingAverage`2
+    name: SimpleMovingAverage
+    href: Virtufin.Base.Behaviour.SimpleMovingAverage-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTime
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Virtufin.Base.Behaviour
+  commentId: N:Virtufin.Base.Behaviour
+  href: Virtufin.html
+  name: Virtufin.Base.Behaviour
+  nameWithType: Virtufin.Base.Behaviour
+  fullName: Virtufin.Base.Behaviour
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Behaviour
+    name: Behaviour
+    href: Virtufin.Base.Behaviour.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Behaviour
+    name: Behaviour
+    href: Virtufin.Base.Behaviour.html

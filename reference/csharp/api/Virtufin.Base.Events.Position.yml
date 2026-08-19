@@ -6,16 +6,16 @@ items:
   parent: Virtufin.Base.Events
   children:
   - Virtufin.Base.Events.Position.Direction
-  - Virtufin.Base.Events.Position.PositionEvent
-  - Virtufin.Base.Events.Position.PositionEvent.Closed
-  - Virtufin.Base.Events.Position.PositionEvent.Flipped
-  - Virtufin.Base.Events.Position.PositionEvent.Opened
-  - Virtufin.Base.Events.Position.PositionEvent.Updated
+  - Virtufin.Base.Events.Position.PositionEvent`1
+  - Virtufin.Base.Events.Position.PositionEvent`1.Closed
+  - Virtufin.Base.Events.Position.PositionEvent`1.Flipped
+  - Virtufin.Base.Events.Position.PositionEvent`1.Opened
+  - Virtufin.Base.Events.Position.PositionEvent`1.Updated
   - Virtufin.Base.Events.Position.PositionSource
-  - Virtufin.Base.Events.Position.RichPositionEvent
-  - Virtufin.Base.Events.Position.RichPositionEvent.Base
-  - Virtufin.Base.Events.Position.RichPositionEvent.OpenedWithParty
-  - Virtufin.Base.Events.Position.RichPositionEvent.UpdatedAttributed
+  - Virtufin.Base.Events.Position.RichPositionEvent`1
+  - Virtufin.Base.Events.Position.RichPositionEvent`1.Base
+  - Virtufin.Base.Events.Position.RichPositionEvent`1.OpenedWithParty
+  - Virtufin.Base.Events.Position.RichPositionEvent`1.UpdatedAttributed
   langs:
   - csharp
   - vb
@@ -33,101 +33,164 @@ references:
   name: Direction
   nameWithType: Direction
   fullName: Virtufin.Base.Events.Position.Direction
-- uid: Virtufin.Base.Events.Position.PositionEvent
-  commentId: T:Virtufin.Base.Events.Position.PositionEvent
+- uid: Virtufin.Base.Events.Position.PositionEvent`1
+  commentId: T:Virtufin.Base.Events.Position.PositionEvent`1
   parent: Virtufin.Base.Events.Position
-  href: Virtufin.Base.Events.Position.PositionEvent.html
-  name: PositionEvent
-  nameWithType: PositionEvent
-  fullName: Virtufin.Base.Events.Position.PositionEvent
-- uid: Virtufin.Base.Events.Position.PositionEvent.Closed
-  commentId: T:Virtufin.Base.Events.Position.PositionEvent.Closed
-  href: Virtufin.Base.Events.Position.PositionEvent.html
-  name: PositionEvent.Closed
-  nameWithType: PositionEvent.Closed
-  fullName: Virtufin.Base.Events.Position.PositionEvent.Closed
+  href: Virtufin.Base.Events.Position.PositionEvent-1.html
+  name: PositionEvent<T>
+  nameWithType: PositionEvent<T>
+  fullName: Virtufin.Base.Events.Position.PositionEvent<T>
+  nameWithType.vb: PositionEvent(Of T)
+  fullName.vb: Virtufin.Base.Events.Position.PositionEvent(Of T)
+  name.vb: PositionEvent(Of T)
   spec.csharp:
-  - uid: Virtufin.Base.Events.Position.PositionEvent
+  - uid: Virtufin.Base.Events.Position.PositionEvent`1
     name: PositionEvent
-    href: Virtufin.Base.Events.Position.PositionEvent.html
+    href: Virtufin.Base.Events.Position.PositionEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.Events.Position.PositionEvent`1
+    name: PositionEvent
+    href: Virtufin.Base.Events.Position.PositionEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Base.Events.Position.PositionEvent`1.Closed
+  commentId: T:Virtufin.Base.Events.Position.PositionEvent`1.Closed
+  href: Virtufin.Base.Events.Position.PositionEvent-1.html
+  name: PositionEvent<T>.Closed
+  nameWithType: PositionEvent<T>.Closed
+  fullName: Virtufin.Base.Events.Position.PositionEvent<T>.Closed
+  nameWithType.vb: PositionEvent(Of T).Closed
+  fullName.vb: Virtufin.Base.Events.Position.PositionEvent(Of T).Closed
+  name.vb: PositionEvent(Of T).Closed
+  spec.csharp:
+  - uid: Virtufin.Base.Events.Position.PositionEvent`1
+    name: PositionEvent
+    href: Virtufin.Base.Events.Position.PositionEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
   - name: .
-  - uid: Virtufin.Base.Events.Position.PositionEvent.Closed
+  - uid: Virtufin.Base.Events.Position.PositionEvent`1.Closed
     name: Closed
-    href: Virtufin.Base.Events.Position.PositionEvent.Closed.html
+    href: Virtufin.Base.Events.Position.PositionEvent-1.Closed.html
   spec.vb:
-  - uid: Virtufin.Base.Events.Position.PositionEvent
+  - uid: Virtufin.Base.Events.Position.PositionEvent`1
     name: PositionEvent
-    href: Virtufin.Base.Events.Position.PositionEvent.html
+    href: Virtufin.Base.Events.Position.PositionEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
   - name: .
-  - uid: Virtufin.Base.Events.Position.PositionEvent.Closed
+  - uid: Virtufin.Base.Events.Position.PositionEvent`1.Closed
     name: Closed
-    href: Virtufin.Base.Events.Position.PositionEvent.Closed.html
-- uid: Virtufin.Base.Events.Position.PositionEvent.Flipped
-  commentId: T:Virtufin.Base.Events.Position.PositionEvent.Flipped
-  href: Virtufin.Base.Events.Position.PositionEvent.html
-  name: PositionEvent.Flipped
-  nameWithType: PositionEvent.Flipped
-  fullName: Virtufin.Base.Events.Position.PositionEvent.Flipped
+    href: Virtufin.Base.Events.Position.PositionEvent-1.Closed.html
+- uid: Virtufin.Base.Events.Position.PositionEvent`1.Flipped
+  commentId: T:Virtufin.Base.Events.Position.PositionEvent`1.Flipped
+  href: Virtufin.Base.Events.Position.PositionEvent-1.html
+  name: PositionEvent<T>.Flipped
+  nameWithType: PositionEvent<T>.Flipped
+  fullName: Virtufin.Base.Events.Position.PositionEvent<T>.Flipped
+  nameWithType.vb: PositionEvent(Of T).Flipped
+  fullName.vb: Virtufin.Base.Events.Position.PositionEvent(Of T).Flipped
+  name.vb: PositionEvent(Of T).Flipped
   spec.csharp:
-  - uid: Virtufin.Base.Events.Position.PositionEvent
+  - uid: Virtufin.Base.Events.Position.PositionEvent`1
     name: PositionEvent
-    href: Virtufin.Base.Events.Position.PositionEvent.html
+    href: Virtufin.Base.Events.Position.PositionEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
   - name: .
-  - uid: Virtufin.Base.Events.Position.PositionEvent.Flipped
+  - uid: Virtufin.Base.Events.Position.PositionEvent`1.Flipped
     name: Flipped
-    href: Virtufin.Base.Events.Position.PositionEvent.Flipped.html
+    href: Virtufin.Base.Events.Position.PositionEvent-1.Flipped.html
   spec.vb:
-  - uid: Virtufin.Base.Events.Position.PositionEvent
+  - uid: Virtufin.Base.Events.Position.PositionEvent`1
     name: PositionEvent
-    href: Virtufin.Base.Events.Position.PositionEvent.html
+    href: Virtufin.Base.Events.Position.PositionEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
   - name: .
-  - uid: Virtufin.Base.Events.Position.PositionEvent.Flipped
+  - uid: Virtufin.Base.Events.Position.PositionEvent`1.Flipped
     name: Flipped
-    href: Virtufin.Base.Events.Position.PositionEvent.Flipped.html
-- uid: Virtufin.Base.Events.Position.PositionEvent.Opened
-  commentId: T:Virtufin.Base.Events.Position.PositionEvent.Opened
-  href: Virtufin.Base.Events.Position.PositionEvent.html
-  name: PositionEvent.Opened
-  nameWithType: PositionEvent.Opened
-  fullName: Virtufin.Base.Events.Position.PositionEvent.Opened
+    href: Virtufin.Base.Events.Position.PositionEvent-1.Flipped.html
+- uid: Virtufin.Base.Events.Position.PositionEvent`1.Opened
+  commentId: T:Virtufin.Base.Events.Position.PositionEvent`1.Opened
+  href: Virtufin.Base.Events.Position.PositionEvent-1.html
+  name: PositionEvent<T>.Opened
+  nameWithType: PositionEvent<T>.Opened
+  fullName: Virtufin.Base.Events.Position.PositionEvent<T>.Opened
+  nameWithType.vb: PositionEvent(Of T).Opened
+  fullName.vb: Virtufin.Base.Events.Position.PositionEvent(Of T).Opened
+  name.vb: PositionEvent(Of T).Opened
   spec.csharp:
-  - uid: Virtufin.Base.Events.Position.PositionEvent
+  - uid: Virtufin.Base.Events.Position.PositionEvent`1
     name: PositionEvent
-    href: Virtufin.Base.Events.Position.PositionEvent.html
+    href: Virtufin.Base.Events.Position.PositionEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
   - name: .
-  - uid: Virtufin.Base.Events.Position.PositionEvent.Opened
+  - uid: Virtufin.Base.Events.Position.PositionEvent`1.Opened
     name: Opened
-    href: Virtufin.Base.Events.Position.PositionEvent.Opened.html
+    href: Virtufin.Base.Events.Position.PositionEvent-1.Opened.html
   spec.vb:
-  - uid: Virtufin.Base.Events.Position.PositionEvent
+  - uid: Virtufin.Base.Events.Position.PositionEvent`1
     name: PositionEvent
-    href: Virtufin.Base.Events.Position.PositionEvent.html
+    href: Virtufin.Base.Events.Position.PositionEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
   - name: .
-  - uid: Virtufin.Base.Events.Position.PositionEvent.Opened
+  - uid: Virtufin.Base.Events.Position.PositionEvent`1.Opened
     name: Opened
-    href: Virtufin.Base.Events.Position.PositionEvent.Opened.html
-- uid: Virtufin.Base.Events.Position.PositionEvent.Updated
-  commentId: T:Virtufin.Base.Events.Position.PositionEvent.Updated
-  href: Virtufin.Base.Events.Position.PositionEvent.html
-  name: PositionEvent.Updated
-  nameWithType: PositionEvent.Updated
-  fullName: Virtufin.Base.Events.Position.PositionEvent.Updated
+    href: Virtufin.Base.Events.Position.PositionEvent-1.Opened.html
+- uid: Virtufin.Base.Events.Position.PositionEvent`1.Updated
+  commentId: T:Virtufin.Base.Events.Position.PositionEvent`1.Updated
+  href: Virtufin.Base.Events.Position.PositionEvent-1.html
+  name: PositionEvent<T>.Updated
+  nameWithType: PositionEvent<T>.Updated
+  fullName: Virtufin.Base.Events.Position.PositionEvent<T>.Updated
+  nameWithType.vb: PositionEvent(Of T).Updated
+  fullName.vb: Virtufin.Base.Events.Position.PositionEvent(Of T).Updated
+  name.vb: PositionEvent(Of T).Updated
   spec.csharp:
-  - uid: Virtufin.Base.Events.Position.PositionEvent
+  - uid: Virtufin.Base.Events.Position.PositionEvent`1
     name: PositionEvent
-    href: Virtufin.Base.Events.Position.PositionEvent.html
+    href: Virtufin.Base.Events.Position.PositionEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
   - name: .
-  - uid: Virtufin.Base.Events.Position.PositionEvent.Updated
+  - uid: Virtufin.Base.Events.Position.PositionEvent`1.Updated
     name: Updated
-    href: Virtufin.Base.Events.Position.PositionEvent.Updated.html
+    href: Virtufin.Base.Events.Position.PositionEvent-1.Updated.html
   spec.vb:
-  - uid: Virtufin.Base.Events.Position.PositionEvent
+  - uid: Virtufin.Base.Events.Position.PositionEvent`1
     name: PositionEvent
-    href: Virtufin.Base.Events.Position.PositionEvent.html
+    href: Virtufin.Base.Events.Position.PositionEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
   - name: .
-  - uid: Virtufin.Base.Events.Position.PositionEvent.Updated
+  - uid: Virtufin.Base.Events.Position.PositionEvent`1.Updated
     name: Updated
-    href: Virtufin.Base.Events.Position.PositionEvent.Updated.html
+    href: Virtufin.Base.Events.Position.PositionEvent-1.Updated.html
 - uid: Virtufin.Base.Events.Position.PositionSource
   commentId: T:Virtufin.Base.Events.Position.PositionSource
   parent: Virtufin.Base.Events.Position
@@ -135,79 +198,131 @@ references:
   name: PositionSource
   nameWithType: PositionSource
   fullName: Virtufin.Base.Events.Position.PositionSource
-- uid: Virtufin.Base.Events.Position.RichPositionEvent
-  commentId: T:Virtufin.Base.Events.Position.RichPositionEvent
+- uid: Virtufin.Base.Events.Position.RichPositionEvent`1
+  commentId: T:Virtufin.Base.Events.Position.RichPositionEvent`1
   parent: Virtufin.Base.Events.Position
-  href: Virtufin.Base.Events.Position.RichPositionEvent.html
-  name: RichPositionEvent
-  nameWithType: RichPositionEvent
-  fullName: Virtufin.Base.Events.Position.RichPositionEvent
-- uid: Virtufin.Base.Events.Position.RichPositionEvent.Base
-  commentId: T:Virtufin.Base.Events.Position.RichPositionEvent.Base
-  href: Virtufin.Base.Events.Position.RichPositionEvent.html
-  name: RichPositionEvent.Base
-  nameWithType: RichPositionEvent.Base
-  fullName: Virtufin.Base.Events.Position.RichPositionEvent.Base
+  href: Virtufin.Base.Events.Position.RichPositionEvent-1.html
+  name: RichPositionEvent<T>
+  nameWithType: RichPositionEvent<T>
+  fullName: Virtufin.Base.Events.Position.RichPositionEvent<T>
+  nameWithType.vb: RichPositionEvent(Of T)
+  fullName.vb: Virtufin.Base.Events.Position.RichPositionEvent(Of T)
+  name.vb: RichPositionEvent(Of T)
   spec.csharp:
-  - uid: Virtufin.Base.Events.Position.RichPositionEvent
+  - uid: Virtufin.Base.Events.Position.RichPositionEvent`1
     name: RichPositionEvent
-    href: Virtufin.Base.Events.Position.RichPositionEvent.html
+    href: Virtufin.Base.Events.Position.RichPositionEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.Events.Position.RichPositionEvent`1
+    name: RichPositionEvent
+    href: Virtufin.Base.Events.Position.RichPositionEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Base.Events.Position.RichPositionEvent`1.Base
+  commentId: T:Virtufin.Base.Events.Position.RichPositionEvent`1.Base
+  href: Virtufin.Base.Events.Position.RichPositionEvent-1.html
+  name: RichPositionEvent<T>.Base
+  nameWithType: RichPositionEvent<T>.Base
+  fullName: Virtufin.Base.Events.Position.RichPositionEvent<T>.Base
+  nameWithType.vb: RichPositionEvent(Of T).Base
+  fullName.vb: Virtufin.Base.Events.Position.RichPositionEvent(Of T).Base
+  name.vb: RichPositionEvent(Of T).Base
+  spec.csharp:
+  - uid: Virtufin.Base.Events.Position.RichPositionEvent`1
+    name: RichPositionEvent
+    href: Virtufin.Base.Events.Position.RichPositionEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
   - name: .
-  - uid: Virtufin.Base.Events.Position.RichPositionEvent.Base
+  - uid: Virtufin.Base.Events.Position.RichPositionEvent`1.Base
     name: Base
-    href: Virtufin.Base.Events.Position.RichPositionEvent.Base.html
+    href: Virtufin.Base.Events.Position.RichPositionEvent-1.Base.html
   spec.vb:
-  - uid: Virtufin.Base.Events.Position.RichPositionEvent
+  - uid: Virtufin.Base.Events.Position.RichPositionEvent`1
     name: RichPositionEvent
-    href: Virtufin.Base.Events.Position.RichPositionEvent.html
+    href: Virtufin.Base.Events.Position.RichPositionEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
   - name: .
-  - uid: Virtufin.Base.Events.Position.RichPositionEvent.Base
+  - uid: Virtufin.Base.Events.Position.RichPositionEvent`1.Base
     name: Base
-    href: Virtufin.Base.Events.Position.RichPositionEvent.Base.html
-- uid: Virtufin.Base.Events.Position.RichPositionEvent.OpenedWithParty
-  commentId: T:Virtufin.Base.Events.Position.RichPositionEvent.OpenedWithParty
-  href: Virtufin.Base.Events.Position.RichPositionEvent.html
-  name: RichPositionEvent.OpenedWithParty
-  nameWithType: RichPositionEvent.OpenedWithParty
-  fullName: Virtufin.Base.Events.Position.RichPositionEvent.OpenedWithParty
+    href: Virtufin.Base.Events.Position.RichPositionEvent-1.Base.html
+- uid: Virtufin.Base.Events.Position.RichPositionEvent`1.OpenedWithParty
+  commentId: T:Virtufin.Base.Events.Position.RichPositionEvent`1.OpenedWithParty
+  href: Virtufin.Base.Events.Position.RichPositionEvent-1.html
+  name: RichPositionEvent<T>.OpenedWithParty
+  nameWithType: RichPositionEvent<T>.OpenedWithParty
+  fullName: Virtufin.Base.Events.Position.RichPositionEvent<T>.OpenedWithParty
+  nameWithType.vb: RichPositionEvent(Of T).OpenedWithParty
+  fullName.vb: Virtufin.Base.Events.Position.RichPositionEvent(Of T).OpenedWithParty
+  name.vb: RichPositionEvent(Of T).OpenedWithParty
   spec.csharp:
-  - uid: Virtufin.Base.Events.Position.RichPositionEvent
+  - uid: Virtufin.Base.Events.Position.RichPositionEvent`1
     name: RichPositionEvent
-    href: Virtufin.Base.Events.Position.RichPositionEvent.html
+    href: Virtufin.Base.Events.Position.RichPositionEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
   - name: .
-  - uid: Virtufin.Base.Events.Position.RichPositionEvent.OpenedWithParty
+  - uid: Virtufin.Base.Events.Position.RichPositionEvent`1.OpenedWithParty
     name: OpenedWithParty
-    href: Virtufin.Base.Events.Position.RichPositionEvent.OpenedWithParty.html
+    href: Virtufin.Base.Events.Position.RichPositionEvent-1.OpenedWithParty.html
   spec.vb:
-  - uid: Virtufin.Base.Events.Position.RichPositionEvent
+  - uid: Virtufin.Base.Events.Position.RichPositionEvent`1
     name: RichPositionEvent
-    href: Virtufin.Base.Events.Position.RichPositionEvent.html
+    href: Virtufin.Base.Events.Position.RichPositionEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
   - name: .
-  - uid: Virtufin.Base.Events.Position.RichPositionEvent.OpenedWithParty
+  - uid: Virtufin.Base.Events.Position.RichPositionEvent`1.OpenedWithParty
     name: OpenedWithParty
-    href: Virtufin.Base.Events.Position.RichPositionEvent.OpenedWithParty.html
-- uid: Virtufin.Base.Events.Position.RichPositionEvent.UpdatedAttributed
-  commentId: T:Virtufin.Base.Events.Position.RichPositionEvent.UpdatedAttributed
-  href: Virtufin.Base.Events.Position.RichPositionEvent.html
-  name: RichPositionEvent.UpdatedAttributed
-  nameWithType: RichPositionEvent.UpdatedAttributed
-  fullName: Virtufin.Base.Events.Position.RichPositionEvent.UpdatedAttributed
+    href: Virtufin.Base.Events.Position.RichPositionEvent-1.OpenedWithParty.html
+- uid: Virtufin.Base.Events.Position.RichPositionEvent`1.UpdatedAttributed
+  commentId: T:Virtufin.Base.Events.Position.RichPositionEvent`1.UpdatedAttributed
+  href: Virtufin.Base.Events.Position.RichPositionEvent-1.html
+  name: RichPositionEvent<T>.UpdatedAttributed
+  nameWithType: RichPositionEvent<T>.UpdatedAttributed
+  fullName: Virtufin.Base.Events.Position.RichPositionEvent<T>.UpdatedAttributed
+  nameWithType.vb: RichPositionEvent(Of T).UpdatedAttributed
+  fullName.vb: Virtufin.Base.Events.Position.RichPositionEvent(Of T).UpdatedAttributed
+  name.vb: RichPositionEvent(Of T).UpdatedAttributed
   spec.csharp:
-  - uid: Virtufin.Base.Events.Position.RichPositionEvent
+  - uid: Virtufin.Base.Events.Position.RichPositionEvent`1
     name: RichPositionEvent
-    href: Virtufin.Base.Events.Position.RichPositionEvent.html
+    href: Virtufin.Base.Events.Position.RichPositionEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
   - name: .
-  - uid: Virtufin.Base.Events.Position.RichPositionEvent.UpdatedAttributed
+  - uid: Virtufin.Base.Events.Position.RichPositionEvent`1.UpdatedAttributed
     name: UpdatedAttributed
-    href: Virtufin.Base.Events.Position.RichPositionEvent.UpdatedAttributed.html
+    href: Virtufin.Base.Events.Position.RichPositionEvent-1.UpdatedAttributed.html
   spec.vb:
-  - uid: Virtufin.Base.Events.Position.RichPositionEvent
+  - uid: Virtufin.Base.Events.Position.RichPositionEvent`1
     name: RichPositionEvent
-    href: Virtufin.Base.Events.Position.RichPositionEvent.html
+    href: Virtufin.Base.Events.Position.RichPositionEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
   - name: .
-  - uid: Virtufin.Base.Events.Position.RichPositionEvent.UpdatedAttributed
+  - uid: Virtufin.Base.Events.Position.RichPositionEvent`1.UpdatedAttributed
     name: UpdatedAttributed
-    href: Virtufin.Base.Events.Position.RichPositionEvent.UpdatedAttributed.html
+    href: Virtufin.Base.Events.Position.RichPositionEvent-1.UpdatedAttributed.html
 - uid: Virtufin.Base.Events.Position
   commentId: N:Virtufin.Base.Events.Position
   href: Virtufin.html

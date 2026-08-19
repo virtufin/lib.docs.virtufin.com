@@ -60,6 +60,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Behaviour.SimpleMovingAverage-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Behaviour.SimpleMovingAverage-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Behaviour.SimpleMovingAverage<TTime, TValue>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Behaviour.SimpleMovingAverage-2.yml\" sourcestartlinenumber=\"1\">Time-windowed simple moving average. &quot;Simple&quot; describes the averaging\nmethod (uniformly-weighted mean), not the implementation — count-based\nwindowing is the special case where samples happen to arrive at a regular\ncadence, so this is windowed by time in general.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Behaviour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Behaviour.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Behaviour",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Base.Cash.yml",
       "output": {
         ".html": {
@@ -312,115 +340,115 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Market.MarketEvent.OrderBookReceived.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Market.MarketEvent-1.OrderBookReceived.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Market.MarketEvent.OrderBookReceived.html"
+          "relative_path": "api/Virtufin.Base.Events.Market.MarketEvent-1.OrderBookReceived.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Market.MarketEvent.OrderBookReceived",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Market.MarketEvent.OrderBookReceived.yml\" sourcestartlinenumber=\"1\">Depth snapshot or diff from the order book feed.</p>\n"
+      "Title": "Virtufin.Base.Events.Market.MarketEvent<T>.OrderBookReceived",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Market.MarketEvent-1.OrderBookReceived.yml\" sourcestartlinenumber=\"1\">Depth snapshot or diff from the order book feed.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Market.MarketEvent.TickReceived.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Market.MarketEvent-1.TickReceived.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Market.MarketEvent.TickReceived.html"
+          "relative_path": "api/Virtufin.Base.Events.Market.MarketEvent-1.TickReceived.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Market.MarketEvent.TickReceived",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Market.MarketEvent.TickReceived.yml\" sourcestartlinenumber=\"1\">Best bid/ask update from the feed.</p>\n"
+      "Title": "Virtufin.Base.Events.Market.MarketEvent<T>.TickReceived",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Market.MarketEvent-1.TickReceived.yml\" sourcestartlinenumber=\"1\">Best bid/ask update from the feed.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Market.MarketEvent.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Market.MarketEvent-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Market.MarketEvent.html"
+          "relative_path": "api/Virtufin.Base.Events.Market.MarketEvent-1.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Market.MarketEvent",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Market.MarketEvent.yml\" sourcestartlinenumber=\"1\">Sealed ADT of raw market observations — what the feed emits. Two cases:\n<xref href=\"Virtufin.Base.Events.Market.MarketEvent.TickReceived\" data-throw-if-not-resolved=\"false\"></xref> (best bid/ask update) and <xref href=\"Virtufin.Base.Events.Market.MarketEvent.OrderBookReceived\" data-throw-if-not-resolved=\"false\"></xref>\n(depth snapshot/diff). Topics use the naming scheme\n<code>act.market.{entity}.{event}</code> or <code>hyp.{selector}.market.{entity}.{event}</code>.</p>\n"
+      "Title": "Virtufin.Base.Events.Market.MarketEvent<T>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Market.MarketEvent-1.yml\" sourcestartlinenumber=\"1\">Sealed ADT of raw market observations — what the feed emits. Two cases:\n<xref href=\"Virtufin.Base.Events.Market.MarketEvent%601.TickReceived\" data-throw-if-not-resolved=\"false\"></xref> (best bid/ask update) and <xref href=\"Virtufin.Base.Events.Market.MarketEvent%601.OrderBookReceived\" data-throw-if-not-resolved=\"false\"></xref>\n(depth snapshot/diff). Topics use the naming scheme\n<code>act.market.{entity}.{event}</code> or <code>hyp.{selector}.market.{entity}.{event}</code>.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent.Base.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent-1.Base.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent.Base.html"
+          "relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent-1.Base.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Market.RichMarketEvent.Base",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Market.RichMarketEvent.Base.yml\" sourcestartlinenumber=\"1\">Pass-through for a raw <xref href=\"Virtufin.Base.Events.Market.MarketEvent\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+      "Title": "Virtufin.Base.Events.Market.RichMarketEvent<T>.Base",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Market.RichMarketEvent-1.Base.yml\" sourcestartlinenumber=\"1\">Pass-through for a raw <xref href=\"Virtufin.Base.Events.Market.MarketEvent%601\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent.CandleClosed.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent-1.CandleClosed.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent.CandleClosed.html"
+          "relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent-1.CandleClosed.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Market.RichMarketEvent.CandleClosed",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Market.RichMarketEvent.CandleClosed.yml\" sourcestartlinenumber=\"1\">OHLCV candle closed (derived from a tick window).</p>\n"
+      "Title": "Virtufin.Base.Events.Market.RichMarketEvent<T>.CandleClosed",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Market.RichMarketEvent-1.CandleClosed.yml\" sourcestartlinenumber=\"1\">OHLCV candle closed (derived from a tick window).</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent.VWAPComputed.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent-1.VWAPComputed.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent.VWAPComputed.html"
+          "relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent-1.VWAPComputed.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Market.RichMarketEvent.VWAPComputed",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Market.RichMarketEvent.VWAPComputed.yml\" sourcestartlinenumber=\"1\">Volume-weighted average price (derived from tick stream).</p>\n"
+      "Title": "Virtufin.Base.Events.Market.RichMarketEvent<T>.VWAPComputed",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Market.RichMarketEvent-1.VWAPComputed.yml\" sourcestartlinenumber=\"1\">Volume-weighted average price (derived from tick stream).</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent.VolatilityEstimate.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent-1.VolatilityEstimate.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent.VolatilityEstimate.html"
+          "relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent-1.VolatilityEstimate.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Market.RichMarketEvent.VolatilityEstimate",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Market.RichMarketEvent.VolatilityEstimate.yml\" sourcestartlinenumber=\"1\">Realised volatility estimate (e.g. standard deviation of log returns).</p>\n"
+      "Title": "Virtufin.Base.Events.Market.RichMarketEvent<T>.VolatilityEstimate",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Market.RichMarketEvent-1.VolatilityEstimate.yml\" sourcestartlinenumber=\"1\">Realised volatility estimate (e.g. standard deviation of log returns).</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent.html"
+          "relative_path": "api/Virtufin.Base.Events.Market.RichMarketEvent-1.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Market.RichMarketEvent",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Market.RichMarketEvent.yml\" sourcestartlinenumber=\"1\">Enriched market events — derived signals (candles, VWAP, volatility) plus\npass-through for raw <xref href=\"Virtufin.Base.Events.Market.MarketEvent\" data-throw-if-not-resolved=\"false\"></xref>s. Both flow through the\nsame <code>act.market.<em sourcefile=\"api/Virtufin.Base.Events.Market.RichMarketEvent.yml\" sourcestartlinenumber=\"3\"></em></code> / <code>hyp.{selector}.market.</code> topics since\nthey share the <xref href=\"Virtufin.Core.Events.Market.IMarketEvent\" data-throw-if-not-resolved=\"false\"></xref> marker.</p>\n"
+      "Title": "Virtufin.Base.Events.Market.RichMarketEvent<T>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Market.RichMarketEvent-1.yml\" sourcestartlinenumber=\"1\">Enriched market events — derived signals (candles, VWAP, volatility) plus\npass-through for raw <xref href=\"Virtufin.Base.Events.Market.MarketEvent%601\" data-throw-if-not-resolved=\"false\"></xref>s. Both flow through the\nsame <code>act.market.<em sourcefile=\"api/Virtufin.Base.Events.Market.RichMarketEvent-1.yml\" sourcestartlinenumber=\"3\"></em></code> / <code>hyp.{selector}.market.</code> topics since\nthey share the <xref href=\"Virtufin.Core.Events.Market.IMarketEvent%601\" data-throw-if-not-resolved=\"false\"></xref> marker.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -452,73 +480,73 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Position.PositionEvent.Closed.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Position.PositionEvent-1.Closed.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Position.PositionEvent.Closed.html"
+          "relative_path": "api/Virtufin.Base.Events.Position.PositionEvent-1.Closed.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Position.PositionEvent.Closed",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.PositionEvent.Closed.yml\" sourcestartlinenumber=\"1\">Net quantity reached zero — position closed.</p>\n"
+      "Title": "Virtufin.Base.Events.Position.PositionEvent<T>.Closed",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.PositionEvent-1.Closed.yml\" sourcestartlinenumber=\"1\">Net quantity reached zero — position closed.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Position.PositionEvent.Flipped.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Position.PositionEvent-1.Flipped.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Position.PositionEvent.Flipped.html"
+          "relative_path": "api/Virtufin.Base.Events.Position.PositionEvent-1.Flipped.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Position.PositionEvent.Flipped",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.PositionEvent.Flipped.yml\" sourcestartlinenumber=\"1\">Direction changed atomically (long ↔ short).</p>\n"
+      "Title": "Virtufin.Base.Events.Position.PositionEvent<T>.Flipped",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.PositionEvent-1.Flipped.yml\" sourcestartlinenumber=\"1\">Direction changed atomically (long ↔ short).</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Position.PositionEvent.Opened.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Position.PositionEvent-1.Opened.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Position.PositionEvent.Opened.html"
+          "relative_path": "api/Virtufin.Base.Events.Position.PositionEvent-1.Opened.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Position.PositionEvent.Opened",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.PositionEvent.Opened.yml\" sourcestartlinenumber=\"1\">First fill on a flat symbol — opens a position.</p>\n"
+      "Title": "Virtufin.Base.Events.Position.PositionEvent<T>.Opened",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.PositionEvent-1.Opened.yml\" sourcestartlinenumber=\"1\">First fill on a flat symbol — opens a position.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Position.PositionEvent.Updated.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Position.PositionEvent-1.Updated.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Position.PositionEvent.Updated.html"
+          "relative_path": "api/Virtufin.Base.Events.Position.PositionEvent-1.Updated.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Position.PositionEvent.Updated",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.PositionEvent.Updated.yml\" sourcestartlinenumber=\"1\">Quantity or avg-entry changed by a fill or transfer.</p>\n"
+      "Title": "Virtufin.Base.Events.Position.PositionEvent<T>.Updated",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.PositionEvent-1.Updated.yml\" sourcestartlinenumber=\"1\">Quantity or avg-entry changed by a fill or transfer.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Position.PositionEvent.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Position.PositionEvent-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Position.PositionEvent.html"
+          "relative_path": "api/Virtufin.Base.Events.Position.PositionEvent-1.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Position.PositionEvent",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.PositionEvent.yml\" sourcestartlinenumber=\"1\">Sealed algebraic data type of position events. The unified stream driving\nall holdings changes — funding, deposits, withdrawals, AND fills (a fill\nproduces two <xref href=\"Virtufin.Base.Events.Position.PositionEvent.Updated\" data-throw-if-not-resolved=\"false\"></xref> events atomically, one per side of the\ntrade). Topics use the naming scheme\n<code>sc.{scenarioId}.position.{entity}.{event}</code>.</p>\n"
+      "Title": "Virtufin.Base.Events.Position.PositionEvent<T>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.PositionEvent-1.yml\" sourcestartlinenumber=\"1\">Sealed algebraic data type of position events. The unified stream driving\nall holdings changes — funding, deposits, withdrawals, AND fills (a fill\nproduces two <xref href=\"Virtufin.Base.Events.Position.PositionEvent%601.Updated\" data-throw-if-not-resolved=\"false\"></xref> events atomically, one per side of the\ntrade). Topics use the naming scheme\n<code>sc.{scenarioId}.position.{entity}.{event}</code>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -536,59 +564,59 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Position.RichPositionEvent.Base.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Position.RichPositionEvent-1.Base.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Position.RichPositionEvent.Base.html"
+          "relative_path": "api/Virtufin.Base.Events.Position.RichPositionEvent-1.Base.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Position.RichPositionEvent.Base",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.RichPositionEvent.Base.yml\" sourcestartlinenumber=\"1\">Pass-through wrapper for a raw <xref href=\"Virtufin.Base.Events.Position.PositionEvent\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+      "Title": "Virtufin.Base.Events.Position.RichPositionEvent<T>.Base",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.RichPositionEvent-1.Base.yml\" sourcestartlinenumber=\"1\">Pass-through wrapper for a raw <xref href=\"Virtufin.Base.Events.Position.PositionEvent%601\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Position.RichPositionEvent.OpenedWithParty.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Position.RichPositionEvent-1.OpenedWithParty.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Position.RichPositionEvent.OpenedWithParty.html"
+          "relative_path": "api/Virtufin.Base.Events.Position.RichPositionEvent-1.OpenedWithParty.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Position.RichPositionEvent.OpenedWithParty",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.RichPositionEvent.OpenedWithParty.yml\" sourcestartlinenumber=\"1\">Position opened with from/to party info (e.g. transfer counterparty).</p>\n"
+      "Title": "Virtufin.Base.Events.Position.RichPositionEvent<T>.OpenedWithParty",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.RichPositionEvent-1.OpenedWithParty.yml\" sourcestartlinenumber=\"1\">Position opened with from/to party info (e.g. transfer counterparty).</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Position.RichPositionEvent.UpdatedAttributed.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Position.RichPositionEvent-1.UpdatedAttributed.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Position.RichPositionEvent.UpdatedAttributed.html"
+          "relative_path": "api/Virtufin.Base.Events.Position.RichPositionEvent-1.UpdatedAttributed.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Position.RichPositionEvent.UpdatedAttributed",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.RichPositionEvent.UpdatedAttributed.yml\" sourcestartlinenumber=\"1\">Position updated with attribution.</p>\n"
+      "Title": "Virtufin.Base.Events.Position.RichPositionEvent<T>.UpdatedAttributed",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.RichPositionEvent-1.UpdatedAttributed.yml\" sourcestartlinenumber=\"1\">Position updated with attribution.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Position.RichPositionEvent.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Position.RichPositionEvent-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Position.RichPositionEvent.html"
+          "relative_path": "api/Virtufin.Base.Events.Position.RichPositionEvent-1.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Position.RichPositionEvent",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.RichPositionEvent.yml\" sourcestartlinenumber=\"1\">Enriched position events — same <xref href=\"Virtufin.Core.Events.Position.IPositionEvent\" data-throw-if-not-resolved=\"false\"></xref> marker as\n<xref href=\"Virtufin.Base.Events.Position.PositionEvent\" data-throw-if-not-resolved=\"false\"></xref> but with attribution, party info, and a\npass-through case for the raw event. Use this when consumers need to know\nwho initiated the change (e.g. transfer counterparty info).</p>\n"
+      "Title": "Virtufin.Base.Events.Position.RichPositionEvent<T>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Position.RichPositionEvent-1.yml\" sourcestartlinenumber=\"1\">Enriched position events — same <xref href=\"Virtufin.Core.Events.Position.IPositionEvent%601\" data-throw-if-not-resolved=\"false\"></xref> marker as\n<xref href=\"Virtufin.Base.Events.Position.PositionEvent%601\" data-throw-if-not-resolved=\"false\"></xref> but with attribution, party info, and a\npass-through case for the raw event. Use this when consumers need to know\nwho initiated the change (e.g. transfer counterparty info).</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -606,199 +634,199 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent.Base.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent-1.Base.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent.Base.html"
+          "relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent-1.Base.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Risk.RichRiskEvent.Base",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RichRiskEvent.Base.yml\" sourcestartlinenumber=\"1\">Pass-through for a raw <xref href=\"Virtufin.Base.Events.Risk.RiskEvent\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+      "Title": "Virtufin.Base.Events.Risk.RichRiskEvent<T>.Base",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RichRiskEvent-1.Base.yml\" sourcestartlinenumber=\"1\">Pass-through for a raw <xref href=\"Virtufin.Base.Events.Risk.RiskEvent%601\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent.DrawdownWithMetadata.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent-1.DrawdownWithMetadata.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent.DrawdownWithMetadata.html"
+          "relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent-1.DrawdownWithMetadata.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Risk.RichRiskEvent.DrawdownWithMetadata",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RichRiskEvent.DrawdownWithMetadata.yml\" sourcestartlinenumber=\"1\">Drawdown with peak/trough/recovery timestamps.</p>\n"
+      "Title": "Virtufin.Base.Events.Risk.RichRiskEvent<T>.DrawdownWithMetadata",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RichRiskEvent-1.DrawdownWithMetadata.yml\" sourcestartlinenumber=\"1\">Drawdown with peak/trough/recovery timestamps.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent.LimitBreachedWithThreshold.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent-1.LimitBreachedWithThreshold.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent.LimitBreachedWithThreshold.html"
+          "relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent-1.LimitBreachedWithThreshold.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Risk.RichRiskEvent.LimitBreachedWithThreshold",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RichRiskEvent.LimitBreachedWithThreshold.yml\" sourcestartlinenumber=\"1\">Limit breach with both threshold and observed values.</p>\n"
+      "Title": "Virtufin.Base.Events.Risk.RichRiskEvent<T>.LimitBreachedWithThreshold",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RichRiskEvent-1.LimitBreachedWithThreshold.yml\" sourcestartlinenumber=\"1\">Limit breach with both threshold and observed values.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent-1.PnLAttributed.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.html"
+          "relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent-1.PnLAttributed.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RichRiskEvent.PnLAttributed.yml\" sourcestartlinenumber=\"1\">P&amp;L attributed to a specific scenario run.</p>\n"
+      "Title": "Virtufin.Base.Events.Risk.RichRiskEvent<T>.PnLAttributed",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RichRiskEvent-1.PnLAttributed.yml\" sourcestartlinenumber=\"1\">P&amp;L attributed to a specific scenario run.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent.html"
+          "relative_path": "api/Virtufin.Base.Events.Risk.RichRiskEvent-1.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Risk.RichRiskEvent",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RichRiskEvent.yml\" sourcestartlinenumber=\"1\">Enriched risk events — same <xref href=\"Virtufin.Core.Events.Risk.IRiskEvent\" data-throw-if-not-resolved=\"false\"></xref> marker as\n<xref href=\"Virtufin.Base.Events.Risk.RiskEvent\" data-throw-if-not-resolved=\"false\"></xref> but with attribution metadata and a pass-through\ncase for the raw event.</p>\n"
+      "Title": "Virtufin.Base.Events.Risk.RichRiskEvent<T>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RichRiskEvent-1.yml\" sourcestartlinenumber=\"1\">Enriched risk events — same <xref href=\"Virtufin.Core.Events.Risk.IRiskEvent%601\" data-throw-if-not-resolved=\"false\"></xref> marker as\n<xref href=\"Virtufin.Base.Events.Risk.RiskEvent%601\" data-throw-if-not-resolved=\"false\"></xref> but with attribution metadata and a pass-through\ncase for the raw event.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.DrawdownUpdated.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent-1.DrawdownUpdated.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.DrawdownUpdated.html"
+          "relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent-1.DrawdownUpdated.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Risk.RiskEvent.DrawdownUpdated",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RiskEvent.DrawdownUpdated.yml\" sourcestartlinenumber=\"1\">Peak-to-trough drawdown recalculated.</p>\n"
+      "Title": "Virtufin.Base.Events.Risk.RiskEvent<T>.DrawdownUpdated",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RiskEvent-1.DrawdownUpdated.yml\" sourcestartlinenumber=\"1\">Peak-to-trough drawdown recalculated.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.ExposureBreached.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent-1.ExposureBreached.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.ExposureBreached.html"
+          "relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent-1.ExposureBreached.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Risk.RiskEvent.ExposureBreached",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RiskEvent.ExposureBreached.yml\" sourcestartlinenumber=\"1\">Exposure limit exceeded on a position.</p>\n"
+      "Title": "Virtufin.Base.Events.Risk.RiskEvent<T>.ExposureBreached",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RiskEvent-1.ExposureBreached.yml\" sourcestartlinenumber=\"1\">Exposure limit exceeded on a position.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.LimitBreached.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent-1.LimitBreached.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.LimitBreached.html"
+          "relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent-1.LimitBreached.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Risk.RiskEvent.LimitBreached",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RiskEvent.LimitBreached.yml\" sourcestartlinenumber=\"1\">Risk limit crossed.</p>\n"
+      "Title": "Virtufin.Base.Events.Risk.RiskEvent<T>.LimitBreached",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RiskEvent-1.LimitBreached.yml\" sourcestartlinenumber=\"1\">Risk limit crossed.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.LimitRestored.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent-1.LimitRestored.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.LimitRestored.html"
+          "relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent-1.LimitRestored.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Risk.RiskEvent.LimitRestored",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RiskEvent.LimitRestored.yml\" sourcestartlinenumber=\"1\">Risk limit restored.</p>\n"
+      "Title": "Virtufin.Base.Events.Risk.RiskEvent<T>.LimitRestored",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RiskEvent-1.LimitRestored.yml\" sourcestartlinenumber=\"1\">Risk limit restored.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.MarginCalled.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent-1.MarginCalled.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.MarginCalled.html"
+          "relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent-1.MarginCalled.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Risk.RiskEvent.MarginCalled",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RiskEvent.MarginCalled.yml\" sourcestartlinenumber=\"1\">Forced liquidation triggered (act only).</p>\n"
+      "Title": "Virtufin.Base.Events.Risk.RiskEvent<T>.MarginCalled",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RiskEvent-1.MarginCalled.yml\" sourcestartlinenumber=\"1\">Forced liquidation triggered (act only).</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.MarginWarned.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent-1.MarginWarned.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.MarginWarned.html"
+          "relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent-1.MarginWarned.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Risk.RiskEvent.MarginWarned",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RiskEvent.MarginWarned.yml\" sourcestartlinenumber=\"1\">Margin ratio approaching threshold.</p>\n"
+      "Title": "Virtufin.Base.Events.Risk.RiskEvent<T>.MarginWarned",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RiskEvent-1.MarginWarned.yml\" sourcestartlinenumber=\"1\">Margin ratio approaching threshold.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.PnLRealized.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent-1.PnLRealized.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.PnLRealized.html"
+          "relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent-1.PnLRealized.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Risk.RiskEvent.PnLRealized",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RiskEvent.PnLRealized.yml\" sourcestartlinenumber=\"1\">Position closed, P&amp;L locked.</p>\n"
+      "Title": "Virtufin.Base.Events.Risk.RiskEvent<T>.PnLRealized",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RiskEvent-1.PnLRealized.yml\" sourcestartlinenumber=\"1\">Position closed, P&amp;L locked.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.PnLUpdated.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent-1.PnLUpdated.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.PnLUpdated.html"
+          "relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent-1.PnLUpdated.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Risk.RiskEvent.PnLUpdated",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RiskEvent.PnLUpdated.yml\" sourcestartlinenumber=\"1\">Unrealized P&amp;L recalculated on a tick.</p>\n"
+      "Title": "Virtufin.Base.Events.Risk.RiskEvent<T>.PnLUpdated",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RiskEvent-1.PnLUpdated.yml\" sourcestartlinenumber=\"1\">Unrealized P&amp;L recalculated on a tick.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent.html"
+          "relative_path": "api/Virtufin.Base.Events.Risk.RiskEvent-1.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Risk.RiskEvent",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RiskEvent.yml\" sourcestartlinenumber=\"1\">Sealed ADT of risk events. Eight cases covering P&amp;L, drawdown, limit\nbreaches, exposure breaches, and margin events. Topics use the naming\nscheme <code>sc.{scenarioId}.risk.{entity}.{event}</code>.</p>\n"
+      "Title": "Virtufin.Base.Events.Risk.RiskEvent<T>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Risk.RiskEvent-1.yml\" sourcestartlinenumber=\"1\">Sealed ADT of risk events. Eight cases covering P&amp;L, drawdown, limit\nbreaches, exposure breaches, and margin events. Topics use the naming\nscheme <code>sc.{scenarioId}.risk.{entity}.{event}</code>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -924,7 +952,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Base.Events.Trade.RichTradeAction",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.RichTradeAction.yml\" sourcestartlinenumber=\"1\">Enriched trade action — wraps a raw <xref href=\"Virtufin.Base.Events.Trade.TradeAction\" data-throw-if-not-resolved=\"false\"></xref> with metadata\nthe strategy attaches before execution (strategy attribution, latency\nbudget, routing venue, etc.). Implements the same <xref href=\"Virtufin.Core.Events.Trade.ITradeAction\" data-throw-if-not-resolved=\"false\"></xref>\nmarker so it flows through the same <xref href=\"Virtufin.Core.Events.Trade.ITradeEvent%601\" data-throw-if-not-resolved=\"false\"></xref>\nparameterisation as raw actions.</p>\n"
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.RichTradeAction.yml\" sourcestartlinenumber=\"1\">Enriched trade action — wraps a raw <xref href=\"Virtufin.Base.Events.Trade.TradeAction\" data-throw-if-not-resolved=\"false\"></xref> with metadata\nthe strategy attaches before execution (strategy attribution, latency\nbudget, routing venue, etc.). Implements the same <xref href=\"Virtufin.Core.Events.Trade.ITradeAction\" data-throw-if-not-resolved=\"false\"></xref>\nmarker so it flows through the same ITradeEvent&lt;T&gt;\nparameterisation as raw actions.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1026,199 +1054,199 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.ExecutionCleared.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.ExecutionCleared.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.ExecutionCleared.html"
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.ExecutionCleared.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Trade.TradeEvent.ExecutionCleared",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.ExecutionCleared.yml\" sourcestartlinenumber=\"1\">Obligations confirmed (collapses into fill on Binance CEX).</p>\n"
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent<T>.ExecutionCleared",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent-1.ExecutionCleared.yml\" sourcestartlinenumber=\"1\">Obligations confirmed (collapses into fill on Binance CEX).</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.ExecutionSettled.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.ExecutionSettled.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.ExecutionSettled.html"
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.ExecutionSettled.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Trade.TradeEvent.ExecutionSettled",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.ExecutionSettled.yml\" sourcestartlinenumber=\"1\">Assets transferred, books closed.</p>\n"
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent<T>.ExecutionSettled",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent-1.ExecutionSettled.yml\" sourcestartlinenumber=\"1\">Assets transferred, books closed.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.FillReceived.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.FillReceived.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.FillReceived.html"
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.FillReceived.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Trade.TradeEvent.FillReceived",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.FillReceived.yml\" sourcestartlinenumber=\"1\">Partial or full fill received from exchange.</p>\n"
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent<T>.FillReceived",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent-1.FillReceived.yml\" sourcestartlinenumber=\"1\">Partial or full fill received from exchange.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.InterestExpired.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.InterestExpired.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.InterestExpired.html"
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.InterestExpired.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Trade.TradeEvent.InterestExpired",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.InterestExpired.yml\" sourcestartlinenumber=\"1\">Interest window expired without matching.</p>\n"
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent<T>.InterestExpired",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent-1.InterestExpired.yml\" sourcestartlinenumber=\"1\">Interest window expired without matching.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.InterestMatched.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.InterestMatched.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.InterestMatched.html"
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.InterestMatched.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Trade.TradeEvent.InterestMatched",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.InterestMatched.yml\" sourcestartlinenumber=\"1\">Interest matched against a fill (attribution event for analytics).</p>\n"
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent<T>.InterestMatched",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent-1.InterestMatched.yml\" sourcestartlinenumber=\"1\">Interest matched against a fill (attribution event for analytics).</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.InterestRegistered.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.InterestRegistered.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.InterestRegistered.html"
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.InterestRegistered.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Trade.TradeEvent.InterestRegistered",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.InterestRegistered.yml\" sourcestartlinenumber=\"1\">Interest registered with the venue (no book impact).</p>\n"
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent<T>.InterestRegistered",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent-1.InterestRegistered.yml\" sourcestartlinenumber=\"1\">Interest registered with the venue (no book impact).</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.InterestRevoked.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.InterestRevoked.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.InterestRevoked.html"
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.InterestRevoked.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Trade.TradeEvent.InterestRevoked",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.InterestRevoked.yml\" sourcestartlinenumber=\"1\">Interest explicitly revoked by the strategy.</p>\n"
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent<T>.InterestRevoked",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent-1.InterestRevoked.yml\" sourcestartlinenumber=\"1\">Interest explicitly revoked by the strategy.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.OrderCancelled.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.OrderCancelled.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.OrderCancelled.html"
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.OrderCancelled.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Trade.TradeEvent.OrderCancelled",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.OrderCancelled.yml\" sourcestartlinenumber=\"1\">Cancel confirmed by exchange.</p>\n"
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent<T>.OrderCancelled",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent-1.OrderCancelled.yml\" sourcestartlinenumber=\"1\">Cancel confirmed by exchange.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.OrderExpired.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.OrderExpired.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.OrderExpired.html"
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.OrderExpired.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Trade.TradeEvent.OrderExpired",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.OrderExpired.yml\" sourcestartlinenumber=\"1\">GTC/GTD order lapsed.</p>\n"
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent<T>.OrderExpired",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent-1.OrderExpired.yml\" sourcestartlinenumber=\"1\">GTC/GTD order lapsed.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.OrderPlaced.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.OrderPlaced.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.OrderPlaced.html"
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.OrderPlaced.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Trade.TradeEvent.OrderPlaced",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.OrderPlaced.yml\" sourcestartlinenumber=\"1\">Order submitted to exchange.</p>\n"
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent<T>.OrderPlaced",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent-1.OrderPlaced.yml\" sourcestartlinenumber=\"1\">Order submitted to exchange.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.TransferCompleted.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.TransferCompleted.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.TransferCompleted.html"
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.TransferCompleted.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Trade.TradeEvent.TransferCompleted",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.TransferCompleted.yml\" sourcestartlinenumber=\"1\">Peer-to-peer transfer completed.</p>\n"
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent<T>.TransferCompleted",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent-1.TransferCompleted.yml\" sourcestartlinenumber=\"1\">Peer-to-peer transfer completed.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.TransferFailed.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.TransferFailed.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.TransferFailed.html"
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.TransferFailed.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Trade.TradeEvent.TransferFailed",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.TransferFailed.yml\" sourcestartlinenumber=\"1\">Peer-to-peer transfer rejected or failed.</p>\n"
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent<T>.TransferFailed",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent-1.TransferFailed.yml\" sourcestartlinenumber=\"1\">Peer-to-peer transfer rejected or failed.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.TransferInitiated.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.TransferInitiated.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.TransferInitiated.html"
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.TransferInitiated.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Trade.TradeEvent.TransferInitiated",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.TransferInitiated.yml\" sourcestartlinenumber=\"1\">Peer-to-peer transfer initiated.</p>\n"
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent<T>.TransferInitiated",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent-1.TransferInitiated.yml\" sourcestartlinenumber=\"1\">Peer-to-peer transfer initiated.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.yml",
+      "source_relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent.html"
+          "relative_path": "api/Virtufin.Base.Events.Trade.TradeEvent-1.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Trade.TradeEvent",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent.yml\" sourcestartlinenumber=\"1\">Sealed algebraic data type of trade events parameterised by\n<xref href=\"Virtufin.Base.Events.Trade.RichTradeAction\" data-throw-if-not-resolved=\"false\"></xref>. Each case carries the originating action for\ncorrelation. Topics use the naming scheme\n<code>sc.{scenarioId}.trade.{entity}.{event}</code>.</p>\n"
+      "Title": "Virtufin.Base.Events.Trade.TradeEvent<T>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.TradeEvent-1.yml\" sourcestartlinenumber=\"1\">Sealed algebraic data type of trade events parameterised by\n<xref href=\"Virtufin.Base.Events.Trade.RichTradeAction\" data-throw-if-not-resolved=\"false\"></xref>. Each case carries the originating action for\ncorrelation. Topics use the naming scheme\n<code>sc.{scenarioId}.trade.{entity}.{event}</code>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1740,6 +1768,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Behaviour.IIndicator-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Behaviour.IIndicator-3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Behaviour.IIndicator<TSelf, TSample, TValue>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Behaviour.IIndicator-3.yml\" sourcestartlinenumber=\"1\">An immutable, self-folding indicator: consumes samples one at a time and\nexposes its current value via <xref href=\"Virtufin.Core.Behaviour.ISignal%601\" data-throw-if-not-resolved=\"false\"></xref>. Composes with\n<xref href=\"Virtufin.Core.Behaviour.ISignal%601\" data-throw-if-not-resolved=\"false\"></xref> rather than <xref href=\"Virtufin.Core.Behaviour.IAlgebra%602\" data-throw-if-not-resolved=\"false\"></xref> or\nIProcess&lt;S,E&gt; because the indicator's own state doesn't need\nto be threaded as an explicit external parameter — <code>this</code> already is\nthe state.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Core.Behaviour.IPortfolioState.yml",
       "output": {
         ".html": {
@@ -2132,17 +2174,17 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Core.Events.IEvent.yml",
+      "source_relative_path": "api/Virtufin.Core.Events.IEvent-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Core.Events.IEvent.html"
+          "relative_path": "api/Virtufin.Core.Events.IEvent-1.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Core.Events.IEvent",
-      "Summary": "<p sourcefile=\"api/Virtufin.Core.Events.IEvent.yml\" sourcestartlinenumber=\"1\">Marker for any value that participates in the Virtufin event flow. Events\nare immutable facts; they are appended to logs, transported on Dapr topics,\nand folded into state by algebræ. Implementations should be records so\nthey have value equality.</p>\n"
+      "Title": "Virtufin.Core.Events.IEvent<T>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Events.IEvent-1.yml\" sourcestartlinenumber=\"1\">Marker for any value that participates in the Virtufin event flow. Events\nare immutable facts; they are appended to logs, transported on Dapr topics,\nand folded into state by algebræ. Implementations should be records so\nthey have value equality.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2174,17 +2216,17 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Core.Events.Market.IMarketEvent.yml",
+      "source_relative_path": "api/Virtufin.Core.Events.Market.IMarketEvent-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Core.Events.Market.IMarketEvent.html"
+          "relative_path": "api/Virtufin.Core.Events.Market.IMarketEvent-1.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Core.Events.Market.IMarketEvent",
-      "Summary": "<p sourcefile=\"api/Virtufin.Core.Events.Market.IMarketEvent.yml\" sourcestartlinenumber=\"1\">Marker for any market observation — exogenous price or order-book state\nfrom the data feed, or a derived signal. Behaviour-level market events\nare only <code>TickReceived</code> and <code>OrderBookReceived</code>; candles,\nVWAP, and other derived signals are carried by <code>RichMarketEvent</code>,\nwhich also implements this interface.</p>\n"
+      "Title": "Virtufin.Core.Events.Market.IMarketEvent<T>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Events.Market.IMarketEvent-1.yml\" sourcestartlinenumber=\"1\">Marker for any market observation — exogenous price or order-book state\nfrom the data feed, or a derived signal. Behaviour-level market events\nare only <code>TickReceived</code> and <code>OrderBookReceived</code>; candles,\nVWAP, and other derived signals are carried by <code>RichMarketEvent</code>,\nwhich also implements this interface.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2202,17 +2244,17 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Core.Events.Position.IPositionEvent.yml",
+      "source_relative_path": "api/Virtufin.Core.Events.Position.IPositionEvent-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Core.Events.Position.IPositionEvent.html"
+          "relative_path": "api/Virtufin.Core.Events.Position.IPositionEvent-1.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Core.Events.Position.IPositionEvent",
-      "Summary": "<p sourcefile=\"api/Virtufin.Core.Events.Position.IPositionEvent.yml\" sourcestartlinenumber=\"1\">Marker for any event that changes a holding. Position events flow through\nthe unified <code>sc.{scenarioId}.position.*</code> topic family and include\nholdings lifecycle changes only (open/update/close/flip). Exposure breaches\nare reported separately under <code>Risk</code>.</p>\n"
+      "Title": "Virtufin.Core.Events.Position.IPositionEvent<T>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Events.Position.IPositionEvent-1.yml\" sourcestartlinenumber=\"1\">Marker for any event that changes a holding. Position events flow through\nthe unified <code>sc.{scenarioId}.position.*</code> topic family and include\nholdings lifecycle changes only (open/update/close/flip). Exposure breaches\nare reported separately under <code>Risk</code>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2230,17 +2272,17 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Core.Events.Risk.IRiskEvent.yml",
+      "source_relative_path": "api/Virtufin.Core.Events.Risk.IRiskEvent-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Core.Events.Risk.IRiskEvent.html"
+          "relative_path": "api/Virtufin.Core.Events.Risk.IRiskEvent-1.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Core.Events.Risk.IRiskEvent",
-      "Summary": "<p sourcefile=\"api/Virtufin.Core.Events.Risk.IRiskEvent.yml\" sourcestartlinenumber=\"1\">Marker for any risk-related event. Risk events are attributed to the\nscenario as a whole — they depend on all three components (market,\nportfolio, strategy) jointly. Topics use the naming scheme\n<code>sc.{scenarioId}.risk.{entity}.{event}</code>.</p>\n"
+      "Title": "Virtufin.Core.Events.Risk.IRiskEvent<T>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Events.Risk.IRiskEvent-1.yml\" sourcestartlinenumber=\"1\">Marker for any risk-related event. Risk events are attributed to the\nscenario as a whole — they depend on all three components (market,\nportfolio, strategy) jointly. Topics use the naming scheme\n<code>sc.{scenarioId}.risk.{entity}.{event}</code>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2272,6 +2314,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Events.TimestampedSample-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Events.TimestampedSample-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Events.TimestampedSample<TTime, TValue>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Events.TimestampedSample-2.yml\" sourcestartlinenumber=\"1\">A single observation at a point in time, generic over both the time axis\nand the value type. This is the sample shape <code>IIndicator</code>\nimplementations consume — kept in <code>Virtufin.Core.Events</code> rather than\n<code>Virtufin.Core.Behaviour</code> because it's a general timestamped-event\nshape, not indicator-specific.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Core.Events.Trade.ITradeAction.yml",
       "output": {
         ".html": {
@@ -2286,17 +2342,17 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Core.Events.Trade.ITradeEvent-1.yml",
+      "source_relative_path": "api/Virtufin.Core.Events.Trade.ITradeEvent-2.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Core.Events.Trade.ITradeEvent-1.html"
+          "relative_path": "api/Virtufin.Core.Events.Trade.ITradeEvent-2.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Core.Events.Trade.ITradeEvent<A>",
-      "Summary": "<p sourcefile=\"api/Virtufin.Core.Events.Trade.ITradeEvent-1.yml\" sourcestartlinenumber=\"1\">Trade event parameterised by the action type that produced it. Used by\n<code>IExecutor&lt;S, A, E&gt;</code> with the constraint <code>E : ITradeEvent&lt;A&gt;</code>\nto enforce that an executor producing events for <code class=\"typeparamref\">A</code>\ncan only emit events in the <code>TradeEvent&lt;A&gt;</code> hierarchy.</p>\n"
+      "Title": "Virtufin.Core.Events.Trade.ITradeEvent<A, T>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Events.Trade.ITradeEvent-2.yml\" sourcestartlinenumber=\"1\">Trade event parameterised by the action type that produced it. Used by\n<code>IExecutor&lt;S, A, E&gt;</code> with the constraint <code>E : ITradeEvent&lt;A&gt;</code>\nto enforce that an executor producing events for <code class=\"typeparamref\">A</code>\ncan only emit events in the <code>TradeEvent&lt;A&gt;</code> hierarchy.</p>\n"
     },
     {
       "type": "ManagedReference",

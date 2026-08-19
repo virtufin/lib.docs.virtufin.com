@@ -54,12 +54,12 @@ items:
     result.
   example: []
   syntax:
-    content: 'public abstract class LiveExecutorBase<TState, TAction, TEvent> : IExecutor<TState, TAction, TEvent> where TState : IExecutionState where TAction : ITradeAction where TEvent : ITradeEvent<TAction>'
+    content: 'public abstract class LiveExecutorBase<TState, TAction, TEvent> : IExecutor<TState, TAction, TEvent> where TState : IExecutionState where TAction : ITradeAction where TEvent : ITradeEvent<TAction, DateTimeOffset>'
     typeParameters:
     - id: TState
     - id: TAction
     - id: TEvent
-    content.vb: Public MustInherit Class LiveExecutorBase(Of TState As IExecutionState, TAction As ITradeAction, TEvent As ITradeEvent(Of TAction)) Implements IExecutor(Of TState, TAction, TEvent)
+    content.vb: Public MustInherit Class LiveExecutorBase(Of TState As IExecutionState, TAction As ITradeAction, TEvent As ITradeEvent(Of TAction, DateTimeOffset)) Implements IExecutor(Of TState, TAction, TEvent)
   inheritance:
   - System.Object
   implements:

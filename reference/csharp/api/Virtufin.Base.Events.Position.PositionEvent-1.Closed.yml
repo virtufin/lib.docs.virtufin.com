@@ -1,0 +1,1000 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.Events.Position.PositionEvent`1.Closed
+  commentId: T:Virtufin.Base.Events.Position.PositionEvent`1.Closed
+  id: PositionEvent`1.Closed
+  parent: Virtufin.Base.Events.Position
+  children:
+  - Virtufin.Base.Events.Position.PositionEvent`1.Closed.#ctor(Virtufin.Core.Events.Symbol,`0,Virtufin.Core.Position.DecimalAmount)
+  - Virtufin.Base.Events.Position.PositionEvent`1.Closed.ClosedAt
+  - Virtufin.Base.Events.Position.PositionEvent`1.Closed.DeltaQuantity
+  - Virtufin.Base.Events.Position.PositionEvent`1.Closed.RealizedPnL
+  - Virtufin.Base.Events.Position.PositionEvent`1.Closed.Symbol
+  - Virtufin.Base.Events.Position.PositionEvent`1.Closed.Time
+  langs:
+  - csharp
+  - vb
+  name: PositionEvent<T>.Closed
+  nameWithType: PositionEvent<T>.Closed
+  fullName: Virtufin.Base.Events.Position.PositionEvent<T>.Closed
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Position/PositionEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Closed
+    path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
+    startLine: 80
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Position
+  summary: Net quantity reached zero — position closed.
+  example: []
+  syntax:
+    content: 'public sealed record PositionEvent<T>.Closed : PositionEvent<T>, IPositionEvent<T>, IEvent<T>, IEquatable<IEvent<T>>, IEquatable<PositionEvent<T>>, IEquatable<PositionEvent<T>.Closed>'
+    content.vb: Public NotInheritable Class PositionEvent(Of T).Closed Inherits PositionEvent(Of T) Implements IPositionEvent(Of T), IEvent(Of T), IEquatable(Of IEvent(Of T)), IEquatable(Of PositionEvent(Of T)), IEquatable(Of PositionEvent(Of T).Closed)
+  inheritance:
+  - System.Object
+  - Virtufin.Base.Events.Position.PositionEvent`1
+  implements:
+  - Virtufin.Core.Events.Position.IPositionEvent{{T}}
+  - Virtufin.Core.Events.IEvent{{T}}
+  - System.IEquatable{Virtufin.Core.Events.IEvent{{T}}}
+  - System.IEquatable{Virtufin.Base.Events.Position.PositionEvent`1}
+  - System.IEquatable{Virtufin.Base.Events.Position.PositionEvent`1.Closed}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: PositionEvent(Of T).Closed
+  fullName.vb: Virtufin.Base.Events.Position.PositionEvent(Of T).Closed
+  name.vb: PositionEvent(Of T).Closed
+- uid: Virtufin.Base.Events.Position.PositionEvent`1.Closed.Symbol
+  commentId: P:Virtufin.Base.Events.Position.PositionEvent`1.Closed.Symbol
+  id: Symbol
+  parent: Virtufin.Base.Events.Position.PositionEvent`1.Closed
+  langs:
+  - csharp
+  - vb
+  name: Symbol
+  nameWithType: PositionEvent<T>.Closed.Symbol
+  fullName: Virtufin.Base.Events.Position.PositionEvent<T>.Closed.Symbol
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Position/PositionEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Symbol
+    path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
+    startLine: 83
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Position
+  summary: The instrument whose holding changed.
+  example: []
+  syntax:
+    content: public override Symbol Symbol { get; }
+    parameters: []
+    return:
+      type: Virtufin.Core.Events.Symbol
+    content.vb: Public Overrides ReadOnly Property Symbol As Symbol
+  overridden: Virtufin.Base.Events.Position.PositionEvent`1.Symbol
+  overload: Virtufin.Base.Events.Position.PositionEvent`1.Closed.Symbol*
+  nameWithType.vb: PositionEvent(Of T).Closed.Symbol
+  fullName.vb: Virtufin.Base.Events.Position.PositionEvent(Of T).Closed.Symbol
+- uid: Virtufin.Base.Events.Position.PositionEvent`1.Closed.ClosedAt
+  commentId: P:Virtufin.Base.Events.Position.PositionEvent`1.Closed.ClosedAt
+  id: ClosedAt
+  parent: Virtufin.Base.Events.Position.PositionEvent`1.Closed
+  langs:
+  - csharp
+  - vb
+  name: ClosedAt
+  nameWithType: PositionEvent<T>.Closed.ClosedAt
+  fullName: Virtufin.Base.Events.Position.PositionEvent<T>.Closed.ClosedAt
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Position/PositionEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: ClosedAt
+    path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
+    startLine: 85
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Position
+  summary: Time of close.
+  example: []
+  syntax:
+    content: public T ClosedAt { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public ReadOnly Property ClosedAt As T
+  overload: Virtufin.Base.Events.Position.PositionEvent`1.Closed.ClosedAt*
+  nameWithType.vb: PositionEvent(Of T).Closed.ClosedAt
+  fullName.vb: Virtufin.Base.Events.Position.PositionEvent(Of T).Closed.ClosedAt
+- uid: Virtufin.Base.Events.Position.PositionEvent`1.Closed.Time
+  commentId: P:Virtufin.Base.Events.Position.PositionEvent`1.Closed.Time
+  id: Time
+  parent: Virtufin.Base.Events.Position.PositionEvent`1.Closed
+  langs:
+  - csharp
+  - vb
+  name: Time
+  nameWithType: PositionEvent<T>.Closed.Time
+  fullName: Virtufin.Base.Events.Position.PositionEvent<T>.Closed.Time
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Position/PositionEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Time
+    path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
+    startLine: 87
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Position
+  summary: The time at which this event's fact occurred.
+  example: []
+  syntax:
+    content: public override T Time { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public Overrides ReadOnly Property Time As T
+  overridden: Virtufin.Base.Events.Position.PositionEvent`1.Time
+  overload: Virtufin.Base.Events.Position.PositionEvent`1.Closed.Time*
+  nameWithType.vb: PositionEvent(Of T).Closed.Time
+  fullName.vb: Virtufin.Base.Events.Position.PositionEvent(Of T).Closed.Time
+- uid: Virtufin.Base.Events.Position.PositionEvent`1.Closed.RealizedPnL
+  commentId: P:Virtufin.Base.Events.Position.PositionEvent`1.Closed.RealizedPnL
+  id: RealizedPnL
+  parent: Virtufin.Base.Events.Position.PositionEvent`1.Closed
+  langs:
+  - csharp
+  - vb
+  name: RealizedPnL
+  nameWithType: PositionEvent<T>.Closed.RealizedPnL
+  fullName: Virtufin.Base.Events.Position.PositionEvent<T>.Closed.RealizedPnL
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Position/PositionEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: RealizedPnL
+    path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
+    startLine: 89
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Position
+  summary: Realized P&amp;L from the close.
+  example: []
+  syntax:
+    content: public DecimalAmount RealizedPnL { get; }
+    parameters: []
+    return:
+      type: Virtufin.Core.Position.DecimalAmount
+    content.vb: Public ReadOnly Property RealizedPnL As DecimalAmount
+  overload: Virtufin.Base.Events.Position.PositionEvent`1.Closed.RealizedPnL*
+  nameWithType.vb: PositionEvent(Of T).Closed.RealizedPnL
+  fullName.vb: Virtufin.Base.Events.Position.PositionEvent(Of T).Closed.RealizedPnL
+- uid: Virtufin.Base.Events.Position.PositionEvent`1.Closed.#ctor(Virtufin.Core.Events.Symbol,`0,Virtufin.Core.Position.DecimalAmount)
+  commentId: M:Virtufin.Base.Events.Position.PositionEvent`1.Closed.#ctor(Virtufin.Core.Events.Symbol,`0,Virtufin.Core.Position.DecimalAmount)
+  id: '#ctor(Virtufin.Core.Events.Symbol,`0,Virtufin.Core.Position.DecimalAmount)'
+  parent: Virtufin.Base.Events.Position.PositionEvent`1.Closed
+  langs:
+  - csharp
+  - vb
+  name: Closed(Symbol, T, DecimalAmount)
+  nameWithType: PositionEvent<T>.Closed.Closed(Symbol, T, DecimalAmount)
+  fullName: Virtufin.Base.Events.Position.PositionEvent<T>.Closed.Closed(Virtufin.Core.Events.Symbol, T, Virtufin.Core.Position.DecimalAmount)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Position/PositionEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
+    startLine: 92
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Position
+  summary: Construct a Closed event.
+  example: []
+  syntax:
+    content: public Closed(Symbol symbol, T closedAt, DecimalAmount realizedPnL)
+    parameters:
+    - id: symbol
+      type: Virtufin.Core.Events.Symbol
+    - id: closedAt
+      type: '{T}'
+    - id: realizedPnL
+      type: Virtufin.Core.Position.DecimalAmount
+    content.vb: Public Sub New(symbol As Symbol, closedAt As T, realizedPnL As DecimalAmount)
+  overload: Virtufin.Base.Events.Position.PositionEvent`1.Closed.#ctor*
+  nameWithType.vb: PositionEvent(Of T).Closed.New(Symbol, T, DecimalAmount)
+  fullName.vb: Virtufin.Base.Events.Position.PositionEvent(Of T).Closed.New(Virtufin.Core.Events.Symbol, T, Virtufin.Core.Position.DecimalAmount)
+  name.vb: New(Symbol, T, DecimalAmount)
+- uid: Virtufin.Base.Events.Position.PositionEvent`1.Closed.DeltaQuantity
+  commentId: P:Virtufin.Base.Events.Position.PositionEvent`1.Closed.DeltaQuantity
+  id: DeltaQuantity
+  parent: Virtufin.Base.Events.Position.PositionEvent`1.Closed
+  langs:
+  - csharp
+  - vb
+  name: DeltaQuantity
+  nameWithType: PositionEvent<T>.Closed.DeltaQuantity
+  fullName: Virtufin.Base.Events.Position.PositionEvent<T>.Closed.DeltaQuantity
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Events/Position/PositionEvent.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: DeltaQuantity
+    path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
+    startLine: 98
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.Events.Position
+  summary: The signed change in quantity (positive = increase, negative = decrease).
+  example: []
+  syntax:
+    content: public override DecimalAmount DeltaQuantity { get; }
+    parameters: []
+    return:
+      type: Virtufin.Core.Position.DecimalAmount
+    content.vb: Public Overrides ReadOnly Property DeltaQuantity As DecimalAmount
+  overridden: Virtufin.Base.Events.Position.PositionEvent`1.DeltaQuantity
+  overload: Virtufin.Base.Events.Position.PositionEvent`1.Closed.DeltaQuantity*
+  nameWithType.vb: PositionEvent(Of T).Closed.DeltaQuantity
+  fullName.vb: Virtufin.Base.Events.Position.PositionEvent(Of T).Closed.DeltaQuantity
+references:
+- uid: Virtufin.Base.Events.Position
+  commentId: N:Virtufin.Base.Events.Position
+  href: Virtufin.html
+  name: Virtufin.Base.Events.Position
+  nameWithType: Virtufin.Base.Events.Position
+  fullName: Virtufin.Base.Events.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html
+  - name: .
+  - uid: Virtufin.Base.Events.Position
+    name: Position
+    href: Virtufin.Base.Events.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Events
+    name: Events
+    href: Virtufin.Base.Events.html
+  - name: .
+  - uid: Virtufin.Base.Events.Position
+    name: Position
+    href: Virtufin.Base.Events.Position.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.Base.Events.Position.PositionEvent`1
+  commentId: T:Virtufin.Base.Events.Position.PositionEvent`1
+  parent: Virtufin.Base.Events.Position
+  href: Virtufin.Base.Events.Position.PositionEvent-1.html
+  name: PositionEvent<T>
+  nameWithType: PositionEvent<T>
+  fullName: Virtufin.Base.Events.Position.PositionEvent<T>
+  nameWithType.vb: PositionEvent(Of T)
+  fullName.vb: Virtufin.Base.Events.Position.PositionEvent(Of T)
+  name.vb: PositionEvent(Of T)
+  spec.csharp:
+  - uid: Virtufin.Base.Events.Position.PositionEvent`1
+    name: PositionEvent
+    href: Virtufin.Base.Events.Position.PositionEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.Events.Position.PositionEvent`1
+    name: PositionEvent
+    href: Virtufin.Base.Events.Position.PositionEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Core.Events.Position.IPositionEvent{{T}}
+  commentId: T:Virtufin.Core.Events.Position.IPositionEvent{`0}
+  parent: Virtufin.Core.Events.Position
+  definition: Virtufin.Core.Events.Position.IPositionEvent`1
+  href: Virtufin.Core.Events.Position.IPositionEvent-1.html
+  name: IPositionEvent<T>
+  nameWithType: IPositionEvent<T>
+  fullName: Virtufin.Core.Events.Position.IPositionEvent<T>
+  nameWithType.vb: IPositionEvent(Of T)
+  fullName.vb: Virtufin.Core.Events.Position.IPositionEvent(Of T)
+  name.vb: IPositionEvent(Of T)
+  spec.csharp:
+  - uid: Virtufin.Core.Events.Position.IPositionEvent`1
+    name: IPositionEvent
+    href: Virtufin.Core.Events.Position.IPositionEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Events.Position.IPositionEvent`1
+    name: IPositionEvent
+    href: Virtufin.Core.Events.Position.IPositionEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Core.Events.IEvent{{T}}
+  commentId: T:Virtufin.Core.Events.IEvent{`0}
+  parent: Virtufin.Core.Events
+  definition: Virtufin.Core.Events.IEvent`1
+  href: Virtufin.Core.Events.IEvent-1.html
+  name: IEvent<T>
+  nameWithType: IEvent<T>
+  fullName: Virtufin.Core.Events.IEvent<T>
+  nameWithType.vb: IEvent(Of T)
+  fullName.vb: Virtufin.Core.Events.IEvent(Of T)
+  name.vb: IEvent(Of T)
+  spec.csharp:
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.IEquatable{Virtufin.Core.Events.IEvent{{T}}}
+  commentId: T:System.IEquatable{Virtufin.Core.Events.IEvent{`0}}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<IEvent<T>>
+  nameWithType: IEquatable<IEvent<T>>
+  fullName: System.IEquatable<Virtufin.Core.Events.IEvent<T>>
+  nameWithType.vb: IEquatable(Of IEvent(Of T))
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Events.IEvent(Of T))
+  name.vb: IEquatable(Of IEvent(Of T))
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.IEquatable{Virtufin.Base.Events.Position.PositionEvent`1}
+  commentId: T:System.IEquatable{Virtufin.Base.Events.Position.PositionEvent`1}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<PositionEvent<T>>
+  nameWithType: IEquatable<PositionEvent<T>>
+  fullName: System.IEquatable<Virtufin.Base.Events.Position.PositionEvent<T>>
+  nameWithType.vb: IEquatable(Of PositionEvent(Of T))
+  fullName.vb: System.IEquatable(Of Virtufin.Base.Events.Position.PositionEvent(Of T))
+  name.vb: IEquatable(Of PositionEvent(Of T))
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Base.Events.Position.PositionEvent`1
+    name: PositionEvent
+    href: Virtufin.Base.Events.Position.PositionEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Base.Events.Position.PositionEvent`1
+    name: PositionEvent
+    href: Virtufin.Base.Events.Position.PositionEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.IEquatable{Virtufin.Base.Events.Position.PositionEvent`1.Closed}
+  commentId: T:System.IEquatable{Virtufin.Base.Events.Position.PositionEvent`1.Closed}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<PositionEvent<T>.Closed>
+  nameWithType: IEquatable<PositionEvent<T>.Closed>
+  fullName: System.IEquatable<Virtufin.Base.Events.Position.PositionEvent<T>.Closed>
+  nameWithType.vb: IEquatable(Of PositionEvent(Of T).Closed)
+  fullName.vb: System.IEquatable(Of Virtufin.Base.Events.Position.PositionEvent(Of T).Closed)
+  name.vb: IEquatable(Of PositionEvent(Of T).Closed)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Base.Events.Position.PositionEvent`1
+    name: PositionEvent
+    href: Virtufin.Base.Events.Position.PositionEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: .
+  - uid: Virtufin.Base.Events.Position.PositionEvent`1.Closed
+    name: Closed
+    href: Virtufin.Base.Events.Position.PositionEvent-1.Closed.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Base.Events.Position.PositionEvent`1
+    name: PositionEvent
+    href: Virtufin.Base.Events.Position.PositionEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: .
+  - uid: Virtufin.Base.Events.Position.PositionEvent`1.Closed
+    name: Closed
+    href: Virtufin.Base.Events.Position.PositionEvent-1.Closed.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Core.Events.Position.IPositionEvent`1
+  commentId: T:Virtufin.Core.Events.Position.IPositionEvent`1
+  href: Virtufin.Core.Events.Position.IPositionEvent-1.html
+  name: IPositionEvent<T>
+  nameWithType: IPositionEvent<T>
+  fullName: Virtufin.Core.Events.Position.IPositionEvent<T>
+  nameWithType.vb: IPositionEvent(Of T)
+  fullName.vb: Virtufin.Core.Events.Position.IPositionEvent(Of T)
+  name.vb: IPositionEvent(Of T)
+  spec.csharp:
+  - uid: Virtufin.Core.Events.Position.IPositionEvent`1
+    name: IPositionEvent
+    href: Virtufin.Core.Events.Position.IPositionEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Events.Position.IPositionEvent`1
+    name: IPositionEvent
+    href: Virtufin.Core.Events.Position.IPositionEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Core.Events.Position
+  commentId: N:Virtufin.Core.Events.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Events.Position
+  nameWithType: Virtufin.Core.Events.Position
+  fullName: Virtufin.Core.Events.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  - name: .
+  - uid: Virtufin.Core.Events.Position
+    name: Position
+    href: Virtufin.Core.Events.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  - name: .
+  - uid: Virtufin.Core.Events.Position
+    name: Position
+    href: Virtufin.Core.Events.Position.html
+- uid: Virtufin.Core.Events.IEvent`1
+  commentId: T:Virtufin.Core.Events.IEvent`1
+  href: Virtufin.Core.Events.IEvent-1.html
+  name: IEvent<T>
+  nameWithType: IEvent<T>
+  fullName: Virtufin.Core.Events.IEvent<T>
+  nameWithType.vb: IEvent(Of T)
+  fullName.vb: Virtufin.Core.Events.IEvent(Of T)
+  name.vb: IEvent(Of T)
+  spec.csharp:
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Core.Events
+  commentId: N:Virtufin.Core.Events
+  href: Virtufin.html
+  name: Virtufin.Core.Events
+  nameWithType: Virtufin.Core.Events
+  fullName: Virtufin.Core.Events
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Base.Events.Position.PositionEvent`1.Symbol
+  commentId: P:Virtufin.Base.Events.Position.PositionEvent`1.Symbol
+  parent: Virtufin.Base.Events.Position.PositionEvent`1
+  href: Virtufin.Base.Events.Position.PositionEvent-1.html#Virtufin_Base_Events_Position_PositionEvent_1_Symbol
+  name: Symbol
+  nameWithType: PositionEvent<T>.Symbol
+  fullName: Virtufin.Base.Events.Position.PositionEvent<T>.Symbol
+  nameWithType.vb: PositionEvent(Of T).Symbol
+  fullName.vb: Virtufin.Base.Events.Position.PositionEvent(Of T).Symbol
+- uid: Virtufin.Base.Events.Position.PositionEvent`1.Closed.Symbol*
+  commentId: Overload:Virtufin.Base.Events.Position.PositionEvent`1.Closed.Symbol
+  href: Virtufin.Base.Events.Position.PositionEvent-1.Closed.html#Virtufin_Base_Events_Position_PositionEvent_1_Closed_Symbol
+  name: Symbol
+  nameWithType: PositionEvent<T>.Closed.Symbol
+  fullName: Virtufin.Base.Events.Position.PositionEvent<T>.Closed.Symbol
+  nameWithType.vb: PositionEvent(Of T).Closed.Symbol
+  fullName.vb: Virtufin.Base.Events.Position.PositionEvent(Of T).Closed.Symbol
+- uid: Virtufin.Core.Events.Symbol
+  commentId: T:Virtufin.Core.Events.Symbol
+  parent: Virtufin.Core.Events
+  href: Virtufin.Core.Events.Symbol.html
+  name: Symbol
+  nameWithType: Symbol
+  fullName: Virtufin.Core.Events.Symbol
+- uid: Virtufin.Base.Events.Position.PositionEvent`1.Closed.ClosedAt*
+  commentId: Overload:Virtufin.Base.Events.Position.PositionEvent`1.Closed.ClosedAt
+  href: Virtufin.Base.Events.Position.PositionEvent-1.Closed.html#Virtufin_Base_Events_Position_PositionEvent_1_Closed_ClosedAt
+  name: ClosedAt
+  nameWithType: PositionEvent<T>.Closed.ClosedAt
+  fullName: Virtufin.Base.Events.Position.PositionEvent<T>.Closed.ClosedAt
+  nameWithType.vb: PositionEvent(Of T).Closed.ClosedAt
+  fullName.vb: Virtufin.Base.Events.Position.PositionEvent(Of T).Closed.ClosedAt
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Virtufin.Base.Events.Position.PositionEvent`1.Time
+  commentId: P:Virtufin.Base.Events.Position.PositionEvent`1.Time
+  parent: Virtufin.Base.Events.Position.PositionEvent`1
+  href: Virtufin.Base.Events.Position.PositionEvent-1.html#Virtufin_Base_Events_Position_PositionEvent_1_Time
+  name: Time
+  nameWithType: PositionEvent<T>.Time
+  fullName: Virtufin.Base.Events.Position.PositionEvent<T>.Time
+  nameWithType.vb: PositionEvent(Of T).Time
+  fullName.vb: Virtufin.Base.Events.Position.PositionEvent(Of T).Time
+- uid: Virtufin.Base.Events.Position.PositionEvent`1.Closed.Time*
+  commentId: Overload:Virtufin.Base.Events.Position.PositionEvent`1.Closed.Time
+  href: Virtufin.Base.Events.Position.PositionEvent-1.Closed.html#Virtufin_Base_Events_Position_PositionEvent_1_Closed_Time
+  name: Time
+  nameWithType: PositionEvent<T>.Closed.Time
+  fullName: Virtufin.Base.Events.Position.PositionEvent<T>.Closed.Time
+  nameWithType.vb: PositionEvent(Of T).Closed.Time
+  fullName.vb: Virtufin.Base.Events.Position.PositionEvent(Of T).Closed.Time
+- uid: Virtufin.Base.Events.Position.PositionEvent`1.Closed.RealizedPnL*
+  commentId: Overload:Virtufin.Base.Events.Position.PositionEvent`1.Closed.RealizedPnL
+  href: Virtufin.Base.Events.Position.PositionEvent-1.Closed.html#Virtufin_Base_Events_Position_PositionEvent_1_Closed_RealizedPnL
+  name: RealizedPnL
+  nameWithType: PositionEvent<T>.Closed.RealizedPnL
+  fullName: Virtufin.Base.Events.Position.PositionEvent<T>.Closed.RealizedPnL
+  nameWithType.vb: PositionEvent(Of T).Closed.RealizedPnL
+  fullName.vb: Virtufin.Base.Events.Position.PositionEvent(Of T).Closed.RealizedPnL
+- uid: Virtufin.Core.Position.DecimalAmount
+  commentId: T:Virtufin.Core.Position.DecimalAmount
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.DecimalAmount.html
+  name: DecimalAmount
+  nameWithType: DecimalAmount
+  fullName: Virtufin.Core.Position.DecimalAmount
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: Virtufin.Base.Events.Position.PositionEvent`1.Closed.#ctor*
+  commentId: Overload:Virtufin.Base.Events.Position.PositionEvent`1.Closed.#ctor
+  href: Virtufin.Base.Events.Position.PositionEvent-1.Closed.html#Virtufin_Base_Events_Position_PositionEvent_1_Closed__ctor_Virtufin_Core_Events_Symbol__0_Virtufin_Core_Position_DecimalAmount_
+  name: Closed
+  nameWithType: PositionEvent<T>.Closed.Closed
+  fullName: Virtufin.Base.Events.Position.PositionEvent<T>.Closed.Closed
+  nameWithType.vb: PositionEvent(Of T).Closed.New
+  fullName.vb: Virtufin.Base.Events.Position.PositionEvent(Of T).Closed.New
+  name.vb: New
+- uid: Virtufin.Base.Events.Position.PositionEvent`1.DeltaQuantity
+  commentId: P:Virtufin.Base.Events.Position.PositionEvent`1.DeltaQuantity
+  parent: Virtufin.Base.Events.Position.PositionEvent`1
+  href: Virtufin.Base.Events.Position.PositionEvent-1.html#Virtufin_Base_Events_Position_PositionEvent_1_DeltaQuantity
+  name: DeltaQuantity
+  nameWithType: PositionEvent<T>.DeltaQuantity
+  fullName: Virtufin.Base.Events.Position.PositionEvent<T>.DeltaQuantity
+  nameWithType.vb: PositionEvent(Of T).DeltaQuantity
+  fullName.vb: Virtufin.Base.Events.Position.PositionEvent(Of T).DeltaQuantity
+- uid: Virtufin.Base.Events.Position.PositionEvent`1.Closed.DeltaQuantity*
+  commentId: Overload:Virtufin.Base.Events.Position.PositionEvent`1.Closed.DeltaQuantity
+  href: Virtufin.Base.Events.Position.PositionEvent-1.Closed.html#Virtufin_Base_Events_Position_PositionEvent_1_Closed_DeltaQuantity
+  name: DeltaQuantity
+  nameWithType: PositionEvent<T>.Closed.DeltaQuantity
+  fullName: Virtufin.Base.Events.Position.PositionEvent<T>.Closed.DeltaQuantity
+  nameWithType.vb: PositionEvent(Of T).Closed.DeltaQuantity
+  fullName.vb: Virtufin.Base.Events.Position.PositionEvent(Of T).Closed.DeltaQuantity

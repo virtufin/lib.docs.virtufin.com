@@ -21,7 +21,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: Venue
     path: ../../../src/Virtufin.Base/Events/Trade/RichTradeAction.cs
-    startLine: 86
+    startLine: 83
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Events.Trade
@@ -57,7 +57,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: .ctor
     path: ../../../src/Virtufin.Base/Events/Trade/RichTradeAction.cs
-    startLine: 86
+    startLine: 83
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Events.Trade
@@ -92,7 +92,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: Value
     path: ../../../src/Virtufin.Base/Events/Trade/RichTradeAction.cs
-    startLine: 86
+    startLine: 83
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Events.Trade

@@ -49,10 +49,10 @@
             Virtufin.Dotnet
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/4deb7ef3b222d4ec5ae63494b15e6b56d2e5d1a1" target="_blank" rel="noopener" class="commit-badge" title="View commit 4deb7ef3b222d4ec5ae63494b15e6b56d2e5d1a1">
+            <a href="{git_repo_url}/commit/45512af6ddd2dea83a6e07586941067d3a75f7e4" target="_blank" rel="noopener" class="commit-badge" title="View commit 45512af6ddd2dea83a6e07586941067d3a75f7e4">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">4deb7ef3b222d4ec5ae63494b15e6b56d2e5d1a1</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">45512af6ddd2dea83a6e07586941067d3a75f7e4</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -103,7 +103,7 @@ Classes
       <dd><p>Enriched trade action — wraps a raw <a class="xref" href="Virtufin.Base.Events.Trade.TradeAction.html">TradeAction</a> with metadata
 the strategy attaches before execution (strategy attribution, latency
 budget, routing venue, etc.). Implements the same <a class="xref" href="Virtufin.Core.Events.Trade.ITradeAction.html">ITradeAction</a>
-marker so it flows through the same <a class="xref" href="Virtufin.Core.Events.Trade.ITradeEvent-1.html">ITradeEvent&lt;A&gt;</a>
+marker so it flows through the same ITradeEvent&lt;T&gt;
 parameterisation as raw actions.</p>
 </dd>
     </dl>
@@ -177,7 +177,7 @@ before enrichment. Cases:</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent.html">TradeEvent</a></dt>
+      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent-1.html">TradeEvent&lt;T&gt;</a></dt>
       <dd><p>Sealed algebraic data type of trade events parameterised by
 <a class="xref" href="Virtufin.Base.Events.Trade.RichTradeAction.html">RichTradeAction</a>. Each case carries the originating action for
 correlation. Topics use the naming scheme
@@ -185,67 +185,67 @@ correlation. Topics use the naming scheme
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent.ExecutionCleared.html">TradeEvent.ExecutionCleared</a></dt>
+      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent-1.ExecutionCleared.html">TradeEvent&lt;T&gt;.ExecutionCleared</a></dt>
       <dd><p>Obligations confirmed (collapses into fill on Binance CEX).</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent.ExecutionSettled.html">TradeEvent.ExecutionSettled</a></dt>
+      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent-1.ExecutionSettled.html">TradeEvent&lt;T&gt;.ExecutionSettled</a></dt>
       <dd><p>Assets transferred, books closed.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent.FillReceived.html">TradeEvent.FillReceived</a></dt>
+      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent-1.FillReceived.html">TradeEvent&lt;T&gt;.FillReceived</a></dt>
       <dd><p>Partial or full fill received from exchange.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent.InterestExpired.html">TradeEvent.InterestExpired</a></dt>
+      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent-1.InterestExpired.html">TradeEvent&lt;T&gt;.InterestExpired</a></dt>
       <dd><p>Interest window expired without matching.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent.InterestMatched.html">TradeEvent.InterestMatched</a></dt>
+      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent-1.InterestMatched.html">TradeEvent&lt;T&gt;.InterestMatched</a></dt>
       <dd><p>Interest matched against a fill (attribution event for analytics).</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent.InterestRegistered.html">TradeEvent.InterestRegistered</a></dt>
+      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent-1.InterestRegistered.html">TradeEvent&lt;T&gt;.InterestRegistered</a></dt>
       <dd><p>Interest registered with the venue (no book impact).</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent.InterestRevoked.html">TradeEvent.InterestRevoked</a></dt>
+      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent-1.InterestRevoked.html">TradeEvent&lt;T&gt;.InterestRevoked</a></dt>
       <dd><p>Interest explicitly revoked by the strategy.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent.OrderCancelled.html">TradeEvent.OrderCancelled</a></dt>
+      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent-1.OrderCancelled.html">TradeEvent&lt;T&gt;.OrderCancelled</a></dt>
       <dd><p>Cancel confirmed by exchange.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent.OrderExpired.html">TradeEvent.OrderExpired</a></dt>
+      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent-1.OrderExpired.html">TradeEvent&lt;T&gt;.OrderExpired</a></dt>
       <dd><p>GTC/GTD order lapsed.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent.OrderPlaced.html">TradeEvent.OrderPlaced</a></dt>
+      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent-1.OrderPlaced.html">TradeEvent&lt;T&gt;.OrderPlaced</a></dt>
       <dd><p>Order submitted to exchange.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent.TransferCompleted.html">TradeEvent.TransferCompleted</a></dt>
+      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent-1.TransferCompleted.html">TradeEvent&lt;T&gt;.TransferCompleted</a></dt>
       <dd><p>Peer-to-peer transfer completed.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent.TransferFailed.html">TradeEvent.TransferFailed</a></dt>
+      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent-1.TransferFailed.html">TradeEvent&lt;T&gt;.TransferFailed</a></dt>
       <dd><p>Peer-to-peer transfer rejected or failed.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent.TransferInitiated.html">TradeEvent.TransferInitiated</a></dt>
+      <dt><a class="xref" href="Virtufin.Base.Events.Trade.TradeEvent-1.TransferInitiated.html">TradeEvent&lt;T&gt;.TransferInitiated</a></dt>
       <dd><p>Peer-to-peer transfer initiated.</p>
 </dd>
     </dl>

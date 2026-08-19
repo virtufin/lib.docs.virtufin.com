@@ -6,7 +6,7 @@ items:
   parent: Virtufin.Core.Events
   children:
   - Virtufin.Core.Events.Trade.ITradeAction
-  - Virtufin.Core.Events.Trade.ITradeEvent`1
+  - Virtufin.Core.Events.Trade.ITradeEvent`2
   langs:
   - csharp
   - vb
@@ -24,30 +24,36 @@ references:
   name: ITradeAction
   nameWithType: ITradeAction
   fullName: Virtufin.Core.Events.Trade.ITradeAction
-- uid: Virtufin.Core.Events.Trade.ITradeEvent`1
-  commentId: T:Virtufin.Core.Events.Trade.ITradeEvent`1
-  href: Virtufin.Core.Events.Trade.ITradeEvent-1.html
-  name: ITradeEvent<A>
-  nameWithType: ITradeEvent<A>
-  fullName: Virtufin.Core.Events.Trade.ITradeEvent<A>
-  nameWithType.vb: ITradeEvent(Of A)
-  fullName.vb: Virtufin.Core.Events.Trade.ITradeEvent(Of A)
-  name.vb: ITradeEvent(Of A)
+- uid: Virtufin.Core.Events.Trade.ITradeEvent`2
+  commentId: T:Virtufin.Core.Events.Trade.ITradeEvent`2
+  href: Virtufin.Core.Events.Trade.ITradeEvent-2.html
+  name: ITradeEvent<A, T>
+  nameWithType: ITradeEvent<A, T>
+  fullName: Virtufin.Core.Events.Trade.ITradeEvent<A, T>
+  nameWithType.vb: ITradeEvent(Of A, T)
+  fullName.vb: Virtufin.Core.Events.Trade.ITradeEvent(Of A, T)
+  name.vb: ITradeEvent(Of A, T)
   spec.csharp:
-  - uid: Virtufin.Core.Events.Trade.ITradeEvent`1
+  - uid: Virtufin.Core.Events.Trade.ITradeEvent`2
     name: ITradeEvent
-    href: Virtufin.Core.Events.Trade.ITradeEvent-1.html
+    href: Virtufin.Core.Events.Trade.ITradeEvent-2.html
   - name: <
   - name: A
+  - name: ','
+  - name: " "
+  - name: T
   - name: '>'
   spec.vb:
-  - uid: Virtufin.Core.Events.Trade.ITradeEvent`1
+  - uid: Virtufin.Core.Events.Trade.ITradeEvent`2
     name: ITradeEvent
-    href: Virtufin.Core.Events.Trade.ITradeEvent-1.html
+    href: Virtufin.Core.Events.Trade.ITradeEvent-2.html
   - name: (
   - name: Of
   - name: " "
   - name: A
+  - name: ','
+  - name: " "
+  - name: T
   - name: )
 - uid: Virtufin.Core.Events.Trade
   commentId: N:Virtufin.Core.Events.Trade

@@ -30,7 +30,7 @@ items:
 
     budget, routing venue, etc.). Implements the same <xref href="Virtufin.Core.Events.Trade.ITradeAction" data-throw-if-not-resolved="false"></xref>
 
-    marker so it flows through the same <xref href="Virtufin.Core.Events.Trade.ITradeEvent%601" data-throw-if-not-resolved="false"></xref>
+    marker so it flows through the same ITradeEvent&lt;T&gt;
 
     parameterisation as raw actions.
   remarks: >-
@@ -43,8 +43,8 @@ items:
     are forced to handle every case.
   example: []
   syntax:
-    content: 'public abstract record RichTradeAction : ITradeAction, IEvent, IEquatable<IEvent>, IEquatable<RichTradeAction>'
-    content.vb: Public MustInherit Class RichTradeAction Implements ITradeAction, IEvent, IEquatable(Of IEvent), IEquatable(Of RichTradeAction)
+    content: 'public abstract record RichTradeAction : ITradeAction, IEquatable<RichTradeAction>'
+    content.vb: Public MustInherit Class RichTradeAction Implements ITradeAction, IEquatable(Of RichTradeAction)
   inheritance:
   - System.Object
   derivedClasses:
@@ -56,8 +56,6 @@ items:
   - Virtufin.Base.Events.Trade.RichTradeAction.WithdrawInterest
   implements:
   - Virtufin.Core.Events.Trade.ITradeAction
-  - Virtufin.Core.Events.IEvent
-  - System.IEquatable{Virtufin.Core.Events.IEvent}
   - System.IEquatable{Virtufin.Base.Events.Trade.RichTradeAction}
   inheritedMembers:
   - System.Object.Equals(System.Object)
@@ -82,31 +80,6 @@ references:
   name: ITradeAction
   nameWithType: ITradeAction
   fullName: Virtufin.Core.Events.Trade.ITradeAction
-- uid: Virtufin.Core.Events.Trade.ITradeEvent`1
-  commentId: T:Virtufin.Core.Events.Trade.ITradeEvent`1
-  href: Virtufin.Core.Events.Trade.ITradeEvent-1.html
-  name: ITradeEvent<A>
-  nameWithType: ITradeEvent<A>
-  fullName: Virtufin.Core.Events.Trade.ITradeEvent<A>
-  nameWithType.vb: ITradeEvent(Of A)
-  fullName.vb: Virtufin.Core.Events.Trade.ITradeEvent(Of A)
-  name.vb: ITradeEvent(Of A)
-  spec.csharp:
-  - uid: Virtufin.Core.Events.Trade.ITradeEvent`1
-    name: ITradeEvent
-    href: Virtufin.Core.Events.Trade.ITradeEvent-1.html
-  - name: <
-  - name: A
-  - name: '>'
-  spec.vb:
-  - uid: Virtufin.Core.Events.Trade.ITradeEvent`1
-    name: ITradeEvent
-    href: Virtufin.Core.Events.Trade.ITradeEvent-1.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: A
-  - name: )
 - uid: Virtufin.Base.Events.Trade.RichTradeAction
   commentId: T:Virtufin.Base.Events.Trade.RichTradeAction
   parent: Virtufin.Base.Events.Trade
@@ -163,46 +136,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Virtufin.Core.Events.IEvent
-  commentId: T:Virtufin.Core.Events.IEvent
-  parent: Virtufin.Core.Events
-  href: Virtufin.Core.Events.IEvent.html
-  name: IEvent
-  nameWithType: IEvent
-  fullName: Virtufin.Core.Events.IEvent
-- uid: System.IEquatable{Virtufin.Core.Events.IEvent}
-  commentId: T:System.IEquatable{Virtufin.Core.Events.IEvent}
-  parent: System
-  definition: System.IEquatable`1
-  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  name: IEquatable<IEvent>
-  nameWithType: IEquatable<IEvent>
-  fullName: System.IEquatable<Virtufin.Core.Events.IEvent>
-  nameWithType.vb: IEquatable(Of IEvent)
-  fullName.vb: System.IEquatable(Of Virtufin.Core.Events.IEvent)
-  name.vb: IEquatable(Of IEvent)
-  spec.csharp:
-  - uid: System.IEquatable`1
-    name: IEquatable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  - name: <
-  - uid: Virtufin.Core.Events.IEvent
-    name: IEvent
-    href: Virtufin.Core.Events.IEvent.html
-  - name: '>'
-  spec.vb:
-  - uid: System.IEquatable`1
-    name: IEquatable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Virtufin.Core.Events.IEvent
-    name: IEvent
-    href: Virtufin.Core.Events.IEvent.html
-  - name: )
 - uid: System.IEquatable{Virtufin.Base.Events.Trade.RichTradeAction}
   commentId: T:System.IEquatable{Virtufin.Base.Events.Trade.RichTradeAction}
   parent: System
@@ -500,36 +433,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Virtufin.Core.Events
-  commentId: N:Virtufin.Core.Events
-  href: Virtufin.html
-  name: Virtufin.Core.Events
-  nameWithType: Virtufin.Core.Events
-  fullName: Virtufin.Core.Events
-  spec.csharp:
-  - uid: Virtufin
-    name: Virtufin
-    href: Virtufin.html
-  - name: .
-  - uid: Virtufin.Core
-    name: Core
-    href: Virtufin.Core.html
-  - name: .
-  - uid: Virtufin.Core.Events
-    name: Events
-    href: Virtufin.Core.Events.html
-  spec.vb:
-  - uid: Virtufin
-    name: Virtufin
-    href: Virtufin.html
-  - name: .
-  - uid: Virtufin.Core
-    name: Core
-    href: Virtufin.Core.html
-  - name: .
-  - uid: Virtufin.Core.Events
-    name: Events
-    href: Virtufin.Core.Events.html
 - uid: System.IEquatable`1
   commentId: T:System.IEquatable`1
   isExternal: true

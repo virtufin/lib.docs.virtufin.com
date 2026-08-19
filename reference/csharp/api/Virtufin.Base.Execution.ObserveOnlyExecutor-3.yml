@@ -35,12 +35,12 @@ items:
     exchange. Used in <code>SHADOW_*</code> scenarios.
   example: []
   syntax:
-    content: 'public sealed class ObserveOnlyExecutor<TState, TAction, TEvent> : IExecutor<TState, TAction, TEvent> where TState : IExecutionState where TAction : ITradeAction where TEvent : ITradeEvent<TAction>'
+    content: 'public sealed class ObserveOnlyExecutor<TState, TAction, TEvent> : IExecutor<TState, TAction, TEvent> where TState : IExecutionState where TAction : ITradeAction where TEvent : ITradeEvent<TAction, DateTimeOffset>'
     typeParameters:
     - id: TState
     - id: TAction
     - id: TEvent
-    content.vb: Public NotInheritable Class ObserveOnlyExecutor(Of TState As IExecutionState, TAction As ITradeAction, TEvent As ITradeEvent(Of TAction)) Implements IExecutor(Of TState, TAction, TEvent)
+    content.vb: Public NotInheritable Class ObserveOnlyExecutor(Of TState As IExecutionState, TAction As ITradeAction, TEvent As ITradeEvent(Of TAction, DateTimeOffset)) Implements IExecutor(Of TState, TAction, TEvent)
   inheritance:
   - System.Object
   implements:

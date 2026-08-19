@@ -5,7 +5,7 @@ items:
   id: Risk
   parent: Virtufin.Core.Events
   children:
-  - Virtufin.Core.Events.Risk.IRiskEvent
+  - Virtufin.Core.Events.Risk.IRiskEvent`1
   langs:
   - csharp
   - vb
@@ -16,48 +16,28 @@ items:
   assemblies:
   - Virtufin.Core
 references:
-- uid: Virtufin.Core.Events.Risk.IRiskEvent
-  commentId: T:Virtufin.Core.Events.Risk.IRiskEvent
-  parent: Virtufin.Core.Events.Risk
-  href: Virtufin.Core.Events.Risk.IRiskEvent.html
-  name: IRiskEvent
-  nameWithType: IRiskEvent
-  fullName: Virtufin.Core.Events.Risk.IRiskEvent
-- uid: Virtufin.Core.Events.Risk
-  commentId: N:Virtufin.Core.Events.Risk
-  href: Virtufin.html
-  name: Virtufin.Core.Events.Risk
-  nameWithType: Virtufin.Core.Events.Risk
-  fullName: Virtufin.Core.Events.Risk
+- uid: Virtufin.Core.Events.Risk.IRiskEvent`1
+  commentId: T:Virtufin.Core.Events.Risk.IRiskEvent`1
+  href: Virtufin.Core.Events.Risk.IRiskEvent-1.html
+  name: IRiskEvent<T>
+  nameWithType: IRiskEvent<T>
+  fullName: Virtufin.Core.Events.Risk.IRiskEvent<T>
+  nameWithType.vb: IRiskEvent(Of T)
+  fullName.vb: Virtufin.Core.Events.Risk.IRiskEvent(Of T)
+  name.vb: IRiskEvent(Of T)
   spec.csharp:
-  - uid: Virtufin
-    name: Virtufin
-    href: Virtufin.html
-  - name: .
-  - uid: Virtufin.Core
-    name: Core
-    href: Virtufin.Core.html
-  - name: .
-  - uid: Virtufin.Core.Events
-    name: Events
-    href: Virtufin.Core.Events.html
-  - name: .
-  - uid: Virtufin.Core.Events.Risk
-    name: Risk
-    href: Virtufin.Core.Events.Risk.html
+  - uid: Virtufin.Core.Events.Risk.IRiskEvent`1
+    name: IRiskEvent
+    href: Virtufin.Core.Events.Risk.IRiskEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
   spec.vb:
-  - uid: Virtufin
-    name: Virtufin
-    href: Virtufin.html
-  - name: .
-  - uid: Virtufin.Core
-    name: Core
-    href: Virtufin.Core.html
-  - name: .
-  - uid: Virtufin.Core.Events
-    name: Events
-    href: Virtufin.Core.Events.html
-  - name: .
-  - uid: Virtufin.Core.Events.Risk
-    name: Risk
-    href: Virtufin.Core.Events.Risk.html
+  - uid: Virtufin.Core.Events.Risk.IRiskEvent`1
+    name: IRiskEvent
+    href: Virtufin.Core.Events.Risk.IRiskEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

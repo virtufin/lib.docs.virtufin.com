@@ -5,7 +5,7 @@ items:
   id: Market
   parent: Virtufin.Core.Events
   children:
-  - Virtufin.Core.Events.Market.IMarketEvent
+  - Virtufin.Core.Events.Market.IMarketEvent`1
   langs:
   - csharp
   - vb
@@ -16,48 +16,28 @@ items:
   assemblies:
   - Virtufin.Core
 references:
-- uid: Virtufin.Core.Events.Market.IMarketEvent
-  commentId: T:Virtufin.Core.Events.Market.IMarketEvent
-  parent: Virtufin.Core.Events.Market
-  href: Virtufin.Core.Events.Market.IMarketEvent.html
-  name: IMarketEvent
-  nameWithType: IMarketEvent
-  fullName: Virtufin.Core.Events.Market.IMarketEvent
-- uid: Virtufin.Core.Events.Market
-  commentId: N:Virtufin.Core.Events.Market
-  href: Virtufin.html
-  name: Virtufin.Core.Events.Market
-  nameWithType: Virtufin.Core.Events.Market
-  fullName: Virtufin.Core.Events.Market
+- uid: Virtufin.Core.Events.Market.IMarketEvent`1
+  commentId: T:Virtufin.Core.Events.Market.IMarketEvent`1
+  href: Virtufin.Core.Events.Market.IMarketEvent-1.html
+  name: IMarketEvent<T>
+  nameWithType: IMarketEvent<T>
+  fullName: Virtufin.Core.Events.Market.IMarketEvent<T>
+  nameWithType.vb: IMarketEvent(Of T)
+  fullName.vb: Virtufin.Core.Events.Market.IMarketEvent(Of T)
+  name.vb: IMarketEvent(Of T)
   spec.csharp:
-  - uid: Virtufin
-    name: Virtufin
-    href: Virtufin.html
-  - name: .
-  - uid: Virtufin.Core
-    name: Core
-    href: Virtufin.Core.html
-  - name: .
-  - uid: Virtufin.Core.Events
-    name: Events
-    href: Virtufin.Core.Events.html
-  - name: .
-  - uid: Virtufin.Core.Events.Market
-    name: Market
-    href: Virtufin.Core.Events.Market.html
+  - uid: Virtufin.Core.Events.Market.IMarketEvent`1
+    name: IMarketEvent
+    href: Virtufin.Core.Events.Market.IMarketEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
   spec.vb:
-  - uid: Virtufin
-    name: Virtufin
-    href: Virtufin.html
-  - name: .
-  - uid: Virtufin.Core
-    name: Core
-    href: Virtufin.Core.html
-  - name: .
-  - uid: Virtufin.Core.Events
-    name: Events
-    href: Virtufin.Core.Events.html
-  - name: .
-  - uid: Virtufin.Core.Events.Market
-    name: Market
-    href: Virtufin.Core.Events.Market.html
+  - uid: Virtufin.Core.Events.Market.IMarketEvent`1
+    name: IMarketEvent
+    href: Virtufin.Core.Events.Market.IMarketEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

@@ -1,0 +1,663 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Events.TimestampedSample`2
+  commentId: T:Virtufin.Core.Events.TimestampedSample`2
+  id: TimestampedSample`2
+  parent: Virtufin.Core.Events
+  children:
+  - Virtufin.Core.Events.TimestampedSample`2.#ctor(`0,`1)
+  - Virtufin.Core.Events.TimestampedSample`2.Time
+  - Virtufin.Core.Events.TimestampedSample`2.Value
+  langs:
+  - csharp
+  - vb
+  name: TimestampedSample<TTime, TValue>
+  nameWithType: TimestampedSample<TTime, TValue>
+  fullName: Virtufin.Core.Events.TimestampedSample<TTime, TValue>
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/TimestampedSample.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: TimestampedSample
+    path: ../../../src/Virtufin.Core/Events/TimestampedSample.cs
+    startLine: 14
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: >-
+    A single observation at a point in time, generic over both the time axis
+
+    and the value type. This is the sample shape <code>IIndicator</code>
+
+    implementations consume — kept in <code>Virtufin.Core.Events</code> rather than
+
+    <code>Virtufin.Core.Behaviour</code> because it's a general timestamped-event
+
+    shape, not indicator-specific.
+  example: []
+  syntax:
+    content: 'public sealed record TimestampedSample<TTime, TValue> : IEvent<TTime>, IEquatable<IEvent<TTime>>, IEquatable<TimestampedSample<TTime, TValue>> where TTime : IComparable<TTime>'
+    typeParameters:
+    - id: TTime
+      description: >-
+        The time type (e.g. <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref> for real
+            candles, or a synthetic tick counter for deterministic replay).
+    - id: TValue
+      description: The observed value's type.
+    content.vb: Public NotInheritable Class TimestampedSample(Of TTime As IComparable(Of TTime), TValue) Implements IEvent(Of TTime), IEquatable(Of IEvent(Of TTime)), IEquatable(Of TimestampedSample(Of TTime, TValue))
+  inheritance:
+  - System.Object
+  implements:
+  - Virtufin.Core.Events.IEvent{{TTime}}
+  - System.IEquatable{Virtufin.Core.Events.IEvent{{TTime}}}
+  - System.IEquatable{Virtufin.Core.Events.TimestampedSample`2}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: TimestampedSample(Of TTime, TValue)
+  fullName.vb: Virtufin.Core.Events.TimestampedSample(Of TTime, TValue)
+  name.vb: TimestampedSample(Of TTime, TValue)
+- uid: Virtufin.Core.Events.TimestampedSample`2.#ctor(`0,`1)
+  commentId: M:Virtufin.Core.Events.TimestampedSample`2.#ctor(`0,`1)
+  id: '#ctor(`0,`1)'
+  parent: Virtufin.Core.Events.TimestampedSample`2
+  langs:
+  - csharp
+  - vb
+  name: TimestampedSample(TTime, TValue)
+  nameWithType: TimestampedSample<TTime, TValue>.TimestampedSample(TTime, TValue)
+  fullName: Virtufin.Core.Events.TimestampedSample<TTime, TValue>.TimestampedSample(TTime, TValue)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/TimestampedSample.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Core/Events/TimestampedSample.cs
+    startLine: 14
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: >-
+    A single observation at a point in time, generic over both the time axis
+
+    and the value type. This is the sample shape <code>IIndicator</code>
+
+    implementations consume — kept in <code>Virtufin.Core.Events</code> rather than
+
+    <code>Virtufin.Core.Behaviour</code> because it's a general timestamped-event
+
+    shape, not indicator-specific.
+  example: []
+  syntax:
+    content: public TimestampedSample(TTime Time, TValue Value)
+    parameters:
+    - id: Time
+      type: '{TTime}'
+      description: The time of the observation.
+    - id: Value
+      type: '{TValue}'
+      description: The observed value.
+    content.vb: Public Sub New(Time As TTime, Value As TValue)
+  overload: Virtufin.Core.Events.TimestampedSample`2.#ctor*
+  nameWithType.vb: TimestampedSample(Of TTime, TValue).New(TTime, TValue)
+  fullName.vb: Virtufin.Core.Events.TimestampedSample(Of TTime, TValue).New(TTime, TValue)
+  name.vb: New(TTime, TValue)
+- uid: Virtufin.Core.Events.TimestampedSample`2.Time
+  commentId: P:Virtufin.Core.Events.TimestampedSample`2.Time
+  id: Time
+  parent: Virtufin.Core.Events.TimestampedSample`2
+  langs:
+  - csharp
+  - vb
+  name: Time
+  nameWithType: TimestampedSample<TTime, TValue>.Time
+  fullName: Virtufin.Core.Events.TimestampedSample<TTime, TValue>.Time
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/TimestampedSample.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Time
+    path: ../../../src/Virtufin.Core/Events/TimestampedSample.cs
+    startLine: 14
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: The time of the observation.
+  example: []
+  syntax:
+    content: public TTime Time { get; init; }
+    parameters: []
+    return:
+      type: '{TTime}'
+    content.vb: Public Property Time As TTime
+  overload: Virtufin.Core.Events.TimestampedSample`2.Time*
+  implements:
+  - Virtufin.Core.Events.IEvent{{TTime}}.Time
+  nameWithType.vb: TimestampedSample(Of TTime, TValue).Time
+  fullName.vb: Virtufin.Core.Events.TimestampedSample(Of TTime, TValue).Time
+- uid: Virtufin.Core.Events.TimestampedSample`2.Value
+  commentId: P:Virtufin.Core.Events.TimestampedSample`2.Value
+  id: Value
+  parent: Virtufin.Core.Events.TimestampedSample`2
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: TimestampedSample<TTime, TValue>.Value
+  fullName: Virtufin.Core.Events.TimestampedSample<TTime, TValue>.Value
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Events/TimestampedSample.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
+    id: Value
+    path: ../../../src/Virtufin.Core/Events/TimestampedSample.cs
+    startLine: 14
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Events
+  summary: The observed value.
+  example: []
+  syntax:
+    content: public TValue Value { get; init; }
+    parameters: []
+    return:
+      type: '{TValue}'
+    content.vb: Public Property Value As TValue
+  overload: Virtufin.Core.Events.TimestampedSample`2.Value*
+  nameWithType.vb: TimestampedSample(Of TTime, TValue).Value
+  fullName.vb: Virtufin.Core.Events.TimestampedSample(Of TTime, TValue).Value
+references:
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Virtufin.Core.Events
+  commentId: N:Virtufin.Core.Events
+  href: Virtufin.html
+  name: Virtufin.Core.Events
+  nameWithType: Virtufin.Core.Events
+  fullName: Virtufin.Core.Events
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Events
+    name: Events
+    href: Virtufin.Core.Events.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.Core.Events.IEvent{{TTime}}
+  commentId: T:Virtufin.Core.Events.IEvent{`0}
+  parent: Virtufin.Core.Events
+  definition: Virtufin.Core.Events.IEvent`1
+  href: Virtufin.Core.Events.IEvent-1.html
+  name: IEvent<TTime>
+  nameWithType: IEvent<TTime>
+  fullName: Virtufin.Core.Events.IEvent<TTime>
+  nameWithType.vb: IEvent(Of TTime)
+  fullName.vb: Virtufin.Core.Events.IEvent(Of TTime)
+  name.vb: IEvent(Of TTime)
+  spec.csharp:
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: <
+  - name: TTime
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTime
+  - name: )
+- uid: System.IEquatable{Virtufin.Core.Events.IEvent{{TTime}}}
+  commentId: T:System.IEquatable{Virtufin.Core.Events.IEvent{`0}}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<IEvent<TTime>>
+  nameWithType: IEquatable<IEvent<TTime>>
+  fullName: System.IEquatable<Virtufin.Core.Events.IEvent<TTime>>
+  nameWithType.vb: IEquatable(Of IEvent(Of TTime))
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Events.IEvent(Of TTime))
+  name.vb: IEquatable(Of IEvent(Of TTime))
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: <
+  - name: TTime
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTime
+  - name: )
+  - name: )
+- uid: System.IEquatable{Virtufin.Core.Events.TimestampedSample`2}
+  commentId: T:System.IEquatable{Virtufin.Core.Events.TimestampedSample`2}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<TimestampedSample<TTime, TValue>>
+  nameWithType: IEquatable<TimestampedSample<TTime, TValue>>
+  fullName: System.IEquatable<Virtufin.Core.Events.TimestampedSample<TTime, TValue>>
+  nameWithType.vb: IEquatable(Of TimestampedSample(Of TTime, TValue))
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Events.TimestampedSample(Of TTime, TValue))
+  name.vb: IEquatable(Of TimestampedSample(Of TTime, TValue))
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Events.TimestampedSample`2
+    name: TimestampedSample
+    href: Virtufin.Core.Events.TimestampedSample-2.html
+  - name: <
+  - name: TTime
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Events.TimestampedSample`2
+    name: TimestampedSample
+    href: Virtufin.Core.Events.TimestampedSample-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTime
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Core.Events.IEvent`1
+  commentId: T:Virtufin.Core.Events.IEvent`1
+  href: Virtufin.Core.Events.IEvent-1.html
+  name: IEvent<T>
+  nameWithType: IEvent<T>
+  fullName: Virtufin.Core.Events.IEvent<T>
+  nameWithType.vb: IEvent(Of T)
+  fullName.vb: Virtufin.Core.Events.IEvent(Of T)
+  name.vb: IEvent(Of T)
+  spec.csharp:
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Events.IEvent`1
+    name: IEvent
+    href: Virtufin.Core.Events.IEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Core.Events.TimestampedSample`2.#ctor*
+  commentId: Overload:Virtufin.Core.Events.TimestampedSample`2.#ctor
+  href: Virtufin.Core.Events.TimestampedSample-2.html#Virtufin_Core_Events_TimestampedSample_2__ctor__0__1_
+  name: TimestampedSample
+  nameWithType: TimestampedSample<TTime, TValue>.TimestampedSample
+  fullName: Virtufin.Core.Events.TimestampedSample<TTime, TValue>.TimestampedSample
+  nameWithType.vb: TimestampedSample(Of TTime, TValue).New
+  fullName.vb: Virtufin.Core.Events.TimestampedSample(Of TTime, TValue).New
+  name.vb: New
+- uid: '{TTime}'
+  commentId: '!:TTime'
+  definition: TTime
+  name: TTime
+  nameWithType: TTime
+  fullName: TTime
+- uid: '{TValue}'
+  commentId: '!:TValue'
+  definition: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: TTime
+  name: TTime
+  nameWithType: TTime
+  fullName: TTime
+- uid: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: Virtufin.Core.Events.TimestampedSample`2.Time*
+  commentId: Overload:Virtufin.Core.Events.TimestampedSample`2.Time
+  href: Virtufin.Core.Events.TimestampedSample-2.html#Virtufin_Core_Events_TimestampedSample_2_Time
+  name: Time
+  nameWithType: TimestampedSample<TTime, TValue>.Time
+  fullName: Virtufin.Core.Events.TimestampedSample<TTime, TValue>.Time
+  nameWithType.vb: TimestampedSample(Of TTime, TValue).Time
+  fullName.vb: Virtufin.Core.Events.TimestampedSample(Of TTime, TValue).Time
+- uid: Virtufin.Core.Events.IEvent{{TTime}}.Time
+  commentId: P:Virtufin.Core.Events.IEvent{`0}.Time
+  parent: Virtufin.Core.Events.IEvent{{TTime}}
+  definition: Virtufin.Core.Events.IEvent`1.Time
+  href: Virtufin.Core.Events.IEvent-1.html#Virtufin_Core_Events_IEvent_1_Time
+  name: Time
+  nameWithType: IEvent<TTime>.Time
+  fullName: Virtufin.Core.Events.IEvent<TTime>.Time
+  nameWithType.vb: IEvent(Of TTime).Time
+  fullName.vb: Virtufin.Core.Events.IEvent(Of TTime).Time
+- uid: Virtufin.Core.Events.IEvent`1.Time
+  commentId: P:Virtufin.Core.Events.IEvent`1.Time
+  href: Virtufin.Core.Events.IEvent-1.html#Virtufin_Core_Events_IEvent_1_Time
+  name: Time
+  nameWithType: IEvent<T>.Time
+  fullName: Virtufin.Core.Events.IEvent<T>.Time
+  nameWithType.vb: IEvent(Of T).Time
+  fullName.vb: Virtufin.Core.Events.IEvent(Of T).Time
+- uid: Virtufin.Core.Events.TimestampedSample`2.Value*
+  commentId: Overload:Virtufin.Core.Events.TimestampedSample`2.Value
+  href: Virtufin.Core.Events.TimestampedSample-2.html#Virtufin_Core_Events_TimestampedSample_2_Value
+  name: Value
+  nameWithType: TimestampedSample<TTime, TValue>.Value
+  fullName: Virtufin.Core.Events.TimestampedSample<TTime, TValue>.Value
+  nameWithType.vb: TimestampedSample(Of TTime, TValue).Value
+  fullName.vb: Virtufin.Core.Events.TimestampedSample(Of TTime, TValue).Value

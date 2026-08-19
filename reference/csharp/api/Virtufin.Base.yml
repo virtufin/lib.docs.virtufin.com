@@ -9,6 +9,7 @@ items:
   - Virtufin.Base.AssetIdentifier.CurrencyAssetIdentifier
   - Virtufin.Base.AssetIdentifier.SimpleAssetIdentifier
   - Virtufin.Base.Attribute
+  - Virtufin.Base.Behaviour
   - Virtufin.Base.Cash
   - Virtufin.Base.Clock
   - Virtufin.Base.ContractIdentifier
@@ -54,6 +55,36 @@ items:
   assemblies:
   - Virtufin.Base
 references:
+- uid: Virtufin.Base.Behaviour
+  commentId: N:Virtufin.Base.Behaviour
+  href: Virtufin.html
+  name: Virtufin.Base.Behaviour
+  nameWithType: Virtufin.Base.Behaviour
+  fullName: Virtufin.Base.Behaviour
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Behaviour
+    name: Behaviour
+    href: Virtufin.Base.Behaviour.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.Behaviour
+    name: Behaviour
+    href: Virtufin.Base.Behaviour.html
 - uid: Virtufin.Base.Clock
   commentId: N:Virtufin.Base.Clock
   href: Virtufin.html

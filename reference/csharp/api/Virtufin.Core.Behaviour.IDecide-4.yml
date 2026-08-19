@@ -43,7 +43,7 @@ items:
     (<xref href="Virtufin.Core.Behaviour.ProcessExtensions" data-throw-if-not-resolved="false"></xref>).
   example: []
   syntax:
-    content: 'public interface IDecide<TState, TMarket, TPortfolio, TAction> : IProcess<TState, (TMarket, TPortfolio), TAction[]> where TState : IStrategyState where TMarket : IMarketEvent where TPortfolio : IPortfolioState where TAction : ITradeAction'
+    content: 'public interface IDecide<TState, TMarket, TPortfolio, TAction> : IProcess<TState, (TMarket, TPortfolio), TAction[]> where TState : IStrategyState where TMarket : IMarketEvent<DateTimeOffset> where TPortfolio : IPortfolioState where TAction : ITradeAction'
     typeParameters:
     - id: TState
       description: The strategy's internal state.
@@ -56,7 +56,7 @@ items:
         The trade action type emitted; the step
             output is an array of <code class="typeparamref">TAction</code> because a single
             observation may yield zero or more intents.
-    content.vb: Public Interface IDecide(Of TState As IStrategyState, TMarket As IMarketEvent, TPortfolio As IPortfolioState, TAction As ITradeAction) Inherits IProcess(Of TState, (TMarket, TPortfolio), TAction())
+    content.vb: Public Interface IDecide(Of TState As IStrategyState, TMarket As IMarketEvent(Of DateTimeOffset), TPortfolio As IPortfolioState, TAction As ITradeAction) Inherits IProcess(Of TState, (TMarket, TPortfolio), TAction())
   inheritedMembers:
   - Virtufin.Core.Behaviour.IProcess{{TState},System.ValueTuple{{TMarket},{TPortfolio}},{TAction}[]}.Initial
   - Virtufin.Core.Behaviour.IProcess{{TState},System.ValueTuple{{TMarket},{TPortfolio}},{TAction}[]}.Step({TState},System.ValueTuple{{TMarket},{TPortfolio}})

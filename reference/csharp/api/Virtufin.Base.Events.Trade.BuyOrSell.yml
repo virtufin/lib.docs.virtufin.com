@@ -21,7 +21,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: BuyOrSell
     path: ../../../src/Virtufin.Base/Events/Trade/TradeAction.cs
-    startLine: 89
+    startLine: 86
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Events.Trade
@@ -48,7 +48,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: Buy
     path: ../../../src/Virtufin.Base/Events/Trade/TradeAction.cs
-    startLine: 92
+    startLine: 89
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Events.Trade
@@ -76,7 +76,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-dotnet
     id: Sell
     path: ../../../src/Virtufin.Base/Events/Trade/TradeAction.cs
-    startLine: 94
+    startLine: 91
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Events.Trade
