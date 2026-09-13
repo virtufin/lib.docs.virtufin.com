@@ -351,16 +351,16 @@ items:
       type: Struct
     - uid: Virtufin.Base.Position
       name: Position
-      type: Struct
-    - uid: Virtufin.Base.PositionSize
-      name: PositionSize
-      type: Struct
-    - uid: Virtufin.Base.PositionTransferContract
-      name: PositionTransferContract
       type: Class
-    - uid: Virtufin.Base.PositionTransferContractMessageGenerator
-      name: PositionTransferContractMessageGenerator
+    - uid: Virtufin.Base.PositionTransferContractMessageGenerator`1
+      name: PositionTransferContractMessageGenerator<A>
       type: Class
+    - uid: Virtufin.Base.PositionTransferContract`1
+      name: PositionTransferContract<A>
+      type: Class
+    - uid: Virtufin.Base.Position`1
+      name: Position<A>
+      type: Struct
     - uid: Virtufin.Base.Scenario
       name: Scenario
       type: Class
@@ -391,8 +391,8 @@ items:
     - uid: Virtufin.Base.Transaction.CreateContract
       name: Transaction.CreateContract
       type: Class
-    - uid: Virtufin.Base.Transaction.Transfer
-      name: Transaction.Transfer
+    - uid: Virtufin.Base.Transaction.Transfer`1
+      name: Transaction.Transfer<A>
       type: Class
     - uid: Virtufin.Base.UtiValidator
       name: UtiValidator

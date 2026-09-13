@@ -1,22 +1,22 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Virtufin.Base.Transaction.Transfer
-  commentId: T:Virtufin.Base.Transaction.Transfer
-  id: Transaction.Transfer
+- uid: Virtufin.Base.Transaction.Transfer`1
+  commentId: T:Virtufin.Base.Transaction.Transfer`1
+  id: Transaction.Transfer`1
   parent: Virtufin.Base
   children:
-  - Virtufin.Base.Transaction.Transfer.#ctor(Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.Position,Virtufin.Base.ContractIdentifier)
-  - Virtufin.Base.Transaction.Transfer.From
-  - Virtufin.Base.Transaction.Transfer.Id
-  - Virtufin.Base.Transaction.Transfer.Position
-  - Virtufin.Base.Transaction.Transfer.RelatedContract
-  - Virtufin.Base.Transaction.Transfer.To
+  - Virtufin.Base.Transaction.Transfer`1.#ctor(Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.Position{`0},Virtufin.Base.ContractIdentifier)
+  - Virtufin.Base.Transaction.Transfer`1.From
+  - Virtufin.Base.Transaction.Transfer`1.Id
+  - Virtufin.Base.Transaction.Transfer`1.Position
+  - Virtufin.Base.Transaction.Transfer`1.RelatedContract
+  - Virtufin.Base.Transaction.Transfer`1.To
   langs:
   - csharp
   - vb
-  name: Transaction.Transfer
-  nameWithType: Transaction.Transfer
-  fullName: Virtufin.Base.Transaction.Transfer
+  name: Transaction.Transfer<A>
+  nameWithType: Transaction.Transfer<A>
+  fullName: Virtufin.Base.Transaction.Transfer<A>
   type: Class
   source:
     remote:
@@ -25,15 +25,24 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Transfer
     path: ../../../src/Virtufin.Base/Transaction.cs
-    startLine: 73
+    startLine: 79
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
   summary: Transfer a position between two parties, authorised by a contract.
+  remarks: >-
+    Only this leaf record carries the amount type. <xref href="Virtufin.Base.Transaction" data-throw-if-not-resolved="false"></xref> itself stays
+
+    non-generic, so <code>State</code>, <code>Message</code> and <code>IScenarioHistory</code> keep holding
+
+    plain <xref href="Virtufin.Base.Transaction" data-throw-if-not-resolved="false"></xref> and are unaffected.
   example: []
   syntax:
-    content: 'public sealed record Transaction.Transfer : Transaction, ITransaction, IEquatable<ITransaction>, IEquatable<Transaction>, IEquatable<Transaction.Transfer>'
-    content.vb: Public NotInheritable Class Transaction.Transfer Inherits Transaction Implements ITransaction, IEquatable(Of ITransaction), IEquatable(Of Transaction), IEquatable(Of Transaction.Transfer)
+    content: 'public sealed record Transaction.Transfer<A> : Transaction, ITransaction, IEquatable<ITransaction>, IEquatable<Transaction>, IEquatable<Transaction.Transfer<A>> where A : IFixedPointAmount<A>'
+    typeParameters:
+    - id: A
+      description: The fixed-point amount type measuring the position.
+    content.vb: Public NotInheritable Class Transaction.Transfer(Of A As IFixedPointAmount(Of A)) Inherits Transaction Implements ITransaction, IEquatable(Of ITransaction), IEquatable(Of Transaction), IEquatable(Of Transaction.Transfer(Of A))
   inheritance:
   - System.Object
   - Virtufin.Base.Transaction
@@ -41,7 +50,7 @@ items:
   - Virtufin.Core.Contracts.ITransaction
   - System.IEquatable{Virtufin.Core.Contracts.ITransaction}
   - System.IEquatable{Virtufin.Base.Transaction}
-  - System.IEquatable{Virtufin.Base.Transaction.Transfer}
+  - System.IEquatable{Virtufin.Base.Transaction.Transfer`1}
   inheritedMembers:
   - Virtufin.Base.Transaction.Equals(Virtufin.Core.Contracts.ITransaction)
   - System.Object.Equals(System.Object)
@@ -50,16 +59,19 @@ items:
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Base.Transaction.Transfer.From
-  commentId: P:Virtufin.Base.Transaction.Transfer.From
+  nameWithType.vb: Transaction.Transfer(Of A)
+  fullName.vb: Virtufin.Base.Transaction.Transfer(Of A)
+  name.vb: Transaction.Transfer(Of A)
+- uid: Virtufin.Base.Transaction.Transfer`1.From
+  commentId: P:Virtufin.Base.Transaction.Transfer`1.From
   id: From
-  parent: Virtufin.Base.Transaction.Transfer
+  parent: Virtufin.Base.Transaction.Transfer`1
   langs:
   - csharp
   - vb
   name: From
-  nameWithType: Transaction.Transfer.From
-  fullName: Virtufin.Base.Transaction.Transfer.From
+  nameWithType: Transaction.Transfer<A>.From
+  fullName: Virtufin.Base.Transaction.Transfer<A>.From
   type: Property
   source:
     remote:
@@ -68,7 +80,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: From
     path: ../../../src/Virtufin.Base/Transaction.cs
-    startLine: 76
+    startLine: 83
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -80,17 +92,19 @@ items:
     return:
       type: Virtufin.Base.Signatory
     content.vb: Public ReadOnly Property From As Signatory
-  overload: Virtufin.Base.Transaction.Transfer.From*
-- uid: Virtufin.Base.Transaction.Transfer.To
-  commentId: P:Virtufin.Base.Transaction.Transfer.To
+  overload: Virtufin.Base.Transaction.Transfer`1.From*
+  nameWithType.vb: Transaction.Transfer(Of A).From
+  fullName.vb: Virtufin.Base.Transaction.Transfer(Of A).From
+- uid: Virtufin.Base.Transaction.Transfer`1.To
+  commentId: P:Virtufin.Base.Transaction.Transfer`1.To
   id: To
-  parent: Virtufin.Base.Transaction.Transfer
+  parent: Virtufin.Base.Transaction.Transfer`1
   langs:
   - csharp
   - vb
   name: To
-  nameWithType: Transaction.Transfer.To
-  fullName: Virtufin.Base.Transaction.Transfer.To
+  nameWithType: Transaction.Transfer<A>.To
+  fullName: Virtufin.Base.Transaction.Transfer<A>.To
   type: Property
   source:
     remote:
@@ -99,7 +113,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: To
     path: ../../../src/Virtufin.Base/Transaction.cs
-    startLine: 79
+    startLine: 86
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -111,17 +125,19 @@ items:
     return:
       type: Virtufin.Base.Signatory
     content.vb: Public ReadOnly Property [To] As Signatory
-  overload: Virtufin.Base.Transaction.Transfer.To*
-- uid: Virtufin.Base.Transaction.Transfer.Position
-  commentId: P:Virtufin.Base.Transaction.Transfer.Position
+  overload: Virtufin.Base.Transaction.Transfer`1.To*
+  nameWithType.vb: Transaction.Transfer(Of A).To
+  fullName.vb: Virtufin.Base.Transaction.Transfer(Of A).To
+- uid: Virtufin.Base.Transaction.Transfer`1.Position
+  commentId: P:Virtufin.Base.Transaction.Transfer`1.Position
   id: Position
-  parent: Virtufin.Base.Transaction.Transfer
+  parent: Virtufin.Base.Transaction.Transfer`1
   langs:
   - csharp
   - vb
   name: Position
-  nameWithType: Transaction.Transfer.Position
-  fullName: Virtufin.Base.Transaction.Transfer.Position
+  nameWithType: Transaction.Transfer<A>.Position
+  fullName: Virtufin.Base.Transaction.Transfer<A>.Position
   type: Property
   source:
     remote:
@@ -130,29 +146,31 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Position
     path: ../../../src/Virtufin.Base/Transaction.cs
-    startLine: 82
+    startLine: 89
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
   summary: The position being transferred.
   example: []
   syntax:
-    content: public Position Position { get; }
+    content: public Position<A> Position { get; }
     parameters: []
     return:
-      type: Virtufin.Base.Position
-    content.vb: Public ReadOnly Property Position As Position
-  overload: Virtufin.Base.Transaction.Transfer.Position*
-- uid: Virtufin.Base.Transaction.Transfer.#ctor(Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.Position,Virtufin.Base.ContractIdentifier)
-  commentId: M:Virtufin.Base.Transaction.Transfer.#ctor(Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.Position,Virtufin.Base.ContractIdentifier)
-  id: '#ctor(Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.Position,Virtufin.Base.ContractIdentifier)'
-  parent: Virtufin.Base.Transaction.Transfer
+      type: Virtufin.Base.Position{{A}}
+    content.vb: Public ReadOnly Property Position As Position(Of A)
+  overload: Virtufin.Base.Transaction.Transfer`1.Position*
+  nameWithType.vb: Transaction.Transfer(Of A).Position
+  fullName.vb: Virtufin.Base.Transaction.Transfer(Of A).Position
+- uid: Virtufin.Base.Transaction.Transfer`1.#ctor(Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.Position{`0},Virtufin.Base.ContractIdentifier)
+  commentId: M:Virtufin.Base.Transaction.Transfer`1.#ctor(Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.Position{`0},Virtufin.Base.ContractIdentifier)
+  id: '#ctor(Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.Position{`0},Virtufin.Base.ContractIdentifier)'
+  parent: Virtufin.Base.Transaction.Transfer`1
   langs:
   - csharp
   - vb
-  name: Transfer(Signatory, Signatory, Position, ContractIdentifier)
-  nameWithType: Transaction.Transfer.Transfer(Signatory, Signatory, Position, ContractIdentifier)
-  fullName: Virtufin.Base.Transaction.Transfer.Transfer(Virtufin.Base.Signatory, Virtufin.Base.Signatory, Virtufin.Base.Position, Virtufin.Base.ContractIdentifier)
+  name: Transfer(Signatory, Signatory, Position<A>, ContractIdentifier)
+  nameWithType: Transaction.Transfer<A>.Transfer(Signatory, Signatory, Position<A>, ContractIdentifier)
+  fullName: Virtufin.Base.Transaction.Transfer<A>.Transfer(Virtufin.Base.Signatory, Virtufin.Base.Signatory, Virtufin.Base.Position<A>, Virtufin.Base.ContractIdentifier)
   type: Constructor
   source:
     remote:
@@ -161,38 +179,38 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/Transaction.cs
-    startLine: 85
+    startLine: 92
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
   summary: Construct a transfer transaction.
   example: []
   syntax:
-    content: public Transfer(Signatory from, Signatory to, Position position, ContractIdentifier id)
+    content: public Transfer(Signatory from, Signatory to, Position<A> position, ContractIdentifier id)
     parameters:
     - id: from
       type: Virtufin.Base.Signatory
     - id: to
       type: Virtufin.Base.Signatory
     - id: position
-      type: Virtufin.Base.Position
+      type: Virtufin.Base.Position{{A}}
     - id: id
       type: Virtufin.Base.ContractIdentifier
-    content.vb: Public Sub New(from As Signatory, [to] As Signatory, position As Position, id As ContractIdentifier)
-  overload: Virtufin.Base.Transaction.Transfer.#ctor*
-  nameWithType.vb: Transaction.Transfer.New(Signatory, Signatory, Position, ContractIdentifier)
-  fullName.vb: Virtufin.Base.Transaction.Transfer.New(Virtufin.Base.Signatory, Virtufin.Base.Signatory, Virtufin.Base.Position, Virtufin.Base.ContractIdentifier)
-  name.vb: New(Signatory, Signatory, Position, ContractIdentifier)
-- uid: Virtufin.Base.Transaction.Transfer.Id
-  commentId: P:Virtufin.Base.Transaction.Transfer.Id
+    content.vb: Public Sub New(from As Signatory, [to] As Signatory, position As Position(Of A), id As ContractIdentifier)
+  overload: Virtufin.Base.Transaction.Transfer`1.#ctor*
+  nameWithType.vb: Transaction.Transfer(Of A).New(Signatory, Signatory, Position(Of A), ContractIdentifier)
+  fullName.vb: Virtufin.Base.Transaction.Transfer(Of A).New(Virtufin.Base.Signatory, Virtufin.Base.Signatory, Virtufin.Base.Position(Of A), Virtufin.Base.ContractIdentifier)
+  name.vb: New(Signatory, Signatory, Position(Of A), ContractIdentifier)
+- uid: Virtufin.Base.Transaction.Transfer`1.Id
+  commentId: P:Virtufin.Base.Transaction.Transfer`1.Id
   id: Id
-  parent: Virtufin.Base.Transaction.Transfer
+  parent: Virtufin.Base.Transaction.Transfer`1
   langs:
   - csharp
   - vb
   name: Id
-  nameWithType: Transaction.Transfer.Id
-  fullName: Virtufin.Base.Transaction.Transfer.Id
+  nameWithType: Transaction.Transfer<A>.Id
+  fullName: Virtufin.Base.Transaction.Transfer<A>.Id
   type: Property
   source:
     remote:
@@ -201,7 +219,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Id
     path: ../../../src/Virtufin.Base/Transaction.cs
-    startLine: 94
+    startLine: 101
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -213,17 +231,19 @@ items:
     return:
       type: Virtufin.Base.ContractIdentifier
     content.vb: Public ReadOnly Property Id As ContractIdentifier
-  overload: Virtufin.Base.Transaction.Transfer.Id*
-- uid: Virtufin.Base.Transaction.Transfer.RelatedContract
-  commentId: P:Virtufin.Base.Transaction.Transfer.RelatedContract
+  overload: Virtufin.Base.Transaction.Transfer`1.Id*
+  nameWithType.vb: Transaction.Transfer(Of A).Id
+  fullName.vb: Virtufin.Base.Transaction.Transfer(Of A).Id
+- uid: Virtufin.Base.Transaction.Transfer`1.RelatedContract
+  commentId: P:Virtufin.Base.Transaction.Transfer`1.RelatedContract
   id: RelatedContract
-  parent: Virtufin.Base.Transaction.Transfer
+  parent: Virtufin.Base.Transaction.Transfer`1
   langs:
   - csharp
   - vb
   name: RelatedContract
-  nameWithType: Transaction.Transfer.RelatedContract
-  fullName: Virtufin.Base.Transaction.Transfer.RelatedContract
+  nameWithType: Transaction.Transfer<A>.RelatedContract
+  fullName: Virtufin.Base.Transaction.Transfer<A>.RelatedContract
   type: Property
   source:
     remote:
@@ -232,7 +252,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: RelatedContract
     path: ../../../src/Virtufin.Base/Transaction.cs
-    startLine: 97
+    startLine: 104
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -248,8 +268,17 @@ items:
       type: Virtufin.Core.Identifiers.IContractIdentifier
     content.vb: Public Overrides ReadOnly Property RelatedContract As IContractIdentifier
   overridden: Virtufin.Base.Transaction.RelatedContract
-  overload: Virtufin.Base.Transaction.Transfer.RelatedContract*
+  overload: Virtufin.Base.Transaction.Transfer`1.RelatedContract*
+  nameWithType.vb: Transaction.Transfer(Of A).RelatedContract
+  fullName.vb: Virtufin.Base.Transaction.Transfer(Of A).RelatedContract
 references:
+- uid: Virtufin.Base.Transaction
+  commentId: T:Virtufin.Base.Transaction
+  parent: Virtufin.Base
+  href: Virtufin.Base.Transaction.html
+  name: Transaction
+  nameWithType: Transaction
+  fullName: Virtufin.Base.Transaction
 - uid: Virtufin.Base
   commentId: N:Virtufin.Base
   href: Virtufin.html
@@ -283,13 +312,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Virtufin.Base.Transaction
-  commentId: T:Virtufin.Base.Transaction
-  parent: Virtufin.Base
-  href: Virtufin.Base.Transaction.html
-  name: Transaction
-  nameWithType: Transaction
-  fullName: Virtufin.Base.Transaction
 - uid: Virtufin.Core.Contracts.ITransaction
   commentId: T:Virtufin.Core.Contracts.ITransaction
   parent: Virtufin.Core.Contracts
@@ -363,17 +385,17 @@ references:
     name: Transaction
     href: Virtufin.Base.Transaction.html
   - name: )
-- uid: System.IEquatable{Virtufin.Base.Transaction.Transfer}
-  commentId: T:System.IEquatable{Virtufin.Base.Transaction.Transfer}
+- uid: System.IEquatable{Virtufin.Base.Transaction.Transfer`1}
+  commentId: T:System.IEquatable{Virtufin.Base.Transaction.Transfer`1}
   parent: System
   definition: System.IEquatable`1
   href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  name: IEquatable<Transaction.Transfer>
-  nameWithType: IEquatable<Transaction.Transfer>
-  fullName: System.IEquatable<Virtufin.Base.Transaction.Transfer>
-  nameWithType.vb: IEquatable(Of Transaction.Transfer)
-  fullName.vb: System.IEquatable(Of Virtufin.Base.Transaction.Transfer)
-  name.vb: IEquatable(Of Transaction.Transfer)
+  name: IEquatable<Transaction.Transfer<A>>
+  nameWithType: IEquatable<Transaction.Transfer<A>>
+  fullName: System.IEquatable<Virtufin.Base.Transaction.Transfer<A>>
+  nameWithType.vb: IEquatable(Of Transaction.Transfer(Of A))
+  fullName.vb: System.IEquatable(Of Virtufin.Base.Transaction.Transfer(Of A))
+  name.vb: IEquatable(Of Transaction.Transfer(Of A))
   spec.csharp:
   - uid: System.IEquatable`1
     name: IEquatable
@@ -384,9 +406,12 @@ references:
     name: Transaction
     href: Virtufin.Base.Transaction.html
   - name: .
-  - uid: Virtufin.Base.Transaction.Transfer
+  - uid: Virtufin.Base.Transaction.Transfer`1
     name: Transfer
-    href: Virtufin.Base.Transaction.Transfer.html
+    href: Virtufin.Base.Transaction.Transfer-1.html
+  - name: <
+  - name: A
+  - name: '>'
   - name: '>'
   spec.vb:
   - uid: System.IEquatable`1
@@ -400,9 +425,14 @@ references:
     name: Transaction
     href: Virtufin.Base.Transaction.html
   - name: .
-  - uid: Virtufin.Base.Transaction.Transfer
+  - uid: Virtufin.Base.Transaction.Transfer`1
     name: Transfer
-    href: Virtufin.Base.Transaction.Transfer.html
+    href: Virtufin.Base.Transaction.Transfer-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: )
   - name: )
 - uid: Virtufin.Base.Transaction.Equals(Virtufin.Core.Contracts.ITransaction)
   commentId: M:Virtufin.Base.Transaction.Equals(Virtufin.Core.Contracts.ITransaction)
@@ -689,12 +719,14 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: Virtufin.Base.Transaction.Transfer.From*
-  commentId: Overload:Virtufin.Base.Transaction.Transfer.From
-  href: Virtufin.Base.Transaction.Transfer.html#Virtufin_Base_Transaction_Transfer_From
+- uid: Virtufin.Base.Transaction.Transfer`1.From*
+  commentId: Overload:Virtufin.Base.Transaction.Transfer`1.From
+  href: Virtufin.Base.Transaction.Transfer-1.html#Virtufin_Base_Transaction_Transfer_1_From
   name: From
-  nameWithType: Transaction.Transfer.From
-  fullName: Virtufin.Base.Transaction.Transfer.From
+  nameWithType: Transaction.Transfer<A>.From
+  fullName: Virtufin.Base.Transaction.Transfer<A>.From
+  nameWithType.vb: Transaction.Transfer(Of A).From
+  fullName.vb: Virtufin.Base.Transaction.Transfer(Of A).From
 - uid: Virtufin.Base.Signatory
   commentId: T:Virtufin.Base.Signatory
   parent: Virtufin.Base
@@ -702,33 +734,82 @@ references:
   name: Signatory
   nameWithType: Signatory
   fullName: Virtufin.Base.Signatory
-- uid: Virtufin.Base.Transaction.Transfer.To*
-  commentId: Overload:Virtufin.Base.Transaction.Transfer.To
-  href: Virtufin.Base.Transaction.Transfer.html#Virtufin_Base_Transaction_Transfer_To
+- uid: Virtufin.Base.Transaction.Transfer`1.To*
+  commentId: Overload:Virtufin.Base.Transaction.Transfer`1.To
+  href: Virtufin.Base.Transaction.Transfer-1.html#Virtufin_Base_Transaction_Transfer_1_To
   name: To
-  nameWithType: Transaction.Transfer.To
-  fullName: Virtufin.Base.Transaction.Transfer.To
-- uid: Virtufin.Base.Transaction.Transfer.Position*
-  commentId: Overload:Virtufin.Base.Transaction.Transfer.Position
-  href: Virtufin.Base.Transaction.Transfer.html#Virtufin_Base_Transaction_Transfer_Position
+  nameWithType: Transaction.Transfer<A>.To
+  fullName: Virtufin.Base.Transaction.Transfer<A>.To
+  nameWithType.vb: Transaction.Transfer(Of A).To
+  fullName.vb: Virtufin.Base.Transaction.Transfer(Of A).To
+- uid: Virtufin.Base.Transaction.Transfer`1.Position*
+  commentId: Overload:Virtufin.Base.Transaction.Transfer`1.Position
+  href: Virtufin.Base.Transaction.Transfer-1.html#Virtufin_Base_Transaction_Transfer_1_Position
   name: Position
-  nameWithType: Transaction.Transfer.Position
-  fullName: Virtufin.Base.Transaction.Transfer.Position
-- uid: Virtufin.Base.Position
-  commentId: T:Virtufin.Base.Position
+  nameWithType: Transaction.Transfer<A>.Position
+  fullName: Virtufin.Base.Transaction.Transfer<A>.Position
+  nameWithType.vb: Transaction.Transfer(Of A).Position
+  fullName.vb: Virtufin.Base.Transaction.Transfer(Of A).Position
+- uid: Virtufin.Base.Position{{A}}
+  commentId: T:Virtufin.Base.Position{``0}
   parent: Virtufin.Base
-  href: Virtufin.Base.Position.html
-  name: Position
-  nameWithType: Position
-  fullName: Virtufin.Base.Position
-- uid: Virtufin.Base.Transaction.Transfer.#ctor*
-  commentId: Overload:Virtufin.Base.Transaction.Transfer.#ctor
-  href: Virtufin.Base.Transaction.Transfer.html#Virtufin_Base_Transaction_Transfer__ctor_Virtufin_Base_Signatory_Virtufin_Base_Signatory_Virtufin_Base_Position_Virtufin_Base_ContractIdentifier_
+  definition: Virtufin.Base.Position`1
+  href: Virtufin.Base.Position-1.html
+  name: Position<A>
+  nameWithType: Position<A>
+  fullName: Virtufin.Base.Position<A>
+  nameWithType.vb: Position(Of A)
+  fullName.vb: Virtufin.Base.Position(Of A)
+  name.vb: Position(Of A)
+  spec.csharp:
+  - uid: Virtufin.Base.Position`1
+    name: Position
+    href: Virtufin.Base.Position-1.html
+  - name: <
+  - name: A
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.Position`1
+    name: Position
+    href: Virtufin.Base.Position-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: )
+- uid: Virtufin.Base.Position`1
+  commentId: T:Virtufin.Base.Position`1
+  href: Virtufin.Base.Position-1.html
+  name: Position<A>
+  nameWithType: Position<A>
+  fullName: Virtufin.Base.Position<A>
+  nameWithType.vb: Position(Of A)
+  fullName.vb: Virtufin.Base.Position(Of A)
+  name.vb: Position(Of A)
+  spec.csharp:
+  - uid: Virtufin.Base.Position`1
+    name: Position
+    href: Virtufin.Base.Position-1.html
+  - name: <
+  - name: A
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.Position`1
+    name: Position
+    href: Virtufin.Base.Position-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: )
+- uid: Virtufin.Base.Transaction.Transfer`1.#ctor*
+  commentId: Overload:Virtufin.Base.Transaction.Transfer`1.#ctor
+  href: Virtufin.Base.Transaction.Transfer-1.html#Virtufin_Base_Transaction_Transfer_1__ctor_Virtufin_Base_Signatory_Virtufin_Base_Signatory_Virtufin_Base_Position__0__Virtufin_Base_ContractIdentifier_
   name: Transfer
-  nameWithType: Transaction.Transfer.Transfer
-  fullName: Virtufin.Base.Transaction.Transfer.Transfer
-  nameWithType.vb: Transaction.Transfer.New
-  fullName.vb: Virtufin.Base.Transaction.Transfer.New
+  nameWithType: Transaction.Transfer<A>.Transfer
+  fullName: Virtufin.Base.Transaction.Transfer<A>.Transfer
+  nameWithType.vb: Transaction.Transfer(Of A).New
+  fullName.vb: Virtufin.Base.Transaction.Transfer(Of A).New
   name.vb: New
 - uid: Virtufin.Base.ContractIdentifier
   commentId: T:Virtufin.Base.ContractIdentifier
@@ -737,12 +818,14 @@ references:
   name: ContractIdentifier
   nameWithType: ContractIdentifier
   fullName: Virtufin.Base.ContractIdentifier
-- uid: Virtufin.Base.Transaction.Transfer.Id*
-  commentId: Overload:Virtufin.Base.Transaction.Transfer.Id
-  href: Virtufin.Base.Transaction.Transfer.html#Virtufin_Base_Transaction_Transfer_Id
+- uid: Virtufin.Base.Transaction.Transfer`1.Id*
+  commentId: Overload:Virtufin.Base.Transaction.Transfer`1.Id
+  href: Virtufin.Base.Transaction.Transfer-1.html#Virtufin_Base_Transaction_Transfer_1_Id
   name: Id
-  nameWithType: Transaction.Transfer.Id
-  fullName: Virtufin.Base.Transaction.Transfer.Id
+  nameWithType: Transaction.Transfer<A>.Id
+  fullName: Virtufin.Base.Transaction.Transfer<A>.Id
+  nameWithType.vb: Transaction.Transfer(Of A).Id
+  fullName.vb: Virtufin.Base.Transaction.Transfer(Of A).Id
 - uid: Virtufin.Base.Transaction.RelatedContract
   commentId: P:Virtufin.Base.Transaction.RelatedContract
   parent: Virtufin.Base.Transaction
@@ -750,12 +833,14 @@ references:
   name: RelatedContract
   nameWithType: Transaction.RelatedContract
   fullName: Virtufin.Base.Transaction.RelatedContract
-- uid: Virtufin.Base.Transaction.Transfer.RelatedContract*
-  commentId: Overload:Virtufin.Base.Transaction.Transfer.RelatedContract
-  href: Virtufin.Base.Transaction.Transfer.html#Virtufin_Base_Transaction_Transfer_RelatedContract
+- uid: Virtufin.Base.Transaction.Transfer`1.RelatedContract*
+  commentId: Overload:Virtufin.Base.Transaction.Transfer`1.RelatedContract
+  href: Virtufin.Base.Transaction.Transfer-1.html#Virtufin_Base_Transaction_Transfer_1_RelatedContract
   name: RelatedContract
-  nameWithType: Transaction.Transfer.RelatedContract
-  fullName: Virtufin.Base.Transaction.Transfer.RelatedContract
+  nameWithType: Transaction.Transfer<A>.RelatedContract
+  fullName: Virtufin.Base.Transaction.Transfer<A>.RelatedContract
+  nameWithType.vb: Transaction.Transfer(Of A).RelatedContract
+  fullName.vb: Virtufin.Base.Transaction.Transfer(Of A).RelatedContract
 - uid: Virtufin.Core.Identifiers.IContractIdentifier
   commentId: T:Virtufin.Core.Identifiers.IContractIdentifier
   parent: Virtufin.Core.Identifiers

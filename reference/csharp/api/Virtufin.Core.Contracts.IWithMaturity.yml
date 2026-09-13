@@ -33,7 +33,7 @@ items:
     content: 'public interface IWithMaturity : IContract, IEquatable<IContract>'
     content.vb: Public Interface IWithMaturity Inherits IContract, IEquatable(Of IContract)
   derivedClasses:
-  - Virtufin.Base.PositionTransferContract
+  - Virtufin.Base.PositionTransferContract`1
   inheritedMembers:
   - Virtufin.Core.Contracts.IContract.Identifier
   - Virtufin.Core.Contracts.IContract.IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)

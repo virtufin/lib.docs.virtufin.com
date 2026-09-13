@@ -49,7 +49,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: DecimalAmount
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 32
+    startLine: 43
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -70,13 +70,35 @@ items:
 
     negative; the caller decides whether to throw on negative results.</p>
 
-    <p>Equality and ordering include the precision: two amounts that
+    <p>Equality and ordering both include the precision: an amount at a
 
-    represent the same monetary value at different precisions are rejected with
+    different <code>N</code> is a different value. The invariant cannot be enforced
 
-    <xref href="Virtufin.Core.Position.PrecisionMismatchException" data-throw-if-not-resolved="false"></xref>. This invariant cannot be enforced
+    statically (C# lacks dependent types), so it is enforced at runtime -- an
 
-    statically (C# lacks dependent types), so it is enforced at runtime.</p>
+    amount at precision 2 and one at precision 4 are, in effect, different
+
+    types.</p>
+
+    <p>They report a mismatch differently, and deliberately so, following the
+
+    BCL's own split for a type mismatch: equality returns <code>false</code> (as
+
+    <xref href="System.Object.Equals(System.Object)" data-throw-if-not-resolved="false"></xref> does when handed another type), while
+
+    ordering throws <xref href="Virtufin.Core.Position.PrecisionMismatchException" data-throw-if-not-resolved="false"></xref> (as
+
+    <xref href="System.IComparable.CompareTo(System.Object)" data-throw-if-not-resolved="false"></xref> throws
+
+    <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref>). Equality must stay total because
+
+    dictionaries, <code>Contains</code>, <code>Distinct</code> and the generated equality of
+
+    any record holding an amount all call it where a throw cannot be caught.
+
+    Arithmetic keeps throwing: unlike a comparison, <code>5.00 + 5.0000</code> has no
+
+    answer until someone picks a precision.</p>
 
     <p>Multiplication and division are delegated to
 
@@ -132,7 +154,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 32
+    startLine: 43
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -153,13 +175,35 @@ items:
 
     negative; the caller decides whether to throw on negative results.</p>
 
-    <p>Equality and ordering include the precision: two amounts that
+    <p>Equality and ordering both include the precision: an amount at a
 
-    represent the same monetary value at different precisions are rejected with
+    different <code>N</code> is a different value. The invariant cannot be enforced
 
-    <xref href="Virtufin.Core.Position.PrecisionMismatchException" data-throw-if-not-resolved="false"></xref>. This invariant cannot be enforced
+    statically (C# lacks dependent types), so it is enforced at runtime -- an
 
-    statically (C# lacks dependent types), so it is enforced at runtime.</p>
+    amount at precision 2 and one at precision 4 are, in effect, different
+
+    types.</p>
+
+    <p>They report a mismatch differently, and deliberately so, following the
+
+    BCL's own split for a type mismatch: equality returns <code>false</code> (as
+
+    <xref href="System.Object.Equals(System.Object)" data-throw-if-not-resolved="false"></xref> does when handed another type), while
+
+    ordering throws <xref href="Virtufin.Core.Position.PrecisionMismatchException" data-throw-if-not-resolved="false"></xref> (as
+
+    <xref href="System.IComparable.CompareTo(System.Object)" data-throw-if-not-resolved="false"></xref> throws
+
+    <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref>). Equality must stay total because
+
+    dictionaries, <code>Contains</code>, <code>Distinct</code> and the generated equality of
+
+    any record holding an amount all call it where a throw cannot be caught.
+
+    Arithmetic keeps throwing: unlike a comparison, <code>5.00 + 5.0000</code> has no
+
+    answer until someone picks a precision.</p>
 
     <p>Multiplication and division are delegated to
 
@@ -207,7 +251,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Whole
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 32
+    startLine: 43
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -240,7 +284,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Fraction
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 32
+    startLine: 43
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -273,7 +317,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: N
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 32
+    startLine: 43
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -302,7 +346,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Radix
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 42
+    startLine: 53
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -331,7 +375,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Zero
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 47
+    startLine: 58
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -362,7 +406,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: DefaultPrecision
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 54
+    startLine: 65
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -396,7 +440,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: BaseValue
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 57
+    startLine: 68
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -432,7 +476,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Base
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 60
+    startLine: 71
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -465,7 +509,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Precision
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 63
+    startLine: 74
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -498,7 +542,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsZero
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 66
+    startLine: 77
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -531,7 +575,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Create
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 69
+    startLine: 80
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -576,7 +620,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: From
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 78
+    startLine: 89
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -619,7 +663,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: From
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 93
+    startLine: 104
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -664,7 +708,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToCardinal
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 97
+    startLine: 108
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -697,7 +741,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToCardinal
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 106
+    startLine: 117
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -739,7 +783,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToDecimal
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 117
+    startLine: 128
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -769,7 +813,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: FromCardinal
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 122
+    startLine: 133
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -808,7 +852,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: FromCardinal
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 128
+    startLine: 139
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -848,7 +892,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: GetValue
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 151
+    startLine: 162
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -877,11 +921,25 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Equals
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 157
+    startLine: 176
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
   summary: Indicates whether the current object is equal to another object of the same type.
+  remarks: >-
+    Precision is part of identity: an amount at a different <code>N</code> is a different
+
+    value, never an equal one. It returns <code>false</code> rather than throwing, unlike
+
+    <xref href="Virtufin.Core.Position.DecimalAmount.CompareTo(Virtufin.Core.Position.DecimalAmount)" data-throw-if-not-resolved="false"></xref> -- that asymmetry is deliberate and mirrors the BCL,
+
+    where a type mismatch makes <xref href="System.Object.Equals(System.Object)" data-throw-if-not-resolved="false"></xref> return <code>false</code>
+
+    but <xref href="System.IComparable.CompareTo(System.Object)" data-throw-if-not-resolved="false"></xref> throw. Equality is called
+
+    implicitly by dictionaries, <code>Contains</code>, <code>Distinct</code> and by the generated
+
+    equality of any record holding an amount, where a throw cannot be caught.
   example: []
   syntax:
     content: public bool Equals(DecimalAmount other)
@@ -894,10 +952,6 @@ items:
       description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
     content.vb: Public Function Equals(other As DecimalAmount) As Boolean
   overload: Virtufin.Core.Position.DecimalAmount.Equals*
-  exceptions:
-  - type: Virtufin.Core.Position.PrecisionMismatchException
-    commentId: T:Virtufin.Core.Position.PrecisionMismatchException
-    description: Precisions differ.
   implements:
   - System.IEquatable{Virtufin.Core.Position.DecimalAmount}.Equals(Virtufin.Core.Position.DecimalAmount)
 - uid: Virtufin.Core.Position.DecimalAmount.GetHashCode
@@ -918,7 +972,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: GetHashCode
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 164
+    startLine: 180
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -950,7 +1004,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: CompareTo
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 168
+    startLine: 184
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -994,7 +1048,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: CompareTo
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 191
+    startLine: 207
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -1033,7 +1087,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Addition
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 197
+    startLine: 213
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -1073,7 +1127,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Subtraction
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 201
+    startLine: 217
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -1113,7 +1167,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Multiply
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 208
+    startLine: 224
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -1156,7 +1210,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Division
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 216
+    startLine: 232
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -1199,7 +1253,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToString
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 220
+    startLine: 236
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -1230,7 +1284,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: MaxPrecision
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
-    startLine: 241
+    startLine: 257
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -1274,12 +1328,85 @@ references:
   name: OverflowException
   nameWithType: OverflowException
   fullName: System.OverflowException
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
 - uid: Virtufin.Core.Position.PrecisionMismatchException
   commentId: T:Virtufin.Core.Position.PrecisionMismatchException
   href: Virtufin.Core.Position.PrecisionMismatchException.html
   name: PrecisionMismatchException
   nameWithType: PrecisionMismatchException
   fullName: Virtufin.Core.Position.PrecisionMismatchException
+- uid: System.IComparable.CompareTo(System.Object)
+  commentId: M:System.IComparable.CompareTo(System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable.compareto
+  name: CompareTo(object)
+  nameWithType: IComparable.CompareTo(object)
+  fullName: System.IComparable.CompareTo(object)
+  nameWithType.vb: IComparable.CompareTo(Object)
+  fullName.vb: System.IComparable.CompareTo(Object)
+  name.vb: CompareTo(Object)
+  spec.csharp:
+  - uid: System.IComparable.CompareTo(System.Object)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable.compareto
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.IComparable.CompareTo(System.Object)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable.compareto
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
 - uid: Virtufin.Core.Position.FixedPointArithmetic
   commentId: T:Virtufin.Core.Position.FixedPointArithmetic
   href: Virtufin.Core.Position.FixedPointArithmetic.html
@@ -2001,6 +2128,17 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
 - uid: Virtufin.Core.Position.IFixedPointAmount`1
   commentId: T:Virtufin.Core.Position.IFixedPointAmount`1
   href: Virtufin.Core.Position.IFixedPointAmount-1.html
@@ -2327,17 +2465,6 @@ references:
   name: ValueType
   nameWithType: ValueType
   fullName: System.ValueType
-- uid: System.Object
-  commentId: T:System.Object
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
 - uid: Virtufin.Core.Position.DecimalAmount.#ctor*
   commentId: Overload:Virtufin.Core.Position.DecimalAmount.#ctor
   href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount__ctor_System_Int64_System_UInt64_System_Int32_
@@ -2888,6 +3015,30 @@ references:
   name: GetValue
   nameWithType: DecimalAmount.GetValue
   fullName: Virtufin.Core.Position.DecimalAmount.GetValue
+- uid: Virtufin.Core.Position.DecimalAmount.CompareTo(Virtufin.Core.Position.DecimalAmount)
+  commentId: M:Virtufin.Core.Position.DecimalAmount.CompareTo(Virtufin.Core.Position.DecimalAmount)
+  href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_CompareTo_Virtufin_Core_Position_DecimalAmount_
+  name: CompareTo(DecimalAmount)
+  nameWithType: DecimalAmount.CompareTo(DecimalAmount)
+  fullName: Virtufin.Core.Position.DecimalAmount.CompareTo(Virtufin.Core.Position.DecimalAmount)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.DecimalAmount.CompareTo(Virtufin.Core.Position.DecimalAmount)
+    name: CompareTo
+    href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_CompareTo_Virtufin_Core_Position_DecimalAmount_
+  - name: (
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.DecimalAmount.CompareTo(Virtufin.Core.Position.DecimalAmount)
+    name: CompareTo
+    href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_CompareTo_Virtufin_Core_Position_DecimalAmount_
+  - name: (
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: )
 - uid: Virtufin.Core.Position.DecimalAmount.Equals*
   commentId: Overload:Virtufin.Core.Position.DecimalAmount.Equals
   href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_Equals_Virtufin_Core_Position_DecimalAmount_

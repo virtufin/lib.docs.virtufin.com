@@ -53,7 +53,7 @@ items:
   - linkId: Virtufin.Core.Predicates.IMessageSelectorPredicate
     commentId: T:Virtufin.Core.Predicates.IMessageSelectorPredicate
   derivedClasses:
-  - Virtufin.Base.PositionTransferContract
+  - Virtufin.Base.PositionTransferContract`1
   inheritedMembers:
   - System.IEquatable{Virtufin.Core.Contracts.IContract}.Equals(Virtufin.Core.Contracts.IContract)
 - uid: Virtufin.Core.Contracts.IContract.Identifier

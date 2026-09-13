@@ -42,7 +42,7 @@ items:
   - Virtufin.Base.Transaction.AtomicTransactions
   - Virtufin.Base.Transaction.CancelContract
   - Virtufin.Base.Transaction.CreateContract
-  - Virtufin.Base.Transaction.Transfer
+  - Virtufin.Base.Transaction.Transfer`1
   implements:
   - Virtufin.Core.Contracts.ITransaction
   - System.IEquatable{Virtufin.Core.Contracts.ITransaction}

@@ -47,7 +47,7 @@ items:
   - Virtufin.Base.Transaction.AtomicTransactions
   - Virtufin.Base.Transaction.CancelContract
   - Virtufin.Base.Transaction.CreateContract
-  - Virtufin.Base.Transaction.Transfer
+  - Virtufin.Base.Transaction.Transfer`1
   inheritedMembers:
   - System.IEquatable{Virtufin.Core.Contracts.ITransaction}.Equals(Virtufin.Core.Contracts.ITransaction)
 - uid: Virtufin.Core.Contracts.ITransaction.RelatedContract

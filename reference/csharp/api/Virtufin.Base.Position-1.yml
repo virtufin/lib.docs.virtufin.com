@@ -1,0 +1,574 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.Position`1
+  commentId: T:Virtufin.Base.Position`1
+  id: Position`1
+  parent: Virtufin.Base
+  children:
+  - Virtufin.Base.Position`1.#ctor(`0,Virtufin.Base.AssetIdentifier)
+  - Virtufin.Base.Position`1.AssetIdentifier
+  - Virtufin.Base.Position`1.Size
+  langs:
+  - csharp
+  - vb
+  name: Position<A>
+  nameWithType: Position<A>
+  fullName: Virtufin.Base.Position<A>
+  type: Struct
+  source:
+    remote:
+      path: src/Virtufin.Base/Position.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/lib
+    id: Position
+    path: ../../../src/Virtufin.Base/Position.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: 'A holding: an amount of some <xref href="Virtufin.Base.Position%601.AssetIdentifier" data-throw-if-not-resolved="false"></xref>.'
+  remarks: >-
+    The size carries its own precision, and precision is part of an amount's identity, so
+
+    two positions in the same asset recorded at different precisions are not equal. Equality
+
+    returns <code>false</code> for that rather than throwing, which is what lets a position sit in
+
+    a dictionary or be compared by the generated equality of a record that holds one.
+  example: []
+  syntax:
+    content: 'public readonly record struct Position<A> : IEquatable<Position<A>> where A : IFixedPointAmount<A>'
+    typeParameters:
+    - id: A
+      description: >-
+        The fixed-point amount type measuring the holding — <xref href="Virtufin.Core.Position.DecimalAmount" data-throw-if-not-resolved="false"></xref> for
+
+        decimal instruments, <xref href="Virtufin.Core.Position.BinaryAmount" data-throw-if-not-resolved="false"></xref> where a binary scale is the natural one.
+    content.vb: Public Structure Position(Of A As IFixedPointAmount(Of A)) Implements IEquatable(Of Position(Of A))
+  implements:
+  - System.IEquatable{Virtufin.Base.Position`1}
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType.vb: Position(Of A)
+  fullName.vb: Virtufin.Base.Position(Of A)
+  name.vb: Position(Of A)
+- uid: Virtufin.Base.Position`1.#ctor(`0,Virtufin.Base.AssetIdentifier)
+  commentId: M:Virtufin.Base.Position`1.#ctor(`0,Virtufin.Base.AssetIdentifier)
+  id: '#ctor(`0,Virtufin.Base.AssetIdentifier)'
+  parent: Virtufin.Base.Position`1
+  langs:
+  - csharp
+  - vb
+  name: Position(A, AssetIdentifier)
+  nameWithType: Position<A>.Position(A, AssetIdentifier)
+  fullName: Virtufin.Base.Position<A>.Position(A, Virtufin.Base.AssetIdentifier)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Base/Position.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/lib
+    id: .ctor
+    path: ../../../src/Virtufin.Base/Position.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: 'A holding: an amount of some <xref href="Virtufin.Base.Position%601.AssetIdentifier" data-throw-if-not-resolved="false"></xref>.'
+  remarks: >-
+    The size carries its own precision, and precision is part of an amount's identity, so
+
+    two positions in the same asset recorded at different precisions are not equal. Equality
+
+    returns <code>false</code> for that rather than throwing, which is what lets a position sit in
+
+    a dictionary or be compared by the generated equality of a record that holds one.
+  example: []
+  syntax:
+    content: public Position(A Size, AssetIdentifier AssetIdentifier)
+    parameters:
+    - id: Size
+      type: '{A}'
+      description: How much of the asset.
+    - id: AssetIdentifier
+      type: Virtufin.Base.AssetIdentifier
+      description: Which asset.
+    content.vb: Public Sub New(Size As A, AssetIdentifier As AssetIdentifier)
+  overload: Virtufin.Base.Position`1.#ctor*
+  nameWithType.vb: Position(Of A).New(A, AssetIdentifier)
+  fullName.vb: Virtufin.Base.Position(Of A).New(A, Virtufin.Base.AssetIdentifier)
+  name.vb: New(A, AssetIdentifier)
+- uid: Virtufin.Base.Position`1.Size
+  commentId: P:Virtufin.Base.Position`1.Size
+  id: Size
+  parent: Virtufin.Base.Position`1
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: Position<A>.Size
+  fullName: Virtufin.Base.Position<A>.Size
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Position.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/lib
+    id: Size
+    path: ../../../src/Virtufin.Base/Position.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: How much of the asset.
+  example: []
+  syntax:
+    content: public A Size { get; init; }
+    parameters: []
+    return:
+      type: '{A}'
+    content.vb: Public Property Size As A
+  overload: Virtufin.Base.Position`1.Size*
+  nameWithType.vb: Position(Of A).Size
+  fullName.vb: Virtufin.Base.Position(Of A).Size
+- uid: Virtufin.Base.Position`1.AssetIdentifier
+  commentId: P:Virtufin.Base.Position`1.AssetIdentifier
+  id: AssetIdentifier
+  parent: Virtufin.Base.Position`1
+  langs:
+  - csharp
+  - vb
+  name: AssetIdentifier
+  nameWithType: Position<A>.AssetIdentifier
+  fullName: Virtufin.Base.Position<A>.AssetIdentifier
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/Position.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/lib
+    id: AssetIdentifier
+    path: ../../../src/Virtufin.Base/Position.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: Which asset.
+  example: []
+  syntax:
+    content: public AssetIdentifier AssetIdentifier { get; init; }
+    parameters: []
+    return:
+      type: Virtufin.Base.AssetIdentifier
+    content.vb: Public Property AssetIdentifier As AssetIdentifier
+  overload: Virtufin.Base.Position`1.AssetIdentifier*
+  nameWithType.vb: Position(Of A).AssetIdentifier
+  fullName.vb: Virtufin.Base.Position(Of A).AssetIdentifier
+references:
+- uid: Virtufin.Base.Position`1.AssetIdentifier
+  commentId: P:Virtufin.Base.Position`1.AssetIdentifier
+  href: Virtufin.Base.Position-1.html#Virtufin_Base_Position_1_AssetIdentifier
+  name: AssetIdentifier
+  nameWithType: Position<A>.AssetIdentifier
+  fullName: Virtufin.Base.Position<A>.AssetIdentifier
+  nameWithType.vb: Position(Of A).AssetIdentifier
+  fullName.vb: Virtufin.Base.Position(Of A).AssetIdentifier
+- uid: Virtufin.Core.Position.DecimalAmount
+  commentId: T:Virtufin.Core.Position.DecimalAmount
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.DecimalAmount.html
+  name: DecimalAmount
+  nameWithType: DecimalAmount
+  fullName: Virtufin.Core.Position.DecimalAmount
+- uid: Virtufin.Core.Position.BinaryAmount
+  commentId: T:Virtufin.Core.Position.BinaryAmount
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.BinaryAmount.html
+  name: BinaryAmount
+  nameWithType: BinaryAmount
+  fullName: Virtufin.Core.Position.BinaryAmount
+- uid: Virtufin.Base
+  commentId: N:Virtufin.Base
+  href: Virtufin.html
+  name: Virtufin.Base
+  nameWithType: Virtufin.Base
+  fullName: Virtufin.Base
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+- uid: System.IEquatable{Virtufin.Base.Position`1}
+  commentId: T:System.IEquatable{Virtufin.Base.Position`1}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Position<A>>
+  nameWithType: IEquatable<Position<A>>
+  fullName: System.IEquatable<Virtufin.Base.Position<A>>
+  nameWithType.vb: IEquatable(Of Position(Of A))
+  fullName.vb: System.IEquatable(Of Virtufin.Base.Position(Of A))
+  name.vb: IEquatable(Of Position(Of A))
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Base.Position`1
+    name: Position
+    href: Virtufin.Base.Position-1.html
+  - name: <
+  - name: A
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Base.Position`1
+    name: Position
+    href: Virtufin.Base.Position-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: )
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.Base.Position`1.#ctor*
+  commentId: Overload:Virtufin.Base.Position`1.#ctor
+  href: Virtufin.Base.Position-1.html#Virtufin_Base_Position_1__ctor__0_Virtufin_Base_AssetIdentifier_
+  name: Position
+  nameWithType: Position<A>.Position
+  fullName: Virtufin.Base.Position<A>.Position
+  nameWithType.vb: Position(Of A).New
+  fullName.vb: Virtufin.Base.Position(Of A).New
+  name.vb: New
+- uid: '{A}'
+  commentId: '!:A'
+  definition: A
+  name: A
+  nameWithType: A
+  fullName: A
+- uid: Virtufin.Base.AssetIdentifier
+  commentId: T:Virtufin.Base.AssetIdentifier
+  parent: Virtufin.Base
+  href: Virtufin.Base.AssetIdentifier.html
+  name: AssetIdentifier
+  nameWithType: AssetIdentifier
+  fullName: Virtufin.Base.AssetIdentifier
+- uid: A
+  name: A
+  nameWithType: A
+  fullName: A
+- uid: Virtufin.Base.Position`1.Size*
+  commentId: Overload:Virtufin.Base.Position`1.Size
+  href: Virtufin.Base.Position-1.html#Virtufin_Base_Position_1_Size
+  name: Size
+  nameWithType: Position<A>.Size
+  fullName: Virtufin.Base.Position<A>.Size
+  nameWithType.vb: Position(Of A).Size
+  fullName.vb: Virtufin.Base.Position(Of A).Size
+- uid: Virtufin.Base.Position`1.AssetIdentifier*
+  commentId: Overload:Virtufin.Base.Position`1.AssetIdentifier
+  href: Virtufin.Base.Position-1.html#Virtufin_Base_Position_1_AssetIdentifier
+  name: AssetIdentifier
+  nameWithType: Position<A>.AssetIdentifier
+  fullName: Virtufin.Base.Position<A>.AssetIdentifier
+  nameWithType.vb: Position(Of A).AssetIdentifier
+  fullName.vb: Virtufin.Base.Position(Of A).AssetIdentifier

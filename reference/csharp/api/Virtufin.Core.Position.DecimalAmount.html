@@ -49,10 +49,10 @@
             Virtufin.Dotnet
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/edc7ee197fe13524c228ef1f2923b7abdefd9185" target="_blank" rel="noopener" class="commit-badge" title="View commit edc7ee197fe13524c228ef1f2923b7abdefd9185">
+            <a href="{git_repo_url}/commit/97b7bbd36cf76ef815ba9a47b521568aea6360b3" target="_blank" rel="noopener" class="commit-badge" title="View commit 97b7bbd36cf76ef815ba9a47b521568aea6360b3">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">edc7ee197fe13524c228ef1f2923b7abdefd9185</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">97b7bbd36cf76ef815ba9a47b521568aea6360b3</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -167,10 +167,21 @@ Console.WriteLine(sum);              // "1.73"</code></pre>
   <div class="markdown level0 remarks"><p>Addition and subtraction use <code>checked</code> semantics and throw
 <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.overflowexception">OverflowException</a> on overflow. Subtraction is allowed to go
 negative; the caller decides whether to throw on negative results.</p>
-<p>Equality and ordering include the precision: two amounts that
-represent the same monetary value at different precisions are rejected with
-<a class="xref" href="Virtufin.Core.Position.PrecisionMismatchException.html">PrecisionMismatchException</a>. This invariant cannot be enforced
-statically (C# lacks dependent types), so it is enforced at runtime.</p>
+<p>Equality and ordering both include the precision: an amount at a
+different <code>N</code> is a different value. The invariant cannot be enforced
+statically (C# lacks dependent types), so it is enforced at runtime -- an
+amount at precision 2 and one at precision 4 are, in effect, different
+types.</p>
+<p>They report a mismatch differently, and deliberately so, following the
+BCL's own split for a type mismatch: equality returns <code>false</code> (as
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Equals(object)</a> does when handed another type), while
+ordering throws <a class="xref" href="Virtufin.Core.Position.PrecisionMismatchException.html">PrecisionMismatchException</a> (as
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable.compareto">CompareTo(object)</a> throws
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a>). Equality must stay total because
+dictionaries, <code>Contains</code>, <code>Distinct</code> and the generated equality of
+any record holding an amount all call it where a throw cannot be caught.
+Arithmetic keeps throwing: unlike a comparison, <code>5.00 + 5.0000</code> has no
+answer until someone picks a precision.</p>
 <p>Multiplication and division are delegated to
 <a class="xref" href="Virtufin.Core.Position.FixedPointArithmetic.html">FixedPointArithmetic</a>: the product is expressed at the summed
 precision, the quotient at the dividend's precision.</p>
@@ -227,10 +238,21 @@ Console.WriteLine(sum);              // "1.73"</code></pre>
   <div class="markdown level1 remarks"><p>Addition and subtraction use <code>checked</code> semantics and throw
 <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.overflowexception">OverflowException</a> on overflow. Subtraction is allowed to go
 negative; the caller decides whether to throw on negative results.</p>
-<p>Equality and ordering include the precision: two amounts that
-represent the same monetary value at different precisions are rejected with
-<a class="xref" href="Virtufin.Core.Position.PrecisionMismatchException.html">PrecisionMismatchException</a>. This invariant cannot be enforced
-statically (C# lacks dependent types), so it is enforced at runtime.</p>
+<p>Equality and ordering both include the precision: an amount at a
+different <code>N</code> is a different value. The invariant cannot be enforced
+statically (C# lacks dependent types), so it is enforced at runtime -- an
+amount at precision 2 and one at precision 4 are, in effect, different
+types.</p>
+<p>They report a mismatch differently, and deliberately so, following the
+BCL's own split for a type mismatch: equality returns <code>false</code> (as
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Equals(object)</a> does when handed another type), while
+ordering throws <a class="xref" href="Virtufin.Core.Position.PrecisionMismatchException.html">PrecisionMismatchException</a> (as
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable.compareto">CompareTo(object)</a> throws
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a>). Equality must stay total because
+dictionaries, <code>Contains</code>, <code>Distinct</code> and the generated equality of
+any record holding an amount all call it where a throw cannot be caught.
+Arithmetic keeps throwing: unlike a comparison, <code>5.00 + 5.0000</code> has no
+answer until someone picks a precision.</p>
 <p>Multiplication and division are delegated to
 <a class="xref" href="Virtufin.Core.Position.FixedPointArithmetic.html">FixedPointArithmetic</a>: the product is expressed at the summed
 precision, the quotient at the dividend's precision.</p>
@@ -767,13 +789,16 @@ Mirrors the instance <a class="xref" href="Virtufin.Core.Position.IFixedPointAmo
 
 
 
+  <h4 class="section" id="Virtufin_Core_Position_DecimalAmount_Equals_Virtufin_Core_Position_DecimalAmount__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Precision is part of identity: an amount at a different <code>N</code> is a different
+value, never an equal one. It returns <code>false</code> rather than throwing, unlike
+<a class="xref" href="Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_CompareTo_Virtufin_Core_Position_DecimalAmount_">CompareTo(DecimalAmount)</a> -- that asymmetry is deliberate and mirrors the BCL,
+where a type mismatch makes <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Equals(object)</a> return <code>false</code>
+but <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable.compareto">CompareTo(object)</a> throw. Equality is called
+implicitly by dictionaries, <code>Contains</code>, <code>Distinct</code> and by the generated
+equality of any record holding an amount, where a throw cannot be caught.</p>
+</div>
 
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Virtufin.Core.Position.PrecisionMismatchException.html">PrecisionMismatchException</a></dt>
-    <dd><p>Precisions differ.</p>
-</dd>
-  </dl>
 
 
 

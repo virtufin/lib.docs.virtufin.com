@@ -49,10 +49,10 @@
             Virtufin.Dotnet
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/edc7ee197fe13524c228ef1f2923b7abdefd9185" target="_blank" rel="noopener" class="commit-badge" title="View commit edc7ee197fe13524c228ef1f2923b7abdefd9185">
+            <a href="{git_repo_url}/commit/97b7bbd36cf76ef815ba9a47b521568aea6360b3" target="_blank" rel="noopener" class="commit-badge" title="View commit 97b7bbd36cf76ef815ba9a47b521568aea6360b3">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">edc7ee197fe13524c228ef1f2923b7abdefd9185</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">97b7bbd36cf76ef815ba9a47b521568aea6360b3</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -156,8 +156,10 @@ represented value is <code>Whole + Fraction / 2^N</code>.</p>
   <div class="markdown level0 remarks"><p>Exists alongside <a class="xref" href="Virtufin.Core.Position.DecimalAmount.html">DecimalAmount</a> to exercise and prove the
 base-agnosticism of <a class="xref" href="Virtufin.Core.Position.IFixedPointAmount.html">IFixedPointAmount</a> and
 <a class="xref" href="Virtufin.Core.Position.FixedPointArithmetic.html">FixedPointArithmetic</a>. Arithmetic follows the same rules:
-addition/subtraction require a common base and precision; equality/ordering
-reject mismatched precision with <a class="xref" href="Virtufin.Core.Position.PrecisionMismatchException.html">PrecisionMismatchException</a>.</p>
+addition/subtraction require a common base and precision and throw
+<a class="xref" href="Virtufin.Core.Position.PrecisionMismatchException.html">PrecisionMismatchException</a> without it; ordering throws on a
+mismatched precision too, while equality returns <code>false</code>. See
+<a class="xref" href="Virtufin.Core.Position.DecimalAmount.html">DecimalAmount</a> for why those two differ.</p>
 </div>
 
 
@@ -203,8 +205,10 @@ represented value is <code>Whole + Fraction / 2^N</code>.</p>
   <div class="markdown level1 remarks"><p>Exists alongside <a class="xref" href="Virtufin.Core.Position.DecimalAmount.html">DecimalAmount</a> to exercise and prove the
 base-agnosticism of <a class="xref" href="Virtufin.Core.Position.IFixedPointAmount.html">IFixedPointAmount</a> and
 <a class="xref" href="Virtufin.Core.Position.FixedPointArithmetic.html">FixedPointArithmetic</a>. Arithmetic follows the same rules:
-addition/subtraction require a common base and precision; equality/ordering
-reject mismatched precision with <a class="xref" href="Virtufin.Core.Position.PrecisionMismatchException.html">PrecisionMismatchException</a>.</p>
+addition/subtraction require a common base and precision and throw
+<a class="xref" href="Virtufin.Core.Position.PrecisionMismatchException.html">PrecisionMismatchException</a> without it; ordering throws on a
+mismatched precision too, while equality returns <code>false</code>. See
+<a class="xref" href="Virtufin.Core.Position.DecimalAmount.html">DecimalAmount</a> for why those two differ.</p>
 </div>
 
 
@@ -736,13 +740,16 @@ Mirrors the instance <a class="xref" href="Virtufin.Core.Position.IFixedPointAmo
 
 
 
+  <h4 class="section" id="Virtufin_Core_Position_BinaryAmount_Equals_Virtufin_Core_Position_BinaryAmount__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Precision is part of identity: an amount at a different <code>N</code> is a different
+value, never an equal one. It returns <code>false</code> rather than throwing, unlike
+<a class="xref" href="Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_CompareTo_Virtufin_Core_Position_BinaryAmount_">CompareTo(BinaryAmount)</a> -- that asymmetry is deliberate and mirrors the BCL,
+where a type mismatch makes <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Equals(object)</a> return <code>false</code>
+but <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable.compareto">CompareTo(object)</a> throw. Equality is called
+implicitly by dictionaries, <code>Contains</code>, <code>Distinct</code> and by the generated
+equality of any record holding an amount, where a throw cannot be caught.</p>
+</div>
 
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Virtufin.Core.Position.PrecisionMismatchException.html">PrecisionMismatchException</a></dt>
-    <dd><p>Precisions differ.</p>
-</dd>
-  </dl>
 
 
 

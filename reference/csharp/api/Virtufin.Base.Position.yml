@@ -5,17 +5,15 @@ items:
   id: Position
   parent: Virtufin.Base
   children:
-  - Virtufin.Base.Position.#ctor(Virtufin.Base.PositionSize,Virtufin.Base.AssetIdentifier)
-  - Virtufin.Base.Position.AssetIdentifier
   - Virtufin.Base.Position.Of(System.Int64,Virtufin.Base.AssetIdentifier)
-  - Virtufin.Base.Position.Size
+  - Virtufin.Base.Position.Of``1(``0,Virtufin.Base.AssetIdentifier)
   langs:
   - csharp
   - vb
   name: Position
   nameWithType: Position
   fullName: Virtufin.Base.Position
-  type: Struct
+  type: Class
   source:
     remote:
       path: src/Virtufin.Base/Position.cs
@@ -23,124 +21,31 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Position
     path: ../../../src/Virtufin.Base/Position.cs
-    startLine: 9
+    startLine: 31
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
-  summary: 'A holding: a <xref href="Virtufin.Base.PositionSize" data-throw-if-not-resolved="false"></xref> in some <xref href="Virtufin.Base.Position.AssetIdentifier" data-throw-if-not-resolved="false"></xref>.'
+  summary: Factory helpers for <xref href="Virtufin.Base.Position%601" data-throw-if-not-resolved="false"></xref> at the default amount type.
+  remarks: >-
+    C# has no default type arguments, so <code>Position&lt;DecimalAmount&gt;</code> would otherwise
+
+    have to be spelled out at every construction. This class carries the common case; it is
+
+    legal alongside the generic struct because the two differ in arity.
   example: []
   syntax:
-    content: 'public readonly record struct Position : IEquatable<Position>'
-    content.vb: Public Structure Position Implements IEquatable(Of Position)
-  implements:
-  - System.IEquatable{Virtufin.Base.Position}
+    content: public static class Position
+    content.vb: Public Module Position
+  inheritance:
+  - System.Object
   inheritedMembers:
-  - System.ValueType.Equals(System.Object)
-  - System.ValueType.GetHashCode
-  - System.ValueType.ToString
+  - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
   - System.Object.GetType
+  - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
-- uid: Virtufin.Base.Position.#ctor(Virtufin.Base.PositionSize,Virtufin.Base.AssetIdentifier)
-  commentId: M:Virtufin.Base.Position.#ctor(Virtufin.Base.PositionSize,Virtufin.Base.AssetIdentifier)
-  id: '#ctor(Virtufin.Base.PositionSize,Virtufin.Base.AssetIdentifier)'
-  parent: Virtufin.Base.Position
-  langs:
-  - csharp
-  - vb
-  name: Position(PositionSize, AssetIdentifier)
-  nameWithType: Position.Position(PositionSize, AssetIdentifier)
-  fullName: Virtufin.Base.Position.Position(Virtufin.Base.PositionSize, Virtufin.Base.AssetIdentifier)
-  type: Constructor
-  source:
-    remote:
-      path: src/Virtufin.Base/Position.cs
-      branch: master
-      repo: https://git.haenerconsulting.com/virtufin/lib
-    id: .ctor
-    path: ../../../src/Virtufin.Base/Position.cs
-    startLine: 9
-  assemblies:
-  - Virtufin.Base
-  namespace: Virtufin.Base
-  summary: 'A holding: a <xref href="Virtufin.Base.PositionSize" data-throw-if-not-resolved="false"></xref> in some <xref href="Virtufin.Base.Position.AssetIdentifier" data-throw-if-not-resolved="false"></xref>.'
-  example: []
-  syntax:
-    content: public Position(PositionSize Size, AssetIdentifier AssetIdentifier)
-    parameters:
-    - id: Size
-      type: Virtufin.Base.PositionSize
-      description: How much of the asset.
-    - id: AssetIdentifier
-      type: Virtufin.Base.AssetIdentifier
-      description: Which asset.
-    content.vb: Public Sub New(Size As PositionSize, AssetIdentifier As AssetIdentifier)
-  overload: Virtufin.Base.Position.#ctor*
-  nameWithType.vb: Position.New(PositionSize, AssetIdentifier)
-  fullName.vb: Virtufin.Base.Position.New(Virtufin.Base.PositionSize, Virtufin.Base.AssetIdentifier)
-  name.vb: New(PositionSize, AssetIdentifier)
-- uid: Virtufin.Base.Position.Size
-  commentId: P:Virtufin.Base.Position.Size
-  id: Size
-  parent: Virtufin.Base.Position
-  langs:
-  - csharp
-  - vb
-  name: Size
-  nameWithType: Position.Size
-  fullName: Virtufin.Base.Position.Size
-  type: Property
-  source:
-    remote:
-      path: src/Virtufin.Base/Position.cs
-      branch: master
-      repo: https://git.haenerconsulting.com/virtufin/lib
-    id: Size
-    path: ../../../src/Virtufin.Base/Position.cs
-    startLine: 9
-  assemblies:
-  - Virtufin.Base
-  namespace: Virtufin.Base
-  summary: How much of the asset.
-  example: []
-  syntax:
-    content: public PositionSize Size { get; init; }
-    parameters: []
-    return:
-      type: Virtufin.Base.PositionSize
-    content.vb: Public Property Size As PositionSize
-  overload: Virtufin.Base.Position.Size*
-- uid: Virtufin.Base.Position.AssetIdentifier
-  commentId: P:Virtufin.Base.Position.AssetIdentifier
-  id: AssetIdentifier
-  parent: Virtufin.Base.Position
-  langs:
-  - csharp
-  - vb
-  name: AssetIdentifier
-  nameWithType: Position.AssetIdentifier
-  fullName: Virtufin.Base.Position.AssetIdentifier
-  type: Property
-  source:
-    remote:
-      path: src/Virtufin.Base/Position.cs
-      branch: master
-      repo: https://git.haenerconsulting.com/virtufin/lib
-    id: AssetIdentifier
-    path: ../../../src/Virtufin.Base/Position.cs
-    startLine: 9
-  assemblies:
-  - Virtufin.Base
-  namespace: Virtufin.Base
-  summary: Which asset.
-  example: []
-  syntax:
-    content: public AssetIdentifier AssetIdentifier { get; init; }
-    parameters: []
-    return:
-      type: Virtufin.Base.AssetIdentifier
-    content.vb: Public Property AssetIdentifier As AssetIdentifier
-  overload: Virtufin.Base.Position.AssetIdentifier*
+  - System.Object.ToString
 - uid: Virtufin.Base.Position.Of(System.Int64,Virtufin.Base.AssetIdentifier)
   commentId: M:Virtufin.Base.Position.Of(System.Int64,Virtufin.Base.AssetIdentifier)
   id: Of(System.Int64,Virtufin.Base.AssetIdentifier)
@@ -159,40 +64,98 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Of
     path: ../../../src/Virtufin.Base/Position.cs
-    startLine: 12
+    startLine: 37
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
-  summary: Construct a position of <code class="paramref">quantity</code> units of <code class="paramref">assetIdentifier</code>.
+  summary: >-
+    Construct a position of <code class="paramref">quantity</code> whole units of
+
+    <code class="paramref">assetIdentifier</code>, at <xref href="Virtufin.Core.Position.DecimalAmount.DefaultPrecision" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public static Position Of(long quantity, AssetIdentifier assetIdentifier)
+    content: public static Position<DecimalAmount> Of(long quantity, AssetIdentifier assetIdentifier)
     parameters:
     - id: quantity
       type: System.Int64
     - id: assetIdentifier
       type: Virtufin.Base.AssetIdentifier
     return:
-      type: Virtufin.Base.Position
-    content.vb: Public Shared Function [Of](quantity As Long, assetIdentifier As AssetIdentifier) As Position
+      type: Virtufin.Base.Position{Virtufin.Core.Position.DecimalAmount}
+    content.vb: Public Shared Function [Of](quantity As Long, assetIdentifier As AssetIdentifier) As Position(Of DecimalAmount)
   overload: Virtufin.Base.Position.Of*
   nameWithType.vb: Position.Of(Long, AssetIdentifier)
   fullName.vb: Virtufin.Base.Position.Of(Long, Virtufin.Base.AssetIdentifier)
   name.vb: Of(Long, AssetIdentifier)
+- uid: Virtufin.Base.Position.Of``1(``0,Virtufin.Base.AssetIdentifier)
+  commentId: M:Virtufin.Base.Position.Of``1(``0,Virtufin.Base.AssetIdentifier)
+  id: Of``1(``0,Virtufin.Base.AssetIdentifier)
+  parent: Virtufin.Base.Position
+  langs:
+  - csharp
+  - vb
+  name: Of<A>(A, AssetIdentifier)
+  nameWithType: Position.Of<A>(A, AssetIdentifier)
+  fullName: Virtufin.Base.Position.Of<A>(A, Virtufin.Base.AssetIdentifier)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/Position.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/lib
+    id: Of
+    path: ../../../src/Virtufin.Base/Position.cs
+    startLine: 44
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base
+  summary: >-
+    Construct a position of <code class="paramref">size</code> of <code class="paramref">assetIdentifier</code>,
+
+    keeping the amount's own precision.
+  example: []
+  syntax:
+    content: 'public static Position<A> Of<A>(A size, AssetIdentifier assetIdentifier) where A : IFixedPointAmount<A>'
+    parameters:
+    - id: size
+      type: '{A}'
+    - id: assetIdentifier
+      type: Virtufin.Base.AssetIdentifier
+    typeParameters:
+    - id: A
+    return:
+      type: Virtufin.Base.Position{{A}}
+    content.vb: Public Shared Function [Of](Of A As IFixedPointAmount(Of A))(size As A, assetIdentifier As AssetIdentifier) As Position(Of A)
+  overload: Virtufin.Base.Position.Of*
+  nameWithType.vb: Position.Of(Of A)(A, AssetIdentifier)
+  fullName.vb: Virtufin.Base.Position.Of(Of A)(A, Virtufin.Base.AssetIdentifier)
+  name.vb: Of(Of A)(A, AssetIdentifier)
 references:
-- uid: Virtufin.Base.PositionSize
-  commentId: T:Virtufin.Base.PositionSize
-  parent: Virtufin.Base
-  href: Virtufin.Base.PositionSize.html
-  name: PositionSize
-  nameWithType: PositionSize
-  fullName: Virtufin.Base.PositionSize
-- uid: Virtufin.Base.Position.AssetIdentifier
-  commentId: P:Virtufin.Base.Position.AssetIdentifier
-  href: Virtufin.Base.Position.html#Virtufin_Base_Position_AssetIdentifier
-  name: AssetIdentifier
-  nameWithType: Position.AssetIdentifier
-  fullName: Virtufin.Base.Position.AssetIdentifier
+- uid: Virtufin.Base.Position`1
+  commentId: T:Virtufin.Base.Position`1
+  href: Virtufin.Base.Position-1.html
+  name: Position<A>
+  nameWithType: Position<A>
+  fullName: Virtufin.Base.Position<A>
+  nameWithType.vb: Position(Of A)
+  fullName.vb: Virtufin.Base.Position(Of A)
+  name.vb: Position(Of A)
+  spec.csharp:
+  - uid: Virtufin.Base.Position`1
+    name: Position
+    href: Virtufin.Base.Position-1.html
+  - name: <
+  - name: A
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.Position`1
+    name: Position
+    href: Virtufin.Base.Position-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: )
 - uid: Virtufin.Base
   commentId: N:Virtufin.Base
   href: Virtufin.html
@@ -215,55 +178,33 @@ references:
   - uid: Virtufin.Base
     name: Base
     href: Virtufin.Base.html
-- uid: System.IEquatable{Virtufin.Base.Position}
-  commentId: T:System.IEquatable{Virtufin.Base.Position}
+- uid: System.Object
+  commentId: T:System.Object
   parent: System
-  definition: System.IEquatable`1
-  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  name: IEquatable<Position>
-  nameWithType: IEquatable<Position>
-  fullName: System.IEquatable<Virtufin.Base.Position>
-  nameWithType.vb: IEquatable(Of Position)
-  fullName.vb: System.IEquatable(Of Virtufin.Base.Position)
-  name.vb: IEquatable(Of Position)
-  spec.csharp:
-  - uid: System.IEquatable`1
-    name: IEquatable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  - name: <
-  - uid: Virtufin.Base.Position
-    name: Position
-    href: Virtufin.Base.Position.html
-  - name: '>'
-  spec.vb:
-  - uid: System.IEquatable`1
-    name: IEquatable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Virtufin.Base.Position
-    name: Position
-    href: Virtufin.Base.Position.html
-  - name: )
-- uid: System.ValueType.Equals(System.Object)
-  commentId: M:System.ValueType.Equals(System.Object)
-  parent: System.ValueType
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
   name: Equals(object)
-  nameWithType: ValueType.Equals(object)
-  fullName: System.ValueType.Equals(object)
-  nameWithType.vb: ValueType.Equals(Object)
-  fullName.vb: System.ValueType.Equals(Object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
   name.vb: Equals(Object)
   spec.csharp:
-  - uid: System.ValueType.Equals(System.Object)
+  - uid: System.Object.Equals(System.Object)
     name: Equals
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
   - name: (
   - uid: System.Object
     name: object
@@ -271,59 +212,15 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
   spec.vb:
-  - uid: System.ValueType.Equals(System.Object)
+  - uid: System.Object.Equals(System.Object)
     name: Equals
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
   - name: (
   - uid: System.Object
     name: Object
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-- uid: System.ValueType.GetHashCode
-  commentId: M:System.ValueType.GetHashCode
-  parent: System.ValueType
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
-  name: GetHashCode()
-  nameWithType: ValueType.GetHashCode()
-  fullName: System.ValueType.GetHashCode()
-  spec.csharp:
-  - uid: System.ValueType.GetHashCode
-    name: GetHashCode
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.ValueType.GetHashCode
-    name: GetHashCode
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
-  - name: (
-  - name: )
-- uid: System.ValueType.ToString
-  commentId: M:System.ValueType.ToString
-  parent: System.ValueType
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
-  name: ToString()
-  nameWithType: ValueType.ToString()
-  fullName: System.ValueType.ToString()
-  spec.csharp:
-  - uid: System.ValueType.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.ValueType.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
-  - name: (
   - name: )
 - uid: System.Object.Equals(System.Object,System.Object)
   commentId: M:System.Object.Equals(System.Object,System.Object)
@@ -370,6 +267,30 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
 - uid: System.Object.GetType
   commentId: M:System.Object.GetType
   parent: System.Object
@@ -392,6 +313,30 @@ references:
     name: GetType
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
   - name: (
   - name: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
@@ -439,33 +384,29 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-- uid: System.IEquatable`1
-  commentId: T:System.IEquatable`1
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  name: IEquatable<T>
-  nameWithType: IEquatable<T>
-  fullName: System.IEquatable<T>
-  nameWithType.vb: IEquatable(Of T)
-  fullName.vb: System.IEquatable(Of T)
-  name.vb: IEquatable(Of T)
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
   spec.csharp:
-  - uid: System.IEquatable`1
-    name: IEquatable
+  - uid: System.Object.ToString
+    name: ToString
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.IEquatable`1
-    name: IEquatable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
-  - name: Of
-  - name: " "
-  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
   - name: )
 - uid: System
   commentId: N:System
@@ -474,53 +415,12 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: System.ValueType
-  commentId: T:System.ValueType
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.valuetype
-  name: ValueType
-  nameWithType: ValueType
-  fullName: System.ValueType
-- uid: System.Object
-  commentId: T:System.Object
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
-- uid: Virtufin.Base.Position.#ctor*
-  commentId: Overload:Virtufin.Base.Position.#ctor
-  href: Virtufin.Base.Position.html#Virtufin_Base_Position__ctor_Virtufin_Base_PositionSize_Virtufin_Base_AssetIdentifier_
-  name: Position
-  nameWithType: Position.Position
-  fullName: Virtufin.Base.Position.Position
-  nameWithType.vb: Position.New
-  fullName.vb: Virtufin.Base.Position.New
-  name.vb: New
-- uid: Virtufin.Base.AssetIdentifier
-  commentId: T:Virtufin.Base.AssetIdentifier
-  parent: Virtufin.Base
-  href: Virtufin.Base.AssetIdentifier.html
-  name: AssetIdentifier
-  nameWithType: AssetIdentifier
-  fullName: Virtufin.Base.AssetIdentifier
-- uid: Virtufin.Base.Position.Size*
-  commentId: Overload:Virtufin.Base.Position.Size
-  href: Virtufin.Base.Position.html#Virtufin_Base_Position_Size
-  name: Size
-  nameWithType: Position.Size
-  fullName: Virtufin.Base.Position.Size
-- uid: Virtufin.Base.Position.AssetIdentifier*
-  commentId: Overload:Virtufin.Base.Position.AssetIdentifier
-  href: Virtufin.Base.Position.html#Virtufin_Base_Position_AssetIdentifier
-  name: AssetIdentifier
-  nameWithType: Position.AssetIdentifier
-  fullName: Virtufin.Base.Position.AssetIdentifier
+- uid: Virtufin.Core.Position.DecimalAmount.DefaultPrecision
+  commentId: F:Virtufin.Core.Position.DecimalAmount.DefaultPrecision
+  href: Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_DefaultPrecision
+  name: DefaultPrecision
+  nameWithType: DecimalAmount.DefaultPrecision
+  fullName: Virtufin.Core.Position.DecimalAmount.DefaultPrecision
 - uid: Virtufin.Base.Position.Of*
   commentId: Overload:Virtufin.Base.Position.Of
   href: Virtufin.Base.Position.html#Virtufin_Base_Position_Of_System_Int64_Virtufin_Base_AssetIdentifier_
@@ -538,10 +438,78 @@ references:
   nameWithType.vb: Long
   fullName.vb: Long
   name.vb: Long
-- uid: Virtufin.Base.Position
-  commentId: T:Virtufin.Base.Position
+- uid: Virtufin.Base.AssetIdentifier
+  commentId: T:Virtufin.Base.AssetIdentifier
   parent: Virtufin.Base
-  href: Virtufin.Base.Position.html
-  name: Position
-  nameWithType: Position
-  fullName: Virtufin.Base.Position
+  href: Virtufin.Base.AssetIdentifier.html
+  name: AssetIdentifier
+  nameWithType: AssetIdentifier
+  fullName: Virtufin.Base.AssetIdentifier
+- uid: Virtufin.Base.Position{Virtufin.Core.Position.DecimalAmount}
+  commentId: T:Virtufin.Base.Position{Virtufin.Core.Position.DecimalAmount}
+  parent: Virtufin.Base
+  definition: Virtufin.Base.Position`1
+  href: Virtufin.Base.Position-1.html
+  name: Position<DecimalAmount>
+  nameWithType: Position<DecimalAmount>
+  fullName: Virtufin.Base.Position<Virtufin.Core.Position.DecimalAmount>
+  nameWithType.vb: Position(Of DecimalAmount)
+  fullName.vb: Virtufin.Base.Position(Of Virtufin.Core.Position.DecimalAmount)
+  name.vb: Position(Of DecimalAmount)
+  spec.csharp:
+  - uid: Virtufin.Base.Position`1
+    name: Position
+    href: Virtufin.Base.Position-1.html
+  - name: <
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.Position`1
+    name: Position
+    href: Virtufin.Base.Position-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Position.DecimalAmount
+    name: DecimalAmount
+    href: Virtufin.Core.Position.DecimalAmount.html
+  - name: )
+- uid: '{A}'
+  commentId: '!:A'
+  definition: A
+  name: A
+  nameWithType: A
+  fullName: A
+- uid: Virtufin.Base.Position{{A}}
+  commentId: T:Virtufin.Base.Position{``0}
+  parent: Virtufin.Base
+  definition: Virtufin.Base.Position`1
+  href: Virtufin.Base.Position-1.html
+  name: Position<A>
+  nameWithType: Position<A>
+  fullName: Virtufin.Base.Position<A>
+  nameWithType.vb: Position(Of A)
+  fullName.vb: Virtufin.Base.Position(Of A)
+  name.vb: Position(Of A)
+  spec.csharp:
+  - uid: Virtufin.Base.Position`1
+    name: Position
+    href: Virtufin.Base.Position-1.html
+  - name: <
+  - name: A
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.Position`1
+    name: Position
+    href: Virtufin.Base.Position-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: )
+- uid: A
+  name: A
+  nameWithType: A
+  fullName: A

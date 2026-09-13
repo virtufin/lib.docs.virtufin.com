@@ -35,7 +35,7 @@ items:
     content: public interface IMessageGenerator
     content.vb: Public Interface IMessageGenerator
   derivedClasses:
-  - Virtufin.Base.PositionTransferContractMessageGenerator
+  - Virtufin.Base.PositionTransferContractMessageGenerator`1
 - uid: Virtufin.Core.Contracts.IMessageGenerator.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp,Virtufin.Core.Contracts.IScenarioHistory)
   commentId: M:Virtufin.Core.Contracts.IMessageGenerator.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp,Virtufin.Core.Contracts.IScenarioHistory)
   id: GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp,Virtufin.Core.Contracts.IScenarioHistory)

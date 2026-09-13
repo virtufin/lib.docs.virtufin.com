@@ -753,7 +753,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: SetState
     path: ../../../src/Virtufin.Base/OrderBooks/L2OrderBook.cs
-    startLine: 125
+    startLine: 128
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.OrderBooks
@@ -789,7 +789,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: SetLastUpdateId
     path: ../../../src/Virtufin.Base/OrderBooks/L2OrderBook.cs
-    startLine: 128
+    startLine: 131
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.OrderBooks
@@ -826,7 +826,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: SetAppliedRange
     path: ../../../src/Virtufin.Base/OrderBooks/L2OrderBook.cs
-    startLine: 131
+    startLine: 134
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.OrderBooks
@@ -866,7 +866,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: ResetAppliedRange
     path: ../../../src/Virtufin.Base/OrderBooks/L2OrderBook.cs
-    startLine: 138
+    startLine: 141
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.OrderBooks

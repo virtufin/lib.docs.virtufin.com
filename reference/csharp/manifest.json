@@ -1488,6 +1488,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.Position-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.Position-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.Position<A>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Position-1.yml\" sourcestartlinenumber=\"1\">A holding: an amount of some <xref href=\"Virtufin.Base.Position%601.AssetIdentifier\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Base.Position.yml",
       "output": {
         ".html": {
@@ -1498,49 +1512,35 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Base.Position",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Position.yml\" sourcestartlinenumber=\"1\">A holding: a <xref href=\"Virtufin.Base.PositionSize\" data-throw-if-not-resolved=\"false\"></xref> in some <xref href=\"Virtufin.Base.Position.AssetIdentifier\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Position.yml\" sourcestartlinenumber=\"1\">Factory helpers for <xref href=\"Virtufin.Base.Position%601\" data-throw-if-not-resolved=\"false\"></xref> at the default amount type.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.PositionSize.yml",
+      "source_relative_path": "api/Virtufin.Base.PositionTransferContract-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.PositionSize.html"
+          "relative_path": "api/Virtufin.Base.PositionTransferContract-1.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.PositionSize",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.PositionSize.yml\" sourcestartlinenumber=\"1\">A position size expressed as a rational <code>Quote × Multiplier / Divisor</code>\nso positions in different units (e.g. lots vs. shares) can be combined\nwithout losing precision.</p>\n"
+      "Title": "Virtufin.Base.PositionTransferContract<A>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.PositionTransferContract-1.yml\" sourcestartlinenumber=\"1\">A contract that transfers a <xref href=\"Virtufin.Base.Position%601\" data-throw-if-not-resolved=\"false\"></xref> from one\n<xref href=\"Virtufin.Base.Signatory\" data-throw-if-not-resolved=\"false\"></xref> to another at a fixed <xref href=\"Virtufin.Base.TimeStamp\" data-throw-if-not-resolved=\"false\"></xref>\n(its maturity).</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.PositionTransferContract.yml",
+      "source_relative_path": "api/Virtufin.Base.PositionTransferContractMessageGenerator-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.PositionTransferContract.html"
+          "relative_path": "api/Virtufin.Base.PositionTransferContractMessageGenerator-1.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.PositionTransferContract",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.PositionTransferContract.yml\" sourcestartlinenumber=\"1\">A contract that transfers a <xref href=\"Virtufin.Base.PositionTransferContract.Position\" data-throw-if-not-resolved=\"false\"></xref> from one\n<xref href=\"Virtufin.Base.Signatory\" data-throw-if-not-resolved=\"false\"></xref> to another at a fixed <xref href=\"Virtufin.Base.TimeStamp\" data-throw-if-not-resolved=\"false\"></xref>\n(its maturity).</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.PositionTransferContractMessageGenerator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Virtufin.Base.PositionTransferContractMessageGenerator.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Virtufin.Base.PositionTransferContractMessageGenerator",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.PositionTransferContractMessageGenerator.yml\" sourcestartlinenumber=\"1\">Emits a single <xref href=\"Virtufin.Base.Transaction.Transfer\" data-throw-if-not-resolved=\"false\"></xref> wrapped in a\n<xref href=\"Virtufin.Base.Message\" data-throw-if-not-resolved=\"false\"></xref> at the contract's maturity. Before or after the\nmaturity nothing is emitted.</p>\n"
+      "Title": "Virtufin.Base.PositionTransferContractMessageGenerator<A>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.PositionTransferContractMessageGenerator-1.yml\" sourcestartlinenumber=\"1\">Emits a single Transaction.Transfer wrapped in a\n<xref href=\"Virtufin.Base.Message\" data-throw-if-not-resolved=\"false\"></xref> at the contract's maturity. Before or after the\nmaturity nothing is emitted.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1726,17 +1726,17 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Transaction.Transfer.yml",
+      "source_relative_path": "api/Virtufin.Base.Transaction.Transfer-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Base.Transaction.Transfer.html"
+          "relative_path": "api/Virtufin.Base.Transaction.Transfer-1.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Base.Transaction.Transfer",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Transaction.Transfer.yml\" sourcestartlinenumber=\"1\">Transfer a position between two parties, authorised by a contract.</p>\n"
+      "Title": "Virtufin.Base.Transaction.Transfer<A>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.Transaction.Transfer-1.yml\" sourcestartlinenumber=\"1\">Transfer a position between two parties, authorised by a contract.</p>\n"
     },
     {
       "type": "ManagedReference",

@@ -9900,38 +9900,6 @@ references:
   commentId: T:Virtufin.Base.Position
   fullName: Virtufin.Base.Position
   nameWithType: Position
-- uid: Virtufin.Base.Position.#ctor(Virtufin.Base.PositionSize,Virtufin.Base.AssetIdentifier)
-  name: Position(PositionSize, AssetIdentifier)
-  href: api/Virtufin.Base.Position.html#Virtufin_Base_Position__ctor_Virtufin_Base_PositionSize_Virtufin_Base_AssetIdentifier_
-  commentId: M:Virtufin.Base.Position.#ctor(Virtufin.Base.PositionSize,Virtufin.Base.AssetIdentifier)
-  name.vb: New(PositionSize, AssetIdentifier)
-  fullName: Virtufin.Base.Position.Position(Virtufin.Base.PositionSize, Virtufin.Base.AssetIdentifier)
-  fullName.vb: Virtufin.Base.Position.New(Virtufin.Base.PositionSize, Virtufin.Base.AssetIdentifier)
-  nameWithType: Position.Position(PositionSize, AssetIdentifier)
-  nameWithType.vb: Position.New(PositionSize, AssetIdentifier)
-- uid: Virtufin.Base.Position.#ctor*
-  name: Position
-  href: api/Virtufin.Base.Position.html#Virtufin_Base_Position__ctor_
-  commentId: Overload:Virtufin.Base.Position.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Virtufin.Base.Position.Position
-  fullName.vb: Virtufin.Base.Position.New
-  nameWithType: Position.Position
-  nameWithType.vb: Position.New
-- uid: Virtufin.Base.Position.AssetIdentifier
-  name: AssetIdentifier
-  href: api/Virtufin.Base.Position.html#Virtufin_Base_Position_AssetIdentifier
-  commentId: P:Virtufin.Base.Position.AssetIdentifier
-  fullName: Virtufin.Base.Position.AssetIdentifier
-  nameWithType: Position.AssetIdentifier
-- uid: Virtufin.Base.Position.AssetIdentifier*
-  name: AssetIdentifier
-  href: api/Virtufin.Base.Position.html#Virtufin_Base_Position_AssetIdentifier_
-  commentId: Overload:Virtufin.Base.Position.AssetIdentifier
-  isSpec: "True"
-  fullName: Virtufin.Base.Position.AssetIdentifier
-  nameWithType: Position.AssetIdentifier
 - uid: Virtufin.Base.Position.Of(System.Int64,Virtufin.Base.AssetIdentifier)
   name: Of(long, AssetIdentifier)
   href: api/Virtufin.Base.Position.html#Virtufin_Base_Position_Of_System_Int64_Virtufin_Base_AssetIdentifier_
@@ -9948,311 +9916,305 @@ references:
   isSpec: "True"
   fullName: Virtufin.Base.Position.Of
   nameWithType: Position.Of
-- uid: Virtufin.Base.Position.Size
-  name: Size
-  href: api/Virtufin.Base.Position.html#Virtufin_Base_Position_Size
-  commentId: P:Virtufin.Base.Position.Size
-  fullName: Virtufin.Base.Position.Size
-  nameWithType: Position.Size
-- uid: Virtufin.Base.Position.Size*
-  name: Size
-  href: api/Virtufin.Base.Position.html#Virtufin_Base_Position_Size_
-  commentId: Overload:Virtufin.Base.Position.Size
-  isSpec: "True"
-  fullName: Virtufin.Base.Position.Size
-  nameWithType: Position.Size
-- uid: Virtufin.Base.PositionSize
-  name: PositionSize
-  href: api/Virtufin.Base.PositionSize.html
-  commentId: T:Virtufin.Base.PositionSize
-  fullName: Virtufin.Base.PositionSize
-  nameWithType: PositionSize
-- uid: Virtufin.Base.PositionSize.#ctor(System.Int64,System.UInt64,System.UInt64)
-  name: PositionSize(long, ulong, ulong)
-  href: api/Virtufin.Base.PositionSize.html#Virtufin_Base_PositionSize__ctor_System_Int64_System_UInt64_System_UInt64_
-  commentId: M:Virtufin.Base.PositionSize.#ctor(System.Int64,System.UInt64,System.UInt64)
-  name.vb: New(Long, ULong, ULong)
-  fullName: Virtufin.Base.PositionSize.PositionSize(long, ulong, ulong)
-  fullName.vb: Virtufin.Base.PositionSize.New(Long, ULong, ULong)
-  nameWithType: PositionSize.PositionSize(long, ulong, ulong)
-  nameWithType.vb: PositionSize.New(Long, ULong, ULong)
-- uid: Virtufin.Base.PositionSize.#ctor*
-  name: PositionSize
-  href: api/Virtufin.Base.PositionSize.html#Virtufin_Base_PositionSize__ctor_
-  commentId: Overload:Virtufin.Base.PositionSize.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Virtufin.Base.PositionSize.PositionSize
-  fullName.vb: Virtufin.Base.PositionSize.New
-  nameWithType: PositionSize.PositionSize
-  nameWithType.vb: PositionSize.New
-- uid: Virtufin.Base.PositionSize.Add(Virtufin.Base.PositionSize)
-  name: Add(PositionSize)
-  href: api/Virtufin.Base.PositionSize.html#Virtufin_Base_PositionSize_Add_Virtufin_Base_PositionSize_
-  commentId: M:Virtufin.Base.PositionSize.Add(Virtufin.Base.PositionSize)
-  fullName: Virtufin.Base.PositionSize.Add(Virtufin.Base.PositionSize)
-  nameWithType: PositionSize.Add(PositionSize)
-- uid: Virtufin.Base.PositionSize.Add*
-  name: Add
-  href: api/Virtufin.Base.PositionSize.html#Virtufin_Base_PositionSize_Add_
-  commentId: Overload:Virtufin.Base.PositionSize.Add
-  isSpec: "True"
-  fullName: Virtufin.Base.PositionSize.Add
-  nameWithType: PositionSize.Add
-- uid: Virtufin.Base.PositionSize.Divisor
-  name: Divisor
-  href: api/Virtufin.Base.PositionSize.html#Virtufin_Base_PositionSize_Divisor
-  commentId: P:Virtufin.Base.PositionSize.Divisor
-  fullName: Virtufin.Base.PositionSize.Divisor
-  nameWithType: PositionSize.Divisor
-- uid: Virtufin.Base.PositionSize.Divisor*
-  name: Divisor
-  href: api/Virtufin.Base.PositionSize.html#Virtufin_Base_PositionSize_Divisor_
-  commentId: Overload:Virtufin.Base.PositionSize.Divisor
-  isSpec: "True"
-  fullName: Virtufin.Base.PositionSize.Divisor
-  nameWithType: PositionSize.Divisor
-- uid: Virtufin.Base.PositionSize.Multiplier
-  name: Multiplier
-  href: api/Virtufin.Base.PositionSize.html#Virtufin_Base_PositionSize_Multiplier
-  commentId: P:Virtufin.Base.PositionSize.Multiplier
-  fullName: Virtufin.Base.PositionSize.Multiplier
-  nameWithType: PositionSize.Multiplier
-- uid: Virtufin.Base.PositionSize.Multiplier*
-  name: Multiplier
-  href: api/Virtufin.Base.PositionSize.html#Virtufin_Base_PositionSize_Multiplier_
-  commentId: Overload:Virtufin.Base.PositionSize.Multiplier
-  isSpec: "True"
-  fullName: Virtufin.Base.PositionSize.Multiplier
-  nameWithType: PositionSize.Multiplier
-- uid: Virtufin.Base.PositionSize.Of(System.Int64)
-  name: Of(long)
-  href: api/Virtufin.Base.PositionSize.html#Virtufin_Base_PositionSize_Of_System_Int64_
-  commentId: M:Virtufin.Base.PositionSize.Of(System.Int64)
-  name.vb: Of(Long)
-  fullName: Virtufin.Base.PositionSize.Of(long)
-  fullName.vb: Virtufin.Base.PositionSize.Of(Long)
-  nameWithType: PositionSize.Of(long)
-  nameWithType.vb: PositionSize.Of(Long)
-- uid: Virtufin.Base.PositionSize.Of*
-  name: Of
-  href: api/Virtufin.Base.PositionSize.html#Virtufin_Base_PositionSize_Of_
-  commentId: Overload:Virtufin.Base.PositionSize.Of
-  isSpec: "True"
-  fullName: Virtufin.Base.PositionSize.Of
-  nameWithType: PositionSize.Of
-- uid: Virtufin.Base.PositionSize.Quote
-  name: Quote
-  href: api/Virtufin.Base.PositionSize.html#Virtufin_Base_PositionSize_Quote
-  commentId: P:Virtufin.Base.PositionSize.Quote
-  fullName: Virtufin.Base.PositionSize.Quote
-  nameWithType: PositionSize.Quote
-- uid: Virtufin.Base.PositionSize.Quote*
-  name: Quote
-  href: api/Virtufin.Base.PositionSize.html#Virtufin_Base_PositionSize_Quote_
-  commentId: Overload:Virtufin.Base.PositionSize.Quote
-  isSpec: "True"
-  fullName: Virtufin.Base.PositionSize.Quote
-  nameWithType: PositionSize.Quote
-- uid: Virtufin.Base.PositionSize.Value
-  name: Value
-  href: api/Virtufin.Base.PositionSize.html#Virtufin_Base_PositionSize_Value
-  commentId: P:Virtufin.Base.PositionSize.Value
-  fullName: Virtufin.Base.PositionSize.Value
-  nameWithType: PositionSize.Value
-- uid: Virtufin.Base.PositionSize.Value*
-  name: Value
-  href: api/Virtufin.Base.PositionSize.html#Virtufin_Base_PositionSize_Value_
-  commentId: Overload:Virtufin.Base.PositionSize.Value
-  isSpec: "True"
-  fullName: Virtufin.Base.PositionSize.Value
-  nameWithType: PositionSize.Value
-- uid: Virtufin.Base.PositionTransferContract
-  name: PositionTransferContract
-  href: api/Virtufin.Base.PositionTransferContract.html
-  commentId: T:Virtufin.Base.PositionTransferContract
-  fullName: Virtufin.Base.PositionTransferContract
-  nameWithType: PositionTransferContract
-- uid: Virtufin.Base.PositionTransferContract.#ctor(Virtufin.Base.Position,Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.TimeStamp,Virtufin.Base.ContractIdentifier)
-  name: PositionTransferContract(Position, Signatory, Signatory, TimeStamp, ContractIdentifier)
-  href: api/Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract__ctor_Virtufin_Base_Position_Virtufin_Base_Signatory_Virtufin_Base_Signatory_Virtufin_Base_TimeStamp_Virtufin_Base_ContractIdentifier_
-  commentId: M:Virtufin.Base.PositionTransferContract.#ctor(Virtufin.Base.Position,Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.TimeStamp,Virtufin.Base.ContractIdentifier)
-  name.vb: New(Position, Signatory, Signatory, TimeStamp, ContractIdentifier)
-  fullName: Virtufin.Base.PositionTransferContract.PositionTransferContract(Virtufin.Base.Position, Virtufin.Base.Signatory, Virtufin.Base.Signatory, Virtufin.Base.TimeStamp, Virtufin.Base.ContractIdentifier)
-  fullName.vb: Virtufin.Base.PositionTransferContract.New(Virtufin.Base.Position, Virtufin.Base.Signatory, Virtufin.Base.Signatory, Virtufin.Base.TimeStamp, Virtufin.Base.ContractIdentifier)
-  nameWithType: PositionTransferContract.PositionTransferContract(Position, Signatory, Signatory, TimeStamp, ContractIdentifier)
-  nameWithType.vb: PositionTransferContract.New(Position, Signatory, Signatory, TimeStamp, ContractIdentifier)
-- uid: Virtufin.Base.PositionTransferContract.#ctor*
-  name: PositionTransferContract
-  href: api/Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract__ctor_
-  commentId: Overload:Virtufin.Base.PositionTransferContract.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Virtufin.Base.PositionTransferContract.PositionTransferContract
-  fullName.vb: Virtufin.Base.PositionTransferContract.New
-  nameWithType: PositionTransferContract.PositionTransferContract
-  nameWithType.vb: PositionTransferContract.New
-- uid: Virtufin.Base.PositionTransferContract.At
-  name: At
-  href: api/Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract_At
-  commentId: P:Virtufin.Base.PositionTransferContract.At
-  fullName: Virtufin.Base.PositionTransferContract.At
-  nameWithType: PositionTransferContract.At
-- uid: Virtufin.Base.PositionTransferContract.At*
-  name: At
-  href: api/Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract_At_
-  commentId: Overload:Virtufin.Base.PositionTransferContract.At
-  isSpec: "True"
-  fullName: Virtufin.Base.PositionTransferContract.At
-  nameWithType: PositionTransferContract.At
-- uid: Virtufin.Base.PositionTransferContract.Equals(Virtufin.Core.Contracts.IContract)
-  name: Equals(IContract?)
-  href: api/Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract_Equals_Virtufin_Core_Contracts_IContract_
-  commentId: M:Virtufin.Base.PositionTransferContract.Equals(Virtufin.Core.Contracts.IContract)
-  name.vb: Equals(IContract)
-  fullName: Virtufin.Base.PositionTransferContract.Equals(Virtufin.Core.Contracts.IContract?)
-  fullName.vb: Virtufin.Base.PositionTransferContract.Equals(Virtufin.Core.Contracts.IContract)
-  nameWithType: PositionTransferContract.Equals(IContract?)
-  nameWithType.vb: PositionTransferContract.Equals(IContract)
-- uid: Virtufin.Base.PositionTransferContract.Equals*
-  name: Equals
-  href: api/Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract_Equals_
-  commentId: Overload:Virtufin.Base.PositionTransferContract.Equals
-  isSpec: "True"
-  fullName: Virtufin.Base.PositionTransferContract.Equals
-  nameWithType: PositionTransferContract.Equals
-- uid: Virtufin.Base.PositionTransferContract.From
-  name: From
-  href: api/Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract_From
-  commentId: P:Virtufin.Base.PositionTransferContract.From
-  fullName: Virtufin.Base.PositionTransferContract.From
-  nameWithType: PositionTransferContract.From
-- uid: Virtufin.Base.PositionTransferContract.From*
-  name: From
-  href: api/Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract_From_
-  commentId: Overload:Virtufin.Base.PositionTransferContract.From
-  isSpec: "True"
-  fullName: Virtufin.Base.PositionTransferContract.From
-  nameWithType: PositionTransferContract.From
-- uid: Virtufin.Base.PositionTransferContract.Id
-  name: Id
-  href: api/Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract_Id
-  commentId: P:Virtufin.Base.PositionTransferContract.Id
-  fullName: Virtufin.Base.PositionTransferContract.Id
-  nameWithType: PositionTransferContract.Id
-- uid: Virtufin.Base.PositionTransferContract.Id*
-  name: Id
-  href: api/Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract_Id_
-  commentId: Overload:Virtufin.Base.PositionTransferContract.Id
-  isSpec: "True"
-  fullName: Virtufin.Base.PositionTransferContract.Id
-  nameWithType: PositionTransferContract.Id
-- uid: Virtufin.Base.PositionTransferContract.IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)
-  name: IsRelatedTransaction(ITransaction)
-  href: api/Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract_IsRelatedTransaction_Virtufin_Core_Contracts_ITransaction_
-  commentId: M:Virtufin.Base.PositionTransferContract.IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)
-  fullName: Virtufin.Base.PositionTransferContract.IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)
-  nameWithType: PositionTransferContract.IsRelatedTransaction(ITransaction)
-- uid: Virtufin.Base.PositionTransferContract.IsRelatedTransaction*
-  name: IsRelatedTransaction
-  href: api/Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract_IsRelatedTransaction_
-  commentId: Overload:Virtufin.Base.PositionTransferContract.IsRelatedTransaction
-  isSpec: "True"
-  fullName: Virtufin.Base.PositionTransferContract.IsRelatedTransaction
-  nameWithType: PositionTransferContract.IsRelatedTransaction
-- uid: Virtufin.Base.PositionTransferContract.Position
-  name: Position
-  href: api/Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract_Position
-  commentId: P:Virtufin.Base.PositionTransferContract.Position
-  fullName: Virtufin.Base.PositionTransferContract.Position
-  nameWithType: PositionTransferContract.Position
-- uid: Virtufin.Base.PositionTransferContract.Position*
-  name: Position
-  href: api/Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract_Position_
-  commentId: Overload:Virtufin.Base.PositionTransferContract.Position
-  isSpec: "True"
-  fullName: Virtufin.Base.PositionTransferContract.Position
-  nameWithType: PositionTransferContract.Position
-- uid: Virtufin.Base.PositionTransferContract.To
-  name: To
-  href: api/Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract_To
-  commentId: P:Virtufin.Base.PositionTransferContract.To
-  fullName: Virtufin.Base.PositionTransferContract.To
-  nameWithType: PositionTransferContract.To
-- uid: Virtufin.Base.PositionTransferContract.To*
-  name: To
-  href: api/Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract_To_
-  commentId: Overload:Virtufin.Base.PositionTransferContract.To
-  isSpec: "True"
-  fullName: Virtufin.Base.PositionTransferContract.To
-  nameWithType: PositionTransferContract.To
-- uid: Virtufin.Base.PositionTransferContract.VerifyMessages(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage},Virtufin.Core.Contracts.IScenarioHistory)
-  name: VerifyMessages(IEnumerable<IMessage>, IScenarioHistory)
-  href: api/Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract_VerifyMessages_System_Collections_Generic_IEnumerable_Virtufin_Core_Contracts_IMessage__Virtufin_Core_Contracts_IScenarioHistory_
-  commentId: M:Virtufin.Base.PositionTransferContract.VerifyMessages(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage},Virtufin.Core.Contracts.IScenarioHistory)
-  name.vb: VerifyMessages(IEnumerable(Of IMessage), IScenarioHistory)
-  fullName: Virtufin.Base.PositionTransferContract.VerifyMessages(System.Collections.Generic.IEnumerable<Virtufin.Core.Contracts.IMessage>, Virtufin.Core.Contracts.IScenarioHistory)
-  fullName.vb: Virtufin.Base.PositionTransferContract.VerifyMessages(System.Collections.Generic.IEnumerable(Of Virtufin.Core.Contracts.IMessage), Virtufin.Core.Contracts.IScenarioHistory)
-  nameWithType: PositionTransferContract.VerifyMessages(IEnumerable<IMessage>, IScenarioHistory)
-  nameWithType.vb: PositionTransferContract.VerifyMessages(IEnumerable(Of IMessage), IScenarioHistory)
-- uid: Virtufin.Base.PositionTransferContract.VerifyMessages*
-  name: VerifyMessages
-  href: api/Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract_VerifyMessages_
-  commentId: Overload:Virtufin.Base.PositionTransferContract.VerifyMessages
-  isSpec: "True"
-  fullName: Virtufin.Base.PositionTransferContract.VerifyMessages
-  nameWithType: PositionTransferContract.VerifyMessages
-- uid: Virtufin.Base.PositionTransferContractMessageGenerator
+- uid: Virtufin.Base.Position.Of``1(``0,Virtufin.Base.AssetIdentifier)
+  name: Of<A>(A, AssetIdentifier)
+  href: api/Virtufin.Base.Position.html#Virtufin_Base_Position_Of__1___0_Virtufin_Base_AssetIdentifier_
+  commentId: M:Virtufin.Base.Position.Of``1(``0,Virtufin.Base.AssetIdentifier)
+  name.vb: Of(Of A)(A, AssetIdentifier)
+  fullName: Virtufin.Base.Position.Of<A>(A, Virtufin.Base.AssetIdentifier)
+  fullName.vb: Virtufin.Base.Position.Of(Of A)(A, Virtufin.Base.AssetIdentifier)
+  nameWithType: Position.Of<A>(A, AssetIdentifier)
+  nameWithType.vb: Position.Of(Of A)(A, AssetIdentifier)
+- uid: Virtufin.Base.PositionTransferContractMessageGenerator`1
+  name: PositionTransferContractMessageGenerator<A>
+  href: api/Virtufin.Base.PositionTransferContractMessageGenerator-1.html
+  commentId: T:Virtufin.Base.PositionTransferContractMessageGenerator`1
+  name.vb: PositionTransferContractMessageGenerator(Of A)
+  fullName: Virtufin.Base.PositionTransferContractMessageGenerator<A>
+  fullName.vb: Virtufin.Base.PositionTransferContractMessageGenerator(Of A)
+  nameWithType: PositionTransferContractMessageGenerator<A>
+  nameWithType.vb: PositionTransferContractMessageGenerator(Of A)
+- uid: Virtufin.Base.PositionTransferContractMessageGenerator`1.#ctor(Virtufin.Base.PositionTransferContract{`0})
+  name: PositionTransferContractMessageGenerator(PositionTransferContract<A>)
+  href: api/Virtufin.Base.PositionTransferContractMessageGenerator-1.html#Virtufin_Base_PositionTransferContractMessageGenerator_1__ctor_Virtufin_Base_PositionTransferContract__0__
+  commentId: M:Virtufin.Base.PositionTransferContractMessageGenerator`1.#ctor(Virtufin.Base.PositionTransferContract{`0})
+  name.vb: New(PositionTransferContract(Of A))
+  fullName: Virtufin.Base.PositionTransferContractMessageGenerator<A>.PositionTransferContractMessageGenerator(Virtufin.Base.PositionTransferContract<A>)
+  fullName.vb: Virtufin.Base.PositionTransferContractMessageGenerator(Of A).New(Virtufin.Base.PositionTransferContract(Of A))
+  nameWithType: PositionTransferContractMessageGenerator<A>.PositionTransferContractMessageGenerator(PositionTransferContract<A>)
+  nameWithType.vb: PositionTransferContractMessageGenerator(Of A).New(PositionTransferContract(Of A))
+- uid: Virtufin.Base.PositionTransferContractMessageGenerator`1.#ctor*
   name: PositionTransferContractMessageGenerator
-  href: api/Virtufin.Base.PositionTransferContractMessageGenerator.html
-  commentId: T:Virtufin.Base.PositionTransferContractMessageGenerator
-  fullName: Virtufin.Base.PositionTransferContractMessageGenerator
-  nameWithType: PositionTransferContractMessageGenerator
-- uid: Virtufin.Base.PositionTransferContractMessageGenerator.#ctor(Virtufin.Base.PositionTransferContract)
-  name: PositionTransferContractMessageGenerator(PositionTransferContract)
-  href: api/Virtufin.Base.PositionTransferContractMessageGenerator.html#Virtufin_Base_PositionTransferContractMessageGenerator__ctor_Virtufin_Base_PositionTransferContract_
-  commentId: M:Virtufin.Base.PositionTransferContractMessageGenerator.#ctor(Virtufin.Base.PositionTransferContract)
-  name.vb: New(PositionTransferContract)
-  fullName: Virtufin.Base.PositionTransferContractMessageGenerator.PositionTransferContractMessageGenerator(Virtufin.Base.PositionTransferContract)
-  fullName.vb: Virtufin.Base.PositionTransferContractMessageGenerator.New(Virtufin.Base.PositionTransferContract)
-  nameWithType: PositionTransferContractMessageGenerator.PositionTransferContractMessageGenerator(PositionTransferContract)
-  nameWithType.vb: PositionTransferContractMessageGenerator.New(PositionTransferContract)
-- uid: Virtufin.Base.PositionTransferContractMessageGenerator.#ctor*
-  name: PositionTransferContractMessageGenerator
-  href: api/Virtufin.Base.PositionTransferContractMessageGenerator.html#Virtufin_Base_PositionTransferContractMessageGenerator__ctor_
-  commentId: Overload:Virtufin.Base.PositionTransferContractMessageGenerator.#ctor
+  href: api/Virtufin.Base.PositionTransferContractMessageGenerator-1.html#Virtufin_Base_PositionTransferContractMessageGenerator_1__ctor_
+  commentId: Overload:Virtufin.Base.PositionTransferContractMessageGenerator`1.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: Virtufin.Base.PositionTransferContractMessageGenerator.PositionTransferContractMessageGenerator
-  fullName.vb: Virtufin.Base.PositionTransferContractMessageGenerator.New
-  nameWithType: PositionTransferContractMessageGenerator.PositionTransferContractMessageGenerator
-  nameWithType.vb: PositionTransferContractMessageGenerator.New
-- uid: Virtufin.Base.PositionTransferContractMessageGenerator.Contract
+  fullName: Virtufin.Base.PositionTransferContractMessageGenerator<A>.PositionTransferContractMessageGenerator
+  fullName.vb: Virtufin.Base.PositionTransferContractMessageGenerator(Of A).New
+  nameWithType: PositionTransferContractMessageGenerator<A>.PositionTransferContractMessageGenerator
+  nameWithType.vb: PositionTransferContractMessageGenerator(Of A).New
+- uid: Virtufin.Base.PositionTransferContractMessageGenerator`1.Contract
   name: Contract
-  href: api/Virtufin.Base.PositionTransferContractMessageGenerator.html#Virtufin_Base_PositionTransferContractMessageGenerator_Contract
-  commentId: P:Virtufin.Base.PositionTransferContractMessageGenerator.Contract
-  fullName: Virtufin.Base.PositionTransferContractMessageGenerator.Contract
-  nameWithType: PositionTransferContractMessageGenerator.Contract
-- uid: Virtufin.Base.PositionTransferContractMessageGenerator.Contract*
+  href: api/Virtufin.Base.PositionTransferContractMessageGenerator-1.html#Virtufin_Base_PositionTransferContractMessageGenerator_1_Contract
+  commentId: P:Virtufin.Base.PositionTransferContractMessageGenerator`1.Contract
+  fullName: Virtufin.Base.PositionTransferContractMessageGenerator<A>.Contract
+  fullName.vb: Virtufin.Base.PositionTransferContractMessageGenerator(Of A).Contract
+  nameWithType: PositionTransferContractMessageGenerator<A>.Contract
+  nameWithType.vb: PositionTransferContractMessageGenerator(Of A).Contract
+- uid: Virtufin.Base.PositionTransferContractMessageGenerator`1.Contract*
   name: Contract
-  href: api/Virtufin.Base.PositionTransferContractMessageGenerator.html#Virtufin_Base_PositionTransferContractMessageGenerator_Contract_
-  commentId: Overload:Virtufin.Base.PositionTransferContractMessageGenerator.Contract
+  href: api/Virtufin.Base.PositionTransferContractMessageGenerator-1.html#Virtufin_Base_PositionTransferContractMessageGenerator_1_Contract_
+  commentId: Overload:Virtufin.Base.PositionTransferContractMessageGenerator`1.Contract
   isSpec: "True"
-  fullName: Virtufin.Base.PositionTransferContractMessageGenerator.Contract
-  nameWithType: PositionTransferContractMessageGenerator.Contract
-- uid: Virtufin.Base.PositionTransferContractMessageGenerator.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp,Virtufin.Core.Contracts.IScenarioHistory)
+  fullName: Virtufin.Base.PositionTransferContractMessageGenerator<A>.Contract
+  fullName.vb: Virtufin.Base.PositionTransferContractMessageGenerator(Of A).Contract
+  nameWithType: PositionTransferContractMessageGenerator<A>.Contract
+  nameWithType.vb: PositionTransferContractMessageGenerator(Of A).Contract
+- uid: Virtufin.Base.PositionTransferContractMessageGenerator`1.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp,Virtufin.Core.Contracts.IScenarioHistory)
   name: GenerateMessages(ITimeStamp, IScenarioHistory)
-  href: api/Virtufin.Base.PositionTransferContractMessageGenerator.html#Virtufin_Base_PositionTransferContractMessageGenerator_GenerateMessages_Virtufin_Core_Identifiers_ITimeStamp_Virtufin_Core_Contracts_IScenarioHistory_
-  commentId: M:Virtufin.Base.PositionTransferContractMessageGenerator.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp,Virtufin.Core.Contracts.IScenarioHistory)
-  fullName: Virtufin.Base.PositionTransferContractMessageGenerator.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp, Virtufin.Core.Contracts.IScenarioHistory)
-  nameWithType: PositionTransferContractMessageGenerator.GenerateMessages(ITimeStamp, IScenarioHistory)
-- uid: Virtufin.Base.PositionTransferContractMessageGenerator.GenerateMessages*
+  href: api/Virtufin.Base.PositionTransferContractMessageGenerator-1.html#Virtufin_Base_PositionTransferContractMessageGenerator_1_GenerateMessages_Virtufin_Core_Identifiers_ITimeStamp_Virtufin_Core_Contracts_IScenarioHistory_
+  commentId: M:Virtufin.Base.PositionTransferContractMessageGenerator`1.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp,Virtufin.Core.Contracts.IScenarioHistory)
+  fullName: Virtufin.Base.PositionTransferContractMessageGenerator<A>.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp, Virtufin.Core.Contracts.IScenarioHistory)
+  fullName.vb: Virtufin.Base.PositionTransferContractMessageGenerator(Of A).GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp, Virtufin.Core.Contracts.IScenarioHistory)
+  nameWithType: PositionTransferContractMessageGenerator<A>.GenerateMessages(ITimeStamp, IScenarioHistory)
+  nameWithType.vb: PositionTransferContractMessageGenerator(Of A).GenerateMessages(ITimeStamp, IScenarioHistory)
+- uid: Virtufin.Base.PositionTransferContractMessageGenerator`1.GenerateMessages*
   name: GenerateMessages
-  href: api/Virtufin.Base.PositionTransferContractMessageGenerator.html#Virtufin_Base_PositionTransferContractMessageGenerator_GenerateMessages_
-  commentId: Overload:Virtufin.Base.PositionTransferContractMessageGenerator.GenerateMessages
+  href: api/Virtufin.Base.PositionTransferContractMessageGenerator-1.html#Virtufin_Base_PositionTransferContractMessageGenerator_1_GenerateMessages_
+  commentId: Overload:Virtufin.Base.PositionTransferContractMessageGenerator`1.GenerateMessages
   isSpec: "True"
-  fullName: Virtufin.Base.PositionTransferContractMessageGenerator.GenerateMessages
-  nameWithType: PositionTransferContractMessageGenerator.GenerateMessages
+  fullName: Virtufin.Base.PositionTransferContractMessageGenerator<A>.GenerateMessages
+  fullName.vb: Virtufin.Base.PositionTransferContractMessageGenerator(Of A).GenerateMessages
+  nameWithType: PositionTransferContractMessageGenerator<A>.GenerateMessages
+  nameWithType.vb: PositionTransferContractMessageGenerator(Of A).GenerateMessages
+- uid: Virtufin.Base.PositionTransferContract`1
+  name: PositionTransferContract<A>
+  href: api/Virtufin.Base.PositionTransferContract-1.html
+  commentId: T:Virtufin.Base.PositionTransferContract`1
+  name.vb: PositionTransferContract(Of A)
+  fullName: Virtufin.Base.PositionTransferContract<A>
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A)
+  nameWithType: PositionTransferContract<A>
+  nameWithType.vb: PositionTransferContract(Of A)
+- uid: Virtufin.Base.PositionTransferContract`1.#ctor(Virtufin.Base.Position{`0},Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.TimeStamp,Virtufin.Base.ContractIdentifier)
+  name: PositionTransferContract(Position<A>, Signatory, Signatory, TimeStamp, ContractIdentifier)
+  href: api/Virtufin.Base.PositionTransferContract-1.html#Virtufin_Base_PositionTransferContract_1__ctor_Virtufin_Base_Position__0__Virtufin_Base_Signatory_Virtufin_Base_Signatory_Virtufin_Base_TimeStamp_Virtufin_Base_ContractIdentifier_
+  commentId: M:Virtufin.Base.PositionTransferContract`1.#ctor(Virtufin.Base.Position{`0},Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.TimeStamp,Virtufin.Base.ContractIdentifier)
+  name.vb: New(Position(Of A), Signatory, Signatory, TimeStamp, ContractIdentifier)
+  fullName: Virtufin.Base.PositionTransferContract<A>.PositionTransferContract(Virtufin.Base.Position<A>, Virtufin.Base.Signatory, Virtufin.Base.Signatory, Virtufin.Base.TimeStamp, Virtufin.Base.ContractIdentifier)
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).New(Virtufin.Base.Position(Of A), Virtufin.Base.Signatory, Virtufin.Base.Signatory, Virtufin.Base.TimeStamp, Virtufin.Base.ContractIdentifier)
+  nameWithType: PositionTransferContract<A>.PositionTransferContract(Position<A>, Signatory, Signatory, TimeStamp, ContractIdentifier)
+  nameWithType.vb: PositionTransferContract(Of A).New(Position(Of A), Signatory, Signatory, TimeStamp, ContractIdentifier)
+- uid: Virtufin.Base.PositionTransferContract`1.#ctor*
+  name: PositionTransferContract
+  href: api/Virtufin.Base.PositionTransferContract-1.html#Virtufin_Base_PositionTransferContract_1__ctor_
+  commentId: Overload:Virtufin.Base.PositionTransferContract`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Base.PositionTransferContract<A>.PositionTransferContract
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).New
+  nameWithType: PositionTransferContract<A>.PositionTransferContract
+  nameWithType.vb: PositionTransferContract(Of A).New
+- uid: Virtufin.Base.PositionTransferContract`1.At
+  name: At
+  href: api/Virtufin.Base.PositionTransferContract-1.html#Virtufin_Base_PositionTransferContract_1_At
+  commentId: P:Virtufin.Base.PositionTransferContract`1.At
+  fullName: Virtufin.Base.PositionTransferContract<A>.At
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).At
+  nameWithType: PositionTransferContract<A>.At
+  nameWithType.vb: PositionTransferContract(Of A).At
+- uid: Virtufin.Base.PositionTransferContract`1.At*
+  name: At
+  href: api/Virtufin.Base.PositionTransferContract-1.html#Virtufin_Base_PositionTransferContract_1_At_
+  commentId: Overload:Virtufin.Base.PositionTransferContract`1.At
+  isSpec: "True"
+  fullName: Virtufin.Base.PositionTransferContract<A>.At
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).At
+  nameWithType: PositionTransferContract<A>.At
+  nameWithType.vb: PositionTransferContract(Of A).At
+- uid: Virtufin.Base.PositionTransferContract`1.Equals(Virtufin.Core.Contracts.IContract)
+  name: Equals(IContract?)
+  href: api/Virtufin.Base.PositionTransferContract-1.html#Virtufin_Base_PositionTransferContract_1_Equals_Virtufin_Core_Contracts_IContract_
+  commentId: M:Virtufin.Base.PositionTransferContract`1.Equals(Virtufin.Core.Contracts.IContract)
+  name.vb: Equals(IContract)
+  fullName: Virtufin.Base.PositionTransferContract<A>.Equals(Virtufin.Core.Contracts.IContract?)
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).Equals(Virtufin.Core.Contracts.IContract)
+  nameWithType: PositionTransferContract<A>.Equals(IContract?)
+  nameWithType.vb: PositionTransferContract(Of A).Equals(IContract)
+- uid: Virtufin.Base.PositionTransferContract`1.Equals*
+  name: Equals
+  href: api/Virtufin.Base.PositionTransferContract-1.html#Virtufin_Base_PositionTransferContract_1_Equals_
+  commentId: Overload:Virtufin.Base.PositionTransferContract`1.Equals
+  isSpec: "True"
+  fullName: Virtufin.Base.PositionTransferContract<A>.Equals
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).Equals
+  nameWithType: PositionTransferContract<A>.Equals
+  nameWithType.vb: PositionTransferContract(Of A).Equals
+- uid: Virtufin.Base.PositionTransferContract`1.From
+  name: From
+  href: api/Virtufin.Base.PositionTransferContract-1.html#Virtufin_Base_PositionTransferContract_1_From
+  commentId: P:Virtufin.Base.PositionTransferContract`1.From
+  fullName: Virtufin.Base.PositionTransferContract<A>.From
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).From
+  nameWithType: PositionTransferContract<A>.From
+  nameWithType.vb: PositionTransferContract(Of A).From
+- uid: Virtufin.Base.PositionTransferContract`1.From*
+  name: From
+  href: api/Virtufin.Base.PositionTransferContract-1.html#Virtufin_Base_PositionTransferContract_1_From_
+  commentId: Overload:Virtufin.Base.PositionTransferContract`1.From
+  isSpec: "True"
+  fullName: Virtufin.Base.PositionTransferContract<A>.From
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).From
+  nameWithType: PositionTransferContract<A>.From
+  nameWithType.vb: PositionTransferContract(Of A).From
+- uid: Virtufin.Base.PositionTransferContract`1.Id
+  name: Id
+  href: api/Virtufin.Base.PositionTransferContract-1.html#Virtufin_Base_PositionTransferContract_1_Id
+  commentId: P:Virtufin.Base.PositionTransferContract`1.Id
+  fullName: Virtufin.Base.PositionTransferContract<A>.Id
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).Id
+  nameWithType: PositionTransferContract<A>.Id
+  nameWithType.vb: PositionTransferContract(Of A).Id
+- uid: Virtufin.Base.PositionTransferContract`1.Id*
+  name: Id
+  href: api/Virtufin.Base.PositionTransferContract-1.html#Virtufin_Base_PositionTransferContract_1_Id_
+  commentId: Overload:Virtufin.Base.PositionTransferContract`1.Id
+  isSpec: "True"
+  fullName: Virtufin.Base.PositionTransferContract<A>.Id
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).Id
+  nameWithType: PositionTransferContract<A>.Id
+  nameWithType.vb: PositionTransferContract(Of A).Id
+- uid: Virtufin.Base.PositionTransferContract`1.IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)
+  name: IsRelatedTransaction(ITransaction)
+  href: api/Virtufin.Base.PositionTransferContract-1.html#Virtufin_Base_PositionTransferContract_1_IsRelatedTransaction_Virtufin_Core_Contracts_ITransaction_
+  commentId: M:Virtufin.Base.PositionTransferContract`1.IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)
+  fullName: Virtufin.Base.PositionTransferContract<A>.IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)
+  nameWithType: PositionTransferContract<A>.IsRelatedTransaction(ITransaction)
+  nameWithType.vb: PositionTransferContract(Of A).IsRelatedTransaction(ITransaction)
+- uid: Virtufin.Base.PositionTransferContract`1.IsRelatedTransaction*
+  name: IsRelatedTransaction
+  href: api/Virtufin.Base.PositionTransferContract-1.html#Virtufin_Base_PositionTransferContract_1_IsRelatedTransaction_
+  commentId: Overload:Virtufin.Base.PositionTransferContract`1.IsRelatedTransaction
+  isSpec: "True"
+  fullName: Virtufin.Base.PositionTransferContract<A>.IsRelatedTransaction
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).IsRelatedTransaction
+  nameWithType: PositionTransferContract<A>.IsRelatedTransaction
+  nameWithType.vb: PositionTransferContract(Of A).IsRelatedTransaction
+- uid: Virtufin.Base.PositionTransferContract`1.Position
+  name: Position
+  href: api/Virtufin.Base.PositionTransferContract-1.html#Virtufin_Base_PositionTransferContract_1_Position
+  commentId: P:Virtufin.Base.PositionTransferContract`1.Position
+  fullName: Virtufin.Base.PositionTransferContract<A>.Position
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).Position
+  nameWithType: PositionTransferContract<A>.Position
+  nameWithType.vb: PositionTransferContract(Of A).Position
+- uid: Virtufin.Base.PositionTransferContract`1.Position*
+  name: Position
+  href: api/Virtufin.Base.PositionTransferContract-1.html#Virtufin_Base_PositionTransferContract_1_Position_
+  commentId: Overload:Virtufin.Base.PositionTransferContract`1.Position
+  isSpec: "True"
+  fullName: Virtufin.Base.PositionTransferContract<A>.Position
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).Position
+  nameWithType: PositionTransferContract<A>.Position
+  nameWithType.vb: PositionTransferContract(Of A).Position
+- uid: Virtufin.Base.PositionTransferContract`1.To
+  name: To
+  href: api/Virtufin.Base.PositionTransferContract-1.html#Virtufin_Base_PositionTransferContract_1_To
+  commentId: P:Virtufin.Base.PositionTransferContract`1.To
+  fullName: Virtufin.Base.PositionTransferContract<A>.To
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).To
+  nameWithType: PositionTransferContract<A>.To
+  nameWithType.vb: PositionTransferContract(Of A).To
+- uid: Virtufin.Base.PositionTransferContract`1.To*
+  name: To
+  href: api/Virtufin.Base.PositionTransferContract-1.html#Virtufin_Base_PositionTransferContract_1_To_
+  commentId: Overload:Virtufin.Base.PositionTransferContract`1.To
+  isSpec: "True"
+  fullName: Virtufin.Base.PositionTransferContract<A>.To
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).To
+  nameWithType: PositionTransferContract<A>.To
+  nameWithType.vb: PositionTransferContract(Of A).To
+- uid: Virtufin.Base.PositionTransferContract`1.VerifyMessages(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage},Virtufin.Core.Contracts.IScenarioHistory)
+  name: VerifyMessages(IEnumerable<IMessage>, IScenarioHistory)
+  href: api/Virtufin.Base.PositionTransferContract-1.html#Virtufin_Base_PositionTransferContract_1_VerifyMessages_System_Collections_Generic_IEnumerable_Virtufin_Core_Contracts_IMessage__Virtufin_Core_Contracts_IScenarioHistory_
+  commentId: M:Virtufin.Base.PositionTransferContract`1.VerifyMessages(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage},Virtufin.Core.Contracts.IScenarioHistory)
+  name.vb: VerifyMessages(IEnumerable(Of IMessage), IScenarioHistory)
+  fullName: Virtufin.Base.PositionTransferContract<A>.VerifyMessages(System.Collections.Generic.IEnumerable<Virtufin.Core.Contracts.IMessage>, Virtufin.Core.Contracts.IScenarioHistory)
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).VerifyMessages(System.Collections.Generic.IEnumerable(Of Virtufin.Core.Contracts.IMessage), Virtufin.Core.Contracts.IScenarioHistory)
+  nameWithType: PositionTransferContract<A>.VerifyMessages(IEnumerable<IMessage>, IScenarioHistory)
+  nameWithType.vb: PositionTransferContract(Of A).VerifyMessages(IEnumerable(Of IMessage), IScenarioHistory)
+- uid: Virtufin.Base.PositionTransferContract`1.VerifyMessages*
+  name: VerifyMessages
+  href: api/Virtufin.Base.PositionTransferContract-1.html#Virtufin_Base_PositionTransferContract_1_VerifyMessages_
+  commentId: Overload:Virtufin.Base.PositionTransferContract`1.VerifyMessages
+  isSpec: "True"
+  fullName: Virtufin.Base.PositionTransferContract<A>.VerifyMessages
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).VerifyMessages
+  nameWithType: PositionTransferContract<A>.VerifyMessages
+  nameWithType.vb: PositionTransferContract(Of A).VerifyMessages
+- uid: Virtufin.Base.Position`1
+  name: Position<A>
+  href: api/Virtufin.Base.Position-1.html
+  commentId: T:Virtufin.Base.Position`1
+  name.vb: Position(Of A)
+  fullName: Virtufin.Base.Position<A>
+  fullName.vb: Virtufin.Base.Position(Of A)
+  nameWithType: Position<A>
+  nameWithType.vb: Position(Of A)
+- uid: Virtufin.Base.Position`1.#ctor(`0,Virtufin.Base.AssetIdentifier)
+  name: Position(A, AssetIdentifier)
+  href: api/Virtufin.Base.Position-1.html#Virtufin_Base_Position_1__ctor__0_Virtufin_Base_AssetIdentifier_
+  commentId: M:Virtufin.Base.Position`1.#ctor(`0,Virtufin.Base.AssetIdentifier)
+  name.vb: New(A, AssetIdentifier)
+  fullName: Virtufin.Base.Position<A>.Position(A, Virtufin.Base.AssetIdentifier)
+  fullName.vb: Virtufin.Base.Position(Of A).New(A, Virtufin.Base.AssetIdentifier)
+  nameWithType: Position<A>.Position(A, AssetIdentifier)
+  nameWithType.vb: Position(Of A).New(A, AssetIdentifier)
+- uid: Virtufin.Base.Position`1.#ctor*
+  name: Position
+  href: api/Virtufin.Base.Position-1.html#Virtufin_Base_Position_1__ctor_
+  commentId: Overload:Virtufin.Base.Position`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Base.Position<A>.Position
+  fullName.vb: Virtufin.Base.Position(Of A).New
+  nameWithType: Position<A>.Position
+  nameWithType.vb: Position(Of A).New
+- uid: Virtufin.Base.Position`1.AssetIdentifier
+  name: AssetIdentifier
+  href: api/Virtufin.Base.Position-1.html#Virtufin_Base_Position_1_AssetIdentifier
+  commentId: P:Virtufin.Base.Position`1.AssetIdentifier
+  fullName: Virtufin.Base.Position<A>.AssetIdentifier
+  fullName.vb: Virtufin.Base.Position(Of A).AssetIdentifier
+  nameWithType: Position<A>.AssetIdentifier
+  nameWithType.vb: Position(Of A).AssetIdentifier
+- uid: Virtufin.Base.Position`1.AssetIdentifier*
+  name: AssetIdentifier
+  href: api/Virtufin.Base.Position-1.html#Virtufin_Base_Position_1_AssetIdentifier_
+  commentId: Overload:Virtufin.Base.Position`1.AssetIdentifier
+  isSpec: "True"
+  fullName: Virtufin.Base.Position<A>.AssetIdentifier
+  fullName.vb: Virtufin.Base.Position(Of A).AssetIdentifier
+  nameWithType: Position<A>.AssetIdentifier
+  nameWithType.vb: Position(Of A).AssetIdentifier
+- uid: Virtufin.Base.Position`1.Size
+  name: Size
+  href: api/Virtufin.Base.Position-1.html#Virtufin_Base_Position_1_Size
+  commentId: P:Virtufin.Base.Position`1.Size
+  fullName: Virtufin.Base.Position<A>.Size
+  fullName.vb: Virtufin.Base.Position(Of A).Size
+  nameWithType: Position<A>.Size
+  nameWithType.vb: Position(Of A).Size
+- uid: Virtufin.Base.Position`1.Size*
+  name: Size
+  href: api/Virtufin.Base.Position-1.html#Virtufin_Base_Position_1_Size_
+  commentId: Overload:Virtufin.Base.Position`1.Size
+  isSpec: "True"
+  fullName: Virtufin.Base.Position<A>.Size
+  fullName.vb: Virtufin.Base.Position(Of A).Size
+  nameWithType: Position<A>.Size
+  nameWithType.vb: Position(Of A).Size
 - uid: Virtufin.Base.Scenario
   name: Scenario
   href: api/Virtufin.Base.Scenario.html
@@ -11186,96 +11148,119 @@ references:
   isSpec: "True"
   fullName: Virtufin.Base.Transaction.RelatedContract
   nameWithType: Transaction.RelatedContract
-- uid: Virtufin.Base.Transaction.Transfer
-  name: Transaction.Transfer
-  href: api/Virtufin.Base.Transaction.Transfer.html
-  commentId: T:Virtufin.Base.Transaction.Transfer
-  fullName: Virtufin.Base.Transaction.Transfer
-  nameWithType: Transaction.Transfer
-- uid: Virtufin.Base.Transaction.Transfer.#ctor(Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.Position,Virtufin.Base.ContractIdentifier)
-  name: Transfer(Signatory, Signatory, Position, ContractIdentifier)
-  href: api/Virtufin.Base.Transaction.Transfer.html#Virtufin_Base_Transaction_Transfer__ctor_Virtufin_Base_Signatory_Virtufin_Base_Signatory_Virtufin_Base_Position_Virtufin_Base_ContractIdentifier_
-  commentId: M:Virtufin.Base.Transaction.Transfer.#ctor(Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.Position,Virtufin.Base.ContractIdentifier)
-  name.vb: New(Signatory, Signatory, Position, ContractIdentifier)
-  fullName: Virtufin.Base.Transaction.Transfer.Transfer(Virtufin.Base.Signatory, Virtufin.Base.Signatory, Virtufin.Base.Position, Virtufin.Base.ContractIdentifier)
-  fullName.vb: Virtufin.Base.Transaction.Transfer.New(Virtufin.Base.Signatory, Virtufin.Base.Signatory, Virtufin.Base.Position, Virtufin.Base.ContractIdentifier)
-  nameWithType: Transaction.Transfer.Transfer(Signatory, Signatory, Position, ContractIdentifier)
-  nameWithType.vb: Transaction.Transfer.New(Signatory, Signatory, Position, ContractIdentifier)
-- uid: Virtufin.Base.Transaction.Transfer.#ctor*
+- uid: Virtufin.Base.Transaction.Transfer`1
+  name: Transaction.Transfer<A>
+  href: api/Virtufin.Base.Transaction.Transfer-1.html
+  commentId: T:Virtufin.Base.Transaction.Transfer`1
+  name.vb: Transaction.Transfer(Of A)
+  fullName: Virtufin.Base.Transaction.Transfer<A>
+  fullName.vb: Virtufin.Base.Transaction.Transfer(Of A)
+  nameWithType: Transaction.Transfer<A>
+  nameWithType.vb: Transaction.Transfer(Of A)
+- uid: Virtufin.Base.Transaction.Transfer`1.#ctor(Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.Position{`0},Virtufin.Base.ContractIdentifier)
+  name: Transfer(Signatory, Signatory, Position<A>, ContractIdentifier)
+  href: api/Virtufin.Base.Transaction.Transfer-1.html#Virtufin_Base_Transaction_Transfer_1__ctor_Virtufin_Base_Signatory_Virtufin_Base_Signatory_Virtufin_Base_Position__0__Virtufin_Base_ContractIdentifier_
+  commentId: M:Virtufin.Base.Transaction.Transfer`1.#ctor(Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.Position{`0},Virtufin.Base.ContractIdentifier)
+  name.vb: New(Signatory, Signatory, Position(Of A), ContractIdentifier)
+  fullName: Virtufin.Base.Transaction.Transfer<A>.Transfer(Virtufin.Base.Signatory, Virtufin.Base.Signatory, Virtufin.Base.Position<A>, Virtufin.Base.ContractIdentifier)
+  fullName.vb: Virtufin.Base.Transaction.Transfer(Of A).New(Virtufin.Base.Signatory, Virtufin.Base.Signatory, Virtufin.Base.Position(Of A), Virtufin.Base.ContractIdentifier)
+  nameWithType: Transaction.Transfer<A>.Transfer(Signatory, Signatory, Position<A>, ContractIdentifier)
+  nameWithType.vb: Transaction.Transfer(Of A).New(Signatory, Signatory, Position(Of A), ContractIdentifier)
+- uid: Virtufin.Base.Transaction.Transfer`1.#ctor*
   name: Transfer
-  href: api/Virtufin.Base.Transaction.Transfer.html#Virtufin_Base_Transaction_Transfer__ctor_
-  commentId: Overload:Virtufin.Base.Transaction.Transfer.#ctor
+  href: api/Virtufin.Base.Transaction.Transfer-1.html#Virtufin_Base_Transaction_Transfer_1__ctor_
+  commentId: Overload:Virtufin.Base.Transaction.Transfer`1.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: Virtufin.Base.Transaction.Transfer.Transfer
-  fullName.vb: Virtufin.Base.Transaction.Transfer.New
-  nameWithType: Transaction.Transfer.Transfer
-  nameWithType.vb: Transaction.Transfer.New
-- uid: Virtufin.Base.Transaction.Transfer.From
+  fullName: Virtufin.Base.Transaction.Transfer<A>.Transfer
+  fullName.vb: Virtufin.Base.Transaction.Transfer(Of A).New
+  nameWithType: Transaction.Transfer<A>.Transfer
+  nameWithType.vb: Transaction.Transfer(Of A).New
+- uid: Virtufin.Base.Transaction.Transfer`1.From
   name: From
-  href: api/Virtufin.Base.Transaction.Transfer.html#Virtufin_Base_Transaction_Transfer_From
-  commentId: P:Virtufin.Base.Transaction.Transfer.From
-  fullName: Virtufin.Base.Transaction.Transfer.From
-  nameWithType: Transaction.Transfer.From
-- uid: Virtufin.Base.Transaction.Transfer.From*
+  href: api/Virtufin.Base.Transaction.Transfer-1.html#Virtufin_Base_Transaction_Transfer_1_From
+  commentId: P:Virtufin.Base.Transaction.Transfer`1.From
+  fullName: Virtufin.Base.Transaction.Transfer<A>.From
+  fullName.vb: Virtufin.Base.Transaction.Transfer(Of A).From
+  nameWithType: Transaction.Transfer<A>.From
+  nameWithType.vb: Transaction.Transfer(Of A).From
+- uid: Virtufin.Base.Transaction.Transfer`1.From*
   name: From
-  href: api/Virtufin.Base.Transaction.Transfer.html#Virtufin_Base_Transaction_Transfer_From_
-  commentId: Overload:Virtufin.Base.Transaction.Transfer.From
+  href: api/Virtufin.Base.Transaction.Transfer-1.html#Virtufin_Base_Transaction_Transfer_1_From_
+  commentId: Overload:Virtufin.Base.Transaction.Transfer`1.From
   isSpec: "True"
-  fullName: Virtufin.Base.Transaction.Transfer.From
-  nameWithType: Transaction.Transfer.From
-- uid: Virtufin.Base.Transaction.Transfer.Id
+  fullName: Virtufin.Base.Transaction.Transfer<A>.From
+  fullName.vb: Virtufin.Base.Transaction.Transfer(Of A).From
+  nameWithType: Transaction.Transfer<A>.From
+  nameWithType.vb: Transaction.Transfer(Of A).From
+- uid: Virtufin.Base.Transaction.Transfer`1.Id
   name: Id
-  href: api/Virtufin.Base.Transaction.Transfer.html#Virtufin_Base_Transaction_Transfer_Id
-  commentId: P:Virtufin.Base.Transaction.Transfer.Id
-  fullName: Virtufin.Base.Transaction.Transfer.Id
-  nameWithType: Transaction.Transfer.Id
-- uid: Virtufin.Base.Transaction.Transfer.Id*
+  href: api/Virtufin.Base.Transaction.Transfer-1.html#Virtufin_Base_Transaction_Transfer_1_Id
+  commentId: P:Virtufin.Base.Transaction.Transfer`1.Id
+  fullName: Virtufin.Base.Transaction.Transfer<A>.Id
+  fullName.vb: Virtufin.Base.Transaction.Transfer(Of A).Id
+  nameWithType: Transaction.Transfer<A>.Id
+  nameWithType.vb: Transaction.Transfer(Of A).Id
+- uid: Virtufin.Base.Transaction.Transfer`1.Id*
   name: Id
-  href: api/Virtufin.Base.Transaction.Transfer.html#Virtufin_Base_Transaction_Transfer_Id_
-  commentId: Overload:Virtufin.Base.Transaction.Transfer.Id
+  href: api/Virtufin.Base.Transaction.Transfer-1.html#Virtufin_Base_Transaction_Transfer_1_Id_
+  commentId: Overload:Virtufin.Base.Transaction.Transfer`1.Id
   isSpec: "True"
-  fullName: Virtufin.Base.Transaction.Transfer.Id
-  nameWithType: Transaction.Transfer.Id
-- uid: Virtufin.Base.Transaction.Transfer.Position
+  fullName: Virtufin.Base.Transaction.Transfer<A>.Id
+  fullName.vb: Virtufin.Base.Transaction.Transfer(Of A).Id
+  nameWithType: Transaction.Transfer<A>.Id
+  nameWithType.vb: Transaction.Transfer(Of A).Id
+- uid: Virtufin.Base.Transaction.Transfer`1.Position
   name: Position
-  href: api/Virtufin.Base.Transaction.Transfer.html#Virtufin_Base_Transaction_Transfer_Position
-  commentId: P:Virtufin.Base.Transaction.Transfer.Position
-  fullName: Virtufin.Base.Transaction.Transfer.Position
-  nameWithType: Transaction.Transfer.Position
-- uid: Virtufin.Base.Transaction.Transfer.Position*
+  href: api/Virtufin.Base.Transaction.Transfer-1.html#Virtufin_Base_Transaction_Transfer_1_Position
+  commentId: P:Virtufin.Base.Transaction.Transfer`1.Position
+  fullName: Virtufin.Base.Transaction.Transfer<A>.Position
+  fullName.vb: Virtufin.Base.Transaction.Transfer(Of A).Position
+  nameWithType: Transaction.Transfer<A>.Position
+  nameWithType.vb: Transaction.Transfer(Of A).Position
+- uid: Virtufin.Base.Transaction.Transfer`1.Position*
   name: Position
-  href: api/Virtufin.Base.Transaction.Transfer.html#Virtufin_Base_Transaction_Transfer_Position_
-  commentId: Overload:Virtufin.Base.Transaction.Transfer.Position
+  href: api/Virtufin.Base.Transaction.Transfer-1.html#Virtufin_Base_Transaction_Transfer_1_Position_
+  commentId: Overload:Virtufin.Base.Transaction.Transfer`1.Position
   isSpec: "True"
-  fullName: Virtufin.Base.Transaction.Transfer.Position
-  nameWithType: Transaction.Transfer.Position
-- uid: Virtufin.Base.Transaction.Transfer.RelatedContract
+  fullName: Virtufin.Base.Transaction.Transfer<A>.Position
+  fullName.vb: Virtufin.Base.Transaction.Transfer(Of A).Position
+  nameWithType: Transaction.Transfer<A>.Position
+  nameWithType.vb: Transaction.Transfer(Of A).Position
+- uid: Virtufin.Base.Transaction.Transfer`1.RelatedContract
   name: RelatedContract
-  href: api/Virtufin.Base.Transaction.Transfer.html#Virtufin_Base_Transaction_Transfer_RelatedContract
-  commentId: P:Virtufin.Base.Transaction.Transfer.RelatedContract
-  fullName: Virtufin.Base.Transaction.Transfer.RelatedContract
-  nameWithType: Transaction.Transfer.RelatedContract
-- uid: Virtufin.Base.Transaction.Transfer.RelatedContract*
+  href: api/Virtufin.Base.Transaction.Transfer-1.html#Virtufin_Base_Transaction_Transfer_1_RelatedContract
+  commentId: P:Virtufin.Base.Transaction.Transfer`1.RelatedContract
+  fullName: Virtufin.Base.Transaction.Transfer<A>.RelatedContract
+  fullName.vb: Virtufin.Base.Transaction.Transfer(Of A).RelatedContract
+  nameWithType: Transaction.Transfer<A>.RelatedContract
+  nameWithType.vb: Transaction.Transfer(Of A).RelatedContract
+- uid: Virtufin.Base.Transaction.Transfer`1.RelatedContract*
   name: RelatedContract
-  href: api/Virtufin.Base.Transaction.Transfer.html#Virtufin_Base_Transaction_Transfer_RelatedContract_
-  commentId: Overload:Virtufin.Base.Transaction.Transfer.RelatedContract
+  href: api/Virtufin.Base.Transaction.Transfer-1.html#Virtufin_Base_Transaction_Transfer_1_RelatedContract_
+  commentId: Overload:Virtufin.Base.Transaction.Transfer`1.RelatedContract
   isSpec: "True"
-  fullName: Virtufin.Base.Transaction.Transfer.RelatedContract
-  nameWithType: Transaction.Transfer.RelatedContract
-- uid: Virtufin.Base.Transaction.Transfer.To
+  fullName: Virtufin.Base.Transaction.Transfer<A>.RelatedContract
+  fullName.vb: Virtufin.Base.Transaction.Transfer(Of A).RelatedContract
+  nameWithType: Transaction.Transfer<A>.RelatedContract
+  nameWithType.vb: Transaction.Transfer(Of A).RelatedContract
+- uid: Virtufin.Base.Transaction.Transfer`1.To
   name: To
-  href: api/Virtufin.Base.Transaction.Transfer.html#Virtufin_Base_Transaction_Transfer_To
-  commentId: P:Virtufin.Base.Transaction.Transfer.To
-  fullName: Virtufin.Base.Transaction.Transfer.To
-  nameWithType: Transaction.Transfer.To
-- uid: Virtufin.Base.Transaction.Transfer.To*
+  href: api/Virtufin.Base.Transaction.Transfer-1.html#Virtufin_Base_Transaction_Transfer_1_To
+  commentId: P:Virtufin.Base.Transaction.Transfer`1.To
+  fullName: Virtufin.Base.Transaction.Transfer<A>.To
+  fullName.vb: Virtufin.Base.Transaction.Transfer(Of A).To
+  nameWithType: Transaction.Transfer<A>.To
+  nameWithType.vb: Transaction.Transfer(Of A).To
+- uid: Virtufin.Base.Transaction.Transfer`1.To*
   name: To
-  href: api/Virtufin.Base.Transaction.Transfer.html#Virtufin_Base_Transaction_Transfer_To_
-  commentId: Overload:Virtufin.Base.Transaction.Transfer.To
+  href: api/Virtufin.Base.Transaction.Transfer-1.html#Virtufin_Base_Transaction_Transfer_1_To_
+  commentId: Overload:Virtufin.Base.Transaction.Transfer`1.To
   isSpec: "True"
-  fullName: Virtufin.Base.Transaction.Transfer.To
-  nameWithType: Transaction.Transfer.To
+  fullName: Virtufin.Base.Transaction.Transfer<A>.To
+  fullName.vb: Virtufin.Base.Transaction.Transfer(Of A).To
+  nameWithType: Transaction.Transfer<A>.To
+  nameWithType.vb: Transaction.Transfer(Of A).To
 - uid: Virtufin.Base.UtiValidator
   name: UtiValidator
   href: api/Virtufin.Base.UtiValidator.html

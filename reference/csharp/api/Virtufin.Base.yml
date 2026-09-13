@@ -30,9 +30,9 @@ items:
   - Virtufin.Base.Messaging
   - Virtufin.Base.OrderBooks
   - Virtufin.Base.Position
-  - Virtufin.Base.PositionSize
-  - Virtufin.Base.PositionTransferContract
-  - Virtufin.Base.PositionTransferContractMessageGenerator
+  - Virtufin.Base.PositionTransferContractMessageGenerator`1
+  - Virtufin.Base.PositionTransferContract`1
+  - Virtufin.Base.Position`1
   - Virtufin.Base.Scenario
   - Virtufin.Base.ScenarioHistory
   - Virtufin.Base.Scenarios
@@ -44,7 +44,7 @@ items:
   - Virtufin.Base.Transaction.AtomicTransactions
   - Virtufin.Base.Transaction.CancelContract
   - Virtufin.Base.Transaction.CreateContract
-  - Virtufin.Base.Transaction.Transfer
+  - Virtufin.Base.Transaction.Transfer`1
   - Virtufin.Base.UtiValidator
   langs:
   - csharp
@@ -511,31 +511,85 @@ references:
   fullName: Virtufin.Base.Message
 - uid: Virtufin.Base.Position
   commentId: T:Virtufin.Base.Position
-  parent: Virtufin.Base
   href: Virtufin.Base.Position.html
   name: Position
   nameWithType: Position
   fullName: Virtufin.Base.Position
-- uid: Virtufin.Base.PositionSize
-  commentId: T:Virtufin.Base.PositionSize
-  parent: Virtufin.Base
-  href: Virtufin.Base.PositionSize.html
-  name: PositionSize
-  nameWithType: PositionSize
-  fullName: Virtufin.Base.PositionSize
-- uid: Virtufin.Base.PositionTransferContract
-  commentId: T:Virtufin.Base.PositionTransferContract
-  parent: Virtufin.Base
-  href: Virtufin.Base.PositionTransferContract.html
-  name: PositionTransferContract
-  nameWithType: PositionTransferContract
-  fullName: Virtufin.Base.PositionTransferContract
-- uid: Virtufin.Base.PositionTransferContractMessageGenerator
-  commentId: T:Virtufin.Base.PositionTransferContractMessageGenerator
-  href: Virtufin.Base.PositionTransferContractMessageGenerator.html
-  name: PositionTransferContractMessageGenerator
-  nameWithType: PositionTransferContractMessageGenerator
-  fullName: Virtufin.Base.PositionTransferContractMessageGenerator
+- uid: Virtufin.Base.PositionTransferContractMessageGenerator`1
+  commentId: T:Virtufin.Base.PositionTransferContractMessageGenerator`1
+  href: Virtufin.Base.PositionTransferContractMessageGenerator-1.html
+  name: PositionTransferContractMessageGenerator<A>
+  nameWithType: PositionTransferContractMessageGenerator<A>
+  fullName: Virtufin.Base.PositionTransferContractMessageGenerator<A>
+  nameWithType.vb: PositionTransferContractMessageGenerator(Of A)
+  fullName.vb: Virtufin.Base.PositionTransferContractMessageGenerator(Of A)
+  name.vb: PositionTransferContractMessageGenerator(Of A)
+  spec.csharp:
+  - uid: Virtufin.Base.PositionTransferContractMessageGenerator`1
+    name: PositionTransferContractMessageGenerator
+    href: Virtufin.Base.PositionTransferContractMessageGenerator-1.html
+  - name: <
+  - name: A
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.PositionTransferContractMessageGenerator`1
+    name: PositionTransferContractMessageGenerator
+    href: Virtufin.Base.PositionTransferContractMessageGenerator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: )
+- uid: Virtufin.Base.PositionTransferContract`1
+  commentId: T:Virtufin.Base.PositionTransferContract`1
+  href: Virtufin.Base.PositionTransferContract-1.html
+  name: PositionTransferContract<A>
+  nameWithType: PositionTransferContract<A>
+  fullName: Virtufin.Base.PositionTransferContract<A>
+  nameWithType.vb: PositionTransferContract(Of A)
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A)
+  name.vb: PositionTransferContract(Of A)
+  spec.csharp:
+  - uid: Virtufin.Base.PositionTransferContract`1
+    name: PositionTransferContract
+    href: Virtufin.Base.PositionTransferContract-1.html
+  - name: <
+  - name: A
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.PositionTransferContract`1
+    name: PositionTransferContract
+    href: Virtufin.Base.PositionTransferContract-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: )
+- uid: Virtufin.Base.Position`1
+  commentId: T:Virtufin.Base.Position`1
+  href: Virtufin.Base.Position-1.html
+  name: Position<A>
+  nameWithType: Position<A>
+  fullName: Virtufin.Base.Position<A>
+  nameWithType.vb: Position(Of A)
+  fullName.vb: Virtufin.Base.Position(Of A)
+  name.vb: Position(Of A)
+  spec.csharp:
+  - uid: Virtufin.Base.Position`1
+    name: Position
+    href: Virtufin.Base.Position-1.html
+  - name: <
+  - name: A
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.Position`1
+    name: Position
+    href: Virtufin.Base.Position-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: )
 - uid: Virtufin.Base.Scenario
   commentId: T:Virtufin.Base.Scenario
   parent: Virtufin.Base
@@ -650,28 +704,39 @@ references:
   - uid: Virtufin.Base.Transaction.CreateContract
     name: CreateContract
     href: Virtufin.Base.Transaction.CreateContract.html
-- uid: Virtufin.Base.Transaction.Transfer
-  commentId: T:Virtufin.Base.Transaction.Transfer
+- uid: Virtufin.Base.Transaction.Transfer`1
+  commentId: T:Virtufin.Base.Transaction.Transfer`1
   href: Virtufin.Base.Transaction.html
-  name: Transaction.Transfer
-  nameWithType: Transaction.Transfer
-  fullName: Virtufin.Base.Transaction.Transfer
+  name: Transaction.Transfer<A>
+  nameWithType: Transaction.Transfer<A>
+  fullName: Virtufin.Base.Transaction.Transfer<A>
+  nameWithType.vb: Transaction.Transfer(Of A)
+  fullName.vb: Virtufin.Base.Transaction.Transfer(Of A)
+  name.vb: Transaction.Transfer(Of A)
   spec.csharp:
   - uid: Virtufin.Base.Transaction
     name: Transaction
     href: Virtufin.Base.Transaction.html
   - name: .
-  - uid: Virtufin.Base.Transaction.Transfer
+  - uid: Virtufin.Base.Transaction.Transfer`1
     name: Transfer
-    href: Virtufin.Base.Transaction.Transfer.html
+    href: Virtufin.Base.Transaction.Transfer-1.html
+  - name: <
+  - name: A
+  - name: '>'
   spec.vb:
   - uid: Virtufin.Base.Transaction
     name: Transaction
     href: Virtufin.Base.Transaction.html
   - name: .
-  - uid: Virtufin.Base.Transaction.Transfer
+  - uid: Virtufin.Base.Transaction.Transfer`1
     name: Transfer
-    href: Virtufin.Base.Transaction.Transfer.html
+    href: Virtufin.Base.Transaction.Transfer-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: )
 - uid: Virtufin.Base.UtiValidator
   commentId: T:Virtufin.Base.UtiValidator
   href: Virtufin.Base.UtiValidator.html

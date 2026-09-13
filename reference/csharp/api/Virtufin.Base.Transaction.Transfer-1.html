@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class Transaction.Transfer | Virtufin .NET - C# API Reference </title>
+      <title>Class Transaction.Transfer&lt;A&gt; | Virtufin .NET - C# API Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class Transaction.Transfer | Virtufin .NET - C# API Reference ">
+      <meta name="title" content="Class Transaction.Transfer&lt;A&gt; | Virtufin .NET - C# API Reference ">
       
       <meta name="description" content="Transfer a position between two parties, authorised by a contract.">
       <link rel="icon" href="../favicon.ico">
@@ -49,10 +49,10 @@
             Virtufin.Dotnet
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/edc7ee197fe13524c228ef1f2923b7abdefd9185" target="_blank" rel="noopener" class="commit-badge" title="View commit edc7ee197fe13524c228ef1f2923b7abdefd9185">
+            <a href="{git_repo_url}/commit/97b7bbd36cf76ef815ba9a47b521568aea6360b3" target="_blank" rel="noopener" class="commit-badge" title="View commit 97b7bbd36cf76ef815ba9a47b521568aea6360b3">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">edc7ee197fe13524c228ef1f2923b7abdefd9185</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">97b7bbd36cf76ef815ba9a47b521568aea6360b3</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,12 +88,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.Base.Transaction.Transfer">
+        <article data-uid="Virtufin.Base.Transaction.Transfer`1">
 
 
 
-  <h1 id="Virtufin_Base_Transaction_Transfer" data-uid="Virtufin.Base.Transaction.Transfer" class="text-break">
-Class Transaction.Transfer  
+  <h1 id="Virtufin_Base_Transaction_Transfer_1" data-uid="Virtufin.Base.Transaction.Transfer`1" class="text-break">
+Class Transaction.Transfer&lt;A&gt;  
   </h1>
 
   <div class="facts text-secondary">
@@ -106,18 +106,24 @@ Class Transaction.Transfer
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record Transaction.Transfer : Transaction, ITransaction, IEquatable&lt;ITransaction&gt;, IEquatable&lt;Transaction&gt;, IEquatable&lt;Transaction.Transfer&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record Transaction.Transfer&lt;A&gt; : Transaction, ITransaction, IEquatable&lt;ITransaction&gt;, IEquatable&lt;Transaction&gt;, IEquatable&lt;Transaction.Transfer&lt;A&gt;&gt; where A : IFixedPointAmount&lt;A&gt;</code></pre>
   </div>
 
 
 
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code></dt>
+    <dd><p>The fixed-point amount type measuring the position.</p>
+</dd>
+  </dl>
 
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="Virtufin.Base.Transaction.html">Transaction</a></div>
-      <div><span class="xref">Transaction.Transfer</span></div>
+      <div><span class="xref">Transaction.Transfer&lt;A&gt;</span></div>
     </dd>
   </dl>
 
@@ -127,7 +133,7 @@ Class Transaction.Transfer
       <div><a class="xref" href="Virtufin.Core.Contracts.ITransaction.html">ITransaction</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Virtufin.Core.Contracts.ITransaction.html">ITransaction</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Virtufin.Base.Transaction.html">Transaction</a>&gt;</div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Virtufin.Base.Transaction.html">Transaction</a>.<a class="xref" href="Virtufin.Base.Transaction.Transfer.html">Transfer</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Virtufin.Base.Transaction.html">Transaction</a>.<a class="xref" href="Virtufin.Base.Transaction.Transfer-1.html">Transfer</a>&lt;A&gt;&gt;</div>
     </dd>
   </dl>
 
@@ -161,16 +167,21 @@ Class Transaction.Transfer
 
 
 
+  <h2 id="Virtufin_Base_Transaction_Transfer_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Only this leaf record carries the amount type. <a class="xref" href="Virtufin.Base.Transaction.html">Transaction</a> itself stays
+non-generic, so <code>State</code>, <code>Message</code> and <code>IScenarioHistory</code> keep holding
+plain <a class="xref" href="Virtufin.Base.Transaction.html">Transaction</a> and are unaffected.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
 </h2>
 
 
-  <a id="Virtufin_Base_Transaction_Transfer__ctor_" data-uid="Virtufin.Base.Transaction.Transfer.#ctor*"></a>
+  <a id="Virtufin_Base_Transaction_Transfer_1__ctor_" data-uid="Virtufin.Base.Transaction.Transfer`1.#ctor*"></a>
 
-  <h3 id="Virtufin_Base_Transaction_Transfer__ctor_Virtufin_Base_Signatory_Virtufin_Base_Signatory_Virtufin_Base_Position_Virtufin_Base_ContractIdentifier_" data-uid="Virtufin.Base.Transaction.Transfer.#ctor(Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.Position,Virtufin.Base.ContractIdentifier)">
-  Transfer(Signatory, Signatory, Position, ContractIdentifier)
+  <h3 id="Virtufin_Base_Transaction_Transfer_1__ctor_Virtufin_Base_Signatory_Virtufin_Base_Signatory_Virtufin_Base_Position__0__Virtufin_Base_ContractIdentifier_" data-uid="Virtufin.Base.Transaction.Transfer`1.#ctor(Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.Position{`0},Virtufin.Base.ContractIdentifier)">
+  Transfer(Signatory, Signatory, Position&lt;A&gt;, ContractIdentifier)
   
   </h3>
 
@@ -179,7 +190,7 @@ Class Transaction.Transfer
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Transfer(Signatory from, Signatory to, Position position, ContractIdentifier id)</code></pre>
+    <pre><code class="lang-csharp hljs">public Transfer(Signatory from, Signatory to, Position&lt;A&gt; position, ContractIdentifier id)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -188,7 +199,7 @@ Class Transaction.Transfer
     <dd></dd>
     <dt><code>to</code> <a class="xref" href="Virtufin.Base.Signatory.html">Signatory</a></dt>
     <dd></dd>
-    <dt><code>position</code> <a class="xref" href="Virtufin.Base.Position.html">Position</a></dt>
+    <dt><code>position</code> <a class="xref" href="Virtufin.Base.Position-1.html">Position</a>&lt;A&gt;</dt>
     <dd></dd>
     <dt><code>id</code> <a class="xref" href="Virtufin.Base.ContractIdentifier.html">ContractIdentifier</a></dt>
     <dd></dd>
@@ -209,9 +220,9 @@ Class Transaction.Transfer
 </h2>
 
 
-  <a id="Virtufin_Base_Transaction_Transfer_From_" data-uid="Virtufin.Base.Transaction.Transfer.From*"></a>
+  <a id="Virtufin_Base_Transaction_Transfer_1_From_" data-uid="Virtufin.Base.Transaction.Transfer`1.From*"></a>
 
-  <h3 id="Virtufin_Base_Transaction_Transfer_From" data-uid="Virtufin.Base.Transaction.Transfer.From">
+  <h3 id="Virtufin_Base_Transaction_Transfer_1_From" data-uid="Virtufin.Base.Transaction.Transfer`1.From">
   From
   
   </h3>
@@ -241,9 +252,9 @@ Class Transaction.Transfer
 
 
 
-  <a id="Virtufin_Base_Transaction_Transfer_Id_" data-uid="Virtufin.Base.Transaction.Transfer.Id*"></a>
+  <a id="Virtufin_Base_Transaction_Transfer_1_Id_" data-uid="Virtufin.Base.Transaction.Transfer`1.Id*"></a>
 
-  <h3 id="Virtufin_Base_Transaction_Transfer_Id" data-uid="Virtufin.Base.Transaction.Transfer.Id">
+  <h3 id="Virtufin_Base_Transaction_Transfer_1_Id" data-uid="Virtufin.Base.Transaction.Transfer`1.Id">
   Id
   
   </h3>
@@ -273,9 +284,9 @@ Class Transaction.Transfer
 
 
 
-  <a id="Virtufin_Base_Transaction_Transfer_Position_" data-uid="Virtufin.Base.Transaction.Transfer.Position*"></a>
+  <a id="Virtufin_Base_Transaction_Transfer_1_Position_" data-uid="Virtufin.Base.Transaction.Transfer`1.Position*"></a>
 
-  <h3 id="Virtufin_Base_Transaction_Transfer_Position" data-uid="Virtufin.Base.Transaction.Transfer.Position">
+  <h3 id="Virtufin_Base_Transaction_Transfer_1_Position" data-uid="Virtufin.Base.Transaction.Transfer`1.Position">
   Position
   
   </h3>
@@ -285,7 +296,7 @@ Class Transaction.Transfer
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Position Position { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Position&lt;A&gt; Position { get; }</code></pre>
   </div>
 
 
@@ -294,7 +305,7 @@ Class Transaction.Transfer
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Virtufin.Base.Position.html">Position</a></dt>
+    <dt><a class="xref" href="Virtufin.Base.Position-1.html">Position</a>&lt;A&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -305,9 +316,9 @@ Class Transaction.Transfer
 
 
 
-  <a id="Virtufin_Base_Transaction_Transfer_RelatedContract_" data-uid="Virtufin.Base.Transaction.Transfer.RelatedContract*"></a>
+  <a id="Virtufin_Base_Transaction_Transfer_1_RelatedContract_" data-uid="Virtufin.Base.Transaction.Transfer`1.RelatedContract*"></a>
 
-  <h3 id="Virtufin_Base_Transaction_Transfer_RelatedContract" data-uid="Virtufin.Base.Transaction.Transfer.RelatedContract">
+  <h3 id="Virtufin_Base_Transaction_Transfer_1_RelatedContract" data-uid="Virtufin.Base.Transaction.Transfer`1.RelatedContract">
   RelatedContract
   
   </h3>
@@ -338,9 +349,9 @@ that do not target a single contract (e.g. atomic groups).</p>
 
 
 
-  <a id="Virtufin_Base_Transaction_Transfer_To_" data-uid="Virtufin.Base.Transaction.Transfer.To*"></a>
+  <a id="Virtufin_Base_Transaction_Transfer_1_To_" data-uid="Virtufin.Base.Transaction.Transfer`1.To*"></a>
 
-  <h3 id="Virtufin_Base_Transaction_Transfer_To" data-uid="Virtufin.Base.Transaction.Transfer.To">
+  <h3 id="Virtufin_Base_Transaction_Transfer_1_To" data-uid="Virtufin.Base.Transaction.Transfer`1.To">
   To
   
   </h3>

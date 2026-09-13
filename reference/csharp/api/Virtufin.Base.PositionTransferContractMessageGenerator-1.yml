@@ -1,19 +1,19 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Virtufin.Base.PositionTransferContractMessageGenerator
-  commentId: T:Virtufin.Base.PositionTransferContractMessageGenerator
-  id: PositionTransferContractMessageGenerator
+- uid: Virtufin.Base.PositionTransferContractMessageGenerator`1
+  commentId: T:Virtufin.Base.PositionTransferContractMessageGenerator`1
+  id: PositionTransferContractMessageGenerator`1
   parent: Virtufin.Base
   children:
-  - Virtufin.Base.PositionTransferContractMessageGenerator.#ctor(Virtufin.Base.PositionTransferContract)
-  - Virtufin.Base.PositionTransferContractMessageGenerator.Contract
-  - Virtufin.Base.PositionTransferContractMessageGenerator.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp,Virtufin.Core.Contracts.IScenarioHistory)
+  - Virtufin.Base.PositionTransferContractMessageGenerator`1.#ctor(Virtufin.Base.PositionTransferContract{`0})
+  - Virtufin.Base.PositionTransferContractMessageGenerator`1.Contract
+  - Virtufin.Base.PositionTransferContractMessageGenerator`1.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp,Virtufin.Core.Contracts.IScenarioHistory)
   langs:
   - csharp
   - vb
-  name: PositionTransferContractMessageGenerator
-  nameWithType: PositionTransferContractMessageGenerator
-  fullName: Virtufin.Base.PositionTransferContractMessageGenerator
+  name: PositionTransferContractMessageGenerator<A>
+  nameWithType: PositionTransferContractMessageGenerator<A>
+  fullName: Virtufin.Base.PositionTransferContractMessageGenerator<A>
   type: Class
   source:
     remote:
@@ -27,15 +27,17 @@ items:
   - Virtufin.Base
   namespace: Virtufin.Base
   summary: >-
-    Emits a single <xref href="Virtufin.Base.Transaction.Transfer" data-throw-if-not-resolved="false"></xref> wrapped in a
+    Emits a single Transaction.Transfer wrapped in a
 
     <xref href="Virtufin.Base.Message" data-throw-if-not-resolved="false"></xref> at the contract's maturity. Before or after the
 
     maturity nothing is emitted.
   example: []
   syntax:
-    content: 'public sealed class PositionTransferContractMessageGenerator : IMessageGenerator'
-    content.vb: Public NotInheritable Class PositionTransferContractMessageGenerator Implements IMessageGenerator
+    content: 'public sealed class PositionTransferContractMessageGenerator<A> : IMessageGenerator where A : IFixedPointAmount<A>'
+    typeParameters:
+    - id: A
+    content.vb: Public NotInheritable Class PositionTransferContractMessageGenerator(Of A As IFixedPointAmount(Of A)) Implements IMessageGenerator
   inheritance:
   - System.Object
   implements:
@@ -47,16 +49,19 @@ items:
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Base.PositionTransferContractMessageGenerator.Contract
-  commentId: P:Virtufin.Base.PositionTransferContractMessageGenerator.Contract
+  nameWithType.vb: PositionTransferContractMessageGenerator(Of A)
+  fullName.vb: Virtufin.Base.PositionTransferContractMessageGenerator(Of A)
+  name.vb: PositionTransferContractMessageGenerator(Of A)
+- uid: Virtufin.Base.PositionTransferContractMessageGenerator`1.Contract
+  commentId: P:Virtufin.Base.PositionTransferContractMessageGenerator`1.Contract
   id: Contract
-  parent: Virtufin.Base.PositionTransferContractMessageGenerator
+  parent: Virtufin.Base.PositionTransferContractMessageGenerator`1
   langs:
   - csharp
   - vb
   name: Contract
-  nameWithType: PositionTransferContractMessageGenerator.Contract
-  fullName: Virtufin.Base.PositionTransferContractMessageGenerator.Contract
+  nameWithType: PositionTransferContractMessageGenerator<A>.Contract
+  fullName: Virtufin.Base.PositionTransferContractMessageGenerator<A>.Contract
   type: Property
   source:
     remote:
@@ -65,29 +70,31 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Contract
     path: ../../../src/Virtufin.Base/PositionTransferContractMessageGenerator.cs
-    startLine: 13
+    startLine: 14
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
   summary: The underlying contract.
   example: []
   syntax:
-    content: public PositionTransferContract Contract { get; }
+    content: public PositionTransferContract<A> Contract { get; }
     parameters: []
     return:
-      type: Virtufin.Base.PositionTransferContract
-    content.vb: Public ReadOnly Property Contract As PositionTransferContract
-  overload: Virtufin.Base.PositionTransferContractMessageGenerator.Contract*
-- uid: Virtufin.Base.PositionTransferContractMessageGenerator.#ctor(Virtufin.Base.PositionTransferContract)
-  commentId: M:Virtufin.Base.PositionTransferContractMessageGenerator.#ctor(Virtufin.Base.PositionTransferContract)
-  id: '#ctor(Virtufin.Base.PositionTransferContract)'
-  parent: Virtufin.Base.PositionTransferContractMessageGenerator
+      type: Virtufin.Base.PositionTransferContract{{A}}
+    content.vb: Public ReadOnly Property Contract As PositionTransferContract(Of A)
+  overload: Virtufin.Base.PositionTransferContractMessageGenerator`1.Contract*
+  nameWithType.vb: PositionTransferContractMessageGenerator(Of A).Contract
+  fullName.vb: Virtufin.Base.PositionTransferContractMessageGenerator(Of A).Contract
+- uid: Virtufin.Base.PositionTransferContractMessageGenerator`1.#ctor(Virtufin.Base.PositionTransferContract{`0})
+  commentId: M:Virtufin.Base.PositionTransferContractMessageGenerator`1.#ctor(Virtufin.Base.PositionTransferContract{`0})
+  id: '#ctor(Virtufin.Base.PositionTransferContract{`0})'
+  parent: Virtufin.Base.PositionTransferContractMessageGenerator`1
   langs:
   - csharp
   - vb
-  name: PositionTransferContractMessageGenerator(PositionTransferContract)
-  nameWithType: PositionTransferContractMessageGenerator.PositionTransferContractMessageGenerator(PositionTransferContract)
-  fullName: Virtufin.Base.PositionTransferContractMessageGenerator.PositionTransferContractMessageGenerator(Virtufin.Base.PositionTransferContract)
+  name: PositionTransferContractMessageGenerator(PositionTransferContract<A>)
+  nameWithType: PositionTransferContractMessageGenerator<A>.PositionTransferContractMessageGenerator(PositionTransferContract<A>)
+  fullName: Virtufin.Base.PositionTransferContractMessageGenerator<A>.PositionTransferContractMessageGenerator(Virtufin.Base.PositionTransferContract<A>)
   type: Constructor
   source:
     remote:
@@ -96,32 +103,32 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/PositionTransferContractMessageGenerator.cs
-    startLine: 16
+    startLine: 17
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
   summary: Construct a generator for <code class="paramref">contract</code>.
   example: []
   syntax:
-    content: public PositionTransferContractMessageGenerator(PositionTransferContract contract)
+    content: public PositionTransferContractMessageGenerator(PositionTransferContract<A> contract)
     parameters:
     - id: contract
-      type: Virtufin.Base.PositionTransferContract
-    content.vb: Public Sub New(contract As PositionTransferContract)
-  overload: Virtufin.Base.PositionTransferContractMessageGenerator.#ctor*
-  nameWithType.vb: PositionTransferContractMessageGenerator.New(PositionTransferContract)
-  fullName.vb: Virtufin.Base.PositionTransferContractMessageGenerator.New(Virtufin.Base.PositionTransferContract)
-  name.vb: New(PositionTransferContract)
-- uid: Virtufin.Base.PositionTransferContractMessageGenerator.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp,Virtufin.Core.Contracts.IScenarioHistory)
-  commentId: M:Virtufin.Base.PositionTransferContractMessageGenerator.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp,Virtufin.Core.Contracts.IScenarioHistory)
+      type: Virtufin.Base.PositionTransferContract{{A}}
+    content.vb: Public Sub New(contract As PositionTransferContract(Of A))
+  overload: Virtufin.Base.PositionTransferContractMessageGenerator`1.#ctor*
+  nameWithType.vb: PositionTransferContractMessageGenerator(Of A).New(PositionTransferContract(Of A))
+  fullName.vb: Virtufin.Base.PositionTransferContractMessageGenerator(Of A).New(Virtufin.Base.PositionTransferContract(Of A))
+  name.vb: New(PositionTransferContract(Of A))
+- uid: Virtufin.Base.PositionTransferContractMessageGenerator`1.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp,Virtufin.Core.Contracts.IScenarioHistory)
+  commentId: M:Virtufin.Base.PositionTransferContractMessageGenerator`1.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp,Virtufin.Core.Contracts.IScenarioHistory)
   id: GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp,Virtufin.Core.Contracts.IScenarioHistory)
-  parent: Virtufin.Base.PositionTransferContractMessageGenerator
+  parent: Virtufin.Base.PositionTransferContractMessageGenerator`1
   langs:
   - csharp
   - vb
   name: GenerateMessages(ITimeStamp, IScenarioHistory)
-  nameWithType: PositionTransferContractMessageGenerator.GenerateMessages(ITimeStamp, IScenarioHistory)
-  fullName: Virtufin.Base.PositionTransferContractMessageGenerator.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp, Virtufin.Core.Contracts.IScenarioHistory)
+  nameWithType: PositionTransferContractMessageGenerator<A>.GenerateMessages(ITimeStamp, IScenarioHistory)
+  fullName: Virtufin.Base.PositionTransferContractMessageGenerator<A>.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp, Virtufin.Core.Contracts.IScenarioHistory)
   type: Method
   source:
     remote:
@@ -130,7 +137,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: GenerateMessages
     path: ../../../src/Virtufin.Base/PositionTransferContractMessageGenerator.cs
-    startLine: 22
+    startLine: 23
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -148,32 +155,12 @@ items:
     return:
       type: System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage}
     content.vb: Public Function GenerateMessages(timePoint As ITimeStamp, scenarioHistory As IScenarioHistory) As IEnumerable(Of IMessage)
-  overload: Virtufin.Base.PositionTransferContractMessageGenerator.GenerateMessages*
+  overload: Virtufin.Base.PositionTransferContractMessageGenerator`1.GenerateMessages*
   implements:
   - Virtufin.Core.Contracts.IMessageGenerator.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp,Virtufin.Core.Contracts.IScenarioHistory)
+  nameWithType.vb: PositionTransferContractMessageGenerator(Of A).GenerateMessages(ITimeStamp, IScenarioHistory)
+  fullName.vb: Virtufin.Base.PositionTransferContractMessageGenerator(Of A).GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp, Virtufin.Core.Contracts.IScenarioHistory)
 references:
-- uid: Virtufin.Base.Transaction.Transfer
-  commentId: T:Virtufin.Base.Transaction.Transfer
-  href: Virtufin.Base.Transaction.html
-  name: Transaction.Transfer
-  nameWithType: Transaction.Transfer
-  fullName: Virtufin.Base.Transaction.Transfer
-  spec.csharp:
-  - uid: Virtufin.Base.Transaction
-    name: Transaction
-    href: Virtufin.Base.Transaction.html
-  - name: .
-  - uid: Virtufin.Base.Transaction.Transfer
-    name: Transfer
-    href: Virtufin.Base.Transaction.Transfer.html
-  spec.vb:
-  - uid: Virtufin.Base.Transaction
-    name: Transaction
-    href: Virtufin.Base.Transaction.html
-  - name: .
-  - uid: Virtufin.Base.Transaction.Transfer
-    name: Transfer
-    href: Virtufin.Base.Transaction.Transfer.html
 - uid: Virtufin.Base.Message
   commentId: T:Virtufin.Base.Message
   href: Virtufin.Base.Message.html
@@ -452,34 +439,83 @@ references:
   - uid: Virtufin.Core.Contracts
     name: Contracts
     href: Virtufin.Core.Contracts.html
-- uid: Virtufin.Base.PositionTransferContractMessageGenerator.Contract*
-  commentId: Overload:Virtufin.Base.PositionTransferContractMessageGenerator.Contract
-  href: Virtufin.Base.PositionTransferContractMessageGenerator.html#Virtufin_Base_PositionTransferContractMessageGenerator_Contract
+- uid: Virtufin.Base.PositionTransferContractMessageGenerator`1.Contract*
+  commentId: Overload:Virtufin.Base.PositionTransferContractMessageGenerator`1.Contract
+  href: Virtufin.Base.PositionTransferContractMessageGenerator-1.html#Virtufin_Base_PositionTransferContractMessageGenerator_1_Contract
   name: Contract
-  nameWithType: PositionTransferContractMessageGenerator.Contract
-  fullName: Virtufin.Base.PositionTransferContractMessageGenerator.Contract
-- uid: Virtufin.Base.PositionTransferContract
-  commentId: T:Virtufin.Base.PositionTransferContract
+  nameWithType: PositionTransferContractMessageGenerator<A>.Contract
+  fullName: Virtufin.Base.PositionTransferContractMessageGenerator<A>.Contract
+  nameWithType.vb: PositionTransferContractMessageGenerator(Of A).Contract
+  fullName.vb: Virtufin.Base.PositionTransferContractMessageGenerator(Of A).Contract
+- uid: Virtufin.Base.PositionTransferContract{{A}}
+  commentId: T:Virtufin.Base.PositionTransferContract{`0}
   parent: Virtufin.Base
-  href: Virtufin.Base.PositionTransferContract.html
-  name: PositionTransferContract
-  nameWithType: PositionTransferContract
-  fullName: Virtufin.Base.PositionTransferContract
-- uid: Virtufin.Base.PositionTransferContractMessageGenerator.#ctor*
-  commentId: Overload:Virtufin.Base.PositionTransferContractMessageGenerator.#ctor
-  href: Virtufin.Base.PositionTransferContractMessageGenerator.html#Virtufin_Base_PositionTransferContractMessageGenerator__ctor_Virtufin_Base_PositionTransferContract_
+  definition: Virtufin.Base.PositionTransferContract`1
+  href: Virtufin.Base.PositionTransferContract-1.html
+  name: PositionTransferContract<A>
+  nameWithType: PositionTransferContract<A>
+  fullName: Virtufin.Base.PositionTransferContract<A>
+  nameWithType.vb: PositionTransferContract(Of A)
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A)
+  name.vb: PositionTransferContract(Of A)
+  spec.csharp:
+  - uid: Virtufin.Base.PositionTransferContract`1
+    name: PositionTransferContract
+    href: Virtufin.Base.PositionTransferContract-1.html
+  - name: <
+  - name: A
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.PositionTransferContract`1
+    name: PositionTransferContract
+    href: Virtufin.Base.PositionTransferContract-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: )
+- uid: Virtufin.Base.PositionTransferContract`1
+  commentId: T:Virtufin.Base.PositionTransferContract`1
+  href: Virtufin.Base.PositionTransferContract-1.html
+  name: PositionTransferContract<A>
+  nameWithType: PositionTransferContract<A>
+  fullName: Virtufin.Base.PositionTransferContract<A>
+  nameWithType.vb: PositionTransferContract(Of A)
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A)
+  name.vb: PositionTransferContract(Of A)
+  spec.csharp:
+  - uid: Virtufin.Base.PositionTransferContract`1
+    name: PositionTransferContract
+    href: Virtufin.Base.PositionTransferContract-1.html
+  - name: <
+  - name: A
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.PositionTransferContract`1
+    name: PositionTransferContract
+    href: Virtufin.Base.PositionTransferContract-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: )
+- uid: Virtufin.Base.PositionTransferContractMessageGenerator`1.#ctor*
+  commentId: Overload:Virtufin.Base.PositionTransferContractMessageGenerator`1.#ctor
+  href: Virtufin.Base.PositionTransferContractMessageGenerator-1.html#Virtufin_Base_PositionTransferContractMessageGenerator_1__ctor_Virtufin_Base_PositionTransferContract__0__
   name: PositionTransferContractMessageGenerator
-  nameWithType: PositionTransferContractMessageGenerator.PositionTransferContractMessageGenerator
-  fullName: Virtufin.Base.PositionTransferContractMessageGenerator.PositionTransferContractMessageGenerator
-  nameWithType.vb: PositionTransferContractMessageGenerator.New
-  fullName.vb: Virtufin.Base.PositionTransferContractMessageGenerator.New
+  nameWithType: PositionTransferContractMessageGenerator<A>.PositionTransferContractMessageGenerator
+  fullName: Virtufin.Base.PositionTransferContractMessageGenerator<A>.PositionTransferContractMessageGenerator
+  nameWithType.vb: PositionTransferContractMessageGenerator(Of A).New
+  fullName.vb: Virtufin.Base.PositionTransferContractMessageGenerator(Of A).New
   name.vb: New
-- uid: Virtufin.Base.PositionTransferContractMessageGenerator.GenerateMessages*
-  commentId: Overload:Virtufin.Base.PositionTransferContractMessageGenerator.GenerateMessages
-  href: Virtufin.Base.PositionTransferContractMessageGenerator.html#Virtufin_Base_PositionTransferContractMessageGenerator_GenerateMessages_Virtufin_Core_Identifiers_ITimeStamp_Virtufin_Core_Contracts_IScenarioHistory_
+- uid: Virtufin.Base.PositionTransferContractMessageGenerator`1.GenerateMessages*
+  commentId: Overload:Virtufin.Base.PositionTransferContractMessageGenerator`1.GenerateMessages
+  href: Virtufin.Base.PositionTransferContractMessageGenerator-1.html#Virtufin_Base_PositionTransferContractMessageGenerator_1_GenerateMessages_Virtufin_Core_Identifiers_ITimeStamp_Virtufin_Core_Contracts_IScenarioHistory_
   name: GenerateMessages
-  nameWithType: PositionTransferContractMessageGenerator.GenerateMessages
-  fullName: Virtufin.Base.PositionTransferContractMessageGenerator.GenerateMessages
+  nameWithType: PositionTransferContractMessageGenerator<A>.GenerateMessages
+  fullName: Virtufin.Base.PositionTransferContractMessageGenerator<A>.GenerateMessages
+  nameWithType.vb: PositionTransferContractMessageGenerator(Of A).GenerateMessages
+  fullName.vb: Virtufin.Base.PositionTransferContractMessageGenerator(Of A).GenerateMessages
 - uid: Virtufin.Core.Contracts.IMessageGenerator.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp,Virtufin.Core.Contracts.IScenarioHistory)
   commentId: M:Virtufin.Core.Contracts.IMessageGenerator.GenerateMessages(Virtufin.Core.Identifiers.ITimeStamp,Virtufin.Core.Contracts.IScenarioHistory)
   parent: Virtufin.Core.Contracts.IMessageGenerator

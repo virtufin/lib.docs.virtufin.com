@@ -1,25 +1,25 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Virtufin.Base.PositionTransferContract
-  commentId: T:Virtufin.Base.PositionTransferContract
-  id: PositionTransferContract
+- uid: Virtufin.Base.PositionTransferContract`1
+  commentId: T:Virtufin.Base.PositionTransferContract`1
+  id: PositionTransferContract`1
   parent: Virtufin.Base
   children:
-  - Virtufin.Base.PositionTransferContract.#ctor(Virtufin.Base.Position,Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.TimeStamp,Virtufin.Base.ContractIdentifier)
-  - Virtufin.Base.PositionTransferContract.At
-  - Virtufin.Base.PositionTransferContract.Equals(Virtufin.Core.Contracts.IContract)
-  - Virtufin.Base.PositionTransferContract.From
-  - Virtufin.Base.PositionTransferContract.Id
-  - Virtufin.Base.PositionTransferContract.IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)
-  - Virtufin.Base.PositionTransferContract.Position
-  - Virtufin.Base.PositionTransferContract.To
-  - Virtufin.Base.PositionTransferContract.VerifyMessages(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage},Virtufin.Core.Contracts.IScenarioHistory)
+  - Virtufin.Base.PositionTransferContract`1.#ctor(Virtufin.Base.Position{`0},Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.TimeStamp,Virtufin.Base.ContractIdentifier)
+  - Virtufin.Base.PositionTransferContract`1.At
+  - Virtufin.Base.PositionTransferContract`1.Equals(Virtufin.Core.Contracts.IContract)
+  - Virtufin.Base.PositionTransferContract`1.From
+  - Virtufin.Base.PositionTransferContract`1.Id
+  - Virtufin.Base.PositionTransferContract`1.IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)
+  - Virtufin.Base.PositionTransferContract`1.Position
+  - Virtufin.Base.PositionTransferContract`1.To
+  - Virtufin.Base.PositionTransferContract`1.VerifyMessages(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage},Virtufin.Core.Contracts.IScenarioHistory)
   langs:
   - csharp
   - vb
-  name: PositionTransferContract
-  nameWithType: PositionTransferContract
-  fullName: Virtufin.Base.PositionTransferContract
+  name: PositionTransferContract<A>
+  nameWithType: PositionTransferContract<A>
+  fullName: Virtufin.Base.PositionTransferContract<A>
   type: Class
   source:
     remote:
@@ -28,16 +28,20 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: PositionTransferContract
     path: ../../../src/Virtufin.Base/PositionTransferContract.cs
-    startLine: 20
+    startLine: 26
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
   summary: >-
-    A contract that transfers a <xref href="Virtufin.Base.PositionTransferContract.Position" data-throw-if-not-resolved="false"></xref> from one
+    A contract that transfers a <xref href="Virtufin.Base.Position%601" data-throw-if-not-resolved="false"></xref> from one
 
     <xref href="Virtufin.Base.Signatory" data-throw-if-not-resolved="false"></xref> to another at a fixed <xref href="Virtufin.Base.TimeStamp" data-throw-if-not-resolved="false"></xref>
 
     (its maturity).
+  remarks: >-
+    <xref href="Virtufin.Core.Contracts.IContract" data-throw-if-not-resolved="false"></xref> and <xref href="Virtufin.Core.Contracts.IWithMaturity" data-throw-if-not-resolved="false"></xref> are non-generic, so a contract
+
+    registry or history holding <xref href="Virtufin.Core.Contracts.IContract" data-throw-if-not-resolved="false"></xref> is unaffected by the type parameter.
   example:
   - >-
     <pre><code class="lang-csharp">var from = Signatory.New();
@@ -50,17 +54,20 @@ items:
 
     var id = ContractIdentifier.NewWithUuid();
 
-    var contract = new PositionTransferContract(pos, from, to, at, id);</code></pre>
+    var contract = new PositionTransferContract&lt;DecimalAmount&gt;(pos, from, to, at, id);</code></pre>
   syntax:
-    content: 'public sealed record PositionTransferContract : IWithMaturity, IContract, IEquatable<IContract>, IEquatable<PositionTransferContract>'
-    content.vb: Public NotInheritable Class PositionTransferContract Implements IWithMaturity, IContract, IEquatable(Of IContract), IEquatable(Of PositionTransferContract)
+    content: 'public sealed record PositionTransferContract<A> : IWithMaturity, IContract, IEquatable<IContract>, IEquatable<PositionTransferContract<A>> where A : IFixedPointAmount<A>'
+    typeParameters:
+    - id: A
+      description: The fixed-point amount type measuring the position.
+    content.vb: Public NotInheritable Class PositionTransferContract(Of A As IFixedPointAmount(Of A)) Implements IWithMaturity, IContract, IEquatable(Of IContract), IEquatable(Of PositionTransferContract(Of A))
   inheritance:
   - System.Object
   implements:
   - Virtufin.Core.Contracts.IWithMaturity
   - Virtufin.Core.Contracts.IContract
   - System.IEquatable{Virtufin.Core.Contracts.IContract}
-  - System.IEquatable{Virtufin.Base.PositionTransferContract}
+  - System.IEquatable{Virtufin.Base.PositionTransferContract`1}
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -68,16 +75,19 @@ items:
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Base.PositionTransferContract.Position
-  commentId: P:Virtufin.Base.PositionTransferContract.Position
+  nameWithType.vb: PositionTransferContract(Of A)
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A)
+  name.vb: PositionTransferContract(Of A)
+- uid: Virtufin.Base.PositionTransferContract`1.Position
+  commentId: P:Virtufin.Base.PositionTransferContract`1.Position
   id: Position
-  parent: Virtufin.Base.PositionTransferContract
+  parent: Virtufin.Base.PositionTransferContract`1
   langs:
   - csharp
   - vb
   name: Position
-  nameWithType: PositionTransferContract.Position
-  fullName: Virtufin.Base.PositionTransferContract.Position
+  nameWithType: PositionTransferContract<A>.Position
+  fullName: Virtufin.Base.PositionTransferContract<A>.Position
   type: Property
   source:
     remote:
@@ -86,29 +96,31 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Position
     path: ../../../src/Virtufin.Base/PositionTransferContract.cs
-    startLine: 23
+    startLine: 30
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
   summary: The position being transferred.
   example: []
   syntax:
-    content: public Position Position { get; }
+    content: public Position<A> Position { get; }
     parameters: []
     return:
-      type: Virtufin.Base.Position
-    content.vb: Public ReadOnly Property Position As Position
-  overload: Virtufin.Base.PositionTransferContract.Position*
-- uid: Virtufin.Base.PositionTransferContract.From
-  commentId: P:Virtufin.Base.PositionTransferContract.From
+      type: Virtufin.Base.Position{{A}}
+    content.vb: Public ReadOnly Property Position As Position(Of A)
+  overload: Virtufin.Base.PositionTransferContract`1.Position*
+  nameWithType.vb: PositionTransferContract(Of A).Position
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).Position
+- uid: Virtufin.Base.PositionTransferContract`1.From
+  commentId: P:Virtufin.Base.PositionTransferContract`1.From
   id: From
-  parent: Virtufin.Base.PositionTransferContract
+  parent: Virtufin.Base.PositionTransferContract`1
   langs:
   - csharp
   - vb
   name: From
-  nameWithType: PositionTransferContract.From
-  fullName: Virtufin.Base.PositionTransferContract.From
+  nameWithType: PositionTransferContract<A>.From
+  fullName: Virtufin.Base.PositionTransferContract<A>.From
   type: Property
   source:
     remote:
@@ -117,7 +129,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: From
     path: ../../../src/Virtufin.Base/PositionTransferContract.cs
-    startLine: 26
+    startLine: 33
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -129,17 +141,19 @@ items:
     return:
       type: Virtufin.Base.Signatory
     content.vb: Public ReadOnly Property From As Signatory
-  overload: Virtufin.Base.PositionTransferContract.From*
-- uid: Virtufin.Base.PositionTransferContract.To
-  commentId: P:Virtufin.Base.PositionTransferContract.To
+  overload: Virtufin.Base.PositionTransferContract`1.From*
+  nameWithType.vb: PositionTransferContract(Of A).From
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).From
+- uid: Virtufin.Base.PositionTransferContract`1.To
+  commentId: P:Virtufin.Base.PositionTransferContract`1.To
   id: To
-  parent: Virtufin.Base.PositionTransferContract
+  parent: Virtufin.Base.PositionTransferContract`1
   langs:
   - csharp
   - vb
   name: To
-  nameWithType: PositionTransferContract.To
-  fullName: Virtufin.Base.PositionTransferContract.To
+  nameWithType: PositionTransferContract<A>.To
+  fullName: Virtufin.Base.PositionTransferContract<A>.To
   type: Property
   source:
     remote:
@@ -148,7 +162,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: To
     path: ../../../src/Virtufin.Base/PositionTransferContract.cs
-    startLine: 29
+    startLine: 36
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -160,17 +174,19 @@ items:
     return:
       type: Virtufin.Base.Signatory
     content.vb: Public ReadOnly Property [To] As Signatory
-  overload: Virtufin.Base.PositionTransferContract.To*
-- uid: Virtufin.Base.PositionTransferContract.At
-  commentId: P:Virtufin.Base.PositionTransferContract.At
+  overload: Virtufin.Base.PositionTransferContract`1.To*
+  nameWithType.vb: PositionTransferContract(Of A).To
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).To
+- uid: Virtufin.Base.PositionTransferContract`1.At
+  commentId: P:Virtufin.Base.PositionTransferContract`1.At
   id: At
-  parent: Virtufin.Base.PositionTransferContract
+  parent: Virtufin.Base.PositionTransferContract`1
   langs:
   - csharp
   - vb
   name: At
-  nameWithType: PositionTransferContract.At
-  fullName: Virtufin.Base.PositionTransferContract.At
+  nameWithType: PositionTransferContract<A>.At
+  fullName: Virtufin.Base.PositionTransferContract<A>.At
   type: Property
   source:
     remote:
@@ -179,7 +195,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: At
     path: ../../../src/Virtufin.Base/PositionTransferContract.cs
-    startLine: 32
+    startLine: 39
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -191,17 +207,19 @@ items:
     return:
       type: Virtufin.Base.TimeStamp
     content.vb: Public ReadOnly Property At As TimeStamp
-  overload: Virtufin.Base.PositionTransferContract.At*
-- uid: Virtufin.Base.PositionTransferContract.Id
-  commentId: P:Virtufin.Base.PositionTransferContract.Id
+  overload: Virtufin.Base.PositionTransferContract`1.At*
+  nameWithType.vb: PositionTransferContract(Of A).At
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).At
+- uid: Virtufin.Base.PositionTransferContract`1.Id
+  commentId: P:Virtufin.Base.PositionTransferContract`1.Id
   id: Id
-  parent: Virtufin.Base.PositionTransferContract
+  parent: Virtufin.Base.PositionTransferContract`1
   langs:
   - csharp
   - vb
   name: Id
-  nameWithType: PositionTransferContract.Id
-  fullName: Virtufin.Base.PositionTransferContract.Id
+  nameWithType: PositionTransferContract<A>.Id
+  fullName: Virtufin.Base.PositionTransferContract<A>.Id
   type: Property
   source:
     remote:
@@ -210,7 +228,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Id
     path: ../../../src/Virtufin.Base/PositionTransferContract.cs
-    startLine: 35
+    startLine: 42
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -221,17 +239,19 @@ items:
     return:
       type: Virtufin.Base.ContractIdentifier
     content.vb: Public ReadOnly Property Id As ContractIdentifier
-  overload: Virtufin.Base.PositionTransferContract.Id*
-- uid: Virtufin.Base.PositionTransferContract.#ctor(Virtufin.Base.Position,Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.TimeStamp,Virtufin.Base.ContractIdentifier)
-  commentId: M:Virtufin.Base.PositionTransferContract.#ctor(Virtufin.Base.Position,Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.TimeStamp,Virtufin.Base.ContractIdentifier)
-  id: '#ctor(Virtufin.Base.Position,Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.TimeStamp,Virtufin.Base.ContractIdentifier)'
-  parent: Virtufin.Base.PositionTransferContract
+  overload: Virtufin.Base.PositionTransferContract`1.Id*
+  nameWithType.vb: PositionTransferContract(Of A).Id
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).Id
+- uid: Virtufin.Base.PositionTransferContract`1.#ctor(Virtufin.Base.Position{`0},Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.TimeStamp,Virtufin.Base.ContractIdentifier)
+  commentId: M:Virtufin.Base.PositionTransferContract`1.#ctor(Virtufin.Base.Position{`0},Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.TimeStamp,Virtufin.Base.ContractIdentifier)
+  id: '#ctor(Virtufin.Base.Position{`0},Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.TimeStamp,Virtufin.Base.ContractIdentifier)'
+  parent: Virtufin.Base.PositionTransferContract`1
   langs:
   - csharp
   - vb
-  name: PositionTransferContract(Position, Signatory, Signatory, TimeStamp, ContractIdentifier)
-  nameWithType: PositionTransferContract.PositionTransferContract(Position, Signatory, Signatory, TimeStamp, ContractIdentifier)
-  fullName: Virtufin.Base.PositionTransferContract.PositionTransferContract(Virtufin.Base.Position, Virtufin.Base.Signatory, Virtufin.Base.Signatory, Virtufin.Base.TimeStamp, Virtufin.Base.ContractIdentifier)
+  name: PositionTransferContract(Position<A>, Signatory, Signatory, TimeStamp, ContractIdentifier)
+  nameWithType: PositionTransferContract<A>.PositionTransferContract(Position<A>, Signatory, Signatory, TimeStamp, ContractIdentifier)
+  fullName: Virtufin.Base.PositionTransferContract<A>.PositionTransferContract(Virtufin.Base.Position<A>, Virtufin.Base.Signatory, Virtufin.Base.Signatory, Virtufin.Base.TimeStamp, Virtufin.Base.ContractIdentifier)
   type: Constructor
   source:
     remote:
@@ -240,17 +260,17 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/PositionTransferContract.cs
-    startLine: 43
+    startLine: 50
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
   summary: Construct a position-transfer contract.
   example: []
   syntax:
-    content: public PositionTransferContract(Position position, Signatory from, Signatory to, TimeStamp at, ContractIdentifier id)
+    content: public PositionTransferContract(Position<A> position, Signatory from, Signatory to, TimeStamp at, ContractIdentifier id)
     parameters:
     - id: position
-      type: Virtufin.Base.Position
+      type: Virtufin.Base.Position{{A}}
     - id: from
       type: Virtufin.Base.Signatory
     - id: to
@@ -259,21 +279,21 @@ items:
       type: Virtufin.Base.TimeStamp
     - id: id
       type: Virtufin.Base.ContractIdentifier
-    content.vb: Public Sub New(position As Position, from As Signatory, [to] As Signatory, at As TimeStamp, id As ContractIdentifier)
-  overload: Virtufin.Base.PositionTransferContract.#ctor*
-  nameWithType.vb: PositionTransferContract.New(Position, Signatory, Signatory, TimeStamp, ContractIdentifier)
-  fullName.vb: Virtufin.Base.PositionTransferContract.New(Virtufin.Base.Position, Virtufin.Base.Signatory, Virtufin.Base.Signatory, Virtufin.Base.TimeStamp, Virtufin.Base.ContractIdentifier)
-  name.vb: New(Position, Signatory, Signatory, TimeStamp, ContractIdentifier)
-- uid: Virtufin.Base.PositionTransferContract.IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)
-  commentId: M:Virtufin.Base.PositionTransferContract.IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)
+    content.vb: Public Sub New(position As Position(Of A), from As Signatory, [to] As Signatory, at As TimeStamp, id As ContractIdentifier)
+  overload: Virtufin.Base.PositionTransferContract`1.#ctor*
+  nameWithType.vb: PositionTransferContract(Of A).New(Position(Of A), Signatory, Signatory, TimeStamp, ContractIdentifier)
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).New(Virtufin.Base.Position(Of A), Virtufin.Base.Signatory, Virtufin.Base.Signatory, Virtufin.Base.TimeStamp, Virtufin.Base.ContractIdentifier)
+  name.vb: New(Position(Of A), Signatory, Signatory, TimeStamp, ContractIdentifier)
+- uid: Virtufin.Base.PositionTransferContract`1.IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)
+  commentId: M:Virtufin.Base.PositionTransferContract`1.IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)
   id: IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)
-  parent: Virtufin.Base.PositionTransferContract
+  parent: Virtufin.Base.PositionTransferContract`1
   langs:
   - csharp
   - vb
   name: IsRelatedTransaction(ITransaction)
-  nameWithType: PositionTransferContract.IsRelatedTransaction(ITransaction)
-  fullName: Virtufin.Base.PositionTransferContract.IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)
+  nameWithType: PositionTransferContract<A>.IsRelatedTransaction(ITransaction)
+  fullName: Virtufin.Base.PositionTransferContract<A>.IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)
   type: Method
   source:
     remote:
@@ -282,7 +302,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsRelatedTransaction
     path: ../../../src/Virtufin.Base/PositionTransferContract.cs
-    startLine: 53
+    startLine: 60
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -297,19 +317,21 @@ items:
     return:
       type: System.Boolean
     content.vb: Public Function IsRelatedTransaction(transaction As ITransaction) As Boolean
-  overload: Virtufin.Base.PositionTransferContract.IsRelatedTransaction*
+  overload: Virtufin.Base.PositionTransferContract`1.IsRelatedTransaction*
   implements:
   - Virtufin.Core.Contracts.IContract.IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)
-- uid: Virtufin.Base.PositionTransferContract.VerifyMessages(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage},Virtufin.Core.Contracts.IScenarioHistory)
-  commentId: M:Virtufin.Base.PositionTransferContract.VerifyMessages(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage},Virtufin.Core.Contracts.IScenarioHistory)
+  nameWithType.vb: PositionTransferContract(Of A).IsRelatedTransaction(ITransaction)
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)
+- uid: Virtufin.Base.PositionTransferContract`1.VerifyMessages(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage},Virtufin.Core.Contracts.IScenarioHistory)
+  commentId: M:Virtufin.Base.PositionTransferContract`1.VerifyMessages(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage},Virtufin.Core.Contracts.IScenarioHistory)
   id: VerifyMessages(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage},Virtufin.Core.Contracts.IScenarioHistory)
-  parent: Virtufin.Base.PositionTransferContract
+  parent: Virtufin.Base.PositionTransferContract`1
   langs:
   - csharp
   - vb
   name: VerifyMessages(IEnumerable<IMessage>, IScenarioHistory)
-  nameWithType: PositionTransferContract.VerifyMessages(IEnumerable<IMessage>, IScenarioHistory)
-  fullName: Virtufin.Base.PositionTransferContract.VerifyMessages(System.Collections.Generic.IEnumerable<Virtufin.Core.Contracts.IMessage>, Virtufin.Core.Contracts.IScenarioHistory)
+  nameWithType: PositionTransferContract<A>.VerifyMessages(IEnumerable<IMessage>, IScenarioHistory)
+  fullName: Virtufin.Base.PositionTransferContract<A>.VerifyMessages(System.Collections.Generic.IEnumerable<Virtufin.Core.Contracts.IMessage>, Virtufin.Core.Contracts.IScenarioHistory)
   type: Method
   source:
     remote:
@@ -318,7 +340,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: VerifyMessages
     path: ../../../src/Virtufin.Base/PositionTransferContract.cs
-    startLine: 57
+    startLine: 64
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -343,22 +365,22 @@ items:
     return:
       type: System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.ITransaction}
     content.vb: Public Function VerifyMessages(messages As IEnumerable(Of IMessage), scenarioHistory As IScenarioHistory) As IEnumerable(Of ITransaction)
-  overload: Virtufin.Base.PositionTransferContract.VerifyMessages*
+  overload: Virtufin.Base.PositionTransferContract`1.VerifyMessages*
   implements:
   - Virtufin.Core.Contracts.IContract.VerifyMessages(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage},Virtufin.Core.Contracts.IScenarioHistory)
-  nameWithType.vb: PositionTransferContract.VerifyMessages(IEnumerable(Of IMessage), IScenarioHistory)
-  fullName.vb: Virtufin.Base.PositionTransferContract.VerifyMessages(System.Collections.Generic.IEnumerable(Of Virtufin.Core.Contracts.IMessage), Virtufin.Core.Contracts.IScenarioHistory)
+  nameWithType.vb: PositionTransferContract(Of A).VerifyMessages(IEnumerable(Of IMessage), IScenarioHistory)
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).VerifyMessages(System.Collections.Generic.IEnumerable(Of Virtufin.Core.Contracts.IMessage), Virtufin.Core.Contracts.IScenarioHistory)
   name.vb: VerifyMessages(IEnumerable(Of IMessage), IScenarioHistory)
-- uid: Virtufin.Base.PositionTransferContract.Equals(Virtufin.Core.Contracts.IContract)
-  commentId: M:Virtufin.Base.PositionTransferContract.Equals(Virtufin.Core.Contracts.IContract)
+- uid: Virtufin.Base.PositionTransferContract`1.Equals(Virtufin.Core.Contracts.IContract)
+  commentId: M:Virtufin.Base.PositionTransferContract`1.Equals(Virtufin.Core.Contracts.IContract)
   id: Equals(Virtufin.Core.Contracts.IContract)
-  parent: Virtufin.Base.PositionTransferContract
+  parent: Virtufin.Base.PositionTransferContract`1
   langs:
   - csharp
   - vb
   name: Equals(IContract?)
-  nameWithType: PositionTransferContract.Equals(IContract?)
-  fullName: Virtufin.Base.PositionTransferContract.Equals(Virtufin.Core.Contracts.IContract?)
+  nameWithType: PositionTransferContract<A>.Equals(IContract?)
+  fullName: Virtufin.Base.PositionTransferContract<A>.Equals(Virtufin.Core.Contracts.IContract?)
   type: Method
   source:
     remote:
@@ -367,7 +389,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Equals
     path: ../../../src/Virtufin.Base/PositionTransferContract.cs
-    startLine: 64
+    startLine: 71
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -383,19 +405,38 @@ items:
       type: System.Boolean
       description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
     content.vb: Public Function Equals(other As IContract) As Boolean
-  overload: Virtufin.Base.PositionTransferContract.Equals*
+  overload: Virtufin.Base.PositionTransferContract`1.Equals*
   implements:
   - System.IEquatable{Virtufin.Core.Contracts.IContract}.Equals(Virtufin.Core.Contracts.IContract)
-  nameWithType.vb: PositionTransferContract.Equals(IContract)
-  fullName.vb: Virtufin.Base.PositionTransferContract.Equals(Virtufin.Core.Contracts.IContract)
+  nameWithType.vb: PositionTransferContract(Of A).Equals(IContract)
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).Equals(Virtufin.Core.Contracts.IContract)
   name.vb: Equals(IContract)
 references:
-- uid: Virtufin.Base.PositionTransferContract.Position
-  commentId: P:Virtufin.Base.PositionTransferContract.Position
-  href: Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract_Position
-  name: Position
-  nameWithType: PositionTransferContract.Position
-  fullName: Virtufin.Base.PositionTransferContract.Position
+- uid: Virtufin.Base.Position`1
+  commentId: T:Virtufin.Base.Position`1
+  href: Virtufin.Base.Position-1.html
+  name: Position<A>
+  nameWithType: Position<A>
+  fullName: Virtufin.Base.Position<A>
+  nameWithType.vb: Position(Of A)
+  fullName.vb: Virtufin.Base.Position(Of A)
+  name.vb: Position(Of A)
+  spec.csharp:
+  - uid: Virtufin.Base.Position`1
+    name: Position
+    href: Virtufin.Base.Position-1.html
+  - name: <
+  - name: A
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.Position`1
+    name: Position
+    href: Virtufin.Base.Position-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: )
 - uid: Virtufin.Base.Signatory
   commentId: T:Virtufin.Base.Signatory
   parent: Virtufin.Base
@@ -410,6 +451,20 @@ references:
   name: TimeStamp
   nameWithType: TimeStamp
   fullName: Virtufin.Base.TimeStamp
+- uid: Virtufin.Core.Contracts.IContract
+  commentId: T:Virtufin.Core.Contracts.IContract
+  parent: Virtufin.Core.Contracts
+  href: Virtufin.Core.Contracts.IContract.html
+  name: IContract
+  nameWithType: IContract
+  fullName: Virtufin.Core.Contracts.IContract
+- uid: Virtufin.Core.Contracts.IWithMaturity
+  commentId: T:Virtufin.Core.Contracts.IWithMaturity
+  parent: Virtufin.Core.Contracts
+  href: Virtufin.Core.Contracts.IWithMaturity.html
+  name: IWithMaturity
+  nameWithType: IWithMaturity
+  fullName: Virtufin.Core.Contracts.IWithMaturity
 - uid: Virtufin.Base
   commentId: N:Virtufin.Base
   href: Virtufin.html
@@ -443,20 +498,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Virtufin.Core.Contracts.IWithMaturity
-  commentId: T:Virtufin.Core.Contracts.IWithMaturity
-  parent: Virtufin.Core.Contracts
-  href: Virtufin.Core.Contracts.IWithMaturity.html
-  name: IWithMaturity
-  nameWithType: IWithMaturity
-  fullName: Virtufin.Core.Contracts.IWithMaturity
-- uid: Virtufin.Core.Contracts.IContract
-  commentId: T:Virtufin.Core.Contracts.IContract
-  parent: Virtufin.Core.Contracts
-  href: Virtufin.Core.Contracts.IContract.html
-  name: IContract
-  nameWithType: IContract
-  fullName: Virtufin.Core.Contracts.IContract
 - uid: System.IEquatable{Virtufin.Core.Contracts.IContract}
   commentId: T:System.IEquatable{Virtufin.Core.Contracts.IContract}
   parent: System
@@ -490,26 +531,29 @@ references:
     name: IContract
     href: Virtufin.Core.Contracts.IContract.html
   - name: )
-- uid: System.IEquatable{Virtufin.Base.PositionTransferContract}
-  commentId: T:System.IEquatable{Virtufin.Base.PositionTransferContract}
+- uid: System.IEquatable{Virtufin.Base.PositionTransferContract`1}
+  commentId: T:System.IEquatable{Virtufin.Base.PositionTransferContract`1}
   parent: System
   definition: System.IEquatable`1
   href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  name: IEquatable<PositionTransferContract>
-  nameWithType: IEquatable<PositionTransferContract>
-  fullName: System.IEquatable<Virtufin.Base.PositionTransferContract>
-  nameWithType.vb: IEquatable(Of PositionTransferContract)
-  fullName.vb: System.IEquatable(Of Virtufin.Base.PositionTransferContract)
-  name.vb: IEquatable(Of PositionTransferContract)
+  name: IEquatable<PositionTransferContract<A>>
+  nameWithType: IEquatable<PositionTransferContract<A>>
+  fullName: System.IEquatable<Virtufin.Base.PositionTransferContract<A>>
+  nameWithType.vb: IEquatable(Of PositionTransferContract(Of A))
+  fullName.vb: System.IEquatable(Of Virtufin.Base.PositionTransferContract(Of A))
+  name.vb: IEquatable(Of PositionTransferContract(Of A))
   spec.csharp:
   - uid: System.IEquatable`1
     name: IEquatable
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
   - name: <
-  - uid: Virtufin.Base.PositionTransferContract
+  - uid: Virtufin.Base.PositionTransferContract`1
     name: PositionTransferContract
-    href: Virtufin.Base.PositionTransferContract.html
+    href: Virtufin.Base.PositionTransferContract-1.html
+  - name: <
+  - name: A
+  - name: '>'
   - name: '>'
   spec.vb:
   - uid: System.IEquatable`1
@@ -519,9 +563,14 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Virtufin.Base.PositionTransferContract
+  - uid: Virtufin.Base.PositionTransferContract`1
     name: PositionTransferContract
-    href: Virtufin.Base.PositionTransferContract.html
+    href: Virtufin.Base.PositionTransferContract-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: )
   - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
@@ -718,13 +767,6 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
-- uid: System
-  commentId: N:System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System
-  nameWithType: System
-  fullName: System
 - uid: Virtufin.Core.Contracts
   commentId: N:Virtufin.Core.Contracts
   href: Virtufin.html
@@ -755,6 +797,13 @@ references:
   - uid: Virtufin.Core.Contracts
     name: Contracts
     href: Virtufin.Core.Contracts.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: System.IEquatable`1
   commentId: T:System.IEquatable`1
   isExternal: true
@@ -783,43 +832,73 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: Virtufin.Base.PositionTransferContract.Position*
-  commentId: Overload:Virtufin.Base.PositionTransferContract.Position
-  href: Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract_Position
+- uid: Virtufin.Base.PositionTransferContract`1.Position*
+  commentId: Overload:Virtufin.Base.PositionTransferContract`1.Position
+  href: Virtufin.Base.PositionTransferContract-1.html#Virtufin_Base_PositionTransferContract_1_Position
   name: Position
-  nameWithType: PositionTransferContract.Position
-  fullName: Virtufin.Base.PositionTransferContract.Position
-- uid: Virtufin.Base.Position
-  commentId: T:Virtufin.Base.Position
+  nameWithType: PositionTransferContract<A>.Position
+  fullName: Virtufin.Base.PositionTransferContract<A>.Position
+  nameWithType.vb: PositionTransferContract(Of A).Position
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).Position
+- uid: Virtufin.Base.Position{{A}}
+  commentId: T:Virtufin.Base.Position{``0}
   parent: Virtufin.Base
-  href: Virtufin.Base.Position.html
-  name: Position
-  nameWithType: Position
-  fullName: Virtufin.Base.Position
-- uid: Virtufin.Base.PositionTransferContract.From*
-  commentId: Overload:Virtufin.Base.PositionTransferContract.From
-  href: Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract_From
+  definition: Virtufin.Base.Position`1
+  href: Virtufin.Base.Position-1.html
+  name: Position<A>
+  nameWithType: Position<A>
+  fullName: Virtufin.Base.Position<A>
+  nameWithType.vb: Position(Of A)
+  fullName.vb: Virtufin.Base.Position(Of A)
+  name.vb: Position(Of A)
+  spec.csharp:
+  - uid: Virtufin.Base.Position`1
+    name: Position
+    href: Virtufin.Base.Position-1.html
+  - name: <
+  - name: A
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.Position`1
+    name: Position
+    href: Virtufin.Base.Position-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: )
+- uid: Virtufin.Base.PositionTransferContract`1.From*
+  commentId: Overload:Virtufin.Base.PositionTransferContract`1.From
+  href: Virtufin.Base.PositionTransferContract-1.html#Virtufin_Base_PositionTransferContract_1_From
   name: From
-  nameWithType: PositionTransferContract.From
-  fullName: Virtufin.Base.PositionTransferContract.From
-- uid: Virtufin.Base.PositionTransferContract.To*
-  commentId: Overload:Virtufin.Base.PositionTransferContract.To
-  href: Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract_To
+  nameWithType: PositionTransferContract<A>.From
+  fullName: Virtufin.Base.PositionTransferContract<A>.From
+  nameWithType.vb: PositionTransferContract(Of A).From
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).From
+- uid: Virtufin.Base.PositionTransferContract`1.To*
+  commentId: Overload:Virtufin.Base.PositionTransferContract`1.To
+  href: Virtufin.Base.PositionTransferContract-1.html#Virtufin_Base_PositionTransferContract_1_To
   name: To
-  nameWithType: PositionTransferContract.To
-  fullName: Virtufin.Base.PositionTransferContract.To
-- uid: Virtufin.Base.PositionTransferContract.At*
-  commentId: Overload:Virtufin.Base.PositionTransferContract.At
-  href: Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract_At
+  nameWithType: PositionTransferContract<A>.To
+  fullName: Virtufin.Base.PositionTransferContract<A>.To
+  nameWithType.vb: PositionTransferContract(Of A).To
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).To
+- uid: Virtufin.Base.PositionTransferContract`1.At*
+  commentId: Overload:Virtufin.Base.PositionTransferContract`1.At
+  href: Virtufin.Base.PositionTransferContract-1.html#Virtufin_Base_PositionTransferContract_1_At
   name: At
-  nameWithType: PositionTransferContract.At
-  fullName: Virtufin.Base.PositionTransferContract.At
-- uid: Virtufin.Base.PositionTransferContract.Id*
-  commentId: Overload:Virtufin.Base.PositionTransferContract.Id
-  href: Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract_Id
+  nameWithType: PositionTransferContract<A>.At
+  fullName: Virtufin.Base.PositionTransferContract<A>.At
+  nameWithType.vb: PositionTransferContract(Of A).At
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).At
+- uid: Virtufin.Base.PositionTransferContract`1.Id*
+  commentId: Overload:Virtufin.Base.PositionTransferContract`1.Id
+  href: Virtufin.Base.PositionTransferContract-1.html#Virtufin_Base_PositionTransferContract_1_Id
   name: Id
-  nameWithType: PositionTransferContract.Id
-  fullName: Virtufin.Base.PositionTransferContract.Id
+  nameWithType: PositionTransferContract<A>.Id
+  fullName: Virtufin.Base.PositionTransferContract<A>.Id
+  nameWithType.vb: PositionTransferContract(Of A).Id
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).Id
 - uid: Virtufin.Base.ContractIdentifier
   commentId: T:Virtufin.Base.ContractIdentifier
   parent: Virtufin.Base
@@ -827,21 +906,23 @@ references:
   name: ContractIdentifier
   nameWithType: ContractIdentifier
   fullName: Virtufin.Base.ContractIdentifier
-- uid: Virtufin.Base.PositionTransferContract.#ctor*
-  commentId: Overload:Virtufin.Base.PositionTransferContract.#ctor
-  href: Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract__ctor_Virtufin_Base_Position_Virtufin_Base_Signatory_Virtufin_Base_Signatory_Virtufin_Base_TimeStamp_Virtufin_Base_ContractIdentifier_
+- uid: Virtufin.Base.PositionTransferContract`1.#ctor*
+  commentId: Overload:Virtufin.Base.PositionTransferContract`1.#ctor
+  href: Virtufin.Base.PositionTransferContract-1.html#Virtufin_Base_PositionTransferContract_1__ctor_Virtufin_Base_Position__0__Virtufin_Base_Signatory_Virtufin_Base_Signatory_Virtufin_Base_TimeStamp_Virtufin_Base_ContractIdentifier_
   name: PositionTransferContract
-  nameWithType: PositionTransferContract.PositionTransferContract
-  fullName: Virtufin.Base.PositionTransferContract.PositionTransferContract
-  nameWithType.vb: PositionTransferContract.New
-  fullName.vb: Virtufin.Base.PositionTransferContract.New
+  nameWithType: PositionTransferContract<A>.PositionTransferContract
+  fullName: Virtufin.Base.PositionTransferContract<A>.PositionTransferContract
+  nameWithType.vb: PositionTransferContract(Of A).New
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).New
   name.vb: New
-- uid: Virtufin.Base.PositionTransferContract.IsRelatedTransaction*
-  commentId: Overload:Virtufin.Base.PositionTransferContract.IsRelatedTransaction
-  href: Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract_IsRelatedTransaction_Virtufin_Core_Contracts_ITransaction_
+- uid: Virtufin.Base.PositionTransferContract`1.IsRelatedTransaction*
+  commentId: Overload:Virtufin.Base.PositionTransferContract`1.IsRelatedTransaction
+  href: Virtufin.Base.PositionTransferContract-1.html#Virtufin_Base_PositionTransferContract_1_IsRelatedTransaction_Virtufin_Core_Contracts_ITransaction_
   name: IsRelatedTransaction
-  nameWithType: PositionTransferContract.IsRelatedTransaction
-  fullName: Virtufin.Base.PositionTransferContract.IsRelatedTransaction
+  nameWithType: PositionTransferContract<A>.IsRelatedTransaction
+  fullName: Virtufin.Base.PositionTransferContract<A>.IsRelatedTransaction
+  nameWithType.vb: PositionTransferContract(Of A).IsRelatedTransaction
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).IsRelatedTransaction
 - uid: Virtufin.Core.Contracts.IContract.IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)
   commentId: M:Virtufin.Core.Contracts.IContract.IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)
   parent: Virtufin.Core.Contracts.IContract
@@ -885,12 +966,14 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: Virtufin.Base.PositionTransferContract.VerifyMessages*
-  commentId: Overload:Virtufin.Base.PositionTransferContract.VerifyMessages
-  href: Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract_VerifyMessages_System_Collections_Generic_IEnumerable_Virtufin_Core_Contracts_IMessage__Virtufin_Core_Contracts_IScenarioHistory_
+- uid: Virtufin.Base.PositionTransferContract`1.VerifyMessages*
+  commentId: Overload:Virtufin.Base.PositionTransferContract`1.VerifyMessages
+  href: Virtufin.Base.PositionTransferContract-1.html#Virtufin_Base_PositionTransferContract_1_VerifyMessages_System_Collections_Generic_IEnumerable_Virtufin_Core_Contracts_IMessage__Virtufin_Core_Contracts_IScenarioHistory_
   name: VerifyMessages
-  nameWithType: PositionTransferContract.VerifyMessages
-  fullName: Virtufin.Base.PositionTransferContract.VerifyMessages
+  nameWithType: PositionTransferContract<A>.VerifyMessages
+  fullName: Virtufin.Base.PositionTransferContract<A>.VerifyMessages
+  nameWithType.vb: PositionTransferContract(Of A).VerifyMessages
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).VerifyMessages
 - uid: Virtufin.Core.Contracts.IContract.VerifyMessages(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage},Virtufin.Core.Contracts.IScenarioHistory)
   commentId: M:Virtufin.Core.Contracts.IContract.VerifyMessages(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage},Virtufin.Core.Contracts.IScenarioHistory)
   parent: Virtufin.Core.Contracts.IContract
@@ -1082,12 +1165,14 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
-- uid: Virtufin.Base.PositionTransferContract.Equals*
-  commentId: Overload:Virtufin.Base.PositionTransferContract.Equals
-  href: Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract_Equals_Virtufin_Core_Contracts_IContract_
+- uid: Virtufin.Base.PositionTransferContract`1.Equals*
+  commentId: Overload:Virtufin.Base.PositionTransferContract`1.Equals
+  href: Virtufin.Base.PositionTransferContract-1.html#Virtufin_Base_PositionTransferContract_1_Equals_Virtufin_Core_Contracts_IContract_
   name: Equals
-  nameWithType: PositionTransferContract.Equals
-  fullName: Virtufin.Base.PositionTransferContract.Equals
+  nameWithType: PositionTransferContract<A>.Equals
+  fullName: Virtufin.Base.PositionTransferContract<A>.Equals
+  nameWithType.vb: PositionTransferContract(Of A).Equals
+  fullName.vb: Virtufin.Base.PositionTransferContract(Of A).Equals
 - uid: System.IEquatable{Virtufin.Core.Contracts.IContract}.Equals(Virtufin.Core.Contracts.IContract)
   commentId: M:System.IEquatable{Virtufin.Core.Contracts.IContract}.Equals(Virtufin.Core.Contracts.IContract)
   parent: System.IEquatable{Virtufin.Core.Contracts.IContract}

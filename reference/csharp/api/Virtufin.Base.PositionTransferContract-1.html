@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class PositionTransferContract | Virtufin .NET - C# API Reference </title>
+      <title>Class PositionTransferContract&lt;A&gt; | Virtufin .NET - C# API Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class PositionTransferContract | Virtufin .NET - C# API Reference ">
+      <meta name="title" content="Class PositionTransferContract&lt;A&gt; | Virtufin .NET - C# API Reference ">
       
       <meta name="description" content="A contract that transfers a  from one  to another at a fixed  (its maturity).">
       <link rel="icon" href="../favicon.ico">
@@ -49,10 +49,10 @@
             Virtufin.Dotnet
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/edc7ee197fe13524c228ef1f2923b7abdefd9185" target="_blank" rel="noopener" class="commit-badge" title="View commit edc7ee197fe13524c228ef1f2923b7abdefd9185">
+            <a href="{git_repo_url}/commit/97b7bbd36cf76ef815ba9a47b521568aea6360b3" target="_blank" rel="noopener" class="commit-badge" title="View commit 97b7bbd36cf76ef815ba9a47b521568aea6360b3">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">edc7ee197fe13524c228ef1f2923b7abdefd9185</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">97b7bbd36cf76ef815ba9a47b521568aea6360b3</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,12 +88,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.Base.PositionTransferContract">
+        <article data-uid="Virtufin.Base.PositionTransferContract`1">
 
 
 
-  <h1 id="Virtufin_Base_PositionTransferContract" data-uid="Virtufin.Base.PositionTransferContract" class="text-break">
-Class PositionTransferContract  
+  <h1 id="Virtufin_Base_PositionTransferContract_1" data-uid="Virtufin.Base.PositionTransferContract`1" class="text-break">
+Class PositionTransferContract&lt;A&gt;  
   </h1>
 
   <div class="facts text-secondary">
@@ -101,24 +101,30 @@ Class PositionTransferContract
   <dl><dt>Assembly</dt><dd>Virtufin.Base.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>A contract that transfers a <a class="xref" href="Virtufin.Base.PositionTransferContract.html#Virtufin_Base_PositionTransferContract_Position">Position</a> from one
+  <div class="markdown summary"><p>A contract that transfers a <a class="xref" href="Virtufin.Base.Position-1.html">Position&lt;A&gt;</a> from one
 <a class="xref" href="Virtufin.Base.Signatory.html">Signatory</a> to another at a fixed <a class="xref" href="Virtufin.Base.TimeStamp.html">TimeStamp</a>
 (its maturity).</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record PositionTransferContract : IWithMaturity, IContract, IEquatable&lt;IContract&gt;, IEquatable&lt;PositionTransferContract&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record PositionTransferContract&lt;A&gt; : IWithMaturity, IContract, IEquatable&lt;IContract&gt;, IEquatable&lt;PositionTransferContract&lt;A&gt;&gt; where A : IFixedPointAmount&lt;A&gt;</code></pre>
   </div>
 
 
 
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code></dt>
+    <dd><p>The fixed-point amount type measuring the position.</p>
+</dd>
+  </dl>
 
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">PositionTransferContract</span></div>
+      <div><span class="xref">PositionTransferContract&lt;A&gt;</span></div>
     </dd>
   </dl>
 
@@ -128,7 +134,7 @@ Class PositionTransferContract
       <div><a class="xref" href="Virtufin.Core.Contracts.IWithMaturity.html">IWithMaturity</a></div>
       <div><a class="xref" href="Virtufin.Core.Contracts.IContract.html">IContract</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Virtufin.Core.Contracts.IContract.html">IContract</a>&gt;</div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Virtufin.Base.PositionTransferContract.html">PositionTransferContract</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Virtufin.Base.PositionTransferContract-1.html">PositionTransferContract</a>&lt;A&gt;&gt;</div>
     </dd>
   </dl>
 
@@ -158,25 +164,29 @@ Class PositionTransferContract
 
 
 
-  <h2 id="Virtufin_Base_PositionTransferContract_examples">Examples</h2>
+  <h2 id="Virtufin_Base_PositionTransferContract_1_examples">Examples</h2>
   <pre><code class="lang-csharp">var from = Signatory.New();
 var to = Signatory.New();
 var pos = Position.Of(100, CurrencyIdentifier.USD);
 var at = TimeStamp.New(2024, 12, 31);
 var id = ContractIdentifier.NewWithUuid();
-var contract = new PositionTransferContract(pos, from, to, at, id);</code></pre>
+var contract = new PositionTransferContract&lt;DecimalAmount&gt;(pos, from, to, at, id);</code></pre>
 
 
+  <h2 id="Virtufin_Base_PositionTransferContract_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p><a class="xref" href="Virtufin.Core.Contracts.IContract.html">IContract</a> and <a class="xref" href="Virtufin.Core.Contracts.IWithMaturity.html">IWithMaturity</a> are non-generic, so a contract
+registry or history holding <a class="xref" href="Virtufin.Core.Contracts.IContract.html">IContract</a> is unaffected by the type parameter.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
 </h2>
 
 
-  <a id="Virtufin_Base_PositionTransferContract__ctor_" data-uid="Virtufin.Base.PositionTransferContract.#ctor*"></a>
+  <a id="Virtufin_Base_PositionTransferContract_1__ctor_" data-uid="Virtufin.Base.PositionTransferContract`1.#ctor*"></a>
 
-  <h3 id="Virtufin_Base_PositionTransferContract__ctor_Virtufin_Base_Position_Virtufin_Base_Signatory_Virtufin_Base_Signatory_Virtufin_Base_TimeStamp_Virtufin_Base_ContractIdentifier_" data-uid="Virtufin.Base.PositionTransferContract.#ctor(Virtufin.Base.Position,Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.TimeStamp,Virtufin.Base.ContractIdentifier)">
-  PositionTransferContract(Position, Signatory, Signatory, TimeStamp, ContractIdentifier)
+  <h3 id="Virtufin_Base_PositionTransferContract_1__ctor_Virtufin_Base_Position__0__Virtufin_Base_Signatory_Virtufin_Base_Signatory_Virtufin_Base_TimeStamp_Virtufin_Base_ContractIdentifier_" data-uid="Virtufin.Base.PositionTransferContract`1.#ctor(Virtufin.Base.Position{`0},Virtufin.Base.Signatory,Virtufin.Base.Signatory,Virtufin.Base.TimeStamp,Virtufin.Base.ContractIdentifier)">
+  PositionTransferContract(Position&lt;A&gt;, Signatory, Signatory, TimeStamp, ContractIdentifier)
   
   </h3>
 
@@ -185,12 +195,12 @@ var contract = new PositionTransferContract(pos, from, to, at, id);</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PositionTransferContract(Position position, Signatory from, Signatory to, TimeStamp at, ContractIdentifier id)</code></pre>
+    <pre><code class="lang-csharp hljs">public PositionTransferContract(Position&lt;A&gt; position, Signatory from, Signatory to, TimeStamp at, ContractIdentifier id)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>position</code> <a class="xref" href="Virtufin.Base.Position.html">Position</a></dt>
+    <dt><code>position</code> <a class="xref" href="Virtufin.Base.Position-1.html">Position</a>&lt;A&gt;</dt>
     <dd></dd>
     <dt><code>from</code> <a class="xref" href="Virtufin.Base.Signatory.html">Signatory</a></dt>
     <dd></dd>
@@ -217,9 +227,9 @@ var contract = new PositionTransferContract(pos, from, to, at, id);</code></pre>
 </h2>
 
 
-  <a id="Virtufin_Base_PositionTransferContract_At_" data-uid="Virtufin.Base.PositionTransferContract.At*"></a>
+  <a id="Virtufin_Base_PositionTransferContract_1_At_" data-uid="Virtufin.Base.PositionTransferContract`1.At*"></a>
 
-  <h3 id="Virtufin_Base_PositionTransferContract_At" data-uid="Virtufin.Base.PositionTransferContract.At">
+  <h3 id="Virtufin_Base_PositionTransferContract_1_At" data-uid="Virtufin.Base.PositionTransferContract`1.At">
   At
   
   </h3>
@@ -249,9 +259,9 @@ var contract = new PositionTransferContract(pos, from, to, at, id);</code></pre>
 
 
 
-  <a id="Virtufin_Base_PositionTransferContract_From_" data-uid="Virtufin.Base.PositionTransferContract.From*"></a>
+  <a id="Virtufin_Base_PositionTransferContract_1_From_" data-uid="Virtufin.Base.PositionTransferContract`1.From*"></a>
 
-  <h3 id="Virtufin_Base_PositionTransferContract_From" data-uid="Virtufin.Base.PositionTransferContract.From">
+  <h3 id="Virtufin_Base_PositionTransferContract_1_From" data-uid="Virtufin.Base.PositionTransferContract`1.From">
   From
   
   </h3>
@@ -281,9 +291,9 @@ var contract = new PositionTransferContract(pos, from, to, at, id);</code></pre>
 
 
 
-  <a id="Virtufin_Base_PositionTransferContract_Id_" data-uid="Virtufin.Base.PositionTransferContract.Id*"></a>
+  <a id="Virtufin_Base_PositionTransferContract_1_Id_" data-uid="Virtufin.Base.PositionTransferContract`1.Id*"></a>
 
-  <h3 id="Virtufin_Base_PositionTransferContract_Id" data-uid="Virtufin.Base.PositionTransferContract.Id">
+  <h3 id="Virtufin_Base_PositionTransferContract_1_Id" data-uid="Virtufin.Base.PositionTransferContract`1.Id">
   Id
   
   </h3>
@@ -312,9 +322,9 @@ var contract = new PositionTransferContract(pos, from, to, at, id);</code></pre>
 
 
 
-  <a id="Virtufin_Base_PositionTransferContract_Position_" data-uid="Virtufin.Base.PositionTransferContract.Position*"></a>
+  <a id="Virtufin_Base_PositionTransferContract_1_Position_" data-uid="Virtufin.Base.PositionTransferContract`1.Position*"></a>
 
-  <h3 id="Virtufin_Base_PositionTransferContract_Position" data-uid="Virtufin.Base.PositionTransferContract.Position">
+  <h3 id="Virtufin_Base_PositionTransferContract_1_Position" data-uid="Virtufin.Base.PositionTransferContract`1.Position">
   Position
   
   </h3>
@@ -324,7 +334,7 @@ var contract = new PositionTransferContract(pos, from, to, at, id);</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Position Position { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Position&lt;A&gt; Position { get; }</code></pre>
   </div>
 
 
@@ -333,7 +343,7 @@ var contract = new PositionTransferContract(pos, from, to, at, id);</code></pre>
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Virtufin.Base.Position.html">Position</a></dt>
+    <dt><a class="xref" href="Virtufin.Base.Position-1.html">Position</a>&lt;A&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -344,9 +354,9 @@ var contract = new PositionTransferContract(pos, from, to, at, id);</code></pre>
 
 
 
-  <a id="Virtufin_Base_PositionTransferContract_To_" data-uid="Virtufin.Base.PositionTransferContract.To*"></a>
+  <a id="Virtufin_Base_PositionTransferContract_1_To_" data-uid="Virtufin.Base.PositionTransferContract`1.To*"></a>
 
-  <h3 id="Virtufin_Base_PositionTransferContract_To" data-uid="Virtufin.Base.PositionTransferContract.To">
+  <h3 id="Virtufin_Base_PositionTransferContract_1_To" data-uid="Virtufin.Base.PositionTransferContract`1.To">
   To
   
   </h3>
@@ -380,9 +390,9 @@ var contract = new PositionTransferContract(pos, from, to, at, id);</code></pre>
 </h2>
 
 
-  <a id="Virtufin_Base_PositionTransferContract_Equals_" data-uid="Virtufin.Base.PositionTransferContract.Equals*"></a>
+  <a id="Virtufin_Base_PositionTransferContract_1_Equals_" data-uid="Virtufin.Base.PositionTransferContract`1.Equals*"></a>
 
-  <h3 id="Virtufin_Base_PositionTransferContract_Equals_Virtufin_Core_Contracts_IContract_" data-uid="Virtufin.Base.PositionTransferContract.Equals(Virtufin.Core.Contracts.IContract)">
+  <h3 id="Virtufin_Base_PositionTransferContract_1_Equals_Virtufin_Core_Contracts_IContract_" data-uid="Virtufin.Base.PositionTransferContract`1.Equals(Virtufin.Core.Contracts.IContract)">
   Equals(IContract?)
   
   </h3>
@@ -419,9 +429,9 @@ var contract = new PositionTransferContract(pos, from, to, at, id);</code></pre>
 
 
 
-  <a id="Virtufin_Base_PositionTransferContract_IsRelatedTransaction_" data-uid="Virtufin.Base.PositionTransferContract.IsRelatedTransaction*"></a>
+  <a id="Virtufin_Base_PositionTransferContract_1_IsRelatedTransaction_" data-uid="Virtufin.Base.PositionTransferContract`1.IsRelatedTransaction*"></a>
 
-  <h3 id="Virtufin_Base_PositionTransferContract_IsRelatedTransaction_Virtufin_Core_Contracts_ITransaction_" data-uid="Virtufin.Base.PositionTransferContract.IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)">
+  <h3 id="Virtufin_Base_PositionTransferContract_1_IsRelatedTransaction_Virtufin_Core_Contracts_ITransaction_" data-uid="Virtufin.Base.PositionTransferContract`1.IsRelatedTransaction(Virtufin.Core.Contracts.ITransaction)">
   IsRelatedTransaction(ITransaction)
   
   </h3>
@@ -457,9 +467,9 @@ var contract = new PositionTransferContract(pos, from, to, at, id);</code></pre>
 
 
 
-  <a id="Virtufin_Base_PositionTransferContract_VerifyMessages_" data-uid="Virtufin.Base.PositionTransferContract.VerifyMessages*"></a>
+  <a id="Virtufin_Base_PositionTransferContract_1_VerifyMessages_" data-uid="Virtufin.Base.PositionTransferContract`1.VerifyMessages*"></a>
 
-  <h3 id="Virtufin_Base_PositionTransferContract_VerifyMessages_System_Collections_Generic_IEnumerable_Virtufin_Core_Contracts_IMessage__Virtufin_Core_Contracts_IScenarioHistory_" data-uid="Virtufin.Base.PositionTransferContract.VerifyMessages(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage},Virtufin.Core.Contracts.IScenarioHistory)">
+  <h3 id="Virtufin_Base_PositionTransferContract_1_VerifyMessages_System_Collections_Generic_IEnumerable_Virtufin_Core_Contracts_IMessage__Virtufin_Core_Contracts_IScenarioHistory_" data-uid="Virtufin.Base.PositionTransferContract`1.VerifyMessages(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.IMessage},Virtufin.Core.Contracts.IScenarioHistory)">
   VerifyMessages(IEnumerable&lt;IMessage&gt;, IScenarioHistory)
   
   </h3>

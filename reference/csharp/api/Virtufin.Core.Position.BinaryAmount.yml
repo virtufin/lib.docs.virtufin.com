@@ -47,7 +47,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: BinaryAmount
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 17
+    startLine: 19
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -64,9 +64,13 @@ items:
 
     <xref href="Virtufin.Core.Position.FixedPointArithmetic" data-throw-if-not-resolved="false"></xref>. Arithmetic follows the same rules:
 
-    addition/subtraction require a common base and precision; equality/ordering
+    addition/subtraction require a common base and precision and throw
 
-    reject mismatched precision with <xref href="Virtufin.Core.Position.PrecisionMismatchException" data-throw-if-not-resolved="false"></xref>.
+    <xref href="Virtufin.Core.Position.PrecisionMismatchException" data-throw-if-not-resolved="false"></xref> without it; ordering throws on a
+
+    mismatched precision too, while equality returns <code>false</code>. See
+
+    <xref href="Virtufin.Core.Position.DecimalAmount" data-throw-if-not-resolved="false"></xref> for why those two differ.
   example: []
   syntax:
     content: 'public readonly record struct BinaryAmount : IFixedPointAmount<BinaryAmount>, IFixedPointAmount, IAmount, IComparable<BinaryAmount>, IAsCardinal<long>, IAdditionOperators<BinaryAmount, BinaryAmount, BinaryAmount>, ISubtractionOperators<BinaryAmount, BinaryAmount, BinaryAmount>, IMultiplyOperators<BinaryAmount, BinaryAmount, BinaryAmount>, IDivisionOperators<BinaryAmount, BinaryAmount, BinaryAmount>, IEquatable<BinaryAmount>'
@@ -105,7 +109,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 17
+    startLine: 19
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -122,9 +126,13 @@ items:
 
     <xref href="Virtufin.Core.Position.FixedPointArithmetic" data-throw-if-not-resolved="false"></xref>. Arithmetic follows the same rules:
 
-    addition/subtraction require a common base and precision; equality/ordering
+    addition/subtraction require a common base and precision and throw
 
-    reject mismatched precision with <xref href="Virtufin.Core.Position.PrecisionMismatchException" data-throw-if-not-resolved="false"></xref>.
+    <xref href="Virtufin.Core.Position.PrecisionMismatchException" data-throw-if-not-resolved="false"></xref> without it; ordering throws on a
+
+    mismatched precision too, while equality returns <code>false</code>. See
+
+    <xref href="Virtufin.Core.Position.DecimalAmount" data-throw-if-not-resolved="false"></xref> for why those two differ.
   example: []
   syntax:
     content: public BinaryAmount(long Whole, ulong Fraction, int N)
@@ -158,7 +166,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Whole
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 17
+    startLine: 19
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -191,7 +199,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Fraction
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 17
+    startLine: 19
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -224,7 +232,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: N
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 17
+    startLine: 19
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -253,7 +261,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Radix
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 25
+    startLine: 27
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -282,7 +290,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Zero
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 28
+    startLine: 30
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -313,7 +321,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: DefaultPrecision
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 31
+    startLine: 33
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -342,7 +350,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: BaseValue
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 34
+    startLine: 36
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -378,7 +386,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Base
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 37
+    startLine: 39
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -411,7 +419,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Precision
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 40
+    startLine: 42
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -444,7 +452,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsZero
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 43
+    startLine: 45
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -477,7 +485,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Create
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 46
+    startLine: 48
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -522,7 +530,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: From
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 55
+    startLine: 57
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -565,7 +573,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: From
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 69
+    startLine: 71
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -608,7 +616,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToCardinal
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 73
+    startLine: 75
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -644,7 +652,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToDouble
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 77
+    startLine: 79
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -674,7 +682,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: FromCardinal
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 81
+    startLine: 83
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -712,7 +720,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: FromCardinal
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 85
+    startLine: 87
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -750,11 +758,25 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Equals
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 103
+    startLine: 113
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
   summary: Indicates whether the current object is equal to another object of the same type.
+  remarks: >-
+    Precision is part of identity: an amount at a different <code>N</code> is a different
+
+    value, never an equal one. It returns <code>false</code> rather than throwing, unlike
+
+    <xref href="Virtufin.Core.Position.BinaryAmount.CompareTo(Virtufin.Core.Position.BinaryAmount)" data-throw-if-not-resolved="false"></xref> -- that asymmetry is deliberate and mirrors the BCL,
+
+    where a type mismatch makes <xref href="System.Object.Equals(System.Object)" data-throw-if-not-resolved="false"></xref> return <code>false</code>
+
+    but <xref href="System.IComparable.CompareTo(System.Object)" data-throw-if-not-resolved="false"></xref> throw. Equality is called
+
+    implicitly by dictionaries, <code>Contains</code>, <code>Distinct</code> and by the generated
+
+    equality of any record holding an amount, where a throw cannot be caught.
   example: []
   syntax:
     content: public bool Equals(BinaryAmount other)
@@ -767,10 +789,6 @@ items:
       description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
     content.vb: Public Function Equals(other As BinaryAmount) As Boolean
   overload: Virtufin.Core.Position.BinaryAmount.Equals*
-  exceptions:
-  - type: Virtufin.Core.Position.PrecisionMismatchException
-    commentId: T:Virtufin.Core.Position.PrecisionMismatchException
-    description: Precisions differ.
   implements:
   - System.IEquatable{Virtufin.Core.Position.BinaryAmount}.Equals(Virtufin.Core.Position.BinaryAmount)
 - uid: Virtufin.Core.Position.BinaryAmount.GetHashCode
@@ -791,7 +809,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: GetHashCode
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 110
+    startLine: 117
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -823,7 +841,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: CompareTo
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 114
+    startLine: 121
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -867,7 +885,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: CompareTo
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 129
+    startLine: 136
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -906,7 +924,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Addition
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 135
+    startLine: 142
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -946,7 +964,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Subtraction
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 139
+    startLine: 146
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -986,7 +1004,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Multiply
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 145
+    startLine: 152
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -1026,7 +1044,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Division
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 153
+    startLine: 160
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -1069,7 +1087,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToString
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 157
+    startLine: 164
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -1100,7 +1118,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: MaxPrecision
     path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
-    startLine: 171
+    startLine: 178
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -2503,6 +2521,95 @@ references:
   - name: ','
   - name: " "
   - name: T2
+  - name: )
+- uid: Virtufin.Core.Position.BinaryAmount.CompareTo(Virtufin.Core.Position.BinaryAmount)
+  commentId: M:Virtufin.Core.Position.BinaryAmount.CompareTo(Virtufin.Core.Position.BinaryAmount)
+  href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_CompareTo_Virtufin_Core_Position_BinaryAmount_
+  name: CompareTo(BinaryAmount)
+  nameWithType: BinaryAmount.CompareTo(BinaryAmount)
+  fullName: Virtufin.Core.Position.BinaryAmount.CompareTo(Virtufin.Core.Position.BinaryAmount)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.BinaryAmount.CompareTo(Virtufin.Core.Position.BinaryAmount)
+    name: CompareTo
+    href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_CompareTo_Virtufin_Core_Position_BinaryAmount_
+  - name: (
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.BinaryAmount.CompareTo(Virtufin.Core.Position.BinaryAmount)
+    name: CompareTo
+    href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_CompareTo_Virtufin_Core_Position_BinaryAmount_
+  - name: (
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IComparable.CompareTo(System.Object)
+  commentId: M:System.IComparable.CompareTo(System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable.compareto
+  name: CompareTo(object)
+  nameWithType: IComparable.CompareTo(object)
+  fullName: System.IComparable.CompareTo(object)
+  nameWithType.vb: IComparable.CompareTo(Object)
+  fullName.vb: System.IComparable.CompareTo(Object)
+  name.vb: CompareTo(Object)
+  spec.csharp:
+  - uid: System.IComparable.CompareTo(System.Object)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable.compareto
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.IComparable.CompareTo(System.Object)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable.compareto
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
 - uid: Virtufin.Core.Position.BinaryAmount.Equals*
   commentId: Overload:Virtufin.Core.Position.BinaryAmount.Equals
