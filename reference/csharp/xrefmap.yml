@@ -13926,6 +13926,12 @@ references:
   isSpec: "True"
   fullName: Virtufin.Core.Position.BinaryAmount.IsZero
   nameWithType: BinaryAmount.IsZero
+- uid: Virtufin.Core.Position.BinaryAmount.MaxPrecision
+  name: MaxPrecision
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_MaxPrecision
+  commentId: F:Virtufin.Core.Position.BinaryAmount.MaxPrecision
+  fullName: Virtufin.Core.Position.BinaryAmount.MaxPrecision
+  nameWithType: BinaryAmount.MaxPrecision
 - uid: Virtufin.Core.Position.BinaryAmount.N
   name: N
   href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_N
@@ -14324,6 +14330,12 @@ references:
   isSpec: "True"
   fullName: Virtufin.Core.Position.DecimalAmount.IsZero
   nameWithType: DecimalAmount.IsZero
+- uid: Virtufin.Core.Position.DecimalAmount.MaxPrecision
+  name: MaxPrecision
+  href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_MaxPrecision
+  commentId: F:Virtufin.Core.Position.DecimalAmount.MaxPrecision
+  fullName: Virtufin.Core.Position.DecimalAmount.MaxPrecision
+  nameWithType: DecimalAmount.MaxPrecision
 - uid: Virtufin.Core.Position.DecimalAmount.N
   name: N
   href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_N

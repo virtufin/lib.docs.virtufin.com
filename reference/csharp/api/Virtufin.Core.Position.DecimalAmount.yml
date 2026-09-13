@@ -21,6 +21,7 @@ items:
   - Virtufin.Core.Position.DecimalAmount.GetHashCode
   - Virtufin.Core.Position.DecimalAmount.GetValue
   - Virtufin.Core.Position.DecimalAmount.IsZero
+  - Virtufin.Core.Position.DecimalAmount.MaxPrecision
   - Virtufin.Core.Position.DecimalAmount.N
   - Virtufin.Core.Position.DecimalAmount.Precision
   - Virtufin.Core.Position.DecimalAmount.Radix
@@ -1211,6 +1212,38 @@ items:
     content.vb: Public Overrides Function ToString() As String
   overridden: System.ValueType.ToString
   overload: Virtufin.Core.Position.DecimalAmount.ToString*
+- uid: Virtufin.Core.Position.DecimalAmount.MaxPrecision
+  commentId: F:Virtufin.Core.Position.DecimalAmount.MaxPrecision
+  id: MaxPrecision
+  parent: Virtufin.Core.Position.DecimalAmount
+  langs:
+  - csharp
+  - vb
+  name: MaxPrecision
+  nameWithType: DecimalAmount.MaxPrecision
+  fullName: Virtufin.Core.Position.DecimalAmount.MaxPrecision
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/DecimalAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/lib
+    id: MaxPrecision
+    path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
+    startLine: 241
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    Largest precision a <xref href="Virtufin.Core.Position.DecimalAmount" data-throw-if-not-resolved="false"></xref> can express: 10^18 fits
+
+    in a <xref href="System.Int64" data-throw-if-not-resolved="false"></xref>, 10^19 does not.
+  example: []
+  syntax:
+    content: public const int MaxPrecision = 18
+    return:
+      type: System.Int32
+    content.vb: Public Const MaxPrecision As Integer = 18
 references:
 - uid: System.Int64
   commentId: T:System.Int64
