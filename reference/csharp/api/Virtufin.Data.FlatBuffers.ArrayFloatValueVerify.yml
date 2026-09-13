@@ -17,7 +17,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ArrayFloatValueVerify
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
     startLine: 51
@@ -52,7 +52,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Verify
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/ArrayFloatValue.cs
     startLine: 53

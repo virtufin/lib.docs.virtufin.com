@@ -21,7 +21,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Trade/TradeAction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: SellOrder
     path: ../../../src/Virtufin.Base/Events/Trade/TradeAction.cs
     startLine: 40
@@ -62,7 +62,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Trade/TradeAction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/Events/Trade/TradeAction.cs
     startLine: 40
@@ -106,7 +106,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Trade/TradeAction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Symbol
     path: ../../../src/Virtufin.Base/Events/Trade/TradeAction.cs
     startLine: 41
@@ -137,7 +137,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Trade/TradeAction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Quantity
     path: ../../../src/Virtufin.Base/Events/Trade/TradeAction.cs
     startLine: 42
@@ -168,7 +168,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Trade/TradeAction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: LimitPrice
     path: ../../../src/Virtufin.Base/Events/Trade/TradeAction.cs
     startLine: 43
@@ -199,7 +199,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Trade/TradeAction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: OrderId
     path: ../../../src/Virtufin.Base/Events/Trade/TradeAction.cs
     startLine: 44

@@ -17,7 +17,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IUnit.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IUnit
     path: ../../../src/Virtufin.Core/Position/IUnit.cs
     startLine: 6
@@ -49,7 +49,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IUnit.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Name
     path: ../../../src/Virtufin.Core/Position/IUnit.cs
     startLine: 9

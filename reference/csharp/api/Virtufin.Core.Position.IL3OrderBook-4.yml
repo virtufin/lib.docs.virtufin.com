@@ -17,7 +17,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IL3OrderBook.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IL3OrderBook
     path: ../../../src/Virtufin.Core/Position/IL3OrderBook.cs
     startLine: 10
@@ -59,7 +59,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IL3OrderBook.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Orders
     path: ../../../src/Virtufin.Core/Position/IL3OrderBook.cs
     startLine: 17

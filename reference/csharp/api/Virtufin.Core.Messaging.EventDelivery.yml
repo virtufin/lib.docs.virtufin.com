@@ -19,7 +19,7 @@ items:
     remote:
       path: src/Virtufin.Core/Messaging/ITopic.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: EventDelivery
     path: ../../../src/Virtufin.Core/Messaging/ITopic.cs
     startLine: 36
@@ -55,7 +55,7 @@ items:
     remote:
       path: src/Virtufin.Core/Messaging/ITopic.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Core/Messaging/ITopic.cs
     startLine: 36
@@ -93,7 +93,7 @@ items:
     remote:
       path: src/Virtufin.Core/Messaging/ITopic.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Envelope
     path: ../../../src/Virtufin.Core/Messaging/ITopic.cs
     startLine: 36
@@ -124,7 +124,7 @@ items:
     remote:
       path: src/Virtufin.Core/Messaging/ITopic.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Event
     path: ../../../src/Virtufin.Core/Messaging/ITopic.cs
     startLine: 36

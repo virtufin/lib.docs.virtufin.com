@@ -22,7 +22,7 @@ items:
     remote:
       path: src/Virtufin.Base/ContractParameters.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ContractParameters
     path: ../../../src/Virtufin.Base/ContractParameters.cs
     startLine: 17
@@ -72,7 +72,7 @@ items:
     remote:
       path: src/Virtufin.Base/ContractParameters.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/ContractParameters.cs
     startLine: 17
@@ -120,7 +120,7 @@ items:
     remote:
       path: src/Virtufin.Base/ContractParameters.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Payload
     path: ../../../src/Virtufin.Base/ContractParameters.cs
     startLine: 17
@@ -151,7 +151,7 @@ items:
     remote:
       path: src/Virtufin.Base/ContractParameters.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Empty
     path: ../../../src/Virtufin.Base/ContractParameters.cs
     startLine: 20
@@ -182,7 +182,7 @@ items:
     remote:
       path: src/Virtufin.Base/ContractParameters.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Equals
     path: ../../../src/Virtufin.Base/ContractParameters.cs
     startLine: 23
@@ -222,7 +222,7 @@ items:
     remote:
       path: src/Virtufin.Base/ContractParameters.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Equals
     path: ../../../src/Virtufin.Base/ContractParameters.cs
     startLine: 27
@@ -257,7 +257,7 @@ items:
     remote:
       path: src/Virtufin.Base/ContractParameters.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GetHashCode
     path: ../../../src/Virtufin.Base/ContractParameters.cs
     startLine: 31

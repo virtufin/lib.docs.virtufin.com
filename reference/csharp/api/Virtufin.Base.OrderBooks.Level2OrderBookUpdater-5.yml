@@ -18,7 +18,7 @@ items:
     remote:
       path: src/Virtufin.Base/OrderBooks/Level2OrderBookUpdater.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Level2OrderBookUpdater
     path: ../../../src/Virtufin.Base/OrderBooks/Level2OrderBookUpdater.cs
     startLine: 38
@@ -119,7 +119,7 @@ items:
     remote:
       path: src/Virtufin.Base/OrderBooks/Level2OrderBookUpdater.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ApplySnapshot
     path: ../../../src/Virtufin.Base/OrderBooks/Level2OrderBookUpdater.cs
     startLine: 47
@@ -158,7 +158,7 @@ items:
     remote:
       path: src/Virtufin.Base/OrderBooks/Level2OrderBookUpdater.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ApplyDiff
     path: ../../../src/Virtufin.Base/OrderBooks/Level2OrderBookUpdater.cs
     startLine: 58

@@ -21,7 +21,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/FixedPointArithmetic.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: FixedPointArithmetic
     path: ../../../src/Virtufin.Core/Position/FixedPointArithmetic.cs
     startLine: 27
@@ -95,7 +95,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/FixedPointArithmetic.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Add
     path: ../../../src/Virtufin.Core/Position/FixedPointArithmetic.cs
     startLine: 33
@@ -139,7 +139,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/FixedPointArithmetic.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Subtract
     path: ../../../src/Virtufin.Core/Position/FixedPointArithmetic.cs
     startLine: 44
@@ -183,7 +183,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/FixedPointArithmetic.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Multiply
     path: ../../../src/Virtufin.Core/Position/FixedPointArithmetic.cs
     startLine: 57
@@ -236,7 +236,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/FixedPointArithmetic.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Divide
     path: ../../../src/Virtufin.Core/Position/FixedPointArithmetic.cs
     startLine: 74
@@ -290,7 +290,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/FixedPointArithmetic.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Rescale
     path: ../../../src/Virtufin.Core/Position/FixedPointArithmetic.cs
     startLine: 94

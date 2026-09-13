@@ -19,7 +19,7 @@ items:
     remote:
       path: src/Virtufin.Data/NatsObservable.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: NatsObservable
     path: ../../../src/Virtufin.Data/NatsObservable.cs
     startLine: 4
@@ -56,7 +56,7 @@ items:
     remote:
       path: src/Virtufin.Data/NatsObservable.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Data/NatsObservable.cs
     startLine: 9
@@ -88,7 +88,7 @@ items:
     remote:
       path: src/Virtufin.Data/NatsObservable.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Subscribe
     path: ../../../src/Virtufin.Data/NatsObservable.cs
     startLine: 15
@@ -128,7 +128,7 @@ items:
     remote:
       path: src/Virtufin.Data/NatsObservable.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Start
     path: ../../../src/Virtufin.Data/NatsObservable.cs
     startLine: 54

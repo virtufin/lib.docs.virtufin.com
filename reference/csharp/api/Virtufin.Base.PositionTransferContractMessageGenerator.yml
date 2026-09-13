@@ -19,7 +19,7 @@ items:
     remote:
       path: src/Virtufin.Base/PositionTransferContractMessageGenerator.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: PositionTransferContractMessageGenerator
     path: ../../../src/Virtufin.Base/PositionTransferContractMessageGenerator.cs
     startLine: 10
@@ -62,7 +62,7 @@ items:
     remote:
       path: src/Virtufin.Base/PositionTransferContractMessageGenerator.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Contract
     path: ../../../src/Virtufin.Base/PositionTransferContractMessageGenerator.cs
     startLine: 13
@@ -93,7 +93,7 @@ items:
     remote:
       path: src/Virtufin.Base/PositionTransferContractMessageGenerator.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/PositionTransferContractMessageGenerator.cs
     startLine: 16
@@ -127,7 +127,7 @@ items:
     remote:
       path: src/Virtufin.Base/PositionTransferContractMessageGenerator.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GenerateMessages
     path: ../../../src/Virtufin.Base/PositionTransferContractMessageGenerator.cs
     startLine: 22

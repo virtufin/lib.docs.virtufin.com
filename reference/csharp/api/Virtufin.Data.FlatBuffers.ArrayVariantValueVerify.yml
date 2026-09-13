@@ -17,7 +17,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/ArrayVariantValue.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ArrayVariantValueVerify
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/ArrayVariantValue.cs
     startLine: 45
@@ -52,7 +52,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/ArrayVariantValue.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Verify
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/ArrayVariantValue.cs
     startLine: 47

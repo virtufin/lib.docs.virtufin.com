@@ -16,7 +16,7 @@ items:
     remote:
       path: src/Virtufin.Core/Behaviour/IDecide.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IStrategyState
     path: ../../../src/Virtufin.Core/Behaviour/IDecide.cs
     startLine: 12

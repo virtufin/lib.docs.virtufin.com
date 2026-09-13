@@ -18,7 +18,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IQuantity.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IQuantity
     path: ../../../src/Virtufin.Core/Position/IQuantity.cs
     startLine: 7
@@ -57,7 +57,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IQuantity.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Amount
     path: ../../../src/Virtufin.Core/Position/IQuantity.cs
     startLine: 12
@@ -90,7 +90,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IQuantity.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Unit
     path: ../../../src/Virtufin.Core/Position/IQuantity.cs
     startLine: 15

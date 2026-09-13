@@ -21,7 +21,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Risk/RiskEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: MarginWarned
     path: ../../../src/Virtufin.Base/Events/Risk/RiskEvent.cs
     startLine: 74
@@ -67,7 +67,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Risk/RiskEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/Events/Risk/RiskEvent.cs
     startLine: 74
@@ -108,7 +108,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Risk/RiskEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: MarginRatio
     path: ../../../src/Virtufin.Base/Events/Risk/RiskEvent.cs
     startLine: 74
@@ -141,7 +141,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Risk/RiskEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: WarningThreshold
     path: ../../../src/Virtufin.Base/Events/Risk/RiskEvent.cs
     startLine: 74
@@ -174,7 +174,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Risk/RiskEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: WarnedAt
     path: ../../../src/Virtufin.Base/Events/Risk/RiskEvent.cs
     startLine: 74
@@ -207,7 +207,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Risk/RiskEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Time
     path: ../../../src/Virtufin.Base/Events/Risk/RiskEvent.cs
     startLine: 77

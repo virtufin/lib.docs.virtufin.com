@@ -17,7 +17,7 @@ items:
     remote:
       path: src/Virtufin.Core/IDependencies.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IObservableDependencies
     path: ../../../src/Virtufin.Core/IDependencies.cs
     startLine: 10
@@ -42,7 +42,7 @@ items:
     remote:
       path: src/Virtufin.Core/IDependencies.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ObservableDependencies
     path: ../../../src/Virtufin.Core/IDependencies.cs
     startLine: 12

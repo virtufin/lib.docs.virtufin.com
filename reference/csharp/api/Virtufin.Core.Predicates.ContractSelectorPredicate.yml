@@ -18,7 +18,7 @@ items:
     remote:
       path: src/Virtufin.Core/Predicates/ContractSelectorPredicate.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ContractSelectorPredicate
     path: ../../../src/Virtufin.Core/Predicates/ContractSelectorPredicate.cs
     startLine: 10
@@ -58,7 +58,7 @@ items:
     remote:
       path: src/Virtufin.Core/Predicates/ContractSelectorPredicate.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Predicate
     path: ../../../src/Virtufin.Core/Predicates/ContractSelectorPredicate.cs
     startLine: 13
@@ -106,7 +106,7 @@ items:
     remote:
       path: src/Virtufin.Core/Predicates/ContractSelectorPredicate.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToString
     path: ../../../src/Virtufin.Core/Predicates/ContractSelectorPredicate.cs
     startLine: 17

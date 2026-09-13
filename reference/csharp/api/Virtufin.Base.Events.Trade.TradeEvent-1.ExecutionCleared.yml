@@ -21,7 +21,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Trade/TradeEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ExecutionCleared
     path: ../../../src/Virtufin.Base/Events/Trade/TradeEvent.cs
     startLine: 104
@@ -67,7 +67,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Trade/TradeEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Action
     path: ../../../src/Virtufin.Base/Events/Trade/TradeEvent.cs
     startLine: 107
@@ -101,7 +101,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Trade/TradeEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ExecutionId
     path: ../../../src/Virtufin.Base/Events/Trade/TradeEvent.cs
     startLine: 109
@@ -134,7 +134,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Trade/TradeEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ClearedAt
     path: ../../../src/Virtufin.Base/Events/Trade/TradeEvent.cs
     startLine: 111
@@ -167,7 +167,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Trade/TradeEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Time
     path: ../../../src/Virtufin.Base/Events/Trade/TradeEvent.cs
     startLine: 113
@@ -201,7 +201,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Trade/TradeEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/Events/Trade/TradeEvent.cs
     startLine: 116

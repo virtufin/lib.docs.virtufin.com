@@ -24,7 +24,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Trade/TradeAction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: InterestAction
     path: ../../../src/Virtufin.Base/Events/Trade/TradeAction.cs
     startLine: 71
@@ -65,7 +65,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Trade/TradeAction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/Events/Trade/TradeAction.cs
     startLine: 71
@@ -118,7 +118,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Trade/TradeAction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Symbol
     path: ../../../src/Virtufin.Base/Events/Trade/TradeAction.cs
     startLine: 72
@@ -149,7 +149,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Trade/TradeAction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Side
     path: ../../../src/Virtufin.Base/Events/Trade/TradeAction.cs
     startLine: 73
@@ -180,7 +180,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Trade/TradeAction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: PriceFloor
     path: ../../../src/Virtufin.Base/Events/Trade/TradeAction.cs
     startLine: 74
@@ -211,7 +211,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Trade/TradeAction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: PriceCeiling
     path: ../../../src/Virtufin.Base/Events/Trade/TradeAction.cs
     startLine: 75
@@ -242,7 +242,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Trade/TradeAction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Window
     path: ../../../src/Virtufin.Base/Events/Trade/TradeAction.cs
     startLine: 76
@@ -273,7 +273,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Trade/TradeAction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Quantity
     path: ../../../src/Virtufin.Base/Events/Trade/TradeAction.cs
     startLine: 77
@@ -304,7 +304,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Trade/TradeAction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: InterestId
     path: ../../../src/Virtufin.Base/Events/Trade/TradeAction.cs
     startLine: 78

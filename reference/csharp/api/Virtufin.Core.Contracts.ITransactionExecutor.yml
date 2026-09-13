@@ -17,7 +17,7 @@ items:
     remote:
       path: src/Virtufin.Core/Contracts/ITransactionExecutor.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ITransactionExecutor
     path: ../../../src/Virtufin.Core/Contracts/ITransactionExecutor.cs
     startLine: 8
@@ -47,7 +47,7 @@ items:
     remote:
       path: src/Virtufin.Core/Contracts/ITransactionExecutor.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Execute
     path: ../../../src/Virtufin.Core/Contracts/ITransactionExecutor.cs
     startLine: 18

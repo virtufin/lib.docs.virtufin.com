@@ -22,7 +22,7 @@ items:
     remote:
       path: src/Virtufin.Core/FunctionValueProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: FunctionValueProvider
     path: ../../../src/Virtufin.Core/FunctionValueProvider.cs
     startLine: 2
@@ -64,7 +64,7 @@ items:
     remote:
       path: src/Virtufin.Core/FunctionValueProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Core/FunctionValueProvider.cs
     startLine: 8
@@ -100,7 +100,7 @@ items:
     remote:
       path: src/Virtufin.Core/FunctionValueProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Core/FunctionValueProvider.cs
     startLine: 15
@@ -134,7 +134,7 @@ items:
     remote:
       path: src/Virtufin.Core/FunctionValueProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Core/FunctionValueProvider.cs
     startLine: 18
@@ -172,7 +172,7 @@ items:
     remote:
       path: src/Virtufin.Core/FunctionValueProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Core/FunctionValueProvider.cs
     startLine: 21
@@ -208,7 +208,7 @@ items:
     remote:
       path: src/Virtufin.Core/FunctionValueProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: TypeSpecifier
     path: ../../../src/Virtufin.Core/FunctionValueProvider.cs
     startLine: 25
@@ -242,7 +242,7 @@ items:
     remote:
       path: src/Virtufin.Core/FunctionValueProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GetValue
     path: ../../../src/Virtufin.Core/FunctionValueProvider.cs
     startLine: 27

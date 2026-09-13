@@ -52,7 +52,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Variant
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 11
@@ -86,7 +86,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ByteBuffer
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 14
@@ -118,7 +118,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ValidateVersion
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 15
@@ -144,7 +144,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GetRootAsVariant
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 16
@@ -175,7 +175,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GetRootAsVariant
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 17
@@ -208,7 +208,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: VerifyVariant
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 18
@@ -239,7 +239,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: __init
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 19
@@ -276,7 +276,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: __assign
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 20
@@ -312,7 +312,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ValueType
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 22
@@ -341,7 +341,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Value
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 23
@@ -374,7 +374,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ValueAsNone
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 24
@@ -402,7 +402,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ValueAsBool
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 25
@@ -430,7 +430,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ValueAsByte
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 26
@@ -458,7 +458,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ValueAsInt16
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 27
@@ -486,7 +486,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ValueAsInt32
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 28
@@ -514,7 +514,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ValueAsInt64
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 29
@@ -542,7 +542,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ValueAsFloat
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 30
@@ -570,7 +570,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ValueAsDouble
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 31
@@ -598,7 +598,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ValueAsString
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 32
@@ -626,7 +626,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ValueAsArrayBool
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 33
@@ -654,7 +654,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ValueAsArrayByte
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 34
@@ -682,7 +682,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ValueAsArrayInt16
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 35
@@ -710,7 +710,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ValueAsArrayInt32
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 36
@@ -738,7 +738,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ValueAsArrayInt64
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 37
@@ -766,7 +766,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ValueAsArrayFloat
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 38
@@ -794,7 +794,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ValueAsArrayDouble
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 39
@@ -822,7 +822,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ValueAsArrayString
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 40
@@ -850,7 +850,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ValueAsArrayVariant
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 41
@@ -878,7 +878,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ValueAsDictionaryEntry
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 42
@@ -906,7 +906,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ValueAsDictionary
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 43
@@ -934,7 +934,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CreateVariant
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 45
@@ -972,7 +972,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: StartVariant
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 54
@@ -1001,7 +1001,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: AddValueType
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 55
@@ -1032,7 +1032,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: AddValue
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 56
@@ -1066,7 +1066,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: EndVariant
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 57
@@ -1097,7 +1097,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: FinishVariantBuffer
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 61
@@ -1131,7 +1131,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: FinishSizePrefixedVariantBuffer
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 62

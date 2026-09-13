@@ -17,7 +17,7 @@ items:
     remote:
       path: src/Virtufin.Core/Contracts/IWithMaturity.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IWithMaturity
     path: ../../../src/Virtufin.Core/Contracts/IWithMaturity.cs
     startLine: 6
@@ -57,7 +57,7 @@ items:
     remote:
       path: src/Virtufin.Core/Contracts/IWithMaturity.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Maturity
     path: ../../../src/Virtufin.Core/Contracts/IWithMaturity.cs
     startLine: 9

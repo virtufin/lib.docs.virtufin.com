@@ -24,7 +24,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Position/PositionEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Updated
     path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
     startLine: 55
@@ -70,7 +70,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Position/PositionEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Symbol
     path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
     startLine: 58
@@ -104,7 +104,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Position/PositionEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: DeltaQuantity
     path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
     startLine: 60
@@ -138,7 +138,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Position/PositionEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: NewQuantity
     path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
     startLine: 62
@@ -171,7 +171,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Position/PositionEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: NewAvgEntry
     path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
     startLine: 64
@@ -204,7 +204,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Position/PositionEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Source
     path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
     startLine: 66
@@ -237,7 +237,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Position/PositionEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: UpdatedAt
     path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
     startLine: 68
@@ -270,7 +270,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Position/PositionEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Time
     path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
     startLine: 70
@@ -304,7 +304,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Position/PositionEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
     startLine: 73

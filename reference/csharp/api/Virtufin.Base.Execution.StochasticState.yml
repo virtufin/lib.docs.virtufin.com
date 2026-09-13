@@ -21,7 +21,7 @@ items:
     remote:
       path: src/Virtufin.Base/Execution/Executors.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: StochasticState
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
     startLine: 23
@@ -64,7 +64,7 @@ items:
     remote:
       path: src/Virtufin.Base/Execution/Executors.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Seed
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
     startLine: 26
@@ -95,7 +95,7 @@ items:
     remote:
       path: src/Virtufin.Base/Execution/Executors.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
     startLine: 30
@@ -130,7 +130,7 @@ items:
     remote:
       path: src/Virtufin.Base/Execution/Executors.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: NextRandom
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
     startLine: 33
@@ -160,7 +160,7 @@ items:
     remote:
       path: src/Virtufin.Base/Execution/Executors.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: NextUnit
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
     startLine: 43
@@ -190,7 +190,7 @@ items:
     remote:
       path: src/Virtufin.Base/Execution/Executors.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: NextNormal
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
     startLine: 47

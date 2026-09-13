@@ -23,7 +23,7 @@ items:
     remote:
       path: src/Virtufin.Base/TimeStamp.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: TimeStamp
     path: ../../../src/Virtufin.Base/TimeStamp.cs
     startLine: 15
@@ -70,7 +70,7 @@ items:
     remote:
       path: src/Virtufin.Base/TimeStamp.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/TimeStamp.cs
     startLine: 15
@@ -113,7 +113,7 @@ items:
     remote:
       path: src/Virtufin.Base/TimeStamp.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Value
     path: ../../../src/Virtufin.Base/TimeStamp.cs
     startLine: 15
@@ -142,7 +142,7 @@ items:
     remote:
       path: src/Virtufin.Base/TimeStamp.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: New
     path: ../../../src/Virtufin.Base/TimeStamp.cs
     startLine: 21
@@ -185,7 +185,7 @@ items:
     remote:
       path: src/Virtufin.Base/TimeStamp.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: AdvanceDays
     path: ../../../src/Virtufin.Base/TimeStamp.cs
     startLine: 24
@@ -221,7 +221,7 @@ items:
     remote:
       path: src/Virtufin.Base/TimeStamp.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CompareTo
     path: ../../../src/Virtufin.Base/TimeStamp.cs
     startLine: 27
@@ -264,7 +264,7 @@ items:
     remote:
       path: src/Virtufin.Base/TimeStamp.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Equals
     path: ../../../src/Virtufin.Base/TimeStamp.cs
     startLine: 34
@@ -304,7 +304,7 @@ items:
     remote:
       path: src/Virtufin.Base/TimeStamp.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToString
     path: ../../../src/Virtufin.Base/TimeStamp.cs
     startLine: 37

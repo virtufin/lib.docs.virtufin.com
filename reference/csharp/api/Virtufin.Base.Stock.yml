@@ -20,7 +20,7 @@ items:
     remote:
       path: src/Virtufin.Base/Stock.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Stock
     path: ../../../src/Virtufin.Base/Stock.cs
     startLine: 15
@@ -65,7 +65,7 @@ items:
     remote:
       path: src/Virtufin.Base/Stock.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Identifier
     path: ../../../src/Virtufin.Base/Stock.cs
     startLine: 18
@@ -95,7 +95,7 @@ items:
     remote:
       path: src/Virtufin.Base/Stock.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: New
     path: ../../../src/Virtufin.Base/Stock.cs
     startLine: 26
@@ -132,7 +132,7 @@ items:
     remote:
       path: src/Virtufin.Base/Stock.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: From
     path: ../../../src/Virtufin.Base/Stock.cs
     startLine: 30
@@ -166,7 +166,7 @@ items:
     remote:
       path: src/Virtufin.Base/Stock.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToString
     path: ../../../src/Virtufin.Base/Stock.cs
     startLine: 33

@@ -18,7 +18,7 @@ items:
     remote:
       path: src/Virtufin.Core/IValueProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IValueProvider
     path: ../../../src/Virtufin.Core/IValueProvider.cs
     startLine: 2
@@ -46,7 +46,7 @@ items:
     remote:
       path: src/Virtufin.Core/IValueProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: TypeSpecifier
     path: ../../../src/Virtufin.Core/IValueProvider.cs
     startLine: 4
@@ -75,7 +75,7 @@ items:
     remote:
       path: src/Virtufin.Core/IValueProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GetValue
     path: ../../../src/Virtufin.Core/IValueProvider.cs
     startLine: 5

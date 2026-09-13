@@ -123,7 +123,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Variant
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 53
@@ -158,7 +158,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 87
@@ -187,7 +187,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CreateNone
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 92
@@ -215,7 +215,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CreateBool
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 94
@@ -249,7 +249,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CreateByte
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 96
@@ -283,7 +283,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CreateInt16
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 98
@@ -317,7 +317,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CreateInt32
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 100
@@ -351,7 +351,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CreateInt64
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 102
@@ -385,7 +385,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CreateFloat
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 104
@@ -419,7 +419,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CreateDouble
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 106
@@ -453,7 +453,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CreateString
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 108
@@ -487,7 +487,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CreateArrayBool
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 110
@@ -521,7 +521,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CreateArrayByte
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 112
@@ -555,7 +555,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CreateArrayInt16
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 114
@@ -589,7 +589,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CreateArrayInt32
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 116
@@ -623,7 +623,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CreateArrayInt64
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 118
@@ -657,7 +657,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CreateArrayFloat
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 120
@@ -691,7 +691,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CreateArrayDouble
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 122
@@ -725,7 +725,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CreateArrayString
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 124
@@ -759,7 +759,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CreateArrayVariant
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 126
@@ -793,7 +793,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CreateDictionary
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 128
@@ -827,7 +827,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: VariantType
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 156
@@ -859,7 +859,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsNone
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 158
@@ -891,7 +891,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsBool
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 160
@@ -923,7 +923,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsByte
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 162
@@ -955,7 +955,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsInt16
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 164
@@ -987,7 +987,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsInt32
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 166
@@ -1019,7 +1019,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsInt64
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 168
@@ -1051,7 +1051,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsFloat
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 170
@@ -1083,7 +1083,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsDouble
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 172
@@ -1115,7 +1115,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsString
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 174
@@ -1147,7 +1147,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsArrayBool
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 176
@@ -1179,7 +1179,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsArrayByte
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 178
@@ -1211,7 +1211,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsArrayInt16
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 180
@@ -1243,7 +1243,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsArrayInt32
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 182
@@ -1275,7 +1275,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsArrayInt64
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 184
@@ -1307,7 +1307,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsArrayFloat
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 186
@@ -1339,7 +1339,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsArrayDouble
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 188
@@ -1371,7 +1371,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsArrayString
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 190
@@ -1403,7 +1403,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsArrayVariant
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 192
@@ -1435,7 +1435,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsArray
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 194
@@ -1467,7 +1467,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsDictionary
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 196
@@ -1499,7 +1499,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsPrimitive
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 198
@@ -1531,7 +1531,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsArrayOfPrimitives
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 201
@@ -1563,7 +1563,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: None
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 209
@@ -1595,7 +1595,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Bool
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 214
@@ -1627,7 +1627,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Byte
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 216
@@ -1659,7 +1659,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Int16
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 218
@@ -1691,7 +1691,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Int32
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 220
@@ -1723,7 +1723,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Int64
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 222
@@ -1755,7 +1755,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Float
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 224
@@ -1787,7 +1787,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Double
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 226
@@ -1819,7 +1819,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: String
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 228
@@ -1851,7 +1851,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ArrayBool
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 230
@@ -1883,7 +1883,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ArrayByte
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 232
@@ -1915,7 +1915,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ArrayInt16
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 234
@@ -1947,7 +1947,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ArrayInt32
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 236
@@ -1979,7 +1979,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ArrayInt64
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 238
@@ -2011,7 +2011,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ArrayFloat
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 240
@@ -2043,7 +2043,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ArrayDouble
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 242
@@ -2075,7 +2075,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ArrayString
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 244
@@ -2107,7 +2107,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ArrayVariant
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 246
@@ -2139,7 +2139,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Dictionary
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 248
@@ -2171,7 +2171,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToString
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 250
@@ -2205,7 +2205,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToArrayVariant
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 281
@@ -2233,7 +2233,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToArrayBool
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 312
@@ -2264,7 +2264,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToArrayByte
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 313
@@ -2295,7 +2295,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToArrayInt16
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 314
@@ -2326,7 +2326,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToArrayInt32
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 315
@@ -2357,7 +2357,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToArrayInt64
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 316
@@ -2388,7 +2388,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToArrayFloat
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 317
@@ -2419,7 +2419,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToArrayDouble
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 318
@@ -2450,7 +2450,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToArrayString
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 319
@@ -2481,7 +2481,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 322
@@ -2515,7 +2515,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 324
@@ -2549,7 +2549,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 326
@@ -2583,7 +2583,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 328
@@ -2617,7 +2617,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 330
@@ -2651,7 +2651,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 332
@@ -2685,7 +2685,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 334
@@ -2719,7 +2719,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 336
@@ -2753,7 +2753,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 339
@@ -2787,7 +2787,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 341
@@ -2821,7 +2821,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 343
@@ -2855,7 +2855,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 345
@@ -2889,7 +2889,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 347
@@ -2923,7 +2923,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 349
@@ -2957,7 +2957,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 351
@@ -2991,7 +2991,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 353
@@ -3025,7 +3025,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 355
@@ -3059,7 +3059,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 358
@@ -3093,7 +3093,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 360
@@ -3127,7 +3127,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 362
@@ -3161,7 +3161,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 364
@@ -3195,7 +3195,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 366
@@ -3229,7 +3229,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 368
@@ -3263,7 +3263,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 370
@@ -3297,7 +3297,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 372
@@ -3331,7 +3331,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 375
@@ -3365,7 +3365,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 377
@@ -3399,7 +3399,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 379
@@ -3433,7 +3433,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 381
@@ -3467,7 +3467,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 383
@@ -3501,7 +3501,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 385
@@ -3535,7 +3535,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 387
@@ -3569,7 +3569,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 389
@@ -3603,7 +3603,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 391
@@ -3637,7 +3637,7 @@ items:
     remote:
       path: src/Virtufin.Data/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Implicit
     path: ../../../src/Virtufin.Data/Variant.cs
     startLine: 393

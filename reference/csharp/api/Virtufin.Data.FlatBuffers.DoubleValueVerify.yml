@@ -17,7 +17,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/DoubleValue.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: DoubleValueVerify
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/DoubleValue.cs
     startLine: 39
@@ -52,7 +52,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/DoubleValue.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Verify
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/DoubleValue.cs
     startLine: 41

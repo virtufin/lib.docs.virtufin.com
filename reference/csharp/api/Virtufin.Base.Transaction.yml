@@ -18,7 +18,7 @@ items:
     remote:
       path: src/Virtufin.Base/Transaction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Transaction
     path: ../../../src/Virtufin.Base/Transaction.cs
     startLine: 14
@@ -70,7 +70,7 @@ items:
     remote:
       path: src/Virtufin.Base/Transaction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: RelatedContract
     path: ../../../src/Virtufin.Base/Transaction.cs
     startLine: 19
@@ -106,7 +106,7 @@ items:
     remote:
       path: src/Virtufin.Base/Transaction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Equals
     path: ../../../src/Virtufin.Base/Transaction.cs
     startLine: 22

@@ -21,7 +21,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Trade/TradeEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: TransferCompleted
     path: ../../../src/Virtufin.Base/Events/Trade/TradeEvent.cs
     startLine: 155
@@ -67,7 +67,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Trade/TradeEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Action
     path: ../../../src/Virtufin.Base/Events/Trade/TradeEvent.cs
     startLine: 158
@@ -101,7 +101,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Trade/TradeEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: TransferId
     path: ../../../src/Virtufin.Base/Events/Trade/TradeEvent.cs
     startLine: 160
@@ -134,7 +134,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Trade/TradeEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CompletedAt
     path: ../../../src/Virtufin.Base/Events/Trade/TradeEvent.cs
     startLine: 162
@@ -167,7 +167,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Trade/TradeEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Time
     path: ../../../src/Virtufin.Base/Events/Trade/TradeEvent.cs
     startLine: 164
@@ -201,7 +201,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Trade/TradeEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/Events/Trade/TradeEvent.cs
     startLine: 167

@@ -26,7 +26,7 @@ items:
     remote:
       path: src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IL2OrderBookWriter
     path: ../../../src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
     startLine: 11
@@ -68,7 +68,7 @@ items:
     remote:
       path: src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: State
     path: ../../../src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
     startLine: 16
@@ -101,7 +101,7 @@ items:
     remote:
       path: src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: LastUpdateId
     path: ../../../src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
     startLine: 19
@@ -134,7 +134,7 @@ items:
     remote:
       path: src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: AppliedFirstUpdateId
     path: ../../../src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
     startLine: 22
@@ -167,7 +167,7 @@ items:
     remote:
       path: src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: AppliedFinalUpdateId
     path: ../../../src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
     startLine: 25
@@ -200,7 +200,7 @@ items:
     remote:
       path: src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Clear
     path: ../../../src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
     startLine: 28
@@ -230,7 +230,7 @@ items:
     remote:
       path: src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ApplyLevel
     path: ../../../src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
     startLine: 37
@@ -274,7 +274,7 @@ items:
     remote:
       path: src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: SetState
     path: ../../../src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
     startLine: 41
@@ -308,7 +308,7 @@ items:
     remote:
       path: src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: SetLastUpdateId
     path: ../../../src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
     startLine: 45
@@ -343,7 +343,7 @@ items:
     remote:
       path: src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: SetAppliedRange
     path: ../../../src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
     startLine: 50
@@ -381,7 +381,7 @@ items:
     remote:
       path: src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ResetAppliedRange
     path: ../../../src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
     startLine: 53

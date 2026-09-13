@@ -23,7 +23,7 @@ items:
     remote:
       path: src/Virtufin.Base/Messaging/Topics.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Topics
     path: ../../../src/Virtufin.Base/Messaging/Topics.cs
     startLine: 10
@@ -63,7 +63,7 @@ items:
     remote:
       path: src/Virtufin.Base/Messaging/Topics.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ActMarket
     path: ../../../src/Virtufin.Base/Messaging/Topics.cs
     startLine: 19
@@ -103,7 +103,7 @@ items:
     remote:
       path: src/Virtufin.Base/Messaging/Topics.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: HypMarket
     path: ../../../src/Virtufin.Base/Messaging/Topics.cs
     startLine: 28
@@ -146,7 +146,7 @@ items:
     remote:
       path: src/Virtufin.Base/Messaging/Topics.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Trade
     path: ../../../src/Virtufin.Base/Messaging/Topics.cs
     startLine: 37
@@ -189,7 +189,7 @@ items:
     remote:
       path: src/Virtufin.Base/Messaging/Topics.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Position
     path: ../../../src/Virtufin.Base/Messaging/Topics.cs
     startLine: 46
@@ -232,7 +232,7 @@ items:
     remote:
       path: src/Virtufin.Base/Messaging/Topics.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Risk
     path: ../../../src/Virtufin.Base/Messaging/Topics.cs
     startLine: 55
@@ -275,7 +275,7 @@ items:
     remote:
       path: src/Virtufin.Base/Messaging/Topics.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Build
     path: ../../../src/Virtufin.Base/Messaging/Topics.cs
     startLine: 65
@@ -322,7 +322,7 @@ items:
     remote:
       path: src/Virtufin.Base/Messaging/Topics.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: PublishAsync
     path: ../../../src/Virtufin.Base/Messaging/Topics.cs
     startLine: 77

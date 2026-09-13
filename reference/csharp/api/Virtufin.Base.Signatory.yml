@@ -22,7 +22,7 @@ items:
     remote:
       path: src/Virtufin.Base/Signatory.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Signatory
     path: ../../../src/Virtufin.Base/Signatory.cs
     startLine: 14
@@ -65,7 +65,7 @@ items:
     remote:
       path: src/Virtufin.Base/Signatory.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/Signatory.cs
     startLine: 14
@@ -105,7 +105,7 @@ items:
     remote:
       path: src/Virtufin.Base/Signatory.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Id
     path: ../../../src/Virtufin.Base/Signatory.cs
     startLine: 14
@@ -134,7 +134,7 @@ items:
     remote:
       path: src/Virtufin.Base/Signatory.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: New
     path: ../../../src/Virtufin.Base/Signatory.cs
     startLine: 17
@@ -164,7 +164,7 @@ items:
     remote:
       path: src/Virtufin.Base/Signatory.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: From
     path: ../../../src/Virtufin.Base/Signatory.cs
     startLine: 20
@@ -197,7 +197,7 @@ items:
     remote:
       path: src/Virtufin.Base/Signatory.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Equals
     path: ../../../src/Virtufin.Base/Signatory.cs
     startLine: 23
@@ -237,7 +237,7 @@ items:
     remote:
       path: src/Virtufin.Base/Signatory.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToString
     path: ../../../src/Virtufin.Base/Signatory.cs
     startLine: 26

@@ -26,7 +26,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Market/RichMarketEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CandleClosed
     path: ../../../src/Virtufin.Base/Events/Market/RichMarketEvent.cs
     startLine: 25
@@ -72,7 +72,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Market/RichMarketEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Symbol
     path: ../../../src/Virtufin.Base/Events/Market/RichMarketEvent.cs
     startLine: 28
@@ -106,7 +106,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Market/RichMarketEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Open
     path: ../../../src/Virtufin.Base/Events/Market/RichMarketEvent.cs
     startLine: 30
@@ -139,7 +139,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Market/RichMarketEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: High
     path: ../../../src/Virtufin.Base/Events/Market/RichMarketEvent.cs
     startLine: 32
@@ -172,7 +172,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Market/RichMarketEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Low
     path: ../../../src/Virtufin.Base/Events/Market/RichMarketEvent.cs
     startLine: 34
@@ -205,7 +205,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Market/RichMarketEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Close
     path: ../../../src/Virtufin.Base/Events/Market/RichMarketEvent.cs
     startLine: 36
@@ -238,7 +238,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Market/RichMarketEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Volume
     path: ../../../src/Virtufin.Base/Events/Market/RichMarketEvent.cs
     startLine: 38
@@ -271,7 +271,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Market/RichMarketEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: WindowStart
     path: ../../../src/Virtufin.Base/Events/Market/RichMarketEvent.cs
     startLine: 40
@@ -304,7 +304,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Market/RichMarketEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: WindowEnd
     path: ../../../src/Virtufin.Base/Events/Market/RichMarketEvent.cs
     startLine: 42
@@ -337,7 +337,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Market/RichMarketEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Time
     path: ../../../src/Virtufin.Base/Events/Market/RichMarketEvent.cs
     startLine: 45
@@ -372,7 +372,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Market/RichMarketEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/Events/Market/RichMarketEvent.cs
     startLine: 48

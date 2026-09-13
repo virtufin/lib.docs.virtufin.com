@@ -22,7 +22,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/Symbol.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Symbol
     path: ../../../src/Virtufin.Core/Events/Symbol.cs
     startLine: 11
@@ -65,7 +65,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/Symbol.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Core/Events/Symbol.cs
     startLine: 11
@@ -107,7 +107,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/Symbol.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Value
     path: ../../../src/Virtufin.Core/Events/Symbol.cs
     startLine: 11
@@ -138,7 +138,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/Symbol.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Equals
     path: ../../../src/Virtufin.Core/Events/Symbol.cs
     startLine: 14
@@ -178,7 +178,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/Symbol.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Equals
     path: ../../../src/Virtufin.Core/Events/Symbol.cs
     startLine: 18
@@ -215,7 +215,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/Symbol.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GetHashCode
     path: ../../../src/Virtufin.Core/Events/Symbol.cs
     startLine: 21
@@ -247,7 +247,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/Symbol.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToString
     path: ../../../src/Virtufin.Core/Events/Symbol.cs
     startLine: 24

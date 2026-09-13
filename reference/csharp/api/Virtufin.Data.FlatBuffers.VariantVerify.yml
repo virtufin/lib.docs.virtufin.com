@@ -17,7 +17,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: VariantVerify
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 66
@@ -52,7 +52,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/Variant.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Verify
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/Variant.cs
     startLine: 68

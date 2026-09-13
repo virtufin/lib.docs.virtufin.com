@@ -21,7 +21,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Risk/RiskEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: DrawdownUpdated
     path: ../../../src/Virtufin.Base/Events/Risk/RiskEvent.cs
     startLine: 43
@@ -67,7 +67,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Risk/RiskEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/Events/Risk/RiskEvent.cs
     startLine: 43
@@ -108,7 +108,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Risk/RiskEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Drawdown
     path: ../../../src/Virtufin.Base/Events/Risk/RiskEvent.cs
     startLine: 43
@@ -141,7 +141,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Risk/RiskEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: PeakTime
     path: ../../../src/Virtufin.Base/Events/Risk/RiskEvent.cs
     startLine: 43
@@ -174,7 +174,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Risk/RiskEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: TroughTime
     path: ../../../src/Virtufin.Base/Events/Risk/RiskEvent.cs
     startLine: 43
@@ -207,7 +207,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Risk/RiskEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Time
     path: ../../../src/Virtufin.Base/Events/Risk/RiskEvent.cs
     startLine: 47

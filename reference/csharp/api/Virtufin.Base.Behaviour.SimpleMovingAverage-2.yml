@@ -20,7 +20,7 @@ items:
     remote:
       path: src/Virtufin.Base/Behaviour/SimpleMovingAverage.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: SimpleMovingAverage
     path: ../../../src/Virtufin.Base/Behaviour/SimpleMovingAverage.cs
     startLine: 23
@@ -86,7 +86,7 @@ items:
     remote:
       path: src/Virtufin.Base/Behaviour/SimpleMovingAverage.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Empty
     path: ../../../src/Virtufin.Base/Behaviour/SimpleMovingAverage.cs
     startLine: 59
@@ -132,7 +132,7 @@ items:
     remote:
       path: src/Virtufin.Base/Behaviour/SimpleMovingAverage.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Count
     path: ../../../src/Virtufin.Base/Behaviour/SimpleMovingAverage.cs
     startLine: 65
@@ -165,7 +165,7 @@ items:
     remote:
       path: src/Virtufin.Base/Behaviour/SimpleMovingAverage.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Value
     path: ../../../src/Virtufin.Base/Behaviour/SimpleMovingAverage.cs
     startLine: 69
@@ -204,7 +204,7 @@ items:
     remote:
       path: src/Virtufin.Base/Behaviour/SimpleMovingAverage.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Add
     path: ../../../src/Virtufin.Base/Behaviour/SimpleMovingAverage.cs
     startLine: 75

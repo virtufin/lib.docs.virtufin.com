@@ -20,7 +20,7 @@ items:
     remote:
       path: src/Virtufin.Core/Predicates/SenderSelectorPredicate.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: SenderSelectorPredicate
     path: ../../../src/Virtufin.Core/Predicates/SenderSelectorPredicate.cs
     startLine: 9
@@ -60,7 +60,7 @@ items:
     remote:
       path: src/Virtufin.Core/Predicates/SenderSelectorPredicate.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Sender
     path: ../../../src/Virtufin.Core/Predicates/SenderSelectorPredicate.cs
     startLine: 12
@@ -91,7 +91,7 @@ items:
     remote:
       path: src/Virtufin.Core/Predicates/SenderSelectorPredicate.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Core/Predicates/SenderSelectorPredicate.cs
     startLine: 16
@@ -126,7 +126,7 @@ items:
     remote:
       path: src/Virtufin.Core/Predicates/SenderSelectorPredicate.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Predicate
     path: ../../../src/Virtufin.Core/Predicates/SenderSelectorPredicate.cs
     startLine: 22
@@ -174,7 +174,7 @@ items:
     remote:
       path: src/Virtufin.Core/Predicates/SenderSelectorPredicate.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToString
     path: ../../../src/Virtufin.Core/Predicates/SenderSelectorPredicate.cs
     startLine: 26

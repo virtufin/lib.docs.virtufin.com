@@ -21,7 +21,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: PnLAttributed
     path: ../../../src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
     startLine: 24
@@ -67,7 +67,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Event
     path: ../../../src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
     startLine: 27
@@ -100,7 +100,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ScenarioName
     path: ../../../src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
     startLine: 29
@@ -133,7 +133,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: RunId
     path: ../../../src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
     startLine: 31
@@ -166,7 +166,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Time
     path: ../../../src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
     startLine: 33
@@ -200,7 +200,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
     startLine: 36

@@ -19,7 +19,7 @@ items:
     remote:
       path: src/Virtufin.Base/Scenarios/InMemoryScenarioRegistry.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: InMemoryScenarioRegistry
     path: ../../../src/Virtufin.Base/Scenarios/InMemoryScenarioRegistry.cs
     startLine: 9
@@ -60,7 +60,7 @@ items:
     remote:
       path: src/Virtufin.Base/Scenarios/InMemoryScenarioRegistry.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Get
     path: ../../../src/Virtufin.Base/Scenarios/InMemoryScenarioRegistry.cs
     startLine: 14
@@ -96,7 +96,7 @@ items:
     remote:
       path: src/Virtufin.Base/Scenarios/InMemoryScenarioRegistry.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Register
     path: ../../../src/Virtufin.Base/Scenarios/InMemoryScenarioRegistry.cs
     startLine: 18
@@ -134,7 +134,7 @@ items:
     remote:
       path: src/Virtufin.Base/Scenarios/InMemoryScenarioRegistry.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: All
     path: ../../../src/Virtufin.Base/Scenarios/InMemoryScenarioRegistry.cs
     startLine: 26

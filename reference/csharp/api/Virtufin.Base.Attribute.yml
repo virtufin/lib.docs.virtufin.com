@@ -17,7 +17,7 @@ items:
     remote:
       path: src/Virtufin.Base/Attribute.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Attribute
     path: ../../../src/Virtufin.Base/Attribute.cs
     startLine: 3
@@ -52,7 +52,7 @@ items:
     remote:
       path: src/Virtufin.Base/Attribute.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Price
     path: ../../../src/Virtufin.Base/Attribute.cs
     startLine: 5

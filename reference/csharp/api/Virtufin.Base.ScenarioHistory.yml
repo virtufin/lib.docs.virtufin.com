@@ -26,7 +26,7 @@ items:
     remote:
       path: src/Virtufin.Base/ScenarioHistory.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ScenarioHistory
     path: ../../../src/Virtufin.Base/ScenarioHistory.cs
     startLine: 21
@@ -82,7 +82,7 @@ items:
     remote:
       path: src/Virtufin.Base/ScenarioHistory.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/ScenarioHistory.cs
     startLine: 27
@@ -113,7 +113,7 @@ items:
     remote:
       path: src/Virtufin.Base/ScenarioHistory.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/ScenarioHistory.cs
     startLine: 31
@@ -148,7 +148,7 @@ items:
     remote:
       path: src/Virtufin.Base/ScenarioHistory.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: LastScenario
     path: ../../../src/Virtufin.Base/ScenarioHistory.cs
     startLine: 37
@@ -181,7 +181,7 @@ items:
     remote:
       path: src/Virtufin.Base/ScenarioHistory.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Iter
     path: ../../../src/Virtufin.Base/ScenarioHistory.cs
     startLine: 40
@@ -214,7 +214,7 @@ items:
     remote:
       path: src/Virtufin.Base/ScenarioHistory.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Scenario
     path: ../../../src/Virtufin.Base/ScenarioHistory.cs
     startLine: 43
@@ -253,7 +253,7 @@ items:
     remote:
       path: src/Virtufin.Base/ScenarioHistory.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: NewScenarios
     path: ../../../src/Virtufin.Base/ScenarioHistory.cs
     startLine: 47
@@ -291,7 +291,7 @@ items:
     remote:
       path: src/Virtufin.Base/ScenarioHistory.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GetEnumerator
     path: ../../../src/Virtufin.Base/ScenarioHistory.cs
     startLine: 50
@@ -324,7 +324,7 @@ items:
     remote:
       path: src/Virtufin.Base/ScenarioHistory.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Append
     path: ../../../src/Virtufin.Base/ScenarioHistory.cs
     startLine: 56
@@ -356,7 +356,7 @@ items:
     remote:
       path: src/Virtufin.Base/ScenarioHistory.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Append
     path: ../../../src/Virtufin.Base/ScenarioHistory.cs
     startLine: 63
@@ -387,7 +387,7 @@ items:
     remote:
       path: src/Virtufin.Base/ScenarioHistory.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Dispose
     path: ../../../src/Virtufin.Base/ScenarioHistory.cs
     startLine: 66

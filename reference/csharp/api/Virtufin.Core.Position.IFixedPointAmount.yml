@@ -20,7 +20,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IFixedPointAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IFixedPointAmount
     path: ../../../src/Virtufin.Core/Position/IFixedPointAmount.cs
     startLine: 16
@@ -73,7 +73,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IFixedPointAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Base
     path: ../../../src/Virtufin.Core/Position/IFixedPointAmount.cs
     startLine: 19
@@ -104,7 +104,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IFixedPointAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Whole
     path: ../../../src/Virtufin.Core/Position/IFixedPointAmount.cs
     startLine: 22
@@ -135,7 +135,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IFixedPointAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Fraction
     path: ../../../src/Virtufin.Core/Position/IFixedPointAmount.cs
     startLine: 25
@@ -166,7 +166,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IFixedPointAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToCardinal
     path: ../../../src/Virtufin.Core/Position/IFixedPointAmount.cs
     startLine: 31

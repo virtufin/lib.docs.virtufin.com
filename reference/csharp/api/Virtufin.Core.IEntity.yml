@@ -17,7 +17,7 @@ items:
     remote:
       path: src/Virtufin.Core/IEntity.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IEntity
     path: ../../../src/Virtufin.Core/IEntity.cs
     startLine: 2
@@ -42,7 +42,7 @@ items:
     remote:
       path: src/Virtufin.Core/IEntity.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Identifier
     path: ../../../src/Virtufin.Core/IEntity.cs
     startLine: 4

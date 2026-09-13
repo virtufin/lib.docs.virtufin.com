@@ -17,7 +17,7 @@ items:
     remote:
       path: src/Virtufin.Core/Messaging/ITopic.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IEventPublisher
     path: ../../../src/Virtufin.Core/Messaging/ITopic.cs
     startLine: 22
@@ -51,7 +51,7 @@ items:
     remote:
       path: src/Virtufin.Core/Messaging/ITopic.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: PublishAsync
     path: ../../../src/Virtufin.Core/Messaging/ITopic.cs
     startLine: 28

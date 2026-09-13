@@ -18,7 +18,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IFixedPointAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IFixedPointAmount
     path: ../../../src/Virtufin.Core/Position/IFixedPointAmount.cs
     startLine: 39
@@ -67,7 +67,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IFixedPointAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: BaseValue
     path: ../../../src/Virtufin.Core/Position/IFixedPointAmount.cs
     startLine: 46
@@ -103,7 +103,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IFixedPointAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Create
     path: ../../../src/Virtufin.Core/Position/IFixedPointAmount.cs
     startLine: 52

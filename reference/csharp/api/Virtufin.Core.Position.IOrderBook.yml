@@ -16,7 +16,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IOrderBook.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IOrderBook
     path: ../../../src/Virtufin.Core/Position/IOrderBook.cs
     startLine: 12

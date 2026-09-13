@@ -17,7 +17,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IAmount
     path: ../../../src/Virtufin.Core/Position/IAmount.cs
     startLine: 35
@@ -63,7 +63,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GetValue
     path: ../../../src/Virtufin.Core/Position/IAmount.cs
     startLine: 39

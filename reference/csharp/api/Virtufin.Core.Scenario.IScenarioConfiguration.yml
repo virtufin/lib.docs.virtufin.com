@@ -21,7 +21,7 @@ items:
     remote:
       path: src/Virtufin.Core/Scenario/IScenarioConfiguration.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IScenarioConfiguration
     path: ../../../src/Virtufin.Core/Scenario/IScenarioConfiguration.cs
     startLine: 9
@@ -55,7 +55,7 @@ items:
     remote:
       path: src/Virtufin.Core/Scenario/IScenarioConfiguration.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Id
     path: ../../../src/Virtufin.Core/Scenario/IScenarioConfiguration.cs
     startLine: 12
@@ -86,7 +86,7 @@ items:
     remote:
       path: src/Virtufin.Core/Scenario/IScenarioConfiguration.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Name
     path: ../../../src/Virtufin.Core/Scenario/IScenarioConfiguration.cs
     startLine: 15
@@ -117,7 +117,7 @@ items:
     remote:
       path: src/Virtufin.Core/Scenario/IScenarioConfiguration.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Market
     path: ../../../src/Virtufin.Core/Scenario/IScenarioConfiguration.cs
     startLine: 18
@@ -148,7 +148,7 @@ items:
     remote:
       path: src/Virtufin.Core/Scenario/IScenarioConfiguration.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Portfolio
     path: ../../../src/Virtufin.Core/Scenario/IScenarioConfiguration.cs
     startLine: 21
@@ -179,7 +179,7 @@ items:
     remote:
       path: src/Virtufin.Core/Scenario/IScenarioConfiguration.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Strategy
     path: ../../../src/Virtufin.Core/Scenario/IScenarioConfiguration.cs
     startLine: 24

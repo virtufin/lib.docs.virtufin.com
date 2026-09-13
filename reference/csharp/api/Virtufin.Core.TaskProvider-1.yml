@@ -23,7 +23,7 @@ items:
     remote:
       path: src/Virtufin.Core/TaskProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: TaskProvider
     path: ../../../src/Virtufin.Core/TaskProvider.cs
     startLine: 2
@@ -65,7 +65,7 @@ items:
     remote:
       path: src/Virtufin.Core/TaskProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Core/TaskProvider.cs
     startLine: 7
@@ -97,7 +97,7 @@ items:
     remote:
       path: src/Virtufin.Core/TaskProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Core/TaskProvider.cs
     startLine: 12
@@ -131,7 +131,7 @@ items:
     remote:
       path: src/Virtufin.Core/TaskProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Core/TaskProvider.cs
     startLine: 16
@@ -165,7 +165,7 @@ items:
     remote:
       path: src/Virtufin.Core/TaskProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: TypeSpecifier
     path: ../../../src/Virtufin.Core/TaskProvider.cs
     startLine: 19
@@ -198,7 +198,7 @@ items:
     remote:
       path: src/Virtufin.Core/TaskProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Add
     path: ../../../src/Virtufin.Core/TaskProvider.cs
     startLine: 21
@@ -234,7 +234,7 @@ items:
     remote:
       path: src/Virtufin.Core/TaskProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Add
     path: ../../../src/Virtufin.Core/TaskProvider.cs
     startLine: 25
@@ -266,7 +266,7 @@ items:
     remote:
       path: src/Virtufin.Core/TaskProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GetTask
     path: ../../../src/Virtufin.Core/TaskProvider.cs
     startLine: 29

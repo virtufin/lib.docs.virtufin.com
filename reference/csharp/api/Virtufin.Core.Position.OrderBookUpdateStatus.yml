@@ -20,7 +20,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/OrderBookUpdateStatus.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: OrderBookUpdateStatus
     path: ../../../src/Virtufin.Core/Position/OrderBookUpdateStatus.cs
     startLine: 5
@@ -47,7 +47,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/OrderBookUpdateStatus.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Applied
     path: ../../../src/Virtufin.Core/Position/OrderBookUpdateStatus.cs
     startLine: 10
@@ -78,7 +78,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/OrderBookUpdateStatus.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Stale
     path: ../../../src/Virtufin.Core/Position/OrderBookUpdateStatus.cs
     startLine: 13
@@ -106,7 +106,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/OrderBookUpdateStatus.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GapDetected
     path: ../../../src/Virtufin.Core/Position/OrderBookUpdateStatus.cs
     startLine: 17
@@ -136,7 +136,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/OrderBookUpdateStatus.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Dropped
     path: ../../../src/Virtufin.Core/Position/OrderBookUpdateStatus.cs
     startLine: 20

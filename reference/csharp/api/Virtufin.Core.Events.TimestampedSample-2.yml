@@ -19,7 +19,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/TimestampedSample.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: TimestampedSample
     path: ../../../src/Virtufin.Core/Events/TimestampedSample.cs
     startLine: 14
@@ -78,7 +78,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/TimestampedSample.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Core/Events/TimestampedSample.cs
     startLine: 14
@@ -125,7 +125,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/TimestampedSample.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Time
     path: ../../../src/Virtufin.Core/Events/TimestampedSample.cs
     startLine: 14
@@ -160,7 +160,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/TimestampedSample.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Value
     path: ../../../src/Virtufin.Core/Events/TimestampedSample.cs
     startLine: 14

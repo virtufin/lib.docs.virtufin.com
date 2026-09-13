@@ -24,7 +24,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/SimpleOrder.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: SimpleOrder
     path: ../../../src/Virtufin.Core/Position/SimpleOrder.cs
     startLine: 7
@@ -69,7 +69,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/SimpleOrder.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Core/Position/SimpleOrder.cs
     startLine: 7
@@ -110,7 +110,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/SimpleOrder.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: BuySell
     path: ../../../src/Virtufin.Core/Position/SimpleOrder.cs
     startLine: 8
@@ -141,7 +141,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/SimpleOrder.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: LimitOrMarket
     path: ../../../src/Virtufin.Core/Position/SimpleOrder.cs
     startLine: 9
@@ -172,7 +172,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/SimpleOrder.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Quantity
     path: ../../../src/Virtufin.Core/Position/SimpleOrder.cs
     startLine: 10
@@ -203,7 +203,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/SimpleOrder.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsBuy
     path: ../../../src/Virtufin.Core/Position/SimpleOrder.cs
     startLine: 14
@@ -235,7 +235,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/SimpleOrder.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsSell
     path: ../../../src/Virtufin.Core/Position/SimpleOrder.cs
     startLine: 18
@@ -267,7 +267,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/SimpleOrder.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsLimitOrder
     path: ../../../src/Virtufin.Core/Position/SimpleOrder.cs
     startLine: 22
@@ -299,7 +299,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/SimpleOrder.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsMarketOrder
     path: ../../../src/Virtufin.Core/Position/SimpleOrder.cs
     startLine: 26

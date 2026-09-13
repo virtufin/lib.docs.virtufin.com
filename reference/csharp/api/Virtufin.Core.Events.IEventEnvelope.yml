@@ -27,7 +27,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/IEventEnvelope.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IEventEnvelope
     path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
     startLine: 14
@@ -75,7 +75,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/IEventEnvelope.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ScenarioId
     path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
     startLine: 17
@@ -106,7 +106,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/IEventEnvelope.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ScenarioName
     path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
     startLine: 20
@@ -137,7 +137,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/IEventEnvelope.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: MarketLane
     path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
     startLine: 23
@@ -168,7 +168,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/IEventEnvelope.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: MarketSelector
     path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
     startLine: 26
@@ -199,7 +199,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/IEventEnvelope.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: PortfolioLane
     path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
     startLine: 29
@@ -230,7 +230,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/IEventEnvelope.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: StrategyLane
     path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
     startLine: 32
@@ -261,7 +261,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/IEventEnvelope.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ClockType
     path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
     startLine: 35
@@ -292,7 +292,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/IEventEnvelope.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: EventTime
     path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
     startLine: 38
@@ -323,7 +323,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/IEventEnvelope.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: WallTime
     path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
     startLine: 41
@@ -354,7 +354,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/IEventEnvelope.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CorrelationId
     path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
     startLine: 44
@@ -385,7 +385,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/IEventEnvelope.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: RunId
     path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
     startLine: 47

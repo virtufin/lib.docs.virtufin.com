@@ -17,7 +17,7 @@ items:
     remote:
       path: src/Virtufin.Core/Contracts/IMessageGenerator.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IMessageGenerator
     path: ../../../src/Virtufin.Core/Contracts/IMessageGenerator.cs
     startLine: 9
@@ -51,7 +51,7 @@ items:
     remote:
       path: src/Virtufin.Core/Contracts/IMessageGenerator.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GenerateMessages
     path: ../../../src/Virtufin.Core/Contracts/IMessageGenerator.cs
     startLine: 16

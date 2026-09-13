@@ -20,7 +20,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IL2OrderBookDiff.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IL2OrderBookDiff
     path: ../../../src/Virtufin.Core/Position/IL2OrderBookDiff.cs
     startLine: 8
@@ -58,7 +58,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IL2OrderBookDiff.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: FirstUpdateId
     path: ../../../src/Virtufin.Core/Position/IL2OrderBookDiff.cs
     startLine: 13
@@ -91,7 +91,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IL2OrderBookDiff.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: LastUpdateId
     path: ../../../src/Virtufin.Core/Position/IL2OrderBookDiff.cs
     startLine: 16
@@ -124,7 +124,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IL2OrderBookDiff.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Bids
     path: ../../../src/Virtufin.Core/Position/IL2OrderBookDiff.cs
     startLine: 19
@@ -157,7 +157,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IL2OrderBookDiff.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Asks
     path: ../../../src/Virtufin.Core/Position/IL2OrderBookDiff.cs
     startLine: 22

@@ -22,7 +22,7 @@ items:
     remote:
       path: src/Virtufin.Base/Transaction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Transfer
     path: ../../../src/Virtufin.Base/Transaction.cs
     startLine: 73
@@ -65,7 +65,7 @@ items:
     remote:
       path: src/Virtufin.Base/Transaction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: From
     path: ../../../src/Virtufin.Base/Transaction.cs
     startLine: 76
@@ -96,7 +96,7 @@ items:
     remote:
       path: src/Virtufin.Base/Transaction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: To
     path: ../../../src/Virtufin.Base/Transaction.cs
     startLine: 79
@@ -127,7 +127,7 @@ items:
     remote:
       path: src/Virtufin.Base/Transaction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Position
     path: ../../../src/Virtufin.Base/Transaction.cs
     startLine: 82
@@ -158,7 +158,7 @@ items:
     remote:
       path: src/Virtufin.Base/Transaction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/Transaction.cs
     startLine: 85
@@ -198,7 +198,7 @@ items:
     remote:
       path: src/Virtufin.Base/Transaction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Id
     path: ../../../src/Virtufin.Base/Transaction.cs
     startLine: 94
@@ -229,7 +229,7 @@ items:
     remote:
       path: src/Virtufin.Base/Transaction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: RelatedContract
     path: ../../../src/Virtufin.Base/Transaction.cs
     startLine: 97

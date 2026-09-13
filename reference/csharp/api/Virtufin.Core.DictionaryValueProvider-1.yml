@@ -23,7 +23,7 @@ items:
     remote:
       path: src/Virtufin.Core/DictionaryValueProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: DictionaryValueProvider
     path: ../../../src/Virtufin.Core/DictionaryValueProvider.cs
     startLine: 2
@@ -65,7 +65,7 @@ items:
     remote:
       path: src/Virtufin.Core/DictionaryValueProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Core/DictionaryValueProvider.cs
     startLine: 7
@@ -97,7 +97,7 @@ items:
     remote:
       path: src/Virtufin.Core/DictionaryValueProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Core/DictionaryValueProvider.cs
     startLine: 12
@@ -131,7 +131,7 @@ items:
     remote:
       path: src/Virtufin.Core/DictionaryValueProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Core/DictionaryValueProvider.cs
     startLine: 16
@@ -165,7 +165,7 @@ items:
     remote:
       path: src/Virtufin.Core/DictionaryValueProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: TypeSpecifier
     path: ../../../src/Virtufin.Core/DictionaryValueProvider.cs
     startLine: 19
@@ -199,7 +199,7 @@ items:
     remote:
       path: src/Virtufin.Core/DictionaryValueProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Add
     path: ../../../src/Virtufin.Core/DictionaryValueProvider.cs
     startLine: 21
@@ -235,7 +235,7 @@ items:
     remote:
       path: src/Virtufin.Core/DictionaryValueProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Add
     path: ../../../src/Virtufin.Core/DictionaryValueProvider.cs
     startLine: 25
@@ -267,7 +267,7 @@ items:
     remote:
       path: src/Virtufin.Core/DictionaryValueProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GetValue
     path: ../../../src/Virtufin.Core/DictionaryValueProvider.cs
     startLine: 29

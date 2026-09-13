@@ -23,7 +23,7 @@ items:
     remote:
       path: src/Virtufin.Core/ObservableProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ObservableProvider
     path: ../../../src/Virtufin.Core/ObservableProvider.cs
     startLine: 2
@@ -65,7 +65,7 @@ items:
     remote:
       path: src/Virtufin.Core/ObservableProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Core/ObservableProvider.cs
     startLine: 7
@@ -97,7 +97,7 @@ items:
     remote:
       path: src/Virtufin.Core/ObservableProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Core/ObservableProvider.cs
     startLine: 12
@@ -131,7 +131,7 @@ items:
     remote:
       path: src/Virtufin.Core/ObservableProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Core/ObservableProvider.cs
     startLine: 16
@@ -165,7 +165,7 @@ items:
     remote:
       path: src/Virtufin.Core/ObservableProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: TypeSpecifier
     path: ../../../src/Virtufin.Core/ObservableProvider.cs
     startLine: 19
@@ -200,7 +200,7 @@ items:
     remote:
       path: src/Virtufin.Core/ObservableProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Add
     path: ../../../src/Virtufin.Core/ObservableProvider.cs
     startLine: 21
@@ -236,7 +236,7 @@ items:
     remote:
       path: src/Virtufin.Core/ObservableProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Add
     path: ../../../src/Virtufin.Core/ObservableProvider.cs
     startLine: 25
@@ -268,7 +268,7 @@ items:
     remote:
       path: src/Virtufin.Core/ObservableProvider.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GetObservable
     path: ../../../src/Virtufin.Core/ObservableProvider.cs
     startLine: 29

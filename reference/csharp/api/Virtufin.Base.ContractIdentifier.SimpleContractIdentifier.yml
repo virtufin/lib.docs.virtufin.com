@@ -19,7 +19,7 @@ items:
     remote:
       path: src/Virtufin.Base/ContractIdentifier.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: SimpleContractIdentifier
     path: ../../../src/Virtufin.Base/ContractIdentifier.cs
     startLine: 18
@@ -64,7 +64,7 @@ items:
     remote:
       path: src/Virtufin.Base/ContractIdentifier.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Value
     path: ../../../src/Virtufin.Base/ContractIdentifier.cs
     startLine: 21
@@ -96,7 +96,7 @@ items:
     remote:
       path: src/Virtufin.Base/ContractIdentifier.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/ContractIdentifier.cs
     startLine: 24
@@ -130,7 +130,7 @@ items:
     remote:
       path: src/Virtufin.Base/ContractIdentifier.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToString
     path: ../../../src/Virtufin.Base/ContractIdentifier.cs
     startLine: 27

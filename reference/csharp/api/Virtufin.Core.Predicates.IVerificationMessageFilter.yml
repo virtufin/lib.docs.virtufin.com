@@ -17,7 +17,7 @@ items:
     remote:
       path: src/Virtufin.Core/Predicates/IVerificationMessageFilter.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IVerificationMessageFilter
     path: ../../../src/Virtufin.Core/Predicates/IVerificationMessageFilter.cs
     startLine: 10
@@ -49,7 +49,7 @@ items:
     remote:
       path: src/Virtufin.Core/Predicates/IVerificationMessageFilter.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: FilterTransactions
     path: ../../../src/Virtufin.Core/Predicates/IVerificationMessageFilter.cs
     startLine: 19

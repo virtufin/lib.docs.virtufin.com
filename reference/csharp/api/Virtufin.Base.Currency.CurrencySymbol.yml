@@ -193,7 +193,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CurrencySymbol
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 15
@@ -222,7 +222,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: AED
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 17
@@ -248,7 +248,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: AFN
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 17
@@ -274,7 +274,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ALL
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 17
@@ -300,7 +300,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: AMD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 17
@@ -326,7 +326,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ANG
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 17
@@ -352,7 +352,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: AOA
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 17
@@ -378,7 +378,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ARS
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 17
@@ -404,7 +404,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: AUD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 17
@@ -430,7 +430,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: AWG
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 17
@@ -456,7 +456,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: AZN
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 17
@@ -482,7 +482,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: BAM
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 18
@@ -508,7 +508,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: BBD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 18
@@ -534,7 +534,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: BDT
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 18
@@ -560,7 +560,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: BHD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 18
@@ -586,7 +586,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: BIF
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 18
@@ -612,7 +612,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: BMD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 18
@@ -638,7 +638,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: BND
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 18
@@ -664,7 +664,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: BOB
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 18
@@ -690,7 +690,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: BOV
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 18
@@ -716,7 +716,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: BRL
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 18
@@ -742,7 +742,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: BSD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 19
@@ -768,7 +768,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: BTN
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 19
@@ -794,7 +794,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: BWP
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 19
@@ -820,7 +820,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: BYN
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 19
@@ -846,7 +846,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: BZD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 19
@@ -872,7 +872,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CAD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 19
@@ -898,7 +898,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CDF
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 19
@@ -924,7 +924,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CHE
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 19
@@ -950,7 +950,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CHF
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 19
@@ -976,7 +976,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CHW
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 19
@@ -1002,7 +1002,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CLF
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 20
@@ -1028,7 +1028,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CLP
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 20
@@ -1054,7 +1054,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CNY
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 20
@@ -1080,7 +1080,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: COP
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 20
@@ -1106,7 +1106,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: COU
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 20
@@ -1132,7 +1132,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CRC
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 20
@@ -1158,7 +1158,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CUP
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 20
@@ -1184,7 +1184,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CVE
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 20
@@ -1210,7 +1210,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CZK
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 20
@@ -1236,7 +1236,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: DJF
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 20
@@ -1262,7 +1262,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: DKK
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 21
@@ -1288,7 +1288,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: DOP
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 21
@@ -1314,7 +1314,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: DZD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 21
@@ -1340,7 +1340,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: EGP
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 21
@@ -1366,7 +1366,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ERN
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 21
@@ -1392,7 +1392,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ETB
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 21
@@ -1418,7 +1418,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: EUR
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 21
@@ -1444,7 +1444,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: FJD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 21
@@ -1470,7 +1470,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: FKP
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 21
@@ -1496,7 +1496,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GBP
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 21
@@ -1522,7 +1522,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GEL
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 22
@@ -1548,7 +1548,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GHS
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 22
@@ -1574,7 +1574,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GIP
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 22
@@ -1600,7 +1600,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GMD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 22
@@ -1626,7 +1626,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GNF
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 22
@@ -1652,7 +1652,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GTQ
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 22
@@ -1678,7 +1678,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GYD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 22
@@ -1704,7 +1704,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: HKD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 22
@@ -1730,7 +1730,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: HNL
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 22
@@ -1756,7 +1756,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: HTG
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 22
@@ -1782,7 +1782,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: HUF
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 23
@@ -1808,7 +1808,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IDR
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 23
@@ -1834,7 +1834,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ILS
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 23
@@ -1860,7 +1860,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: INR
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 23
@@ -1886,7 +1886,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IQD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 23
@@ -1912,7 +1912,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IRR
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 23
@@ -1938,7 +1938,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ISK
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 23
@@ -1964,7 +1964,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: JMD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 23
@@ -1990,7 +1990,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: JOD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 23
@@ -2016,7 +2016,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: JPY
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 23
@@ -2042,7 +2042,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: KES
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 24
@@ -2068,7 +2068,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: KGS
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 24
@@ -2094,7 +2094,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: KHR
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 24
@@ -2120,7 +2120,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: KMF
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 24
@@ -2146,7 +2146,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: KPW
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 24
@@ -2172,7 +2172,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: KRW
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 24
@@ -2198,7 +2198,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: KWD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 24
@@ -2224,7 +2224,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: KYD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 24
@@ -2250,7 +2250,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: KZT
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 24
@@ -2276,7 +2276,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: LAK
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 24
@@ -2302,7 +2302,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: LBP
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 25
@@ -2328,7 +2328,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: LKR
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 25
@@ -2354,7 +2354,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: LRD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 25
@@ -2380,7 +2380,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: LSL
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 25
@@ -2406,7 +2406,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: LYD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 25
@@ -2432,7 +2432,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: MAD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 25
@@ -2458,7 +2458,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: MDL
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 25
@@ -2484,7 +2484,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: MGA
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 25
@@ -2510,7 +2510,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: MKD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 25
@@ -2536,7 +2536,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: MMK
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 25
@@ -2562,7 +2562,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: MNT
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 26
@@ -2588,7 +2588,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: MOP
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 26
@@ -2614,7 +2614,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: MRU
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 26
@@ -2640,7 +2640,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: MUR
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 26
@@ -2666,7 +2666,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: MVR
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 26
@@ -2692,7 +2692,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: MWK
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 26
@@ -2718,7 +2718,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: MXN
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 26
@@ -2744,7 +2744,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: MXV
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 26
@@ -2770,7 +2770,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: MYR
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 26
@@ -2796,7 +2796,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: MZN
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 26
@@ -2822,7 +2822,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: NAD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 27
@@ -2848,7 +2848,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: NGN
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 27
@@ -2874,7 +2874,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: NIO
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 27
@@ -2900,7 +2900,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: NOK
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 27
@@ -2926,7 +2926,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: NPR
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 27
@@ -2952,7 +2952,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: NZD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 27
@@ -2978,7 +2978,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: OMR
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 27
@@ -3004,7 +3004,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: PAB
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 27
@@ -3030,7 +3030,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: PEN
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 27
@@ -3056,7 +3056,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: PGK
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 27
@@ -3082,7 +3082,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: PHP
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 28
@@ -3108,7 +3108,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: PKR
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 28
@@ -3134,7 +3134,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: PLN
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 28
@@ -3160,7 +3160,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: PYG
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 28
@@ -3186,7 +3186,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: QAR
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 28
@@ -3212,7 +3212,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: RON
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 28
@@ -3238,7 +3238,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: RSD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 28
@@ -3264,7 +3264,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: RUB
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 28
@@ -3290,7 +3290,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: RWF
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 28
@@ -3316,7 +3316,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: SAR
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 28
@@ -3342,7 +3342,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: SBD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 29
@@ -3368,7 +3368,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: SCR
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 29
@@ -3394,7 +3394,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: SDG
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 29
@@ -3420,7 +3420,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: SEK
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 29
@@ -3446,7 +3446,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: SGD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 29
@@ -3472,7 +3472,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: SHP
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 29
@@ -3498,7 +3498,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: SLE
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 29
@@ -3524,7 +3524,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: SOS
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 29
@@ -3550,7 +3550,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: SRD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 29
@@ -3576,7 +3576,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: SSP
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 29
@@ -3602,7 +3602,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: STN
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 30
@@ -3628,7 +3628,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: SVC
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 30
@@ -3654,7 +3654,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: SYP
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 30
@@ -3680,7 +3680,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: SZL
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 30
@@ -3706,7 +3706,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: THB
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 30
@@ -3732,7 +3732,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: TJS
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 30
@@ -3758,7 +3758,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: TMT
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 30
@@ -3784,7 +3784,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: TND
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 30
@@ -3810,7 +3810,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: TOP
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 30
@@ -3836,7 +3836,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: TRY
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 30
@@ -3862,7 +3862,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: TTD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 31
@@ -3888,7 +3888,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: TWD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 31
@@ -3914,7 +3914,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: TZS
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 31
@@ -3940,7 +3940,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: UAH
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 31
@@ -3966,7 +3966,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: UGX
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 31
@@ -3992,7 +3992,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: USD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 31
@@ -4018,7 +4018,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: USN
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 31
@@ -4044,7 +4044,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: UYI
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 31
@@ -4070,7 +4070,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: UYU
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 31
@@ -4096,7 +4096,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: UYW
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 31
@@ -4122,7 +4122,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: UZS
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 32
@@ -4148,7 +4148,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: VED
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 32
@@ -4174,7 +4174,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: VES
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 32
@@ -4200,7 +4200,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: VND
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 32
@@ -4226,7 +4226,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: VUV
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 32
@@ -4252,7 +4252,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: WST
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 32
@@ -4278,7 +4278,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: XAF
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 32
@@ -4304,7 +4304,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: XAG
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 32
@@ -4330,7 +4330,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: XAU
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 32
@@ -4356,7 +4356,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: XBA
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 32
@@ -4382,7 +4382,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: XBB
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 33
@@ -4408,7 +4408,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: XBC
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 33
@@ -4434,7 +4434,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: XBD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 33
@@ -4460,7 +4460,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: XCD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 33
@@ -4486,7 +4486,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: XCG
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 33
@@ -4512,7 +4512,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: XDR
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 33
@@ -4538,7 +4538,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: XOF
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 33
@@ -4564,7 +4564,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: XPD
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 33
@@ -4590,7 +4590,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: XPF
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 33
@@ -4616,7 +4616,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: XPT
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 33
@@ -4642,7 +4642,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: XSU
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 34
@@ -4668,7 +4668,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: XTS
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 34
@@ -4694,7 +4694,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: XUA
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 34
@@ -4720,7 +4720,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: YER
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 34
@@ -4746,7 +4746,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ZAR
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 34
@@ -4772,7 +4772,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ZMW
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 34
@@ -4798,7 +4798,7 @@ items:
     remote:
       path: src/Virtufin.Base/Currency.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ZZZ
     path: ../../../src/Virtufin.Base/Currency.cs
     startLine: 35

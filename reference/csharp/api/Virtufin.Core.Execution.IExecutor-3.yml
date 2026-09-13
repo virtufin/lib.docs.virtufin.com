@@ -18,7 +18,7 @@ items:
     remote:
       path: src/Virtufin.Core/Execution/IExecutor.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IExecutor
     path: ../../../src/Virtufin.Core/Execution/IExecutor.cs
     startLine: 32
@@ -85,7 +85,7 @@ items:
     remote:
       path: src/Virtufin.Core/Execution/IExecutor.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Initial
     path: ../../../src/Virtufin.Core/Execution/IExecutor.cs
     startLine: 38
@@ -118,7 +118,7 @@ items:
     remote:
       path: src/Virtufin.Core/Execution/IExecutor.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ExecuteAsync
     path: ../../../src/Virtufin.Core/Execution/IExecutor.cs
     startLine: 44

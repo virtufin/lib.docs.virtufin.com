@@ -19,7 +19,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IAmount
     path: ../../../src/Virtufin.Core/Position/IAmount.cs
     startLine: 13
@@ -62,7 +62,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsZero
     path: ../../../src/Virtufin.Core/Position/IAmount.cs
     startLine: 16
@@ -93,7 +93,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Precision
     path: ../../../src/Virtufin.Core/Position/IAmount.cs
     startLine: 19
@@ -124,7 +124,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CompareTo
     path: ../../../src/Virtufin.Core/Position/IAmount.cs
     startLine: 26

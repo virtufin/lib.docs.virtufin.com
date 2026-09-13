@@ -45,7 +45,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: DecimalAmount
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 32
@@ -128,7 +128,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 32
@@ -203,7 +203,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Whole
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 32
@@ -236,7 +236,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Fraction
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 32
@@ -269,7 +269,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: N
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 32
@@ -298,7 +298,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Radix
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 42
@@ -327,7 +327,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Zero
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 47
@@ -358,7 +358,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: DefaultPrecision
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 54
@@ -392,7 +392,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: BaseValue
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 57
@@ -428,7 +428,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Base
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 60
@@ -461,7 +461,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Precision
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 63
@@ -494,7 +494,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsZero
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 66
@@ -527,7 +527,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Create
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 69
@@ -572,7 +572,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: From
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 78
@@ -615,7 +615,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: From
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 93
@@ -660,7 +660,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToCardinal
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 97
@@ -693,7 +693,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToCardinal
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 106
@@ -735,7 +735,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToDecimal
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 117
@@ -765,7 +765,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: FromCardinal
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 122
@@ -804,7 +804,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: FromCardinal
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 128
@@ -844,7 +844,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GetValue
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 151
@@ -873,7 +873,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Equals
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 157
@@ -914,7 +914,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GetHashCode
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 164
@@ -946,7 +946,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CompareTo
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 168
@@ -990,7 +990,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CompareTo
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 191
@@ -1029,7 +1029,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Addition
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 197
@@ -1069,7 +1069,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Subtraction
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 201
@@ -1109,7 +1109,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Multiply
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 208
@@ -1152,7 +1152,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Division
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 216
@@ -1195,7 +1195,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/DecimalAmount.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToString
     path: ../../../src/Virtufin.Core/Position/DecimalAmount.cs
     startLine: 220

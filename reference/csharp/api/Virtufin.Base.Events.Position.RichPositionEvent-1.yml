@@ -19,7 +19,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Position/RichPositionEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: RichPositionEvent
     path: ../../../src/Virtufin.Base/Events/Position/RichPositionEvent.cs
     startLine: 13
@@ -78,7 +78,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Position/RichPositionEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Symbol
     path: ../../../src/Virtufin.Base/Events/Position/RichPositionEvent.cs
     startLine: 19
@@ -113,7 +113,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Position/RichPositionEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: DeltaQuantity
     path: ../../../src/Virtufin.Base/Events/Position/RichPositionEvent.cs
     startLine: 22
@@ -148,7 +148,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Position/RichPositionEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Time
     path: ../../../src/Virtufin.Base/Events/Position/RichPositionEvent.cs
     startLine: 25

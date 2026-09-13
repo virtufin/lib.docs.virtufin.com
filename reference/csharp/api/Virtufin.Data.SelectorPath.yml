@@ -28,7 +28,7 @@ items:
     remote:
       path: src/Virtufin.Data/VariantListRepresentation.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: SelectorPath
     path: ../../../src/Virtufin.Data/VariantListRepresentation.cs
     startLine: 82
@@ -61,7 +61,7 @@ items:
     remote:
       path: src/Virtufin.Data/VariantListRepresentation.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Data/VariantListRepresentation.cs
     startLine: 85
@@ -90,7 +90,7 @@ items:
     remote:
       path: src/Virtufin.Data/VariantListRepresentation.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Data/VariantListRepresentation.cs
     startLine: 88
@@ -122,7 +122,7 @@ items:
     remote:
       path: src/Virtufin.Data/VariantListRepresentation.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Data/VariantListRepresentation.cs
     startLine: 92
@@ -154,7 +154,7 @@ items:
     remote:
       path: src/Virtufin.Data/VariantListRepresentation.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Add
     path: ../../../src/Virtufin.Data/VariantListRepresentation.cs
     startLine: 96
@@ -185,7 +185,7 @@ items:
     remote:
       path: src/Virtufin.Data/VariantListRepresentation.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GetEnumerator
     path: ../../../src/Virtufin.Data/VariantListRepresentation.cs
     startLine: 98
@@ -218,7 +218,7 @@ items:
     remote:
       path: src/Virtufin.Data/VariantListRepresentation.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToString
     path: ../../../src/Virtufin.Data/VariantListRepresentation.cs
     startLine: 102
@@ -250,7 +250,7 @@ items:
     remote:
       path: src/Virtufin.Data/VariantListRepresentation.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Append
     path: ../../../src/Virtufin.Data/VariantListRepresentation.cs
     startLine: 104
@@ -283,7 +283,7 @@ items:
     remote:
       path: src/Virtufin.Data/VariantListRepresentation.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Equals
     path: ../../../src/Virtufin.Data/VariantListRepresentation.cs
     startLine: 106
@@ -322,7 +322,7 @@ items:
     remote:
       path: src/Virtufin.Data/VariantListRepresentation.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GetHashCode
     path: ../../../src/Virtufin.Data/VariantListRepresentation.cs
     startLine: 114
@@ -354,7 +354,7 @@ items:
     remote:
       path: src/Virtufin.Data/VariantListRepresentation.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Equals
     path: ../../../src/Virtufin.Data/VariantListRepresentation.cs
     startLine: 116
@@ -391,7 +391,7 @@ items:
     remote:
       path: src/Virtufin.Data/VariantListRepresentation.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Equality
     path: ../../../src/Virtufin.Data/VariantListRepresentation.cs
     startLine: 118
@@ -427,7 +427,7 @@ items:
     remote:
       path: src/Virtufin.Data/VariantListRepresentation.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: op_Inequality
     path: ../../../src/Virtufin.Data/VariantListRepresentation.cs
     startLine: 123

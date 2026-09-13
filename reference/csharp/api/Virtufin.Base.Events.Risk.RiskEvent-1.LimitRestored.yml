@@ -20,7 +20,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Risk/RiskEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: LimitRestored
     path: ../../../src/Virtufin.Base/Events/Risk/RiskEvent.cs
     startLine: 64
@@ -66,7 +66,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Risk/RiskEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/Events/Risk/RiskEvent.cs
     startLine: 64
@@ -104,7 +104,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Risk/RiskEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: LimitName
     path: ../../../src/Virtufin.Base/Events/Risk/RiskEvent.cs
     startLine: 64
@@ -137,7 +137,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Risk/RiskEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: RestoredAt
     path: ../../../src/Virtufin.Base/Events/Risk/RiskEvent.cs
     startLine: 64
@@ -170,7 +170,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Risk/RiskEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Time
     path: ../../../src/Virtufin.Base/Events/Risk/RiskEvent.cs
     startLine: 67

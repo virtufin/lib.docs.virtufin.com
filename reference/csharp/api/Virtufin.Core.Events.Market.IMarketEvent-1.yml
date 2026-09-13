@@ -17,7 +17,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/Market/IMarketEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IMarketEvent
     path: ../../../src/Virtufin.Core/Events/Market/IMarketEvent.cs
     startLine: 10
@@ -71,7 +71,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/Market/IMarketEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Symbol
     path: ../../../src/Virtufin.Core/Events/Market/IMarketEvent.cs
     startLine: 14

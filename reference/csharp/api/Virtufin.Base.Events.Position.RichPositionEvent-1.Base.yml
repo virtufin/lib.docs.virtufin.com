@@ -21,7 +21,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Position/RichPositionEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Base
     path: ../../../src/Virtufin.Base/Events/Position/RichPositionEvent.cs
     startLine: 70
@@ -67,7 +67,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Position/RichPositionEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Event
     path: ../../../src/Virtufin.Base/Events/Position/RichPositionEvent.cs
     startLine: 73
@@ -100,7 +100,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Position/RichPositionEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Symbol
     path: ../../../src/Virtufin.Base/Events/Position/RichPositionEvent.cs
     startLine: 76
@@ -134,7 +134,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Position/RichPositionEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: DeltaQuantity
     path: ../../../src/Virtufin.Base/Events/Position/RichPositionEvent.cs
     startLine: 79
@@ -168,7 +168,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Position/RichPositionEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Time
     path: ../../../src/Virtufin.Base/Events/Position/RichPositionEvent.cs
     startLine: 82
@@ -202,7 +202,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Position/RichPositionEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/Events/Position/RichPositionEvent.cs
     startLine: 85

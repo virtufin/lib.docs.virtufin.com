@@ -18,7 +18,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Market/MarketEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: MarketEvent
     path: ../../../src/Virtufin.Base/Events/Market/MarketEvent.cs
     startLine: 13
@@ -76,7 +76,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Market/MarketEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Symbol
     path: ../../../src/Virtufin.Base/Events/Market/MarketEvent.cs
     startLine: 19
@@ -111,7 +111,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Market/MarketEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Time
     path: ../../../src/Virtufin.Base/Events/Market/MarketEvent.cs
     startLine: 22

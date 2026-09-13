@@ -17,7 +17,7 @@ items:
     remote:
       path: src/Virtufin.Base/Execution/Executors.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: DeterministicState
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
     startLine: 12
@@ -59,7 +59,7 @@ items:
     remote:
       path: src/Virtufin.Base/Execution/Executors.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Instance
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
     startLine: 15

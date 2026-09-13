@@ -16,7 +16,7 @@ items:
     remote:
       path: src/Virtufin.Data/ObservableAdapters.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ObservableAdapters
     path: ../../../src/Virtufin.Data/ObservableAdapters.cs
     startLine: 7

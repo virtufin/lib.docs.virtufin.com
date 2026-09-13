@@ -21,7 +21,7 @@ items:
     remote:
       path: src/Virtufin.Core/Attribute.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Attribute
     path: ../../../src/Virtufin.Core/Attribute.cs
     startLine: 2
@@ -59,7 +59,7 @@ items:
     remote:
       path: src/Virtufin.Core/Attribute.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Core/Attribute.cs
     startLine: 5
@@ -91,7 +91,7 @@ items:
     remote:
       path: src/Virtufin.Core/Attribute.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Equals
     path: ../../../src/Virtufin.Core/Attribute.cs
     startLine: 10
@@ -131,7 +131,7 @@ items:
     remote:
       path: src/Virtufin.Core/Attribute.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Equals
     path: ../../../src/Virtufin.Core/Attribute.cs
     startLine: 16
@@ -169,7 +169,7 @@ items:
     remote:
       path: src/Virtufin.Core/Attribute.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GetHashCode
     path: ../../../src/Virtufin.Core/Attribute.cs
     startLine: 24
@@ -203,7 +203,7 @@ items:
     remote:
       path: src/Virtufin.Core/Attribute.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToString
     path: ../../../src/Virtufin.Core/Attribute.cs
     startLine: 28

@@ -20,7 +20,7 @@ items:
     remote:
       path: src/Virtufin.Base/AssetIdentifier.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CurrencyAssetIdentifier
     path: ../../../src/Virtufin.Base/AssetIdentifier.cs
     startLine: 30
@@ -64,7 +64,7 @@ items:
     remote:
       path: src/Virtufin.Base/AssetIdentifier.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Value
     path: ../../../src/Virtufin.Base/AssetIdentifier.cs
     startLine: 33
@@ -96,7 +96,7 @@ items:
     remote:
       path: src/Virtufin.Base/AssetIdentifier.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Currency
     path: ../../../src/Virtufin.Base/AssetIdentifier.cs
     startLine: 36
@@ -127,7 +127,7 @@ items:
     remote:
       path: src/Virtufin.Base/AssetIdentifier.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/AssetIdentifier.cs
     startLine: 39
@@ -161,7 +161,7 @@ items:
     remote:
       path: src/Virtufin.Base/AssetIdentifier.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToString
     path: ../../../src/Virtufin.Base/AssetIdentifier.cs
     startLine: 42

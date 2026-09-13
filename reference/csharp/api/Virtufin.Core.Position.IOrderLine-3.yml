@@ -20,7 +20,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IOrderLine.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IOrderLine
     path: ../../../src/Virtufin.Core/Position/IOrderLine.cs
     startLine: 8
@@ -57,7 +57,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IOrderLine.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Id
     path: ../../../src/Virtufin.Core/Position/IOrderLine.cs
     startLine: 14
@@ -90,7 +90,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IOrderLine.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Side
     path: ../../../src/Virtufin.Core/Position/IOrderLine.cs
     startLine: 17
@@ -123,7 +123,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IOrderLine.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Price
     path: ../../../src/Virtufin.Core/Position/IOrderLine.cs
     startLine: 20
@@ -156,7 +156,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/IOrderLine.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Size
     path: ../../../src/Virtufin.Core/Position/IOrderLine.cs
     startLine: 23

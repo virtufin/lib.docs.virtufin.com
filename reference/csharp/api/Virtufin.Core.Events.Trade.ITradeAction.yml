@@ -16,7 +16,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/Trade/ITradeAction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ITradeAction
     path: ../../../src/Virtufin.Core/Events/Trade/ITradeAction.cs
     startLine: 12

@@ -19,7 +19,7 @@ items:
     remote:
       path: src/Virtufin.Base/Transaction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: AtomicTransactions
     path: ../../../src/Virtufin.Base/Transaction.cs
     startLine: 60
@@ -62,7 +62,7 @@ items:
     remote:
       path: src/Virtufin.Base/Transaction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Transactions
     path: ../../../src/Virtufin.Base/Transaction.cs
     startLine: 63
@@ -93,7 +93,7 @@ items:
     remote:
       path: src/Virtufin.Base/Transaction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/Transaction.cs
     startLine: 66
@@ -127,7 +127,7 @@ items:
     remote:
       path: src/Virtufin.Base/Transaction.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: RelatedContract
     path: ../../../src/Virtufin.Base/Transaction.cs
     startLine: 69

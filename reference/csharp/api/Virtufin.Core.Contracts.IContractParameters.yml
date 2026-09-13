@@ -16,7 +16,7 @@ items:
     remote:
       path: src/Virtufin.Core/Contracts/IContractParameters.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IContractParameters
     path: ../../../src/Virtufin.Core/Contracts/IContractParameters.cs
     startLine: 8

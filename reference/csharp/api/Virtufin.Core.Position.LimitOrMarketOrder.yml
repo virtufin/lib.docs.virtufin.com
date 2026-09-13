@@ -18,7 +18,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/LimitOrMarketOrder.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: LimitOrMarketOrder
     path: ../../../src/Virtufin.Core/Position/LimitOrMarketOrder.cs
     startLine: 3
@@ -45,7 +45,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/LimitOrMarketOrder.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: LimitOrder
     path: ../../../src/Virtufin.Core/Position/LimitOrMarketOrder.cs
     startLine: 6
@@ -73,7 +73,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/LimitOrMarketOrder.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: MarketOrder
     path: ../../../src/Virtufin.Core/Position/LimitOrMarketOrder.cs
     startLine: 8

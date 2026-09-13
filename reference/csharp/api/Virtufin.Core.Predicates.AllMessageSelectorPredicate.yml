@@ -19,7 +19,7 @@ items:
     remote:
       path: src/Virtufin.Core/Predicates/AllMessageSelectorPredicate.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: AllMessageSelectorPredicate
     path: ../../../src/Virtufin.Core/Predicates/AllMessageSelectorPredicate.cs
     startLine: 11
@@ -61,7 +61,7 @@ items:
     remote:
       path: src/Virtufin.Core/Predicates/AllMessageSelectorPredicate.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Core/Predicates/AllMessageSelectorPredicate.cs
     startLine: 20
@@ -99,7 +99,7 @@ items:
     remote:
       path: src/Virtufin.Core/Predicates/AllMessageSelectorPredicate.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Predicate
     path: ../../../src/Virtufin.Core/Predicates/AllMessageSelectorPredicate.cs
     startLine: 26
@@ -147,7 +147,7 @@ items:
     remote:
       path: src/Virtufin.Core/Predicates/AllMessageSelectorPredicate.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToString
     path: ../../../src/Virtufin.Core/Predicates/AllMessageSelectorPredicate.cs
     startLine: 36

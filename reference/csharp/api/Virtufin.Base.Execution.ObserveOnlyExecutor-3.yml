@@ -20,7 +20,7 @@ items:
     remote:
       path: src/Virtufin.Base/Execution/Executors.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ObserveOnlyExecutor
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
     startLine: 219
@@ -70,7 +70,7 @@ items:
     remote:
       path: src/Virtufin.Base/Execution/Executors.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
     startLine: 229
@@ -104,7 +104,7 @@ items:
     remote:
       path: src/Virtufin.Base/Execution/Executors.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Initial
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
     startLine: 232
@@ -139,7 +139,7 @@ items:
     remote:
       path: src/Virtufin.Base/Execution/Executors.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ExecuteAsync
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
     startLine: 235
@@ -181,7 +181,7 @@ items:
     remote:
       path: src/Virtufin.Base/Execution/Executors.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Observed
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
     startLine: 243

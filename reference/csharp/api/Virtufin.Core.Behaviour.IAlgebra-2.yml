@@ -18,7 +18,7 @@ items:
     remote:
       path: src/Virtufin.Core/Behaviour/IAlgebra.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IAlgebra
     path: ../../../src/Virtufin.Core/Behaviour/IAlgebra.cs
     startLine: 23
@@ -71,7 +71,7 @@ items:
     remote:
       path: src/Virtufin.Core/Behaviour/IAlgebra.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Initial
     path: ../../../src/Virtufin.Core/Behaviour/IAlgebra.cs
     startLine: 27
@@ -104,7 +104,7 @@ items:
     remote:
       path: src/Virtufin.Core/Behaviour/IAlgebra.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Apply
     path: ../../../src/Virtufin.Core/Behaviour/IAlgebra.cs
     startLine: 33

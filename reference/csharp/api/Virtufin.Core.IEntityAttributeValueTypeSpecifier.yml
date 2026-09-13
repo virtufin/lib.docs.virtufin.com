@@ -18,7 +18,7 @@ items:
     remote:
       path: src/Virtufin.Core/IEntityAttributeValueClassSpecifier.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IEntityAttributeValueTypeSpecifier
     path: ../../../src/Virtufin.Core/IEntityAttributeValueClassSpecifier.cs
     startLine: 6
@@ -50,7 +50,7 @@ items:
     remote:
       path: src/Virtufin.Core/IEntityAttributeValueClassSpecifier.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsTypeMember
     path: ../../../src/Virtufin.Core/IEntityAttributeValueClassSpecifier.cs
     startLine: 8
@@ -90,7 +90,7 @@ items:
     remote:
       path: src/Virtufin.Core/IEntityAttributeValueClassSpecifier.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsTypeMemberForAnyValue
     path: ../../../src/Virtufin.Core/IEntityAttributeValueClassSpecifier.cs
     startLine: 9

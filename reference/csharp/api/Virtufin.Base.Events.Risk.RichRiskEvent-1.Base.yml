@@ -19,7 +19,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Base
     path: ../../../src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
     startLine: 71
@@ -65,7 +65,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Event
     path: ../../../src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
     startLine: 74
@@ -98,7 +98,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Time
     path: ../../../src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
     startLine: 76
@@ -132,7 +132,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/Events/Risk/RichRiskEvent.cs
     startLine: 79

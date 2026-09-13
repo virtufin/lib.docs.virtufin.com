@@ -17,7 +17,7 @@ items:
     remote:
       path: src/Virtufin.Core/IProviders.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IObservableProviders
     path: ../../../src/Virtufin.Core/IProviders.cs
     startLine: 10
@@ -42,7 +42,7 @@ items:
     remote:
       path: src/Virtufin.Core/IProviders.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ObservableProviders
     path: ../../../src/Virtufin.Core/IProviders.cs
     startLine: 12

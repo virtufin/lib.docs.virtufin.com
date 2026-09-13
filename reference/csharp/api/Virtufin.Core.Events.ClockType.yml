@@ -18,7 +18,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/IEventEnvelope.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ClockType
     path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
     startLine: 60
@@ -45,7 +45,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/IEventEnvelope.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Wall
     path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
     startLine: 63
@@ -73,7 +73,7 @@ items:
     remote:
       path: src/Virtufin.Core/Events/IEventEnvelope.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Synthetic
     path: ../../../src/Virtufin.Core/Events/IEventEnvelope.cs
     startLine: 65

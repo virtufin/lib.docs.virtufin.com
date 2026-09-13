@@ -27,7 +27,7 @@ items:
     remote:
       path: src/Virtufin.Base/DefaultVirtufinTypes.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: DefaultVirtufinTypes
     path: ../../../src/Virtufin.Base/DefaultVirtufinTypes.cs
     startLine: 10
@@ -72,7 +72,7 @@ items:
     remote:
       path: src/Virtufin.Base/DefaultVirtufinTypes.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Instance
     path: ../../../src/Virtufin.Base/DefaultVirtufinTypes.cs
     startLine: 13
@@ -103,7 +103,7 @@ items:
     remote:
       path: src/Virtufin.Base/DefaultVirtufinTypes.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: TimeStampType
     path: ../../../src/Virtufin.Base/DefaultVirtufinTypes.cs
     startLine: 18
@@ -136,7 +136,7 @@ items:
     remote:
       path: src/Virtufin.Base/DefaultVirtufinTypes.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: SignatoryType
     path: ../../../src/Virtufin.Base/DefaultVirtufinTypes.cs
     startLine: 21
@@ -169,7 +169,7 @@ items:
     remote:
       path: src/Virtufin.Base/DefaultVirtufinTypes.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: TransactionType
     path: ../../../src/Virtufin.Base/DefaultVirtufinTypes.cs
     startLine: 24
@@ -202,7 +202,7 @@ items:
     remote:
       path: src/Virtufin.Base/DefaultVirtufinTypes.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: MessageType
     path: ../../../src/Virtufin.Base/DefaultVirtufinTypes.cs
     startLine: 27
@@ -235,7 +235,7 @@ items:
     remote:
       path: src/Virtufin.Base/DefaultVirtufinTypes.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: AssetIdentifierType
     path: ../../../src/Virtufin.Base/DefaultVirtufinTypes.cs
     startLine: 30
@@ -268,7 +268,7 @@ items:
     remote:
       path: src/Virtufin.Base/DefaultVirtufinTypes.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ContractIdentifierType
     path: ../../../src/Virtufin.Base/DefaultVirtufinTypes.cs
     startLine: 33
@@ -301,7 +301,7 @@ items:
     remote:
       path: src/Virtufin.Base/DefaultVirtufinTypes.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: StateType
     path: ../../../src/Virtufin.Base/DefaultVirtufinTypes.cs
     startLine: 36
@@ -334,7 +334,7 @@ items:
     remote:
       path: src/Virtufin.Base/DefaultVirtufinTypes.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ScenarioType
     path: ../../../src/Virtufin.Base/DefaultVirtufinTypes.cs
     startLine: 39
@@ -367,7 +367,7 @@ items:
     remote:
       path: src/Virtufin.Base/DefaultVirtufinTypes.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ScenarioHistoryType
     path: ../../../src/Virtufin.Base/DefaultVirtufinTypes.cs
     startLine: 42
@@ -400,7 +400,7 @@ items:
     remote:
       path: src/Virtufin.Base/DefaultVirtufinTypes.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ContractParametersType
     path: ../../../src/Virtufin.Base/DefaultVirtufinTypes.cs
     startLine: 45

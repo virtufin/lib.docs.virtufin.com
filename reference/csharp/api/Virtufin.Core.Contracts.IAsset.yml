@@ -17,7 +17,7 @@ items:
     remote:
       path: src/Virtufin.Core/Contracts/IAsset.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IAsset
     path: ../../../src/Virtufin.Core/Contracts/IAsset.cs
     startLine: 9
@@ -51,7 +51,7 @@ items:
     remote:
       path: src/Virtufin.Core/Contracts/IAsset.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Identifier
     path: ../../../src/Virtufin.Core/Contracts/IAsset.cs
     startLine: 12

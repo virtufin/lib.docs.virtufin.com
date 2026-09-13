@@ -22,7 +22,7 @@ items:
     remote:
       path: src/Virtufin.Core/Contracts/IContract.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IContract
     path: ../../../src/Virtufin.Core/Contracts/IContract.cs
     startLine: 18
@@ -71,7 +71,7 @@ items:
     remote:
       path: src/Virtufin.Core/Contracts/IContract.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Identifier
     path: ../../../src/Virtufin.Core/Contracts/IContract.cs
     startLine: 21
@@ -102,7 +102,7 @@ items:
     remote:
       path: src/Virtufin.Core/Contracts/IContract.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsRelatedTransaction
     path: ../../../src/Virtufin.Core/Contracts/IContract.cs
     startLine: 27
@@ -136,7 +136,7 @@ items:
     remote:
       path: src/Virtufin.Core/Contracts/IContract.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IsRelatedMessage
     path: ../../../src/Virtufin.Core/Contracts/IContract.cs
     startLine: 34
@@ -173,7 +173,7 @@ items:
     remote:
       path: src/Virtufin.Core/Contracts/IContract.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: RelatedTransactions
     path: ../../../src/Virtufin.Core/Contracts/IContract.cs
     startLine: 41
@@ -212,7 +212,7 @@ items:
     remote:
       path: src/Virtufin.Core/Contracts/IContract.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: RelatedMessages
     path: ../../../src/Virtufin.Core/Contracts/IContract.cs
     startLine: 47
@@ -248,7 +248,7 @@ items:
     remote:
       path: src/Virtufin.Core/Contracts/IContract.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: VerifyMessages
     path: ../../../src/Virtufin.Core/Contracts/IContract.cs
     startLine: 58

@@ -10,7 +10,7 @@
             "Virtufin.Data/Virtufin.Data.csproj",
             "Virtufin.Util/Virtufin.Util.csproj"
           ],
-          "src": "/workspace/virtufin/dotnet/src"
+          "src": "/workspace/virtufin/lib/src"
         }
       ],
       "dest": "api",
@@ -32,8 +32,8 @@
       "_appFooter": "© 2026 Häner Consulting. All Rights Reserved.",
       "_disableContribution": true,
       "_disableAffix": true,
-      "gitCommitHash": "1b34cc289b8744702f9a151339931a661e86283c",
-      "gitCommitUrl": "{git_repo_url}/commit/1b34cc289b8744702f9a151339931a661e86283c",
+      "gitCommitHash": "cfa04b1085859b82f567578362b8b22862146dd6",
+      "gitCommitUrl": "{git_repo_url}/commit/cfa04b1085859b82f567578362b8b22862146dd6",
       "gitBranch": "master"
     }
   }

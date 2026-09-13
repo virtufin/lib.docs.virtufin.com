@@ -17,7 +17,7 @@ items:
     remote:
       path: src/Virtufin.Core/Contracts/IContractFactory.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IContractFactory
     path: ../../../src/Virtufin.Core/Contracts/IContractFactory.cs
     startLine: 8
@@ -51,7 +51,7 @@ items:
     remote:
       path: src/Virtufin.Core/Contracts/IContractFactory.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Build
     path: ../../../src/Virtufin.Core/Contracts/IContractFactory.cs
     startLine: 12

@@ -22,7 +22,7 @@ items:
     remote:
       path: src/Virtufin.Data/ObservableLogger.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ObservableLogger
     path: ../../../src/Virtufin.Data/ObservableLogger.cs
     startLine: 5
@@ -64,7 +64,7 @@ items:
     remote:
       path: src/Virtufin.Data/ObservableLogger.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Data/ObservableLogger.cs
     startLine: 10
@@ -96,7 +96,7 @@ items:
     remote:
       path: src/Virtufin.Data/ObservableLogger.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Subscribe
     path: ../../../src/Virtufin.Data/ObservableLogger.cs
     startLine: 14
@@ -128,7 +128,7 @@ items:
     remote:
       path: src/Virtufin.Data/ObservableLogger.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: OnCompleted
     path: ../../../src/Virtufin.Data/ObservableLogger.cs
     startLine: 20
@@ -160,7 +160,7 @@ items:
     remote:
       path: src/Virtufin.Data/ObservableLogger.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: OnError
     path: ../../../src/Virtufin.Data/ObservableLogger.cs
     startLine: 26
@@ -195,7 +195,7 @@ items:
     remote:
       path: src/Virtufin.Data/ObservableLogger.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: OnNext
     path: ../../../src/Virtufin.Data/ObservableLogger.cs
     startLine: 31
@@ -231,7 +231,7 @@ items:
     remote:
       path: src/Virtufin.Data/ObservableLogger.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Unsubscribe
     path: ../../../src/Virtufin.Data/ObservableLogger.cs
     startLine: 36

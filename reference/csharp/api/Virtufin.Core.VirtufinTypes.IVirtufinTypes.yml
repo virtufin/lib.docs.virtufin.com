@@ -26,7 +26,7 @@ items:
     remote:
       path: src/Virtufin.Core/VirtufinTypes/IVirtufinTypes.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IVirtufinTypes
     path: ../../../src/Virtufin.Core/VirtufinTypes/IVirtufinTypes.cs
     startLine: 13
@@ -68,7 +68,7 @@ items:
     remote:
       path: src/Virtufin.Core/VirtufinTypes/IVirtufinTypes.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: TimeStampType
     path: ../../../src/Virtufin.Core/VirtufinTypes/IVirtufinTypes.cs
     startLine: 16
@@ -99,7 +99,7 @@ items:
     remote:
       path: src/Virtufin.Core/VirtufinTypes/IVirtufinTypes.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: SignatoryType
     path: ../../../src/Virtufin.Core/VirtufinTypes/IVirtufinTypes.cs
     startLine: 19
@@ -130,7 +130,7 @@ items:
     remote:
       path: src/Virtufin.Core/VirtufinTypes/IVirtufinTypes.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: TransactionType
     path: ../../../src/Virtufin.Core/VirtufinTypes/IVirtufinTypes.cs
     startLine: 22
@@ -161,7 +161,7 @@ items:
     remote:
       path: src/Virtufin.Core/VirtufinTypes/IVirtufinTypes.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: MessageType
     path: ../../../src/Virtufin.Core/VirtufinTypes/IVirtufinTypes.cs
     startLine: 25
@@ -192,7 +192,7 @@ items:
     remote:
       path: src/Virtufin.Core/VirtufinTypes/IVirtufinTypes.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: AssetIdentifierType
     path: ../../../src/Virtufin.Core/VirtufinTypes/IVirtufinTypes.cs
     startLine: 28
@@ -223,7 +223,7 @@ items:
     remote:
       path: src/Virtufin.Core/VirtufinTypes/IVirtufinTypes.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ContractIdentifierType
     path: ../../../src/Virtufin.Core/VirtufinTypes/IVirtufinTypes.cs
     startLine: 31
@@ -254,7 +254,7 @@ items:
     remote:
       path: src/Virtufin.Core/VirtufinTypes/IVirtufinTypes.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: StateType
     path: ../../../src/Virtufin.Core/VirtufinTypes/IVirtufinTypes.cs
     startLine: 34
@@ -285,7 +285,7 @@ items:
     remote:
       path: src/Virtufin.Core/VirtufinTypes/IVirtufinTypes.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ScenarioType
     path: ../../../src/Virtufin.Core/VirtufinTypes/IVirtufinTypes.cs
     startLine: 37
@@ -316,7 +316,7 @@ items:
     remote:
       path: src/Virtufin.Core/VirtufinTypes/IVirtufinTypes.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ScenarioHistoryType
     path: ../../../src/Virtufin.Core/VirtufinTypes/IVirtufinTypes.cs
     startLine: 40
@@ -347,7 +347,7 @@ items:
     remote:
       path: src/Virtufin.Core/VirtufinTypes/IVirtufinTypes.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ContractParametersType
     path: ../../../src/Virtufin.Core/VirtufinTypes/IVirtufinTypes.cs
     startLine: 43

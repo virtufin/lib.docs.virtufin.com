@@ -18,7 +18,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/EventEnvelopeCloudEventExtensions.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: EventEnvelopeCloudEventExtensions
     path: ../../../src/Virtufin.Base/Events/EventEnvelopeCloudEventExtensions.cs
     startLine: 10
@@ -63,7 +63,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/EventEnvelopeCloudEventExtensions.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToCloudEvent
     path: ../../../src/Virtufin.Base/Events/EventEnvelopeCloudEventExtensions.cs
     startLine: 19
@@ -110,7 +110,7 @@ items:
     remote:
       path: src/Virtufin.Base/Events/EventEnvelopeCloudEventExtensions.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToEnvelope
     path: ../../../src/Virtufin.Base/Events/EventEnvelopeCloudEventExtensions.cs
     startLine: 63

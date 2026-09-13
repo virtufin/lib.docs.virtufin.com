@@ -19,7 +19,7 @@ items:
     remote:
       path: src/Virtufin.Base/Clock/Metronome.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Metronome
     path: ../../../src/Virtufin.Base/Clock/Metronome.cs
     startLine: 22
@@ -83,7 +83,7 @@ items:
     remote:
       path: src/Virtufin.Base/Clock/Metronome.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Interval
     path: ../../../src/Virtufin.Base/Clock/Metronome.cs
     startLine: 30
@@ -116,7 +116,7 @@ items:
     remote:
       path: src/Virtufin.Base/Clock/Metronome.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/Clock/Metronome.cs
     startLine: 40
@@ -163,7 +163,7 @@ items:
     remote:
       path: src/Virtufin.Base/Clock/Metronome.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Subscribe
     path: ../../../src/Virtufin.Base/Clock/Metronome.cs
     startLine: 52

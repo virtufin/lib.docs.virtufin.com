@@ -17,7 +17,7 @@ items:
     remote:
       path: src/Virtufin.Core/Behaviour/ISignal.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ISignal
     path: ../../../src/Virtufin.Core/Behaviour/ISignal.cs
     startLine: 8
@@ -57,7 +57,7 @@ items:
     remote:
       path: src/Virtufin.Core/Behaviour/ISignal.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Value
     path: ../../../src/Virtufin.Core/Behaviour/ISignal.cs
     startLine: 11

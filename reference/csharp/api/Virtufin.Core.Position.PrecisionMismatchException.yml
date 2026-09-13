@@ -21,7 +21,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/PrecisionMismatchException.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: PrecisionMismatchException
     path: ../../../src/Virtufin.Core/Position/PrecisionMismatchException.cs
     startLine: 12
@@ -85,7 +85,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/PrecisionMismatchException.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: LeftBase
     path: ../../../src/Virtufin.Core/Position/PrecisionMismatchException.cs
     startLine: 15
@@ -116,7 +116,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/PrecisionMismatchException.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: LeftPrecision
     path: ../../../src/Virtufin.Core/Position/PrecisionMismatchException.cs
     startLine: 18
@@ -147,7 +147,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/PrecisionMismatchException.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: RightBase
     path: ../../../src/Virtufin.Core/Position/PrecisionMismatchException.cs
     startLine: 21
@@ -178,7 +178,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/PrecisionMismatchException.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: RightPrecision
     path: ../../../src/Virtufin.Core/Position/PrecisionMismatchException.cs
     startLine: 24
@@ -209,7 +209,7 @@ items:
     remote:
       path: src/Virtufin.Core/Position/PrecisionMismatchException.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Core/Position/PrecisionMismatchException.cs
     startLine: 31

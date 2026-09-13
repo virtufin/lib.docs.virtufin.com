@@ -18,7 +18,7 @@ items:
     remote:
       path: src/Virtufin.Core/Predicates/MaturitySelectorPredicate.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: MaturitySelectorPredicate
     path: ../../../src/Virtufin.Core/Predicates/MaturitySelectorPredicate.cs
     startLine: 10
@@ -60,7 +60,7 @@ items:
     remote:
       path: src/Virtufin.Core/Predicates/MaturitySelectorPredicate.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Predicate
     path: ../../../src/Virtufin.Core/Predicates/MaturitySelectorPredicate.cs
     startLine: 13
@@ -108,7 +108,7 @@ items:
     remote:
       path: src/Virtufin.Core/Predicates/MaturitySelectorPredicate.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToString
     path: ../../../src/Virtufin.Core/Predicates/MaturitySelectorPredicate.cs
     startLine: 20

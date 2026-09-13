@@ -33,7 +33,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: DictionaryValue
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
     startLine: 11
@@ -67,7 +67,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ByteBuffer
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
     startLine: 14
@@ -99,7 +99,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: ValidateVersion
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
     startLine: 15
@@ -125,7 +125,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GetRootAsDictionaryValue
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
     startLine: 16
@@ -156,7 +156,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: GetRootAsDictionaryValue
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
     startLine: 17
@@ -189,7 +189,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: __init
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
     startLine: 18
@@ -226,7 +226,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: __assign
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
     startLine: 19
@@ -262,7 +262,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: Entries
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
     startLine: 21
@@ -296,7 +296,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: EntriesLength
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
     startLine: 22
@@ -325,7 +325,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CreateDictionaryValue
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
     startLine: 24
@@ -358,7 +358,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: StartDictionaryValue
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
     startLine: 31
@@ -387,7 +387,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: AddEntries
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
     startLine: 32
@@ -418,7 +418,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CreateEntriesVector
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
     startLine: 33
@@ -454,7 +454,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CreateEntriesVectorBlock
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
     startLine: 34
@@ -490,7 +490,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CreateEntriesVectorBlock
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
     startLine: 35
@@ -526,7 +526,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: CreateEntriesVectorBlock
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
     startLine: 36
@@ -564,7 +564,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: StartEntriesVector
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
     startLine: 37
@@ -598,7 +598,7 @@ items:
     remote:
       path: artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: EndDictionaryValue
     path: ../../../artifacts/Virtufin/Data/FlatBuffers/DictionaryValue.cs
     startLine: 38

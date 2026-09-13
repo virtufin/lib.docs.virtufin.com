@@ -16,7 +16,7 @@ items:
     remote:
       path: src/Virtufin.Core/Execution/IExecutor.cs
       branch: master
-      repo: https://git.haenerconsulting.com/virtufin/dotnet
+      repo: https://git.haenerconsulting.com/virtufin/lib
     id: IExecutionState
     path: ../../../src/Virtufin.Core/Execution/IExecutor.cs
     startLine: 8
