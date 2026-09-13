@@ -1,0 +1,784 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Position.PrecisionMismatchException
+  commentId: T:Virtufin.Core.Position.PrecisionMismatchException
+  id: PrecisionMismatchException
+  parent: Virtufin.Core.Position
+  children:
+  - Virtufin.Core.Position.PrecisionMismatchException.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Virtufin.Core.Position.PrecisionMismatchException.LeftBase
+  - Virtufin.Core.Position.PrecisionMismatchException.LeftPrecision
+  - Virtufin.Core.Position.PrecisionMismatchException.RightBase
+  - Virtufin.Core.Position.PrecisionMismatchException.RightPrecision
+  langs:
+  - csharp
+  - vb
+  name: PrecisionMismatchException
+  nameWithType: PrecisionMismatchException
+  fullName: Virtufin.Core.Position.PrecisionMismatchException
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/PrecisionMismatchException.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: PrecisionMismatchException
+    path: ../../../src/Virtufin.Core/Position/PrecisionMismatchException.cs
+    startLine: 12
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    Thrown when two <xref href="Virtufin.Core.Position.IFixedPointAmount" data-throw-if-not-resolved="false"></xref> values are combined by an
+
+    operation that requires a common scaling factor (equality, ordering,
+
+    addition, subtraction) but their base and/or precision differ.
+  remarks: >-
+    The invariant is enforced at runtime because C# lacks dependent types: a
+
+    fixed-point amount's base and precision cannot be encoded in its static
+
+    type, so the compiler cannot reject a mismatched operation.
+  example: []
+  syntax:
+    content: 'public sealed class PrecisionMismatchException : ArgumentException, ISerializable'
+    content.vb: Public NotInheritable Class PrecisionMismatchException Inherits ArgumentException Implements ISerializable
+  inheritance:
+  - System.Object
+  - System.Exception
+  - System.SystemException
+  - System.ArgumentException
+  implements:
+  - System.Runtime.Serialization.ISerializable
+  inheritedMembers:
+  - System.ArgumentException.ThrowIfNullOrEmpty(System.String,System.String)
+  - System.ArgumentException.ThrowIfNullOrWhiteSpace(System.String,System.String)
+  - System.ArgumentException.Message
+  - System.ArgumentException.ParamName
+  - System.Exception.GetBaseException
+  - System.Exception.GetType
+  - System.Exception.ToString
+  - System.Exception.Data
+  - System.Exception.HelpLink
+  - System.Exception.HResult
+  - System.Exception.InnerException
+  - System.Exception.Source
+  - System.Exception.StackTrace
+  - System.Exception.TargetSite
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Virtufin.Core.Position.PrecisionMismatchException.LeftBase
+  commentId: P:Virtufin.Core.Position.PrecisionMismatchException.LeftBase
+  id: LeftBase
+  parent: Virtufin.Core.Position.PrecisionMismatchException
+  langs:
+  - csharp
+  - vb
+  name: LeftBase
+  nameWithType: PrecisionMismatchException.LeftBase
+  fullName: Virtufin.Core.Position.PrecisionMismatchException.LeftBase
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/PrecisionMismatchException.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: LeftBase
+    path: ../../../src/Virtufin.Core/Position/PrecisionMismatchException.cs
+    startLine: 15
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Base of the left-hand operand.
+  example: []
+  syntax:
+    content: public int LeftBase { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property LeftBase As Integer
+  overload: Virtufin.Core.Position.PrecisionMismatchException.LeftBase*
+- uid: Virtufin.Core.Position.PrecisionMismatchException.LeftPrecision
+  commentId: P:Virtufin.Core.Position.PrecisionMismatchException.LeftPrecision
+  id: LeftPrecision
+  parent: Virtufin.Core.Position.PrecisionMismatchException
+  langs:
+  - csharp
+  - vb
+  name: LeftPrecision
+  nameWithType: PrecisionMismatchException.LeftPrecision
+  fullName: Virtufin.Core.Position.PrecisionMismatchException.LeftPrecision
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/PrecisionMismatchException.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: LeftPrecision
+    path: ../../../src/Virtufin.Core/Position/PrecisionMismatchException.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Precision of the left-hand operand.
+  example: []
+  syntax:
+    content: public int LeftPrecision { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property LeftPrecision As Integer
+  overload: Virtufin.Core.Position.PrecisionMismatchException.LeftPrecision*
+- uid: Virtufin.Core.Position.PrecisionMismatchException.RightBase
+  commentId: P:Virtufin.Core.Position.PrecisionMismatchException.RightBase
+  id: RightBase
+  parent: Virtufin.Core.Position.PrecisionMismatchException
+  langs:
+  - csharp
+  - vb
+  name: RightBase
+  nameWithType: PrecisionMismatchException.RightBase
+  fullName: Virtufin.Core.Position.PrecisionMismatchException.RightBase
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/PrecisionMismatchException.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: RightBase
+    path: ../../../src/Virtufin.Core/Position/PrecisionMismatchException.cs
+    startLine: 21
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Base of the right-hand operand.
+  example: []
+  syntax:
+    content: public int RightBase { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property RightBase As Integer
+  overload: Virtufin.Core.Position.PrecisionMismatchException.RightBase*
+- uid: Virtufin.Core.Position.PrecisionMismatchException.RightPrecision
+  commentId: P:Virtufin.Core.Position.PrecisionMismatchException.RightPrecision
+  id: RightPrecision
+  parent: Virtufin.Core.Position.PrecisionMismatchException
+  langs:
+  - csharp
+  - vb
+  name: RightPrecision
+  nameWithType: PrecisionMismatchException.RightPrecision
+  fullName: Virtufin.Core.Position.PrecisionMismatchException.RightPrecision
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/PrecisionMismatchException.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: RightPrecision
+    path: ../../../src/Virtufin.Core/Position/PrecisionMismatchException.cs
+    startLine: 24
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Precision of the right-hand operand.
+  example: []
+  syntax:
+    content: public int RightPrecision { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property RightPrecision As Integer
+  overload: Virtufin.Core.Position.PrecisionMismatchException.RightPrecision*
+- uid: Virtufin.Core.Position.PrecisionMismatchException.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Virtufin.Core.Position.PrecisionMismatchException.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Int32)'
+  parent: Virtufin.Core.Position.PrecisionMismatchException
+  langs:
+  - csharp
+  - vb
+  name: PrecisionMismatchException(int, int, int, int)
+  nameWithType: PrecisionMismatchException.PrecisionMismatchException(int, int, int, int)
+  fullName: Virtufin.Core.Position.PrecisionMismatchException.PrecisionMismatchException(int, int, int, int)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/PrecisionMismatchException.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Core/Position/PrecisionMismatchException.cs
+    startLine: 31
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Construct the exception for a pair of mismatched operands.
+  example: []
+  syntax:
+    content: public PrecisionMismatchException(int leftBase, int leftPrecision, int rightBase, int rightPrecision)
+    parameters:
+    - id: leftBase
+      type: System.Int32
+      description: Left operand base.
+    - id: leftPrecision
+      type: System.Int32
+      description: Left operand precision.
+    - id: rightBase
+      type: System.Int32
+      description: Right operand base.
+    - id: rightPrecision
+      type: System.Int32
+      description: Right operand precision.
+    content.vb: Public Sub New(leftBase As Integer, leftPrecision As Integer, rightBase As Integer, rightPrecision As Integer)
+  overload: Virtufin.Core.Position.PrecisionMismatchException.#ctor*
+  nameWithType.vb: PrecisionMismatchException.New(Integer, Integer, Integer, Integer)
+  fullName.vb: Virtufin.Core.Position.PrecisionMismatchException.New(Integer, Integer, Integer, Integer)
+  name.vb: New(Integer, Integer, Integer, Integer)
+references:
+- uid: Virtufin.Core.Position.IFixedPointAmount
+  commentId: T:Virtufin.Core.Position.IFixedPointAmount
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.IFixedPointAmount.html
+  name: IFixedPointAmount
+  nameWithType: IFixedPointAmount
+  fullName: Virtufin.Core.Position.IFixedPointAmount
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.SystemException
+  commentId: T:System.SystemException
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.systemexception
+  name: SystemException
+  nameWithType: SystemException
+  fullName: System.SystemException
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: System.Runtime.Serialization.ISerializable
+  commentId: T:System.Runtime.Serialization.ISerializable
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable
+  name: ISerializable
+  nameWithType: ISerializable
+  fullName: System.Runtime.Serialization.ISerializable
+- uid: System.ArgumentException.ThrowIfNullOrEmpty(System.String,System.String)
+  commentId: M:System.ArgumentException.ThrowIfNullOrEmpty(System.String,System.String)
+  parent: System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception.throwifnullorempty
+  name: ThrowIfNullOrEmpty(string, string)
+  nameWithType: ArgumentException.ThrowIfNullOrEmpty(string, string)
+  fullName: System.ArgumentException.ThrowIfNullOrEmpty(string, string)
+  nameWithType.vb: ArgumentException.ThrowIfNullOrEmpty(String, String)
+  fullName.vb: System.ArgumentException.ThrowIfNullOrEmpty(String, String)
+  name.vb: ThrowIfNullOrEmpty(String, String)
+  spec.csharp:
+  - uid: System.ArgumentException.ThrowIfNullOrEmpty(System.String,System.String)
+    name: ThrowIfNullOrEmpty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.argumentexception.throwifnullorempty
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.ArgumentException.ThrowIfNullOrEmpty(System.String,System.String)
+    name: ThrowIfNullOrEmpty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.argumentexception.throwifnullorempty
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.ArgumentException.ThrowIfNullOrWhiteSpace(System.String,System.String)
+  commentId: M:System.ArgumentException.ThrowIfNullOrWhiteSpace(System.String,System.String)
+  parent: System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception.throwifnullorwhitespace
+  name: ThrowIfNullOrWhiteSpace(string, string)
+  nameWithType: ArgumentException.ThrowIfNullOrWhiteSpace(string, string)
+  fullName: System.ArgumentException.ThrowIfNullOrWhiteSpace(string, string)
+  nameWithType.vb: ArgumentException.ThrowIfNullOrWhiteSpace(String, String)
+  fullName.vb: System.ArgumentException.ThrowIfNullOrWhiteSpace(String, String)
+  name.vb: ThrowIfNullOrWhiteSpace(String, String)
+  spec.csharp:
+  - uid: System.ArgumentException.ThrowIfNullOrWhiteSpace(System.String,System.String)
+    name: ThrowIfNullOrWhiteSpace
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.argumentexception.throwifnullorwhitespace
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.ArgumentException.ThrowIfNullOrWhiteSpace(System.String,System.String)
+    name: ThrowIfNullOrWhiteSpace
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.argumentexception.throwifnullorwhitespace
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.ArgumentException.Message
+  commentId: P:System.ArgumentException.Message
+  parent: System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception.message
+  name: Message
+  nameWithType: ArgumentException.Message
+  fullName: System.ArgumentException.Message
+- uid: System.ArgumentException.ParamName
+  commentId: P:System.ArgumentException.ParamName
+  parent: System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception.paramname
+  name: ParamName
+  nameWithType: ArgumentException.ParamName
+  fullName: System.ArgumentException.ParamName
+- uid: System.Exception.GetBaseException
+  commentId: M:System.Exception.GetBaseException
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
+  name: GetBaseException()
+  nameWithType: Exception.GetBaseException()
+  fullName: System.Exception.GetBaseException()
+  spec.csharp:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
+  - name: (
+  - name: )
+- uid: System.Exception.GetType
+  commentId: M:System.Exception.GetType
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  name: GetType()
+  nameWithType: Exception.GetType()
+  fullName: System.Exception.GetType()
+  spec.csharp:
+  - uid: System.Exception.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Exception.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  - name: (
+  - name: )
+- uid: System.Exception.ToString
+  commentId: M:System.Exception.ToString
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.tostring
+  name: ToString()
+  nameWithType: Exception.ToString()
+  fullName: System.Exception.ToString()
+  spec.csharp:
+  - uid: System.Exception.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Exception.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.tostring
+  - name: (
+  - name: )
+- uid: System.Exception.Data
+  commentId: P:System.Exception.Data
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.data
+  name: Data
+  nameWithType: Exception.Data
+  fullName: System.Exception.Data
+- uid: System.Exception.HelpLink
+  commentId: P:System.Exception.HelpLink
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.helplink
+  name: HelpLink
+  nameWithType: Exception.HelpLink
+  fullName: System.Exception.HelpLink
+- uid: System.Exception.HResult
+  commentId: P:System.Exception.HResult
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.hresult
+  name: HResult
+  nameWithType: Exception.HResult
+  fullName: System.Exception.HResult
+- uid: System.Exception.InnerException
+  commentId: P:System.Exception.InnerException
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.innerexception
+  name: InnerException
+  nameWithType: Exception.InnerException
+  fullName: System.Exception.InnerException
+- uid: System.Exception.Source
+  commentId: P:System.Exception.Source
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.source
+  name: Source
+  nameWithType: Exception.Source
+  fullName: System.Exception.Source
+- uid: System.Exception.StackTrace
+  commentId: P:System.Exception.StackTrace
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.stacktrace
+  name: StackTrace
+  nameWithType: Exception.StackTrace
+  fullName: System.Exception.StackTrace
+- uid: System.Exception.TargetSite
+  commentId: P:System.Exception.TargetSite
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.targetsite
+  name: TargetSite
+  nameWithType: Exception.TargetSite
+  fullName: System.Exception.TargetSite
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+- uid: Virtufin.Core.Position.PrecisionMismatchException.LeftBase*
+  commentId: Overload:Virtufin.Core.Position.PrecisionMismatchException.LeftBase
+  href: Virtufin.Core.Position.PrecisionMismatchException.html#Virtufin_Core_Position_PrecisionMismatchException_LeftBase
+  name: LeftBase
+  nameWithType: PrecisionMismatchException.LeftBase
+  fullName: Virtufin.Core.Position.PrecisionMismatchException.LeftBase
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Virtufin.Core.Position.PrecisionMismatchException.LeftPrecision*
+  commentId: Overload:Virtufin.Core.Position.PrecisionMismatchException.LeftPrecision
+  href: Virtufin.Core.Position.PrecisionMismatchException.html#Virtufin_Core_Position_PrecisionMismatchException_LeftPrecision
+  name: LeftPrecision
+  nameWithType: PrecisionMismatchException.LeftPrecision
+  fullName: Virtufin.Core.Position.PrecisionMismatchException.LeftPrecision
+- uid: Virtufin.Core.Position.PrecisionMismatchException.RightBase*
+  commentId: Overload:Virtufin.Core.Position.PrecisionMismatchException.RightBase
+  href: Virtufin.Core.Position.PrecisionMismatchException.html#Virtufin_Core_Position_PrecisionMismatchException_RightBase
+  name: RightBase
+  nameWithType: PrecisionMismatchException.RightBase
+  fullName: Virtufin.Core.Position.PrecisionMismatchException.RightBase
+- uid: Virtufin.Core.Position.PrecisionMismatchException.RightPrecision*
+  commentId: Overload:Virtufin.Core.Position.PrecisionMismatchException.RightPrecision
+  href: Virtufin.Core.Position.PrecisionMismatchException.html#Virtufin_Core_Position_PrecisionMismatchException_RightPrecision
+  name: RightPrecision
+  nameWithType: PrecisionMismatchException.RightPrecision
+  fullName: Virtufin.Core.Position.PrecisionMismatchException.RightPrecision
+- uid: Virtufin.Core.Position.PrecisionMismatchException.#ctor*
+  commentId: Overload:Virtufin.Core.Position.PrecisionMismatchException.#ctor
+  href: Virtufin.Core.Position.PrecisionMismatchException.html#Virtufin_Core_Position_PrecisionMismatchException__ctor_System_Int32_System_Int32_System_Int32_System_Int32_
+  name: PrecisionMismatchException
+  nameWithType: PrecisionMismatchException.PrecisionMismatchException
+  fullName: Virtufin.Core.Position.PrecisionMismatchException.PrecisionMismatchException
+  nameWithType.vb: PrecisionMismatchException.New
+  fullName.vb: Virtufin.Core.Position.PrecisionMismatchException.New
+  name.vb: New

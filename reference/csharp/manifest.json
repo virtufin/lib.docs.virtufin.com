@@ -1432,6 +1432,62 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.yml\" sourcestartlinenumber=\"1\">Mutable surface of an <xref href=\"Virtufin.Core.Position.IL2OrderBook%602\" data-throw-if-not-resolved=\"false\"></xref>, used by\n<xref href=\"Virtufin.Base.OrderBooks.Level2OrderBookUpdater%605\" data-throw-if-not-resolved=\"false\"></xref>. Kept separate from the\nread-only Core trait so consumers of a book cannot mutate it by accident.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.OrderBooks.L2OrderBook-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.OrderBooks.L2OrderBook-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.OrderBooks.L2OrderBook<A, L>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.OrderBooks.L2OrderBook-2.yml\" sourcestartlinenumber=\"1\">In-memory Level-2 order book: two sorted ladders of aggregate size keyed by\nprice. Pure state — no I/O, no CloudEvents, not thread-safe.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.OrderBooks.Level2OrderBookUpdater-5.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.OrderBooks.Level2OrderBookUpdater-5.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.OrderBooks.Level2OrderBookUpdater<TBook, A, L, S, D>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Base.OrderBooks.Level2OrderBookUpdater-5.yml\" sourcestartlinenumber=\"1\">Applies Level-2 snapshots and diffs to an <xref href=\"Virtufin.Base.OrderBooks.L2OrderBook%602\" data-throw-if-not-resolved=\"false\"></xref>\nusing the standard local-order-book-maintenance algorithm: bootstrap from a\nsnapshot, then apply diffs whose first update id brackets the book's\nprevious last update id. A zero size removes a level.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Base.OrderBooks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Base.OrderBooks.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Base.OrderBooks",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Base.Position.yml",
       "output": {
         ".html": {
@@ -2790,6 +2846,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Position.BinaryAmount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Position.BinaryAmount.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Position.BinaryAmount",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.BinaryAmount.yml\" sourcestartlinenumber=\"1\">Fixed-point amount with base 2 (binary scaling), stored as a whole part, a\nfractional part, and a precision (number of binary fraction digits). The\nrepresented value is <code>Whole + Fraction / 2^N</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Core.Position.BuyOrSell.yml",
       "output": {
         ".html": {
@@ -2814,7 +2884,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Core.Position.DecimalAmount",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.DecimalAmount.yml\" sourcestartlinenumber=\"1\">Fixed-point decimal amount with base 10, stored as a whole part, a\nfractional part, and a precision (number of fractional digits). Backed by\n<xref href=\"System.Int64\" data-throw-if-not-resolved=\"false\"></xref> for the whole part and <xref href=\"System.UInt64\" data-throw-if-not-resolved=\"false\"></xref> for the\nfractional part so values up to roughly 10^18 are representable without\nfloating-point error.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2832,6 +2902,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Position.FixedPointArithmetic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Position.FixedPointArithmetic.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Position.FixedPointArithmetic",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.FixedPointArithmetic.yml\" sourcestartlinenumber=\"1\">Base- and precision-aware arithmetic for <xref href=\"Virtufin.Core.Position.IFixedPointAmount\" data-throw-if-not-resolved=\"false\"></xref>,\nfollowing the standard fixed-point algorithms (see\n<a href=\"https://en.wikipedia.org/wiki/Fixed-point_arithmetic\" sourcefile=\"api/Virtufin.Core.Position.FixedPointArithmetic.yml\" sourcestartlinenumber=\"3\">https://en.wikipedia.org/wiki/Fixed-point_arithmetic</a>).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Core.Position.IAmount-1.yml",
       "output": {
         ".html": {
@@ -2843,6 +2927,20 @@
       "IsMRef": true,
       "Title": "Virtufin.Core.Position.IAmount<TValue>",
       "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.IAmount-1.yml\" sourcestartlinenumber=\"1\">A typed monetary or physical quantity. <code class=\"typeparamref\">TValue</code> is the\nunderlying representation (e.g. a tuple of whole and fractional parts for\nfixed-point <code>DecimalAmount</code>).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Position.IAmount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Position.IAmount.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Position.IAmount",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.IAmount.yml\" sourcestartlinenumber=\"1\">Non-generic root for any typed monetary or physical quantity.\n<xref href=\"Virtufin.Core.Position.IAmount.Precision\" data-throw-if-not-resolved=\"false\"></xref> is the scale of the value's fractional part;\nimplementations that represent a scale-free quantity (e.g. a whole\ncount) use <code>0</code>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2860,6 +2958,90 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Position.IFixedPointAmount-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Position.IFixedPointAmount-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Position.IFixedPointAmount<TSelf>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.IFixedPointAmount-1.yml\" sourcestartlinenumber=\"1\">Self-referential fixed-point amount, so generic arithmetic can construct a\nresult of the concrete type and read the type's fixed base statically.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Position.IFixedPointAmount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Position.IFixedPointAmount.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Position.IFixedPointAmount",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.IFixedPointAmount.yml\" sourcestartlinenumber=\"1\">A fixed-point amount: a value stored as a whole part and a fractional part\ninterpreted in a given <xref href=\"Virtufin.Core.Position.IFixedPointAmount.Base\" data-throw-if-not-resolved=\"false\"></xref> with <xref href=\"Virtufin.Core.Position.IAmount.Precision\" data-throw-if-not-resolved=\"false\"></xref>\nfractional digits. The represented value is\n<code>Whole + Fraction / Base^Precision</code>, or equivalently\n<code>ToCardinal() / Base^Precision</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Position.IL2OrderBook-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Position.IL2OrderBook-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Position.IL2OrderBook<A, L>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.IL2OrderBook-2.yml\" sourcestartlinenumber=\"1\">A Level-2 (market-by-price) order book: aggregated price levels per side.\n<code class=\"typeparamref\">A</code> is the depth (size) amount type and\n<code class=\"typeparamref\">L</code> the level (price) amount type.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Position.IL2OrderBookDiff-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Position.IL2OrderBookDiff-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Position.IL2OrderBookDiff<A, L>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.IL2OrderBookDiff-2.yml\" sourcestartlinenumber=\"1\">A Level-2 depth diff: a set of price-level mutations to apply on top of an\n<xref href=\"Virtufin.Core.Position.IL2OrderBook%602\" data-throw-if-not-resolved=\"false\"></xref>. A size of zero removes the level.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Position.IL2OrderBookSnapshot-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Position.IL2OrderBookSnapshot-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Position.IL2OrderBookSnapshot<A, L>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.IL2OrderBookSnapshot-2.yml\" sourcestartlinenumber=\"1\">A full Level-2 depth snapshot: bootstraps (or re-bootstraps) an\n<xref href=\"Virtufin.Core.Position.IL2OrderBook%602\" data-throw-if-not-resolved=\"false\"></xref> wholesale.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Position.IL3OrderBook-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Position.IL3OrderBook-4.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Position.IL3OrderBook<O, T, A, L>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.IL3OrderBook-4.yml\" sourcestartlinenumber=\"1\">A Level-3 (market-by-order) order book: individual resting orders rather\nthan aggregated price levels.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Core.Position.IOrderBook.yml",
       "output": {
         ".html": {
@@ -2870,7 +3052,35 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Core.Position.IOrderBook",
-      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.IOrderBook.yml\" sourcestartlinenumber=\"1\">An append-only collection of orders / transactions representing the live\nbook at a venue. The transaction type is the generic\n<xref href=\"Virtufin.Core.Contracts.ITransaction\" data-throw-if-not-resolved=\"false\"></xref> from <code>Virtufin.Core.Contracts</code> so orders of\nany concrete kind can be accommodated.</p>\n"
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.IOrderBook.yml\" sourcestartlinenumber=\"1\">Non-generic marker for a maintained order book. The concrete shapes are\n<xref href=\"Virtufin.Core.Position.IL2OrderBook%602\" data-throw-if-not-resolved=\"false\"></xref> (aggregated price levels) and\n<xref href=\"Virtufin.Core.Position.IL3OrderBook%604\" data-throw-if-not-resolved=\"false\"></xref> (individual orders).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Position.IOrderBookUpdater-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Position.IOrderBookUpdater-3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Position.IOrderBookUpdater<TBook, S, D>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.IOrderBookUpdater-3.yml\" sourcestartlinenumber=\"1\">Applies venue snapshot/diff data to a maintained <code class=\"typeparamref\">TBook</code>.\n<code class=\"typeparamref\">S</code> is the snapshot data type and <code class=\"typeparamref\">D</code>\nthe diff data type.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Position.IOrderLine-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Position.IOrderLine-3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Position.IOrderLine<T, A, L>",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.IOrderLine-3.yml\" sourcestartlinenumber=\"1\">A single order resting on a Level-3 (market-by-order) book.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2885,6 +3095,20 @@
       "IsMRef": true,
       "Title": "Virtufin.Core.Position.IQuantity<TAmount, TUnit>",
       "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.IQuantity-2.yml\" sourcestartlinenumber=\"1\">An <xref href=\"Virtufin.Core.Position.IAmount%601\" data-throw-if-not-resolved=\"false\"></xref> tagged with an <xref href=\"Virtufin.Core.Position.IUnit\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Position.ITransactionLedger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Position.ITransactionLedger.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Position.ITransactionLedger",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.ITransactionLedger.yml\" sourcestartlinenumber=\"1\">An append-only collection of orders / transactions representing the live\nbook at a venue. The transaction type is the generic\n<xref href=\"Virtufin.Core.Contracts.ITransaction\" data-throw-if-not-resolved=\"false\"></xref> from <code>Virtufin.Core.Contracts</code> so orders of\nany concrete kind can be accommodated.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2913,6 +3137,48 @@
       "IsMRef": true,
       "Title": "Virtufin.Core.Position.LimitOrMarketOrder",
       "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.LimitOrMarketOrder.yml\" sourcestartlinenumber=\"1\">Order type discriminator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Position.OrderBookState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Position.OrderBookState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Position.OrderBookState",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.OrderBookState.yml\" sourcestartlinenumber=\"1\">Lifecycle of a maintained local order book.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Position.OrderBookUpdateStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Position.OrderBookUpdateStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Position.OrderBookUpdateStatus",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.OrderBookUpdateStatus.yml\" sourcestartlinenumber=\"1\">Outcome of applying one diff to a maintained order book.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Core.Position.PrecisionMismatchException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Core.Position.PrecisionMismatchException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Core.Position.PrecisionMismatchException",
+      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.PrecisionMismatchException.yml\" sourcestartlinenumber=\"1\">Thrown when two <xref href=\"Virtufin.Core.Position.IFixedPointAmount\" data-throw-if-not-resolved=\"false\"></xref> values are combined by an\noperation that requires a common scaling factor (equality, ordering,\naddition, subtraction) but their base and/or precision differ.</p>\n"
     },
     {
       "type": "ManagedReference",

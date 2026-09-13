@@ -39,6 +39,7 @@ items:
       description: Canonical integer representation.
     content.vb: Public Interface IAsCardinal(Of TCardinal As Structure)
   derivedClasses:
+  - Virtufin.Core.Position.BinaryAmount
   - Virtufin.Core.Position.DecimalAmount
   nameWithType.vb: IAsCardinal(Of TCardinal)
   fullName.vb: Virtufin.Core.Position.IAsCardinal(Of TCardinal)

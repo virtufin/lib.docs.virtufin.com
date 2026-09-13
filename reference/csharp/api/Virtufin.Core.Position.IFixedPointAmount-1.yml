@@ -1,0 +1,539 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Position.IFixedPointAmount`1
+  commentId: T:Virtufin.Core.Position.IFixedPointAmount`1
+  id: IFixedPointAmount`1
+  parent: Virtufin.Core.Position
+  children:
+  - Virtufin.Core.Position.IFixedPointAmount`1.BaseValue
+  - Virtufin.Core.Position.IFixedPointAmount`1.Create(System.Int64,System.UInt64,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IFixedPointAmount<TSelf>
+  nameWithType: IFixedPointAmount<TSelf>
+  fullName: Virtufin.Core.Position.IFixedPointAmount<TSelf>
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IFixedPointAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: IFixedPointAmount
+    path: ../../../src/Virtufin.Core/Position/IFixedPointAmount.cs
+    startLine: 39
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    Self-referential fixed-point amount, so generic arithmetic can construct a
+
+    result of the concrete type and read the type's fixed base statically.
+  example: []
+  syntax:
+    content: 'public interface IFixedPointAmount<TSelf> : IFixedPointAmount, IAmount, IEquatable<TSelf>, IComparable<TSelf> where TSelf : IFixedPointAmount<TSelf>'
+    typeParameters:
+    - id: TSelf
+      description: The concrete implementing type.
+    content.vb: Public Interface IFixedPointAmount(Of TSelf As IFixedPointAmount(Of TSelf)) Inherits IFixedPointAmount, IAmount, IEquatable(Of TSelf), IComparable(Of TSelf)
+  derivedClasses:
+  - Virtufin.Core.Position.BinaryAmount
+  - Virtufin.Core.Position.DecimalAmount
+  inheritedMembers:
+  - Virtufin.Core.Position.IFixedPointAmount.Base
+  - Virtufin.Core.Position.IFixedPointAmount.Whole
+  - Virtufin.Core.Position.IFixedPointAmount.Fraction
+  - Virtufin.Core.Position.IFixedPointAmount.ToCardinal
+  - Virtufin.Core.Position.IAmount.IsZero
+  - Virtufin.Core.Position.IAmount.Precision
+  - Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  - System.IEquatable{{TSelf}}.Equals({TSelf})
+  - System.IComparable{{TSelf}}.CompareTo({TSelf})
+  nameWithType.vb: IFixedPointAmount(Of TSelf)
+  fullName.vb: Virtufin.Core.Position.IFixedPointAmount(Of TSelf)
+  name.vb: IFixedPointAmount(Of TSelf)
+- uid: Virtufin.Core.Position.IFixedPointAmount`1.BaseValue
+  commentId: P:Virtufin.Core.Position.IFixedPointAmount`1.BaseValue
+  id: BaseValue
+  parent: Virtufin.Core.Position.IFixedPointAmount`1
+  langs:
+  - csharp
+  - vb
+  name: BaseValue
+  nameWithType: IFixedPointAmount<TSelf>.BaseValue
+  fullName: Virtufin.Core.Position.IFixedPointAmount<TSelf>.BaseValue
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IFixedPointAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: BaseValue
+    path: ../../../src/Virtufin.Core/Position/IFixedPointAmount.cs
+    startLine: 46
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    The type's fixed base, usable in generic code without an instance.
+
+    Mirrors the instance <xref href="Virtufin.Core.Position.IFixedPointAmount.Base" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static abstract int BaseValue { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Shared MustInherit ReadOnly Property BaseValue As Integer
+  overload: Virtufin.Core.Position.IFixedPointAmount`1.BaseValue*
+  nameWithType.vb: IFixedPointAmount(Of TSelf).BaseValue
+  fullName.vb: Virtufin.Core.Position.IFixedPointAmount(Of TSelf).BaseValue
+- uid: Virtufin.Core.Position.IFixedPointAmount`1.Create(System.Int64,System.UInt64,System.Int32)
+  commentId: M:Virtufin.Core.Position.IFixedPointAmount`1.Create(System.Int64,System.UInt64,System.Int32)
+  id: Create(System.Int64,System.UInt64,System.Int32)
+  parent: Virtufin.Core.Position.IFixedPointAmount`1
+  langs:
+  - csharp
+  - vb
+  name: Create(long, ulong, int)
+  nameWithType: IFixedPointAmount<TSelf>.Create(long, ulong, int)
+  fullName: Virtufin.Core.Position.IFixedPointAmount<TSelf>.Create(long, ulong, int)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IFixedPointAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Create
+    path: ../../../src/Virtufin.Core/Position/IFixedPointAmount.cs
+    startLine: 52
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Construct an instance from decomposed parts at the given precision.
+  example: []
+  syntax:
+    content: public static abstract TSelf Create(long whole, ulong fraction, int precision)
+    parameters:
+    - id: whole
+      type: System.Int64
+      description: Whole part.
+    - id: fraction
+      type: System.UInt64
+      description: Fractional magnitude in <code>[0, Base^precision)</code>.
+    - id: precision
+      type: System.Int32
+      description: Number of fractional digits.
+    return:
+      type: '{TSelf}'
+    content.vb: Public Shared MustInherit Function Create(whole As Long, fraction As ULong, precision As Integer) As TSelf
+  overload: Virtufin.Core.Position.IFixedPointAmount`1.Create*
+  nameWithType.vb: IFixedPointAmount(Of TSelf).Create(Long, ULong, Integer)
+  fullName.vb: Virtufin.Core.Position.IFixedPointAmount(Of TSelf).Create(Long, ULong, Integer)
+  name.vb: Create(Long, ULong, Integer)
+references:
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: Virtufin.Core.Position.IFixedPointAmount.Base
+  commentId: P:Virtufin.Core.Position.IFixedPointAmount.Base
+  parent: Virtufin.Core.Position.IFixedPointAmount
+  href: Virtufin.Core.Position.IFixedPointAmount.html#Virtufin_Core_Position_IFixedPointAmount_Base
+  name: Base
+  nameWithType: IFixedPointAmount.Base
+  fullName: Virtufin.Core.Position.IFixedPointAmount.Base
+- uid: Virtufin.Core.Position.IFixedPointAmount.Whole
+  commentId: P:Virtufin.Core.Position.IFixedPointAmount.Whole
+  parent: Virtufin.Core.Position.IFixedPointAmount
+  href: Virtufin.Core.Position.IFixedPointAmount.html#Virtufin_Core_Position_IFixedPointAmount_Whole
+  name: Whole
+  nameWithType: IFixedPointAmount.Whole
+  fullName: Virtufin.Core.Position.IFixedPointAmount.Whole
+- uid: Virtufin.Core.Position.IFixedPointAmount.Fraction
+  commentId: P:Virtufin.Core.Position.IFixedPointAmount.Fraction
+  parent: Virtufin.Core.Position.IFixedPointAmount
+  href: Virtufin.Core.Position.IFixedPointAmount.html#Virtufin_Core_Position_IFixedPointAmount_Fraction
+  name: Fraction
+  nameWithType: IFixedPointAmount.Fraction
+  fullName: Virtufin.Core.Position.IFixedPointAmount.Fraction
+- uid: Virtufin.Core.Position.IFixedPointAmount.ToCardinal
+  commentId: M:Virtufin.Core.Position.IFixedPointAmount.ToCardinal
+  parent: Virtufin.Core.Position.IFixedPointAmount
+  href: Virtufin.Core.Position.IFixedPointAmount.html#Virtufin_Core_Position_IFixedPointAmount_ToCardinal
+  name: ToCardinal()
+  nameWithType: IFixedPointAmount.ToCardinal()
+  fullName: Virtufin.Core.Position.IFixedPointAmount.ToCardinal()
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IFixedPointAmount.ToCardinal
+    name: ToCardinal
+    href: Virtufin.Core.Position.IFixedPointAmount.html#Virtufin_Core_Position_IFixedPointAmount_ToCardinal
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.IFixedPointAmount.ToCardinal
+    name: ToCardinal
+    href: Virtufin.Core.Position.IFixedPointAmount.html#Virtufin_Core_Position_IFixedPointAmount_ToCardinal
+  - name: (
+  - name: )
+- uid: Virtufin.Core.Position.IAmount.IsZero
+  commentId: P:Virtufin.Core.Position.IAmount.IsZero
+  parent: Virtufin.Core.Position.IAmount
+  href: Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_IsZero
+  name: IsZero
+  nameWithType: IAmount.IsZero
+  fullName: Virtufin.Core.Position.IAmount.IsZero
+- uid: Virtufin.Core.Position.IAmount.Precision
+  commentId: P:Virtufin.Core.Position.IAmount.Precision
+  parent: Virtufin.Core.Position.IAmount
+  href: Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_Precision
+  name: Precision
+  nameWithType: IAmount.Precision
+  fullName: Virtufin.Core.Position.IAmount.Precision
+- uid: Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  commentId: M:Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  parent: Virtufin.Core.Position.IAmount
+  href: Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_CompareTo_Virtufin_Core_Position_IAmount_
+  name: CompareTo(IAmount)
+  nameWithType: IAmount.CompareTo(IAmount)
+  fullName: Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+    name: CompareTo
+    href: Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_CompareTo_Virtufin_Core_Position_IAmount_
+  - name: (
+  - uid: Virtufin.Core.Position.IAmount
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount.html
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+    name: CompareTo
+    href: Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_CompareTo_Virtufin_Core_Position_IAmount_
+  - name: (
+  - uid: Virtufin.Core.Position.IAmount
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount.html
+  - name: )
+- uid: System.IEquatable{{TSelf}}.Equals({TSelf})
+  commentId: M:System.IEquatable{`0}.Equals(`0)
+  parent: System.IEquatable{{TSelf}}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(TSelf)
+  nameWithType: IEquatable<TSelf>.Equals(TSelf)
+  fullName: System.IEquatable<TSelf>.Equals(TSelf)
+  nameWithType.vb: IEquatable(Of TSelf).Equals(TSelf)
+  fullName.vb: System.IEquatable(Of TSelf).Equals(TSelf)
+  spec.csharp:
+  - uid: System.IEquatable{`0}.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: TSelf
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{`0}.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: TSelf
+  - name: )
+- uid: System.IComparable{{TSelf}}.CompareTo({TSelf})
+  commentId: M:System.IComparable{`0}.CompareTo(`0)
+  parent: System.IComparable{{TSelf}}
+  definition: System.IComparable`1.CompareTo(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  name: CompareTo(TSelf)
+  nameWithType: IComparable<TSelf>.CompareTo(TSelf)
+  fullName: System.IComparable<TSelf>.CompareTo(TSelf)
+  nameWithType.vb: IComparable(Of TSelf).CompareTo(TSelf)
+  fullName.vb: System.IComparable(Of TSelf).CompareTo(TSelf)
+  spec.csharp:
+  - uid: System.IComparable{`0}.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: TSelf
+  - name: )
+  spec.vb:
+  - uid: System.IComparable{`0}.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: TSelf
+  - name: )
+- uid: Virtufin.Core.Position.IFixedPointAmount
+  commentId: T:Virtufin.Core.Position.IFixedPointAmount
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.IFixedPointAmount.html
+  name: IFixedPointAmount
+  nameWithType: IFixedPointAmount
+  fullName: Virtufin.Core.Position.IFixedPointAmount
+- uid: Virtufin.Core.Position.IAmount
+  commentId: T:Virtufin.Core.Position.IAmount
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.IAmount.html
+  name: IAmount
+  nameWithType: IAmount
+  fullName: Virtufin.Core.Position.IAmount
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IEquatable{{TSelf}}
+  commentId: T:System.IEquatable{`0}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<TSelf>
+  nameWithType: IEquatable<TSelf>
+  fullName: System.IEquatable<TSelf>
+  nameWithType.vb: IEquatable(Of TSelf)
+  fullName.vb: System.IEquatable(Of TSelf)
+  name.vb: IEquatable(Of TSelf)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: TSelf
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: )
+- uid: System.IComparable`1.CompareTo(`0)
+  commentId: M:System.IComparable`1.CompareTo(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  name: CompareTo(T)
+  nameWithType: IComparable<T>.CompareTo(T)
+  fullName: System.IComparable<T>.CompareTo(T)
+  nameWithType.vb: IComparable(Of T).CompareTo(T)
+  fullName.vb: System.IComparable(Of T).CompareTo(T)
+  spec.csharp:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IComparable{{TSelf}}
+  commentId: T:System.IComparable{`0}
+  parent: System
+  definition: System.IComparable`1
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<TSelf>
+  nameWithType: IComparable<TSelf>
+  fullName: System.IComparable<TSelf>
+  nameWithType.vb: IComparable(Of TSelf)
+  fullName.vb: System.IComparable(Of TSelf)
+  name.vb: IComparable(Of TSelf)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - name: TSelf
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IComparable`1
+  commentId: T:System.IComparable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<T>
+  nameWithType: IComparable<T>
+  fullName: System.IComparable<T>
+  nameWithType.vb: IComparable(Of T)
+  fullName.vb: System.IComparable(Of T)
+  name.vb: IComparable(Of T)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Core.Position.IFixedPointAmount`1.BaseValue*
+  commentId: Overload:Virtufin.Core.Position.IFixedPointAmount`1.BaseValue
+  href: Virtufin.Core.Position.IFixedPointAmount-1.html#Virtufin_Core_Position_IFixedPointAmount_1_BaseValue
+  name: BaseValue
+  nameWithType: IFixedPointAmount<TSelf>.BaseValue
+  fullName: Virtufin.Core.Position.IFixedPointAmount<TSelf>.BaseValue
+  nameWithType.vb: IFixedPointAmount(Of TSelf).BaseValue
+  fullName.vb: Virtufin.Core.Position.IFixedPointAmount(Of TSelf).BaseValue
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Virtufin.Core.Position.IFixedPointAmount`1.Create*
+  commentId: Overload:Virtufin.Core.Position.IFixedPointAmount`1.Create
+  href: Virtufin.Core.Position.IFixedPointAmount-1.html#Virtufin_Core_Position_IFixedPointAmount_1_Create_System_Int64_System_UInt64_System_Int32_
+  name: Create
+  nameWithType: IFixedPointAmount<TSelf>.Create
+  fullName: Virtufin.Core.Position.IFixedPointAmount<TSelf>.Create
+  nameWithType.vb: IFixedPointAmount(Of TSelf).Create
+  fullName.vb: Virtufin.Core.Position.IFixedPointAmount(Of TSelf).Create
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: '{TSelf}'
+  commentId: '!:TSelf'
+  definition: TSelf
+  name: TSelf
+  nameWithType: TSelf
+  fullName: TSelf
+- uid: TSelf
+  name: TSelf
+  nameWithType: TSelf
+  fullName: TSelf

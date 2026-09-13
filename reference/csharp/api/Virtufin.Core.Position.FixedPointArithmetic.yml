@@ -1,0 +1,709 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Position.FixedPointArithmetic
+  commentId: T:Virtufin.Core.Position.FixedPointArithmetic
+  id: FixedPointArithmetic
+  parent: Virtufin.Core.Position
+  children:
+  - Virtufin.Core.Position.FixedPointArithmetic.Add``1(``0,``0)
+  - Virtufin.Core.Position.FixedPointArithmetic.Divide``1(Virtufin.Core.Position.IFixedPointAmount,Virtufin.Core.Position.IFixedPointAmount,System.Int32,System.Int32)
+  - Virtufin.Core.Position.FixedPointArithmetic.Multiply``1(Virtufin.Core.Position.IFixedPointAmount,Virtufin.Core.Position.IFixedPointAmount,System.Int32,System.Int32)
+  - Virtufin.Core.Position.FixedPointArithmetic.Rescale``1(Virtufin.Core.Position.IFixedPointAmount,System.Int32,System.Int32)
+  - Virtufin.Core.Position.FixedPointArithmetic.Subtract``1(``0,``0)
+  langs:
+  - csharp
+  - vb
+  name: FixedPointArithmetic
+  nameWithType: FixedPointArithmetic
+  fullName: Virtufin.Core.Position.FixedPointArithmetic
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/FixedPointArithmetic.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: FixedPointArithmetic
+    path: ../../../src/Virtufin.Core/Position/FixedPointArithmetic.cs
+    startLine: 27
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    Base- and precision-aware arithmetic for <xref href="Virtufin.Core.Position.IFixedPointAmount" data-throw-if-not-resolved="false"></xref>,
+
+    following the standard fixed-point algorithms (see
+
+    https://en.wikipedia.org/wiki/Fixed-point_arithmetic).
+  remarks: >-
+    <p>
+
+    Addition and subtraction require a common scaling factor (same base and
+
+    precision) and throw <xref href="Virtufin.Core.Position.PrecisionMismatchException" data-throw-if-not-resolved="false"></xref> otherwise.
+
+    </p>
+
+    <p>
+
+    Multiplication and division support differing base and precision. Both take
+
+    an explicit <code class="paramref">resultBase</code> and <code class="paramref">resultPrecision</code>
+
+    so the caller owns the target scale; the result is rounded half away from
+
+    zero. The concrete result type is chosen by the generic parameter and its
+
+    base must match <code class="paramref">resultBase</code>.
+
+    </p>
+
+    <p>
+
+    All intermediates use <xref href="System.Numerics.BigInteger" data-throw-if-not-resolved="false"></xref>; the final decomposition is
+
+    checked against <xref href="System.Int64" data-throw-if-not-resolved="false"></xref> (whole) and <xref href="System.UInt64" data-throw-if-not-resolved="false"></xref>
+
+    (fraction) and throws <xref href="System.OverflowException" data-throw-if-not-resolved="false"></xref> when it does not fit.
+
+    </p>
+  example: []
+  syntax:
+    content: public static class FixedPointArithmetic
+    content.vb: Public Module FixedPointArithmetic
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.Core.Position.FixedPointArithmetic.Add``1(``0,``0)
+  commentId: M:Virtufin.Core.Position.FixedPointArithmetic.Add``1(``0,``0)
+  id: Add``1(``0,``0)
+  parent: Virtufin.Core.Position.FixedPointArithmetic
+  langs:
+  - csharp
+  - vb
+  name: Add<T>(T, T)
+  nameWithType: FixedPointArithmetic.Add<T>(T, T)
+  fullName: Virtufin.Core.Position.FixedPointArithmetic.Add<T>(T, T)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/FixedPointArithmetic.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Add
+    path: ../../../src/Virtufin.Core/Position/FixedPointArithmetic.cs
+    startLine: 33
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Add two amounts of the same base and precision.
+  example: []
+  syntax:
+    content: 'public static T Add<T>(T left, T right) where T : IFixedPointAmount<T>'
+    parameters:
+    - id: left
+      type: '{T}'
+    - id: right
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function Add(Of T As IFixedPointAmount(Of T))(left As T, right As T) As T
+  overload: Virtufin.Core.Position.FixedPointArithmetic.Add*
+  exceptions:
+  - type: Virtufin.Core.Position.PrecisionMismatchException
+    commentId: T:Virtufin.Core.Position.PrecisionMismatchException
+    description: Bases or precisions differ.
+  nameWithType.vb: FixedPointArithmetic.Add(Of T)(T, T)
+  fullName.vb: Virtufin.Core.Position.FixedPointArithmetic.Add(Of T)(T, T)
+  name.vb: Add(Of T)(T, T)
+- uid: Virtufin.Core.Position.FixedPointArithmetic.Subtract``1(``0,``0)
+  commentId: M:Virtufin.Core.Position.FixedPointArithmetic.Subtract``1(``0,``0)
+  id: Subtract``1(``0,``0)
+  parent: Virtufin.Core.Position.FixedPointArithmetic
+  langs:
+  - csharp
+  - vb
+  name: Subtract<T>(T, T)
+  nameWithType: FixedPointArithmetic.Subtract<T>(T, T)
+  fullName: Virtufin.Core.Position.FixedPointArithmetic.Subtract<T>(T, T)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/FixedPointArithmetic.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Subtract
+    path: ../../../src/Virtufin.Core/Position/FixedPointArithmetic.cs
+    startLine: 44
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Subtract two amounts of the same base and precision.
+  example: []
+  syntax:
+    content: 'public static T Subtract<T>(T left, T right) where T : IFixedPointAmount<T>'
+    parameters:
+    - id: left
+      type: '{T}'
+    - id: right
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function Subtract(Of T As IFixedPointAmount(Of T))(left As T, right As T) As T
+  overload: Virtufin.Core.Position.FixedPointArithmetic.Subtract*
+  exceptions:
+  - type: Virtufin.Core.Position.PrecisionMismatchException
+    commentId: T:Virtufin.Core.Position.PrecisionMismatchException
+    description: Bases or precisions differ.
+  nameWithType.vb: FixedPointArithmetic.Subtract(Of T)(T, T)
+  fullName.vb: Virtufin.Core.Position.FixedPointArithmetic.Subtract(Of T)(T, T)
+  name.vb: Subtract(Of T)(T, T)
+- uid: Virtufin.Core.Position.FixedPointArithmetic.Multiply``1(Virtufin.Core.Position.IFixedPointAmount,Virtufin.Core.Position.IFixedPointAmount,System.Int32,System.Int32)
+  commentId: M:Virtufin.Core.Position.FixedPointArithmetic.Multiply``1(Virtufin.Core.Position.IFixedPointAmount,Virtufin.Core.Position.IFixedPointAmount,System.Int32,System.Int32)
+  id: Multiply``1(Virtufin.Core.Position.IFixedPointAmount,Virtufin.Core.Position.IFixedPointAmount,System.Int32,System.Int32)
+  parent: Virtufin.Core.Position.FixedPointArithmetic
+  langs:
+  - csharp
+  - vb
+  name: Multiply<T>(IFixedPointAmount, IFixedPointAmount, int, int)
+  nameWithType: FixedPointArithmetic.Multiply<T>(IFixedPointAmount, IFixedPointAmount, int, int)
+  fullName: Virtufin.Core.Position.FixedPointArithmetic.Multiply<T>(Virtufin.Core.Position.IFixedPointAmount, Virtufin.Core.Position.IFixedPointAmount, int, int)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/FixedPointArithmetic.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Multiply
+    path: ../../../src/Virtufin.Core/Position/FixedPointArithmetic.cs
+    startLine: 57
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    Multiply two amounts, expressing the result at <code class="paramref">resultBase</code>
+
+    and <code class="paramref">resultPrecision</code>. Equivalent to
+
+    <code>(left/Base_l^P_l) * (right/Base_r^P_r)</code> rounded to the target scale.
+  example: []
+  syntax:
+    content: 'public static T Multiply<T>(IFixedPointAmount left, IFixedPointAmount right, int resultBase, int resultPrecision) where T : IFixedPointAmount<T>'
+    parameters:
+    - id: left
+      type: Virtufin.Core.Position.IFixedPointAmount
+    - id: right
+      type: Virtufin.Core.Position.IFixedPointAmount
+    - id: resultBase
+      type: System.Int32
+    - id: resultPrecision
+      type: System.Int32
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function Multiply(Of T As IFixedPointAmount(Of T))(left As IFixedPointAmount, right As IFixedPointAmount, resultBase As Integer, resultPrecision As Integer) As T
+  overload: Virtufin.Core.Position.FixedPointArithmetic.Multiply*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">resultBase</code> does not match <code class="typeparamref">T</code>'s base.
+  nameWithType.vb: FixedPointArithmetic.Multiply(Of T)(IFixedPointAmount, IFixedPointAmount, Integer, Integer)
+  fullName.vb: Virtufin.Core.Position.FixedPointArithmetic.Multiply(Of T)(Virtufin.Core.Position.IFixedPointAmount, Virtufin.Core.Position.IFixedPointAmount, Integer, Integer)
+  name.vb: Multiply(Of T)(IFixedPointAmount, IFixedPointAmount, Integer, Integer)
+- uid: Virtufin.Core.Position.FixedPointArithmetic.Divide``1(Virtufin.Core.Position.IFixedPointAmount,Virtufin.Core.Position.IFixedPointAmount,System.Int32,System.Int32)
+  commentId: M:Virtufin.Core.Position.FixedPointArithmetic.Divide``1(Virtufin.Core.Position.IFixedPointAmount,Virtufin.Core.Position.IFixedPointAmount,System.Int32,System.Int32)
+  id: Divide``1(Virtufin.Core.Position.IFixedPointAmount,Virtufin.Core.Position.IFixedPointAmount,System.Int32,System.Int32)
+  parent: Virtufin.Core.Position.FixedPointArithmetic
+  langs:
+  - csharp
+  - vb
+  name: Divide<T>(IFixedPointAmount, IFixedPointAmount, int, int)
+  nameWithType: FixedPointArithmetic.Divide<T>(IFixedPointAmount, IFixedPointAmount, int, int)
+  fullName: Virtufin.Core.Position.FixedPointArithmetic.Divide<T>(Virtufin.Core.Position.IFixedPointAmount, Virtufin.Core.Position.IFixedPointAmount, int, int)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/FixedPointArithmetic.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Divide
+    path: ../../../src/Virtufin.Core/Position/FixedPointArithmetic.cs
+    startLine: 74
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    Divide <code class="paramref">left</code> by <code class="paramref">right</code>, expressing the
+
+    result at <code class="paramref">resultBase</code> and <code class="paramref">resultPrecision</code>.
+  example: []
+  syntax:
+    content: 'public static T Divide<T>(IFixedPointAmount left, IFixedPointAmount right, int resultBase, int resultPrecision) where T : IFixedPointAmount<T>'
+    parameters:
+    - id: left
+      type: Virtufin.Core.Position.IFixedPointAmount
+    - id: right
+      type: Virtufin.Core.Position.IFixedPointAmount
+    - id: resultBase
+      type: System.Int32
+    - id: resultPrecision
+      type: System.Int32
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function Divide(Of T As IFixedPointAmount(Of T))(left As IFixedPointAmount, right As IFixedPointAmount, resultBase As Integer, resultPrecision As Integer) As T
+  overload: Virtufin.Core.Position.FixedPointArithmetic.Divide*
+  exceptions:
+  - type: System.DivideByZeroException
+    commentId: T:System.DivideByZeroException
+    description: <code class="paramref">right</code> is zero.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">resultBase</code> does not match <code class="typeparamref">T</code>'s base.
+  nameWithType.vb: FixedPointArithmetic.Divide(Of T)(IFixedPointAmount, IFixedPointAmount, Integer, Integer)
+  fullName.vb: Virtufin.Core.Position.FixedPointArithmetic.Divide(Of T)(Virtufin.Core.Position.IFixedPointAmount, Virtufin.Core.Position.IFixedPointAmount, Integer, Integer)
+  name.vb: Divide(Of T)(IFixedPointAmount, IFixedPointAmount, Integer, Integer)
+- uid: Virtufin.Core.Position.FixedPointArithmetic.Rescale``1(Virtufin.Core.Position.IFixedPointAmount,System.Int32,System.Int32)
+  commentId: M:Virtufin.Core.Position.FixedPointArithmetic.Rescale``1(Virtufin.Core.Position.IFixedPointAmount,System.Int32,System.Int32)
+  id: Rescale``1(Virtufin.Core.Position.IFixedPointAmount,System.Int32,System.Int32)
+  parent: Virtufin.Core.Position.FixedPointArithmetic
+  langs:
+  - csharp
+  - vb
+  name: Rescale<T>(IFixedPointAmount, int, int)
+  nameWithType: FixedPointArithmetic.Rescale<T>(IFixedPointAmount, int, int)
+  fullName: Virtufin.Core.Position.FixedPointArithmetic.Rescale<T>(Virtufin.Core.Position.IFixedPointAmount, int, int)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/FixedPointArithmetic.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Rescale
+    path: ../../../src/Virtufin.Core/Position/FixedPointArithmetic.cs
+    startLine: 94
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    Convert <code class="paramref">amount</code> to <code class="paramref">resultBase</code> and
+
+    <code class="paramref">resultPrecision</code>, rounding half away from zero.
+  example: []
+  syntax:
+    content: 'public static T Rescale<T>(IFixedPointAmount amount, int resultBase, int resultPrecision) where T : IFixedPointAmount<T>'
+    parameters:
+    - id: amount
+      type: Virtufin.Core.Position.IFixedPointAmount
+    - id: resultBase
+      type: System.Int32
+    - id: resultPrecision
+      type: System.Int32
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function Rescale(Of T As IFixedPointAmount(Of T))(amount As IFixedPointAmount, resultBase As Integer, resultPrecision As Integer) As T
+  overload: Virtufin.Core.Position.FixedPointArithmetic.Rescale*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">resultBase</code> does not match <code class="typeparamref">T</code>'s base.
+  nameWithType.vb: FixedPointArithmetic.Rescale(Of T)(IFixedPointAmount, Integer, Integer)
+  fullName.vb: Virtufin.Core.Position.FixedPointArithmetic.Rescale(Of T)(Virtufin.Core.Position.IFixedPointAmount, Integer, Integer)
+  name.vb: Rescale(Of T)(IFixedPointAmount, Integer, Integer)
+references:
+- uid: Virtufin.Core.Position.IFixedPointAmount
+  commentId: T:Virtufin.Core.Position.IFixedPointAmount
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.IFixedPointAmount.html
+  name: IFixedPointAmount
+  nameWithType: IFixedPointAmount
+  fullName: Virtufin.Core.Position.IFixedPointAmount
+- uid: Virtufin.Core.Position.PrecisionMismatchException
+  commentId: T:Virtufin.Core.Position.PrecisionMismatchException
+  href: Virtufin.Core.Position.PrecisionMismatchException.html
+  name: PrecisionMismatchException
+  nameWithType: PrecisionMismatchException
+  fullName: Virtufin.Core.Position.PrecisionMismatchException
+- uid: System.Numerics.BigInteger
+  commentId: T:System.Numerics.BigInteger
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.biginteger
+  name: BigInteger
+  nameWithType: BigInteger
+  fullName: System.Numerics.BigInteger
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: System.OverflowException
+  commentId: T:System.OverflowException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.overflowexception
+  name: OverflowException
+  nameWithType: OverflowException
+  fullName: System.OverflowException
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Core.Position.FixedPointArithmetic.Add*
+  commentId: Overload:Virtufin.Core.Position.FixedPointArithmetic.Add
+  href: Virtufin.Core.Position.FixedPointArithmetic.html#Virtufin_Core_Position_FixedPointArithmetic_Add__1___0___0_
+  name: Add
+  nameWithType: FixedPointArithmetic.Add
+  fullName: Virtufin.Core.Position.FixedPointArithmetic.Add
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Virtufin.Core.Position.FixedPointArithmetic.Subtract*
+  commentId: Overload:Virtufin.Core.Position.FixedPointArithmetic.Subtract
+  href: Virtufin.Core.Position.FixedPointArithmetic.html#Virtufin_Core_Position_FixedPointArithmetic_Subtract__1___0___0_
+  name: Subtract
+  nameWithType: FixedPointArithmetic.Subtract
+  fullName: Virtufin.Core.Position.FixedPointArithmetic.Subtract
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: Virtufin.Core.Position.FixedPointArithmetic.Multiply*
+  commentId: Overload:Virtufin.Core.Position.FixedPointArithmetic.Multiply
+  href: Virtufin.Core.Position.FixedPointArithmetic.html#Virtufin_Core_Position_FixedPointArithmetic_Multiply__1_Virtufin_Core_Position_IFixedPointAmount_Virtufin_Core_Position_IFixedPointAmount_System_Int32_System_Int32_
+  name: Multiply
+  nameWithType: FixedPointArithmetic.Multiply
+  fullName: Virtufin.Core.Position.FixedPointArithmetic.Multiply
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.DivideByZeroException
+  commentId: T:System.DivideByZeroException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.dividebyzeroexception
+  name: DivideByZeroException
+  nameWithType: DivideByZeroException
+  fullName: System.DivideByZeroException
+- uid: Virtufin.Core.Position.FixedPointArithmetic.Divide*
+  commentId: Overload:Virtufin.Core.Position.FixedPointArithmetic.Divide
+  href: Virtufin.Core.Position.FixedPointArithmetic.html#Virtufin_Core_Position_FixedPointArithmetic_Divide__1_Virtufin_Core_Position_IFixedPointAmount_Virtufin_Core_Position_IFixedPointAmount_System_Int32_System_Int32_
+  name: Divide
+  nameWithType: FixedPointArithmetic.Divide
+  fullName: Virtufin.Core.Position.FixedPointArithmetic.Divide
+- uid: Virtufin.Core.Position.FixedPointArithmetic.Rescale*
+  commentId: Overload:Virtufin.Core.Position.FixedPointArithmetic.Rescale
+  href: Virtufin.Core.Position.FixedPointArithmetic.html#Virtufin_Core_Position_FixedPointArithmetic_Rescale__1_Virtufin_Core_Position_IFixedPointAmount_System_Int32_System_Int32_
+  name: Rescale
+  nameWithType: FixedPointArithmetic.Rescale
+  fullName: Virtufin.Core.Position.FixedPointArithmetic.Rescale

@@ -269,6 +269,19 @@ items:
       - uid: Virtufin.Base.Messaging.Topics
         name: Topics
         type: Class
+    - uid: Virtufin.Base.OrderBooks
+      name: OrderBooks
+      type: Namespace
+      items:
+      - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2
+        name: IL2OrderBookWriter<A, L>
+        type: Interface
+      - uid: Virtufin.Base.OrderBooks.L2OrderBook`2
+        name: L2OrderBook<A, L>
+        type: Class
+      - uid: Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5
+        name: Level2OrderBookUpdater<TBook, A, L, S, D>
+        type: Class
     - uid: Virtufin.Base.Scenarios
       name: Scenarios
       type: Namespace
@@ -571,6 +584,9 @@ items:
       name: Position
       type: Namespace
       items:
+      - uid: Virtufin.Core.Position.BinaryAmount
+        name: BinaryAmount
+        type: Struct
       - uid: Virtufin.Core.Position.BuyOrSell
         name: BuyOrSell
         type: Enum
@@ -580,17 +596,50 @@ items:
       - uid: Virtufin.Core.Position.DecimalQuantity`1
         name: DecimalQuantity<U>
         type: Struct
+      - uid: Virtufin.Core.Position.FixedPointArithmetic
+        name: FixedPointArithmetic
+        type: Class
+      - uid: Virtufin.Core.Position.IAmount
+        name: IAmount
+        type: Interface
       - uid: Virtufin.Core.Position.IAmount`1
         name: IAmount<TValue>
         type: Interface
       - uid: Virtufin.Core.Position.IAsCardinal`1
         name: IAsCardinal<TCardinal>
         type: Interface
+      - uid: Virtufin.Core.Position.IFixedPointAmount
+        name: IFixedPointAmount
+        type: Interface
+      - uid: Virtufin.Core.Position.IFixedPointAmount`1
+        name: IFixedPointAmount<TSelf>
+        type: Interface
+      - uid: Virtufin.Core.Position.IL2OrderBookDiff`2
+        name: IL2OrderBookDiff<A, L>
+        type: Interface
+      - uid: Virtufin.Core.Position.IL2OrderBookSnapshot`2
+        name: IL2OrderBookSnapshot<A, L>
+        type: Interface
+      - uid: Virtufin.Core.Position.IL2OrderBook`2
+        name: IL2OrderBook<A, L>
+        type: Interface
+      - uid: Virtufin.Core.Position.IL3OrderBook`4
+        name: IL3OrderBook<O, T, A, L>
+        type: Interface
       - uid: Virtufin.Core.Position.IOrderBook
         name: IOrderBook
         type: Interface
+      - uid: Virtufin.Core.Position.IOrderBookUpdater`3
+        name: IOrderBookUpdater<TBook, S, D>
+        type: Interface
+      - uid: Virtufin.Core.Position.IOrderLine`3
+        name: IOrderLine<T, A, L>
+        type: Interface
       - uid: Virtufin.Core.Position.IQuantity`2
         name: IQuantity<TAmount, TUnit>
+        type: Interface
+      - uid: Virtufin.Core.Position.ITransactionLedger
+        name: ITransactionLedger
         type: Interface
       - uid: Virtufin.Core.Position.IUnit
         name: IUnit
@@ -598,6 +647,15 @@ items:
       - uid: Virtufin.Core.Position.LimitOrMarketOrder
         name: LimitOrMarketOrder
         type: Enum
+      - uid: Virtufin.Core.Position.OrderBookState
+        name: OrderBookState
+        type: Enum
+      - uid: Virtufin.Core.Position.OrderBookUpdateStatus
+        name: OrderBookUpdateStatus
+        type: Enum
+      - uid: Virtufin.Core.Position.PrecisionMismatchException
+        name: PrecisionMismatchException
+        type: Class
       - uid: Virtufin.Core.Position.SimpleOrder`1
         name: SimpleOrder<U>
         type: Struct

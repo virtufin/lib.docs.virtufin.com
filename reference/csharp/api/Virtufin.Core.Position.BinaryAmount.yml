@@ -1,0 +1,3051 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Position.BinaryAmount
+  commentId: T:Virtufin.Core.Position.BinaryAmount
+  id: BinaryAmount
+  parent: Virtufin.Core.Position
+  children:
+  - Virtufin.Core.Position.BinaryAmount.#ctor(System.Int64,System.UInt64,System.Int32)
+  - Virtufin.Core.Position.BinaryAmount.Base
+  - Virtufin.Core.Position.BinaryAmount.BaseValue
+  - Virtufin.Core.Position.BinaryAmount.CompareTo(Virtufin.Core.Position.BinaryAmount)
+  - Virtufin.Core.Position.BinaryAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  - Virtufin.Core.Position.BinaryAmount.Create(System.Int64,System.UInt64,System.Int32)
+  - Virtufin.Core.Position.BinaryAmount.DefaultPrecision
+  - Virtufin.Core.Position.BinaryAmount.Equals(Virtufin.Core.Position.BinaryAmount)
+  - Virtufin.Core.Position.BinaryAmount.Fraction
+  - Virtufin.Core.Position.BinaryAmount.From(System.Decimal,System.Int32)
+  - Virtufin.Core.Position.BinaryAmount.From(System.Double,System.Int32)
+  - Virtufin.Core.Position.BinaryAmount.FromCardinal(System.Int64)
+  - Virtufin.Core.Position.BinaryAmount.FromCardinal(System.Int64,System.Int32)
+  - Virtufin.Core.Position.BinaryAmount.GetHashCode
+  - Virtufin.Core.Position.BinaryAmount.IsZero
+  - Virtufin.Core.Position.BinaryAmount.N
+  - Virtufin.Core.Position.BinaryAmount.Precision
+  - Virtufin.Core.Position.BinaryAmount.Radix
+  - Virtufin.Core.Position.BinaryAmount.ToCardinal
+  - Virtufin.Core.Position.BinaryAmount.ToDouble
+  - Virtufin.Core.Position.BinaryAmount.ToString
+  - Virtufin.Core.Position.BinaryAmount.Whole
+  - Virtufin.Core.Position.BinaryAmount.Zero
+  - Virtufin.Core.Position.BinaryAmount.op_Addition(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  - Virtufin.Core.Position.BinaryAmount.op_Division(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  - Virtufin.Core.Position.BinaryAmount.op_Multiply(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  - Virtufin.Core.Position.BinaryAmount.op_Subtraction(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  langs:
+  - csharp
+  - vb
+  name: BinaryAmount
+  nameWithType: BinaryAmount
+  fullName: Virtufin.Core.Position.BinaryAmount
+  type: Struct
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: BinaryAmount
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    Fixed-point amount with base 2 (binary scaling), stored as a whole part, a
+
+    fractional part, and a precision (number of binary fraction digits). The
+
+    represented value is <code>Whole + Fraction / 2^N</code>.
+  remarks: >-
+    Exists alongside <xref href="Virtufin.Core.Position.DecimalAmount" data-throw-if-not-resolved="false"></xref> to exercise and prove the
+
+    base-agnosticism of <xref href="Virtufin.Core.Position.IFixedPointAmount" data-throw-if-not-resolved="false"></xref> and
+
+    <xref href="Virtufin.Core.Position.FixedPointArithmetic" data-throw-if-not-resolved="false"></xref>. Arithmetic follows the same rules:
+
+    addition/subtraction require a common base and precision; equality/ordering
+
+    reject mismatched precision with <xref href="Virtufin.Core.Position.PrecisionMismatchException" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public readonly record struct BinaryAmount : IFixedPointAmount<BinaryAmount>, IFixedPointAmount, IAmount, IComparable<BinaryAmount>, IAsCardinal<long>, IAdditionOperators<BinaryAmount, BinaryAmount, BinaryAmount>, ISubtractionOperators<BinaryAmount, BinaryAmount, BinaryAmount>, IMultiplyOperators<BinaryAmount, BinaryAmount, BinaryAmount>, IDivisionOperators<BinaryAmount, BinaryAmount, BinaryAmount>, IEquatable<BinaryAmount>'
+    content.vb: Public Structure BinaryAmount Implements IFixedPointAmount(Of BinaryAmount), IFixedPointAmount, IAmount, IComparable(Of BinaryAmount), IAsCardinal(Of Long), IAdditionOperators(Of BinaryAmount, BinaryAmount, BinaryAmount), ISubtractionOperators(Of BinaryAmount, BinaryAmount, BinaryAmount), IMultiplyOperators(Of BinaryAmount, BinaryAmount, BinaryAmount), IDivisionOperators(Of BinaryAmount, BinaryAmount, BinaryAmount), IEquatable(Of BinaryAmount)
+  implements:
+  - Virtufin.Core.Position.IFixedPointAmount{Virtufin.Core.Position.BinaryAmount}
+  - Virtufin.Core.Position.IFixedPointAmount
+  - Virtufin.Core.Position.IAmount
+  - System.IComparable{Virtufin.Core.Position.BinaryAmount}
+  - Virtufin.Core.Position.IAsCardinal{System.Int64}
+  - System.Numerics.IAdditionOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}
+  - System.Numerics.ISubtractionOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}
+  - System.Numerics.IMultiplyOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}
+  - System.Numerics.IDivisionOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}
+  - System.IEquatable{Virtufin.Core.Position.BinaryAmount}
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Virtufin.Core.Position.BinaryAmount.#ctor(System.Int64,System.UInt64,System.Int32)
+  commentId: M:Virtufin.Core.Position.BinaryAmount.#ctor(System.Int64,System.UInt64,System.Int32)
+  id: '#ctor(System.Int64,System.UInt64,System.Int32)'
+  parent: Virtufin.Core.Position.BinaryAmount
+  langs:
+  - csharp
+  - vb
+  name: BinaryAmount(long, ulong, int)
+  nameWithType: BinaryAmount.BinaryAmount(long, ulong, int)
+  fullName: Virtufin.Core.Position.BinaryAmount.BinaryAmount(long, ulong, int)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    Fixed-point amount with base 2 (binary scaling), stored as a whole part, a
+
+    fractional part, and a precision (number of binary fraction digits). The
+
+    represented value is <code>Whole + Fraction / 2^N</code>.
+  remarks: >-
+    Exists alongside <xref href="Virtufin.Core.Position.DecimalAmount" data-throw-if-not-resolved="false"></xref> to exercise and prove the
+
+    base-agnosticism of <xref href="Virtufin.Core.Position.IFixedPointAmount" data-throw-if-not-resolved="false"></xref> and
+
+    <xref href="Virtufin.Core.Position.FixedPointArithmetic" data-throw-if-not-resolved="false"></xref>. Arithmetic follows the same rules:
+
+    addition/subtraction require a common base and precision; equality/ordering
+
+    reject mismatched precision with <xref href="Virtufin.Core.Position.PrecisionMismatchException" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public BinaryAmount(long Whole, ulong Fraction, int N)
+    parameters:
+    - id: Whole
+      type: System.Int64
+    - id: Fraction
+      type: System.UInt64
+    - id: N
+      type: System.Int32
+    content.vb: Public Sub New(Whole As Long, Fraction As ULong, N As Integer)
+  overload: Virtufin.Core.Position.BinaryAmount.#ctor*
+  nameWithType.vb: BinaryAmount.New(Long, ULong, Integer)
+  fullName.vb: Virtufin.Core.Position.BinaryAmount.New(Long, ULong, Integer)
+  name.vb: New(Long, ULong, Integer)
+- uid: Virtufin.Core.Position.BinaryAmount.Whole
+  commentId: P:Virtufin.Core.Position.BinaryAmount.Whole
+  id: Whole
+  parent: Virtufin.Core.Position.BinaryAmount
+  langs:
+  - csharp
+  - vb
+  name: Whole
+  nameWithType: BinaryAmount.Whole
+  fullName: Virtufin.Core.Position.BinaryAmount.Whole
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Whole
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: The whole (integral) part.
+  example: []
+  syntax:
+    content: public long Whole { get; init; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Property Whole As Long
+  overload: Virtufin.Core.Position.BinaryAmount.Whole*
+  implements:
+  - Virtufin.Core.Position.IFixedPointAmount.Whole
+- uid: Virtufin.Core.Position.BinaryAmount.Fraction
+  commentId: P:Virtufin.Core.Position.BinaryAmount.Fraction
+  id: Fraction
+  parent: Virtufin.Core.Position.BinaryAmount
+  langs:
+  - csharp
+  - vb
+  name: Fraction
+  nameWithType: BinaryAmount.Fraction
+  fullName: Virtufin.Core.Position.BinaryAmount.Fraction
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Fraction
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: The fractional part, a magnitude in <code>[0, Base^Precision)</code>.
+  example: []
+  syntax:
+    content: public ulong Fraction { get; init; }
+    parameters: []
+    return:
+      type: System.UInt64
+    content.vb: Public Property Fraction As ULong
+  overload: Virtufin.Core.Position.BinaryAmount.Fraction*
+  implements:
+  - Virtufin.Core.Position.IFixedPointAmount.Fraction
+- uid: Virtufin.Core.Position.BinaryAmount.N
+  commentId: P:Virtufin.Core.Position.BinaryAmount.N
+  id: N
+  parent: Virtufin.Core.Position.BinaryAmount
+  langs:
+  - csharp
+  - vb
+  name: N
+  nameWithType: BinaryAmount.N
+  fullName: Virtufin.Core.Position.BinaryAmount.N
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: N
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  syntax:
+    content: public int N { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property N As Integer
+  overload: Virtufin.Core.Position.BinaryAmount.N*
+- uid: Virtufin.Core.Position.BinaryAmount.Radix
+  commentId: F:Virtufin.Core.Position.BinaryAmount.Radix
+  id: Radix
+  parent: Virtufin.Core.Position.BinaryAmount
+  langs:
+  - csharp
+  - vb
+  name: Radix
+  nameWithType: BinaryAmount.Radix
+  fullName: Virtufin.Core.Position.BinaryAmount.Radix
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Radix
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 25
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Radix of the fractional representation.
+  example: []
+  syntax:
+    content: public const int Radix = 2
+    return:
+      type: System.Int32
+    content.vb: Public Const Radix As Integer = 2
+- uid: Virtufin.Core.Position.BinaryAmount.Zero
+  commentId: P:Virtufin.Core.Position.BinaryAmount.Zero
+  id: Zero
+  parent: Virtufin.Core.Position.BinaryAmount
+  langs:
+  - csharp
+  - vb
+  name: Zero
+  nameWithType: BinaryAmount.Zero
+  fullName: Virtufin.Core.Position.BinaryAmount.Zero
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Zero
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 28
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: A zero amount at <xref href="Virtufin.Core.Position.BinaryAmount.DefaultPrecision" data-throw-if-not-resolved="false"></xref> precision.
+  example: []
+  syntax:
+    content: public static BinaryAmount Zero { get; }
+    parameters: []
+    return:
+      type: Virtufin.Core.Position.BinaryAmount
+    content.vb: Public Shared ReadOnly Property Zero As BinaryAmount
+  overload: Virtufin.Core.Position.BinaryAmount.Zero*
+- uid: Virtufin.Core.Position.BinaryAmount.DefaultPrecision
+  commentId: F:Virtufin.Core.Position.BinaryAmount.DefaultPrecision
+  id: DefaultPrecision
+  parent: Virtufin.Core.Position.BinaryAmount
+  langs:
+  - csharp
+  - vb
+  name: DefaultPrecision
+  nameWithType: BinaryAmount.DefaultPrecision
+  fullName: Virtufin.Core.Position.BinaryAmount.DefaultPrecision
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: DefaultPrecision
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 31
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Default precision (binary fraction digits) for newly constructed amounts.
+  example: []
+  syntax:
+    content: public const int DefaultPrecision = 8
+    return:
+      type: System.Int32
+    content.vb: Public Const DefaultPrecision As Integer = 8
+- uid: Virtufin.Core.Position.BinaryAmount.BaseValue
+  commentId: P:Virtufin.Core.Position.BinaryAmount.BaseValue
+  id: BaseValue
+  parent: Virtufin.Core.Position.BinaryAmount
+  langs:
+  - csharp
+  - vb
+  name: BaseValue
+  nameWithType: BinaryAmount.BaseValue
+  fullName: Virtufin.Core.Position.BinaryAmount.BaseValue
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: BaseValue
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 34
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    The type's fixed base, usable in generic code without an instance.
+
+    Mirrors the instance <xref href="Virtufin.Core.Position.IFixedPointAmount.Base" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static int BaseValue { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Shared ReadOnly Property BaseValue As Integer
+  overload: Virtufin.Core.Position.BinaryAmount.BaseValue*
+  implements:
+  - Virtufin.Core.Position.IFixedPointAmount{Virtufin.Core.Position.BinaryAmount}.BaseValue
+- uid: Virtufin.Core.Position.BinaryAmount.Base
+  commentId: P:Virtufin.Core.Position.BinaryAmount.Base
+  id: Base
+  parent: Virtufin.Core.Position.BinaryAmount
+  langs:
+  - csharp
+  - vb
+  name: Base
+  nameWithType: BinaryAmount.Base
+  fullName: Virtufin.Core.Position.BinaryAmount.Base
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Base
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 37
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Radix of the fractional representation (e.g. 10 or 2). Always &gt;= 2.
+  example: []
+  syntax:
+    content: public int Base { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Base As Integer
+  overload: Virtufin.Core.Position.BinaryAmount.Base*
+  implements:
+  - Virtufin.Core.Position.IFixedPointAmount.Base
+- uid: Virtufin.Core.Position.BinaryAmount.Precision
+  commentId: P:Virtufin.Core.Position.BinaryAmount.Precision
+  id: Precision
+  parent: Virtufin.Core.Position.BinaryAmount
+  langs:
+  - csharp
+  - vb
+  name: Precision
+  nameWithType: BinaryAmount.Precision
+  fullName: Virtufin.Core.Position.BinaryAmount.Precision
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Precision
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 40
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Number of fractional digits carried by this amount.
+  example: []
+  syntax:
+    content: public int Precision { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Precision As Integer
+  overload: Virtufin.Core.Position.BinaryAmount.Precision*
+  implements:
+  - Virtufin.Core.Position.IAmount.Precision
+- uid: Virtufin.Core.Position.BinaryAmount.IsZero
+  commentId: P:Virtufin.Core.Position.BinaryAmount.IsZero
+  id: IsZero
+  parent: Virtufin.Core.Position.BinaryAmount
+  langs:
+  - csharp
+  - vb
+  name: IsZero
+  nameWithType: BinaryAmount.IsZero
+  fullName: Virtufin.Core.Position.BinaryAmount.IsZero
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: IsZero
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 43
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: <code>true</code> when this amount equals the additive identity.
+  example: []
+  syntax:
+    content: public bool IsZero { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsZero As Boolean
+  overload: Virtufin.Core.Position.BinaryAmount.IsZero*
+  implements:
+  - Virtufin.Core.Position.IAmount.IsZero
+- uid: Virtufin.Core.Position.BinaryAmount.Create(System.Int64,System.UInt64,System.Int32)
+  commentId: M:Virtufin.Core.Position.BinaryAmount.Create(System.Int64,System.UInt64,System.Int32)
+  id: Create(System.Int64,System.UInt64,System.Int32)
+  parent: Virtufin.Core.Position.BinaryAmount
+  langs:
+  - csharp
+  - vb
+  name: Create(long, ulong, int)
+  nameWithType: BinaryAmount.Create(long, ulong, int)
+  fullName: Virtufin.Core.Position.BinaryAmount.Create(long, ulong, int)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Create
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 46
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Construct an instance from decomposed parts at the given precision.
+  example: []
+  syntax:
+    content: public static BinaryAmount Create(long whole, ulong fraction, int precision)
+    parameters:
+    - id: whole
+      type: System.Int64
+      description: Whole part.
+    - id: fraction
+      type: System.UInt64
+      description: Fractional magnitude in <code>[0, Base^precision)</code>.
+    - id: precision
+      type: System.Int32
+      description: Number of fractional digits.
+    return:
+      type: Virtufin.Core.Position.BinaryAmount
+    content.vb: Public Shared Function Create(whole As Long, fraction As ULong, precision As Integer) As BinaryAmount
+  overload: Virtufin.Core.Position.BinaryAmount.Create*
+  implements:
+  - Virtufin.Core.Position.IFixedPointAmount{Virtufin.Core.Position.BinaryAmount}.Create(System.Int64,System.UInt64,System.Int32)
+  nameWithType.vb: BinaryAmount.Create(Long, ULong, Integer)
+  fullName.vb: Virtufin.Core.Position.BinaryAmount.Create(Long, ULong, Integer)
+  name.vb: Create(Long, ULong, Integer)
+- uid: Virtufin.Core.Position.BinaryAmount.From(System.Double,System.Int32)
+  commentId: M:Virtufin.Core.Position.BinaryAmount.From(System.Double,System.Int32)
+  id: From(System.Double,System.Int32)
+  parent: Virtufin.Core.Position.BinaryAmount
+  langs:
+  - csharp
+  - vb
+  name: From(double, int)
+  nameWithType: BinaryAmount.From(double, int)
+  fullName: Virtufin.Core.Position.BinaryAmount.From(double, int)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: From
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 55
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    Construct a <xref href="Virtufin.Core.Position.BinaryAmount" data-throw-if-not-resolved="false"></xref> from a <xref href="System.Double" data-throw-if-not-resolved="false"></xref>,
+
+    rounding half away from zero to <code class="paramref">n</code> binary fraction digits.
+  example: []
+  syntax:
+    content: public static BinaryAmount From(double value, int n)
+    parameters:
+    - id: value
+      type: System.Double
+      description: Source value.
+    - id: n
+      type: System.Int32
+      description: Precision (number of binary fractional digits).
+    return:
+      type: Virtufin.Core.Position.BinaryAmount
+    content.vb: Public Shared Function From(value As Double, n As Integer) As BinaryAmount
+  overload: Virtufin.Core.Position.BinaryAmount.From*
+  nameWithType.vb: BinaryAmount.From(Double, Integer)
+  fullName.vb: Virtufin.Core.Position.BinaryAmount.From(Double, Integer)
+  name.vb: From(Double, Integer)
+- uid: Virtufin.Core.Position.BinaryAmount.From(System.Decimal,System.Int32)
+  commentId: M:Virtufin.Core.Position.BinaryAmount.From(System.Decimal,System.Int32)
+  id: From(System.Decimal,System.Int32)
+  parent: Virtufin.Core.Position.BinaryAmount
+  langs:
+  - csharp
+  - vb
+  name: From(decimal, int)
+  nameWithType: BinaryAmount.From(decimal, int)
+  fullName: Virtufin.Core.Position.BinaryAmount.From(decimal, int)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: From
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 69
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    Construct a <xref href="Virtufin.Core.Position.BinaryAmount" data-throw-if-not-resolved="false"></xref> from a <xref href="System.Decimal" data-throw-if-not-resolved="false"></xref>,
+
+    rounding half away from zero to <code class="paramref">n</code> binary fraction digits.
+  example: []
+  syntax:
+    content: public static BinaryAmount From(decimal value, int n)
+    parameters:
+    - id: value
+      type: System.Decimal
+      description: Source value.
+    - id: n
+      type: System.Int32
+      description: Precision (number of binary fractional digits).
+    return:
+      type: Virtufin.Core.Position.BinaryAmount
+    content.vb: Public Shared Function From(value As Decimal, n As Integer) As BinaryAmount
+  overload: Virtufin.Core.Position.BinaryAmount.From*
+  nameWithType.vb: BinaryAmount.From(Decimal, Integer)
+  fullName.vb: Virtufin.Core.Position.BinaryAmount.From(Decimal, Integer)
+  name.vb: From(Decimal, Integer)
+- uid: Virtufin.Core.Position.BinaryAmount.ToCardinal
+  commentId: M:Virtufin.Core.Position.BinaryAmount.ToCardinal
+  id: ToCardinal
+  parent: Virtufin.Core.Position.BinaryAmount
+  langs:
+  - csharp
+  - vb
+  name: ToCardinal()
+  nameWithType: BinaryAmount.ToCardinal()
+  fullName: Virtufin.Core.Position.BinaryAmount.ToCardinal()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: ToCardinal
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 73
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    The value as a single checked integer scaled by <code>Base^Precision</code>:
+
+    <code>Whole * Base^Precision + Fraction</code>.
+  example: []
+  syntax:
+    content: public long ToCardinal()
+    return:
+      type: System.Int64
+    content.vb: Public Function ToCardinal() As Long
+  overload: Virtufin.Core.Position.BinaryAmount.ToCardinal*
+  implements:
+  - Virtufin.Core.Position.IFixedPointAmount.ToCardinal
+  - Virtufin.Core.Position.IAsCardinal{System.Int64}.ToCardinal
+- uid: Virtufin.Core.Position.BinaryAmount.ToDouble
+  commentId: M:Virtufin.Core.Position.BinaryAmount.ToDouble
+  id: ToDouble
+  parent: Virtufin.Core.Position.BinaryAmount
+  langs:
+  - csharp
+  - vb
+  name: ToDouble()
+  nameWithType: BinaryAmount.ToDouble()
+  fullName: Virtufin.Core.Position.BinaryAmount.ToDouble()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: ToDouble
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 77
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Convert to <xref href="System.Double" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public double ToDouble()
+    return:
+      type: System.Double
+    content.vb: Public Function ToDouble() As Double
+  overload: Virtufin.Core.Position.BinaryAmount.ToDouble*
+- uid: Virtufin.Core.Position.BinaryAmount.FromCardinal(System.Int64)
+  commentId: M:Virtufin.Core.Position.BinaryAmount.FromCardinal(System.Int64)
+  id: FromCardinal(System.Int64)
+  parent: Virtufin.Core.Position.BinaryAmount
+  langs:
+  - csharp
+  - vb
+  name: FromCardinal(long)
+  nameWithType: BinaryAmount.FromCardinal(long)
+  fullName: Virtufin.Core.Position.BinaryAmount.FromCardinal(long)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: FromCardinal
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 81
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Recover whole and fractional parts from a cardinal value at this amount's precision.
+  example: []
+  syntax:
+    content: public (long Whole, ulong Fraction) FromCardinal(long cardinal)
+    parameters:
+    - id: cardinal
+      type: System.Int64
+    return:
+      type: System.ValueTuple{System.Int64,System.UInt64}
+    content.vb: Public Function FromCardinal(cardinal As Long) As (Whole As Long, Fraction As ULong)
+  overload: Virtufin.Core.Position.BinaryAmount.FromCardinal*
+  implements:
+  - Virtufin.Core.Position.IAsCardinal{System.Int64}.FromCardinal(System.Int64)
+  nameWithType.vb: BinaryAmount.FromCardinal(Long)
+  fullName.vb: Virtufin.Core.Position.BinaryAmount.FromCardinal(Long)
+  name.vb: FromCardinal(Long)
+- uid: Virtufin.Core.Position.BinaryAmount.FromCardinal(System.Int64,System.Int32)
+  commentId: M:Virtufin.Core.Position.BinaryAmount.FromCardinal(System.Int64,System.Int32)
+  id: FromCardinal(System.Int64,System.Int32)
+  parent: Virtufin.Core.Position.BinaryAmount
+  langs:
+  - csharp
+  - vb
+  name: FromCardinal(long, int)
+  nameWithType: BinaryAmount.FromCardinal(long, int)
+  fullName: Virtufin.Core.Position.BinaryAmount.FromCardinal(long, int)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: FromCardinal
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 85
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Recover whole and fractional parts from a cardinal value at an explicit precision.
+  example: []
+  syntax:
+    content: public static (long Whole, ulong Fraction) FromCardinal(long cardinal, int n)
+    parameters:
+    - id: cardinal
+      type: System.Int64
+    - id: n
+      type: System.Int32
+    return:
+      type: System.ValueTuple{System.Int64,System.UInt64}
+    content.vb: Public Shared Function FromCardinal(cardinal As Long, n As Integer) As (Whole As Long, Fraction As ULong)
+  overload: Virtufin.Core.Position.BinaryAmount.FromCardinal*
+  nameWithType.vb: BinaryAmount.FromCardinal(Long, Integer)
+  fullName.vb: Virtufin.Core.Position.BinaryAmount.FromCardinal(Long, Integer)
+  name.vb: FromCardinal(Long, Integer)
+- uid: Virtufin.Core.Position.BinaryAmount.Equals(Virtufin.Core.Position.BinaryAmount)
+  commentId: M:Virtufin.Core.Position.BinaryAmount.Equals(Virtufin.Core.Position.BinaryAmount)
+  id: Equals(Virtufin.Core.Position.BinaryAmount)
+  parent: Virtufin.Core.Position.BinaryAmount
+  langs:
+  - csharp
+  - vb
+  name: Equals(BinaryAmount)
+  nameWithType: BinaryAmount.Equals(BinaryAmount)
+  fullName: Virtufin.Core.Position.BinaryAmount.Equals(Virtufin.Core.Position.BinaryAmount)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Equals
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 103
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(BinaryAmount other)
+    parameters:
+    - id: other
+      type: Virtufin.Core.Position.BinaryAmount
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As BinaryAmount) As Boolean
+  overload: Virtufin.Core.Position.BinaryAmount.Equals*
+  exceptions:
+  - type: Virtufin.Core.Position.PrecisionMismatchException
+    commentId: T:Virtufin.Core.Position.PrecisionMismatchException
+    description: Precisions differ.
+  implements:
+  - System.IEquatable{Virtufin.Core.Position.BinaryAmount}.Equals(Virtufin.Core.Position.BinaryAmount)
+- uid: Virtufin.Core.Position.BinaryAmount.GetHashCode
+  commentId: M:Virtufin.Core.Position.BinaryAmount.GetHashCode
+  id: GetHashCode
+  parent: Virtufin.Core.Position.BinaryAmount
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: BinaryAmount.GetHashCode()
+  fullName: Virtufin.Core.Position.BinaryAmount.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: GetHashCode
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 110
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Returns the hash code for this instance.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer that is the hash code for this instance.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Virtufin.Core.Position.BinaryAmount.GetHashCode*
+- uid: Virtufin.Core.Position.BinaryAmount.CompareTo(Virtufin.Core.Position.BinaryAmount)
+  commentId: M:Virtufin.Core.Position.BinaryAmount.CompareTo(Virtufin.Core.Position.BinaryAmount)
+  id: CompareTo(Virtufin.Core.Position.BinaryAmount)
+  parent: Virtufin.Core.Position.BinaryAmount
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(BinaryAmount)
+  nameWithType: BinaryAmount.CompareTo(BinaryAmount)
+  fullName: Virtufin.Core.Position.BinaryAmount.CompareTo(Virtufin.Core.Position.BinaryAmount)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: CompareTo
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 114
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
+  example: []
+  syntax:
+    content: public int CompareTo(BinaryAmount other)
+    parameters:
+    - id: other
+      type: Virtufin.Core.Position.BinaryAmount
+      description: An object to compare with this instance.
+    return:
+      type: System.Int32
+      description: >-
+        A value that indicates the relative order of the objects being compared. The return value has these meanings:
+
+         <table><thead><tr><th class="term"> Value</th><th class="description"> Meaning</th></tr></thead><tbody><tr><td class="term"> Less than zero</td><td class="description"> This instance precedes <code class="paramref">other</code> in the sort order.</td></tr><tr><td class="term"> Zero</td><td class="description"> This instance occurs in the same position in the sort order as <code class="paramref">other</code>.</td></tr><tr><td class="term"> Greater than zero</td><td class="description"> This instance follows <code class="paramref">other</code> in the sort order.</td></tr></tbody></table>
+    content.vb: Public Function CompareTo(other As BinaryAmount) As Integer
+  overload: Virtufin.Core.Position.BinaryAmount.CompareTo*
+  exceptions:
+  - type: Virtufin.Core.Position.PrecisionMismatchException
+    commentId: T:Virtufin.Core.Position.PrecisionMismatchException
+    description: Precisions differ.
+  implements:
+  - System.IComparable{Virtufin.Core.Position.BinaryAmount}.CompareTo(Virtufin.Core.Position.BinaryAmount)
+- uid: Virtufin.Core.Position.BinaryAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  commentId: M:Virtufin.Core.Position.BinaryAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  id: CompareTo(Virtufin.Core.Position.IAmount)
+  parent: Virtufin.Core.Position.BinaryAmount
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(IAmount)
+  nameWithType: BinaryAmount.CompareTo(IAmount)
+  fullName: Virtufin.Core.Position.BinaryAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: CompareTo
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 129
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    Compare with another amount. Implementations reject differing scales
+
+    (base/precision) at runtime via <xref href="Virtufin.Core.Position.PrecisionMismatchException" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public int CompareTo(IAmount other)
+    parameters:
+    - id: other
+      type: Virtufin.Core.Position.IAmount
+      description: Amount to compare against.
+    return:
+      type: System.Int32
+    content.vb: Public Function CompareTo(other As IAmount) As Integer
+  overload: Virtufin.Core.Position.BinaryAmount.CompareTo*
+  implements:
+  - Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+- uid: Virtufin.Core.Position.BinaryAmount.op_Addition(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  commentId: M:Virtufin.Core.Position.BinaryAmount.op_Addition(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  id: op_Addition(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  parent: Virtufin.Core.Position.BinaryAmount
+  langs:
+  - csharp
+  - vb
+  name: operator +(BinaryAmount, BinaryAmount)
+  nameWithType: BinaryAmount.operator +(BinaryAmount, BinaryAmount)
+  fullName: Virtufin.Core.Position.BinaryAmount.operator +(Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  type: Operator
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: op_Addition
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 135
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Add two amounts. Throws <xref href="System.OverflowException" data-throw-if-not-resolved="false"></xref> on overflow.
+  example: []
+  syntax:
+    content: public static BinaryAmount operator +(BinaryAmount left, BinaryAmount right)
+    parameters:
+    - id: left
+      type: Virtufin.Core.Position.BinaryAmount
+    - id: right
+      type: Virtufin.Core.Position.BinaryAmount
+    return:
+      type: Virtufin.Core.Position.BinaryAmount
+    content.vb: Public Shared Operator +(left As BinaryAmount, right As BinaryAmount) As BinaryAmount
+  overload: Virtufin.Core.Position.BinaryAmount.op_Addition*
+  implements:
+  - System.Numerics.IAdditionOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}.op_Addition(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  nameWithType.vb: BinaryAmount.+(BinaryAmount, BinaryAmount)
+  fullName.vb: Virtufin.Core.Position.BinaryAmount.+(Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  name.vb: +(BinaryAmount, BinaryAmount)
+- uid: Virtufin.Core.Position.BinaryAmount.op_Subtraction(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  commentId: M:Virtufin.Core.Position.BinaryAmount.op_Subtraction(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  id: op_Subtraction(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  parent: Virtufin.Core.Position.BinaryAmount
+  langs:
+  - csharp
+  - vb
+  name: operator -(BinaryAmount, BinaryAmount)
+  nameWithType: BinaryAmount.operator -(BinaryAmount, BinaryAmount)
+  fullName: Virtufin.Core.Position.BinaryAmount.operator -(Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  type: Operator
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: op_Subtraction
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 139
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Subtract two amounts. Throws <xref href="System.OverflowException" data-throw-if-not-resolved="false"></xref> on overflow.
+  example: []
+  syntax:
+    content: public static BinaryAmount operator -(BinaryAmount left, BinaryAmount right)
+    parameters:
+    - id: left
+      type: Virtufin.Core.Position.BinaryAmount
+    - id: right
+      type: Virtufin.Core.Position.BinaryAmount
+    return:
+      type: Virtufin.Core.Position.BinaryAmount
+    content.vb: Public Shared Operator -(left As BinaryAmount, right As BinaryAmount) As BinaryAmount
+  overload: Virtufin.Core.Position.BinaryAmount.op_Subtraction*
+  implements:
+  - System.Numerics.ISubtractionOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}.op_Subtraction(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  nameWithType.vb: BinaryAmount.-(BinaryAmount, BinaryAmount)
+  fullName.vb: Virtufin.Core.Position.BinaryAmount.-(Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  name.vb: -(BinaryAmount, BinaryAmount)
+- uid: Virtufin.Core.Position.BinaryAmount.op_Multiply(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  commentId: M:Virtufin.Core.Position.BinaryAmount.op_Multiply(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  id: op_Multiply(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  parent: Virtufin.Core.Position.BinaryAmount
+  langs:
+  - csharp
+  - vb
+  name: operator *(BinaryAmount, BinaryAmount)
+  nameWithType: BinaryAmount.operator *(BinaryAmount, BinaryAmount)
+  fullName: Virtufin.Core.Position.BinaryAmount.operator *(Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  type: Operator
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: op_Multiply
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 145
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Multiply two amounts, carrying the summed precision of the operands.
+  example: []
+  syntax:
+    content: public static BinaryAmount operator *(BinaryAmount left, BinaryAmount right)
+    parameters:
+    - id: left
+      type: Virtufin.Core.Position.BinaryAmount
+    - id: right
+      type: Virtufin.Core.Position.BinaryAmount
+    return:
+      type: Virtufin.Core.Position.BinaryAmount
+    content.vb: Public Shared Operator *(left As BinaryAmount, right As BinaryAmount) As BinaryAmount
+  overload: Virtufin.Core.Position.BinaryAmount.op_Multiply*
+  implements:
+  - System.Numerics.IMultiplyOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}.op_Multiply(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  nameWithType.vb: BinaryAmount.*(BinaryAmount, BinaryAmount)
+  fullName.vb: Virtufin.Core.Position.BinaryAmount.*(Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  name.vb: '*(BinaryAmount, BinaryAmount)'
+- uid: Virtufin.Core.Position.BinaryAmount.op_Division(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  commentId: M:Virtufin.Core.Position.BinaryAmount.op_Division(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  id: op_Division(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  parent: Virtufin.Core.Position.BinaryAmount
+  langs:
+  - csharp
+  - vb
+  name: operator /(BinaryAmount, BinaryAmount)
+  nameWithType: BinaryAmount.operator /(BinaryAmount, BinaryAmount)
+  fullName: Virtufin.Core.Position.BinaryAmount.operator /(Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  type: Operator
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: op_Division
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 153
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    Divide two amounts, carrying the dividend's precision, rounded half away
+
+    from zero. Throws <xref href="System.DivideByZeroException" data-throw-if-not-resolved="false"></xref> when the divisor is zero.
+  example: []
+  syntax:
+    content: public static BinaryAmount operator /(BinaryAmount left, BinaryAmount right)
+    parameters:
+    - id: left
+      type: Virtufin.Core.Position.BinaryAmount
+    - id: right
+      type: Virtufin.Core.Position.BinaryAmount
+    return:
+      type: Virtufin.Core.Position.BinaryAmount
+    content.vb: Public Shared Operator /(left As BinaryAmount, right As BinaryAmount) As BinaryAmount
+  overload: Virtufin.Core.Position.BinaryAmount.op_Division*
+  implements:
+  - System.Numerics.IDivisionOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}.op_Division(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  nameWithType.vb: BinaryAmount./(BinaryAmount, BinaryAmount)
+  fullName.vb: Virtufin.Core.Position.BinaryAmount./(Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  name.vb: /(BinaryAmount, BinaryAmount)
+- uid: Virtufin.Core.Position.BinaryAmount.ToString
+  commentId: M:Virtufin.Core.Position.BinaryAmount.ToString
+  id: ToString
+  parent: Virtufin.Core.Position.BinaryAmount
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: BinaryAmount.ToString()
+  fullName: Virtufin.Core.Position.BinaryAmount.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/BinaryAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: ToString
+    path: ../../../src/Virtufin.Core/Position/BinaryAmount.cs
+    startLine: 157
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Format the amount as <code>whole.bbbb</code> with <xref href="Virtufin.Core.Position.BinaryAmount.N" data-throw-if-not-resolved="false"></xref> binary fraction digits.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: Virtufin.Core.Position.BinaryAmount.ToString*
+references:
+- uid: Virtufin.Core.Position.DecimalAmount
+  commentId: T:Virtufin.Core.Position.DecimalAmount
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.DecimalAmount.html
+  name: DecimalAmount
+  nameWithType: DecimalAmount
+  fullName: Virtufin.Core.Position.DecimalAmount
+- uid: Virtufin.Core.Position.IFixedPointAmount
+  commentId: T:Virtufin.Core.Position.IFixedPointAmount
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.IFixedPointAmount.html
+  name: IFixedPointAmount
+  nameWithType: IFixedPointAmount
+  fullName: Virtufin.Core.Position.IFixedPointAmount
+- uid: Virtufin.Core.Position.FixedPointArithmetic
+  commentId: T:Virtufin.Core.Position.FixedPointArithmetic
+  href: Virtufin.Core.Position.FixedPointArithmetic.html
+  name: FixedPointArithmetic
+  nameWithType: FixedPointArithmetic
+  fullName: Virtufin.Core.Position.FixedPointArithmetic
+- uid: Virtufin.Core.Position.PrecisionMismatchException
+  commentId: T:Virtufin.Core.Position.PrecisionMismatchException
+  href: Virtufin.Core.Position.PrecisionMismatchException.html
+  name: PrecisionMismatchException
+  nameWithType: PrecisionMismatchException
+  fullName: Virtufin.Core.Position.PrecisionMismatchException
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: Virtufin.Core.Position.IFixedPointAmount{Virtufin.Core.Position.BinaryAmount}
+  commentId: T:Virtufin.Core.Position.IFixedPointAmount{Virtufin.Core.Position.BinaryAmount}
+  parent: Virtufin.Core.Position
+  definition: Virtufin.Core.Position.IFixedPointAmount`1
+  href: Virtufin.Core.Position.IFixedPointAmount-1.html
+  name: IFixedPointAmount<BinaryAmount>
+  nameWithType: IFixedPointAmount<BinaryAmount>
+  fullName: Virtufin.Core.Position.IFixedPointAmount<Virtufin.Core.Position.BinaryAmount>
+  nameWithType.vb: IFixedPointAmount(Of BinaryAmount)
+  fullName.vb: Virtufin.Core.Position.IFixedPointAmount(Of Virtufin.Core.Position.BinaryAmount)
+  name.vb: IFixedPointAmount(Of BinaryAmount)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IFixedPointAmount`1
+    name: IFixedPointAmount
+    href: Virtufin.Core.Position.IFixedPointAmount-1.html
+  - name: <
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.IFixedPointAmount`1
+    name: IFixedPointAmount
+    href: Virtufin.Core.Position.IFixedPointAmount-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: )
+- uid: Virtufin.Core.Position.IAmount
+  commentId: T:Virtufin.Core.Position.IAmount
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.IAmount.html
+  name: IAmount
+  nameWithType: IAmount
+  fullName: Virtufin.Core.Position.IAmount
+- uid: System.IComparable{Virtufin.Core.Position.BinaryAmount}
+  commentId: T:System.IComparable{Virtufin.Core.Position.BinaryAmount}
+  parent: System
+  definition: System.IComparable`1
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<BinaryAmount>
+  nameWithType: IComparable<BinaryAmount>
+  fullName: System.IComparable<Virtufin.Core.Position.BinaryAmount>
+  nameWithType.vb: IComparable(Of BinaryAmount)
+  fullName.vb: System.IComparable(Of Virtufin.Core.Position.BinaryAmount)
+  name.vb: IComparable(Of BinaryAmount)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: )
+- uid: Virtufin.Core.Position.IAsCardinal{System.Int64}
+  commentId: T:Virtufin.Core.Position.IAsCardinal{System.Int64}
+  parent: Virtufin.Core.Position
+  definition: Virtufin.Core.Position.IAsCardinal`1
+  href: Virtufin.Core.Position.IAsCardinal-1.html
+  name: IAsCardinal<long>
+  nameWithType: IAsCardinal<long>
+  fullName: Virtufin.Core.Position.IAsCardinal<long>
+  nameWithType.vb: IAsCardinal(Of Long)
+  fullName.vb: Virtufin.Core.Position.IAsCardinal(Of Long)
+  name.vb: IAsCardinal(Of Long)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IAsCardinal`1
+    name: IAsCardinal
+    href: Virtufin.Core.Position.IAsCardinal-1.html
+  - name: <
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.IAsCardinal`1
+    name: IAsCardinal
+    href: Virtufin.Core.Position.IAsCardinal-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: System.Numerics.IAdditionOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}
+  commentId: T:System.Numerics.IAdditionOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}
+  parent: System.Numerics
+  definition: System.Numerics.IAdditionOperators`3
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3
+  name: IAdditionOperators<BinaryAmount, BinaryAmount, BinaryAmount>
+  nameWithType: IAdditionOperators<BinaryAmount, BinaryAmount, BinaryAmount>
+  fullName: System.Numerics.IAdditionOperators<Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount>
+  nameWithType.vb: IAdditionOperators(Of BinaryAmount, BinaryAmount, BinaryAmount)
+  fullName.vb: System.Numerics.IAdditionOperators(Of Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  name.vb: IAdditionOperators(Of BinaryAmount, BinaryAmount, BinaryAmount)
+  spec.csharp:
+  - uid: System.Numerics.IAdditionOperators`3
+    name: IAdditionOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3
+  - name: <
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Numerics.IAdditionOperators`3
+    name: IAdditionOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: )
+- uid: System.Numerics.ISubtractionOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}
+  commentId: T:System.Numerics.ISubtractionOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}
+  parent: System.Numerics
+  definition: System.Numerics.ISubtractionOperators`3
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3
+  name: ISubtractionOperators<BinaryAmount, BinaryAmount, BinaryAmount>
+  nameWithType: ISubtractionOperators<BinaryAmount, BinaryAmount, BinaryAmount>
+  fullName: System.Numerics.ISubtractionOperators<Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount>
+  nameWithType.vb: ISubtractionOperators(Of BinaryAmount, BinaryAmount, BinaryAmount)
+  fullName.vb: System.Numerics.ISubtractionOperators(Of Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  name.vb: ISubtractionOperators(Of BinaryAmount, BinaryAmount, BinaryAmount)
+  spec.csharp:
+  - uid: System.Numerics.ISubtractionOperators`3
+    name: ISubtractionOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3
+  - name: <
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Numerics.ISubtractionOperators`3
+    name: ISubtractionOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: )
+- uid: System.Numerics.IMultiplyOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}
+  commentId: T:System.Numerics.IMultiplyOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}
+  parent: System.Numerics
+  definition: System.Numerics.IMultiplyOperators`3
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3
+  name: IMultiplyOperators<BinaryAmount, BinaryAmount, BinaryAmount>
+  nameWithType: IMultiplyOperators<BinaryAmount, BinaryAmount, BinaryAmount>
+  fullName: System.Numerics.IMultiplyOperators<Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount>
+  nameWithType.vb: IMultiplyOperators(Of BinaryAmount, BinaryAmount, BinaryAmount)
+  fullName.vb: System.Numerics.IMultiplyOperators(Of Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  name.vb: IMultiplyOperators(Of BinaryAmount, BinaryAmount, BinaryAmount)
+  spec.csharp:
+  - uid: System.Numerics.IMultiplyOperators`3
+    name: IMultiplyOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3
+  - name: <
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Numerics.IMultiplyOperators`3
+    name: IMultiplyOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: )
+- uid: System.Numerics.IDivisionOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}
+  commentId: T:System.Numerics.IDivisionOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}
+  parent: System.Numerics
+  definition: System.Numerics.IDivisionOperators`3
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.idivisionoperators-3
+  name: IDivisionOperators<BinaryAmount, BinaryAmount, BinaryAmount>
+  nameWithType: IDivisionOperators<BinaryAmount, BinaryAmount, BinaryAmount>
+  fullName: System.Numerics.IDivisionOperators<Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount>
+  nameWithType.vb: IDivisionOperators(Of BinaryAmount, BinaryAmount, BinaryAmount)
+  fullName.vb: System.Numerics.IDivisionOperators(Of Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  name.vb: IDivisionOperators(Of BinaryAmount, BinaryAmount, BinaryAmount)
+  spec.csharp:
+  - uid: System.Numerics.IDivisionOperators`3
+    name: IDivisionOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.idivisionoperators-3
+  - name: <
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Numerics.IDivisionOperators`3
+    name: IDivisionOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.idivisionoperators-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: )
+- uid: System.IEquatable{Virtufin.Core.Position.BinaryAmount}
+  commentId: T:System.IEquatable{Virtufin.Core.Position.BinaryAmount}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<BinaryAmount>
+  nameWithType: IEquatable<BinaryAmount>
+  fullName: System.IEquatable<Virtufin.Core.Position.BinaryAmount>
+  nameWithType.vb: IEquatable(Of BinaryAmount)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Position.BinaryAmount)
+  name.vb: IEquatable(Of BinaryAmount)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Virtufin.Core.Position.IFixedPointAmount`1
+  commentId: T:Virtufin.Core.Position.IFixedPointAmount`1
+  href: Virtufin.Core.Position.IFixedPointAmount-1.html
+  name: IFixedPointAmount<TSelf>
+  nameWithType: IFixedPointAmount<TSelf>
+  fullName: Virtufin.Core.Position.IFixedPointAmount<TSelf>
+  nameWithType.vb: IFixedPointAmount(Of TSelf)
+  fullName.vb: Virtufin.Core.Position.IFixedPointAmount(Of TSelf)
+  name.vb: IFixedPointAmount(Of TSelf)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IFixedPointAmount`1
+    name: IFixedPointAmount
+    href: Virtufin.Core.Position.IFixedPointAmount-1.html
+  - name: <
+  - name: TSelf
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.IFixedPointAmount`1
+    name: IFixedPointAmount
+    href: Virtufin.Core.Position.IFixedPointAmount-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: )
+- uid: System.IComparable`1
+  commentId: T:System.IComparable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<T>
+  nameWithType: IComparable<T>
+  fullName: System.IComparable<T>
+  nameWithType.vb: IComparable(Of T)
+  fullName.vb: System.IComparable(Of T)
+  name.vb: IComparable(Of T)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Core.Position.IAsCardinal`1
+  commentId: T:Virtufin.Core.Position.IAsCardinal`1
+  href: Virtufin.Core.Position.IAsCardinal-1.html
+  name: IAsCardinal<TCardinal>
+  nameWithType: IAsCardinal<TCardinal>
+  fullName: Virtufin.Core.Position.IAsCardinal<TCardinal>
+  nameWithType.vb: IAsCardinal(Of TCardinal)
+  fullName.vb: Virtufin.Core.Position.IAsCardinal(Of TCardinal)
+  name.vb: IAsCardinal(Of TCardinal)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IAsCardinal`1
+    name: IAsCardinal
+    href: Virtufin.Core.Position.IAsCardinal-1.html
+  - name: <
+  - name: TCardinal
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.IAsCardinal`1
+    name: IAsCardinal
+    href: Virtufin.Core.Position.IAsCardinal-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCardinal
+  - name: )
+- uid: System.Numerics.IAdditionOperators`3
+  commentId: T:System.Numerics.IAdditionOperators`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3
+  name: IAdditionOperators<TSelf, TOther, TResult>
+  nameWithType: IAdditionOperators<TSelf, TOther, TResult>
+  fullName: System.Numerics.IAdditionOperators<TSelf, TOther, TResult>
+  nameWithType.vb: IAdditionOperators(Of TSelf, TOther, TResult)
+  fullName.vb: System.Numerics.IAdditionOperators(Of TSelf, TOther, TResult)
+  name.vb: IAdditionOperators(Of TSelf, TOther, TResult)
+  spec.csharp:
+  - uid: System.Numerics.IAdditionOperators`3
+    name: IAdditionOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3
+  - name: <
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Numerics.IAdditionOperators`3
+    name: IAdditionOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Numerics
+  commentId: N:System.Numerics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Numerics
+  nameWithType: System.Numerics
+  fullName: System.Numerics
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Numerics
+    name: Numerics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Numerics
+    name: Numerics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics
+- uid: System.Numerics.ISubtractionOperators`3
+  commentId: T:System.Numerics.ISubtractionOperators`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3
+  name: ISubtractionOperators<TSelf, TOther, TResult>
+  nameWithType: ISubtractionOperators<TSelf, TOther, TResult>
+  fullName: System.Numerics.ISubtractionOperators<TSelf, TOther, TResult>
+  nameWithType.vb: ISubtractionOperators(Of TSelf, TOther, TResult)
+  fullName.vb: System.Numerics.ISubtractionOperators(Of TSelf, TOther, TResult)
+  name.vb: ISubtractionOperators(Of TSelf, TOther, TResult)
+  spec.csharp:
+  - uid: System.Numerics.ISubtractionOperators`3
+    name: ISubtractionOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3
+  - name: <
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Numerics.ISubtractionOperators`3
+    name: ISubtractionOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Numerics.IMultiplyOperators`3
+  commentId: T:System.Numerics.IMultiplyOperators`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3
+  name: IMultiplyOperators<TSelf, TOther, TResult>
+  nameWithType: IMultiplyOperators<TSelf, TOther, TResult>
+  fullName: System.Numerics.IMultiplyOperators<TSelf, TOther, TResult>
+  nameWithType.vb: IMultiplyOperators(Of TSelf, TOther, TResult)
+  fullName.vb: System.Numerics.IMultiplyOperators(Of TSelf, TOther, TResult)
+  name.vb: IMultiplyOperators(Of TSelf, TOther, TResult)
+  spec.csharp:
+  - uid: System.Numerics.IMultiplyOperators`3
+    name: IMultiplyOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3
+  - name: <
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Numerics.IMultiplyOperators`3
+    name: IMultiplyOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Numerics.IDivisionOperators`3
+  commentId: T:System.Numerics.IDivisionOperators`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.idivisionoperators-3
+  name: IDivisionOperators<TSelf, TOther, TResult>
+  nameWithType: IDivisionOperators<TSelf, TOther, TResult>
+  fullName: System.Numerics.IDivisionOperators<TSelf, TOther, TResult>
+  nameWithType.vb: IDivisionOperators(Of TSelf, TOther, TResult)
+  fullName.vb: System.Numerics.IDivisionOperators(Of TSelf, TOther, TResult)
+  name.vb: IDivisionOperators(Of TSelf, TOther, TResult)
+  spec.csharp:
+  - uid: System.Numerics.IDivisionOperators`3
+    name: IDivisionOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.idivisionoperators-3
+  - name: <
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Numerics.IDivisionOperators`3
+    name: IDivisionOperators
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.idivisionoperators-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.Core.Position.BinaryAmount.#ctor*
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.#ctor
+  href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount__ctor_System_Int64_System_UInt64_System_Int32_
+  name: BinaryAmount
+  nameWithType: BinaryAmount.BinaryAmount
+  fullName: Virtufin.Core.Position.BinaryAmount.BinaryAmount
+  nameWithType.vb: BinaryAmount.New
+  fullName.vb: Virtufin.Core.Position.BinaryAmount.New
+  name.vb: New
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Virtufin.Core.Position.BinaryAmount.Whole*
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.Whole
+  href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_Whole
+  name: Whole
+  nameWithType: BinaryAmount.Whole
+  fullName: Virtufin.Core.Position.BinaryAmount.Whole
+- uid: Virtufin.Core.Position.IFixedPointAmount.Whole
+  commentId: P:Virtufin.Core.Position.IFixedPointAmount.Whole
+  parent: Virtufin.Core.Position.IFixedPointAmount
+  href: Virtufin.Core.Position.IFixedPointAmount.html#Virtufin_Core_Position_IFixedPointAmount_Whole
+  name: Whole
+  nameWithType: IFixedPointAmount.Whole
+  fullName: Virtufin.Core.Position.IFixedPointAmount.Whole
+- uid: Virtufin.Core.Position.BinaryAmount.Fraction*
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.Fraction
+  href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_Fraction
+  name: Fraction
+  nameWithType: BinaryAmount.Fraction
+  fullName: Virtufin.Core.Position.BinaryAmount.Fraction
+- uid: Virtufin.Core.Position.IFixedPointAmount.Fraction
+  commentId: P:Virtufin.Core.Position.IFixedPointAmount.Fraction
+  parent: Virtufin.Core.Position.IFixedPointAmount
+  href: Virtufin.Core.Position.IFixedPointAmount.html#Virtufin_Core_Position_IFixedPointAmount_Fraction
+  name: Fraction
+  nameWithType: IFixedPointAmount.Fraction
+  fullName: Virtufin.Core.Position.IFixedPointAmount.Fraction
+- uid: Virtufin.Core.Position.BinaryAmount.N*
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.N
+  href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_N
+  name: N
+  nameWithType: BinaryAmount.N
+  fullName: Virtufin.Core.Position.BinaryAmount.N
+- uid: Virtufin.Core.Position.BinaryAmount.DefaultPrecision
+  commentId: F:Virtufin.Core.Position.BinaryAmount.DefaultPrecision
+  href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_DefaultPrecision
+  name: DefaultPrecision
+  nameWithType: BinaryAmount.DefaultPrecision
+  fullName: Virtufin.Core.Position.BinaryAmount.DefaultPrecision
+- uid: Virtufin.Core.Position.BinaryAmount.Zero*
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.Zero
+  href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_Zero
+  name: Zero
+  nameWithType: BinaryAmount.Zero
+  fullName: Virtufin.Core.Position.BinaryAmount.Zero
+- uid: Virtufin.Core.Position.BinaryAmount
+  commentId: T:Virtufin.Core.Position.BinaryAmount
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.BinaryAmount.html
+  name: BinaryAmount
+  nameWithType: BinaryAmount
+  fullName: Virtufin.Core.Position.BinaryAmount
+- uid: Virtufin.Core.Position.IFixedPointAmount.Base
+  commentId: P:Virtufin.Core.Position.IFixedPointAmount.Base
+  parent: Virtufin.Core.Position.IFixedPointAmount
+  href: Virtufin.Core.Position.IFixedPointAmount.html#Virtufin_Core_Position_IFixedPointAmount_Base
+  name: Base
+  nameWithType: IFixedPointAmount.Base
+  fullName: Virtufin.Core.Position.IFixedPointAmount.Base
+- uid: Virtufin.Core.Position.BinaryAmount.BaseValue*
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.BaseValue
+  href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_BaseValue
+  name: BaseValue
+  nameWithType: BinaryAmount.BaseValue
+  fullName: Virtufin.Core.Position.BinaryAmount.BaseValue
+- uid: Virtufin.Core.Position.IFixedPointAmount{Virtufin.Core.Position.BinaryAmount}.BaseValue
+  commentId: P:Virtufin.Core.Position.IFixedPointAmount{Virtufin.Core.Position.BinaryAmount}.BaseValue
+  parent: Virtufin.Core.Position.IFixedPointAmount{Virtufin.Core.Position.BinaryAmount}
+  definition: Virtufin.Core.Position.IFixedPointAmount`1.BaseValue
+  href: Virtufin.Core.Position.IFixedPointAmount-1.html#Virtufin_Core_Position_IFixedPointAmount_1_BaseValue
+  name: BaseValue
+  nameWithType: IFixedPointAmount<BinaryAmount>.BaseValue
+  fullName: Virtufin.Core.Position.IFixedPointAmount<Virtufin.Core.Position.BinaryAmount>.BaseValue
+  nameWithType.vb: IFixedPointAmount(Of BinaryAmount).BaseValue
+  fullName.vb: Virtufin.Core.Position.IFixedPointAmount(Of Virtufin.Core.Position.BinaryAmount).BaseValue
+- uid: Virtufin.Core.Position.IFixedPointAmount`1.BaseValue
+  commentId: P:Virtufin.Core.Position.IFixedPointAmount`1.BaseValue
+  href: Virtufin.Core.Position.IFixedPointAmount-1.html#Virtufin_Core_Position_IFixedPointAmount_1_BaseValue
+  name: BaseValue
+  nameWithType: IFixedPointAmount<TSelf>.BaseValue
+  fullName: Virtufin.Core.Position.IFixedPointAmount<TSelf>.BaseValue
+  nameWithType.vb: IFixedPointAmount(Of TSelf).BaseValue
+  fullName.vb: Virtufin.Core.Position.IFixedPointAmount(Of TSelf).BaseValue
+- uid: Virtufin.Core.Position.BinaryAmount.Base*
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.Base
+  href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_Base
+  name: Base
+  nameWithType: BinaryAmount.Base
+  fullName: Virtufin.Core.Position.BinaryAmount.Base
+- uid: Virtufin.Core.Position.BinaryAmount.Precision*
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.Precision
+  href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_Precision
+  name: Precision
+  nameWithType: BinaryAmount.Precision
+  fullName: Virtufin.Core.Position.BinaryAmount.Precision
+- uid: Virtufin.Core.Position.IAmount.Precision
+  commentId: P:Virtufin.Core.Position.IAmount.Precision
+  parent: Virtufin.Core.Position.IAmount
+  href: Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_Precision
+  name: Precision
+  nameWithType: IAmount.Precision
+  fullName: Virtufin.Core.Position.IAmount.Precision
+- uid: Virtufin.Core.Position.BinaryAmount.IsZero*
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.IsZero
+  href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_IsZero
+  name: IsZero
+  nameWithType: BinaryAmount.IsZero
+  fullName: Virtufin.Core.Position.BinaryAmount.IsZero
+- uid: Virtufin.Core.Position.IAmount.IsZero
+  commentId: P:Virtufin.Core.Position.IAmount.IsZero
+  parent: Virtufin.Core.Position.IAmount
+  href: Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_IsZero
+  name: IsZero
+  nameWithType: IAmount.IsZero
+  fullName: Virtufin.Core.Position.IAmount.IsZero
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Virtufin.Core.Position.BinaryAmount.Create*
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.Create
+  href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_Create_System_Int64_System_UInt64_System_Int32_
+  name: Create
+  nameWithType: BinaryAmount.Create
+  fullName: Virtufin.Core.Position.BinaryAmount.Create
+- uid: Virtufin.Core.Position.IFixedPointAmount{Virtufin.Core.Position.BinaryAmount}.Create(System.Int64,System.UInt64,System.Int32)
+  commentId: M:Virtufin.Core.Position.IFixedPointAmount{Virtufin.Core.Position.BinaryAmount}.Create(System.Int64,System.UInt64,System.Int32)
+  parent: Virtufin.Core.Position.IFixedPointAmount{Virtufin.Core.Position.BinaryAmount}
+  definition: Virtufin.Core.Position.IFixedPointAmount`1.Create(System.Int64,System.UInt64,System.Int32)
+  href: Virtufin.Core.Position.IFixedPointAmount-1.html#Virtufin_Core_Position_IFixedPointAmount_1_Create_System_Int64_System_UInt64_System_Int32_
+  name: Create(long, ulong, int)
+  nameWithType: IFixedPointAmount<BinaryAmount>.Create(long, ulong, int)
+  fullName: Virtufin.Core.Position.IFixedPointAmount<Virtufin.Core.Position.BinaryAmount>.Create(long, ulong, int)
+  nameWithType.vb: IFixedPointAmount(Of BinaryAmount).Create(Long, ULong, Integer)
+  fullName.vb: Virtufin.Core.Position.IFixedPointAmount(Of Virtufin.Core.Position.BinaryAmount).Create(Long, ULong, Integer)
+  name.vb: Create(Long, ULong, Integer)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IFixedPointAmount{Virtufin.Core.Position.BinaryAmount}.Create(System.Int64,System.UInt64,System.Int32)
+    name: Create
+    href: Virtufin.Core.Position.IFixedPointAmount-1.html#Virtufin_Core_Position_IFixedPointAmount_1_Create_System_Int64_System_UInt64_System_Int32_
+  - name: (
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.IFixedPointAmount{Virtufin.Core.Position.BinaryAmount}.Create(System.Int64,System.UInt64,System.Int32)
+    name: Create
+    href: Virtufin.Core.Position.IFixedPointAmount-1.html#Virtufin_Core_Position_IFixedPointAmount_1_Create_System_Int64_System_UInt64_System_Int32_
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Virtufin.Core.Position.IFixedPointAmount`1.Create(System.Int64,System.UInt64,System.Int32)
+  commentId: M:Virtufin.Core.Position.IFixedPointAmount`1.Create(System.Int64,System.UInt64,System.Int32)
+  isExternal: true
+  href: Virtufin.Core.Position.IFixedPointAmount-1.html#Virtufin_Core_Position_IFixedPointAmount_1_Create_System_Int64_System_UInt64_System_Int32_
+  name: Create(long, ulong, int)
+  nameWithType: IFixedPointAmount<TSelf>.Create(long, ulong, int)
+  fullName: Virtufin.Core.Position.IFixedPointAmount<TSelf>.Create(long, ulong, int)
+  nameWithType.vb: IFixedPointAmount(Of TSelf).Create(Long, ULong, Integer)
+  fullName.vb: Virtufin.Core.Position.IFixedPointAmount(Of TSelf).Create(Long, ULong, Integer)
+  name.vb: Create(Long, ULong, Integer)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IFixedPointAmount`1.Create(System.Int64,System.UInt64,System.Int32)
+    name: Create
+    href: Virtufin.Core.Position.IFixedPointAmount-1.html#Virtufin_Core_Position_IFixedPointAmount_1_Create_System_Int64_System_UInt64_System_Int32_
+  - name: (
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.IFixedPointAmount`1.Create(System.Int64,System.UInt64,System.Int32)
+    name: Create
+    href: Virtufin.Core.Position.IFixedPointAmount-1.html#Virtufin_Core_Position_IFixedPointAmount_1_Create_System_Int64_System_UInt64_System_Int32_
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Virtufin.Core.Position.BinaryAmount.From*
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.From
+  href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_From_System_Double_System_Int32_
+  name: From
+  nameWithType: BinaryAmount.From
+  fullName: Virtufin.Core.Position.BinaryAmount.From
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal
+  nameWithType: decimal
+  fullName: decimal
+  nameWithType.vb: Decimal
+  fullName.vb: Decimal
+  name.vb: Decimal
+- uid: Virtufin.Core.Position.BinaryAmount.ToCardinal*
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.ToCardinal
+  href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_ToCardinal
+  name: ToCardinal
+  nameWithType: BinaryAmount.ToCardinal
+  fullName: Virtufin.Core.Position.BinaryAmount.ToCardinal
+- uid: Virtufin.Core.Position.IFixedPointAmount.ToCardinal
+  commentId: M:Virtufin.Core.Position.IFixedPointAmount.ToCardinal
+  parent: Virtufin.Core.Position.IFixedPointAmount
+  href: Virtufin.Core.Position.IFixedPointAmount.html#Virtufin_Core_Position_IFixedPointAmount_ToCardinal
+  name: ToCardinal()
+  nameWithType: IFixedPointAmount.ToCardinal()
+  fullName: Virtufin.Core.Position.IFixedPointAmount.ToCardinal()
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IFixedPointAmount.ToCardinal
+    name: ToCardinal
+    href: Virtufin.Core.Position.IFixedPointAmount.html#Virtufin_Core_Position_IFixedPointAmount_ToCardinal
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.IFixedPointAmount.ToCardinal
+    name: ToCardinal
+    href: Virtufin.Core.Position.IFixedPointAmount.html#Virtufin_Core_Position_IFixedPointAmount_ToCardinal
+  - name: (
+  - name: )
+- uid: Virtufin.Core.Position.IAsCardinal{System.Int64}.ToCardinal
+  commentId: M:Virtufin.Core.Position.IAsCardinal{System.Int64}.ToCardinal
+  parent: Virtufin.Core.Position.IAsCardinal{System.Int64}
+  definition: Virtufin.Core.Position.IAsCardinal`1.ToCardinal
+  href: Virtufin.Core.Position.IAsCardinal-1.html#Virtufin_Core_Position_IAsCardinal_1_ToCardinal
+  name: ToCardinal()
+  nameWithType: IAsCardinal<long>.ToCardinal()
+  fullName: Virtufin.Core.Position.IAsCardinal<long>.ToCardinal()
+  nameWithType.vb: IAsCardinal(Of Long).ToCardinal()
+  fullName.vb: Virtufin.Core.Position.IAsCardinal(Of Long).ToCardinal()
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IAsCardinal{System.Int64}.ToCardinal
+    name: ToCardinal
+    href: Virtufin.Core.Position.IAsCardinal-1.html#Virtufin_Core_Position_IAsCardinal_1_ToCardinal
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.IAsCardinal{System.Int64}.ToCardinal
+    name: ToCardinal
+    href: Virtufin.Core.Position.IAsCardinal-1.html#Virtufin_Core_Position_IAsCardinal_1_ToCardinal
+  - name: (
+  - name: )
+- uid: Virtufin.Core.Position.IAsCardinal`1.ToCardinal
+  commentId: M:Virtufin.Core.Position.IAsCardinal`1.ToCardinal
+  href: Virtufin.Core.Position.IAsCardinal-1.html#Virtufin_Core_Position_IAsCardinal_1_ToCardinal
+  name: ToCardinal()
+  nameWithType: IAsCardinal<TCardinal>.ToCardinal()
+  fullName: Virtufin.Core.Position.IAsCardinal<TCardinal>.ToCardinal()
+  nameWithType.vb: IAsCardinal(Of TCardinal).ToCardinal()
+  fullName.vb: Virtufin.Core.Position.IAsCardinal(Of TCardinal).ToCardinal()
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IAsCardinal`1.ToCardinal
+    name: ToCardinal
+    href: Virtufin.Core.Position.IAsCardinal-1.html#Virtufin_Core_Position_IAsCardinal_1_ToCardinal
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.IAsCardinal`1.ToCardinal
+    name: ToCardinal
+    href: Virtufin.Core.Position.IAsCardinal-1.html#Virtufin_Core_Position_IAsCardinal_1_ToCardinal
+  - name: (
+  - name: )
+- uid: Virtufin.Core.Position.BinaryAmount.ToDouble*
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.ToDouble
+  href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_ToDouble
+  name: ToDouble
+  nameWithType: BinaryAmount.ToDouble
+  fullName: Virtufin.Core.Position.BinaryAmount.ToDouble
+- uid: Virtufin.Core.Position.BinaryAmount.FromCardinal*
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.FromCardinal
+  href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_FromCardinal_System_Int64_
+  name: FromCardinal
+  nameWithType: BinaryAmount.FromCardinal
+  fullName: Virtufin.Core.Position.BinaryAmount.FromCardinal
+- uid: Virtufin.Core.Position.IAsCardinal{System.Int64}.FromCardinal(System.Int64)
+  commentId: M:Virtufin.Core.Position.IAsCardinal{System.Int64}.FromCardinal(System.Int64)
+  parent: Virtufin.Core.Position.IAsCardinal{System.Int64}
+  definition: Virtufin.Core.Position.IAsCardinal`1.FromCardinal(`0)
+  href: Virtufin.Core.Position.IAsCardinal-1.html#Virtufin_Core_Position_IAsCardinal_1_FromCardinal__0_
+  name: FromCardinal(long)
+  nameWithType: IAsCardinal<long>.FromCardinal(long)
+  fullName: Virtufin.Core.Position.IAsCardinal<long>.FromCardinal(long)
+  nameWithType.vb: IAsCardinal(Of Long).FromCardinal(Long)
+  fullName.vb: Virtufin.Core.Position.IAsCardinal(Of Long).FromCardinal(Long)
+  name.vb: FromCardinal(Long)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IAsCardinal{System.Int64}.FromCardinal(System.Int64)
+    name: FromCardinal
+    href: Virtufin.Core.Position.IAsCardinal-1.html#Virtufin_Core_Position_IAsCardinal_1_FromCardinal__0_
+  - name: (
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.IAsCardinal{System.Int64}.FromCardinal(System.Int64)
+    name: FromCardinal
+    href: Virtufin.Core.Position.IAsCardinal-1.html#Virtufin_Core_Position_IAsCardinal_1_FromCardinal__0_
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: System.ValueTuple{System.Int64,System.UInt64}
+  commentId: T:System.ValueTuple{System.Int64,System.UInt64}
+  parent: System
+  definition: System.ValueTuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: (long Whole, ulong Fraction)
+  nameWithType: (long Whole, ulong Fraction)
+  fullName: (long Whole, ulong Fraction)
+  nameWithType.vb: (Whole As Long, Fraction As ULong)
+  fullName.vb: (Whole As Long, Fraction As ULong)
+  name.vb: (Whole As Long, Fraction As ULong)
+  spec.csharp:
+  - name: (
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: " "
+  - uid: System.ValueTuple{System.Int64,System.UInt64}.Whole
+    name: Whole
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64,system.uint64-.whole
+  - name: ','
+  - name: " "
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: " "
+  - uid: System.ValueTuple{System.Int64,System.UInt64}.Fraction
+    name: Fraction
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64,system.uint64-.fraction
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.Int64,System.UInt64}.Whole
+    name: Whole
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64,system.uint64-.whole
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Int64,System.UInt64}.Fraction
+    name: Fraction
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64,system.uint64-.fraction
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+- uid: Virtufin.Core.Position.IAsCardinal`1.FromCardinal(`0)
+  commentId: M:Virtufin.Core.Position.IAsCardinal`1.FromCardinal(`0)
+  href: Virtufin.Core.Position.IAsCardinal-1.html#Virtufin_Core_Position_IAsCardinal_1_FromCardinal__0_
+  name: FromCardinal(TCardinal)
+  nameWithType: IAsCardinal<TCardinal>.FromCardinal(TCardinal)
+  fullName: Virtufin.Core.Position.IAsCardinal<TCardinal>.FromCardinal(TCardinal)
+  nameWithType.vb: IAsCardinal(Of TCardinal).FromCardinal(TCardinal)
+  fullName.vb: Virtufin.Core.Position.IAsCardinal(Of TCardinal).FromCardinal(TCardinal)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IAsCardinal`1.FromCardinal(`0)
+    name: FromCardinal
+    href: Virtufin.Core.Position.IAsCardinal-1.html#Virtufin_Core_Position_IAsCardinal_1_FromCardinal__0_
+  - name: (
+  - name: TCardinal
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.IAsCardinal`1.FromCardinal(`0)
+    name: FromCardinal
+    href: Virtufin.Core.Position.IAsCardinal-1.html#Virtufin_Core_Position_IAsCardinal_1_FromCardinal__0_
+  - name: (
+  - name: TCardinal
+  - name: )
+- uid: System.ValueTuple`2
+  commentId: T:System.ValueTuple`2
+  name: (T1, T2)
+  nameWithType: (T1, T2)
+  fullName: (T1, T2)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: Virtufin.Core.Position.BinaryAmount.Equals*
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.Equals
+  href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_Equals_Virtufin_Core_Position_BinaryAmount_
+  name: Equals
+  nameWithType: BinaryAmount.Equals
+  fullName: Virtufin.Core.Position.BinaryAmount.Equals
+- uid: System.IEquatable{Virtufin.Core.Position.BinaryAmount}.Equals(Virtufin.Core.Position.BinaryAmount)
+  commentId: M:System.IEquatable{Virtufin.Core.Position.BinaryAmount}.Equals(Virtufin.Core.Position.BinaryAmount)
+  parent: System.IEquatable{Virtufin.Core.Position.BinaryAmount}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(BinaryAmount)
+  nameWithType: IEquatable<BinaryAmount>.Equals(BinaryAmount)
+  fullName: System.IEquatable<Virtufin.Core.Position.BinaryAmount>.Equals(Virtufin.Core.Position.BinaryAmount)
+  nameWithType.vb: IEquatable(Of BinaryAmount).Equals(BinaryAmount)
+  fullName.vb: System.IEquatable(Of Virtufin.Core.Position.BinaryAmount).Equals(Virtufin.Core.Position.BinaryAmount)
+  spec.csharp:
+  - uid: System.IEquatable{Virtufin.Core.Position.BinaryAmount}.Equals(Virtufin.Core.Position.BinaryAmount)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Virtufin.Core.Position.BinaryAmount}.Equals(Virtufin.Core.Position.BinaryAmount)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: Virtufin.Core.Position.BinaryAmount.GetHashCode*
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.GetHashCode
+  href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_GetHashCode
+  name: GetHashCode
+  nameWithType: BinaryAmount.GetHashCode
+  fullName: Virtufin.Core.Position.BinaryAmount.GetHashCode
+- uid: Virtufin.Core.Position.BinaryAmount.CompareTo*
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.CompareTo
+  href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_CompareTo_Virtufin_Core_Position_BinaryAmount_
+  name: CompareTo
+  nameWithType: BinaryAmount.CompareTo
+  fullName: Virtufin.Core.Position.BinaryAmount.CompareTo
+- uid: System.IComparable{Virtufin.Core.Position.BinaryAmount}.CompareTo(Virtufin.Core.Position.BinaryAmount)
+  commentId: M:System.IComparable{Virtufin.Core.Position.BinaryAmount}.CompareTo(Virtufin.Core.Position.BinaryAmount)
+  parent: System.IComparable{Virtufin.Core.Position.BinaryAmount}
+  definition: System.IComparable`1.CompareTo(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  name: CompareTo(BinaryAmount)
+  nameWithType: IComparable<BinaryAmount>.CompareTo(BinaryAmount)
+  fullName: System.IComparable<Virtufin.Core.Position.BinaryAmount>.CompareTo(Virtufin.Core.Position.BinaryAmount)
+  nameWithType.vb: IComparable(Of BinaryAmount).CompareTo(BinaryAmount)
+  fullName.vb: System.IComparable(Of Virtufin.Core.Position.BinaryAmount).CompareTo(Virtufin.Core.Position.BinaryAmount)
+  spec.csharp:
+  - uid: System.IComparable{Virtufin.Core.Position.BinaryAmount}.CompareTo(Virtufin.Core.Position.BinaryAmount)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: )
+  spec.vb:
+  - uid: System.IComparable{Virtufin.Core.Position.BinaryAmount}.CompareTo(Virtufin.Core.Position.BinaryAmount)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: )
+- uid: System.IComparable`1.CompareTo(`0)
+  commentId: M:System.IComparable`1.CompareTo(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  name: CompareTo(T)
+  nameWithType: IComparable<T>.CompareTo(T)
+  fullName: System.IComparable<T>.CompareTo(T)
+  nameWithType.vb: IComparable(Of T).CompareTo(T)
+  fullName.vb: System.IComparable(Of T).CompareTo(T)
+  spec.csharp:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: T
+  - name: )
+- uid: Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  commentId: M:Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  parent: Virtufin.Core.Position.IAmount
+  href: Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_CompareTo_Virtufin_Core_Position_IAmount_
+  name: CompareTo(IAmount)
+  nameWithType: IAmount.CompareTo(IAmount)
+  fullName: Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+    name: CompareTo
+    href: Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_CompareTo_Virtufin_Core_Position_IAmount_
+  - name: (
+  - uid: Virtufin.Core.Position.IAmount
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount.html
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+    name: CompareTo
+    href: Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_CompareTo_Virtufin_Core_Position_IAmount_
+  - name: (
+  - uid: Virtufin.Core.Position.IAmount
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount.html
+  - name: )
+- uid: System.OverflowException
+  commentId: T:System.OverflowException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.overflowexception
+  name: OverflowException
+  nameWithType: OverflowException
+  fullName: System.OverflowException
+- uid: Virtufin.Core.Position.BinaryAmount.op_Addition*
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.op_Addition
+  href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_op_Addition_Virtufin_Core_Position_BinaryAmount_Virtufin_Core_Position_BinaryAmount_
+  name: operator +
+  nameWithType: BinaryAmount.operator +
+  fullName: Virtufin.Core.Position.BinaryAmount.operator +
+  nameWithType.vb: BinaryAmount.+
+  fullName.vb: Virtufin.Core.Position.BinaryAmount.+
+  name.vb: +
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount.op_Addition*
+    name: +
+    href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_op_Addition_Virtufin_Core_Position_BinaryAmount_Virtufin_Core_Position_BinaryAmount_
+- uid: System.Numerics.IAdditionOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}.op_Addition(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  commentId: M:System.Numerics.IAdditionOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}.op_Addition(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  parent: System.Numerics.IAdditionOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}
+  definition: System.Numerics.IAdditionOperators`3.op_Addition(`0,`1)
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3.op_addition
+  name: operator +(BinaryAmount, BinaryAmount)
+  nameWithType: IAdditionOperators<BinaryAmount, BinaryAmount, BinaryAmount>.operator +(BinaryAmount, BinaryAmount)
+  fullName: System.Numerics.IAdditionOperators<Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount>.operator +(Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  nameWithType.vb: IAdditionOperators(Of BinaryAmount, BinaryAmount, BinaryAmount).+(BinaryAmount, BinaryAmount)
+  fullName.vb: System.Numerics.IAdditionOperators(Of Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount).+(Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  name.vb: +(BinaryAmount, BinaryAmount)
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Numerics.IAdditionOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}.op_Addition(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+    name: +
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3.op_addition
+  - name: (
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: )
+  spec.vb:
+  - name: +
+  - name: (
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: )
+- uid: System.Numerics.IAdditionOperators`3.op_Addition(`0,`1)
+  commentId: M:System.Numerics.IAdditionOperators`3.op_Addition(`0,`1)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3.op_addition
+  name: operator +(TSelf, TOther)
+  nameWithType: IAdditionOperators<TSelf, TOther, TResult>.operator +(TSelf, TOther)
+  fullName: System.Numerics.IAdditionOperators<TSelf, TOther, TResult>.operator +(TSelf, TOther)
+  nameWithType.vb: IAdditionOperators(Of TSelf, TOther, TResult).+(TSelf, TOther)
+  fullName.vb: System.Numerics.IAdditionOperators(Of TSelf, TOther, TResult).+(TSelf, TOther)
+  name.vb: +(TSelf, TOther)
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Numerics.IAdditionOperators`3.op_Addition(`0,`1)
+    name: +
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3.op_addition
+  - name: (
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: )
+  spec.vb:
+  - name: +
+  - name: (
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: )
+- uid: Virtufin.Core.Position.BinaryAmount.op_Subtraction*
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.op_Subtraction
+  href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_op_Subtraction_Virtufin_Core_Position_BinaryAmount_Virtufin_Core_Position_BinaryAmount_
+  name: operator -
+  nameWithType: BinaryAmount.operator -
+  fullName: Virtufin.Core.Position.BinaryAmount.operator -
+  nameWithType.vb: BinaryAmount.-
+  fullName.vb: Virtufin.Core.Position.BinaryAmount.-
+  name.vb: '-'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount.op_Subtraction*
+    name: '-'
+    href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_op_Subtraction_Virtufin_Core_Position_BinaryAmount_Virtufin_Core_Position_BinaryAmount_
+- uid: System.Numerics.ISubtractionOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}.op_Subtraction(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  commentId: M:System.Numerics.ISubtractionOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}.op_Subtraction(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  parent: System.Numerics.ISubtractionOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}
+  definition: System.Numerics.ISubtractionOperators`3.op_Subtraction(`0,`1)
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3.op_subtraction
+  name: operator -(BinaryAmount, BinaryAmount)
+  nameWithType: ISubtractionOperators<BinaryAmount, BinaryAmount, BinaryAmount>.operator -(BinaryAmount, BinaryAmount)
+  fullName: System.Numerics.ISubtractionOperators<Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount>.operator -(Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  nameWithType.vb: ISubtractionOperators(Of BinaryAmount, BinaryAmount, BinaryAmount).-(BinaryAmount, BinaryAmount)
+  fullName.vb: System.Numerics.ISubtractionOperators(Of Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount).-(Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  name.vb: -(BinaryAmount, BinaryAmount)
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Numerics.ISubtractionOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}.op_Subtraction(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+    name: '-'
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3.op_subtraction
+  - name: (
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: )
+  spec.vb:
+  - name: '-'
+  - name: (
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: )
+- uid: System.Numerics.ISubtractionOperators`3.op_Subtraction(`0,`1)
+  commentId: M:System.Numerics.ISubtractionOperators`3.op_Subtraction(`0,`1)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3.op_subtraction
+  name: operator -(TSelf, TOther)
+  nameWithType: ISubtractionOperators<TSelf, TOther, TResult>.operator -(TSelf, TOther)
+  fullName: System.Numerics.ISubtractionOperators<TSelf, TOther, TResult>.operator -(TSelf, TOther)
+  nameWithType.vb: ISubtractionOperators(Of TSelf, TOther, TResult).-(TSelf, TOther)
+  fullName.vb: System.Numerics.ISubtractionOperators(Of TSelf, TOther, TResult).-(TSelf, TOther)
+  name.vb: -(TSelf, TOther)
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Numerics.ISubtractionOperators`3.op_Subtraction(`0,`1)
+    name: '-'
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3.op_subtraction
+  - name: (
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: )
+  spec.vb:
+  - name: '-'
+  - name: (
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: )
+- uid: Virtufin.Core.Position.BinaryAmount.op_Multiply*
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.op_Multiply
+  href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_op_Multiply_Virtufin_Core_Position_BinaryAmount_Virtufin_Core_Position_BinaryAmount_
+  name: operator *
+  nameWithType: BinaryAmount.operator *
+  fullName: Virtufin.Core.Position.BinaryAmount.operator *
+  nameWithType.vb: BinaryAmount.*
+  fullName.vb: Virtufin.Core.Position.BinaryAmount.*
+  name.vb: '*'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount.op_Multiply*
+    name: '*'
+    href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_op_Multiply_Virtufin_Core_Position_BinaryAmount_Virtufin_Core_Position_BinaryAmount_
+- uid: System.Numerics.IMultiplyOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}.op_Multiply(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  commentId: M:System.Numerics.IMultiplyOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}.op_Multiply(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  parent: System.Numerics.IMultiplyOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}
+  definition: System.Numerics.IMultiplyOperators`3.op_Multiply(`0,`1)
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3.op_multiply
+  name: operator *(BinaryAmount, BinaryAmount)
+  nameWithType: IMultiplyOperators<BinaryAmount, BinaryAmount, BinaryAmount>.operator *(BinaryAmount, BinaryAmount)
+  fullName: System.Numerics.IMultiplyOperators<Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount>.operator *(Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  nameWithType.vb: IMultiplyOperators(Of BinaryAmount, BinaryAmount, BinaryAmount).*(BinaryAmount, BinaryAmount)
+  fullName.vb: System.Numerics.IMultiplyOperators(Of Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount).*(Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  name.vb: '*(BinaryAmount, BinaryAmount)'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Numerics.IMultiplyOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}.op_Multiply(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+    name: '*'
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3.op_multiply
+  - name: (
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: )
+  spec.vb:
+  - name: '*'
+  - name: (
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: )
+- uid: System.Numerics.IMultiplyOperators`3.op_Multiply(`0,`1)
+  commentId: M:System.Numerics.IMultiplyOperators`3.op_Multiply(`0,`1)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3.op_multiply
+  name: operator *(TSelf, TOther)
+  nameWithType: IMultiplyOperators<TSelf, TOther, TResult>.operator *(TSelf, TOther)
+  fullName: System.Numerics.IMultiplyOperators<TSelf, TOther, TResult>.operator *(TSelf, TOther)
+  nameWithType.vb: IMultiplyOperators(Of TSelf, TOther, TResult).*(TSelf, TOther)
+  fullName.vb: System.Numerics.IMultiplyOperators(Of TSelf, TOther, TResult).*(TSelf, TOther)
+  name.vb: '*(TSelf, TOther)'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Numerics.IMultiplyOperators`3.op_Multiply(`0,`1)
+    name: '*'
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3.op_multiply
+  - name: (
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: )
+  spec.vb:
+  - name: '*'
+  - name: (
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: )
+- uid: System.DivideByZeroException
+  commentId: T:System.DivideByZeroException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.dividebyzeroexception
+  name: DivideByZeroException
+  nameWithType: DivideByZeroException
+  fullName: System.DivideByZeroException
+- uid: Virtufin.Core.Position.BinaryAmount.op_Division*
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.op_Division
+  href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_op_Division_Virtufin_Core_Position_BinaryAmount_Virtufin_Core_Position_BinaryAmount_
+  name: operator /
+  nameWithType: BinaryAmount.operator /
+  fullName: Virtufin.Core.Position.BinaryAmount.operator /
+  nameWithType.vb: BinaryAmount./
+  fullName.vb: Virtufin.Core.Position.BinaryAmount./
+  name.vb: /
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount.op_Division*
+    name: /
+    href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_op_Division_Virtufin_Core_Position_BinaryAmount_Virtufin_Core_Position_BinaryAmount_
+- uid: System.Numerics.IDivisionOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}.op_Division(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  commentId: M:System.Numerics.IDivisionOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}.op_Division(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  parent: System.Numerics.IDivisionOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}
+  definition: System.Numerics.IDivisionOperators`3.op_Division(`0,`1)
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.idivisionoperators-3.op_division
+  name: operator /(BinaryAmount, BinaryAmount)
+  nameWithType: IDivisionOperators<BinaryAmount, BinaryAmount, BinaryAmount>.operator /(BinaryAmount, BinaryAmount)
+  fullName: System.Numerics.IDivisionOperators<Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount>.operator /(Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  nameWithType.vb: IDivisionOperators(Of BinaryAmount, BinaryAmount, BinaryAmount)./(BinaryAmount, BinaryAmount)
+  fullName.vb: System.Numerics.IDivisionOperators(Of Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)./(Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  name.vb: /(BinaryAmount, BinaryAmount)
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Numerics.IDivisionOperators{Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount}.op_Division(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+    name: /
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.idivisionoperators-3.op_division
+  - name: (
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: )
+  spec.vb:
+  - name: /
+  - name: (
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: ','
+  - name: " "
+  - uid: Virtufin.Core.Position.BinaryAmount
+    name: BinaryAmount
+    href: Virtufin.Core.Position.BinaryAmount.html
+  - name: )
+- uid: System.Numerics.IDivisionOperators`3.op_Division(`0,`1)
+  commentId: M:System.Numerics.IDivisionOperators`3.op_Division(`0,`1)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.idivisionoperators-3.op_division
+  name: operator /(TSelf, TOther)
+  nameWithType: IDivisionOperators<TSelf, TOther, TResult>.operator /(TSelf, TOther)
+  fullName: System.Numerics.IDivisionOperators<TSelf, TOther, TResult>.operator /(TSelf, TOther)
+  nameWithType.vb: IDivisionOperators(Of TSelf, TOther, TResult)./(TSelf, TOther)
+  fullName.vb: System.Numerics.IDivisionOperators(Of TSelf, TOther, TResult)./(TSelf, TOther)
+  name.vb: /(TSelf, TOther)
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Numerics.IDivisionOperators`3.op_Division(`0,`1)
+    name: /
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.idivisionoperators-3.op_division
+  - name: (
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: )
+  spec.vb:
+  - name: /
+  - name: (
+  - name: TSelf
+  - name: ','
+  - name: " "
+  - name: TOther
+  - name: )
+- uid: Virtufin.Core.Position.BinaryAmount.N
+  commentId: P:Virtufin.Core.Position.BinaryAmount.N
+  href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_N
+  name: N
+  nameWithType: BinaryAmount.N
+  fullName: Virtufin.Core.Position.BinaryAmount.N
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: Virtufin.Core.Position.BinaryAmount.ToString*
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.ToString
+  href: Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_ToString
+  name: ToString
+  nameWithType: BinaryAmount.ToString
+  fullName: Virtufin.Core.Position.BinaryAmount.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

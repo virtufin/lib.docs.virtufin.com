@@ -5,15 +5,30 @@ items:
   id: Position
   parent: Virtufin.Core
   children:
+  - Virtufin.Core.Position.BinaryAmount
   - Virtufin.Core.Position.BuyOrSell
   - Virtufin.Core.Position.DecimalAmount
   - Virtufin.Core.Position.DecimalQuantity`1
+  - Virtufin.Core.Position.FixedPointArithmetic
+  - Virtufin.Core.Position.IAmount
   - Virtufin.Core.Position.IAmount`1
   - Virtufin.Core.Position.IAsCardinal`1
+  - Virtufin.Core.Position.IFixedPointAmount
+  - Virtufin.Core.Position.IFixedPointAmount`1
+  - Virtufin.Core.Position.IL2OrderBookDiff`2
+  - Virtufin.Core.Position.IL2OrderBookSnapshot`2
+  - Virtufin.Core.Position.IL2OrderBook`2
+  - Virtufin.Core.Position.IL3OrderBook`4
   - Virtufin.Core.Position.IOrderBook
+  - Virtufin.Core.Position.IOrderBookUpdater`3
+  - Virtufin.Core.Position.IOrderLine`3
   - Virtufin.Core.Position.IQuantity`2
+  - Virtufin.Core.Position.ITransactionLedger
   - Virtufin.Core.Position.IUnit
   - Virtufin.Core.Position.LimitOrMarketOrder
+  - Virtufin.Core.Position.OrderBookState
+  - Virtufin.Core.Position.OrderBookUpdateStatus
+  - Virtufin.Core.Position.PrecisionMismatchException
   - Virtufin.Core.Position.SimpleOrder`1
   langs:
   - csharp
@@ -25,6 +40,13 @@ items:
   assemblies:
   - Virtufin.Core
 references:
+- uid: Virtufin.Core.Position.BinaryAmount
+  commentId: T:Virtufin.Core.Position.BinaryAmount
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.BinaryAmount.html
+  name: BinaryAmount
+  nameWithType: BinaryAmount
+  fullName: Virtufin.Core.Position.BinaryAmount
 - uid: Virtufin.Core.Position.BuyOrSell
   commentId: T:Virtufin.Core.Position.BuyOrSell
   parent: Virtufin.Core.Position
@@ -65,6 +87,19 @@ references:
   - name: " "
   - name: U
   - name: )
+- uid: Virtufin.Core.Position.FixedPointArithmetic
+  commentId: T:Virtufin.Core.Position.FixedPointArithmetic
+  href: Virtufin.Core.Position.FixedPointArithmetic.html
+  name: FixedPointArithmetic
+  nameWithType: FixedPointArithmetic
+  fullName: Virtufin.Core.Position.FixedPointArithmetic
+- uid: Virtufin.Core.Position.IAmount
+  commentId: T:Virtufin.Core.Position.IAmount
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.IAmount.html
+  name: IAmount
+  nameWithType: IAmount
+  fullName: Virtufin.Core.Position.IAmount
 - uid: Virtufin.Core.Position.IAmount`1
   commentId: T:Virtufin.Core.Position.IAmount`1
   href: Virtufin.Core.Position.IAmount-1.html
@@ -115,12 +150,255 @@ references:
   - name: " "
   - name: TCardinal
   - name: )
+- uid: Virtufin.Core.Position.IFixedPointAmount
+  commentId: T:Virtufin.Core.Position.IFixedPointAmount
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.IFixedPointAmount.html
+  name: IFixedPointAmount
+  nameWithType: IFixedPointAmount
+  fullName: Virtufin.Core.Position.IFixedPointAmount
+- uid: Virtufin.Core.Position.IFixedPointAmount`1
+  commentId: T:Virtufin.Core.Position.IFixedPointAmount`1
+  href: Virtufin.Core.Position.IFixedPointAmount-1.html
+  name: IFixedPointAmount<TSelf>
+  nameWithType: IFixedPointAmount<TSelf>
+  fullName: Virtufin.Core.Position.IFixedPointAmount<TSelf>
+  nameWithType.vb: IFixedPointAmount(Of TSelf)
+  fullName.vb: Virtufin.Core.Position.IFixedPointAmount(Of TSelf)
+  name.vb: IFixedPointAmount(Of TSelf)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IFixedPointAmount`1
+    name: IFixedPointAmount
+    href: Virtufin.Core.Position.IFixedPointAmount-1.html
+  - name: <
+  - name: TSelf
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.IFixedPointAmount`1
+    name: IFixedPointAmount
+    href: Virtufin.Core.Position.IFixedPointAmount-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSelf
+  - name: )
+- uid: Virtufin.Core.Position.IL2OrderBookDiff`2
+  commentId: T:Virtufin.Core.Position.IL2OrderBookDiff`2
+  href: Virtufin.Core.Position.IL2OrderBookDiff-2.html
+  name: IL2OrderBookDiff<A, L>
+  nameWithType: IL2OrderBookDiff<A, L>
+  fullName: Virtufin.Core.Position.IL2OrderBookDiff<A, L>
+  nameWithType.vb: IL2OrderBookDiff(Of A, L)
+  fullName.vb: Virtufin.Core.Position.IL2OrderBookDiff(Of A, L)
+  name.vb: IL2OrderBookDiff(Of A, L)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IL2OrderBookDiff`2
+    name: IL2OrderBookDiff
+    href: Virtufin.Core.Position.IL2OrderBookDiff-2.html
+  - name: <
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.IL2OrderBookDiff`2
+    name: IL2OrderBookDiff
+    href: Virtufin.Core.Position.IL2OrderBookDiff-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: )
+- uid: Virtufin.Core.Position.IL2OrderBookSnapshot`2
+  commentId: T:Virtufin.Core.Position.IL2OrderBookSnapshot`2
+  href: Virtufin.Core.Position.IL2OrderBookSnapshot-2.html
+  name: IL2OrderBookSnapshot<A, L>
+  nameWithType: IL2OrderBookSnapshot<A, L>
+  fullName: Virtufin.Core.Position.IL2OrderBookSnapshot<A, L>
+  nameWithType.vb: IL2OrderBookSnapshot(Of A, L)
+  fullName.vb: Virtufin.Core.Position.IL2OrderBookSnapshot(Of A, L)
+  name.vb: IL2OrderBookSnapshot(Of A, L)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IL2OrderBookSnapshot`2
+    name: IL2OrderBookSnapshot
+    href: Virtufin.Core.Position.IL2OrderBookSnapshot-2.html
+  - name: <
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.IL2OrderBookSnapshot`2
+    name: IL2OrderBookSnapshot
+    href: Virtufin.Core.Position.IL2OrderBookSnapshot-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: )
+- uid: Virtufin.Core.Position.IL2OrderBook`2
+  commentId: T:Virtufin.Core.Position.IL2OrderBook`2
+  href: Virtufin.Core.Position.IL2OrderBook-2.html
+  name: IL2OrderBook<A, L>
+  nameWithType: IL2OrderBook<A, L>
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>
+  nameWithType.vb: IL2OrderBook(Of A, L)
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L)
+  name.vb: IL2OrderBook(Of A, L)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IL2OrderBook`2
+    name: IL2OrderBook
+    href: Virtufin.Core.Position.IL2OrderBook-2.html
+  - name: <
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.IL2OrderBook`2
+    name: IL2OrderBook
+    href: Virtufin.Core.Position.IL2OrderBook-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: )
+- uid: Virtufin.Core.Position.IL3OrderBook`4
+  commentId: T:Virtufin.Core.Position.IL3OrderBook`4
+  href: Virtufin.Core.Position.IL3OrderBook-4.html
+  name: IL3OrderBook<O, T, A, L>
+  nameWithType: IL3OrderBook<O, T, A, L>
+  fullName: Virtufin.Core.Position.IL3OrderBook<O, T, A, L>
+  nameWithType.vb: IL3OrderBook(Of O, T, A, L)
+  fullName.vb: Virtufin.Core.Position.IL3OrderBook(Of O, T, A, L)
+  name.vb: IL3OrderBook(Of O, T, A, L)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IL3OrderBook`4
+    name: IL3OrderBook
+    href: Virtufin.Core.Position.IL3OrderBook-4.html
+  - name: <
+  - name: O
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.IL3OrderBook`4
+    name: IL3OrderBook
+    href: Virtufin.Core.Position.IL3OrderBook-4.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: O
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: )
 - uid: Virtufin.Core.Position.IOrderBook
   commentId: T:Virtufin.Core.Position.IOrderBook
+  parent: Virtufin.Core.Position
   href: Virtufin.Core.Position.IOrderBook.html
   name: IOrderBook
   nameWithType: IOrderBook
   fullName: Virtufin.Core.Position.IOrderBook
+- uid: Virtufin.Core.Position.IOrderBookUpdater`3
+  commentId: T:Virtufin.Core.Position.IOrderBookUpdater`3
+  href: Virtufin.Core.Position.IOrderBookUpdater-3.html
+  name: IOrderBookUpdater<TBook, S, D>
+  nameWithType: IOrderBookUpdater<TBook, S, D>
+  fullName: Virtufin.Core.Position.IOrderBookUpdater<TBook, S, D>
+  nameWithType.vb: IOrderBookUpdater(Of TBook, S, D)
+  fullName.vb: Virtufin.Core.Position.IOrderBookUpdater(Of TBook, S, D)
+  name.vb: IOrderBookUpdater(Of TBook, S, D)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IOrderBookUpdater`3
+    name: IOrderBookUpdater
+    href: Virtufin.Core.Position.IOrderBookUpdater-3.html
+  - name: <
+  - name: TBook
+  - name: ','
+  - name: " "
+  - name: S
+  - name: ','
+  - name: " "
+  - name: D
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.IOrderBookUpdater`3
+    name: IOrderBookUpdater
+    href: Virtufin.Core.Position.IOrderBookUpdater-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TBook
+  - name: ','
+  - name: " "
+  - name: S
+  - name: ','
+  - name: " "
+  - name: D
+  - name: )
+- uid: Virtufin.Core.Position.IOrderLine`3
+  commentId: T:Virtufin.Core.Position.IOrderLine`3
+  href: Virtufin.Core.Position.IOrderLine-3.html
+  name: IOrderLine<T, A, L>
+  nameWithType: IOrderLine<T, A, L>
+  fullName: Virtufin.Core.Position.IOrderLine<T, A, L>
+  nameWithType.vb: IOrderLine(Of T, A, L)
+  fullName.vb: Virtufin.Core.Position.IOrderLine(Of T, A, L)
+  name.vb: IOrderLine(Of T, A, L)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IOrderLine`3
+    name: IOrderLine
+    href: Virtufin.Core.Position.IOrderLine-3.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.IOrderLine`3
+    name: IOrderLine
+    href: Virtufin.Core.Position.IOrderLine-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: )
 - uid: Virtufin.Core.Position.IQuantity`2
   commentId: T:Virtufin.Core.Position.IQuantity`2
   href: Virtufin.Core.Position.IQuantity-2.html
@@ -152,6 +430,12 @@ references:
   - name: " "
   - name: TUnit
   - name: )
+- uid: Virtufin.Core.Position.ITransactionLedger
+  commentId: T:Virtufin.Core.Position.ITransactionLedger
+  href: Virtufin.Core.Position.ITransactionLedger.html
+  name: ITransactionLedger
+  nameWithType: ITransactionLedger
+  fullName: Virtufin.Core.Position.ITransactionLedger
 - uid: Virtufin.Core.Position.IUnit
   commentId: T:Virtufin.Core.Position.IUnit
   href: Virtufin.Core.Position.IUnit.html
@@ -165,6 +449,26 @@ references:
   name: LimitOrMarketOrder
   nameWithType: LimitOrMarketOrder
   fullName: Virtufin.Core.Position.LimitOrMarketOrder
+- uid: Virtufin.Core.Position.OrderBookState
+  commentId: T:Virtufin.Core.Position.OrderBookState
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.OrderBookState.html
+  name: OrderBookState
+  nameWithType: OrderBookState
+  fullName: Virtufin.Core.Position.OrderBookState
+- uid: Virtufin.Core.Position.OrderBookUpdateStatus
+  commentId: T:Virtufin.Core.Position.OrderBookUpdateStatus
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.OrderBookUpdateStatus.html
+  name: OrderBookUpdateStatus
+  nameWithType: OrderBookUpdateStatus
+  fullName: Virtufin.Core.Position.OrderBookUpdateStatus
+- uid: Virtufin.Core.Position.PrecisionMismatchException
+  commentId: T:Virtufin.Core.Position.PrecisionMismatchException
+  href: Virtufin.Core.Position.PrecisionMismatchException.html
+  name: PrecisionMismatchException
+  nameWithType: PrecisionMismatchException
+  fullName: Virtufin.Core.Position.PrecisionMismatchException
 - uid: Virtufin.Core.Position.SimpleOrder`1
   commentId: T:Virtufin.Core.Position.SimpleOrder`1
   href: Virtufin.Core.Position.SimpleOrder-1.html

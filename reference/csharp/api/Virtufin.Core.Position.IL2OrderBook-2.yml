@@ -1,0 +1,649 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Position.IL2OrderBook`2
+  commentId: T:Virtufin.Core.Position.IL2OrderBook`2
+  id: IL2OrderBook`2
+  parent: Virtufin.Core.Position
+  children:
+  - Virtufin.Core.Position.IL2OrderBook`2.AsksAscending
+  - Virtufin.Core.Position.IL2OrderBook`2.BidsDescending
+  - Virtufin.Core.Position.IL2OrderBook`2.DepthBase
+  - Virtufin.Core.Position.IL2OrderBook`2.DepthPrecision
+  - Virtufin.Core.Position.IL2OrderBook`2.LevelBase
+  - Virtufin.Core.Position.IL2OrderBook`2.LevelPrecision
+  - Virtufin.Core.Position.IL2OrderBook`2.TryGetAsk(`1,`0@)
+  - Virtufin.Core.Position.IL2OrderBook`2.TryGetBid(`1,`0@)
+  langs:
+  - csharp
+  - vb
+  name: IL2OrderBook<A, L>
+  nameWithType: IL2OrderBook<A, L>
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IL2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: IL2OrderBook
+    path: ../../../src/Virtufin.Core/Position/IL2OrderBook.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    A Level-2 (market-by-price) order book: aggregated price levels per side.
+
+    <code class="typeparamref">A</code> is the depth (size) amount type and
+
+    <code class="typeparamref">L</code> the level (price) amount type.
+  remarks: >-
+    <p>
+
+    The two dimensions carry independent, fixed scales:
+
+    <xref href="Virtufin.Core.Position.IL2OrderBook%602.LevelBase" data-throw-if-not-resolved="false"></xref>/<xref href="Virtufin.Core.Position.IL2OrderBook%602.LevelPrecision" data-throw-if-not-resolved="false"></xref> for prices and
+
+    <xref href="Virtufin.Core.Position.IL2OrderBook%602.DepthBase" data-throw-if-not-resolved="false"></xref>/<xref href="Virtufin.Core.Position.IL2OrderBook%602.DepthPrecision" data-throw-if-not-resolved="false"></xref> for sizes. They need
+
+    not match (a book quoted in ticks to 2 decimal places may size in lots to
+
+    6), and values are never compared across the two dimensions.
+
+    </p>
+
+    <p>
+
+    Enumeration is best-first: bids highest price first, asks lowest price first.
+
+    </p>
+  example: []
+  syntax:
+    content: 'public interface IL2OrderBook<A, L> : IOrderBook where A : IFixedPointAmount where L : IFixedPointAmount'
+    typeParameters:
+    - id: A
+    - id: L
+    content.vb: Public Interface IL2OrderBook(Of A As IFixedPointAmount, L As IFixedPointAmount) Inherits IOrderBook
+  derivedClasses:
+  - Virtufin.Base.OrderBooks.L2OrderBook`2
+  nameWithType.vb: IL2OrderBook(Of A, L)
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L)
+  name.vb: IL2OrderBook(Of A, L)
+- uid: Virtufin.Core.Position.IL2OrderBook`2.LevelBase
+  commentId: P:Virtufin.Core.Position.IL2OrderBook`2.LevelBase
+  id: LevelBase
+  parent: Virtufin.Core.Position.IL2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: LevelBase
+  nameWithType: IL2OrderBook<A, L>.LevelBase
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.LevelBase
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IL2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: LevelBase
+    path: ../../../src/Virtufin.Core/Position/IL2OrderBook.cs
+    startLine: 24
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Base of the price (level) dimension.
+  example: []
+  syntax:
+    content: int LevelBase { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property LevelBase As Integer
+  overload: Virtufin.Core.Position.IL2OrderBook`2.LevelBase*
+  nameWithType.vb: IL2OrderBook(Of A, L).LevelBase
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).LevelBase
+- uid: Virtufin.Core.Position.IL2OrderBook`2.LevelPrecision
+  commentId: P:Virtufin.Core.Position.IL2OrderBook`2.LevelPrecision
+  id: LevelPrecision
+  parent: Virtufin.Core.Position.IL2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: LevelPrecision
+  nameWithType: IL2OrderBook<A, L>.LevelPrecision
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.LevelPrecision
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IL2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: LevelPrecision
+    path: ../../../src/Virtufin.Core/Position/IL2OrderBook.cs
+    startLine: 27
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Precision of the price (level) dimension.
+  example: []
+  syntax:
+    content: int LevelPrecision { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property LevelPrecision As Integer
+  overload: Virtufin.Core.Position.IL2OrderBook`2.LevelPrecision*
+  nameWithType.vb: IL2OrderBook(Of A, L).LevelPrecision
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).LevelPrecision
+- uid: Virtufin.Core.Position.IL2OrderBook`2.DepthBase
+  commentId: P:Virtufin.Core.Position.IL2OrderBook`2.DepthBase
+  id: DepthBase
+  parent: Virtufin.Core.Position.IL2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: DepthBase
+  nameWithType: IL2OrderBook<A, L>.DepthBase
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.DepthBase
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IL2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: DepthBase
+    path: ../../../src/Virtufin.Core/Position/IL2OrderBook.cs
+    startLine: 30
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Base of the size (depth) dimension.
+  example: []
+  syntax:
+    content: int DepthBase { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property DepthBase As Integer
+  overload: Virtufin.Core.Position.IL2OrderBook`2.DepthBase*
+  nameWithType.vb: IL2OrderBook(Of A, L).DepthBase
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).DepthBase
+- uid: Virtufin.Core.Position.IL2OrderBook`2.DepthPrecision
+  commentId: P:Virtufin.Core.Position.IL2OrderBook`2.DepthPrecision
+  id: DepthPrecision
+  parent: Virtufin.Core.Position.IL2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: DepthPrecision
+  nameWithType: IL2OrderBook<A, L>.DepthPrecision
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.DepthPrecision
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IL2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: DepthPrecision
+    path: ../../../src/Virtufin.Core/Position/IL2OrderBook.cs
+    startLine: 33
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Precision of the size (depth) dimension.
+  example: []
+  syntax:
+    content: int DepthPrecision { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property DepthPrecision As Integer
+  overload: Virtufin.Core.Position.IL2OrderBook`2.DepthPrecision*
+  nameWithType.vb: IL2OrderBook(Of A, L).DepthPrecision
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).DepthPrecision
+- uid: Virtufin.Core.Position.IL2OrderBook`2.BidsDescending
+  commentId: P:Virtufin.Core.Position.IL2OrderBook`2.BidsDescending
+  id: BidsDescending
+  parent: Virtufin.Core.Position.IL2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: BidsDescending
+  nameWithType: IL2OrderBook<A, L>.BidsDescending
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.BidsDescending
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IL2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: BidsDescending
+    path: ../../../src/Virtufin.Core/Position/IL2OrderBook.cs
+    startLine: 36
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Bid levels, highest price first.
+  example: []
+  syntax:
+    content: IReadOnlyList<(L Price, A Size)> BidsDescending { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.ValueTuple{{L},{A}}}
+    content.vb: ReadOnly Property BidsDescending As IReadOnlyList(Of (Price As L, Size As A))
+  overload: Virtufin.Core.Position.IL2OrderBook`2.BidsDescending*
+  nameWithType.vb: IL2OrderBook(Of A, L).BidsDescending
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).BidsDescending
+- uid: Virtufin.Core.Position.IL2OrderBook`2.AsksAscending
+  commentId: P:Virtufin.Core.Position.IL2OrderBook`2.AsksAscending
+  id: AsksAscending
+  parent: Virtufin.Core.Position.IL2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: AsksAscending
+  nameWithType: IL2OrderBook<A, L>.AsksAscending
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.AsksAscending
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IL2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: AsksAscending
+    path: ../../../src/Virtufin.Core/Position/IL2OrderBook.cs
+    startLine: 39
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Ask levels, lowest price first.
+  example: []
+  syntax:
+    content: IReadOnlyList<(L Price, A Size)> AsksAscending { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.ValueTuple{{L},{A}}}
+    content.vb: ReadOnly Property AsksAscending As IReadOnlyList(Of (Price As L, Size As A))
+  overload: Virtufin.Core.Position.IL2OrderBook`2.AsksAscending*
+  nameWithType.vb: IL2OrderBook(Of A, L).AsksAscending
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).AsksAscending
+- uid: Virtufin.Core.Position.IL2OrderBook`2.TryGetBid(`1,`0@)
+  commentId: M:Virtufin.Core.Position.IL2OrderBook`2.TryGetBid(`1,`0@)
+  id: TryGetBid(`1,`0@)
+  parent: Virtufin.Core.Position.IL2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: TryGetBid(L, out A)
+  nameWithType: IL2OrderBook<A, L>.TryGetBid(L, out A)
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.TryGetBid(L, out A)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IL2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: TryGetBid
+    path: ../../../src/Virtufin.Core/Position/IL2OrderBook.cs
+    startLine: 44
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Look up the aggregate size at a bid price.
+  example: []
+  syntax:
+    content: bool TryGetBid(L price, out A size)
+    parameters:
+    - id: price
+      type: '{L}'
+      description: Price at the book's level scale.
+    - id: size
+      type: '{A}'
+      description: The level's aggregate size when present.
+    return:
+      type: System.Boolean
+    content.vb: Function TryGetBid(price As L, size As A) As Boolean
+  overload: Virtufin.Core.Position.IL2OrderBook`2.TryGetBid*
+  nameWithType.vb: IL2OrderBook(Of A, L).TryGetBid(L, A)
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).TryGetBid(L, A)
+  name.vb: TryGetBid(L, A)
+- uid: Virtufin.Core.Position.IL2OrderBook`2.TryGetAsk(`1,`0@)
+  commentId: M:Virtufin.Core.Position.IL2OrderBook`2.TryGetAsk(`1,`0@)
+  id: TryGetAsk(`1,`0@)
+  parent: Virtufin.Core.Position.IL2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: TryGetAsk(L, out A)
+  nameWithType: IL2OrderBook<A, L>.TryGetAsk(L, out A)
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.TryGetAsk(L, out A)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IL2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: TryGetAsk
+    path: ../../../src/Virtufin.Core/Position/IL2OrderBook.cs
+    startLine: 49
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Look up the aggregate size at an ask price.
+  example: []
+  syntax:
+    content: bool TryGetAsk(L price, out A size)
+    parameters:
+    - id: price
+      type: '{L}'
+      description: Price at the book's level scale.
+    - id: size
+      type: '{A}'
+      description: The level's aggregate size when present.
+    return:
+      type: System.Boolean
+    content.vb: Function TryGetAsk(price As L, size As A) As Boolean
+  overload: Virtufin.Core.Position.IL2OrderBook`2.TryGetAsk*
+  nameWithType.vb: IL2OrderBook(Of A, L).TryGetAsk(L, A)
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).TryGetAsk(L, A)
+  name.vb: TryGetAsk(L, A)
+references:
+- uid: Virtufin.Core.Position.IL2OrderBook`2.LevelBase
+  commentId: P:Virtufin.Core.Position.IL2OrderBook`2.LevelBase
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_LevelBase
+  name: LevelBase
+  nameWithType: IL2OrderBook<A, L>.LevelBase
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.LevelBase
+  nameWithType.vb: IL2OrderBook(Of A, L).LevelBase
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).LevelBase
+- uid: Virtufin.Core.Position.IL2OrderBook`2.LevelPrecision
+  commentId: P:Virtufin.Core.Position.IL2OrderBook`2.LevelPrecision
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_LevelPrecision
+  name: LevelPrecision
+  nameWithType: IL2OrderBook<A, L>.LevelPrecision
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.LevelPrecision
+  nameWithType.vb: IL2OrderBook(Of A, L).LevelPrecision
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).LevelPrecision
+- uid: Virtufin.Core.Position.IL2OrderBook`2.DepthBase
+  commentId: P:Virtufin.Core.Position.IL2OrderBook`2.DepthBase
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_DepthBase
+  name: DepthBase
+  nameWithType: IL2OrderBook<A, L>.DepthBase
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.DepthBase
+  nameWithType.vb: IL2OrderBook(Of A, L).DepthBase
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).DepthBase
+- uid: Virtufin.Core.Position.IL2OrderBook`2.DepthPrecision
+  commentId: P:Virtufin.Core.Position.IL2OrderBook`2.DepthPrecision
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_DepthPrecision
+  name: DepthPrecision
+  nameWithType: IL2OrderBook<A, L>.DepthPrecision
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.DepthPrecision
+  nameWithType.vb: IL2OrderBook(Of A, L).DepthPrecision
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).DepthPrecision
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: Virtufin.Core.Position.IL2OrderBook`2.LevelBase*
+  commentId: Overload:Virtufin.Core.Position.IL2OrderBook`2.LevelBase
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_LevelBase
+  name: LevelBase
+  nameWithType: IL2OrderBook<A, L>.LevelBase
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.LevelBase
+  nameWithType.vb: IL2OrderBook(Of A, L).LevelBase
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).LevelBase
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Core.Position.IL2OrderBook`2.LevelPrecision*
+  commentId: Overload:Virtufin.Core.Position.IL2OrderBook`2.LevelPrecision
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_LevelPrecision
+  name: LevelPrecision
+  nameWithType: IL2OrderBook<A, L>.LevelPrecision
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.LevelPrecision
+  nameWithType.vb: IL2OrderBook(Of A, L).LevelPrecision
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).LevelPrecision
+- uid: Virtufin.Core.Position.IL2OrderBook`2.DepthBase*
+  commentId: Overload:Virtufin.Core.Position.IL2OrderBook`2.DepthBase
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_DepthBase
+  name: DepthBase
+  nameWithType: IL2OrderBook<A, L>.DepthBase
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.DepthBase
+  nameWithType.vb: IL2OrderBook(Of A, L).DepthBase
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).DepthBase
+- uid: Virtufin.Core.Position.IL2OrderBook`2.DepthPrecision*
+  commentId: Overload:Virtufin.Core.Position.IL2OrderBook`2.DepthPrecision
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_DepthPrecision
+  name: DepthPrecision
+  nameWithType: IL2OrderBook<A, L>.DepthPrecision
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.DepthPrecision
+  nameWithType.vb: IL2OrderBook(Of A, L).DepthPrecision
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).DepthPrecision
+- uid: Virtufin.Core.Position.IL2OrderBook`2.BidsDescending*
+  commentId: Overload:Virtufin.Core.Position.IL2OrderBook`2.BidsDescending
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_BidsDescending
+  name: BidsDescending
+  nameWithType: IL2OrderBook<A, L>.BidsDescending
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.BidsDescending
+  nameWithType.vb: IL2OrderBook(Of A, L).BidsDescending
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).BidsDescending
+- uid: System.Collections.Generic.IReadOnlyList{System.ValueTuple{{L},{A}}}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.ValueTuple{`1,`0}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<(L Price, A Size)>
+  nameWithType: IReadOnlyList<(L Price, A Size)>
+  fullName: System.Collections.Generic.IReadOnlyList<(L Price, A Size)>
+  nameWithType.vb: IReadOnlyList(Of (Price As L, Size As A))
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of (Price As L, Size As A))
+  name.vb: IReadOnlyList(Of (Price As L, Size As A))
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: (
+  - name: L
+  - name: " "
+  - uid: System.ValueTuple{`1,`0}.Price
+    name: Price
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple--1,-0-.price
+  - name: ','
+  - name: " "
+  - name: A
+  - name: " "
+  - uid: System.ValueTuple{`1,`0}.Size
+    name: Size
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple--1,-0-.size
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{`1,`0}.Price
+    name: Price
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple--1,-0-.price
+  - name: " "
+  - name: As
+  - name: " "
+  - name: L
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{`1,`0}.Size
+    name: Size
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple--1,-0-.size
+  - name: " "
+  - name: As
+  - name: " "
+  - name: A
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Virtufin.Core.Position.IL2OrderBook`2.AsksAscending*
+  commentId: Overload:Virtufin.Core.Position.IL2OrderBook`2.AsksAscending
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_AsksAscending
+  name: AsksAscending
+  nameWithType: IL2OrderBook<A, L>.AsksAscending
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.AsksAscending
+  nameWithType.vb: IL2OrderBook(Of A, L).AsksAscending
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).AsksAscending
+- uid: Virtufin.Core.Position.IL2OrderBook`2.TryGetBid*
+  commentId: Overload:Virtufin.Core.Position.IL2OrderBook`2.TryGetBid
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_TryGetBid__1__0__
+  name: TryGetBid
+  nameWithType: IL2OrderBook<A, L>.TryGetBid
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.TryGetBid
+  nameWithType.vb: IL2OrderBook(Of A, L).TryGetBid
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).TryGetBid
+- uid: '{L}'
+  commentId: '!:L'
+  definition: L
+  name: L
+  nameWithType: L
+  fullName: L
+- uid: '{A}'
+  commentId: '!:A'
+  definition: A
+  name: A
+  nameWithType: A
+  fullName: A
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: L
+  name: L
+  nameWithType: L
+  fullName: L
+- uid: A
+  name: A
+  nameWithType: A
+  fullName: A
+- uid: Virtufin.Core.Position.IL2OrderBook`2.TryGetAsk*
+  commentId: Overload:Virtufin.Core.Position.IL2OrderBook`2.TryGetAsk
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_TryGetAsk__1__0__
+  name: TryGetAsk
+  nameWithType: IL2OrderBook<A, L>.TryGetAsk
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.TryGetAsk
+  nameWithType.vb: IL2OrderBook(Of A, L).TryGetAsk
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).TryGetAsk

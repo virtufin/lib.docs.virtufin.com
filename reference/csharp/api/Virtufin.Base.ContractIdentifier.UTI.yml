@@ -675,6 +675,7 @@ references:
   name.vb: String
 - uid: System.ArgumentException
   commentId: T:System.ArgumentException
+  parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.argumentexception
   name: ArgumentException

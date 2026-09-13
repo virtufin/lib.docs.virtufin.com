@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class PrecisionMismatchException | Virtufin .NET - C# API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PrecisionMismatchException | Virtufin .NET - C# API Reference ">
+      
+      <meta name="description" content="Thrown when two  values are combined by an operation that requires a common scaling factor (equality, ordering, addition, subtraction) but their base and/or precision differ.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.png" alt="Virtufin.Dotnet">
+            Virtufin.Dotnet
+          </a>
+          <div class="git-info">
+            <a href="{git_repo_url}/commit/1b34cc289b8744702f9a151339931a661e86283c" target="_blank" rel="noopener" class="commit-badge" title="View commit 1b34cc289b8744702f9a151339931a661e86283c">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
+                <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">1b34cc289b8744702f9a151339931a661e86283c</text>
+              </svg>
+            </a>
+          </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Virtufin.Core.Position.PrecisionMismatchException">
+
+
+
+  <h1 id="Virtufin_Core_Position_PrecisionMismatchException" data-uid="Virtufin.Core.Position.PrecisionMismatchException" class="text-break">
+Class PrecisionMismatchException  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.Core.html">Core</a>.<a class="xref" href="Virtufin.Core.Position.html">Position</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Virtufin.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Thrown when two <a class="xref" href="Virtufin.Core.Position.IFixedPointAmount.html">IFixedPointAmount</a> values are combined by an
+operation that requires a common scaling factor (equality, ordering,
+addition, subtraction) but their base and/or precision differ.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class PrecisionMismatchException : ArgumentException, ISerializable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.systemexception">SystemException</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></div>
+      <div><span class="xref">PrecisionMismatchException</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception.throwifnullorempty">ArgumentException.ThrowIfNullOrEmpty(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception.throwifnullorwhitespace">ArgumentException.ThrowIfNullOrWhiteSpace(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception.message">ArgumentException.Message</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception.paramname">ArgumentException.ParamName</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception">Exception.GetBaseException()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.gettype">Exception.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.tostring">Exception.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.data">Exception.Data</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.helplink">Exception.HelpLink</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.hresult">Exception.HResult</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.innerexception">Exception.InnerException</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.source">Exception.Source</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.stacktrace">Exception.StackTrace</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.targetsite">Exception.TargetSite</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="Virtufin_Core_Position_PrecisionMismatchException_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>The invariant is enforced at runtime because C# lacks dependent types: a
+fixed-point amount's base and precision cannot be encoded in its static
+type, so the compiler cannot reject a mismatched operation.</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Virtufin_Core_Position_PrecisionMismatchException__ctor_" data-uid="Virtufin.Core.Position.PrecisionMismatchException.#ctor*"></a>
+
+  <h3 id="Virtufin_Core_Position_PrecisionMismatchException__ctor_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Virtufin.Core.Position.PrecisionMismatchException.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+  PrecisionMismatchException(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Construct the exception for a pair of mismatched operands.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PrecisionMismatchException(int leftBase, int leftPrecision, int rightBase, int rightPrecision)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>leftBase</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Left operand base.</p>
+</dd>
+    <dt><code>leftPrecision</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Left operand precision.</p>
+</dd>
+    <dt><code>rightBase</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Right operand base.</p>
+</dd>
+    <dt><code>rightPrecision</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Right operand precision.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Virtufin_Core_Position_PrecisionMismatchException_LeftBase_" data-uid="Virtufin.Core.Position.PrecisionMismatchException.LeftBase*"></a>
+
+  <h3 id="Virtufin_Core_Position_PrecisionMismatchException_LeftBase" data-uid="Virtufin.Core.Position.PrecisionMismatchException.LeftBase">
+  LeftBase
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Base of the left-hand operand.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LeftBase { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Core_Position_PrecisionMismatchException_LeftPrecision_" data-uid="Virtufin.Core.Position.PrecisionMismatchException.LeftPrecision*"></a>
+
+  <h3 id="Virtufin_Core_Position_PrecisionMismatchException_LeftPrecision" data-uid="Virtufin.Core.Position.PrecisionMismatchException.LeftPrecision">
+  LeftPrecision
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Precision of the left-hand operand.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LeftPrecision { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Core_Position_PrecisionMismatchException_RightBase_" data-uid="Virtufin.Core.Position.PrecisionMismatchException.RightBase*"></a>
+
+  <h3 id="Virtufin_Core_Position_PrecisionMismatchException_RightBase" data-uid="Virtufin.Core.Position.PrecisionMismatchException.RightBase">
+  RightBase
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Base of the right-hand operand.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RightBase { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Core_Position_PrecisionMismatchException_RightPrecision_" data-uid="Virtufin.Core.Position.PrecisionMismatchException.RightPrecision*"></a>
+
+  <h3 id="Virtufin_Core_Position_PrecisionMismatchException_RightPrecision" data-uid="Virtufin.Core.Position.PrecisionMismatchException.RightPrecision">
+  RightPrecision
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Precision of the right-hand operand.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RightPrecision { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2026 Häner Consulting. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

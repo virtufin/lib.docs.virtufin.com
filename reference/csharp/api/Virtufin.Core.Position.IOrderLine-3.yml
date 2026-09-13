@@ -1,0 +1,276 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Position.IOrderLine`3
+  commentId: T:Virtufin.Core.Position.IOrderLine`3
+  id: IOrderLine`3
+  parent: Virtufin.Core.Position
+  children:
+  - Virtufin.Core.Position.IOrderLine`3.Id
+  - Virtufin.Core.Position.IOrderLine`3.Price
+  - Virtufin.Core.Position.IOrderLine`3.Side
+  - Virtufin.Core.Position.IOrderLine`3.Size
+  langs:
+  - csharp
+  - vb
+  name: IOrderLine<T, A, L>
+  nameWithType: IOrderLine<T, A, L>
+  fullName: Virtufin.Core.Position.IOrderLine<T, A, L>
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IOrderLine.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: IOrderLine
+    path: ../../../src/Virtufin.Core/Position/IOrderLine.cs
+    startLine: 8
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: A single order resting on a Level-3 (market-by-order) book.
+  example: []
+  syntax:
+    content: 'public interface IOrderLine<T, A, L> where T : notnull where A : IFixedPointAmount where L : IFixedPointAmount'
+    typeParameters:
+    - id: T
+      description: Order identity type.
+    - id: A
+      description: Size amount type.
+    - id: L
+      description: Price amount type.
+    content.vb: Public Interface IOrderLine(Of T, A As IFixedPointAmount, L As IFixedPointAmount)
+  nameWithType.vb: IOrderLine(Of T, A, L)
+  fullName.vb: Virtufin.Core.Position.IOrderLine(Of T, A, L)
+  name.vb: IOrderLine(Of T, A, L)
+- uid: Virtufin.Core.Position.IOrderLine`3.Id
+  commentId: P:Virtufin.Core.Position.IOrderLine`3.Id
+  id: Id
+  parent: Virtufin.Core.Position.IOrderLine`3
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: IOrderLine<T, A, L>.Id
+  fullName: Virtufin.Core.Position.IOrderLine<T, A, L>.Id
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IOrderLine.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Id
+    path: ../../../src/Virtufin.Core/Position/IOrderLine.cs
+    startLine: 14
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: The order's identity on the venue.
+  example: []
+  syntax:
+    content: T Id { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: ReadOnly Property Id As T
+  overload: Virtufin.Core.Position.IOrderLine`3.Id*
+  nameWithType.vb: IOrderLine(Of T, A, L).Id
+  fullName.vb: Virtufin.Core.Position.IOrderLine(Of T, A, L).Id
+- uid: Virtufin.Core.Position.IOrderLine`3.Side
+  commentId: P:Virtufin.Core.Position.IOrderLine`3.Side
+  id: Side
+  parent: Virtufin.Core.Position.IOrderLine`3
+  langs:
+  - csharp
+  - vb
+  name: Side
+  nameWithType: IOrderLine<T, A, L>.Side
+  fullName: Virtufin.Core.Position.IOrderLine<T, A, L>.Side
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IOrderLine.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Side
+    path: ../../../src/Virtufin.Core/Position/IOrderLine.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Buy or sell side.
+  example: []
+  syntax:
+    content: BuyOrSell Side { get; }
+    parameters: []
+    return:
+      type: Virtufin.Core.Position.BuyOrSell
+    content.vb: ReadOnly Property Side As BuyOrSell
+  overload: Virtufin.Core.Position.IOrderLine`3.Side*
+  nameWithType.vb: IOrderLine(Of T, A, L).Side
+  fullName.vb: Virtufin.Core.Position.IOrderLine(Of T, A, L).Side
+- uid: Virtufin.Core.Position.IOrderLine`3.Price
+  commentId: P:Virtufin.Core.Position.IOrderLine`3.Price
+  id: Price
+  parent: Virtufin.Core.Position.IOrderLine`3
+  langs:
+  - csharp
+  - vb
+  name: Price
+  nameWithType: IOrderLine<T, A, L>.Price
+  fullName: Virtufin.Core.Position.IOrderLine<T, A, L>.Price
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IOrderLine.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Price
+    path: ../../../src/Virtufin.Core/Position/IOrderLine.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: The order's limit price.
+  example: []
+  syntax:
+    content: L Price { get; }
+    parameters: []
+    return:
+      type: '{L}'
+    content.vb: ReadOnly Property Price As L
+  overload: Virtufin.Core.Position.IOrderLine`3.Price*
+  nameWithType.vb: IOrderLine(Of T, A, L).Price
+  fullName.vb: Virtufin.Core.Position.IOrderLine(Of T, A, L).Price
+- uid: Virtufin.Core.Position.IOrderLine`3.Size
+  commentId: P:Virtufin.Core.Position.IOrderLine`3.Size
+  id: Size
+  parent: Virtufin.Core.Position.IOrderLine`3
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: IOrderLine<T, A, L>.Size
+  fullName: Virtufin.Core.Position.IOrderLine<T, A, L>.Size
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IOrderLine.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Size
+    path: ../../../src/Virtufin.Core/Position/IOrderLine.cs
+    startLine: 23
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: The order's remaining size.
+  example: []
+  syntax:
+    content: A Size { get; }
+    parameters: []
+    return:
+      type: '{A}'
+    content.vb: ReadOnly Property Size As A
+  overload: Virtufin.Core.Position.IOrderLine`3.Size*
+  nameWithType.vb: IOrderLine(Of T, A, L).Size
+  fullName.vb: Virtufin.Core.Position.IOrderLine(Of T, A, L).Size
+references:
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: Virtufin.Core.Position.IOrderLine`3.Id*
+  commentId: Overload:Virtufin.Core.Position.IOrderLine`3.Id
+  href: Virtufin.Core.Position.IOrderLine-3.html#Virtufin_Core_Position_IOrderLine_3_Id
+  name: Id
+  nameWithType: IOrderLine<T, A, L>.Id
+  fullName: Virtufin.Core.Position.IOrderLine<T, A, L>.Id
+  nameWithType.vb: IOrderLine(Of T, A, L).Id
+  fullName.vb: Virtufin.Core.Position.IOrderLine(Of T, A, L).Id
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Virtufin.Core.Position.IOrderLine`3.Side*
+  commentId: Overload:Virtufin.Core.Position.IOrderLine`3.Side
+  href: Virtufin.Core.Position.IOrderLine-3.html#Virtufin_Core_Position_IOrderLine_3_Side
+  name: Side
+  nameWithType: IOrderLine<T, A, L>.Side
+  fullName: Virtufin.Core.Position.IOrderLine<T, A, L>.Side
+  nameWithType.vb: IOrderLine(Of T, A, L).Side
+  fullName.vb: Virtufin.Core.Position.IOrderLine(Of T, A, L).Side
+- uid: Virtufin.Core.Position.BuyOrSell
+  commentId: T:Virtufin.Core.Position.BuyOrSell
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.BuyOrSell.html
+  name: BuyOrSell
+  nameWithType: BuyOrSell
+  fullName: Virtufin.Core.Position.BuyOrSell
+- uid: Virtufin.Core.Position.IOrderLine`3.Price*
+  commentId: Overload:Virtufin.Core.Position.IOrderLine`3.Price
+  href: Virtufin.Core.Position.IOrderLine-3.html#Virtufin_Core_Position_IOrderLine_3_Price
+  name: Price
+  nameWithType: IOrderLine<T, A, L>.Price
+  fullName: Virtufin.Core.Position.IOrderLine<T, A, L>.Price
+  nameWithType.vb: IOrderLine(Of T, A, L).Price
+  fullName.vb: Virtufin.Core.Position.IOrderLine(Of T, A, L).Price
+- uid: '{L}'
+  commentId: '!:L'
+  definition: L
+  name: L
+  nameWithType: L
+  fullName: L
+- uid: L
+  name: L
+  nameWithType: L
+  fullName: L
+- uid: Virtufin.Core.Position.IOrderLine`3.Size*
+  commentId: Overload:Virtufin.Core.Position.IOrderLine`3.Size
+  href: Virtufin.Core.Position.IOrderLine-3.html#Virtufin_Core_Position_IOrderLine_3_Size
+  name: Size
+  nameWithType: IOrderLine<T, A, L>.Size
+  fullName: Virtufin.Core.Position.IOrderLine<T, A, L>.Size
+  nameWithType.vb: IOrderLine(Of T, A, L).Size
+  fullName.vb: Virtufin.Core.Position.IOrderLine(Of T, A, L).Size
+- uid: '{A}'
+  commentId: '!:A'
+  definition: A
+  name: A
+  nameWithType: A
+  fullName: A
+- uid: A
+  name: A
+  nameWithType: A
+  fullName: A

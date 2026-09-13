@@ -125,6 +125,7 @@ references:
     href: Virtufin.Core.Contracts.html
 - uid: System.ArgumentException
   commentId: T:System.ArgumentException
+  parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.argumentexception
   name: ArgumentException
@@ -136,3 +137,10 @@ references:
   name: Create
   nameWithType: IContractBuilder.Create
   fullName: Virtufin.Core.Contracts.IContractBuilder.Create
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

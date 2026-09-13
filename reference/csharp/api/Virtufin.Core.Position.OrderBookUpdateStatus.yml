@@ -1,0 +1,207 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Position.OrderBookUpdateStatus
+  commentId: T:Virtufin.Core.Position.OrderBookUpdateStatus
+  id: OrderBookUpdateStatus
+  parent: Virtufin.Core.Position
+  children:
+  - Virtufin.Core.Position.OrderBookUpdateStatus.Applied
+  - Virtufin.Core.Position.OrderBookUpdateStatus.Dropped
+  - Virtufin.Core.Position.OrderBookUpdateStatus.GapDetected
+  - Virtufin.Core.Position.OrderBookUpdateStatus.Stale
+  langs:
+  - csharp
+  - vb
+  name: OrderBookUpdateStatus
+  nameWithType: OrderBookUpdateStatus
+  fullName: Virtufin.Core.Position.OrderBookUpdateStatus
+  type: Enum
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/OrderBookUpdateStatus.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: OrderBookUpdateStatus
+    path: ../../../src/Virtufin.Core/Position/OrderBookUpdateStatus.cs
+    startLine: 5
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Outcome of applying one diff to a maintained order book.
+  example: []
+  syntax:
+    content: public enum OrderBookUpdateStatus
+    content.vb: Public Enum OrderBookUpdateStatus
+- uid: Virtufin.Core.Position.OrderBookUpdateStatus.Applied
+  commentId: F:Virtufin.Core.Position.OrderBookUpdateStatus.Applied
+  id: Applied
+  parent: Virtufin.Core.Position.OrderBookUpdateStatus
+  langs:
+  - csharp
+  - vb
+  name: Applied
+  nameWithType: OrderBookUpdateStatus.Applied
+  fullName: Virtufin.Core.Position.OrderBookUpdateStatus.Applied
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/OrderBookUpdateStatus.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Applied
+    path: ../../../src/Virtufin.Core/Position/OrderBookUpdateStatus.cs
+    startLine: 10
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    Applied; the book's last update id advanced (a replay of the
+        most recently applied diff re-applies its levels and reports
+        <xref href="Virtufin.Core.Position.OrderBookUpdateStatus.Applied" data-throw-if-not-resolved="false"></xref> without moving the id).
+  example: []
+  syntax:
+    content: Applied = 0
+    return:
+      type: Virtufin.Core.Position.OrderBookUpdateStatus
+- uid: Virtufin.Core.Position.OrderBookUpdateStatus.Stale
+  commentId: F:Virtufin.Core.Position.OrderBookUpdateStatus.Stale
+  id: Stale
+  parent: Virtufin.Core.Position.OrderBookUpdateStatus
+  langs:
+  - csharp
+  - vb
+  name: Stale
+  nameWithType: OrderBookUpdateStatus.Stale
+  fullName: Virtufin.Core.Position.OrderBookUpdateStatus.Stale
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/OrderBookUpdateStatus.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Stale
+    path: ../../../src/Virtufin.Core/Position/OrderBookUpdateStatus.cs
+    startLine: 13
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Entirely older than the book's current state — no-op.
+  example: []
+  syntax:
+    content: Stale = 1
+    return:
+      type: Virtufin.Core.Position.OrderBookUpdateStatus
+- uid: Virtufin.Core.Position.OrderBookUpdateStatus.GapDetected
+  commentId: F:Virtufin.Core.Position.OrderBookUpdateStatus.GapDetected
+  id: GapDetected
+  parent: Virtufin.Core.Position.OrderBookUpdateStatus
+  langs:
+  - csharp
+  - vb
+  name: GapDetected
+  nameWithType: OrderBookUpdateStatus.GapDetected
+  fullName: Virtufin.Core.Position.OrderBookUpdateStatus.GapDetected
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/OrderBookUpdateStatus.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: GapDetected
+    path: ../../../src/Virtufin.Core/Position/OrderBookUpdateStatus.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    A sequence gap was detected; the book needs a fresh snapshot to
+        resync and has transitioned to <xref href="Virtufin.Core.Position.OrderBookState.AwaitingSnapshot" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: GapDetected = 2
+    return:
+      type: Virtufin.Core.Position.OrderBookUpdateStatus
+- uid: Virtufin.Core.Position.OrderBookUpdateStatus.Dropped
+  commentId: F:Virtufin.Core.Position.OrderBookUpdateStatus.Dropped
+  id: Dropped
+  parent: Virtufin.Core.Position.OrderBookUpdateStatus
+  langs:
+  - csharp
+  - vb
+  name: Dropped
+  nameWithType: OrderBookUpdateStatus.Dropped
+  fullName: Virtufin.Core.Position.OrderBookUpdateStatus.Dropped
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/OrderBookUpdateStatus.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Dropped
+    path: ../../../src/Virtufin.Core/Position/OrderBookUpdateStatus.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Dropped because the book is not <xref href="Virtufin.Core.Position.OrderBookState.Live" data-throw-if-not-resolved="false"></xref> yet.
+  example: []
+  syntax:
+    content: Dropped = 3
+    return:
+      type: Virtufin.Core.Position.OrderBookUpdateStatus
+references:
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: Virtufin.Core.Position.OrderBookUpdateStatus.Applied
+  commentId: F:Virtufin.Core.Position.OrderBookUpdateStatus.Applied
+  href: Virtufin.Core.Position.OrderBookUpdateStatus.html#Virtufin_Core_Position_OrderBookUpdateStatus_Applied
+  name: Applied
+  nameWithType: OrderBookUpdateStatus.Applied
+  fullName: Virtufin.Core.Position.OrderBookUpdateStatus.Applied
+- uid: Virtufin.Core.Position.OrderBookUpdateStatus
+  commentId: T:Virtufin.Core.Position.OrderBookUpdateStatus
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.OrderBookUpdateStatus.html
+  name: OrderBookUpdateStatus
+  nameWithType: OrderBookUpdateStatus
+  fullName: Virtufin.Core.Position.OrderBookUpdateStatus
+- uid: Virtufin.Core.Position.OrderBookState.AwaitingSnapshot
+  commentId: F:Virtufin.Core.Position.OrderBookState.AwaitingSnapshot
+  href: Virtufin.Core.Position.OrderBookState.html#Virtufin_Core_Position_OrderBookState_AwaitingSnapshot
+  name: AwaitingSnapshot
+  nameWithType: OrderBookState.AwaitingSnapshot
+  fullName: Virtufin.Core.Position.OrderBookState.AwaitingSnapshot
+- uid: Virtufin.Core.Position.OrderBookState.Live
+  commentId: F:Virtufin.Core.Position.OrderBookState.Live
+  href: Virtufin.Core.Position.OrderBookState.html#Virtufin_Core_Position_OrderBookState_Live
+  name: Live
+  nameWithType: OrderBookState.Live
+  fullName: Virtufin.Core.Position.OrderBookState.Live

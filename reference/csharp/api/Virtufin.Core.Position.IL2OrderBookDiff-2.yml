@@ -1,0 +1,413 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Position.IL2OrderBookDiff`2
+  commentId: T:Virtufin.Core.Position.IL2OrderBookDiff`2
+  id: IL2OrderBookDiff`2
+  parent: Virtufin.Core.Position
+  children:
+  - Virtufin.Core.Position.IL2OrderBookDiff`2.Asks
+  - Virtufin.Core.Position.IL2OrderBookDiff`2.Bids
+  - Virtufin.Core.Position.IL2OrderBookDiff`2.FirstUpdateId
+  - Virtufin.Core.Position.IL2OrderBookDiff`2.LastUpdateId
+  langs:
+  - csharp
+  - vb
+  name: IL2OrderBookDiff<A, L>
+  nameWithType: IL2OrderBookDiff<A, L>
+  fullName: Virtufin.Core.Position.IL2OrderBookDiff<A, L>
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IL2OrderBookDiff.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: IL2OrderBookDiff
+    path: ../../../src/Virtufin.Core/Position/IL2OrderBookDiff.cs
+    startLine: 8
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    A Level-2 depth diff: a set of price-level mutations to apply on top of an
+
+    <xref href="Virtufin.Core.Position.IL2OrderBook%602" data-throw-if-not-resolved="false"></xref>. A size of zero removes the level.
+  example: []
+  syntax:
+    content: 'public interface IL2OrderBookDiff<A, L> where A : IFixedPointAmount where L : IFixedPointAmount'
+    typeParameters:
+    - id: A
+      description: Depth (size) amount type.
+    - id: L
+      description: Level (price) amount type.
+    content.vb: Public Interface IL2OrderBookDiff(Of A As IFixedPointAmount, L As IFixedPointAmount)
+  nameWithType.vb: IL2OrderBookDiff(Of A, L)
+  fullName.vb: Virtufin.Core.Position.IL2OrderBookDiff(Of A, L)
+  name.vb: IL2OrderBookDiff(Of A, L)
+- uid: Virtufin.Core.Position.IL2OrderBookDiff`2.FirstUpdateId
+  commentId: P:Virtufin.Core.Position.IL2OrderBookDiff`2.FirstUpdateId
+  id: FirstUpdateId
+  parent: Virtufin.Core.Position.IL2OrderBookDiff`2
+  langs:
+  - csharp
+  - vb
+  name: FirstUpdateId
+  nameWithType: IL2OrderBookDiff<A, L>.FirstUpdateId
+  fullName: Virtufin.Core.Position.IL2OrderBookDiff<A, L>.FirstUpdateId
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IL2OrderBookDiff.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: FirstUpdateId
+    path: ../../../src/Virtufin.Core/Position/IL2OrderBookDiff.cs
+    startLine: 13
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: The venue's first update id covered by this diff.
+  example: []
+  syntax:
+    content: long FirstUpdateId { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: ReadOnly Property FirstUpdateId As Long
+  overload: Virtufin.Core.Position.IL2OrderBookDiff`2.FirstUpdateId*
+  nameWithType.vb: IL2OrderBookDiff(Of A, L).FirstUpdateId
+  fullName.vb: Virtufin.Core.Position.IL2OrderBookDiff(Of A, L).FirstUpdateId
+- uid: Virtufin.Core.Position.IL2OrderBookDiff`2.LastUpdateId
+  commentId: P:Virtufin.Core.Position.IL2OrderBookDiff`2.LastUpdateId
+  id: LastUpdateId
+  parent: Virtufin.Core.Position.IL2OrderBookDiff`2
+  langs:
+  - csharp
+  - vb
+  name: LastUpdateId
+  nameWithType: IL2OrderBookDiff<A, L>.LastUpdateId
+  fullName: Virtufin.Core.Position.IL2OrderBookDiff<A, L>.LastUpdateId
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IL2OrderBookDiff.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: LastUpdateId
+    path: ../../../src/Virtufin.Core/Position/IL2OrderBookDiff.cs
+    startLine: 16
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: The venue's final (last) update id covered by this diff.
+  example: []
+  syntax:
+    content: long LastUpdateId { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: ReadOnly Property LastUpdateId As Long
+  overload: Virtufin.Core.Position.IL2OrderBookDiff`2.LastUpdateId*
+  nameWithType.vb: IL2OrderBookDiff(Of A, L).LastUpdateId
+  fullName.vb: Virtufin.Core.Position.IL2OrderBookDiff(Of A, L).LastUpdateId
+- uid: Virtufin.Core.Position.IL2OrderBookDiff`2.Bids
+  commentId: P:Virtufin.Core.Position.IL2OrderBookDiff`2.Bids
+  id: Bids
+  parent: Virtufin.Core.Position.IL2OrderBookDiff`2
+  langs:
+  - csharp
+  - vb
+  name: Bids
+  nameWithType: IL2OrderBookDiff<A, L>.Bids
+  fullName: Virtufin.Core.Position.IL2OrderBookDiff<A, L>.Bids
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IL2OrderBookDiff.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Bids
+    path: ../../../src/Virtufin.Core/Position/IL2OrderBookDiff.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Bid-level mutations.
+  example: []
+  syntax:
+    content: IReadOnlyList<(L Price, A Size)> Bids { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.ValueTuple{{L},{A}}}
+    content.vb: ReadOnly Property Bids As IReadOnlyList(Of (Price As L, Size As A))
+  overload: Virtufin.Core.Position.IL2OrderBookDiff`2.Bids*
+  nameWithType.vb: IL2OrderBookDiff(Of A, L).Bids
+  fullName.vb: Virtufin.Core.Position.IL2OrderBookDiff(Of A, L).Bids
+- uid: Virtufin.Core.Position.IL2OrderBookDiff`2.Asks
+  commentId: P:Virtufin.Core.Position.IL2OrderBookDiff`2.Asks
+  id: Asks
+  parent: Virtufin.Core.Position.IL2OrderBookDiff`2
+  langs:
+  - csharp
+  - vb
+  name: Asks
+  nameWithType: IL2OrderBookDiff<A, L>.Asks
+  fullName: Virtufin.Core.Position.IL2OrderBookDiff<A, L>.Asks
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IL2OrderBookDiff.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Asks
+    path: ../../../src/Virtufin.Core/Position/IL2OrderBookDiff.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Ask-level mutations.
+  example: []
+  syntax:
+    content: IReadOnlyList<(L Price, A Size)> Asks { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.ValueTuple{{L},{A}}}
+    content.vb: ReadOnly Property Asks As IReadOnlyList(Of (Price As L, Size As A))
+  overload: Virtufin.Core.Position.IL2OrderBookDiff`2.Asks*
+  nameWithType.vb: IL2OrderBookDiff(Of A, L).Asks
+  fullName.vb: Virtufin.Core.Position.IL2OrderBookDiff(Of A, L).Asks
+references:
+- uid: Virtufin.Core.Position.IL2OrderBook`2
+  commentId: T:Virtufin.Core.Position.IL2OrderBook`2
+  href: Virtufin.Core.Position.IL2OrderBook-2.html
+  name: IL2OrderBook<A, L>
+  nameWithType: IL2OrderBook<A, L>
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>
+  nameWithType.vb: IL2OrderBook(Of A, L)
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L)
+  name.vb: IL2OrderBook(Of A, L)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IL2OrderBook`2
+    name: IL2OrderBook
+    href: Virtufin.Core.Position.IL2OrderBook-2.html
+  - name: <
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.IL2OrderBook`2
+    name: IL2OrderBook
+    href: Virtufin.Core.Position.IL2OrderBook-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: )
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: Virtufin.Core.Position.IL2OrderBookDiff`2.FirstUpdateId*
+  commentId: Overload:Virtufin.Core.Position.IL2OrderBookDiff`2.FirstUpdateId
+  href: Virtufin.Core.Position.IL2OrderBookDiff-2.html#Virtufin_Core_Position_IL2OrderBookDiff_2_FirstUpdateId
+  name: FirstUpdateId
+  nameWithType: IL2OrderBookDiff<A, L>.FirstUpdateId
+  fullName: Virtufin.Core.Position.IL2OrderBookDiff<A, L>.FirstUpdateId
+  nameWithType.vb: IL2OrderBookDiff(Of A, L).FirstUpdateId
+  fullName.vb: Virtufin.Core.Position.IL2OrderBookDiff(Of A, L).FirstUpdateId
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Core.Position.IL2OrderBookDiff`2.LastUpdateId*
+  commentId: Overload:Virtufin.Core.Position.IL2OrderBookDiff`2.LastUpdateId
+  href: Virtufin.Core.Position.IL2OrderBookDiff-2.html#Virtufin_Core_Position_IL2OrderBookDiff_2_LastUpdateId
+  name: LastUpdateId
+  nameWithType: IL2OrderBookDiff<A, L>.LastUpdateId
+  fullName: Virtufin.Core.Position.IL2OrderBookDiff<A, L>.LastUpdateId
+  nameWithType.vb: IL2OrderBookDiff(Of A, L).LastUpdateId
+  fullName.vb: Virtufin.Core.Position.IL2OrderBookDiff(Of A, L).LastUpdateId
+- uid: Virtufin.Core.Position.IL2OrderBookDiff`2.Bids*
+  commentId: Overload:Virtufin.Core.Position.IL2OrderBookDiff`2.Bids
+  href: Virtufin.Core.Position.IL2OrderBookDiff-2.html#Virtufin_Core_Position_IL2OrderBookDiff_2_Bids
+  name: Bids
+  nameWithType: IL2OrderBookDiff<A, L>.Bids
+  fullName: Virtufin.Core.Position.IL2OrderBookDiff<A, L>.Bids
+  nameWithType.vb: IL2OrderBookDiff(Of A, L).Bids
+  fullName.vb: Virtufin.Core.Position.IL2OrderBookDiff(Of A, L).Bids
+- uid: System.Collections.Generic.IReadOnlyList{System.ValueTuple{{L},{A}}}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.ValueTuple{`1,`0}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<(L Price, A Size)>
+  nameWithType: IReadOnlyList<(L Price, A Size)>
+  fullName: System.Collections.Generic.IReadOnlyList<(L Price, A Size)>
+  nameWithType.vb: IReadOnlyList(Of (Price As L, Size As A))
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of (Price As L, Size As A))
+  name.vb: IReadOnlyList(Of (Price As L, Size As A))
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: (
+  - name: L
+  - name: " "
+  - uid: System.ValueTuple{`1,`0}.Price
+    name: Price
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple--1,-0-.price
+  - name: ','
+  - name: " "
+  - name: A
+  - name: " "
+  - uid: System.ValueTuple{`1,`0}.Size
+    name: Size
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple--1,-0-.size
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{`1,`0}.Price
+    name: Price
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple--1,-0-.price
+  - name: " "
+  - name: As
+  - name: " "
+  - name: L
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{`1,`0}.Size
+    name: Size
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple--1,-0-.size
+  - name: " "
+  - name: As
+  - name: " "
+  - name: A
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Virtufin.Core.Position.IL2OrderBookDiff`2.Asks*
+  commentId: Overload:Virtufin.Core.Position.IL2OrderBookDiff`2.Asks
+  href: Virtufin.Core.Position.IL2OrderBookDiff-2.html#Virtufin_Core_Position_IL2OrderBookDiff_2_Asks
+  name: Asks
+  nameWithType: IL2OrderBookDiff<A, L>.Asks
+  fullName: Virtufin.Core.Position.IL2OrderBookDiff<A, L>.Asks
+  nameWithType.vb: IL2OrderBookDiff(Of A, L).Asks
+  fullName.vb: Virtufin.Core.Position.IL2OrderBookDiff(Of A, L).Asks

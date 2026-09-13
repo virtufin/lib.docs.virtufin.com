@@ -20,7 +20,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/dotnet
     id: IAmount
     path: ../../../src/Virtufin.Core/Position/IAmount.cs
-    startLine: 8
+    startLine: 35
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -32,14 +32,17 @@ items:
     fixed-point <code>DecimalAmount</code>).
   example: []
   syntax:
-    content: 'public interface IAmount<TValue> : IEquatable<IAmount<TValue>>, IComparable<IAmount<TValue>> where TValue : notnull'
+    content: 'public interface IAmount<TValue> : IAmount, IEquatable<IAmount<TValue>>, IComparable<IAmount<TValue>> where TValue : notnull'
     typeParameters:
     - id: TValue
       description: Underlying storage type.
-    content.vb: Public Interface IAmount(Of TValue) Inherits IEquatable(Of IAmount(Of TValue)), IComparable(Of IAmount(Of TValue))
+    content.vb: Public Interface IAmount(Of TValue) Inherits IAmount, IEquatable(Of IAmount(Of TValue)), IComparable(Of IAmount(Of TValue))
   derivedClasses:
   - Virtufin.Core.Position.DecimalAmount
   inheritedMembers:
+  - Virtufin.Core.Position.IAmount.IsZero
+  - Virtufin.Core.Position.IAmount.Precision
+  - Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
   - System.IEquatable{Virtufin.Core.Position.IAmount`1}.Equals(Virtufin.Core.Position.IAmount{{TValue}})
   - System.IComparable{Virtufin.Core.Position.IAmount`1}.CompareTo(Virtufin.Core.Position.IAmount{{TValue}})
   nameWithType.vb: IAmount(Of TValue)
@@ -63,7 +66,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/dotnet
     id: GetValue
     path: ../../../src/Virtufin.Core/Position/IAmount.cs
-    startLine: 12
+    startLine: 39
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Position
@@ -108,6 +111,45 @@ references:
   - uid: Virtufin.Core.Position
     name: Position
     href: Virtufin.Core.Position.html
+- uid: Virtufin.Core.Position.IAmount.IsZero
+  commentId: P:Virtufin.Core.Position.IAmount.IsZero
+  parent: Virtufin.Core.Position.IAmount
+  href: Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_IsZero
+  name: IsZero
+  nameWithType: IAmount.IsZero
+  fullName: Virtufin.Core.Position.IAmount.IsZero
+- uid: Virtufin.Core.Position.IAmount.Precision
+  commentId: P:Virtufin.Core.Position.IAmount.Precision
+  parent: Virtufin.Core.Position.IAmount
+  href: Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_Precision
+  name: Precision
+  nameWithType: IAmount.Precision
+  fullName: Virtufin.Core.Position.IAmount.Precision
+- uid: Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  commentId: M:Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  parent: Virtufin.Core.Position.IAmount
+  href: Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_CompareTo_Virtufin_Core_Position_IAmount_
+  name: CompareTo(IAmount)
+  nameWithType: IAmount.CompareTo(IAmount)
+  fullName: Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+    name: CompareTo
+    href: Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_CompareTo_Virtufin_Core_Position_IAmount_
+  - name: (
+  - uid: Virtufin.Core.Position.IAmount
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount.html
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+    name: CompareTo
+    href: Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_CompareTo_Virtufin_Core_Position_IAmount_
+  - name: (
+  - uid: Virtufin.Core.Position.IAmount
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount.html
+  - name: )
 - uid: System.IEquatable{Virtufin.Core.Position.IAmount`1}.Equals(Virtufin.Core.Position.IAmount{{TValue}})
   commentId: M:System.IEquatable{Virtufin.Core.Position.IAmount`1}.Equals(Virtufin.Core.Position.IAmount{`0})
   parent: System.IEquatable{Virtufin.Core.Position.IAmount`1}
@@ -186,6 +228,13 @@ references:
   - name: TValue
   - name: )
   - name: )
+- uid: Virtufin.Core.Position.IAmount
+  commentId: T:Virtufin.Core.Position.IAmount
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.IAmount.html
+  name: IAmount
+  nameWithType: IAmount
+  fullName: Virtufin.Core.Position.IAmount
 - uid: System.IEquatable`1.Equals(`0)
   commentId: M:System.IEquatable`1.Equals(`0)
   isExternal: true

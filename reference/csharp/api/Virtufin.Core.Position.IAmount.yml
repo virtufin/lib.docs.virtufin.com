@@ -1,0 +1,246 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Position.IAmount
+  commentId: T:Virtufin.Core.Position.IAmount
+  id: IAmount
+  parent: Virtufin.Core.Position
+  children:
+  - Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  - Virtufin.Core.Position.IAmount.IsZero
+  - Virtufin.Core.Position.IAmount.Precision
+  langs:
+  - csharp
+  - vb
+  name: IAmount
+  nameWithType: IAmount
+  fullName: Virtufin.Core.Position.IAmount
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: IAmount
+    path: ../../../src/Virtufin.Core/Position/IAmount.cs
+    startLine: 13
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    Non-generic root for any typed monetary or physical quantity.
+
+    <xref href="Virtufin.Core.Position.IAmount.Precision" data-throw-if-not-resolved="false"></xref> is the scale of the value's fractional part;
+
+    implementations that represent a scale-free quantity (e.g. a whole
+
+    count) use <code>0</code>.
+  remarks: >-
+    Ordering across differing precisions is not meaningful and must be
+
+    rejected by implementations (see <xref href="Virtufin.Core.Position.PrecisionMismatchException" data-throw-if-not-resolved="false"></xref>).
+
+    C# has no dependent types, so this invariant is enforced at runtime.
+  example: []
+  syntax:
+    content: public interface IAmount
+    content.vb: Public Interface IAmount
+  derivedClasses:
+  - Virtufin.Core.Position.BinaryAmount
+  - Virtufin.Core.Position.DecimalAmount
+- uid: Virtufin.Core.Position.IAmount.IsZero
+  commentId: P:Virtufin.Core.Position.IAmount.IsZero
+  id: IsZero
+  parent: Virtufin.Core.Position.IAmount
+  langs:
+  - csharp
+  - vb
+  name: IsZero
+  nameWithType: IAmount.IsZero
+  fullName: Virtufin.Core.Position.IAmount.IsZero
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: IsZero
+    path: ../../../src/Virtufin.Core/Position/IAmount.cs
+    startLine: 16
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: <code>true</code> when this amount equals the additive identity.
+  example: []
+  syntax:
+    content: bool IsZero { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsZero As Boolean
+  overload: Virtufin.Core.Position.IAmount.IsZero*
+- uid: Virtufin.Core.Position.IAmount.Precision
+  commentId: P:Virtufin.Core.Position.IAmount.Precision
+  id: Precision
+  parent: Virtufin.Core.Position.IAmount
+  langs:
+  - csharp
+  - vb
+  name: Precision
+  nameWithType: IAmount.Precision
+  fullName: Virtufin.Core.Position.IAmount.Precision
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Precision
+    path: ../../../src/Virtufin.Core/Position/IAmount.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Number of fractional digits carried by this amount.
+  example: []
+  syntax:
+    content: int Precision { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Precision As Integer
+  overload: Virtufin.Core.Position.IAmount.Precision*
+- uid: Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  commentId: M:Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  id: CompareTo(Virtufin.Core.Position.IAmount)
+  parent: Virtufin.Core.Position.IAmount
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(IAmount)
+  nameWithType: IAmount.CompareTo(IAmount)
+  fullName: Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: CompareTo
+    path: ../../../src/Virtufin.Core/Position/IAmount.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    Compare with another amount. Implementations reject differing scales
+
+    (base/precision) at runtime via <xref href="Virtufin.Core.Position.PrecisionMismatchException" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: int CompareTo(IAmount other)
+    parameters:
+    - id: other
+      type: Virtufin.Core.Position.IAmount
+      description: Amount to compare against.
+    return:
+      type: System.Int32
+    content.vb: Function CompareTo(other As IAmount) As Integer
+  overload: Virtufin.Core.Position.IAmount.CompareTo*
+references:
+- uid: Virtufin.Core.Position.IAmount.Precision
+  commentId: P:Virtufin.Core.Position.IAmount.Precision
+  parent: Virtufin.Core.Position.IAmount
+  href: Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_Precision
+  name: Precision
+  nameWithType: IAmount.Precision
+  fullName: Virtufin.Core.Position.IAmount.Precision
+- uid: Virtufin.Core.Position.PrecisionMismatchException
+  commentId: T:Virtufin.Core.Position.PrecisionMismatchException
+  href: Virtufin.Core.Position.PrecisionMismatchException.html
+  name: PrecisionMismatchException
+  nameWithType: PrecisionMismatchException
+  fullName: Virtufin.Core.Position.PrecisionMismatchException
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: Virtufin.Core.Position.IAmount
+  commentId: T:Virtufin.Core.Position.IAmount
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.IAmount.html
+  name: IAmount
+  nameWithType: IAmount
+  fullName: Virtufin.Core.Position.IAmount
+- uid: Virtufin.Core.Position.IAmount.IsZero*
+  commentId: Overload:Virtufin.Core.Position.IAmount.IsZero
+  href: Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_IsZero
+  name: IsZero
+  nameWithType: IAmount.IsZero
+  fullName: Virtufin.Core.Position.IAmount.IsZero
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Core.Position.IAmount.Precision*
+  commentId: Overload:Virtufin.Core.Position.IAmount.Precision
+  href: Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_Precision
+  name: Precision
+  nameWithType: IAmount.Precision
+  fullName: Virtufin.Core.Position.IAmount.Precision
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Virtufin.Core.Position.IAmount.CompareTo*
+  commentId: Overload:Virtufin.Core.Position.IAmount.CompareTo
+  href: Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_CompareTo_Virtufin_Core_Position_IAmount_
+  name: CompareTo
+  nameWithType: IAmount.CompareTo
+  fullName: Virtufin.Core.Position.IAmount.CompareTo

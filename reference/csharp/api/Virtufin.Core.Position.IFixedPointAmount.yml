@@ -1,0 +1,353 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Position.IFixedPointAmount
+  commentId: T:Virtufin.Core.Position.IFixedPointAmount
+  id: IFixedPointAmount
+  parent: Virtufin.Core.Position
+  children:
+  - Virtufin.Core.Position.IFixedPointAmount.Base
+  - Virtufin.Core.Position.IFixedPointAmount.Fraction
+  - Virtufin.Core.Position.IFixedPointAmount.ToCardinal
+  - Virtufin.Core.Position.IFixedPointAmount.Whole
+  langs:
+  - csharp
+  - vb
+  name: IFixedPointAmount
+  nameWithType: IFixedPointAmount
+  fullName: Virtufin.Core.Position.IFixedPointAmount
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IFixedPointAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: IFixedPointAmount
+    path: ../../../src/Virtufin.Core/Position/IFixedPointAmount.cs
+    startLine: 16
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    A fixed-point amount: a value stored as a whole part and a fractional part
+
+    interpreted in a given <xref href="Virtufin.Core.Position.IFixedPointAmount.Base" data-throw-if-not-resolved="false"></xref> with <xref href="Virtufin.Core.Position.IAmount.Precision" data-throw-if-not-resolved="false"></xref>
+
+    fractional digits. The represented value is
+
+    <code>Whole + Fraction / Base^Precision</code>, or equivalently
+
+    <code>ToCardinal() / Base^Precision</code>.
+  remarks: >-
+    Base and precision are part of the value's identity: equality, ordering,
+
+    and addition/subtraction across differing base or precision are rejected
+
+    (see <xref href="Virtufin.Core.Position.PrecisionMismatchException" data-throw-if-not-resolved="false"></xref>). Multiplication/division
+
+    across differing base or precision are supported through
+
+    <xref href="Virtufin.Core.Position.FixedPointArithmetic" data-throw-if-not-resolved="false"></xref>, which takes an explicit result scale.
+  example: []
+  syntax:
+    content: 'public interface IFixedPointAmount : IAmount'
+    content.vb: Public Interface IFixedPointAmount Inherits IAmount
+  derivedClasses:
+  - Virtufin.Core.Position.BinaryAmount
+  - Virtufin.Core.Position.DecimalAmount
+  inheritedMembers:
+  - Virtufin.Core.Position.IAmount.IsZero
+  - Virtufin.Core.Position.IAmount.Precision
+  - Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+- uid: Virtufin.Core.Position.IFixedPointAmount.Base
+  commentId: P:Virtufin.Core.Position.IFixedPointAmount.Base
+  id: Base
+  parent: Virtufin.Core.Position.IFixedPointAmount
+  langs:
+  - csharp
+  - vb
+  name: Base
+  nameWithType: IFixedPointAmount.Base
+  fullName: Virtufin.Core.Position.IFixedPointAmount.Base
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IFixedPointAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Base
+    path: ../../../src/Virtufin.Core/Position/IFixedPointAmount.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Radix of the fractional representation (e.g. 10 or 2). Always &gt;= 2.
+  example: []
+  syntax:
+    content: int Base { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Base As Integer
+  overload: Virtufin.Core.Position.IFixedPointAmount.Base*
+- uid: Virtufin.Core.Position.IFixedPointAmount.Whole
+  commentId: P:Virtufin.Core.Position.IFixedPointAmount.Whole
+  id: Whole
+  parent: Virtufin.Core.Position.IFixedPointAmount
+  langs:
+  - csharp
+  - vb
+  name: Whole
+  nameWithType: IFixedPointAmount.Whole
+  fullName: Virtufin.Core.Position.IFixedPointAmount.Whole
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IFixedPointAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Whole
+    path: ../../../src/Virtufin.Core/Position/IFixedPointAmount.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: The whole (integral) part.
+  example: []
+  syntax:
+    content: long Whole { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: ReadOnly Property Whole As Long
+  overload: Virtufin.Core.Position.IFixedPointAmount.Whole*
+- uid: Virtufin.Core.Position.IFixedPointAmount.Fraction
+  commentId: P:Virtufin.Core.Position.IFixedPointAmount.Fraction
+  id: Fraction
+  parent: Virtufin.Core.Position.IFixedPointAmount
+  langs:
+  - csharp
+  - vb
+  name: Fraction
+  nameWithType: IFixedPointAmount.Fraction
+  fullName: Virtufin.Core.Position.IFixedPointAmount.Fraction
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IFixedPointAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Fraction
+    path: ../../../src/Virtufin.Core/Position/IFixedPointAmount.cs
+    startLine: 25
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: The fractional part, a magnitude in <code>[0, Base^Precision)</code>.
+  example: []
+  syntax:
+    content: ulong Fraction { get; }
+    parameters: []
+    return:
+      type: System.UInt64
+    content.vb: ReadOnly Property Fraction As ULong
+  overload: Virtufin.Core.Position.IFixedPointAmount.Fraction*
+- uid: Virtufin.Core.Position.IFixedPointAmount.ToCardinal
+  commentId: M:Virtufin.Core.Position.IFixedPointAmount.ToCardinal
+  id: ToCardinal
+  parent: Virtufin.Core.Position.IFixedPointAmount
+  langs:
+  - csharp
+  - vb
+  name: ToCardinal()
+  nameWithType: IFixedPointAmount.ToCardinal()
+  fullName: Virtufin.Core.Position.IFixedPointAmount.ToCardinal()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IFixedPointAmount.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: ToCardinal
+    path: ../../../src/Virtufin.Core/Position/IFixedPointAmount.cs
+    startLine: 31
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    The value as a single checked integer scaled by <code>Base^Precision</code>:
+
+    <code>Whole * Base^Precision + Fraction</code>.
+  example: []
+  syntax:
+    content: long ToCardinal()
+    return:
+      type: System.Int64
+    content.vb: Function ToCardinal() As Long
+  overload: Virtufin.Core.Position.IFixedPointAmount.ToCardinal*
+references:
+- uid: Virtufin.Core.Position.IFixedPointAmount.Base
+  commentId: P:Virtufin.Core.Position.IFixedPointAmount.Base
+  parent: Virtufin.Core.Position.IFixedPointAmount
+  href: Virtufin.Core.Position.IFixedPointAmount.html#Virtufin_Core_Position_IFixedPointAmount_Base
+  name: Base
+  nameWithType: IFixedPointAmount.Base
+  fullName: Virtufin.Core.Position.IFixedPointAmount.Base
+- uid: Virtufin.Core.Position.IAmount.Precision
+  commentId: P:Virtufin.Core.Position.IAmount.Precision
+  parent: Virtufin.Core.Position.IAmount
+  href: Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_Precision
+  name: Precision
+  nameWithType: IAmount.Precision
+  fullName: Virtufin.Core.Position.IAmount.Precision
+- uid: Virtufin.Core.Position.PrecisionMismatchException
+  commentId: T:Virtufin.Core.Position.PrecisionMismatchException
+  href: Virtufin.Core.Position.PrecisionMismatchException.html
+  name: PrecisionMismatchException
+  nameWithType: PrecisionMismatchException
+  fullName: Virtufin.Core.Position.PrecisionMismatchException
+- uid: Virtufin.Core.Position.FixedPointArithmetic
+  commentId: T:Virtufin.Core.Position.FixedPointArithmetic
+  href: Virtufin.Core.Position.FixedPointArithmetic.html
+  name: FixedPointArithmetic
+  nameWithType: FixedPointArithmetic
+  fullName: Virtufin.Core.Position.FixedPointArithmetic
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: Virtufin.Core.Position.IAmount.IsZero
+  commentId: P:Virtufin.Core.Position.IAmount.IsZero
+  parent: Virtufin.Core.Position.IAmount
+  href: Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_IsZero
+  name: IsZero
+  nameWithType: IAmount.IsZero
+  fullName: Virtufin.Core.Position.IAmount.IsZero
+- uid: Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  commentId: M:Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  parent: Virtufin.Core.Position.IAmount
+  href: Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_CompareTo_Virtufin_Core_Position_IAmount_
+  name: CompareTo(IAmount)
+  nameWithType: IAmount.CompareTo(IAmount)
+  fullName: Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+    name: CompareTo
+    href: Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_CompareTo_Virtufin_Core_Position_IAmount_
+  - name: (
+  - uid: Virtufin.Core.Position.IAmount
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount.html
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+    name: CompareTo
+    href: Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_CompareTo_Virtufin_Core_Position_IAmount_
+  - name: (
+  - uid: Virtufin.Core.Position.IAmount
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount.html
+  - name: )
+- uid: Virtufin.Core.Position.IFixedPointAmount
+  commentId: T:Virtufin.Core.Position.IFixedPointAmount
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.IFixedPointAmount.html
+  name: IFixedPointAmount
+  nameWithType: IFixedPointAmount
+  fullName: Virtufin.Core.Position.IFixedPointAmount
+- uid: Virtufin.Core.Position.IAmount
+  commentId: T:Virtufin.Core.Position.IAmount
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.IAmount.html
+  name: IAmount
+  nameWithType: IAmount
+  fullName: Virtufin.Core.Position.IAmount
+- uid: Virtufin.Core.Position.IFixedPointAmount.Base*
+  commentId: Overload:Virtufin.Core.Position.IFixedPointAmount.Base
+  href: Virtufin.Core.Position.IFixedPointAmount.html#Virtufin_Core_Position_IFixedPointAmount_Base
+  name: Base
+  nameWithType: IFixedPointAmount.Base
+  fullName: Virtufin.Core.Position.IFixedPointAmount.Base
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Core.Position.IFixedPointAmount.Whole*
+  commentId: Overload:Virtufin.Core.Position.IFixedPointAmount.Whole
+  href: Virtufin.Core.Position.IFixedPointAmount.html#Virtufin_Core_Position_IFixedPointAmount_Whole
+  name: Whole
+  nameWithType: IFixedPointAmount.Whole
+  fullName: Virtufin.Core.Position.IFixedPointAmount.Whole
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: Virtufin.Core.Position.IFixedPointAmount.Fraction*
+  commentId: Overload:Virtufin.Core.Position.IFixedPointAmount.Fraction
+  href: Virtufin.Core.Position.IFixedPointAmount.html#Virtufin_Core_Position_IFixedPointAmount_Fraction
+  name: Fraction
+  nameWithType: IFixedPointAmount.Fraction
+  fullName: Virtufin.Core.Position.IFixedPointAmount.Fraction
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: Virtufin.Core.Position.IFixedPointAmount.ToCardinal*
+  commentId: Overload:Virtufin.Core.Position.IFixedPointAmount.ToCardinal
+  href: Virtufin.Core.Position.IFixedPointAmount.html#Virtufin_Core_Position_IFixedPointAmount_ToCardinal
+  name: ToCardinal
+  nameWithType: IFixedPointAmount.ToCardinal
+  fullName: Virtufin.Core.Position.IFixedPointAmount.ToCardinal

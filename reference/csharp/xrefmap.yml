@@ -9298,6 +9298,602 @@ references:
   isSpec: "True"
   fullName: Virtufin.Base.Messaging.Topics.Trade
   nameWithType: Topics.Trade
+- uid: Virtufin.Base.OrderBooks
+  name: Virtufin.Base.OrderBooks
+  href: api/Virtufin.Base.OrderBooks.html
+  commentId: N:Virtufin.Base.OrderBooks
+  fullName: Virtufin.Base.OrderBooks
+  nameWithType: Virtufin.Base.OrderBooks
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2
+  name: IL2OrderBookWriter<A, L>
+  href: api/Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html
+  commentId: T:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2
+  name.vb: IL2OrderBookWriter(Of A, L)
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L)
+  nameWithType: IL2OrderBookWriter<A, L>
+  nameWithType.vb: IL2OrderBookWriter(Of A, L)
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.AppliedFinalUpdateId
+  name: AppliedFinalUpdateId
+  href: api/Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_AppliedFinalUpdateId
+  commentId: P:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.AppliedFinalUpdateId
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.AppliedFinalUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).AppliedFinalUpdateId
+  nameWithType: IL2OrderBookWriter<A, L>.AppliedFinalUpdateId
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).AppliedFinalUpdateId
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.AppliedFinalUpdateId*
+  name: AppliedFinalUpdateId
+  href: api/Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_AppliedFinalUpdateId_
+  commentId: Overload:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.AppliedFinalUpdateId
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.AppliedFinalUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).AppliedFinalUpdateId
+  nameWithType: IL2OrderBookWriter<A, L>.AppliedFinalUpdateId
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).AppliedFinalUpdateId
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.AppliedFirstUpdateId
+  name: AppliedFirstUpdateId
+  href: api/Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_AppliedFirstUpdateId
+  commentId: P:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.AppliedFirstUpdateId
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.AppliedFirstUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).AppliedFirstUpdateId
+  nameWithType: IL2OrderBookWriter<A, L>.AppliedFirstUpdateId
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).AppliedFirstUpdateId
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.AppliedFirstUpdateId*
+  name: AppliedFirstUpdateId
+  href: api/Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_AppliedFirstUpdateId_
+  commentId: Overload:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.AppliedFirstUpdateId
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.AppliedFirstUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).AppliedFirstUpdateId
+  nameWithType: IL2OrderBookWriter<A, L>.AppliedFirstUpdateId
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).AppliedFirstUpdateId
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ApplyLevel(System.Boolean,`1,`0)
+  name: ApplyLevel(bool, L, A)
+  href: api/Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_ApplyLevel_System_Boolean__1__0_
+  commentId: M:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ApplyLevel(System.Boolean,`1,`0)
+  name.vb: ApplyLevel(Boolean, L, A)
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.ApplyLevel(bool, L, A)
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).ApplyLevel(Boolean, L, A)
+  nameWithType: IL2OrderBookWriter<A, L>.ApplyLevel(bool, L, A)
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).ApplyLevel(Boolean, L, A)
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ApplyLevel*
+  name: ApplyLevel
+  href: api/Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_ApplyLevel_
+  commentId: Overload:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ApplyLevel
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.ApplyLevel
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).ApplyLevel
+  nameWithType: IL2OrderBookWriter<A, L>.ApplyLevel
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).ApplyLevel
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.Clear
+  name: Clear()
+  href: api/Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_Clear
+  commentId: M:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.Clear
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.Clear()
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).Clear()
+  nameWithType: IL2OrderBookWriter<A, L>.Clear()
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).Clear()
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.Clear*
+  name: Clear
+  href: api/Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_Clear_
+  commentId: Overload:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.Clear
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.Clear
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).Clear
+  nameWithType: IL2OrderBookWriter<A, L>.Clear
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).Clear
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.LastUpdateId
+  name: LastUpdateId
+  href: api/Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_LastUpdateId
+  commentId: P:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.LastUpdateId
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.LastUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).LastUpdateId
+  nameWithType: IL2OrderBookWriter<A, L>.LastUpdateId
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).LastUpdateId
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.LastUpdateId*
+  name: LastUpdateId
+  href: api/Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_LastUpdateId_
+  commentId: Overload:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.LastUpdateId
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.LastUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).LastUpdateId
+  nameWithType: IL2OrderBookWriter<A, L>.LastUpdateId
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).LastUpdateId
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ResetAppliedRange
+  name: ResetAppliedRange()
+  href: api/Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_ResetAppliedRange
+  commentId: M:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ResetAppliedRange
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.ResetAppliedRange()
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).ResetAppliedRange()
+  nameWithType: IL2OrderBookWriter<A, L>.ResetAppliedRange()
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).ResetAppliedRange()
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ResetAppliedRange*
+  name: ResetAppliedRange
+  href: api/Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_ResetAppliedRange_
+  commentId: Overload:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ResetAppliedRange
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.ResetAppliedRange
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).ResetAppliedRange
+  nameWithType: IL2OrderBookWriter<A, L>.ResetAppliedRange
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).ResetAppliedRange
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetAppliedRange(System.Int64,System.Int64)
+  name: SetAppliedRange(long, long)
+  href: api/Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_SetAppliedRange_System_Int64_System_Int64_
+  commentId: M:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetAppliedRange(System.Int64,System.Int64)
+  name.vb: SetAppliedRange(Long, Long)
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.SetAppliedRange(long, long)
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).SetAppliedRange(Long, Long)
+  nameWithType: IL2OrderBookWriter<A, L>.SetAppliedRange(long, long)
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).SetAppliedRange(Long, Long)
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetAppliedRange*
+  name: SetAppliedRange
+  href: api/Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_SetAppliedRange_
+  commentId: Overload:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetAppliedRange
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.SetAppliedRange
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).SetAppliedRange
+  nameWithType: IL2OrderBookWriter<A, L>.SetAppliedRange
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).SetAppliedRange
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetLastUpdateId(System.Int64)
+  name: SetLastUpdateId(long)
+  href: api/Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_SetLastUpdateId_System_Int64_
+  commentId: M:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetLastUpdateId(System.Int64)
+  name.vb: SetLastUpdateId(Long)
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.SetLastUpdateId(long)
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).SetLastUpdateId(Long)
+  nameWithType: IL2OrderBookWriter<A, L>.SetLastUpdateId(long)
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).SetLastUpdateId(Long)
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetLastUpdateId*
+  name: SetLastUpdateId
+  href: api/Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_SetLastUpdateId_
+  commentId: Overload:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetLastUpdateId
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.SetLastUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).SetLastUpdateId
+  nameWithType: IL2OrderBookWriter<A, L>.SetLastUpdateId
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).SetLastUpdateId
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetState(Virtufin.Core.Position.OrderBookState)
+  name: SetState(OrderBookState)
+  href: api/Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_SetState_Virtufin_Core_Position_OrderBookState_
+  commentId: M:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetState(Virtufin.Core.Position.OrderBookState)
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.SetState(Virtufin.Core.Position.OrderBookState)
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).SetState(Virtufin.Core.Position.OrderBookState)
+  nameWithType: IL2OrderBookWriter<A, L>.SetState(OrderBookState)
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).SetState(OrderBookState)
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetState*
+  name: SetState
+  href: api/Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_SetState_
+  commentId: Overload:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetState
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.SetState
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).SetState
+  nameWithType: IL2OrderBookWriter<A, L>.SetState
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).SetState
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.State
+  name: State
+  href: api/Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_State
+  commentId: P:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.State
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.State
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).State
+  nameWithType: IL2OrderBookWriter<A, L>.State
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).State
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.State*
+  name: State
+  href: api/Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_State_
+  commentId: Overload:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.State
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.State
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).State
+  nameWithType: IL2OrderBookWriter<A, L>.State
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).State
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2
+  name: L2OrderBook<A, L>
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html
+  commentId: T:Virtufin.Base.OrderBooks.L2OrderBook`2
+  name.vb: L2OrderBook(Of A, L)
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L)
+  nameWithType: L2OrderBook<A, L>
+  nameWithType.vb: L2OrderBook(Of A, L)
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  name: L2OrderBook(int, int, int, int)
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2__ctor_System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:Virtufin.Base.OrderBooks.L2OrderBook`2.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  name.vb: New(Integer, Integer, Integer, Integer)
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.L2OrderBook(int, int, int, int)
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).New(Integer, Integer, Integer, Integer)
+  nameWithType: L2OrderBook<A, L>.L2OrderBook(int, int, int, int)
+  nameWithType.vb: L2OrderBook(Of A, L).New(Integer, Integer, Integer, Integer)
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.#ctor(System.Nullable{Virtufin.Core.Events.Symbol},System.Int32,System.Int32,System.Int32,System.Int32)
+  name: L2OrderBook(Symbol?, int, int, int, int)
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2__ctor_System_Nullable_Virtufin_Core_Events_Symbol__System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:Virtufin.Base.OrderBooks.L2OrderBook`2.#ctor(System.Nullable{Virtufin.Core.Events.Symbol},System.Int32,System.Int32,System.Int32,System.Int32)
+  name.vb: New(Symbol?, Integer, Integer, Integer, Integer)
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.L2OrderBook(Virtufin.Core.Events.Symbol?, int, int, int, int)
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).New(Virtufin.Core.Events.Symbol?, Integer, Integer, Integer, Integer)
+  nameWithType: L2OrderBook<A, L>.L2OrderBook(Symbol?, int, int, int, int)
+  nameWithType.vb: L2OrderBook(Of A, L).New(Symbol?, Integer, Integer, Integer, Integer)
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.#ctor*
+  name: L2OrderBook
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2__ctor_
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.L2OrderBook
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).New
+  nameWithType: L2OrderBook<A, L>.L2OrderBook
+  nameWithType.vb: L2OrderBook(Of A, L).New
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.AppliedFinalUpdateId
+  name: AppliedFinalUpdateId
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_AppliedFinalUpdateId
+  commentId: P:Virtufin.Base.OrderBooks.L2OrderBook`2.AppliedFinalUpdateId
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.AppliedFinalUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).AppliedFinalUpdateId
+  nameWithType: L2OrderBook<A, L>.AppliedFinalUpdateId
+  nameWithType.vb: L2OrderBook(Of A, L).AppliedFinalUpdateId
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.AppliedFinalUpdateId*
+  name: AppliedFinalUpdateId
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_AppliedFinalUpdateId_
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.AppliedFinalUpdateId
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.AppliedFinalUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).AppliedFinalUpdateId
+  nameWithType: L2OrderBook<A, L>.AppliedFinalUpdateId
+  nameWithType.vb: L2OrderBook(Of A, L).AppliedFinalUpdateId
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.AppliedFirstUpdateId
+  name: AppliedFirstUpdateId
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_AppliedFirstUpdateId
+  commentId: P:Virtufin.Base.OrderBooks.L2OrderBook`2.AppliedFirstUpdateId
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.AppliedFirstUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).AppliedFirstUpdateId
+  nameWithType: L2OrderBook<A, L>.AppliedFirstUpdateId
+  nameWithType.vb: L2OrderBook(Of A, L).AppliedFirstUpdateId
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.AppliedFirstUpdateId*
+  name: AppliedFirstUpdateId
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_AppliedFirstUpdateId_
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.AppliedFirstUpdateId
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.AppliedFirstUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).AppliedFirstUpdateId
+  nameWithType: L2OrderBook<A, L>.AppliedFirstUpdateId
+  nameWithType.vb: L2OrderBook(Of A, L).AppliedFirstUpdateId
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.ApplyLevel(System.Boolean,`1,`0)
+  name: ApplyLevel(bool, L, A)
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_ApplyLevel_System_Boolean__1__0_
+  commentId: M:Virtufin.Base.OrderBooks.L2OrderBook`2.ApplyLevel(System.Boolean,`1,`0)
+  name.vb: ApplyLevel(Boolean, L, A)
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.ApplyLevel(bool, L, A)
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).ApplyLevel(Boolean, L, A)
+  nameWithType: L2OrderBook<A, L>.ApplyLevel(bool, L, A)
+  nameWithType.vb: L2OrderBook(Of A, L).ApplyLevel(Boolean, L, A)
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.ApplyLevel*
+  name: ApplyLevel
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_ApplyLevel_
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.ApplyLevel
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.ApplyLevel
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).ApplyLevel
+  nameWithType: L2OrderBook<A, L>.ApplyLevel
+  nameWithType.vb: L2OrderBook(Of A, L).ApplyLevel
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.AsksAscending
+  name: AsksAscending
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_AsksAscending
+  commentId: P:Virtufin.Base.OrderBooks.L2OrderBook`2.AsksAscending
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.AsksAscending
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).AsksAscending
+  nameWithType: L2OrderBook<A, L>.AsksAscending
+  nameWithType.vb: L2OrderBook(Of A, L).AsksAscending
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.AsksAscending*
+  name: AsksAscending
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_AsksAscending_
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.AsksAscending
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.AsksAscending
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).AsksAscending
+  nameWithType: L2OrderBook<A, L>.AsksAscending
+  nameWithType.vb: L2OrderBook(Of A, L).AsksAscending
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.BidsDescending
+  name: BidsDescending
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_BidsDescending
+  commentId: P:Virtufin.Base.OrderBooks.L2OrderBook`2.BidsDescending
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.BidsDescending
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).BidsDescending
+  nameWithType: L2OrderBook<A, L>.BidsDescending
+  nameWithType.vb: L2OrderBook(Of A, L).BidsDescending
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.BidsDescending*
+  name: BidsDescending
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_BidsDescending_
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.BidsDescending
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.BidsDescending
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).BidsDescending
+  nameWithType: L2OrderBook<A, L>.BidsDescending
+  nameWithType.vb: L2OrderBook(Of A, L).BidsDescending
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.Clear
+  name: Clear()
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_Clear
+  commentId: M:Virtufin.Base.OrderBooks.L2OrderBook`2.Clear
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.Clear()
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).Clear()
+  nameWithType: L2OrderBook<A, L>.Clear()
+  nameWithType.vb: L2OrderBook(Of A, L).Clear()
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.Clear*
+  name: Clear
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_Clear_
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.Clear
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.Clear
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).Clear
+  nameWithType: L2OrderBook<A, L>.Clear
+  nameWithType.vb: L2OrderBook(Of A, L).Clear
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.DepthBase
+  name: DepthBase
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_DepthBase
+  commentId: P:Virtufin.Base.OrderBooks.L2OrderBook`2.DepthBase
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.DepthBase
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).DepthBase
+  nameWithType: L2OrderBook<A, L>.DepthBase
+  nameWithType.vb: L2OrderBook(Of A, L).DepthBase
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.DepthBase*
+  name: DepthBase
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_DepthBase_
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.DepthBase
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.DepthBase
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).DepthBase
+  nameWithType: L2OrderBook<A, L>.DepthBase
+  nameWithType.vb: L2OrderBook(Of A, L).DepthBase
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.DepthPrecision
+  name: DepthPrecision
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_DepthPrecision
+  commentId: P:Virtufin.Base.OrderBooks.L2OrderBook`2.DepthPrecision
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.DepthPrecision
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).DepthPrecision
+  nameWithType: L2OrderBook<A, L>.DepthPrecision
+  nameWithType.vb: L2OrderBook(Of A, L).DepthPrecision
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.DepthPrecision*
+  name: DepthPrecision
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_DepthPrecision_
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.DepthPrecision
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.DepthPrecision
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).DepthPrecision
+  nameWithType: L2OrderBook<A, L>.DepthPrecision
+  nameWithType.vb: L2OrderBook(Of A, L).DepthPrecision
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.LastUpdateId
+  name: LastUpdateId
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_LastUpdateId
+  commentId: P:Virtufin.Base.OrderBooks.L2OrderBook`2.LastUpdateId
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.LastUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).LastUpdateId
+  nameWithType: L2OrderBook<A, L>.LastUpdateId
+  nameWithType.vb: L2OrderBook(Of A, L).LastUpdateId
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.LastUpdateId*
+  name: LastUpdateId
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_LastUpdateId_
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.LastUpdateId
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.LastUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).LastUpdateId
+  nameWithType: L2OrderBook<A, L>.LastUpdateId
+  nameWithType.vb: L2OrderBook(Of A, L).LastUpdateId
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.LevelBase
+  name: LevelBase
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_LevelBase
+  commentId: P:Virtufin.Base.OrderBooks.L2OrderBook`2.LevelBase
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.LevelBase
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).LevelBase
+  nameWithType: L2OrderBook<A, L>.LevelBase
+  nameWithType.vb: L2OrderBook(Of A, L).LevelBase
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.LevelBase*
+  name: LevelBase
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_LevelBase_
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.LevelBase
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.LevelBase
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).LevelBase
+  nameWithType: L2OrderBook<A, L>.LevelBase
+  nameWithType.vb: L2OrderBook(Of A, L).LevelBase
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.LevelPrecision
+  name: LevelPrecision
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_LevelPrecision
+  commentId: P:Virtufin.Base.OrderBooks.L2OrderBook`2.LevelPrecision
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.LevelPrecision
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).LevelPrecision
+  nameWithType: L2OrderBook<A, L>.LevelPrecision
+  nameWithType.vb: L2OrderBook(Of A, L).LevelPrecision
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.LevelPrecision*
+  name: LevelPrecision
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_LevelPrecision_
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.LevelPrecision
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.LevelPrecision
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).LevelPrecision
+  nameWithType: L2OrderBook<A, L>.LevelPrecision
+  nameWithType.vb: L2OrderBook(Of A, L).LevelPrecision
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.ResetAppliedRange
+  name: ResetAppliedRange()
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_ResetAppliedRange
+  commentId: M:Virtufin.Base.OrderBooks.L2OrderBook`2.ResetAppliedRange
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.ResetAppliedRange()
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).ResetAppliedRange()
+  nameWithType: L2OrderBook<A, L>.ResetAppliedRange()
+  nameWithType.vb: L2OrderBook(Of A, L).ResetAppliedRange()
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.ResetAppliedRange*
+  name: ResetAppliedRange
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_ResetAppliedRange_
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.ResetAppliedRange
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.ResetAppliedRange
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).ResetAppliedRange
+  nameWithType: L2OrderBook<A, L>.ResetAppliedRange
+  nameWithType.vb: L2OrderBook(Of A, L).ResetAppliedRange
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.SetAppliedRange(System.Int64,System.Int64)
+  name: SetAppliedRange(long, long)
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_SetAppliedRange_System_Int64_System_Int64_
+  commentId: M:Virtufin.Base.OrderBooks.L2OrderBook`2.SetAppliedRange(System.Int64,System.Int64)
+  name.vb: SetAppliedRange(Long, Long)
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.SetAppliedRange(long, long)
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).SetAppliedRange(Long, Long)
+  nameWithType: L2OrderBook<A, L>.SetAppliedRange(long, long)
+  nameWithType.vb: L2OrderBook(Of A, L).SetAppliedRange(Long, Long)
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.SetAppliedRange*
+  name: SetAppliedRange
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_SetAppliedRange_
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.SetAppliedRange
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.SetAppliedRange
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).SetAppliedRange
+  nameWithType: L2OrderBook<A, L>.SetAppliedRange
+  nameWithType.vb: L2OrderBook(Of A, L).SetAppliedRange
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.SetLastUpdateId(System.Int64)
+  name: SetLastUpdateId(long)
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_SetLastUpdateId_System_Int64_
+  commentId: M:Virtufin.Base.OrderBooks.L2OrderBook`2.SetLastUpdateId(System.Int64)
+  name.vb: SetLastUpdateId(Long)
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.SetLastUpdateId(long)
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).SetLastUpdateId(Long)
+  nameWithType: L2OrderBook<A, L>.SetLastUpdateId(long)
+  nameWithType.vb: L2OrderBook(Of A, L).SetLastUpdateId(Long)
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.SetLastUpdateId*
+  name: SetLastUpdateId
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_SetLastUpdateId_
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.SetLastUpdateId
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.SetLastUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).SetLastUpdateId
+  nameWithType: L2OrderBook<A, L>.SetLastUpdateId
+  nameWithType.vb: L2OrderBook(Of A, L).SetLastUpdateId
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.SetState(Virtufin.Core.Position.OrderBookState)
+  name: SetState(OrderBookState)
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_SetState_Virtufin_Core_Position_OrderBookState_
+  commentId: M:Virtufin.Base.OrderBooks.L2OrderBook`2.SetState(Virtufin.Core.Position.OrderBookState)
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.SetState(Virtufin.Core.Position.OrderBookState)
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).SetState(Virtufin.Core.Position.OrderBookState)
+  nameWithType: L2OrderBook<A, L>.SetState(OrderBookState)
+  nameWithType.vb: L2OrderBook(Of A, L).SetState(OrderBookState)
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.SetState*
+  name: SetState
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_SetState_
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.SetState
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.SetState
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).SetState
+  nameWithType: L2OrderBook<A, L>.SetState
+  nameWithType.vb: L2OrderBook(Of A, L).SetState
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.State
+  name: State
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_State
+  commentId: P:Virtufin.Base.OrderBooks.L2OrderBook`2.State
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.State
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).State
+  nameWithType: L2OrderBook<A, L>.State
+  nameWithType.vb: L2OrderBook(Of A, L).State
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.State*
+  name: State
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_State_
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.State
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.State
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).State
+  nameWithType: L2OrderBook<A, L>.State
+  nameWithType.vb: L2OrderBook(Of A, L).State
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.Symbol
+  name: Symbol
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_Symbol
+  commentId: P:Virtufin.Base.OrderBooks.L2OrderBook`2.Symbol
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.Symbol
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).Symbol
+  nameWithType: L2OrderBook<A, L>.Symbol
+  nameWithType.vb: L2OrderBook(Of A, L).Symbol
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.Symbol*
+  name: Symbol
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_Symbol_
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.Symbol
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.Symbol
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).Symbol
+  nameWithType: L2OrderBook<A, L>.Symbol
+  nameWithType.vb: L2OrderBook(Of A, L).Symbol
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.TryGetAsk(`1,`0@)
+  name: TryGetAsk(L, out A)
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_TryGetAsk__1__0__
+  commentId: M:Virtufin.Base.OrderBooks.L2OrderBook`2.TryGetAsk(`1,`0@)
+  name.vb: TryGetAsk(L, A)
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.TryGetAsk(L, out A)
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).TryGetAsk(L, A)
+  nameWithType: L2OrderBook<A, L>.TryGetAsk(L, out A)
+  nameWithType.vb: L2OrderBook(Of A, L).TryGetAsk(L, A)
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.TryGetAsk*
+  name: TryGetAsk
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_TryGetAsk_
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.TryGetAsk
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.TryGetAsk
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).TryGetAsk
+  nameWithType: L2OrderBook<A, L>.TryGetAsk
+  nameWithType.vb: L2OrderBook(Of A, L).TryGetAsk
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.TryGetBid(`1,`0@)
+  name: TryGetBid(L, out A)
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_TryGetBid__1__0__
+  commentId: M:Virtufin.Base.OrderBooks.L2OrderBook`2.TryGetBid(`1,`0@)
+  name.vb: TryGetBid(L, A)
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.TryGetBid(L, out A)
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).TryGetBid(L, A)
+  nameWithType: L2OrderBook<A, L>.TryGetBid(L, out A)
+  nameWithType.vb: L2OrderBook(Of A, L).TryGetBid(L, A)
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.TryGetBid*
+  name: TryGetBid
+  href: api/Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_TryGetBid_
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.TryGetBid
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.TryGetBid
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).TryGetBid
+  nameWithType: L2OrderBook<A, L>.TryGetBid
+  nameWithType.vb: L2OrderBook(Of A, L).TryGetBid
+- uid: Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5
+  name: Level2OrderBookUpdater<TBook, A, L, S, D>
+  href: api/Virtufin.Base.OrderBooks.Level2OrderBookUpdater-5.html
+  commentId: T:Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5
+  name.vb: Level2OrderBookUpdater(Of TBook, A, L, S, D)
+  fullName: Virtufin.Base.OrderBooks.Level2OrderBookUpdater<TBook, A, L, S, D>
+  fullName.vb: Virtufin.Base.OrderBooks.Level2OrderBookUpdater(Of TBook, A, L, S, D)
+  nameWithType: Level2OrderBookUpdater<TBook, A, L, S, D>
+  nameWithType.vb: Level2OrderBookUpdater(Of TBook, A, L, S, D)
+- uid: Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5.ApplyDiff(`0,`4)
+  name: ApplyDiff(TBook, D)
+  href: api/Virtufin.Base.OrderBooks.Level2OrderBookUpdater-5.html#Virtufin_Base_OrderBooks_Level2OrderBookUpdater_5_ApplyDiff__0__4_
+  commentId: M:Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5.ApplyDiff(`0,`4)
+  fullName: Virtufin.Base.OrderBooks.Level2OrderBookUpdater<TBook, A, L, S, D>.ApplyDiff(TBook, D)
+  fullName.vb: Virtufin.Base.OrderBooks.Level2OrderBookUpdater(Of TBook, A, L, S, D).ApplyDiff(TBook, D)
+  nameWithType: Level2OrderBookUpdater<TBook, A, L, S, D>.ApplyDiff(TBook, D)
+  nameWithType.vb: Level2OrderBookUpdater(Of TBook, A, L, S, D).ApplyDiff(TBook, D)
+- uid: Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5.ApplyDiff*
+  name: ApplyDiff
+  href: api/Virtufin.Base.OrderBooks.Level2OrderBookUpdater-5.html#Virtufin_Base_OrderBooks_Level2OrderBookUpdater_5_ApplyDiff_
+  commentId: Overload:Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5.ApplyDiff
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.Level2OrderBookUpdater<TBook, A, L, S, D>.ApplyDiff
+  fullName.vb: Virtufin.Base.OrderBooks.Level2OrderBookUpdater(Of TBook, A, L, S, D).ApplyDiff
+  nameWithType: Level2OrderBookUpdater<TBook, A, L, S, D>.ApplyDiff
+  nameWithType.vb: Level2OrderBookUpdater(Of TBook, A, L, S, D).ApplyDiff
+- uid: Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5.ApplySnapshot(`0,`3)
+  name: ApplySnapshot(TBook, S)
+  href: api/Virtufin.Base.OrderBooks.Level2OrderBookUpdater-5.html#Virtufin_Base_OrderBooks_Level2OrderBookUpdater_5_ApplySnapshot__0__3_
+  commentId: M:Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5.ApplySnapshot(`0,`3)
+  fullName: Virtufin.Base.OrderBooks.Level2OrderBookUpdater<TBook, A, L, S, D>.ApplySnapshot(TBook, S)
+  fullName.vb: Virtufin.Base.OrderBooks.Level2OrderBookUpdater(Of TBook, A, L, S, D).ApplySnapshot(TBook, S)
+  nameWithType: Level2OrderBookUpdater<TBook, A, L, S, D>.ApplySnapshot(TBook, S)
+  nameWithType.vb: Level2OrderBookUpdater(Of TBook, A, L, S, D).ApplySnapshot(TBook, S)
+- uid: Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5.ApplySnapshot*
+  name: ApplySnapshot
+  href: api/Virtufin.Base.OrderBooks.Level2OrderBookUpdater-5.html#Virtufin_Base_OrderBooks_Level2OrderBookUpdater_5_ApplySnapshot_
+  commentId: Overload:Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5.ApplySnapshot
+  isSpec: "True"
+  fullName: Virtufin.Base.OrderBooks.Level2OrderBookUpdater<TBook, A, L, S, D>.ApplySnapshot
+  fullName.vb: Virtufin.Base.OrderBooks.Level2OrderBookUpdater(Of TBook, A, L, S, D).ApplySnapshot
+  nameWithType: Level2OrderBookUpdater<TBook, A, L, S, D>.ApplySnapshot
+  nameWithType.vb: Level2OrderBookUpdater(Of TBook, A, L, S, D).ApplySnapshot
 - uid: Virtufin.Base.Position
   name: Position
   href: api/Virtufin.Base.Position.html
@@ -13136,6 +13732,373 @@ references:
   commentId: N:Virtufin.Core.Position
   fullName: Virtufin.Core.Position
   nameWithType: Virtufin.Core.Position
+- uid: Virtufin.Core.Position.BinaryAmount
+  name: BinaryAmount
+  href: api/Virtufin.Core.Position.BinaryAmount.html
+  commentId: T:Virtufin.Core.Position.BinaryAmount
+  fullName: Virtufin.Core.Position.BinaryAmount
+  nameWithType: BinaryAmount
+- uid: Virtufin.Core.Position.BinaryAmount.#ctor(System.Int64,System.UInt64,System.Int32)
+  name: BinaryAmount(long, ulong, int)
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount__ctor_System_Int64_System_UInt64_System_Int32_
+  commentId: M:Virtufin.Core.Position.BinaryAmount.#ctor(System.Int64,System.UInt64,System.Int32)
+  name.vb: New(Long, ULong, Integer)
+  fullName: Virtufin.Core.Position.BinaryAmount.BinaryAmount(long, ulong, int)
+  fullName.vb: Virtufin.Core.Position.BinaryAmount.New(Long, ULong, Integer)
+  nameWithType: BinaryAmount.BinaryAmount(long, ulong, int)
+  nameWithType.vb: BinaryAmount.New(Long, ULong, Integer)
+- uid: Virtufin.Core.Position.BinaryAmount.#ctor*
+  name: BinaryAmount
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount__ctor_
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Core.Position.BinaryAmount.BinaryAmount
+  fullName.vb: Virtufin.Core.Position.BinaryAmount.New
+  nameWithType: BinaryAmount.BinaryAmount
+  nameWithType.vb: BinaryAmount.New
+- uid: Virtufin.Core.Position.BinaryAmount.Base
+  name: Base
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_Base
+  commentId: P:Virtufin.Core.Position.BinaryAmount.Base
+  fullName: Virtufin.Core.Position.BinaryAmount.Base
+  nameWithType: BinaryAmount.Base
+- uid: Virtufin.Core.Position.BinaryAmount.Base*
+  name: Base
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_Base_
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.Base
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.BinaryAmount.Base
+  nameWithType: BinaryAmount.Base
+- uid: Virtufin.Core.Position.BinaryAmount.BaseValue
+  name: BaseValue
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_BaseValue
+  commentId: P:Virtufin.Core.Position.BinaryAmount.BaseValue
+  fullName: Virtufin.Core.Position.BinaryAmount.BaseValue
+  nameWithType: BinaryAmount.BaseValue
+- uid: Virtufin.Core.Position.BinaryAmount.BaseValue*
+  name: BaseValue
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_BaseValue_
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.BaseValue
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.BinaryAmount.BaseValue
+  nameWithType: BinaryAmount.BaseValue
+- uid: Virtufin.Core.Position.BinaryAmount.CompareTo(Virtufin.Core.Position.BinaryAmount)
+  name: CompareTo(BinaryAmount)
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_CompareTo_Virtufin_Core_Position_BinaryAmount_
+  commentId: M:Virtufin.Core.Position.BinaryAmount.CompareTo(Virtufin.Core.Position.BinaryAmount)
+  fullName: Virtufin.Core.Position.BinaryAmount.CompareTo(Virtufin.Core.Position.BinaryAmount)
+  nameWithType: BinaryAmount.CompareTo(BinaryAmount)
+- uid: Virtufin.Core.Position.BinaryAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  name: CompareTo(IAmount)
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_CompareTo_Virtufin_Core_Position_IAmount_
+  commentId: M:Virtufin.Core.Position.BinaryAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  fullName: Virtufin.Core.Position.BinaryAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  nameWithType: BinaryAmount.CompareTo(IAmount)
+- uid: Virtufin.Core.Position.BinaryAmount.CompareTo*
+  name: CompareTo
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_CompareTo_
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.CompareTo
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.BinaryAmount.CompareTo
+  nameWithType: BinaryAmount.CompareTo
+- uid: Virtufin.Core.Position.BinaryAmount.Create(System.Int64,System.UInt64,System.Int32)
+  name: Create(long, ulong, int)
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_Create_System_Int64_System_UInt64_System_Int32_
+  commentId: M:Virtufin.Core.Position.BinaryAmount.Create(System.Int64,System.UInt64,System.Int32)
+  name.vb: Create(Long, ULong, Integer)
+  fullName: Virtufin.Core.Position.BinaryAmount.Create(long, ulong, int)
+  fullName.vb: Virtufin.Core.Position.BinaryAmount.Create(Long, ULong, Integer)
+  nameWithType: BinaryAmount.Create(long, ulong, int)
+  nameWithType.vb: BinaryAmount.Create(Long, ULong, Integer)
+- uid: Virtufin.Core.Position.BinaryAmount.Create*
+  name: Create
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_Create_
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.Create
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.BinaryAmount.Create
+  nameWithType: BinaryAmount.Create
+- uid: Virtufin.Core.Position.BinaryAmount.DefaultPrecision
+  name: DefaultPrecision
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_DefaultPrecision
+  commentId: F:Virtufin.Core.Position.BinaryAmount.DefaultPrecision
+  fullName: Virtufin.Core.Position.BinaryAmount.DefaultPrecision
+  nameWithType: BinaryAmount.DefaultPrecision
+- uid: Virtufin.Core.Position.BinaryAmount.Equals(Virtufin.Core.Position.BinaryAmount)
+  name: Equals(BinaryAmount)
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_Equals_Virtufin_Core_Position_BinaryAmount_
+  commentId: M:Virtufin.Core.Position.BinaryAmount.Equals(Virtufin.Core.Position.BinaryAmount)
+  fullName: Virtufin.Core.Position.BinaryAmount.Equals(Virtufin.Core.Position.BinaryAmount)
+  nameWithType: BinaryAmount.Equals(BinaryAmount)
+- uid: Virtufin.Core.Position.BinaryAmount.Equals*
+  name: Equals
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_Equals_
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.Equals
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.BinaryAmount.Equals
+  nameWithType: BinaryAmount.Equals
+- uid: Virtufin.Core.Position.BinaryAmount.Fraction
+  name: Fraction
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_Fraction
+  commentId: P:Virtufin.Core.Position.BinaryAmount.Fraction
+  fullName: Virtufin.Core.Position.BinaryAmount.Fraction
+  nameWithType: BinaryAmount.Fraction
+- uid: Virtufin.Core.Position.BinaryAmount.Fraction*
+  name: Fraction
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_Fraction_
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.Fraction
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.BinaryAmount.Fraction
+  nameWithType: BinaryAmount.Fraction
+- uid: Virtufin.Core.Position.BinaryAmount.From(System.Decimal,System.Int32)
+  name: From(decimal, int)
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_From_System_Decimal_System_Int32_
+  commentId: M:Virtufin.Core.Position.BinaryAmount.From(System.Decimal,System.Int32)
+  name.vb: From(Decimal, Integer)
+  fullName: Virtufin.Core.Position.BinaryAmount.From(decimal, int)
+  fullName.vb: Virtufin.Core.Position.BinaryAmount.From(Decimal, Integer)
+  nameWithType: BinaryAmount.From(decimal, int)
+  nameWithType.vb: BinaryAmount.From(Decimal, Integer)
+- uid: Virtufin.Core.Position.BinaryAmount.From(System.Double,System.Int32)
+  name: From(double, int)
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_From_System_Double_System_Int32_
+  commentId: M:Virtufin.Core.Position.BinaryAmount.From(System.Double,System.Int32)
+  name.vb: From(Double, Integer)
+  fullName: Virtufin.Core.Position.BinaryAmount.From(double, int)
+  fullName.vb: Virtufin.Core.Position.BinaryAmount.From(Double, Integer)
+  nameWithType: BinaryAmount.From(double, int)
+  nameWithType.vb: BinaryAmount.From(Double, Integer)
+- uid: Virtufin.Core.Position.BinaryAmount.From*
+  name: From
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_From_
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.From
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.BinaryAmount.From
+  nameWithType: BinaryAmount.From
+- uid: Virtufin.Core.Position.BinaryAmount.FromCardinal(System.Int64)
+  name: FromCardinal(long)
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_FromCardinal_System_Int64_
+  commentId: M:Virtufin.Core.Position.BinaryAmount.FromCardinal(System.Int64)
+  name.vb: FromCardinal(Long)
+  fullName: Virtufin.Core.Position.BinaryAmount.FromCardinal(long)
+  fullName.vb: Virtufin.Core.Position.BinaryAmount.FromCardinal(Long)
+  nameWithType: BinaryAmount.FromCardinal(long)
+  nameWithType.vb: BinaryAmount.FromCardinal(Long)
+- uid: Virtufin.Core.Position.BinaryAmount.FromCardinal(System.Int64,System.Int32)
+  name: FromCardinal(long, int)
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_FromCardinal_System_Int64_System_Int32_
+  commentId: M:Virtufin.Core.Position.BinaryAmount.FromCardinal(System.Int64,System.Int32)
+  name.vb: FromCardinal(Long, Integer)
+  fullName: Virtufin.Core.Position.BinaryAmount.FromCardinal(long, int)
+  fullName.vb: Virtufin.Core.Position.BinaryAmount.FromCardinal(Long, Integer)
+  nameWithType: BinaryAmount.FromCardinal(long, int)
+  nameWithType.vb: BinaryAmount.FromCardinal(Long, Integer)
+- uid: Virtufin.Core.Position.BinaryAmount.FromCardinal*
+  name: FromCardinal
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_FromCardinal_
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.FromCardinal
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.BinaryAmount.FromCardinal
+  nameWithType: BinaryAmount.FromCardinal
+- uid: Virtufin.Core.Position.BinaryAmount.GetHashCode
+  name: GetHashCode()
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_GetHashCode
+  commentId: M:Virtufin.Core.Position.BinaryAmount.GetHashCode
+  fullName: Virtufin.Core.Position.BinaryAmount.GetHashCode()
+  nameWithType: BinaryAmount.GetHashCode()
+- uid: Virtufin.Core.Position.BinaryAmount.GetHashCode*
+  name: GetHashCode
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_GetHashCode_
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.GetHashCode
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.BinaryAmount.GetHashCode
+  nameWithType: BinaryAmount.GetHashCode
+- uid: Virtufin.Core.Position.BinaryAmount.IsZero
+  name: IsZero
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_IsZero
+  commentId: P:Virtufin.Core.Position.BinaryAmount.IsZero
+  fullName: Virtufin.Core.Position.BinaryAmount.IsZero
+  nameWithType: BinaryAmount.IsZero
+- uid: Virtufin.Core.Position.BinaryAmount.IsZero*
+  name: IsZero
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_IsZero_
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.IsZero
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.BinaryAmount.IsZero
+  nameWithType: BinaryAmount.IsZero
+- uid: Virtufin.Core.Position.BinaryAmount.N
+  name: N
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_N
+  commentId: P:Virtufin.Core.Position.BinaryAmount.N
+  fullName: Virtufin.Core.Position.BinaryAmount.N
+  nameWithType: BinaryAmount.N
+- uid: Virtufin.Core.Position.BinaryAmount.N*
+  name: N
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_N_
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.N
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.BinaryAmount.N
+  nameWithType: BinaryAmount.N
+- uid: Virtufin.Core.Position.BinaryAmount.Precision
+  name: Precision
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_Precision
+  commentId: P:Virtufin.Core.Position.BinaryAmount.Precision
+  fullName: Virtufin.Core.Position.BinaryAmount.Precision
+  nameWithType: BinaryAmount.Precision
+- uid: Virtufin.Core.Position.BinaryAmount.Precision*
+  name: Precision
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_Precision_
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.Precision
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.BinaryAmount.Precision
+  nameWithType: BinaryAmount.Precision
+- uid: Virtufin.Core.Position.BinaryAmount.Radix
+  name: Radix
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_Radix
+  commentId: F:Virtufin.Core.Position.BinaryAmount.Radix
+  fullName: Virtufin.Core.Position.BinaryAmount.Radix
+  nameWithType: BinaryAmount.Radix
+- uid: Virtufin.Core.Position.BinaryAmount.ToCardinal
+  name: ToCardinal()
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_ToCardinal
+  commentId: M:Virtufin.Core.Position.BinaryAmount.ToCardinal
+  fullName: Virtufin.Core.Position.BinaryAmount.ToCardinal()
+  nameWithType: BinaryAmount.ToCardinal()
+- uid: Virtufin.Core.Position.BinaryAmount.ToCardinal*
+  name: ToCardinal
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_ToCardinal_
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.ToCardinal
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.BinaryAmount.ToCardinal
+  nameWithType: BinaryAmount.ToCardinal
+- uid: Virtufin.Core.Position.BinaryAmount.ToDouble
+  name: ToDouble()
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_ToDouble
+  commentId: M:Virtufin.Core.Position.BinaryAmount.ToDouble
+  fullName: Virtufin.Core.Position.BinaryAmount.ToDouble()
+  nameWithType: BinaryAmount.ToDouble()
+- uid: Virtufin.Core.Position.BinaryAmount.ToDouble*
+  name: ToDouble
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_ToDouble_
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.ToDouble
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.BinaryAmount.ToDouble
+  nameWithType: BinaryAmount.ToDouble
+- uid: Virtufin.Core.Position.BinaryAmount.ToString
+  name: ToString()
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_ToString
+  commentId: M:Virtufin.Core.Position.BinaryAmount.ToString
+  fullName: Virtufin.Core.Position.BinaryAmount.ToString()
+  nameWithType: BinaryAmount.ToString()
+- uid: Virtufin.Core.Position.BinaryAmount.ToString*
+  name: ToString
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_ToString_
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.ToString
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.BinaryAmount.ToString
+  nameWithType: BinaryAmount.ToString
+- uid: Virtufin.Core.Position.BinaryAmount.Whole
+  name: Whole
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_Whole
+  commentId: P:Virtufin.Core.Position.BinaryAmount.Whole
+  fullName: Virtufin.Core.Position.BinaryAmount.Whole
+  nameWithType: BinaryAmount.Whole
+- uid: Virtufin.Core.Position.BinaryAmount.Whole*
+  name: Whole
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_Whole_
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.Whole
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.BinaryAmount.Whole
+  nameWithType: BinaryAmount.Whole
+- uid: Virtufin.Core.Position.BinaryAmount.Zero
+  name: Zero
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_Zero
+  commentId: P:Virtufin.Core.Position.BinaryAmount.Zero
+  fullName: Virtufin.Core.Position.BinaryAmount.Zero
+  nameWithType: BinaryAmount.Zero
+- uid: Virtufin.Core.Position.BinaryAmount.Zero*
+  name: Zero
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_Zero_
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.Zero
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.BinaryAmount.Zero
+  nameWithType: BinaryAmount.Zero
+- uid: Virtufin.Core.Position.BinaryAmount.op_Addition(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  name: operator +(BinaryAmount, BinaryAmount)
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_op_Addition_Virtufin_Core_Position_BinaryAmount_Virtufin_Core_Position_BinaryAmount_
+  commentId: M:Virtufin.Core.Position.BinaryAmount.op_Addition(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  name.vb: +(BinaryAmount, BinaryAmount)
+  fullName: Virtufin.Core.Position.BinaryAmount.operator +(Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  fullName.vb: Virtufin.Core.Position.BinaryAmount.+(Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  nameWithType: BinaryAmount.operator +(BinaryAmount, BinaryAmount)
+  nameWithType.vb: BinaryAmount.+(BinaryAmount, BinaryAmount)
+- uid: Virtufin.Core.Position.BinaryAmount.op_Addition*
+  name: operator +
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_op_Addition_
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.op_Addition
+  isSpec: "True"
+  name.vb: +
+  fullName: Virtufin.Core.Position.BinaryAmount.operator +
+  fullName.vb: Virtufin.Core.Position.BinaryAmount.+
+  nameWithType: BinaryAmount.operator +
+  nameWithType.vb: BinaryAmount.+
+- uid: Virtufin.Core.Position.BinaryAmount.op_Division(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  name: operator /(BinaryAmount, BinaryAmount)
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_op_Division_Virtufin_Core_Position_BinaryAmount_Virtufin_Core_Position_BinaryAmount_
+  commentId: M:Virtufin.Core.Position.BinaryAmount.op_Division(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  name.vb: /(BinaryAmount, BinaryAmount)
+  fullName: Virtufin.Core.Position.BinaryAmount.operator /(Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  fullName.vb: Virtufin.Core.Position.BinaryAmount./(Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  nameWithType: BinaryAmount.operator /(BinaryAmount, BinaryAmount)
+  nameWithType.vb: BinaryAmount./(BinaryAmount, BinaryAmount)
+- uid: Virtufin.Core.Position.BinaryAmount.op_Division*
+  name: operator /
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_op_Division_
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.op_Division
+  isSpec: "True"
+  name.vb: /
+  fullName: Virtufin.Core.Position.BinaryAmount.operator /
+  fullName.vb: Virtufin.Core.Position.BinaryAmount./
+  nameWithType: BinaryAmount.operator /
+  nameWithType.vb: BinaryAmount./
+- uid: Virtufin.Core.Position.BinaryAmount.op_Multiply(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  name: operator *(BinaryAmount, BinaryAmount)
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_op_Multiply_Virtufin_Core_Position_BinaryAmount_Virtufin_Core_Position_BinaryAmount_
+  commentId: M:Virtufin.Core.Position.BinaryAmount.op_Multiply(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  name.vb: '*(BinaryAmount, BinaryAmount)'
+  fullName: Virtufin.Core.Position.BinaryAmount.operator *(Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  fullName.vb: Virtufin.Core.Position.BinaryAmount.*(Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  nameWithType: BinaryAmount.operator *(BinaryAmount, BinaryAmount)
+  nameWithType.vb: BinaryAmount.*(BinaryAmount, BinaryAmount)
+- uid: Virtufin.Core.Position.BinaryAmount.op_Multiply*
+  name: operator *
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_op_Multiply_
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.op_Multiply
+  isSpec: "True"
+  name.vb: '*'
+  fullName: Virtufin.Core.Position.BinaryAmount.operator *
+  fullName.vb: Virtufin.Core.Position.BinaryAmount.*
+  nameWithType: BinaryAmount.operator *
+  nameWithType.vb: BinaryAmount.*
+- uid: Virtufin.Core.Position.BinaryAmount.op_Subtraction(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  name: operator -(BinaryAmount, BinaryAmount)
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_op_Subtraction_Virtufin_Core_Position_BinaryAmount_Virtufin_Core_Position_BinaryAmount_
+  commentId: M:Virtufin.Core.Position.BinaryAmount.op_Subtraction(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)
+  name.vb: -(BinaryAmount, BinaryAmount)
+  fullName: Virtufin.Core.Position.BinaryAmount.operator -(Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  fullName.vb: Virtufin.Core.Position.BinaryAmount.-(Virtufin.Core.Position.BinaryAmount, Virtufin.Core.Position.BinaryAmount)
+  nameWithType: BinaryAmount.operator -(BinaryAmount, BinaryAmount)
+  nameWithType.vb: BinaryAmount.-(BinaryAmount, BinaryAmount)
+- uid: Virtufin.Core.Position.BinaryAmount.op_Subtraction*
+  name: operator -
+  href: api/Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_op_Subtraction_
+  commentId: Overload:Virtufin.Core.Position.BinaryAmount.op_Subtraction
+  isSpec: "True"
+  name.vb: '-'
+  fullName: Virtufin.Core.Position.BinaryAmount.operator -
+  fullName.vb: Virtufin.Core.Position.BinaryAmount.-
+  nameWithType: BinaryAmount.operator -
+  nameWithType.vb: BinaryAmount.-
 - uid: Virtufin.Core.Position.BuyOrSell
   name: BuyOrSell
   href: api/Virtufin.Core.Position.BuyOrSell.html
@@ -13179,12 +14142,44 @@ references:
   fullName.vb: Virtufin.Core.Position.DecimalAmount.New
   nameWithType: DecimalAmount.DecimalAmount
   nameWithType.vb: DecimalAmount.New
+- uid: Virtufin.Core.Position.DecimalAmount.Base
+  name: Base
+  href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_Base
+  commentId: P:Virtufin.Core.Position.DecimalAmount.Base
+  fullName: Virtufin.Core.Position.DecimalAmount.Base
+  nameWithType: DecimalAmount.Base
+- uid: Virtufin.Core.Position.DecimalAmount.Base*
+  name: Base
+  href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_Base_
+  commentId: Overload:Virtufin.Core.Position.DecimalAmount.Base
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.DecimalAmount.Base
+  nameWithType: DecimalAmount.Base
+- uid: Virtufin.Core.Position.DecimalAmount.BaseValue
+  name: BaseValue
+  href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_BaseValue
+  commentId: P:Virtufin.Core.Position.DecimalAmount.BaseValue
+  fullName: Virtufin.Core.Position.DecimalAmount.BaseValue
+  nameWithType: DecimalAmount.BaseValue
+- uid: Virtufin.Core.Position.DecimalAmount.BaseValue*
+  name: BaseValue
+  href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_BaseValue_
+  commentId: Overload:Virtufin.Core.Position.DecimalAmount.BaseValue
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.DecimalAmount.BaseValue
+  nameWithType: DecimalAmount.BaseValue
 - uid: Virtufin.Core.Position.DecimalAmount.CompareTo(Virtufin.Core.Position.DecimalAmount)
   name: CompareTo(DecimalAmount)
   href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_CompareTo_Virtufin_Core_Position_DecimalAmount_
   commentId: M:Virtufin.Core.Position.DecimalAmount.CompareTo(Virtufin.Core.Position.DecimalAmount)
   fullName: Virtufin.Core.Position.DecimalAmount.CompareTo(Virtufin.Core.Position.DecimalAmount)
   nameWithType: DecimalAmount.CompareTo(DecimalAmount)
+- uid: Virtufin.Core.Position.DecimalAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  name: CompareTo(IAmount)
+  href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_CompareTo_Virtufin_Core_Position_IAmount_
+  commentId: M:Virtufin.Core.Position.DecimalAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  fullName: Virtufin.Core.Position.DecimalAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  nameWithType: DecimalAmount.CompareTo(IAmount)
 - uid: Virtufin.Core.Position.DecimalAmount.CompareTo*
   name: CompareTo
   href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_CompareTo_
@@ -13192,6 +14187,22 @@ references:
   isSpec: "True"
   fullName: Virtufin.Core.Position.DecimalAmount.CompareTo
   nameWithType: DecimalAmount.CompareTo
+- uid: Virtufin.Core.Position.DecimalAmount.Create(System.Int64,System.UInt64,System.Int32)
+  name: Create(long, ulong, int)
+  href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_Create_System_Int64_System_UInt64_System_Int32_
+  commentId: M:Virtufin.Core.Position.DecimalAmount.Create(System.Int64,System.UInt64,System.Int32)
+  name.vb: Create(Long, ULong, Integer)
+  fullName: Virtufin.Core.Position.DecimalAmount.Create(long, ulong, int)
+  fullName.vb: Virtufin.Core.Position.DecimalAmount.Create(Long, ULong, Integer)
+  nameWithType: DecimalAmount.Create(long, ulong, int)
+  nameWithType.vb: DecimalAmount.Create(Long, ULong, Integer)
+- uid: Virtufin.Core.Position.DecimalAmount.Create*
+  name: Create
+  href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_Create_
+  commentId: Overload:Virtufin.Core.Position.DecimalAmount.Create
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.DecimalAmount.Create
+  nameWithType: DecimalAmount.Create
 - uid: Virtufin.Core.Position.DecimalAmount.DefaultPrecision
   name: DefaultPrecision
   href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_DefaultPrecision
@@ -13300,6 +14311,19 @@ references:
   isSpec: "True"
   fullName: Virtufin.Core.Position.DecimalAmount.GetValue
   nameWithType: DecimalAmount.GetValue
+- uid: Virtufin.Core.Position.DecimalAmount.IsZero
+  name: IsZero
+  href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_IsZero
+  commentId: P:Virtufin.Core.Position.DecimalAmount.IsZero
+  fullName: Virtufin.Core.Position.DecimalAmount.IsZero
+  nameWithType: DecimalAmount.IsZero
+- uid: Virtufin.Core.Position.DecimalAmount.IsZero*
+  name: IsZero
+  href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_IsZero_
+  commentId: Overload:Virtufin.Core.Position.DecimalAmount.IsZero
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.DecimalAmount.IsZero
+  nameWithType: DecimalAmount.IsZero
 - uid: Virtufin.Core.Position.DecimalAmount.N
   name: N
   href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_N
@@ -13313,6 +14337,25 @@ references:
   isSpec: "True"
   fullName: Virtufin.Core.Position.DecimalAmount.N
   nameWithType: DecimalAmount.N
+- uid: Virtufin.Core.Position.DecimalAmount.Precision
+  name: Precision
+  href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_Precision
+  commentId: P:Virtufin.Core.Position.DecimalAmount.Precision
+  fullName: Virtufin.Core.Position.DecimalAmount.Precision
+  nameWithType: DecimalAmount.Precision
+- uid: Virtufin.Core.Position.DecimalAmount.Precision*
+  name: Precision
+  href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_Precision_
+  commentId: Overload:Virtufin.Core.Position.DecimalAmount.Precision
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.DecimalAmount.Precision
+  nameWithType: DecimalAmount.Precision
+- uid: Virtufin.Core.Position.DecimalAmount.Radix
+  name: Radix
+  href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_Radix
+  commentId: F:Virtufin.Core.Position.DecimalAmount.Radix
+  fullName: Virtufin.Core.Position.DecimalAmount.Radix
+  nameWithType: DecimalAmount.Radix
 - uid: Virtufin.Core.Position.DecimalAmount.ToCardinal
   name: ToCardinal()
   href: api/Virtufin.Core.Position.DecimalAmount.html#Virtufin_Core_Position_DecimalAmount_ToCardinal
@@ -13577,6 +14620,137 @@ references:
   fullName.vb: Virtufin.Core.Position.DecimalQuantity(Of U).Unit
   nameWithType: DecimalQuantity<U>.Unit
   nameWithType.vb: DecimalQuantity(Of U).Unit
+- uid: Virtufin.Core.Position.FixedPointArithmetic
+  name: FixedPointArithmetic
+  href: api/Virtufin.Core.Position.FixedPointArithmetic.html
+  commentId: T:Virtufin.Core.Position.FixedPointArithmetic
+  fullName: Virtufin.Core.Position.FixedPointArithmetic
+  nameWithType: FixedPointArithmetic
+- uid: Virtufin.Core.Position.FixedPointArithmetic.Add*
+  name: Add
+  href: api/Virtufin.Core.Position.FixedPointArithmetic.html#Virtufin_Core_Position_FixedPointArithmetic_Add_
+  commentId: Overload:Virtufin.Core.Position.FixedPointArithmetic.Add
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.FixedPointArithmetic.Add
+  nameWithType: FixedPointArithmetic.Add
+- uid: Virtufin.Core.Position.FixedPointArithmetic.Add``1(``0,``0)
+  name: Add<T>(T, T)
+  href: api/Virtufin.Core.Position.FixedPointArithmetic.html#Virtufin_Core_Position_FixedPointArithmetic_Add__1___0___0_
+  commentId: M:Virtufin.Core.Position.FixedPointArithmetic.Add``1(``0,``0)
+  name.vb: Add(Of T)(T, T)
+  fullName: Virtufin.Core.Position.FixedPointArithmetic.Add<T>(T, T)
+  fullName.vb: Virtufin.Core.Position.FixedPointArithmetic.Add(Of T)(T, T)
+  nameWithType: FixedPointArithmetic.Add<T>(T, T)
+  nameWithType.vb: FixedPointArithmetic.Add(Of T)(T, T)
+- uid: Virtufin.Core.Position.FixedPointArithmetic.Divide*
+  name: Divide
+  href: api/Virtufin.Core.Position.FixedPointArithmetic.html#Virtufin_Core_Position_FixedPointArithmetic_Divide_
+  commentId: Overload:Virtufin.Core.Position.FixedPointArithmetic.Divide
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.FixedPointArithmetic.Divide
+  nameWithType: FixedPointArithmetic.Divide
+- uid: Virtufin.Core.Position.FixedPointArithmetic.Divide``1(Virtufin.Core.Position.IFixedPointAmount,Virtufin.Core.Position.IFixedPointAmount,System.Int32,System.Int32)
+  name: Divide<T>(IFixedPointAmount, IFixedPointAmount, int, int)
+  href: api/Virtufin.Core.Position.FixedPointArithmetic.html#Virtufin_Core_Position_FixedPointArithmetic_Divide__1_Virtufin_Core_Position_IFixedPointAmount_Virtufin_Core_Position_IFixedPointAmount_System_Int32_System_Int32_
+  commentId: M:Virtufin.Core.Position.FixedPointArithmetic.Divide``1(Virtufin.Core.Position.IFixedPointAmount,Virtufin.Core.Position.IFixedPointAmount,System.Int32,System.Int32)
+  name.vb: Divide(Of T)(IFixedPointAmount, IFixedPointAmount, Integer, Integer)
+  fullName: Virtufin.Core.Position.FixedPointArithmetic.Divide<T>(Virtufin.Core.Position.IFixedPointAmount, Virtufin.Core.Position.IFixedPointAmount, int, int)
+  fullName.vb: Virtufin.Core.Position.FixedPointArithmetic.Divide(Of T)(Virtufin.Core.Position.IFixedPointAmount, Virtufin.Core.Position.IFixedPointAmount, Integer, Integer)
+  nameWithType: FixedPointArithmetic.Divide<T>(IFixedPointAmount, IFixedPointAmount, int, int)
+  nameWithType.vb: FixedPointArithmetic.Divide(Of T)(IFixedPointAmount, IFixedPointAmount, Integer, Integer)
+- uid: Virtufin.Core.Position.FixedPointArithmetic.Multiply*
+  name: Multiply
+  href: api/Virtufin.Core.Position.FixedPointArithmetic.html#Virtufin_Core_Position_FixedPointArithmetic_Multiply_
+  commentId: Overload:Virtufin.Core.Position.FixedPointArithmetic.Multiply
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.FixedPointArithmetic.Multiply
+  nameWithType: FixedPointArithmetic.Multiply
+- uid: Virtufin.Core.Position.FixedPointArithmetic.Multiply``1(Virtufin.Core.Position.IFixedPointAmount,Virtufin.Core.Position.IFixedPointAmount,System.Int32,System.Int32)
+  name: Multiply<T>(IFixedPointAmount, IFixedPointAmount, int, int)
+  href: api/Virtufin.Core.Position.FixedPointArithmetic.html#Virtufin_Core_Position_FixedPointArithmetic_Multiply__1_Virtufin_Core_Position_IFixedPointAmount_Virtufin_Core_Position_IFixedPointAmount_System_Int32_System_Int32_
+  commentId: M:Virtufin.Core.Position.FixedPointArithmetic.Multiply``1(Virtufin.Core.Position.IFixedPointAmount,Virtufin.Core.Position.IFixedPointAmount,System.Int32,System.Int32)
+  name.vb: Multiply(Of T)(IFixedPointAmount, IFixedPointAmount, Integer, Integer)
+  fullName: Virtufin.Core.Position.FixedPointArithmetic.Multiply<T>(Virtufin.Core.Position.IFixedPointAmount, Virtufin.Core.Position.IFixedPointAmount, int, int)
+  fullName.vb: Virtufin.Core.Position.FixedPointArithmetic.Multiply(Of T)(Virtufin.Core.Position.IFixedPointAmount, Virtufin.Core.Position.IFixedPointAmount, Integer, Integer)
+  nameWithType: FixedPointArithmetic.Multiply<T>(IFixedPointAmount, IFixedPointAmount, int, int)
+  nameWithType.vb: FixedPointArithmetic.Multiply(Of T)(IFixedPointAmount, IFixedPointAmount, Integer, Integer)
+- uid: Virtufin.Core.Position.FixedPointArithmetic.Rescale*
+  name: Rescale
+  href: api/Virtufin.Core.Position.FixedPointArithmetic.html#Virtufin_Core_Position_FixedPointArithmetic_Rescale_
+  commentId: Overload:Virtufin.Core.Position.FixedPointArithmetic.Rescale
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.FixedPointArithmetic.Rescale
+  nameWithType: FixedPointArithmetic.Rescale
+- uid: Virtufin.Core.Position.FixedPointArithmetic.Rescale``1(Virtufin.Core.Position.IFixedPointAmount,System.Int32,System.Int32)
+  name: Rescale<T>(IFixedPointAmount, int, int)
+  href: api/Virtufin.Core.Position.FixedPointArithmetic.html#Virtufin_Core_Position_FixedPointArithmetic_Rescale__1_Virtufin_Core_Position_IFixedPointAmount_System_Int32_System_Int32_
+  commentId: M:Virtufin.Core.Position.FixedPointArithmetic.Rescale``1(Virtufin.Core.Position.IFixedPointAmount,System.Int32,System.Int32)
+  name.vb: Rescale(Of T)(IFixedPointAmount, Integer, Integer)
+  fullName: Virtufin.Core.Position.FixedPointArithmetic.Rescale<T>(Virtufin.Core.Position.IFixedPointAmount, int, int)
+  fullName.vb: Virtufin.Core.Position.FixedPointArithmetic.Rescale(Of T)(Virtufin.Core.Position.IFixedPointAmount, Integer, Integer)
+  nameWithType: FixedPointArithmetic.Rescale<T>(IFixedPointAmount, int, int)
+  nameWithType.vb: FixedPointArithmetic.Rescale(Of T)(IFixedPointAmount, Integer, Integer)
+- uid: Virtufin.Core.Position.FixedPointArithmetic.Subtract*
+  name: Subtract
+  href: api/Virtufin.Core.Position.FixedPointArithmetic.html#Virtufin_Core_Position_FixedPointArithmetic_Subtract_
+  commentId: Overload:Virtufin.Core.Position.FixedPointArithmetic.Subtract
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.FixedPointArithmetic.Subtract
+  nameWithType: FixedPointArithmetic.Subtract
+- uid: Virtufin.Core.Position.FixedPointArithmetic.Subtract``1(``0,``0)
+  name: Subtract<T>(T, T)
+  href: api/Virtufin.Core.Position.FixedPointArithmetic.html#Virtufin_Core_Position_FixedPointArithmetic_Subtract__1___0___0_
+  commentId: M:Virtufin.Core.Position.FixedPointArithmetic.Subtract``1(``0,``0)
+  name.vb: Subtract(Of T)(T, T)
+  fullName: Virtufin.Core.Position.FixedPointArithmetic.Subtract<T>(T, T)
+  fullName.vb: Virtufin.Core.Position.FixedPointArithmetic.Subtract(Of T)(T, T)
+  nameWithType: FixedPointArithmetic.Subtract<T>(T, T)
+  nameWithType.vb: FixedPointArithmetic.Subtract(Of T)(T, T)
+- uid: Virtufin.Core.Position.IAmount
+  name: IAmount
+  href: api/Virtufin.Core.Position.IAmount.html
+  commentId: T:Virtufin.Core.Position.IAmount
+  fullName: Virtufin.Core.Position.IAmount
+  nameWithType: IAmount
+- uid: Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  name: CompareTo(IAmount)
+  href: api/Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_CompareTo_Virtufin_Core_Position_IAmount_
+  commentId: M:Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  fullName: Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  nameWithType: IAmount.CompareTo(IAmount)
+- uid: Virtufin.Core.Position.IAmount.CompareTo*
+  name: CompareTo
+  href: api/Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_CompareTo_
+  commentId: Overload:Virtufin.Core.Position.IAmount.CompareTo
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IAmount.CompareTo
+  nameWithType: IAmount.CompareTo
+- uid: Virtufin.Core.Position.IAmount.IsZero
+  name: IsZero
+  href: api/Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_IsZero
+  commentId: P:Virtufin.Core.Position.IAmount.IsZero
+  fullName: Virtufin.Core.Position.IAmount.IsZero
+  nameWithType: IAmount.IsZero
+- uid: Virtufin.Core.Position.IAmount.IsZero*
+  name: IsZero
+  href: api/Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_IsZero_
+  commentId: Overload:Virtufin.Core.Position.IAmount.IsZero
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IAmount.IsZero
+  nameWithType: IAmount.IsZero
+- uid: Virtufin.Core.Position.IAmount.Precision
+  name: Precision
+  href: api/Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_Precision
+  commentId: P:Virtufin.Core.Position.IAmount.Precision
+  fullName: Virtufin.Core.Position.IAmount.Precision
+  nameWithType: IAmount.Precision
+- uid: Virtufin.Core.Position.IAmount.Precision*
+  name: Precision
+  href: api/Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_Precision_
+  commentId: Overload:Virtufin.Core.Position.IAmount.Precision
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IAmount.Precision
+  nameWithType: IAmount.Precision
 - uid: Virtufin.Core.Position.IAmount`1
   name: IAmount<TValue>
   href: api/Virtufin.Core.Position.IAmount-1.html
@@ -13646,41 +14820,544 @@ references:
   fullName.vb: Virtufin.Core.Position.IAsCardinal(Of TCardinal).ToCardinal
   nameWithType: IAsCardinal<TCardinal>.ToCardinal
   nameWithType.vb: IAsCardinal(Of TCardinal).ToCardinal
+- uid: Virtufin.Core.Position.IFixedPointAmount
+  name: IFixedPointAmount
+  href: api/Virtufin.Core.Position.IFixedPointAmount.html
+  commentId: T:Virtufin.Core.Position.IFixedPointAmount
+  fullName: Virtufin.Core.Position.IFixedPointAmount
+  nameWithType: IFixedPointAmount
+- uid: Virtufin.Core.Position.IFixedPointAmount.Base
+  name: Base
+  href: api/Virtufin.Core.Position.IFixedPointAmount.html#Virtufin_Core_Position_IFixedPointAmount_Base
+  commentId: P:Virtufin.Core.Position.IFixedPointAmount.Base
+  fullName: Virtufin.Core.Position.IFixedPointAmount.Base
+  nameWithType: IFixedPointAmount.Base
+- uid: Virtufin.Core.Position.IFixedPointAmount.Base*
+  name: Base
+  href: api/Virtufin.Core.Position.IFixedPointAmount.html#Virtufin_Core_Position_IFixedPointAmount_Base_
+  commentId: Overload:Virtufin.Core.Position.IFixedPointAmount.Base
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IFixedPointAmount.Base
+  nameWithType: IFixedPointAmount.Base
+- uid: Virtufin.Core.Position.IFixedPointAmount.Fraction
+  name: Fraction
+  href: api/Virtufin.Core.Position.IFixedPointAmount.html#Virtufin_Core_Position_IFixedPointAmount_Fraction
+  commentId: P:Virtufin.Core.Position.IFixedPointAmount.Fraction
+  fullName: Virtufin.Core.Position.IFixedPointAmount.Fraction
+  nameWithType: IFixedPointAmount.Fraction
+- uid: Virtufin.Core.Position.IFixedPointAmount.Fraction*
+  name: Fraction
+  href: api/Virtufin.Core.Position.IFixedPointAmount.html#Virtufin_Core_Position_IFixedPointAmount_Fraction_
+  commentId: Overload:Virtufin.Core.Position.IFixedPointAmount.Fraction
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IFixedPointAmount.Fraction
+  nameWithType: IFixedPointAmount.Fraction
+- uid: Virtufin.Core.Position.IFixedPointAmount.ToCardinal
+  name: ToCardinal()
+  href: api/Virtufin.Core.Position.IFixedPointAmount.html#Virtufin_Core_Position_IFixedPointAmount_ToCardinal
+  commentId: M:Virtufin.Core.Position.IFixedPointAmount.ToCardinal
+  fullName: Virtufin.Core.Position.IFixedPointAmount.ToCardinal()
+  nameWithType: IFixedPointAmount.ToCardinal()
+- uid: Virtufin.Core.Position.IFixedPointAmount.ToCardinal*
+  name: ToCardinal
+  href: api/Virtufin.Core.Position.IFixedPointAmount.html#Virtufin_Core_Position_IFixedPointAmount_ToCardinal_
+  commentId: Overload:Virtufin.Core.Position.IFixedPointAmount.ToCardinal
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IFixedPointAmount.ToCardinal
+  nameWithType: IFixedPointAmount.ToCardinal
+- uid: Virtufin.Core.Position.IFixedPointAmount.Whole
+  name: Whole
+  href: api/Virtufin.Core.Position.IFixedPointAmount.html#Virtufin_Core_Position_IFixedPointAmount_Whole
+  commentId: P:Virtufin.Core.Position.IFixedPointAmount.Whole
+  fullName: Virtufin.Core.Position.IFixedPointAmount.Whole
+  nameWithType: IFixedPointAmount.Whole
+- uid: Virtufin.Core.Position.IFixedPointAmount.Whole*
+  name: Whole
+  href: api/Virtufin.Core.Position.IFixedPointAmount.html#Virtufin_Core_Position_IFixedPointAmount_Whole_
+  commentId: Overload:Virtufin.Core.Position.IFixedPointAmount.Whole
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IFixedPointAmount.Whole
+  nameWithType: IFixedPointAmount.Whole
+- uid: Virtufin.Core.Position.IFixedPointAmount`1
+  name: IFixedPointAmount<TSelf>
+  href: api/Virtufin.Core.Position.IFixedPointAmount-1.html
+  commentId: T:Virtufin.Core.Position.IFixedPointAmount`1
+  name.vb: IFixedPointAmount(Of TSelf)
+  fullName: Virtufin.Core.Position.IFixedPointAmount<TSelf>
+  fullName.vb: Virtufin.Core.Position.IFixedPointAmount(Of TSelf)
+  nameWithType: IFixedPointAmount<TSelf>
+  nameWithType.vb: IFixedPointAmount(Of TSelf)
+- uid: Virtufin.Core.Position.IFixedPointAmount`1.BaseValue
+  name: BaseValue
+  href: api/Virtufin.Core.Position.IFixedPointAmount-1.html#Virtufin_Core_Position_IFixedPointAmount_1_BaseValue
+  commentId: P:Virtufin.Core.Position.IFixedPointAmount`1.BaseValue
+  fullName: Virtufin.Core.Position.IFixedPointAmount<TSelf>.BaseValue
+  fullName.vb: Virtufin.Core.Position.IFixedPointAmount(Of TSelf).BaseValue
+  nameWithType: IFixedPointAmount<TSelf>.BaseValue
+  nameWithType.vb: IFixedPointAmount(Of TSelf).BaseValue
+- uid: Virtufin.Core.Position.IFixedPointAmount`1.BaseValue*
+  name: BaseValue
+  href: api/Virtufin.Core.Position.IFixedPointAmount-1.html#Virtufin_Core_Position_IFixedPointAmount_1_BaseValue_
+  commentId: Overload:Virtufin.Core.Position.IFixedPointAmount`1.BaseValue
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IFixedPointAmount<TSelf>.BaseValue
+  fullName.vb: Virtufin.Core.Position.IFixedPointAmount(Of TSelf).BaseValue
+  nameWithType: IFixedPointAmount<TSelf>.BaseValue
+  nameWithType.vb: IFixedPointAmount(Of TSelf).BaseValue
+- uid: Virtufin.Core.Position.IFixedPointAmount`1.Create(System.Int64,System.UInt64,System.Int32)
+  name: Create(long, ulong, int)
+  href: api/Virtufin.Core.Position.IFixedPointAmount-1.html#Virtufin_Core_Position_IFixedPointAmount_1_Create_System_Int64_System_UInt64_System_Int32_
+  commentId: M:Virtufin.Core.Position.IFixedPointAmount`1.Create(System.Int64,System.UInt64,System.Int32)
+  name.vb: Create(Long, ULong, Integer)
+  fullName: Virtufin.Core.Position.IFixedPointAmount<TSelf>.Create(long, ulong, int)
+  fullName.vb: Virtufin.Core.Position.IFixedPointAmount(Of TSelf).Create(Long, ULong, Integer)
+  nameWithType: IFixedPointAmount<TSelf>.Create(long, ulong, int)
+  nameWithType.vb: IFixedPointAmount(Of TSelf).Create(Long, ULong, Integer)
+- uid: Virtufin.Core.Position.IFixedPointAmount`1.Create*
+  name: Create
+  href: api/Virtufin.Core.Position.IFixedPointAmount-1.html#Virtufin_Core_Position_IFixedPointAmount_1_Create_
+  commentId: Overload:Virtufin.Core.Position.IFixedPointAmount`1.Create
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IFixedPointAmount<TSelf>.Create
+  fullName.vb: Virtufin.Core.Position.IFixedPointAmount(Of TSelf).Create
+  nameWithType: IFixedPointAmount<TSelf>.Create
+  nameWithType.vb: IFixedPointAmount(Of TSelf).Create
+- uid: Virtufin.Core.Position.IL2OrderBookDiff`2
+  name: IL2OrderBookDiff<A, L>
+  href: api/Virtufin.Core.Position.IL2OrderBookDiff-2.html
+  commentId: T:Virtufin.Core.Position.IL2OrderBookDiff`2
+  name.vb: IL2OrderBookDiff(Of A, L)
+  fullName: Virtufin.Core.Position.IL2OrderBookDiff<A, L>
+  fullName.vb: Virtufin.Core.Position.IL2OrderBookDiff(Of A, L)
+  nameWithType: IL2OrderBookDiff<A, L>
+  nameWithType.vb: IL2OrderBookDiff(Of A, L)
+- uid: Virtufin.Core.Position.IL2OrderBookDiff`2.Asks
+  name: Asks
+  href: api/Virtufin.Core.Position.IL2OrderBookDiff-2.html#Virtufin_Core_Position_IL2OrderBookDiff_2_Asks
+  commentId: P:Virtufin.Core.Position.IL2OrderBookDiff`2.Asks
+  fullName: Virtufin.Core.Position.IL2OrderBookDiff<A, L>.Asks
+  fullName.vb: Virtufin.Core.Position.IL2OrderBookDiff(Of A, L).Asks
+  nameWithType: IL2OrderBookDiff<A, L>.Asks
+  nameWithType.vb: IL2OrderBookDiff(Of A, L).Asks
+- uid: Virtufin.Core.Position.IL2OrderBookDiff`2.Asks*
+  name: Asks
+  href: api/Virtufin.Core.Position.IL2OrderBookDiff-2.html#Virtufin_Core_Position_IL2OrderBookDiff_2_Asks_
+  commentId: Overload:Virtufin.Core.Position.IL2OrderBookDiff`2.Asks
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IL2OrderBookDiff<A, L>.Asks
+  fullName.vb: Virtufin.Core.Position.IL2OrderBookDiff(Of A, L).Asks
+  nameWithType: IL2OrderBookDiff<A, L>.Asks
+  nameWithType.vb: IL2OrderBookDiff(Of A, L).Asks
+- uid: Virtufin.Core.Position.IL2OrderBookDiff`2.Bids
+  name: Bids
+  href: api/Virtufin.Core.Position.IL2OrderBookDiff-2.html#Virtufin_Core_Position_IL2OrderBookDiff_2_Bids
+  commentId: P:Virtufin.Core.Position.IL2OrderBookDiff`2.Bids
+  fullName: Virtufin.Core.Position.IL2OrderBookDiff<A, L>.Bids
+  fullName.vb: Virtufin.Core.Position.IL2OrderBookDiff(Of A, L).Bids
+  nameWithType: IL2OrderBookDiff<A, L>.Bids
+  nameWithType.vb: IL2OrderBookDiff(Of A, L).Bids
+- uid: Virtufin.Core.Position.IL2OrderBookDiff`2.Bids*
+  name: Bids
+  href: api/Virtufin.Core.Position.IL2OrderBookDiff-2.html#Virtufin_Core_Position_IL2OrderBookDiff_2_Bids_
+  commentId: Overload:Virtufin.Core.Position.IL2OrderBookDiff`2.Bids
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IL2OrderBookDiff<A, L>.Bids
+  fullName.vb: Virtufin.Core.Position.IL2OrderBookDiff(Of A, L).Bids
+  nameWithType: IL2OrderBookDiff<A, L>.Bids
+  nameWithType.vb: IL2OrderBookDiff(Of A, L).Bids
+- uid: Virtufin.Core.Position.IL2OrderBookDiff`2.FirstUpdateId
+  name: FirstUpdateId
+  href: api/Virtufin.Core.Position.IL2OrderBookDiff-2.html#Virtufin_Core_Position_IL2OrderBookDiff_2_FirstUpdateId
+  commentId: P:Virtufin.Core.Position.IL2OrderBookDiff`2.FirstUpdateId
+  fullName: Virtufin.Core.Position.IL2OrderBookDiff<A, L>.FirstUpdateId
+  fullName.vb: Virtufin.Core.Position.IL2OrderBookDiff(Of A, L).FirstUpdateId
+  nameWithType: IL2OrderBookDiff<A, L>.FirstUpdateId
+  nameWithType.vb: IL2OrderBookDiff(Of A, L).FirstUpdateId
+- uid: Virtufin.Core.Position.IL2OrderBookDiff`2.FirstUpdateId*
+  name: FirstUpdateId
+  href: api/Virtufin.Core.Position.IL2OrderBookDiff-2.html#Virtufin_Core_Position_IL2OrderBookDiff_2_FirstUpdateId_
+  commentId: Overload:Virtufin.Core.Position.IL2OrderBookDiff`2.FirstUpdateId
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IL2OrderBookDiff<A, L>.FirstUpdateId
+  fullName.vb: Virtufin.Core.Position.IL2OrderBookDiff(Of A, L).FirstUpdateId
+  nameWithType: IL2OrderBookDiff<A, L>.FirstUpdateId
+  nameWithType.vb: IL2OrderBookDiff(Of A, L).FirstUpdateId
+- uid: Virtufin.Core.Position.IL2OrderBookDiff`2.LastUpdateId
+  name: LastUpdateId
+  href: api/Virtufin.Core.Position.IL2OrderBookDiff-2.html#Virtufin_Core_Position_IL2OrderBookDiff_2_LastUpdateId
+  commentId: P:Virtufin.Core.Position.IL2OrderBookDiff`2.LastUpdateId
+  fullName: Virtufin.Core.Position.IL2OrderBookDiff<A, L>.LastUpdateId
+  fullName.vb: Virtufin.Core.Position.IL2OrderBookDiff(Of A, L).LastUpdateId
+  nameWithType: IL2OrderBookDiff<A, L>.LastUpdateId
+  nameWithType.vb: IL2OrderBookDiff(Of A, L).LastUpdateId
+- uid: Virtufin.Core.Position.IL2OrderBookDiff`2.LastUpdateId*
+  name: LastUpdateId
+  href: api/Virtufin.Core.Position.IL2OrderBookDiff-2.html#Virtufin_Core_Position_IL2OrderBookDiff_2_LastUpdateId_
+  commentId: Overload:Virtufin.Core.Position.IL2OrderBookDiff`2.LastUpdateId
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IL2OrderBookDiff<A, L>.LastUpdateId
+  fullName.vb: Virtufin.Core.Position.IL2OrderBookDiff(Of A, L).LastUpdateId
+  nameWithType: IL2OrderBookDiff<A, L>.LastUpdateId
+  nameWithType.vb: IL2OrderBookDiff(Of A, L).LastUpdateId
+- uid: Virtufin.Core.Position.IL2OrderBookSnapshot`2
+  name: IL2OrderBookSnapshot<A, L>
+  href: api/Virtufin.Core.Position.IL2OrderBookSnapshot-2.html
+  commentId: T:Virtufin.Core.Position.IL2OrderBookSnapshot`2
+  name.vb: IL2OrderBookSnapshot(Of A, L)
+  fullName: Virtufin.Core.Position.IL2OrderBookSnapshot<A, L>
+  fullName.vb: Virtufin.Core.Position.IL2OrderBookSnapshot(Of A, L)
+  nameWithType: IL2OrderBookSnapshot<A, L>
+  nameWithType.vb: IL2OrderBookSnapshot(Of A, L)
+- uid: Virtufin.Core.Position.IL2OrderBookSnapshot`2.Asks
+  name: Asks
+  href: api/Virtufin.Core.Position.IL2OrderBookSnapshot-2.html#Virtufin_Core_Position_IL2OrderBookSnapshot_2_Asks
+  commentId: P:Virtufin.Core.Position.IL2OrderBookSnapshot`2.Asks
+  fullName: Virtufin.Core.Position.IL2OrderBookSnapshot<A, L>.Asks
+  fullName.vb: Virtufin.Core.Position.IL2OrderBookSnapshot(Of A, L).Asks
+  nameWithType: IL2OrderBookSnapshot<A, L>.Asks
+  nameWithType.vb: IL2OrderBookSnapshot(Of A, L).Asks
+- uid: Virtufin.Core.Position.IL2OrderBookSnapshot`2.Asks*
+  name: Asks
+  href: api/Virtufin.Core.Position.IL2OrderBookSnapshot-2.html#Virtufin_Core_Position_IL2OrderBookSnapshot_2_Asks_
+  commentId: Overload:Virtufin.Core.Position.IL2OrderBookSnapshot`2.Asks
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IL2OrderBookSnapshot<A, L>.Asks
+  fullName.vb: Virtufin.Core.Position.IL2OrderBookSnapshot(Of A, L).Asks
+  nameWithType: IL2OrderBookSnapshot<A, L>.Asks
+  nameWithType.vb: IL2OrderBookSnapshot(Of A, L).Asks
+- uid: Virtufin.Core.Position.IL2OrderBookSnapshot`2.Bids
+  name: Bids
+  href: api/Virtufin.Core.Position.IL2OrderBookSnapshot-2.html#Virtufin_Core_Position_IL2OrderBookSnapshot_2_Bids
+  commentId: P:Virtufin.Core.Position.IL2OrderBookSnapshot`2.Bids
+  fullName: Virtufin.Core.Position.IL2OrderBookSnapshot<A, L>.Bids
+  fullName.vb: Virtufin.Core.Position.IL2OrderBookSnapshot(Of A, L).Bids
+  nameWithType: IL2OrderBookSnapshot<A, L>.Bids
+  nameWithType.vb: IL2OrderBookSnapshot(Of A, L).Bids
+- uid: Virtufin.Core.Position.IL2OrderBookSnapshot`2.Bids*
+  name: Bids
+  href: api/Virtufin.Core.Position.IL2OrderBookSnapshot-2.html#Virtufin_Core_Position_IL2OrderBookSnapshot_2_Bids_
+  commentId: Overload:Virtufin.Core.Position.IL2OrderBookSnapshot`2.Bids
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IL2OrderBookSnapshot<A, L>.Bids
+  fullName.vb: Virtufin.Core.Position.IL2OrderBookSnapshot(Of A, L).Bids
+  nameWithType: IL2OrderBookSnapshot<A, L>.Bids
+  nameWithType.vb: IL2OrderBookSnapshot(Of A, L).Bids
+- uid: Virtufin.Core.Position.IL2OrderBookSnapshot`2.LastUpdateId
+  name: LastUpdateId
+  href: api/Virtufin.Core.Position.IL2OrderBookSnapshot-2.html#Virtufin_Core_Position_IL2OrderBookSnapshot_2_LastUpdateId
+  commentId: P:Virtufin.Core.Position.IL2OrderBookSnapshot`2.LastUpdateId
+  fullName: Virtufin.Core.Position.IL2OrderBookSnapshot<A, L>.LastUpdateId
+  fullName.vb: Virtufin.Core.Position.IL2OrderBookSnapshot(Of A, L).LastUpdateId
+  nameWithType: IL2OrderBookSnapshot<A, L>.LastUpdateId
+  nameWithType.vb: IL2OrderBookSnapshot(Of A, L).LastUpdateId
+- uid: Virtufin.Core.Position.IL2OrderBookSnapshot`2.LastUpdateId*
+  name: LastUpdateId
+  href: api/Virtufin.Core.Position.IL2OrderBookSnapshot-2.html#Virtufin_Core_Position_IL2OrderBookSnapshot_2_LastUpdateId_
+  commentId: Overload:Virtufin.Core.Position.IL2OrderBookSnapshot`2.LastUpdateId
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IL2OrderBookSnapshot<A, L>.LastUpdateId
+  fullName.vb: Virtufin.Core.Position.IL2OrderBookSnapshot(Of A, L).LastUpdateId
+  nameWithType: IL2OrderBookSnapshot<A, L>.LastUpdateId
+  nameWithType.vb: IL2OrderBookSnapshot(Of A, L).LastUpdateId
+- uid: Virtufin.Core.Position.IL2OrderBook`2
+  name: IL2OrderBook<A, L>
+  href: api/Virtufin.Core.Position.IL2OrderBook-2.html
+  commentId: T:Virtufin.Core.Position.IL2OrderBook`2
+  name.vb: IL2OrderBook(Of A, L)
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L)
+  nameWithType: IL2OrderBook<A, L>
+  nameWithType.vb: IL2OrderBook(Of A, L)
+- uid: Virtufin.Core.Position.IL2OrderBook`2.AsksAscending
+  name: AsksAscending
+  href: api/Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_AsksAscending
+  commentId: P:Virtufin.Core.Position.IL2OrderBook`2.AsksAscending
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.AsksAscending
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).AsksAscending
+  nameWithType: IL2OrderBook<A, L>.AsksAscending
+  nameWithType.vb: IL2OrderBook(Of A, L).AsksAscending
+- uid: Virtufin.Core.Position.IL2OrderBook`2.AsksAscending*
+  name: AsksAscending
+  href: api/Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_AsksAscending_
+  commentId: Overload:Virtufin.Core.Position.IL2OrderBook`2.AsksAscending
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.AsksAscending
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).AsksAscending
+  nameWithType: IL2OrderBook<A, L>.AsksAscending
+  nameWithType.vb: IL2OrderBook(Of A, L).AsksAscending
+- uid: Virtufin.Core.Position.IL2OrderBook`2.BidsDescending
+  name: BidsDescending
+  href: api/Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_BidsDescending
+  commentId: P:Virtufin.Core.Position.IL2OrderBook`2.BidsDescending
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.BidsDescending
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).BidsDescending
+  nameWithType: IL2OrderBook<A, L>.BidsDescending
+  nameWithType.vb: IL2OrderBook(Of A, L).BidsDescending
+- uid: Virtufin.Core.Position.IL2OrderBook`2.BidsDescending*
+  name: BidsDescending
+  href: api/Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_BidsDescending_
+  commentId: Overload:Virtufin.Core.Position.IL2OrderBook`2.BidsDescending
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.BidsDescending
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).BidsDescending
+  nameWithType: IL2OrderBook<A, L>.BidsDescending
+  nameWithType.vb: IL2OrderBook(Of A, L).BidsDescending
+- uid: Virtufin.Core.Position.IL2OrderBook`2.DepthBase
+  name: DepthBase
+  href: api/Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_DepthBase
+  commentId: P:Virtufin.Core.Position.IL2OrderBook`2.DepthBase
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.DepthBase
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).DepthBase
+  nameWithType: IL2OrderBook<A, L>.DepthBase
+  nameWithType.vb: IL2OrderBook(Of A, L).DepthBase
+- uid: Virtufin.Core.Position.IL2OrderBook`2.DepthBase*
+  name: DepthBase
+  href: api/Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_DepthBase_
+  commentId: Overload:Virtufin.Core.Position.IL2OrderBook`2.DepthBase
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.DepthBase
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).DepthBase
+  nameWithType: IL2OrderBook<A, L>.DepthBase
+  nameWithType.vb: IL2OrderBook(Of A, L).DepthBase
+- uid: Virtufin.Core.Position.IL2OrderBook`2.DepthPrecision
+  name: DepthPrecision
+  href: api/Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_DepthPrecision
+  commentId: P:Virtufin.Core.Position.IL2OrderBook`2.DepthPrecision
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.DepthPrecision
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).DepthPrecision
+  nameWithType: IL2OrderBook<A, L>.DepthPrecision
+  nameWithType.vb: IL2OrderBook(Of A, L).DepthPrecision
+- uid: Virtufin.Core.Position.IL2OrderBook`2.DepthPrecision*
+  name: DepthPrecision
+  href: api/Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_DepthPrecision_
+  commentId: Overload:Virtufin.Core.Position.IL2OrderBook`2.DepthPrecision
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.DepthPrecision
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).DepthPrecision
+  nameWithType: IL2OrderBook<A, L>.DepthPrecision
+  nameWithType.vb: IL2OrderBook(Of A, L).DepthPrecision
+- uid: Virtufin.Core.Position.IL2OrderBook`2.LevelBase
+  name: LevelBase
+  href: api/Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_LevelBase
+  commentId: P:Virtufin.Core.Position.IL2OrderBook`2.LevelBase
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.LevelBase
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).LevelBase
+  nameWithType: IL2OrderBook<A, L>.LevelBase
+  nameWithType.vb: IL2OrderBook(Of A, L).LevelBase
+- uid: Virtufin.Core.Position.IL2OrderBook`2.LevelBase*
+  name: LevelBase
+  href: api/Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_LevelBase_
+  commentId: Overload:Virtufin.Core.Position.IL2OrderBook`2.LevelBase
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.LevelBase
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).LevelBase
+  nameWithType: IL2OrderBook<A, L>.LevelBase
+  nameWithType.vb: IL2OrderBook(Of A, L).LevelBase
+- uid: Virtufin.Core.Position.IL2OrderBook`2.LevelPrecision
+  name: LevelPrecision
+  href: api/Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_LevelPrecision
+  commentId: P:Virtufin.Core.Position.IL2OrderBook`2.LevelPrecision
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.LevelPrecision
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).LevelPrecision
+  nameWithType: IL2OrderBook<A, L>.LevelPrecision
+  nameWithType.vb: IL2OrderBook(Of A, L).LevelPrecision
+- uid: Virtufin.Core.Position.IL2OrderBook`2.LevelPrecision*
+  name: LevelPrecision
+  href: api/Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_LevelPrecision_
+  commentId: Overload:Virtufin.Core.Position.IL2OrderBook`2.LevelPrecision
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.LevelPrecision
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).LevelPrecision
+  nameWithType: IL2OrderBook<A, L>.LevelPrecision
+  nameWithType.vb: IL2OrderBook(Of A, L).LevelPrecision
+- uid: Virtufin.Core.Position.IL2OrderBook`2.TryGetAsk(`1,`0@)
+  name: TryGetAsk(L, out A)
+  href: api/Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_TryGetAsk__1__0__
+  commentId: M:Virtufin.Core.Position.IL2OrderBook`2.TryGetAsk(`1,`0@)
+  name.vb: TryGetAsk(L, A)
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.TryGetAsk(L, out A)
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).TryGetAsk(L, A)
+  nameWithType: IL2OrderBook<A, L>.TryGetAsk(L, out A)
+  nameWithType.vb: IL2OrderBook(Of A, L).TryGetAsk(L, A)
+- uid: Virtufin.Core.Position.IL2OrderBook`2.TryGetAsk*
+  name: TryGetAsk
+  href: api/Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_TryGetAsk_
+  commentId: Overload:Virtufin.Core.Position.IL2OrderBook`2.TryGetAsk
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.TryGetAsk
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).TryGetAsk
+  nameWithType: IL2OrderBook<A, L>.TryGetAsk
+  nameWithType.vb: IL2OrderBook(Of A, L).TryGetAsk
+- uid: Virtufin.Core.Position.IL2OrderBook`2.TryGetBid(`1,`0@)
+  name: TryGetBid(L, out A)
+  href: api/Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_TryGetBid__1__0__
+  commentId: M:Virtufin.Core.Position.IL2OrderBook`2.TryGetBid(`1,`0@)
+  name.vb: TryGetBid(L, A)
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.TryGetBid(L, out A)
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).TryGetBid(L, A)
+  nameWithType: IL2OrderBook<A, L>.TryGetBid(L, out A)
+  nameWithType.vb: IL2OrderBook(Of A, L).TryGetBid(L, A)
+- uid: Virtufin.Core.Position.IL2OrderBook`2.TryGetBid*
+  name: TryGetBid
+  href: api/Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_TryGetBid_
+  commentId: Overload:Virtufin.Core.Position.IL2OrderBook`2.TryGetBid
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.TryGetBid
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).TryGetBid
+  nameWithType: IL2OrderBook<A, L>.TryGetBid
+  nameWithType.vb: IL2OrderBook(Of A, L).TryGetBid
+- uid: Virtufin.Core.Position.IL3OrderBook`4
+  name: IL3OrderBook<O, T, A, L>
+  href: api/Virtufin.Core.Position.IL3OrderBook-4.html
+  commentId: T:Virtufin.Core.Position.IL3OrderBook`4
+  name.vb: IL3OrderBook(Of O, T, A, L)
+  fullName: Virtufin.Core.Position.IL3OrderBook<O, T, A, L>
+  fullName.vb: Virtufin.Core.Position.IL3OrderBook(Of O, T, A, L)
+  nameWithType: IL3OrderBook<O, T, A, L>
+  nameWithType.vb: IL3OrderBook(Of O, T, A, L)
+- uid: Virtufin.Core.Position.IL3OrderBook`4.Orders
+  name: Orders
+  href: api/Virtufin.Core.Position.IL3OrderBook-4.html#Virtufin_Core_Position_IL3OrderBook_4_Orders
+  commentId: P:Virtufin.Core.Position.IL3OrderBook`4.Orders
+  fullName: Virtufin.Core.Position.IL3OrderBook<O, T, A, L>.Orders
+  fullName.vb: Virtufin.Core.Position.IL3OrderBook(Of O, T, A, L).Orders
+  nameWithType: IL3OrderBook<O, T, A, L>.Orders
+  nameWithType.vb: IL3OrderBook(Of O, T, A, L).Orders
+- uid: Virtufin.Core.Position.IL3OrderBook`4.Orders*
+  name: Orders
+  href: api/Virtufin.Core.Position.IL3OrderBook-4.html#Virtufin_Core_Position_IL3OrderBook_4_Orders_
+  commentId: Overload:Virtufin.Core.Position.IL3OrderBook`4.Orders
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IL3OrderBook<O, T, A, L>.Orders
+  fullName.vb: Virtufin.Core.Position.IL3OrderBook(Of O, T, A, L).Orders
+  nameWithType: IL3OrderBook<O, T, A, L>.Orders
+  nameWithType.vb: IL3OrderBook(Of O, T, A, L).Orders
 - uid: Virtufin.Core.Position.IOrderBook
   name: IOrderBook
   href: api/Virtufin.Core.Position.IOrderBook.html
   commentId: T:Virtufin.Core.Position.IOrderBook
   fullName: Virtufin.Core.Position.IOrderBook
   nameWithType: IOrderBook
-- uid: Virtufin.Core.Position.IOrderBook.AddTransactions(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.ITransaction})
-  name: AddTransactions(IEnumerable<ITransaction>)
-  href: api/Virtufin.Core.Position.IOrderBook.html#Virtufin_Core_Position_IOrderBook_AddTransactions_System_Collections_Generic_IEnumerable_Virtufin_Core_Contracts_ITransaction__
-  commentId: M:Virtufin.Core.Position.IOrderBook.AddTransactions(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.ITransaction})
-  name.vb: AddTransactions(IEnumerable(Of ITransaction))
-  fullName: Virtufin.Core.Position.IOrderBook.AddTransactions(System.Collections.Generic.IEnumerable<Virtufin.Core.Contracts.ITransaction>)
-  fullName.vb: Virtufin.Core.Position.IOrderBook.AddTransactions(System.Collections.Generic.IEnumerable(Of Virtufin.Core.Contracts.ITransaction))
-  nameWithType: IOrderBook.AddTransactions(IEnumerable<ITransaction>)
-  nameWithType.vb: IOrderBook.AddTransactions(IEnumerable(Of ITransaction))
-- uid: Virtufin.Core.Position.IOrderBook.AddTransactions*
-  name: AddTransactions
-  href: api/Virtufin.Core.Position.IOrderBook.html#Virtufin_Core_Position_IOrderBook_AddTransactions_
-  commentId: Overload:Virtufin.Core.Position.IOrderBook.AddTransactions
+- uid: Virtufin.Core.Position.IOrderBookUpdater`3
+  name: IOrderBookUpdater<TBook, S, D>
+  href: api/Virtufin.Core.Position.IOrderBookUpdater-3.html
+  commentId: T:Virtufin.Core.Position.IOrderBookUpdater`3
+  name.vb: IOrderBookUpdater(Of TBook, S, D)
+  fullName: Virtufin.Core.Position.IOrderBookUpdater<TBook, S, D>
+  fullName.vb: Virtufin.Core.Position.IOrderBookUpdater(Of TBook, S, D)
+  nameWithType: IOrderBookUpdater<TBook, S, D>
+  nameWithType.vb: IOrderBookUpdater(Of TBook, S, D)
+- uid: Virtufin.Core.Position.IOrderBookUpdater`3.ApplyDiff(`0,`2)
+  name: ApplyDiff(TBook, D)
+  href: api/Virtufin.Core.Position.IOrderBookUpdater-3.html#Virtufin_Core_Position_IOrderBookUpdater_3_ApplyDiff__0__2_
+  commentId: M:Virtufin.Core.Position.IOrderBookUpdater`3.ApplyDiff(`0,`2)
+  fullName: Virtufin.Core.Position.IOrderBookUpdater<TBook, S, D>.ApplyDiff(TBook, D)
+  fullName.vb: Virtufin.Core.Position.IOrderBookUpdater(Of TBook, S, D).ApplyDiff(TBook, D)
+  nameWithType: IOrderBookUpdater<TBook, S, D>.ApplyDiff(TBook, D)
+  nameWithType.vb: IOrderBookUpdater(Of TBook, S, D).ApplyDiff(TBook, D)
+- uid: Virtufin.Core.Position.IOrderBookUpdater`3.ApplyDiff*
+  name: ApplyDiff
+  href: api/Virtufin.Core.Position.IOrderBookUpdater-3.html#Virtufin_Core_Position_IOrderBookUpdater_3_ApplyDiff_
+  commentId: Overload:Virtufin.Core.Position.IOrderBookUpdater`3.ApplyDiff
   isSpec: "True"
-  fullName: Virtufin.Core.Position.IOrderBook.AddTransactions
-  nameWithType: IOrderBook.AddTransactions
-- uid: Virtufin.Core.Position.IOrderBook.Orders
-  name: Orders
-  href: api/Virtufin.Core.Position.IOrderBook.html#Virtufin_Core_Position_IOrderBook_Orders
-  commentId: P:Virtufin.Core.Position.IOrderBook.Orders
-  fullName: Virtufin.Core.Position.IOrderBook.Orders
-  nameWithType: IOrderBook.Orders
-- uid: Virtufin.Core.Position.IOrderBook.Orders*
-  name: Orders
-  href: api/Virtufin.Core.Position.IOrderBook.html#Virtufin_Core_Position_IOrderBook_Orders_
-  commentId: Overload:Virtufin.Core.Position.IOrderBook.Orders
+  fullName: Virtufin.Core.Position.IOrderBookUpdater<TBook, S, D>.ApplyDiff
+  fullName.vb: Virtufin.Core.Position.IOrderBookUpdater(Of TBook, S, D).ApplyDiff
+  nameWithType: IOrderBookUpdater<TBook, S, D>.ApplyDiff
+  nameWithType.vb: IOrderBookUpdater(Of TBook, S, D).ApplyDiff
+- uid: Virtufin.Core.Position.IOrderBookUpdater`3.ApplySnapshot(`0,`1)
+  name: ApplySnapshot(TBook, S)
+  href: api/Virtufin.Core.Position.IOrderBookUpdater-3.html#Virtufin_Core_Position_IOrderBookUpdater_3_ApplySnapshot__0__1_
+  commentId: M:Virtufin.Core.Position.IOrderBookUpdater`3.ApplySnapshot(`0,`1)
+  fullName: Virtufin.Core.Position.IOrderBookUpdater<TBook, S, D>.ApplySnapshot(TBook, S)
+  fullName.vb: Virtufin.Core.Position.IOrderBookUpdater(Of TBook, S, D).ApplySnapshot(TBook, S)
+  nameWithType: IOrderBookUpdater<TBook, S, D>.ApplySnapshot(TBook, S)
+  nameWithType.vb: IOrderBookUpdater(Of TBook, S, D).ApplySnapshot(TBook, S)
+- uid: Virtufin.Core.Position.IOrderBookUpdater`3.ApplySnapshot*
+  name: ApplySnapshot
+  href: api/Virtufin.Core.Position.IOrderBookUpdater-3.html#Virtufin_Core_Position_IOrderBookUpdater_3_ApplySnapshot_
+  commentId: Overload:Virtufin.Core.Position.IOrderBookUpdater`3.ApplySnapshot
   isSpec: "True"
-  fullName: Virtufin.Core.Position.IOrderBook.Orders
-  nameWithType: IOrderBook.Orders
+  fullName: Virtufin.Core.Position.IOrderBookUpdater<TBook, S, D>.ApplySnapshot
+  fullName.vb: Virtufin.Core.Position.IOrderBookUpdater(Of TBook, S, D).ApplySnapshot
+  nameWithType: IOrderBookUpdater<TBook, S, D>.ApplySnapshot
+  nameWithType.vb: IOrderBookUpdater(Of TBook, S, D).ApplySnapshot
+- uid: Virtufin.Core.Position.IOrderLine`3
+  name: IOrderLine<T, A, L>
+  href: api/Virtufin.Core.Position.IOrderLine-3.html
+  commentId: T:Virtufin.Core.Position.IOrderLine`3
+  name.vb: IOrderLine(Of T, A, L)
+  fullName: Virtufin.Core.Position.IOrderLine<T, A, L>
+  fullName.vb: Virtufin.Core.Position.IOrderLine(Of T, A, L)
+  nameWithType: IOrderLine<T, A, L>
+  nameWithType.vb: IOrderLine(Of T, A, L)
+- uid: Virtufin.Core.Position.IOrderLine`3.Id
+  name: Id
+  href: api/Virtufin.Core.Position.IOrderLine-3.html#Virtufin_Core_Position_IOrderLine_3_Id
+  commentId: P:Virtufin.Core.Position.IOrderLine`3.Id
+  fullName: Virtufin.Core.Position.IOrderLine<T, A, L>.Id
+  fullName.vb: Virtufin.Core.Position.IOrderLine(Of T, A, L).Id
+  nameWithType: IOrderLine<T, A, L>.Id
+  nameWithType.vb: IOrderLine(Of T, A, L).Id
+- uid: Virtufin.Core.Position.IOrderLine`3.Id*
+  name: Id
+  href: api/Virtufin.Core.Position.IOrderLine-3.html#Virtufin_Core_Position_IOrderLine_3_Id_
+  commentId: Overload:Virtufin.Core.Position.IOrderLine`3.Id
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IOrderLine<T, A, L>.Id
+  fullName.vb: Virtufin.Core.Position.IOrderLine(Of T, A, L).Id
+  nameWithType: IOrderLine<T, A, L>.Id
+  nameWithType.vb: IOrderLine(Of T, A, L).Id
+- uid: Virtufin.Core.Position.IOrderLine`3.Price
+  name: Price
+  href: api/Virtufin.Core.Position.IOrderLine-3.html#Virtufin_Core_Position_IOrderLine_3_Price
+  commentId: P:Virtufin.Core.Position.IOrderLine`3.Price
+  fullName: Virtufin.Core.Position.IOrderLine<T, A, L>.Price
+  fullName.vb: Virtufin.Core.Position.IOrderLine(Of T, A, L).Price
+  nameWithType: IOrderLine<T, A, L>.Price
+  nameWithType.vb: IOrderLine(Of T, A, L).Price
+- uid: Virtufin.Core.Position.IOrderLine`3.Price*
+  name: Price
+  href: api/Virtufin.Core.Position.IOrderLine-3.html#Virtufin_Core_Position_IOrderLine_3_Price_
+  commentId: Overload:Virtufin.Core.Position.IOrderLine`3.Price
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IOrderLine<T, A, L>.Price
+  fullName.vb: Virtufin.Core.Position.IOrderLine(Of T, A, L).Price
+  nameWithType: IOrderLine<T, A, L>.Price
+  nameWithType.vb: IOrderLine(Of T, A, L).Price
+- uid: Virtufin.Core.Position.IOrderLine`3.Side
+  name: Side
+  href: api/Virtufin.Core.Position.IOrderLine-3.html#Virtufin_Core_Position_IOrderLine_3_Side
+  commentId: P:Virtufin.Core.Position.IOrderLine`3.Side
+  fullName: Virtufin.Core.Position.IOrderLine<T, A, L>.Side
+  fullName.vb: Virtufin.Core.Position.IOrderLine(Of T, A, L).Side
+  nameWithType: IOrderLine<T, A, L>.Side
+  nameWithType.vb: IOrderLine(Of T, A, L).Side
+- uid: Virtufin.Core.Position.IOrderLine`3.Side*
+  name: Side
+  href: api/Virtufin.Core.Position.IOrderLine-3.html#Virtufin_Core_Position_IOrderLine_3_Side_
+  commentId: Overload:Virtufin.Core.Position.IOrderLine`3.Side
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IOrderLine<T, A, L>.Side
+  fullName.vb: Virtufin.Core.Position.IOrderLine(Of T, A, L).Side
+  nameWithType: IOrderLine<T, A, L>.Side
+  nameWithType.vb: IOrderLine(Of T, A, L).Side
+- uid: Virtufin.Core.Position.IOrderLine`3.Size
+  name: Size
+  href: api/Virtufin.Core.Position.IOrderLine-3.html#Virtufin_Core_Position_IOrderLine_3_Size
+  commentId: P:Virtufin.Core.Position.IOrderLine`3.Size
+  fullName: Virtufin.Core.Position.IOrderLine<T, A, L>.Size
+  fullName.vb: Virtufin.Core.Position.IOrderLine(Of T, A, L).Size
+  nameWithType: IOrderLine<T, A, L>.Size
+  nameWithType.vb: IOrderLine(Of T, A, L).Size
+- uid: Virtufin.Core.Position.IOrderLine`3.Size*
+  name: Size
+  href: api/Virtufin.Core.Position.IOrderLine-3.html#Virtufin_Core_Position_IOrderLine_3_Size_
+  commentId: Overload:Virtufin.Core.Position.IOrderLine`3.Size
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.IOrderLine<T, A, L>.Size
+  fullName.vb: Virtufin.Core.Position.IOrderLine(Of T, A, L).Size
+  nameWithType: IOrderLine<T, A, L>.Size
+  nameWithType.vb: IOrderLine(Of T, A, L).Size
 - uid: Virtufin.Core.Position.IQuantity`2
   name: IQuantity<TAmount, TUnit>
   href: api/Virtufin.Core.Position.IQuantity-2.html
@@ -13724,6 +15401,41 @@ references:
   fullName.vb: Virtufin.Core.Position.IQuantity(Of TAmount, TUnit).Unit
   nameWithType: IQuantity<TAmount, TUnit>.Unit
   nameWithType.vb: IQuantity(Of TAmount, TUnit).Unit
+- uid: Virtufin.Core.Position.ITransactionLedger
+  name: ITransactionLedger
+  href: api/Virtufin.Core.Position.ITransactionLedger.html
+  commentId: T:Virtufin.Core.Position.ITransactionLedger
+  fullName: Virtufin.Core.Position.ITransactionLedger
+  nameWithType: ITransactionLedger
+- uid: Virtufin.Core.Position.ITransactionLedger.AddTransactions(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.ITransaction})
+  name: AddTransactions(IEnumerable<ITransaction>)
+  href: api/Virtufin.Core.Position.ITransactionLedger.html#Virtufin_Core_Position_ITransactionLedger_AddTransactions_System_Collections_Generic_IEnumerable_Virtufin_Core_Contracts_ITransaction__
+  commentId: M:Virtufin.Core.Position.ITransactionLedger.AddTransactions(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.ITransaction})
+  name.vb: AddTransactions(IEnumerable(Of ITransaction))
+  fullName: Virtufin.Core.Position.ITransactionLedger.AddTransactions(System.Collections.Generic.IEnumerable<Virtufin.Core.Contracts.ITransaction>)
+  fullName.vb: Virtufin.Core.Position.ITransactionLedger.AddTransactions(System.Collections.Generic.IEnumerable(Of Virtufin.Core.Contracts.ITransaction))
+  nameWithType: ITransactionLedger.AddTransactions(IEnumerable<ITransaction>)
+  nameWithType.vb: ITransactionLedger.AddTransactions(IEnumerable(Of ITransaction))
+- uid: Virtufin.Core.Position.ITransactionLedger.AddTransactions*
+  name: AddTransactions
+  href: api/Virtufin.Core.Position.ITransactionLedger.html#Virtufin_Core_Position_ITransactionLedger_AddTransactions_
+  commentId: Overload:Virtufin.Core.Position.ITransactionLedger.AddTransactions
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.ITransactionLedger.AddTransactions
+  nameWithType: ITransactionLedger.AddTransactions
+- uid: Virtufin.Core.Position.ITransactionLedger.Orders
+  name: Orders
+  href: api/Virtufin.Core.Position.ITransactionLedger.html#Virtufin_Core_Position_ITransactionLedger_Orders
+  commentId: P:Virtufin.Core.Position.ITransactionLedger.Orders
+  fullName: Virtufin.Core.Position.ITransactionLedger.Orders
+  nameWithType: ITransactionLedger.Orders
+- uid: Virtufin.Core.Position.ITransactionLedger.Orders*
+  name: Orders
+  href: api/Virtufin.Core.Position.ITransactionLedger.html#Virtufin_Core_Position_ITransactionLedger_Orders_
+  commentId: Overload:Virtufin.Core.Position.ITransactionLedger.Orders
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.ITransactionLedger.Orders
+  nameWithType: ITransactionLedger.Orders
 - uid: Virtufin.Core.Position.IUnit
   name: IUnit
   href: api/Virtufin.Core.Position.IUnit.html
@@ -13761,6 +15473,131 @@ references:
   commentId: F:Virtufin.Core.Position.LimitOrMarketOrder.MarketOrder
   fullName: Virtufin.Core.Position.LimitOrMarketOrder.MarketOrder
   nameWithType: LimitOrMarketOrder.MarketOrder
+- uid: Virtufin.Core.Position.OrderBookState
+  name: OrderBookState
+  href: api/Virtufin.Core.Position.OrderBookState.html
+  commentId: T:Virtufin.Core.Position.OrderBookState
+  fullName: Virtufin.Core.Position.OrderBookState
+  nameWithType: OrderBookState
+- uid: Virtufin.Core.Position.OrderBookState.AwaitingSnapshot
+  name: AwaitingSnapshot
+  href: api/Virtufin.Core.Position.OrderBookState.html#Virtufin_Core_Position_OrderBookState_AwaitingSnapshot
+  commentId: F:Virtufin.Core.Position.OrderBookState.AwaitingSnapshot
+  fullName: Virtufin.Core.Position.OrderBookState.AwaitingSnapshot
+  nameWithType: OrderBookState.AwaitingSnapshot
+- uid: Virtufin.Core.Position.OrderBookState.Live
+  name: Live
+  href: api/Virtufin.Core.Position.OrderBookState.html#Virtufin_Core_Position_OrderBookState_Live
+  commentId: F:Virtufin.Core.Position.OrderBookState.Live
+  fullName: Virtufin.Core.Position.OrderBookState.Live
+  nameWithType: OrderBookState.Live
+- uid: Virtufin.Core.Position.OrderBookUpdateStatus
+  name: OrderBookUpdateStatus
+  href: api/Virtufin.Core.Position.OrderBookUpdateStatus.html
+  commentId: T:Virtufin.Core.Position.OrderBookUpdateStatus
+  fullName: Virtufin.Core.Position.OrderBookUpdateStatus
+  nameWithType: OrderBookUpdateStatus
+- uid: Virtufin.Core.Position.OrderBookUpdateStatus.Applied
+  name: Applied
+  href: api/Virtufin.Core.Position.OrderBookUpdateStatus.html#Virtufin_Core_Position_OrderBookUpdateStatus_Applied
+  commentId: F:Virtufin.Core.Position.OrderBookUpdateStatus.Applied
+  fullName: Virtufin.Core.Position.OrderBookUpdateStatus.Applied
+  nameWithType: OrderBookUpdateStatus.Applied
+- uid: Virtufin.Core.Position.OrderBookUpdateStatus.Dropped
+  name: Dropped
+  href: api/Virtufin.Core.Position.OrderBookUpdateStatus.html#Virtufin_Core_Position_OrderBookUpdateStatus_Dropped
+  commentId: F:Virtufin.Core.Position.OrderBookUpdateStatus.Dropped
+  fullName: Virtufin.Core.Position.OrderBookUpdateStatus.Dropped
+  nameWithType: OrderBookUpdateStatus.Dropped
+- uid: Virtufin.Core.Position.OrderBookUpdateStatus.GapDetected
+  name: GapDetected
+  href: api/Virtufin.Core.Position.OrderBookUpdateStatus.html#Virtufin_Core_Position_OrderBookUpdateStatus_GapDetected
+  commentId: F:Virtufin.Core.Position.OrderBookUpdateStatus.GapDetected
+  fullName: Virtufin.Core.Position.OrderBookUpdateStatus.GapDetected
+  nameWithType: OrderBookUpdateStatus.GapDetected
+- uid: Virtufin.Core.Position.OrderBookUpdateStatus.Stale
+  name: Stale
+  href: api/Virtufin.Core.Position.OrderBookUpdateStatus.html#Virtufin_Core_Position_OrderBookUpdateStatus_Stale
+  commentId: F:Virtufin.Core.Position.OrderBookUpdateStatus.Stale
+  fullName: Virtufin.Core.Position.OrderBookUpdateStatus.Stale
+  nameWithType: OrderBookUpdateStatus.Stale
+- uid: Virtufin.Core.Position.PrecisionMismatchException
+  name: PrecisionMismatchException
+  href: api/Virtufin.Core.Position.PrecisionMismatchException.html
+  commentId: T:Virtufin.Core.Position.PrecisionMismatchException
+  fullName: Virtufin.Core.Position.PrecisionMismatchException
+  nameWithType: PrecisionMismatchException
+- uid: Virtufin.Core.Position.PrecisionMismatchException.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  name: PrecisionMismatchException(int, int, int, int)
+  href: api/Virtufin.Core.Position.PrecisionMismatchException.html#Virtufin_Core_Position_PrecisionMismatchException__ctor_System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:Virtufin.Core.Position.PrecisionMismatchException.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  name.vb: New(Integer, Integer, Integer, Integer)
+  fullName: Virtufin.Core.Position.PrecisionMismatchException.PrecisionMismatchException(int, int, int, int)
+  fullName.vb: Virtufin.Core.Position.PrecisionMismatchException.New(Integer, Integer, Integer, Integer)
+  nameWithType: PrecisionMismatchException.PrecisionMismatchException(int, int, int, int)
+  nameWithType.vb: PrecisionMismatchException.New(Integer, Integer, Integer, Integer)
+- uid: Virtufin.Core.Position.PrecisionMismatchException.#ctor*
+  name: PrecisionMismatchException
+  href: api/Virtufin.Core.Position.PrecisionMismatchException.html#Virtufin_Core_Position_PrecisionMismatchException__ctor_
+  commentId: Overload:Virtufin.Core.Position.PrecisionMismatchException.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Core.Position.PrecisionMismatchException.PrecisionMismatchException
+  fullName.vb: Virtufin.Core.Position.PrecisionMismatchException.New
+  nameWithType: PrecisionMismatchException.PrecisionMismatchException
+  nameWithType.vb: PrecisionMismatchException.New
+- uid: Virtufin.Core.Position.PrecisionMismatchException.LeftBase
+  name: LeftBase
+  href: api/Virtufin.Core.Position.PrecisionMismatchException.html#Virtufin_Core_Position_PrecisionMismatchException_LeftBase
+  commentId: P:Virtufin.Core.Position.PrecisionMismatchException.LeftBase
+  fullName: Virtufin.Core.Position.PrecisionMismatchException.LeftBase
+  nameWithType: PrecisionMismatchException.LeftBase
+- uid: Virtufin.Core.Position.PrecisionMismatchException.LeftBase*
+  name: LeftBase
+  href: api/Virtufin.Core.Position.PrecisionMismatchException.html#Virtufin_Core_Position_PrecisionMismatchException_LeftBase_
+  commentId: Overload:Virtufin.Core.Position.PrecisionMismatchException.LeftBase
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.PrecisionMismatchException.LeftBase
+  nameWithType: PrecisionMismatchException.LeftBase
+- uid: Virtufin.Core.Position.PrecisionMismatchException.LeftPrecision
+  name: LeftPrecision
+  href: api/Virtufin.Core.Position.PrecisionMismatchException.html#Virtufin_Core_Position_PrecisionMismatchException_LeftPrecision
+  commentId: P:Virtufin.Core.Position.PrecisionMismatchException.LeftPrecision
+  fullName: Virtufin.Core.Position.PrecisionMismatchException.LeftPrecision
+  nameWithType: PrecisionMismatchException.LeftPrecision
+- uid: Virtufin.Core.Position.PrecisionMismatchException.LeftPrecision*
+  name: LeftPrecision
+  href: api/Virtufin.Core.Position.PrecisionMismatchException.html#Virtufin_Core_Position_PrecisionMismatchException_LeftPrecision_
+  commentId: Overload:Virtufin.Core.Position.PrecisionMismatchException.LeftPrecision
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.PrecisionMismatchException.LeftPrecision
+  nameWithType: PrecisionMismatchException.LeftPrecision
+- uid: Virtufin.Core.Position.PrecisionMismatchException.RightBase
+  name: RightBase
+  href: api/Virtufin.Core.Position.PrecisionMismatchException.html#Virtufin_Core_Position_PrecisionMismatchException_RightBase
+  commentId: P:Virtufin.Core.Position.PrecisionMismatchException.RightBase
+  fullName: Virtufin.Core.Position.PrecisionMismatchException.RightBase
+  nameWithType: PrecisionMismatchException.RightBase
+- uid: Virtufin.Core.Position.PrecisionMismatchException.RightBase*
+  name: RightBase
+  href: api/Virtufin.Core.Position.PrecisionMismatchException.html#Virtufin_Core_Position_PrecisionMismatchException_RightBase_
+  commentId: Overload:Virtufin.Core.Position.PrecisionMismatchException.RightBase
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.PrecisionMismatchException.RightBase
+  nameWithType: PrecisionMismatchException.RightBase
+- uid: Virtufin.Core.Position.PrecisionMismatchException.RightPrecision
+  name: RightPrecision
+  href: api/Virtufin.Core.Position.PrecisionMismatchException.html#Virtufin_Core_Position_PrecisionMismatchException_RightPrecision
+  commentId: P:Virtufin.Core.Position.PrecisionMismatchException.RightPrecision
+  fullName: Virtufin.Core.Position.PrecisionMismatchException.RightPrecision
+  nameWithType: PrecisionMismatchException.RightPrecision
+- uid: Virtufin.Core.Position.PrecisionMismatchException.RightPrecision*
+  name: RightPrecision
+  href: api/Virtufin.Core.Position.PrecisionMismatchException.html#Virtufin_Core_Position_PrecisionMismatchException_RightPrecision_
+  commentId: Overload:Virtufin.Core.Position.PrecisionMismatchException.RightPrecision
+  isSpec: "True"
+  fullName: Virtufin.Core.Position.PrecisionMismatchException.RightPrecision
+  nameWithType: PrecisionMismatchException.RightPrecision
 - uid: Virtufin.Core.Position.SimpleOrder`1
   name: SimpleOrder<U>
   href: api/Virtufin.Core.Position.SimpleOrder-1.html

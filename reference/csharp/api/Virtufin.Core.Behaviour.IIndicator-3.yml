@@ -273,7 +273,6 @@ references:
   nameWithType: TSample
   fullName: TSample
 - uid: TSelf
-  commentId: '!:TSelf'
   name: TSelf
   nameWithType: TSelf
   fullName: TSelf

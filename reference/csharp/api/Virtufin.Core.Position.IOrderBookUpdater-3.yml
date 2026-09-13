@@ -1,0 +1,214 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Position.IOrderBookUpdater`3
+  commentId: T:Virtufin.Core.Position.IOrderBookUpdater`3
+  id: IOrderBookUpdater`3
+  parent: Virtufin.Core.Position
+  children:
+  - Virtufin.Core.Position.IOrderBookUpdater`3.ApplyDiff(`0,`2)
+  - Virtufin.Core.Position.IOrderBookUpdater`3.ApplySnapshot(`0,`1)
+  langs:
+  - csharp
+  - vb
+  name: IOrderBookUpdater<TBook, S, D>
+  nameWithType: IOrderBookUpdater<TBook, S, D>
+  fullName: Virtufin.Core.Position.IOrderBookUpdater<TBook, S, D>
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IOrderBookUpdater.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: IOrderBookUpdater
+    path: ../../../src/Virtufin.Core/Position/IOrderBookUpdater.cs
+    startLine: 14
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    Applies venue snapshot/diff data to a maintained <code class="typeparamref">TBook</code>.
+
+    <code class="typeparamref">S</code> is the snapshot data type and <code class="typeparamref">D</code>
+
+    the diff data type.
+  remarks: >-
+    The updater is stateless: all live state (levels, update id, lifecycle)
+
+    lives on the book, so one updater instance can serve many books.
+  example: []
+  syntax:
+    content: 'public interface IOrderBookUpdater<TBook, S, D> where TBook : IOrderBook'
+    typeParameters:
+    - id: TBook
+      description: Maintained book type.
+    - id: S
+      description: Snapshot data type.
+    - id: D
+      description: Diff data type.
+    content.vb: Public Interface IOrderBookUpdater(Of TBook As IOrderBook, S, D)
+  derivedClasses:
+  - Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5
+  nameWithType.vb: IOrderBookUpdater(Of TBook, S, D)
+  fullName.vb: Virtufin.Core.Position.IOrderBookUpdater(Of TBook, S, D)
+  name.vb: IOrderBookUpdater(Of TBook, S, D)
+- uid: Virtufin.Core.Position.IOrderBookUpdater`3.ApplySnapshot(`0,`1)
+  commentId: M:Virtufin.Core.Position.IOrderBookUpdater`3.ApplySnapshot(`0,`1)
+  id: ApplySnapshot(`0,`1)
+  parent: Virtufin.Core.Position.IOrderBookUpdater`3
+  langs:
+  - csharp
+  - vb
+  name: ApplySnapshot(TBook, S)
+  nameWithType: IOrderBookUpdater<TBook, S, D>.ApplySnapshot(TBook, S)
+  fullName: Virtufin.Core.Position.IOrderBookUpdater<TBook, S, D>.ApplySnapshot(TBook, S)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IOrderBookUpdater.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: ApplySnapshot
+    path: ../../../src/Virtufin.Core/Position/IOrderBookUpdater.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Bootstrap (or re-bootstrap) <code class="paramref">book</code> from a snapshot.
+  example: []
+  syntax:
+    content: void ApplySnapshot(TBook book, S snapshot)
+    parameters:
+    - id: book
+      type: '{TBook}'
+      description: Book to populate.
+    - id: snapshot
+      type: '{S}'
+      description: Snapshot data.
+    content.vb: Sub ApplySnapshot(book As TBook, snapshot As S)
+  overload: Virtufin.Core.Position.IOrderBookUpdater`3.ApplySnapshot*
+  nameWithType.vb: IOrderBookUpdater(Of TBook, S, D).ApplySnapshot(TBook, S)
+  fullName.vb: Virtufin.Core.Position.IOrderBookUpdater(Of TBook, S, D).ApplySnapshot(TBook, S)
+- uid: Virtufin.Core.Position.IOrderBookUpdater`3.ApplyDiff(`0,`2)
+  commentId: M:Virtufin.Core.Position.IOrderBookUpdater`3.ApplyDiff(`0,`2)
+  id: ApplyDiff(`0,`2)
+  parent: Virtufin.Core.Position.IOrderBookUpdater`3
+  langs:
+  - csharp
+  - vb
+  name: ApplyDiff(TBook, D)
+  nameWithType: IOrderBookUpdater<TBook, S, D>.ApplyDiff(TBook, D)
+  fullName: Virtufin.Core.Position.IOrderBookUpdater<TBook, S, D>.ApplyDiff(TBook, D)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IOrderBookUpdater.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: ApplyDiff
+    path: ../../../src/Virtufin.Core/Position/IOrderBookUpdater.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Apply one diff to <code class="paramref">book</code>.
+  example: []
+  syntax:
+    content: OrderBookUpdateStatus ApplyDiff(TBook book, D diff)
+    parameters:
+    - id: book
+      type: '{TBook}'
+      description: Book to mutate.
+    - id: diff
+      type: '{D}'
+      description: Diff data.
+    return:
+      type: Virtufin.Core.Position.OrderBookUpdateStatus
+      description: The outcome of the application.
+    content.vb: Function ApplyDiff(book As TBook, diff As D) As OrderBookUpdateStatus
+  overload: Virtufin.Core.Position.IOrderBookUpdater`3.ApplyDiff*
+  nameWithType.vb: IOrderBookUpdater(Of TBook, S, D).ApplyDiff(TBook, D)
+  fullName.vb: Virtufin.Core.Position.IOrderBookUpdater(Of TBook, S, D).ApplyDiff(TBook, D)
+references:
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: Virtufin.Core.Position.IOrderBookUpdater`3.ApplySnapshot*
+  commentId: Overload:Virtufin.Core.Position.IOrderBookUpdater`3.ApplySnapshot
+  href: Virtufin.Core.Position.IOrderBookUpdater-3.html#Virtufin_Core_Position_IOrderBookUpdater_3_ApplySnapshot__0__1_
+  name: ApplySnapshot
+  nameWithType: IOrderBookUpdater<TBook, S, D>.ApplySnapshot
+  fullName: Virtufin.Core.Position.IOrderBookUpdater<TBook, S, D>.ApplySnapshot
+  nameWithType.vb: IOrderBookUpdater(Of TBook, S, D).ApplySnapshot
+  fullName.vb: Virtufin.Core.Position.IOrderBookUpdater(Of TBook, S, D).ApplySnapshot
+- uid: '{TBook}'
+  commentId: '!:TBook'
+  definition: TBook
+  name: TBook
+  nameWithType: TBook
+  fullName: TBook
+- uid: '{S}'
+  commentId: '!:S'
+  definition: S
+  name: S
+  nameWithType: S
+  fullName: S
+- uid: TBook
+  name: TBook
+  nameWithType: TBook
+  fullName: TBook
+- uid: S
+  name: S
+  nameWithType: S
+  fullName: S
+- uid: Virtufin.Core.Position.IOrderBookUpdater`3.ApplyDiff*
+  commentId: Overload:Virtufin.Core.Position.IOrderBookUpdater`3.ApplyDiff
+  href: Virtufin.Core.Position.IOrderBookUpdater-3.html#Virtufin_Core_Position_IOrderBookUpdater_3_ApplyDiff__0__2_
+  name: ApplyDiff
+  nameWithType: IOrderBookUpdater<TBook, S, D>.ApplyDiff
+  fullName: Virtufin.Core.Position.IOrderBookUpdater<TBook, S, D>.ApplyDiff
+  nameWithType.vb: IOrderBookUpdater(Of TBook, S, D).ApplyDiff
+  fullName.vb: Virtufin.Core.Position.IOrderBookUpdater(Of TBook, S, D).ApplyDiff
+- uid: '{D}'
+  commentId: '!:D'
+  definition: D
+  name: D
+  nameWithType: D
+  fullName: D
+- uid: Virtufin.Core.Position.OrderBookUpdateStatus
+  commentId: T:Virtufin.Core.Position.OrderBookUpdateStatus
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.OrderBookUpdateStatus.html
+  name: OrderBookUpdateStatus
+  nameWithType: OrderBookUpdateStatus
+  fullName: Virtufin.Core.Position.OrderBookUpdateStatus
+- uid: D
+  name: D
+  nameWithType: D
+  fullName: D

@@ -1,0 +1,131 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.OrderBooks
+  commentId: N:Virtufin.Base.OrderBooks
+  id: OrderBooks
+  parent: Virtufin.Base
+  children:
+  - Virtufin.Base.OrderBooks.IL2OrderBookWriter`2
+  - Virtufin.Base.OrderBooks.L2OrderBook`2
+  - Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5
+  langs:
+  - csharp
+  - vb
+  name: Virtufin.Base.OrderBooks
+  nameWithType: Virtufin.Base.OrderBooks
+  fullName: Virtufin.Base.OrderBooks
+  type: Namespace
+  assemblies:
+  - Virtufin.Base
+references:
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2
+  commentId: T:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html
+  name: IL2OrderBookWriter<A, L>
+  nameWithType: IL2OrderBookWriter<A, L>
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>
+  nameWithType.vb: IL2OrderBookWriter(Of A, L)
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L)
+  name.vb: IL2OrderBookWriter(Of A, L)
+  spec.csharp:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2
+    name: IL2OrderBookWriter
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html
+  - name: <
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2
+    name: IL2OrderBookWriter
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: )
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2
+  commentId: T:Virtufin.Base.OrderBooks.L2OrderBook`2
+  href: Virtufin.Base.OrderBooks.L2OrderBook-2.html
+  name: L2OrderBook<A, L>
+  nameWithType: L2OrderBook<A, L>
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>
+  nameWithType.vb: L2OrderBook(Of A, L)
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L)
+  name.vb: L2OrderBook(Of A, L)
+  spec.csharp:
+  - uid: Virtufin.Base.OrderBooks.L2OrderBook`2
+    name: L2OrderBook
+    href: Virtufin.Base.OrderBooks.L2OrderBook-2.html
+  - name: <
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.OrderBooks.L2OrderBook`2
+    name: L2OrderBook
+    href: Virtufin.Base.OrderBooks.L2OrderBook-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: )
+- uid: Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5
+  commentId: T:Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5
+  href: Virtufin.Base.OrderBooks.Level2OrderBookUpdater-5.html
+  name: Level2OrderBookUpdater<TBook, A, L, S, D>
+  nameWithType: Level2OrderBookUpdater<TBook, A, L, S, D>
+  fullName: Virtufin.Base.OrderBooks.Level2OrderBookUpdater<TBook, A, L, S, D>
+  nameWithType.vb: Level2OrderBookUpdater(Of TBook, A, L, S, D)
+  fullName.vb: Virtufin.Base.OrderBooks.Level2OrderBookUpdater(Of TBook, A, L, S, D)
+  name.vb: Level2OrderBookUpdater(Of TBook, A, L, S, D)
+  spec.csharp:
+  - uid: Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5
+    name: Level2OrderBookUpdater
+    href: Virtufin.Base.OrderBooks.Level2OrderBookUpdater-5.html
+  - name: <
+  - name: TBook
+  - name: ','
+  - name: " "
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: ','
+  - name: " "
+  - name: S
+  - name: ','
+  - name: " "
+  - name: D
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5
+    name: Level2OrderBookUpdater
+    href: Virtufin.Base.OrderBooks.Level2OrderBookUpdater-5.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TBook
+  - name: ','
+  - name: " "
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: ','
+  - name: " "
+  - name: S
+  - name: ','
+  - name: " "
+  - name: D
+  - name: )

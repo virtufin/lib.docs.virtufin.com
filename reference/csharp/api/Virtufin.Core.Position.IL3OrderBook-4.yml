@@ -1,0 +1,212 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Position.IL3OrderBook`4
+  commentId: T:Virtufin.Core.Position.IL3OrderBook`4
+  id: IL3OrderBook`4
+  parent: Virtufin.Core.Position
+  children:
+  - Virtufin.Core.Position.IL3OrderBook`4.Orders
+  langs:
+  - csharp
+  - vb
+  name: IL3OrderBook<O, T, A, L>
+  nameWithType: IL3OrderBook<O, T, A, L>
+  fullName: Virtufin.Core.Position.IL3OrderBook<O, T, A, L>
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IL3OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: IL3OrderBook
+    path: ../../../src/Virtufin.Core/Position/IL3OrderBook.cs
+    startLine: 10
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    A Level-3 (market-by-order) order book: individual resting orders rather
+
+    than aggregated price levels.
+  example: []
+  syntax:
+    content: 'public interface IL3OrderBook<O, T, A, L> : IOrderBook where O : IOrderLine<T, A, L> where T : notnull where A : IFixedPointAmount where L : IFixedPointAmount'
+    typeParameters:
+    - id: O
+      description: Concrete order-line type.
+    - id: T
+      description: Order identity type.
+    - id: A
+      description: Size amount type.
+    - id: L
+      description: Price amount type.
+    content.vb: Public Interface IL3OrderBook(Of O As IOrderLine(Of T, A, L), T, A As IFixedPointAmount, L As IFixedPointAmount) Inherits IOrderBook
+  nameWithType.vb: IL3OrderBook(Of O, T, A, L)
+  fullName.vb: Virtufin.Core.Position.IL3OrderBook(Of O, T, A, L)
+  name.vb: IL3OrderBook(Of O, T, A, L)
+- uid: Virtufin.Core.Position.IL3OrderBook`4.Orders
+  commentId: P:Virtufin.Core.Position.IL3OrderBook`4.Orders
+  id: Orders
+  parent: Virtufin.Core.Position.IL3OrderBook`4
+  langs:
+  - csharp
+  - vb
+  name: Orders
+  nameWithType: IL3OrderBook<O, T, A, L>.Orders
+  fullName: Virtufin.Core.Position.IL3OrderBook<O, T, A, L>.Orders
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/IL3OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Orders
+    path: ../../../src/Virtufin.Core/Position/IL3OrderBook.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: The orders currently resting on the book.
+  example: []
+  syntax:
+    content: IEnumerable<O> Orders { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{{O}}
+    content.vb: ReadOnly Property Orders As IEnumerable(Of O)
+  overload: Virtufin.Core.Position.IL3OrderBook`4.Orders*
+  nameWithType.vb: IL3OrderBook(Of O, T, A, L).Orders
+  fullName.vb: Virtufin.Core.Position.IL3OrderBook(Of O, T, A, L).Orders
+references:
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: Virtufin.Core.Position.IL3OrderBook`4.Orders*
+  commentId: Overload:Virtufin.Core.Position.IL3OrderBook`4.Orders
+  href: Virtufin.Core.Position.IL3OrderBook-4.html#Virtufin_Core_Position_IL3OrderBook_4_Orders
+  name: Orders
+  nameWithType: IL3OrderBook<O, T, A, L>.Orders
+  fullName: Virtufin.Core.Position.IL3OrderBook<O, T, A, L>.Orders
+  nameWithType.vb: IL3OrderBook(Of O, T, A, L).Orders
+  fullName.vb: Virtufin.Core.Position.IL3OrderBook(Of O, T, A, L).Orders
+- uid: System.Collections.Generic.IEnumerable{{O}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<O>
+  nameWithType: IEnumerable<O>
+  fullName: System.Collections.Generic.IEnumerable<O>
+  nameWithType.vb: IEnumerable(Of O)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of O)
+  name.vb: IEnumerable(Of O)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: O
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: O
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

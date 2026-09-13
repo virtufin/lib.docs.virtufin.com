@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Struct BinaryAmount | Virtufin .NET - C# API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct BinaryAmount | Virtufin .NET - C# API Reference ">
+      
+      <meta name="description" content="Fixed-point amount with base 2 (binary scaling), stored as a whole part, a fractional part, and a precision (number of binary fraction digits). The represented value is Whole + Fraction / 2^N.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.png" alt="Virtufin.Dotnet">
+            Virtufin.Dotnet
+          </a>
+          <div class="git-info">
+            <a href="{git_repo_url}/commit/1b34cc289b8744702f9a151339931a661e86283c" target="_blank" rel="noopener" class="commit-badge" title="View commit 1b34cc289b8744702f9a151339931a661e86283c">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
+                <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">1b34cc289b8744702f9a151339931a661e86283c</text>
+              </svg>
+            </a>
+          </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Virtufin.Core.Position.BinaryAmount">
+
+
+
+  <h1 id="Virtufin_Core_Position_BinaryAmount" data-uid="Virtufin.Core.Position.BinaryAmount" class="text-break">
+Struct BinaryAmount  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.Core.html">Core</a>.<a class="xref" href="Virtufin.Core.Position.html">Position</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Virtufin.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Fixed-point amount with base 2 (binary scaling), stored as a whole part, a
+fractional part, and a precision (number of binary fraction digits). The
+represented value is <code>Whole + Fraction / 2^N</code>.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly record struct BinaryAmount : IFixedPointAmount&lt;BinaryAmount&gt;, IFixedPointAmount, IAmount, IComparable&lt;BinaryAmount&gt;, IAsCardinal&lt;long&gt;, IAdditionOperators&lt;BinaryAmount, BinaryAmount, BinaryAmount&gt;, ISubtractionOperators&lt;BinaryAmount, BinaryAmount, BinaryAmount&gt;, IMultiplyOperators&lt;BinaryAmount, BinaryAmount, BinaryAmount&gt;, IDivisionOperators&lt;BinaryAmount, BinaryAmount, BinaryAmount&gt;, IEquatable&lt;BinaryAmount&gt;</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Virtufin.Core.Position.IFixedPointAmount-1.html">IFixedPointAmount</a>&lt;<a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a>&gt;</div>
+      <div><a class="xref" href="Virtufin.Core.Position.IFixedPointAmount.html">IFixedPointAmount</a></div>
+      <div><a class="xref" href="Virtufin.Core.Position.IAmount.html">IAmount</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a>&gt;</div>
+      <div><a class="xref" href="Virtufin.Core.Position.IAsCardinal-1.html">IAsCardinal</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3">IAdditionOperators</a>&lt;<a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a>, <a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a>, <a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3">ISubtractionOperators</a>&lt;<a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a>, <a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a>, <a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators</a>&lt;<a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a>, <a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a>, <a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.idivisionoperators-3">IDivisionOperators</a>&lt;<a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a>, <a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a>, <a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="Virtufin_Core_Position_BinaryAmount_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Exists alongside <a class="xref" href="Virtufin.Core.Position.DecimalAmount.html">DecimalAmount</a> to exercise and prove the
+base-agnosticism of <a class="xref" href="Virtufin.Core.Position.IFixedPointAmount.html">IFixedPointAmount</a> and
+<a class="xref" href="Virtufin.Core.Position.FixedPointArithmetic.html">FixedPointArithmetic</a>. Arithmetic follows the same rules:
+addition/subtraction require a common base and precision; equality/ordering
+reject mismatched precision with <a class="xref" href="Virtufin.Core.Position.PrecisionMismatchException.html">PrecisionMismatchException</a>.</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Virtufin_Core_Position_BinaryAmount__ctor_" data-uid="Virtufin.Core.Position.BinaryAmount.#ctor*"></a>
+
+  <h3 id="Virtufin_Core_Position_BinaryAmount__ctor_System_Int64_System_UInt64_System_Int32_" data-uid="Virtufin.Core.Position.BinaryAmount.#ctor(System.Int64,System.UInt64,System.Int32)">
+  BinaryAmount(long, ulong, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fixed-point amount with base 2 (binary scaling), stored as a whole part, a
+fractional part, and a precision (number of binary fraction digits). The
+represented value is <code>Whole + Fraction / 2^N</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BinaryAmount(long Whole, ulong Fraction, int N)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Whole</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>Fraction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+    <dt><code>N</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="Virtufin_Core_Position_BinaryAmount__ctor_System_Int64_System_UInt64_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Exists alongside <a class="xref" href="Virtufin.Core.Position.DecimalAmount.html">DecimalAmount</a> to exercise and prove the
+base-agnosticism of <a class="xref" href="Virtufin.Core.Position.IFixedPointAmount.html">IFixedPointAmount</a> and
+<a class="xref" href="Virtufin.Core.Position.FixedPointArithmetic.html">FixedPointArithmetic</a>. Arithmetic follows the same rules:
+addition/subtraction require a common base and precision; equality/ordering
+reject mismatched precision with <a class="xref" href="Virtufin.Core.Position.PrecisionMismatchException.html">PrecisionMismatchException</a>.</p>
+</div>
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Virtufin_Core_Position_BinaryAmount_DefaultPrecision" data-uid="Virtufin.Core.Position.BinaryAmount.DefaultPrecision">
+  DefaultPrecision
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default precision (binary fraction digits) for newly constructed amounts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DefaultPrecision = 8</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Virtufin_Core_Position_BinaryAmount_Radix" data-uid="Virtufin.Core.Position.BinaryAmount.Radix">
+  Radix
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Radix of the fractional representation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int Radix = 2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Virtufin_Core_Position_BinaryAmount_Base_" data-uid="Virtufin.Core.Position.BinaryAmount.Base*"></a>
+
+  <h3 id="Virtufin_Core_Position_BinaryAmount_Base" data-uid="Virtufin.Core.Position.BinaryAmount.Base">
+  Base
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Radix of the fractional representation (e.g. 10 or 2). Always &gt;= 2.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Base { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Core_Position_BinaryAmount_BaseValue_" data-uid="Virtufin.Core.Position.BinaryAmount.BaseValue*"></a>
+
+  <h3 id="Virtufin_Core_Position_BinaryAmount_BaseValue" data-uid="Virtufin.Core.Position.BinaryAmount.BaseValue">
+  BaseValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The type's fixed base, usable in generic code without an instance.
+Mirrors the instance <a class="xref" href="Virtufin.Core.Position.IFixedPointAmount.html#Virtufin_Core_Position_IFixedPointAmount_Base">Base</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BaseValue { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Core_Position_BinaryAmount_Fraction_" data-uid="Virtufin.Core.Position.BinaryAmount.Fraction*"></a>
+
+  <h3 id="Virtufin_Core_Position_BinaryAmount_Fraction" data-uid="Virtufin.Core.Position.BinaryAmount.Fraction">
+  Fraction
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The fractional part, a magnitude in <code>[0, Base^Precision)</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong Fraction { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Core_Position_BinaryAmount_IsZero_" data-uid="Virtufin.Core.Position.BinaryAmount.IsZero*"></a>
+
+  <h3 id="Virtufin_Core_Position_BinaryAmount_IsZero" data-uid="Virtufin.Core.Position.BinaryAmount.IsZero">
+  IsZero
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><code>true</code> when this amount equals the additive identity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsZero { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Core_Position_BinaryAmount_N_" data-uid="Virtufin.Core.Position.BinaryAmount.N*"></a>
+
+  <h3 id="Virtufin_Core_Position_BinaryAmount_N" data-uid="Virtufin.Core.Position.BinaryAmount.N">
+  N
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int N { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Core_Position_BinaryAmount_Precision_" data-uid="Virtufin.Core.Position.BinaryAmount.Precision*"></a>
+
+  <h3 id="Virtufin_Core_Position_BinaryAmount_Precision" data-uid="Virtufin.Core.Position.BinaryAmount.Precision">
+  Precision
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Number of fractional digits carried by this amount.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Precision { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Core_Position_BinaryAmount_Whole_" data-uid="Virtufin.Core.Position.BinaryAmount.Whole*"></a>
+
+  <h3 id="Virtufin_Core_Position_BinaryAmount_Whole" data-uid="Virtufin.Core.Position.BinaryAmount.Whole">
+  Whole
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The whole (integral) part.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Whole { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Core_Position_BinaryAmount_Zero_" data-uid="Virtufin.Core.Position.BinaryAmount.Zero*"></a>
+
+  <h3 id="Virtufin_Core_Position_BinaryAmount_Zero" data-uid="Virtufin.Core.Position.BinaryAmount.Zero">
+  Zero
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A zero amount at <a class="xref" href="Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_DefaultPrecision">DefaultPrecision</a> precision.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BinaryAmount Zero { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Virtufin_Core_Position_BinaryAmount_CompareTo_" data-uid="Virtufin.Core.Position.BinaryAmount.CompareTo*"></a>
+
+  <h3 id="Virtufin_Core_Position_BinaryAmount_CompareTo_Virtufin_Core_Position_BinaryAmount_" data-uid="Virtufin.Core.Position.BinaryAmount.CompareTo(Virtufin.Core.Position.BinaryAmount)">
+  CompareTo(BinaryAmount)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(BinaryAmount other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a></dt>
+    <dd><p>An object to compare with this instance.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A value that indicates the relative order of the objects being compared. The return value has these meanings:</p>
+ <table><thead><tr><th class="term"> Value</th><th class="description"> Meaning</th></tr></thead><tbody><tr><td class="term"> Less than zero</td><td class="description"> This instance precedes <code class="paramref">other</code> in the sort order.</td></tr><tr><td class="term"> Zero</td><td class="description"> This instance occurs in the same position in the sort order as <code class="paramref">other</code>.</td></tr><tr><td class="term"> Greater than zero</td><td class="description"> This instance follows <code class="paramref">other</code> in the sort order.</td></tr></tbody></table>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Core.Position.PrecisionMismatchException.html">PrecisionMismatchException</a></dt>
+    <dd><p>Precisions differ.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Virtufin_Core_Position_BinaryAmount_CompareTo_" data-uid="Virtufin.Core.Position.BinaryAmount.CompareTo*"></a>
+
+  <h3 id="Virtufin_Core_Position_BinaryAmount_CompareTo_Virtufin_Core_Position_IAmount_" data-uid="Virtufin.Core.Position.BinaryAmount.CompareTo(Virtufin.Core.Position.IAmount)">
+  CompareTo(IAmount)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compare with another amount. Implementations reject differing scales
+(base/precision) at runtime via <a class="xref" href="Virtufin.Core.Position.PrecisionMismatchException.html">PrecisionMismatchException</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(IAmount other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Virtufin.Core.Position.IAmount.html">IAmount</a></dt>
+    <dd><p>Amount to compare against.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Core_Position_BinaryAmount_Create_" data-uid="Virtufin.Core.Position.BinaryAmount.Create*"></a>
+
+  <h3 id="Virtufin_Core_Position_BinaryAmount_Create_System_Int64_System_UInt64_System_Int32_" data-uid="Virtufin.Core.Position.BinaryAmount.Create(System.Int64,System.UInt64,System.Int32)">
+  Create(long, ulong, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Construct an instance from decomposed parts at the given precision.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BinaryAmount Create(long whole, ulong fraction, int precision)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>whole</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>Whole part.</p>
+</dd>
+    <dt><code>fraction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd><p>Fractional magnitude in <code>[0, Base^precision)</code>.</p>
+</dd>
+    <dt><code>precision</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of fractional digits.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Core_Position_BinaryAmount_Equals_" data-uid="Virtufin.Core.Position.BinaryAmount.Equals*"></a>
+
+  <h3 id="Virtufin_Core_Position_BinaryAmount_Equals_Virtufin_Core_Position_BinaryAmount_" data-uid="Virtufin.Core.Position.BinaryAmount.Equals(Virtufin.Core.Position.BinaryAmount)">
+  Equals(BinaryAmount)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(BinaryAmount other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Core.Position.PrecisionMismatchException.html">PrecisionMismatchException</a></dt>
+    <dd><p>Precisions differ.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Virtufin_Core_Position_BinaryAmount_From_" data-uid="Virtufin.Core.Position.BinaryAmount.From*"></a>
+
+  <h3 id="Virtufin_Core_Position_BinaryAmount_From_System_Decimal_System_Int32_" data-uid="Virtufin.Core.Position.BinaryAmount.From(System.Decimal,System.Int32)">
+  From(decimal, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Construct a <a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a> from a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>,
+rounding half away from zero to <code class="paramref">n</code> binary fraction digits.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BinaryAmount From(decimal value, int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd><p>Source value.</p>
+</dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Precision (number of binary fractional digits).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Core_Position_BinaryAmount_From_" data-uid="Virtufin.Core.Position.BinaryAmount.From*"></a>
+
+  <h3 id="Virtufin_Core_Position_BinaryAmount_From_System_Double_System_Int32_" data-uid="Virtufin.Core.Position.BinaryAmount.From(System.Double,System.Int32)">
+  From(double, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Construct a <a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a> from a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>,
+rounding half away from zero to <code class="paramref">n</code> binary fraction digits.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BinaryAmount From(double value, int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Source value.</p>
+</dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Precision (number of binary fractional digits).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Core_Position_BinaryAmount_FromCardinal_" data-uid="Virtufin.Core.Position.BinaryAmount.FromCardinal*"></a>
+
+  <h3 id="Virtufin_Core_Position_BinaryAmount_FromCardinal_System_Int64_" data-uid="Virtufin.Core.Position.BinaryAmount.FromCardinal(System.Int64)">
+  FromCardinal(long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Recover whole and fractional parts from a cardinal value at this amount's precision.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (long Whole, ulong Fraction) FromCardinal(long cardinal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cardinal</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64,system.uint64-.whole">Whole</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64,system.uint64-.fraction">Fraction</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Core_Position_BinaryAmount_FromCardinal_" data-uid="Virtufin.Core.Position.BinaryAmount.FromCardinal*"></a>
+
+  <h3 id="Virtufin_Core_Position_BinaryAmount_FromCardinal_System_Int64_System_Int32_" data-uid="Virtufin.Core.Position.BinaryAmount.FromCardinal(System.Int64,System.Int32)">
+  FromCardinal(long, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Recover whole and fractional parts from a cardinal value at an explicit precision.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (long Whole, ulong Fraction) FromCardinal(long cardinal, int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cardinal</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64,system.uint64-.whole">Whole</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64,system.uint64-.fraction">Fraction</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Core_Position_BinaryAmount_GetHashCode_" data-uid="Virtufin.Core.Position.BinaryAmount.GetHashCode*"></a>
+
+  <h3 id="Virtufin_Core_Position_BinaryAmount_GetHashCode" data-uid="Virtufin.Core.Position.BinaryAmount.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the hash code for this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A 32-bit signed integer that is the hash code for this instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Core_Position_BinaryAmount_ToCardinal_" data-uid="Virtufin.Core.Position.BinaryAmount.ToCardinal*"></a>
+
+  <h3 id="Virtufin_Core_Position_BinaryAmount_ToCardinal" data-uid="Virtufin.Core.Position.BinaryAmount.ToCardinal">
+  ToCardinal()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The value as a single checked integer scaled by <code>Base^Precision</code>:
+<code>Whole * Base^Precision + Fraction</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ToCardinal()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Core_Position_BinaryAmount_ToDouble_" data-uid="Virtufin.Core.Position.BinaryAmount.ToDouble*"></a>
+
+  <h3 id="Virtufin_Core_Position_BinaryAmount_ToDouble" data-uid="Virtufin.Core.Position.BinaryAmount.ToDouble">
+  ToDouble()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Convert to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ToDouble()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Core_Position_BinaryAmount_ToString_" data-uid="Virtufin.Core.Position.BinaryAmount.ToString*"></a>
+
+  <h3 id="Virtufin_Core_Position_BinaryAmount_ToString" data-uid="Virtufin.Core.Position.BinaryAmount.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Format the amount as <code>whole.bbbb</code> with <a class="xref" href="Virtufin.Core.Position.BinaryAmount.html#Virtufin_Core_Position_BinaryAmount_N">N</a> binary fraction digits.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Virtufin_Core_Position_BinaryAmount_op_Addition_" data-uid="Virtufin.Core.Position.BinaryAmount.op_Addition*"></a>
+
+  <h3 id="Virtufin_Core_Position_BinaryAmount_op_Addition_Virtufin_Core_Position_BinaryAmount_Virtufin_Core_Position_BinaryAmount_" data-uid="Virtufin.Core.Position.BinaryAmount.op_Addition(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)">
+  operator +(BinaryAmount, BinaryAmount)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add two amounts. Throws <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.overflowexception">OverflowException</a> on overflow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BinaryAmount operator +(BinaryAmount left, BinaryAmount right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Core_Position_BinaryAmount_op_Division_" data-uid="Virtufin.Core.Position.BinaryAmount.op_Division*"></a>
+
+  <h3 id="Virtufin_Core_Position_BinaryAmount_op_Division_Virtufin_Core_Position_BinaryAmount_Virtufin_Core_Position_BinaryAmount_" data-uid="Virtufin.Core.Position.BinaryAmount.op_Division(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)">
+  operator /(BinaryAmount, BinaryAmount)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Divide two amounts, carrying the dividend's precision, rounded half away
+from zero. Throws <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dividebyzeroexception">DivideByZeroException</a> when the divisor is zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BinaryAmount operator /(BinaryAmount left, BinaryAmount right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Core_Position_BinaryAmount_op_Multiply_" data-uid="Virtufin.Core.Position.BinaryAmount.op_Multiply*"></a>
+
+  <h3 id="Virtufin_Core_Position_BinaryAmount_op_Multiply_Virtufin_Core_Position_BinaryAmount_Virtufin_Core_Position_BinaryAmount_" data-uid="Virtufin.Core.Position.BinaryAmount.op_Multiply(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)">
+  operator *(BinaryAmount, BinaryAmount)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Multiply two amounts, carrying the summed precision of the operands.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BinaryAmount operator *(BinaryAmount left, BinaryAmount right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Core_Position_BinaryAmount_op_Subtraction_" data-uid="Virtufin.Core.Position.BinaryAmount.op_Subtraction*"></a>
+
+  <h3 id="Virtufin_Core_Position_BinaryAmount_op_Subtraction_Virtufin_Core_Position_BinaryAmount_Virtufin_Core_Position_BinaryAmount_" data-uid="Virtufin.Core.Position.BinaryAmount.op_Subtraction(Virtufin.Core.Position.BinaryAmount,Virtufin.Core.Position.BinaryAmount)">
+  operator -(BinaryAmount, BinaryAmount)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Subtract two amounts. Throws <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.overflowexception">OverflowException</a> on overflow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BinaryAmount operator -(BinaryAmount left, BinaryAmount right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Core.Position.BinaryAmount.html">BinaryAmount</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2026 Häner Consulting. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

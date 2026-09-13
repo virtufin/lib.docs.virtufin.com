@@ -1,0 +1,2413 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2
+  commentId: T:Virtufin.Base.OrderBooks.L2OrderBook`2
+  id: L2OrderBook`2
+  parent: Virtufin.Base.OrderBooks
+  children:
+  - Virtufin.Base.OrderBooks.L2OrderBook`2.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Virtufin.Base.OrderBooks.L2OrderBook`2.#ctor(System.Nullable{Virtufin.Core.Events.Symbol},System.Int32,System.Int32,System.Int32,System.Int32)
+  - Virtufin.Base.OrderBooks.L2OrderBook`2.AppliedFinalUpdateId
+  - Virtufin.Base.OrderBooks.L2OrderBook`2.AppliedFirstUpdateId
+  - Virtufin.Base.OrderBooks.L2OrderBook`2.ApplyLevel(System.Boolean,`1,`0)
+  - Virtufin.Base.OrderBooks.L2OrderBook`2.AsksAscending
+  - Virtufin.Base.OrderBooks.L2OrderBook`2.BidsDescending
+  - Virtufin.Base.OrderBooks.L2OrderBook`2.Clear
+  - Virtufin.Base.OrderBooks.L2OrderBook`2.DepthBase
+  - Virtufin.Base.OrderBooks.L2OrderBook`2.DepthPrecision
+  - Virtufin.Base.OrderBooks.L2OrderBook`2.LastUpdateId
+  - Virtufin.Base.OrderBooks.L2OrderBook`2.LevelBase
+  - Virtufin.Base.OrderBooks.L2OrderBook`2.LevelPrecision
+  - Virtufin.Base.OrderBooks.L2OrderBook`2.ResetAppliedRange
+  - Virtufin.Base.OrderBooks.L2OrderBook`2.SetAppliedRange(System.Int64,System.Int64)
+  - Virtufin.Base.OrderBooks.L2OrderBook`2.SetLastUpdateId(System.Int64)
+  - Virtufin.Base.OrderBooks.L2OrderBook`2.SetState(Virtufin.Core.Position.OrderBookState)
+  - Virtufin.Base.OrderBooks.L2OrderBook`2.State
+  - Virtufin.Base.OrderBooks.L2OrderBook`2.Symbol
+  - Virtufin.Base.OrderBooks.L2OrderBook`2.TryGetAsk(`1,`0@)
+  - Virtufin.Base.OrderBooks.L2OrderBook`2.TryGetBid(`1,`0@)
+  langs:
+  - csharp
+  - vb
+  name: L2OrderBook<A, L>
+  nameWithType: L2OrderBook<A, L>
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: L2OrderBook
+    path: ../../../src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: >-
+    In-memory Level-2 order book: two sorted ladders of aggregate size keyed by
+
+    price. Pure state — no I/O, no CloudEvents, not thread-safe.
+  remarks: >-
+    <p>
+
+    The price (level) and size (depth) dimensions carry independent fixed
+
+    scales supplied at construction. Every value written must already be at the
+
+    corresponding scale; the sorted comparer compares price amounts via
+
+    <xref href="Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)" data-throw-if-not-resolved="false"></xref>, which throws
+
+    <xref href="Virtufin.Core.Position.PrecisionMismatchException" data-throw-if-not-resolved="false"></xref> on a stray mismatch, so a
+
+    mis-normalized producer fails loudly rather than corrupting the ladder.
+
+    </p>
+
+    <p>
+
+    Bids are enumerated highest price first, asks lowest price first. Live
+
+    projections (<xref href="Virtufin.Base.OrderBooks.L2OrderBook%602.BidsDescending" data-throw-if-not-resolved="false"></xref>/<xref href="Virtufin.Base.OrderBooks.L2OrderBook%602.AsksAscending" data-throw-if-not-resolved="false"></xref>) are
+
+    snapshots and cannot tear mid-update.
+
+    </p>
+  example: []
+  syntax:
+    content: 'public sealed class L2OrderBook<A, L> : IL2OrderBook<A, L>, IOrderBook, IL2OrderBookWriter<A, L> where A : IFixedPointAmount where L : IFixedPointAmount'
+    typeParameters:
+    - id: A
+      description: Depth (size) amount type.
+    - id: L
+      description: Level (price) amount type.
+    content.vb: Public NotInheritable Class L2OrderBook(Of A As IFixedPointAmount, L As IFixedPointAmount) Implements IL2OrderBook(Of A, L), IOrderBook, IL2OrderBookWriter(Of A, L)
+  inheritance:
+  - System.Object
+  implements:
+  - Virtufin.Core.Position.IL2OrderBook{{A},{L}}
+  - Virtufin.Core.Position.IOrderBook
+  - Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: L2OrderBook(Of A, L)
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L)
+  name.vb: L2OrderBook(Of A, L)
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Virtufin.Base.OrderBooks.L2OrderBook`2.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Int32)'
+  parent: Virtufin.Base.OrderBooks.L2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: L2OrderBook(int, int, int, int)
+  nameWithType: L2OrderBook<A, L>.L2OrderBook(int, int, int, int)
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.L2OrderBook(int, int, int, int)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+    startLine: 38
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: Construct a book with no symbol.
+  example: []
+  syntax:
+    content: public L2OrderBook(int levelBase, int levelPrecision, int depthBase, int depthPrecision)
+    parameters:
+    - id: levelBase
+      type: System.Int32
+      description: Base of the price dimension (e.g. 10).
+    - id: levelPrecision
+      type: System.Int32
+      description: Precision of the price dimension.
+    - id: depthBase
+      type: System.Int32
+      description: Base of the size dimension (e.g. 10).
+    - id: depthPrecision
+      type: System.Int32
+      description: Precision of the size dimension.
+    content.vb: Public Sub New(levelBase As Integer, levelPrecision As Integer, depthBase As Integer, depthPrecision As Integer)
+  overload: Virtufin.Base.OrderBooks.L2OrderBook`2.#ctor*
+  nameWithType.vb: L2OrderBook(Of A, L).New(Integer, Integer, Integer, Integer)
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).New(Integer, Integer, Integer, Integer)
+  name.vb: New(Integer, Integer, Integer, Integer)
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.#ctor(System.Nullable{Virtufin.Core.Events.Symbol},System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Virtufin.Base.OrderBooks.L2OrderBook`2.#ctor(System.Nullable{Virtufin.Core.Events.Symbol},System.Int32,System.Int32,System.Int32,System.Int32)
+  id: '#ctor(System.Nullable{Virtufin.Core.Events.Symbol},System.Int32,System.Int32,System.Int32,System.Int32)'
+  parent: Virtufin.Base.OrderBooks.L2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: L2OrderBook(Symbol?, int, int, int, int)
+  nameWithType: L2OrderBook<A, L>.L2OrderBook(Symbol?, int, int, int, int)
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.L2OrderBook(Virtufin.Core.Events.Symbol?, int, int, int, int)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: .ctor
+    path: ../../../src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+    startLine: 49
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: Construct a book for a symbol.
+  example: []
+  syntax:
+    content: public L2OrderBook(Symbol? symbol, int levelBase, int levelPrecision, int depthBase, int depthPrecision)
+    parameters:
+    - id: symbol
+      type: System.Nullable{Virtufin.Core.Events.Symbol}
+      description: Instrument the book tracks, if known.
+    - id: levelBase
+      type: System.Int32
+      description: Base of the price dimension (e.g. 10).
+    - id: levelPrecision
+      type: System.Int32
+      description: Precision of the price dimension.
+    - id: depthBase
+      type: System.Int32
+      description: Base of the size dimension (e.g. 10).
+    - id: depthPrecision
+      type: System.Int32
+      description: Precision of the size dimension.
+    content.vb: Public Sub New(symbol As Symbol?, levelBase As Integer, levelPrecision As Integer, depthBase As Integer, depthPrecision As Integer)
+  overload: Virtufin.Base.OrderBooks.L2OrderBook`2.#ctor*
+  nameWithType.vb: L2OrderBook(Of A, L).New(Symbol?, Integer, Integer, Integer, Integer)
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).New(Virtufin.Core.Events.Symbol?, Integer, Integer, Integer, Integer)
+  name.vb: New(Symbol?, Integer, Integer, Integer, Integer)
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.Symbol
+  commentId: P:Virtufin.Base.OrderBooks.L2OrderBook`2.Symbol
+  id: Symbol
+  parent: Virtufin.Base.OrderBooks.L2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: Symbol
+  nameWithType: L2OrderBook<A, L>.Symbol
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.Symbol
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Symbol
+    path: ../../../src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+    startLine: 65
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: The instrument the book tracks, if known.
+  example: []
+  syntax:
+    content: public Symbol? Symbol { get; }
+    parameters: []
+    return:
+      type: System.Nullable{Virtufin.Core.Events.Symbol}
+    content.vb: Public ReadOnly Property Symbol As Symbol?
+  overload: Virtufin.Base.OrderBooks.L2OrderBook`2.Symbol*
+  nameWithType.vb: L2OrderBook(Of A, L).Symbol
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).Symbol
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.LevelBase
+  commentId: P:Virtufin.Base.OrderBooks.L2OrderBook`2.LevelBase
+  id: LevelBase
+  parent: Virtufin.Base.OrderBooks.L2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: LevelBase
+  nameWithType: L2OrderBook<A, L>.LevelBase
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.LevelBase
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: LevelBase
+    path: ../../../src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+    startLine: 68
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: Base of the price (level) dimension.
+  example: []
+  syntax:
+    content: public int LevelBase { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property LevelBase As Integer
+  overload: Virtufin.Base.OrderBooks.L2OrderBook`2.LevelBase*
+  implements:
+  - Virtufin.Core.Position.IL2OrderBook{{A},{L}}.LevelBase
+  nameWithType.vb: L2OrderBook(Of A, L).LevelBase
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).LevelBase
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.LevelPrecision
+  commentId: P:Virtufin.Base.OrderBooks.L2OrderBook`2.LevelPrecision
+  id: LevelPrecision
+  parent: Virtufin.Base.OrderBooks.L2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: LevelPrecision
+  nameWithType: L2OrderBook<A, L>.LevelPrecision
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.LevelPrecision
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: LevelPrecision
+    path: ../../../src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+    startLine: 71
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: Precision of the price (level) dimension.
+  example: []
+  syntax:
+    content: public int LevelPrecision { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property LevelPrecision As Integer
+  overload: Virtufin.Base.OrderBooks.L2OrderBook`2.LevelPrecision*
+  implements:
+  - Virtufin.Core.Position.IL2OrderBook{{A},{L}}.LevelPrecision
+  nameWithType.vb: L2OrderBook(Of A, L).LevelPrecision
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).LevelPrecision
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.DepthBase
+  commentId: P:Virtufin.Base.OrderBooks.L2OrderBook`2.DepthBase
+  id: DepthBase
+  parent: Virtufin.Base.OrderBooks.L2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: DepthBase
+  nameWithType: L2OrderBook<A, L>.DepthBase
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.DepthBase
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: DepthBase
+    path: ../../../src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+    startLine: 74
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: Base of the size (depth) dimension.
+  example: []
+  syntax:
+    content: public int DepthBase { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property DepthBase As Integer
+  overload: Virtufin.Base.OrderBooks.L2OrderBook`2.DepthBase*
+  implements:
+  - Virtufin.Core.Position.IL2OrderBook{{A},{L}}.DepthBase
+  nameWithType.vb: L2OrderBook(Of A, L).DepthBase
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).DepthBase
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.DepthPrecision
+  commentId: P:Virtufin.Base.OrderBooks.L2OrderBook`2.DepthPrecision
+  id: DepthPrecision
+  parent: Virtufin.Base.OrderBooks.L2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: DepthPrecision
+  nameWithType: L2OrderBook<A, L>.DepthPrecision
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.DepthPrecision
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: DepthPrecision
+    path: ../../../src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+    startLine: 77
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: Precision of the size (depth) dimension.
+  example: []
+  syntax:
+    content: public int DepthPrecision { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property DepthPrecision As Integer
+  overload: Virtufin.Base.OrderBooks.L2OrderBook`2.DepthPrecision*
+  implements:
+  - Virtufin.Core.Position.IL2OrderBook{{A},{L}}.DepthPrecision
+  nameWithType.vb: L2OrderBook(Of A, L).DepthPrecision
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).DepthPrecision
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.State
+  commentId: P:Virtufin.Base.OrderBooks.L2OrderBook`2.State
+  id: State
+  parent: Virtufin.Base.OrderBooks.L2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: L2OrderBook<A, L>.State
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.State
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: State
+    path: ../../../src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+    startLine: 80
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: Current lifecycle state.
+  example: []
+  syntax:
+    content: public OrderBookState State { get; }
+    parameters: []
+    return:
+      type: Virtufin.Core.Position.OrderBookState
+    content.vb: Public Property State As OrderBookState
+  overload: Virtufin.Base.OrderBooks.L2OrderBook`2.State*
+  implements:
+  - Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}.State
+  nameWithType.vb: L2OrderBook(Of A, L).State
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).State
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.LastUpdateId
+  commentId: P:Virtufin.Base.OrderBooks.L2OrderBook`2.LastUpdateId
+  id: LastUpdateId
+  parent: Virtufin.Base.OrderBooks.L2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: LastUpdateId
+  nameWithType: L2OrderBook<A, L>.LastUpdateId
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.LastUpdateId
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: LastUpdateId
+    path: ../../../src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+    startLine: 83
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: The last applied update id (or the bootstrapping snapshot's id).
+  example: []
+  syntax:
+    content: public long LastUpdateId { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Property LastUpdateId As Long
+  overload: Virtufin.Base.OrderBooks.L2OrderBook`2.LastUpdateId*
+  implements:
+  - Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}.LastUpdateId
+  nameWithType.vb: L2OrderBook(Of A, L).LastUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).LastUpdateId
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.AppliedFirstUpdateId
+  commentId: P:Virtufin.Base.OrderBooks.L2OrderBook`2.AppliedFirstUpdateId
+  id: AppliedFirstUpdateId
+  parent: Virtufin.Base.OrderBooks.L2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: AppliedFirstUpdateId
+  nameWithType: L2OrderBook<A, L>.AppliedFirstUpdateId
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.AppliedFirstUpdateId
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: AppliedFirstUpdateId
+    path: ../../../src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+    startLine: 86
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: First update id of the most recently applied diff, or <code>-1</code>.
+  example: []
+  syntax:
+    content: public long AppliedFirstUpdateId { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Property AppliedFirstUpdateId As Long
+  overload: Virtufin.Base.OrderBooks.L2OrderBook`2.AppliedFirstUpdateId*
+  implements:
+  - Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}.AppliedFirstUpdateId
+  nameWithType.vb: L2OrderBook(Of A, L).AppliedFirstUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).AppliedFirstUpdateId
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.AppliedFinalUpdateId
+  commentId: P:Virtufin.Base.OrderBooks.L2OrderBook`2.AppliedFinalUpdateId
+  id: AppliedFinalUpdateId
+  parent: Virtufin.Base.OrderBooks.L2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: AppliedFinalUpdateId
+  nameWithType: L2OrderBook<A, L>.AppliedFinalUpdateId
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.AppliedFinalUpdateId
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: AppliedFinalUpdateId
+    path: ../../../src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+    startLine: 89
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: Final update id of the most recently applied diff, or <code>-1</code>.
+  example: []
+  syntax:
+    content: public long AppliedFinalUpdateId { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Property AppliedFinalUpdateId As Long
+  overload: Virtufin.Base.OrderBooks.L2OrderBook`2.AppliedFinalUpdateId*
+  implements:
+  - Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}.AppliedFinalUpdateId
+  nameWithType.vb: L2OrderBook(Of A, L).AppliedFinalUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).AppliedFinalUpdateId
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.BidsDescending
+  commentId: P:Virtufin.Base.OrderBooks.L2OrderBook`2.BidsDescending
+  id: BidsDescending
+  parent: Virtufin.Base.OrderBooks.L2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: BidsDescending
+  nameWithType: L2OrderBook<A, L>.BidsDescending
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.BidsDescending
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: BidsDescending
+    path: ../../../src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+    startLine: 92
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: Bid levels, highest price first.
+  example: []
+  syntax:
+    content: public IReadOnlyList<(L Price, A Size)> BidsDescending { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.ValueTuple{{L},{A}}}
+    content.vb: Public ReadOnly Property BidsDescending As IReadOnlyList(Of (Price As L, Size As A))
+  overload: Virtufin.Base.OrderBooks.L2OrderBook`2.BidsDescending*
+  implements:
+  - Virtufin.Core.Position.IL2OrderBook{{A},{L}}.BidsDescending
+  nameWithType.vb: L2OrderBook(Of A, L).BidsDescending
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).BidsDescending
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.AsksAscending
+  commentId: P:Virtufin.Base.OrderBooks.L2OrderBook`2.AsksAscending
+  id: AsksAscending
+  parent: Virtufin.Base.OrderBooks.L2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: AsksAscending
+  nameWithType: L2OrderBook<A, L>.AsksAscending
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.AsksAscending
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: AsksAscending
+    path: ../../../src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+    startLine: 95
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: Ask levels, lowest price first.
+  example: []
+  syntax:
+    content: public IReadOnlyList<(L Price, A Size)> AsksAscending { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.ValueTuple{{L},{A}}}
+    content.vb: Public ReadOnly Property AsksAscending As IReadOnlyList(Of (Price As L, Size As A))
+  overload: Virtufin.Base.OrderBooks.L2OrderBook`2.AsksAscending*
+  implements:
+  - Virtufin.Core.Position.IL2OrderBook{{A},{L}}.AsksAscending
+  nameWithType.vb: L2OrderBook(Of A, L).AsksAscending
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).AsksAscending
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.TryGetBid(`1,`0@)
+  commentId: M:Virtufin.Base.OrderBooks.L2OrderBook`2.TryGetBid(`1,`0@)
+  id: TryGetBid(`1,`0@)
+  parent: Virtufin.Base.OrderBooks.L2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: TryGetBid(L, out A)
+  nameWithType: L2OrderBook<A, L>.TryGetBid(L, out A)
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.TryGetBid(L, out A)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: TryGetBid
+    path: ../../../src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+    startLine: 98
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: Look up the aggregate size at a bid price.
+  example: []
+  syntax:
+    content: public bool TryGetBid(L price, out A size)
+    parameters:
+    - id: price
+      type: '{L}'
+      description: Price at the book's level scale.
+    - id: size
+      type: '{A}'
+      description: The level's aggregate size when present.
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryGetBid(price As L, size As A) As Boolean
+  overload: Virtufin.Base.OrderBooks.L2OrderBook`2.TryGetBid*
+  implements:
+  - Virtufin.Core.Position.IL2OrderBook{{A},{L}}.TryGetBid({L},{A}@)
+  nameWithType.vb: L2OrderBook(Of A, L).TryGetBid(L, A)
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).TryGetBid(L, A)
+  name.vb: TryGetBid(L, A)
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.TryGetAsk(`1,`0@)
+  commentId: M:Virtufin.Base.OrderBooks.L2OrderBook`2.TryGetAsk(`1,`0@)
+  id: TryGetAsk(`1,`0@)
+  parent: Virtufin.Base.OrderBooks.L2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: TryGetAsk(L, out A)
+  nameWithType: L2OrderBook<A, L>.TryGetAsk(L, out A)
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.TryGetAsk(L, out A)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: TryGetAsk
+    path: ../../../src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+    startLine: 101
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: Look up the aggregate size at an ask price.
+  example: []
+  syntax:
+    content: public bool TryGetAsk(L price, out A size)
+    parameters:
+    - id: price
+      type: '{L}'
+      description: Price at the book's level scale.
+    - id: size
+      type: '{A}'
+      description: The level's aggregate size when present.
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryGetAsk(price As L, size As A) As Boolean
+  overload: Virtufin.Base.OrderBooks.L2OrderBook`2.TryGetAsk*
+  implements:
+  - Virtufin.Core.Position.IL2OrderBook{{A},{L}}.TryGetAsk({L},{A}@)
+  nameWithType.vb: L2OrderBook(Of A, L).TryGetAsk(L, A)
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).TryGetAsk(L, A)
+  name.vb: TryGetAsk(L, A)
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.Clear
+  commentId: M:Virtufin.Base.OrderBooks.L2OrderBook`2.Clear
+  id: Clear
+  parent: Virtufin.Base.OrderBooks.L2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: L2OrderBook<A, L>.Clear()
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.Clear()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Clear
+    path: ../../../src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+    startLine: 104
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: Remove every level.
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: Virtufin.Base.OrderBooks.L2OrderBook`2.Clear*
+  implements:
+  - Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}.Clear
+  nameWithType.vb: L2OrderBook(Of A, L).Clear()
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).Clear()
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.ApplyLevel(System.Boolean,`1,`0)
+  commentId: M:Virtufin.Base.OrderBooks.L2OrderBook`2.ApplyLevel(System.Boolean,`1,`0)
+  id: ApplyLevel(System.Boolean,`1,`0)
+  parent: Virtufin.Base.OrderBooks.L2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: ApplyLevel(bool, L, A)
+  nameWithType: L2OrderBook<A, L>.ApplyLevel(bool, L, A)
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.ApplyLevel(bool, L, A)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: ApplyLevel
+    path: ../../../src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+    startLine: 111
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: >-
+    Apply one level mutation: a zero size removes the price, otherwise the
+
+    size is assigned (absolute, not incremental).
+  example: []
+  syntax:
+    content: public void ApplyLevel(bool isBid, L price, A size)
+    parameters:
+    - id: isBid
+      type: System.Boolean
+      description: <code>true</code> for the bid side, <code>false</code> for asks.
+    - id: price
+      type: '{L}'
+      description: Level price.
+    - id: size
+      type: '{A}'
+      description: New aggregate size; zero removes the level.
+    content.vb: Public Sub ApplyLevel(isBid As Boolean, price As L, size As A)
+  overload: Virtufin.Base.OrderBooks.L2OrderBook`2.ApplyLevel*
+  implements:
+  - Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}.ApplyLevel(System.Boolean,{L},{A})
+  nameWithType.vb: L2OrderBook(Of A, L).ApplyLevel(Boolean, L, A)
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).ApplyLevel(Boolean, L, A)
+  name.vb: ApplyLevel(Boolean, L, A)
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.SetState(Virtufin.Core.Position.OrderBookState)
+  commentId: M:Virtufin.Base.OrderBooks.L2OrderBook`2.SetState(Virtufin.Core.Position.OrderBookState)
+  id: SetState(Virtufin.Core.Position.OrderBookState)
+  parent: Virtufin.Base.OrderBooks.L2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: SetState(OrderBookState)
+  nameWithType: L2OrderBook<A, L>.SetState(OrderBookState)
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.SetState(Virtufin.Core.Position.OrderBookState)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: SetState
+    path: ../../../src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+    startLine: 125
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: Set the lifecycle state.
+  example: []
+  syntax:
+    content: public void SetState(OrderBookState state)
+    parameters:
+    - id: state
+      type: Virtufin.Core.Position.OrderBookState
+      description: New state.
+    content.vb: Public Sub SetState(state As OrderBookState)
+  overload: Virtufin.Base.OrderBooks.L2OrderBook`2.SetState*
+  implements:
+  - Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}.SetState(Virtufin.Core.Position.OrderBookState)
+  nameWithType.vb: L2OrderBook(Of A, L).SetState(OrderBookState)
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).SetState(Virtufin.Core.Position.OrderBookState)
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.SetLastUpdateId(System.Int64)
+  commentId: M:Virtufin.Base.OrderBooks.L2OrderBook`2.SetLastUpdateId(System.Int64)
+  id: SetLastUpdateId(System.Int64)
+  parent: Virtufin.Base.OrderBooks.L2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: SetLastUpdateId(long)
+  nameWithType: L2OrderBook<A, L>.SetLastUpdateId(long)
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.SetLastUpdateId(long)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: SetLastUpdateId
+    path: ../../../src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+    startLine: 128
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: Set the last applied update id.
+  example: []
+  syntax:
+    content: public void SetLastUpdateId(long lastUpdateId)
+    parameters:
+    - id: lastUpdateId
+      type: System.Int64
+      description: New update id.
+    content.vb: Public Sub SetLastUpdateId(lastUpdateId As Long)
+  overload: Virtufin.Base.OrderBooks.L2OrderBook`2.SetLastUpdateId*
+  implements:
+  - Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}.SetLastUpdateId(System.Int64)
+  nameWithType.vb: L2OrderBook(Of A, L).SetLastUpdateId(Long)
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).SetLastUpdateId(Long)
+  name.vb: SetLastUpdateId(Long)
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.SetAppliedRange(System.Int64,System.Int64)
+  commentId: M:Virtufin.Base.OrderBooks.L2OrderBook`2.SetAppliedRange(System.Int64,System.Int64)
+  id: SetAppliedRange(System.Int64,System.Int64)
+  parent: Virtufin.Base.OrderBooks.L2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: SetAppliedRange(long, long)
+  nameWithType: L2OrderBook<A, L>.SetAppliedRange(long, long)
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.SetAppliedRange(long, long)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: SetAppliedRange
+    path: ../../../src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+    startLine: 131
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: Record the id range of the most recently applied diff.
+  example: []
+  syntax:
+    content: public void SetAppliedRange(long firstUpdateId, long finalUpdateId)
+    parameters:
+    - id: firstUpdateId
+      type: System.Int64
+      description: Diff's first update id.
+    - id: finalUpdateId
+      type: System.Int64
+      description: Diff's final update id.
+    content.vb: Public Sub SetAppliedRange(firstUpdateId As Long, finalUpdateId As Long)
+  overload: Virtufin.Base.OrderBooks.L2OrderBook`2.SetAppliedRange*
+  implements:
+  - Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}.SetAppliedRange(System.Int64,System.Int64)
+  nameWithType.vb: L2OrderBook(Of A, L).SetAppliedRange(Long, Long)
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).SetAppliedRange(Long, Long)
+  name.vb: SetAppliedRange(Long, Long)
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.ResetAppliedRange
+  commentId: M:Virtufin.Base.OrderBooks.L2OrderBook`2.ResetAppliedRange
+  id: ResetAppliedRange
+  parent: Virtufin.Base.OrderBooks.L2OrderBook`2
+  langs:
+  - csharp
+  - vb
+  name: ResetAppliedRange()
+  nameWithType: L2OrderBook<A, L>.ResetAppliedRange()
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.ResetAppliedRange()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: ResetAppliedRange
+    path: ../../../src/Virtufin.Base/OrderBooks/L2OrderBook.cs
+    startLine: 138
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: Clear the recorded applied id range (e.g. after a snapshot).
+  example: []
+  syntax:
+    content: public void ResetAppliedRange()
+    content.vb: Public Sub ResetAppliedRange()
+  overload: Virtufin.Base.OrderBooks.L2OrderBook`2.ResetAppliedRange*
+  implements:
+  - Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}.ResetAppliedRange
+  nameWithType.vb: L2OrderBook(Of A, L).ResetAppliedRange()
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).ResetAppliedRange()
+references:
+- uid: Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  commentId: M:Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  parent: Virtufin.Core.Position.IAmount
+  href: Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_CompareTo_Virtufin_Core_Position_IAmount_
+  name: CompareTo(IAmount)
+  nameWithType: IAmount.CompareTo(IAmount)
+  fullName: Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+    name: CompareTo
+    href: Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_CompareTo_Virtufin_Core_Position_IAmount_
+  - name: (
+  - uid: Virtufin.Core.Position.IAmount
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount.html
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.IAmount.CompareTo(Virtufin.Core.Position.IAmount)
+    name: CompareTo
+    href: Virtufin.Core.Position.IAmount.html#Virtufin_Core_Position_IAmount_CompareTo_Virtufin_Core_Position_IAmount_
+  - name: (
+  - uid: Virtufin.Core.Position.IAmount
+    name: IAmount
+    href: Virtufin.Core.Position.IAmount.html
+  - name: )
+- uid: Virtufin.Core.Position.PrecisionMismatchException
+  commentId: T:Virtufin.Core.Position.PrecisionMismatchException
+  href: Virtufin.Core.Position.PrecisionMismatchException.html
+  name: PrecisionMismatchException
+  nameWithType: PrecisionMismatchException
+  fullName: Virtufin.Core.Position.PrecisionMismatchException
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.BidsDescending
+  commentId: P:Virtufin.Base.OrderBooks.L2OrderBook`2.BidsDescending
+  href: Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_BidsDescending
+  name: BidsDescending
+  nameWithType: L2OrderBook<A, L>.BidsDescending
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.BidsDescending
+  nameWithType.vb: L2OrderBook(Of A, L).BidsDescending
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).BidsDescending
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.AsksAscending
+  commentId: P:Virtufin.Base.OrderBooks.L2OrderBook`2.AsksAscending
+  href: Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_AsksAscending
+  name: AsksAscending
+  nameWithType: L2OrderBook<A, L>.AsksAscending
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.AsksAscending
+  nameWithType.vb: L2OrderBook(Of A, L).AsksAscending
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).AsksAscending
+- uid: Virtufin.Base.OrderBooks
+  commentId: N:Virtufin.Base.OrderBooks
+  href: Virtufin.html
+  name: Virtufin.Base.OrderBooks
+  nameWithType: Virtufin.Base.OrderBooks
+  fullName: Virtufin.Base.OrderBooks
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.OrderBooks
+    name: OrderBooks
+    href: Virtufin.Base.OrderBooks.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.OrderBooks
+    name: OrderBooks
+    href: Virtufin.Base.OrderBooks.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.Core.Position.IL2OrderBook{{A},{L}}
+  commentId: T:Virtufin.Core.Position.IL2OrderBook{`0,`1}
+  parent: Virtufin.Core.Position
+  definition: Virtufin.Core.Position.IL2OrderBook`2
+  href: Virtufin.Core.Position.IL2OrderBook-2.html
+  name: IL2OrderBook<A, L>
+  nameWithType: IL2OrderBook<A, L>
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>
+  nameWithType.vb: IL2OrderBook(Of A, L)
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L)
+  name.vb: IL2OrderBook(Of A, L)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IL2OrderBook`2
+    name: IL2OrderBook
+    href: Virtufin.Core.Position.IL2OrderBook-2.html
+  - name: <
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.IL2OrderBook`2
+    name: IL2OrderBook
+    href: Virtufin.Core.Position.IL2OrderBook-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: )
+- uid: Virtufin.Core.Position.IOrderBook
+  commentId: T:Virtufin.Core.Position.IOrderBook
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.IOrderBook.html
+  name: IOrderBook
+  nameWithType: IOrderBook
+  fullName: Virtufin.Core.Position.IOrderBook
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}
+  commentId: T:Virtufin.Base.OrderBooks.IL2OrderBookWriter{`0,`1}
+  parent: Virtufin.Base.OrderBooks
+  definition: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html
+  name: IL2OrderBookWriter<A, L>
+  nameWithType: IL2OrderBookWriter<A, L>
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>
+  nameWithType.vb: IL2OrderBookWriter(Of A, L)
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L)
+  name.vb: IL2OrderBookWriter(Of A, L)
+  spec.csharp:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2
+    name: IL2OrderBookWriter
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html
+  - name: <
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2
+    name: IL2OrderBookWriter
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Virtufin.Core.Position.IAmount
+  commentId: T:Virtufin.Core.Position.IAmount
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.IAmount.html
+  name: IAmount
+  nameWithType: IAmount
+  fullName: Virtufin.Core.Position.IAmount
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Core.Position.IL2OrderBook`2
+  commentId: T:Virtufin.Core.Position.IL2OrderBook`2
+  href: Virtufin.Core.Position.IL2OrderBook-2.html
+  name: IL2OrderBook<A, L>
+  nameWithType: IL2OrderBook<A, L>
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>
+  nameWithType.vb: IL2OrderBook(Of A, L)
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L)
+  name.vb: IL2OrderBook(Of A, L)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IL2OrderBook`2
+    name: IL2OrderBook
+    href: Virtufin.Core.Position.IL2OrderBook-2.html
+  - name: <
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.IL2OrderBook`2
+    name: IL2OrderBook
+    href: Virtufin.Core.Position.IL2OrderBook-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: )
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2
+  commentId: T:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html
+  name: IL2OrderBookWriter<A, L>
+  nameWithType: IL2OrderBookWriter<A, L>
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>
+  nameWithType.vb: IL2OrderBookWriter(Of A, L)
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L)
+  name.vb: IL2OrderBookWriter(Of A, L)
+  spec.csharp:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2
+    name: IL2OrderBookWriter
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html
+  - name: <
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2
+    name: IL2OrderBookWriter
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: )
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.#ctor*
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.#ctor
+  href: Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2__ctor_System_Int32_System_Int32_System_Int32_System_Int32_
+  name: L2OrderBook
+  nameWithType: L2OrderBook<A, L>.L2OrderBook
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.L2OrderBook
+  nameWithType.vb: L2OrderBook(Of A, L).New
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Nullable{Virtufin.Core.Events.Symbol}
+  commentId: T:System.Nullable{Virtufin.Core.Events.Symbol}
+  parent: System
+  definition: System.Nullable`1
+  href: Virtufin.Core.Events.Symbol.html
+  name: Symbol?
+  nameWithType: Symbol?
+  fullName: Virtufin.Core.Events.Symbol?
+  spec.csharp:
+  - uid: Virtufin.Core.Events.Symbol
+    name: Symbol
+    href: Virtufin.Core.Events.Symbol.html
+  - name: '?'
+  spec.vb:
+  - uid: Virtufin.Core.Events.Symbol
+    name: Symbol
+    href: Virtufin.Core.Events.Symbol.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.Symbol*
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.Symbol
+  href: Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_Symbol
+  name: Symbol
+  nameWithType: L2OrderBook<A, L>.Symbol
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.Symbol
+  nameWithType.vb: L2OrderBook(Of A, L).Symbol
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).Symbol
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.LevelBase*
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.LevelBase
+  href: Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_LevelBase
+  name: LevelBase
+  nameWithType: L2OrderBook<A, L>.LevelBase
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.LevelBase
+  nameWithType.vb: L2OrderBook(Of A, L).LevelBase
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).LevelBase
+- uid: Virtufin.Core.Position.IL2OrderBook{{A},{L}}.LevelBase
+  commentId: P:Virtufin.Core.Position.IL2OrderBook{`0,`1}.LevelBase
+  parent: Virtufin.Core.Position.IL2OrderBook{{A},{L}}
+  definition: Virtufin.Core.Position.IL2OrderBook`2.LevelBase
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_LevelBase
+  name: LevelBase
+  nameWithType: IL2OrderBook<A, L>.LevelBase
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.LevelBase
+  nameWithType.vb: IL2OrderBook(Of A, L).LevelBase
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).LevelBase
+- uid: Virtufin.Core.Position.IL2OrderBook`2.LevelBase
+  commentId: P:Virtufin.Core.Position.IL2OrderBook`2.LevelBase
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_LevelBase
+  name: LevelBase
+  nameWithType: IL2OrderBook<A, L>.LevelBase
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.LevelBase
+  nameWithType.vb: IL2OrderBook(Of A, L).LevelBase
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).LevelBase
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.LevelPrecision*
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.LevelPrecision
+  href: Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_LevelPrecision
+  name: LevelPrecision
+  nameWithType: L2OrderBook<A, L>.LevelPrecision
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.LevelPrecision
+  nameWithType.vb: L2OrderBook(Of A, L).LevelPrecision
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).LevelPrecision
+- uid: Virtufin.Core.Position.IL2OrderBook{{A},{L}}.LevelPrecision
+  commentId: P:Virtufin.Core.Position.IL2OrderBook{`0,`1}.LevelPrecision
+  parent: Virtufin.Core.Position.IL2OrderBook{{A},{L}}
+  definition: Virtufin.Core.Position.IL2OrderBook`2.LevelPrecision
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_LevelPrecision
+  name: LevelPrecision
+  nameWithType: IL2OrderBook<A, L>.LevelPrecision
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.LevelPrecision
+  nameWithType.vb: IL2OrderBook(Of A, L).LevelPrecision
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).LevelPrecision
+- uid: Virtufin.Core.Position.IL2OrderBook`2.LevelPrecision
+  commentId: P:Virtufin.Core.Position.IL2OrderBook`2.LevelPrecision
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_LevelPrecision
+  name: LevelPrecision
+  nameWithType: IL2OrderBook<A, L>.LevelPrecision
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.LevelPrecision
+  nameWithType.vb: IL2OrderBook(Of A, L).LevelPrecision
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).LevelPrecision
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.DepthBase*
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.DepthBase
+  href: Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_DepthBase
+  name: DepthBase
+  nameWithType: L2OrderBook<A, L>.DepthBase
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.DepthBase
+  nameWithType.vb: L2OrderBook(Of A, L).DepthBase
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).DepthBase
+- uid: Virtufin.Core.Position.IL2OrderBook{{A},{L}}.DepthBase
+  commentId: P:Virtufin.Core.Position.IL2OrderBook{`0,`1}.DepthBase
+  parent: Virtufin.Core.Position.IL2OrderBook{{A},{L}}
+  definition: Virtufin.Core.Position.IL2OrderBook`2.DepthBase
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_DepthBase
+  name: DepthBase
+  nameWithType: IL2OrderBook<A, L>.DepthBase
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.DepthBase
+  nameWithType.vb: IL2OrderBook(Of A, L).DepthBase
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).DepthBase
+- uid: Virtufin.Core.Position.IL2OrderBook`2.DepthBase
+  commentId: P:Virtufin.Core.Position.IL2OrderBook`2.DepthBase
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_DepthBase
+  name: DepthBase
+  nameWithType: IL2OrderBook<A, L>.DepthBase
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.DepthBase
+  nameWithType.vb: IL2OrderBook(Of A, L).DepthBase
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).DepthBase
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.DepthPrecision*
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.DepthPrecision
+  href: Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_DepthPrecision
+  name: DepthPrecision
+  nameWithType: L2OrderBook<A, L>.DepthPrecision
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.DepthPrecision
+  nameWithType.vb: L2OrderBook(Of A, L).DepthPrecision
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).DepthPrecision
+- uid: Virtufin.Core.Position.IL2OrderBook{{A},{L}}.DepthPrecision
+  commentId: P:Virtufin.Core.Position.IL2OrderBook{`0,`1}.DepthPrecision
+  parent: Virtufin.Core.Position.IL2OrderBook{{A},{L}}
+  definition: Virtufin.Core.Position.IL2OrderBook`2.DepthPrecision
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_DepthPrecision
+  name: DepthPrecision
+  nameWithType: IL2OrderBook<A, L>.DepthPrecision
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.DepthPrecision
+  nameWithType.vb: IL2OrderBook(Of A, L).DepthPrecision
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).DepthPrecision
+- uid: Virtufin.Core.Position.IL2OrderBook`2.DepthPrecision
+  commentId: P:Virtufin.Core.Position.IL2OrderBook`2.DepthPrecision
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_DepthPrecision
+  name: DepthPrecision
+  nameWithType: IL2OrderBook<A, L>.DepthPrecision
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.DepthPrecision
+  nameWithType.vb: IL2OrderBook(Of A, L).DepthPrecision
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).DepthPrecision
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.State*
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.State
+  href: Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_State
+  name: State
+  nameWithType: L2OrderBook<A, L>.State
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.State
+  nameWithType.vb: L2OrderBook(Of A, L).State
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).State
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}.State
+  commentId: P:Virtufin.Base.OrderBooks.IL2OrderBookWriter{`0,`1}.State
+  parent: Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}
+  definition: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.State
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_State
+  name: State
+  nameWithType: IL2OrderBookWriter<A, L>.State
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.State
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).State
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).State
+- uid: Virtufin.Core.Position.OrderBookState
+  commentId: T:Virtufin.Core.Position.OrderBookState
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.OrderBookState.html
+  name: OrderBookState
+  nameWithType: OrderBookState
+  fullName: Virtufin.Core.Position.OrderBookState
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.State
+  commentId: P:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.State
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_State
+  name: State
+  nameWithType: IL2OrderBookWriter<A, L>.State
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.State
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).State
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).State
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.LastUpdateId*
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.LastUpdateId
+  href: Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_LastUpdateId
+  name: LastUpdateId
+  nameWithType: L2OrderBook<A, L>.LastUpdateId
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.LastUpdateId
+  nameWithType.vb: L2OrderBook(Of A, L).LastUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).LastUpdateId
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}.LastUpdateId
+  commentId: P:Virtufin.Base.OrderBooks.IL2OrderBookWriter{`0,`1}.LastUpdateId
+  parent: Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}
+  definition: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.LastUpdateId
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_LastUpdateId
+  name: LastUpdateId
+  nameWithType: IL2OrderBookWriter<A, L>.LastUpdateId
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.LastUpdateId
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).LastUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).LastUpdateId
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.LastUpdateId
+  commentId: P:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.LastUpdateId
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_LastUpdateId
+  name: LastUpdateId
+  nameWithType: IL2OrderBookWriter<A, L>.LastUpdateId
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.LastUpdateId
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).LastUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).LastUpdateId
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.AppliedFirstUpdateId*
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.AppliedFirstUpdateId
+  href: Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_AppliedFirstUpdateId
+  name: AppliedFirstUpdateId
+  nameWithType: L2OrderBook<A, L>.AppliedFirstUpdateId
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.AppliedFirstUpdateId
+  nameWithType.vb: L2OrderBook(Of A, L).AppliedFirstUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).AppliedFirstUpdateId
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}.AppliedFirstUpdateId
+  commentId: P:Virtufin.Base.OrderBooks.IL2OrderBookWriter{`0,`1}.AppliedFirstUpdateId
+  parent: Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}
+  definition: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.AppliedFirstUpdateId
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_AppliedFirstUpdateId
+  name: AppliedFirstUpdateId
+  nameWithType: IL2OrderBookWriter<A, L>.AppliedFirstUpdateId
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.AppliedFirstUpdateId
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).AppliedFirstUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).AppliedFirstUpdateId
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.AppliedFirstUpdateId
+  commentId: P:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.AppliedFirstUpdateId
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_AppliedFirstUpdateId
+  name: AppliedFirstUpdateId
+  nameWithType: IL2OrderBookWriter<A, L>.AppliedFirstUpdateId
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.AppliedFirstUpdateId
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).AppliedFirstUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).AppliedFirstUpdateId
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.AppliedFinalUpdateId*
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.AppliedFinalUpdateId
+  href: Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_AppliedFinalUpdateId
+  name: AppliedFinalUpdateId
+  nameWithType: L2OrderBook<A, L>.AppliedFinalUpdateId
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.AppliedFinalUpdateId
+  nameWithType.vb: L2OrderBook(Of A, L).AppliedFinalUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).AppliedFinalUpdateId
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}.AppliedFinalUpdateId
+  commentId: P:Virtufin.Base.OrderBooks.IL2OrderBookWriter{`0,`1}.AppliedFinalUpdateId
+  parent: Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}
+  definition: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.AppliedFinalUpdateId
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_AppliedFinalUpdateId
+  name: AppliedFinalUpdateId
+  nameWithType: IL2OrderBookWriter<A, L>.AppliedFinalUpdateId
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.AppliedFinalUpdateId
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).AppliedFinalUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).AppliedFinalUpdateId
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.AppliedFinalUpdateId
+  commentId: P:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.AppliedFinalUpdateId
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_AppliedFinalUpdateId
+  name: AppliedFinalUpdateId
+  nameWithType: IL2OrderBookWriter<A, L>.AppliedFinalUpdateId
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.AppliedFinalUpdateId
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).AppliedFinalUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).AppliedFinalUpdateId
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.BidsDescending*
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.BidsDescending
+  href: Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_BidsDescending
+  name: BidsDescending
+  nameWithType: L2OrderBook<A, L>.BidsDescending
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.BidsDescending
+  nameWithType.vb: L2OrderBook(Of A, L).BidsDescending
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).BidsDescending
+- uid: Virtufin.Core.Position.IL2OrderBook{{A},{L}}.BidsDescending
+  commentId: P:Virtufin.Core.Position.IL2OrderBook{`0,`1}.BidsDescending
+  parent: Virtufin.Core.Position.IL2OrderBook{{A},{L}}
+  definition: Virtufin.Core.Position.IL2OrderBook`2.BidsDescending
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_BidsDescending
+  name: BidsDescending
+  nameWithType: IL2OrderBook<A, L>.BidsDescending
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.BidsDescending
+  nameWithType.vb: IL2OrderBook(Of A, L).BidsDescending
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).BidsDescending
+- uid: System.Collections.Generic.IReadOnlyList{System.ValueTuple{{L},{A}}}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.ValueTuple{`1,`0}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<(L Price, A Size)>
+  nameWithType: IReadOnlyList<(L Price, A Size)>
+  fullName: System.Collections.Generic.IReadOnlyList<(L Price, A Size)>
+  nameWithType.vb: IReadOnlyList(Of (Price As L, Size As A))
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of (Price As L, Size As A))
+  name.vb: IReadOnlyList(Of (Price As L, Size As A))
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: (
+  - name: L
+  - name: " "
+  - uid: System.ValueTuple{`1,`0}.Price
+    name: Price
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple--1,-0-.price
+  - name: ','
+  - name: " "
+  - name: A
+  - name: " "
+  - uid: System.ValueTuple{`1,`0}.Size
+    name: Size
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple--1,-0-.size
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{`1,`0}.Price
+    name: Price
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple--1,-0-.price
+  - name: " "
+  - name: As
+  - name: " "
+  - name: L
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{`1,`0}.Size
+    name: Size
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple--1,-0-.size
+  - name: " "
+  - name: As
+  - name: " "
+  - name: A
+  - name: )
+  - name: )
+- uid: Virtufin.Core.Position.IL2OrderBook`2.BidsDescending
+  commentId: P:Virtufin.Core.Position.IL2OrderBook`2.BidsDescending
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_BidsDescending
+  name: BidsDescending
+  nameWithType: IL2OrderBook<A, L>.BidsDescending
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.BidsDescending
+  nameWithType.vb: IL2OrderBook(Of A, L).BidsDescending
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).BidsDescending
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.AsksAscending*
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.AsksAscending
+  href: Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_AsksAscending
+  name: AsksAscending
+  nameWithType: L2OrderBook<A, L>.AsksAscending
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.AsksAscending
+  nameWithType.vb: L2OrderBook(Of A, L).AsksAscending
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).AsksAscending
+- uid: Virtufin.Core.Position.IL2OrderBook{{A},{L}}.AsksAscending
+  commentId: P:Virtufin.Core.Position.IL2OrderBook{`0,`1}.AsksAscending
+  parent: Virtufin.Core.Position.IL2OrderBook{{A},{L}}
+  definition: Virtufin.Core.Position.IL2OrderBook`2.AsksAscending
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_AsksAscending
+  name: AsksAscending
+  nameWithType: IL2OrderBook<A, L>.AsksAscending
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.AsksAscending
+  nameWithType.vb: IL2OrderBook(Of A, L).AsksAscending
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).AsksAscending
+- uid: Virtufin.Core.Position.IL2OrderBook`2.AsksAscending
+  commentId: P:Virtufin.Core.Position.IL2OrderBook`2.AsksAscending
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_AsksAscending
+  name: AsksAscending
+  nameWithType: IL2OrderBook<A, L>.AsksAscending
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.AsksAscending
+  nameWithType.vb: IL2OrderBook(Of A, L).AsksAscending
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).AsksAscending
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.TryGetBid*
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.TryGetBid
+  href: Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_TryGetBid__1__0__
+  name: TryGetBid
+  nameWithType: L2OrderBook<A, L>.TryGetBid
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.TryGetBid
+  nameWithType.vb: L2OrderBook(Of A, L).TryGetBid
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).TryGetBid
+- uid: Virtufin.Core.Position.IL2OrderBook{{A},{L}}.TryGetBid({L},{A}@)
+  commentId: M:Virtufin.Core.Position.IL2OrderBook{`0,`1}.TryGetBid(`1,`0@)
+  parent: Virtufin.Core.Position.IL2OrderBook{{A},{L}}
+  definition: Virtufin.Core.Position.IL2OrderBook`2.TryGetBid(`1,`0@)
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_TryGetBid__1__0__
+  name: TryGetBid(L, out A)
+  nameWithType: IL2OrderBook<A, L>.TryGetBid(L, out A)
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.TryGetBid(L, out A)
+  nameWithType.vb: IL2OrderBook(Of A, L).TryGetBid(L, A)
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).TryGetBid(L, A)
+  name.vb: TryGetBid(L, A)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IL2OrderBook{`0,`1}.TryGetBid(`1,`0@)
+    name: TryGetBid
+    href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_TryGetBid__1__0__
+  - name: (
+  - name: L
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - name: A
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.IL2OrderBook{`0,`1}.TryGetBid(`1,`0@)
+    name: TryGetBid
+    href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_TryGetBid__1__0__
+  - name: (
+  - name: L
+  - name: ','
+  - name: " "
+  - name: A
+  - name: )
+- uid: '{L}'
+  commentId: '!:L'
+  definition: L
+  name: L
+  nameWithType: L
+  fullName: L
+- uid: '{A}'
+  commentId: '!:A'
+  definition: A
+  name: A
+  nameWithType: A
+  fullName: A
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Virtufin.Core.Position.IL2OrderBook`2.TryGetBid(`1,`0@)
+  commentId: M:Virtufin.Core.Position.IL2OrderBook`2.TryGetBid(`1,`0@)
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_TryGetBid__1__0__
+  name: TryGetBid(L, out A)
+  nameWithType: IL2OrderBook<A, L>.TryGetBid(L, out A)
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.TryGetBid(L, out A)
+  nameWithType.vb: IL2OrderBook(Of A, L).TryGetBid(L, A)
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).TryGetBid(L, A)
+  name.vb: TryGetBid(L, A)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IL2OrderBook`2.TryGetBid(`1,`0@)
+    name: TryGetBid
+    href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_TryGetBid__1__0__
+  - name: (
+  - name: L
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - name: A
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.IL2OrderBook`2.TryGetBid(`1,`0@)
+    name: TryGetBid
+    href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_TryGetBid__1__0__
+  - name: (
+  - name: L
+  - name: ','
+  - name: " "
+  - name: A
+  - name: )
+- uid: L
+  name: L
+  nameWithType: L
+  fullName: L
+- uid: A
+  name: A
+  nameWithType: A
+  fullName: A
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.TryGetAsk*
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.TryGetAsk
+  href: Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_TryGetAsk__1__0__
+  name: TryGetAsk
+  nameWithType: L2OrderBook<A, L>.TryGetAsk
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.TryGetAsk
+  nameWithType.vb: L2OrderBook(Of A, L).TryGetAsk
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).TryGetAsk
+- uid: Virtufin.Core.Position.IL2OrderBook{{A},{L}}.TryGetAsk({L},{A}@)
+  commentId: M:Virtufin.Core.Position.IL2OrderBook{`0,`1}.TryGetAsk(`1,`0@)
+  parent: Virtufin.Core.Position.IL2OrderBook{{A},{L}}
+  definition: Virtufin.Core.Position.IL2OrderBook`2.TryGetAsk(`1,`0@)
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_TryGetAsk__1__0__
+  name: TryGetAsk(L, out A)
+  nameWithType: IL2OrderBook<A, L>.TryGetAsk(L, out A)
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.TryGetAsk(L, out A)
+  nameWithType.vb: IL2OrderBook(Of A, L).TryGetAsk(L, A)
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).TryGetAsk(L, A)
+  name.vb: TryGetAsk(L, A)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IL2OrderBook{`0,`1}.TryGetAsk(`1,`0@)
+    name: TryGetAsk
+    href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_TryGetAsk__1__0__
+  - name: (
+  - name: L
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - name: A
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.IL2OrderBook{`0,`1}.TryGetAsk(`1,`0@)
+    name: TryGetAsk
+    href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_TryGetAsk__1__0__
+  - name: (
+  - name: L
+  - name: ','
+  - name: " "
+  - name: A
+  - name: )
+- uid: Virtufin.Core.Position.IL2OrderBook`2.TryGetAsk(`1,`0@)
+  commentId: M:Virtufin.Core.Position.IL2OrderBook`2.TryGetAsk(`1,`0@)
+  href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_TryGetAsk__1__0__
+  name: TryGetAsk(L, out A)
+  nameWithType: IL2OrderBook<A, L>.TryGetAsk(L, out A)
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>.TryGetAsk(L, out A)
+  nameWithType.vb: IL2OrderBook(Of A, L).TryGetAsk(L, A)
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L).TryGetAsk(L, A)
+  name.vb: TryGetAsk(L, A)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IL2OrderBook`2.TryGetAsk(`1,`0@)
+    name: TryGetAsk
+    href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_TryGetAsk__1__0__
+  - name: (
+  - name: L
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - name: A
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.IL2OrderBook`2.TryGetAsk(`1,`0@)
+    name: TryGetAsk
+    href: Virtufin.Core.Position.IL2OrderBook-2.html#Virtufin_Core_Position_IL2OrderBook_2_TryGetAsk__1__0__
+  - name: (
+  - name: L
+  - name: ','
+  - name: " "
+  - name: A
+  - name: )
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.Clear*
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.Clear
+  href: Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_Clear
+  name: Clear
+  nameWithType: L2OrderBook<A, L>.Clear
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.Clear
+  nameWithType.vb: L2OrderBook(Of A, L).Clear
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).Clear
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}.Clear
+  commentId: M:Virtufin.Base.OrderBooks.IL2OrderBookWriter{`0,`1}.Clear
+  parent: Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}
+  definition: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.Clear
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_Clear
+  name: Clear()
+  nameWithType: IL2OrderBookWriter<A, L>.Clear()
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.Clear()
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).Clear()
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).Clear()
+  spec.csharp:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter{`0,`1}.Clear
+    name: Clear
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_Clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter{`0,`1}.Clear
+    name: Clear
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_Clear
+  - name: (
+  - name: )
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.Clear
+  commentId: M:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.Clear
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_Clear
+  name: Clear()
+  nameWithType: IL2OrderBookWriter<A, L>.Clear()
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.Clear()
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).Clear()
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).Clear()
+  spec.csharp:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.Clear
+    name: Clear
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_Clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.Clear
+    name: Clear
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_Clear
+  - name: (
+  - name: )
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.ApplyLevel*
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.ApplyLevel
+  href: Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_ApplyLevel_System_Boolean__1__0_
+  name: ApplyLevel
+  nameWithType: L2OrderBook<A, L>.ApplyLevel
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.ApplyLevel
+  nameWithType.vb: L2OrderBook(Of A, L).ApplyLevel
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).ApplyLevel
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}.ApplyLevel(System.Boolean,{L},{A})
+  commentId: M:Virtufin.Base.OrderBooks.IL2OrderBookWriter{`0,`1}.ApplyLevel(System.Boolean,`1,`0)
+  parent: Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}
+  definition: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ApplyLevel(System.Boolean,`1,`0)
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_ApplyLevel_System_Boolean__1__0_
+  name: ApplyLevel(bool, L, A)
+  nameWithType: IL2OrderBookWriter<A, L>.ApplyLevel(bool, L, A)
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.ApplyLevel(bool, L, A)
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).ApplyLevel(Boolean, L, A)
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).ApplyLevel(Boolean, L, A)
+  name.vb: ApplyLevel(Boolean, L, A)
+  spec.csharp:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter{`0,`1}.ApplyLevel(System.Boolean,`1,`0)
+    name: ApplyLevel
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_ApplyLevel_System_Boolean__1__0_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - name: L
+  - name: ','
+  - name: " "
+  - name: A
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter{`0,`1}.ApplyLevel(System.Boolean,`1,`0)
+    name: ApplyLevel
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_ApplyLevel_System_Boolean__1__0_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - name: L
+  - name: ','
+  - name: " "
+  - name: A
+  - name: )
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ApplyLevel(System.Boolean,`1,`0)
+  commentId: M:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ApplyLevel(System.Boolean,`1,`0)
+  isExternal: true
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_ApplyLevel_System_Boolean__1__0_
+  name: ApplyLevel(bool, L, A)
+  nameWithType: IL2OrderBookWriter<A, L>.ApplyLevel(bool, L, A)
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.ApplyLevel(bool, L, A)
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).ApplyLevel(Boolean, L, A)
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).ApplyLevel(Boolean, L, A)
+  name.vb: ApplyLevel(Boolean, L, A)
+  spec.csharp:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ApplyLevel(System.Boolean,`1,`0)
+    name: ApplyLevel
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_ApplyLevel_System_Boolean__1__0_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - name: L
+  - name: ','
+  - name: " "
+  - name: A
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ApplyLevel(System.Boolean,`1,`0)
+    name: ApplyLevel
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_ApplyLevel_System_Boolean__1__0_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - name: L
+  - name: ','
+  - name: " "
+  - name: A
+  - name: )
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.SetState*
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.SetState
+  href: Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_SetState_Virtufin_Core_Position_OrderBookState_
+  name: SetState
+  nameWithType: L2OrderBook<A, L>.SetState
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.SetState
+  nameWithType.vb: L2OrderBook(Of A, L).SetState
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).SetState
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}.SetState(Virtufin.Core.Position.OrderBookState)
+  commentId: M:Virtufin.Base.OrderBooks.IL2OrderBookWriter{`0,`1}.SetState(Virtufin.Core.Position.OrderBookState)
+  parent: Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}
+  definition: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetState(Virtufin.Core.Position.OrderBookState)
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_SetState_Virtufin_Core_Position_OrderBookState_
+  name: SetState(OrderBookState)
+  nameWithType: IL2OrderBookWriter<A, L>.SetState(OrderBookState)
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.SetState(Virtufin.Core.Position.OrderBookState)
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).SetState(OrderBookState)
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).SetState(Virtufin.Core.Position.OrderBookState)
+  spec.csharp:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter{`0,`1}.SetState(Virtufin.Core.Position.OrderBookState)
+    name: SetState
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_SetState_Virtufin_Core_Position_OrderBookState_
+  - name: (
+  - uid: Virtufin.Core.Position.OrderBookState
+    name: OrderBookState
+    href: Virtufin.Core.Position.OrderBookState.html
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter{`0,`1}.SetState(Virtufin.Core.Position.OrderBookState)
+    name: SetState
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_SetState_Virtufin_Core_Position_OrderBookState_
+  - name: (
+  - uid: Virtufin.Core.Position.OrderBookState
+    name: OrderBookState
+    href: Virtufin.Core.Position.OrderBookState.html
+  - name: )
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetState(Virtufin.Core.Position.OrderBookState)
+  commentId: M:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetState(Virtufin.Core.Position.OrderBookState)
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_SetState_Virtufin_Core_Position_OrderBookState_
+  name: SetState(OrderBookState)
+  nameWithType: IL2OrderBookWriter<A, L>.SetState(OrderBookState)
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.SetState(Virtufin.Core.Position.OrderBookState)
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).SetState(OrderBookState)
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).SetState(Virtufin.Core.Position.OrderBookState)
+  spec.csharp:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetState(Virtufin.Core.Position.OrderBookState)
+    name: SetState
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_SetState_Virtufin_Core_Position_OrderBookState_
+  - name: (
+  - uid: Virtufin.Core.Position.OrderBookState
+    name: OrderBookState
+    href: Virtufin.Core.Position.OrderBookState.html
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetState(Virtufin.Core.Position.OrderBookState)
+    name: SetState
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_SetState_Virtufin_Core_Position_OrderBookState_
+  - name: (
+  - uid: Virtufin.Core.Position.OrderBookState
+    name: OrderBookState
+    href: Virtufin.Core.Position.OrderBookState.html
+  - name: )
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.SetLastUpdateId*
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.SetLastUpdateId
+  href: Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_SetLastUpdateId_System_Int64_
+  name: SetLastUpdateId
+  nameWithType: L2OrderBook<A, L>.SetLastUpdateId
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.SetLastUpdateId
+  nameWithType.vb: L2OrderBook(Of A, L).SetLastUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).SetLastUpdateId
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}.SetLastUpdateId(System.Int64)
+  commentId: M:Virtufin.Base.OrderBooks.IL2OrderBookWriter{`0,`1}.SetLastUpdateId(System.Int64)
+  parent: Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}
+  definition: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetLastUpdateId(System.Int64)
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_SetLastUpdateId_System_Int64_
+  name: SetLastUpdateId(long)
+  nameWithType: IL2OrderBookWriter<A, L>.SetLastUpdateId(long)
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.SetLastUpdateId(long)
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).SetLastUpdateId(Long)
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).SetLastUpdateId(Long)
+  name.vb: SetLastUpdateId(Long)
+  spec.csharp:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter{`0,`1}.SetLastUpdateId(System.Int64)
+    name: SetLastUpdateId
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_SetLastUpdateId_System_Int64_
+  - name: (
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter{`0,`1}.SetLastUpdateId(System.Int64)
+    name: SetLastUpdateId
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_SetLastUpdateId_System_Int64_
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetLastUpdateId(System.Int64)
+  commentId: M:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetLastUpdateId(System.Int64)
+  isExternal: true
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_SetLastUpdateId_System_Int64_
+  name: SetLastUpdateId(long)
+  nameWithType: IL2OrderBookWriter<A, L>.SetLastUpdateId(long)
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.SetLastUpdateId(long)
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).SetLastUpdateId(Long)
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).SetLastUpdateId(Long)
+  name.vb: SetLastUpdateId(Long)
+  spec.csharp:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetLastUpdateId(System.Int64)
+    name: SetLastUpdateId
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_SetLastUpdateId_System_Int64_
+  - name: (
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetLastUpdateId(System.Int64)
+    name: SetLastUpdateId
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_SetLastUpdateId_System_Int64_
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.SetAppliedRange*
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.SetAppliedRange
+  href: Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_SetAppliedRange_System_Int64_System_Int64_
+  name: SetAppliedRange
+  nameWithType: L2OrderBook<A, L>.SetAppliedRange
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.SetAppliedRange
+  nameWithType.vb: L2OrderBook(Of A, L).SetAppliedRange
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).SetAppliedRange
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}.SetAppliedRange(System.Int64,System.Int64)
+  commentId: M:Virtufin.Base.OrderBooks.IL2OrderBookWriter{`0,`1}.SetAppliedRange(System.Int64,System.Int64)
+  parent: Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}
+  definition: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetAppliedRange(System.Int64,System.Int64)
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_SetAppliedRange_System_Int64_System_Int64_
+  name: SetAppliedRange(long, long)
+  nameWithType: IL2OrderBookWriter<A, L>.SetAppliedRange(long, long)
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.SetAppliedRange(long, long)
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).SetAppliedRange(Long, Long)
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).SetAppliedRange(Long, Long)
+  name.vb: SetAppliedRange(Long, Long)
+  spec.csharp:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter{`0,`1}.SetAppliedRange(System.Int64,System.Int64)
+    name: SetAppliedRange
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_SetAppliedRange_System_Int64_System_Int64_
+  - name: (
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter{`0,`1}.SetAppliedRange(System.Int64,System.Int64)
+    name: SetAppliedRange
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_SetAppliedRange_System_Int64_System_Int64_
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetAppliedRange(System.Int64,System.Int64)
+  commentId: M:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetAppliedRange(System.Int64,System.Int64)
+  isExternal: true
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_SetAppliedRange_System_Int64_System_Int64_
+  name: SetAppliedRange(long, long)
+  nameWithType: IL2OrderBookWriter<A, L>.SetAppliedRange(long, long)
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.SetAppliedRange(long, long)
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).SetAppliedRange(Long, Long)
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).SetAppliedRange(Long, Long)
+  name.vb: SetAppliedRange(Long, Long)
+  spec.csharp:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetAppliedRange(System.Int64,System.Int64)
+    name: SetAppliedRange
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_SetAppliedRange_System_Int64_System_Int64_
+  - name: (
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetAppliedRange(System.Int64,System.Int64)
+    name: SetAppliedRange
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_SetAppliedRange_System_Int64_System_Int64_
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2.ResetAppliedRange*
+  commentId: Overload:Virtufin.Base.OrderBooks.L2OrderBook`2.ResetAppliedRange
+  href: Virtufin.Base.OrderBooks.L2OrderBook-2.html#Virtufin_Base_OrderBooks_L2OrderBook_2_ResetAppliedRange
+  name: ResetAppliedRange
+  nameWithType: L2OrderBook<A, L>.ResetAppliedRange
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>.ResetAppliedRange
+  nameWithType.vb: L2OrderBook(Of A, L).ResetAppliedRange
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L).ResetAppliedRange
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}.ResetAppliedRange
+  commentId: M:Virtufin.Base.OrderBooks.IL2OrderBookWriter{`0,`1}.ResetAppliedRange
+  parent: Virtufin.Base.OrderBooks.IL2OrderBookWriter{{A},{L}}
+  definition: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ResetAppliedRange
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_ResetAppliedRange
+  name: ResetAppliedRange()
+  nameWithType: IL2OrderBookWriter<A, L>.ResetAppliedRange()
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.ResetAppliedRange()
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).ResetAppliedRange()
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).ResetAppliedRange()
+  spec.csharp:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter{`0,`1}.ResetAppliedRange
+    name: ResetAppliedRange
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_ResetAppliedRange
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter{`0,`1}.ResetAppliedRange
+    name: ResetAppliedRange
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_ResetAppliedRange
+  - name: (
+  - name: )
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ResetAppliedRange
+  commentId: M:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ResetAppliedRange
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_ResetAppliedRange
+  name: ResetAppliedRange()
+  nameWithType: IL2OrderBookWriter<A, L>.ResetAppliedRange()
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.ResetAppliedRange()
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).ResetAppliedRange()
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).ResetAppliedRange()
+  spec.csharp:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ResetAppliedRange
+    name: ResetAppliedRange
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_ResetAppliedRange
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ResetAppliedRange
+    name: ResetAppliedRange
+    href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_ResetAppliedRange
+  - name: (
+  - name: )

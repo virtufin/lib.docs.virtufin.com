@@ -28,6 +28,7 @@ items:
   - Virtufin.Base.Execution
   - Virtufin.Base.Message
   - Virtufin.Base.Messaging
+  - Virtufin.Base.OrderBooks
   - Virtufin.Base.Position
   - Virtufin.Base.PositionSize
   - Virtufin.Base.PositionTransferContract
@@ -205,6 +206,36 @@ references:
   - uid: Virtufin.Base.Messaging
     name: Messaging
     href: Virtufin.Base.Messaging.html
+- uid: Virtufin.Base.OrderBooks
+  commentId: N:Virtufin.Base.OrderBooks
+  href: Virtufin.html
+  name: Virtufin.Base.OrderBooks
+  nameWithType: Virtufin.Base.OrderBooks
+  fullName: Virtufin.Base.OrderBooks
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.OrderBooks
+    name: OrderBooks
+    href: Virtufin.Base.OrderBooks.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.OrderBooks
+    name: OrderBooks
+    href: Virtufin.Base.OrderBooks.html
 - uid: Virtufin.Base.Scenarios
   commentId: N:Virtufin.Base.Scenarios
   href: Virtufin.html

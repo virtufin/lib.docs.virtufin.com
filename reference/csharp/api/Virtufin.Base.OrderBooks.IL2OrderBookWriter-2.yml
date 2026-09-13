@@ -1,0 +1,675 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2
+  commentId: T:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2
+  id: IL2OrderBookWriter`2
+  parent: Virtufin.Base.OrderBooks
+  children:
+  - Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.AppliedFinalUpdateId
+  - Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.AppliedFirstUpdateId
+  - Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ApplyLevel(System.Boolean,`1,`0)
+  - Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.Clear
+  - Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.LastUpdateId
+  - Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ResetAppliedRange
+  - Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetAppliedRange(System.Int64,System.Int64)
+  - Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetLastUpdateId(System.Int64)
+  - Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetState(Virtufin.Core.Position.OrderBookState)
+  - Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.State
+  langs:
+  - csharp
+  - vb
+  name: IL2OrderBookWriter<A, L>
+  nameWithType: IL2OrderBookWriter<A, L>
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: IL2OrderBookWriter
+    path: ../../../src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
+    startLine: 11
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: >-
+    Mutable surface of an <xref href="Virtufin.Core.Position.IL2OrderBook%602" data-throw-if-not-resolved="false"></xref>, used by
+
+    <xref href="Virtufin.Base.OrderBooks.Level2OrderBookUpdater%605" data-throw-if-not-resolved="false"></xref>. Kept separate from the
+
+    read-only Core trait so consumers of a book cannot mutate it by accident.
+  example: []
+  syntax:
+    content: 'public interface IL2OrderBookWriter<A, L> where A : IFixedPointAmount where L : IFixedPointAmount'
+    typeParameters:
+    - id: A
+      description: Depth (size) amount type.
+    - id: L
+      description: Level (price) amount type.
+    content.vb: Public Interface IL2OrderBookWriter(Of A As IFixedPointAmount, L As IFixedPointAmount)
+  derivedClasses:
+  - Virtufin.Base.OrderBooks.L2OrderBook`2
+  nameWithType.vb: IL2OrderBookWriter(Of A, L)
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L)
+  name.vb: IL2OrderBookWriter(Of A, L)
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.State
+  commentId: P:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.State
+  id: State
+  parent: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: IL2OrderBookWriter<A, L>.State
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.State
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: State
+    path: ../../../src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
+    startLine: 16
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: Current lifecycle state.
+  example: []
+  syntax:
+    content: OrderBookState State { get; }
+    parameters: []
+    return:
+      type: Virtufin.Core.Position.OrderBookState
+    content.vb: ReadOnly Property State As OrderBookState
+  overload: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.State*
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).State
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).State
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.LastUpdateId
+  commentId: P:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.LastUpdateId
+  id: LastUpdateId
+  parent: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2
+  langs:
+  - csharp
+  - vb
+  name: LastUpdateId
+  nameWithType: IL2OrderBookWriter<A, L>.LastUpdateId
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.LastUpdateId
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: LastUpdateId
+    path: ../../../src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: The last applied update id (or the bootstrapping snapshot's id).
+  example: []
+  syntax:
+    content: long LastUpdateId { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: ReadOnly Property LastUpdateId As Long
+  overload: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.LastUpdateId*
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).LastUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).LastUpdateId
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.AppliedFirstUpdateId
+  commentId: P:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.AppliedFirstUpdateId
+  id: AppliedFirstUpdateId
+  parent: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2
+  langs:
+  - csharp
+  - vb
+  name: AppliedFirstUpdateId
+  nameWithType: IL2OrderBookWriter<A, L>.AppliedFirstUpdateId
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.AppliedFirstUpdateId
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: AppliedFirstUpdateId
+    path: ../../../src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: First update id of the most recently applied diff, or <code>-1</code>.
+  example: []
+  syntax:
+    content: long AppliedFirstUpdateId { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: ReadOnly Property AppliedFirstUpdateId As Long
+  overload: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.AppliedFirstUpdateId*
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).AppliedFirstUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).AppliedFirstUpdateId
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.AppliedFinalUpdateId
+  commentId: P:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.AppliedFinalUpdateId
+  id: AppliedFinalUpdateId
+  parent: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2
+  langs:
+  - csharp
+  - vb
+  name: AppliedFinalUpdateId
+  nameWithType: IL2OrderBookWriter<A, L>.AppliedFinalUpdateId
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.AppliedFinalUpdateId
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: AppliedFinalUpdateId
+    path: ../../../src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
+    startLine: 25
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: Final update id of the most recently applied diff, or <code>-1</code>.
+  example: []
+  syntax:
+    content: long AppliedFinalUpdateId { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: ReadOnly Property AppliedFinalUpdateId As Long
+  overload: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.AppliedFinalUpdateId*
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).AppliedFinalUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).AppliedFinalUpdateId
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.Clear
+  commentId: M:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.Clear
+  id: Clear
+  parent: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: IL2OrderBookWriter<A, L>.Clear()
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.Clear()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Clear
+    path: ../../../src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
+    startLine: 28
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: Remove every level.
+  example: []
+  syntax:
+    content: void Clear()
+    content.vb: Sub Clear()
+  overload: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.Clear*
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).Clear()
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).Clear()
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ApplyLevel(System.Boolean,`1,`0)
+  commentId: M:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ApplyLevel(System.Boolean,`1,`0)
+  id: ApplyLevel(System.Boolean,`1,`0)
+  parent: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2
+  langs:
+  - csharp
+  - vb
+  name: ApplyLevel(bool, L, A)
+  nameWithType: IL2OrderBookWriter<A, L>.ApplyLevel(bool, L, A)
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.ApplyLevel(bool, L, A)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: ApplyLevel
+    path: ../../../src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
+    startLine: 37
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: >-
+    Apply one level mutation: a zero size removes the price, otherwise the
+
+    size is assigned (absolute, not incremental).
+  example: []
+  syntax:
+    content: void ApplyLevel(bool isBid, L price, A size)
+    parameters:
+    - id: isBid
+      type: System.Boolean
+      description: <code>true</code> for the bid side, <code>false</code> for asks.
+    - id: price
+      type: '{L}'
+      description: Level price.
+    - id: size
+      type: '{A}'
+      description: New aggregate size; zero removes the level.
+    content.vb: Sub ApplyLevel(isBid As Boolean, price As L, size As A)
+  overload: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ApplyLevel*
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).ApplyLevel(Boolean, L, A)
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).ApplyLevel(Boolean, L, A)
+  name.vb: ApplyLevel(Boolean, L, A)
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetState(Virtufin.Core.Position.OrderBookState)
+  commentId: M:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetState(Virtufin.Core.Position.OrderBookState)
+  id: SetState(Virtufin.Core.Position.OrderBookState)
+  parent: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2
+  langs:
+  - csharp
+  - vb
+  name: SetState(OrderBookState)
+  nameWithType: IL2OrderBookWriter<A, L>.SetState(OrderBookState)
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.SetState(Virtufin.Core.Position.OrderBookState)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: SetState
+    path: ../../../src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
+    startLine: 41
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: Set the lifecycle state.
+  example: []
+  syntax:
+    content: void SetState(OrderBookState state)
+    parameters:
+    - id: state
+      type: Virtufin.Core.Position.OrderBookState
+      description: New state.
+    content.vb: Sub SetState(state As OrderBookState)
+  overload: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetState*
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).SetState(OrderBookState)
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).SetState(Virtufin.Core.Position.OrderBookState)
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetLastUpdateId(System.Int64)
+  commentId: M:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetLastUpdateId(System.Int64)
+  id: SetLastUpdateId(System.Int64)
+  parent: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2
+  langs:
+  - csharp
+  - vb
+  name: SetLastUpdateId(long)
+  nameWithType: IL2OrderBookWriter<A, L>.SetLastUpdateId(long)
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.SetLastUpdateId(long)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: SetLastUpdateId
+    path: ../../../src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
+    startLine: 45
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: Set the last applied update id.
+  example: []
+  syntax:
+    content: void SetLastUpdateId(long lastUpdateId)
+    parameters:
+    - id: lastUpdateId
+      type: System.Int64
+      description: New update id.
+    content.vb: Sub SetLastUpdateId(lastUpdateId As Long)
+  overload: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetLastUpdateId*
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).SetLastUpdateId(Long)
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).SetLastUpdateId(Long)
+  name.vb: SetLastUpdateId(Long)
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetAppliedRange(System.Int64,System.Int64)
+  commentId: M:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetAppliedRange(System.Int64,System.Int64)
+  id: SetAppliedRange(System.Int64,System.Int64)
+  parent: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2
+  langs:
+  - csharp
+  - vb
+  name: SetAppliedRange(long, long)
+  nameWithType: IL2OrderBookWriter<A, L>.SetAppliedRange(long, long)
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.SetAppliedRange(long, long)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: SetAppliedRange
+    path: ../../../src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
+    startLine: 50
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: Record the id range of the most recently applied diff.
+  example: []
+  syntax:
+    content: void SetAppliedRange(long firstUpdateId, long finalUpdateId)
+    parameters:
+    - id: firstUpdateId
+      type: System.Int64
+      description: Diff's first update id.
+    - id: finalUpdateId
+      type: System.Int64
+      description: Diff's final update id.
+    content.vb: Sub SetAppliedRange(firstUpdateId As Long, finalUpdateId As Long)
+  overload: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetAppliedRange*
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).SetAppliedRange(Long, Long)
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).SetAppliedRange(Long, Long)
+  name.vb: SetAppliedRange(Long, Long)
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ResetAppliedRange
+  commentId: M:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ResetAppliedRange
+  id: ResetAppliedRange
+  parent: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2
+  langs:
+  - csharp
+  - vb
+  name: ResetAppliedRange()
+  nameWithType: IL2OrderBookWriter<A, L>.ResetAppliedRange()
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.ResetAppliedRange()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: ResetAppliedRange
+    path: ../../../src/Virtufin.Base/OrderBooks/IL2OrderBookWriter.cs
+    startLine: 53
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: Clear the recorded applied id range (e.g. after a snapshot).
+  example: []
+  syntax:
+    content: void ResetAppliedRange()
+    content.vb: Sub ResetAppliedRange()
+  overload: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ResetAppliedRange*
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).ResetAppliedRange()
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).ResetAppliedRange()
+references:
+- uid: Virtufin.Core.Position.IL2OrderBook`2
+  commentId: T:Virtufin.Core.Position.IL2OrderBook`2
+  href: Virtufin.Core.Position.IL2OrderBook-2.html
+  name: IL2OrderBook<A, L>
+  nameWithType: IL2OrderBook<A, L>
+  fullName: Virtufin.Core.Position.IL2OrderBook<A, L>
+  nameWithType.vb: IL2OrderBook(Of A, L)
+  fullName.vb: Virtufin.Core.Position.IL2OrderBook(Of A, L)
+  name.vb: IL2OrderBook(Of A, L)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IL2OrderBook`2
+    name: IL2OrderBook
+    href: Virtufin.Core.Position.IL2OrderBook-2.html
+  - name: <
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.IL2OrderBook`2
+    name: IL2OrderBook
+    href: Virtufin.Core.Position.IL2OrderBook-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: )
+- uid: Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5
+  commentId: T:Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5
+  href: Virtufin.Base.OrderBooks.Level2OrderBookUpdater-5.html
+  name: Level2OrderBookUpdater<TBook, A, L, S, D>
+  nameWithType: Level2OrderBookUpdater<TBook, A, L, S, D>
+  fullName: Virtufin.Base.OrderBooks.Level2OrderBookUpdater<TBook, A, L, S, D>
+  nameWithType.vb: Level2OrderBookUpdater(Of TBook, A, L, S, D)
+  fullName.vb: Virtufin.Base.OrderBooks.Level2OrderBookUpdater(Of TBook, A, L, S, D)
+  name.vb: Level2OrderBookUpdater(Of TBook, A, L, S, D)
+  spec.csharp:
+  - uid: Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5
+    name: Level2OrderBookUpdater
+    href: Virtufin.Base.OrderBooks.Level2OrderBookUpdater-5.html
+  - name: <
+  - name: TBook
+  - name: ','
+  - name: " "
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: ','
+  - name: " "
+  - name: S
+  - name: ','
+  - name: " "
+  - name: D
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5
+    name: Level2OrderBookUpdater
+    href: Virtufin.Base.OrderBooks.Level2OrderBookUpdater-5.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TBook
+  - name: ','
+  - name: " "
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: ','
+  - name: " "
+  - name: S
+  - name: ','
+  - name: " "
+  - name: D
+  - name: )
+- uid: Virtufin.Base.OrderBooks
+  commentId: N:Virtufin.Base.OrderBooks
+  href: Virtufin.html
+  name: Virtufin.Base.OrderBooks
+  nameWithType: Virtufin.Base.OrderBooks
+  fullName: Virtufin.Base.OrderBooks
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.OrderBooks
+    name: OrderBooks
+    href: Virtufin.Base.OrderBooks.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.OrderBooks
+    name: OrderBooks
+    href: Virtufin.Base.OrderBooks.html
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.State*
+  commentId: Overload:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.State
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_State
+  name: State
+  nameWithType: IL2OrderBookWriter<A, L>.State
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.State
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).State
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).State
+- uid: Virtufin.Core.Position.OrderBookState
+  commentId: T:Virtufin.Core.Position.OrderBookState
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.OrderBookState.html
+  name: OrderBookState
+  nameWithType: OrderBookState
+  fullName: Virtufin.Core.Position.OrderBookState
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.LastUpdateId*
+  commentId: Overload:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.LastUpdateId
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_LastUpdateId
+  name: LastUpdateId
+  nameWithType: IL2OrderBookWriter<A, L>.LastUpdateId
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.LastUpdateId
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).LastUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).LastUpdateId
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.AppliedFirstUpdateId*
+  commentId: Overload:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.AppliedFirstUpdateId
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_AppliedFirstUpdateId
+  name: AppliedFirstUpdateId
+  nameWithType: IL2OrderBookWriter<A, L>.AppliedFirstUpdateId
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.AppliedFirstUpdateId
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).AppliedFirstUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).AppliedFirstUpdateId
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.AppliedFinalUpdateId*
+  commentId: Overload:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.AppliedFinalUpdateId
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_AppliedFinalUpdateId
+  name: AppliedFinalUpdateId
+  nameWithType: IL2OrderBookWriter<A, L>.AppliedFinalUpdateId
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.AppliedFinalUpdateId
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).AppliedFinalUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).AppliedFinalUpdateId
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.Clear*
+  commentId: Overload:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.Clear
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_Clear
+  name: Clear
+  nameWithType: IL2OrderBookWriter<A, L>.Clear
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.Clear
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).Clear
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).Clear
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ApplyLevel*
+  commentId: Overload:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ApplyLevel
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_ApplyLevel_System_Boolean__1__0_
+  name: ApplyLevel
+  nameWithType: IL2OrderBookWriter<A, L>.ApplyLevel
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.ApplyLevel
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).ApplyLevel
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).ApplyLevel
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: '{L}'
+  commentId: '!:L'
+  definition: L
+  name: L
+  nameWithType: L
+  fullName: L
+- uid: '{A}'
+  commentId: '!:A'
+  definition: A
+  name: A
+  nameWithType: A
+  fullName: A
+- uid: L
+  name: L
+  nameWithType: L
+  fullName: L
+- uid: A
+  name: A
+  nameWithType: A
+  fullName: A
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetState*
+  commentId: Overload:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetState
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_SetState_Virtufin_Core_Position_OrderBookState_
+  name: SetState
+  nameWithType: IL2OrderBookWriter<A, L>.SetState
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.SetState
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).SetState
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).SetState
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetLastUpdateId*
+  commentId: Overload:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetLastUpdateId
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_SetLastUpdateId_System_Int64_
+  name: SetLastUpdateId
+  nameWithType: IL2OrderBookWriter<A, L>.SetLastUpdateId
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.SetLastUpdateId
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).SetLastUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).SetLastUpdateId
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetAppliedRange*
+  commentId: Overload:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.SetAppliedRange
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_SetAppliedRange_System_Int64_System_Int64_
+  name: SetAppliedRange
+  nameWithType: IL2OrderBookWriter<A, L>.SetAppliedRange
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.SetAppliedRange
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).SetAppliedRange
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).SetAppliedRange
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ResetAppliedRange*
+  commentId: Overload:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.ResetAppliedRange
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_ResetAppliedRange
+  name: ResetAppliedRange
+  nameWithType: IL2OrderBookWriter<A, L>.ResetAppliedRange
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.ResetAppliedRange
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).ResetAppliedRange
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).ResetAppliedRange

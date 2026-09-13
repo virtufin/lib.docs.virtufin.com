@@ -1,0 +1,757 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5
+  commentId: T:Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5
+  id: Level2OrderBookUpdater`5
+  parent: Virtufin.Base.OrderBooks
+  children:
+  - Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5.ApplyDiff(`0,`4)
+  - Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5.ApplySnapshot(`0,`3)
+  langs:
+  - csharp
+  - vb
+  name: Level2OrderBookUpdater<TBook, A, L, S, D>
+  nameWithType: Level2OrderBookUpdater<TBook, A, L, S, D>
+  fullName: Virtufin.Base.OrderBooks.Level2OrderBookUpdater<TBook, A, L, S, D>
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/Level2OrderBookUpdater.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Level2OrderBookUpdater
+    path: ../../../src/Virtufin.Base/OrderBooks/Level2OrderBookUpdater.cs
+    startLine: 38
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: >-
+    Applies Level-2 snapshots and diffs to an <xref href="Virtufin.Base.OrderBooks.L2OrderBook%602" data-throw-if-not-resolved="false"></xref>
+
+    using the standard local-order-book-maintenance algorithm: bootstrap from a
+
+    snapshot, then apply diffs whose first update id brackets the book's
+
+    previous last update id. A zero size removes a level.
+  remarks: >-
+    <p>
+
+    The single bracket check (<code>FirstUpdateId &gt; LastUpdateId + 1</code>) is
+
+    applied uniformly to every diff, not just the first after a snapshot; after
+
+    a successful apply the book's <xref href="Virtufin.Base.OrderBooks.IL2OrderBookWriter%602.LastUpdateId" data-throw-if-not-resolved="false"></xref>
+
+    becomes that diff's final id, so the next diff's first id must equal
+
+    <code>LastUpdateId + 1</code> to pass the same check.
+
+    </p>
+
+    <p>
+
+    An exact replay of the most recently applied diff (same first and final id)
+
+    re-applies its levels and reports <xref href="Virtufin.Core.Position.OrderBookUpdateStatus.Applied" data-throw-if-not-resolved="false"></xref>
+
+    rather than <xref href="Virtufin.Core.Position.OrderBookUpdateStatus.Stale" data-throw-if-not-resolved="false"></xref>. Delivery is
+
+    at-least-once and callers persist after applying, so without this a retried
+
+    diff would be dismissed as stale and the update silently lost.
+
+    Re-application is safe because a level is an absolute assignment and it also
+
+    repairs a partial apply from a failed attempt.
+
+    </p>
+
+    <p>
+
+    Stateless: per-book replay and lifecycle state live on the book, so one
+
+    updater instance can serve many books. The updater is not thread-safe; the
+
+    caller owns serialisation per book.
+
+    </p>
+  example: []
+  syntax:
+    content: 'public sealed class Level2OrderBookUpdater<TBook, A, L, S, D> : IOrderBookUpdater<TBook, S, D> where TBook : IL2OrderBook<A, L>, IL2OrderBookWriter<A, L> where A : IFixedPointAmount where L : IFixedPointAmount where S : IL2OrderBookSnapshot<A, L> where D : IL2OrderBookDiff<A, L>'
+    typeParameters:
+    - id: TBook
+      description: Concrete book type.
+    - id: A
+      description: Depth (size) amount type.
+    - id: L
+      description: Level (price) amount type.
+    - id: S
+      description: Snapshot data type.
+    - id: D
+      description: Diff data type.
+    content.vb: Public NotInheritable Class Level2OrderBookUpdater(Of TBook As {IL2OrderBook(Of A, L), IL2OrderBookWriter(Of A, L)}, A As IFixedPointAmount, L As IFixedPointAmount, S As IL2OrderBookSnapshot(Of A, L), D As IL2OrderBookDiff(Of A, L)) Implements IOrderBookUpdater(Of TBook, S, D)
+  inheritance:
+  - System.Object
+  implements:
+  - Virtufin.Core.Position.IOrderBookUpdater{{TBook},{S},{D}}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: Level2OrderBookUpdater(Of TBook, A, L, S, D)
+  fullName.vb: Virtufin.Base.OrderBooks.Level2OrderBookUpdater(Of TBook, A, L, S, D)
+  name.vb: Level2OrderBookUpdater(Of TBook, A, L, S, D)
+- uid: Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5.ApplySnapshot(`0,`3)
+  commentId: M:Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5.ApplySnapshot(`0,`3)
+  id: ApplySnapshot(`0,`3)
+  parent: Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5
+  langs:
+  - csharp
+  - vb
+  name: ApplySnapshot(TBook, S)
+  nameWithType: Level2OrderBookUpdater<TBook, A, L, S, D>.ApplySnapshot(TBook, S)
+  fullName: Virtufin.Base.OrderBooks.Level2OrderBookUpdater<TBook, A, L, S, D>.ApplySnapshot(TBook, S)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/Level2OrderBookUpdater.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: ApplySnapshot
+    path: ../../../src/Virtufin.Base/OrderBooks/Level2OrderBookUpdater.cs
+    startLine: 47
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: Bootstrap (or re-bootstrap) <code class="paramref">book</code> from a snapshot.
+  example: []
+  syntax:
+    content: public void ApplySnapshot(TBook book, S snapshot)
+    parameters:
+    - id: book
+      type: '{TBook}'
+      description: Book to populate.
+    - id: snapshot
+      type: '{S}'
+      description: Snapshot data.
+    content.vb: Public Sub ApplySnapshot(book As TBook, snapshot As S)
+  overload: Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5.ApplySnapshot*
+  implements:
+  - Virtufin.Core.Position.IOrderBookUpdater{{TBook},{S},{D}}.ApplySnapshot({TBook},{S})
+  nameWithType.vb: Level2OrderBookUpdater(Of TBook, A, L, S, D).ApplySnapshot(TBook, S)
+  fullName.vb: Virtufin.Base.OrderBooks.Level2OrderBookUpdater(Of TBook, A, L, S, D).ApplySnapshot(TBook, S)
+- uid: Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5.ApplyDiff(`0,`4)
+  commentId: M:Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5.ApplyDiff(`0,`4)
+  id: ApplyDiff(`0,`4)
+  parent: Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5
+  langs:
+  - csharp
+  - vb
+  name: ApplyDiff(TBook, D)
+  nameWithType: Level2OrderBookUpdater<TBook, A, L, S, D>.ApplyDiff(TBook, D)
+  fullName: Virtufin.Base.OrderBooks.Level2OrderBookUpdater<TBook, A, L, S, D>.ApplyDiff(TBook, D)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Base/OrderBooks/Level2OrderBookUpdater.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: ApplyDiff
+    path: ../../../src/Virtufin.Base/OrderBooks/Level2OrderBookUpdater.cs
+    startLine: 58
+  assemblies:
+  - Virtufin.Base
+  namespace: Virtufin.Base.OrderBooks
+  summary: Apply one diff to <code class="paramref">book</code>.
+  example: []
+  syntax:
+    content: public OrderBookUpdateStatus ApplyDiff(TBook book, D diff)
+    parameters:
+    - id: book
+      type: '{TBook}'
+      description: Book to mutate.
+    - id: diff
+      type: '{D}'
+      description: Diff data.
+    return:
+      type: Virtufin.Core.Position.OrderBookUpdateStatus
+      description: The outcome of the application.
+    content.vb: Public Function ApplyDiff(book As TBook, diff As D) As OrderBookUpdateStatus
+  overload: Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5.ApplyDiff*
+  implements:
+  - Virtufin.Core.Position.IOrderBookUpdater{{TBook},{S},{D}}.ApplyDiff({TBook},{D})
+  nameWithType.vb: Level2OrderBookUpdater(Of TBook, A, L, S, D).ApplyDiff(TBook, D)
+  fullName.vb: Virtufin.Base.OrderBooks.Level2OrderBookUpdater(Of TBook, A, L, S, D).ApplyDiff(TBook, D)
+references:
+- uid: Virtufin.Base.OrderBooks.L2OrderBook`2
+  commentId: T:Virtufin.Base.OrderBooks.L2OrderBook`2
+  href: Virtufin.Base.OrderBooks.L2OrderBook-2.html
+  name: L2OrderBook<A, L>
+  nameWithType: L2OrderBook<A, L>
+  fullName: Virtufin.Base.OrderBooks.L2OrderBook<A, L>
+  nameWithType.vb: L2OrderBook(Of A, L)
+  fullName.vb: Virtufin.Base.OrderBooks.L2OrderBook(Of A, L)
+  name.vb: L2OrderBook(Of A, L)
+  spec.csharp:
+  - uid: Virtufin.Base.OrderBooks.L2OrderBook`2
+    name: L2OrderBook
+    href: Virtufin.Base.OrderBooks.L2OrderBook-2.html
+  - name: <
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Base.OrderBooks.L2OrderBook`2
+    name: L2OrderBook
+    href: Virtufin.Base.OrderBooks.L2OrderBook-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: A
+  - name: ','
+  - name: " "
+  - name: L
+  - name: )
+- uid: Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.LastUpdateId
+  commentId: P:Virtufin.Base.OrderBooks.IL2OrderBookWriter`2.LastUpdateId
+  href: Virtufin.Base.OrderBooks.IL2OrderBookWriter-2.html#Virtufin_Base_OrderBooks_IL2OrderBookWriter_2_LastUpdateId
+  name: LastUpdateId
+  nameWithType: IL2OrderBookWriter<A, L>.LastUpdateId
+  fullName: Virtufin.Base.OrderBooks.IL2OrderBookWriter<A, L>.LastUpdateId
+  nameWithType.vb: IL2OrderBookWriter(Of A, L).LastUpdateId
+  fullName.vb: Virtufin.Base.OrderBooks.IL2OrderBookWriter(Of A, L).LastUpdateId
+- uid: Virtufin.Core.Position.OrderBookUpdateStatus.Applied
+  commentId: F:Virtufin.Core.Position.OrderBookUpdateStatus.Applied
+  href: Virtufin.Core.Position.OrderBookUpdateStatus.html#Virtufin_Core_Position_OrderBookUpdateStatus_Applied
+  name: Applied
+  nameWithType: OrderBookUpdateStatus.Applied
+  fullName: Virtufin.Core.Position.OrderBookUpdateStatus.Applied
+- uid: Virtufin.Core.Position.OrderBookUpdateStatus.Stale
+  commentId: F:Virtufin.Core.Position.OrderBookUpdateStatus.Stale
+  href: Virtufin.Core.Position.OrderBookUpdateStatus.html#Virtufin_Core_Position_OrderBookUpdateStatus_Stale
+  name: Stale
+  nameWithType: OrderBookUpdateStatus.Stale
+  fullName: Virtufin.Core.Position.OrderBookUpdateStatus.Stale
+- uid: Virtufin.Base.OrderBooks
+  commentId: N:Virtufin.Base.OrderBooks
+  href: Virtufin.html
+  name: Virtufin.Base.OrderBooks
+  nameWithType: Virtufin.Base.OrderBooks
+  fullName: Virtufin.Base.OrderBooks
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.OrderBooks
+    name: OrderBooks
+    href: Virtufin.Base.OrderBooks.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Base
+    name: Base
+    href: Virtufin.Base.html
+  - name: .
+  - uid: Virtufin.Base.OrderBooks
+    name: OrderBooks
+    href: Virtufin.Base.OrderBooks.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Virtufin.Core.Position.IOrderBookUpdater{{TBook},{S},{D}}
+  commentId: T:Virtufin.Core.Position.IOrderBookUpdater{`0,`3,`4}
+  parent: Virtufin.Core.Position
+  definition: Virtufin.Core.Position.IOrderBookUpdater`3
+  href: Virtufin.Core.Position.IOrderBookUpdater-3.html
+  name: IOrderBookUpdater<TBook, S, D>
+  nameWithType: IOrderBookUpdater<TBook, S, D>
+  fullName: Virtufin.Core.Position.IOrderBookUpdater<TBook, S, D>
+  nameWithType.vb: IOrderBookUpdater(Of TBook, S, D)
+  fullName.vb: Virtufin.Core.Position.IOrderBookUpdater(Of TBook, S, D)
+  name.vb: IOrderBookUpdater(Of TBook, S, D)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IOrderBookUpdater`3
+    name: IOrderBookUpdater
+    href: Virtufin.Core.Position.IOrderBookUpdater-3.html
+  - name: <
+  - name: TBook
+  - name: ','
+  - name: " "
+  - name: S
+  - name: ','
+  - name: " "
+  - name: D
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.IOrderBookUpdater`3
+    name: IOrderBookUpdater
+    href: Virtufin.Core.Position.IOrderBookUpdater-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TBook
+  - name: ','
+  - name: " "
+  - name: S
+  - name: ','
+  - name: " "
+  - name: D
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Core.Position.IOrderBookUpdater`3
+  commentId: T:Virtufin.Core.Position.IOrderBookUpdater`3
+  href: Virtufin.Core.Position.IOrderBookUpdater-3.html
+  name: IOrderBookUpdater<TBook, S, D>
+  nameWithType: IOrderBookUpdater<TBook, S, D>
+  fullName: Virtufin.Core.Position.IOrderBookUpdater<TBook, S, D>
+  nameWithType.vb: IOrderBookUpdater(Of TBook, S, D)
+  fullName.vb: Virtufin.Core.Position.IOrderBookUpdater(Of TBook, S, D)
+  name.vb: IOrderBookUpdater(Of TBook, S, D)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IOrderBookUpdater`3
+    name: IOrderBookUpdater
+    href: Virtufin.Core.Position.IOrderBookUpdater-3.html
+  - name: <
+  - name: TBook
+  - name: ','
+  - name: " "
+  - name: S
+  - name: ','
+  - name: " "
+  - name: D
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Core.Position.IOrderBookUpdater`3
+    name: IOrderBookUpdater
+    href: Virtufin.Core.Position.IOrderBookUpdater-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TBook
+  - name: ','
+  - name: " "
+  - name: S
+  - name: ','
+  - name: " "
+  - name: D
+  - name: )
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5.ApplySnapshot*
+  commentId: Overload:Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5.ApplySnapshot
+  href: Virtufin.Base.OrderBooks.Level2OrderBookUpdater-5.html#Virtufin_Base_OrderBooks_Level2OrderBookUpdater_5_ApplySnapshot__0__3_
+  name: ApplySnapshot
+  nameWithType: Level2OrderBookUpdater<TBook, A, L, S, D>.ApplySnapshot
+  fullName: Virtufin.Base.OrderBooks.Level2OrderBookUpdater<TBook, A, L, S, D>.ApplySnapshot
+  nameWithType.vb: Level2OrderBookUpdater(Of TBook, A, L, S, D).ApplySnapshot
+  fullName.vb: Virtufin.Base.OrderBooks.Level2OrderBookUpdater(Of TBook, A, L, S, D).ApplySnapshot
+- uid: Virtufin.Core.Position.IOrderBookUpdater{{TBook},{S},{D}}.ApplySnapshot({TBook},{S})
+  commentId: M:Virtufin.Core.Position.IOrderBookUpdater{`0,`3,`4}.ApplySnapshot(`0,`3)
+  parent: Virtufin.Core.Position.IOrderBookUpdater{{TBook},{S},{D}}
+  definition: Virtufin.Core.Position.IOrderBookUpdater`3.ApplySnapshot(`0,`1)
+  href: Virtufin.Core.Position.IOrderBookUpdater-3.html#Virtufin_Core_Position_IOrderBookUpdater_3_ApplySnapshot__0__1_
+  name: ApplySnapshot(TBook, S)
+  nameWithType: IOrderBookUpdater<TBook, S, D>.ApplySnapshot(TBook, S)
+  fullName: Virtufin.Core.Position.IOrderBookUpdater<TBook, S, D>.ApplySnapshot(TBook, S)
+  nameWithType.vb: IOrderBookUpdater(Of TBook, S, D).ApplySnapshot(TBook, S)
+  fullName.vb: Virtufin.Core.Position.IOrderBookUpdater(Of TBook, S, D).ApplySnapshot(TBook, S)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IOrderBookUpdater{`0,`3,`4}.ApplySnapshot(`0,`3)
+    name: ApplySnapshot
+    href: Virtufin.Core.Position.IOrderBookUpdater-3.html#Virtufin_Core_Position_IOrderBookUpdater_3_ApplySnapshot__0__1_
+  - name: (
+  - name: TBook
+  - name: ','
+  - name: " "
+  - name: S
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.IOrderBookUpdater{`0,`3,`4}.ApplySnapshot(`0,`3)
+    name: ApplySnapshot
+    href: Virtufin.Core.Position.IOrderBookUpdater-3.html#Virtufin_Core_Position_IOrderBookUpdater_3_ApplySnapshot__0__1_
+  - name: (
+  - name: TBook
+  - name: ','
+  - name: " "
+  - name: S
+  - name: )
+- uid: '{TBook}'
+  commentId: '!:TBook'
+  definition: TBook
+  name: TBook
+  nameWithType: TBook
+  fullName: TBook
+- uid: '{S}'
+  commentId: '!:S'
+  definition: S
+  name: S
+  nameWithType: S
+  fullName: S
+- uid: Virtufin.Core.Position.IOrderBookUpdater`3.ApplySnapshot(`0,`1)
+  commentId: M:Virtufin.Core.Position.IOrderBookUpdater`3.ApplySnapshot(`0,`1)
+  href: Virtufin.Core.Position.IOrderBookUpdater-3.html#Virtufin_Core_Position_IOrderBookUpdater_3_ApplySnapshot__0__1_
+  name: ApplySnapshot(TBook, S)
+  nameWithType: IOrderBookUpdater<TBook, S, D>.ApplySnapshot(TBook, S)
+  fullName: Virtufin.Core.Position.IOrderBookUpdater<TBook, S, D>.ApplySnapshot(TBook, S)
+  nameWithType.vb: IOrderBookUpdater(Of TBook, S, D).ApplySnapshot(TBook, S)
+  fullName.vb: Virtufin.Core.Position.IOrderBookUpdater(Of TBook, S, D).ApplySnapshot(TBook, S)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IOrderBookUpdater`3.ApplySnapshot(`0,`1)
+    name: ApplySnapshot
+    href: Virtufin.Core.Position.IOrderBookUpdater-3.html#Virtufin_Core_Position_IOrderBookUpdater_3_ApplySnapshot__0__1_
+  - name: (
+  - name: TBook
+  - name: ','
+  - name: " "
+  - name: S
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.IOrderBookUpdater`3.ApplySnapshot(`0,`1)
+    name: ApplySnapshot
+    href: Virtufin.Core.Position.IOrderBookUpdater-3.html#Virtufin_Core_Position_IOrderBookUpdater_3_ApplySnapshot__0__1_
+  - name: (
+  - name: TBook
+  - name: ','
+  - name: " "
+  - name: S
+  - name: )
+- uid: TBook
+  name: TBook
+  nameWithType: TBook
+  fullName: TBook
+- uid: S
+  name: S
+  nameWithType: S
+  fullName: S
+- uid: Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5.ApplyDiff*
+  commentId: Overload:Virtufin.Base.OrderBooks.Level2OrderBookUpdater`5.ApplyDiff
+  href: Virtufin.Base.OrderBooks.Level2OrderBookUpdater-5.html#Virtufin_Base_OrderBooks_Level2OrderBookUpdater_5_ApplyDiff__0__4_
+  name: ApplyDiff
+  nameWithType: Level2OrderBookUpdater<TBook, A, L, S, D>.ApplyDiff
+  fullName: Virtufin.Base.OrderBooks.Level2OrderBookUpdater<TBook, A, L, S, D>.ApplyDiff
+  nameWithType.vb: Level2OrderBookUpdater(Of TBook, A, L, S, D).ApplyDiff
+  fullName.vb: Virtufin.Base.OrderBooks.Level2OrderBookUpdater(Of TBook, A, L, S, D).ApplyDiff
+- uid: Virtufin.Core.Position.IOrderBookUpdater{{TBook},{S},{D}}.ApplyDiff({TBook},{D})
+  commentId: M:Virtufin.Core.Position.IOrderBookUpdater{`0,`3,`4}.ApplyDiff(`0,`4)
+  parent: Virtufin.Core.Position.IOrderBookUpdater{{TBook},{S},{D}}
+  definition: Virtufin.Core.Position.IOrderBookUpdater`3.ApplyDiff(`0,`2)
+  href: Virtufin.Core.Position.IOrderBookUpdater-3.html#Virtufin_Core_Position_IOrderBookUpdater_3_ApplyDiff__0__2_
+  name: ApplyDiff(TBook, D)
+  nameWithType: IOrderBookUpdater<TBook, S, D>.ApplyDiff(TBook, D)
+  fullName: Virtufin.Core.Position.IOrderBookUpdater<TBook, S, D>.ApplyDiff(TBook, D)
+  nameWithType.vb: IOrderBookUpdater(Of TBook, S, D).ApplyDiff(TBook, D)
+  fullName.vb: Virtufin.Core.Position.IOrderBookUpdater(Of TBook, S, D).ApplyDiff(TBook, D)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IOrderBookUpdater{`0,`3,`4}.ApplyDiff(`0,`4)
+    name: ApplyDiff
+    href: Virtufin.Core.Position.IOrderBookUpdater-3.html#Virtufin_Core_Position_IOrderBookUpdater_3_ApplyDiff__0__2_
+  - name: (
+  - name: TBook
+  - name: ','
+  - name: " "
+  - name: D
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.IOrderBookUpdater{`0,`3,`4}.ApplyDiff(`0,`4)
+    name: ApplyDiff
+    href: Virtufin.Core.Position.IOrderBookUpdater-3.html#Virtufin_Core_Position_IOrderBookUpdater_3_ApplyDiff__0__2_
+  - name: (
+  - name: TBook
+  - name: ','
+  - name: " "
+  - name: D
+  - name: )
+- uid: '{D}'
+  commentId: '!:D'
+  definition: D
+  name: D
+  nameWithType: D
+  fullName: D
+- uid: Virtufin.Core.Position.OrderBookUpdateStatus
+  commentId: T:Virtufin.Core.Position.OrderBookUpdateStatus
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.OrderBookUpdateStatus.html
+  name: OrderBookUpdateStatus
+  nameWithType: OrderBookUpdateStatus
+  fullName: Virtufin.Core.Position.OrderBookUpdateStatus
+- uid: Virtufin.Core.Position.IOrderBookUpdater`3.ApplyDiff(`0,`2)
+  commentId: M:Virtufin.Core.Position.IOrderBookUpdater`3.ApplyDiff(`0,`2)
+  href: Virtufin.Core.Position.IOrderBookUpdater-3.html#Virtufin_Core_Position_IOrderBookUpdater_3_ApplyDiff__0__2_
+  name: ApplyDiff(TBook, D)
+  nameWithType: IOrderBookUpdater<TBook, S, D>.ApplyDiff(TBook, D)
+  fullName: Virtufin.Core.Position.IOrderBookUpdater<TBook, S, D>.ApplyDiff(TBook, D)
+  nameWithType.vb: IOrderBookUpdater(Of TBook, S, D).ApplyDiff(TBook, D)
+  fullName.vb: Virtufin.Core.Position.IOrderBookUpdater(Of TBook, S, D).ApplyDiff(TBook, D)
+  spec.csharp:
+  - uid: Virtufin.Core.Position.IOrderBookUpdater`3.ApplyDiff(`0,`2)
+    name: ApplyDiff
+    href: Virtufin.Core.Position.IOrderBookUpdater-3.html#Virtufin_Core_Position_IOrderBookUpdater_3_ApplyDiff__0__2_
+  - name: (
+  - name: TBook
+  - name: ','
+  - name: " "
+  - name: D
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Core.Position.IOrderBookUpdater`3.ApplyDiff(`0,`2)
+    name: ApplyDiff
+    href: Virtufin.Core.Position.IOrderBookUpdater-3.html#Virtufin_Core_Position_IOrderBookUpdater_3_ApplyDiff__0__2_
+  - name: (
+  - name: TBook
+  - name: ','
+  - name: " "
+  - name: D
+  - name: )
+- uid: D
+  name: D
+  nameWithType: D
+  fullName: D

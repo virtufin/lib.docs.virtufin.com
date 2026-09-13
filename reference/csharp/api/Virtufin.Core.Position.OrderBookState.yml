@@ -1,0 +1,128 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Core.Position.OrderBookState
+  commentId: T:Virtufin.Core.Position.OrderBookState
+  id: OrderBookState
+  parent: Virtufin.Core.Position
+  children:
+  - Virtufin.Core.Position.OrderBookState.AwaitingSnapshot
+  - Virtufin.Core.Position.OrderBookState.Live
+  langs:
+  - csharp
+  - vb
+  name: OrderBookState
+  nameWithType: OrderBookState
+  fullName: Virtufin.Core.Position.OrderBookState
+  type: Enum
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/OrderBookState.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: OrderBookState
+    path: ../../../src/Virtufin.Core/Position/OrderBookState.cs
+    startLine: 5
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Lifecycle of a maintained local order book.
+  example: []
+  syntax:
+    content: public enum OrderBookState
+    content.vb: Public Enum OrderBookState
+- uid: Virtufin.Core.Position.OrderBookState.AwaitingSnapshot
+  commentId: F:Virtufin.Core.Position.OrderBookState.AwaitingSnapshot
+  id: AwaitingSnapshot
+  parent: Virtufin.Core.Position.OrderBookState
+  langs:
+  - csharp
+  - vb
+  name: AwaitingSnapshot
+  nameWithType: OrderBookState.AwaitingSnapshot
+  fullName: Virtufin.Core.Position.OrderBookState.AwaitingSnapshot
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/OrderBookState.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: AwaitingSnapshot
+    path: ../../../src/Virtufin.Core/Position/OrderBookState.cs
+    startLine: 9
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: >-
+    No snapshot applied yet (or a gap was detected and not yet
+        resynced) — diffs are dropped until a snapshot arrives.
+  example: []
+  syntax:
+    content: AwaitingSnapshot = 0
+    return:
+      type: Virtufin.Core.Position.OrderBookState
+- uid: Virtufin.Core.Position.OrderBookState.Live
+  commentId: F:Virtufin.Core.Position.OrderBookState.Live
+  id: Live
+  parent: Virtufin.Core.Position.OrderBookState
+  langs:
+  - csharp
+  - vb
+  name: Live
+  nameWithType: OrderBookState.Live
+  fullName: Virtufin.Core.Position.OrderBookState.Live
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Core/Position/OrderBookState.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/dotnet
+    id: Live
+    path: ../../../src/Virtufin.Core/Position/OrderBookState.cs
+    startLine: 12
+  assemblies:
+  - Virtufin.Core
+  namespace: Virtufin.Core.Position
+  summary: Bootstrapped from a snapshot; diffs are applied.
+  example: []
+  syntax:
+    content: Live = 1
+    return:
+      type: Virtufin.Core.Position.OrderBookState
+references:
+- uid: Virtufin.Core.Position
+  commentId: N:Virtufin.Core.Position
+  href: Virtufin.html
+  name: Virtufin.Core.Position
+  nameWithType: Virtufin.Core.Position
+  fullName: Virtufin.Core.Position
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Core
+    name: Core
+    href: Virtufin.Core.html
+  - name: .
+  - uid: Virtufin.Core.Position
+    name: Position
+    href: Virtufin.Core.Position.html
+- uid: Virtufin.Core.Position.OrderBookState
+  commentId: T:Virtufin.Core.Position.OrderBookState
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.OrderBookState.html
+  name: OrderBookState
+  nameWithType: OrderBookState
+  fullName: Virtufin.Core.Position.OrderBookState
