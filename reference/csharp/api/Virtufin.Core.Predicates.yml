@@ -9,7 +9,6 @@ items:
   - Virtufin.Core.Predicates.ContractSelectorPredicate
   - Virtufin.Core.Predicates.IMessageSelectorPredicate
   - Virtufin.Core.Predicates.IVerificationMessageFilter
-  - Virtufin.Core.Predicates.IVerificationMessageFilterCombinator
   - Virtufin.Core.Predicates.MaturitySelectorPredicate
   - Virtufin.Core.Predicates.SenderSelectorPredicate
   langs:
@@ -43,17 +42,10 @@ references:
   fullName: Virtufin.Core.Predicates.IMessageSelectorPredicate
 - uid: Virtufin.Core.Predicates.IVerificationMessageFilter
   commentId: T:Virtufin.Core.Predicates.IVerificationMessageFilter
-  parent: Virtufin.Core.Predicates
   href: Virtufin.Core.Predicates.IVerificationMessageFilter.html
   name: IVerificationMessageFilter
   nameWithType: IVerificationMessageFilter
   fullName: Virtufin.Core.Predicates.IVerificationMessageFilter
-- uid: Virtufin.Core.Predicates.IVerificationMessageFilterCombinator
-  commentId: T:Virtufin.Core.Predicates.IVerificationMessageFilterCombinator
-  href: Virtufin.Core.Predicates.IVerificationMessageFilterCombinator.html
-  name: IVerificationMessageFilterCombinator
-  nameWithType: IVerificationMessageFilterCombinator
-  fullName: Virtufin.Core.Predicates.IVerificationMessageFilterCombinator
 - uid: Virtufin.Core.Predicates.MaturitySelectorPredicate
   commentId: T:Virtufin.Core.Predicates.MaturitySelectorPredicate
   href: Virtufin.Core.Predicates.MaturitySelectorPredicate.html

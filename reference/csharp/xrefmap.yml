@@ -6418,24 +6418,6 @@ references:
   commentId: N:Virtufin.Base.Events.Trade
   fullName: Virtufin.Base.Events.Trade
   nameWithType: Virtufin.Base.Events.Trade
-- uid: Virtufin.Base.Events.Trade.BuyOrSell
-  name: BuyOrSell
-  href: api/Virtufin.Base.Events.Trade.BuyOrSell.html
-  commentId: T:Virtufin.Base.Events.Trade.BuyOrSell
-  fullName: Virtufin.Base.Events.Trade.BuyOrSell
-  nameWithType: BuyOrSell
-- uid: Virtufin.Base.Events.Trade.BuyOrSell.Buy
-  name: Buy
-  href: api/Virtufin.Base.Events.Trade.BuyOrSell.html#Virtufin_Base_Events_Trade_BuyOrSell_Buy
-  commentId: F:Virtufin.Base.Events.Trade.BuyOrSell.Buy
-  fullName: Virtufin.Base.Events.Trade.BuyOrSell.Buy
-  nameWithType: BuyOrSell.Buy
-- uid: Virtufin.Base.Events.Trade.BuyOrSell.Sell
-  name: Sell
-  href: api/Virtufin.Base.Events.Trade.BuyOrSell.html#Virtufin_Base_Events_Trade_BuyOrSell_Sell
-  commentId: F:Virtufin.Base.Events.Trade.BuyOrSell.Sell
-  fullName: Virtufin.Base.Events.Trade.BuyOrSell.Sell
-  nameWithType: BuyOrSell.Sell
 - uid: Virtufin.Base.Events.Trade.RichTradeAction
   name: RichTradeAction
   href: api/Virtufin.Base.Events.Trade.RichTradeAction.html
@@ -6979,13 +6961,13 @@ references:
   commentId: T:Virtufin.Base.Events.Trade.TradeAction.InterestAction
   fullName: Virtufin.Base.Events.Trade.TradeAction.InterestAction
   nameWithType: TradeAction.InterestAction
-- uid: Virtufin.Base.Events.Trade.TradeAction.InterestAction.#ctor(Virtufin.Core.Events.Symbol,Virtufin.Base.Events.Trade.BuyOrSell,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,System.TimeSpan,System.Nullable{Virtufin.Core.Position.DecimalAmount},System.Nullable{System.Guid})
+- uid: Virtufin.Base.Events.Trade.TradeAction.InterestAction.#ctor(Virtufin.Core.Events.Symbol,Virtufin.Core.Position.BuyOrSell,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,System.TimeSpan,System.Nullable{Virtufin.Core.Position.DecimalAmount},System.Nullable{System.Guid})
   name: InterestAction(Symbol, BuyOrSell, DecimalAmount, DecimalAmount, TimeSpan, DecimalAmount?, Guid?)
-  href: api/Virtufin.Base.Events.Trade.TradeAction.InterestAction.html#Virtufin_Base_Events_Trade_TradeAction_InterestAction__ctor_Virtufin_Core_Events_Symbol_Virtufin_Base_Events_Trade_BuyOrSell_Virtufin_Core_Position_DecimalAmount_Virtufin_Core_Position_DecimalAmount_System_TimeSpan_System_Nullable_Virtufin_Core_Position_DecimalAmount__System_Nullable_System_Guid__
-  commentId: M:Virtufin.Base.Events.Trade.TradeAction.InterestAction.#ctor(Virtufin.Core.Events.Symbol,Virtufin.Base.Events.Trade.BuyOrSell,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,System.TimeSpan,System.Nullable{Virtufin.Core.Position.DecimalAmount},System.Nullable{System.Guid})
+  href: api/Virtufin.Base.Events.Trade.TradeAction.InterestAction.html#Virtufin_Base_Events_Trade_TradeAction_InterestAction__ctor_Virtufin_Core_Events_Symbol_Virtufin_Core_Position_BuyOrSell_Virtufin_Core_Position_DecimalAmount_Virtufin_Core_Position_DecimalAmount_System_TimeSpan_System_Nullable_Virtufin_Core_Position_DecimalAmount__System_Nullable_System_Guid__
+  commentId: M:Virtufin.Base.Events.Trade.TradeAction.InterestAction.#ctor(Virtufin.Core.Events.Symbol,Virtufin.Core.Position.BuyOrSell,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,System.TimeSpan,System.Nullable{Virtufin.Core.Position.DecimalAmount},System.Nullable{System.Guid})
   name.vb: New(Symbol, BuyOrSell, DecimalAmount, DecimalAmount, TimeSpan, DecimalAmount?, Guid?)
-  fullName: Virtufin.Base.Events.Trade.TradeAction.InterestAction.InterestAction(Virtufin.Core.Events.Symbol, Virtufin.Base.Events.Trade.BuyOrSell, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount, System.TimeSpan, Virtufin.Core.Position.DecimalAmount?, System.Guid?)
-  fullName.vb: Virtufin.Base.Events.Trade.TradeAction.InterestAction.New(Virtufin.Core.Events.Symbol, Virtufin.Base.Events.Trade.BuyOrSell, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount, System.TimeSpan, Virtufin.Core.Position.DecimalAmount?, System.Guid?)
+  fullName: Virtufin.Base.Events.Trade.TradeAction.InterestAction.InterestAction(Virtufin.Core.Events.Symbol, Virtufin.Core.Position.BuyOrSell, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount, System.TimeSpan, Virtufin.Core.Position.DecimalAmount?, System.Guid?)
+  fullName.vb: Virtufin.Base.Events.Trade.TradeAction.InterestAction.New(Virtufin.Core.Events.Symbol, Virtufin.Core.Position.BuyOrSell, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount, System.TimeSpan, Virtufin.Core.Position.DecimalAmount?, System.Guid?)
   nameWithType: TradeAction.InterestAction.InterestAction(Symbol, BuyOrSell, DecimalAmount, DecimalAmount, TimeSpan, DecimalAmount?, Guid?)
   nameWithType.vb: TradeAction.InterestAction.New(Symbol, BuyOrSell, DecimalAmount, DecimalAmount, TimeSpan, DecimalAmount?, Guid?)
 - uid: Virtufin.Base.Events.Trade.TradeAction.InterestAction.#ctor*
@@ -9250,22 +9232,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.Base.Messaging.Topics.Position
   nameWithType: Topics.Position
-- uid: Virtufin.Base.Messaging.Topics.PublishAsync(Virtufin.Core.Messaging.IEventPublisher,Virtufin.Core.Messaging.Topic,Virtufin.Core.Events.IEventEnvelope,System.Object)
-  name: PublishAsync(IEventPublisher, Topic, IEventEnvelope, object)
-  href: api/Virtufin.Base.Messaging.Topics.html#Virtufin_Base_Messaging_Topics_PublishAsync_Virtufin_Core_Messaging_IEventPublisher_Virtufin_Core_Messaging_Topic_Virtufin_Core_Events_IEventEnvelope_System_Object_
-  commentId: M:Virtufin.Base.Messaging.Topics.PublishAsync(Virtufin.Core.Messaging.IEventPublisher,Virtufin.Core.Messaging.Topic,Virtufin.Core.Events.IEventEnvelope,System.Object)
-  name.vb: PublishAsync(IEventPublisher, Topic, IEventEnvelope, Object)
-  fullName: Virtufin.Base.Messaging.Topics.PublishAsync(Virtufin.Core.Messaging.IEventPublisher, Virtufin.Core.Messaging.Topic, Virtufin.Core.Events.IEventEnvelope, object)
-  fullName.vb: Virtufin.Base.Messaging.Topics.PublishAsync(Virtufin.Core.Messaging.IEventPublisher, Virtufin.Core.Messaging.Topic, Virtufin.Core.Events.IEventEnvelope, Object)
-  nameWithType: Topics.PublishAsync(IEventPublisher, Topic, IEventEnvelope, object)
-  nameWithType.vb: Topics.PublishAsync(IEventPublisher, Topic, IEventEnvelope, Object)
-- uid: Virtufin.Base.Messaging.Topics.PublishAsync*
-  name: PublishAsync
-  href: api/Virtufin.Base.Messaging.Topics.html#Virtufin_Base_Messaging_Topics_PublishAsync_
-  commentId: Overload:Virtufin.Base.Messaging.Topics.PublishAsync
-  isSpec: "True"
-  fullName: Virtufin.Base.Messaging.Topics.PublishAsync
-  nameWithType: Topics.PublishAsync
 - uid: Virtufin.Base.Messaging.Topics.Risk(Virtufin.Core.Scenario.ScenarioId,System.String,System.String)
   name: Risk(ScenarioId, string, string)
   href: api/Virtufin.Base.Messaging.Topics.html#Virtufin_Base_Messaging_Topics_Risk_Virtufin_Core_Scenario_ScenarioId_System_String_System_String_
@@ -15398,41 +15364,6 @@ references:
   fullName.vb: Virtufin.Core.Position.IQuantity(Of TAmount, TUnit).Unit
   nameWithType: IQuantity<TAmount, TUnit>.Unit
   nameWithType.vb: IQuantity(Of TAmount, TUnit).Unit
-- uid: Virtufin.Core.Position.ITransactionLedger
-  name: ITransactionLedger
-  href: api/Virtufin.Core.Position.ITransactionLedger.html
-  commentId: T:Virtufin.Core.Position.ITransactionLedger
-  fullName: Virtufin.Core.Position.ITransactionLedger
-  nameWithType: ITransactionLedger
-- uid: Virtufin.Core.Position.ITransactionLedger.AddTransactions(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.ITransaction})
-  name: AddTransactions(IEnumerable<ITransaction>)
-  href: api/Virtufin.Core.Position.ITransactionLedger.html#Virtufin_Core_Position_ITransactionLedger_AddTransactions_System_Collections_Generic_IEnumerable_Virtufin_Core_Contracts_ITransaction__
-  commentId: M:Virtufin.Core.Position.ITransactionLedger.AddTransactions(System.Collections.Generic.IEnumerable{Virtufin.Core.Contracts.ITransaction})
-  name.vb: AddTransactions(IEnumerable(Of ITransaction))
-  fullName: Virtufin.Core.Position.ITransactionLedger.AddTransactions(System.Collections.Generic.IEnumerable<Virtufin.Core.Contracts.ITransaction>)
-  fullName.vb: Virtufin.Core.Position.ITransactionLedger.AddTransactions(System.Collections.Generic.IEnumerable(Of Virtufin.Core.Contracts.ITransaction))
-  nameWithType: ITransactionLedger.AddTransactions(IEnumerable<ITransaction>)
-  nameWithType.vb: ITransactionLedger.AddTransactions(IEnumerable(Of ITransaction))
-- uid: Virtufin.Core.Position.ITransactionLedger.AddTransactions*
-  name: AddTransactions
-  href: api/Virtufin.Core.Position.ITransactionLedger.html#Virtufin_Core_Position_ITransactionLedger_AddTransactions_
-  commentId: Overload:Virtufin.Core.Position.ITransactionLedger.AddTransactions
-  isSpec: "True"
-  fullName: Virtufin.Core.Position.ITransactionLedger.AddTransactions
-  nameWithType: ITransactionLedger.AddTransactions
-- uid: Virtufin.Core.Position.ITransactionLedger.Orders
-  name: Orders
-  href: api/Virtufin.Core.Position.ITransactionLedger.html#Virtufin_Core_Position_ITransactionLedger_Orders
-  commentId: P:Virtufin.Core.Position.ITransactionLedger.Orders
-  fullName: Virtufin.Core.Position.ITransactionLedger.Orders
-  nameWithType: ITransactionLedger.Orders
-- uid: Virtufin.Core.Position.ITransactionLedger.Orders*
-  name: Orders
-  href: api/Virtufin.Core.Position.ITransactionLedger.html#Virtufin_Core_Position_ITransactionLedger_Orders_
-  commentId: Overload:Virtufin.Core.Position.ITransactionLedger.Orders
-  isSpec: "True"
-  fullName: Virtufin.Core.Position.ITransactionLedger.Orders
-  nameWithType: ITransactionLedger.Orders
 - uid: Virtufin.Core.Position.IUnit
   name: IUnit
   href: api/Virtufin.Core.Position.IUnit.html
@@ -15888,28 +15819,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.Core.Predicates.IVerificationMessageFilter.FilterTransactions
   nameWithType: IVerificationMessageFilter.FilterTransactions
-- uid: Virtufin.Core.Predicates.IVerificationMessageFilterCombinator
-  name: IVerificationMessageFilterCombinator
-  href: api/Virtufin.Core.Predicates.IVerificationMessageFilterCombinator.html
-  commentId: T:Virtufin.Core.Predicates.IVerificationMessageFilterCombinator
-  fullName: Virtufin.Core.Predicates.IVerificationMessageFilterCombinator
-  nameWithType: IVerificationMessageFilterCombinator
-- uid: Virtufin.Core.Predicates.IVerificationMessageFilterCombinator.Combine(System.Collections.Generic.IReadOnlyList{Virtufin.Core.Predicates.IVerificationMessageFilter})
-  name: Combine(IReadOnlyList<IVerificationMessageFilter>)
-  href: api/Virtufin.Core.Predicates.IVerificationMessageFilterCombinator.html#Virtufin_Core_Predicates_IVerificationMessageFilterCombinator_Combine_System_Collections_Generic_IReadOnlyList_Virtufin_Core_Predicates_IVerificationMessageFilter__
-  commentId: M:Virtufin.Core.Predicates.IVerificationMessageFilterCombinator.Combine(System.Collections.Generic.IReadOnlyList{Virtufin.Core.Predicates.IVerificationMessageFilter})
-  name.vb: Combine(IReadOnlyList(Of IVerificationMessageFilter))
-  fullName: Virtufin.Core.Predicates.IVerificationMessageFilterCombinator.Combine(System.Collections.Generic.IReadOnlyList<Virtufin.Core.Predicates.IVerificationMessageFilter>)
-  fullName.vb: Virtufin.Core.Predicates.IVerificationMessageFilterCombinator.Combine(System.Collections.Generic.IReadOnlyList(Of Virtufin.Core.Predicates.IVerificationMessageFilter))
-  nameWithType: IVerificationMessageFilterCombinator.Combine(IReadOnlyList<IVerificationMessageFilter>)
-  nameWithType.vb: IVerificationMessageFilterCombinator.Combine(IReadOnlyList(Of IVerificationMessageFilter))
-- uid: Virtufin.Core.Predicates.IVerificationMessageFilterCombinator.Combine*
-  name: Combine
-  href: api/Virtufin.Core.Predicates.IVerificationMessageFilterCombinator.html#Virtufin_Core_Predicates_IVerificationMessageFilterCombinator_Combine_
-  commentId: Overload:Virtufin.Core.Predicates.IVerificationMessageFilterCombinator.Combine
-  isSpec: "True"
-  fullName: Virtufin.Core.Predicates.IVerificationMessageFilterCombinator.Combine
-  nameWithType: IVerificationMessageFilterCombinator.Combine
 - uid: Virtufin.Core.Predicates.MaturitySelectorPredicate
   name: MaturitySelectorPredicate
   href: api/Virtufin.Core.Predicates.MaturitySelectorPredicate.html

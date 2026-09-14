@@ -9,7 +9,6 @@ items:
   - Virtufin.Base.Messaging.Topics.Build(System.String,System.String,System.String)
   - Virtufin.Base.Messaging.Topics.HypMarket(System.String,System.String,System.String)
   - Virtufin.Base.Messaging.Topics.Position(Virtufin.Core.Scenario.ScenarioId,System.String,System.String)
-  - Virtufin.Base.Messaging.Topics.PublishAsync(Virtufin.Core.Messaging.IEventPublisher,Virtufin.Core.Messaging.Topic,Virtufin.Core.Events.IEventEnvelope,System.Object)
   - Virtufin.Base.Messaging.Topics.Risk(Virtufin.Core.Scenario.ScenarioId,System.String,System.String)
   - Virtufin.Base.Messaging.Topics.Trade(Virtufin.Core.Scenario.ScenarioId,System.String,System.String)
   langs:
@@ -26,7 +25,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Topics
     path: ../../../src/Virtufin.Base/Messaging/Topics.cs
-    startLine: 10
+    startLine: 9
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Messaging
@@ -66,7 +65,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: ActMarket
     path: ../../../src/Virtufin.Base/Messaging/Topics.cs
-    startLine: 19
+    startLine: 18
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Messaging
@@ -106,7 +105,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: HypMarket
     path: ../../../src/Virtufin.Base/Messaging/Topics.cs
-    startLine: 28
+    startLine: 27
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Messaging
@@ -149,7 +148,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Trade
     path: ../../../src/Virtufin.Base/Messaging/Topics.cs
-    startLine: 37
+    startLine: 36
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Messaging
@@ -192,7 +191,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Position
     path: ../../../src/Virtufin.Base/Messaging/Topics.cs
-    startLine: 46
+    startLine: 45
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Messaging
@@ -235,7 +234,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Risk
     path: ../../../src/Virtufin.Base/Messaging/Topics.cs
-    startLine: 55
+    startLine: 54
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Messaging
@@ -278,7 +277,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Build
     path: ../../../src/Virtufin.Base/Messaging/Topics.cs
-    startLine: 65
+    startLine: 64
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Messaging
@@ -306,58 +305,6 @@ items:
   nameWithType.vb: Topics.Build(String, String, String)
   fullName.vb: Virtufin.Base.Messaging.Topics.Build(String, String, String)
   name.vb: Build(String, String, String)
-- uid: Virtufin.Base.Messaging.Topics.PublishAsync(Virtufin.Core.Messaging.IEventPublisher,Virtufin.Core.Messaging.Topic,Virtufin.Core.Events.IEventEnvelope,System.Object)
-  commentId: M:Virtufin.Base.Messaging.Topics.PublishAsync(Virtufin.Core.Messaging.IEventPublisher,Virtufin.Core.Messaging.Topic,Virtufin.Core.Events.IEventEnvelope,System.Object)
-  id: PublishAsync(Virtufin.Core.Messaging.IEventPublisher,Virtufin.Core.Messaging.Topic,Virtufin.Core.Events.IEventEnvelope,System.Object)
-  isExtensionMethod: true
-  parent: Virtufin.Base.Messaging.Topics
-  langs:
-  - csharp
-  - vb
-  name: PublishAsync(IEventPublisher, Topic, IEventEnvelope, object)
-  nameWithType: Topics.PublishAsync(IEventPublisher, Topic, IEventEnvelope, object)
-  fullName: Virtufin.Base.Messaging.Topics.PublishAsync(Virtufin.Core.Messaging.IEventPublisher, Virtufin.Core.Messaging.Topic, Virtufin.Core.Events.IEventEnvelope, object)
-  type: Method
-  source:
-    remote:
-      path: src/Virtufin.Base/Messaging/Topics.cs
-      branch: master
-      repo: https://git.haenerconsulting.com/virtufin/lib
-    id: PublishAsync
-    path: ../../../src/Virtufin.Base/Messaging/Topics.cs
-    startLine: 77
-  assemblies:
-  - Virtufin.Base
-  namespace: Virtufin.Base.Messaging
-  summary: >-
-    Convenience: emit an envelope-payload pair to a topic. Wraps the
-
-    payload in a <xref href="Virtufin.Core.Events.CloudEvent" data-throw-if-not-resolved="false"></xref> using
-
-    <xref href="Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope%2cSystem.Object%2cSystem.String)" data-throw-if-not-resolved="false"></xref>.
-  example: []
-  syntax:
-    content: public static Task PublishAsync(this IEventPublisher publisher, Topic topic, IEventEnvelope envelope, object payload)
-    parameters:
-    - id: publisher
-      type: Virtufin.Core.Messaging.IEventPublisher
-      description: Publisher to use.
-    - id: topic
-      type: Virtufin.Core.Messaging.Topic
-      description: Destination topic.
-    - id: envelope
-      type: Virtufin.Core.Events.IEventEnvelope
-      description: Envelope carrying routing metadata.
-    - id: payload
-      type: System.Object
-      description: Event payload.
-    return:
-      type: System.Threading.Tasks.Task
-    content.vb: Public Shared Function PublishAsync(publisher As IEventPublisher, topic As Topic, envelope As IEventEnvelope, payload As Object) As Task
-  overload: Virtufin.Base.Messaging.Topics.PublishAsync*
-  nameWithType.vb: Topics.PublishAsync(IEventPublisher, Topic, IEventEnvelope, Object)
-  fullName.vb: Virtufin.Base.Messaging.Topics.PublishAsync(Virtufin.Core.Messaging.IEventPublisher, Virtufin.Core.Messaging.Topic, Virtufin.Core.Events.IEventEnvelope, Object)
-  name.vb: PublishAsync(IEventPublisher, Topic, IEventEnvelope, Object)
 references:
 - uid: Virtufin.Base.Messaging
   commentId: N:Virtufin.Base.Messaging
@@ -747,157 +694,3 @@ references:
   name: Build
   nameWithType: Topics.Build
   fullName: Virtufin.Base.Messaging.Topics.Build
-- uid: Virtufin.Core.Events.CloudEvent
-  commentId: T:Virtufin.Core.Events.CloudEvent
-  parent: Virtufin.Core.Events
-  href: Virtufin.Core.Events.CloudEvent.html
-  name: CloudEvent
-  nameWithType: CloudEvent
-  fullName: Virtufin.Core.Events.CloudEvent
-- uid: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope,System.Object,System.String)
-  commentId: M:Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope,System.Object,System.String)
-  isExternal: true
-  href: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.html#Virtufin_Base_Events_EventEnvelopeCloudEventExtensions_ToCloudEvent_Virtufin_Core_Events_IEventEnvelope_System_Object_System_String_
-  name: ToCloudEvent(IEventEnvelope, object, string)
-  nameWithType: EventEnvelopeCloudEventExtensions.ToCloudEvent(IEventEnvelope, object, string)
-  fullName: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope, object, string)
-  nameWithType.vb: EventEnvelopeCloudEventExtensions.ToCloudEvent(IEventEnvelope, Object, String)
-  fullName.vb: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope, Object, String)
-  name.vb: ToCloudEvent(IEventEnvelope, Object, String)
-  spec.csharp:
-  - uid: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope,System.Object,System.String)
-    name: ToCloudEvent
-    href: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.html#Virtufin_Base_Events_EventEnvelopeCloudEventExtensions_ToCloudEvent_Virtufin_Core_Events_IEventEnvelope_System_Object_System_String_
-  - name: (
-  - uid: Virtufin.Core.Events.IEventEnvelope
-    name: IEventEnvelope
-    href: Virtufin.Core.Events.IEventEnvelope.html
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
-  spec.vb:
-  - uid: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.ToCloudEvent(Virtufin.Core.Events.IEventEnvelope,System.Object,System.String)
-    name: ToCloudEvent
-    href: Virtufin.Base.Events.EventEnvelopeCloudEventExtensions.html#Virtufin_Base_Events_EventEnvelopeCloudEventExtensions_ToCloudEvent_Virtufin_Core_Events_IEventEnvelope_System_Object_System_String_
-  - name: (
-  - uid: Virtufin.Core.Events.IEventEnvelope
-    name: IEventEnvelope
-    href: Virtufin.Core.Events.IEventEnvelope.html
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
-- uid: Virtufin.Base.Messaging.Topics.PublishAsync*
-  commentId: Overload:Virtufin.Base.Messaging.Topics.PublishAsync
-  href: Virtufin.Base.Messaging.Topics.html#Virtufin_Base_Messaging_Topics_PublishAsync_Virtufin_Core_Messaging_IEventPublisher_Virtufin_Core_Messaging_Topic_Virtufin_Core_Events_IEventEnvelope_System_Object_
-  name: PublishAsync
-  nameWithType: Topics.PublishAsync
-  fullName: Virtufin.Base.Messaging.Topics.PublishAsync
-- uid: Virtufin.Core.Messaging.IEventPublisher
-  commentId: T:Virtufin.Core.Messaging.IEventPublisher
-  parent: Virtufin.Core.Messaging
-  href: Virtufin.Core.Messaging.IEventPublisher.html
-  name: IEventPublisher
-  nameWithType: IEventPublisher
-  fullName: Virtufin.Core.Messaging.IEventPublisher
-- uid: Virtufin.Core.Events.IEventEnvelope
-  commentId: T:Virtufin.Core.Events.IEventEnvelope
-  parent: Virtufin.Core.Events
-  href: Virtufin.Core.Events.IEventEnvelope.html
-  name: IEventEnvelope
-  nameWithType: IEventEnvelope
-  fullName: Virtufin.Core.Events.IEventEnvelope
-- uid: System.Threading.Tasks.Task
-  commentId: T:System.Threading.Tasks.Task
-  parent: System.Threading.Tasks
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
-  name: Task
-  nameWithType: Task
-  fullName: System.Threading.Tasks.Task
-- uid: Virtufin.Core.Events
-  commentId: N:Virtufin.Core.Events
-  href: Virtufin.html
-  name: Virtufin.Core.Events
-  nameWithType: Virtufin.Core.Events
-  fullName: Virtufin.Core.Events
-  spec.csharp:
-  - uid: Virtufin
-    name: Virtufin
-    href: Virtufin.html
-  - name: .
-  - uid: Virtufin.Core
-    name: Core
-    href: Virtufin.Core.html
-  - name: .
-  - uid: Virtufin.Core.Events
-    name: Events
-    href: Virtufin.Core.Events.html
-  spec.vb:
-  - uid: Virtufin
-    name: Virtufin
-    href: Virtufin.html
-  - name: .
-  - uid: Virtufin.Core
-    name: Core
-    href: Virtufin.Core.html
-  - name: .
-  - uid: Virtufin.Core.Events
-    name: Events
-    href: Virtufin.Core.Events.html
-- uid: System.Threading.Tasks
-  commentId: N:System.Threading.Tasks
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Threading.Tasks
-  nameWithType: System.Threading.Tasks
-  fullName: System.Threading.Tasks
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Threading
-    name: Threading
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading
-  - name: .
-  - uid: System.Threading.Tasks
-    name: Tasks
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Threading
-    name: Threading
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading
-  - name: .
-  - uid: System.Threading.Tasks
-    name: Tasks
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

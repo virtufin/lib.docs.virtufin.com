@@ -197,7 +197,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: CurrencyIdentifier
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 9
+    startLine: 10
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -239,7 +239,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: AED
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 12
+    startLine: 13
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -268,7 +268,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: AFN
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -297,7 +297,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: ALL
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 16
+    startLine: 17
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -326,7 +326,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: AMD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 18
+    startLine: 19
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -355,7 +355,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: ANG
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 20
+    startLine: 21
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -384,7 +384,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: AOA
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 22
+    startLine: 23
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -413,7 +413,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: ARS
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 24
+    startLine: 25
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -442,7 +442,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: AUD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 26
+    startLine: 27
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -471,7 +471,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: AWG
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 28
+    startLine: 29
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -500,7 +500,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: AZN
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 30
+    startLine: 31
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -529,7 +529,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: BAM
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 32
+    startLine: 33
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -558,7 +558,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: BBD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 34
+    startLine: 35
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -587,7 +587,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: BDT
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 36
+    startLine: 37
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -616,7 +616,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: BHD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 38
+    startLine: 39
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -645,7 +645,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: BIF
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 40
+    startLine: 41
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -674,7 +674,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: BMD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 42
+    startLine: 43
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -703,7 +703,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: BND
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 44
+    startLine: 45
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -732,7 +732,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: BOB
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 46
+    startLine: 47
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -761,7 +761,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: BOV
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 48
+    startLine: 49
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -790,7 +790,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: BRL
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 50
+    startLine: 51
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -819,7 +819,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: BSD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 52
+    startLine: 53
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -848,7 +848,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: BTN
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 54
+    startLine: 55
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -877,7 +877,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: BWP
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 56
+    startLine: 57
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -906,7 +906,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: BYN
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 58
+    startLine: 59
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -935,7 +935,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: BZD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 60
+    startLine: 61
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -964,7 +964,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: CAD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 62
+    startLine: 63
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -993,7 +993,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: CDF
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 64
+    startLine: 65
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1022,7 +1022,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: CHE
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 66
+    startLine: 67
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1051,7 +1051,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: CHF
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 68
+    startLine: 69
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1080,7 +1080,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: CHW
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 70
+    startLine: 71
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1109,7 +1109,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: CLF
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 72
+    startLine: 73
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1138,7 +1138,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: CLP
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 74
+    startLine: 75
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1167,7 +1167,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: CNY
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 76
+    startLine: 77
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1196,7 +1196,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: COP
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 78
+    startLine: 79
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1225,7 +1225,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: COU
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 80
+    startLine: 81
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1254,7 +1254,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: CRC
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 82
+    startLine: 83
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1283,7 +1283,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: CUP
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 84
+    startLine: 85
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1312,7 +1312,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: CVE
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 86
+    startLine: 87
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1341,7 +1341,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: CZK
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 88
+    startLine: 89
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1370,7 +1370,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: DJF
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 90
+    startLine: 91
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1399,7 +1399,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: DKK
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 92
+    startLine: 93
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1428,7 +1428,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: DOP
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 94
+    startLine: 95
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1457,7 +1457,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: DZD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 96
+    startLine: 97
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1486,7 +1486,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: EGP
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 98
+    startLine: 99
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1515,7 +1515,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: ERN
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 100
+    startLine: 101
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1544,7 +1544,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: ETB
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 102
+    startLine: 103
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1573,7 +1573,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: EUR
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 104
+    startLine: 105
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1602,7 +1602,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: FJD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 106
+    startLine: 107
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1631,7 +1631,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: FKP
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 108
+    startLine: 109
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1660,7 +1660,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: GBP
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 110
+    startLine: 111
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1689,7 +1689,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: GEL
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 112
+    startLine: 113
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1718,7 +1718,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: GHS
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 114
+    startLine: 115
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1747,7 +1747,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: GIP
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 116
+    startLine: 117
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1776,7 +1776,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: GMD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 118
+    startLine: 119
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1805,7 +1805,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: GNF
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 120
+    startLine: 121
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1834,7 +1834,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: GTQ
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 122
+    startLine: 123
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1863,7 +1863,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: GYD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 124
+    startLine: 125
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1892,7 +1892,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: HKD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 126
+    startLine: 127
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1921,7 +1921,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: HNL
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 128
+    startLine: 129
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1950,7 +1950,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: HTG
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 130
+    startLine: 131
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -1979,7 +1979,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: HUF
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 132
+    startLine: 133
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2008,7 +2008,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: IDR
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 134
+    startLine: 135
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2037,7 +2037,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: ILS
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 136
+    startLine: 137
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2066,7 +2066,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: INR
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 138
+    startLine: 139
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2095,7 +2095,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: IQD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 140
+    startLine: 141
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2124,7 +2124,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: IRR
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 142
+    startLine: 143
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2153,7 +2153,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: ISK
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 144
+    startLine: 145
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2182,7 +2182,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: JMD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 146
+    startLine: 147
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2211,7 +2211,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: JOD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 148
+    startLine: 149
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2240,7 +2240,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: JPY
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 150
+    startLine: 151
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2269,7 +2269,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: KES
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 152
+    startLine: 153
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2298,7 +2298,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: KGS
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 154
+    startLine: 155
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2327,7 +2327,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: KHR
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 156
+    startLine: 157
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2356,7 +2356,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: KMF
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 158
+    startLine: 159
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2385,7 +2385,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: KPW
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 160
+    startLine: 161
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2414,7 +2414,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: KRW
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 162
+    startLine: 163
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2443,7 +2443,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: KWD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 164
+    startLine: 165
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2472,7 +2472,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: KYD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 166
+    startLine: 167
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2501,7 +2501,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: KZT
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 168
+    startLine: 169
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2530,7 +2530,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: LAK
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 170
+    startLine: 171
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2559,7 +2559,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: LBP
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 172
+    startLine: 173
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2588,7 +2588,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: LKR
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 174
+    startLine: 175
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2617,7 +2617,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: LRD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 176
+    startLine: 177
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2646,7 +2646,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: LSL
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 178
+    startLine: 179
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2675,7 +2675,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: LYD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 180
+    startLine: 181
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2704,7 +2704,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: MAD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 182
+    startLine: 183
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2733,7 +2733,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: MDL
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 184
+    startLine: 185
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2762,7 +2762,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: MGA
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 186
+    startLine: 187
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2791,7 +2791,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: MKD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 188
+    startLine: 189
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2820,7 +2820,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: MMK
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 190
+    startLine: 191
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2849,7 +2849,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: MNT
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 192
+    startLine: 193
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2878,7 +2878,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: MOP
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 194
+    startLine: 195
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2907,7 +2907,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: MRU
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 196
+    startLine: 197
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2936,7 +2936,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: MUR
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 198
+    startLine: 199
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2965,7 +2965,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: MVR
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 200
+    startLine: 201
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -2994,7 +2994,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: MWK
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 202
+    startLine: 203
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3023,7 +3023,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: MXN
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 204
+    startLine: 205
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3052,7 +3052,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: MXV
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 206
+    startLine: 207
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3081,7 +3081,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: MYR
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 208
+    startLine: 209
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3110,7 +3110,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: MZN
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 210
+    startLine: 211
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3139,7 +3139,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: NAD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 212
+    startLine: 213
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3168,7 +3168,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: NGN
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 214
+    startLine: 215
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3197,7 +3197,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: NIO
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 216
+    startLine: 217
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3226,7 +3226,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: NOK
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 218
+    startLine: 219
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3255,7 +3255,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: NPR
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 220
+    startLine: 221
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3284,7 +3284,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: NZD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 222
+    startLine: 223
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3313,7 +3313,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: OMR
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 224
+    startLine: 225
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3342,7 +3342,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: PAB
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 226
+    startLine: 227
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3371,7 +3371,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: PEN
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 228
+    startLine: 229
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3400,7 +3400,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: PGK
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 230
+    startLine: 231
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3429,7 +3429,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: PHP
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 232
+    startLine: 233
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3458,7 +3458,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: PKR
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 234
+    startLine: 235
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3487,7 +3487,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: PLN
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 236
+    startLine: 237
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3516,7 +3516,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: PYG
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 238
+    startLine: 239
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3545,7 +3545,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: QAR
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 240
+    startLine: 241
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3574,7 +3574,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: RON
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 242
+    startLine: 243
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3603,7 +3603,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: RSD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 244
+    startLine: 245
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3632,7 +3632,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: RUB
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 246
+    startLine: 247
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3661,7 +3661,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: RWF
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 248
+    startLine: 249
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3690,7 +3690,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: SAR
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 250
+    startLine: 251
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3719,7 +3719,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: SBD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 252
+    startLine: 253
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3748,7 +3748,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: SCR
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 254
+    startLine: 255
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3777,7 +3777,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: SDG
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 256
+    startLine: 257
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3806,7 +3806,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: SEK
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 258
+    startLine: 259
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3835,7 +3835,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: SGD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 260
+    startLine: 261
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3864,7 +3864,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: SHP
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 262
+    startLine: 263
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3893,7 +3893,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: SLE
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 264
+    startLine: 265
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3922,7 +3922,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: SOS
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 266
+    startLine: 267
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3951,7 +3951,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: SRD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 268
+    startLine: 269
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -3980,7 +3980,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: SSP
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 270
+    startLine: 271
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4009,7 +4009,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: STN
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 272
+    startLine: 273
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4038,7 +4038,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: SVC
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 274
+    startLine: 275
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4067,7 +4067,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: SYP
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 276
+    startLine: 277
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4096,7 +4096,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: SZL
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 278
+    startLine: 279
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4125,7 +4125,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: THB
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 280
+    startLine: 281
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4154,7 +4154,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: TJS
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 282
+    startLine: 283
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4183,7 +4183,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: TMT
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 284
+    startLine: 285
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4212,7 +4212,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: TND
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 286
+    startLine: 287
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4241,7 +4241,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: TOP
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 288
+    startLine: 289
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4270,7 +4270,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: TRY
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 290
+    startLine: 291
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4299,7 +4299,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: TTD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 292
+    startLine: 293
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4328,7 +4328,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: TWD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 294
+    startLine: 295
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4357,7 +4357,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: TZS
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 296
+    startLine: 297
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4386,7 +4386,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: UAH
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 298
+    startLine: 299
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4415,7 +4415,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: UGX
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 300
+    startLine: 301
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4444,7 +4444,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: USD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 302
+    startLine: 303
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4473,7 +4473,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: USN
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 304
+    startLine: 305
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4502,7 +4502,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: UYI
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 306
+    startLine: 307
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4531,7 +4531,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: UYU
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 308
+    startLine: 309
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4560,7 +4560,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: UYW
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 310
+    startLine: 311
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4589,7 +4589,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: UZS
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 312
+    startLine: 313
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4618,7 +4618,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: VED
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 314
+    startLine: 315
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4647,7 +4647,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: VES
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 316
+    startLine: 317
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4676,7 +4676,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: VND
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 318
+    startLine: 319
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4705,7 +4705,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: VUV
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 320
+    startLine: 321
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4734,7 +4734,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: WST
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 322
+    startLine: 323
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4763,7 +4763,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: XAF
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 324
+    startLine: 325
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4792,7 +4792,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: XAG
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 326
+    startLine: 327
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4821,7 +4821,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: XAU
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 328
+    startLine: 329
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4850,7 +4850,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: XBA
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 330
+    startLine: 331
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4879,7 +4879,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: XBB
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 332
+    startLine: 333
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4908,7 +4908,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: XBC
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 334
+    startLine: 335
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4937,7 +4937,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: XBD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 336
+    startLine: 337
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4966,7 +4966,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: XCD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 338
+    startLine: 339
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -4995,7 +4995,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: XCG
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 340
+    startLine: 341
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -5024,7 +5024,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: XDR
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 342
+    startLine: 343
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -5053,7 +5053,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: XOF
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 344
+    startLine: 345
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -5082,7 +5082,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: XPD
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 346
+    startLine: 347
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -5111,7 +5111,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: XPF
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 348
+    startLine: 349
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -5140,7 +5140,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: XPT
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 350
+    startLine: 351
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -5169,7 +5169,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: XSU
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 352
+    startLine: 353
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -5198,7 +5198,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: XTS
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 354
+    startLine: 355
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -5227,7 +5227,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: XUA
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 356
+    startLine: 357
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -5256,7 +5256,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: YER
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 358
+    startLine: 359
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -5285,7 +5285,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: ZAR
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 360
+    startLine: 361
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -5314,7 +5314,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: ZMW
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 362
+    startLine: 363
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -5343,7 +5343,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: ZZZ
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 364
+    startLine: 365
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -5372,7 +5372,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: For
     path: ../../../src/Virtufin.Base/CurrencyIdentifier.cs
-    startLine: 370
+    startLine: 553
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base

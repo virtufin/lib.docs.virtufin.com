@@ -67,11 +67,18 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Seed
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
-    startLine: 26
+    startLine: 33
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Execution
-  summary: Current PRNG seed (mutable).
+  summary: >-
+    Current PRNG seed (mutable). Read/write is atomic, but this alone
+
+    does not make a read-modify-write sequence spanning multiple calls
+
+    thread-safe -- use <xref href="Virtufin.Base.Execution.StochasticState.NextRandom" data-throw-if-not-resolved="false"></xref> to advance the seed,
+
+    not manual read-then-write.
   example: []
   syntax:
     content: public int Seed { get; set; }
@@ -98,7 +105,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
-    startLine: 30
+    startLine: 41
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Execution
@@ -133,11 +140,16 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: NextRandom
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
-    startLine: 33
+    startLine: 48
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Execution
-  summary: Simple linear-congruential PRNG step.
+  summary: >-
+    Simple linear-congruential PRNG step. Thread-safe: concurrent callers
+
+    each get a distinct step of the sequence via compare-and-swap retry,
+
+    rather than corrupting <xref href="Virtufin.Base.Execution.StochasticState.Seed" data-throw-if-not-resolved="false"></xref> under a torn or lost update.
   example: []
   syntax:
     content: public int NextRandom()
@@ -163,7 +175,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: NextUnit
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
-    startLine: 43
+    startLine: 63
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Execution
@@ -193,7 +205,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: NextNormal
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
-    startLine: 47
+    startLine: 67
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Execution
@@ -494,6 +506,24 @@ references:
   - uid: Virtufin.Core.Execution
     name: Execution
     href: Virtufin.Core.Execution.html
+- uid: Virtufin.Base.Execution.StochasticState.NextRandom
+  commentId: M:Virtufin.Base.Execution.StochasticState.NextRandom
+  href: Virtufin.Base.Execution.StochasticState.html#Virtufin_Base_Execution_StochasticState_NextRandom
+  name: NextRandom()
+  nameWithType: StochasticState.NextRandom()
+  fullName: Virtufin.Base.Execution.StochasticState.NextRandom()
+  spec.csharp:
+  - uid: Virtufin.Base.Execution.StochasticState.NextRandom
+    name: NextRandom
+    href: Virtufin.Base.Execution.StochasticState.html#Virtufin_Base_Execution_StochasticState_NextRandom
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Base.Execution.StochasticState.NextRandom
+    name: NextRandom
+    href: Virtufin.Base.Execution.StochasticState.html#Virtufin_Base_Execution_StochasticState_NextRandom
+  - name: (
+  - name: )
 - uid: Virtufin.Base.Execution.StochasticState.Seed*
   commentId: Overload:Virtufin.Base.Execution.StochasticState.Seed
   href: Virtufin.Base.Execution.StochasticState.html#Virtufin_Base_Execution_StochasticState_Seed
@@ -520,6 +550,12 @@ references:
   nameWithType.vb: StochasticState.New
   fullName.vb: Virtufin.Base.Execution.StochasticState.New
   name.vb: New
+- uid: Virtufin.Base.Execution.StochasticState.Seed
+  commentId: P:Virtufin.Base.Execution.StochasticState.Seed
+  href: Virtufin.Base.Execution.StochasticState.html#Virtufin_Base_Execution_StochasticState_Seed
+  name: Seed
+  nameWithType: StochasticState.Seed
+  fullName: Virtufin.Base.Execution.StochasticState.Seed
 - uid: Virtufin.Base.Execution.StochasticState.NextRandom*
   commentId: Overload:Virtufin.Base.Execution.StochasticState.NextRandom
   href: Virtufin.Base.Execution.StochasticState.html#Virtufin_Base_Execution_StochasticState_NextRandom

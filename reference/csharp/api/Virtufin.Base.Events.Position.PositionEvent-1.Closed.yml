@@ -243,7 +243,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: DeltaQuantity
     path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
-    startLine: 98
+    startLine: 101
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Events.Position

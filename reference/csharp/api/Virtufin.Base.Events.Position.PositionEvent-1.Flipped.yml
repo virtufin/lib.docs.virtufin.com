@@ -27,7 +27,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Flipped
     path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
-    startLine: 102
+    startLine: 105
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Events.Position
@@ -73,7 +73,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Symbol
     path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
-    startLine: 105
+    startLine: 108
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Events.Position
@@ -107,7 +107,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: NewQuantity
     path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
-    startLine: 107
+    startLine: 110
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Events.Position
@@ -140,7 +140,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: OldDirection
     path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
-    startLine: 109
+    startLine: 112
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Events.Position
@@ -173,7 +173,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: NewDirection
     path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
-    startLine: 111
+    startLine: 114
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Events.Position
@@ -206,7 +206,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: FlippedAt
     path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
-    startLine: 113
+    startLine: 116
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Events.Position
@@ -239,7 +239,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Time
     path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
-    startLine: 115
+    startLine: 118
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Events.Position
@@ -273,7 +273,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
-    startLine: 118
+    startLine: 121
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Events.Position
@@ -315,7 +315,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: DeltaQuantity
     path: ../../../src/Virtufin.Base/Events/Position/PositionEvent.cs
-    startLine: 124
+    startLine: 127
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Events.Position

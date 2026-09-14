@@ -164,6 +164,10 @@ items:
       type: Virtufin.Core.Contracts.IScenario
     content.vb: Public ReadOnly Property LastScenario As IScenario
   overload: Virtufin.Base.ScenarioHistory.LastScenario*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: No scenario has been appended yet.
   implements:
   - Virtufin.Core.Contracts.IScenarioHistory.LastScenario
 - uid: Virtufin.Base.ScenarioHistory.Iter
@@ -184,7 +188,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Iter
     path: ../../../src/Virtufin.Base/ScenarioHistory.cs
-    startLine: 40
+    startLine: 42
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -217,7 +221,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Scenario
     path: ../../../src/Virtufin.Base/ScenarioHistory.cs
-    startLine: 43
+    startLine: 45
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -256,7 +260,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: NewScenarios
     path: ../../../src/Virtufin.Base/ScenarioHistory.cs
-    startLine: 47
+    startLine: 49
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -294,7 +298,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: GetEnumerator
     path: ../../../src/Virtufin.Base/ScenarioHistory.cs
-    startLine: 50
+    startLine: 52
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -327,7 +331,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Append
     path: ../../../src/Virtufin.Base/ScenarioHistory.cs
-    startLine: 56
+    startLine: 58
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -359,7 +363,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Append
     path: ../../../src/Virtufin.Base/ScenarioHistory.cs
-    startLine: 63
+    startLine: 65
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -390,7 +394,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Dispose
     path: ../../../src/Virtufin.Base/ScenarioHistory.cs
-    startLine: 66
+    startLine: 68
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -883,6 +887,13 @@ references:
     name: Scenario
     href: Virtufin.Base.Scenario.html
   - name: )
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
 - uid: Virtufin.Base.ScenarioHistory.LastScenario*
   commentId: Overload:Virtufin.Base.ScenarioHistory.LastScenario
   href: Virtufin.Base.ScenarioHistory.html#Virtufin_Base_ScenarioHistory_LastScenario

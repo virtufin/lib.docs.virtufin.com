@@ -27,7 +27,6 @@ references:
   fullName: Virtufin.Core.Messaging.EventDelivery
 - uid: Virtufin.Core.Messaging.IEventPublisher
   commentId: T:Virtufin.Core.Messaging.IEventPublisher
-  parent: Virtufin.Core.Messaging
   href: Virtufin.Core.Messaging.IEventPublisher.html
   name: IEventPublisher
   nameWithType: IEventPublisher

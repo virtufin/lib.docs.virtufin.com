@@ -144,9 +144,6 @@ items:
         name: Trade
         type: Namespace
         items:
-        - uid: Virtufin.Base.Events.Trade.BuyOrSell
-          name: BuyOrSell
-          type: Enum
         - uid: Virtufin.Base.Events.Trade.RichTradeAction
           name: RichTradeAction
           type: Class
@@ -638,9 +635,6 @@ items:
       - uid: Virtufin.Core.Position.IQuantity`2
         name: IQuantity<TAmount, TUnit>
         type: Interface
-      - uid: Virtufin.Core.Position.ITransactionLedger
-        name: ITransactionLedger
-        type: Interface
       - uid: Virtufin.Core.Position.IUnit
         name: IUnit
         type: Interface
@@ -674,9 +668,6 @@ items:
         type: Interface
       - uid: Virtufin.Core.Predicates.IVerificationMessageFilter
         name: IVerificationMessageFilter
-        type: Interface
-      - uid: Virtufin.Core.Predicates.IVerificationMessageFilterCombinator
-        name: IVerificationMessageFilterCombinator
         type: Interface
       - uid: Virtufin.Core.Predicates.MaturitySelectorPredicate
         name: MaturitySelectorPredicate

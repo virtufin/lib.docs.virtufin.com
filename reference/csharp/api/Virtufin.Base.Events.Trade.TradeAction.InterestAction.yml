@@ -5,7 +5,7 @@ items:
   id: TradeAction.InterestAction
   parent: Virtufin.Base.Events.Trade
   children:
-  - Virtufin.Base.Events.Trade.TradeAction.InterestAction.#ctor(Virtufin.Core.Events.Symbol,Virtufin.Base.Events.Trade.BuyOrSell,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,System.TimeSpan,System.Nullable{Virtufin.Core.Position.DecimalAmount},System.Nullable{System.Guid})
+  - Virtufin.Base.Events.Trade.TradeAction.InterestAction.#ctor(Virtufin.Core.Events.Symbol,Virtufin.Core.Position.BuyOrSell,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,System.TimeSpan,System.Nullable{Virtufin.Core.Position.DecimalAmount},System.Nullable{System.Guid})
   - Virtufin.Base.Events.Trade.TradeAction.InterestAction.InterestId
   - Virtufin.Base.Events.Trade.TradeAction.InterestAction.PriceCeiling
   - Virtufin.Base.Events.Trade.TradeAction.InterestAction.PriceFloor
@@ -50,16 +50,16 @@ items:
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Base.Events.Trade.TradeAction.InterestAction.#ctor(Virtufin.Core.Events.Symbol,Virtufin.Base.Events.Trade.BuyOrSell,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,System.TimeSpan,System.Nullable{Virtufin.Core.Position.DecimalAmount},System.Nullable{System.Guid})
-  commentId: M:Virtufin.Base.Events.Trade.TradeAction.InterestAction.#ctor(Virtufin.Core.Events.Symbol,Virtufin.Base.Events.Trade.BuyOrSell,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,System.TimeSpan,System.Nullable{Virtufin.Core.Position.DecimalAmount},System.Nullable{System.Guid})
-  id: '#ctor(Virtufin.Core.Events.Symbol,Virtufin.Base.Events.Trade.BuyOrSell,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,System.TimeSpan,System.Nullable{Virtufin.Core.Position.DecimalAmount},System.Nullable{System.Guid})'
+- uid: Virtufin.Base.Events.Trade.TradeAction.InterestAction.#ctor(Virtufin.Core.Events.Symbol,Virtufin.Core.Position.BuyOrSell,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,System.TimeSpan,System.Nullable{Virtufin.Core.Position.DecimalAmount},System.Nullable{System.Guid})
+  commentId: M:Virtufin.Base.Events.Trade.TradeAction.InterestAction.#ctor(Virtufin.Core.Events.Symbol,Virtufin.Core.Position.BuyOrSell,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,System.TimeSpan,System.Nullable{Virtufin.Core.Position.DecimalAmount},System.Nullable{System.Guid})
+  id: '#ctor(Virtufin.Core.Events.Symbol,Virtufin.Core.Position.BuyOrSell,Virtufin.Core.Position.DecimalAmount,Virtufin.Core.Position.DecimalAmount,System.TimeSpan,System.Nullable{Virtufin.Core.Position.DecimalAmount},System.Nullable{System.Guid})'
   parent: Virtufin.Base.Events.Trade.TradeAction.InterestAction
   langs:
   - csharp
   - vb
   name: InterestAction(Symbol, BuyOrSell, DecimalAmount, DecimalAmount, TimeSpan, DecimalAmount?, Guid?)
   nameWithType: TradeAction.InterestAction.InterestAction(Symbol, BuyOrSell, DecimalAmount, DecimalAmount, TimeSpan, DecimalAmount?, Guid?)
-  fullName: Virtufin.Base.Events.Trade.TradeAction.InterestAction.InterestAction(Virtufin.Core.Events.Symbol, Virtufin.Base.Events.Trade.BuyOrSell, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount, System.TimeSpan, Virtufin.Core.Position.DecimalAmount?, System.Guid?)
+  fullName: Virtufin.Base.Events.Trade.TradeAction.InterestAction.InterestAction(Virtufin.Core.Events.Symbol, Virtufin.Core.Position.BuyOrSell, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount, System.TimeSpan, Virtufin.Core.Position.DecimalAmount?, System.Guid?)
   type: Constructor
   source:
     remote:
@@ -81,7 +81,7 @@ items:
       type: Virtufin.Core.Events.Symbol
       description: Instrument of interest.
     - id: Side
-      type: Virtufin.Base.Events.Trade.BuyOrSell
+      type: Virtufin.Core.Position.BuyOrSell
       description: Buy or sell side.
     - id: PriceFloor
       type: Virtufin.Core.Position.DecimalAmount
@@ -101,7 +101,7 @@ items:
     content.vb: Public Sub New(Symbol As Symbol, Side As BuyOrSell, PriceFloor As DecimalAmount, PriceCeiling As DecimalAmount, Window As TimeSpan, Quantity As DecimalAmount?, InterestId As Guid?)
   overload: Virtufin.Base.Events.Trade.TradeAction.InterestAction.#ctor*
   nameWithType.vb: TradeAction.InterestAction.New(Symbol, BuyOrSell, DecimalAmount, DecimalAmount, TimeSpan, DecimalAmount?, Guid?)
-  fullName.vb: Virtufin.Base.Events.Trade.TradeAction.InterestAction.New(Virtufin.Core.Events.Symbol, Virtufin.Base.Events.Trade.BuyOrSell, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount, System.TimeSpan, Virtufin.Core.Position.DecimalAmount?, System.Guid?)
+  fullName.vb: Virtufin.Base.Events.Trade.TradeAction.InterestAction.New(Virtufin.Core.Events.Symbol, Virtufin.Core.Position.BuyOrSell, Virtufin.Core.Position.DecimalAmount, Virtufin.Core.Position.DecimalAmount, System.TimeSpan, Virtufin.Core.Position.DecimalAmount?, System.Guid?)
   name.vb: New(Symbol, BuyOrSell, DecimalAmount, DecimalAmount, TimeSpan, DecimalAmount?, Guid?)
 - uid: Virtufin.Base.Events.Trade.TradeAction.InterestAction.Symbol
   commentId: P:Virtufin.Base.Events.Trade.TradeAction.InterestAction.Symbol
@@ -162,7 +162,7 @@ items:
     content: public BuyOrSell Side { get; init; }
     parameters: []
     return:
-      type: Virtufin.Base.Events.Trade.BuyOrSell
+      type: Virtufin.Core.Position.BuyOrSell
     content.vb: Public Property Side As BuyOrSell
   overload: Virtufin.Base.Events.Trade.TradeAction.InterestAction.Side*
 - uid: Virtufin.Base.Events.Trade.TradeAction.InterestAction.PriceFloor
@@ -728,7 +728,7 @@ references:
   - name: )
 - uid: Virtufin.Base.Events.Trade.TradeAction.InterestAction.#ctor*
   commentId: Overload:Virtufin.Base.Events.Trade.TradeAction.InterestAction.#ctor
-  href: Virtufin.Base.Events.Trade.TradeAction.InterestAction.html#Virtufin_Base_Events_Trade_TradeAction_InterestAction__ctor_Virtufin_Core_Events_Symbol_Virtufin_Base_Events_Trade_BuyOrSell_Virtufin_Core_Position_DecimalAmount_Virtufin_Core_Position_DecimalAmount_System_TimeSpan_System_Nullable_Virtufin_Core_Position_DecimalAmount__System_Nullable_System_Guid__
+  href: Virtufin.Base.Events.Trade.TradeAction.InterestAction.html#Virtufin_Base_Events_Trade_TradeAction_InterestAction__ctor_Virtufin_Core_Events_Symbol_Virtufin_Core_Position_BuyOrSell_Virtufin_Core_Position_DecimalAmount_Virtufin_Core_Position_DecimalAmount_System_TimeSpan_System_Nullable_Virtufin_Core_Position_DecimalAmount__System_Nullable_System_Guid__
   name: InterestAction
   nameWithType: TradeAction.InterestAction.InterestAction
   fullName: Virtufin.Base.Events.Trade.TradeAction.InterestAction.InterestAction
@@ -742,13 +742,13 @@ references:
   name: Symbol
   nameWithType: Symbol
   fullName: Virtufin.Core.Events.Symbol
-- uid: Virtufin.Base.Events.Trade.BuyOrSell
-  commentId: T:Virtufin.Base.Events.Trade.BuyOrSell
-  parent: Virtufin.Base.Events.Trade
-  href: Virtufin.Base.Events.Trade.BuyOrSell.html
+- uid: Virtufin.Core.Position.BuyOrSell
+  commentId: T:Virtufin.Core.Position.BuyOrSell
+  parent: Virtufin.Core.Position
+  href: Virtufin.Core.Position.BuyOrSell.html
   name: BuyOrSell
   nameWithType: BuyOrSell
-  fullName: Virtufin.Base.Events.Trade.BuyOrSell
+  fullName: Virtufin.Core.Position.BuyOrSell
 - uid: Virtufin.Core.Position.DecimalAmount
   commentId: T:Virtufin.Core.Position.DecimalAmount
   parent: Virtufin.Core.Position

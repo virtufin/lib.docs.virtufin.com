@@ -145,7 +145,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: New
     path: ../../../src/Virtufin.Base/TimeStamp.cs
-    startLine: 21
+    startLine: 24
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -167,6 +167,10 @@ items:
       type: Virtufin.Base.TimeStamp
     content.vb: Public Shared Function [New](year As Integer, month As Integer, day As Integer) As TimeStamp
   overload: Virtufin.Base.TimeStamp.New*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: The year/month/day combination does not describe a real calendar date.
   nameWithType.vb: TimeStamp.New(Integer, Integer, Integer)
   fullName.vb: Virtufin.Base.TimeStamp.New(Integer, Integer, Integer)
   name.vb: New(Integer, Integer, Integer)
@@ -188,7 +192,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: AdvanceDays
     path: ../../../src/Virtufin.Base/TimeStamp.cs
-    startLine: 24
+    startLine: 46
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -224,7 +228,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: CompareTo
     path: ../../../src/Virtufin.Base/TimeStamp.cs
-    startLine: 27
+    startLine: 49
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -267,7 +271,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Equals
     path: ../../../src/Virtufin.Base/TimeStamp.cs
-    startLine: 34
+    startLine: 56
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -307,7 +311,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: ToString
     path: ../../../src/Virtufin.Base/TimeStamp.cs
-    startLine: 37
+    startLine: 59
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base
@@ -761,6 +765,13 @@ references:
   name: TimeStamp
   nameWithType: TimeStamp
   fullName: Virtufin.Base.TimeStamp
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
 - uid: Virtufin.Base.TimeStamp.New*
   commentId: Overload:Virtufin.Base.TimeStamp.New
   href: Virtufin.Base.TimeStamp.html#Virtufin_Base_TimeStamp_New_System_Int32_System_Int32_System_Int32_

@@ -69,7 +69,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: LastScenario
     path: ../../../src/Virtufin.Core/Contracts/IScenarioHistory.cs
-    startLine: 19
+    startLine: 20
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Contracts
@@ -82,6 +82,10 @@ items:
       type: Virtufin.Core.Contracts.IScenario
     content.vb: ReadOnly Property LastScenario As IScenario
   overload: Virtufin.Core.Contracts.IScenarioHistory.LastScenario*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: No scenario has been appended yet.
 - uid: Virtufin.Core.Contracts.IScenarioHistory.Iter
   commentId: P:Virtufin.Core.Contracts.IScenarioHistory.Iter
   id: Iter
@@ -100,7 +104,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Iter
     path: ../../../src/Virtufin.Core/Contracts/IScenarioHistory.cs
-    startLine: 22
+    startLine: 23
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Contracts
@@ -131,7 +135,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Scenario
     path: ../../../src/Virtufin.Core/Contracts/IScenarioHistory.cs
-    startLine: 29
+    startLine: 30
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Contracts
@@ -168,7 +172,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: NewScenarios
     path: ../../../src/Virtufin.Core/Contracts/IScenarioHistory.cs
-    startLine: 36
+    startLine: 37
   assemblies:
   - Virtufin.Core
   namespace: Virtufin.Core.Contracts
@@ -408,6 +412,13 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
 - uid: Virtufin.Core.Contracts.IScenarioHistory.LastScenario*
   commentId: Overload:Virtufin.Core.Contracts.IScenarioHistory.LastScenario
   href: Virtufin.Core.Contracts.IScenarioHistory.html#Virtufin_Core_Contracts_IScenarioHistory_LastScenario

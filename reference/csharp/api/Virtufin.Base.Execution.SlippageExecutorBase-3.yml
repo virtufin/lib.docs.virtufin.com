@@ -23,7 +23,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: SlippageExecutorBase
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
-    startLine: 111
+    startLine: 131
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Execution
@@ -84,7 +84,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Initial
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
-    startLine: 118
+    startLine: 138
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Execution
@@ -119,7 +119,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: CalculateSlippage
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
-    startLine: 138
+    startLine: 158
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Execution
@@ -177,7 +177,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Process
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
-    startLine: 156
+    startLine: 176
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Execution
@@ -234,7 +234,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: ExecuteAsync
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
-    startLine: 160
+    startLine: 180
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Execution

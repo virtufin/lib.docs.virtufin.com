@@ -23,7 +23,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: ObserveOnlyExecutor
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
-    startLine: 219
+    startLine: 239
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Execution
@@ -73,7 +73,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: .ctor
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
-    startLine: 229
+    startLine: 250
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Execution
@@ -107,7 +107,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Initial
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
-    startLine: 232
+    startLine: 253
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Execution
@@ -142,7 +142,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: ExecuteAsync
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
-    startLine: 235
+    startLine: 256
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Execution
@@ -184,11 +184,20 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Observed
     path: ../../../src/Virtufin.Base/Execution/Executors.cs
-    startLine: 243
+    startLine: 273
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Execution
-  summary: Read-only view of all observed events so far.
+  summary: >-
+    Snapshot of all events observed so far, in the order they occurred.
+
+    A snapshot, not a live view -- <xref href="System.Collections.Generic.List%601" data-throw-if-not-resolved="false"></xref> is not safe to
+
+    enumerate while another thread may be appending to it via
+
+    <xref href="Virtufin.Base.Execution.ObserveOnlyExecutor%603.ExecuteAsync(%600%2c%601)" data-throw-if-not-resolved="false"></xref>, so this copies under the same lock
+
+    rather than exposing <code>_observed</code> directly.
   example: []
   syntax:
     content: public IReadOnlyList<TEvent> Observed { get; }
@@ -794,6 +803,62 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Base.Execution.ObserveOnlyExecutor`3.ExecuteAsync(`0,`1)
+  commentId: M:Virtufin.Base.Execution.ObserveOnlyExecutor`3.ExecuteAsync(`0,`1)
+  href: Virtufin.Base.Execution.ObserveOnlyExecutor-3.html#Virtufin_Base_Execution_ObserveOnlyExecutor_3_ExecuteAsync__0__1_
+  name: ExecuteAsync(TState, TAction)
+  nameWithType: ObserveOnlyExecutor<TState, TAction, TEvent>.ExecuteAsync(TState, TAction)
+  fullName: Virtufin.Base.Execution.ObserveOnlyExecutor<TState, TAction, TEvent>.ExecuteAsync(TState, TAction)
+  nameWithType.vb: ObserveOnlyExecutor(Of TState, TAction, TEvent).ExecuteAsync(TState, TAction)
+  fullName.vb: Virtufin.Base.Execution.ObserveOnlyExecutor(Of TState, TAction, TEvent).ExecuteAsync(TState, TAction)
+  spec.csharp:
+  - uid: Virtufin.Base.Execution.ObserveOnlyExecutor`3.ExecuteAsync(`0,`1)
+    name: ExecuteAsync
+    href: Virtufin.Base.Execution.ObserveOnlyExecutor-3.html#Virtufin_Base_Execution_ObserveOnlyExecutor_3_ExecuteAsync__0__1_
+  - name: (
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TAction
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Base.Execution.ObserveOnlyExecutor`3.ExecuteAsync(`0,`1)
+    name: ExecuteAsync
+    href: Virtufin.Base.Execution.ObserveOnlyExecutor-3.html#Virtufin_Base_Execution_ObserveOnlyExecutor_3_ExecuteAsync__0__1_
+  - name: (
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TAction
+  - name: )
 - uid: Virtufin.Base.Execution.ObserveOnlyExecutor`3.Observed*
   commentId: Overload:Virtufin.Base.Execution.ObserveOnlyExecutor`3.Observed
   href: Virtufin.Base.Execution.ObserveOnlyExecutor-3.html#Virtufin_Base_Execution_ObserveOnlyExecutor_3_Observed

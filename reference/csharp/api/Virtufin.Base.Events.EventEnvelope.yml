@@ -521,7 +521,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/lib
     id: Equals
     path: ../../../src/Virtufin.Base/Events/EventEnvelope.cs
-    startLine: 72
+    startLine: 76
   assemblies:
   - Virtufin.Base
   namespace: Virtufin.Base.Events

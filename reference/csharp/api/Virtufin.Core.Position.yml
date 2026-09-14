@@ -23,7 +23,6 @@ items:
   - Virtufin.Core.Position.IOrderBookUpdater`3
   - Virtufin.Core.Position.IOrderLine`3
   - Virtufin.Core.Position.IQuantity`2
-  - Virtufin.Core.Position.ITransactionLedger
   - Virtufin.Core.Position.IUnit
   - Virtufin.Core.Position.LimitOrMarketOrder
   - Virtufin.Core.Position.OrderBookState
@@ -430,12 +429,6 @@ references:
   - name: " "
   - name: TUnit
   - name: )
-- uid: Virtufin.Core.Position.ITransactionLedger
-  commentId: T:Virtufin.Core.Position.ITransactionLedger
-  href: Virtufin.Core.Position.ITransactionLedger.html
-  name: ITransactionLedger
-  nameWithType: ITransactionLedger
-  fullName: Virtufin.Core.Position.ITransactionLedger
 - uid: Virtufin.Core.Position.IUnit
   commentId: T:Virtufin.Core.Position.IUnit
   href: Virtufin.Core.Position.IUnit.html

@@ -5,7 +5,6 @@ items:
   id: Trade
   parent: Virtufin.Base.Events
   children:
-  - Virtufin.Base.Events.Trade.BuyOrSell
   - Virtufin.Base.Events.Trade.RichTradeAction
   - Virtufin.Base.Events.Trade.RichTradeAction.BuyOrder
   - Virtufin.Base.Events.Trade.RichTradeAction.CancelOrder
@@ -45,13 +44,6 @@ items:
   assemblies:
   - Virtufin.Base
 references:
-- uid: Virtufin.Base.Events.Trade.BuyOrSell
-  commentId: T:Virtufin.Base.Events.Trade.BuyOrSell
-  parent: Virtufin.Base.Events.Trade
-  href: Virtufin.Base.Events.Trade.BuyOrSell.html
-  name: BuyOrSell
-  nameWithType: BuyOrSell
-  fullName: Virtufin.Base.Events.Trade.BuyOrSell
 - uid: Virtufin.Base.Events.Trade.RichTradeAction
   commentId: T:Virtufin.Base.Events.Trade.RichTradeAction
   parent: Virtufin.Base.Events.Trade

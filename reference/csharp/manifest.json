@@ -844,20 +844,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Base.Events.Trade.BuyOrSell.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Virtufin.Base.Events.Trade.BuyOrSell.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Virtufin.Base.Events.Trade.BuyOrSell",
-      "Summary": "<p sourcefile=\"api/Virtufin.Base.Events.Trade.BuyOrSell.yml\" sourcestartlinenumber=\"1\">Side of a trade action.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Base.Events.Trade.RichTradeAction.BuyOrder.yml",
       "output": {
         ".html": {
@@ -3098,20 +3084,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Core.Position.ITransactionLedger.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Virtufin.Core.Position.ITransactionLedger.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Virtufin.Core.Position.ITransactionLedger",
-      "Summary": "<p sourcefile=\"api/Virtufin.Core.Position.ITransactionLedger.yml\" sourcestartlinenumber=\"1\">An append-only collection of orders / transactions representing the live\nbook at a venue. The transaction type is the generic\n<xref href=\"Virtufin.Core.Contracts.ITransaction\" data-throw-if-not-resolved=\"false\"></xref> from <code>Virtufin.Core.Contracts</code> so orders of\nany concrete kind can be accommodated.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Core.Position.IUnit.yml",
       "output": {
         ".html": {
@@ -3263,20 +3235,6 @@
       "IsMRef": true,
       "Title": "Virtufin.Core.Predicates.IVerificationMessageFilter",
       "Summary": "<p sourcefile=\"api/Virtufin.Core.Predicates.IVerificationMessageFilter.yml\" sourcestartlinenumber=\"1\">Verification-side message filter. Given the transactions attached to a\ncontract and the prior scenario history, return the subset deemed\napplicable for downstream execution.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Core.Predicates.IVerificationMessageFilterCombinator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Virtufin.Core.Predicates.IVerificationMessageFilterCombinator.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Virtufin.Core.Predicates.IVerificationMessageFilterCombinator",
-      "Summary": "<p sourcefile=\"api/Virtufin.Core.Predicates.IVerificationMessageFilterCombinator.yml\" sourcestartlinenumber=\"1\">Combinator that produces a composite <xref href=\"Virtufin.Core.Predicates.IVerificationMessageFilter\" data-throw-if-not-resolved=\"false\"></xref>\nfrom a sequence of sub-filters. Implementations decide how the sub-filters\ncompose (typically AND, but UNION or sequenced composition are valid).</p>\n"
     },
     {
       "type": "ManagedReference",
